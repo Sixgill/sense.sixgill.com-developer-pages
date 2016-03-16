@@ -1,0 +1,29 @@
+/*
+Theme Name: sixgill
+Theme URI: sixgill
+Author: WordPress team
+Author URI: sixgill
+Description: This theme is exclusively intended to used for plan build site build over wordpress 4.4.2
+Version: 1.1
+Text Domain: sixgill
+License:
+License URI:
+This theme, like WordPress, is not licensed under the GPL.
+*/
+@import 'css/bootstrap.min.css';
+@import 'css/font-awesome.min.css';
+@import 'css/main.css';
+
+.product_inner_right p{ font-size:18px;} {
+  background: #fff;
+font-family: 'open_sansregular';
+  color:#2e2e2e;
+  line-height: 22px;
+}
+
+@media(max-width:767px){
+
+.product_inner_right p{ font-size:15px;}
+
+
+}
