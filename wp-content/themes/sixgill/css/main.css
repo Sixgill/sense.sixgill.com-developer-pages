@@ -461,19 +461,22 @@ footer{ padding:50px 0; background:#2e2e2e;}
  .inner_banner_sub h3{ margin:0 0 25px; padding:0; font-size:56px;font-family: 'open_sanslight';color:#2e2e2e;}
  
  .inner_banner_sub h4{ margin:0; padding:0; font-size:18px; color:#4ddb5a; text-transform:uppercase;}
+ 
+
+ 
  .product_list{ margin:0; padding:0; font-size:18px; list-style-type:none;}
   .product_list li{ margin:0 0 10px; background:url(../images/dott.png) no-repeat 0 10px; padding:0 0 0 20px;}
- .product_inner{ padding:80px 0; border-top:1px solid #d5d5d5;}
+ .product_inner{ padding:80px 0; border-top:1px solid #d5d5d5; }
  .product_inner h4{ font-size:40px;font-family: 'open_sanslight';color:#2e2e2e; margin:0 0 20px; padding:0;}
  .product_inner h6{font-size:22px; color:#989898; margin:0 0 20px; padding:0;}
- .product_inner_col{width: 62%;
+ .product_inner_col{width: 82%;
     margin: 80px auto;
     overflow: hidden;}
  
  .product_inner_left{ float:left; width:25%;}
  
  .product_inner_right{ float:right; width:70%;}
-  .product_inner_col h2{ margin:0 0 20px; padding:0;font-family: 'open_sansbold'; font-size:22px; text-transform:uppercase;}
+  .product_inner_col h2{ margin:0 0 20px; padding:0;font-family: 'open_sansregular'; font-size:22px; text-transform:uppercase;}
  
  
   .sixgill_asset{ padding:80px 0 120px; border-top:1px solid #d5d5d5; overflow:hidden;}
@@ -487,7 +490,7 @@ footer{ padding:50px 0; background:#2e2e2e;}
  .sixgill_asset .product_list li {
     margin: 0 0 5px;}
  
- .sixgill_solution{ padding:120px 0 0;}
+ .sixgill_solution{ padding:1px 0 0;}
  
  .sixgill_solution h4{ font-size:40px; color:#4dd45a; margin:0 0 30px; padding:0;}
   .sixgill_solution h5{ font-size:22px; color:#383838; padding:15px 0 20px; margin:0;font-family: 'open_sansbold'; text-transform:uppercase; }
@@ -508,7 +511,7 @@ footer{ padding:50px 0; background:#2e2e2e;}
 .pad_t_80{ padding-top:80px;}
 
  .tech_col h3{font-family: 'open_sanslight';color:#2e2e2e; font-size:40px; margin:0 0 25px; line-height:40px;}
- .tech_col .col-md-6 p{ font-size:20px; margin:0 0 25px;}
+ .tech_col .col-md-6 p{ font-size:18px; margin:0 0 25px;}
 
 
  .tech_col h4{font-family: 'open_sanslight';color:#2e2e2e; font-size:40px; padding:40px 0 25px; line-height:40px; margin:0;}

@@ -1,4 +1,5 @@
 <?php 
+	get_template_part( 'mailsend' );
     get_header();    
 ?>
 <div id="top-video">
@@ -23,18 +24,18 @@
     <h2>Sixgill Sense<span style="font-size:15px; vertical-align: super;">&trade;</span> Proximity Service</h2>
     </div>
     </div>
-	<div><img src="wp-content/uploads/2016/03/TDA_Graphic-3.jpg" width="100%"></div>
+	<div><img src="wp-content/uploads/2016/03/TDA-1600.jpg" width="100%"></div>
 	<section class="view_solution_col">
 	  <div class="container">
 		<div class="col-md-4"> <span><img src="<?=get_template_directory_uri();?>/images/proximity_people.svg"></span>
 		  <h2><b>Proximity</b> for People</h2>
-		  <a href="#">Learn More</a> </div>
+		  <a href="/solutions/#people">Learn More</a> </div>
 		<div class="col-md-4"> <span><img src="<?=get_template_directory_uri();?>/images/proximity_assets.svg"></span>
 		  <h2><b>Proximity</b> for Assets</h2>
-		  <a href="#">Learn More</a> </div>
+		  <a href="/solutions/#assets">Learn More</a> </div>
 		<div class="col-md-4"> <span><img src="<?=get_template_directory_uri();?>/images/proximity_crowds.svg"></span>
 		  <h2><b>Proximity</b> for Crowds</h2>
-		  <a href="#">Learn More</a> </div>
+		  <a href="/solutions/#crowds">Learn More</a> </div>
 	  </div>
 	</section>
 	<section class="served_col2">
@@ -55,7 +56,7 @@
 	  </div>
 	</section>
 <section class="demo_col">
-  <div class="container"> <a href="#">Schedule Demo</a> </div>
+  <div class="container"> <a href="#" data-toggle="modal" data-target="#request_form">Schedule Demo</a> </div>
 </section>
 <?php 
     get_footer();    
