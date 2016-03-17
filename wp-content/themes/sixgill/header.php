@@ -48,11 +48,9 @@
 	</div>
     <div class="head_right pull-right"> <span class="search">  </span>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-	  <?php if(is_home()){ ?>
-      <span class="login"> <a href=" https://dashboard.zoscomm.com/login?status=0" target='_blank'>Login</a> </span>
-	  <?php }else{ ?>
+
 	  <span class="login request"> <a href="#" data-toggle="modal" data-target="#request_form">Request a Demo</a> </span>
-	  <?php } ?>
+
       <div class="collapse navbar-collapse">
 	   
         <?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav navbar-nav' ) ); ?>
