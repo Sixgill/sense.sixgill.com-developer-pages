@@ -36,7 +36,7 @@
                 
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/phil-ressler.jpg"></div>
+                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/phil-ressler.png"></div>
                         <h3>PHIL RESSLER</h3>
                         <h4>Chief Executive Officer</h4>
                         <div class="team_slidein">
@@ -49,7 +49,7 @@
                 
                
                     <div class="col-md-4">
-                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/jeff-ester.jpg"></div>
+                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/jeff-ester.png"></div>
                         <h3>JEFF ESTER</h3>
                         <h4>Senior Vice President, Revenue</h4>
                         <div class="team_slidein">
@@ -65,7 +65,7 @@
                
             
                    <div class="col-md-4">
-                         <div class="slideimg"><img src="../wp-content/uploads/2016/03/mike-horowitz.jpg"></div>
+                         <div class="slideimg"><img src="../wp-content/uploads/2016/03/mike-horowitz.png"></div>
                         <h3>MIKE HOROWITZ</h3>
                         <h4>Senior Vice President, Product Management & Engineering</h4>
                         <div class="team_slidein">
@@ -78,7 +78,7 @@
     <div class="row">
               
                    <div class="col-md-4">
-                        <div class="slideimg"><br/><img src="../wp-content/uploads/2016/03/shawn-gunn.jpg"></div>
+                        <div class="slideimg"><br/><img src="../wp-content/uploads/2016/03/shawn-gunn.png"></div>
                         <h3>SHAWN GUNN</h3>
                         <h4>Senior Vice President, Business Development</h4>
                         <div class="team_slidein">
@@ -89,7 +89,7 @@
                     
 
                    <div class="col-md-4">
-                        <div class="slideimg"><br/><img src="../wp-content/uploads/2016/03/arnold-waldstein.jpg"></div>
+                        <div class="slideimg"><br/><img src="../wp-content/uploads/2016/03/arnold-waldstein.png"></div>
                         <h3 class="custom-width">ARNOLD WALDSTEIN</h3>
                         <h4>Senior Vice President, Marketing</h4>
                         <div class="team_slidein">
@@ -101,7 +101,7 @@
                 
        
                    <div class="col-md-4">
-                        <div class="slideimg"><br/><img src="../wp-content/uploads/2016/03/john-dohm.jpg"></div>
+                        <div class="slideimg"><br/><img src="../wp-content/uploads/2016/03/john-dohm.png"></div>
                         <h3>JOHN DOHM</h3>
                         <h4>Platform Technology Advisor</h4>
                         <div class="team_slidein">
@@ -126,7 +126,7 @@
                 <div class="row">
                 
                     <div class="col-sm-6 col-xm-12">
-                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/phil-ressler.jpg"></div>
+                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/phil-ressler.png"></div>
                         <h3>PHIL RESSLER</h3>
                         <h4>Chief Executive Officer</h4>
                         <div class="team_slidein">
@@ -140,7 +140,7 @@
                 
                
                     <div class="col-sm-6 col-xm-12">
-                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/jeff-ester.jpg"></div>
+                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/jeff-ester.png"></div>
                         <h3>JEFF ESTER</h3>
                         <h4>Senior Vice President, Revenue</h4>
                         <div class="team_slidein">
@@ -160,7 +160,7 @@
                <div class="row">
               <div class="team-space"><br/><br/></div>
                     <div class="col-sm-6 col-xm-12">
-                         <div class="slideimg"><img src="../wp-content/uploads/2016/03/mike-horowitz.jpg"></div>
+                         <div class="slideimg"><img src="../wp-content/uploads/2016/03/mike-horowitz.png"></div>
                         <h3>MIKE HOROWITZ</h3>
                         <h4>Senior Vice President, Product Management & Engineering</h4>
                         <div class="team_slidein">
@@ -171,7 +171,7 @@
                 <hr id="team-iphone" />
               
                     <div class="col-sm-6 col-xm-12">
-                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/shawn-gunn.jpg"></div>
+                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/shawn-gunn.png"></div>
                         <h3>SHAWN GUNN</h3>
                         <h4>Senior Vice President, Business Development</h4>
                         <div class="team_slidein">
@@ -188,7 +188,7 @@
               <div class="row">
               <div class="team-space"><br/><br/></div>
                     <div class="col-sm-6 col-xm-12">
-                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/arnold-waldstein.jpg"></div>
+                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/arnold-waldstein.png"></div>
                         <h3 class="custom-width">ARNOLD WALDSTEIN</h3>
                         <h4>Senior Vice President, Marketing</h4>
                         <div class="team_slidein">
@@ -201,7 +201,7 @@
                 
        
                     <div class="col-sm-6 col-xm-12">
-                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/john-dohm.jpg"></div>
+                        <div class="slideimg"><img src="../wp-content/uploads/2016/03/john-dohm.png"></div>
                         <h3>JOHN DOHM</h3>
                         <h4>Platform Technology Advisor</h4>
                         <div class="team_slidein">
