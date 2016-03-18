@@ -13,7 +13,7 @@
     get_header();
 ?>
 
-<section class="experts_col">
+<section class="tech_col">
     <div class="container">
         <h2>About Sixgill LLC</h2>
         <div class="experts_col_left">

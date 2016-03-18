@@ -19,12 +19,14 @@
 		echo $post_content;
 	}
 	?>
-    <div style="text-align:center">
-    <div class="sense-header">
-    <h2>Sixgill Sense<span style="font-size:15px; vertical-align: super;">&trade;</span> Proximity Service</h2>
-    </div>
-    </div>
+
+    <section class="sense-header">
+	<div class="container">
+<h2>Sixgill Sense<span style="font-size:15px; vertical-align: super;">&trade;</span> tracks, determines, and acts on the changing proximity of people, places, and things</h2>
+    	</div>
 	<div><img src="wp-content/uploads/2016/03/TDA-1600.jpg" width="100%"></div>
+     </section>
+
 	<section class="view_solution_col">
 	  <div class="container">
 		<div class="col-md-4"> <span><img src="<?=get_template_directory_uri();?>/images/proximity_people.svg"></span>
@@ -42,16 +44,16 @@
 	  <div class="container">
 		<h6><span>Over a Billion Guided and Served</span></h6>
 		<ul>
-		  <li><img src="wp-content/uploads/2016/03/ATT_logo.png"></li>
-		  <li><img src="wp-content/uploads/2016/03/2015_Rugby_World_Cup.svg_.png"></li>
-		  <li><img src="wp-content/uploads/2016/03/NYAutoShow.png"></li>
-		  <li><img src="wp-content/uploads/2016/03/New-York-Fashion-Week-logo.png-adedb41177ab61be75af33ff253b98293b773dc6list_image.png"></li>
-		  <li><img src="wp-content/uploads/2016/03/LiveNation.png"></li>
-		  <li><img src="wp-content/uploads/2016/03/ing-logo.png"></li>
-		  <li><img src="wp-content/uploads/2016/03/img.png"></li>
-		  <li><img src="wp-content/uploads/2016/03/HSBC-logo.png"></li>
-		  <li><img src="wp-content/uploads/2016/03/Auburn.png"></li>
-		  <li><img src="wp-content/uploads/2016/03/1024px-New_York_Jets_logo.svg_.png"></li>
+		  <li><img src="wp-content/uploads/2016/03/ATT_logo.jpg"></li>
+		  <li><img src="wp-content/uploads/2016/03/2015_Rugby_World_Cup.svg_.jpg"></li>
+		  <li><img src="wp-content/uploads/2016/03/NYAutoShow.jpg"></li>
+		  <li><img src="wp-content/uploads/2016/03/New-York-Fashion-Week-logo.png-adedb41177ab61be75af33ff253b98293b773dc6list_image.jpg"></li>
+		  <li><img src="wp-content/uploads/2016/03/LiveNation.jpg"></li>
+		  <li><img src="wp-content/uploads/2016/03/ing-logo.jpg"></li>
+		  <li><img src="wp-content/uploads/2016/03/img.jpg"></li>
+		  <li><img src="wp-content/uploads/2016/03/HSBC-logo.jpg"></li>
+		  <li><img src="wp-content/uploads/2016/03/Auburn.jpg"></li>
+		  <li><img src="wp-content/uploads/2016/03/1024px-New_York_Jets_logo.svg_.jpg"></li>
 		</ul>
 	  </div>
 	</section>
