@@ -22,7 +22,7 @@
 
     <section class="sense-header">
 	<div class="container">
-<h2>Sixgill Sense<span style="font-size:15px; vertical-align: super;">&trade;</span> tracks, determines, and acts on the changing proximity of people, places, and things</h2>
+<h2 style="color:#4daa5a!important;">Sixgill Sense<span style="font-size:15px; vertical-align: super;">&trade;</span> tracks, determines, and acts on the changing proximity of people, places, and things</h2>
     	</div>
 	<div><img src="wp-content/uploads/2016/03/TDA-1600.jpg" width="100%"></div>
      </section>
