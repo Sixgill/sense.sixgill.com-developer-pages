@@ -4,7 +4,7 @@
 ?>
 <div id="top-video">
     <video autoplay loop width="100%">
-        <source src="http://dev-sixgill.pantheonsite.io/hero-simpleFadeIn2.mp4" type="video/mp4">
+        <source src="http://dev-sixgill.pantheonsite.io/hero-48.mp4" type="video/mp4">
     </video>
 </div>
 
