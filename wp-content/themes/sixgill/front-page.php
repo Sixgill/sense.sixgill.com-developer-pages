@@ -3,13 +3,13 @@
     get_header();    
 ?>
 <div id="top-video">
-    <video autoplay loop width="100%">
-        <source src="http://dev-sixgill.pantheonsite.io/hero-48.mp4" type="video/mp4">
+    <video autoplay width="100%">
+        <source src="hero-final.mp4" type="video/mp4">
     </video>
 </div>
 
 <div id="top-image">
-        <img src="wp-content/uploads/2016/03/home-mobile.jpg" width="100%">
+        <img src="home-mobile-2.png" width="100%">
 </div>
 
 	<?php 
