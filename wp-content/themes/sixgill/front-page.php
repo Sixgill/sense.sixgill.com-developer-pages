@@ -24,7 +24,7 @@
 	<div class="container">
 <h2 style="color:#4daa5a!important;">Sixgill Sense<span style="font-size:15px; vertical-align: super;">&trade;</span> tracks, determines, and acts on the changing proximity of people, places, and things</h2>
     	</div>
-	<div><img src="http://www.sixgill.com/wp-content/uploads/2016/03/tda-graphic-4.png" width="100%"></div>
+	<div><img src="http://www.sixgill.com/wp-content/uploads/2016/03/tda-graphic-4-v2.png" width="100%"></div>
      </section>
 
 	<section class="view_solution_col">
