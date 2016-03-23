@@ -7,7 +7,7 @@
             </ul>
             <p>Copyright © 2016 Sixgill, LLC</p>
         </div>
-        <div class="social"> <a href="https://www.facebook.com/sixgilltech/" target="_blank"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/SixgillT" target="_blank"><i class="fa fa-twitter"></i></a> <a href="https://www.instagram.com/sixgilltech/" target="_blank"><i class="fa fa-instagram"></i></a> </div>
+        <div class="social"> </div>
     </div>
 </footer>
 <?php wp_footer(); ?> 
