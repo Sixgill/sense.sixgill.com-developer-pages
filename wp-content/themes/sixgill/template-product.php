@@ -10,100 +10,118 @@
 				// Preparing variables
 				$top_paragraph = get_field('top_paragraph');
 
-				$people_image = get_field('people_image');
-				$people_header = get_field('people_header');
-				$people_text = get_field('people_text');
-				$people_list = get_field('people_list');
+				$sixgill_sense_logo = get_field('sixgill_sense_logo');
+				$sixgill_sense_header = get_field('sixgill_sense_header');
+				$sixgill_sense_subheader = get_field('sixgill_sense_subheader');
 
-				$assets_image = get_field('assets_image');
-				$assets_header = get_field('assets_header');
-				$assets_text = get_field('assets_text');
-				$assets_list = get_field('assets_list');
+				$track_image = get_field('track_image');
+				$track_header = get_field('track_header');
+				$track_text = get_field('track_text');
+				$track_list = get_field('track_list');
 				
-				$crowds_image = get_field('crowds_image');
-				$crowds_header = get_field('crowds_header');
-				$crowds_text = get_field('crowds_text');
-				$crowds_list = get_field('crowds_list');
+				$determine_image = get_field('determine_image');
+				$determine_header = get_field('determine_header');
+				$determine_text = get_field('determine_text');
+				$determine_list = get_field('determine_list');
 				
-				$success_story_button_text = get_field('success_story_button_text');
-				$success_story_file_link = get_field('success_story_file_link');
+				$act_image = get_field('act_image');
+				$act_header = get_field('act_header');
+				$act_text = get_field('act_text');
+				$act_list = get_field('act_list');
+				
+				$sixgill_assist_logo = get_field('sixgill_assist_logo');
+				$sixgill_assist_header = get_field('sixgill_assist_header');
+				$sixgill_assist_list = get_field('sixgill_assist_list');
 			?>
 
 <section class="tech_col">
     <div class="container">
-        <?php echo $top_paragraph; ?>
-        <a id="people" name="people"></a>
-  </div>
+            <span style="margin-bottom:-30px;"><?php echo $top_paragraph; ?></span>
+        </div>
+    </div>
 </section>
+<section class="product_col">
+    <div class="container">
+        <div class="product_inner">
+			<div class="col-md-1">&nbsp;</div>
+        	<div class="col-md-2 product-sense"><img src="<?php echo $sixgill_sense_logo; ?>"></div>
+        	<div class="col-md-1">&nbsp;</div>
+        	<div class="col-md-8">
+            		<h4><?php echo $sixgill_sense_header; ?></h4>
+                	<h6><?php echo $sixgill_sense_subheader; ?></h6>
+            </div>    
+        </div>
         
-
-<section class="sixgill_solution">
-	<div class="container">
-    
-		<div class="clearfix solution_space">
-			<div class="col-md-3 text_cent">
-				<img src="<?php echo $people_image; ?>" alt="" />
-            </div>
-			<div class="col-md-8">
-				<h4><?php echo $people_header; ?></h4>
-				<?php echo $people_text; ?>
-               
-                <?php if($people_list) : ?>
-					<ul class="product_list">
-						<?php foreach($people_list as $item) : ?>
-						<li><?php echo $item['people_list_text']; ?></li>
-						<?php endforeach; ?>
-					</ul>				
-				 <?php endif; ?>
-
-				<a id="assets" name="assets"></a>
-			</div>
-		</div>
-
-		<div class="clearfix solution_space">
-			<div class="col-md-3 text_cent">
-				<img src="<?php echo $assets_image; ?>" alt="" />
-            </div>
-			<div class="col-md-8">
-				<h4><?php echo $assets_header; ?></h4>
-				<?php echo $assets_text; ?>
-               
-                <?php if($assets_list) : ?>
-					<ul class="product_list">
-						<?php foreach($assets_list as $item) : ?>
-						<li><?php echo $item['assets_list_text']; ?></li>
-						<?php endforeach; ?>
-					</ul>				
-				 <?php endif; ?>
-                 
-			</div>
-		</div>
         
-<a id="events" name="crowds"></a>
-
-		<div class="clearfix solution_space">
-			<div class="col-md-3 text_cent">
-				<img src="<?php echo $crowds_image; ?>" alt="" />
+        <div class="product_inner_col">
+			<div class="product_inner_left"><img src="<?php echo $track_image; ?>"></div>
+ 			<div class="product_inner_right">
+				<h2><?php echo $track_header; ?></h2>
+				<?php echo $track_text; ?>
+                	<?php if($track_list) : ?>
+						<ul class="product_list">
+							<?php foreach($track_list as $item) : ?>
+							<li><?php echo $item['track_list_text']; ?></li>
+							<?php endforeach; ?>
+						</ul>				
+					 <?php endif; ?>   
+                </div>
             </div>
-			<div class="col-md-8">
-				<h4><?php echo $crowds_header; ?></h4>
-				<?php echo $crowds_text; ?>
-               
-                <?php if($crowds_list) : ?>
-					<ul class="product_list">
-						<?php foreach($crowds_list as $item) : ?>
-						<li><?php echo $item['crowds_list_text']; ?></li>
-						<?php endforeach; ?>
-					</ul>				
-				 <?php endif; ?>
-                 
-			</div>
-		</div>
-	</div>
+        
+		<div class="product_inner_col">
+			<div class="product_inner_left"><img src="<?php echo $determine_image; ?>"></div>
+ 			<div class="product_inner_right">
+				<h2><?php echo $determine_header; ?></h2>
+				<?php echo $determine_text; ?>
+                	<?php if($determine_list) : ?>
+						<ul class="product_list">
+							<?php foreach($determine_list as $item) : ?>
+							<li><?php echo $item['determine_list_text']; ?></li>
+							<?php endforeach; ?>
+						</ul>				
+					 <?php endif; ?>   
+                </div>
+            </div>
+        
+		<div class="product_inner_col">
+			<div class="product_inner_left"><img src="<?php echo $act_image; ?>"></div>
+ 			<div class="product_inner_right">
+				<h2><?php echo $act_header; ?></h2>
+				<?php echo $act_text; ?>
+                	<?php if($act_list) : ?>
+						<ul class="product_list">
+							<?php foreach($act_list as $item) : ?>
+							<li><?php echo $item['act_list_text']; ?></li>
+							<?php endforeach; ?>
+						</ul>				
+					 <?php endif; ?>   
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </section>
 
-<section class="demo_col pad_t80">
-	<div class="container"><a href="<?php echo $success_story_file_link; ?>" target="_blank"><?php echo $success_story_button_text; ?></a></div>
+<section class="">
+    <div class="container">
+        <div class="sixgill_asset">
+			<div class="col-md-1">&nbsp;</div>
+            <div class="col-md-2 sixgille_asset">
+                <img src="<?php echo $sixgill_assist_logo; ?>">
+            </div>
+			<div class="col-md-1">&nbsp;</div>
+            <div class="col-md-8">
+                <p><?php echo $sixgill_assist_header; ?></p>
+                	<?php if($sixgill_assist_list) : ?>
+						<ul class="product_list">
+							<?php foreach($sixgill_assist_list as $item) : ?>
+							<li><?php echo $item['sixgill_assist_list_text']; ?></li>
+							<?php endforeach; ?>
+						</ul>				
+					 <?php endif; ?>  
+            </div>
+        </div>
+    </div>
 </section>
 
       <?php endwhile; ?>

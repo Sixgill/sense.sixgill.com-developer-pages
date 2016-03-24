@@ -33,6 +33,10 @@ This theme, like WordPress, is not licensed under the GPL.
 #myCarousel-1 { display: none; }
 .team-space{ display: none; }
 
+#team-three { display: block; }
+#team-two { display: none; }
+#team-one { display: none; }
+
 @media(min-width: 0px) and (max-width: 991px) {
   #myCarousel{ display: none; }
   #myCarousel-1{ display: block; }
@@ -44,15 +48,27 @@ This theme, like WordPress, is not licensed under the GPL.
 #team-iphone{ display: none; }
 }
 
-@media(min-width: 768px) and (max-width: 991px) {
-  .team-space{ display: block; }
+@media(min-width: 769px) and (max-width: 991px) {
+.team-space{ display: block; }
+#team-three { display: none; }
+#team-two { display: block; }
+#team-one { display: none; }
  .product_inner{ padding:20px 0 0 0;}
 }
 
 .team_slidein2{ margin:0 auto; text-align:left;} 
 
+@media(min-width: 0px) and (max-width: 768px) {
+#team-three { display: none; }
+#team-two { display: none; }
+#team-one { display: block; }
+ .product_inner{ padding:20px 0 0 0;}
+}
+
+
 @media(max-width:767px){
-.team_slidein2{ width:inherit; text-align:center;}.navbar-toggle{ padding: 9px 4px;}
+.team_slidein2{ width:inherit; text-align:center;}
+.navbar-toggle{ padding: 9px 4px;}
 }
 
 
