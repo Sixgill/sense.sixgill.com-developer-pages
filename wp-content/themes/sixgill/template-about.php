@@ -95,6 +95,9 @@
                                 <?php if($i < 6) : ?>
 								<hr/>
 								<?php endif; ?> 
+                                 <?php if($i == 6) : ?>
+								<div style="padding-bottom:15px;">&nbsp;</div>
+								<?php endif; ?>
                         	</div>
                    		</div> 
 					<?php endforeach; ?>

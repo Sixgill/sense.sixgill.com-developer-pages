@@ -10,6 +10,11 @@
 	wp_head();	
 ?>
 
+<?php
+	// Preparing variables				
+	$header_image = get_header_image();
+?>
+
 <!-- Start of Async HubSpot Analytics Code -->
     <script type="text/javascript">
         (function(d,s,i,r) {
@@ -37,31 +42,36 @@
    
 </head>
 <!--/head-->
+
 <body  <?php body_class(); ?>>
-<header>
-  <div class="container">
-    <div class="logo pull-left"> 
-	 <?php $header_image = get_header_image(); ?>
-      <?php if(! empty( $header_image ) ):?>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" rel="home"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-      <?php endif;?>	
-	</div>
-    <div class="head_right pull-right"> <span class="search">  </span>
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
-	  <span class="login request"> <a href="#" data-toggle="modal" data-target="#request_form">Request a Demo</a> </span>
+	<header>
+		<div class="container">
+			<div class="logo pull-left"> 
+				<?php if(! empty( $header_image ) ):?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" rel="home"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="
+					<?php echo get_custom_header()->height; ?>" alt="" /></a>
+      			<?php endif;?>	
+			</div>
+            
+			<div class="head_right pull-right">
+        		<span class="search">  </span>
+            
+            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            		<span class="sr-only">Toggle navigation</span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+				</button>
 
-      <div class="collapse navbar-collapse">
-	   
-        <?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav navbar-nav' ) ); ?>
-       
-        <!--<ul class="nav navbar-nav">
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Tech</a></li>
-          <li><a href="#">About</a></li>
-        </ul>-->
-      </div>
-    </div>
-  </div>
-</header>
+	  			<span class="login request"><a href="#" data-toggle="modal" data-target="#request_form">Request a Demo</a></span>
+                
+
+      			<div class="collapse navbar-collapse">
+					<?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav navbar-nav' ) ); ?>
+				</div>
+            
+    		</div>
+        
+  		</div>
+	</header>

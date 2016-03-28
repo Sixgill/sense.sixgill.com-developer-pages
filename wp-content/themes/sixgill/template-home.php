@@ -1,7 +1,7 @@
 <?php
 /* Template Name: Home */
 	get_template_part( 'mailsend' );
-    get_header(); 
+    get_header();    
 ?>
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -9,6 +9,7 @@
 			<?php
 				// Preparing variables
 				$video_url = get_field('video_url');
+				$top_banner = get_field('top_banner');
 				$blue_header_text_below_video = get_field('blue_header_text_below_video');
 
 				$left_column = get_field('left_column');
@@ -30,14 +31,14 @@
 </div>
 
 <div id="top-image">
-	<img src="home-mobile-2.png" width="100%">
+	<img src="<?php echo $top_banner; ?>" width="100%">
 </div>
 
 <section class="experts_col">
 
 	<div class="container">
 		
-       <h2><span style="color: #0051c6;"><?php echo $blue_header_text_below_video; ?></span></h2>
+       <h2 style="color: #0051c6;"><?php echo $blue_header_text_below_video; ?></h2>
         
 		<div class="experts_col_left"><?php echo $left_column; ?></div>
     
@@ -53,7 +54,7 @@
 	<div class="container">
 <h2 style="color:#4daa5a!important;"><?php echo $green_header_text; ?></h2>
     	</div>
-	<div><img src="<?php echo $flow_chart_image['url']; ?>" width="100%"></div>
+	<div><img src="<?php echo $flow_chart_image; ?>" width="100%"></div>
      </section>
 
 <section class="view_solution_col">
@@ -96,8 +97,9 @@
 <section class="demo_col">
   <div class="container"> <a href="#" data-toggle="modal" data-target="#request_form">Schedule Demo</a> </div>
 </section>
+
       <?php endwhile; ?>
-        <?php endif; // have post?>
+      <?php endif; // have post?>
 
 <?php
     get_footer();

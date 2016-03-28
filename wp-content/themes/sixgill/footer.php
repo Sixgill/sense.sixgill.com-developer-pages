@@ -1,68 +1,50 @@
+			<?php
+				// Preparing variables				
+				$variable = get_field('legal_link', 420);
+				
+				$variable = get_field('contact_header', 420);
+				$variable = get_field('contact_text', 420);
+				$variable = get_field('google_map_embed_code', 420);
+				
+				$variable = get_field('facebook_link', 420);
+				$variable = get_field('twitter_link', 420);
+				$variable = get_field('instagram_link', 420);
+			?>
+            
 <footer>
     <div class="container">
         <div class="ftr_left">
             <ul>
-                <li><a href="/legal/">Legal</a></li>
+                <li><a href="<?php the_field('legal_link', 420); ?>">Legal</a></li>
                 <li><a data-toggle="modal" data-target="#myModal3">Contact</a></li>
             </ul>
             <p>Copyright © 2016 Sixgill, LLC</p>
         </div>
-        <div class="social"> </div>
+        <!-- <div class="social">
+        	<a href="<?php the_field('facebook_link', 420); ?>" target="_blank"><i class="fa fa-facebook"></i></a> 
+            <a href="<?php the_field('twitter_link', 420); ?>" target="_blank"><i class="fa fa-twitter"></i></a> 
+            <a href="<?php the_field('instagram_link', 420); ?>" target="_blank"><i class="fa fa-instagram"></i></a>
+		</div> -->
     </div>
 </footer>
 <?php wp_footer(); ?> 
- 
-<!-- modal POPUP -->
 
-<div class="modal fade popmap" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-            <div class="modal-body">
-                <p> Different messages or business logic can be triggered based on proximity of any group or subgroup of a mass of mobile devices to any single landmark, group of landmarks, or sequence of landmarks</p>
-                <img src="<?=get_template_directory_uri();?>/images/map_pop.jpg">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-- modal POPUP -->
-
-<div class="modal fade popmap" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-            <div class="modal-body">
-                <img src="<?=get_template_directory_uri();?>/images/RWC_heatmap_global1.png">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-- modal POPUP -->
+<!-- Contact Modal POPUP -->
 
 <div class="modal fade popmap" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
 
             <div class="modal-body">
-            <h1>Contact</h1>
-                <p>310.220.4238<br/>
-<a href="mailto:sales@sixgill.com">sales@sixgill.com</a><br/><br/>
-SANTA MONICA<br/>
-312 Arizona Avenue<br/>
-Santa Monica, CA 90401
-</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0426494208914!2d-118.49943728478584!3d34.01711618061547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cf828fe6fb%3A0x98334bfc7af2a7bf!2s312+Arizona+Ave%2C+Santa+Monica%2C+CA+90401!5e0!3m2!1sen!2sus!4v1458203894011" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <h1><?php the_field('contact_header', 420); ?></h1>
+                <p><?php the_field('contact_text', 420); ?></p><?php the_field('google_map_embed_code', 420); ?>
             </div>
 
         </div>
     </div>
 </div>
-
-<!-- modal POPUP -->
+ 
+<!-- Demo Request Modal POPUP -->
 <div class="modal fade popmap" id="request_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

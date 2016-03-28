@@ -6,7 +6,6 @@ ob_start();
     * Description: mailsend form for sixgill.
     *
     * @package WordPress
-    * @subpackage webvirtue
     */
 	
 	if(isset($_POST['submitted'])){
@@ -59,7 +58,7 @@ ob_start();
             //$message = '<div id="message" class="success"><p>'. __("Message has been sent, we will contact you soon!").'</p></div>';
             if($success==true)
             {
-               $location = 'http://dev-sixgill.pantheonsite.io/thank-you/';
+               $location = '/thank-you/';
 				wp_redirect($location);
             }
         }
