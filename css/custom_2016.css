@@ -113,8 +113,8 @@ all classes apply for desktop
 	.logoSIXGILL {width:245px; height:96px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_tablet.png);}
 	.my_subMenus {display:none;	}
 	.my_titSolutions {
-		font-size:30px;
-		padding-right:20px;
+		font-size:28px;
+		padding-right:10px;
 	}
 	.my_iconSolution {width:115px;}
 	.my_boxSolution_title {}
@@ -132,7 +132,10 @@ all classes apply for desktop
 		text-align:center;
 		padding:0px;
 	}
-	.my_txtSolutions {border-left:0px;}
+	.my_txtSolutions {
+		border-left:0px;
+		padding-left:10px;
+	}
 	.my_iconSolution {width:55px;}
 	.my_boxSolution_title { border:0px;}
 	.footer_Learn, .footer_Links { text-align:center; font-size:14px;	}

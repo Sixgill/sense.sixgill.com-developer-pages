@@ -17,8 +17,8 @@
 
 		<div class="header-stick" id="company" style="background-color:#F8F8F8; border:0px solid #FF0004;">
 			<div class="container-fluid center clearfix" style="padding-top:75px; max-width:1100px;  border:0px solid #FF0004;">
-				<div class="col_one_third titleInside text-right nomargin" style="padding-right:20px; border:0px solid #FF0004;">THE COMPANY</div>
-				<div class="col_two_third col_last text-left" style="border-left:1px solid #9C9C9C; padding-left:20px;">
+				<div class="col_one_third titleInside text-right nomargin my_titSolutions">THE COMPANY</div>
+				<div class="col_two_third col_last text-left my_txtSolutions">
 					<p class="pSolutions">
 					<?php echo getPageContentBySlug("company-the-company"); ?>
 					</p>
