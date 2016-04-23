@@ -418,6 +418,15 @@ p {font-size:13px; font-weight:normal;}
 	width:140px;
 }
 
+.tech-first-text {
+	padding-right:20px;
+	border:0px;
+}
+
+.tech-first-text-title {
+	width:250px;
+}
+
 @media only screen and (max-width: 320px) {/* For mobiles: */
 	.btnInside {
 		font-family: "Lato", serif, sans-serif;
@@ -441,6 +450,15 @@ p {font-size:13px; font-weight:normal;}
 		padding-bottom: 5px;
 	}
 
+	.tech-first-text {
+		padding-right:0px;
+		border:0px;
+	}
+
+	.tech-first-text-title {
+		width:auto;
+	}
+
 }
 
 @media only screen and (min-width: 321px) {/* For tablets: */
@@ -461,6 +479,13 @@ p {font-size:13px; font-weight:normal;}
 
 	#primary-menu {
 		padding-bottom: 5px;
+	}
+	.titleInside-tech {
+	 	padding-right:0px;
+	}
+
+	.tech-first-text-title {
+		width:auto;
 	}
 
 }
