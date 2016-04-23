@@ -1,28 +1,4 @@
 <?php get_header(); ?>
-<!-- Primary Navigation -->
-<nav id="primary-menu">
-	<ul>
-	<a href="/"><div>Home</div></a>
-	<div class="my_subMenus" style="margin-left:15px;">
-		<a href="#what">What we do</a><br>
-		<a href="#products">Products</a><br>
-		<a href="#solutions">Solutions</a><br>
-		<a href="#clients">Clients</a>
-	</div>
-	<a href="/solutions/"><div>Solutions</div></a>
-	<a href="/product/"><div>Products</div></a>
-	<a href="/tech/"><div>Tech</div></a>
-	<a href="/company/"><div>Company</div></a>
-	</ul>
-
-</nav><!-- #primary-menu end -->
-
-</div>
-
-</div>
-
-</header><!-- #header end -->
-<!-- header.php end -->
 <section id="slider" class="force-full-screen full-screen">
 	<div class="force-full-screen full-screen dark section nopadding nomargin noborder ohidden">
 		<div class="container clearfix">

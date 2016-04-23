@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<a name="top"></a>
 <!-- Content-->
 <section id="content">
 
