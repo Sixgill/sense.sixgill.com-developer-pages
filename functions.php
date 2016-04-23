@@ -20,4 +20,16 @@
     return get_posts($args)[0];
   }
 
+  function getCurrentSlug() {
+
+    global $post;
+
+    if ( is_single() || is_page() ) {
+      return $post->post_name;
+    } else {
+      return "";
+    }
+
+  }
+
  ?>

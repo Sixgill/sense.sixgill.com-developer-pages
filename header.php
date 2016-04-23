@@ -38,8 +38,9 @@
 </head>
 
 <body class="side-header stretched">
-
 	<!-- Document Wrapper -->
+	<a name="top"></a>
+	<section id="top"></section>
 	<div id="wrapper" class="clearfix">
 <!-- Header -->
 <header id="header" class="no-sticky">
@@ -57,17 +58,64 @@
 			<!-- Primary Navigation -->
 			<nav id="primary-menu">
 				<ul>
-				<a href="/"><div>Home</div></a>
-				<div class="my_subMenus" style="margin-left:15px;">
-					<a href="#what">What we do</a><br>
-					<a href="#products">Products</a><br>
-					<a href="#solutions">Solutions</a><br>
-					<a href="#clients">Clients</a>
-				</div>
-				<a href="/solutions/"><div>Solutions</div></a>
-				<a href="/product/"><div>Products</div></a>
-				<a href="/tech/"><div>Tech</div></a>
-				<a href="/company/"><div>Company</div></a>
+
+				<?php if(strcasecmp(getCurrentSlug(), "home")==0) { ?>
+					<a href="#top"><div>Home</div></a>
+					<div class="my_subMenus" style="margin-left:15px;">
+						<a href="#what">What we do</a><br>
+						<a href="#products">Products</a><br>
+						<a href="#solutions">Solutions</a><br>
+						<a href="#clients">Clients</a>
+					</div>
+				<?php }else{ ?>
+					<a href="/"><div>Home</div></a>
+				<?php } ?>
+
+				<?php if(strcasecmp(getCurrentSlug(), "solutions")==0) { ?>
+					<a href="#top"><div>Solutions</div></a>
+					<div class="my_subMenus" style="margin-left:15px;">
+						<a href="#people">People</a><br>
+						<a href="#assets">Assets</a><br>
+						<a href="#crowds">Crowds</a>
+					</div>
+				<?php }else{ ?>
+					<a href="/solutions/"><div>Solutions</div></a>
+				<?php } ?>
+
+				<?php if(strcasecmp(getCurrentSlug(), "products")==0) { ?>
+					<a href="#top"><div>Products</div></a>
+					<div class="my_subMenus" style="margin-left:15px;">
+						<a href="#ssense">SENSE</a><br>
+						<a href="#ssdk">REACH</a><br>
+						<a href="#sassist">ASSIST</a>
+					</div>
+				<?php }else{ ?>
+					<a href="/products/"><div>Products</div></a>
+				<?php } ?>
+
+				<?php if(strcasecmp(getCurrentSlug(), "tech")==0) { ?>
+					<a href="#top"><div>Tech</div></a>
+					<div class="my_subMenus" style="margin-left:15px;">
+						<a href="#location">Location</a><br>
+						<a href="#proximity">Proximity</a><br>
+						<a href="#openplatform">Open Platform</a>
+					</div>
+					<?php }else{ ?>
+						<a href="/tech/"><div>Tech</div></a>
+					<?php } ?>
+
+				<?php if(strcasecmp(getCurrentSlug(), "company")==0) { ?>
+					<a href="#top"><div>Company</div></a>
+					<div class="my_subMenus" style="margin-left:15px;">
+						<a href="#company">The Company</a><br>
+						<a href="#team">The Team</a><br>
+						<a href="#board">The Board</a><!--<br>
+						<a href="#investors">Our Investors</a>-->
+					</div>
+				<?php }else{ ?>
+					<a href="/company/"><div>Company</div></a>
+				<?php } ?>
+
 				</ul>
 
 			</nav><!-- #primary-menu end -->
