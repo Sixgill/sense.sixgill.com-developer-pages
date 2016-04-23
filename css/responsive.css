@@ -2083,6 +2083,15 @@
 @media (max-width: 767px) {
 
 
+.mobile-position-center {
+    text-align: center;
+}
+    
+.mobile-hiden-line {
+    background: none !important; 
+}
+
+
 
 	body { padding: 0 !important; }
 

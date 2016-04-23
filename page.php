@@ -85,8 +85,8 @@
 
 	<a name="clients"></a>
 	<section id="clients" style="color:#FFFFFF;" align="center">
-		<div style="padding:0px 50px;" align="center">
-			<div class="fancy-title title-dotted-border title-center" style="width:720px;">
+		<div align="center">
+			<div class="fancy-title title-dotted-border title-center mobile-hiden-line">
 				<h3 style="font-size:20px; font-weight:normal; color:#383838;">Proven at Consumer Volumes</h3>
 			</div>
 			<div style="max-width:720px; margin-bottom:35px;">
