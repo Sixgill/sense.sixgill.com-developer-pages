@@ -392,6 +392,35 @@ p {font-size:13px; font-weight:normal;}
 	background-image:url(/wp-content/themes/sixgill/td/logo/logo_mobile.png);
 	 margin:10px 0px;
 }
+@media (min-width: 767px) {
+
+    .titleInside2 {
+		font-size:30px;
+		font-weight:bold;
+	 	text-align:center;
+	 	margin:0px;
+	 	padding-right:20px;
+	}
+}
+
+@media (max-width: 767px) {
+.titleInside2 {
+	font-family: "Lato", serif, sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#0051C6;
+	 text-align:left;
+}
+}
+
+.titleInside2 {
+	font-family: "Lato", serif, sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#0051C6;
+}
 
 .titleInside {
 	font-family: "Lato", serif, sans-serif;
@@ -483,6 +512,7 @@ p {font-size:13px; font-weight:normal;}
 	.titleInside-tech {
 	 	padding-right:0px;
 	}
+    
 
 	.tech-first-text-title {
 		width:auto;
