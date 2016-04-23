@@ -100,6 +100,7 @@ all classes apply for desktop
 	.my_titSolutions {
 		font-size:30px;
 		padding-right:20px;
+        text-align:right;
 	}
 	.my_iconSolution {width:115px;}
 	.my_boxSolution_title {}
@@ -107,7 +108,12 @@ all classes apply for desktop
 	.footer_Schedule { text-align:right;	}
 }
 
+@media (max-width: 767px) {
+	.my_titSolutions {
 
+        text-align:left;
+	}
+}
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
 	.logoSIXGILL {width:245px; height:96px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_tablet.png);}
@@ -133,7 +139,7 @@ all classes apply for desktop
 	.my_titSolutions {
 		font-size:30px;
 		font-weight:bold;
-		text-align:center;
+		//text-align:center;
 		padding:0px;
 	}
 	.my_txtSolutions {
