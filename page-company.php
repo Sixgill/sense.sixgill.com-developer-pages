@@ -82,7 +82,7 @@
 
 		<a name="board"></a>
 		<section id="board" style="background-color:#2e2e2e; color:#FFFFFF;">
-			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004;">
+			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 6%; text-align: center;">
 				<div align="center"><p class="btnInside" style="color:#FFFFFF; border-color:#FFF;">The Board</p></div>
 				<p class="pCompany">
 						<div class="col_one_third" align="left">
@@ -91,7 +91,7 @@
 						<div class="col_one_third" align="left">
 							<?php echo getPageContentBySlug("company-phil-ressler"); ?>
 						</div>
-						<div class="col_one_third col_last" align="left" style="padding:0px 50px 0px 0px;">
+						<div class="col_one_third col_last" align="left" style="padding:0px 0px 0px 0px;">
 							<?php echo getPageContentBySlug("company-christopher-rogers"); ?>
 						</div>
 					</p>
