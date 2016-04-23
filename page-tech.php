@@ -17,7 +17,7 @@
 
     <div class="header-stick" style="background-color:#F8F8F8; border:0px solid #FF0004;">
       <div class="container-fluid center clearfix" style="padding-top:75px; max-width:950px;  border:0px solid #FF0004;">
-        <?php echo getPageContentBySlug("tech-text-1"); ?>
+          <?php echo getPageContentBySlug("tech-text-1"); ?>
       </div>
 
     </div>
