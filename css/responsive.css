@@ -2086,6 +2086,10 @@
 .mobile-position-center {
     text-align: center;
 }
+    
+.mobile-hiden-line {
+    background: none !important; 
+}
 
 
 
