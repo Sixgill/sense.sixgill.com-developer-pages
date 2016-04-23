@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.5" created="2016-04-23 13:19" -->
+<!-- generator="WordPress/4.5" created="2016-04-23 15:05" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -27,13 +27,13 @@
 
 <channel>
 	<title>sixgill</title>
-	<link>http://travel-app.ru</link>
+	<link>http://dev-sixgill.pantheonsite.io</link>
 	<description></description>
-	<pubDate>Sat, 23 Apr 2016 13:19:00 +0000</pubDate>
+	<pubDate>Sat, 23 Apr 2016 15:05:40 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>http://travel-app.ru</wp:base_site_url>
-	<wp:base_blog_url>http://travel-app.ru</wp:base_blog_url>
+	<wp:base_site_url>http://dev-sixgill.pantheonsite.io</wp:base_site_url>
+	<wp:base_blog_url>http://dev-sixgill.pantheonsite.io</wp:base_blog_url>
 
 	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[weezlabs]]></wp:author_login><wp:author_email><![CDATA[ed8009@yandex.ry]]></wp:author_email><wp:author_display_name><![CDATA[weezlabs]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
@@ -41,19 +41,19 @@
 	<generator>https://wordpress.org/?v=4.5</generator>
 
 <image>
-	<url>http://travel-app.ru/wp-content/uploads/2016/04/cropped-logo_desktop-32x32.png</url>
+	<url>http://dev-sixgill.pantheonsite.io/wp-content/uploads/2016/04/cropped-logo_desktop-32x32.png</url>
 	<title>sixgill</title>
-	<link>http://travel-app.ru</link>
+	<link>http://dev-sixgill.pantheonsite.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 
 	<item>
 		<title>Home</title>
-		<link>http://travel-app.ru/</link>
+		<link>http://dev-sixgill.pantheonsite.io/</link>
 		<pubDate>Tue, 19 Apr 2016 09:15:42 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=2</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=2</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -77,21 +77,13 @@
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Solutions</title>
-		<link>http://travel-app.ru/solutions/</link>
+		<link>http://dev-sixgill.pantheonsite.io/solutions/</link>
 		<pubDate>Tue, 19 Apr 2016 16:16:51 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=36</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=36</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div id="wrapper" class="clearfix" style="margin: 0px 0px 0px 0px; position:inherit">
 
@@ -284,21 +276,13 @@ Sixgill can provide immediate feedback on crowd behaviors as well as a mechanism
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Product</title>
-		<link>http://travel-app.ru/products/</link>
+		<link>http://dev-sixgill.pantheonsite.io/products/</link>
 		<pubDate>Tue, 19 Apr 2016 16:27:24 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=44</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=44</guid>
 		<description></description>
 		<content:encoded><![CDATA[<a name="top"></a>	
 <div id="wrapper" class="clearfix" style="margin: 0px 0px 0px 0px; position:inherit">
@@ -474,21 +458,13 @@ Your app is already powerful; add the power of proximity awareness with the Sixg
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Tech</title>
-		<link>http://travel-app.ru/tech/</link>
+		<link>http://dev-sixgill.pantheonsite.io/tech/</link>
 		<pubDate>Tue, 19 Apr 2016 20:14:56 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=121</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=121</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div id="wrapper" class="clearfix" style="margin: 0px 0px 0px 0px; position:inherit">
 		<section id="slider" class="slider-parallax swiper_wrapper clearfix">
@@ -607,21 +583,13 @@ Your app is already powerful; add the power of proximity awareness with the Sixg
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Company</title>
-		<link>http://travel-app.ru/company/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/</link>
 		<pubDate>Tue, 19 Apr 2016 20:20:44 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=128</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=128</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div id="wrapper" class="clearfix" style="margin: 0px 0px 0px 0px; position:inherit">
 		<section id="slider" class="slider-parallax swiper_wrapper clearfix">
@@ -792,21 +760,13 @@ Your app is already powerful; add the power of proximity awareness with the Sixg
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Home video text</title>
-		<link>http://travel-app.ru/home/home-video-text/</link>
+		<link>http://dev-sixgill.pantheonsite.io/home/home-video-text/</link>
 		<pubDate>Fri, 22 Apr 2016 14:00:45 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=466</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=466</guid>
 		<description></description>
 		<content:encoded><![CDATA[Mobility in business is a permanent trend. Enterprise need for control never ends. You don’t have to choose. Champion both.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -830,21 +790,13 @@ Your app is already powerful; add the power of proximity awareness with the Sixg
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Home text 2</title>
-		<link>http://travel-app.ru/home/home-text-2/</link>
+		<link>http://dev-sixgill.pantheonsite.io/home/home-text-2/</link>
 		<pubDate>Fri, 22 Apr 2016 21:14:15 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=476</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=476</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="homeSupTit">We are experts in helping you</div>
 				<div class="homeTit">track, determine and act</div>
@@ -870,17 +822,13 @@ Your app is already powerful; add the power of proximity awareness with the Sixg
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Home text 3</title>
-		<link>http://travel-app.ru/home/home-text-3/</link>
+		<link>http://dev-sixgill.pantheonsite.io/home/home-text-3/</link>
 		<pubDate>Fri, 22 Apr 2016 21:43:45 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=482</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=482</guid>
 		<description></description>
 		<content:encoded><![CDATA[Sixgill Sense<sup style="font-size: small;">TM</sup> tracks, determines, and acts on the<br>
 
@@ -902,17 +850,13 @@ changing proximity of people, places and things.]]></content:encoded>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Home people proximity</title>
-		<link>http://travel-app.ru/home/home-people-proximity/</link>
+		<link>http://dev-sixgill.pantheonsite.io/home/home-people-proximity/</link>
 		<pubDate>Fri, 22 Apr 2016 21:47:29 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=486</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=486</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="home3Tit">Proximity for People</div>
 <div class="home3Txt">Trigger messages to employees<br>based on their location.</div>]]></content:encoded>
@@ -933,17 +877,13 @@ changing proximity of people, places and things.]]></content:encoded>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Home assets proximity</title>
-		<link>http://travel-app.ru/home/home-assets-proximity/</link>
+		<link>http://dev-sixgill.pantheonsite.io/home/home-assets-proximity/</link>
 		<pubDate>Fri, 22 Apr 2016 21:48:59 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=489</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=489</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="home3Tit">Proximity for ASSETS</div>
 <div class="home3Txt">Track assets as they are being<br>manufactured and moved from<br>building to building.</div>]]></content:encoded>
@@ -964,17 +904,13 @@ changing proximity of people, places and things.]]></content:encoded>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Home crowds proximity</title>
-		<link>http://travel-app.ru/home/home-crowds-proximity/</link>
+		<link>http://dev-sixgill.pantheonsite.io/home/home-crowds-proximity/</link>
 		<pubDate>Fri, 22 Apr 2016 21:50:28 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=491</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=491</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="home3Tit">Proximity for CROWDS</div>
 <div class="home3Txt">Direct event attendees toward optimal<br>
@@ -997,17 +933,13 @@ and improve their experience.</div>]]></content:encoded>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Company: The company</title>
-		<link>http://travel-app.ru/company/company-the-company/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/company-the-company/</link>
 		<pubDate>Fri, 22 Apr 2016 21:55:10 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=498</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=498</guid>
 		<description></description>
 		<content:encoded><![CDATA[Sixgill LLC is the enterprise redirection of the proximity software and data technology originally developed by Zos Communications LLC for its sponsor-to-attendee communications and crowd management projects for large events. Founded in 2007 by brothers Jon and Russ Ziskind, Zos Communications pioneered open architecture, device and data-ecumenical proximity services for smartphone apps, their users, and the brands interested in reaching them.
 
@@ -1031,17 +963,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Team</title>
-		<link>http://travel-app.ru/company/team/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/team/</link>
 		<pubDate>Fri, 22 Apr 2016 21:56:36 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=501</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=501</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1061,27 +989,21 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>PHIL RESSLER</title>
-		<link>http://travel-app.ru/company/team/team-phil-ressler/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/team/team-phil-ressler/</link>
 		<pubDate>Fri, 22 Apr 2016 22:08:15 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=503</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=503</guid>
 		<description></description>
-		<content:encoded><![CDATA[<div class="mobile-position-center">
-<span class="companyName">PHIL RESSLER</span><br>
-							<span class="companyJob" >Chief Executive Officer</span><br>
-</div>
-							<span class="companyDescription">Phil has been serially involved in building companies and expanding markets for a wide range of innovators in enterprise data availability, comprehension and collaboration spanning the mobile, web, networking and PC eras.</span><br>
-							<p class="LearnMoreTxt" id="lmtxt_Phill" style="display: none">His programs accelerated demand and market comprehension for early pioneers Lotus Development Corp., Nantucket Corp., Gupta Corp. inquiry.com and Callidus Software. He advised dozens of enterprise, communications, mobile and media start-ups during his work in venture capital at Clearstone Venture Partners, and returned to the operating world in 2008 as CEO at photorealistic animation innovator Big Stage Entertainment. He helped companies find focus and exits in collaborative accountability and analytic database markets, and led a product innovation and business revival as CEO at manufacturer Seymour Duncan during the Crash. After launching streaming data innovator Bottlenose into revenue and raising its Series B financing, Phil’s renewed interest in new data types with strategic value led him to reformulate Zos Communications as Sixgill LLC for the enterprise.</p>
-<div class="mobile-position-center">
-							<a class="btnLearnMore" id="lmbtn_Phill" href="javascript:toggle('lmtxt_Phill','lmbtn_Phill');">Learn More &#8744;</a>
-</div>]]></content:encoded>
+		<content:encoded><![CDATA[<span class="companyName">PHIL RESSLER</span><br>
+<span class="companyJob">Chief Executive Officer</span><br>
+<span class="companyDescription">Phil has been serially involved in building companies and expanding markets for a wide range of innovators in enterprise data availability, comprehension and collaboration spanning the mobile, web, networking and PC eras.</span><br>
+<span style="display: none" id="lmtxt_Phill" class="companyDescription">
+His programs accelerated demand and market comprehension for early pioneers Lotus Development Corp., Nantucket Corp., Gupta Corp. inquiry.com and Callidus Software. He advised dozens of enterprise, communications, mobile and media start-ups during his work in venture capital at Clearstone Venture Partners, and returned to the operating world in 2008 as CEO at photorealistic animation innovator Big Stage Entertainment. He helped companies find focus and exits in collaborative accountability and analytic database markets, and led a product innovation and business revival as CEO at manufacturer Seymour Duncan during the Crash. After launching streaming data innovator Bottlenose into revenue and raising its Series B financing, Phil’s renewed interest in new data types with strategic value led him to reformulate Zos Communications as Sixgill LLC for the enterprise.
+</span>
+<a class="btnLearnMore" id="lmbtn_Phill" href="javascript:toggle('lmtxt_Phill','lmbtn_Phill');">Learn More &#8744;</a>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>503</wp:post_id>
 		<wp:post_date><![CDATA[2016-04-22 22:08:15]]></wp:post_date>
@@ -1099,27 +1021,27 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>MIKE HOROWITZ</title>
-		<link>http://travel-app.ru/company/team/team-mike-horowitz/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/team/team-mike-horowitz/</link>
 		<pubDate>Fri, 22 Apr 2016 22:09:26 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=505</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=505</guid>
 		<description></description>
-		<content:encoded><![CDATA[<div class="mobile-position-center">
-<span class="companyName">MIKE HOROWITZ</span><br>
-							<span class="companyJob">Senior Vice President, Product Management & Engineering</span><br>
-</div>
-							<span class="companyDescription">If you use any of the popular cloud-based platform applications available on the web or bought an event ticket online, you’ve probably used something cool that Mike built or influenced.</span><br>
-							<p class="LearnMoreTxt" id="lmtxt_Mike" style="display: none">As a product leader building innovative consumer and enterprise applications for mobile and the web, Mike has indirectly reached hundreds of millions of customers through raw startups Applied Semantics, Fetch and RadicalMail to established titans Google (AdSense, Picasa, Google Apps), Microsoft (FrontPage) and Ticketmaster (client and consumer apps). Having worked on everything from enterprise software, machine learning, communications, messaging, email, structured data, consumer ecommerce, and machine vision systems deployed from hugely-scalable platforms, Mike is uniquely qualified to lead the evolution of Sixgill Sense from today’s nascent proximity applications to the coming surge of device populations and streaming instructions in the billions, reliant on real-time proximity comprehension.</p>
-<div class="mobile-position-center">
-							<a class="btnLearnMore" id="lmbtn_Mike" href="javascript:toggle('lmtxt_Mike','lmbtn_Mike');">Learn More &#8744;</a>
-</div>]]></content:encoded>
+		<content:encoded><![CDATA[<span class="companyName">MIKE HOROWITZ</span>
+<br>
+<span class="companyJob">Senior Vice President, Product Management & Engineering</span><br>
+<span class="companyDescription">
+If you use any of the popular cloud-based platform applications available on the web or bought an event ticket online, you’ve probably used something cool that Mike built or influenced.
+</span>
+<br>
+<span class="companyDescription" id="lmtxt_Mike" style="display: none">
+As a product leader building innovative consumer and enterprise applications for mobile and the web, Mike has indirectly reached hundreds of millions of customers through raw startups Applied Semantics, Fetch and RadicalMail to established titans Google (AdSense, Picasa, Google Apps), Microsoft (FrontPage) and Ticketmaster (client and consumer apps). Having worked on everything from enterprise software, machine learning, communications, messaging, email, structured data, consumer ecommerce, and machine vision systems deployed from hugely-scalable platforms, Mike is uniquely qualified to lead the evolution of Sixgill Sense from today’s nascent proximity applications to the coming surge of device populations and streaming instructions in the billions, reliant on real-time proximity comprehension.
+</span>
+<a class="btnLearnMore" id="lmbtn_Mike" href="javascript:toggle('lmtxt_Mike','lmbtn_Mike');">
+Learn More &#8744;
+</a>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>505</wp:post_id>
 		<wp:post_date><![CDATA[2016-04-22 22:09:26]]></wp:post_date>
@@ -1137,27 +1059,25 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>JEFF ESTER</title>
-		<link>http://travel-app.ru/company/team/team-jeff-ester/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/team/team-jeff-ester/</link>
 		<pubDate>Fri, 22 Apr 2016 22:10:29 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=508</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=508</guid>
 		<description></description>
-		<content:encoded><![CDATA[<div class="mobile-position-center">
-<span class="companyName">JEFF ESTER</span><br>
-							<span class="companyJob">Senior Vice President, Revenue</span><br>
-</div>
-							<span class="companyDescription">Jeff has built an extended career as the pioneering revenue strategist and instigator in early-stage companies just launching into ungelled markets where innovators find themselves on the cusp of explosive growth.</span><br>
-							<p class="LearnMoreTxt" id="lmtxt_Jeff" style="display: none">He has proven able to build and lead success-driving revenue teams and lay in selling infrastructure that gives young enterprise companies scale and growth. Jeff began his career learning disciplined enterprise sales at Oracle and took his newly-acquired expertise to then-startup Pure Software. He pioneered enterprise product sales for Netscape, continuing to serve AOL after acquisition. After over a decade incubating and advising a plethora of technology startups, Jeff returned to the operating world to build and lead the sales function at customer intelligence innovator EdgeTheory, prior to joining Zos Communications and its transformation into Sixgill.</p>
-<div class="mobile-position-center">
-							<a class="btnLearnMore" id="lmbtn_Jeff" href="javascript:toggle('lmtxt_Jeff','lmbtn_Jeff');">Learn More &#8744;</a>
-</div>]]></content:encoded>
+		<content:encoded><![CDATA[<span class="companyName">JEFF ESTER</span><br>
+<span class="companyJob">Senior Vice President, Revenue</span><br>
+<span class="companyDescription">
+Jeff has built an extended career as the pioneering revenue strategist and instigator in early-stage companies just launching into ungelled markets where innovators find themselves on the cusp of explosive growth.
+</span>
+<br>
+
+<span class="companyDescription" id="lmtxt_Jeff" style="display: none">
+He has proven able to build and lead success-driving revenue teams and lay in selling infrastructure that gives young enterprise companies scale and growth. Jeff began his career learning disciplined enterprise sales at Oracle and took his newly-acquired expertise to then-startup Pure Software. He pioneered enterprise product sales for Netscape, continuing to serve AOL after acquisition. After over a decade incubating and advising a plethora of technology startups, Jeff returned to the operating world to build and lead the sales function at customer intelligence innovator EdgeTheory, prior to joining Zos Communications and its transformation into Sixgill.
+</span>
+<a class="btnLearnMore" id="lmbtn_Jeff" href="javascript:toggle('lmtxt_Jeff','lmbtn_Jeff');">Learn More &#8744;</a>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>508</wp:post_id>
 		<wp:post_date><![CDATA[2016-04-22 22:10:29]]></wp:post_date>
@@ -1175,27 +1095,25 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>SHAWN GUNN</title>
-		<link>http://travel-app.ru/company/team/team-shawn-gunn/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/team/team-shawn-gunn/</link>
 		<pubDate>Fri, 22 Apr 2016 22:11:53 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=510</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=510</guid>
 		<description></description>
-		<content:encoded><![CDATA[<div class="mobile-position-center">
-<span class="companyName">SHAWN GUNN</span><br>
-							<span class="companyJob">Senior Vice President, Business Development</span><br>
-</div>
-							<span class="companyDescription">Shawn has accumulated nearly unparalleled mobile, location services and movement analytics expertise serving as ecosystem builder at a succession of mobility markets innovators.</span><br>
-							<p class="LearnMoreTxt" id="lmtxt_Shawn" style="display: none">After beginning his career as a financial trader, Shawn built his mobility career brick-by-brick leading business development and strategic partnership functions at Globalspec, Traffic.com, NAVTEQ and Nokia, with a detour as a consultant at Hearst Digital along the way. Not merely a senior relationship executive, Shawn brings Sixgill a recurring history of connecting the ecosystem building of business development to hard revenue, and monetization of ancillary services.</p>
-<div class="mobile-position-center">
-							<a class="btnLearnMore" id="lmbtn_Shawn" href="javascript:toggle('lmtxt_Shawn','lmbtn_Shawn');">Learn More &#8744;</a>
-</div>]]></content:encoded>
+		<content:encoded><![CDATA[<span class="companyName">SHAWN GUNN</span><br>
+<span class="companyJob">Senior Vice President, Business Development</span><br>
+<span class="companyDescription">
+Shawn has accumulated nearly unparalleled mobile, location services and movement analytics expertise serving as ecosystem builder at a succession of mobility markets innovators.
+</span>
+<br>
+
+<span class="companyDescription" id="lmtxt_Shawn" style="display: none">
+After beginning his career as a financial trader, Shawn built his mobility career brick-by-brick leading business development and strategic partnership functions at Globalspec, Traffic.com, NAVTEQ and Nokia, with a detour as a consultant at Hearst Digital along the way. Not merely a senior relationship executive, Shawn brings Sixgill a recurring history of connecting the ecosystem building of business development to hard revenue, and monetization of ancillary services.
+</span>
+<a class="btnLearnMore" id="lmbtn_Shawn" href="javascript:toggle('lmtxt_Shawn','lmbtn_Shawn');">Learn More &#8744;</a>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>510</wp:post_id>
 		<wp:post_date><![CDATA[2016-04-22 22:11:53]]></wp:post_date>
@@ -1213,27 +1131,24 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>ARNOLD WALDSTEIN</title>
-		<link>http://travel-app.ru/company/team/team-arnold-waldstein/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/team/team-arnold-waldstein/</link>
 		<pubDate>Fri, 22 Apr 2016 22:12:52 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=512</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=512</guid>
 		<description></description>
-		<content:encoded><![CDATA[<div class="mobile-position-center">
-<span class="companyName">ARNOLD WALDSTEIN</span><br>
-							<span class="companyJob">Senior Vice President, Marketing</span><br>
-</div>
-							<span class="companyDescription">Beginning at Atari and since then weaving both consumer and enterprise experiences, Arnold amassed expertise turning ideas into products, vision into brands and communities into markets.</span><br>
-							<p class="LearnMoreTxt" id="lmtxt_Arnold" style="display: none">He has blended classic market-making and constituency-building programs with hard revenue-producing development and structuring of channels to help a succession of innovators find revenue traction and scale demand for rapid growth and equity value. Arnold took his consumer chops honed at Atari to professional video editing pioneer Digital FX, and then launched the consumer multimedia revolution at Creative Labs with the launch of the Soundblaster card. Serving as the chief marketer at Electric Communities, Moai Technologies, Keynote Systems and RealD gave Arnold a decade of enterprise and technology B2B experience, during which he was able to blend the audience-expanding excitement of consumer marketing with the ROI, technology vetting and results focus of enterprise procurement to engineer market comprehension and sustained growth.</p>
-<div class="mobile-position-center">
-							<a class="btnLearnMore" id="lmbtn_Arnold" href="javascript:toggle('lmtxt_Arnold','lmbtn_Arnold');">Learn More &#8744;</a>
-</div>]]></content:encoded>
+		<content:encoded><![CDATA[<span class="companyName">ARNOLD WALDSTEIN</span><br>
+<span class="companyJob">Senior Vice President, Marketing</span><br>
+<span class="companyDescription">
+Beginning at Atari and since then weaving both consumer and enterprise experiences, Arnold amassed expertise turning ideas into products, vision into brands and communities into markets.
+</span>
+<br>
+
+<span class="companyDescription" id="lmtxt_Arnold" style="display: none">He has blended classic market-making and constituency-building programs with hard revenue-producing development and structuring of channels to help a succession of innovators find revenue traction and scale demand for rapid growth and equity value. Arnold took his consumer chops honed at Atari to professional video editing pioneer Digital FX, and then launched the consumer multimedia revolution at Creative Labs with the launch of the Soundblaster card. Serving as the chief marketer at Electric Communities, Moai Technologies, Keynote Systems and RealD gave Arnold a decade of enterprise and technology B2B experience, during which he was able to blend the audience-expanding excitement of consumer marketing with the ROI, technology vetting and results focus of enterprise procurement to engineer market comprehension and sustained growth.
+</span>
+<a class="btnLearnMore" id="lmbtn_Arnold" href="javascript:toggle('lmtxt_Arnold','lmbtn_Arnold');">Learn More &#8744;</a>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>512</wp:post_id>
 		<wp:post_date><![CDATA[2016-04-22 22:12:52]]></wp:post_date>
@@ -1251,27 +1166,24 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>JOHN DOHM</title>
-		<link>http://travel-app.ru/company/team/team-john-dohm/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/team/team-john-dohm/</link>
 		<pubDate>Fri, 22 Apr 2016 22:13:38 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=515</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=515</guid>
 		<description></description>
-		<content:encoded><![CDATA[<div class="mobile-position-center">
-<span class="companyName">JOHN DOHM</span><br>
-							<span class="companyJob">Platform Technology Advisor</span><br>
-</div>
-							<span class="companyDescription">His title might include the term "Advisor," but we think of John as one of us. John is an unusual hybrid in technology career terms.</span><br>
-							<p class="LearnMoreTxt" id="lmtxt_John" style="display: none">He began as a software engineer for internal enterprise systems and spiraled away from his keyboard enough to gather up an ever-widening range of technology creation, scaling, architecture, deployment, operations and and general executive experiences. In a succession of companies including Quaker, Deloitte, American Standard, Intellos, Guru Denim and RealD, John worked on networking infrastructure, internal ERP, inventory, CRM and HR systems, vehicle control and telematics systems, and managed global IT operations. For the past several years, including his half-decade thus far at RealD, John has been thinking seriously about how to solve tracking of mobile distributed assets and thus became interested in Sixgill. Aside from John’s continuing interest in technology enabling highly scalable systems, his prior experience in the CIO function gives us valuable buyer perspective about our enterprise proximity service.</p>
-<div class="mobile-position-center">
-							<a class="btnLearnMore" id="lmbtn_John" href="javascript:toggle('lmtxt_John','lmbtn_John');">Learn More &#8744;</a>
-</div>]]></content:encoded>
+		<content:encoded><![CDATA[<span class="companyName">JOHN DOHM</span><br>
+<span class="companyJob">Platform Technology Advisor</span><br>
+<span class="companyDescription">
+His title might include the term "Advisor," but we think of John as one of us. John is an unusual hybrid in technology career terms.
+</span>
+<br>
+<span class="companyDescription" id="lmtxt_John" style="display: none">
+He began as a software engineer for internal enterprise systems and spiraled away from his keyboard enough to gather up an ever-widening range of technology creation, scaling, architecture, deployment, operations and and general executive experiences. In a succession of companies including Quaker, Deloitte, American Standard, Intellos, Guru Denim and RealD, John worked on networking infrastructure, internal ERP, inventory, CRM and HR systems, vehicle control and telematics systems, and managed global IT operations. For the past several years, including his half-decade thus far at RealD, John has been thinking seriously about how to solve tracking of mobile distributed assets and thus became interested in Sixgill. Aside from John’s continuing interest in technology enabling highly scalable systems, his prior experience in the CIO function gives us valuable buyer perspective about our enterprise proximity service.
+</span>
+<a class="btnLearnMore" id="lmbtn_John" href="javascript:toggle('lmtxt_John','lmbtn_John');">Learn More &#8744;</a>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>515</wp:post_id>
 		<wp:post_date><![CDATA[2016-04-22 22:13:38]]></wp:post_date>
@@ -1289,17 +1201,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>HARRY HOPPER</title>
-		<link>http://travel-app.ru/company/company-harry-hopper/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/company-harry-hopper/</link>
 		<pubDate>Fri, 22 Apr 2016 22:15:40 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=517</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=517</guid>
 		<description></description>
 		<content:encoded><![CDATA[<span class="companyName">HARRY HOPPER</span><br>
 							<span class="companyJob">Executive Chairman</span><br>
@@ -1327,17 +1235,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>PHIL RESSLER</title>
-		<link>http://travel-app.ru/company/company-phil-ressler/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/company-phil-ressler/</link>
 		<pubDate>Fri, 22 Apr 2016 22:17:31 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=519</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=519</guid>
 		<description></description>
 		<content:encoded><![CDATA[<span class="companyName">PHIL RESSLER</span><br>
 							<span class="companyJob">CEO</span><br>
@@ -1360,17 +1264,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>CHRISTOPHER ROGERS</title>
-		<link>http://travel-app.ru/company/company-christopher-rogers/</link>
+		<link>http://dev-sixgill.pantheonsite.io/company/company-christopher-rogers/</link>
 		<pubDate>Fri, 22 Apr 2016 22:18:41 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=521</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=521</guid>
 		<description></description>
 		<content:encoded><![CDATA[<span class="companyName">CHRISTOPHER ROGERS</span><br>
 							<span class="companyJob">Director</span><br>
@@ -1397,17 +1297,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Legal</title>
-		<link>http://travel-app.ru/legal/</link>
+		<link>http://dev-sixgill.pantheonsite.io/legal/</link>
 		<pubDate>Fri, 22 Apr 2016 22:24:05 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=523</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=523</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1427,17 +1323,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Legal content</title>
-		<link>http://travel-app.ru/legal/legal-content/</link>
+		<link>http://dev-sixgill.pantheonsite.io/legal/legal-content/</link>
 		<pubDate>Fri, 22 Apr 2016 22:25:32 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=525</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=525</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="titLegal text-left">Sixgill, LLC – Privacy Policy</div>
         <p class="text-left">Sixgill, LLC (“Sixgill”) values the privacy of our users. This Privacy Policy describes Sixgill’ policies and procedures on the collection, use, and disclosure of Your information. This Privacy Policy is subject to the Sixgill Terms and Conditions of Use. Your use of Sixgill Products and Services (also “Software”) and any information You provide remain subject to the terms of this Privacy Policy. This Privacy Policy is available at www.xxx.xxxx. Please read the following to learn more about our privacy policy.<br><br>
@@ -1510,26 +1402,22 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Tech text 1</title>
-		<link>http://travel-app.ru/tech/tech-text-1/</link>
+		<link>http://dev-sixgill.pantheonsite.io/tech/tech-text-1/</link>
 		<pubDate>Fri, 22 Apr 2016 22:27:21 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=527</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=527</guid>
 		<description></description>
-		<content:encoded><![CDATA[<div class="col_one_third titleInside text-right nomargin" style="padding-right:20px; border:0px solid #FF0004;">
-          <div align="center" style="width:250px;">
-            <span style="font-size:30px; color:#004CBF; font-weight:bold;">Technology</span><br>
-            <span style="font-size:21px; color:#9a9a9a; font-weight:normal;">that simplifies your</span><br>
-            <span>world</span>
-          </div>
-        </div>
-        <div class="col_two_third col_last text-left" style="border-left:1px solid #9C9C9C; padding-left:20px;"><p class="pSolutions"><strong>Sixgill Sense technology was designed for the new mobile, distributed, connected workplace, where enterprise effectiveness will be determined in part by how effectively the burgeoning ad hoc mobility and continuous movement of people and assets are managed.</strong><br><br>Sixgill combines a market-tested set of proximity technologies with an open architecture that allows enterprises to seamlessly integrate this new capability into existing business processes and software. The result is a proximity PaaS that provides both insight into the activity of the enterprise and a way to drive proximity-induced actions based on business goals.</p></div>]]></content:encoded>
+		<content:encoded><![CDATA[<div class="col_one_third titleInside titleInside-tech text-right nomargin text-first-text">
+            	<div align="center" class="tech-first-text-title">
+            		<span style="font-size:30px; color:#004CBF; font-weight:bold;">Technology</span><br>
+              	<span style="font-size:21px; color:#9a9a9a; font-weight:normal;">that simplifies your</span><br>
+              	<span>world</span>
+              </div>
+            </div>
+            <div class="col_two_third col_last text-left my_txtSolutions"><p class="pSolutions"><strong>Sixgill Sense technology was designed for the new mobile, distributed, connected workplace, where enterprise effectiveness will be determined in part by how effectively the burgeoning ad hoc mobility and continuous movement of people and assets are managed.</strong><br><br>Sixgill combines a market-tested set of proximity technologies with an open architecture that allows enterprises to seamlessly integrate this new capability into existing business processes and software. The result is a proximity PaaS that provides both insight into the activity of the enterprise and a way to drive proximity-induced actions based on business goals.</p></div>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>527</wp:post_id>
 		<wp:post_date><![CDATA[2016-04-22 22:27:21]]></wp:post_date>
@@ -1547,17 +1435,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Tech text 2</title>
-		<link>http://travel-app.ru/tech/tech-text-2/</link>
+		<link>http://dev-sixgill.pantheonsite.io/tech/tech-text-2/</link>
 		<pubDate>Fri, 22 Apr 2016 22:28:30 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=529</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=529</guid>
 		<description></description>
 		<content:encoded><![CDATA[<strong>Sixgill uses a multi-pronged location awareness approach to best determine people and asset location, including GPS, cellular network location, WiFi access points, and Bluetooth beacons. As new ways of determining location become available, Sixgill will support them.</strong><br><br>Sixgill’s lightweight mobile SDK, Reach, turns an enterprise mobile application into a two-way proximity-informed app, able to pass location information to Sixgill for proximity determinations, and communicate relevant, contextual information to employees based on where they are. Sixgill Reach (iOS, Android, Windows Mobile) balances device battery life with responsiveness required by an anticipated proximity event. Sixgill can integrate signals from other connected devices as well, allowing for business goals around the proximity of people and key assets.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1577,17 +1461,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Tech text 3</title>
-		<link>http://travel-app.ru/tech/tech-text-3/</link>
+		<link>http://dev-sixgill.pantheonsite.io/tech/tech-text-3/</link>
 		<pubDate>Fri, 22 Apr 2016 22:29:13 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=531</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=531</guid>
 		<description></description>
 		<content:encoded><![CDATA[At the heart of Sixgill Sense is the ability to determine proximity circumstances from location data, and take appropriate action. Users define business outcomes that are triggered based on proximity determinations, other sensor data and user attributes. User attributes can be defined within Sixgill Sense or integrated via API.<br><br>When people, places or things enter, exit, or dwell within a landmark, Sixgill’s dynamic decision engine takes the right action, whether it’s one proximity event or millions to evaluate and act upon. Actions can reference a wide variety of signals, including complex polygons drawn on a map, imported lat/long data, connection to a specific WiFi access point, a given signal strength from a network beacon or access point, or any combination of these. The engine can also incorporate sequential events in the rules logic.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1607,17 +1487,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Tech text 4</title>
-		<link>http://travel-app.ru/tech/tech-text-4/</link>
+		<link>http://dev-sixgill.pantheonsite.io/tech/tech-text-4/</link>
 		<pubDate>Fri, 22 Apr 2016 22:29:44 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=533</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=533</guid>
 		<description></description>
 		<content:encoded><![CDATA[<strong>Sixgill Sense is designed to work with an enterprise’s existing systems along with existing and future location technologies. It is an agnostic, open platform that can integrate with a wide array of sensor and data inputs and virtually any activity service.</strong><br><br>The rules engine can incorporate data and attributes from existing enterprise systems, as well as third party content for better decisions. On the output side, Sixgill can integrate with messaging and enterprise systems, internal databases or third party software to utilize existing processes.<br><br>Sixgill Sense APIs allow enterprises to utilize Sixgill Sense as a service in any device, OS or data environment. From defining business logic to driving specific actions to accessing proximity data, Sixgill APIs allow full access to the Sense proximity platform’s functionality.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1637,17 +1513,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Product text 1</title>
-		<link>http://travel-app.ru/products/product-text-1/</link>
+		<link>http://dev-sixgill.pantheonsite.io/products/product-text-1/</link>
 		<pubDate>Fri, 22 Apr 2016 22:34:53 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=535</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=535</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="col_one_third titleInside text-right nomargin" style="padding-right:20px; border:0px solid #FF0004;" >PRODUCTS</div>
         <div class="col_two_third col_last text-left" style="border-left:1px solid #9C9C9C; padding-left:20px;"><p class="pSolutions">Sixgill’s cloud-based enterprise proximity platform enables your business to take control of your connected, mobile world and drive business value. From insightful analytics to precision actions based on the proximity of your people and mobile assets, Sixgill will make your business more productive and effective.</p></div>]]></content:encoded>
@@ -1668,17 +1540,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Product text 2</title>
-		<link>http://travel-app.ru/products/product-text-2/</link>
+		<link>http://dev-sixgill.pantheonsite.io/products/product-text-2/</link>
 		<pubDate>Fri, 22 Apr 2016 22:36:55 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=537</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=537</guid>
 		<description></description>
 		<content:encoded><![CDATA[<strong> The Proximity Engine for Enterprise</strong><br><br>
           <strong style="text-transform:none;">Sixgill Sense tracks, determines, and acts on the changing proximity of people, places, and things.</strong> Your world is complex. Today’s enterprise has an ever-expanding mobile workforce and increasingly sophisticated, connected assets. Sixgill Sense allows you to understand and harness this mobility and use it to your advantage, gaining awareness and insight, and driving contextual, proximity-based actions to make your organization safer, more productive and profitable.<br><br>
@@ -1724,17 +1592,13 @@ Recognizing explosive potential in the juggernaut trend toward mobile distributi
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Product text 3</title>
-		<link>http://travel-app.ru/products/product-text-3/</link>
+		<link>http://dev-sixgill.pantheonsite.io/products/product-text-3/</link>
 		<pubDate>Fri, 22 Apr 2016 22:37:36 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=539</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=539</guid>
 		<description></description>
 		<content:encoded><![CDATA[<strong>The Mobile SDK for Sixgill Sense</strong><br><br>
 Your app is already powerful; add the power of proximity awareness with the Sixgill Reach mobile SDK. The Sixgill Reach integrates seamlessly within your mobile app, creating a channel for hybrid location and sensor data to be communicated to Sixgill Sense and enabling contextual triggered messaging through your application. The Sixgill Mobile SDK is available for iOS, Android and Windows Mobile today.<br>
@@ -1759,17 +1623,13 @@ Your app is already powerful; add the power of proximity awareness with the Sixg
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Product text 4</title>
-		<link>http://travel-app.ru/products/product-text-4/</link>
+		<link>http://dev-sixgill.pantheonsite.io/products/product-text-4/</link>
 		<pubDate>Fri, 22 Apr 2016 22:38:09 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=541</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=541</guid>
 		<description></description>
 		<content:encoded><![CDATA[<strong>Professional Services for Proximity Enablement</strong><br><br>
 
@@ -1808,17 +1668,13 @@ Your app is already powerful; add the power of proximity awareness with the Sixg
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Solutions text 1</title>
-		<link>http://travel-app.ru/solutions/solutions-text-1/</link>
+		<link>http://dev-sixgill.pantheonsite.io/solutions/solutions-text-1/</link>
 		<pubDate>Fri, 22 Apr 2016 22:41:26 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=543</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=543</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="col_one_third my_titSolutions">SOLUTIONS</div>
       <div class="col_two_third my_txtSolutions col_last">Sixgill can help your business embrace mobility and gain control of your evolving connected and mobile world. Your workforce and critical assets are in motion more than ever before, creating opportunities and challenges throughout your business.<br><br>The ability to track, determine, and act in this mobile world is becoming a critical enterprise need. Sixgill automates the proximity data services necessary to support the complete spectrum of problem-solving packaged and custom mobility applications proliferating across the enterprise.</div>]]></content:encoded>
@@ -1839,17 +1695,13 @@ Your app is already powerful; add the power of proximity awareness with the Sixg
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Solutions text 2</title>
-		<link>http://travel-app.ru/solutions/solutions-text-2/</link>
+		<link>http://dev-sixgill.pantheonsite.io/solutions/solutions-text-2/</link>
 		<pubDate>Fri, 22 Apr 2016 22:41:18 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=545</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=545</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="my_boxSolution_title">PEOPLE - "Proximity for People"</div>
         <div class="my_txtSolution">People are at the heart of your business. They are constantly moving, within your facilities and outside. Making them productive, motivated, and safe is a key driver of business success.<br><br>
@@ -1884,17 +1736,13 @@ Your app is already powerful; add the power of proximity awareness with the Sixg
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Solutions text 3</title>
-		<link>http://travel-app.ru/solutions/solutions-text-3/</link>
+		<link>http://dev-sixgill.pantheonsite.io/solutions/solutions-text-3/</link>
 		<pubDate>Fri, 22 Apr 2016 22:41:59 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=547</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=547</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="my_boxSolution_title">ASSETS - "Proximity for Assets</div>
         <div class="my_txtSolution">
@@ -1924,17 +1772,13 @@ Your app is already powerful; add the power of proximity awareness with the Sixg
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Solutions text 4</title>
-		<link>http://travel-app.ru/solutions/solutions-text-4/</link>
+		<link>http://dev-sixgill.pantheonsite.io/solutions/solutions-text-4/</link>
 		<pubDate>Fri, 22 Apr 2016 22:42:27 +0000</pubDate>
 		<dc:creator><![CDATA[weezlabs]]></dc:creator>
-		<guid isPermaLink="false">http://travel-app.ru//?page_id=549</guid>
+		<guid isPermaLink="false">http://dev-sixgill.pantheonsite.io/?page_id=549</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="my_boxSolution_title">CROWDS - “Proximity for Crowds</div>
           <div class="my_txtSolution">When crowds of people assemble at events, it always presents a set of unique challenges. How should they be directed? What safety precautions should be taken? How can you market to them effectively?<br><br>
@@ -1963,10 +1807,6 @@ Sixgill can provide immediate feedback on crowd behaviors as well as a mechanism
 		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
