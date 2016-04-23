@@ -116,6 +116,10 @@ all classes apply for desktop
 		font-size:28px;
 		padding-right:10px;
 	}
+	.my_txtSolutions_noline {
+		padding-right:30px;
+	}
+
 	.my_iconSolution {width:115px;}
 	.my_boxSolution_title {}
 	.footer_Learn, .footer_Links { text-align:left; font-size:22px; font-weight:normal;	}
