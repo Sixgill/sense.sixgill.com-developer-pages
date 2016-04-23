@@ -1,0 +1,140 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+
+/* TD - 2016 - 04 - 19
+
+all classes apply for desktop
+
+
+*/
+
+/* Solutions Page classes */
+
+.my_titSolutions {
+	font-family: "Lato", serif, sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#0051C6;
+	text-align:right;
+	padding-right:30px;
+	margin-right:0px;
+}
+
+.my_txtSolutions, .my_txtSolutions_noline {
+	border-left:1px solid #9C9C9C;
+	padding-left:30px;
+	text-align:left;
+	font-size:15px;
+	color:#686868;
+}
+
+.my_txtSolutions_noline {border-left:0px;}
+
+
+.my_iconSolution {width:135px;}
+.my_boxSolution_title {
+	font-family: "Lato", serif, sans-serif;
+	font-size:27px;
+	font-weight:bolder;
+	text-transform:uppercase;
+	color:#000;
+	border:4px solid #000000;
+	padding:10px 20px;
+	text-align:center;
+	margin-bottom:35px;
+}
+
+.my_txtSolution { border:0px solid #FF0004;}
+
+
+.my_containerSolution {
+	max-width:950px;
+	padding-top:75px;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	border:0px solid #FE0004;
+}
+
+.footer_Learn, .footer_Links {
+	text-align:left;
+	border:0px solid #FE0004;
+	color:#FFF;
+	font-size:20px;
+	margin-top:12px;
+	font-weight:normal;
+	padding:0px 20px;
+}
+
+.footer_Links {text-decoration:none; font-size: 14px;	color:#FFF;}
+.footer_Links a {
+	margin: 0 10px;
+	color: #FFF;
+	border-bottom: 0px;
+}
+.footer_Links a:hover {	color: #CCC;}
+
+
+.footer_Schedule, .footer_Copy {
+	text-align:right;
+	border:0px solid #FE0004;
+	color:#FFF;
+	font-size:20px;
+	margin-top:12px;
+	font-weight:normal;
+	padding:0px 20px;
+}
+.footer_Copy {font-size: 14px;	color:#FFF;}
+
+
+
+@media only screen and (min-width : 992px) {/* For desktop: */
+	.logoSIXGILL {width:140px; height:111px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_desktop.png);}
+
+	.my_titSolutions {
+		font-size:30px;
+		padding-right:20px;
+	}
+	.my_iconSolution {width:115px;}
+	.my_boxSolution_title {}
+	.footer_Learn, .footer_Links { text-align:left; font-size:22px;	}
+	.footer_Schedule { text-align:right;	}
+}
+
+
+
+@media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
+	.logoSIXGILL {width:245px; height:96px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_tablet.png);}
+	.my_subMenus {display:none;	}
+	.my_titSolutions {
+		font-size:30px;
+		padding-right:20px;
+	}
+	.my_iconSolution {width:115px;}
+	.my_boxSolution_title {}
+	.footer_Learn, .footer_Links { text-align:left; font-size:22px; font-weight:normal;	}
+	.footer_Schedule { text-align:right;	}
+}
+
+@media only screen and (max-width: 500px) {/* For mobiles: */
+	.logoSIXGILL {width:150px; height:44px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_mobile.png); }
+
+	.my_subMenus {display:none;	}
+	.my_titSolutions {
+		font-size:30px;
+		font-weight:bold;
+		text-align:center;
+		padding:0px;
+	}
+	.my_txtSolutions {border-left:0px;}
+	.my_iconSolution {width:55px;}
+	.my_boxSolution_title { border:0px;}
+	.footer_Learn, .footer_Links { text-align:center; font-size:14px;	}
+	.footer_Schedule, .footer_Copy { text-align:center;	}
+}
