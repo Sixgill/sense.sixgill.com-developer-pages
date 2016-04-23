@@ -2083,6 +2083,11 @@
 @media (max-width: 767px) {
 
 
+.mobile-position-center {
+    text-align: center;
+}
+
+
 
 	body { padding: 0 !important; }
 

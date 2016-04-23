@@ -39,32 +39,32 @@
 			<div align="center"><p class="btnInside">OUR TEAM</p></div>
 
 			<p class="pCompany">
-						<div class="col_one_third text-right"><img src="/wp-content/themes/sixgill/images/td/company/tbn_phil.png" width="170" alt=""/></div>
+						<div class="col_one_third mobile-position-center text-right"><img src="/wp-content/themes/sixgill/images/td/company/tbn_phil.png" width="170" alt=""/></div>
 						<div class="col_two_third col_last text-left" style="padding-bottom:55px;">
 							<?php echo getPageContentBySlug("team-phil-ressler"); ?>
 						</div>
 
-						<div class="col_one_third" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbn_jeff.png" width="170" alt=""/></div>
+						<div class="col_one_third mobile-position-center" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbn_jeff.png" width="170" alt=""/></div>
 						<div class="col_two_third col_last" align="left" style="padding-bottom:55px;">
 							<?php echo getPageContentBySlug("team-jeff-ester"); ?>
 						</div>
 
-						<div class="col_one_third" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnmike.png" width="170" alt=""/></div>
+						<div class="col_one_third mobile-position-center" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnmike.png" width="170" alt=""/></div>
 						<div class="col_two_third col_last" align="left" style="padding-bottom:55px;">
 							<?php echo getPageContentBySlug("team-mike-horowitz"); ?>
 						</div>
 
-						<div class="col_one_third" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnshawn.png" width="170" alt=""/></div>
+						<div class="col_one_third mobile-position-center" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnshawn.png" width="170" alt=""/></div>
 						<div class="col_two_third col_last" align="left" style="padding-bottom:55px;">
 							<?php echo getPageContentBySlug("team-shawn-gunn"); ?>
 						</div>
 
-						<div class="col_one_third" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnarnold.png" width="170" alt=""/></div>
+						<div class="col_one_third mobile-position-center" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnarnold.png" width="170" alt=""/></div>
 						<div class="col_two_third col_last" align="left" style="padding-bottom:55px;">
 							<?php echo getPageContentBySlug("team-arnold-waldstein"); ?>
 						</div>
 
-						<div class="col_one_third" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnjohn.png" width="170" alt=""/></div>
+						<div class="col_one_third mobile-position-center" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnjohn.png" width="170" alt=""/></div>
 						<div class="col_two_third col_last" align="left" style="padding-bottom:0px;">
 							<?php echo getPageContentBySlug("team-john-dohm"); ?>
 						</div>
