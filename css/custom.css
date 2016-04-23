@@ -437,6 +437,10 @@ p {font-size:13px; font-weight:normal;}
 
 	.home3Tit_SixGill {font-size:20px;}
 
+	#primary-menu {
+		padding-bottom: 5px;
+	}
+
 }
 
 @media only screen and (min-width: 321px) {/* For tablets: */
@@ -453,6 +457,10 @@ p {font-size:13px; font-weight:normal;}
 	}
 	.iconSolutions {
 		width:115px;
+	}
+
+	#primary-menu {
+		padding-bottom: 5px;
 	}
 
 }
