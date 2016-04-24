@@ -29,7 +29,7 @@
 
 	<section id="what" class="container-fluid center clearfix nomargin nopadding">
 		<section id="what2" class="container-fluid center clearfix">
-			<div align="center" style="margin-top:70px;">
+			<div align="center" class="home-text-2">
 				<?php echo getPageContentBySlug("home-text-2"); ?>
 			</div>
 		</section>

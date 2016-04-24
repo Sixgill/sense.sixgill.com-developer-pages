@@ -326,11 +326,6 @@ body, p {
 	text-transform:uppercase;
 }
 
-.homeSupTit-with-line {
-	background-color: #fff;
-	z-index:2;
-}
-
 .homeSubTit, .home2SubTit {
 	font-weight:normal;
 	text-transform:none;
@@ -405,7 +400,7 @@ p {font-size:13px; font-weight:normal;}
 	background-size:cover;
 	background-color:#FFF;
 	padding-top:0px;
-
+	background-size: contain;
 	border:0px solid #FF0004;
 }
 
@@ -417,7 +412,7 @@ p {font-size:13px; font-weight:normal;}
 
 @media (min-width: 767px) {
 
-    .titleInside2 {
+  .titleInside2 {
 		font-size:30px;
 		font-weight:bold;
 	 	text-align:center;
@@ -427,14 +422,14 @@ p {font-size:13px; font-weight:normal;}
 }
 
 @media (max-width: 767px) {
-.titleInside2 {
-	font-family: "Lato", serif, sans-serif;
-	font-size:30px;
-	font-weight:bold;
-	text-transform:uppercase;
-	color:#0051C6;
-	 text-align:left;
-}
+	.titleInside2 {
+		font-family: "Lato", serif, sans-serif;
+		font-size:30px;
+		font-weight:bold;
+		text-transform:uppercase;
+		color:#0051C6;
+		 text-align:left;
+	}
 }
 
 .titleInside2 {
@@ -540,12 +535,11 @@ p {font-size:13px; font-weight:normal;}
 	.tech-first-text-title {
 		width:auto;
 	}
-
 }
 
 @media only screen and (min-width: 992px) {/* For desktop: */
 	.txtVideo {font-size:28px;font-weight:normal;}
 	.titLegal {font-size:40px; margin-top:60px; margin-bottom:65px;}
 	p {font-size:16px; font-weight:normal;}
-	.logoSIXGILL {width:140px; height:111px; background-image:url(/wp-content/themes/sixgill/td/logo/logo_desktop.png);}
+	.logoSIXGILL {width:140px; height:111px; background-image:url(/wp-content/themes/sixgill/td/logo/logo_desktop.png);
 }
