@@ -326,6 +326,11 @@ body, p {
 	text-transform:uppercase;
 }
 
+.homeSupTit-with-line {
+	background-color: #fff;
+	z-index:2;
+}
+
 .homeSubTit, .home2SubTit {
 	font-weight:normal;
 	text-transform:none;
@@ -392,6 +397,24 @@ p {font-size:13px; font-weight:normal;}
 	background-image:url(/wp-content/themes/sixgill/td/logo/logo_mobile.png);
 	 margin:10px 0px;
 }
+
+#what2 {
+	background-image: url('/wp-content/themes/sixgill/images/td/home/shapes1_1.jpg');
+	background-position:top;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color:#FFF;
+	padding-top:0px;
+
+	border:0px solid #FF0004;
+}
+
+
+.what2-div {
+	margin-top: 0px;
+	text-align: center;
+}
+
 @media (min-width: 767px) {
 
     .titleInside2 {
@@ -512,7 +535,7 @@ p {font-size:13px; font-weight:normal;}
 	.titleInside-tech {
 	 	padding-right:0px;
 	}
-    
+
 
 	.tech-first-text-title {
 		width:auto;

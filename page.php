@@ -28,8 +28,8 @@
 	<section id="content">
 
 	<section id="what" class="container-fluid center clearfix nomargin nopadding">
-		<section id="what2" class="container-fluid center clearfix" style="background-image: url('/wp-content/themes/sixgill/images/td/home/shapes1_1.jpg'); background-position:top; background-repeat:no-repeat; background-size:cover; background-color:#FFF; padding-top:195px; border:0px solid #FF0004;">
-			<div align="center" style="margin-top:0px;">
+		<section id="what2" class="container-fluid center clearfix">
+			<div align="center" style="margin-top:70px;">
 				<?php echo getPageContentBySlug("home-text-2"); ?>
 			</div>
 		</section>
