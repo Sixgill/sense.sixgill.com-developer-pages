@@ -57,7 +57,7 @@
     <section id="sassist" style="background-color:#FFF; margin-top: 40px;">
       <div class="container-fluid center clearfix notopmargin notoppadding nobottommargin nobottompadding" style="max-width:1100px;  border:0px solid #FF0004;">
         <div class="col_one_third titleInside text-right"><img src="/wp-content/themes/sixgill/images/td/product/logoAssist.svg" alt=""/></div>
-        <div class="col_two_third col_last text-left" style="margin-bottom: -20px;">
+        <div class="col_two_third col_last text-left" style="margin-bottom: -20px; padding-top: 30px;">
           <p class="pProduct">
             <?php echo getPageContentBySlug("product-text-4"); ?>
           </p>
