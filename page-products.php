@@ -26,8 +26,8 @@
       <img src="/wp-content/themes/sixgill/images/td/product_fig1.png" alt="" width="100%"/>
     </section>
 
-    <a name="ssense" id="ssense"></a>
-    <section id="after_ssense" style="background-color:#FFF;">
+    <a name="ssense"></a>
+    <section id="ssense" style="background-color:#FFF;">
       <div class="container-fluid center topmargin-sm" style="max-width:1100px;  border:0px solid #FF0004;">
         <div class="col_one_third titleInside text-right"><img src="/wp-content/themes/sixgill/images/td/product/logoSense.svg" alt=""/></div>
         <div class="col_two_third col_last text-left">
@@ -41,8 +41,8 @@
       <img src="/wp-content/themes/sixgill/images/td/product_fig2.png" alt="" width="100%"/>
     </section>
 
-    <a name="ssdk" id="ssdk"></a>
-    <section style="background-color:#F8F8F8;">
+    <a name="ssdk"></a>
+    <section id="ssdk" style="background-color:#F8F8F8;">
       <div class="container-fluid center clearfix nobottommargin nobottompadding" style="max-width:1100px;  border:0px solid #FF0004;">
         <div class="col_one_third titleInside text-right topmargin-sm"><img src="/wp-content/themes/sixgill/images/td/product/logoReach.svg" alt=""/></div>
         <div class="col_two_third col_last text-left topmargin-sm">
