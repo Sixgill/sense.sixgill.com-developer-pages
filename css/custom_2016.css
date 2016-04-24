@@ -107,6 +107,12 @@ all classes apply for desktop
 	padding:85px 50px 45px 50px;
 }
 
+#products {
+	background-image: url('/wp-content/themes/sixgill/images/td/home/00_BlueShape.jpg');
+	background-size:cover;
+	height:171px;
+}
+
 @media only screen and (min-width : 992px) {/* For desktop: */
 	.logoSIXGILL {width:140px; height:111px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_desktop.png);}
 
@@ -214,6 +220,20 @@ all classes apply for desktop
 	.home-diagram {
 		padding-left: 0px;
 		padding-right: 0px;
+	}
+
+	.home3Tit_SixGill {
+		font-size:18px;
+		color:#FFF;
+		text-align:center;
+		padding-top:0.5em;
+		padding-bottom: 0.5em;
+		padding-left: 0.3em;
+		padding-right: 0.3em;
+	}
+
+	#products {
+		height: auto;
 	}
 
 }

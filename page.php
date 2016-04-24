@@ -41,7 +41,7 @@
 	</section>
 
 	<a name="products"></a>
-	<section id="products" class="container-fluid center clearfix nomargin nopadding" style="background-image: url('/wp-content/themes/sixgill/images/td/home/00_BlueShape.jpg'); background-size:cover; height:171px;">
+	<section id="products" class="container-fluid center clearfix nomargin nopadding">
 		<div class="home3Tit_SixGill"><?php echo getPageContentBySlug("home-text-3"); ?></div>
 	</section>
 
