@@ -47,7 +47,8 @@
 
 
 	<section id="below_products" class="container-fluid center clearfix nomargin nopadding" align="center" style="padding-bottom:0px;">
-		<img src="/wp-content/themes/sixgill/images/td/home/infographic.svg" class="home-diagram" alt=""/>
+		<img src="/wp-content/themes/sixgill/images/td/home/infographic.svg" class="home-diagram hidden-top-imageDiagram" alt=""/>
+        <img src="/wp-content/themes/sixgill/images/td/home/mobile_infographic.svg" class="home-diagram hidden-bottom-imageDiagram" alt=""/>
 		<div class="clear"></div>
 		<a href="/products" class="button button-teal button-large nobottommargin btnSchedule">VIEW PRODUCTS</a>
 	</section>
