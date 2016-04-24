@@ -125,7 +125,7 @@ function onScroll(event){
 			currentLink.addClass("active");
 		}
 		else{
-			currentLink.removeClass("active");
+			//currentLink.removeClass("active");
 		}
 	});
 }

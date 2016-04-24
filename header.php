@@ -85,9 +85,9 @@
 				<?php if(strcasecmp(getCurrentSlug(), "products")==0) { ?>
 					<a href="#top"><div>Products</div></a>
 					<div class="my_subMenus" style="margin-left:15px;">
-						<a href="#ssense">SENSE</a><br>
-						<a href="#ssdk">REACH</a><br>
-						<a href="#sassist">ASSIST</a>
+						<a href="#ssense">Sense</a><br>
+						<a href="#ssdk">Reach</a><br>
+						<a href="#sassist">Assist</a>
 					</div>
 				<?php }else{ ?>
 					<a href="/products/"><div>Products</div></a>
