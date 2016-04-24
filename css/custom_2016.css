@@ -114,11 +114,11 @@ all classes apply for desktop
 }
 
 @media only screen and (min-width : 992px) {/* For desktop: */
-    
+
 .hidden-bottom-imageDiagram {
     display: none;
 }
-    
+
 	.logoSIXGILL {width:140px; height:111px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_desktop.png);}
 
 	.my_titSolutions {
@@ -142,15 +142,15 @@ all classes apply for desktop
 }
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
-    
+
     .hidden-top-imageDiagram {
         display: none;
     }
-    
+
     .home-diagram {
     padding: 0px 50px 45px 50px;
     }
-    
+
     .headerBoxSolutionSize { display: none; }
 	.logoSIXGILL {width:245px; height:96px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_tablet.png);}
 	.my_subMenus {display:none;	}
@@ -187,15 +187,15 @@ all classes apply for desktop
 }
 
 @media only screen and (max-width: 500px) {/* For mobiles: */
-    
+
     .hidden-top-imageDiagram {
         display: none;
     }
-    
+
     .home-diagram {
     padding: 0px 50px 45px 50px;
     }
-    
+
     .my_headerBoxSolution { display: none; }
 	.logoSIXGILL {width:150px; height:44px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_mobile.png); }
 
@@ -222,7 +222,7 @@ all classes apply for desktop
 		margin-top:60px;
 	}
 
-	.homeSupTit {
+	/*.homeSupTit {
 		font-size:32px;
 		color:#0051C6;
 		text-transform: none;
@@ -238,7 +238,7 @@ all classes apply for desktop
 		color: black;
 		padding-bottom: 15px;
 		text-align: left;
-	}
+	}*/
 
 	.my_boxSolution_title {
 		padding-left: 0px;
