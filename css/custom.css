@@ -412,6 +412,10 @@ p {font-size:13px; font-weight:normal;}
 
 @media (min-width: 767px) {
 
+.hidden-bottom-imageTech {
+    display: none;
+}
+    
   .titleInside2 {
 		font-size:30px;
 		font-weight:bold;
@@ -422,6 +426,11 @@ p {font-size:13px; font-weight:normal;}
 }
 
 @media (max-width: 767px) {
+    
+    .hidden-top-imageTech {
+        display: none;
+    }
+    
 	.titleInside2 {
 		font-family: "Lato", serif, sans-serif;
 		font-size:30px;
@@ -431,6 +440,7 @@ p {font-size:13px; font-weight:normal;}
 		 text-align:left;
 	}
 }
+
 
 .titleInside2 {
 	font-family: "Lato", serif, sans-serif;

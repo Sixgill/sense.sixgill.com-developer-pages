@@ -30,16 +30,19 @@
     <a name="location"></a>
     <div id="location" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
       <div class="container-fluid center clearfix my_containerSolution">
-        <div class="col_full"><img src="/wp-content/themes/sixgill/images/td/tech/header1.png" alt="" style="max-width:500px;"/></div>
-        <div class="col_one_third my_boxTech_image"><img src="/wp-content/themes/sixgill/images/td/tech/heatmap.png" alt=""/></div>
+        <div class="col_full"><img src="/wp-content/themes/sixgill/images/td/tech/header1.png" alt="" style="max-width:500px; width: 100%;"/></div>
+        <div class="col_one_third my_boxTech_image hidden-top-imageTech"><img src="/wp-content/themes/sixgill/images/td/tech/heatmap.png" alt=""/></div>
         <div class="col_two_third my_txtSolutions_noline col_last">
           <div class="my_txtSolution">
             <?php echo getPageContentBySlug("tech-text-2"); ?>
           </div>
         </div>
+        <div class="col_one_third my_boxTech_image hidden-bottom-imageTech"><img src="/wp-content/themes/sixgill/images/td/tech/heatmap.png" alt=""/></div>
       </div>
     </div>
 
+
+      
   <div class="clear"></div>
   <div class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
     <img src="/wp-content/themes/sixgill/images/td/tech/shape2.png" alt="" width="100%" />
@@ -48,7 +51,7 @@
   <a name="proximity"></a>
   <div id="proximity" class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
     <div class="container-fluid center clearfix my_containerSolution">
-      <div class="col_full"><img src="/wp-content/themes/sixgill/images/td/tech/header2.png" alt="" style="max-width:500px;"/></div>
+      <div class="col_full"><img src="/wp-content/themes/sixgill/images/td/tech/header2.png" alt="" style="max-width:500px; width: 100%;"/></div>
       <div class="col_two_third my_txtSolutions_noline col_last">
         <div class="my_txtSolution">
           <?php echo getPageContentBySlug("tech-text-3"); ?>
@@ -68,13 +71,14 @@
  <a name="openplatform"></a>
   <div id="openplatform" class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
     <div class="container-fluid center clearfix my_containerSolution">
-      <div class="col_full"><img src="/wp-content/themes/sixgill/images/td/tech/header3.png" alt="" style="max-width:500px;"/></div>
-      <div class="col_one_third my_boxTech_image"><img src="/wp-content/themes/sixgill/images/td/tech/imageExtensiblePlatform.png" alt=""/></div>
+      <div class="col_full"><img src="/wp-content/themes/sixgill/images/td/tech/header3.png" alt="" style="max-width:500px; width: 100%;"/></div>
+      <div class="col_one_third my_boxTech_image hidden-top-imageTech"><img src="/wp-content/themes/sixgill/images/td/tech/imageExtensiblePlatform.png" alt=""/></div>
       <div class="col_two_third my_txtSolutions_noline col_last">
         <div class="my_txtSolution">
           <?php echo getPageContentBySlug("tech-text-4"); ?>
         </div>
       </div>
+    <div class="col_one_third my_boxTech_image hidden-bottom-imageTech"><img src="/wp-content/themes/sixgill/images/td/tech/imageExtensiblePlatform.png" alt=""/></div>
     </div>
   </div>
 
