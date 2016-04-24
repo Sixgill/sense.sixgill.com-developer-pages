@@ -217,6 +217,10 @@ all classes apply for desktop
 		text-align: left;
 	}
 
+	.my_boxSolution_title {
+		padding-left: 0px;
+	}
+
 	.home-diagram {
 		padding-left: 0px;
 		padding-right: 0px;
