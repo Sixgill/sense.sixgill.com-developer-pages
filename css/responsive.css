@@ -2082,6 +2082,9 @@
 
 @media (max-width: 767px) {
 
+.titleTech-position-left {
+       text-align: left;
+}
 
 .mobile-position-center {
     text-align: center;
