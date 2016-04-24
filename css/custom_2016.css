@@ -100,19 +100,12 @@ all classes apply for desktop
 	.my_titSolutions {
 		font-size:30px;
 		padding-right:20px;
-        text-align:right;
+    text-align:right;
 	}
 	.my_iconSolution {width:115px;}
 	.my_boxSolution_title {}
 	.footer_Learn, .footer_Links { text-align:left; font-size:22px;	}
 	.footer_Schedule { text-align:right;	}
-}
-
-@media (max-width: 767px) {
-	.my_titSolutions {
-
-        text-align:left;
-	}
 }
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
@@ -130,6 +123,9 @@ all classes apply for desktop
 	.my_boxSolution_title {}
 	.footer_Learn, .footer_Links { text-align:left; font-size:22px; font-weight:normal;	}
 	.footer_Schedule { text-align:right;	}
+	.my_titSolutions {
+        text-align:left;
+	}
 }
 
 @media only screen and (max-width: 500px) {/* For mobiles: */
@@ -150,4 +146,7 @@ all classes apply for desktop
 	.my_boxSolution_title { border:0px;}
 	.footer_Learn, .footer_Links { text-align:center; font-size:14px;	}
 	.footer_Schedule, .footer_Copy { text-align:center;	}
+	.my_titSolutions {
+        text-align:center;
+	}
 }
