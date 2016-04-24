@@ -2086,9 +2086,9 @@
 .mobile-position-center {
     text-align: center;
 }
-    
+
 .mobile-hiden-line {
-    background: none !important; 
+    background: none !important;
 }
 
 
@@ -2180,7 +2180,7 @@
 	}
 
 
-
+/*
 	#top-social,
 
 	#slider:not(.swiper_wrapper) .slider-caption,
@@ -2200,7 +2200,7 @@
 	.slider-arrow-top-sm,
 
 	.slider-arrow-bottom-sm { display: none !important; }
-
+*/
 
 
 	.slider-caption h2 { margin-bottom: 0 !important; }
@@ -3556,6 +3556,3 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991px) {
 	#logo a.retina-logo { display: inline-block; }
 
 }
-
-
-
