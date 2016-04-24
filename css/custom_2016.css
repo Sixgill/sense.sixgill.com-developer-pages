@@ -92,6 +92,14 @@ all classes apply for desktop
 }
 .footer_Copy {font-size: 14px;	color:#FFF;}
 
+.hr-home-sub-title {
+	max-width: 650px;
+}
+
+.hr-home-sup-title {
+	margin-top:-0.8em;
+	max-width: 650px;
+}
 
 
 @media only screen and (min-width : 992px) {/* For desktop: */
@@ -106,6 +114,15 @@ all classes apply for desktop
 	.my_boxSolution_title {}
 	.footer_Learn, .footer_Links { text-align:left; font-size:22px;	}
 	.footer_Schedule { text-align:right;	}
+
+	.home-text-2{
+		margin-top:120px;
+	}
+
+	.homeSupTit-with-line {
+		background-color: #fff;
+		z-index:2;
+	}
 }
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
@@ -126,6 +143,16 @@ all classes apply for desktop
 	.my_titSolutions {
         text-align:left;
 	}
+
+	.home-text-2{
+		margin-top:110px;
+	}
+
+	.homeSupTit-with-line {
+		background-color: #fff;
+		z-index:2;
+	}
+
 }
 
 @media only screen and (max-width: 500px) {/* For mobiles: */
@@ -149,4 +176,27 @@ all classes apply for desktop
 	.my_titSolutions {
         text-align:center;
 	}
+
+	.home-text-2{
+		margin-top:60px;
+	}
+
+	.homeSupTit {
+		font-size:32px;
+		color:#0051C6;
+		text-transform: none;
+	}
+
+	.hr-home-sup-title, .hr-home-sub-title, .homeTit {
+		display: none;
+	}
+
+	.homeSubTit {
+		font-size: 22px;
+		font-weight: bold;
+		color: black;
+		padding-bottom: 15px;
+		text-align: left;
+	}
+
 }
