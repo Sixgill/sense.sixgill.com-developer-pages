@@ -103,6 +103,9 @@ all classes apply for desktop
 	max-width: 650px;
 }
 
+.home-diagram {
+	padding:85px 50px 45px 50px;
+}
 
 @media only screen and (min-width : 992px) {/* For desktop: */
 	.logoSIXGILL {width:140px; height:111px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_desktop.png);}
@@ -156,6 +159,11 @@ all classes apply for desktop
 		z-index:2;
 	}
 
+	.home-diagram {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
 }
 
 @media only screen and (max-width: 500px) {/* For mobiles: */
@@ -201,6 +209,11 @@ all classes apply for desktop
 		color: black;
 		padding-bottom: 15px;
 		text-align: left;
+	}
+
+	.home-diagram {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 }
