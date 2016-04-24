@@ -32,6 +32,7 @@
     <div class="container-fluid center clearfix my_containerSolution">
       <div class="col_one_third"><img src="/wp-content/themes/sixgill/images/td/icons/iconPeople.png" class="iconSolutions" alt=""/></div>
       <div class="col_two_third my_txtSolutions_noline col_last">
+        <div class=""><img src="/wp-content/themes/sixgill/images/td/solutions/header_people.png" class="my_headerBoxSolution" alt=""/></div>
         <?php echo getPageContentBySlug("solutions-text-2"); ?>
       </div>
     </div>
@@ -48,6 +49,7 @@
     <div class="container-fluid center clearfix my_containerSolution">
       <div class="col_one_third"><img src="/wp-content/themes/sixgill/images/td/icons/iconCrane.png" class="iconSolutions" alt=""/></div>
       <div class="col_two_third my_txtSolutions_noline col_last">
+        <div class=""><img src="/wp-content/themes/sixgill/images/td/solutions/header_assets.png" class="my_headerBoxSolution" alt=""/></div>
         <?php echo getPageContentBySlug("solutions-text-3"); ?>
       </div>
     </div>
@@ -64,6 +66,7 @@
     <div class="container-fluid center clearfix my_containerSolution">
       <div class="col_one_third"><img src="/wp-content/themes/sixgill/images/td/icons/iconCrowds.png" class="iconSolutions" alt=""/></div>
       <div class="col_two_third my_txtSolutions_noline col_last">
+        <div class=""><img src="/wp-content/themes/sixgill/images/td/solutions/header_crowds.png" class="my_headerBoxSolution" alt=""/></div>
         <?php echo getPageContentBySlug("solutions-text-4"); ?>
       </div>
     </div>
