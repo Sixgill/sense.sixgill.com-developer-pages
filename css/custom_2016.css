@@ -203,4 +203,8 @@ all classes apply for desktop
 		text-align: left;
 	}
 
+	.my_boxSolution_title {
+		padding-left: 0px;
+	}
+
 }
