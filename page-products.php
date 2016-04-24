@@ -13,7 +13,7 @@
 <!-- Content-->
 <section id="content">
 
-  <div class="content-wrap">
+  <div class="content-wrap" style="padding-bottom: 0px;">
 
     <div class="header-stick" style="background-color:#F8F8F8; border:0px solid #FF0004;">
       <div class="container-fluid center clearfix" style="padding-top:75px; max-width:1100px;  border:0px solid #FF0004;">
@@ -57,7 +57,7 @@
     <section id="sassist" style="background-color:#FFF;">
       <div class="container-fluid center clearfix notopmargin notoppadding nobottommargin nobottompadding" style="max-width:1100px;  border:0px solid #FF0004;">
         <div class="col_one_third titleInside text-right"><img src="/wp-content/themes/sixgill/images/td/product/logoAssist.svg" alt=""/></div>
-        <div class="col_two_third col_last text-left">
+        <div class="col_two_third col_last text-left" style="margin-bottom: 0px;">
           <p class="pProduct">
             <?php echo getPageContentBySlug("product-text-4"); ?>
           </p>
