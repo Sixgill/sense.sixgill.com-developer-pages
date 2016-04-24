@@ -41,13 +41,13 @@
 	</section>
 
 	<a name="products"></a>
-	<section id="products" class="container-fluid center clearfix nomargin nopadding" style="background-image: url('/wp-content/themes/sixgill/images/td/home/00_BlueShape.jpg'); background-size:cover; height:171px;">
+	<section id="products" class="container-fluid center clearfix nomargin nopadding">
 		<div class="home3Tit_SixGill"><?php echo getPageContentBySlug("home-text-3"); ?></div>
 	</section>
 
 
 	<section id="below_products" class="container-fluid center clearfix nomargin nopadding" align="center" style="padding-bottom:0px;">
-		<img src="/wp-content/themes/sixgill/images/td/home/infographic.svg" alt="" style="padding:85px 50px 45px 50px;" />
+		<img src="/wp-content/themes/sixgill/images/td/home/infographic.svg" class="home-diagram" alt=""/>
 		<div class="clear"></div>
 		<a href="/products" class="button button-teal button-large nobottommargin btnSchedule">VIEW PRODUCTS</a>
 	</section>
