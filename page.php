@@ -90,7 +90,7 @@
 			<div class="fancy-title title-dotted-border title-center mobile-hiden-line">
 				<h3 style="font-size:20px; font-weight:normal; color:#383838;">Proven at Consumer Volumes</h3>
 			</div>
-			<div style="max-width:720px; margin-bottom:35px;">
+			<div class="home-diagram hidden-top-imageDiagram" style="max-width:720px; margin-bottom:35px;">
 				<div class="col_one_fifth"><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_att.jpg" alt="" /></div>
 				<div class="col_one_fifth"><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_rugby.jpg" alt="" /></div>
 				<div class="col_one_fifth"><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_nyautoshow.jpg" alt="" /></div>
@@ -103,6 +103,34 @@
 				<div class="col_one_fifth col_last"><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_nyjets.jpg" alt=""/></div>
 				<a href="/company" class="button button-large nobottommargin btnCompany">VIEW COMPANY</a>
 			</div>
+        <div class="home-diagram hidden-bottom-imageDiagram">
+            <div>
+                <div style="width: 48%; float: left;"><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_att.jpg" alt="" /></div>
+                <div style="width: 48%; float: right; "><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_rugby.jpg" alt="" /></div>
+            </div>
+            <div>
+                <div style="width: 48%; float: left;"><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_nyautoshow.jpg" alt="" /></div>
+                <div style="width: 48%; float: right; "><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_nyfashion.jpg" alt="" /></div>
+            </div>
+            <div>
+                <div style="width: 48%; float: left;"><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_livenation.jpg" alt="" /></div>
+                <div style="width: 48%; float: right; "><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_lemon.jpg" alt="" /></div>
+            </div>
+            <div>
+                <div style="width: 48%; float: left;"><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_img.jpg" alt="" /></div>
+                <div style="width: 48%; float: right; "><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_hsbc.jpg" alt="" /></div>
+            </div>
+            <div>
+                <div style="width: 48%; float: left; padding-bottom: 20px; "><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_auburn.jpg" alt="" /></div>
+                <div style="width: 48%; float: right; padding-bottom: 20px; "><img src="/wp-content/themes/sixgill/images/td/home/logos/logo_nyjets.jpg" alt="" /></div>
+            </div>
+            
+                        <div class="home-diagram hidden-bottom-imageDiagram" style="max-width:720px;">
+ 				<a href="/company" class="button button-large nobottommargin btnCompany">VIEW COMPANY</a>
+            </div>
+        </div>
+    
+        
 		</div>
 	</section>
 </section><!-- #content end -->

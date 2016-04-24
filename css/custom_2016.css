@@ -143,9 +143,13 @@ all classes apply for desktop
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
     
-.hidden-bottom-imageDiagram {
-    display: none;
-}
+    .hidden-top-imageDiagram {
+        display: none;
+    }
+    
+    .home-diagram {
+    padding: 0px 50px 45px 50px;
+    }
     
     .headerBoxSolutionSize { display: none; }
 	.logoSIXGILL {width:245px; height:96px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_tablet.png);}
@@ -186,6 +190,10 @@ all classes apply for desktop
     
     .hidden-top-imageDiagram {
         display: none;
+    }
+    
+    .home-diagram {
+    padding: 0px 50px 45px 50px;
     }
     
     .my_headerBoxSolution { display: none; }
