@@ -143,6 +143,11 @@ all classes apply for desktop
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
 
+    .homeSupTit-with-line {
+		background-color: #fff;
+		z-index:2;
+	}
+    
     .hidden-top-imageDiagram {
         display: none;
     }
@@ -188,6 +193,11 @@ all classes apply for desktop
 
 @media only screen and (max-width: 500px) {/* For mobiles: */
 
+    .homeSupTit-with-line {
+		background-color: #fff;
+		z-index:2;
+	}
+    
     .hidden-top-imageDiagram {
         display: none;
     }
