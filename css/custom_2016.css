@@ -113,8 +113,36 @@ all classes apply for desktop
 	height:171px;
 }
 
+.applying-layer-copperOnVideo {
+    background-color: rgba(0,0,0,0.45);
+}
+
 @media only screen and (min-width : 992px) {/* For desktop: */
 
+.slider-caption.slider-caption-center {
+    max-width: 900px;
+
+}
+    
+    .slider-caption p {
+    margin-bottom: 10px;
+    font-size: 42px;
+}
+    
+.applying-layer-copperOnVideo {
+    background-color: rgba(0,0,0,0);
+}
+    
+.backgroundForTextVideoHome {
+        background: rgba(0, 0, 0, 0.75);  
+        padding: 50px 30px 50px 30px; 
+        height:380px
+    }
+    
+.sizeForTextVideoHome {
+        font-size: 34px; 
+        font-weight: lighter;
+    }
 .hidden-bottom-imageDiagram {
     display: none;
 }

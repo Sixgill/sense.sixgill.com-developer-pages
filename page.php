@@ -2,14 +2,17 @@
 <section id="slider" class="force-full-screen full-screen">
 	<div class="force-full-screen full-screen dark section nopadding nomargin noborder ohidden">
 		<div class="container clearfix">
-			<div class="slider-caption slider-caption-center">
-				<p data-animate="fadeInDown" class="txtVideo">
+			<div class="slider-caption slider-caption-center" >
+                            <div class="backgroundForTextVideoHome">  
+
+				<p data-animate="fadeInDown" class="txtVideo sizeForTextVideoHome">
 					<?php
 						echo getPageContentBySlug("home-video-text");
 					?>
 				</p>
 				<button data-animate="fadeInDown" href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule" style="margin: 30px 0px 0px 0px;">SCHEDULE A DEMO</button>
 			</div>
+            </div>
 		</div>
 
 		<div id="myVideo" class="video-wrap">
@@ -18,7 +21,7 @@
 				 <source src="/wp-content/themes/sixgill/images/td/videos/background-vid_1.ogv" type="video/ogv" />
 				<source src="/wp-content/themes/sixgill/images/td/videos/background-vid_1.webm" type="video/webm" />
 			</video>
-			<div class="video-overlay" style="background-color: rgba(0,0,0,0.45);"></div>
+			<div class="video-overlay applying-layer-copperOnVideo" ></div>
 		</div>
 	</div>
 </section>
