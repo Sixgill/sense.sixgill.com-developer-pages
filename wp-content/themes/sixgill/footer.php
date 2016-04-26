@@ -33,7 +33,12 @@
             <h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">REQUEST A DEMO</h4>
           </div>
           <div class="modal-body" align="center">
-						<?php wd_form_maker(11); ?>
+            <script>
+             hbspt.forms.create({
+               portalId: '1792815',
+               formId: 'ec3f606f-0f75-45cf-8ee8-4919d408e4de'
+              });
+            </script>
           </div>
           <div class="modal-footer center"></div>
         </div>
