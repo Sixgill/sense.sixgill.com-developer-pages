@@ -1,77 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!-- header.php start -->
+<html dir="ltr" lang="en-US">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>Sixgill: More Mobility. More Control.</title>
-<?php 
-	wp_head();	
-?>
 
-<?php
-	// Preparing variables				
-	$header_image = get_header_image();
-?>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="WeezLabs" />
+	<!-- Stylesheets -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="../wp-content/themes/sixgill/style.css" type="text/css" />
+	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/swiper.css" type="text/css" />
+	<!--<link rel="stylesheet" href="../wp-content/themes/sixgill/css/dark.css" type="text/css" />-->
+	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/magnific-popup.css" type="text/css" />
 
-<!-- Start of Async HubSpot Analytics Code -->
-    <script type="text/javascript">
-        (function(d,s,i,r) {
-            if (d.getElementById(i)){return;}
-            var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-            n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1792815.js';
-            e.parentNode.insertBefore(n, e);
-        })(document,"script","hs-analytics",300000);
-    </script>
+	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/responsive.css" type="text/css" />
 
-<!-- End of Async HubSpot Analytics Code -->
 
-<!-- Start of Google Analytics Code -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <link rel="stylesheet" href="../wp-content/themes/sixgill/css/colors.css" type="text/css" />
+  <link rel="stylesheet" href="../wp-content/themes/sixgill/css/custom.css" type="text/css" />
 
-  ga('create', 'UA-75098635-1', 'auto');
-  ga('send', 'pageview');
+  <link rel="stylesheet" href="../wp-content/themes/sixgill/css/custom_2016.css" type="text/css" />
 
-</script>
-<!-- End of Google Analytics Code -->
-   
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+  	<script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2-legacy.js"></script>
+  <![endif]-->
+  <script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script>
+
+	<!-- Document Title -->
+	<title>Sixgill | Homepage</title>
 </head>
-<!--/head-->
 
-<body  <?php body_class(); ?>>
+<body class="side-header stretched">
+	<!-- Document Wrapper -->
+	<a name="top"></a>
+	<section id="top"></section>
+	<div id="wrapper" class="clearfix">
+<!-- Header -->
+<header id="header" class="no-sticky">
 
-	<header>
-		<div class="container">
-			<div class="logo pull-left"> 
-				<?php if(! empty( $header_image ) ):?>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" rel="home"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="
-					<?php echo get_custom_header()->height; ?>" alt="" /></a>
-      			<?php endif;?>	
+	<div id="header-wrap">
+
+		<div class="container clearfix">
+
+			<div id="primary-menu-trigger" class="tright" style="border:0px solid #FF0004; width:100%;"><img src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" height="100%" alt=""/></div>
+
+			<div id="logo" class="noborder nopadding nomargin">
+				<a href="/" class="logoSIXGILL"></a>
 			</div>
-            
-			<div class="head_right pull-right">
-        		<span class="search">  </span>
-            
-            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            		<span class="sr-only">Toggle navigation</span>
-            		<span class="icon-bar"></span>
-            		<span class="icon-bar"></span>
-            		<span class="icon-bar"></span>
-				</button>
 
-	  			<span class="login request"><a href="#" data-toggle="modal" data-target="#request_form">Request a Demo</a></span>
-                
+			<!-- Primary Navigation -->
+			<nav id="primary-menu">
+				<ul>
 
-      			<div class="collapse navbar-collapse">
-					<?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav navbar-nav' ) ); ?>
-				</div>
-            
-    		</div>
-        
-  		</div>
-	</header>
+				<?php if(strcasecmp(getCurrentSlug(), "home")==0) { ?>
+					<a href="#top"><div>Home</div></a>
+					<div class="my_subMenus" style="margin-left:15px;">
+						<a href="#what">What we do</a><br>
+						<a href="#products">Products</a><br>
+						<a href="#solutions">Solutions</a><br>
+						<a href="#clients">Clients</a>
+					</div>
+				<?php }else{ ?>
+					<a href="/"><div>Home</div></a>
+				<?php } ?>
+
+				<?php if(strcasecmp(getCurrentSlug(), "solutions")==0) { ?>
+					<a href="#top"><div>Solutions</div></a>
+					<div class="my_subMenus" style="margin-left:15px;">
+						<a href="#people">People</a><br>
+						<a href="#assets">Assets</a><br>
+						<a href="#crowds">Crowds</a>
+					</div>
+				<?php }else{ ?>
+					<a href="/solutions/"><div>Solutions</div></a>
+				<?php } ?>
+
+				<?php if(strcasecmp(getCurrentSlug(), "products")==0) { ?>
+					<a href="#top"><div>Products</div></a>
+					<div class="my_subMenus" style="margin-left:15px;">
+						<a href="#ssense">Sense</a><br>
+						<a href="#ssdk">Reach</a><br>
+						<a href="#sassist">Assist</a>
+					</div>
+				<?php }else{ ?>
+					<a href="/products/"><div>Products</div></a>
+				<?php } ?>
+
+				<?php if(strcasecmp(getCurrentSlug(), "tech")==0) { ?>
+					<a href="#top"><div>Tech</div></a>
+					<div class="my_subMenus" style="margin-left:15px;">
+						<a href="#location">Location</a><br>
+						<a href="#proximity">Proximity</a><br>
+						<a href="#openplatform">Open Platform</a>
+					</div>
+					<?php }else{ ?>
+						<a href="/tech/"><div>Tech</div></a>
+					<?php } ?>
+
+				<?php if(strcasecmp(getCurrentSlug(), "company")==0) { ?>
+					<a href="#top"><div>Company</div></a>
+					<div class="my_subMenus" style="margin-left:15px;">
+						<a href="#company">The Company</a><br>
+						<a href="#team">The Team</a><br>
+						<a href="#board">The Board</a><!--<br>
+						<a href="#investors">Our Investors</a>-->
+					</div>
+				<?php }else{ ?>
+					<a href="/company/"><div>Company</div></a>
+				<?php } ?>
+
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div>
+
+</header><!-- #header end -->
+<!-- header.php end -->
