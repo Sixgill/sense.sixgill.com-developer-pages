@@ -123,35 +123,35 @@ all classes apply for desktop
     max-width: 900px;
 
 }
-    
+
     .slider-caption p {
     margin-bottom: 10px;
     font-size: 36px;
         font-family: "Lato";
             margin-top: 10px;
 }
-    
+
 .applying-layer-copperOnVideo {
     background-color: rgba(0,0,0,0);
 }
-    
+
 .backgroundForTextVideoHome {
         background-image:url(/wp-content/themes/sixgill/images/td/home/shadow.png);
 
-        //background: rgba(0, 0, 0, 0.5);  
-        padding: 85px 30px 50px 30px; 
+        //background: rgba(0, 0, 0, 0.5);
+        padding: 85px 30px 50px 30px;
         height:380px
     }
-    
+
 .sizeForTextVideoHome {
-        font-size: 34px; 
+        font-size: 34px;
         font-weight: 900;
     }
 .hidden-bottom-imageDiagram {
     display: none;
 }
 
-	.logoSIXGILL {width:140px; height:111px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_desktop.png);}
+	.logoSIXGILL {width:140px; height:111px; background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");}
 
 	.my_titSolutions {
 		font-size:30px;
@@ -179,7 +179,7 @@ all classes apply for desktop
 		background-color: #fff;
 		z-index:2;
 	}
-    
+
     .hidden-top-imageDiagram {
         display: none;
     }
@@ -189,7 +189,7 @@ all classes apply for desktop
     }
 
     .headerBoxSolutionSize { display: none; }
-	.logoSIXGILL {width:245px; height:96px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_tablet.png);}
+	.logoSIXGILL {width:245px; height:96px; background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_tablet.svg");}
 	.my_subMenus {display:none;	}
 	.my_titSolutions {
 		font-size:28px;
@@ -229,7 +229,7 @@ all classes apply for desktop
 		background-color: #fff;
 		z-index:2;
 	}
-    
+
     .hidden-top-imageDiagram {
         display: none;
     }
@@ -239,7 +239,7 @@ all classes apply for desktop
     }
 
     .my_headerBoxSolution { display: none; }
-	.logoSIXGILL {width:150px; height:44px; background-image:url(/wp-content/themes/sixgill/images/td/logo/logo_mobile.png); }
+	.logoSIXGILL {width:150px; height:44px; background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg"); }
 
 	.my_subMenus {display:none;	}
 	.my_titSolutions {

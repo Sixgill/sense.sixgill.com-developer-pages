@@ -389,7 +389,7 @@ p {font-size:13px; font-weight:normal;}
 .logoSIXGILL {
 	width:150px;
 	height:44px;
-	background-image:url(/wp-content/themes/sixgill/td/logo/logo_mobile.png);
+	background-image:url("/wp-content/themes/sixgill/td/logo/logo_mobile.svg");
 	 margin:10px 0px;
 }
 
@@ -415,7 +415,7 @@ p {font-size:13px; font-weight:normal;}
 .hidden-bottom-imageTech {
     display: none;
 }
-    
+
   .titleInside2 {
 		font-size:30px;
 		font-weight:bold;
@@ -426,11 +426,11 @@ p {font-size:13px; font-weight:normal;}
 }
 
 @media (max-width: 767px) {
-    
+
     .hidden-top-imageTech {
         display: none;
     }
-    
+
 	.titleInside2 {
 		font-family: "Lato", serif, sans-serif;
 		font-size:30px;
@@ -522,7 +522,7 @@ p {font-size:13px; font-weight:normal;}
 	.txtVideo {font-size:40px;font-weight:normal;}
 	.titLegal {font-size:25px; margin-top:50px; margin-bottom:30px;}
 	p {font-size:20px; font-weight:normal;}
-	.logoSIXGILL {width:245px; height:96px; background-image:url(/wp-content/themes/sixgill/td/logo/logo_tablet.png);}
+	.logoSIXGILL {width:245px; height:96px; background-image:url("/wp-content/themes/sixgill/td/logo/logo_tablet.svg");}
 	.titleInside {
 		font-size:30px;
 		font-weight:bold;
@@ -551,5 +551,5 @@ p {font-size:13px; font-weight:normal;}
 	.txtVideo {font-size:28px;font-weight:normal;}
 	.titLegal {font-size:40px; margin-top:60px; margin-bottom:65px;}
 	p {font-size:16px; font-weight:normal;}
-	.logoSIXGILL {width:140px; height:111px; background-image:url(/wp-content/themes/sixgill/td/logo/logo_desktop.png);
+	.logoSIXGILL {width:140px; height:111px; background-image:url("/wp-content/themes/sixgill/td/logo/logo_desktop.svg");
 }
