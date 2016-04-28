@@ -1,0 +1,308 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+
+/* TD - 2016 - 04 - 19
+
+all classes apply for desktop
+
+
+*/
+
+/* Solutions Page classes */
+
+.my_titSolutions {
+	font-family: "Lato", serif, sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#0051C6;
+	text-align:right;
+	padding-right:30px;
+	margin-right:0px;
+}
+
+.my_txtSolutions, .my_txtSolutions_noline {
+	border-left:1px solid #9C9C9C;
+	padding-left:30px;
+	text-align:left;
+	font-size:15px;
+	color:#686868;
+}
+
+.my_txtSolutions_noline {border-left:0px;}
+
+
+.my_iconSolution {width:135px;}
+.my_boxSolution_title {
+	font-family: "Lato", serif, sans-serif;
+	font-size:27px;
+	font-weight:bolder;
+	text-transform:uppercase;
+	color:#000;
+	border:4px solid #000000;
+	padding:10px 20px;
+	text-align:center;
+	margin-bottom:35px;
+}
+
+.my_txtSolution { border:0px solid #FF0004;}
+
+
+.my_containerSolution {
+	max-width:950px;
+	padding-top:75px;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	border:0px solid #FE0004;
+}
+
+.footer_Learn, .footer_Links {
+	text-align:left;
+	border:0px solid #FE0004;
+	color:#FFF;
+	font-size:20px;
+	margin-top:12px;
+	font-weight:normal;
+	padding:0px 20px;
+}
+
+.footer_Links {text-decoration:none; font-size: 14px;	color:#FFF;}
+.footer_Links a {
+	margin: 0 10px;
+	color: #FFF;
+	border-bottom: 0px;
+}
+.footer_Links a:hover {	color: #CCC;}
+
+
+.footer_Schedule, .footer_Copy {
+	text-align:right;
+	border:0px solid #FE0004;
+	color:#FFF;
+	font-size:20px;
+	margin-top:12px;
+	font-weight:normal;
+	padding:0px 20px;
+}
+.footer_Copy {font-size: 14px;	color:#FFF;}
+
+.my_headerBoxSolution { margin-bottom: 30px; }
+
+.hr-home-sub-title {
+	max-width: 650px;
+}
+
+.hr-home-sup-title {
+	margin-top:-0.8em;
+	max-width: 650px;
+}
+
+.home-diagram {
+	padding:85px 50px 45px 50px;
+}
+
+#products {
+	background-image: url('/wp-content/themes/sixgill/images/td/home/00_BlueShape.jpg');
+	background-size:cover;
+	height:171px;
+}
+
+.applying-layer-copperOnVideo {
+    background-color: rgba(0,0,0,0.45);
+}
+
+@media only screen and (min-width : 992px) {/* For desktop: */
+
+.slider-caption.slider-caption-center {
+    max-width: 900px;
+
+}
+
+    .slider-caption p {
+    margin-bottom: 10px;
+    font-size: 36px;
+        font-family: "Lato";
+            margin-top: 10px;
+}
+
+.applying-layer-copperOnVideo {
+    background-color: rgba(0,0,0,0);
+}
+
+.backgroundForTextVideoHome {
+        background-image:url(/wp-content/themes/sixgill/images/td/home/shadow.png);
+
+        //background: rgba(0, 0, 0, 0.5);
+        padding: 85px 30px 50px 30px;
+        height:380px
+    }
+
+.sizeForTextVideoHome {
+        font-size: 34px;
+        font-weight: 900;
+    }
+.hidden-bottom-imageDiagram {
+    display: none;
+}
+
+	.logoSIXGILL {width:140px; height:111px; background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");}
+
+	.my_titSolutions {
+		font-size:30px;
+		padding-right:20px;
+    text-align:right;
+	}
+	.my_iconSolution {width:115px;}
+    .my_boxSolution_title { display: none; }
+	.footer_Learn, .footer_Links { text-align:left; font-size:22px;	}
+	.footer_Schedule { text-align:right;	}
+
+	.home-text-2{
+		margin-top:120px;
+	}
+
+	.homeSupTit-with-line {
+		background-color: #fff;
+		z-index:2;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
+
+    .homeSupTit-with-line {
+		background-color: #fff;
+		z-index:2;
+	}
+
+    .hidden-top-imageDiagram {
+        display: none;
+    }
+
+    .home-diagram {
+    padding: 0px 50px 45px 50px;
+    }
+
+    .headerBoxSolutionSize { display: none; }
+	.logoSIXGILL {width:245px; height:96px; background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_tablet.svg");}
+	.my_subMenus {display:none;	}
+	.my_titSolutions {
+		font-size:28px;
+		padding-right:10px;
+	}
+	.my_txtSolutions_noline {
+		padding-right:30px;
+	}
+
+	.my_iconSolution {width:115px;}
+	.my_boxSolution_title {}
+	.footer_Learn, .footer_Links { text-align:left; font-size:22px; font-weight:normal;	}
+	.footer_Schedule { text-align:right;	}
+	.my_titSolutions {
+        text-align:left;
+	}
+
+	.home-text-2{
+		margin-top:110px;
+	}
+
+	.homeSupTit-with-line {
+		background-color: #fff;
+		z-index:2;
+	}
+
+	.home-diagram {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {/* For mobiles: */
+
+    .homeSupTit-with-line {
+		background-color: #fff;
+		z-index:2;
+	}
+
+    .hidden-top-imageDiagram {
+        display: none;
+    }
+
+    .home-diagram {
+    padding: 0px 50px 45px 50px;
+    }
+
+    .my_headerBoxSolution { display: none; }
+	.logoSIXGILL {width:150px; height:44px; background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg"); }
+
+	.my_subMenus {display:none;	}
+	.my_titSolutions {
+		font-size:30px;
+		font-weight:bold;
+		//text-align:center;
+		padding:0px;
+	}
+	.my_txtSolutions {
+		border-left:0px;
+		padding-left:10px;
+	}
+	.my_iconSolution {width:55px;}
+	.my_boxSolution_title { border:0px;}
+	.footer_Learn, .footer_Links { text-align:center; font-size:14px;	}
+	.footer_Schedule, .footer_Copy { text-align:center;	}
+	.my_titSolutions {
+        text-align:center;
+	}
+
+	.home-text-2{
+		margin-top:60px;
+	}
+
+	/*.homeSupTit {
+		font-size:32px;
+		color:#0051C6;
+		text-transform: none;
+	}
+
+	.hr-home-sup-title, .hr-home-sub-title, .homeTit {
+		display: none;
+	}
+
+	.homeSubTit {
+		font-size: 22px;
+		font-weight: bold;
+		color: black;
+		padding-bottom: 15px;
+		text-align: left;
+	}*/
+
+	.my_boxSolution_title {
+		padding-left: 0px;
+	}
+
+	.home-diagram {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.home3Tit_SixGill {
+		font-size:16px;
+		color:#FFF;
+		text-align:center;
+		padding-top:0.5em;
+		padding-bottom: 0.5em;
+		padding-left: 0.3em;
+		padding-right: 0.3em;
+	}
+
+	#products {
+		height: auto;
+	}
+
+}
