@@ -17,7 +17,7 @@
 
 		<div class="header-stick" id="company" style="background-color:#F8F8F8; border:0px solid #FF0004;">
 			<div class="container-fluid center clearfix" style="padding-top:75px; max-width:1100px;  border:0px solid #FF0004;">
-                <div class="col_one_third my_titSolutions">THE COMPANY</div>
+        <div class="col_one_third my_titSolutions">THE COMPANY</div>
 				<div class="col_two_third col_last text-left my_txtSolutions">
 					<p class="pSolutions">
 					<?php echo getPageContentBySlug("company-the-company"); ?>
@@ -103,14 +103,14 @@
 			<img src="/wp-content/themes/sixgill/images/td/company/shape3_v5.png" alt="" width="100%"/>
 		</div>
 
-		<section id="press" style="background-color:#2e2e2e; color:#FFFFFF;">
+		<section id="press" style="background-color:#ffffff;">
 			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 6%; text-align: center;">
-				<div align="center"><p class="btnInside" style="color:#FFFFFF; border-color:#FFF;">The Board</p></div>
+				<div align="center"><p class="btnInside" style="width: 370px;">Latest press and news</p></div>
 				<p class="pCompany">
 					<div class="col_half" align="left">
 						<?php dynamic_sidebar( 'sixgill-company-latest-press' ); ?>
 					</div>
-					<div class="col_half" align="right">
+					<div class="col_half" style="margin-right: 0px;" align="left">
 						<?php dynamic_sidebar( 'sixgill-company-latest-news' ); ?>
 					</div>
 				</p>

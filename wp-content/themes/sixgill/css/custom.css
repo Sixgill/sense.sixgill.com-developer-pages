@@ -559,10 +559,18 @@ p {font-size:13px; font-weight:normal;}
 
     /* PRESS-RELEASES */
 .title-press-contact {
-    font-size: 25px; 
+    font-size: 25px;
     font-family: "Lato Bold" serif, sans-serif;
 }
-    
+
 .press-post-title {
         color: #444;
+				font-size: 18px;
+				font-weight: bold;
+}
+
+.press-preview {
+	font-size: 14px;
+	font-family: "Lato", serif, sans-serif;
+	font-weight: normal;
 }

@@ -40,7 +40,7 @@ function sixgill_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 class="widget-title">',
+		'before_title'  => '<h4 style="font-size:30px; color:#004CBF; font-weight:bold;">',
 		'after_title'   => '</h4>',
 	) );
 
@@ -50,7 +50,7 @@ function sixgill_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 class="widget-title">',
+		'before_title'  => '<h4 style="font-size:30px; color:#004CBF; font-weight:bold;">',
 		'after_title'   => '</h4>',
 	) );
 
@@ -60,7 +60,7 @@ function sixgill_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 class="widget-title">',
+		'before_title'  => '<h4 style="font-size:30px; color:#004CBF; font-weight:bold;">',
 		'after_title'   => '</h4>',
 	) );
 

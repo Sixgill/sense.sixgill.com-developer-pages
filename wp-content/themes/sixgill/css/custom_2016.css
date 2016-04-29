@@ -194,6 +194,10 @@ all classes apply for desktop
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
 
+	section {
+		margin-top: -1px;
+	}
+
     .homeSupTit-with-line {
 		background-color: #fff;
 		z-index:2;
@@ -220,6 +224,14 @@ all classes apply for desktop
 	}
 	.my_txtSolutions_noline {
 		padding-right:30px;
+	}
+
+	.my_txtSolutions {
+		border: 0px;
+	}
+
+	.my_titSolutions {
+		padding-left: 30px;
 	}
 
 	.my_iconSolution {width:115px;}
@@ -335,15 +347,13 @@ all classes apply for desktop
 	#products {
 		height: auto;
 	}
-<<<<<<< HEAD
-=======
 
-    .press-post-title {
-        color: #444;
-    }
->>>>>>> develop
+	.press-post-title {
+			color: #444;
+	}
 
-    .widgettitle {
-        color: #444;
-    }
+	.widgettitle {
+			color: #444;
+	}
+
 }
