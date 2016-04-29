@@ -21,11 +21,15 @@
 
 <section id="content">
 
-	<div id="location" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
+	<div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
 		<div class="container-fluid center clearfix my_containerSolution">
-			<div class="col_full" style="text-align: left;">
+			<div class="col_full" style="text-align: left; margin-bottom: 30px;">
 				<h3 class="press-date"><?php echo the_time('F j, Y'); ?></h3>
 				<?php echo $post->post_content; ?>
+			</div>
+
+			<div class="col_full" style="text-align: center;">
+				<a href="/press" class="button button-large nobottommargin btnCompany" style="margin:30px 0px 0px 0px;">BACK TO PRESS</a>
 			</div>
 		</div>
 	</div>
