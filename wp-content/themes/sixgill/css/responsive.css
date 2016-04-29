@@ -2024,7 +2024,7 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-
+    .col_press { width: 100%; }
 
 	.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid),
 
@@ -2137,6 +2137,8 @@
 	#top-bar { height: auto; }
 
 
+    #top-bar .col_press { width: 100%; }
+
 
 	#top-bar .col_half {
 
@@ -2241,6 +2243,8 @@
 	.col_full,
 
 	.col_half,
+    
+    .col_press,
 
 	.col_one_third,
 
@@ -2281,7 +2285,7 @@
 	form .col_full,
 
 	form .col_half,
-
+    
 	form .col_one_third,
 
 	form .col_two_third,

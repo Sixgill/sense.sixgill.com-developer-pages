@@ -167,9 +167,7 @@ function rpwe_get_recent_posts( $args = array() ) {
 
 						endif;
 
-						$html .= '<h3 class="rpwe-title"><a href="' . esc_url( get_permalink() ) . '" title="' . sprintf( esc_attr__( 'Permalink to %s', 'recent-posts-widget-extended' ), the_title_attribute( 'echo=0' ) ) . '" rel="bookmark">' . esc_attr( get_the_title() ) . '</a></h3>';
-
-						if ( $args['date'] ) :
+    						if ( $args['date'] ) :
 							$date = get_the_date();
 							if ( $args['date_relative'] ) :
 								$date = sprintf( __( '%s ago', 'recent-posts-widget-extended' ), human_time_diff( get_the_date( 'U' ), current_time( 'timestamp' ) ) );
@@ -182,6 +180,9 @@ function rpwe_get_recent_posts( $args = array() ) {
 							endif;
 							$html .= '<time class="rpwe-time modfied" datetime="' . esc_html( get_the_modified_date( 'c' ) ) . '">' . esc_html( $date ) . '</time>';
 						endif;
+    
+    $html .= '<h3 class="rpwe-title"><a href="' . esc_url( get_permalink() ) . '" title="' . sprintf( esc_attr__( 'Permalink to %s', 'recent-posts-widget-extended' ), the_title_attribute( 'echo=0' ) ) . '" rel="bookmark" class="press-post-title">' . esc_attr( get_the_title() ) . '</a></h3>';
+
 
 						if ( $args['comment_count'] ) :
 							if ( get_comments_number() == 0 ) {
