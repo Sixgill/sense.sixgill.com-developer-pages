@@ -106,7 +106,7 @@
 		<section id="press" style="background-color:#ffffff;">
 
 		<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 0px; text-align: center;">
-			<div align="center"><p class="btnInside" style="width: 390px;">Latest press and news</p></div>
+			<div align="center"><p class="btnInside company-press-title">Latest press and news</p></div>
 		</div>
 
 			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 9%; text-align: center;">
@@ -122,7 +122,7 @@
 			</div>
 			<div class="container clearfix" style="text-align: center;">
 				<div style="margin-bottom:40px;">
-					<a href="/press" class="button button-large nobottommargin btnSolutions" style="margin:0px 0px 0px 0px; width: 390px;">VIEW ALL NEWS AND PRESS RELEASES</a>
+					<a href="/press" class="button button-large nobottommargin btnSolutions news-press-button">VIEW ALL NEWS AND PRESS RELEASES</a>
 				</div>
 			</div>
 		</section>
