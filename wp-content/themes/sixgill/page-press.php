@@ -19,7 +19,7 @@
 						<div class=" text-left col_press" align="left" style="padding-bottom:55px;">
                             <?php dynamic_sidebar( 'sixgill-press-list' ); ?>
                         </div>
-
+	
 						<div class="col_two_fifth col_last widget hidden-press-contact" align="left" style="padding:0px 0px 0px 0px; background-color: #C0C0C5; float: right;">
                            <?php echo getPageContentBySlug("press-contact"); ?>
 						</div>
