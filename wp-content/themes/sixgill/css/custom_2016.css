@@ -130,6 +130,7 @@ all classes apply for desktop
 }
 
 
+
 @media only screen and (min-width : 992px) {/* For desktop: */
 
 .slider-caption.slider-caption-center {
@@ -334,10 +335,13 @@ all classes apply for desktop
 	#products {
 		height: auto;
 	}
+<<<<<<< HEAD
+=======
 
     .press-post-title {
         color: #444;
     }
+>>>>>>> develop
 
     .widgettitle {
         color: #444;

@@ -555,3 +555,14 @@ p {font-size:13px; font-weight:normal;}
 	p {font-size:16px; font-weight:normal;}
 	.logoSIXGILL {width:140px; height:111px; background-image:url("/wp-content/themes/sixgill/td/logo/logo_desktop.svg");
 }
+
+
+    /* PRESS-RELEASES */
+.title-press-contact {
+    font-size: 25px; 
+    font-family: "Lato Bold" serif, sans-serif;
+}
+    
+.press-post-title {
+        color: #444;
+}
