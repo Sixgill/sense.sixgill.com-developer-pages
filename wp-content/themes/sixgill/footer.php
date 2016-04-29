@@ -12,7 +12,11 @@
 
 	<div class="container-fluid nomargin nopadding"  style="background-image:url(../wp-content/themes/sixgill/images/td/solutions_credit.png); background-size:cover;">
 		<div class="footer-widgets-wrap clearfix">
-			<div class="col_half footer_Links"><a href="/legal">LEGAL</a> &nbsp; <a href="#" data-toggle="modal" data-target="#myModalContact">CONTACT</a></div>
+			<div class="col_half footer_Links">
+                <a href="/legal">LEGAL</a> &nbsp; 
+                <a href="#" data-toggle="modal" data-target="#myModalContact">CONTACT</a>&nbsp;
+                <a href="/press">PRESS</a> &nbsp; 
+            </div>
 			<div class="col_half col_last footer_Copy">&copy; Copyright Sixgill, 2016. All Rights Reserved.</div>
 		</div>
 	</div>
