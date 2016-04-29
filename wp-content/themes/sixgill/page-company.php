@@ -104,16 +104,26 @@
 		</div>
 
 		<section id="press" style="background-color:#ffffff;">
-			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 6%; text-align: center;">
-				<div align="center"><p class="btnInside" style="width: 390px;">Latest press and news</p></div>
+
+		<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 0px; text-align: center;">
+			<div align="center"><p class="btnInside" style="width: 390px;">Latest press and news</p></div>
+		</div>
+
+			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 9%; text-align: center;">
+
 				<p class="pCompany">
-					<div class="col_half" align="left">
+					<div class="col_half" align="left" style=" margin-bottom: 0px;">
 						<?php dynamic_sidebar( 'sixgill-company-latest-press' ); ?>
 					</div>
-					<div class="col_half" style="margin-right: 0px;" align="left">
+					<div class="col_half" style="margin-right: 0px; margin-bottom: 0px;" align="left">
 						<?php dynamic_sidebar( 'sixgill-company-latest-news' ); ?>
 					</div>
 				</p>
+			</div>
+			<div class="container clearfix" style="text-align: center;">
+				<div style="margin-bottom:40px;">
+					<a href="/press" class="button button-large nobottommargin btnSolutions" style="margin:0px 0px 0px 0px; width: 390px;">VIEW ALL NEWS AND PRESS RELEASES</a>
+				</div>
 			</div>
 		</section>
 
