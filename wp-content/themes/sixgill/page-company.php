@@ -103,6 +103,7 @@
 			<img src="/wp-content/themes/sixgill/images/td/company/shape3_v5.png" alt="" width="100%"/>
 		</div>
 
+		<a name="press"></a>
 		<section id="press" style="background-color:#ffffff;">
 
 		<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 0px; text-align: center;">

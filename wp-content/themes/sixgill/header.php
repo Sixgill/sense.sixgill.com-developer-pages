@@ -108,8 +108,8 @@
 					<div class="my_subMenus" style="margin-left:15px;">
 						<a href="#company">The Company</a><br>
 						<a href="#team">The Team</a><br>
-						<a href="#board">The Board</a><!--<br>
-						<a href="#investors">Our Investors</a>-->
+						<a href="#board">The Board</a>
+						<a href="#press">Press</a>
 					</div>
 				<?php }else{ ?>
 					<a href="/company/"><div>Company</div></a>
