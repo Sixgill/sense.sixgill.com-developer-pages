@@ -117,6 +117,18 @@ all classes apply for desktop
     background-color: rgba(0,0,0,0.45);
 }
 
+.press-date, .press-title, .press-subtitle {
+	font-family: "Lato", serif, sans-serif;
+}
+
+.press-title, .press-subtitle {
+	color: white;
+}
+
+.press-title {
+	margin-bottom: 0px;
+}
+
 
 
 @media only screen and (min-width : 992px) {/* For desktop: */
@@ -173,10 +185,10 @@ all classes apply for desktop
 		background-color: #fff;
 		z-index:2;
 	}
-    
+
     .widgettitle {
     color: #004FC8;
-    }   
+    }
 
 }
 
@@ -190,7 +202,7 @@ all classes apply for desktop
     .hidden-top-imageDiagram {
         display: none;
     }
-    
+
     .hidden-press-contact {
         display: none;
     }
@@ -231,7 +243,7 @@ all classes apply for desktop
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-    
+
     .widgettitle {
         color: #444;
     }
@@ -323,6 +335,13 @@ all classes apply for desktop
 	#products {
 		height: auto;
 	}
+<<<<<<< HEAD
+=======
+
+    .press-post-title {
+        color: #444;
+    }
+>>>>>>> develop
 
     .widgettitle {
         color: #444;

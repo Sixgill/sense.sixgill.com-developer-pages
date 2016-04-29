@@ -13,15 +13,14 @@
 
   <div class="content-wrap" style="padding:0px;">
 
-    
+
 		<div class="container-fluid center clearfix my_containerSolution" style="padding-top: 0px;">
 				<p class="pCompany">
 						<div class=" text-left col_press" align="left" style="padding-bottom:55px;">
-                            <?php echo do_shortcode( '[widget id="rpwe_widget-2"]' ); ?>
-                            <?php echo do_shortcode( '[widget id="rpwe_widget-3"]' ); ?>
+                            <?php dynamic_sidebar( 'sixgill-press-list' ); ?>
                         </div>
 	
-						<div class="col_two_fifth col_last widget hidden-press-contact" align="left" style="padding:0px 0px 0px 0px; background-color: #f0f0f0; float: right;">
+						<div class="col_two_fifth col_last widget hidden-press-contact" align="left" style="padding:0px 0px 0px 0px; background-color: #C0C0C5; float: right;">
                            <?php echo getPageContentBySlug("press-contact"); ?>
 						</div>
 					</p>

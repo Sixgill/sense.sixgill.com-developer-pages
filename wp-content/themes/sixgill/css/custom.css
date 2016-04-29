@@ -391,6 +391,8 @@ p {font-size:13px; font-weight:normal;}
 	height:44px;
 	background-image:url("/wp-content/themes/sixgill/td/logo/logo_mobile.svg");
 	 margin:10px 0px;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 #what2 {
