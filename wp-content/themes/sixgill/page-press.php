@@ -21,7 +21,7 @@
                             <?php echo do_shortcode( '[widget id="rpwe_widget-3"]' ); ?>
                         </div>
 	
-						<div class="col_two_fifth col_last widget hidden-press-contact" align="left" style="padding:0px 0px 0px 0px; background-color: #C0C0C5; float: right;">
+						<div class="col_two_fifth col_last widget hidden-press-contact" align="left" style="padding:0px 0px 0px 0px; background-color: #f0f0f0; float: right;">
                            <?php echo getPageContentBySlug("press-contact"); ?>
 						</div>
 					</p>
