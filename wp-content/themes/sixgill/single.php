@@ -7,7 +7,10 @@
     <div class="swiper-container swiper-parent">
       <div class="swiper-wrapper">
         <div class="swiper-slide" style="background-image: url('/wp-content/themes/sixgill/images/td/single_header_desktop.png'); background-position: center;">
-					<h1>
+					<div class="slider-caption slider-caption-center">
+						<h1 class="press-title"><?php echo $post->post_title; ?></h1>
+						<h4 class="press-subtitle"><?php echo get_field('subtitle'); ?></h4>
+					</div>
 				</div>
       </div>
     </div>
@@ -21,17 +24,11 @@
 	<div id="location" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
 		<div class="container-fluid center clearfix my_containerSolution">
 			<div class="col_full" style="text-align: left;">
-				<h3><?php echo the_time('F j, Y'); ?></h3>
-				<?php
-					echo $post->post_content;
-				 ?>
+				<h3 class="press-date"><?php echo the_time('F j, Y'); ?></h3>
+				<?php echo $post->post_content; ?>
 			</div>
 		</div>
 	</div>
-
-	<pre>
-		<?php var_dump(get_post()); ?>
-	</pre>
 
 </section><!-- #content end -->
 <?php get_footer(); ?>
