@@ -574,3 +574,12 @@ p {font-size:13px; font-weight:normal;}
 	font-family: "Lato", serif, sans-serif;
 	font-weight: normal;
 }
+
+.news-press-button {
+	margin:0px 0px 0px 0px;
+	width: 390px;
+}
+
+.company-press-title {
+	width: 390px;
+}
