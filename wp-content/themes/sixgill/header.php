@@ -6,21 +6,20 @@
 	<meta name="author" content="WeezLabs" />
 	<!-- Stylesheets -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="../wp-content/themes/sixgill/style.css" type="text/css" />
-	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/swiper.css" type="text/css" />
-	<!--<link rel="stylesheet" href="../wp-content/themes/sixgill/css/dark.css" type="text/css" />-->
-	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/style.css" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/magnific-popup.css" type="text/css" />
 
-	<link rel="stylesheet" href="../wp-content/themes/sixgill/css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/responsive.css" type="text/css" />
 
 
-  <link rel="stylesheet" href="../wp-content/themes/sixgill/css/colors.css" type="text/css" />
-  <link rel="stylesheet" href="../wp-content/themes/sixgill/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="/wp-content/themes/sixgill/css/colors.css" type="text/css" />
+  <link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom.css" type="text/css" />
 
-  <link rel="stylesheet" href="../wp-content/themes/sixgill/css/custom_2016.css" type="text/css" />
+  <link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom_2016.css" type="text/css" />
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
