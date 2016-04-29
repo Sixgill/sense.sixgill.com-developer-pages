@@ -105,7 +105,7 @@
 
 		<section id="press" style="background-color:#ffffff;">
 			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 6%; text-align: center;">
-				<div align="center"><p class="btnInside" style="width: 370px;">Latest press and news</p></div>
+				<div align="center"><p class="btnInside" style="width: 390px;">Latest press and news</p></div>
 				<p class="pCompany">
 					<div class="col_half" align="left">
 						<?php dynamic_sidebar( 'sixgill-company-latest-press' ); ?>
