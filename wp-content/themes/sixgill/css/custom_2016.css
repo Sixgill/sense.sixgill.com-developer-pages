@@ -356,4 +356,16 @@ all classes apply for desktop
 			color: #444;
 	}
 
+	.news-press-button {
+		width: 300px;
+	}
+
+	.news-press-button {
+		font-size: 12px !important;
+	}
+
+	.company-press-title {
+		font-size: 14px !important;
+	}
+
 }
