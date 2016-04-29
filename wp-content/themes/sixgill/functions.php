@@ -32,7 +32,7 @@
 
   }
 
-function mk_widgets_init() {
+function sixgill_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => __( 'Press release list page widget', 'mk' ),
@@ -44,9 +44,29 @@ function mk_widgets_init() {
 		'after_title'   => '</h4>',
 	) );
 
+	register_sidebar( array(
+		'name'          => __( 'Company page latest press', 'mk' ),
+		'id'            => 'sixgill-company-latest-press',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Company page latest news', 'mk' ),
+		'id'            => 'sixgill-company-latest-news',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
 }
 
-add_action( 'widgets_init', 'mk_widgets_init' );
+add_action( 'widgets_init', 'sixgill_widgets_init' );
 
 
  ?>

@@ -98,6 +98,25 @@
 			</div>
 		</section>
 
+		<div class="clear"></div>
+		<div class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
+			<img src="/wp-content/themes/sixgill/images/td/company/shape3_v5.png" alt="" width="100%"/>
+		</div>
+
+		<section id="press" style="background-color:#2e2e2e; color:#FFFFFF;">
+			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 6%; text-align: center;">
+				<div align="center"><p class="btnInside" style="color:#FFFFFF; border-color:#FFF;">The Board</p></div>
+				<p class="pCompany">
+					<div class="col_half" align="left">
+						<?php dynamic_sidebar( 'sixgill-company-latest-press' ); ?>
+					</div>
+					<div class="col_half" align="right">
+						<?php dynamic_sidebar( 'sixgill-company-latest-news' ); ?>
+					</div>
+				</p>
+			</div>
+		</section>
+
 	</div>
 
 </section><!-- #content end -->
