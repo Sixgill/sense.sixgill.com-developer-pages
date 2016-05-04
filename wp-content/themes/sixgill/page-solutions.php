@@ -19,7 +19,10 @@
   <!-- Header of the section -->
   <div class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
     <div class="container-fluid center clearfix my_containerSolution">
-      <?php echo getPageContentBySlug("solutions-text-1"); ?>
+        						
+        <div class="col_one_third my_titSolutions"><?php wp_title("",true); ?></div>
+        <div class="col_two_third my_txtSolutions col_last"><?php echo get_field('top_paragraph'); ?></div>
+
     </div>
   </div>
   <div class="clear"></div>
@@ -30,10 +33,21 @@
   <a name="people"></a>
   <div id="people" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
     <div class="container-fluid center clearfix my_containerSolution">
-      <div class="col_one_third"><img src="/wp-content/themes/sixgill/images/td/icons/iconPeople.png" class="iconSolutions" alt=""/></div>
+      <div class="col_one_third"><img src="<?php echo get_field('people_image'); ?>" class="iconSolutions" alt=""/></div>
       <div class="col_two_third my_txtSolutions_noline col_last">
         <div class=""><img src="/wp-content/themes/sixgill/images/td/solutions/header_people.png" class="my_headerBoxSolution" alt=""/></div>
-        <?php echo getPageContentBySlug("solutions-text-2"); ?>
+          <div class="my_boxSolution_title headerBoxSolutionSize"><?php echo get_field('people_header'); ?></div>
+<div class="my_txtSolution">
+    <?php echo get_field('people_text'); ?>
+
+                 <?php if(get_field('people_list')) : ?>
+					<ul class="listSolutions">
+						<?php foreach(get_field('people_list') as $item) : ?>
+						<li><?php echo $item['people_list_text']; ?></li>
+						<?php endforeach; ?>
+					</ul>				
+				 <?php endif; ?>
+          </div>
       </div>
     </div>
   </div>
@@ -47,11 +61,22 @@
   <a name="assets"></a>
   <div id="assets" class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
     <div class="container-fluid center clearfix my_containerSolution">
-      <div class="col_one_third"><img src="/wp-content/themes/sixgill/images/td/icons/iconCrane.png" class="iconSolutions" alt=""/></div>
+      <div class="col_one_third"><img src="<?php echo get_field('assets_image'); ?>" class="iconSolutions" alt=""/></div>
       <div class="col_two_third my_txtSolutions_noline col_last">
         <div class=""><img src="/wp-content/themes/sixgill/images/td/solutions/header_assets.png" class="my_headerBoxSolution" alt=""/></div>
-        <?php echo getPageContentBySlug("solutions-text-3"); ?>
-      </div>
+          <div class="my_boxSolution_title headerBoxSolutionSize"><?php echo get_field('assets_header'); ?></div>
+<div class="my_txtSolution">
+    <?php echo get_field('assets_text'); ?>
+
+                 <?php if(get_field('assets_list')) : ?>
+					<ul class="listSolutions">
+						<?php foreach(get_field('assets_list') as $item) : ?>
+						<li><?php echo $item['assets_list_text']; ?></li>
+						<?php endforeach; ?>
+					</ul>				
+				 <?php endif; ?>
+          </div>     
+        </div>
     </div>
   </div>
 
@@ -64,10 +89,21 @@
   <a name="crowds"></a>
   <div id="crowds" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
     <div class="container-fluid center clearfix my_containerSolution">
-      <div class="col_one_third"><img src="/wp-content/themes/sixgill/images/td/icons/iconCrowds.png" class="iconSolutions" alt=""/></div>
+      <div class="col_one_third"><img src="<?php echo get_field('crowds_image'); ?>" class="iconSolutions" alt=""/></div>
       <div class="col_two_third my_txtSolutions_noline col_last">
         <div class=""><img src="/wp-content/themes/sixgill/images/td/solutions/header_crowds.png" class="my_headerBoxSolution" alt=""/></div>
-        <?php echo getPageContentBySlug("solutions-text-4"); ?>
+                    <div class="my_boxSolution_title headerBoxSolutionSize"><?php echo get_field('crowds_header'); ?></div>
+<div class="my_txtSolution">
+    <?php echo get_field('crowds_text'); ?>
+
+                 <?php if(get_field('crowds_list')) : ?>
+					<ul class="listSolutions">
+						<?php foreach(get_field('crowds_list') as $item) : ?>
+						<li><?php echo $item['crowds_list_text']; ?></li>
+						<?php endforeach; ?>
+					</ul>				
+				 <?php endif; ?>
+          </div> 
       </div>
     </div>
   </div>
