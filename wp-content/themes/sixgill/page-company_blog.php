@@ -11,13 +11,14 @@
 </section><!-- Content-->
 <section id="content">
 	<div class="content-wrap" style="padding:0px;">
-		<div class="container-fluid center clearfix my_containerSolution" style="padding-top: 0px; margin-left: 5%; margin-top: 20px; margin-right: 10%; max-width: none;">
-				<div class="text-left col_half" align="left" style="padding-bottom:55px; width: 70%;">
+		<div class="container-fluid center clearfix my_containerSolution blog-container">
+				<div class="text-left col_half" align="left" style="padding-bottom:55px;width: 70%;">
+					<h1 class="h1-blog">Blog</h1>
 					<?php get_template_part( 'loop-blog'); ?>
 				</div>
 
-				<div class="col_two_fifth col_last widget hidden-press-contact" align="left" style="padding:0px 0px 0px 0px; background-color: #C0C0C5; float: right; width: 25%;">
-					TODO: subscribe form
+				<div class="col_two_fifth col_last widget hidden-press-contact subscribe-box" align="left" style="float: right; width: 20%; border: 1px solid; padding-top: 50px;">
+					<?php dynamic_sidebar( 'blog-subscribe-sidebar' ); ?>
 				</div>
 		</div>
 	</div>

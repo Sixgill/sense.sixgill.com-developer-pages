@@ -139,6 +139,30 @@ all classes apply for desktop
 	color: grey;
 }
 
+.blog-container {
+	padding-top: 0px;
+	margin-left: 5%;
+	margin-top: 40px;
+	margin-right: 10%;
+	max-width: none;
+}
+
+.subscribe-box {
+	padding: 30px 20px 5px 20px;
+}
+
+.widget_mc4wp_form_widget {
+	margin-top: 10px;
+}
+
+.subscribe-text {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.h1-blog {
+
+}
 
 @media only screen and (min-width : 992px) {/* For desktop: */
 
