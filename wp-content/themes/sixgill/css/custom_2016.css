@@ -149,6 +149,9 @@ all classes apply for desktop
 
 .subscribe-box {
 	padding: 30px 20px 5px 20px;
+	float: right;
+	width: 20%;
+	border: 1px solid;
 }
 
 .widget_mc4wp_form_widget {
