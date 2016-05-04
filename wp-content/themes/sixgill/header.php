@@ -3,7 +3,7 @@
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="WeezLabs" />
+	<meta name="author" content="Sixgill" />
 	<!-- Stylesheets -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/bootstrap.css" type="text/css" />
@@ -33,7 +33,7 @@
   <script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script>
 
 	<!-- Document Title -->
-	<title>Sixgill | Homepage</title>
+	<title>Sixgill - Enterprise Mobile Proximity Platform</title>
 </head>
 
 <body class="side-header stretched">
