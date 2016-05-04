@@ -17,7 +17,7 @@
 
 		<div class="header-stick" id="company" style="background-color:#F8F8F8; border:0px solid #FF0004;">
 			<div class="container-fluid center clearfix" style="padding-top:75px; max-width:1100px;  border:0px solid #FF0004;">
-                <div class="col_one_third my_titSolutions">THE COMPANY</div>
+        <div class="col_one_third my_titSolutions">THE COMPANY</div>
 				<div class="col_two_third col_last text-left my_txtSolutions">
 					<p class="pSolutions">
 					<?php echo getPageContentBySlug("company-the-company"); ?>
@@ -95,6 +95,36 @@
 							<?php echo getPageContentBySlug("company-christopher-rogers"); ?>
 						</div>
 					</p>
+			</div>
+		</section>
+
+		<div class="clear"></div>
+		<div class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
+			<img src="/wp-content/themes/sixgill/images/td/company/shape3_v5.png" alt="" width="100%"/>
+		</div>
+
+		<a name="press"></a>
+		<section id="press" style="background-color:#ffffff;">
+
+		<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 0px; text-align: center;">
+			<div align="center"><p class="btnInside company-press-title">Latest press and news</p></div>
+		</div>
+
+			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 9%; text-align: center;">
+
+				<p class="pCompany">
+					<div class="col_half" align="left" style=" margin-bottom: 0px;">
+						<?php dynamic_sidebar( 'sixgill-company-latest-press' ); ?>
+					</div>
+					<div class="col_half" style="margin-right: 0px; margin-bottom: 0px;" align="left">
+						<?php dynamic_sidebar( 'sixgill-company-latest-news' ); ?>
+					</div>
+				</p>
+			</div>
+			<div class="container clearfix" style="text-align: center;">
+				<div style="margin-bottom:40px;">
+					<a href="/press" class="button button-large nobottommargin btnSolutions news-press-button">VIEW ALL NEWS AND PRESS RELEASES</a>
+				</div>
 			</div>
 		</section>
 
