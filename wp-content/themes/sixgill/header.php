@@ -34,6 +34,7 @@
 
 	<!-- Document Title -->
 	<title>Sixgill | Homepage</title>
+	<?php wp_head(); ?>
 </head>
 
 <body class="side-header stretched">

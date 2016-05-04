@@ -25,6 +25,8 @@
 				<?php echo $post->post_content; ?>
 			</div>
 
+			<?php dynamic_sidebar( 'post-social-links-sidebar' ); ?>
+
 			<div class="col_full" style="text-align: center;">
 				<a href="/company_blog" class="button button-large nobottommargin btnCompany" style="margin:30px 0px 0px 0px;">BACK TO BLOG</a>
 			</div>
