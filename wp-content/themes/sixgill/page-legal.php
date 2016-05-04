@@ -7,7 +7,7 @@
 
     <section class="header-stick" style="background-color:#EEE; ">
     <div class="container-fluid clearfix center" style="margin-bottom:0px; max-width:900px;">
-        <?php echo getPageContentBySlug("legal-content"); ?>
+        <?php echo get_field('text_legal'); ?>
     </div>
     </section>
 

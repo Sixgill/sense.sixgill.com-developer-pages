@@ -17,11 +17,10 @@
 
 		<div class="header-stick" id="company" style="background-color:#F8F8F8; border:0px solid #FF0004;">
 			<div class="container-fluid center clearfix" style="padding-top:75px; max-width:1100px;  border:0px solid #FF0004;">
-        <div class="col_one_third my_titSolutions">THE COMPANY</div>
+        <div class="col_one_third my_titSolutions"><?php echo get_field('about_header'); ?></div>
 				<div class="col_two_third col_last text-left my_txtSolutions">
-					<p class="pSolutions">
-					<?php echo getPageContentBySlug("company-the-company"); ?>
-					</p>
+                        <?php echo get_field('top_text_left'); ?>
+					
 				</div>
 			</div>
 		</div>
@@ -36,7 +35,7 @@
 	<a name="team"></a>
 	<div id="team" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
 		<div class="container-fluid center clearfix my_containerSolution">
-			<div align="center"><p class="btnInside">OUR TEAM</p></div>
+			<div align="center"><p class="btnInside"><?php echo get_field('team_header'); ?></p></div>
 
 			<p class="pCompany">
 						<div class="col_one_third mobile-position-center text-right"><img src="/wp-content/themes/sixgill/images/td/company/tbn_phil.png" width="170" alt=""/></div>
@@ -85,15 +84,37 @@
 			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 6%; text-align: center;">
 				<div align="center"><p class="btnInside" style="color:#FFFFFF; border-color:#FFF;">The Board</p></div>
 				<p class="pCompany">
-						<div class="col_one_third" align="left">
-							<?php echo getPageContentBySlug("company-harry-hopper"); ?>
-						</div>
-						<div class="col_one_third" align="left">
-							<?php echo getPageContentBySlug("company-phil-ressler"); ?>
-						</div>
+    
+    
+                	<?php if(get_field('board')) : ?>
+					<?php $i = 0; foreach(get_field('board') as $item) : $i++; ?>
+                        <?php if($i % 3 == 0) : ?>
+				
 						<div class="col_one_third col_last" align="left" style="padding:0px 0px 0px 0px;">
-							<?php echo getPageContentBySlug("company-christopher-rogers"); ?>
-						</div>
+                            <span class="companyName"><?php echo $item['name']; ?></span><br>
+							<span class="companyJob"><?php echo $item['title']; ?></span><br>
+					<div class="hrSmallWhite" align="left"></div>
+
+                                <?php echo $item['bio']; ?>
+                            
+                        </div>
+                         <?php break; ?>
+						<?php endif; ?>
+                        
+						<div class="col_one_third" align="left">
+                            <span class="companyName"><?php echo $item['name']; ?></span><br>
+							<span class="companyJob"><?php echo $item['title']; ?></span><br>
+					<div class="hrSmallWhite" align="left"></div>
+
+                                <?php echo $item['bio']; ?>
+                            
+                        	</div>
+                   		 
+
+					<?php endforeach; ?>
+				<?php endif; ?>  
+                    
+                    
 					</p>
 			</div>
 		</section>

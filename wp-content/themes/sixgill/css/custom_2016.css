@@ -129,7 +129,43 @@ all classes apply for desktop
 	margin-bottom: 0px;
 }
 
+.blog-post-preview-header {
+	font-size: 16px;
+}
 
+.blog-post-author {
+	font-weight: bold;
+	margin-bottom: 0px;
+	color: grey;
+}
+
+.blog-container {
+	padding-top: 0px;
+	margin-left: 5%;
+	margin-top: 40px;
+	margin-right: 10%;
+	max-width: none;
+}
+
+.subscribe-box {
+	padding: 30px 20px 5px 20px;
+	float: right;
+	width: 20%;
+	border: 1px solid;
+}
+
+.widget_mc4wp_form_widget {
+	margin-top: 10px;
+}
+
+.subscribe-text {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.h1-blog {
+
+}
 
 @media only screen and (min-width : 992px) {/* For desktop: */
 
