@@ -154,6 +154,10 @@ all classes apply for desktop
 	border: 1px solid;
 }
 
+.subscribe-box-mobile {
+	border: 0px;
+}
+
 .widget_mc4wp_form_widget {
 	margin-top: 10px;
 }
@@ -168,6 +172,10 @@ all classes apply for desktop
 }
 
 @media only screen and (min-width : 992px) {/* For desktop: */
+
+.subscribe-box-mobile {
+	display: none;
+}
 
 .slider-caption.slider-caption-center {
     max-width: 900px;
