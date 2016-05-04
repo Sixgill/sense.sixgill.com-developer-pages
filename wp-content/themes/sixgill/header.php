@@ -34,6 +34,7 @@
 
 	<!-- Document Title -->
 	<title>Sixgill - Enterprise Mobile Proximity Platform</title>
+	<?php wp_head(); ?>
 </head>
 
 <body class="side-header stretched">
@@ -113,6 +114,13 @@
 					</div>
 				<?php }else{ ?>
 					<a href="/company/"><div>Company</div></a>
+				<?php } ?>
+
+				<?php if(strcasecmp(getCurrentSlug(), "Blog")==0) { ?>
+					<a href="#top"><div>Blog</div></a>
+					</div>
+				<?php }else{ ?>
+					<a href="/company_blog/"><div>Blog</div></a>
 				<?php } ?>
 
 				</ul>
