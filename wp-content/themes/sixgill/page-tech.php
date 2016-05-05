@@ -4,7 +4,7 @@
   <div class="slider-parallax-inner">
     <div class="swiper-container swiper-parent">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image: url('/wp-content/themes/sixgill/images/td/hero/dollarphotoclub_77872129_web.jpg'); background-position:center;"></div>
+        <div class="swiper-slide" style="background-image: url('/wp-content/themes/sixgill/images/td/hero/dollarphotoclub_77872129_web.jpg'); background-position:center bottom;"></div>
       </div>
     </div>
   </div>
