@@ -37,36 +37,60 @@
 		<div class="container-fluid center clearfix my_containerSolution">
 			<div align="center"><p class="btnInside"><?php echo get_field('team_header'); ?></p></div>
 
-			<p class="pCompany">
-						<div class="col_one_third mobile-position-center text-right"><img src="/wp-content/themes/sixgill/images/td/company/tbn_phil.png" width="170" alt=""/></div>
+			
+                            <p class="pCompany">
+
+                <?php if(get_field('team')) : ?>
+					<?php $i = 0; foreach(get_field('team') as $item) : $i++; ?>
+                        <?php if($i == 1) : ?>
+				
+                        <div class="col_one_third mobile-position-center text-right">
+                            <img src="<?php echo $item['photo']; ?>" width="170" alt=""/>
+                        </div>
+                            
+                        <?php else: ?>
+                                            
+                        <div class="col_one_third mobile-position-center" align="right">
+                            <img src="<?php echo $item['photo']; ?>" width="170" alt=""/>
+                        </div>
+            
+                        <?php endif; ?>
+
 						<div class="col_two_third col_last text-left" style="padding-bottom:55px;">
-							<?php echo getPageContentBySlug("team-phil-ressler"); ?>
-						</div>
+                            <div class="mobile-position-center">
+                                <span class="companyName"><?php echo $item['name']; ?></span><br>
+							    <span class="companyJob"><?php echo $item['title']; ?></span><br>
+                            </div>
+                            <span class="companyDescription"><?php echo $item['bold_bio']; ?></span>
+                            <?php echo $item['regular_bio']; ?>
+                            <div class="mobile-position-center">
+                                <?php switch ($i) {
+                                    case 1:
+                            ?><a class="btnLearnMore" id="lmbtn_Phill" href="javascript:toggle('lmtxt_Phill','lmbtn_Phill');">Learn More &#8744;</a><?php
+                                        break;
+                                    case 2:
+                            ?><a class="btnLearnMore" id="lmbtn_Jeff" href="javascript:toggle('lmtxt_Jeff','lmbtn_Jeff');">Learn More &#8744;</a><?php
+                                        break;
+                                    case 3:
+                            ?><a class="btnLearnMore" id="lmbtn_Mike" href="javascript:toggle('lmtxt_Mike','lmbtn_Mike');">Learn More &#8744;</a><?php
+                                        break;
+                                    case 4:
+                            ?><a class="btnLearnMore" id="lmbtn_Shawn" href="javascript:toggle('lmtxt_Shawn','lmbtn_Shawn');">Learn More &#8744;</a><?php
+                                        break;
+                                    case 5:
+                            ?><a class="btnLearnMore" id="lmbtn_Arnold" href="javascript:toggle('lmtxt_Arnold','lmbtn_Arnold');">Learn More &#8744;</a><?php
+                                        break;
+                                    case 6:
+                            ?><a class="btnLearnMore" id="lmbtn_John" href="javascript:toggle('lmtxt_John','lmbtn_John');">Learn More &#8744;</a><?php
+                                        break;
+                                }
+                                ?>
+                            </div>
+                        </div>
+                   		 
 
-						<div class="col_one_third mobile-position-center" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbn_jeff.png" width="170" alt=""/></div>
-						<div class="col_two_third col_last" align="left" style="padding-bottom:55px;">
-							<?php echo getPageContentBySlug("team-jeff-ester"); ?>
-						</div>
-
-						<div class="col_one_third mobile-position-center" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnmike.png" width="170" alt=""/></div>
-						<div class="col_two_third col_last" align="left" style="padding-bottom:55px;">
-							<?php echo getPageContentBySlug("team-mike-horowitz"); ?>
-						</div>
-
-						<div class="col_one_third mobile-position-center" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnshawn.png" width="170" alt=""/></div>
-						<div class="col_two_third col_last" align="left" style="padding-bottom:55px;">
-							<?php echo getPageContentBySlug("team-shawn-gunn"); ?>
-						</div>
-
-						<div class="col_one_third mobile-position-center" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnarnold.png" width="170" alt=""/></div>
-						<div class="col_two_third col_last" align="left" style="padding-bottom:55px;">
-							<?php echo getPageContentBySlug("team-arnold-waldstein"); ?>
-						</div>
-
-						<div class="col_one_third mobile-position-center" align="right"><img src="/wp-content/themes/sixgill/images/td/company/tbnjohn.png" width="170" alt=""/></div>
-						<div class="col_two_third col_last" align="left" style="padding-bottom:0px;">
-							<?php echo getPageContentBySlug("team-john-dohm"); ?>
-						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>  
 
 					</p>
 
