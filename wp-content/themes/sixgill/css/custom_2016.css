@@ -192,12 +192,17 @@ all classes apply for desktop
 .blog-list {
 	padding-bottom: 0px;
 	width: 100%;
+	padding-right: 5px;
 }
 
 @media only screen and (min-width : 992px) {/* For desktop: */
 
 	.subscribe-element {
 		display: block;
+	}
+
+	.blog-container {
+		margin-right: 0px;
 	}
 
 	.subscribe-block-tablet-mobile {
@@ -319,7 +324,7 @@ all classes apply for desktop
 
 	.blog-list {
 		padding-bottom:55px;
-		width: 70%;
+		width: 61%;
 	}
 
 }
