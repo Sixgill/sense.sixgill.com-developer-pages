@@ -12,11 +12,13 @@ if ( $query->have_posts() ) {
 		$query->the_post();
 ?>
 		<div class="blog-post-preview-header">
-			<span style="padding-right: 10px;"><?php the_time('F j, Y'); ?></span>
-			<a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-			<p class="blog-post-author">by <?php echo get_field('author'); ?></p>
+			<p class="blog-post-suptitle"><?php the_time('F j, Y'); ?> | by <?php echo get_field('author'); ?></p>
+			<a href="<?php echo get_permalink(); ?>" class="blog-post-title"><?php the_title(); ?></a>
+
 		</div>
-		<?php the_content(""); ?>
+		<?php
+		the_content("read more");
+		?>
 <?php
 	}
 } else {
