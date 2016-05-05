@@ -16,7 +16,7 @@
 
 <section id="content">
 	<div class="content-wrap" style="padding:0px;">
-		<div class="container-fluid center clearfix my_containerSolution blog-container subscribe-box-mobile">
+		<div class="container-fluid center clearfix my_containerSolution blog-container subscribe-block-tablet-mobile">
 				<div class="text-left col_full" align="left" style="padding-bottom:0px; margin-bottom: 0px; width: 100%; padding-top: 5px; padding-left: 5px;">
 					<hr>
 					<?php dynamic_sidebar( 'blog-subscribe-sidebar' ); ?>
@@ -29,7 +29,7 @@
 					<?php get_template_part( 'loop-blog'); ?>
 				</div>
 
-				<div class="col_two_fifth col_last widget hidden-press-contact subscribe-box" align="left">
+				<div class="col_two_fifth col_last widget hidden-press-contact subscribe-block" align="left">
 					<?php dynamic_sidebar( 'blog-subscribe-sidebar' ); ?>
 				</div>
 		</div>
