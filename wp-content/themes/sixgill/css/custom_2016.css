@@ -133,10 +133,17 @@ all classes apply for desktop
 	font-size: 16px;
 }
 
-.blog-post-author {
+.blog-post-title {
+	font-size: 24px;
+	font-weight: bold;
+	color: #2e2e2e;
+}
+
+.blog-post-suptitle {
 	font-weight: bold;
 	margin-bottom: 0px;
-	color: grey;
+	color: #b8b8b8;
+	line-height: 1em !important;
 }
 
 .blog-container {
