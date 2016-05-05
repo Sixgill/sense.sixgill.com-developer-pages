@@ -417,7 +417,7 @@ all classes apply for desktop
 	}
 
 	.subscribe-block-tablet-mobile {
-		padding: 40px 60px 40px 98px;
+		padding: 55px 60px 20px 98px;
 		margin: 0px auto;
 		height: 195px;
 		width: 100%;
@@ -433,6 +433,7 @@ all classes apply for desktop
 		overflow: hidden;
 		width: 100%;
 		padding-right: 15px;
+		padding-left: 10px;
 	}
 
 	.subscribe-email {
@@ -578,7 +579,7 @@ all classes apply for desktop
 	}
 
 	.subscribe-block-tablet-mobile {
-		padding: 26px 18px 25px 19px;
+		padding: 15px 18px 25px 19px;
 		margin: 0px auto;
 		height: 210px;
 		width: 100%;
@@ -601,7 +602,7 @@ all classes apply for desktop
 		margin-bottom: 10px;
 		margin-top: 10px;
 		text-align: center;
-		width: 100%;
+		width: 280px;
 	}
 
 	.subscribe-button {
