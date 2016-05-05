@@ -167,14 +167,16 @@ all classes apply for desktop
 	font-weight: bold;
 }
 
-.h1-blog {
-
-}
-
 @media only screen and (min-width : 992px) {/* For desktop: */
 
 .subscribe-box-mobile {
 	display: none;
+}
+
+.subscribe-button {
+	background-image: url('/wp-content/themes/sixgill/images/td/blog/subscribe_desktop.png');
+	width: 311px;
+	height: 45px;
 }
 
 .slider-caption.slider-caption-center {
