@@ -162,7 +162,7 @@ function toggle(showHideDiv, switchTextDiv) {
      e.parentNode.insertBefore(n, e);
    })(document,"script","hs-analytics",300000);
  </script>
-<!-- End of Async HubSpot Analytics Code →
+<!-- End of Async HubSpot Analytics Code -->
 
 <?php
 	/*
