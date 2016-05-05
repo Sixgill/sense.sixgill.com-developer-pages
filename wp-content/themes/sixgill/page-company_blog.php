@@ -26,7 +26,8 @@
 		<div class="container-fluid center clearfix my_containerSolution blog-container">
 				<div class="text-left col_half" align="left" style="padding-bottom:55px;width: 70%;">
 					<h1 class="h1-blog">Blog</h1>
-					<?php get_template_part( 'loop-blog'); ?>
+					<?php
+					get_template_part( 'loop-blog'); ?>
 				</div>
 
 				<div class="col_two_fifth col_last widget hidden-press-contact subscribe-block" align="left">

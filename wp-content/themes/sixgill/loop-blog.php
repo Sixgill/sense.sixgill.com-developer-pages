@@ -16,7 +16,9 @@ if ( $query->have_posts() ) {
 			<a href="<?php echo get_permalink(); ?>" class="blog-post-title"><?php the_title(); ?></a>
 
 		</div>
-		<?php the_content(""); ?>
+		<?php
+		the_content("read more");
+		?>
 <?php
 	}
 } else {
