@@ -21,7 +21,7 @@
 	<div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
         <div class="topShareBottonMobile">
         <table style="width:100%; height:60px; background-color: #f0f0f0;">
-            <tr style="text-align: center;"> 
+            <tr style="text-align: center;">
                 <td style="width: 25%; height: 60px;">
                     <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" title="Share on Facebook."><img src="/wp-content/themes/sixgill/images/td/blog/facebook_normal.svg" alt="Mountain View" class="shareButton-mobile"></a>
                 </td>
@@ -37,8 +37,8 @@
             </tr>
         </table>
         </div>
-        
-        <div id="aside1"> 
+
+        <div id="aside1">
             <ul class="marginShareButton">
                 <li>
 
@@ -59,13 +59,14 @@
                 </li>
 
 </ul>
-        
+
         </div>
 
 		<div class="container-fluid center clearfix my_containerSolution">
 
 			<div class="col_full" style="text-align: left; margin-bottom: 30px;">
-				<h3 class="press-date"><?php echo the_time('F j, Y'); ?> by <?php echo get_field('author'); ?></h3>
+				<h3 class="press-date no-bottom-margin"><?php echo the_time('F j, Y'); ?></h3>
+				<h4 class="press-by-author">Post by <?php echo get_field('author'); ?></h4>
 				<?php echo $post->post_content; ?>
 			</div>
 
