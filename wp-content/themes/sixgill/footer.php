@@ -235,7 +235,7 @@ function Ascroll() {
     }
       else {
       b.className = 'sticky';
-      b.style.top = P - 211 + 'px';
+      b.style.top = P - 211 - 40 + 'px';
 
 
     }
