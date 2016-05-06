@@ -167,9 +167,29 @@ body, p {
 	color:#FF0004;
 }
 
+#aside1 { 
+    position: fixed; 
+    z-index: 101; 
+    width: 100%;
+
+}
+
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+.stop {
+  position: relative;
+  z-index: 101;
+}
 /* ----------------------------------------------------------------
 	Side Header
 -----------------------------------------------------------------*/
+
+.shareButton {
+    margin-bottom: 10px;
+    width:20px; height:20px
+}
 
 @media (min-width: 992px) {
 
