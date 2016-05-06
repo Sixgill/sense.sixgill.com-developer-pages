@@ -1,4 +1,15 @@
 <!-- footer.php start -->
+
+<?php
+	$footerInfoId = getPageBySlug('footer-details-contact-popup')->ID;
+
+	$legalLink = get_field('legal_link', $footerInfoId);
+	$pressLink = get_field('press_link', $footerInfoId);
+	$contactHeader = get_field('contact_header', $footerInfoId);
+	$contactText = get_field('contact_text', $footerInfoId);
+	$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
+?>
+
 <footer id="footer" class="footer">
 
 	<div class="container-fluid nomargin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_footer.png'); background-size:cover;">
@@ -13,9 +24,9 @@
 	<div class="container-fluid nomargin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_credit.png'); background-size:cover;">
 		<div class="footer-widgets-wrap clearfix">
 			<div class="col_half footer_Links">
-                <a href="/legal">LEGAL</a> &nbsp;
+                <a href="<?php echo $legalLink; ?>">LEGAL</a> &nbsp;
                 <a href="#" data-toggle="modal" data-target="#myModalContact">CONTACT</a>&nbsp;
-                <a href="/press">PRESS</a> &nbsp;
+                <a href="<?php echo $pressLink; ?>">PRESS</a> &nbsp;
             </div>
 			<div class="col_half col_last footer_Copy">&copy; Copyright Sixgill, 2016. All Rights Reserved.</div>
 		</div>
@@ -64,15 +75,13 @@
 			<div class="modal-content">
 				<div class="modal-header" style="background-color:#57B82A;">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel2" style="color:#FFF;" align="center">CONTACT</h4>
+					<h4 class="modal-title" id="myModalLabel2" style="color:#FFF;" align="center"><?php echo $contactHeader; ?></h4>
 				</div>
 				<div class="modal-body" align="center">
-					<p>310.220.4238<br>
-					<a href="mailto:sales@sixgill.com">sales@sixgill.com</a><br>
-					<br>SANTA MONICA<br>
-					312 Arizona Avenue<br>
-					Santa Monica, CA 90401</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0426494208914!2d-118.49943728478584!3d34.01711618061547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cf828fe6fb%3A0x98334bfc7af2a7bf!2s312+Arizona+Ave%2C+Santa+Monica%2C+CA+90401!5e0!3m2!1sen!2sus!4v1458203894011" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+					<?php
+						echo $contactText;
+						echo $googleMapEmbedCode;
+					?>
 				</div>
 			</div>
 
@@ -170,7 +179,7 @@ function toggle(showHideDiv, switchTextDiv) {
 
 
 //alert( 'Высота с учетом прокрутки: ' + window.pageYOffset);
-    
+
 var a = document.querySelector('#aside1'), b = null, P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
 window.addEventListener('scroll', Ascroll, false);
 document.body.addEventListener('scroll', Ascroll, false);
@@ -198,15 +207,15 @@ function Ascroll() {
   }
   var Ra = a.getBoundingClientRect(),
       R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('footer').getBoundingClientRect().top + 0);  // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
-  
+
     var topHeader = -Math.round(Ra.top + b.getBoundingClientRect().height - headerFooter + 0) - document.getElementById('content').offsetHeight + document.getElementById('aside1').offsetHeight;
-    
+
     var scrollHeight = Math.max(
   document.body.scrollHeight, document.documentElement.scrollHeight,
   document.body.offsetHeight, document.documentElement.offsetHeight,
   document.body.clientHeight, document.documentElement.clientHeight
 );
-    
+
 
     if (window.pageYOffset  <= 250){
 
@@ -217,21 +226,21 @@ function Ascroll() {
      P = Ra.top;
     if (((Ra.top - P) <= 0))  {
     if (window.pageYOffset >= (scrollHeight - document.getElementById('footer').offsetHeight) ) {
-                
+
       b.className = 'stop';
       b.style.top =  -R +'px';
-    } 
+    }
       else {
       b.className = 'sticky';
       b.style.top = P - 211 + 'px';
-          
+
 
     }
   } else {
     b.className = '';
     b.style.top = '';
   }
-        
+
     }
   window.addEventListener('resize', function() {
     a.children[0].style.width = getComputedStyle(a, '').width
