@@ -191,6 +191,15 @@ body, p {
     width:20px; height:20px
 }
 
+.shareButton-mobile {
+    width:50%; 
+    height:50%;
+}
+
+.topShareBottonMobile {
+    display: none;
+}
+
 @media (min-width: 992px) {
 
 .side-header #header {

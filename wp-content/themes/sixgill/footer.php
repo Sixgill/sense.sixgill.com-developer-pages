@@ -178,6 +178,8 @@ function toggle(showHideDiv, switchTextDiv) {
 (function(){
 
 
+  if(document.getElementById('single-page-content')){
+
 //alert( 'Высота с учетом прокрутки: ' + window.pageYOffset);
 
 var a = document.querySelector('#aside1'), b = null, P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
@@ -187,6 +189,7 @@ document.body.addEventListener('scroll', Ascroll, false);
 var headerFooter = document.querySelector('footer').getBoundingClientRect().top;
 
 function Ascroll() {
+    
   if (b == null) {
     var Sa = getComputedStyle(a, ''), s = '';
     for (var i = 0; i < Sa.length; i++) {
@@ -246,6 +249,7 @@ function Ascroll() {
     a.children[0].style.width = getComputedStyle(a, '').width
   }, false);
 }
+    }
 })()
 </script>
 <?php
