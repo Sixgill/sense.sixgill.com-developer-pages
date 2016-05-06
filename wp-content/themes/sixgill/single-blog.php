@@ -23,16 +23,16 @@
         <table style="width:100%; height:60px; background-color: #f0f0f0;">
             <tr style="text-align: center;">
                 <td style="width: 25%; height: 60px;">
-                    <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" title="Share on Facebook."><img src="/wp-content/themes/sixgill/images/td/blog/facebook_normal.svg" alt="Mountain View" class="shareButton-mobile"></a>
+                    <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" target="_blank" title="Share on Facebook."><img src="/wp-content/themes/sixgill/images/td/blog/facebook_normal.svg" alt="Mountain View" class="shareButton-mobile"></a>
                 </td>
                 <td style="width: 25%; height: 60px;">
-                    <a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" title="Tweet this!"><img src="/wp-content/themes/sixgill/images/td/blog/twitter_normal.svg" alt="Mountain View" class="shareButton-mobile"></a>
+                    <a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!"><img src="/wp-content/themes/sixgill/images/td/blog/twitter_normal.svg" alt="Mountain View" class="shareButton-mobile"></a>
                 </td>
                 <td style="width: 25%; height: 60px;">
-                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Share on LinkedIn"><img src="/wp-content/themes/sixgill/images/td/blog/linkedin_normal.svg" alt="Mountain View" class="shareButton-mobile"></a>
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" target="_blank" title="Share on LinkedIn"><img src="/wp-content/themes/sixgill/images/td/blog/linkedin_normal.svg" alt="Mountain View" class="shareButton-mobile"></a>
                 </td>
                 <td style="width: 25%; height: 60px;">
-                    <a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email"><img src="/wp-content/themes/sixgill/images/td/blog/email_normal.jpeg" alt="Mountain View" class="shareButton-mobile"></a>
+                    <a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" target="_blank" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email"><img src="/wp-content/themes/sixgill/images/td/blog/email_normal.jpeg" alt="Mountain View" class="shareButton-mobile"></a>
                 </td>
             </tr>
         </table>
@@ -43,18 +43,18 @@
                 <li>
 
                 </li>
-<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" title="Share on Facebook."><img src="/wp-content/themes/sixgill/images/td/blog/facebook_normal.svg" alt="Mountain View" class="shareButton"></a>
+<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" target="_blank" title="Share on Facebook."><img src="/wp-content/themes/sixgill/images/td/blog/facebook_normal.svg" alt="Mountain View" class="shareButton"></a>
 
                 <li>
-                    <a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" title="Tweet this!"><img src="/wp-content/themes/sixgill/images/td/blog/twitter_normal.svg" alt="Mountain View" class="shareButton"></a>
-
-                </li>
-                <li>
-                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Share on LinkedIn"><img src="/wp-content/themes/sixgill/images/td/blog/linkedin_normal.svg" alt="Mountain View" class="shareButton"></a>
+                    <a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!"><img src="/wp-content/themes/sixgill/images/td/blog/twitter_normal.svg" alt="Mountain View" class="shareButton"></a>
 
                 </li>
                 <li>
-                    <a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email"><img src="/wp-content/themes/sixgill/images/td/blog/email_normal.jpeg" alt="Mountain View" class="shareButton"></a>
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" target="_blank" title="Share on LinkedIn"><img src="/wp-content/themes/sixgill/images/td/blog/linkedin_normal.svg" alt="Mountain View" class="shareButton"></a>
+
+                </li>
+                <li>
+                    <a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" target="_blank" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email"><img src="/wp-content/themes/sixgill/images/td/blog/email_normal.jpeg" alt="Mountain View" class="shareButton"></a>
 
                 </li>
 
