@@ -19,8 +19,8 @@
 <section id="content">
 
 	<div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
-        <div id="aside1"> 
-        
+        <div id="aside1">
+
             <ul style=" margin-left: 40px; list-style-type: none;">
                 <li>
 
@@ -41,13 +41,14 @@
                 </li>
 
 </ul>
-        
+
         </div>
 
 		<div class="container-fluid center clearfix my_containerSolution">
 
 			<div class="col_full" style="text-align: left; margin-bottom: 30px;">
-				<h3 class="press-date"><?php echo the_time('F j, Y'); ?> by <?php echo get_field('author'); ?></h3>
+				<h3 class="press-date no-bottom-margin"><?php echo the_time('F j, Y'); ?></h3>
+				<h4 class="press-by-author">Post by <?php echo get_field('author'); ?></h4>
 				<?php echo $post->post_content; ?>
 			</div>
 

@@ -117,12 +117,20 @@ all classes apply for desktop
     background-color: rgba(0,0,0,0.45);
 }
 
-.press-date, .press-title, .press-subtitle {
+.press-date, .press-by-author, .press-title, .press-subtitle {
 	font-family: "Lato", serif, sans-serif;
+}
+
+.no-bottom-margin {
+	margin-bottom: 0px;
 }
 
 .press-title, .press-subtitle {
 	color: white;
+}
+
+.press-by-author {
+	color: #999999;
 }
 
 .press-title {
@@ -196,6 +204,10 @@ all classes apply for desktop
 }
 
 @media only screen and (min-width : 992px) {/* For desktop: */
+
+	.post-by-author {
+
+	}
 
 	.subscribe-element {
 		display: block;
