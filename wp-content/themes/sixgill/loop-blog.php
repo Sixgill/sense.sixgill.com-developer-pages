@@ -23,7 +23,7 @@ if ( $query->have_posts() ) {
 	}
 } else {
 	?>
-		TODO: think about no posts message here
+		Silence is golden
 	<?php
 }
 
