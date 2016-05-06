@@ -4,6 +4,8 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Sixgill" />
+
+	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 	<!-- Stylesheets -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/bootstrap.css" type="text/css" />
