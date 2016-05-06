@@ -205,6 +205,12 @@ all classes apply for desktop
 
 @media only screen and (min-width : 992px) {/* For desktop: */
 
+
+	.marginShareButton {
+		margin-left: 80px;
+		list-style-type: none;
+	}
+
 	.post-by-author {
 
 	}
@@ -346,6 +352,11 @@ all classes apply for desktop
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
 
+    .marginShareButton {
+    margin-left: 40px;
+    list-style-type: none;
+    }
+
 	section {
 		margin-top: -1px;
 	}
@@ -484,9 +495,24 @@ all classes apply for desktop
 	.subscribe-success-icon {
 		margin-top: 0px;
 	}
+
+    .my_containerSolution {
+        margin-right: 50px;
+        margin-left: 80px;
+    }
 }
 
 @media only screen and (max-width: 500px) {/* For mobiles: */
+
+    .topShareBottonMobile {
+        display: block;
+    }
+
+    .marginShareButton {
+        margin-left: 40px;
+        list-style-type: none;
+        display: none;
+    }
 
 	.hidden-press-contact {
 		display: none;
@@ -649,4 +675,9 @@ all classes apply for desktop
 	.subscribe-element {
 		display: block;
 	}
+
+    .my_containerSolution {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
 }
