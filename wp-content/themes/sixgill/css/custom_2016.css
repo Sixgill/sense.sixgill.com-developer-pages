@@ -212,10 +212,11 @@ all classes apply for desktop
 	.subscribe-block {
 		background-color: #fafafa;
 		height: 250px;
-		width: 350px;
+		max-width: 350px;
 		padding: 15px 20px 26px 20px;
 		text-align: center;
 		font-size: 18px;
+		width: 30%
 	}
 
 	.subscribe-block h4 {
@@ -234,8 +235,10 @@ all classes apply for desktop
 
 	.subscribe-button {
 		background-image: url('/wp-content/themes/sixgill/images/td/blog/subscribe_desktop.png');
-		width: 311px;
+		max-width: 311px;
 		height: 45px;
+		width: 100%;
+		background-position: center center;
 	}
 
 	.mc4wp-success > p {
@@ -324,7 +327,7 @@ all classes apply for desktop
 
 	.blog-list {
 		padding-bottom:55px;
-		width: 61%;
+		width: 65%;
 	}
 
 }
