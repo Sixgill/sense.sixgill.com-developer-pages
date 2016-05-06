@@ -10,7 +10,7 @@
 	$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
 ?>
 
-<footer id="footer">
+<footer id="footer" class="footer">
 
 	<div class="container-fluid nomargin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_footer.png'); background-size:cover;">
 		<div class="footer-widgets-wrap clearfix">
