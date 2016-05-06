@@ -4,19 +4,19 @@
   <meta charset= <?php bloginfo( 'charset' ); ?>">
 
   <title><?php wp_title(); ?></title>
-  
+
   <!-- Definir viewport para dispositivos web móviles -->
   <meta name="viewport" content="width=device-width, minimum-scale=1">
-  
+
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
   <link rel="stylesheet" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
- 
+
   <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js"></script>
   <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/funciones.js"></script>
- 
+
   <?php wp_head(); ?>
- 
+
 </head>
 <body class="stretched side-header">
   <div class="wrapper">
@@ -75,4 +75,3 @@
 			</div>
 
 		</header>
-
