@@ -45,7 +45,9 @@
 	<section id="top"></section>
 	<div id="wrapper" class="clearfix">
 <!-- Header -->
-<header id="header" class="no-sticky">
+<div id="top-panel-background"></div>
+<div id="menu-background"></div>
+<header id="header" class="no-sticky" style="background: rgba(0,0,0,0);">
 
 	<div id="header-wrap">
 
