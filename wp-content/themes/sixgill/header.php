@@ -51,7 +51,10 @@
 
 		<div class="container clearfix">
 
-			<div id="primary-menu-trigger" class="tright" style="border:0px solid #FF0004; width:100%;"><img src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" height="100%" alt=""/></div>
+			<div id="primary-menu-trigger" class="tright" style="border:0px solid #FF0004; width:100%;">
+				<img id="show-menu-icon" class="" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" height="100%" alt=""/>
+				<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" height="100%" alt=""/>
+			</div>
 
 			<div id="logo" class="noborder nopadding nomargin">
 				<a href="/" class="logoSIXGILL"></a>
@@ -125,34 +128,32 @@
 					<a href="/company_blog/"><div>Blog</div></a>
 				<?php } ?>
 
+				<?php
+					$globalSocialButtonsInfoId = getPageBySlug('global-social-buttons')->ID;
+
+					$facebookLink = get_field('facebook_link', $globalSocialButtonsInfoId);
+					$twitterLink = get_field('twitter_link', $globalSocialButtonsInfoId);
+					$linkedinLink = get_field('linkedin_link', $globalSocialButtonsInfoId);
+				?>
+
+				<div class="global-social-buttons-container global-social-buttons-list">
+
+					<hr class="global-social-buttons-separator">
+
+					<a href="<?php echo $facebookLink; ?>" class="menu-social-link">
+						<img width="13px" src="/wp-content/themes/sixgill/images/td/blog/facebook_normal.svg">
+					</a>
+					<a href="<?php echo $twitterLink; ?>" class="menu-social-link">
+						<img width="22px" src="/wp-content/themes/sixgill/images/td/blog/twitter_normal.svg">
+					</a>
+					<a href="<?php echo $linkedinLink; ?>" class="menu-social-link">
+						<img width="22px" src="/wp-content/themes/sixgill/images/td/blog/linkedin_normal.svg">
+					</a>
+
+				</div>
+
 				</ul>
-				<ul class="global-social-buttons-list">
-					<li>
-						<hr class="global-social-buttons-separator">
 
-						<?php
-							$globalSocialButtonsInfoId = getPageBySlug('global-social-buttons')->ID;
-
-							$facebookLink = get_field('facebook_link', $globalSocialButtonsInfoId);
-							$twitterLink = get_field('twitter_link', $globalSocialButtonsInfoId);
-							$linkedinLink = get_field('linkedin_link', $globalSocialButtonsInfoId);
-						?>
-
-						<div class="global-social-buttons-container">
-
-							<a href="<?php echo $facebookLink; ?>" class="menu-social-link">
-								<img width="13px" src="/wp-content/themes/sixgill/images/td/blog/facebook_normal.svg">
-							</a>
-							<a href="<?php echo $twitterLink; ?>" class="menu-social-link">
-								<img width="22px" src="/wp-content/themes/sixgill/images/td/blog/twitter_normal.svg">
-							</a>
-							<a href="<?php echo $linkedinLink; ?>" class="menu-social-link">
-								<img width="22px" src="/wp-content/themes/sixgill/images/td/blog/linkedin_normal.svg">
-							</a>
-
-						</div>
-					</li>
-				<ul>
 			</nav><!-- #primary-menu end -->
 
 		</div>
