@@ -62,7 +62,7 @@
 
         </div>
 
-		<div class="container-fluid center clearfix my_containerSolution">
+		<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent">
 
 			<div class="col_full" style="text-align: left; margin-bottom: 30px;">
 				<h3 class="press-date no-bottom-margin"><?php echo the_time('F j, Y'); ?></h3>
