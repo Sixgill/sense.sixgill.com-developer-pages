@@ -221,6 +221,17 @@ nav#primary-menu > ul {
 	height: 5000px;
 }
 
+#menu-background {
+	display: none;
+	z-index: 9997;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: white;
+	top: 0;
+	left: 0;
+}
+
 @media only screen and (min-width : 992px) {/* For desktop: */
 
 	.global-social-buttons-list {
@@ -388,6 +399,7 @@ nav#primary-menu > ul {
 
 	#primary-menu {
 		text-align: center;
+		opacity: 0;
 	}
 
 	#primary-menu a div {
@@ -565,6 +577,16 @@ nav#primary-menu > ul {
 	.menu-social-link {
 		padding-right: 36px !important;
 		padding-left: 36px !important;
+	}
+
+	#top-panel-background {
+		z-index: 9998;
+    position: fixed;
+    background: white;
+    top: 0;
+    width: 100%;
+		height: 121px;
+    left: 0;
 	}
 }
 
@@ -781,6 +803,7 @@ nav#primary-menu > ul {
 
 	#primary-menu {
 		text-align: center;
+		opacity: 0;
 	}
 
 	.my_containerSolution_indent {
@@ -795,6 +818,16 @@ nav#primary-menu > ul {
 	.menu-social-link {
 		padding-right: 22px !important;
 		padding-left: 22px !important;
+	}
+
+	#top-panel-background {
+		z-index: 9998;
+    position: fixed;
+    background: white;
+    top: 0;
+    width: 100%;
+		height: 69px;
+    left: 0;
 	}
 
 }

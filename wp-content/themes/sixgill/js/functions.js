@@ -3291,14 +3291,21 @@ var SEMICOLON = SEMICOLON || {};
 				console.log('extras: Bootstrap Popover not defined.');
 			}
 
+			var showFlag = false;
+
 			$('#primary-menu-trigger,#overlay-menu-close').click(function() {
-				if( $('#primary-menu').find('ul.mobile-primary-menu').length > 0 ) {
-					$( '#primary-menu > ul.mobile-primary-menu, #primary-menu > div > ul.mobile-primary-menu' ).toggleClass("show");
+				if(showFlag) {
+					$( '#menu-background' ).fadeTo(500, 0, function() {
+						$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
+					});
+					$( '#primary-menu' ).fadeTo(400, 0);
 				} else {
-					$( '#primary-menu > ul, #primary-menu > div > ul' ).toggleClass("show");
+					$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
+					$( '#primary-menu, #menu-background' ).fadeTo(500, 1);
 				}
-				$( '#show-menu-icon' ).toggleClass("hide");
-				$( '#close-menu-icon' ).toggleClass("hide");
+
+				showFlag = !showFlag;
+				$( '#show-menu-icon, #close-menu-icon' ).toggleClass("hide");
 				return false;
 			});
 			$('#page-submenu-trigger').click(function() {
