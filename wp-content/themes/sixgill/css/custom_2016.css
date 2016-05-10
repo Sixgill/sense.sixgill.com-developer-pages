@@ -203,6 +203,19 @@ all classes apply for desktop
 	padding-right: 5px;
 }
 
+.global-social-buttons-separator-desktop {
+	padding-bottom: 16px;
+}
+
+.menu-social-link {
+	padding-right: 13px;
+	padding-left: 13px;
+}
+
+#primary-menu {
+	margin-left: 16px;
+}
+
 @media only screen and (min-width : 992px) {/* For desktop: */
 
 
@@ -508,11 +521,11 @@ all classes apply for desktop
     .animsition-overlay {
 	   opacity: 1;
     }
-    
+
     .css3-spinner {
 	   position: initial;
     }
-    
+
     .topShareBottonMobile {
         display: block;
     }
@@ -689,7 +702,7 @@ all classes apply for desktop
         margin-right: 15px;
         margin-left: 15px;
     }
-    
+
     #header {
     position: fixed;
     z-index: 9999;
