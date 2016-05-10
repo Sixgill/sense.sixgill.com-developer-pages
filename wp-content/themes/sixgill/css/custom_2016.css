@@ -504,6 +504,15 @@ all classes apply for desktop
 
 @media only screen and (max-width: 500px) {/* For mobiles: */
 
+    body:not(.no-transition) #wrapper,
+    .animsition-overlay {
+	   opacity: 1;
+    }
+    
+    .css3-spinner {
+	   position: initial;
+    }
+    
     .topShareBottonMobile {
         display: block;
     }
@@ -680,4 +689,10 @@ all classes apply for desktop
         margin-right: 15px;
         margin-left: 15px;
     }
+    
+    #header {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
 }
