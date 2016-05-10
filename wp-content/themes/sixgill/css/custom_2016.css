@@ -217,6 +217,10 @@ all classes apply for desktop
 	padding-right: 0px !important;
 }
 
+nav#primary-menu > ul {
+	height: 5000px;
+}
+
 @media only screen and (min-width : 992px) {/* For desktop: */
 
 	.global-social-buttons-list {
@@ -743,15 +747,31 @@ all classes apply for desktop
 	.global-social-buttons-separator {
 		margin-top: 46px;
 		margin-bottom: 18px;
+		margin-left: 18px;
+		margin-right: 18px;
 	}
 
 	.global-social-buttons-container {
 		text-align: center;
+		position: fixed;
+		bottom: 0px;
+		width: 100%;
 		padding-bottom: 16px;
+		margin-left: -16px;
+		margin-right: -16px;
 	}
 
 	#primary-menu {
 		text-align: center;
+	}
+
+	#primary-menu a div {
+		padding-top:42px;
+	}
+
+	.menu-social-link {
+		padding-right: 22px !important;
+		padding-left: 22px !important;
 	}
 
 }
