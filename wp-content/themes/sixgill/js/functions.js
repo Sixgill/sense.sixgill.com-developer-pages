@@ -3297,6 +3297,8 @@ var SEMICOLON = SEMICOLON || {};
 				} else {
 					$( '#primary-menu > ul, #primary-menu > div > ul' ).toggleClass("show");
 				}
+				$( '#show-menu-icon' ).toggleClass("hide");
+				$( '#close-menu-icon' ).toggleClass("hide");
 				return false;
 			});
 			$('#page-submenu-trigger').click(function() {
