@@ -241,7 +241,7 @@ body, p {
 
 .side-header .center #logo:after { margin: 0 auto; }
 
-.side-header #primary-menu { margin-bottom: 220px; }
+.side-header #primary-menu { margin-bottom: 30px; }
 
 .side-header #primary-menu:not(.nobottomborder):after { margin-top: 40px; }
 

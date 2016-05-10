@@ -203,21 +203,29 @@ all classes apply for desktop
 	padding-right: 5px;
 }
 
-.global-social-buttons-separator-desktop {
-	padding-bottom: 16px;
+.global-social-buttons-separator {
+	margin-top: 220px;
+	margin-bottom: 16px;
 }
 
 .menu-social-link {
-	padding-right: 13px;
-	padding-left: 13px;
+	padding-right: 13px !important;
+	padding-left: 13px !important;
 }
 
-#primary-menu {
-	margin-left: 16px;
+.menu-social-link:last-child {
+	padding-right: 0px !important;
 }
 
 @media only screen and (min-width : 992px) {/* For desktop: */
 
+	.global-social-buttons-list {
+		margin-left:-16px !important;
+	}
+
+	#primary-menu {
+		margin-left: 16px;
+	}
 
 	.marginShareButton {
 		margin-left: 80px;
@@ -372,6 +380,25 @@ all classes apply for desktop
 
 	section {
 		margin-top: -1px;
+	}
+
+	#primary-menu {
+		text-align: center;
+	}
+
+	#primary-menu a div {
+		padding-top:50px;
+		font-size:18px;
+	}
+
+	.global-social-buttons-separator {
+		margin-top: 60px;
+		margin-bottom: 18px;
+	}
+
+	.global-social-buttons-container {
+		text-align: center !important;
+		padding-bottom: 16px;
 	}
 
 	.homeSupTit-with-line {
@@ -707,9 +734,24 @@ all classes apply for desktop
         margin-left: 15px;
     }
 
-    #header {
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-}
+	#header {
+		position: fixed;
+		z-index: 9999;
+		width: 100%;
+	}
+
+	.global-social-buttons-separator {
+		margin-top: 46px;
+		margin-bottom: 18px;
+	}
+
+	.global-social-buttons-container {
+		text-align: center;
+		padding-bottom: 16px;
+	}
+
+	#primary-menu {
+		text-align: center;
+	}
+
 }
