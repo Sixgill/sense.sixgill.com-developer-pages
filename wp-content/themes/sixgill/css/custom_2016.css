@@ -680,4 +680,10 @@ all classes apply for desktop
         margin-right: 15px;
         margin-left: 15px;
     }
+    
+    #header {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
 }
