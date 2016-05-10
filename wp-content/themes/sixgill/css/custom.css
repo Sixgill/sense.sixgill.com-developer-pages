@@ -167,9 +167,9 @@ body, p {
 	color:#FF0004;
 }
 
-#aside1 { 
-    position: fixed; 
-    z-index: 101; 
+#aside1 {
+    position: fixed;
+    z-index: 101;
     width: 100%;
      margin-top: 40px;
 
@@ -193,7 +193,7 @@ body, p {
 }
 
 .shareButton-mobile {
-    width:50%; 
+    width:50%;
     height:50%;
 }
 
