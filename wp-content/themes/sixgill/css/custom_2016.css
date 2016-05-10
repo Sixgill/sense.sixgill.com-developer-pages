@@ -513,6 +513,10 @@ all classes apply for desktop
 	   position: initial;
     }
     
+    .video-wrap video {
+	width: initial;
+    }
+    
     .topShareBottonMobile {
         display: block;
     }
