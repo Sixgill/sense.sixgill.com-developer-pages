@@ -132,9 +132,9 @@ function sdm_generate_fancy2_display_output($args) {
 				$output .= '<div class="resource-title full-block-width">'.$isset_item_title.'</div> ';
 			$output .= '</div> ';
 
-			$output .= '<div class="resource-container resource-link-container"> ';
+			$output .= '<div data-permalink="'.$download_url.'" class="resource-container resource-link-container"> ';
 				$output .= '<hr class="resource-line"> ';
-				$output .= '<a data-permalink="'.$download_url.'" class="resource-link" href="#" data-toggle="modal" data-target="#myResource">Click to download</a> ';
+				$output .= '<a class="resource-link" href="#" data-toggle="modal" data-target="#myResource">Click to download</a> ';
 			$output .= '</div> ';
 
 		$output .= '</div> ';

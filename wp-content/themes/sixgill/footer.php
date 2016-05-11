@@ -119,18 +119,7 @@
 
 <!-- Footer Scripts  -->
 <script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js"></script>
-<script>
-	$(function() {
-		$('a.resource-link').click(function() {
-			window.currentDownloadLink = $(this).attr('data-permalink');
-		});
 
-		$('.yikes-easy-mc-form').on('submit', function() {
-			window.open(window.currentDownloadLink, "_blank");
-		})
-	});
-
-</script>
 
 <!-- Google Analytics -->
 <script async="" src="//www.google-analytics.com/analytics.js"></script>
@@ -302,6 +291,19 @@ function Ascroll() {
 
 	wp_footer();
 ?>
+<script>
+	$(function() {
+		$('.resource-link-container').click(function() {
+			window.currentDownloadLink = $(this).attr('data-permalink');
+		});
+
+		$('.yikes-easy-mc-form').on('submit', function() {
+			window.open(window.currentDownloadLink, "_blank");
+
+		});
+	});
+
+</script>
 </body>
 </html>
 <!-- footer.php end -->
