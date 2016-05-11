@@ -82,7 +82,7 @@
             <h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">DOWNLOAD CORPORATE PRESENTATION</h4>
           </div>
           <div class="modal-body" align="center">
-						<?php dynamic_sidebar( 'blog-subscribe-sidebar' ); ?>
+						<?php dynamic_sidebar( 'download-access' ); ?>
           </div>
           <div class="modal-footer center"></div>
         </div>
