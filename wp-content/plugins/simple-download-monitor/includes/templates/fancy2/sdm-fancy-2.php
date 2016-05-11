@@ -25,12 +25,12 @@ function sdm_generate_fancy2_latest_downloads_display_output($get_posts, $args) 
         $output .= sdm_generate_fancy2_display_output($args);
 
         if ($count % 3 == 0) {//Clear after every 3 items in the grid
-            $output .= '<div class="sdm_clear_float"></div>';
+            //$output .= '<div class="sdm_clear_float"></div>';
         }
         $count++;
     }
     //$output .= '</ul>';
-    $output .= '<div class="sdm_clear_float"></div>';
+    //$output .= '<div class="sdm_clear_float"></div>';
     return $output;
 }
 
@@ -57,12 +57,12 @@ function sdm_generate_fancy2_category_display_output($get_posts, $args) {
         $output .= sdm_generate_fancy2_display_output($args);
 
         if ($count % 3 == 0) {//Clear after every 3 items in the grid
-            $output .= '<div class="sdm_clear_float"></div>';
+            //$output .= '<div class="sdm_clear_float"></div>';
         }
         $count++;
     }
     //$output .= '</ul>';
-    $output .= '<div class="sdm_clear_float"></div>';
+    //$output .= '<div class="sdm_clear_float"></div>';
     return $output;
 }
 

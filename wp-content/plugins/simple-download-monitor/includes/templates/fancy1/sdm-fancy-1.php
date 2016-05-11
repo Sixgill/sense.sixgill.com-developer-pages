@@ -16,7 +16,7 @@ function sdm_generate_fancy1_latest_downloads_display_output($get_posts, $args) 
         );
         $output .= sdm_generate_fancy1_display_output($args);
     }
-    $output .= '<div class="sdm_clear_float"></div>';
+    //$output .= '<div class="sdm_clear_float"></div>';
     return $output;
 }
 
@@ -26,9 +26,9 @@ function sdm_generate_fancy1_category_display_output($get_posts, $args) {
 
     //TODO - when the CSS file is moved to the fancy1 folder, change it here
     //$output .= '<link type="text/css" rel="stylesheet" href="' . WP_SIMPLE_DL_MONITOR_URL . '/includes/templates/fancy1/sdm-fancy-1-styles.css?ver=' . WP_SIMPLE_DL_MONITOR_VERSION . '" />';
-    
+
     isset($args['button_text']) ? $button_text = $args['button_text'] : $button_text = '';
-    isset($args['new_window']) ? $new_window = $args['new_window'] : $new_window = '';    
+    isset($args['new_window']) ? $new_window = $args['new_window'] : $new_window = '';
     foreach ($get_posts as $item) {
         $id = $item->ID;  //Get the post ID
         //Create a args array
@@ -40,12 +40,12 @@ function sdm_generate_fancy1_category_display_output($get_posts, $args) {
         );
         $output .= sdm_generate_fancy1_display_output($args);
     }
-    $output .= '<div class="sdm_clear_float"></div>';
+    //$output .= '<div class="sdm_clear_float"></div>';
     return $output;
 }
 
 /*
- * Generates the output of a single item using fancy2 sytle 
+ * Generates the output of a single item using fancy2 sytle
  * $args array can have the following parameters
  * id, fancy, button_text, new_window
  */
@@ -81,7 +81,7 @@ function sdm_generate_fancy1_display_output($args) {
     $permalink = get_permalink($id);
 
     // Get CPT thumbnail
-    $item_download_thumbnail = get_post_meta($id, 'sdm_upload_thumbnail', true);    
+    $item_download_thumbnail = get_post_meta($id, 'sdm_upload_thumbnail', true);
     $isset_download_thumbnail = isset($item_download_thumbnail) && !empty($item_download_thumbnail) ? '<img class="sdm_download_thumbnail_image" src="' . $item_download_thumbnail . '" />' : '';
 
     // Get CPT title
@@ -90,7 +90,7 @@ function sdm_generate_fancy1_display_output($args) {
 
     // Get CPT description
     $isset_item_description = sdm_get_item_description_output($id);
-    
+
     // Get download button
     $homepage = get_bloginfo('url');
     $download_url = $homepage . '/?smd_process_download=1&download_id=' . $id;
@@ -98,11 +98,11 @@ function sdm_generate_fancy1_display_output($args) {
 
     // Check to see if the download link cpt is password protected
     $get_cpt_object = get_post($id);
-    $cpt_is_password = !empty($get_cpt_object->post_password) ? 'yes' : 'no';  // yes = download is password protected;    
+    $cpt_is_password = !empty($get_cpt_object->post_password) ? 'yes' : 'no';  // yes = download is password protected;
     if ($cpt_is_password !== 'no') {//This is a password protected download so replace the download now button with password requirement
         $download_button_code = sdm_get_password_entry_form($id);
     }
-    
+
     $db_count = sdm_get_download_count_for_post($id);
     $string = ($db_count == '1') ? __('Download', 'simple-download-monitor') : __('Downloads', 'simple-download-monitor');
     $download_count_string = '<span class="sdm_item_count_number">' . $db_count . '</span><span class="sdm_item_count_string"> ' . $string . '</span>';

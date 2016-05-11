@@ -4,7 +4,7 @@ function sdm_generate_fancy0_latest_downloads_display_output($get_posts, $args) 
 
     $output = "";
     isset($args['button_text']) ? $button_text = $args['button_text'] : $button_text = '';
-    isset($args['new_window']) ? $new_window = $args['new_window'] : $new_window = '';    
+    isset($args['new_window']) ? $new_window = $args['new_window'] : $new_window = '';
     foreach ($get_posts as $item) {
         $id = $item->ID;  //Get the post ID
         //Create a args array
@@ -16,7 +16,7 @@ function sdm_generate_fancy0_latest_downloads_display_output($get_posts, $args) 
         );
         $output .= sdm_generate_fancy0_display_output($args);
     }
-    $output .= '<div class="sdm_clear_float"></div>';
+    //$output .= '<div class="sdm_clear_float"></div>';
     return $output;
 }
 
@@ -27,7 +27,7 @@ function sdm_generate_fancy0_latest_downloads_display_output($get_posts, $args) 
 //
 //    //TODO - when the CSS file is moved to the fancy1 folder, change it here
 //    //$output .= '<link type="text/css" rel="stylesheet" href="' . WP_SIMPLE_DL_MONITOR_URL . '/includes/templates/fancy1/sdm-fancy-1-styles.css?ver=' . WP_SIMPLE_DL_MONITOR_VERSION . '" />';
-//    
+//
 //    foreach ($get_posts as $item) {
 //        $id = $item->ID;  //Get the post ID
 //        //Create a args array
@@ -44,7 +44,7 @@ function sdm_generate_fancy0_latest_downloads_display_output($get_posts, $args) 
 //}
 
 /*
- * Generates the output of a single item using fancy2 sytle 
+ * Generates the output of a single item using fancy2 sytle
  * $args array can have the following parameters
  * id, fancy, button_text, new_window
  */
@@ -87,7 +87,7 @@ function sdm_generate_fancy0_display_output($args) {
 
     // Check to see if the download link cpt is password protected
     $get_cpt_object = get_post($id);
-    $cpt_is_password = !empty($get_cpt_object->post_password) ? 'yes' : 'no';  // yes = download is password protected;    
+    $cpt_is_password = !empty($get_cpt_object->post_password) ? 'yes' : 'no';  // yes = download is password protected;
     if ($cpt_is_password !== 'no') {//This is a password protected download so replace the download now button with password requirement
         $download_button_code = sdm_get_password_entry_form($id);
     }
