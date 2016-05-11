@@ -13,7 +13,7 @@ function sdm_generate_fancy2_latest_downloads_display_output($get_posts, $args) 
         $id = $item->ID;  //Get the post ID
         $button_text = isset($args['button_text'])? $args['button_text'] : '';
         $new_window = isset($args['new_window'])? $args['new_window'] : '';
-        
+
         //Create a args array
         $args = array(
             'id' => $id,
@@ -45,7 +45,7 @@ function sdm_generate_fancy2_category_display_output($get_posts, $args) {
         $id = $item->ID;  //Get the post ID
         $button_text = isset($args['button_text'])? $args['button_text'] : '';
         $new_window = isset($args['new_window'])? $args['new_window'] : '';
-        
+
         //Create a args array
         $args = array(
             'id' => $id,
@@ -67,7 +67,7 @@ function sdm_generate_fancy2_category_display_output($get_posts, $args) {
 }
 
 /*
- * Generates the output of a single item using fancy2 sytle 
+ * Generates the output of a single item using fancy2 sytle
  * $args array can have the following parameters
  * id, fancy, button_text, new_window
  */
@@ -99,7 +99,7 @@ function sdm_generate_fancy2_display_output($args) {
 
     // Check to see if the download link cpt is password protected
     $get_cpt_object = get_post($id);
-    $cpt_is_password = !empty($get_cpt_object->post_password) ? 'yes' : 'no';  // yes = download is password protected;    
+    $cpt_is_password = !empty($get_cpt_object->post_password) ? 'yes' : 'no';  // yes = download is password protected;
     if ($cpt_is_password !== 'no') {//This is a password protected download so replace the download now button with password requirement
         $download_button_code = sdm_get_password_entry_form($id);
     }
@@ -120,13 +120,32 @@ function sdm_generate_fancy2_display_output($args) {
 
     $css_class = isset($args['css_class']) ? $args['css_class'] : '';
     $output = '';
+
+		$output .= '<div class="resource-block full-block-width">';
+
+			$output .= '<div ';
+			$output .= 'class="resource-container resource-image-container full-block-width" ';
+			$output .= 'style="background: url(\''.$item_download_thumbnail.'\');"> ';
+			$output .= '</div>';
+
+			$output .= '<div class="resource-container resource-title-container full-block-width"> ';
+				$output .= '<div class="resource-title full-block-width">'.$isset_item_title.'</div> ';
+			$output .= '</div> ';
+
+			$output .= '<div class="resource-container resource-link-container"> ';
+				$output .= '<hr class="resource-line"> ';
+				$output .= '<a data-permalink="'.$download_url.'" class="resource-link" href="#" data-toggle="modal" data-target="#myResource">Click to download</a> ';
+			$output .= '</div> ';
+
+		$output .= '</div> ';
+			/*
     $output .= '<div class="sdm_fancy2_item ' . $css_class . '">';
     $output .= '<div class="sdm_fancy2_wrapper">';
 
     $output .= '<div class="sdm_fancy2_download_item_top">';
     $output .= '<div class="sdm_fancy2_download_thumbnail">' . $isset_download_thumbnail . '</div>';
     $output .= '</div>'; //End of .sdm_download_item_top
-    
+
     $download_button_code_form = '<button href="#" data-toggle="modal" data-target="#myResource" class="sdm_fancy2_download" ' . $window_target . '>' . $button_text_string . '</button>';
 
     $output .= '<div class="sdm_fancy2_download_title">' . $isset_item_title . '</div>';
@@ -134,6 +153,6 @@ function sdm_generate_fancy2_display_output($args) {
 
     $output .= '</div>'; //end .sdm_fancy2_item
     $output .= '</div>'; //end .sdm_fancy2_wrapper
-
+		*/
     return $output;
 }
