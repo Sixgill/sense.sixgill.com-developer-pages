@@ -156,20 +156,40 @@ $(document).ready(function () {
 	});
 });
 
+//function onScroll(event){
+//	var scrollPosition = $(document).scrollTop();
+//	$('nav ul div a').each(function () {
+//		var currentLink = $(this);
+//		var refElement = $(currentLink.attr("href"));
+//		if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+//			$('nav ul div a').removeClass("active");
+//			currentLink.addClass("active");
+//		}
+//		else{
+//			//currentLink.removeClass("active");
+//		}
+//	});
+//}
+    
 function onScroll(event){
-	var scrollPosition = $(document).scrollTop();
-	$('nav ul div a').each(function () {
-		var currentLink = $(this);
-		var refElement = $(currentLink.attr("href"));
-		if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+    var windowPos = $(window).scrollTop();
+    $('nav ul div a').each(function() { 
+
+        var currentLink = $(this);
+        if ($(currentLink.attr("href")).length > 0)
+            {
+            var refElement = $(currentLink.attr("href"));
+            if (refElement.position().top <= windowPos && (refElement.position().top + refElement.height() + $("#primary-navwrapper").height() ) > windowPos) {
 			$('nav ul div a').removeClass("active");
 			currentLink.addClass("active");
-		}
-		else{
-			//currentLink.removeClass("active");
-		}
-	});
+            }
+            else{
+                //currentLink.removeClass("current");
+            }
+        }
+    });
 }
+    
 
 function toggle(showHideDiv, switchTextDiv) {
 	var ele = document.getElementById(showHideDiv);
