@@ -18,7 +18,6 @@
 			<div class="col_half footer_Learn">Learn how Sixgill can help your business.</div>
 			<div class="col_half col_last footer_Schedule" style="border: 0px solid #FF0004;">
 				<button href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">SCHEDULE A DEMO</button>
-                <button href="#" data-toggle="modal" data-target="#myResource" class="button button-large nobottommargin btnSchedule">RESOURCES</button>
 			</div>
 		</div>
 	</div>
@@ -77,7 +76,7 @@
 	<div class="modal-dialog">
 		<div class="modal-body">
         <div class="modal-content">
-          <div class="modal-header" style="background-color:#57B82A;">
+          <div class="modal-header" style="background-color:#2e2e2e;">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">DOWNLOAD CORPORATE PRESENTATION</h4>
           </div>
@@ -120,7 +119,18 @@
 
 <!-- Footer Scripts  -->
 <script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js"></script>
+<script>
+	$(function() {
+		$('a.resource-link').click(function() {
+			window.currentDownloadLink = $(this).attr('data-permalink');
+		});
 
+		$('.yikes-easy-mc-form').on('submit', function() {
+			window.open(window.currentDownloadLink, "_blank");
+		})
+	});
+
+</script>
 
 <!-- Google Analytics -->
 <script async="" src="//www.google-analytics.com/analytics.js"></script>
@@ -204,7 +214,7 @@ function toggle(showHideDiv, switchTextDiv) {
 
   if(document.getElementById('single-page-content')){
 
-//alert( 'Высота с учетом прокрутки: ' + window.pageYOffset);
+//alert( 'Высота с учетом прокрутки: ' + document.getElementById('footer').offsetHeight);
 
 var a = document.querySelector('#aside1'), b = null, P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
 window.addEventListener('scroll', Ascroll, false);
@@ -213,6 +223,13 @@ document.body.addEventListener('scroll', Ascroll, false);
 var headerFooter = document.querySelector('footer').getBoundingClientRect().top;
 
 function Ascroll() {
+
+    var heightStarted = 40;
+    var heightTop = 40;
+
+    if (document.body.clientWidth <= 775) {
+        heightTop = 0;
+    }
 
   if (b == null) {
     var Sa = getComputedStyle(a, ''), s = '';
@@ -228,7 +245,7 @@ function Ascroll() {
     for (var i = 1; i < l; i++) {
       b.appendChild(a.childNodes[1]);
     }
-    a.style.height = b.getBoundingClientRect().height + 'px';
+    a.style.height = b.getBoundingClientRect().height + heightStarted + 'px';
     a.style.padding = '0';
     a.style.border = '0';
   }
@@ -252,14 +269,14 @@ function Ascroll() {
     else {
      P = Ra.top;
     if (((Ra.top - P) <= 0))  {
-    if (window.pageYOffset >= (scrollHeight - document.getElementById('footer').offsetHeight) ) {
+    if (window.pageYOffset >= (document.body.scrollHeight - document.getElementById('footer').offsetHeight - 500) ) {
 
       b.className = 'stop';
       b.style.top =  -R +'px';
     }
       else {
       b.className = 'sticky';
-      b.style.top = P - 211 - 40 + 'px';
+      b.style.top = P - 211 - heightTop + 'px';
 
 
     }
