@@ -5,6 +5,7 @@
 
 	$legalLink = get_field('legal_link', $footerInfoId);
 	$pressLink = get_field('press_link', $footerInfoId);
+	$resourceLink = get_field('resource_link', $footerInfoId);
 	$contactHeader = get_field('contact_header', $footerInfoId);
 	$contactText = get_field('contact_text', $footerInfoId);
 	$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
@@ -17,6 +18,7 @@
 			<div class="col_half footer_Learn">Learn how Sixgill can help your business.</div>
 			<div class="col_half col_last footer_Schedule" style="border: 0px solid #FF0004;">
 				<button href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">SCHEDULE A DEMO</button>
+                <button href="#" data-toggle="modal" data-target="#myResource" class="button button-large nobottommargin btnSchedule">RESOURCES</button>
 			</div>
 		</div>
 	</div>
@@ -27,6 +29,9 @@
                 <a href="<?php echo $legalLink; ?>">LEGAL</a> &nbsp;
                 <a href="#" data-toggle="modal" data-target="#myModalContact">CONTACT</a>&nbsp;
                 <a href="<?php echo $pressLink; ?>">PRESS</a> &nbsp;
+                <a href="<?php echo $resourceLink; ?>">RESOURCES</a> &nbsp;
+
+                
             </div>
 			<div class="col_half col_last footer_Copy">&copy; Copyright Sixgill, 2016. All Rights Reserved.</div>
 		</div>
@@ -39,7 +44,7 @@
 <div id="gotoTop" class="icon-angle-up"></div>
 
 <!-- MODAL Request a DEMO -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" style="z-index:9999" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-body">
         <div class="modal-content">
@@ -67,8 +72,39 @@
 </div>
 <!-- END MODAL Request a DEMO -->
 
+<!-- MODAL RESOURCES -->
+<div class="modal fade" style="z-index:9999" id="myResource" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-body">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color:#57B82A;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">DOWNLOAD CORPORATE PRESENTATION</h4>
+          </div>
+          <div class="modal-body" align="center">
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({ 
+    portalId: '1792815',
+    formId: 'f393e2a2-b10b-4dc1-a703-7c855b681775',
+    submitButtonClass: 'button button-large nobottommargin btnSchedule',
+
+  });
+</script>
+
+          </div>
+          <div class="modal-footer center"></div>
+        </div>
+      </div>
+	</div>
+</div>
+<!-- END MODAL Request a DEMO -->
+
 <!-- MODAL Contact -->
-<div class="modal fade" id="myModalContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" style="z-index:9999" id="myModalContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-body">
 
