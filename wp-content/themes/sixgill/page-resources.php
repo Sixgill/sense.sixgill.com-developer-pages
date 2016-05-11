@@ -11,15 +11,14 @@
 </section><!-- Content-->
 <section id="content">
 
-  <div class="content-wrap" style="padding:0px;">
-
-
-		<div style="padding-top: 0px; overflow:hidden;width:100%">
-<!--<?php// echo do_shortcode("[af-portfolio]"); ?>-->
-<?php echo do_shortcode('[sdm_show_dl_from_category category_slug="resources" fancy="2"]'); ?>
-
-           
+  <div class="content-wrap resources-container resources-background">
+		<div class="resources-blocks-container">
+			<div style="padding-top: 0px; overflow:hidden;width:100%">
+				<!--<?php// echo do_shortcode("[af-portfolio]"); ?>-->
+				<?php echo do_shortcode('[sdm_show_dl_from_category category_slug="resources" fancy="2"]'); ?>
 			</div>
+		</div>
+
   </div>
 
 </section><!-- #content end -->
