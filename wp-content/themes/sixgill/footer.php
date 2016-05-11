@@ -76,7 +76,7 @@
 	<div class="modal-dialog">
 		<div class="modal-body">
         <div class="modal-content">
-          <div class="modal-header" style="background-color:#57B82A;">
+          <div class="modal-header" style="background-color:#2e2e2e;">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">DOWNLOAD CORPORATE PRESENTATION</h4>
           </div>
@@ -211,15 +211,15 @@ document.body.addEventListener('scroll', Ascroll, false);
 
 var headerFooter = document.querySelector('footer').getBoundingClientRect().top;
 
-function Ascroll() {    
+function Ascroll() {
 
     var heightStarted = 40;
     var heightTop = 40;
-    
+
     if (document.body.clientWidth <= 775) {
         heightTop = 0;
     }
-    
+
   if (b == null) {
     var Sa = getComputedStyle(a, ''), s = '';
     for (var i = 0; i < Sa.length; i++) {
@@ -291,6 +291,19 @@ function Ascroll() {
 
 	wp_footer();
 ?>
+<script>
+	$(function() {
+		$('.resource-link-container').click(function() {
+			window.currentDownloadLink = $(this).attr('data-permalink');
+		});
+
+		$('.yikes-easy-mc-form').on('submit', function() {
+			window.open(window.currentDownloadLink, "_blank");
+
+		});
+	});
+
+</script>
 </body>
 </html>
 <!-- footer.php end -->
