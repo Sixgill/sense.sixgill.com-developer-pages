@@ -486,7 +486,7 @@ label {
 
 }
 
-@media (min-width: 1000px) and (max-width: 1400px) {/* For laptops: */
+@media (min-width: 1000px) and (max-width: 1700px) {/* For laptops: */
 
 	.full-block-width {
 		width: 360px;
