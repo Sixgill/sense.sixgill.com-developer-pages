@@ -11,15 +11,83 @@
 </section><!-- Content-->
 <section id="content">
 
-  <div class="content-wrap" style="padding:0px;">
+  <div class="content-wrap resources-container resources-background">
+		<div class="resources-blocks-container">
 
+			<div class="resource-block full-block-width">
 
-		<div style="padding-top: 0px; overflow:hidden;width:100%">
-<!--<?php// echo do_shortcode("[af-portfolio]"); ?>-->
-<?php echo do_shortcode('[sdm_show_dl_from_category category_slug="resources" fancy="2"]'); ?>
+				<div
+					class="resource-container resource-image-container full-block-width"
+					style="background: url(/wp-content/themes/sixgill/images/td/resources/resource_preview_placeholder.png);">
+				</div>
 
-           
+				<div class="resource-container resource-title-container full-block-width">
+					<div class="resource-title full-block-width">Demo resource title</div>
+				</div>
+
+				<div class="resource-container resource-link-container">
+					<hr class="resource-line">
+					<a class="resource-link" href="#">Click to download</a>
+				</div>
+
 			</div>
+
+			<div class="resource-block full-block-width">
+
+				<div
+					class="resource-container resource-image-container full-block-width"
+					style="background: url(/wp-content/themes/sixgill/images/td/resources/resource_preview_placeholder.png);">
+				</div>
+
+				<div class="resource-container resource-title-container full-block-width">
+					<div class="resource-title full-block-width">Demo resource title</div>
+				</div>
+
+				<div class="resource-container resource-link-container">
+					<hr class="resource-line">
+					<a class="resource-link" href="#">Click to download</a>
+				</div>
+
+			</div>
+
+			<div class="resource-block full-block-width">
+
+				<div
+					class="resource-container resource-image-container full-block-width"
+					style="background: url(/wp-content/themes/sixgill/images/td/resources/resource_preview_placeholder.png);">
+				</div>
+
+				<div class="resource-container resource-title-container full-block-width">
+					<div class="resource-title full-block-width">Demo resource title</div>
+				</div>
+
+				<div class="resource-container resource-link-container">
+					<hr class="resource-line">
+					<a class="resource-link" href="#">Click to download</a>
+				</div>
+
+			</div>
+
+			<div class="resource-block full-block-width">
+
+				<div
+					class="resource-container resource-image-container full-block-width"
+					style="background: url(/wp-content/themes/sixgill/images/td/resources/resource_preview_placeholder.png);">
+				</div>
+
+				<div class="resource-container resource-title-container full-block-width">
+					<div class="resource-title full-block-width">Demo resource title</div>
+				</div>
+
+				<div class="resource-container resource-link-container">
+					<hr class="resource-line">
+					<a class="resource-link" href="#">Click to download</a>
+				</div>
+
+			</div>
+
+		</div>
+
   </div>
 
 </section><!-- #content end -->
