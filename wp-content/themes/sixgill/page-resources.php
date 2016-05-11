@@ -1,0 +1,26 @@
+<?php get_header(); ?>
+<a name="top"></a>
+<section id="slider" class="slider-parallax swiper_wrapper clearfix">
+	<div class="slider-parallax-inner">
+		<div class="swiper-container swiper-parent">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image: url('../wp-content/themes/sixgill/images/td/hero/dollarphotoclub_79195916_web.jpg'); background-position: center top;"></div>
+			</div>
+		</div>
+	</div>
+</section><!-- Content-->
+<section id="content">
+
+  <div class="content-wrap" style="padding:0px;">
+
+
+		<div style="padding-top: 0px; overflow:hidden;width:100%">
+<!--<?php// echo do_shortcode("[af-portfolio]"); ?>-->
+<?php echo do_shortcode('[sdm_show_dl_from_category category_slug="resources" fancy="2"]'); ?>
+
+           
+			</div>
+  </div>
+
+</section><!-- #content end -->
+<?php get_footer(); ?>

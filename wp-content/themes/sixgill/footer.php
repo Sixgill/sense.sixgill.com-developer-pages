@@ -5,6 +5,7 @@
 
 	$legalLink = get_field('legal_link', $footerInfoId);
 	$pressLink = get_field('press_link', $footerInfoId);
+	$resourceLink = get_field('resource_link', $footerInfoId);
 	$contactHeader = get_field('contact_header', $footerInfoId);
 	$contactText = get_field('contact_text', $footerInfoId);
 	$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
@@ -27,6 +28,9 @@
                 <a href="<?php echo $legalLink; ?>">LEGAL</a> &nbsp;
                 <a href="#" data-toggle="modal" data-target="#myModalContact">CONTACT</a>&nbsp;
                 <a href="<?php echo $pressLink; ?>">PRESS</a> &nbsp;
+                <a href="<?php echo $resourceLink; ?>">RESOURCES</a> &nbsp;
+
+                
             </div>
 			<div class="col_half col_last footer_Copy">&copy; Copyright Sixgill, 2016. All Rights Reserved.</div>
 		</div>
