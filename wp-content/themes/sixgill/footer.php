@@ -170,10 +170,10 @@ $(document).ready(function () {
 //		}
 //	});
 //}
-    
+
 function onScroll(event){
     var windowPos = $(window).scrollTop();
-    $('nav ul div a').each(function() { 
+    $('nav ul div a').each(function() {
 
         var currentLink = $(this);
         if ($(currentLink.attr("href")).length > 0)
@@ -189,7 +189,7 @@ function onScroll(event){
         }
     });
 }
-    
+
 
 function toggle(showHideDiv, switchTextDiv) {
 	var ele = document.getElementById(showHideDiv);
@@ -318,8 +318,8 @@ function Ascroll() {
 		});
 
 		$('.yikes-easy-mc-form').on('submit', function() {
+			$('button.close').trigger('click');
 			window.open(window.currentDownloadLink, "_blank");
-
 		});
 	});
 
