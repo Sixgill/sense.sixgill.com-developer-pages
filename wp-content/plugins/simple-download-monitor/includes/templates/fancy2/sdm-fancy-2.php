@@ -145,6 +145,8 @@ function sdm_generate_fancy2_display_output($args) {
     $output .= '<div class="sdm_fancy2_download_item_top">';
     $output .= '<div class="sdm_fancy2_download_thumbnail">' . $isset_download_thumbnail . '</div>';
     $output .= '</div>'; //End of .sdm_download_item_top
+    
+    $download_button_code_form = '<button href="#" data-toggle="modal" data-target="#myResource" class="sdm_fancy2_download" ' . $window_target . '>' . $button_text_string . '</button>';
 
     $download_button_code_form = '<button href="#" data-toggle="modal" data-target="#myResource" class="sdm_fancy2_download" ' . $window_target . '>' . $button_text_string . '</button>';
 
