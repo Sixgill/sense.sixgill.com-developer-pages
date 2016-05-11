@@ -13,12 +13,12 @@ function sdm_register_shortcodes() {
     add_shortcode('sdm-download-counter', 'sdm_create_counter_shortcode');  // For counter shortcode (for backwards compatibility)
     add_shortcode('sdm_latest_downloads', 'sdm_show_latest_downloads'); // For showing X number of latest downloads
     add_shortcode('sdm-latest-downloads', 'sdm_show_latest_downloads');  // For showing X number of latest downloads(for backwards compatibility)
-    
+
     add_shortcode('sdm_download_link', 'sdm_create_simple_download_link');
-    
+
     add_shortcode('sdm_show_dl_from_category', 'sdm_handle_category_shortcode'); //For category shortcode
     add_shortcode('sdm_download_categories', 'sdm_download_categories_shortcode'); // Ajax file tree browser
-    
+
 }
 
 // Create Download Shortcode
@@ -72,12 +72,12 @@ function sdm_create_download_shortcode($atts) {
     } else if ($fancy == '1') {
         include_once('includes/templates/fancy1/sdm-fancy-1.php');
         $output .= sdm_generate_fancy1_display_output($atts);
-        $output .= '<div class="sdm_clear_float"></div>';
+        //$output .= '<div class="sdm_clear_float"></div>';
     } else if ($fancy == '2') {
         include_once('includes/templates/fancy2/sdm-fancy-2.php');
         $output .= '<link type="text/css" rel="stylesheet" href="' . WP_SIMPLE_DL_MONITOR_URL . '/includes/templates/fancy2/sdm-fancy-2-styles.css?ver=' . WP_SIMPLE_DL_MONITOR_VERSION . '" />';
         $output .= sdm_generate_fancy2_display_output($atts);
-        $output .= '<div class="sdm_clear_float"></div>';
+        //$output .= '<div class="sdm_clear_float"></div>';
     } else {//Default output is the standard download now button (fancy 0)
         $output = '<div class="sdm_download_link">' . $download_button_code . '</div>';
     }
@@ -93,7 +93,7 @@ function sdm_create_simple_download_link($atts){
     if (empty($id)) {
         return '<p style="color: red;">' . __('Error! Please enter an ID value with this shortcode.', 'simple-download-monitor') . '</p>';
     }
-    
+
     $download_url = WP_SIMPLE_DL_MONITOR_SITE_HOME_URL . '/?smd_process_download=1&download_id=' . $id;
     return $download_url;
 }
@@ -168,8 +168,8 @@ function sdm_handle_category_shortcode($args) {
     } else {
         $posts_per_page = 9999;
     }
-    
-        
+
+
     // Query cpt's based on arguments above
     $get_posts = get_posts(array(
         'post_type' => 'sdm_downloads',
@@ -236,7 +236,7 @@ function sdm_handle_category_shortcode($args) {
             // Setup download button code
             $download_button_code = '<a href="' . $download_url . '" class="sdm_download ' . $def_color . '" title="' . $isset_item_title . '" ' . $window_target . '>' . $button_text_string . '</a>';
 
-            // Generate download buttons            
+            // Generate download buttons
             if ($fancy == '0') {
                 $output .= '<div class="sdm_download_link">' . $download_button_code . '</div><br />';
             }
@@ -254,9 +254,9 @@ function sdm_handle_category_shortcode($args) {
         if(isset($args['pagination'])){
             $posts_per_page = $args['pagination'];
             $count_sdm_posts = wp_count_posts('sdm_downloads');
-            $published_sdm_posts = $count_sdm_posts->publish;            
+            $published_sdm_posts = $count_sdm_posts->publish;
             $total_pages = ceil($published_sdm_posts / $posts_per_page);
-            
+
             $big = 999999999; // Need an unlikely integer
             $pagination = paginate_links( array(
 			'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
@@ -269,7 +269,7 @@ function sdm_handle_category_shortcode($args) {
 		) );
             $output .= '<div class="sdm_pagination">'.$pagination.'</div>';
         }
-    
+
         // Return results
         return apply_filters('sdm_category_download_items_shortcode_output', $output, $args, $get_posts);
     }  // End else iterate cpt's
