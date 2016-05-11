@@ -486,6 +486,18 @@ label {
 
 }
 
+@media (min-width: 1000px) and (max-width: 1400px) {/* For laptops: */
+
+	.full-block-width {
+		width: 360px;
+	}
+
+	.resources-blocks-container {
+		max-width: 1140px;
+	}
+
+}
+
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
 
     .marginShareButton {
