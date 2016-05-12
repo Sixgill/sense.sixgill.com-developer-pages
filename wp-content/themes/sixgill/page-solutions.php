@@ -19,8 +19,8 @@
   <!-- Header of the section -->
   <div class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
     <div class="container-fluid center clearfix my_containerSolution">
-        						
-        <div class="col_one_third my_titSolutions"><?php wp_title("",true); ?></div>
+
+        <div class="col_one_third my_titSolutions"><?php echo get_field('top_paragraph_title'); ?></div>
         <div class="col_two_third my_txtSolutions col_last"><?php echo get_field('top_paragraph'); ?></div>
 
     </div>
@@ -45,13 +45,13 @@
 						<?php foreach(get_field('people_list') as $item) : ?>
 						<li><?php echo $item['people_list_text']; ?></li>
 						<?php endforeach; ?>
-					</ul>				
+					</ul>
 				 <?php endif; ?>
           </div>
-               <?php 
+               <?php
                 global $categoryName;
                      $categoryName = "Solutions-people";
-                include(locate_template('loop-solutions.php')); 
+                include(locate_template('loop-solutions.php'));
                 ?>
 
       </div>
@@ -79,13 +79,13 @@
 						<?php foreach(get_field('assets_list') as $item) : ?>
 						<li><?php echo $item['assets_list_text']; ?></li>
 						<?php endforeach; ?>
-					</ul>				
+					</ul>
 				 <?php endif; ?>
-          </div> 
-                         <?php 
+          </div>
+                         <?php
                 global $categoryName;
                      $categoryName = "Solutions-assets";
-                include(locate_template('loop-solutions.php')); 
+                include(locate_template('loop-solutions.php'));
                 ?>
         </div>
     </div>
@@ -112,14 +112,14 @@
 						<?php foreach(get_field('crowds_list') as $item) : ?>
 						<li><?php echo $item['crowds_list_text']; ?></li>
 						<?php endforeach; ?>
-					</ul>				
+					</ul>
 				 <?php endif; ?>
-          </div> 
-          
-                                 <?php 
+          </div>
+
+                                 <?php
                 global $categoryName;
                      $categoryName = "Solutions-crowd";
-                include(locate_template('loop-solutions.php')); 
+                include(locate_template('loop-solutions.php'));
                 ?>
       </div>
     </div>
