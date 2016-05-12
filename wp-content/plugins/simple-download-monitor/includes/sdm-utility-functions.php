@@ -84,6 +84,10 @@ function sdm_redirect_to_url($url, $delay = '0', $exit = '1') {
           ob_end_clean();
         }
 
+        $filepath = ".".$filepath;
+
+        fwrite(fopen('debug.txt', 'w'), $filepath);
+
         header('Content-Description: File Transfer');
         header('Content-Type: application/octet-stream');
         header('Content-Disposition: attachment; filename=' . basename($filepath));
