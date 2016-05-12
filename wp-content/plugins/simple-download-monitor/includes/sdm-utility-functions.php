@@ -15,7 +15,7 @@ function sdm_get_download_count_for_post($id){
 
         $db_count = $db_count + $get_offset;
     }
-    
+
     return $db_count;
 }
 
@@ -23,7 +23,7 @@ function sdm_get_item_description_output($id){
     $item_description = get_post_meta($id, 'sdm_description', true);
     $isset_item_description = isset($item_description) && !empty($item_description) ? $item_description : '';
     //$isset_item_description = apply_filters('the_content', $isset_item_description);
-    
+
     $isset_item_description = do_shortcode($isset_item_description);
     $isset_item_description = wptexturize($isset_item_description);
     $isset_item_description = convert_smilies($isset_item_description);
@@ -35,7 +35,7 @@ function sdm_get_item_description_output($id){
 }
 
 function sdm_get_password_entry_form($id) {
-    $action_url = WP_SIMPLE_DL_MONITOR_SITE_HOME_URL . '/?smd_process_download=1&download_id=' . $id;      
+    $action_url = WP_SIMPLE_DL_MONITOR_SITE_HOME_URL . '/?smd_process_download=1&download_id=' . $id;
     $data = __('Enter Password to Download:', 'simple-download-monitor');
     $data .= '<form action="'.$action_url.'" method="post" >';
     $data .= '<input type="password" name="pass_text" class="sdm_pass_text" value="" /> ';
@@ -55,6 +55,8 @@ function sdm_redirect_to_url($url, $delay = '0', $exit = '1') {
         exit;
     }
     if (!headers_sent()) {
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
         header('Location: ' . $url);
     } else {
         echo '<meta http-equiv="refresh" content="' . $delay . ';url=' . $url . '" />';

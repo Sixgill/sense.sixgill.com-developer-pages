@@ -1063,6 +1063,7 @@ label {
     background-repeat: no-repeat;
 		width: 200px !important;
     max-width: 200px !important;
+		max-hegith: 46px !important;
 	}
 
 }
