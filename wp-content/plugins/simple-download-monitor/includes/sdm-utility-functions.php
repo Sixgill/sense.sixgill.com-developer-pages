@@ -55,9 +55,51 @@ function sdm_redirect_to_url($url, $delay = '0', $exit = '1') {
         exit;
     }
     if (!headers_sent()) {
+      if (ob_get_level()) {
+    ob_end_clean();
+  }
+        $base = dirname(__FILE__);
+        $path = false;
+
+        if (@file_exists(dirname(dirname($base))."/wp-config.php"))
+        {
+          $path = dirname(dirname($base));
+        }
+        else
+        if (@file_exists(dirname(dirname(dirname($base)))."/wp-config.php"))
+        {
+          $path = dirname(dirname(dirname($base)));
+        }
+        else
+        $path = false;
+
+        if ($path != false)
+        {
+          $path = str_replace("\\", "/", $path);
+        }
+
+        $filepath = $path.parse_url($url)['path'];
+
+        if (ob_get_level()) {
+          ob_end_clean();
+        }
+
         header('Content-Description: File Transfer');
         header('Content-Type: application/octet-stream');
-        header('Location: ' . $url);
+        header('Content-Disposition: attachment; filename=' . basename($filepath));
+        header('Content-Transfer-Encoding: binary');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize($filepath));
+
+        if ($fd = fopen($filepath, 'rb')) {
+          while (!feof($fd)) {
+            print fread($fd, 1024);
+          }
+          fclose($fd);
+        }
+        //header('Location: ' . $url);
     } else {
         echo '<meta http-equiv="refresh" content="' . $delay . ';url=' . $url . '" />';
     }

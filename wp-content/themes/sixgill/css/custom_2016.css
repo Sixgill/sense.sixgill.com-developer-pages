@@ -275,6 +275,7 @@ nav#primary-menu > ul {
 	overflow: hidden;
 	background-position: center center !important;
 	background-repeat: no-repeat !important;
+	background-size: cover !important;
 }
 
 .resource-title-container {
