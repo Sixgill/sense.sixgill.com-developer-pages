@@ -248,11 +248,11 @@ class simpleDownloadManager {
         _e('Manually enter a valid URL, or click "Select Image" to upload (or choose) the file thumbnail image.', 'simple-download-monitor');
         echo '<br />';
         _e('This thumbnail image will be used to create a fancy file download box if you want to use it.', 'simple-download-monitor');
-        ?>        
+        ?>
         <br /><br />
         <input id="sdm_upload_thumbnail" type="text" size="70" name="sdm_upload_thumbnail" value="<?php echo $old_value; ?>" placeholder="http://..." />
         <br />
-        <input id="upload_thumbnail_button" type="button" class="button-primary" value="<?php _e('Select Image', 'simple-download-monitor'); ?>" />        
+        <input id="upload_thumbnail_button" type="button" class="button-primary" value="<?php _e('Select Image', 'simple-download-monitor'); ?>" />
         <input id="remove_thumbnail_button" type="button" class="button" value="<?php _e('Remove Image', 'simple-download-monitor'); ?>" />
         <br /><br />
 
@@ -371,7 +371,7 @@ class simpleDownloadManager {
 
         //Register the main setting
         register_setting('sdm_downloads_options', 'sdm_downloads_options');
-        
+
         //Add all the settings section that will go under the main settings
         add_settings_section('general_options', __('General Options', 'simple-download-monitor'), array($this, 'general_options_cb'), 'general_options_section');
         add_settings_section('admin_options', __('Admin Options', 'simple-download-monitor'), array($this, 'admin_options_cb'), 'admin_options_section');
@@ -379,19 +379,19 @@ class simpleDownloadManager {
 
         //Add all the individual settings fields that goes under the sections
         add_settings_field('general_hide_donwload_count', __('Hide Download Count', 'simple-download-monitor'), array($this, 'hide_download_count_cb'), 'general_options_section', 'general_options');
-        
+
         add_settings_field('admin_tinymce_button', __('Remove Tinymce Button', 'simple-download-monitor'), array($this, 'admin_tinymce_button_cb'), 'admin_options_section', 'admin_options');
         add_settings_field('admin_log_unique', __('Log Unique IP', 'simple-download-monitor'), array($this, 'admin_log_unique'), 'admin_options_section', 'admin_options');
         add_settings_field('admin_no_logs', __('Disable Download Logs', 'simple-download-monitor'), array($this, 'admin_no_logs_cb'), 'admin_options_section', 'admin_options');
-        
+
         add_settings_field('download_button_color', __('Download Button Color', 'simple-download-monitor'), array($this, 'download_button_color_cb'), 'sdm_colors_section', 'sdm_colors');
     }
 
     public function general_options_cb() {
         //Set the message that will be shown below the general options settings heading
-        _e('General options settings', 'simple-download-monitor');        
+        _e('General options settings', 'simple-download-monitor');
     }
-    
+
     public function admin_options_cb() {
         //Set the message that will be shown below the admin options settings heading
         _e('Admin options settings', 'simple-download-monitor');
@@ -407,7 +407,7 @@ class simpleDownloadManager {
         echo '<input name="sdm_downloads_options[general_hide_donwload_count]" id="general_hide_donwload_count" type="checkbox" ' . checked(1, isset($main_opts['general_hide_donwload_count']), false) . ' /> ';
         _e('Hide the download count that is shown in some of the fancy templates.', 'simple-download-monitor');
     }
-    
+
     public function admin_tinymce_button_cb() {
         $main_opts = get_option('sdm_downloads_options');
         echo '<input name="sdm_downloads_options[admin_tinymce_button]" id="admin_tinymce_button" type="checkbox" class="sdm_opts_ajax_checkboxes" ' . checked(1, isset($main_opts['admin_tinymce_button']), false) . ' /> ';
@@ -470,12 +470,12 @@ function handle_sdm_download_via_direct_post() {
             if(empty($pass_val)){//No password was submitted with the downoad request.
                 wp_die(__('Error! This download requires a password.', 'simple-download-monitor'));
             }
-            if ($post_pass != $pass_val) { 
+            if ($post_pass != $pass_val) {
                 //Incorrect password submitted.
                 wp_die(__('Error! Incorrect password. This download requires a valid password.', 'simple-download-monitor'));
             } else {
                 //Password is valid. Go ahead with the download
-            }  
+            }
         }
         //End of password check
 
@@ -580,7 +580,7 @@ function sdm_remove_thumbnail_image_ajax_call() {
         //Permission denied
         wp_die(__('Permission denied!', 'simple-download-monitor'));
         exit;
-    }  
+    }
 
     //Go ahead with the thumbnail removal
     $post_id = $_POST['post_id_del'];

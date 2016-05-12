@@ -1,18 +1,18 @@
 <?php get_header(); ?>
 <a name="top"></a>
-<section id="slider" class="slider-parallax swiper_wrapper clearfix" style="border:0px solid #FF0004;">
-  <div class="slider-parallax-inner">
-    <div class="swiper-container swiper-parent">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-color: #004cbf;">
-					<div class="slider-caption slider-caption-center">
-						<h1 class="press-title">RESOURCES</h1>
-					</div>
-				</div>
-      </div>
-    </div>
-  </div>
-</section>
+<section id="slider" class="slider-parallax swiper_wrapper clearfix">
+	<div class="slider-parallax-inner">
+		<div class="swiper-container swiper-parent">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-color: #004cbf;">
+          <div class="slider-caption slider-caption-center">
+            <h1 class="press-title">RESOURCES</h1>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</section><!-- Content-->
 
 <section id="content">
 
