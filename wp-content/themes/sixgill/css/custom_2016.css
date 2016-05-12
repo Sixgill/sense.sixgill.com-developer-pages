@@ -496,6 +496,27 @@ label {
 		max-width: 1160px;
 	}
 
+	.resource-block {
+		height: 438px;
+	}
+
+	.resource-title-container {
+		height: 215px;
+	}
+
+	.resource-link-container {
+			height: 50px;
+			padding-bottom: 55px;
+	}
+
+	.resource-image-container {
+		height: 173px;
+	}
+
+	.resource-line {
+		margin-bottom: 15px;
+	}
+
 }
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
@@ -1035,6 +1056,14 @@ label {
 
 	.full-block-width {
 		width: 300px;
+	}
+
+	.submit-resource-form-button {
+		background-size: contain;
+    background-repeat: no-repeat;
+		width: 200px !important;
+    max-width: 200px !important;
+		max-hegith: 46px !important;
 	}
 
 }
