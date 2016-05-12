@@ -48,6 +48,12 @@
 					</ul>				
 				 <?php endif; ?>
           </div>
+               <?php 
+                global $categoryName;
+                     $categoryName = "Solutions-people";
+                include(locate_template('loop-solutions.php')); 
+                ?>
+
       </div>
     </div>
   </div>
@@ -75,7 +81,12 @@
 						<?php endforeach; ?>
 					</ul>				
 				 <?php endif; ?>
-          </div>     
+          </div> 
+                         <?php 
+                global $categoryName;
+                     $categoryName = "Solutions-assets";
+                include(locate_template('loop-solutions.php')); 
+                ?>
         </div>
     </div>
   </div>
@@ -104,6 +115,12 @@
 					</ul>				
 				 <?php endif; ?>
           </div> 
+          
+                                 <?php 
+                global $categoryName;
+                     $categoryName = "Solutions-crowd";
+                include(locate_template('loop-solutions.php')); 
+                ?>
       </div>
     </div>
   </div>

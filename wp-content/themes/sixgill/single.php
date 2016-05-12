@@ -4,7 +4,9 @@
 	$categorySlug = get_the_category()[0]->slug;
 	if($categorySlug == "blog") {
 		get_template_part( 'single-blog');
-	} else {
+	} else if($categorySlug == "solutions-people" || $categorySlug == "Solutions-crowd" || $categorySlug == "Solutions-assets") {
+        get_template_part( 'single-solutions');
+    } else {
 		get_template_part( 'single-press');
 	}
 	get_footer();
