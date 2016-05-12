@@ -308,6 +308,10 @@ label {
 	font-size: 0px;
 }
 
+.yikes-easy-mc-success-message {
+	display:none !important;
+}
+
 @media only screen and (min-width : 992px) {/* For desktop: */
 
 	.global-social-buttons-list {

@@ -32,7 +32,7 @@
                     <a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" target="_blank" title="Share on LinkedIn"><img src="/wp-content/themes/sixgill/images/td/blog/linkedin_normal.svg" alt="Mountain View" class="shareButton-mobile"></a>
                 </td>
                 <td style="width: 25%; height: 60px;">
-                    <a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" target="_blank" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email"><img src="/wp-content/themes/sixgill/images/td/blog/email_normal.jpeg" alt="Mountain View" class="shareButton-mobile"></a>
+                    <a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" target="_blank" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email"><img src="/wp-content/themes/sixgill/images/td/blog/email_normal.svg" alt="Mountain View" class="shareButton-mobile"></a>
                 </td>
             </tr>
         </table>
@@ -54,7 +54,7 @@
 
                 </li>
                 <li>
-                    <a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" target="_blank" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email"><img src="/wp-content/themes/sixgill/images/td/blog/email_normal.jpeg" alt="Mountain View" class="shareButton"></a>
+                    <a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" target="_blank" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email"><img src="/wp-content/themes/sixgill/images/td/blog/email_normal.svg" alt="Mountain View" class="shareButton"></a>
 
                 </li>
 
