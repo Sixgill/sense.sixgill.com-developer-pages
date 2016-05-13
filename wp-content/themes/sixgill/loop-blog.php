@@ -27,6 +27,4 @@ if ( $query->have_posts() ) {
 	<?php
 }
 
-// Restore original Post Data
-
 ?>
