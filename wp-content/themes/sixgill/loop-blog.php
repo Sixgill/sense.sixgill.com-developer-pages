@@ -12,8 +12,8 @@ if ( $query->have_posts() ) {
 		$query->the_post();
 ?>
 		<div class="blog-post-preview-header">
-			<p class="blog-post-suptitle"><?php the_time('F j, Y'); ?> | by <?php echo get_field('author'); ?></p>
-			<a href="<?php echo get_permalink(); ?>" class="blog-post-title"><?php the_title(); ?></a>
+			<p id="post-subtitle-and-author" class="blog-post-suptitle"><?php the_time('F j, Y'); ?> | by <?php echo get_field('author'); ?></p>
+			<a href="<?php echo get_permalink(); ?>" id="post-title-page-blog" class="blog-post-title"><?php the_title(); ?></a>
 
 		</div>
 		<?php
