@@ -11,7 +11,7 @@ if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
 		$query->the_post();
 ?>
-		<div id="post-title-page-blog" class="blog-post-preview-header">
+		<div class="blog-post-preview-header">
 			<a href="<?php echo get_permalink(); ?>"> <?php the_title(); ?></a>
 		</div>
 
@@ -26,4 +26,3 @@ if ( $query->have_posts() ) {
 /* Restore original Post Data */
 wp_reset_postdata();
 ?>
-
