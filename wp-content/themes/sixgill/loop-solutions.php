@@ -11,9 +11,8 @@ if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
 		$query->the_post();
 ?>
-		<div class="blog-post-preview-header">
+		<div id="post-title-page-blog" class="blog-post-preview-header">
 			<a href="<?php echo get_permalink(); ?>"> <?php the_title(); ?></a>
-
 		</div>
 
 <?php

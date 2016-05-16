@@ -312,6 +312,27 @@ label {
 	display:none !important;
 }
 
+#home-main-text {
+	max-width: 650px;
+	text-align: left;
+}
+
+#home-button-on-video {
+	margin: 30px 0px 0px 0px;
+}
+
+.max-width-720 {
+	max-width:720px;
+}
+
+.company-learn-more-text {
+	display: none;
+}
+
+.companyDescription p {
+	margin-bottom: 0px !important;
+}
+
 @media only screen and (min-width : 992px) {/* For desktop: */
 
 	.global-social-buttons-list {
