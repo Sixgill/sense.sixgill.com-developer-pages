@@ -16,7 +16,7 @@
 
 <section id="content">
 
-  <div class="content-wrap resources-container resources-background">
+  <div class="content-wrap resources-container resources-background"  style="min-height: 700px;">
 		<div class="resources-blocks-container">
 			<div style="padding-top: 0px; overflow:hidden;width:100%">
 				<!--<?php// echo do_shortcode("[af-portfolio]"); ?>-->
