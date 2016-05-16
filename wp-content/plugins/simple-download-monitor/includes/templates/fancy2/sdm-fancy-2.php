@@ -119,41 +119,21 @@ function sdm_generate_fancy2_display_output($args) {
     $isset_item_description = sdm_get_item_description_output($id);
 
     $css_class = isset($args['css_class']) ? $args['css_class'] : '';
-    $output = '';
 
+		$output = '';
 		$output .= '<div class="resource-block full-block-width">';
- 
-    $output .= '<div style="height:173px;  position:relative;">';
-			$output .= '<img ';
+			$output .= '<div ';
 			$output .= 'class="resource-container resource-image-container full-block-width" ';
-            $output .= 'src="'.$item_download_thumbnail.'" ';
-			$output .= 'style="width:auto; height:auto; position: absolute; left: 0; top: 0; bottom: 0; right: 0; margin: auto; max-height: 173px;"> ';
-            $output .= '</div>';
-			    $output .= '<div class="resource-container full-block-width" style="width:100%"> ';
-                $output .= '<div class=" resource-title-container resource-title full-block-width" >'.$isset_item_title.'</div> ';
-            $output .= '</div> ';
-    
+			$output .= 'style="background: url(\''.$item_download_thumbnail.'\');"> ';
+			$output .= '</div>';
+			$output .= '<div class="resource-container resource-title-container full-block-width"> ';
+				$output .= '<div class="resource-title full-block-width">'.$isset_item_title.'</div> ';
+			$output .= '</div> ';
 			$output .= '<div data-permalink="'.$download_url.'" class="resource-container resource-link-container"> ';
 				$output .= '<hr class="resource-line"> ';
 				$output .= '<a class="resource-link" href="#" data-toggle="modal" data-target="#myResource">Click to download</a> ';
 			$output .= '</div> ';
-
 		$output .= '</div> ';
-			/*
-    $output .= '<div class="sdm_fancy2_item ' . $css_class . '">';
-    $output .= '<div class="sdm_fancy2_wrapper">';
 
-    $output .= '<div class="sdm_fancy2_download_item_top">';
-    $output .= '<div class="sdm_fancy2_download_thumbnail">' . $isset_download_thumbnail . '</div>';
-    $output .= '</div>'; //End of .sdm_download_item_top
-
-    $download_button_code_form = '<button href="#" data-toggle="modal" data-target="#myResource" class="sdm_fancy2_download" ' . $window_target . '>' . $button_text_string . '</button>';
-
-    $output .= '<div class="sdm_fancy2_download_title">' . $isset_item_title . '</div>';
-    $output .= '<div class="sdm_fancy2_download_link">' . $download_button_code_form . '</div>';
-
-    $output .= '</div>'; //end .sdm_fancy2_item
-    $output .= '</div>'; //end .sdm_fancy2_wrapper
-		*/
     return $output;
 }
