@@ -530,7 +530,7 @@ label {
 	}
 
 	.resources-blocks-container {
-		max-width: 1100px;
+		min-width: 1100px !important;
 	}
 
 	.resource-block {
@@ -800,7 +800,7 @@ label {
 	}
 
 	.resources-blocks-container {
-		max-width: 715px;
+		min-width: 715px !important;
 	}
 
 	.resource-line {
@@ -1087,7 +1087,7 @@ label {
 	}
 
 	.resources-blocks-container {
-		max-width: 300px;
+		min-width: 300px !important;
 	}
 
 	.resource-line {
