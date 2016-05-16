@@ -26,7 +26,7 @@
 			</div>
 
 			<div class="col_full" style="text-align: center;">
-				<a href="/press" id="press-button-back" class="button button-large nobottommargin btnCompany" style="margin:30px 0px 0px 0px;">BACK TO PRESS</a>
+				<a href="/press/" id="press-button-back" class="button button-large nobottommargin btnCompany" style="margin:30px 0px 0px 0px;">BACK TO PRESS</a>
 			</div>
 		</div>
 	</div>

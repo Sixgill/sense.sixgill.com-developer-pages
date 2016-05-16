@@ -164,7 +164,7 @@
 			</div>
 			<div class="container clearfix" style="text-align: center;">
 				<div style="margin-bottom:40px;">
-					<a href="/press" class="button button-large nobottommargin btnSolutions news-press-button">VIEW ALL NEWS AND PRESS RELEASES</a>
+					<a href="/press/" class="button button-large nobottommargin btnSolutions news-press-button">VIEW ALL NEWS AND PRESS RELEASES</a>
 				</div>
 			</div>
 		</section>

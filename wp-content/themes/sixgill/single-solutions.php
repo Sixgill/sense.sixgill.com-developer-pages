@@ -73,7 +73,7 @@
 			<?php comments_template( '', true ); ?>
 
 			<div class="col_full" style="text-align: center;">
-				<a href="/solutions" id="press-button-back" class="button button-large nobottommargin btnCompany" style="margin:30px 0px 0px 0px;">BACK TO SOLUTIONS</a>
+				<a href="/solutions/" id="press-button-back" class="button button-large nobottommargin btnCompany" style="margin:30px 0px 0px 0px;">BACK TO SOLUTIONS</a>
 			</div>
 		</div>
 	</div>
