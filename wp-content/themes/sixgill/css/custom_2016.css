@@ -336,7 +336,9 @@ label {
 	margin-bottom: 0px !important;
 }
 
-
+#home-main-text {
+	max-width: 650px;
+}
 
 @media only screen and (min-width : 992px) {/* For desktop: */
 

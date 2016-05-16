@@ -50,9 +50,9 @@
 				</div>
 
 				<hr class="hr-home-sub-title" />
-				<p id="home-main-text">
+				<div id="home-main-text">
 					<?php echo get_field('main_text'); ?>
-				</p>
+				</div>
 			</div>
 		</section>
 

@@ -15,14 +15,14 @@
 </section>
 
 <!-- Content-->
-
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 <section id="content">
 
 	<div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
 		<div class="container-fluid center clearfix my_containerSolution">
 			<div id="press-text-post" class="col_full" style="text-align: left; margin-bottom: 30px;">
 				<h3 id="press-date-post" class="press-date"><?php echo the_time('F j, Y'); ?></h3>
-				<?php echo $post->post_content; ?>
+				<?php the_content(); ?>
 			</div>
 
 			<div class="col_full" style="text-align: center;">
@@ -32,3 +32,4 @@
 	</div>
 
 </section><!-- #content end -->
+<?php endwhile; // end of the loop. ?>

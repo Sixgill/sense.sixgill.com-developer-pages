@@ -42,7 +42,7 @@ add_action('admin_init', 'bodhi_svgs_register_settings');
 function bodhi_svgs_register_settings() {
 
     register_setting('bodhi_svgs_settings_group', 'bodhi_svgs_settings');
-    
+
 }
 
 ?>
