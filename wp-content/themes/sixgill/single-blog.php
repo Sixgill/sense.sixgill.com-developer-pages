@@ -81,7 +81,7 @@
 				<div id="press-text-post" class="col_full" style="text-align: left; margin-bottom: 30px;">
 					<h3 id="press-date-post" class="press-date no-bottom-margin"><?php echo the_time('F j, Y'); ?></h3>
 					<h4 id="press-author-post" class="press-by-author">Post by <?php echo get_field('author'); ?></h4>
-					<?php echo $post->post_content; ?>
+					<?php the_content(); ?>
 				</div>
 
 				<?php comments_template( '', true ); ?>
