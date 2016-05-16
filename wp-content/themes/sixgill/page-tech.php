@@ -16,10 +16,14 @@
   <div class="content-wrap nobottommargin nobottompadding">
 
     <div class="header-stick" style="background-color:#F8F8F8; border:0px solid #FF0004;">
-      <div class="container-fluid center clearfix" style="padding-top:75px; max-width:950px;  border:0px solid #FF0004;">
-            <?php echo get_field('top_header'); ?>
-          <?php echo get_field('top_paragraph'); ?>
-      </div>
+			<div class="container-fluid center clearfix" style="padding-top:75px; max-width:950px;  border:0px solid #FF0004;">
+				<div class="col_one_third my_titSolutions">
+				<?php echo get_field('top_header'); ?>
+				</div>
+				<div class="col_two_third col_last text-left my_txtSolutions">
+					<?php echo get_field('top_paragraph'); ?>
+				</div>
+			</div>
 
     </div>
 
@@ -44,7 +48,7 @@
     </div>
 
 
-      
+
   <div class="clear"></div>
   <div class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
     <img src="/wp-content/themes/sixgill/images/td/tech/shape2.png" alt="" width="100%" />
