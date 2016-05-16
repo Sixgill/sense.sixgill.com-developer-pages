@@ -100,10 +100,14 @@ body, p {
 	background-image:url(/wp-content/themes/sixgill/images/td/00-btnBlackContainer_SHARP.png);
 }
 
-.btnLearnMore {
+.learn-more-link {
 	font-size:15px;
 	font-weight:bold;
 	color:#000;
+}
+
+.learn-more-close-icon, .extra-description {
+  display: none;
 }
 
 .hrSmallWhite, .hrSmallBlack {

@@ -17,10 +17,10 @@
 
 		<div class="header-stick" id="company" style="background-color:#F8F8F8; border:0px solid #FF0004;">
 			<div class="container-fluid center clearfix" style="padding-top:75px; max-width:1100px;  border:0px solid #FF0004;">
-        <div class="col_one_third my_titSolutions"><?php echo get_field('about_header'); ?></div>
+				<div class="col_one_third my_titSolutions"><?php echo get_field('about_header'); ?></div>
 				<div class="col_two_third col_last text-left my_txtSolutions">
-                        <?php echo get_field('top_text_left'); ?>
-					
+					<?php echo get_field('top_text_left'); ?>
+
 				</div>
 			</div>
 		</div>
@@ -32,72 +32,68 @@
 
 
 
-	<a name="team"></a>
-	<div id="team" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
-		<div class="container-fluid center clearfix my_containerSolution">
-			<div align="center"><p class="btnInside"><?php echo get_field('team_header'); ?></p></div>
+		<a name="team"></a>
+		<div id="team" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
+			<div class="container-fluid center clearfix my_containerSolution">
+				<div align="center"><p class="btnInside"><?php echo get_field('team_header'); ?></p></div>
 
-			
-                            <p class="pCompany">
 
-                <?php if(get_field('team')) : ?>
-					<?php $i = 0; foreach(get_field('team') as $item) : $i++; ?>
-                        <?php if($i == 1) : ?>
-				
-                        <div class="col_one_third mobile-position-center text-right">
-                            <img src="<?php echo $item['photo']; ?>" width="170" alt=""/>
-                        </div>
-                            
-                        <?php else: ?>
-                                            
-                        <div class="col_one_third mobile-position-center" align="right">
-                            <img src="<?php echo $item['photo']; ?>" width="170" alt=""/>
-                        </div>
-            
-                        <?php endif; ?>
+				<p class="pCompany">
 
-						<div class="col_two_third col_last text-left" style="padding-bottom:55px;">
-                            <div class="mobile-position-center">
-                                <span class="companyName"><?php echo $item['name']; ?></span><br>
-							    <span class="companyJob"><?php echo $item['title']; ?></span><br>
-                            </div>
-                            <span class="companyDescription"><?php echo $item['bold_bio']; ?></span>
-                            <?php echo $item['regular_bio']; ?>
-                            <div class="mobile-position-center">
-                                <?php switch ($i) {
-                                    case 1:
-                            ?><a class="btnLearnMore" id="lmbtn_Phill" href="javascript:toggle('lmtxt_Phill','lmbtn_Phill');">Learn More &#8744;</a><?php
-                                        break;
-                                    case 2:
-                            ?><a class="btnLearnMore" id="lmbtn_Jeff" href="javascript:toggle('lmtxt_Jeff','lmbtn_Jeff');">Learn More &#8744;</a><?php
-                                        break;
-                                    case 3:
-                            ?><a class="btnLearnMore" id="lmbtn_Mike" href="javascript:toggle('lmtxt_Mike','lmbtn_Mike');">Learn More &#8744;</a><?php
-                                        break;
-                                    case 4:
-                            ?><a class="btnLearnMore" id="lmbtn_Shawn" href="javascript:toggle('lmtxt_Shawn','lmbtn_Shawn');">Learn More &#8744;</a><?php
-                                        break;
-                                    case 5:
-                            ?><a class="btnLearnMore" id="lmbtn_Arnold" href="javascript:toggle('lmtxt_Arnold','lmbtn_Arnold');">Learn More &#8744;</a><?php
-                                        break;
-                                    case 6:
-                            ?><a class="btnLearnMore" id="lmbtn_John" href="javascript:toggle('lmtxt_John','lmbtn_John');">Learn More &#8744;</a><?php
-                                        break;
-                                }
-                                ?>
-                            </div>
-                        </div>
-                   		 
+					<?php if(get_field('team')) : ?>
+						<?php $i = 0; foreach(get_field('team') as $item) : $i++; ?>
+							<?php if($i == 1) : ?>
 
-					<?php endforeach; ?>
-				<?php endif; ?>  
+								<div class="col_one_third mobile-position-center text-right">
+									<img src="<?php echo $item['photo']; ?>" width="170" alt=""/>
+								</div>
 
-					</p>
+							<?php else: ?>
 
+								<div class="col_one_third mobile-position-center" align="right">
+									<img src="<?php echo $item['photo']; ?>" width="170" alt=""/>
+								</div>
+
+							<?php endif; ?>
+
+							<div class="col_two_third col_last text-left" style="padding-bottom:55px;">
+
+								<div class="mobile-position-center">
+									<span class="companyName"><?php echo $item['name']; ?></span><br>
+									<span class="companyJob"><?php echo $item['title']; ?></span><br>
+								</div>
+
+								<span class="companyDescription">
+									<?php echo $item['bold_bio']; ?>
+								</span>
+								<div class="company-learn-more-text">
+									<?php echo $item['regular_bio']; ?>
+								</div>
+
+								<div class="mobile-position-center">
+									<a class="learn-more-link" href="#">
+										Learn More
+										<span class="learn-more-expand-icon">&or;</span>
+										<span class="learn-more-close-icon">&and;</span>
+									</a>
+								</div>
+
+							</div>
+						<?php endforeach; ?>
+						<script>
+							jQuery(function() {
+								$('.learn-more-link').click(function() {
+									$(this).parent().prev().toggle();
+									$(this).find('.learn-more-expand-icon, .learn-more-close-icon').toggle();
+								});
+							});
+						</script>
+					<?php endif; ?>
+
+				</p>
+
+			</div>
 		</div>
-	</div>
-
-
 
 		<section id="before_board" class="container-fluid center clearfix nomargin nopadding">
 			<img src="/wp-content/themes/sixgill/images/td/company/00_BoardSection.jpg" width="100%" alt=""/>
@@ -108,38 +104,38 @@
 			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 6%; text-align: center;">
 				<div align="center"><p class="btnInside" style="color:#FFFFFF; border-color:#FFF;">The Board</p></div>
 				<p class="pCompany">
-    
-    
-                	<?php if(get_field('board')) : ?>
-					<?php $i = 0; foreach(get_field('board') as $item) : $i++; ?>
-                        <?php if($i % 3 == 0) : ?>
-				
-						<div class="col_one_third col_last" align="left" style="padding:0px 0px 0px 0px;">
-                            <span class="companyName"><?php echo $item['name']; ?></span><br>
-							<span class="companyJob"><?php echo $item['title']; ?></span><br>
-					<div class="hrSmallWhite" align="left"></div>
 
-                                <?php echo $item['bio']; ?>
-                            
-                        </div>
-                         <?php break; ?>
-						<?php endif; ?>
-                        
-						<div class="col_one_third" align="left">
-                            <span class="companyName"><?php echo $item['name']; ?></span><br>
-							<span class="companyJob"><?php echo $item['title']; ?></span><br>
-					<div class="hrSmallWhite" align="left"></div>
 
-                                <?php echo $item['bio']; ?>
-                            
-                        	</div>
-                   		 
+					<?php if(get_field('board')) : ?>
+						<?php $i = 0; foreach(get_field('board') as $item) : $i++; ?>
+							<?php if($i % 3 == 0) : ?>
 
-					<?php endforeach; ?>
-				<?php endif; ?>  
-                    
-                    
-					</p>
+								<div class="col_one_third col_last" align="left" style="padding:0px 0px 0px 0px;">
+									<span class="companyName"><?php echo $item['name']; ?></span><br>
+									<span class="companyJob"><?php echo $item['title']; ?></span><br>
+									<div class="hrSmallWhite" align="left"></div>
+
+									<?php echo $item['bio']; ?>
+
+								</div>
+								<?php break; ?>
+							<?php endif; ?>
+
+							<div class="col_one_third" align="left">
+								<span class="companyName"><?php echo $item['name']; ?></span><br>
+								<span class="companyJob"><?php echo $item['title']; ?></span><br>
+								<div class="hrSmallWhite" align="left"></div>
+
+								<?php echo $item['bio']; ?>
+
+							</div>
+
+
+						<?php endforeach; ?>
+					<?php endif; ?>
+
+
+				</p>
 			</div>
 		</section>
 
@@ -151,9 +147,9 @@
 		<a name="press"></a>
 		<section id="press" style="background-color:#ffffff;">
 
-		<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 0px; text-align: center;">
-			<div align="center"><p class="btnInside company-press-title">Latest press and news</p></div>
-		</div>
+			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 0px; text-align: center;">
+				<div align="center"><p class="btnInside company-press-title">Latest press and news</p></div>
+			</div>
 
 			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 9%; text-align: center;">
 

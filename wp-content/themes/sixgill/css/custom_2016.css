@@ -325,6 +325,14 @@ label {
 	max-width:720px;
 }
 
+.company-learn-more-text {
+	display: none;
+}
+
+.companyDescription p {
+	margin-bottom: 0px !important;
+}
+
 @media only screen and (min-width : 992px) {/* For desktop: */
 
 	.global-social-buttons-list {
