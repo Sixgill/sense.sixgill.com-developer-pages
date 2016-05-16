@@ -15,7 +15,7 @@
 </section>
 
 <!-- Content-->
-
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 <section id="content">
 
 	<div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
@@ -79,3 +79,4 @@
 	</div>
 
 </section><!-- #content end -->
+<?php endwhile; // end of the loop. ?>
