@@ -262,7 +262,7 @@ nav#primary-menu > ul {
 
 .resources-blocks-container {
 	text-align: left;
-	max-width: 1520px;
+	min-width: 1520px !important;
 	display: inline-block;
 }
 
