@@ -596,6 +596,21 @@ p {font-size:13px; font-weight:normal;}
 .title-press-contact {
     font-size: 25px;
     font-family: "Lato Bold" serif, sans-serif;
+		padding-top: 15px;
+}
+
+.title-press-contact-2 {
+	font-size: 22px;
+	color: #999999;
+	padding-top: 15px;
+}
+
+.press-contact-info {
+	font-size: 22px;
+	color: #000;
+	padding-top: 0px;
+	padding-bottom: 30px;
+	line-height: 1.8em;
 }
 
 .press-post-title {
