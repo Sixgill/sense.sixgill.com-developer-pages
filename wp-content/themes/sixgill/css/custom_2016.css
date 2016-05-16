@@ -237,7 +237,7 @@ nav#primary-menu > ul {
 }
 
 .resource-block {
-	height: 560px;
+	height: 438px;
 	display: inline-block;
 	background-color: #ffffff;
 }
@@ -255,12 +255,12 @@ nav#primary-menu > ul {
 	border-top: 1px solid #e7e7e7;
 	width: 100%;
 	margin: 0px auto;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 }
 
 .resources-blocks-container {
 	text-align: left;
-	max-width: 1464px;
+	max-width: 1520px;
 	display: inline-block;
 }
 
@@ -269,13 +269,16 @@ nav#primary-menu > ul {
 	margin: 0px auto;
 	width: 100%;
 	text-align: center;
+    height: 110px;
+    overflow: hidden;
 }
 
 .resource-image-container {
 	overflow: hidden;
 	background-position: center center !important;
 	background-repeat: no-repeat !important;
-	background-size: cover !important;
+	background-size: contain !important;
+	background-position: center center;
 }
 
 .resource-title-container {
@@ -284,7 +287,7 @@ nav#primary-menu > ul {
 }
 
 .full-block-width {
-	width: 460px;
+	width: 350px;
 }
 
 .resources-container {
@@ -502,7 +505,7 @@ label {
 	}
 
 	.resource-title-container {
-		height: 275px;
+		height: 215px;
 	}
 
 	.resource-link-container {
@@ -511,32 +514,33 @@ label {
 	}
 
 	.resource-image-container {
-		height: 222px;
+		height: 183px;
 	}
+
+
 
 }
 
 @media (min-width: 1000px) and (max-width: 1700px) {/* For laptops: */
 
 	.full-block-width {
-		width: 360px;
+		width: 250px;
 	}
 
 	.resources-blocks-container {
-		max-width: 1160px;
+		max-width: 1100px;
 	}
 
 	.resource-block {
-		height: 438px;
+		height: 350px;
 	}
 
 	.resource-title-container {
-		height: 215px;
+		height: 140px;
 	}
 
 	.resource-link-container {
-			height: 50px;
-			padding-bottom: 55px;
+			height: 40px;
 	}
 
 	.resource-image-container {
@@ -544,7 +548,7 @@ label {
 	}
 
 	.resource-line {
-		margin-bottom: 15px;
+		margin-bottom: 7px;
 	}
 
 }
@@ -799,6 +803,10 @@ label {
 
 	.resource-line {
 		margin-bottom: 30px;
+	}
+
+	#slider {
+			top: 50px;
 	}
 }
 
@@ -1094,6 +1102,10 @@ label {
 		width: 200px !important;
     max-width: 200px !important;
 		max-hegith: 46px !important;
+	}
+
+	#slider {
+			top: 15px;
 	}
 
 }
