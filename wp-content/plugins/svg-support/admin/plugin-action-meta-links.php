@@ -14,14 +14,14 @@ function bodhi_svgs_plugin_action_links( $links ) {
    $links[] = '<a href="'. get_admin_url(null, 'options-general.php?page=svg-support') .'">Settings</a>';
    //$links[] = '<a href="http://gowebben.com" target="_blank">More plugins by GoWebben</a>';
    return $links;
-   
+
 }
 
 // add plugin_row_meta links
 add_filter( 'plugin_row_meta', 'bodhi_svgs_plugin_meta_links', 10, 2 );
 
 function bodhi_svgs_plugin_meta_links( $links, $file ) {
-	
+
 	$plugin_file = 'svg-support/svg-support.php';
 	if ( $file == $plugin_file ) {
 		return array_merge(
@@ -35,7 +35,7 @@ function bodhi_svgs_plugin_meta_links( $links, $file ) {
 	}
 
 	return $links;
- 
+
 }
 
 ?>

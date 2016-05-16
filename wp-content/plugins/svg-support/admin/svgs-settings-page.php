@@ -1,25 +1,25 @@
 <div class="wrap">
-	
+
 	<div id="icon-upload" class="icon32"></div>
-	<h2><?php _e( 'SVG Support Settings and Usage', 'svgsupport' ); ?><span class="svgs-version">Ver <?php global $plugin_version; echo $plugin_version; ?></span></h2>
+	<h2><?php _e( 'SVG Support Settings and Usage', 'svgsupport' ); ?><span class="svgs-version">Ver <?php global $svgs_plugin_version; echo $svgs_plugin_version; ?></span></h2>
 
 	<div id="poststuff">
 
 		<div class="meta-box-sortables ui-sortable">
-						
+
 			<div class="postbox">
-			
+
 				<h3><span><?php _e( 'Introduction', 'svgsupport' ); ?></span></h3>
 				<div class="inside">
-					
+
 					<p><?php _e( 'When using SVG images on your WordPress site, it can be hard to style elements within the SVG using CSS. <strong>Now you can, easily!</strong>', 'svgsupport' ); ?></p>
 					<p><?php _e( 'This plugin not only provides SVG Support like the name says, it also allows you to easily embed your full SVG file\'s code using a simple IMG tag. By adding the class <code>style-svg</code> to your IMG elements, this plugin dynamically replaces any IMG elements containing the <code>style-svg</code> class with your complete SVG.', 'svgsupport' ); ?></p>
 					<p><?php _e( 'The main purpose of this is to allow styling of SVG elements. Usually your styling options are restricted when using <code>embed</code>, <code>object</code> or <code>img</code> tags alone.', 'svgsupport' ); ?></p>
 
 				</div> <!-- .inside -->
-			
+
 			</div> <!-- .postbox -->
-			
+
 		</div> <!-- .meta-box-sortables .ui-sortable -->
 
 		<div id="post-body" class="metabox-holder columns-2">
@@ -94,7 +94,7 @@
 					</div> <!-- .postbox -->
 
 					<div class="postbox">
-				
+
 						<h3><span><?php _e( 'Usage', 'svgsupport' ); ?></span></h3>
 						<div class="inside">
 
@@ -112,9 +112,9 @@
 							<p><em><?php _e( 'Please Note:', 'svgsupport' ); ?></em>
 							<br><em><?php _e( '- You will need to set your own height and width in your CSS for SVG files to display correctly.', 'svgsupport' ); ?></em>
 							<br><em><?php _e( '- Your uploaded image needs to be an SVG file for this plugin to replace the img tag with the inline SVG code. It will not create SVG files for you.', 'svgsupport' ); ?></em></p>
-						
+
 						</div> <!-- .inside -->
-					
+
 					</div> <!-- .postbox -->
 
 				</div> <!-- .meta-box-sortables .ui-sortable -->
