@@ -255,7 +255,7 @@ nav#primary-menu > ul {
 	border-top: 1px solid #e7e7e7;
 	width: 100%;
 	margin: 0px auto;
-	margin-bottom: 8px;
+	margin-bottom: 12px;
 }
 
 .resources-blocks-container {
@@ -505,7 +505,7 @@ label {
 	}
 
 	.resource-title-container {
-		height: 215px;
+		height: 170px;
 	}
 
 	.resource-link-container {
@@ -514,7 +514,7 @@ label {
 	}
 
 	.resource-image-container {
-		height: 183px;
+		height: 220px;
 	}
 
 
