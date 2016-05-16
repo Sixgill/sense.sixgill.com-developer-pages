@@ -271,11 +271,14 @@ function Ascroll() {
 
 
     if (window.pageYOffset  <= 250){
+    a.style.height = b.getBoundingClientRect().height + heightStarted + 'px';
 
       b.className = 'stop';
       b.style.top =  -R - document.getElementById('content').offsetHeight + document.getElementById('aside1').offsetHeight +'px';
     }
     else {
+     a.style.height = 0 + 'px';
+
      P = Ra.top;
     if (((Ra.top - P) <= 0))  {
     if (window.pageYOffset >= (document.body.scrollHeight - document.getElementById('footer').offsetHeight - 500) ) {
