@@ -120,6 +120,10 @@
 <!-- Footer Scripts  -->
 <script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js"></script>
 
+<!--GoogleTagManager-->
+<noscript><iframesrc="//www.googletagmanager.com/ns.html?id=GTM-5X4VP7"height="0"width="0"style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':newDate().getTime(),event:'gtm.js'});varf=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5X4VP7');</script>
+<!-- End Google Tag Manager →
+
 
 <!-- Google Analytics -->
 <script async="" src="//www.google-analytics.com/analytics.js"></script>
@@ -271,11 +275,14 @@ function Ascroll() {
 
 
     if (window.pageYOffset  <= 250){
+    a.style.height = b.getBoundingClientRect().height + heightStarted + 'px';
 
       b.className = 'stop';
       b.style.top =  -R - document.getElementById('content').offsetHeight + document.getElementById('aside1').offsetHeight +'px';
     }
     else {
+     a.style.height = 0 + 'px';
+
      P = Ra.top;
     if (((Ra.top - P) <= 0))  {
     if (window.pageYOffset >= (document.body.scrollHeight - document.getElementById('footer').offsetHeight - 500) ) {
