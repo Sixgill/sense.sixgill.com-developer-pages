@@ -211,11 +211,14 @@ class simpleDownloadManager {
         add_meta_box('sdm_upload_meta_box', __('Upload File', 'simple-download-monitor'), array(&$this, 'display_sdm_upload_meta_box'), 'sdm_downloads', 'normal', 'default'
         );
         add_meta_box('sdm_thumbnail_meta_box', __('File Thumbnail (Optional)', 'simple-download-monitor'), array(&$this, 'display_sdm_thumbnail_meta_box'), 'sdm_downloads', 'normal', 'default'
-        );
+        );       
+
+        
         add_meta_box('sdm_shortcode_meta_box', __('Shortcodes', 'simple-download-monitor'), array(&$this, 'display_sdm_shortcode_meta_box'), 'sdm_downloads', 'normal', 'default'
         );
         add_meta_box('sdm_stats_meta_box', __('Statistics', 'simple-download-monitor'), array(&$this, 'display_sdm_stats_meta_box'), 'sdm_downloads', 'normal', 'default'
         );
+        
     }
 
     public function display_sdm_description_meta_box($post) {  // Description metabox
@@ -262,9 +265,28 @@ class simpleDownloadManager {
                 ?><img id="sdm_thumbnail_image" src="<?php echo $old_value; ?>" style="max-width:200px;" />
                 <?php
             }
-            ?></span><?php
+            ?></span>
+</br>
+
+<?php         
+        $main_opts = get_option('sdm_downloads_options');
+        $color_opt = $main_opts['download_button_color'];
+        $color_opts = array(__('Full screen', 'simple-download-monitor'), __('Fit', 'simple-download-monitor'));
+        echo '<select name="sdm_downloads_options[download_button_color]" id="download_button_color" class="sdm_opts_ajax_dropdowns">';
+        if (isset($color_opt)) {
+            echo '<option value="' . $color_opt . '" selected="selected">' . $color_opt . ' (' . __('current', 'simple-download-monitor') . ')</option>';
+        }
+        foreach ($color_opts as $color) {
+            echo '<option value="' . $color . '">' . $color . '</option>';
+        }
+        echo '</select> ';
+        _e('Text....', 'simple-download-monitor'); 
+?>
+
+<?php
             wp_nonce_field('sdm_thumbnail_box_nonce', 'sdm_thumbnail_box_nonce_check');
     }
+    
 
     public function display_sdm_shortcode_meta_box($post) {  // Shortcode metabox
         _e('This is the shortcode which can used on posts or pages to embed a download now button for this file. You can also use the shortcode inserter to add this shortcode to a post or page.', 'simple-download-monitor');

@@ -122,16 +122,17 @@ function sdm_generate_fancy2_display_output($args) {
     $output = '';
 
 		$output .= '<div class="resource-block full-block-width">';
-
-			$output .= '<div ';
+ 
+    $output .= '<div style="height:173px;  position:relative;">';
+			$output .= '<img ';
 			$output .= 'class="resource-container resource-image-container full-block-width" ';
-			$output .= 'style="background: url(\''.$item_download_thumbnail.'\');"> ';
-			$output .= '</div>';
-
-			$output .= '<div class="resource-container resource-title-container full-block-width"> ';
-				$output .= '<div class="resource-title full-block-width">'.$isset_item_title.'</div> ';
-			$output .= '</div> ';
-
+            $output .= 'src="'.$item_download_thumbnail.'" ';
+			$output .= 'style="width:auto; height:auto; position: absolute; left: 0; top: 0; bottom: 0; right: 0; margin: auto; max-height: 173px;"> ';
+            $output .= '</div>';
+			    $output .= '<div class="resource-container full-block-width" style="width:100%"> ';
+                $output .= '<div class=" resource-title-container resource-title full-block-width" >'.$isset_item_title.'</div> ';
+            $output .= '</div> ';
+    
 			$output .= '<div data-permalink="'.$download_url.'" class="resource-container resource-link-container"> ';
 				$output .= '<hr class="resource-line"> ';
 				$output .= '<a class="resource-link" href="#" data-toggle="modal" data-target="#myResource">Click to download</a> ';

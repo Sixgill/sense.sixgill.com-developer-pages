@@ -269,6 +269,8 @@ nav#primary-menu > ul {
 	margin: 0px auto;
 	width: 100%;
 	text-align: center;
+    height: 110px;
+    overflow: hidden;
 }
 
 .resource-image-container {
@@ -332,6 +334,8 @@ label {
 .companyDescription p {
 	margin-bottom: 0px !important;
 }
+
+
 
 @media only screen and (min-width : 992px) {/* For desktop: */
 
@@ -515,7 +519,7 @@ label {
 @media (min-width: 1000px) and (max-width: 1700px) {/* For laptops: */
 
 	.full-block-width {
-		width: 360px;
+		width: 23%;
 	}
 
 	.resources-blocks-container {
@@ -523,11 +527,11 @@ label {
 	}
 
 	.resource-block {
-		height: 438px;
+		height: 334px;
 	}
 
 	.resource-title-container {
-		height: 215px;
+		height: 110px;
 	}
 
 	.resource-link-container {
