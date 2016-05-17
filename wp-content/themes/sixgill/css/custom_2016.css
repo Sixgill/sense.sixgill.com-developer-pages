@@ -557,6 +557,14 @@ label {
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
 
+    body:not(.no-transition) #wrapper, .animsition-overlay {
+		opacity: 1;
+	}
+
+	.css3-spinner {
+		position: initial;
+	}
+    
     .marginShareButton {
     margin-left: 40px;
     list-style-type: none;
