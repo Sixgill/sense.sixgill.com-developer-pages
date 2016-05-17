@@ -127,11 +127,12 @@
 			<a name="clients"></a>
 			<section id="clients" style="color:#FFFFFF;" align="center">
 				<div align="center">
-					<div class="fancy-title title-dotted-border title-center mobile-hiden-line">
+					<div class="fancy-title-without-bottom fancy-title title-dotted-border title-center mobile-hiden-line">
 						<h3 id="home-text-company-with-line" style="font-size:20px; font-weight:normal; color:#383838;">
-							<?php echo get_field('logo_header_text'); ?>
+                            <?php echo get_field('logo_header_text'); ?>
 						</h3>
 					</div>
+                    <p class="logo-subheader"><?php echo get_field('logo_header_subheader'); ?></p>
 
 					<div class="home-diagram hidden-top-imageDiagram max-width-720" style="margin-bottom:35px;">
 						<?php foreach(get_field('logo_images_part1') as $logo) : ?>
