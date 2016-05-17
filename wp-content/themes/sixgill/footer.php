@@ -119,6 +119,7 @@
 
 <!-- Footer Scripts  -->
 <script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js"></script>
+<script type="text/javascript" src="/wp-content/themes/sixgill/js/functions_custom.js"></script>
 
 <!--GoogleTagManager-->
 <noscript><iframesrc="//www.googletagmanager.com/ns.html?id=GTM-5X4VP7"height="0"width="0"style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':newDate().getTime(),event:'gtm.js'});varf=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5X4VP7');</script>

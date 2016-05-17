@@ -352,6 +352,26 @@ label {
     color: #555;
 }
 
+.subscribe-email-focus::-webkit-input-placeholder{
+	font-size: 0px;
+}
+
+.subscribe-email-focus:-moz-placeholder {
+	font-size: 0px;
+}
+.subscribe-email-focus::-moz-placeholder {
+	font-size: 0px;
+}
+.subscribe-email-focus:-ms-input-placeholder {
+	font-size: 0px;
+}
+
+.subscribe-email-focus {
+	padding-left: 10px;
+	text-align: left !important;
+}
+
+
 @media only screen and (min-width : 992px) {/* For desktop: */
 
 	.global-social-buttons-list {
@@ -574,7 +594,7 @@ label {
 	.css3-spinner {
 		position: initial;
 	}
-    
+
     .marginShareButton {
     margin-left: 40px;
     list-style-type: none;
