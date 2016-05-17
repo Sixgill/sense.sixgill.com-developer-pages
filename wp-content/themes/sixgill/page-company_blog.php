@@ -32,4 +32,5 @@
 		</div>
 	</div>
 </section><!-- #content end -->
+
 <?php get_footer(); ?>
