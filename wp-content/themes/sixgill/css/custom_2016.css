@@ -263,6 +263,7 @@ nav#primary-menu > ul {
 .resources-blocks-container {
 	text-align: left;
 	min-width: 1520px !important;
+	max-width: 1520px !important;
 	display: inline-block;
 }
 
@@ -340,6 +341,15 @@ label {
 
 #home-main-text {
 	max-width: 650px;
+}
+
+.fancy-title-without-bottom {
+    margin-bottom: 0px;
+}
+
+.logo-subheader {
+    font-size: 14px;
+    color: #555;
 }
 
 @media only screen and (min-width : 992px) {/* For desktop: */
@@ -557,6 +567,14 @@ label {
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
 
+    body:not(.no-transition) #wrapper, .animsition-overlay {
+		opacity: 1;
+	}
+
+	.css3-spinner {
+		position: initial;
+	}
+    
     .marginShareButton {
     margin-left: 40px;
     list-style-type: none;
