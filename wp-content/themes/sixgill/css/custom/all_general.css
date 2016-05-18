@@ -1,3 +1,7 @@
+body, p {
+	font-family: "Lato", serif, sans-serif;
+}
+
 .title-left-col {
 	font-family: "Lato", serif, sans-serif;
 	font-size:30px;

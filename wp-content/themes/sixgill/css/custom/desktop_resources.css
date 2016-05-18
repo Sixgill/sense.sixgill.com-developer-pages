@@ -1,4 +1,27 @@
 /* Resources desktop styles */
 @media only screen and (min-width : 992px) {
+	.resources-container {
+		padding-top: 29px;
+		padding-bottom: 55px;
+	}
 
+	.resource-block {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 13px;
+		margin-bottom: 13px;
+	}
+
+	.resource-title-container {
+		height: 170px;
+	}
+
+	.resource-link-container {
+		height: 63px;
+		padding-bottom: 55px;
+	}
+
+	.resource-image-container {
+		height: 220px;
+	}
 }
