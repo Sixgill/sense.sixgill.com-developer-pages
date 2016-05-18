@@ -1,14 +1,14 @@
 <!-- footer.php start -->
 
 <?php
-$footerInfoId = getPageBySlug('footer-details-contact-popup')->ID;
+	$footerInfoId = getPageBySlug('footer-details-contact-popup')->ID;
 
-$legalLink = get_field('legal_link', $footerInfoId);
-$pressLink = get_field('press_link', $footerInfoId);
-$resourceLink = get_field('resource_link', $footerInfoId);
-$contactHeader = get_field('contact_header', $footerInfoId);
-$contactText = get_field('contact_text', $footerInfoId);
-$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
+	$legalLink = get_field('legal_link', $footerInfoId);
+	$pressLink = get_field('press_link', $footerInfoId);
+	$resourceLink = get_field('resource_link', $footerInfoId);
+	$contactHeader = get_field('contact_header', $footerInfoId);
+	$contactText = get_field('contact_text', $footerInfoId);
+	$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
 ?>
 
 <footer id="footer" class="footer">

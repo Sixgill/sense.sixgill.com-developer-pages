@@ -614,29 +614,7 @@ label {
 		min-width: 850px !important;
 		max-width: 850px !important;
 	}
-
-	.resource-block {
-		height: 350px;
-	}
-
-	.resource-title-container {
-		height: 140px;
-	}
-
-	.resource-link-container {
-			height: 40px;
-	}
-
-	.resource-image-container {
-		height: 173px;
-	}
-
-	.resource-line {
-		margin-bottom: 7px;
-	}
 }
-
-
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
 
@@ -908,6 +886,10 @@ label {
 		text-align: center;
 	}
 
+	#wpadminbar {
+		display:none;
+	}
+
 }
 
 @media only screen and (max-width: 500px) {/* For mobiles: */
@@ -1101,6 +1083,7 @@ label {
 		position: fixed;
 		z-index: 9999;
 		width: 100%;
+		top:0px;
 	}
 
 	.global-social-buttons-separator {
@@ -1202,7 +1185,7 @@ label {
     background-repeat: no-repeat;
 		width: 200px !important;
     max-width: 200px !important;
-		max-hegith: 46px !important;
+		max-height: 46px !important;
 	}
 
 	#slider {
@@ -1211,6 +1194,10 @@ label {
 
 	.footer_Links, .footer_Copy {
 		width: 100%;
+	}
+
+	#wpadminbar {
+		display:none;
 	}
 
 }
