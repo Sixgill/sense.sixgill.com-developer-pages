@@ -72,7 +72,11 @@ all classes apply for desktop
 	padding:0px 20px;
 }
 
-.footer_Links {text-decoration:none; font-size: 14px;	color:#FFF;}
+.footer_Links {
+	text-decoration:none;
+	font-size: 14px;
+	color:#FFF
+}
 .footer_Links a {
 	margin: 0 10px;
 	color: #FFF;
@@ -90,7 +94,10 @@ all classes apply for desktop
 	font-weight:normal;
 	padding:0px 20px;
 }
-.footer_Copy {font-size: 14px;	color:#FFF;}
+.footer_Copy {
+	font-size: 14px;
+	color:#FFF;
+}
 
 .my_headerBoxSolution { margin-bottom: 30px; }
 
@@ -553,7 +560,7 @@ label {
 
 }
 
-@media (min-width: 1000px) and (max-width: 1700px) {/* For laptops: */
+@media (min-width: 1000px) and (max-width: 1650px) {/* For laptops: */
 
 	.full-block-width {
 		width: 250px;
@@ -561,6 +568,7 @@ label {
 
 	.resources-blocks-container {
 		min-width: 1100px !important;
+		max-width: 1100px !important;
 	}
 
 	.resource-block {
@@ -582,8 +590,53 @@ label {
 	.resource-line {
 		margin-bottom: 7px;
 	}
-
 }
+
+@media (min-width: 1500px) and (max-width: 1750px) {/* In the middle of fullhd and laptop: */
+	.full-block-width {
+		width: 300px;
+	}
+
+	.resources-blocks-container {
+		min-width: 1300px !important;
+		max-width: 1300px !important;
+	}
+}
+
+/* Wide tablets or very small laptop screens : */
+@media (min-width: 992px) and (max-width: 1266px) {
+
+	.full-block-width {
+		width: 250px;
+	}
+
+	.resources-blocks-container {
+		min-width: 850px !important;
+		max-width: 850px !important;
+	}
+
+	.resource-block {
+		height: 350px;
+	}
+
+	.resource-title-container {
+		height: 140px;
+	}
+
+	.resource-link-container {
+			height: 40px;
+	}
+
+	.resource-image-container {
+		height: 173px;
+	}
+
+	.resource-line {
+		margin-bottom: 7px;
+	}
+}
+
+
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
 
@@ -803,7 +856,7 @@ label {
 
 	.resource-block {
 		margin-left: 10px;
-		margin-right: 10px;
+		margin-right: 10px !important;
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
@@ -817,7 +870,7 @@ label {
 	}
 
 	.resource-title-container {
-		height: 188px;
+		height: 180px;
 	}
 
 	.resource-link-container {
@@ -830,7 +883,7 @@ label {
 	}
 
 	.resource-image-container {
-		height: 290px;
+		height: 200px;
 	}
 
 	.full-block-width {
@@ -838,16 +891,23 @@ label {
 	}
 
 	.resources-blocks-container {
-		min-width: 715px !important;
+		min-width: 723px !important;
+		max-width: 723px !important;
 	}
 
 	.resource-line {
-		margin-bottom: 30px;
+		margin-bottom: 13px;
 	}
 
 	#slider {
-			top: 50px;
+			top: 62px;
 	}
+
+	.footer_Links, .footer_Copy {
+		width: 100%;
+		text-align: center;
+	}
+
 }
 
 @media only screen and (max-width: 500px) {/* For mobiles: */
@@ -1126,6 +1186,7 @@ label {
 
 	.resources-blocks-container {
 		min-width: 300px !important;
+		max-width: 300px !important;
 	}
 
 	.resource-line {
@@ -1146,6 +1207,10 @@ label {
 
 	#slider {
 			top: 15px;
+	}
+
+	.footer_Links, .footer_Copy {
+		width: 100%;
 	}
 
 }
