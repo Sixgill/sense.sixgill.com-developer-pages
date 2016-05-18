@@ -2,12 +2,12 @@
 @media (min-width: 1000px) and (max-width: 1650px) {
 
 	.marginShareButton {
-		margin-left: 40px;
-		list-style-type: none;
+		margin-left: 40px  !important;
+		list-style-type: none  !important;
 	}
 
 	.full-block-width {
-		width: 250px;
+		width: 250px !important;
 	}
 
 	.resources-blocks-container {
@@ -16,23 +16,23 @@
 	}
 
 	.resource-block {
-		height: 350px;
+		height: 350px !important;
 	}
 
 	.resource-title-container {
-		height: 140px;
+		height: 140px !important;
 	}
 
 	.resource-link-container {
-			height: 40px;
+			height: 40px  !important;
 	}
 
 	.resource-image-container {
-		height: 173px;
+		height: 173px !important;
 	}
 
 	.resource-line {
-		margin-bottom: 7px;
+		margin-bottom: 7px !important;
 	}
 }
 
@@ -40,12 +40,11 @@
 @media (min-width: 1500px) and (max-width: 1750px) {
 
 	.marginShareButton {
-		margin-left: 5px;
-		list-style-type: none;
+		margin-left: 5px  !important;
 	}
 
 	.full-block-width {
-		width: 300px;
+		width: 300px  !important;
 	}
 
 	.resources-blocks-container {
@@ -58,7 +57,7 @@
 @media (min-width: 992px) and (max-width: 1266px) {
 
 	.full-block-width {
-		width: 250px;
+		width: 250px  !important;
 	}
 
 	.resources-blocks-container {
@@ -71,11 +70,11 @@
 @media (min-width: 1200px) and (max-width: 1300px) {
 
     .marginShareButton {
-		margin-left: 5px;
+		margin-left: 5px  !important;
 		list-style-type: none;
 	}
 
     .my_containerSolution {
-        margin-left: 60px;
+        margin-left: 60px  !important;
     }
 }
