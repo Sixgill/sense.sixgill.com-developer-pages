@@ -172,7 +172,7 @@ body, p {
 #aside-blog {
     position: fixed;
     z-index: 101;
-    width: 10%;
+    //width: 10%;
     margin-top: 150px;
 
 }
