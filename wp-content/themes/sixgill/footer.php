@@ -226,7 +226,7 @@ function toggle(showHideDiv, switchTextDiv) {
 (function(){
 
 
-  if(document.getElementById('single-page-content')){
+  if((document.getElementById('single-page-content')) && ((document.getElementById('aside1'))){
 
 //alert( 'Высота с учетом прокрутки: ' + document.getElementById('footer').offsetHeight);
 
@@ -303,6 +303,7 @@ function Ascroll() {
   }
 
     }
+    
   window.addEventListener('resize', function() {
     a.children[0].style.width = getComputedStyle(a, '').width
   }, false);
@@ -310,6 +311,8 @@ function Ascroll() {
     }
 })()
 </script>
+
+
 <?php
 	/*
 	 * Always have wp_footer() just before the closing </body>
