@@ -1,0 +1,57 @@
+/* Resources mobile styles */
+@media only screen and (max-width: 500px) {
+	.resources-container {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.resource-block {
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		height: 370px;
+	}
+
+	.resource-title-container {
+		height: 125px;
+	}
+
+	.resource-link-container {
+			height: 82px;
+			padding-bottom: 61px;
+	}
+
+	.resource-link {
+		font-size: 18px;
+	}
+
+	.resource-image-container {
+		height: 191px;
+	}
+
+	.full-block-width {
+		width: 300px;
+	}
+
+	.resources-blocks-container {
+		min-width: 300px !important;
+		max-width: 300px !important;
+	}
+
+	.resource-line {
+		margin-bottom: 12px;
+	}
+
+	.full-block-width {
+		width: 300px;
+	}
+
+	.submit-resource-form-button {
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 200px !important;
+		max-width: 200px !important;
+		max-height: 46px !important;
+	}
+}

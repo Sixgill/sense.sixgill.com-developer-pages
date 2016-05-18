@@ -17,10 +17,10 @@
 
     <div class="header-stick" style="background-color:#F8F8F8; border:0px solid #FF0004;">
 			<div class="container-fluid center clearfix" style="padding-top:75px; max-width:950px;  border:0px solid #FF0004;">
-				<div class="col_one_third my_titSolutions">
+				<div class="col_one_third title-left-col">
 				<?php echo get_field('top_header'); ?>
 				</div>
-				<div class="col_two_third col_last text-left my_txtSolutions">
+				<div class="col_two_third col_last text-left text-right-col">
 					<?php echo get_field('top_paragraph'); ?>
 				</div>
 			</div>
@@ -37,7 +37,7 @@
       <div class="container-fluid center clearfix my_containerSolution">
         <div class="col_full"><img src="<?php echo get_field('image_1_header'); ?>" alt="" style="max-width:500px; width: 100%;"/></div>
         <div class="col_one_third my_boxTech_image hidden-top-imageTech"><img src="<?php echo get_field('image_1_tech'); ?>" alt=""/></div>
-        <div class="col_two_third my_txtSolutions_noline col_last">
+        <div class="col_two_third text-right-col-noline col_last">
           <div class="my_txtSolution">
             <?php echo get_field('section_1_text'); ?>
 
@@ -58,7 +58,7 @@
   <div id="proximity" class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
     <div class="container-fluid center clearfix my_containerSolution">
       <div class="col_full"><img src="<?php echo get_field('image_2_header'); ?>" alt="" style="max-width:500px; width: 100%;"/></div>
-      <div class="col_two_third my_txtSolutions_noline col_last">
+      <div class="col_two_third text-right-col-noline col_last">
         <div class="my_txtSolution">
             <?php echo get_field('section_2_text'); ?>
         </div>
@@ -79,7 +79,7 @@
     <div class="container-fluid center clearfix my_containerSolution">
       <div class="col_full"><img src="<?php echo get_field('image_3_header'); ?>" alt="" style="max-width:500px; width: 100%;"/></div>
       <div class="col_one_third my_boxTech_image hidden-top-imageTech"><img src="<?php echo get_field('image_3_tech'); ?>" alt=""/></div>
-      <div class="col_two_third my_txtSolutions_noline col_last">
+      <div class="col_two_third text-right-col-noline col_last">
         <div class="my_txtSolution" style="    margin-bottom: 0px;">
             <?php echo get_field('section_3_text'); ?>
         </div>

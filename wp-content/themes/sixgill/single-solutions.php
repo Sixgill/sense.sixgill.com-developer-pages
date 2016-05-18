@@ -5,8 +5,8 @@
 			<div class="swiper-wrapper">
 				<div id="background-image-header" class="swiper-slide" style="background-image: url('/wp-content/themes/sixgill/images/td/single_header_desktop.png'); background-position: center;">
 					<div class="slider-caption slider-caption-center">
-						<h1 id="post-title-slider" class="press-title"><?php echo $post->post_title; ?></h1>
-						<h4 id="post-subtitle-slider" class="press-subtitle"><?php echo get_field('subtitle'); ?></h4>
+						<h1 id="post-title-slider" class="single-post-title"><?php echo $post->post_title; ?></h1>
+						<h4 id="post-subtitle-slider" class="single-post-subtitle"><?php echo get_field('subtitle'); ?></h4>
 					</div>
 				</div>
 			</div>

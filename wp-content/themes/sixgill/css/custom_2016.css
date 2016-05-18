@@ -15,7 +15,7 @@ all classes apply for desktop
 
 /* Solutions Page classes */
 
-.my_titSolutions {
+.title-left-col {
 	font-family: "Lato", serif, sans-serif;
 	font-size:30px;
 	font-weight:bold;
@@ -26,7 +26,7 @@ all classes apply for desktop
 	margin-right:0px;
 }
 
-.my_txtSolutions, .my_txtSolutions_noline {
+.text-right-col, .text-right-col-noline {
 	border-left:1px solid #9C9C9C;
 	padding-left:30px;
 	text-align:left;
@@ -34,7 +34,7 @@ all classes apply for desktop
 	color:#686868;
 }
 
-.my_txtSolutions_noline {border-left:0px;}
+.text-right-col-noline {border-left:0px;}
 
 
 .my_iconSolution {width:135px;}
@@ -62,7 +62,7 @@ all classes apply for desktop
 	border:0px solid #FE0004;
 }
 
-.footer_Learn, .footer_Links {
+.footer_Learn, .footer-links-block {
 	text-align:left;
 	border:0px solid #FE0004;
 	color:#FFF;
@@ -72,17 +72,17 @@ all classes apply for desktop
 	padding:0px 20px;
 }
 
-.footer_Links {
+.footer-links-block {
 	text-decoration:none;
 	font-size: 14px;
 	color:#FFF
 }
-.footer_Links a {
+.footer-links-block a {
 	margin: 0 10px;
 	color: #FFF;
 	border-bottom: 0px;
 }
-.footer_Links a:hover {	color: #CCC;}
+.footer-links-block a:hover {	color: #CCC;}
 
 
 .footer_Schedule, .footer_Copy {
@@ -124,7 +124,7 @@ all classes apply for desktop
     background-color: rgba(0,0,0,0.45);
 }
 
-.press-date, .press-by-author, .press-title, .press-subtitle {
+.press-date, .press-by-author, .single-post-title, .single-post-subtitle {
 	font-family: "Lato", serif, sans-serif;
 }
 
@@ -132,7 +132,7 @@ all classes apply for desktop
 	margin-bottom: 0px;
 }
 
-.press-title, .press-subtitle {
+.single-post-title, .single-post-subtitle {
 	color: white;
 }
 
@@ -141,7 +141,7 @@ all classes apply for desktop
     font-size: 18px;
 }
 
-.press-title {
+.single-post-title {
 	margin-bottom: 0px;
 }
 
@@ -378,6 +378,12 @@ label {
 	text-align: left !important;
 }
 
+.author-with-date-blogPost {
+    font-size: 14px; 
+    line-height: 1.5; 
+    color: #999999;
+}
+
 
 @media only screen and (min-width : 992px) {/* For desktop: */
 
@@ -390,7 +396,7 @@ label {
 	}
 
 	.marginShareButton {
-		margin-left: 40px;
+		margin-left: 5px;
 		list-style-type: none;
 	}
 
@@ -490,7 +496,7 @@ label {
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
 	}
 
-	.my_titSolutions {
+	.title-left-col {
 		font-size:30px;
 		padding-right:20px;
 		text-align:right;
@@ -504,7 +510,7 @@ label {
 		display: none;
 	}
 
-	.footer_Learn, .footer_Links {
+	.footer_Learn, .footer-links-block {
 		text-align:left;
 		font-size:22px;
 	}
@@ -562,6 +568,11 @@ label {
 
 @media (min-width: 1000px) and (max-width: 1650px) {/* For laptops: */
 
+    .marginShareButton {
+		margin-left: 40px;
+		list-style-type: none;
+	}
+    
 	.full-block-width {
 		width: 250px;
 	}
@@ -606,6 +617,11 @@ label {
 /* Wide tablets or very small laptop screens : */
 @media (min-width: 992px) and (max-width: 1266px) {
 
+    .marginShareButton {
+		margin-left: 5px;
+		list-style-type: none;
+	}
+    
 	.full-block-width {
 		width: 250px;
 	}
@@ -614,6 +630,18 @@ label {
 		min-width: 850px !important;
 		max-width: 850px !important;
 	}
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {/* For share botton on blog: */
+
+    .marginShareButton {
+		margin-left: 5px;
+		list-style-type: none;
+	}
+    
+    .my_containerSolution {
+        margin-left: 60px;
+    }
 }
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
@@ -627,8 +655,8 @@ label {
 	}
 
     .marginShareButton {
-    margin-left: 40px;
-    list-style-type: none;
+        margin-left: 10px;
+        list-style-type: none;
     }
 
 	section {
@@ -686,20 +714,20 @@ label {
 		display:none;
 	}
 
-	.my_titSolutions {
+	.title-left-col {
 		font-size:28px;
 		padding-right:10px;
 	}
 
-	.my_txtSolutions_noline {
+	.text-right-col-noline {
 		padding-right:30px;
 	}
 
-	.my_txtSolutions {
+	.text-right-col {
 		border: 0px;
 	}
 
-	.my_titSolutions {
+	.title-left-col {
 		padding-left: 30px;
 	}
 
@@ -709,7 +737,7 @@ label {
 
 	.my_boxSolution_title {}
 
-	.footer_Learn, .footer_Links {
+	.footer_Learn, .footer-links-block {
 		text-align:left;
 		font-size:22px;
 		font-weight:normal;
@@ -719,7 +747,7 @@ label {
 		text-align:right;
 	}
 
-	.my_titSolutions {
+	.title-left-col {
 		text-align:left;
 	}
 
@@ -881,7 +909,7 @@ label {
 			top: 62px;
 	}
 
-	.footer_Links, .footer_Copy {
+	.footer-links-block, .footer_Copy {
 		width: 100%;
 		text-align: center;
 	}
@@ -947,13 +975,13 @@ label {
 		display:none;
 	}
 
-	.my_titSolutions {
+	.title-left-col {
 		font-size:30px;
 		font-weight:bold;
 		padding:0px;
 	}
 
-	.my_txtSolutions {
+	.text-right-col {
 		border-left:0px;
 		padding-left:10px;
 	}
@@ -966,7 +994,7 @@ label {
 		border:0px;
 	}
 
-	.footer_Learn, .footer_Links {
+	.footer_Learn, .footer-links-block {
 		text-align:center;
 		font-size:14px;
 	}
@@ -975,7 +1003,7 @@ label {
 		text-align:center;
 	}
 
-	.my_titSolutions {
+	.title-left-col {
 		text-align:center;
 	}
 
@@ -1022,7 +1050,7 @@ label {
 		font-size: 12px !important;
 	}
 
-	.company-press-title {
+	.company-single-post-title {
 		font-size: 14px !important;
 	}
 
@@ -1192,7 +1220,7 @@ label {
 			top: 15px;
 	}
 
-	.footer_Links, .footer_Copy {
+	.footer-links-block, .footer_Copy {
 		width: 100%;
 	}
 

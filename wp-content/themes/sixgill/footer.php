@@ -24,13 +24,15 @@
 
 	<div class="container-fluid nomargin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_credit.png'); background-size:cover;">
 		<div class="footer-widgets-wrap clearfix">
-			<div class="col_half footer_Links">
+			<div class="col_half footer-links-block">
 				<a class="footer-link" href="<?php echo $legalLink; ?>">LEGAL</a> &nbsp;
 				<a class="footer-link" href="#" data-toggle="modal" data-target="#myModalContact">CONTACT</a>&nbsp;
 				<a class="footer-link" href="<?php echo $pressLink; ?>">PRESS</a> &nbsp;
 				<a class="footer-link" href="<?php echo $resourceLink; ?>">RESOURCES</a> &nbsp;
 			</div>
-			<div class="col_half col_last footer_Copy">&copy; Copyright Sixgill, 2016. All Rights Reserved.</div>
+			<div class="col_half col_last footer_Copy">
+				&copy; Copyright Sixgill, 2016. All Rights Reserved.
+			</div>
 		</div>
 	</div>
 
@@ -44,27 +46,27 @@
 <div class="modal fade" style="z-index:9999" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-body">
-			<div class="modal-content">
-				<div class="modal-header" style="background-color:#57B82A;">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">REQUEST A DEMO</h4>
-				</div>
-				<div class="modal-body" align="center">
-					<!--[if lte IE 8]>
-					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-					<![endif]-->
-					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-					<script>
-					hbspt.forms.create({
-						portalId: '1792815',
-						formId: '7b5388d8-0979-4961-ac97-1f36fc2d70c0'
-					});
-					</script>
+        <div class="modal-content">
+          <div class="modal-header" style="background-color:#57B82A;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">REQUEST A DEMO</h4>
+          </div>
+          <div class="modal-body" align="center">
+						<!--[if lte IE 8]>
+						<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+						<![endif]-->
+						<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+						<script>
+						  hbspt.forms.create({
+						    portalId: '1792815',
+						    formId: '7b5388d8-0979-4961-ac97-1f36fc2d70c0'
+						  });
+						</script>
 
-				</div>
-				<div class="modal-footer center"></div>
-			</div>
-		</div>
+          </div>
+          <div class="modal-footer center"></div>
+        </div>
+      </div>
 	</div>
 </div>
 <!-- END MODAL Request a DEMO -->
@@ -73,17 +75,17 @@
 <div class="modal fade" style="z-index:9999" id="myResource" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-body">
-			<div class="modal-content">
-				<div class="modal-header" style="background-color:#2e2e2e;">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">DOWNLOAD CORPORATE PRESENTATION</h4>
-				</div>
-				<div class="modal-body" align="center">
-					<?php dynamic_sidebar( 'download-access' ); ?>
-				</div>
-				<div class="modal-footer center"></div>
-			</div>
-		</div>
+        <div class="modal-content">
+          <div class="modal-header" style="background-color:#2e2e2e;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">DOWNLOAD CORPORATE PRESENTATION</h4>
+          </div>
+          <div class="modal-body" align="center">
+						<?php dynamic_sidebar( 'download-access' ); ?>
+          </div>
+          <div class="modal-footer center"></div>
+        </div>
+      </div>
 	</div>
 </div>
 <!-- END MODAL Request a DEMO -->
@@ -100,8 +102,8 @@
 				</div>
 				<div class="modal-body" align="center">
 					<?php
-					echo $contactText;
-					echo $googleMapEmbedCode;
+						echo $contactText;
+						echo $googleMapEmbedCode;
 					?>
 				</div>
 			</div>
@@ -117,7 +119,7 @@
 
 <!-- Footer Scripts  -->
 <script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js"></script>
-<script type="text/javascript" src="/wp-content/themes/sixgill/js/functions_custom.js"></script>
+<script type="text/javascript" src="/wp-content/themes/sixgill/js/custom_build.js"></script>
 
 <!--GoogleTagManager-->
 <noscript><iframesrc="//www.googletagmanager.com/ns.html?id=GTM-5X4VP7"height="0"width="0"style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':newDate().getTime(),event:'gtm.js'});varf=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5X4VP7');</script>
@@ -127,209 +129,26 @@
 <!-- Google Analytics -->
 <script async="" src="//www.google-analytics.com/analytics.js"></script>
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-75098635-1', 'auto');
-ga('send', 'pageview');
-</script>
-
-<script>
-$(document).ready(function () {
-	$(document).on("scroll", onScroll);
-
-	$('a[href^="#"]').on('click', function (e) {
-		e.preventDefault();
-		$(document).off("scroll");
-
-		$('a').each(function () {
-			$(this).removeClass('active');
-		})
-		$(this).addClass('active');
-
-		var target = this.hash;
-		$target = $(target);
-		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top+2
-		}, 500, 'swing', function () {
-			window.location.hash = target;
-			$(document).on("scroll", onScroll);
-		});
-	});
-});
-
-//function onScroll(event){
-//	var scrollPosition = $(document).scrollTop();
-//	$('nav ul div a').each(function () {
-//		var currentLink = $(this);
-//		var refElement = $(currentLink.attr("href"));
-//		if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-//			$('nav ul div a').removeClass("active");
-//			currentLink.addClass("active");
-//		}
-//		else{
-//			//currentLink.removeClass("active");
-//		}
-//	});
-//}
-
-function onScroll(event){
-	var windowPos = $(window).scrollTop();
-	$('.my_subMenus > a').each(function(index, item) {
-
-		var currentLink = $(this);
-		if ($(currentLink.attr("href")).length > 0)
-		{
-			var refElement = $(currentLink.attr("href"));
-			if (refElement.position().top <= windowPos && (refElement.position().top + refElement.height() + $("#primary-navwrapper").height() ) > windowPos) {
-				$('.my_subMenus > a').removeClass("active");
-				currentLink.addClass("active");
-			}
-			else{
-				//currentLink.removeClass("current");
-			}
-		}
-	});
-}
-
-
-function toggle(showHideDiv, switchTextDiv) {
-	var ele = document.getElementById(showHideDiv);
-	var text = document.getElementById(switchTextDiv);
-	if(ele.style.display == "block") {
-		ele.style.display = "none";
-		text.innerHTML = "Learn More &#8744;";
-	}
-	else {
-		ele.style.display = "block";
-		text.innerHTML = "Learn More &#8743;";
-	}
-}
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-75098635-1', 'auto');
+	ga('send', 'pageview');
 </script>
 
 <!-- Start of Async HubSpot Analytics Code -->
-<script type="text/javascript">
-(function(d,s,i,r) {
-	if (d.getElementById(i)){return;}
-	var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-	n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1792815.js';
-	e.parentNode.insertBefore(n, e);
-})(document,"script","hs-analytics",300000);
-</script>
+ <script type="text/javascript">
+   (function(d,s,i,r) {
+     if (d.getElementById(i)){return;}
+     var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+     n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1792815.js';
+     e.parentNode.insertBefore(n, e);
+   })(document,"script","hs-analytics",300000);
+ </script>
 <!-- End of Async HubSpot Analytics Code -->
 
-
-<script>
-(function(){
-
-
-	if(document.getElementById('single-page-content')){
-
-		//alert( 'Высота с учетом прокрутки: ' + document.getElementById('footer').offsetHeight);
-
-		var a = document.querySelector('#aside1'), b = null, P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
-		window.addEventListener('scroll', Ascroll, false);
-		document.body.addEventListener('scroll', Ascroll, false);
-
-		var headerFooter = document.querySelector('footer').getBoundingClientRect().top;
-
-		function Ascroll() {
-
-			var heightStarted = 40;
-			var heightTop = 40;
-
-			if (document.body.clientWidth <= 775) {
-				heightTop = 0;
-			}
-
-			if (b == null) {
-				var Sa = getComputedStyle(a, ''), s = '';
-				for (var i = 0; i < Sa.length; i++) {
-					if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
-						s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
-					}
-				}
-				b = document.createElement('div');
-				b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
-				a.insertBefore(b, a.firstChild);
-				var l = a.childNodes.length;
-				for (var i = 1; i < l; i++) {
-					b.appendChild(a.childNodes[1]);
-				}
-				a.style.height = b.getBoundingClientRect().height + heightStarted + 'px';
-				a.style.padding = '0';
-				a.style.border = '0';
-			}
-			var Ra = a.getBoundingClientRect(),
-			R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('footer').getBoundingClientRect().top + 0);  // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
-
-			var topHeader = -Math.round(Ra.top + b.getBoundingClientRect().height - headerFooter + 0) - document.getElementById('content').offsetHeight + document.getElementById('aside1').offsetHeight;
-
-			var scrollHeight = Math.max(
-				document.body.scrollHeight, document.documentElement.scrollHeight,
-				document.body.offsetHeight, document.documentElement.offsetHeight,
-				document.body.clientHeight, document.documentElement.clientHeight
-			);
-
-
-			if (window.pageYOffset  <= 250){
-				a.style.height = b.getBoundingClientRect().height + heightStarted + 'px';
-
-				b.className = 'stop';
-				b.style.top =  -R - document.getElementById('content').offsetHeight + document.getElementById('aside1').offsetHeight +'px';
-			}
-			else {
-				a.style.height = 0 + 'px';
-
-				P = Ra.top;
-				if (((Ra.top - P) <= 0))  {
-					if (window.pageYOffset >= (document.body.scrollHeight - document.getElementById('footer').offsetHeight - 500) ) {
-
-						b.className = 'stop';
-						b.style.top =  -R +'px';
-					}
-					else {
-						b.className = 'sticky';
-						b.style.top = P - 211 - heightTop + 'px';
-
-
-					}
-				} else {
-					b.className = '';
-					b.style.top = '';
-				}
-
-			}
-			window.addEventListener('resize', function() {
-				a.children[0].style.width = getComputedStyle(a, '').width
-			}, false);
-		}
-	}
-})()
-</script>
-<?php
-/*
-* Always have wp_footer() just before the closing </body>
-* tag of your theme, or you will break many plugins, which
-* generally use this hook to reference JavaScript files.
-*/
-
-wp_footer();
-?>
-<script>
-$(function() {
-	$('.resource-link-container').click(function() {
-		window.currentDownloadLink = $(this).attr('data-permalink');
-	});
-
-	$('.yikes-easy-mc-form').on('submit', function() {
-		$('button.close').trigger('click');
-		window.open(window.currentDownloadLink, "_blank");
-	});
-});
-
-</script>
+<?php wp_footer(); ?>
 </body>
 </html>
 <!-- footer.php end -->
