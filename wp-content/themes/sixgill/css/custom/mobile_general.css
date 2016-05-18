@@ -54,13 +54,13 @@
 		display:none;
 	}
 
-	.my_titSolutions {
+	.title-left-col {
 		font-size:30px;
 		font-weight:bold;
 		padding:0px;
 	}
 
-	.my_txtSolutions {
+	.text-right-col {
 		border-left:0px;
 		padding-left:10px;
 	}
@@ -73,7 +73,7 @@
 		border:0px;
 	}
 
-	.footer_Learn, .footer_Links {
+	.footer_Learn, .footer-links-block {
 		text-align:center;
 		font-size:14px;
 	}
@@ -82,7 +82,7 @@
 		text-align:center;
 	}
 
-	.my_titSolutions {
+	.title-left-col {
 		text-align:center;
 	}
 
@@ -129,7 +129,7 @@
 		font-size: 12px !important;
 	}
 
-	.company-press-title {
+	.company-single-post-title {
 		font-size: 14px !important;
 	}
 
@@ -299,7 +299,7 @@
 			top: 15px;
 	}
 
-	.footer_Links, .footer_Copy {
+	.footer-links-block, .footer_Copy {
 		width: 100%;
 	}
 

@@ -1,0 +1,57 @@
+/* For laptops: */
+@media (min-width: 1000px) and (max-width: 1650px) {
+
+	.full-block-width {
+		width: 250px;
+	}
+
+	.resources-blocks-container {
+		min-width: 1100px !important;
+		max-width: 1100px !important;
+	}
+
+	.resource-block {
+		height: 350px;
+	}
+
+	.resource-title-container {
+		height: 140px;
+	}
+
+	.resource-link-container {
+			height: 40px;
+	}
+
+	.resource-image-container {
+		height: 173px;
+	}
+
+	.resource-line {
+		margin-bottom: 7px;
+	}
+}
+
+/* In the middle of fullhd and laptop: */
+@media (min-width: 1500px) and (max-width: 1750px) {
+	.full-block-width {
+		width: 300px;
+	}
+
+	.resources-blocks-container {
+		min-width: 1300px !important;
+		max-width: 1300px !important;
+	}
+}
+
+/* Wide tablets or very small laptop screens : */
+@media (min-width: 992px) and (max-width: 1266px) {
+
+	.full-block-width {
+		width: 250px;
+	}
+
+	.resources-blocks-container {
+		min-width: 850px !important;
+		max-width: 850px !important;
+	}
+}

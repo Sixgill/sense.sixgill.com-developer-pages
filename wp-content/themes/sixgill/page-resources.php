@@ -6,7 +6,7 @@
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" style="background-color: #004cbf;">
           <div class="slider-caption slider-caption-center">
-            <h1 class="press-title">RESOURCES</h1>
+            <h1 class="single-post-title">RESOURCES</h1>
           </div>
         </div>
 			</div>

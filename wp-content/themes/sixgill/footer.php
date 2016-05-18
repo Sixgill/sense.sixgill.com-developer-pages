@@ -24,7 +24,7 @@
 
 	<div class="container-fluid nomargin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_credit.png'); background-size:cover;">
 		<div class="footer-widgets-wrap clearfix">
-			<div class="col_half footer_Links">
+			<div class="col_half footer-links-block">
 				<a class="footer-link" href="<?php echo $legalLink; ?>">LEGAL</a> &nbsp;
 				<a class="footer-link" href="#" data-toggle="modal" data-target="#myModalContact">CONTACT</a>&nbsp;
 				<a class="footer-link" href="<?php echo $pressLink; ?>">PRESS</a> &nbsp;

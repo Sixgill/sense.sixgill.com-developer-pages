@@ -26,16 +26,24 @@ if($_SERVER['SERVER_NAME']!="dev-sixgill.pantheonsite.io" && $_SERVER['SERVER_NA
 		$path = str_replace("\\", "/", $path);
 	}
 
-	$resultFile = $path."/wp-content/themes/sixgill/js/custom_build.js";
-	$sourceDir = $path."/wp-content/themes/sixgill/js/custom/*.{js, JS}";
-	$buffer = "";
-	$out = fopen($resultFile, "w");
-	foreach(glob($sourceDir, GLOB_BRACE) as $file){
-		$in = fopen($file, "r");
-		while ($line = fgets($in)){
-			fwrite($out, $line);
+	$jsResultFile = $path."/wp-content/themes/sixgill/js/custom_build.js";
+	$jsSourceDir = $path."/wp-content/themes/sixgill/js/custom/*.{js, JS}";
+
+	$cssResultFile = $path."/wp-content/themes/sixgill/css/custom_build.css";
+	$cssSourceDir = $path."/wp-content/themes/sixgill/css/custom/*.{css, CSS}";
+
+	function concatFolder($sourceDir, $resultFilename) {
+		$out = fopen($resultFilename, "w");
+		foreach(glob($sourceDir, GLOB_BRACE) as $file){
+			$in = fopen($file, "r");
+			while ($line = fgets($in)){
+				fwrite($out, $line);
+			}
+			fclose($in);
 		}
-		fclose($in);
+		fclose($out);
 	}
-	fclose($out);
+
+	concatFolder($jsSourceDir, $jsResultFile);
+	concatFolder($cssSourceDir, $cssResultFile);
 ?>
