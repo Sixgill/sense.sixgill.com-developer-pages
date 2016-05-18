@@ -17,8 +17,8 @@
 
 		<div class="header-stick" id="company" style="background-color:#F8F8F8; border:0px solid #FF0004;">
 			<div class="container-fluid center clearfix" style="padding-top:75px; max-width:1100px;  border:0px solid #FF0004;">
-				<div class="col_one_third my_titSolutions"><?php echo get_field('about_header'); ?></div>
-				<div class="col_two_third col_last text-left my_txtSolutions">
+				<div class="col_one_third title-left-col"><?php echo get_field('about_header'); ?></div>
+				<div class="col_two_third col_last text-left text-right-col">
 					<?php echo get_field('top_text_left'); ?>
 
 				</div>
@@ -148,7 +148,7 @@
 		<section id="press" style="background-color:#ffffff;">
 
 			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 0px; text-align: center;">
-				<div align="center"><p class="btnInside company-press-title">Latest press and news</p></div>
+				<div align="center"><p class="btnInside company-single-post-title">Latest press and news</p></div>
 			</div>
 
 			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 9%; text-align: center;">
