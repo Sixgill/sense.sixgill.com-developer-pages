@@ -266,6 +266,12 @@ label {
 .fancy-title-without-bottom {
   margin-bottom: 0px;
 }
+
+.author-with-date-blogPost {
+     font-size: 14px;
+     line-height: 1.5;
+     color: #999999;
+ }
 .hr-home-sub-title {
 	max-width: 650px;
 }
