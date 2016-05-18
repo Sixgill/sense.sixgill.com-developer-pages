@@ -30,7 +30,9 @@
 				<a class="footer-link" href="<?php echo $pressLink; ?>">PRESS</a> &nbsp;
 				<a class="footer-link" href="<?php echo $resourceLink; ?>">RESOURCES</a> &nbsp;
 			</div>
-			<div class="col_half col_last footer_Copy">&copy; Copyright Sixgill, 2016. All Rights Reserved.</div>
+			<div class="col_half col_last footer_Copy">
+				&copy; Copyright Sixgill, 2016. All Rights Reserved.
+			</div>
 		</div>
 	</div>
 
@@ -44,27 +46,27 @@
 <div class="modal fade" style="z-index:9999" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-body">
-			<div class="modal-content">
-				<div class="modal-header" style="background-color:#57B82A;">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">REQUEST A DEMO</h4>
-				</div>
-				<div class="modal-body" align="center">
-					<!--[if lte IE 8]>
-					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-					<![endif]-->
-					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-					<script>
-					hbspt.forms.create({
-						portalId: '1792815',
-						formId: '7b5388d8-0979-4961-ac97-1f36fc2d70c0'
-					});
-					</script>
+        <div class="modal-content">
+          <div class="modal-header" style="background-color:#57B82A;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">REQUEST A DEMO</h4>
+          </div>
+          <div class="modal-body" align="center">
+						<!--[if lte IE 8]>
+						<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+						<![endif]-->
+						<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+						<script>
+						  hbspt.forms.create({
+						    portalId: '1792815',
+						    formId: '7b5388d8-0979-4961-ac97-1f36fc2d70c0'
+						  });
+						</script>
 
-				</div>
-				<div class="modal-footer center"></div>
-			</div>
-		</div>
+          </div>
+          <div class="modal-footer center"></div>
+        </div>
+      </div>
 	</div>
 </div>
 <!-- END MODAL Request a DEMO -->
@@ -73,17 +75,17 @@
 <div class="modal fade" style="z-index:9999" id="myResource" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-body">
-			<div class="modal-content">
-				<div class="modal-header" style="background-color:#2e2e2e;">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">DOWNLOAD CORPORATE PRESENTATION</h4>
-				</div>
-				<div class="modal-body" align="center">
-					<?php dynamic_sidebar( 'download-access' ); ?>
-				</div>
-				<div class="modal-footer center"></div>
-			</div>
-		</div>
+        <div class="modal-content">
+          <div class="modal-header" style="background-color:#2e2e2e;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">DOWNLOAD CORPORATE PRESENTATION</h4>
+          </div>
+          <div class="modal-body" align="center">
+						<?php dynamic_sidebar( 'download-access' ); ?>
+          </div>
+          <div class="modal-footer center"></div>
+        </div>
+      </div>
 	</div>
 </div>
 <!-- END MODAL Request a DEMO -->
@@ -100,8 +102,8 @@
 				</div>
 				<div class="modal-body" align="center">
 					<?php
-					echo $contactText;
-					echo $googleMapEmbedCode;
+						echo $contactText;
+						echo $googleMapEmbedCode;
 					?>
 				</div>
 			</div>
@@ -127,13 +129,24 @@
 <!-- Google Analytics -->
 <script async="" src="//www.google-analytics.com/analytics.js"></script>
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-75098635-1', 'auto');
-ga('send', 'pageview');
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-75098635-1', 'auto');
+	ga('send', 'pageview');
 </script>
+
+<!-- Start of Async HubSpot Analytics Code -->
+ <script type="text/javascript">
+   (function(d,s,i,r) {
+     if (d.getElementById(i)){return;}
+     var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+     n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1792815.js';
+     e.parentNode.insertBefore(n, e);
+   })(document,"script","hs-analytics",300000);
+ </script>
+<!-- End of Async HubSpot Analytics Code -->
 
 <?php wp_footer(); ?>
 </body>

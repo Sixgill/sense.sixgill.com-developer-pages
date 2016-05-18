@@ -378,6 +378,12 @@ label {
 	text-align: left !important;
 }
 
+.author-with-date-blogPost {
+    font-size: 14px; 
+    line-height: 1.5; 
+    color: #999999;
+}
+
 
 @media only screen and (min-width : 992px) {/* For desktop: */
 
@@ -390,7 +396,7 @@ label {
 	}
 
 	.marginShareButton {
-		margin-left: 40px;
+		margin-left: 5px;
 		list-style-type: none;
 	}
 
@@ -562,6 +568,11 @@ label {
 
 @media (min-width: 1000px) and (max-width: 1650px) {/* For laptops: */
 
+    .marginShareButton {
+		margin-left: 40px;
+		list-style-type: none;
+	}
+    
 	.full-block-width {
 		width: 250px;
 	}
@@ -606,6 +617,11 @@ label {
 /* Wide tablets or very small laptop screens : */
 @media (min-width: 992px) and (max-width: 1266px) {
 
+    .marginShareButton {
+		margin-left: 5px;
+		list-style-type: none;
+	}
+    
 	.full-block-width {
 		width: 250px;
 	}
@@ -614,6 +630,18 @@ label {
 		min-width: 850px !important;
 		max-width: 850px !important;
 	}
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {/* For share botton on blog: */
+
+    .marginShareButton {
+		margin-left: 5px;
+		list-style-type: none;
+	}
+    
+    .my_containerSolution {
+        margin-left: 60px;
+    }
 }
 
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
@@ -627,8 +655,8 @@ label {
 	}
 
     .marginShareButton {
-    margin-left: 40px;
-    list-style-type: none;
+        margin-left: 10px;
+        list-style-type: none;
     }
 
 	section {
