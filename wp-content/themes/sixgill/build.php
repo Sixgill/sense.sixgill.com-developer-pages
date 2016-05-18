@@ -1,18 +1,12 @@
 <?php
-if($_SERVER['SERVER_NAME']!="dev-sixgill.pantheonsite.io" && $_SERVER['SERVER_NAME']!="test-sixgill.pantheonsite.io") {
-	exit();
-}
+if($_SERVER['SERVER_NAME']=="dev-sixgill.pantheonsite.io") {
 ?>
 <meta http-equiv="cache-control" content="max-age=0" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
-<?php
-if($_SERVER['SERVER_NAME']!="dev-sixgill.pantheonsite.io") {
-	exit();
-}
-?>
+
 <?php
 	$base = dirname(__FILE__);
 	$path = false;
@@ -50,4 +44,5 @@ if($_SERVER['SERVER_NAME']!="dev-sixgill.pantheonsite.io") {
 
 	concatFolder($jsSourceDir, $jsResultFile);
 	concatFolder($cssSourceDir, $cssResultFile);
+}
 ?>
