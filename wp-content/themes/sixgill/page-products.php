@@ -17,8 +17,8 @@
 
     <div class="header-stick" style="background-color:#F8F8F8; border:0px solid #FF0004;">
       <div class="container-fluid center clearfix" style="padding-top:75px; max-width:1100px;  border:0px solid #FF0004;">
-          <div class="col_one_third my_titSolutions"> <?php echo get_field('title_header'); ?> </div>
-          <div class="col_two_third col_last text-left my_txtSolutions"><?php echo get_field('top_paragraph'); ?></div>
+          <div class="col_one_third title-left-col"> <?php echo get_field('title_header'); ?> </div>
+          <div class="col_two_third col_last text-left text-right-col"><?php echo get_field('top_paragraph'); ?></div>
       </div>
     </div>
 

@@ -15078,7 +15078,7 @@ dl, dt, dd, ol, ul, li {
     border-bottom: 0px;
 }
 
-.my_titSolutions {
+.title-left-col {
     font-family: "Lato", serif, sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -15104,12 +15104,12 @@ dl, dt, dd, ol, ul, li {
     border: 0px solid #FE0004;
 }
 
-.my_titSolutions {
+.title-left-col {
     font-size: 30px;
     padding-right: 20px;
 }
 
-.my_txtSolutions, .my_txtSolutions_noline {
+.text-right-col, .text-right-col-noline {
     border-left: 1px solid #9C9C9C;
     padding-left: 30px;
     text-align: left;
@@ -15331,7 +15331,7 @@ all classes apply for desktop
 
 /* Solutions Page classes */
 
-.my_titSolutions {
+.title-left-col {
 	font-family: "Lato", serif, sans-serif;
 	font-size:30px;
 	font-weight:bold;
@@ -15342,7 +15342,7 @@ all classes apply for desktop
 	margin-right:0px;
 }
 
-.my_txtSolutions, .my_txtSolutions_noline {
+.text-right-col, .text-right-col-noline {
 	border-left:1px solid #9C9C9C; 
 	padding-left:30px;
 	text-align:left;
@@ -15350,7 +15350,7 @@ all classes apply for desktop
 	color:#686868;
 }
 
-.my_txtSolutions_noline {border-left:0px;}
+.text-right-col-noline {border-left:0px;}
 
 .my_boxSolution_title {
     font-family: "Lato", serif, sans-serif;
@@ -15412,7 +15412,7 @@ all classes apply for desktop
 @media only screen and (min-width : 992px) {/* For desktop: */
 	.logoSIXGILL {width:140px; height:111px; background-image:url(../images/TD/logo/logo_desktop.png);}
 
-	.my_titSolutions {
+	.title-left-col {
 		font-size:30px;
 		padding-right:20px;
 	}
@@ -15427,7 +15427,7 @@ all classes apply for desktop
 @media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
 	.logoSIXGILL {width:245px; height:96px; background-image:url(../images/TD/logo/logo_tablet.png);}
 	.my_subMenus {display:none;	}
-	.my_titSolutions {
+	.title-left-col {
 		font-size:30px;
 		padding-right:20px;
 	}
@@ -15441,13 +15441,13 @@ all classes apply for desktop
 	.logoSIXGILL {width:150px; height:44px; background-image:url(../images/TD/logo/logo_mobile.png); }
 
 	.my_subMenus {display:none;	}
-	.my_titSolutions {
+	.title-left-col {
 		font-size:30px;
 		font-weight:bold;
 		text-align:center;
 		padding:0px;
 	}
-	.my_txtSolutions {border-left:0px;}
+	.text-right-col {border-left:0px;}
 	.my_iconSolution {width:55px;}
 	.my_boxSolution_title { border:0px;}
 	.footer_Learn, .footer_Links { text-align:center; font-size:14px;	}
