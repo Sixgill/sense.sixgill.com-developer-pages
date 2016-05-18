@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
+	<?php include(locate_template('build.php')); ?>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Sixgill" />
 
@@ -13,14 +14,13 @@
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/magnific-popup.css" type="text/css" />
-
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/responsive.css" type="text/css" />
 
 
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/colors.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom.css" type="text/css" />
 
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom_2016.css" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom_build.css" type="text/css" />
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -12,8 +12,6 @@ body, p {
 	font-family: "Lato", serif, sans-serif;
 }
 
-
-
 .pSolutions, .pProduct, .pCompany {
 	font-size:15px;
 	color:#686868;
@@ -614,9 +612,9 @@ p {font-size:13px; font-weight:normal;}
 }
 
 .press-post-title {
-        color: #444;
-				font-size: 18px;
-				font-weight: bold;
+	color: #444;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .press-preview {
@@ -630,6 +628,6 @@ p {font-size:13px; font-weight:normal;}
 	width: 390px;
 }
 
-.company-press-title {
+.company-single-post-title {
 	width: 390px;
 }

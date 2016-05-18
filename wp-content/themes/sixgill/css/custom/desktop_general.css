@@ -1,0 +1,116 @@
+/* General desktop styles */
+@media only screen and (min-width : 992px) {
+	.global-social-buttons-list {
+		margin-left:-16px !important;
+	}
+
+	#primary-menu {
+		margin-left: 16px;
+	}
+
+	.marginShareButton {
+		margin-left: 40px;
+		list-style-type: none;
+	}
+
+	.post-by-author {
+
+	}
+
+	.subscribe-element {
+		display: block;
+	}
+
+	.blog-container {
+		margin-right: 0px;
+	}
+
+	.mc4wp-success > p {
+		font-size: 20px !important;
+		color: #999999;
+		line-height: 1.5em !important;
+	}
+
+	.subscribe-success-title {
+		font-size: 24px;
+		color: #2e2e2e;
+		display: block;
+	}
+
+	.slider-caption.slider-caption-center {
+		max-width: 900px;
+	}
+
+	.slider-caption p {
+		margin-bottom: 10px;
+		font-size: 36px;
+		font-family: "Lato";
+		margin-top: 10px;
+	}
+
+	.applying-layer-copperOnVideo {
+		background-color: rgba(0,0,0,0);
+	}
+
+	.backgroundForTextVideoHome {
+		background-image:url(/wp-content/themes/sixgill/images/td/home/shadow.png);
+		padding: 85px 30px 50px 30px;
+		height:380px;
+	}
+
+	.sizeForTextVideoHome {
+		font-size: 34px;
+		font-weight: 900;
+	}
+
+	.hidden-bottom-imageDiagram {
+		display: none;
+	}
+
+	.logoSIXGILL {
+		width:140px;
+		height:111px;
+		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
+	}
+
+	.title-left-col {
+		font-size:30px;
+		padding-right:20px;
+		text-align:right;
+	}
+
+	.my_iconSolution {
+		width:115px;
+	}
+
+	.my_boxSolution_title {
+		display: none;
+	}
+
+	.footer_Learn, .footer-links-block {
+		text-align:left;
+		font-size:22px;
+	}
+
+	.footer_Schedule {
+		text-align:right;
+	}
+
+	.home-text-2{
+		margin-top:120px;
+	}
+
+	.homeSupTit-with-line {
+		background-color: #fff;
+		z-index:2;
+	}
+
+	.widgettitle {
+		color: #004FC8;
+	}
+
+	.blog-list {
+		padding-bottom:55px;
+		width: 65%;
+	}
+}
