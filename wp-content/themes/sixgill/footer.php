@@ -225,11 +225,9 @@ function toggle(showHideDiv, switchTextDiv) {
 <script>
 (function(){
 
-
-  if((document.getElementById('single-page-content')) && ((document.getElementById('aside1'))){
+  if(document.getElementById('single-page-content') && document.getElementById('aside1')){
  
- 		//alert( 'Высота с учетом прокрутки: ' + document.getElementById('footer').offsetHeight);
- 
+      // 		alert( 'Высота с учетом прокрутки: ' + document.getElementById('footer').offsetHeight);
  		var a = document.querySelector('#aside1'), b = null, P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
  		window.addEventListener('scroll', Ascroll, false);
  		document.body.addEventListener('scroll', Ascroll, false);

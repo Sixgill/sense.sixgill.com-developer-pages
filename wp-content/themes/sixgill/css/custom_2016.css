@@ -378,6 +378,12 @@ label {
 	text-align: left !important;
 }
 
+.author-with-date-blogPost {
+    font-size: 14px; 
+    line-height: 1.5; 
+    color: #999999;
+}
+
 
 @media only screen and (min-width : 992px) {/* For desktop: */
 
@@ -611,6 +617,11 @@ label {
 /* Wide tablets or very small laptop screens : */
 @media (min-width: 992px) and (max-width: 1266px) {
 
+    .marginShareButton {
+		margin-left: 5px;
+		list-style-type: none;
+	}
+    
 	.full-block-width {
 		width: 250px;
 	}
