@@ -58,7 +58,7 @@
 					</div>
 					<?php
 						global $categoryName;
-						$categoryName = "Solutions-people";
+						$categoryName = "For people";
 						include(locate_template('loop-solutions.php'));
 					?>
 
@@ -92,7 +92,7 @@
 					</div>
 					<?php
 					global $categoryName;
-					$categoryName = "Solutions-assets";
+					$categoryName = "For assets";
 					include(locate_template('loop-solutions.php'));
 					?>
 				</div>
@@ -132,7 +132,7 @@
 
 					<?php
 						global $categoryName;
-						$categoryName = "Solutions-crowd";
+						$categoryName = "For crowd";
 						include(locate_template('loop-solutions.php'));
 					?>
 				</div>
