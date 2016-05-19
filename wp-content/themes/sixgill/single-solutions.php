@@ -23,7 +23,7 @@
 
 		<div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
 
-			<div class="container-fluid clearfix my_containerSolution my_containerSolution_indent" style="max-width: inherit;">
+			<div class="container-fluid clearfix my_containerSolution my_containerSolution_indent" style="max-width: inherit !important;">
 
 				<?php if ( has_post_thumbnail()) { ?>
 					<div class="shareIcons-desktop-tablet">
