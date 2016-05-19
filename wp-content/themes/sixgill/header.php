@@ -136,9 +136,8 @@
 									<a href="/company/"><div>Company</div></a>
 								<?php } ?>
 
-								<?php if(strcasecmp(getCurrentSlug(), "Blog")==0) { ?>
+								<?php if(strcasecmp(getCurrentSlug(), "company_blog")==0) { ?>
 									<a class="menu-link-selected" href="#top"><div>Blog</div></a>
-								</div>
 								<?php }else{ ?>
 									<a href="/company_blog/"><div>Blog</div></a>
 								<?php } ?>
