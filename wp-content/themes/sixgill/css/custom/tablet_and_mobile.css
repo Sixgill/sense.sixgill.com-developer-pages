@@ -1,4 +1,6 @@
 /* Portrait tablets & mobiles */
 @media (max-width: 900px) {
-
+	header {
+		top: 0px;
+	}
 }
