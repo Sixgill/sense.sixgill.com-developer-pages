@@ -577,6 +577,10 @@ label {
         text-align: left; 
         margin-bottom: 30px;
     }
+    
+    #aside-blog {
+        margin-left: -80px;
+    }
 }
 /* Home desktop styles */
 @media only screen and (min-width : 992px) {
@@ -1281,7 +1285,7 @@ label {
 }
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {
-
+    
 	.marginShareButton {
 		margin-left: 5px;
 		list-style-type: none;

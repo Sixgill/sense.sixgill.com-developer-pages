@@ -174,7 +174,7 @@ body, p {
     z-index: 101;
     //width: 10%;
     margin-top: 150px;
-
+    margin-left: -100px;
 }
 
 #aside1 {
