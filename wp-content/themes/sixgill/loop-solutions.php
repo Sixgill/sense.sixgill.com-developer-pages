@@ -10,12 +10,18 @@ $query = new WP_Query( $args );
 if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
 		$query->the_post();
+		echo get_field('page_part');
+		echo "<br>";
+		echo $categoryName;
+		echo "<br>";
+		//if(get_field('page_part')==$categoryName){
 ?>
-		<div class="blog-post-preview-header">
-			<a href="<?php echo get_permalink(); ?>"> <?php the_title(); ?></a>
-		</div>
+			<div class="blog-post-preview-header">
+				<a href="<?php echo get_permalink(); ?>"> <?php the_title(); ?></a>
+			</div>
 
 <?php
+		//}
 	}
 } else {
 
