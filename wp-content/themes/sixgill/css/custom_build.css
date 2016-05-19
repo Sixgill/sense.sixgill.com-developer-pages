@@ -1374,6 +1374,17 @@ label {
     max-width: 370px !important;
 	}
 }
+
+@media (max-width: 667px) and (max-height: 400px) {
+    #aside-blog {
+        margin-top: 125px;
+    }
+    
+    .shareButton-blog {
+        margin-bottom: 10px;
+        height: 35px;
+    }
+}
 /* Portrait tablets & mobiles */
 @media (max-width: 900px) {
 	header {
