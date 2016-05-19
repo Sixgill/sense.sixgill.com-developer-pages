@@ -36,7 +36,7 @@
 
 		<a name="people"></a>
 		<div id="people" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
-			<div class="container-fluid center clearfix my_containerSolution">
+			<div class="container-fluid center clearfix my_containerSolution" style="max-width: interit !important;">
 				<div class="col_one_third"><img src="<?php echo get_field('people_image'); ?>" class="iconSolutions" alt=""/></div>
 				<div class="col_two_third text-right-col-noline col_last">
 					<div class=""><img src="/wp-content/themes/sixgill/images/td/solutions/header_people.png" class="my_headerBoxSolution" alt=""/></div>
