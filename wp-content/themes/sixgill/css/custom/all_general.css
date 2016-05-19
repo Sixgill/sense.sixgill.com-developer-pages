@@ -202,6 +202,21 @@ label {
      color: #999999;
  }
 
- .menu-link-selected > div {
-	 color: #0051c6 !important;
- }
+.menu-link-selected > div {
+	color: #0051c6 !important;
+}
+
+.solutions-blog-post_thumbnail > img {
+	height: inherit !important;
+	width: 100% !important;
+}
+
+.solutions-blog-content > p {
+		text-align: left !important;
+}
+
+.my_containerSolution_indent {
+	margin-left: 7%;
+	margin-right: 10%;
+	max-width: inherit;
+}

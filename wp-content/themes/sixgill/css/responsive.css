@@ -11,8 +11,8 @@
 @media (max-width: 1199px) {
 
     .my_containerSolution_indent {
-            margin-left: 8%;
-            margin-right: 8%;
+            margin-left: 7%;
+            margin-right: 10%;
     }
 
 
@@ -2247,7 +2247,7 @@
 	.col_full,
 
 	.col_half,
-    
+
     .col_press,
 
 	.col_one_third,
@@ -2289,7 +2289,7 @@
 	form .col_full,
 
 	form .col_half,
-    
+
 	form .col_one_third,
 
 	form .col_two_third,
