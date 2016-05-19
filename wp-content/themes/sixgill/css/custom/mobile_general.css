@@ -259,4 +259,9 @@
   .shareIcons-mobile {
     display: block;
   }
+
+	.footer-links-block > a {
+		width: 100%;
+		display: block;
+	}
 }

@@ -274,7 +274,7 @@ label {
  }
 
  .menu-link-selected > div {
-	 color: #0051c6 !importan;
+	 color: #0051c6 !important;
  }
 .hr-home-sub-title {
 	max-width: 650px;
@@ -553,11 +553,11 @@ label {
 		padding-bottom:55px;
 		width: 65%;
 	}
-    
+
     .shareIcons-desktop-tablet {
         display: block;
-    }    
-    
+    }
+
     .shareIcons-mobile {
         display: none;
     }
@@ -607,6 +607,10 @@ label {
 }
 /* Tech desktop styles */
 @media only screen and (min-width : 992px) {
+
+}
+/* Portrait tablets & mobiles */
+@media (max-width: 900px) {
 
 }
 /* Blog tablet styles */
@@ -835,11 +839,11 @@ label {
 	#wpadminbar {
 		display:none;
 	}
-    
+
     .shareIcons-desktop-tablet {
         display: block;
     }
-    
+
     .shareIcons-mobile {
         display: none;
     }
@@ -1189,10 +1193,15 @@ label {
   .shareIcons-mobile {
     display: block;
   }
+
+	.footer-links-block > a {
+		width: 100%;
+		display: block;
+	}
 }
 /* Home mobile styles */
 @media only screen and (max-width: 500px) {
-	
+
 }
 /* Press mobile styles */
 @media only screen and (max-width: 500px) {
@@ -1361,4 +1370,8 @@ label {
     min-width: 370px !important;
     max-width: 370px !important;
 	}
+}
+/* Portrait tablets & mobiles */
+@media (max-width: 900px) {
+
 }
