@@ -25,24 +25,24 @@
                 <?php if ( has_post_thumbnail()) { ?>
                     <div class="shareIcons-desktop-tablet">
 
-                        <div id="press-text-post" class="col_full" style="text-align: left; margin-bottom: 30px;">
+                        <div id="press-text-post" class="col_full" class="solutions-blog-block-with-post">
                             <div style="overflow: hidden;">
                                 <div style="width:100%;">
-                                    <div style="float: left; width:65%;"> <?php the_content(); ?></div>
-                            <div style="float: right; width:30%; text-align: center;"> <?php the_post_thumbnail( 'full' ); ?> </div>
+                                    <div class="solutions-blog-content"> <?php the_content(); ?></div>
+                            <div class="solutions-blog-post_thumbnail"> <?php the_post_thumbnail( 'full' ); ?> </div>
                                 </div>
                             </div>
 				        </div>
                     </div>
                     <div class="shareIcons-mobile">
-                            <div id="press-text-post" class="col_full" style="text-align: left; margin-bottom: 30px;">
+                            <div id="press-text-post" class="col_full" class="solutions-blog-block-with-post">
                                         <?php the_content(); ?>
                                         <div style=" text-align: center;"> <?php the_post_thumbnail( 'full' ); ?> </div>
 				            </div>
                     </div>
 
                 <?php } else { ?>
-                        <div id="press-text-post" class="col_full" style="text-align: left; margin-bottom: 30px;">
+                        <div id="press-text-post" class="col_full" class="solutions-blog-block-with-post">
                             <?php the_content(); ?>
 				        </div>
                 <?php } ?>
