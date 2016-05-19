@@ -553,30 +553,34 @@ label {
 		padding-bottom:55px;
 		width: 65%;
 	}
-    
-    .shareIcons-desktop-tablet {
-        display: block;
-    }    
-    
-    .shareIcons-mobile {
-        display: none;
-    }
-    
-    .solutions-blog-content {
-        float: left; 
-        width:65%;
-    }
-    
-    .solutions-blog-post_thumbnail {
-        float: right; 
-        width:30%; 
-        text-align: center;
-    }
-    
-    .solutions-blog-block-with-post {
-        text-align: left; 
-        margin-bottom: 30px;
-    }
+
+	.shareIcons-desktop-tablet {
+		display: block;
+	}
+
+	.shareIcons-mobile {
+		display: none;
+	}
+
+	.solutions-blog-content {
+			float: left;
+	width:65%;
+	}
+
+	.solutions-blog-post_thumbnail {
+		float: right;
+		width:30%;
+		text-align: center;
+	}
+
+	.solutions-blog-block-with-post {
+		text-align: left;
+		margin-bottom: 30px;
+	}
+
+	#aside-blog {
+		margin-left: -80px;
+	}
 }
 /* Home desktop styles */
 @media only screen and (min-width : 992px) {
