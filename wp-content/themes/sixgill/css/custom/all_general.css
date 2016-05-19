@@ -42,7 +42,7 @@ body, p {
 }
 
 .my_containerSolution {
-	max-width:930px;
+	max-width:1200px !important;
 	padding-top:75px;
 	margin-top:0px;
 	margin-bottom:0px;
