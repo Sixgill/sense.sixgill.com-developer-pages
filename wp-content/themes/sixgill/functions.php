@@ -1,6 +1,3 @@
-
-
-
 <?php
 
   function getPageContentBySlug($slug) {
@@ -34,6 +31,24 @@
     }
 
   }
+
+function getCurrentDir() {
+	$base = dirname(__FILE__);
+	$path = false;
+
+	if (@file_exists(dirname(dirname($base))."/wp-config.php")) {
+		$path = dirname(dirname($base));
+	} else if (@file_exists(dirname(dirname(dirname($base)))."/wp-config.php")) {
+		$path = dirname(dirname(dirname($base)));
+	} else {
+		$path = false;
+	}
+
+	if ($path != false) {
+		$path = str_replace("\\", "/", $path);
+	}
+	return $path;
+}
 
 function sixgill_widgets_init() {
 
@@ -104,5 +119,6 @@ add_action( 'widgets_init', 'sixgill_widgets_init' );
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(600, 315, false);
 add_image_size( 'spec_thumb', 1000, 350, true );
+add_image_size( 'solutions-thumbnails', 300, 650, false );
 
- ?>
+?>

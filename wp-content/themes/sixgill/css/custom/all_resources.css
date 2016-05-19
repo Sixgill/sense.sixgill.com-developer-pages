@@ -42,10 +42,21 @@
 
 .resource-image-container {
 	overflow: hidden;
-	background-position: center center !important;
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
-	background-position: center center;
+	background-position: center center !important;
+}
+
+.resource-image-container-centered {
+	background-position: center center !important;
+}
+
+.resource-image-container-crop {
+	background-size: cover !important;
+}
+
+.resource-image-container-top {
+	background-position: top center !important;
 }
 
 .resource-title-container {

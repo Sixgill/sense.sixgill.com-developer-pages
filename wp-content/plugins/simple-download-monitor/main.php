@@ -211,14 +211,14 @@ class simpleDownloadManager {
         add_meta_box('sdm_upload_meta_box', __('Upload File', 'simple-download-monitor'), array(&$this, 'display_sdm_upload_meta_box'), 'sdm_downloads', 'normal', 'default'
         );
         add_meta_box('sdm_thumbnail_meta_box', __('File Thumbnail (Optional)', 'simple-download-monitor'), array(&$this, 'display_sdm_thumbnail_meta_box'), 'sdm_downloads', 'normal', 'default'
-        );       
+        );
 
-        
+
         add_meta_box('sdm_shortcode_meta_box', __('Shortcodes', 'simple-download-monitor'), array(&$this, 'display_sdm_shortcode_meta_box'), 'sdm_downloads', 'normal', 'default'
         );
         add_meta_box('sdm_stats_meta_box', __('Statistics', 'simple-download-monitor'), array(&$this, 'display_sdm_stats_meta_box'), 'sdm_downloads', 'normal', 'default'
         );
-        
+
     }
 
     public function display_sdm_description_meta_box($post) {  // Description metabox
@@ -247,7 +247,9 @@ class simpleDownloadManager {
 
     public function display_sdm_thumbnail_meta_box($post) {  // Thumbnail upload metabox
         $old_thumbnail = get_post_meta($post->ID, 'sdm_upload_thumbnail', true);
+				$old_imagemode = get_post_meta($post->ID, 'sdm_upload_imagemode', true);
         $old_value = isset($old_thumbnail) ? $old_thumbnail : '';
+				$old_value_imagemode = isset($old_imagemode) ? $old_imagemode : 'crop';
         _e('Manually enter a valid URL, or click "Select Image" to upload (or choose) the file thumbnail image.', 'simple-download-monitor');
         echo '<br />';
         _e('This thumbnail image will be used to create a fancy file download box if you want to use it.', 'simple-download-monitor');
@@ -258,7 +260,18 @@ class simpleDownloadManager {
         <input id="upload_thumbnail_button" type="button" class="button-primary" value="<?php _e('Select Image', 'simple-download-monitor'); ?>" />
         <input id="remove_thumbnail_button" type="button" class="button" value="<?php _e('Remove Image', 'simple-download-monitor'); ?>" />
         <br /><br />
-
+				<p>
+					<select id="sdm_upload_imagemode" name="sdm_upload_imagemode">
+						<option value="crop">Crop</option>
+						<option value="centered">Fit - Centered</option>
+						<option value="top">Fit - Top aligned</option>
+					</select>
+					<script>
+						jQuery(function($) {
+							$('option[value=<?php echo $old_value_imagemode; ?>]').prop("selected", true);
+						});
+					</script>
+				</p>
         <span id="sdm_admin_thumb_preview">
             <?php
             if (!empty($old_value)) {
@@ -268,25 +281,10 @@ class simpleDownloadManager {
             ?></span>
 </br>
 
-<?php         
-        $main_opts = get_option('sdm_downloads_options');
-        $color_opt = $main_opts['download_button_color'];
-        $color_opts = array(__('Full screen', 'simple-download-monitor'), __('Fit', 'simple-download-monitor'));
-        echo '<select name="sdm_downloads_options[download_button_color]" id="download_button_color" class="sdm_opts_ajax_dropdowns">';
-        if (isset($color_opt)) {
-            echo '<option value="' . $color_opt . '" selected="selected">' . $color_opt . ' (' . __('current', 'simple-download-monitor') . ')</option>';
-        }
-        foreach ($color_opts as $color) {
-            echo '<option value="' . $color . '">' . $color . '</option>';
-        }
-        echo '</select> ';
-        _e('Text....', 'simple-download-monitor'); 
-?>
-
 <?php
             wp_nonce_field('sdm_thumbnail_box_nonce', 'sdm_thumbnail_box_nonce_check');
     }
-    
+
 
     public function display_sdm_shortcode_meta_box($post) {  // Shortcode metabox
         _e('This is the shortcode which can used on posts or pages to embed a download now button for this file. You can also use the shortcode inserter to add this shortcode to a post or page.', 'simple-download-monitor');
@@ -357,6 +355,10 @@ class simpleDownloadManager {
 
         if (isset($_POST['sdm_upload_thumbnail'])) {
             update_post_meta($post_id, 'sdm_upload_thumbnail', $_POST['sdm_upload_thumbnail']);
+        }
+
+				if (isset($_POST['sdm_upload_imagemode'])) {
+            update_post_meta($post_id, 'sdm_upload_imagemode', $_POST['sdm_upload_imagemode']);
         }
     }
 
