@@ -272,6 +272,10 @@ label {
      line-height: 1.5;
      color: #999999;
  }
+
+ .menu-link-selected > div {
+	 color: #0051c6;
+ }
 .hr-home-sub-title {
 	max-width: 650px;
 }
@@ -1344,3 +1348,4 @@ label {
 		margin-left: 60px;
 	}
 }
+           
