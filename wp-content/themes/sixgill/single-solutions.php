@@ -28,10 +28,10 @@
 				<?php if ( has_post_thumbnail()) { ?>
 					<div class="shareIcons-desktop-tablet">
 
-						<div id="press-text-post" class="col_full" class="solutions-blog-block-with-post" style="max-width: 800px; ">
+						<div id="press-text-post" class="col_full" class="solutions-blog-block-with-post">
 							<div style="overflow: hidden;">
 								<div style="width:100%;">
-									<div class="solutions-blog-content">
+									<div class="solutions-blog-content max-width-720" >
 										<?php the_content(); ?>
 									</div>
 									<div class="solutions-blog-post_thumbnail">
