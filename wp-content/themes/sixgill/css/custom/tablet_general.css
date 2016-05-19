@@ -216,5 +216,13 @@
 	#wpadminbar {
 		display:none;
 	}
+    
+    .shareIcons-desktop-tablet {
+        display: block;
+    }
+    
+    .shareIcons-mobile {
+        display: none;
+    }
 
 }

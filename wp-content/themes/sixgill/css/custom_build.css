@@ -538,6 +538,14 @@ label {
 		padding-bottom:55px;
 		width: 65%;
 	}
+    
+    .shareIcons-desktop-tablet {
+        display: block;
+    }    
+    
+    .shareIcons-mobile {
+        display: none;
+    }
 }
 /* Home desktop styles */
 @media only screen and (min-width : 992px) {
@@ -812,6 +820,14 @@ label {
 	#wpadminbar {
 		display:none;
 	}
+    
+    .shareIcons-desktop-tablet {
+        display: block;
+    }
+    
+    .shareIcons-mobile {
+        display: none;
+    }
 
 }
 /* Home tablet styles */
@@ -1150,11 +1166,19 @@ label {
 	#wpadminbar {
 		display:none;
 	}
+    
+    .shareIcons-desktop-tablet {
+        display: none;
+    }
+    
+    .shareIcons-mobile {
+        display: block;
+    }
 
 }
 /* Home mobile styles */
 @media only screen and (max-width: 500px) {
-
+	
 }
 /* Press mobile styles */
 @media only screen and (max-width: 500px) {
@@ -1233,12 +1257,12 @@ label {
 @media (min-width: 1000px) and (max-width: 1650px) {
 
 	.marginShareButton {
-		margin-left: 40px  !important;
-		list-style-type: none  !important;
+		margin-left: 5px;
+		list-style-type: none;
 	}
 
 	.full-block-width {
-		width: 250px !important;
+		width: 250px;
 	}
 
 	.resources-blocks-container {
@@ -1247,23 +1271,23 @@ label {
 	}
 
 	.resource-block {
-		height: 350px !important;
+		height: 350px;
 	}
 
 	.resource-title-container {
-		height: 140px !important;
+		height: 140px;
 	}
 
 	.resource-link-container {
-			height: 40px  !important;
+		height: 40px;
 	}
 
 	.resource-image-container {
-		height: 173px !important;
+		height: 173px;
 	}
 
 	.resource-line {
-		margin-bottom: 7px !important;
+		margin-bottom: 7px;
 	}
 }
 
@@ -1271,11 +1295,11 @@ label {
 @media (min-width: 1500px) and (max-width: 1750px) {
 
 	.marginShareButton {
-		margin-left: 5px  !important;
+		margin-left: 5px;
 	}
 
 	.full-block-width {
-		width: 300px  !important;
+		width: 300px;
 	}
 
 	.resources-blocks-container {
@@ -1288,7 +1312,7 @@ label {
 @media (min-width: 992px) and (max-width: 1266px) {
 
 	.full-block-width {
-		width: 250px  !important;
+		width: 250px;
 	}
 
 	.resources-blocks-container {
@@ -1300,12 +1324,13 @@ label {
 /* For share botton on blog: */
 @media (min-width: 1200px) and (max-width: 1300px) {
 
-    .marginShareButton {
-		margin-left: 5px  !important;
+	.marginShareButton {
+		margin-left: 5px;
 		list-style-type: none;
 	}
 
-    .my_containerSolution {
-        margin-left: 60px  !important;
-    }
+	.my_containerSolution {
+		margin-left: 60px;
+	}
 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
