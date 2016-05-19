@@ -51,7 +51,7 @@
 					</div>
 
 					<?php } else { ?>
-						<div id="press-text-post" class="col_full" class="solutions-blog-block-with-post">
+						<div id="press-text-post" class="col_full" class="solutions-blog-block-with-post" style="max-width: 800px !important;">
 							<?php the_content(); ?>
 						</div>
 						<?php } ?>
