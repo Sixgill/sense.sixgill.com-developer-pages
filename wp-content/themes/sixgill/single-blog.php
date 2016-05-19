@@ -6,9 +6,7 @@
 
 		<div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
 
-			<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent" style="padding-top:0px;">
-
-                <div id="aside-blog">
+			<div id="aside-blog">
 				<ul class="marginShareButton">
 					<li>
 
@@ -35,7 +33,8 @@
 				</ul>
 			</div>
 
-                
+			<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent" style="padding-top:0px;">
+
 				<div id="press-text-post" class="col_full" style="text-align: left; margin-bottom: 30px; z-index: 200; margin-top:70px">
 
                     <?php if ( has_post_thumbnail()) { ?>
