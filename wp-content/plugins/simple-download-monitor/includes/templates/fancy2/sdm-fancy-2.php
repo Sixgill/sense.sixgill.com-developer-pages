@@ -80,6 +80,8 @@ function sdm_generate_fancy2_display_output($args) {
         return '<div class="sdm_error_msg">Error! The shortcode is missing the ID parameter. Please refer to the documentation to learn the shortcode usage.</div>';
     }
 
+		$main_opts = get_option('sdm_downloads_options');
+
     //See if new window parameter is seet
     $window_target = '';
     if (isset($args['new_window']) && $args['new_window'] == '1') {
@@ -109,6 +111,8 @@ function sdm_generate_fancy2_display_output($args) {
 
     // Get item thumbnail
     $item_download_thumbnail = get_post_meta($id, 'sdm_upload_thumbnail', true);
+		$item_download_imagemode = get_post_meta($id, 'sdm_upload_imagemode', true);
+		$item_download_imagemode = isset($item_download_imagemode) ? $item_download_imagemode : 'crop';
     $isset_download_thumbnail = isset($item_download_thumbnail) && !empty($item_download_thumbnail) ? '<img class="sdm_fancy2_thumb_image" src="' . $item_download_thumbnail . '" />' : '';
 
     // Get item title
@@ -120,10 +124,15 @@ function sdm_generate_fancy2_display_output($args) {
 
     $css_class = isset($args['css_class']) ? $args['css_class'] : '';
 
+
+    $color_opt = $main_opts['download_button_color'];
+
 		$output = '';
 		$output .= '<div class="resource-block full-block-width">';
 			$output .= '<div ';
-			$output .= 'class="resource-container resource-image-container full-block-width" ';
+			$output .= 'class="resource-container resource-image-container full-block-width ';
+			$output .= " resource-image-container-".$item_download_imagemode." ";
+			$output .= ' "';
 			$output .= 'style="background: url(\''.$item_download_thumbnail.'\');"> ';
 			$output .= '</div>';
 			$output .= '<div class="resource-container resource-title-container full-block-width"> ';

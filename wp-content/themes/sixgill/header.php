@@ -80,7 +80,7 @@
 						<ul>
 
 							<?php if(strcasecmp(getCurrentSlug(), "home")==0) { ?>
-								<a href="#top"><div>Home</div></a>
+								<a class="menu-link-selected" href="#top"><div class="menu-first-item">Home</div></a>
 								<div class="my_subMenus" style="margin-left:15px;">
 									<a href="#what">What we do</a><br>
 									<a href="#products">Products</a><br>
@@ -88,11 +88,11 @@
 									<a href="#clients">Clients</a>
 								</div>
 							<?php }else{ ?>
-								<a href="/"><div>Home</div></a>
+								<a href="/"><div class="menu-first-item">Home</div></a>
 							<?php } ?>
 
 								<?php if(strcasecmp(getCurrentSlug(), "solutions")==0) { ?>
-									<a href="#top"><div>Solutions</div></a>
+									<a class="menu-link-selected" href="#top"><div>Solutions</div></a>
 									<div class="my_subMenus" style="margin-left:15px;">
 										<a href="#people">People</a><br>
 										<a href="#assets">Assets</a><br>
@@ -103,7 +103,7 @@
 								<?php } ?>
 
 								<?php if(strcasecmp(getCurrentSlug(), "products")==0) { ?>
-									<a href="#top"><div>Products</div></a>
+									<a class="menu-link-selected" href="#top"><div>Products</div></a>
 									<div class="my_subMenus" style="margin-left:15px;">
 										<a href="#ssense">Sense</a><br>
 										<a href="#ssdk">Reach</a><br>
@@ -114,7 +114,7 @@
 								<?php } ?>
 
 								<?php if(strcasecmp(getCurrentSlug(), "tech")==0) { ?>
-									<a href="#top"><div>Tech</div></a>
+									<a class="menu-link-selected" href="#top"><div>Tech</div></a>
 									<div class="my_subMenus" style="margin-left:15px;">
 										<a href="#location">Location</a><br>
 										<a href="#proximity">Proximity</a><br>
@@ -125,7 +125,7 @@
 								<?php } ?>
 
 								<?php if(strcasecmp(getCurrentSlug(), "company")==0) { ?>
-									<a href="#top"><div>Company</div></a>
+									<a class="menu-link-selected" href="#top"><div>Company</div></a>
 									<div class="my_subMenus" style="margin-left:15px;">
 										<a href="#company">The Company</a><br>
 										<a href="#team">The Team</a><br>
@@ -137,7 +137,7 @@
 								<?php } ?>
 
 								<?php if(strcasecmp(getCurrentSlug(), "Blog")==0) { ?>
-									<a href="#top"><div>Blog</div></a>
+									<a class="menu-link-selected" href="#top"><div>Blog</div></a>
 								</div>
 								<?php }else{ ?>
 									<a href="/company_blog/"><div>Blog</div></a>

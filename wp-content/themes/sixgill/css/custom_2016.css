@@ -569,7 +569,7 @@ label {
 @media (min-width: 1000px) and (max-width: 1650px) {/* For laptops: */
 
     .marginShareButton {
-		margin-left: 40px;
+		margin-left: 5px;
 		list-style-type: none;
 	}
     
