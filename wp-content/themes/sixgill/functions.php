@@ -50,6 +50,27 @@ function getCurrentDir() {
 	return $path;
 }
 
+function getChindrenByParentSlug($slug){
+
+	$args = array(
+	'name'        => $slug,
+	'post_type'   => 'page',
+	'post_status' => 'publish',
+	'numberposts' => 1
+	);
+
+	$result = new WP_Query($args);
+
+	$lookup = array(
+		'post_parent' => $result->post->ID,
+		'post_status' => 'any'
+	);
+
+	$childpages = get_children($lookup);
+
+	return $childpages;
+}
+
 function sixgill_widgets_init() {
 
 	register_sidebar( array(

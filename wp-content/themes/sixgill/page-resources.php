@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<iframe id="frame1" style="display:none"></iframe>
 <a name="top"></a>
 <section id="slider" class="slider-parallax swiper_wrapper swiper_wrapper_small clearfix">
 	<div class="slider-parallax-inner">
