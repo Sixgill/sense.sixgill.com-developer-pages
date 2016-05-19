@@ -6,7 +6,6 @@ $parentSlug = "";
 if($parent_id!=0) {
 	$parentSlug = get_page($parent_id)->post_name;
 }
-echo $parentSlug;
 if($parentSlug == "solutions") {
 	get_template_part( 'single-solutions');
 }
