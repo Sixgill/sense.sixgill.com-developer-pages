@@ -85,3 +85,11 @@
 		padding-top: 12% !important;
 	}
 }
+
+/* Small landscape */
+@media (min-width: 486px) and (max-width: 720px) {
+	.resources-blocks-container {
+    min-width: 370px !important;
+    max-width: 370px !important;
+	}
+}

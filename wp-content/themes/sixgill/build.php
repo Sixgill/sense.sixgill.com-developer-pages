@@ -20,7 +20,8 @@ if($_SERVER['SERVER_NAME']=="dev-sixgill.pantheonsite.io") {
 		$path."/wp-content/themes/sixgill/css/custom/desktop_*.{css, CSS}",
 		$path."/wp-content/themes/sixgill/css/custom/tablet_*.{css, CSS}",
 		$path."/wp-content/themes/sixgill/css/custom/mobile_*.{css, CSS}",
-		$path."/wp-content/themes/sixgill/css/custom/custom_resolutions.{css, CSS}"
+		$path."/wp-content/themes/sixgill/css/custom/custom_resolutions.{css, CSS}",
+		$path."/wp-content/themes/sixgill/css/custom/tablet_and_mobile.{css, CSS}"
 	);
 
 	function concatFiles($filesList, $resultFilename) {
