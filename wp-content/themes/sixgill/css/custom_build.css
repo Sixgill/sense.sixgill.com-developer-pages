@@ -553,11 +553,11 @@ label {
 		padding-bottom:55px;
 		width: 65%;
 	}
-
+    
     .shareIcons-desktop-tablet {
         display: block;
-    }
-
+    }    
+    
     .shareIcons-mobile {
         display: none;
     }
@@ -627,7 +627,9 @@ label {
 }
 /* Portrait tablets & mobiles */
 @media (max-width: 900px) {
-
+	header {
+		top: 0px;
+	}
 }
 /* Blog tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
@@ -848,11 +850,11 @@ label {
 	#wpadminbar {
 		display:none;
 	}
-
+    
     .shareIcons-desktop-tablet {
         display: block;
     }
-
+    
     .shareIcons-mobile {
         display: none;
     }
@@ -1202,7 +1204,7 @@ label {
 }
 /* Home mobile styles */
 @media only screen and (max-width: 500px) {
-
+	
 }
 /* Press mobile styles */
 @media only screen and (max-width: 500px) {
@@ -1374,5 +1376,7 @@ label {
 }
 /* Portrait tablets & mobiles */
 @media (max-width: 900px) {
-
+	header {
+		top: 0px;
+	}
 }
