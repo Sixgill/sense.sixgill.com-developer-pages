@@ -28,7 +28,7 @@
 				<?php if ( has_post_thumbnail()) { ?>
 					<div class="shareIcons-desktop-tablet">
 
-						<div id="press-text-post" class="col_full" class="solutions-blog-block-with-post">
+						<div id="press-text-post" class="col_full" class="solutions-blog-block-with-post" style="max-width: 800px; ">
 							<div style="overflow: hidden;">
 								<div style="width:100%;">
 									<div class="solutions-blog-content">

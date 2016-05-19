@@ -129,8 +129,9 @@
 	}
 
 	.solutions-blog-post_thumbnail {
-		float: right;
+		float: left;
 		width:30%;
+		max-width: 350px;
 		text-align: center;
 	}
 
