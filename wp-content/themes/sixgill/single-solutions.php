@@ -31,7 +31,7 @@
 						<div id="press-text-post" class="col_full" class="solutions-blog-block-with-post">
 							<div style="overflow: hidden;">
 								<div style="width:100%;">
-									<div class="solutions-blog-content max-width-720" >
+									<div class="solutions-blog-content" style="max-width: 850px !important;" >
 										<?php the_content(); ?>
 									</div>
 									<div class="solutions-blog-post_thumbnail">
