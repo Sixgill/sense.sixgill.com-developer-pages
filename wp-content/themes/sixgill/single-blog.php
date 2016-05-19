@@ -27,7 +27,7 @@
 					<li>
 						<a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" target="_blank" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email">
 							<!--<img src="/wp-content/themes/sixgill/images/td/blog/email_normal.svg" alt="Mountain View" id="image-email-share" class="shareButton">-->
-	            <img src="/wp-content/themes/sixgill/images/td/blog/email_normal.svg" alt="Mountain View"  id="image-linkedin-share" class="shareButton-blog">
+	            <img src="/wp-content/themes/sixgill/images/td/blog/social_Email.svg" alt="Mountain View"  id="image-linkedin-share" class="shareButton-blog">
 						</a>
 					</li>
 				</ul>
@@ -66,7 +66,7 @@
 						</td>
 						<td style="width: 25%; height: 60px;">
 							<a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" target="_blank" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email">
-								<img src="/wp-content/themes/sixgill/images/td/blog/email_normal.svg" alt="Mountain View" id="image-mobile-email-share" class="shareButton-mobile">
+								<img src="/wp-content/themes/sixgill/images/td/blog/social_Email.svg" alt="Mountain View" id="image-mobile-email-share" class="shareButton-mobile">
 							</a>
 						</td>
 					</tr>
@@ -108,6 +108,8 @@
 
 					<?php the_content(); ?>
 				</div>
+
+                <?php comments_template( '', true ); ?>
 
 				<div class="col_full" style="text-align: center;">
 					<a href="/company_blog" id="press-button-back" class="button button-large nobottommargin btnCompany" style="margin:30px 0px 0px 0px;">BACK TO BLOG</a>
