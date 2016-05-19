@@ -4,7 +4,9 @@ jQuery(function($) {
 	});
 
 	$('.yikes-easy-mc-form').on('submit', function() {
-		$('button.close').trigger('click');
-		window.open(window.currentDownloadLink, "_blank");
+		if($('p.yikes-easy-mc-error-message').length!=0) {
+			$('button.close').trigger('click');
+			window.open(window.currentDownloadLink, "_blank");
+		}
 	});
 });
