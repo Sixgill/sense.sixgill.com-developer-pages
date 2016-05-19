@@ -23,7 +23,7 @@
 
 		<div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
 
-			<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent" style="max-width: 1050px;">
+			<div class="container-fluid clearfix my_containerSolution my_containerSolution_indent">
 
 				<?php if ( has_post_thumbnail()) { ?>
 					<div class="shareIcons-desktop-tablet">
@@ -45,7 +45,7 @@
 						<div id="press-text-post" class="col_full" class="solutions-blog-block-with-post">
 							<?php the_content(); ?>
 							<div style=" text-align: center;">
-								<?php the_post_thumbnail( 'full' ); ?>
+								<?php the_post_thumbnail( ); ?>
 							</div>
 						</div>
 					</div>

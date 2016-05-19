@@ -124,7 +124,8 @@
 
 	.solutions-blog-content {
 			float: left;
-	width:65%;
+			text-align: left;
+			width:65%;
 	}
 
 	.solutions-blog-post_thumbnail {
@@ -139,6 +140,6 @@
 	}
 
 	#aside-blog {
-		margin-left: -80px;
+		margin-left: -100px;
 	}
 }
