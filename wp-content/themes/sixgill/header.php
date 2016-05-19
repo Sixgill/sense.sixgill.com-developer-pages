@@ -80,7 +80,7 @@
 						<ul>
 
 							<?php if(strcasecmp(getCurrentSlug(), "home")==0) { ?>
-								<a class="menu-link-selected" href="#top"><div>Home</div></a>
+								<a class="menu-link-selected" href="#top"><div class="menu-first-item">Home</div></a>
 								<div class="my_subMenus" style="margin-left:15px;">
 									<a href="#what">What we do</a><br>
 									<a href="#products">Products</a><br>
@@ -88,7 +88,7 @@
 									<a href="#clients">Clients</a>
 								</div>
 							<?php }else{ ?>
-								<a href="/"><div>Home</div></a>
+								<a href="/"><div class="menu-first-item">Home</div></a>
 							<?php } ?>
 
 								<?php if(strcasecmp(getCurrentSlug(), "solutions")==0) { ?>

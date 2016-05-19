@@ -78,3 +78,10 @@
 		margin-left: 60px;
 	}
 }
+
+/* Menu for small phones */
+@media (min-height: 400px) and (max-height: 560px) {
+	#primary-menu a div {
+		padding-top: 12% !important;
+	}
+}

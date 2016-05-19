@@ -274,7 +274,7 @@ label {
  }
 
  .menu-link-selected > div {
-	 color: #0051c6;
+	 color: #0051c6 !importan;
  }
 .hr-home-sub-title {
 	max-width: 650px;
@@ -1181,15 +1181,14 @@ label {
 	#wpadminbar {
 		display:none;
 	}
-    
-    .shareIcons-desktop-tablet {
-        display: none;
-    }
-    
-    .shareIcons-mobile {
-        display: block;
-    }
 
+  .shareIcons-desktop-tablet {
+    display: none;
+  }
+
+  .shareIcons-mobile {
+    display: block;
+  }
 }
 /* Home mobile styles */
 @media only screen and (max-width: 500px) {
@@ -1348,4 +1347,10 @@ label {
 		margin-left: 60px;
 	}
 }
-           
+
+/* Menu for small phones */
+@media (min-height: 400px) and (max-height: 560px) {
+	#primary-menu a div {
+		padding-top: 12% !important;
+	}
+}
