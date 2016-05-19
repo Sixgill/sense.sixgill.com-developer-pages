@@ -561,6 +561,22 @@ label {
     .shareIcons-mobile {
         display: none;
     }
+    
+    .solutions-blog-content {
+        float: left; 
+        width:65%;
+    }
+    
+    .solutions-blog-post_thumbnail {
+        float: right; 
+        width:30%; 
+        text-align: center;
+    }
+    
+    .solutions-blog-block-with-post {
+        text-align: left; 
+        margin-bottom: 30px;
+    }
 }
 /* Home desktop styles */
 @media only screen and (min-width : 992px) {
@@ -623,13 +639,6 @@ label {
 }
 /* General tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
-	body:not(.no-transition) #wrapper, .animsition-overlay {
-		opacity: 1;
-	}
-
-	.css3-spinner {
-		position: initial;
-	}
 
 	.marginShareButton {
 		margin-left: 20px;
@@ -934,14 +943,6 @@ label {
 }
 /* General mobile styles */
 @media only screen and (max-width: 500px) {
-
-	body:not(.no-transition) #wrapper, .animsition-overlay {
-		opacity: 1;
-	}
-
-	.css3-spinner {
-		position: initial;
-	}
 
 	.video-wrap video {
 		width: initial;
