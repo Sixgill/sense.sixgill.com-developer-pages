@@ -1,34 +1,14 @@
 <?php
-$args = array (
-	'category_name'          => $categoryName,
-);
-
-// The Query
-$query = new WP_Query( $args );
-
-// The Loop
-if ( $query->have_posts() ) {
-	while ( $query->have_posts() ) {
-		$query->the_post();
-		echo get_field('page_part');
-		echo "<br>";
-		echo $categoryName;
-		echo "<br>";
-		//if(get_field('page_part')==$categoryName){
-?>
+	$subpages = getChindrenByParentSlug("solutions");
+	foreach($subpages as $subpage) {
+		if(get_field('page_part', $subpage->ID) == $categoryName ) {
+			?>
 			<div class="blog-post-preview-header">
-				<a href="<?php echo get_permalink(); ?>"> <?php the_title(); ?></a>
+				<a href="<?php echo $subpage->guid; ?>">
+					<?php echo $subpage->post_title; ?>
+				</a>
 			</div>
-
-<?php
-		//}
+			<?php
+		}
 	}
-} else {
-
-}
-
-// Restore original Post Data
-
-/* Restore original Post Data */
-wp_reset_postdata();
 ?>
