@@ -273,9 +273,24 @@ label {
      color: #999999;
  }
 
- .menu-link-selected > div {
-	 color: #0051c6 !important;
- }
+.menu-link-selected > div {
+	color: #0051c6 !important;
+}
+
+.solutions-blog-post_thumbnail > img {
+	height: inherit !important;
+	width: 100% !important;
+}
+
+.solutions-blog-content > p {
+		text-align: left !important;
+}
+
+.my_containerSolution_indent {
+	margin-left: 7%;
+	margin-right: 10%;
+	max-width: inherit;
+}
 .hr-home-sub-title {
 	max-width: 650px;
 }
@@ -564,7 +579,8 @@ label {
 
 	.solutions-blog-content {
 			float: left;
-	width:65%;
+			text-align: left;
+			width:65%;
 	}
 
 	.solutions-blog-post_thumbnail {
@@ -579,7 +595,7 @@ label {
 	}
 
 	#aside-blog {
-		margin-left: -80px;
+		margin-left: -100px;
 	}
 }
 /* Home desktop styles */
@@ -1352,7 +1368,7 @@ label {
 }
 
 /* For share botton on blog: */
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 992px) and (max-width: 1300px) {
 
 	.marginShareButton {
 		margin-left: 5px;
@@ -1362,6 +1378,10 @@ label {
 	.my_containerSolution {
 		margin-left: 60px;
 	}
+}
+
+#aside-blog {
+	margin-left: -80px;
 }
 
 /* Menu for small phones */
