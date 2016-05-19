@@ -56,6 +56,7 @@
 							</ul>
 						<?php endif; ?>
 					</div>
+					<b>LEARN MORE ABOUT USE CASES FOR PEOPLE</b>
 					<?php
 						global $categoryName;
 						$categoryName = "For people";
@@ -129,7 +130,7 @@
 							</ul>
 						<?php endif; ?>
 					</div>
-
+					<b>LEARN MORE ABOUT USE CASES FOR PEOPLE</b>
 					<?php
 						global $categoryName;
 						$categoryName = "For crowd";
