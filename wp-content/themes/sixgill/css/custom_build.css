@@ -385,7 +385,7 @@ label {
 @media (min-width: 1000px) and (max-width: 1650px) {
 
 	.marginShareButton {
-		margin-left: 40px  !important;
+		margin-left: 5px  !important;
 		list-style-type: none  !important;
 	}
 
@@ -618,6 +618,14 @@ label {
 		padding-bottom:55px;
 		width: 65%;
 	}
+    
+    .shareIcons-desktop-tablet {
+        display: block;
+    }    
+    
+    .shareIcons-mobile {
+        display: none;
+    }
 }
 /* Home desktop styles */
 @media only screen and (min-width : 992px) {
@@ -927,6 +935,14 @@ label {
 	#wpadminbar {
 		display:none;
 	}
+    
+    .shareIcons-desktop-tablet {
+        display: none;
+    }
+    
+    .shareIcons-mobile {
+        display: block;
+    }
 
 }
 /* Home mobile styles */
@@ -1232,6 +1248,14 @@ label {
 	#wpadminbar {
 		display:none;
 	}
+    
+    .shareIcons-desktop-tablet {
+        display: block;
+    }
+    
+    .shareIcons-mobile {
+        display: none;
+    }
 
 }
 /* Home tablet styles */

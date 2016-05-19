@@ -113,4 +113,12 @@
 		padding-bottom:55px;
 		width: 65%;
 	}
+    
+    .shareIcons-desktop-tablet {
+        display: block;
+    }    
+    
+    .shareIcons-mobile {
+        display: none;
+    }
 }
