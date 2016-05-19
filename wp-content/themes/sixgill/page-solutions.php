@@ -48,11 +48,9 @@
 					</ul>
 				 <?php endif; ?>
           </div>
-               <?php
-                global $categoryName;
-                     $categoryName = "Solutions-people";
-                include(locate_template('loop-solutions.php'));
-                ?>
+
+               <?php childrenInformation('Solutions'); ?>
+
 
       </div>
     </div>
@@ -82,6 +80,7 @@
 					</ul>
 				 <?php endif; ?>
           </div>
+          <?php echo get_field('learn_more_assets'); ?>
                          <?php
                 global $categoryName;
                      $categoryName = "Solutions-assets";
@@ -115,7 +114,7 @@
 					</ul>
 				 <?php endif; ?>
           </div>
-
+          <?php echo get_field('learn_more_crowds'); ?>
                                  <?php
                 global $categoryName;
                      $categoryName = "Solutions-crowd";

@@ -114,6 +114,33 @@ function sixgill_widgets_init() {
 
 }
 
+function the_parent_slug() {
+  global $post;
+  if($post->post_parent == 0) return '';
+  $post_data = get_post($post->post_parent);
+  return $post_data->post_name;
+}
+
+function childrenInformation($name){
+ 
+	global $post;
+	$result = new WP_Query('pagename=' . $name);
+    
+	$lookup = array( 
+		'post_parent' => $result->post->ID,
+		'post_type'   => 'page',
+	);
+ 
+	$childpages = get_children($lookup);
+ 
+	if(count($childpages) > 0){
+		foreach($childpages as $k => $post){
+			echo  '<a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+		}
+	}
+    wp_reset_postdata();
+}
+
 add_action( 'widgets_init', 'sixgill_widgets_init' );
 
 add_theme_support('post-thumbnails');
