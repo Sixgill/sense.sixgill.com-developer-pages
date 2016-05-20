@@ -415,6 +415,22 @@ label {
 	text-align: left;
 	display: inline-block;
 }
+
+.solutions-subpage-text ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.solutions-subpage-text li {
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+
+.solutions-subpage-text li:before {
+    content: "• ";
+    color: green;
+}
 /* Blog desktop styles */
 @media only screen and (min-width : 992px) {
 	.subscribe-block-tablet-mobile {
@@ -682,7 +698,7 @@ label {
 	.solution-subpage-onlytext {
 		width: inherit;
 		max-width: 1000px;
-		padding-right: 100px;
+		padding-right: 40px;
 	}
 
 	.solutions-subpage-thumbnail {
@@ -696,6 +712,11 @@ label {
 		max-width: 300px;
 		height:100% !important;
 		width: 100% !important;
+	}
+
+	.solutions-subpage-text li, .solutions-subpage-text li span {
+		font-size: 16px !important;
+		padding-bottom: 1em;
 	}
 }
 /* Tech desktop styles */
@@ -1036,6 +1057,9 @@ label {
 		max-width: 300px;
 		height:100% !important;
 		width: 100% !important;
+	}
+	.solutions-subpage-text li, .solutions-subpage-text li span {
+		font-size: 20px !important;
 	}
 }
 /* Tech tablet styles */
@@ -1412,6 +1436,10 @@ label {
 
 	.slider-title-adjust {
 		top: 20px;
+	}
+
+	.solutions-subpage-text li, .solutions-subpage-text li span {
+		font-size: 20px !important;
 	}
 }
 /* Tech mobile styles */
