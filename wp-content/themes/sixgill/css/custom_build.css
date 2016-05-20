@@ -1073,6 +1073,11 @@ section {
 	.solutions-subpage-text li, .solutions-subpage-text li span {
 		font-size: 20px !important;
 	}
+
+	.solutions-subpage-text ol {
+		padding-left: 25px;
+	}
+
 }
 /* Tech tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
@@ -1452,6 +1457,10 @@ section {
 
 	.solutions-subpage-text li, .solutions-subpage-text li span {
 		font-size: 20px !important;
+	}
+
+	.solutions-subpage-text ol {
+		padding-left: 25px;
 	}
 }
 /* Tech mobile styles */
