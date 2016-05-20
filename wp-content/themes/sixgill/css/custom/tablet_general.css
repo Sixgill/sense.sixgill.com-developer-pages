@@ -180,6 +180,7 @@
 		position: fixed;
 		z-index: 9999;
 		width: 100%;
+		top: 0px;
 	}
 
 	.menu-social-link {
@@ -209,11 +210,11 @@
 	#wpadminbar {
 		display:none;
 	}
-    
+
     .shareIcons-desktop-tablet {
         display: block;
     }
-    
+
     .shareIcons-mobile {
         display: none;
     }

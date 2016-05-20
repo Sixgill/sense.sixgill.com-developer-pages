@@ -113,7 +113,7 @@ body, p {
 }
 
 .my_containerSolution {
-	max-width:930px;
+	max-width: 930px;
 	padding-top:75px;
 	margin-top:0px;
 	margin-bottom:0px;
@@ -277,11 +277,6 @@ label {
 	color: #0051c6 !important;
 }
 
-.solutions-blog-post_thumbnail > img {
-	height: inherit !important;
-	width: 100% !important;
-}
-
 .solutions-blog-content > p {
 		text-align: left !important;
 }
@@ -290,6 +285,11 @@ label {
 	margin-left: 10%;
 	margin-right: 10%;
 	max-width: inherit;
+}
+
+.left-aligned {
+	display: inline-block;
+	text-align: left;
 }
 .hr-home-sub-title {
 	max-width: 650px;
@@ -410,6 +410,10 @@ label {
 
 .resource-link {
 	color: #999999;
+}
+.solutions-subpage-text, .solutions-subpage-thumbnail {
+	text-align: left;
+	display: inline-block;
 }
 /* Blog desktop styles */
 @media only screen and (min-width : 992px) {
@@ -577,24 +581,6 @@ label {
 		display: none;
 	}
 
-	.solutions-blog-content {
-			float: left;
-			text-align: left;
-			width:65%;
-	}
-
-	.solutions-blog-post_thumbnail {
-		float: left;
-		width:30%;
-		max-width: 350px;
-		text-align: center;
-	}
-
-	.solutions-blog-block-with-post {
-		text-align: left;
-		margin-bottom: 30px;
-	}
-
 	#aside-blog {
 		margin-left: -100px;
 	}
@@ -641,6 +627,63 @@ label {
 /* Solutions desktop styles */
 @media only screen and (min-width : 992px) {
 
+	.solutions-blog-content {
+			float: left;
+			text-align: left;
+			width:65%;
+	}
+
+	.solutions-blog-post_thumbnail {
+		float: left;
+		width:30%;
+		max-width: 350px;
+		text-align: center;
+	}
+
+	/*.sulution-subpage-container {
+		max-width: inherit !important;
+		text-align: center;
+		margin-left: 0px;
+		margin-right: 0px;
+		text-align:center;
+	}*/
+
+	#press-text-post {
+		text-align: left;
+		display: inline-block;
+	}
+
+	.solution-subpage-container {
+		margin-top: 100px;
+		margin-left: 40px;
+		margin-right: 15px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.solutions-subpage-text {
+		width: 65%;
+		max-width: 900px;
+	}
+
+	.solution-subpage-onlytext {
+		width: inherit;
+		max-width: 1000px;
+		padding-right: 100px;
+	}
+
+	.solutions-subpage-thumbnail {
+		float: right;
+		width: 34%;
+		text-align: left;
+	}
+
+	.solutions-subpage-thumbnail .size-post-thumbnail {
+		height:inherit !important;
+		max-width: 300px;
+		height:100% !important;
+		width: 100% !important;
+	}
 }
 /* Tech desktop styles */
 @media only screen and (min-width : 992px) {
@@ -842,6 +885,7 @@ label {
 		position: fixed;
 		z-index: 9999;
 		width: 100%;
+		top: 0px;
 	}
 
 	.menu-social-link {
@@ -871,11 +915,11 @@ label {
 	#wpadminbar {
 		display:none;
 	}
-    
+
     .shareIcons-desktop-tablet {
         display: block;
     }
-    
+
     .shareIcons-mobile {
         display: none;
     }
@@ -950,7 +994,37 @@ label {
 }
 /* Solutions tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
+	.solution-subpage-container {
+		margin-top: 100px;
+		margin-left: 70px;
+		margin-right: 40px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 
+	.solutions-subpage-text {
+		width: 65%;
+		max-width: 900px;
+	}
+
+	.solution-subpage-onlytext {
+		width: inherit;
+		max-width: 1000px;
+		padding-right: 100px;
+	}
+
+	.solutions-subpage-thumbnail {
+		float: right;
+		width: 34%;
+		text-align: left;
+	}
+
+	.solutions-subpage-thumbnail .size-post-thumbnail {
+		height:inherit !important;
+		max-width: 300px;
+		height:100% !important;
+		width: 100% !important;
+	}
 }
 /* Tech tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
@@ -1294,7 +1368,35 @@ label {
 }
 /* Solutions mobile styles */
 @media only screen and (max-width: 500px) {
+	.solution-subpage-container {
+		margin-top: 50px;
+		margin-left: 30px;
+		margin-right: 30px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 
+	.solutions-subpage-text {
+		width: 100%;
+	}
+
+	.solution-subpage-onlytext {
+		width: 100%;
+	}
+
+	.solutions-subpage-thumbnail {
+		width: 100%;
+		text-align: center;
+	}
+
+	.solutions-subpage-thumbnail .size-post-thumbnail {
+		height:100% !important;
+		width: 100% !important;
+	}
+
+	.slider-title-adjust {
+		top: 20px;
+	}
 }
 /* Tech mobile styles */
 @media only screen and (max-width: 500px) {
