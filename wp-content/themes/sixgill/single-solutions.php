@@ -3,7 +3,7 @@
 	<div class="slider-parallax-inner">
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background-color: #004cbf;">
+				<div class="swiper-slide slider-title-adjust" style="background-color: #004cbf;">
 					<div class="slider-caption slider-caption-center">
 						<h1 id="post-title-slider" class="single-post-title">
 							<?php echo $post->post_title; ?>

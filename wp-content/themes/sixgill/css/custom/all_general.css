@@ -206,11 +206,6 @@ label {
 	color: #0051c6 !important;
 }
 
-.solutions-blog-post_thumbnail > img {
-	height: inherit !important;
-	width: 100% !important;
-}
-
 .solutions-blog-content > p {
 		text-align: left !important;
 }

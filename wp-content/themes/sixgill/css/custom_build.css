@@ -277,11 +277,6 @@ label {
 	color: #0051c6 !important;
 }
 
-.solutions-blog-post_thumbnail > img {
-	height: inherit !important;
-	width: 100% !important;
-}
-
 .solutions-blog-content > p {
 		text-align: left !important;
 }
@@ -415,6 +410,10 @@ label {
 
 .resource-link {
 	color: #999999;
+}
+.solutions-subpage-text, .solutions-subpage-thumbnail {
+	text-align: left;
+	display: inline-block;
 }
 /* Blog desktop styles */
 @media only screen and (min-width : 992px) {
@@ -641,13 +640,13 @@ label {
 		text-align: center;
 	}
 
-	.sulution-subpage-container {
+	/*.sulution-subpage-container {
 		max-width: inherit !important;
 		text-align: center;
 		margin-left: 0px;
 		margin-right: 0px;
 		text-align:center;
-	}
+	}*/
 
 	#press-text-post {
 		text-align: left;
@@ -660,11 +659,6 @@ label {
 		margin-right: 15px;
 		padding-left: 0px;
 		padding-right: 0px;
-	}
-
-	.solutions-subpage-text, .solutions-subpage-thumbnail {
-		text-align: left;
-		display: inline-block;
 	}
 
 	.solutions-subpage-text {
@@ -1000,7 +994,37 @@ label {
 }
 /* Solutions tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
+	.solution-subpage-container {
+		margin-top: 100px;
+		margin-left: 70px;
+		margin-right: 40px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 
+	.solutions-subpage-text {
+		width: 65%;
+		max-width: 900px;
+	}
+
+	.solution-subpage-onlytext {
+		width: inherit;
+		max-width: 1000px;
+		padding-right: 100px;
+	}
+
+	.solutions-subpage-thumbnail {
+		float: right;
+		width: 34%;
+		text-align: left;
+	}
+
+	.solutions-subpage-thumbnail .size-post-thumbnail {
+		height:inherit !important;
+		max-width: 300px;
+		height:100% !important;
+		width: 100% !important;
+	}
 }
 /* Tech tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
@@ -1344,7 +1368,35 @@ label {
 }
 /* Solutions mobile styles */
 @media only screen and (max-width: 500px) {
+	.solution-subpage-container {
+		margin-top: 50px;
+		margin-left: 30px;
+		margin-right: 30px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 
+	.solutions-subpage-text {
+		width: 100%;
+	}
+
+	.solution-subpage-onlytext {
+		width: 100%;
+	}
+
+	.solutions-subpage-thumbnail {
+		width: 100%;
+		text-align: center;
+	}
+
+	.solutions-subpage-thumbnail .size-post-thumbnail {
+		height:100% !important;
+		width: 100% !important;
+	}
+
+	.slider-title-adjust {
+		top: 20px;
+	}
 }
 /* Tech mobile styles */
 @media only screen and (max-width: 500px) {

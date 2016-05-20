@@ -14,13 +14,13 @@
 		text-align: center;
 	}
 
-	.sulution-subpage-container {
+	/*.sulution-subpage-container {
 		max-width: inherit !important;
 		text-align: center;
 		margin-left: 0px;
 		margin-right: 0px;
 		text-align:center;
-	}
+	}*/
 
 	#press-text-post {
 		text-align: left;
@@ -33,11 +33,6 @@
 		margin-right: 15px;
 		padding-left: 0px;
 		padding-right: 0px;
-	}
-
-	.solutions-subpage-text, .solutions-subpage-thumbnail {
-		text-align: left;
-		display: inline-block;
 	}
 
 	.solutions-subpage-text {
