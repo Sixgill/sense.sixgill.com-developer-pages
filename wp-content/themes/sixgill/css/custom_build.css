@@ -304,8 +304,8 @@ label {
 }
 
 .logo-subheader {
-	font-size: 14px;
-	color: #555;
+	font-size: 15px;
+	color: #383838;
 }
 
 #home-main-text {
@@ -1225,7 +1225,11 @@ label {
 }
 /* Home mobile styles */
 @media only screen and (max-width: 500px) {
-	
+    .logo-subheader {
+        font-size: 15px;
+        color: #383838;
+        max-width: 260px;
+    }
 }
 /* Press mobile styles */
 @media only screen and (max-width: 500px) {

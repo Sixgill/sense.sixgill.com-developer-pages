@@ -1,4 +1,8 @@
 /* Home mobile styles */
 @media only screen and (max-width: 500px) {
-	
+    .logo-subheader {
+        font-size: 15px;
+        color: #383838;
+        max-width: 260px;
+    }
 }
