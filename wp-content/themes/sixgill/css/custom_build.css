@@ -551,6 +551,19 @@ label {
 		font-size:22px;
 	}
 
+	.footer-links-block {
+		margin-right: 0px;
+		padding-right: 0px;
+		width: inherit;
+		margin-top: 5px;
+	}
+
+	.footer_Copy {
+		padding-left: 0px;
+		width: inherit;
+		float: right
+	}
+
 	.footer_Schedule {
 		text-align:right;
 	}
