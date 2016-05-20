@@ -220,3 +220,11 @@ label {
 	display: inline-block;
 	text-align: left;
 }
+
+section {
+	z-index: 2;
+}
+
+#slider {
+	z-index: 1;
+}
