@@ -291,6 +291,14 @@ label {
 	display: inline-block;
 	text-align: left;
 }
+
+section {
+	z-index: 2;
+}
+
+#slider {
+	z-index: 1;
+}
 .hr-home-sub-title {
 	max-width: 650px;
 }
@@ -422,14 +430,19 @@ label {
     margin:0;
 }
 
-.solutions-subpage-text li {
+.solutions-subpage-text ul > li, .solutions-subpage-text ol > li {
     padding-left: 1em;
     text-indent: -.7em;
+		padding-bottom: 1em;
 }
 
-.solutions-subpage-text li:before {
+.solutions-subpage-text ul > li:before {
     content: "• ";
     color: green;
+}
+
+.solutions-subpage-text ol {
+	padding-left: 20px;
 }
 /* Blog desktop styles */
 @media only screen and (min-width : 992px) {
@@ -716,7 +729,6 @@ label {
 
 	.solutions-subpage-text li, .solutions-subpage-text li span {
 		font-size: 16px !important;
-		padding-bottom: 1em;
 	}
 }
 /* Tech desktop styles */
