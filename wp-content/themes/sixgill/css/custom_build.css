@@ -1412,6 +1412,10 @@ label {
         margin-bottom: 10px;
         height: 35px;
     }
+    
+    .subscribe-block-tablet-mobile {
+        padding: 40px 25px 20px 30px;
+    }
 }
 /* Portrait tablets & mobiles */
 @media (max-width: 900px) {
