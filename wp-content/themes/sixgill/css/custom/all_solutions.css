@@ -2,3 +2,20 @@
 	text-align: left;
 	display: inline-block;
 }
+
+.solutions-subpage-text ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.solutions-subpage-text li {
+    padding-left: 1em;
+    text-indent: -.7em;
+		padding-bottom: 1em;
+}
+
+.solutions-subpage-text li:before {
+    content: "• ";
+    color: green;
+}
