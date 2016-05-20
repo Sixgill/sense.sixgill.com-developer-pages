@@ -122,24 +122,6 @@
 		display: none;
 	}
 
-	.solutions-blog-content {
-			float: left;
-			text-align: left;
-			width:65%;
-	}
-
-	.solutions-blog-post_thumbnail {
-		float: left;
-		width:30%;
-		max-width: 350px;
-		text-align: center;
-	}
-
-	.solutions-blog-block-with-post {
-		text-align: left;
-		margin-bottom: 30px;
-	}
-
 	#aside-blog {
 		margin-left: -100px;
 	}

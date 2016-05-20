@@ -54,7 +54,7 @@ all classes apply for desktop
 
 
 .my_containerSolution {
-	max-width:930px;
+	/*max-width:930px;*/
 	padding-top:75px;
 	margin-top:0px;
 	margin-bottom:0px;
@@ -379,8 +379,8 @@ label {
 }
 
 .author-with-date-blogPost {
-    font-size: 14px; 
-    line-height: 1.5; 
+    font-size: 14px;
+    line-height: 1.5;
     color: #999999;
 }
 
@@ -572,7 +572,7 @@ label {
 		margin-left: 5px;
 		list-style-type: none;
 	}
-    
+
 	.full-block-width {
 		width: 250px;
 	}
@@ -621,7 +621,7 @@ label {
 		margin-left: 5px;
 		list-style-type: none;
 	}
-    
+
 	.full-block-width {
 		width: 250px;
 	}
@@ -638,7 +638,7 @@ label {
 		margin-left: 5px;
 		list-style-type: none;
 	}
-    
+
     .my_containerSolution {
         margin-left: 60px;
     }
