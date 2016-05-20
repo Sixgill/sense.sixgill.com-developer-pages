@@ -43,7 +43,7 @@
 	.solution-subpage-onlytext {
 		width: inherit;
 		max-width: 1000px;
-		padding-right: 100px;
+		padding-right: 40px;
 	}
 
 	.solutions-subpage-thumbnail {
@@ -57,5 +57,9 @@
 		max-width: 300px;
 		height:100% !important;
 		width: 100% !important;
+	}
+
+	.solutions-subpage-text li, .solutions-subpage-text li span {
+		font-size: 16px !important;
 	}
 }
