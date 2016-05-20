@@ -42,7 +42,7 @@ body, p {
 }
 
 .my_containerSolution {
-	max-width:1000px !important;
+	max-width: 930px;
 	padding-top:75px;
 	margin-top:0px;
 	margin-bottom:0px;
@@ -206,11 +206,6 @@ label {
 	color: #0051c6 !important;
 }
 
-.solutions-blog-post_thumbnail > img {
-	height: inherit !important;
-	width: 100% !important;
-}
-
 .solutions-blog-content > p {
 		text-align: left !important;
 }
@@ -219,4 +214,9 @@ label {
 	margin-left: 10%;
 	margin-right: 10%;
 	max-width: inherit;
+}
+
+.left-aligned {
+	display: inline-block;
+	text-align: left;
 }

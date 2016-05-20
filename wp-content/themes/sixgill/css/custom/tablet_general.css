@@ -124,13 +124,6 @@
 		display: none;
 	}
 
-	.subscribe-input-container {
-		overflow: hidden;
-		width: 100%;
-		padding-right: 15px;
-		padding-left: 10px;
-	}
-
 	.subscribe-email {
 		height: 49px;
 		margin-bottom: 10px;
@@ -180,6 +173,7 @@
 		position: fixed;
 		z-index: 9999;
 		width: 100%;
+		top: 0px;
 	}
 
 	.menu-social-link {
@@ -209,11 +203,11 @@
 	#wpadminbar {
 		display:none;
 	}
-    
+
     .shareIcons-desktop-tablet {
         display: block;
     }
-    
+
     .shareIcons-mobile {
         display: none;
     }
