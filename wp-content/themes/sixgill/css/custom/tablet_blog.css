@@ -1,4 +1,10 @@
 /* Blog tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
-
+	.subscribe-input-container {
+		overflow: hidden;
+		width: 100%;
+		padding-top: 5px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
 }
