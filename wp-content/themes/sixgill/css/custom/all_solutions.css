@@ -17,7 +17,7 @@
 
 .solutions-subpage-text ul > li:before {
     content: "• ";
-    color: green;
+    color: #4ddb5a;
 }
 
 .solutions-subpage-text ol {
