@@ -52,7 +52,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body class="side-header stretched">
+<body class="side-header stretched" data-loader-timeout="7000">
 
 	<!-- Document Wrapper -->
 	<div id="wrapper" class="clearfix">
