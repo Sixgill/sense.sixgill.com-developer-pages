@@ -124,13 +124,6 @@
 		display: none;
 	}
 
-	.subscribe-input-container {
-		overflow: hidden;
-		width: 100%;
-		padding-right: 15px;
-		padding-left: 10px;
-	}
-
 	.subscribe-email {
 		height: 49px;
 		margin-bottom: 10px;
