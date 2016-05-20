@@ -1,4 +1,32 @@
 /* Solutions mobile styles */
 @media only screen and (max-width: 500px) {
+	.solution-subpage-container {
+		margin-top: 50px;
+		margin-left: 30px;
+		margin-right: 30px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 
+	.solutions-subpage-text {
+		width: 100%;
+	}
+
+	.solution-subpage-onlytext {
+		width: 100%;
+	}
+
+	.solutions-subpage-thumbnail {
+		width: 100%;
+		text-align: center;
+	}
+
+	.solutions-subpage-thumbnail .size-post-thumbnail {
+		height:100% !important;
+		width: 100% !important;
+	}
+
+	.slider-title-adjust {
+		top: 20px;
+	}
 }
