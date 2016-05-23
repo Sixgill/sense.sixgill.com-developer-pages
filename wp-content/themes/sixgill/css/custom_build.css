@@ -379,10 +379,12 @@ section {
 	overflow: hidden;
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
+	background-position-x: 50%
 	background-position: center center !important;
 }
 
 .resource-image-container-centered {
+	background-position-y: 50%;
 	background-position: center center !important;
 }
 
@@ -1583,6 +1585,10 @@ section {
     .subscribe-block-tablet-mobile {
         padding: 40px 25px 20px 30px;
     }
+
+		.footer_Learn, .footer_Schedule {
+			text-align: center;
+		}
 }
 /* Portrait tablets & mobiles */
 @media (max-width: 900px) {
