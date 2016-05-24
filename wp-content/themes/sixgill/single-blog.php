@@ -1,40 +1,22 @@
 <a name="top"></a>
 
 <!-- Content-->
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); 
+	$ptitle = get_the_title();?>
 	<section id="content">
-
-                		<div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
-
-			<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent" style="padding-top:0px;">
-
-                
-			<div id="aside-blog">
-				<ul class="marginShareButton">
-					<li>
-
-					</li>
-					<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" target="_blank" title="Share on Facebook.">
-						<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Mountain View" id="image-fecebook-share" class="shareButton-blog">
-					</a>
-					<li>
-						<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!">
-							<img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Mountain View" id="image-twitter-share" class="shareButton-blog">
-						</a>
-					</li>
-					<li>
-						<a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" target="_blank" title="Share on LinkedIn">
-							<img src="/wp-content/themes/sixgill/images/td/blog/social_LinkedIn.svg" alt="Mountain View"  id="image-linkedin-share" class="shareButton-blog">
-						</a>
-					</li>
-					<li>
-						<a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" target="_blank" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email">
-							<!--<img src="/wp-content/themes/sixgill/images/td/blog/email_normal.svg" alt="Mountain View" id="image-email-share" class="shareButton">-->
-	            <img src="/wp-content/themes/sixgill/images/td/blog/social_Email.svg" alt="Mountain View"  id="image-linkedin-share" class="shareButton-blog">
-						</a>
-					</li>
-				</ul>
-			</div>
+        <div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
+            <div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent" style="padding-top:0px;">   
+                <div id="aside-blog">
+                    <ul class="marginShareButton">
+                        <li><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" target="_blank" title="Share on Facebook."> <img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Mountain View" id="image-fecebook-share" class="shareButton-blog"></a></li>
+                        
+                        <li><a href="http://twitter.com/home/?status=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!"> <img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Mountain View" id="image-twitter-share" class="shareButton-blog"></a></li>
+                        
+                        <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" target="_blank" title="Share on LinkedIn"><img src="/wp-content/themes/sixgill/images/td/blog/social_LinkedIn.svg" alt="Mountain View"  id="image-linkedin-share" class="shareButton-blog"></a></li>
+					
+                        <li><a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" target="_blank" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email"><img src="/wp-content/themes/sixgill/images/td/blog/social_Email.svg" alt="Mountain View"  id="image-linkedin-share" class="shareButton-blog"></a></li>
+                    </ul>
+                </div>
 
 				<div id="press-text-post" class="col_full" style="text-align: left; margin-bottom: 30px; z-index: 200; margin-top:70px">
 
@@ -53,7 +35,7 @@
 								<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Mountain View" id="image-mobile-fecebook-share" class="shareButton-mobile">
 							</a>
 
-							<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!">
+							<a href="http://twitter.com/home/?status=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!">
 								<img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Mountain View" id="image-mobile-twitter-share" class="shareButton-mobile">
 							</a>
 
@@ -80,7 +62,7 @@
 								<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Mountain View" id="image-mobile-fecebook-share" class="shareButton-mobile">
 							</a>
 
-							<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!">
+							<a href="http://twitter.com/home/?status=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!">
 								<img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Mountain View" id="image-mobile-twitter-share" class="shareButton-mobile">
 							</a>
 
@@ -105,7 +87,7 @@
 								<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Mountain View" id="image-mobile-fecebook-share" class="shareButton-mobile">
 							</a>
 
-							<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!">
+							<a href="http://twitter.com/home/?status=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!">
 								<img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Mountain View" id="image-mobile-twitter-share" class="shareButton-mobile">
 							</a>
 
@@ -129,7 +111,7 @@
 								<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Mountain View" id="image-mobile-fecebook-share" class="shareButton-mobile">
 							</a>
 
-							<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!">
+							<a href="http://twitter.com/home/?status=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!">
 								<img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Mountain View" id="image-mobile-twitter-share" class="shareButton-mobile">
 							</a>
 

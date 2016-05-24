@@ -1,7 +1,8 @@
 <a name="top"></a>
 
 <!-- Content-->
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); 
+	$ptitle = get_the_title();?>
 	<section id="content">
 		<div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
 			<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent" style="padding-top:0px;">
@@ -12,7 +13,7 @@
 							<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Mountain View" id="image-fecebook-share" class="shareButton-blog">
 						</a>
 						<li>
-							<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!">
+							<a href="http://twitter.com/home/?status=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!">
 								<img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Mountain View" id="image-twitter-share" class="shareButton-blog">
 							</a>
 						</li>
@@ -43,7 +44,7 @@
 										<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Mountain View" id="image-mobile-fecebook-share" class="shareButton-mobile">
 									</a>
 
-									<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!">
+									<a href="http://twitter.com/home/?status=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!">
 										<img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Mountain View" id="image-mobile-twitter-share" class="shareButton-mobile">
 									</a>
 
@@ -70,7 +71,7 @@
 										<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Mountain View" id="image-mobile-fecebook-share" class="shareButton-mobile">
 									</a>
 
-									<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!">
+									<a href="http://twitter.com/home/?status=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!">
 										<img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Mountain View" id="image-mobile-twitter-share" class="shareButton-mobile">
 									</a>
 
@@ -95,7 +96,7 @@
 											<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Mountain View" id="image-mobile-fecebook-share" class="shareButton-mobile">
 										</a>
 
-										<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!">
+										<a href="http://twitter.com/home/?status=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!">
 											<img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Mountain View" id="image-mobile-twitter-share" class="shareButton-mobile">
 										</a>
 
@@ -119,7 +120,7 @@
 											<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Mountain View" id="image-mobile-fecebook-share" class="shareButton-mobile">
 										</a>
 
-										<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" target="_blank" title="Tweet this!">
+										<a href="http://twitter.com/home/?status=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!">
 											<img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Mountain View" id="image-mobile-twitter-share" class="shareButton-mobile">
 										</a>
 
