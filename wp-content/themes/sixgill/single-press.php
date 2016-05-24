@@ -28,7 +28,7 @@
 						</li>
 					</ul>
 				</div>
-				<div id="press-text-post press-post" class="col_full" style="z-index: 200; margin-top:70px">
+				<div id="press-text-post" class="col_full press-post">
 					<?php if ( has_post_thumbnail()) { ?>
 						<div class="shareIcons-desktop-tablet">
 							<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000"><?php echo $post->post_title; ?></h3>

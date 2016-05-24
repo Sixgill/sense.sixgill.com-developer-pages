@@ -10,4 +10,23 @@
 	#primary-menu {
 		padding-bottom: 0px;
 	}
+
+	#primary-menu-trigger {
+		position: inherit;
+		left: 0px;
+    display: inline-block;
+    float: right;
+	}
+
+	#logo {
+		display: inline-block;
+	}
+
+	 .menu-container {
+		 width: 100% !important;
+	 }
+
+	 .hr-home-sup-title {
+	 	max-width: 600px;
+	 }
 }

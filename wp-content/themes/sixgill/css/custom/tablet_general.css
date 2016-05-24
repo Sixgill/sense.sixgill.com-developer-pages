@@ -6,8 +6,8 @@
 		list-style-type: none;
 	}
 
-	section {
-		margin-top: -1px;
+	section, .nomargin {
+		margin-top: -1px !important;
 	}
 
 	#primary-menu {
@@ -133,10 +133,6 @@
 		left: 0;
 	}
 
-	#slider {
-		top: 62px;
-	}
-
 	.footer-links-block, .footer_Copy {
 		width: 100%;
 		text-align: center;
@@ -152,6 +148,11 @@
 
 	.shareIcons-mobile {
 		display: none;
+	}
+
+	.footer_Learn, .footer_Schedule {
+		width: 100%;
+		text-align: center;
 	}
 
 }

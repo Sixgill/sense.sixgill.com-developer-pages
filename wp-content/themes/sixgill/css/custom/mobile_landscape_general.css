@@ -3,4 +3,32 @@
 	#primary-menu-trigger {
 		top: 10px;
 	}
+
+	nav#primary-menu > ul {
+		height: 300px;
+	}
+
+	.hide-landscape-mobile {
+		display: none;
+	}
+
+	.global-social-buttons-container {
+		position: static;
+	}
+	#header {
+		border: 0px;
+	}
+
+	.global-social-buttons-container {
+		margin-left: 10px;
+		padding-right: 35px;
+	}
+
+	#header {
+		position: relative !important;
+	}
+
+	.btnInside {
+		width: 400px;
+	}
 }

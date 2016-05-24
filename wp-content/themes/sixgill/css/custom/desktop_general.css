@@ -66,6 +66,11 @@
 		font-size:22px;
 	}
 
+	.footer_Learn {
+		width: inherit;
+		margin-right: 0px;
+	}
+
 	.footer-links-block {
 		margin-right: 0px;
 		padding-right: 0px;
@@ -76,11 +81,13 @@
 	.footer_Copy {
 		padding-left: 0px;
 		width: inherit;
-		float: right
+		float: right;
 	}
 
 	.footer_Schedule {
 		text-align:right;
+		float: right;
+		margin-top: 0px;
 	}
 
 	.homeSupTit-with-line {

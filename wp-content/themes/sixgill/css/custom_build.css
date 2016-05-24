@@ -68,7 +68,7 @@
 	margin-left: 5%;
 	margin-top: 40px;
 	margin-right: 10%;
-	max-width: none;
+	max-width: none !important;
 }
 .company-learn-more-text {
 	display: none;
@@ -505,6 +505,10 @@ section {
 	.blog-container {
 		margin-right: 0px;
 	}
+
+	.post-blog {
+		margin-top:70px;
+	}
 }
 /* Company desktop styles */
 @media only screen and (min-width : 992px) {
@@ -578,6 +582,11 @@ section {
 		font-size:22px;
 	}
 
+	.footer_Learn {
+		width: inherit;
+		margin-right: 0px;
+	}
+
 	.footer-links-block {
 		margin-right: 0px;
 		padding-right: 0px;
@@ -588,11 +597,13 @@ section {
 	.footer_Copy {
 		padding-left: 0px;
 		width: inherit;
-		float: right
+		float: right;
 	}
 
 	.footer_Schedule {
 		text-align:right;
+		float: right;
+		margin-top: 0px;
 	}
 
 	.homeSupTit-with-line {
@@ -752,6 +763,25 @@ section {
 	#primary-menu {
 		padding-bottom: 0px;
 	}
+
+	#primary-menu-trigger {
+		position: inherit;
+		left: 0px;
+    display: inline-block;
+    float: right;
+	}
+
+	#logo {
+		display: inline-block;
+	}
+
+	 .menu-container {
+		 width: 100% !important;
+	 }
+
+	 .hr-home-sup-title {
+	 	max-width: 600px;
+	 }
 }
 /* Blog tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
@@ -804,6 +834,10 @@ section {
 		height: 49px;
 		margin-top: 2px;
 	}
+
+	.post-blog {
+		margin-top:150px;
+	}
 }
 /* Company tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
@@ -817,8 +851,8 @@ section {
 		list-style-type: none;
 	}
 
-	section {
-		margin-top: -1px;
+	section, .nomargin {
+		margin-top: -1px !important;
 	}
 
 	#primary-menu {
@@ -944,10 +978,6 @@ section {
 		left: 0;
 	}
 
-	#slider {
-		top: 62px;
-	}
-
 	.footer-links-block, .footer_Copy {
 		width: 100%;
 		text-align: center;
@@ -963,6 +993,11 @@ section {
 
 	.shareIcons-mobile {
 		display: none;
+	}
+
+	.footer_Learn, .footer_Schedule {
+		width: 100%;
+		text-align: center;
 	}
 
 }
@@ -1256,10 +1291,6 @@ section {
     left: 0;
 	}*/
 
-	#slider {
-		top: 15px;
-	}
-
 	.footer-links-block, .footer_Copy {
 		width: 100%;
 	}
@@ -1311,6 +1342,12 @@ section {
 		display: none;
 	}
 }
+/* Blog mobile portrait and landscape styles */
+@media (max-width: 667px) and (orientation: landscape), screen and (max-width: 500px) {
+	.blog-container {
+		padding-top: 20px;
+	}
+}
 /* General mobile portrait and landscape styles */
 @media (max-width: 667px) and (orientation: landscape), screen and (max-width: 500px) {
 	.shareIcons-mobile {
@@ -1327,25 +1364,6 @@ section {
 		height:44px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg");
 	}
-
-	#primary-menu-trigger {
-		position: inherit;
-		left: 0px;
-    display: inline-block;
-    float: right;
-	}
-
-	#logo {
-		display: inline-block;
-	}
-
-	 .menu-container {
-		 width: 100% !important;
-	 }
-
-	 #header {
-		 position: relative !important;
-	 }
 }
 /* Resources mobile portrait and landscape styles */
 @media (max-width: 667px) and (orientation: landscape), screen and (max-width: 500px) {
@@ -1483,10 +1501,54 @@ section {
 	#primary-menu-trigger {
 		top: 10px;
 	}
+
+	nav#primary-menu > ul {
+		height: 300px;
+	}
+
+	.hide-landscape-mobile {
+		display: none;
+	}
+
+	.global-social-buttons-container {
+		position: static;
+	}
+	#header {
+		border: 0px;
+	}
+
+	.global-social-buttons-container {
+		margin-left: 10px;
+		padding-right: 35px;
+	}
+
+	#header {
+		position: relative !important;
+	}
+
+	.btnInside {
+		width: 400px;
+	}
 }
 /* Resources mobile landscape styles */
 @media (max-width: 667px) and (orientation: landscape) {
 
+}
+/* Solutions mobile landscape styles */
+@media (max-width: 667px) and (orientation: landscape) {
+	.solution-image-title-container {
+		text-align: center;
+	}
+
+	.title-left-col {
+		text-align: center;
+	}
+}
+/* Blog mobile portrait and landscape styles */
+@media (max-width: 667px) and (orientation: landscape), screen and (max-width: 500px) {
+	.blog-container {
+		padding-top: 20px;
+	}
 }
 /* General mobile portrait and landscape styles */
 @media (max-width: 667px) and (orientation: landscape), screen and (max-width: 500px) {
@@ -1504,25 +1566,6 @@ section {
 		height:44px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg");
 	}
-
-	#primary-menu-trigger {
-		position: inherit;
-		left: 0px;
-    display: inline-block;
-    float: right;
-	}
-
-	#logo {
-		display: inline-block;
-	}
-
-	 .menu-container {
-		 width: 100% !important;
-	 }
-
-	 #header {
-		 position: relative !important;
-	 }
 }
 /* Resources mobile portrait and landscape styles */
 @media (max-width: 667px) and (orientation: landscape), screen and (max-width: 500px) {
@@ -1540,6 +1583,25 @@ section {
 	#primary-menu {
 		padding-bottom: 0px;
 	}
+
+	#primary-menu-trigger {
+		position: inherit;
+		left: 0px;
+    display: inline-block;
+    float: right;
+	}
+
+	#logo {
+		display: inline-block;
+	}
+
+	 .menu-container {
+		 width: 100% !important;
+	 }
+
+	 .hr-home-sup-title {
+	 	max-width: 600px;
+	 }
 }
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {

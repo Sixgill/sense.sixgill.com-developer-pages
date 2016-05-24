@@ -68,5 +68,5 @@
 	margin-left: 5%;
 	margin-top: 40px;
 	margin-right: 10%;
-	max-width: none;
+	max-width: none !important;
 }

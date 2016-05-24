@@ -8,7 +8,7 @@
 
 			<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent" style="padding-top:0px;">
 
-                
+
 			<div id="aside-blog">
 				<ul class="marginShareButton">
 					<li>
@@ -36,7 +36,7 @@
 				</ul>
 			</div>
 
-				<div id="press-text-post" class="col_full" style="text-align: left; margin-bottom: 30px; z-index: 200; margin-top:70px">
+				<div id="press-text-post" class="col_full post-blog">
 
                     <?php if ( has_post_thumbnail()) { ?>
 
@@ -67,13 +67,13 @@
 				</div>
 			</div>
                     </div>
-                    
+
                     <div class="shareIcons-mobile">
                        <h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000; margin-bottom: 10px;"><?php echo $post->post_title; ?></h3>
                         <div id="background-image-header" class="swiper-slide" style="  background-position: center; height: 350px; width:100%;     margin-bottom: 30px;">
                             <?php the_post_thumbnail( 'spec_thumb' ); ?>
 				        </div>
-                        
+
                         <div class="topShareBottonMobile">
 				<div style="width:100%; margin-top: -30px;">
 							<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" target="_blank" title="Share on Facebook.">
@@ -120,7 +120,7 @@
 			</div>
                         <h4 id="press-author-post" class="press-by-author author-with-date-blogPost"><?php echo the_time('F j, Y'); ?> | Post by <?php echo get_field('author'); ?></h4>
                     </div>
-                    
+
                     <div class="shareIcons-mobile">
                          <h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000; margin-bottom: 30px;"><?php echo $post->post_title; ?></h3>
                         <div class="topShareBottonMobile">
