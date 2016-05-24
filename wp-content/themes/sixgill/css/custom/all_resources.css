@@ -44,10 +44,12 @@
 	overflow: hidden;
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
+	background-position-x: 50% !important;
 	background-position: center center !important;
 }
 
 .resource-image-container-centered {
+	background-position-y: 50% !important;
 	background-position: center center !important;
 }
 
