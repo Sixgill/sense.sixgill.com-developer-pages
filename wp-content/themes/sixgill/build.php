@@ -16,12 +16,14 @@ if($_SERVER['SERVER_NAME']=="dev-sixgill.pantheonsite.io") {
 
 	$cssResultFile = $path."/wp-content/themes/sixgill/css/custom_build.css";
 	$cssSource = array(
-		$path."/wp-content/themes/sixgill/css/custom/all_*.{css, CSS}",
-		$path."/wp-content/themes/sixgill/css/custom/desktop_*.{css, CSS}",
-		$path."/wp-content/themes/sixgill/css/custom/tablet_*.{css, CSS}",
-		$path."/wp-content/themes/sixgill/css/custom/mobile_*.{css, CSS}",
-		$path."/wp-content/themes/sixgill/css/custom/custom_resolutions.{css, CSS}",
-		$path."/wp-content/themes/sixgill/css/custom/tablet_and_mobile.{css, CSS}"
+		$path."/wp-content/themes/sixgill/css/custom/all_*",
+		$path."/wp-content/themes/sixgill/css/custom/desktop_*",
+		$path."/wp-content/themes/sixgill/css/custom/tablet_*",
+		$path."/wp-content/themes/sixgill/css/custom/mobile_portrait_[A-z]*.css",
+		$path."/wp-content/themes/sixgill/css/custom/mobile_landscape_[A-z]*.css",
+		$path."/wp-content/themes/sixgill/css/custom/mobile_portrait_landscape_[A-z]*.css",
+		$path."/wp-content/themes/sixgill/css/custom/tablet_and_mobile.css",
+		$path."/wp-content/themes/sixgill/css/custom/custom_resolutions.css"
 	);
 
 	function concatFiles($filesList, $resultFilename) {
