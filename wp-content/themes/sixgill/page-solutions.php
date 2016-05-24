@@ -39,7 +39,9 @@
 			<div class="container-fluid center clearfix my_containerSolution" style="max-width: interit !important;">
 				<div class="col_one_third"><img src="<?php echo get_field('people_image'); ?>" class="iconSolutions" alt=""/></div>
 				<div class="col_two_third text-right-col-noline col_last">
-					<div class=""><img src="/wp-content/themes/sixgill/images/td/solutions/header_people.png" class="my_headerBoxSolution" alt=""/></div>
+						<div>
+							<img src="/wp-content/themes/sixgill/images/td/solutions/header_people.png" class="my_headerBoxSolution" alt=""/>
+						</div>
 					<div class="my_boxSolution_title headerBoxSolutionSize">
 						<?php echo get_field('people_header'); ?>
 					</div>
@@ -86,15 +88,17 @@
 						<?php if(get_field('assets_list')) : ?>
 							<ul class="listSolutions">
 								<?php foreach(get_field('assets_list') as $item) : ?>
-									<li><?php echo $item['assets_list_text']; ?></li>
+									<li>
+										<?php echo $item['assets_list_text']; ?>
+									</li>
 								<?php endforeach; ?>
 							</ul>
 						<?php endif; ?>
 					</div>
 					<?php
-					global $categoryName;
-					$categoryName = "For assets";
-					include(locate_template('loop-solutions.php'));
+						global $categoryName;
+						$categoryName = "For assets";
+						include(locate_template('loop-solutions.php'));
 					?>
 				</div>
 			</div>

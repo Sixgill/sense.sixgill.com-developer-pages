@@ -63,3 +63,10 @@
     color: #999999;
 }
 
+.blog-container {
+	padding-top: 0px;
+	margin-left: 5%;
+	margin-top: 40px;
+	margin-right: 10%;
+	max-width: none;
+}
