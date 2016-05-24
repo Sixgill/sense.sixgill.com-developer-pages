@@ -1,0 +1,10 @@
+/* Solutions mobile landscape styles */
+@media (max-width: 667px) and (orientation: landscape) {
+	.solution-image-title-container {
+		text-align: center;
+	}
+
+	.title-left-col {
+		text-align: center;
+	}
+}

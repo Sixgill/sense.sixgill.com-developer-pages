@@ -17,25 +17,9 @@
 
 	}
 
-	.subscribe-element {
+	/*.subscribe-element {
 		display: block;
-	}
-
-	.blog-container {
-		margin-right: 0px;
-	}
-
-	.mc4wp-success > p {
-		font-size: 20px !important;
-		color: #999999;
-		line-height: 1.5em !important;
-	}
-
-	.subscribe-success-title {
-		font-size: 24px;
-		color: #2e2e2e;
-		display: block;
-	}
+	}*/
 
 	.slider-caption.slider-caption-center {
 		max-width: 900px;
@@ -46,16 +30,6 @@
 		font-size: 36px;
 		font-family: "Lato";
 		margin-top: 10px;
-	}
-
-	.applying-layer-copperOnVideo {
-		background-color: rgba(0,0,0,0);
-	}
-
-	.backgroundForTextVideoHome {
-		background-image:url(/wp-content/themes/sixgill/images/td/home/shadow.png);
-		padding: 85px 30px 50px 30px;
-		height:380px;
 	}
 
 	.sizeForTextVideoHome {
@@ -92,6 +66,11 @@
 		font-size:22px;
 	}
 
+	.footer_Learn {
+		width: inherit;
+		margin-right: 0px;
+	}
+
 	.footer-links-block {
 		margin-right: 0px;
 		padding-right: 0px;
@@ -102,15 +81,13 @@
 	.footer_Copy {
 		padding-left: 0px;
 		width: inherit;
-		float: right
+		float: right;
 	}
 
 	.footer_Schedule {
 		text-align:right;
-	}
-
-	.home-text-2{
-		margin-top:120px;
+		float: right;
+		margin-top: 0px;
 	}
 
 	.homeSupTit-with-line {

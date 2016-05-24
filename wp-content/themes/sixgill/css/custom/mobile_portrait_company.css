@@ -1,0 +1,10 @@
+/* Company mobile portrait styles */
+@media only screen and (max-width: 500px) {
+	.news-press-button {
+		font-size: 12px !important;
+	}
+
+	.company-single-post-title {
+		font-size: 14px !important;
+	}
+}
