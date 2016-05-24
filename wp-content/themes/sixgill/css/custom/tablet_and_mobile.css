@@ -6,4 +6,8 @@
 		width: 100%;
 		top:0px !important;
 	}
+
+	#primary-menu {
+		padding-bottom: 0px;
+	}
 }

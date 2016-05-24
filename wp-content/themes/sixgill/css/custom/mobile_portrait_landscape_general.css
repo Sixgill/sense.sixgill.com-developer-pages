@@ -8,4 +8,29 @@
 		width: 100%;
 		display: block;
 	}
+
+	.logoSIXGILL {
+		width:150px;
+		height:44px;
+		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg");
+	}
+
+	#primary-menu-trigger {
+		position: inherit;
+		left: 0px;
+    display: inline-block;
+    float: right;
+	}
+
+	#logo {
+		display: inline-block;
+	}
+
+	 .menu-container {
+		 width: 100% !important;
+	 }
+
+	 #header {
+		 position: relative !important;
+	 }
 }
