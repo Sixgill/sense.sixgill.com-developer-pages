@@ -32,3 +32,9 @@
 .applying-layer-copperOnVideo {
     background-color: rgba(0,0,0,0.45);
 }
+
+#products {
+	background-image: url('/wp-content/themes/sixgill/images/td/home/00_BlueShape.jpg');
+	background-size:cover;
+	height:171px;
+}
