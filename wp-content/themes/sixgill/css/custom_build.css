@@ -62,6 +62,7 @@
     line-height: 1.5;
     color: #999999;
 }
+
 .company-learn-more-text {
 	display: none;
 }
@@ -626,7 +627,7 @@ section {
 	}
 
 	#aside-blog {
-		margin-left: -100px;
+		margin-left: -90px;
 	}
 }
 /* Home desktop styles */
@@ -1550,7 +1551,7 @@ section {
 	}
 
     #aside-blog {
-	margin-left: -80px;
+	margin-left: -70px;
     }
 }
 
