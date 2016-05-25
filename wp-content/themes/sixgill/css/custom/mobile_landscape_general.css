@@ -1,5 +1,5 @@
 /* General Mobile landscape styles */
-@media (max-width: 667px) and (max-height: 400px) {
+@media (max-width: 800px) and (max-height: 400px) {
 	#primary-menu-trigger {
 		top: 10px;
 	}
@@ -31,4 +31,5 @@
 	.btnInside {
 		width: 400px;
 	}
+    
 }

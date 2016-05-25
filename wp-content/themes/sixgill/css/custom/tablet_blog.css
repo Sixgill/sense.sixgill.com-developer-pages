@@ -49,7 +49,10 @@
 		margin-top: 2px;
 	}
 
-	.post-blog {
-		margin-top:150px;
-	}
+    .blog-post {
+        text-align: left; 
+        margin-bottom: 30px; 
+        z-index: 200; 
+        margin-top:0px;
+    }
 }
