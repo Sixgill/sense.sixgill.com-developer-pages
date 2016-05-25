@@ -223,3 +223,7 @@ hr:not([class]) {
 ul, ol {
 	list-style-position: inside;
 }
+
+ul:not([class]), ol:not([class]) {
+	color: #000;
+}
