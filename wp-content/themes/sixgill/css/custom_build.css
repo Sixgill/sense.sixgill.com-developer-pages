@@ -63,6 +63,10 @@
     color: #999999;
 }
 
+.marginShareButton img {
+    max-width: initial;
+}
+
 .blog-container {
 	padding-top: 0px;
 	margin-left: 5%;
