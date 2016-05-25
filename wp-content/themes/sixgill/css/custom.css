@@ -20,7 +20,6 @@ body, p {
 .listSolutions li, .listProduct li {
   list-style-image: url(/wp-content/themes/sixgill/images/td/bullet_green.png);
 	margin-bottom:5px;
-	margin-left:15px;
 }
 
 .companyName, .companyJob, .companyDescription {

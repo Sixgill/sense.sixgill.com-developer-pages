@@ -215,3 +215,11 @@ section {
 #slider {
 	z-index: 1;
 }
+
+hr:not([class]) {
+	border-top: 1px solid #000000;
+}
+
+ul, ol {
+	list-style-position: inside;
+}
