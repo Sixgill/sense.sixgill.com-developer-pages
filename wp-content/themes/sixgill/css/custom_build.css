@@ -108,8 +108,7 @@ body, p {
 }
 
 .press-by-author {
-	color: #000000;
-	font-size: 18px;
+	color: #999999;
 }
 
 .single-post-title {
@@ -129,8 +128,9 @@ body, p {
 .blog-post-suptitle {
 	font-weight: bold;
 	margin-bottom: 0px;
-	color: #000000;
-	font-size: 18px;
+	color: #b8b8b8;
+	/*color: #000000;
+	font-size: 18px;*/
 	line-height: 1em !important;
 }
 
@@ -1683,4 +1683,3 @@ ul:not([class]), ol:not([class]) {
 			text-align: center;
 		}
 }
-                                   
