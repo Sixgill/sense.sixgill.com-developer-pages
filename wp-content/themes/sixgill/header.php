@@ -64,15 +64,15 @@
 
 			<div id="header-wrap">
 
-				<div class="container clearfix">
-
-					<div id="primary-menu-trigger" class="tright" style="border:0px solid #FF0004; width:100%;">
-						<img id="show-menu-icon" class="" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" height="100%" alt=""/>
-						<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" height="100%" alt=""/>
-					</div>
+				<div class="container clearfix menu-container">
 
 					<div id="logo" class="noborder nopadding nomargin">
 						<a href="/" class="logoSIXGILL"></a>
+					</div>
+
+					<div id="primary-menu-trigger" class="tright">
+						<img id="show-menu-icon" class="" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" height="100%" alt=""/>
+						<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" height="100%" alt=""/>
 					</div>
 
 					<!-- Primary Navigation -->
