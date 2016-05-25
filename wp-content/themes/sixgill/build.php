@@ -12,16 +12,16 @@ if($_SERVER['SERVER_NAME']=="dev-sixgill.pantheonsite.io") {
 	$path = getCurrentDir();
 
 	$jsResultFile = $path."/wp-content/themes/sixgill/js/custom_build.js";
-	$jsSource =array($path."/wp-content/themes/sixgill/js/custom/*.{js, JS}");
+	$jsSource = array($path."/wp-content/themes/sixgill/js/custom/*.{js, JS}");
 
 	$cssResultFile = $path."/wp-content/themes/sixgill/css/custom_build.css";
 	$cssSource = array(
-		$path."/wp-content/themes/sixgill/css/custom/all_*",
-		$path."/wp-content/themes/sixgill/css/custom/desktop_*",
-		$path."/wp-content/themes/sixgill/css/custom/tablet_*",
-		$path."/wp-content/themes/sixgill/css/custom/mobile_portrait_[A-z]*.css",
-		$path."/wp-content/themes/sixgill/css/custom/mobile_landscape_[A-z]*.css",
-		$path."/wp-content/themes/sixgill/css/custom/mobile_portrait_landscape_[A-z]*.css",
+		$path."/wp-content/themes/sixgill/css/custom/all_{general,blog,company,home,solutions,resources,tech,press,legal,products}.css",
+		$path."/wp-content/themes/sixgill/css/custom/desktop_{general,blog,company,home,solutions,resources,tech,press,legal,products}.css",
+		$path."/wp-content/themes/sixgill/css/custom/tablet_{general,blog,company,home,solutions,resources,tech,press,legal,products}.css",
+		$path."/wp-content/themes/sixgill/css/custom/mobile_portrait_{general,blog,company,home,solutions,resources,tech,press,legal,products}.css",
+		$path."/wp-content/themes/sixgill/css/custom/mobile_landscape_{general,blog,company,home,solutions,resources,tech,press,legal,products}.css",
+		$path."/wp-content/themes/sixgill/css/custom/mobile_portrait_landscape_{general,blog,company,home,solutions,resources,tech,press,legal,products}.css",
 		$path."/wp-content/themes/sixgill/css/custom/tablet_and_mobile.css",
 		$path."/wp-content/themes/sixgill/css/custom/custom_resolutions.css"
 	);
