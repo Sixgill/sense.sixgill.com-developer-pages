@@ -55,10 +55,22 @@ class MC4WP_Ecommerce_Helper {
 	 * @return string
 	 */
 	private function get_untracked_order_sql( $columns = 'DISTINCT p.ID' ) {
+
+		$post_types = array( 'edd_payment', 'shop_order' );
+		$order_statuses = array( 'wc-completed', 'publish' );
+
+		/**
+		 * Filters the order statuses to send to MailChimp
+		 *
+		 * @param array $order_statuses
+		 */
+		$order_statuses = apply_filters( 'mc4wp_ecommerce360_order_statuses', $order_statuses );
+
+		// generate the SQL string (unprepared)
 		$sql = "SELECT {$columns} FROM {$this->db->posts} p";
 		$sql .= " LEFT JOIN {$this->db->postmeta} pm ON pm.post_id = p.ID";
-		$sql .= " WHERE p.post_type IN ( 'edd_payment', 'shop_order' )";
-		$sql .= " AND p.post_status IN ( 'wc-completed', 'publish' )";
+		$sql .= sprintf( " WHERE p.post_type IN ( %s )", "'" . join( "', '", $this->db->_escape( $post_types ) ) . "'" );
+		$sql .= sprintf( " AND p.post_status IN ( %s )", "'" . join( "', '", $this->db->_escape( $order_statuses ) ) . "'" );
 
 		// Meta key to store whether order was tracked should not exist
 		$sql .= " AND NOT EXISTS (";
