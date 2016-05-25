@@ -1459,10 +1459,6 @@ ul:not([class]), ol:not([class]) {
 		height: 300px;
 	}
 
-	.hide-landscape-mobile {
-		display: none;
-	}
-
 	.global-social-buttons-container {
 		position: static;
 	}
@@ -1554,13 +1550,21 @@ ul:not([class]), ol:not([class]) {
 		display: inline-block;
 	}
 
-	 .menu-container {
-		 width: 100% !important;
-	 }
+	.menu-container {
+		width: 100% !important;
+	}
 
-	 .hr-home-sup-title {
-	 	max-width: 600px;
-	 }
+	.hr-home-sup-title {
+		max-width: 600px;
+	}
+
+	.hide-landscape-mobile {
+		display: none;
+	}
+
+	.no-mobile-scroll {
+		overflow: hidden;
+	}
 }
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {
