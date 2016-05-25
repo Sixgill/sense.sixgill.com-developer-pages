@@ -87,10 +87,10 @@ jQuery(function($) {
 	});
 });
 jQuery(function($) {
-	var showFlag = false;
+	window.menuShowFlag = false;
 
 	$('#primary-menu-trigger,#overlay-menu-close').click(function() {
-		if(showFlag) {
+		if(window.menuShowFlag) {
 			$( '#menu-background' ).fadeTo(500, 0, function() {
 				$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			});
@@ -100,7 +100,7 @@ jQuery(function($) {
 			$( '#primary-menu, #menu-background' ).fadeTo(500, 1);
 		}
 
-		showFlag = !showFlag;
+		window.menuShowFlag = !window.menuShowFlag;
 		$( '#show-menu-icon, #close-menu-icon' ).toggleClass("hide");
 		return false;
 	});
@@ -266,4 +266,11 @@ jQuery(function($){
  			}, false);
  		}
  	}
+});
+jQuery(function($) {
+	$(window).resize(function() {
+		if(window.menuShowFlag) {
+			$('#primary-menu-trigger').trigger('click');
+		}
+	});
 });
