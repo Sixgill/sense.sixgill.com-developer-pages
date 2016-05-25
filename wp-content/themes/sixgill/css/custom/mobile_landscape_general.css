@@ -8,6 +8,10 @@
 		height: 300px;
 	}
 
+	.hide-landscape-mobile {
+		display: none;
+	}
+
 	.global-social-buttons-container {
 		position: static;
 	}

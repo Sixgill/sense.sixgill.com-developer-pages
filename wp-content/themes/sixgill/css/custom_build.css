@@ -1480,11 +1480,11 @@ ul:not([class]), ol:not([class]) {
 	}
 }
 /* Blog Mobile landscape styles */
-@media (max-width: 667px) and (orientation: landscape) {
+@media (max-width: 800px) and (orientation: landscape) {
 
 }
 /* Solutions mobile landscape styles */
-@media (max-width: 667px) and (orientation: landscape) {
+@media (max-width: 800px) and (orientation: landscape) {
 	.solution-image-title-container {
 		text-align: center;
 	}
@@ -1494,11 +1494,11 @@ ul:not([class]), ol:not([class]) {
 	}
 }
 /* Resources mobile landscape styles */
-@media (max-width: 667px) and (orientation: landscape) {
+@media (max-width: 800px) and (orientation: landscape) {
 
 }
 /* General mobile portrait and landscape styles */
-@media (max-width: 667px) and (orientation: landscape), screen and (max-width: 500px) {
+@media (max-width: 800px) and (orientation: landscape), screen and (max-width: 500px) {
 	.shareIcons-mobile {
     display: block;
   }
@@ -1517,13 +1517,13 @@ ul:not([class]), ol:not([class]) {
 	}
 }
 /* Blog mobile portrait and landscape styles */
-@media (max-width: 667px) and (orientation: landscape), screen and (max-width: 500px) {
+@media (max-width: 800px) and (orientation: landscape), screen and (max-width: 500px) {
 	.blog-container {
 		padding-top: 20px;
 	}
 }
 /* Resources mobile portrait and landscape styles */
-@media (max-width: 667px) and (orientation: landscape), screen and (max-width: 500px) {
+@media (max-width: 800px) and (orientation: landscape), screen and (max-width: 500px) {
 
 }
 /* Portrait tablets & mobiles */
