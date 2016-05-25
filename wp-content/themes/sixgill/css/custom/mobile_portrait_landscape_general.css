@@ -1,5 +1,8 @@
 /* General mobile portrait and landscape styles */
 @media (max-width: 667px) and (orientation: landscape), screen and (max-width: 500px) {
+	.shareIcons-mobile {
+    display: block;
+  }
 
 	.footer-links-block > a {
 		width: 100%;
@@ -13,16 +16,4 @@
 		height:44px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg");
 	}
-    
-    .shareIcons-desktop {
-        display: none;
-    }
-    
-    .shareIcons-tablet {
-        display: none;
-    }
-    
-    .shareIcons-mobile {
-        display: block;
-    }
 }
