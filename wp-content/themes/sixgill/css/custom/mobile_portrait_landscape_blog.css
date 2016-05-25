@@ -1,5 +1,5 @@
 /* Blog mobile portrait and landscape styles */
-@media (max-width: 667px) and (orientation: landscape), screen and (max-width: 500px) {
+@media (max-width: 800px) and (orientation: landscape), screen and (max-width: 500px) {
 	.blog-container {
 		padding-top: 20px;
 	}
