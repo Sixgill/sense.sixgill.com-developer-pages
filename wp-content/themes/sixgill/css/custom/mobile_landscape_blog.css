@@ -1,4 +1,26 @@
 /* Blog Mobile landscape styles */
-@media (max-width: 667px) and (orientation: landscape) {
-
+@media (max-width: 800px) and (orientation: landscape) {
+	.topShareBottonMobile {
+		display: block;
+	}
+    
+    #aside-blog {
+        display: none;
+    }
+    
+    .shareIcons-mobile {
+        display: block;
+    }
+    
+    .post-blog {
+        margin-top: 150px;
+    }
+    
+    .shareIcons-desktop {
+        display: none;
+    }
+    
+    .shareIcons-tablet {
+        display: none;
+    }
 }

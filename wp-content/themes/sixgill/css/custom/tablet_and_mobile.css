@@ -22,19 +22,13 @@
 		display: inline-block;
 	}
 
-	.menu-container {
-		width: 100% !important;
-	}
+	 .menu-container {
+		 width: 100% !important;
+	 }
 
-	.hr-home-sup-title {
-		max-width: 600px;
-	}
-
-	.hide-landscape-mobile {
-		display: none;
-	}
-
-	.no-mobile-scroll {
-		overflow: hidden;
-	}
+	 .hr-home-sup-title {
+	 	max-width: 600px;
+	 }
+    
+    
 }
