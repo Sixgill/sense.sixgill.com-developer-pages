@@ -119,7 +119,7 @@ function Loader(formElement) {
 	var button, originalButton, loadingInterval;
 
 	function start() {
-		button = formElement.querySelector('input[type="submit"]');
+		button = formElement.querySelector('input[type="submit"], button[type="submit"]');
 		if( button ) {
 
 			originalButton = button.cloneNode(true);
@@ -127,24 +127,25 @@ function Loader(formElement) {
 			// loading text
 			var loadingText = button.getAttribute('data-loading-text');
 			if( loadingText ) {
-				button.value = loadingText;
+				setText(button, loadingText);
 				return;
 			}
 
 			// Show AJAX loader
 			var styles = window.getComputedStyle( button );
 			button.style.width = styles.width;
-			button.value = loadingCharacter;
+			setText(button, loadingCharacter);
 			loadingInterval = window.setInterval( function() {
 
 				// count chars, start over at 5
 				// @todo start over once at 60% of button width
-				if( button.value.length >= 5 ) {
-					button.value = loadingCharacter;
+				var text = getText( button );
+				if( text.length >= 5 ) {
+					setText(button, loadingCharacter);
 					return;
 				}
 
-				button.value += ' ' + loadingCharacter;
+				setText( button, text + " " + loadingCharacter );
 			}, 500 );
 		} else {
 			formElement.style.opacity = '0.5';
@@ -154,12 +155,21 @@ function Loader(formElement) {
 	function stop() {
 		if( button ) {
 			button.style.width = originalButton.style.width;
-			button.value = originalButton.value;
+			var text = getText(originalButton);
+			setText(button, text);
 			window.clearInterval(loadingInterval);
 		} else {
 			formElement.style.opacity = '';
 		}
 
+	}
+
+	function getText(button) {
+		return button.innerHTML ? button.innerHTML : button.value;
+	}
+
+	function setText(button, text) {
+		button.innerHTML ? button.innerHTML = text : button.value = text;
 	}
 
 	return {

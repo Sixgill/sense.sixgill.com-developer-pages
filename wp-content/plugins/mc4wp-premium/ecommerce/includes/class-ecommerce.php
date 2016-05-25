@@ -74,6 +74,16 @@ class MC4WP_Ecommerce {
 	 * @return boolean
 	 */
 	protected function add_order_data( array $data ) {
+
+		/**
+		 * Filters the order data for all orders before it is sent to MailChimp.
+		 *
+		 * @param array $data
+		 * @param int $order_id
+		 */
+		$data = apply_filters( 'mc4wp_ecommerce360_order_data', $data );
+
+
 		$api = $this->get_api();
 		$success = $api->add_ecommerce_order( $data );
 
@@ -209,7 +219,7 @@ class MC4WP_Ecommerce {
 		);
 
 		$data = array_merge( $this->get_general_order_data(), $data );
-
+		
 		return $this->add_order_data( $data );
 	}
 

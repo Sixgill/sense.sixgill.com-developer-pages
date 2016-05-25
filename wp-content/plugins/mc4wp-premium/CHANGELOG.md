@@ -1,6 +1,17 @@
 Changelog
 ==========
 
+##### 3.1.7 - May 23, 2016
+
+**Fixes**
+
+- AJAX loading animation now works with `<button>` elements too.
+
+**Additions**
+
+- Filter: `mc4wp_ecommerce360_order_data`, to modify order data before it is sent to MailChimp.
+- Filter: `mc4wp_ecommerce360_order_statuses`, specifies which order statuses are sent to MailChip.
+
 ##### 3.1.6 - May 10, 2016
 
 **Fixes**
