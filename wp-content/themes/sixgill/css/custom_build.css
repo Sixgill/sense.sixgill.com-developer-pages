@@ -298,6 +298,14 @@ section {
 #slider {
 	z-index: 1;
 }
+
+hr:not([class]) {
+	border-top: 1px solid #000000;
+}
+
+ul, ol {
+	list-style-position: inside;
+}
 .hr-home-sub-title {
 	max-width: 650px;
 }
@@ -793,7 +801,6 @@ section {
 	.subscribe-input-container {
 		overflow: hidden;
 		width: 100%;
-		padding-top: 5px;
 		padding-right: 15px;
 		padding-left: 15px;
 	}
