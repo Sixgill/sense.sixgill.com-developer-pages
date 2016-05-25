@@ -306,6 +306,10 @@ hr:not([class]) {
 ul, ol {
 	list-style-position: inside;
 }
+
+ul:not([class]), ol:not([class]) {
+	color: #000;
+}
 .hr-home-sub-title {
 	max-width: 650px;
 }
