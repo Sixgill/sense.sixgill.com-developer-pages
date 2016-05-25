@@ -1,11 +1,15 @@
 /* General Mobile landscape styles */
-@media (max-width: 800px) and (max-height: 400px) {
+@media (max-width: 667px) and (max-height: 400px) {
 	#primary-menu-trigger {
 		top: 10px;
 	}
 
 	nav#primary-menu > ul {
 		height: 300px;
+	}
+
+	.hide-landscape-mobile {
+		display: none;
 	}
 
 	.global-social-buttons-container {
@@ -27,5 +31,4 @@
 	.btnInside {
 		width: 400px;
 	}
-    
 }
