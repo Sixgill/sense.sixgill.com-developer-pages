@@ -56,12 +56,6 @@ if( !$color OR !checkhexcolor( $color ) ) {
 
 
 a,
-h1 > span:not(.nocolor),
-h2 > span:not(.nocolor),
-h3 > span:not(.nocolor),
-h4 > span:not(.nocolor),
-h5 > span:not(.nocolor),
-h6 > span:not(.nocolor),
 .header-extras li .he-text span,
 #primary-menu ul li:hover > a,
 #primary-menu ul li.current > a,
