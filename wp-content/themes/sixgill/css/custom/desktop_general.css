@@ -6,6 +6,7 @@
 
 	#primary-menu {
 		margin-left: 16px;
+		opacity: 1 !important;
 	}
 
 	.marginShareButton {
