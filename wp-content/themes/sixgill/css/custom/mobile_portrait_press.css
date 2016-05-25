@@ -1,0 +1,6 @@
+/* Press mobile portrait styles */
+@media only screen and (max-width: 500px) {
+	.press-post-title {
+		color: #444;
+	}
+}

@@ -18,7 +18,7 @@
                     </ul>
                 </div>
 
-				<div id="press-text-post" class="col_full" style="text-align: left; margin-bottom: 30px; z-index: 200; margin-top:70px">
+				<div id="press-text-post" class="col_full post-blog">
 
                     <?php if ( has_post_thumbnail()) { ?>
 
@@ -31,7 +31,7 @@
 				        </div>
                         <?php include(locate_template('social_buttons.php')); ?>
                     </div>
-                    
+
                     <div class="shareIcons-mobile">
                        <h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000; margin-bottom: 10px;"><?php echo $post->post_title; ?></h3>
                         <div id="background-image-header" class="swiper-slide" style="  background-position: center; height: 350px; width:100%;     margin-bottom: 30px;">
@@ -39,6 +39,7 @@
 				        </div>
                         
                         <?php include(locate_template('social_buttons.php')); ?>
+
                     <p id="press-author-post" style="font-size: 20px; font-weight: normal; color:#000; margin-bottom: 0px; line-height: 1;"><?php echo the_time('F j, Y'); ?></p>
                     <p id="press-author-post" style="font-size: 20px; font-weight: normal; color:#999999; line-height: 1; "> Post by <?php echo get_field('author'); ?></p>
                     </div>
@@ -49,7 +50,7 @@
                         <?php include(locate_template('social_buttons.php')); ?>
                         <h4 id="press-author-post" class="press-by-author author-with-date-blogPost"><?php echo the_time('F j, Y'); ?> | Post by <?php echo get_field('author'); ?></h4>
                     </div>
-                    
+
                     <div class="shareIcons-mobile">
                          <h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000; margin-bottom: 30px;"><?php echo $post->post_title; ?></h3>
                         

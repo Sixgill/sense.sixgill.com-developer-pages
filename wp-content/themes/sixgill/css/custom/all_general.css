@@ -85,6 +85,7 @@ body, p {
 	font-weight:normal;
 	padding:0px 20px;
 }
+
 .footer_Copy {
 	font-size: 14px;
 	color:#FFF;
@@ -92,12 +93,6 @@ body, p {
 
 .my_headerBoxSolution {
 	margin-bottom: 30px;
-}
-
-#products {
-	background-image: url('/wp-content/themes/sixgill/images/td/home/00_BlueShape.jpg');
-	background-size:cover;
-	height:171px;
 }
 
 .press-date, .press-by-author, .single-post-title, .single-post-subtitle {
@@ -135,16 +130,8 @@ body, p {
 	font-weight: bold;
 	margin-bottom: 0px;
 	color: #000000;
-    font-size: 18px;
+	font-size: 18px;
 	line-height: 1em !important;
-}
-
-.blog-container {
-	padding-top: 0px;
-	margin-left: 5%;
-	margin-top: 40px;
-	margin-right: 10%;
-	max-width: none;
 }
 
 .widget_mc4wp_form_widget {

@@ -17,7 +17,8 @@
                         <li><a href="mailto:?subject=<?php the_title(); ?> &amp;body=<?php the_permalink(); ?>" target="_blank" data-route="false" class="page-action email" data-social-type="vertical" data-social-tool="email"><img src="/wp-content/themes/sixgill/images/td/blog/social_Email.svg" alt="Email"  id="image-linkedin-share" class="shareButton-blog"></a></li>
                     </ul>
                 </div>
-				<div id="press-text-post" class="col_full" style="text-align: left; margin-bottom: 30px; z-index: 200; margin-top:70px">
+				<div id="press-text-post" class="col_full press-post">
+
 					<?php if ( has_post_thumbnail()) { ?>
 						<div class="shareIcons-desktop-tablet">
 							<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000"><?php echo $post->post_title; ?></h3>

@@ -1,4 +1,4 @@
-/* Solutions mobile styles */
+/* Solutions mobile portrait styles */
 @media only screen and (max-width: 500px) {
 	.solution-subpage-container {
 		margin-top: 50px;
@@ -36,5 +36,17 @@
 
 	.solutions-subpage-text ol {
 		padding-left: 30px;
+	}
+
+	.my_headerBoxSolution {
+		display: none;
+	}
+
+	.my_boxSolution_title {
+		padding-left: 0px;
+	}
+
+	.my_boxSolution_title {
+		border:0px;
 	}
 }
