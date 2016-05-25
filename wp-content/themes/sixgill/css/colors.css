@@ -13,12 +13,6 @@
 
 
 a,
-h1 > span:not(.nocolor),
-h2 > span:not(.nocolor),
-h3 > span:not(.nocolor),
-h4 > span:not(.nocolor),
-h5 > span:not(.nocolor),
-h6 > span:not(.nocolor),
 .header-extras li .he-text span,
 #primary-menu ul li:hover > a,
 #primary-menu ul li.current > a,
@@ -131,8 +125,8 @@ input.switch-toggle-flat:checked + label,
 input.switch-toggle-flat:checked + label:after,
 input.switch-toggle-round:checked + label:before,
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-themecolor,
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-themecolor { 
-    //background-color: #004FC8; 
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-themecolor {
+    //background-color: #004FC8;
 }
 
 .bgcolor,
