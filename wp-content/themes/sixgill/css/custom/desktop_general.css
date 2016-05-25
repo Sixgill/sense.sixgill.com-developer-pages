@@ -6,6 +6,7 @@
 
 	#primary-menu {
 		margin-left: 16px;
+		opacity: 1 !important;
 	}
 
 	.marginShareButton {
@@ -17,9 +18,9 @@
 
 	}
 
-	/*.subscribe-element {
+	.subscribe-element {
 		display: block;
-	}*/
+	}
 
 	.slider-caption.slider-caption-center {
 		max-width: 900px;
