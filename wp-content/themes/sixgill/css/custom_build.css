@@ -508,6 +508,10 @@ ul:not([class]) li {
 .press-block-container {
 	margin-top: 80px;
 }
+
+.hidden-press-contact {
+	margin-top: 50px !important;
+}
 /* General desktop styles */
 @media only screen and (min-width : 992px) {
 	.global-social-buttons-list {
