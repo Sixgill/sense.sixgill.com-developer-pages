@@ -29,5 +29,5 @@ if ( $query->have_posts() ) {
 		Silence is golden
 	<?php
 }
-
+wp_reset_postdata();
 ?>

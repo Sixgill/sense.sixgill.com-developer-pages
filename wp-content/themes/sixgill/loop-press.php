@@ -26,4 +26,5 @@ if ( $query->have_posts() ) {
 <?php
 	}
 }
+wp_reset_postdata();
 ?>
