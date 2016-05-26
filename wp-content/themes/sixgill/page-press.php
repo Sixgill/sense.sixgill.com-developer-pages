@@ -14,8 +14,18 @@
 <section id="content">
 	<div class="content-wrap" style="padding:0px;">
 		<div class="container-fluid center clearfix my_containerSolution" style="padding-top: 0px;">
-			<div class=" text-left col_press" align="left" style="padding-bottom:55px;">
-				<?php dynamic_sidebar( 'sixgill-press-list' ); ?>
+			<div class=" text-left col_press" align="left">
+
+				<div class="press-block-container">
+					<h4 class="press-block-title">PRESS RELEASES</h4>
+					<?php get_template_part( 'loop-press'); ?>
+				</div>
+
+				<div class="press-block-container">
+					<h4 class="press-block-title">NEWS</h4>
+					<?php get_template_part( 'loop-news'); ?>
+				</div>
+
 			</div>
 			<div class="col_two_fifth col_last widget hidden-press-contact" align="text-align: center;" style="padding:0px 0px 0px 0px; background-color: #C0C0C5; float: right;">
 					<div class="title-press-contact">
