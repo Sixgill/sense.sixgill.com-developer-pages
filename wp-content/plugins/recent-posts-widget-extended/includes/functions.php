@@ -197,7 +197,7 @@ function rpwe_get_recent_posts( $args = array() ) {
 
 						if ( $args['excerpt'] ) :
 							$html .= '<div class="press-preview">';
-								$html .= wp_trim_words( apply_filters( 'rpwe_excerpt', get_the_excerpt() ), $args['length'], ' &hellip;' );
+								$html .= wp_trim_words( apply_filters( 'rpwe_default_query_arguments', get_the_excerpt() ), $args['length'], ' &hellip;' );
 								if ( $args['readmore'] ) :
 									$html .= '<p>';
 									$html .= '<a href="' . esc_url( get_permalink() ) . '" class="more-link">' . $args['readmore_text'] . '</a>';

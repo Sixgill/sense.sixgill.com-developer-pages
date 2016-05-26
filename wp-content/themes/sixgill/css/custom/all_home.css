@@ -38,3 +38,8 @@
 	background-size:cover;
 	height:171px;
 }
+
+.hidden-bottom-imageDiagram {
+	padding-left: 0px;
+	padding-right: 0px;
+}
