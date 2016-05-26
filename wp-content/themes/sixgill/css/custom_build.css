@@ -232,6 +232,11 @@ ul:not([class]) li {
 	list-style-image: url(/wp-content/themes/sixgill/images/td/bullet_green.png);
 	margin-bottom: 5px;
 }
+
+.no-horizontal-padding {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
 }

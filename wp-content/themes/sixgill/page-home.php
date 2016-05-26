@@ -195,12 +195,11 @@
 						<img id="home-mobile-image-nyjets" src="/wp-content/themes/sixgill/images/td/home/logos/logo_nyjets.jpg" alt="" />
 					</div>
 				</div>
-
-				<div class="home-diagram hidden-bottom-imageDiagram max-width-720">
-					<a href="/company/" id="home-button-image-company" class="button button-large nobottommargin btnCompany">
-						VIEW COMPANY
-					</a>
-				</div>
+			</div>
+			<div class="home-diagram hidden-bottom-imageDiagram max-width-720 no-horizontal-padding">
+				<a href="/company/" id="home-button-image-company" class="button button-large nobottommargin btnCompany">
+					VIEW COMPANY
+				</a>
 			</div>
 		</div>
 	</section>
