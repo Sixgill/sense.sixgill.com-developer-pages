@@ -704,6 +704,11 @@ ul:not([class]) li {
 		padding: 85px 30px 50px 30px;
 		height:380px;
 	}
+
+	#logo {
+		float: left !important;
+		margin-bottom: 180px !important;
+	}
 }
 /* Solutions desktop styles */
 @media only screen and (min-width : 992px) {
