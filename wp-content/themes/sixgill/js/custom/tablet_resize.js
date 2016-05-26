@@ -1,6 +1,6 @@
 jQuery(function($) {
 	$(window).resize(function() {
-		if(window.menuShowFlag) {
+		if(window.menuShowFlag && $(window).width()>1000) {
 			$('#primary-menu-trigger').trigger('click');
 		}
 

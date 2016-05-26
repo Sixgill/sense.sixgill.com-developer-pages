@@ -1524,7 +1524,9 @@ ul:not([class]), ol:not([class]) {
 }
 /* Blog Mobile landscape styles */
 @media (max-width: 800px) and (orientation: landscape) {
-
+	.subscribe-block-tablet-mobile {
+		height: 120px;
+	}
 }
 /* Solutions mobile landscape styles */
 @media (max-width: 800px) and (orientation: landscape) {
@@ -1744,4 +1746,20 @@ ul:not([class]), ol:not([class]) {
 		.footer_Learn, .footer_Schedule {
 			text-align: center;
 		}
+}
+
+/* Small lanscape screen */
+@media (max-width: 800px) and (orientation: landscape) {
+	.subscribe-input-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.subscribe-email {
+		width: 100%;
+	}
+
+	.subscribe-block-tablet-mobile {
+		padding-top: 10px;
+	}
 }
