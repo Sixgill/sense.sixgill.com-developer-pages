@@ -1,0 +1,6 @@
+/* General Mobile landscape styles */
+@media (max-width: 1000px) and (orientation: landscape) {
+	.press-post {
+		padding-top: 16px;
+	}
+}
