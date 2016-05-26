@@ -468,6 +468,31 @@ ul:not([class]), ol:not([class]) {
 .resource-link {
 	color: #999999;
 }
+.press-post-source {
+	font-size: 16px;
+	font-weight: bold;
+	color: #2e2e2e;
+}
+
+.press-post-title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #2e2e2e;
+}
+
+.press-post-suptitle {
+	line-height: 1.5em !important;
+}
+
+.press-block-title {
+	font-size: 24px;
+	color:#004CBF;
+	font-weight:bold;
+}
+
+.press-block-container {
+	margin-top: 80px;
+}
 /* General desktop styles */
 @media only screen and (min-width : 992px) {
 	.global-social-buttons-list {
@@ -762,7 +787,9 @@ ul:not([class]), ol:not([class]) {
 }
 /* Press desktop styles */
 @media only screen and (min-width : 992px) {
-
+	.col_press {
+		padding-bottom:55px;
+	}
 }
 /* Products desktop styles */
 @media only screen and (min-width : 992px) {
@@ -1101,6 +1128,18 @@ ul:not([class]), ol:not([class]) {
 }
 /* Press tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
+	.press-block-title {
+		font-size: 18px;
+		color:#383838;
+	}
+
+	.press-block-container:first-child {
+		margin-top: 18px;
+	}
+
+	.press-block-title {
+		margin-bottom: 20px;
+	}
 
 }
 /* Products tablet styles */
@@ -1529,6 +1568,21 @@ ul:not([class]), ol:not([class]) {
 /* Resources mobile portrait and landscape styles */
 @media (max-width: 800px) and (orientation: landscape), screen and (max-width: 500px) {
 
+}
+/* Press mobile portrait and landscape styles */
+@media (max-width: 800px) and (orientation: landscape), screen and (max-width: 500px) {
+	.press-block-container {
+		margin-top: 40px;
+	}
+
+	.press-block-title {
+		margin-bottom: 20px;
+	}
+
+	.press-block-title {
+		font-size: 18px;
+		color:#383838;
+	}
 }
 /* Portrait tablets & mobiles */
 @media (max-width: 900px) {
