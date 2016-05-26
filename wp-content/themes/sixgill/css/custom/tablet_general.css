@@ -142,9 +142,13 @@
 		display:none;
 	}
 
-	.shareIcons-desktop-tablet {
-		display: block;
+	.shareIcons-desktop {
+		display: none;
 	}
+    
+    .shareIcons-tablet {
+         display: block;
+     }
 
 	.shareIcons-mobile {
 		display: none;
