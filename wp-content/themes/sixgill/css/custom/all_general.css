@@ -238,7 +238,6 @@ ul:not([class]) li {
 	padding-right: 0px !important;
 }
 
-#logo {
-	float: left !important;
-	margin-bottom: 20px !important;
+#primary-menu a {
+	z-index: 2;
 }
