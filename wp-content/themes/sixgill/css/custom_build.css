@@ -237,6 +237,10 @@ ul:not([class]) li {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
+
+#primary-menu a {
+	z-index: 2;
+}
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
 }
@@ -1665,6 +1669,10 @@ ul:not([class]) li {
 
 	.no-mobile-scroll {
 		overflow: hidden;
+	}
+
+	.global-social-buttons-list {
+		z-index: -1;
 	}
 }
 /* For laptops: */
