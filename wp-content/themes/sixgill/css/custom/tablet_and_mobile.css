@@ -37,4 +37,8 @@
 	.no-mobile-scroll {
 		overflow: hidden;
 	}
+
+	.global-social-buttons-list {
+		z-index: -1;
+	}
 }
