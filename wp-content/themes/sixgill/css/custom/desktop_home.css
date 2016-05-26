@@ -15,6 +15,7 @@
 	}
 
 	#logo {
+		float: left !important;
 		margin-bottom: 20px !important;
 	}
 }
