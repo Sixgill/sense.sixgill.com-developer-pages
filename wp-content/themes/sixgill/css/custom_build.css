@@ -1667,8 +1667,8 @@ ul:not([class]) li {
 		overflow: hidden;
 	}
 
-	.global-social-buttons-list {
-		z-index: -1;
+	.global-social-buttons-separator {
+		margin-top: 0px;
 	}
 }
 /* For laptops: */
