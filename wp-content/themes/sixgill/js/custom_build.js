@@ -110,36 +110,30 @@ jQuery(function($) {
     var a = document.querySelector('#aside-blog');
     var footer = $('#footer').height(); //footer element
     var subfooter = $("#subfooter").height();// black strip for the footer
-    var heightIcon = $( '#aside-blog' ).height() + parseInt($('#aside-blog').css('margin-top'),10); 
+    var heightIcon = $( '#aside-blog' ).height() + parseInt($('#aside-blog').css('margin-top'),10); //share button
 
     var scrollHeight = Math.max(
         document.body.scrollHeight, document.documentElement.scrollHeight,
         document.body.offsetHeight, document.documentElement.offsetHeight,
         document.body.clientHeight, document.documentElement.clientHeight
-    ); //высота страницы
-    
-    
+    ); //height page
 
-    var height_without_footer = scrollHeight - footer - subfooter;
-    var scrollTop2 = window.pageYOffset || document.documentElement.scrollTop;
+    var heightWithoutFooter = scrollHeight - footer - subfooter;
+    var сurrentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     $(document).scroll(function () {
-
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-
-        if(height_without_footer < scrollTop + heightIcon){
+        if(heightWithoutFooter < scrollTop + heightIcon){
             console.log("Yes");
             a.style.position = 'absolute';
-            a.style.top =  scrollTop2 +'px'
+            a.style.top =  сurrentScroll +'px'
         }
         else {
          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-         scrollTop2 = window.pageYOffset || document.documentElement.scrollTop;
+         сurrentScroll = window.pageYOffset || document.documentElement.scrollTop;
          a.style.position = 'fixed';
          a.style.top =  'initial';
-
-
         }
     });
 });
