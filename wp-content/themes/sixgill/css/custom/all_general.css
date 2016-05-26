@@ -237,8 +237,3 @@ ul:not([class]) li {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
-
-#logo {
-	float: left !important;
-	margin-bottom: 20px !important;
-}
