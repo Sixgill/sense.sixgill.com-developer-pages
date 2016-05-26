@@ -1666,6 +1666,10 @@ ul:not([class]) li {
 	.no-mobile-scroll {
 		overflow: hidden;
 	}
+
+	.global-social-buttons-list {
+		z-index: -1;
+	}
 }
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {
