@@ -74,16 +74,6 @@ function getChindrenByParentSlug($slug){
 function sixgill_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => __( 'Press release list page widget', 'mk' ),
-		'id'            => 'sixgill-press-list',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 style="font-size:30px; color:#004CBF; font-weight:bold;">',
-		'after_title'   => '</h4>',
-	) );
-
-	register_sidebar( array(
 		'name'          => __( 'Company page latest press', 'mk' ),
 		'id'            => 'sixgill-company-latest-press',
 		'description'   => '',

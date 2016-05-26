@@ -1,4 +1,16 @@
 /* Press tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
+	.press-block-title {
+		font-size: 18px;
+		color:#383838;
+	}
+
+	.press-block-container:first-child {
+		margin-top: 18px;
+	}
+
+	.press-block-title {
+		margin-bottom: 20px;
+	}
 
 }

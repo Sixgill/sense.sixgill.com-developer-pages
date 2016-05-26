@@ -1,4 +1,6 @@
 /* Press desktop styles */
 @media only screen and (min-width : 992px) {
-
+	.col_press {
+		padding-bottom:55px;
+	}
 }
