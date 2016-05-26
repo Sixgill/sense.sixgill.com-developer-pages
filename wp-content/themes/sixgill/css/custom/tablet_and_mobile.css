@@ -37,8 +37,4 @@
 	.no-mobile-scroll {
 		overflow: hidden;
 	}
-
-	#primary-menu > ul > a, #primary-menu > ul > a > div {
-		z-index: 2;
-	}
 }
