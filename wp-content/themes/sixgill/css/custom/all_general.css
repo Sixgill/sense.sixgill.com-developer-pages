@@ -237,3 +237,7 @@ ul:not([class]) li {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
+
+#primary-menu a {
+	z-index: 2;
+}
