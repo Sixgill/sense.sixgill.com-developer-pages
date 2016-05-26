@@ -356,10 +356,6 @@ ul:not([class]) li {
 	height:171px;
 }
 
-.display-block {
-	display: block;
-}
-
 .hidden-bottom-imageDiagram {
 	padding-left: 0px;
 	padding-right: 0px;
