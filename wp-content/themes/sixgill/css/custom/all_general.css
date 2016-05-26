@@ -227,3 +227,8 @@ ul, ol {
 ul:not([class]), ol:not([class]) {
 	color: #000;
 }
+
+ul:not([class]) > li {
+	list-style-image: url(/wp-content/themes/sixgill/images/td/bullet_green.png);
+	margin-bottom: 5px;
+}
