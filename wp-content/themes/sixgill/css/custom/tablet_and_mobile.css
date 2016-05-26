@@ -38,7 +38,7 @@
 		overflow: hidden;
 	}
 
-	.global-social-buttons-list {
-		z-index: -1;
+	#primary-menu > ul > a, #primary-menu > ul > a > div {
+		z-index: 2;
 	}
 }
