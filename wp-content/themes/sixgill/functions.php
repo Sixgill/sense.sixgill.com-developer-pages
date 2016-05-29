@@ -125,9 +125,14 @@ function sixgill_widgets_init() {
 
 }
 
+add_filter('excerpt_more', function($more) {
+	return '...';
+});
+
 add_action( 'widgets_init', 'sixgill_widgets_init' );
 
 add_theme_support('post-thumbnails');
+add_theme_support('html5', array('search-form'));
 set_post_thumbnail_size(600, 315, false);
 add_image_size( 'spec_thumb', 1000, 350, true );
 add_image_size( 'solutions-thumbnails', 300, 650, false );

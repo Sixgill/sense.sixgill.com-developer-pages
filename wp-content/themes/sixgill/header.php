@@ -170,3 +170,6 @@
 					</div>
 				</div>
 			</header><!-- #header end -->
+        <div class="search-form-container">
+            <?php get_search_form(); ?>
+        </div>
