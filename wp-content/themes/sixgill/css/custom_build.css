@@ -938,9 +938,6 @@ ul:not([class]) li {
 		bottom: 0px;
 		width: 100%;
 		padding-bottom: 16px;
-		margin-left: -16px;
-		margin-right: -16px;
-		padding-right: 20px;
 	}
 
 	.menu-social-link {
@@ -970,7 +967,7 @@ ul:not([class]) li {
 	.shareIcons-desktop {
 		display: none;
 	}
-    
+
     .shareIcons-tablet {
          display: block;
      }
@@ -982,6 +979,21 @@ ul:not([class]) li {
 	.footer_Learn, .footer_Schedule {
 		width: 100%;
 		text-align: center;
+	}
+
+	#logo {
+		float: left;
+	}
+
+	#primary-menu > ul {
+		left: 0px;
+		top: 121px;
+		position: absolute;
+		width: 100%;
+	}
+
+	.menu-social-link:first-of-type {
+		padding-left: 0px !important;
 	}
 
 }
