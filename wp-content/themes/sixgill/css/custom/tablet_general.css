@@ -1,5 +1,5 @@
 /* General tablet styles */
-@media (min-width: 500px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 
 	.marginShareButton {
 		margin-left: 20px;
@@ -23,11 +23,6 @@
 	.global-social-buttons-separator {
 		margin-top: 60px;
 		margin-bottom: 18px;
-	}
-
-	.global-social-buttons-container {
-		text-align: center !important;
-		padding-bottom: 16px;
 	}
 
 	.hidden-top-imageDiagram {
@@ -108,7 +103,8 @@
 	}
 
 	.global-social-buttons-container {
-		text-align: center;
+		text-align: center !important;
+		padding-bottom: 16px;
 		position: fixed;
 		bottom: 0px;
 		width: 100%;
