@@ -1,5 +1,5 @@
 /* Solutions tablet styles */
-@media (min-width: 500px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 	.solution-subpage-container {
 		margin-top: 100px;
 		margin-left: 70px;
