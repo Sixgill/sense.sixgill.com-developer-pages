@@ -116,16 +116,7 @@
 		display:none;
 	}
 
-    
-     .shareIcons-desktop {
-         display: none;
-     }
-     
-     .shareIcons-tablet {
-         display: none;
-     }
-     
-     .post-blog {
-        margin-top: 70px;
-     }
+  .shareIcons-desktop-tablet {
+    display: none;
+  }
 }

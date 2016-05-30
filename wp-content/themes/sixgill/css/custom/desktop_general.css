@@ -105,13 +105,9 @@
 		width: 65%;
 	}
 
-	.shareIcons-desktop {
+	.shareIcons-desktop-tablet {
 		display: block;
 	}
-    
-    .shareIcons-tablet {
-         display: none;
-     }
 
 	.shareIcons-mobile {
 		display: none;

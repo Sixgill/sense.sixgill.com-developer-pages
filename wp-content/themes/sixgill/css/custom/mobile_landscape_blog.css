@@ -2,30 +2,5 @@
 @media (max-width: 1000px) and (orientation: landscape) {
 	.subscribe-block-tablet-mobile {
 		height: 120px;
-    }
-    
-    .topShareBottonMobile {
- 		display: block;
- 	}
-    
-    #aside-blog {
-         display: none;
-     }
-     
-     .shareIcons-mobile {
-         display: block;
-     }
-     
-     .post-blog {
-         margin-top: 0px;
-     }
-     
-     .shareIcons-desktop {
-         display: none;
-     }
-     
-     .shareIcons-tablet {
-         display: none;
-     }
-	
+	}
 }
