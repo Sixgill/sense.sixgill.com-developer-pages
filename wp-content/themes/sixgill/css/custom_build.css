@@ -623,9 +623,13 @@ ul:not([class]) li {
 		width: 65%;
 	}
 
-	.shareIcons-desktop-tablet {
+	.shareIcons-desktop {
 		display: block;
 	}
+    
+    .shareIcons-tablet {
+         display: none;
+     }
 
 	.shareIcons-mobile {
 		display: none;
@@ -648,7 +652,7 @@ ul:not([class]) li {
 		padding: 15px 20px 26px 20px;
 		text-align: center;
 		font-size: 18px;
-		width: 30%
+		width: 31%
 	}
 
 	.subscribe-block h4 {
@@ -690,7 +694,7 @@ ul:not([class]) li {
 	}
 
 	.post-blog {
-		margin-top:70px;
+		margin-top:30px;
 	}
 }
 /* Company desktop styles */
@@ -942,9 +946,6 @@ ul:not([class]) li {
 		bottom: 0px;
 		width: 100%;
 		padding-bottom: 16px;
-		margin-left: -16px;
-		margin-right: -16px;
-		padding-right: 20px;
 	}
 
 	.menu-social-link {
@@ -971,9 +972,13 @@ ul:not([class]) li {
 		display:none;
 	}
 
-	.shareIcons-desktop-tablet {
-		display: block;
+	.shareIcons-desktop {
+		display: none;
 	}
+
+    .shareIcons-tablet {
+         display: block;
+     }
 
 	.shareIcons-mobile {
 		display: none;
@@ -984,6 +989,21 @@ ul:not([class]) li {
 		text-align: center;
 	}
 
+	#logo {
+		float: left;
+	}
+
+	#primary-menu > ul {
+		left: 0px;
+		top: 121px;
+		position: absolute;
+		width: 100%;
+	}
+
+	.menu-social-link:first-of-type {
+		padding-left: 0px !important;
+	}
+
 }
 /* Blog tablet styles */
 @media (min-width: 500px) and (max-width: 991px) {
@@ -991,7 +1011,7 @@ ul:not([class]) li {
 		overflow: hidden;
 		width: 100%;
 		padding-right: 15px;
-		padding-left: 15px;
+/*		padding-left: 15px;*/
 	}
 
 	.subscribe-success-title {
@@ -1037,7 +1057,11 @@ ul:not([class]) li {
 	}
 
 	.post-blog {
-		margin-top:150px;
+		text-align: left; 
+         margin-bottom: 30px; 
+         z-index: 200; 
+         margin-top:150px;
+     }
 	}
 }
 /* Company tablet styles */
@@ -1300,9 +1324,18 @@ ul:not([class]) li {
 		display:none;
 	}
 
-  .shareIcons-desktop-tablet {
-    display: none;
-  }
+    
+     .shareIcons-desktop {
+         display: none;
+     }
+     
+     .shareIcons-tablet {
+         display: none;
+     }
+     
+     .post-blog {
+        margin-top: 70px;
+     }
 }
 /* Blog mobile portrait styles */
 @media only screen and (max-width: 500px) {
@@ -1569,7 +1602,32 @@ ul:not([class]) li {
 @media (max-width: 1000px) and (orientation: landscape) {
 	.subscribe-block-tablet-mobile {
 		height: 120px;
-	}
+    }
+    
+    .topShareBottonMobile {
+ 		display: block;
+ 	}
+    
+    #aside-blog {
+         display: none;
+     }
+     
+     .shareIcons-mobile {
+         display: block;
+     }
+     
+     .post-blog {
+         margin-top: 0px;
+     }
+     
+     .shareIcons-desktop {
+         display: none;
+     }
+     
+     .shareIcons-tablet {
+         display: none;
+     }
+	
 }
 /* Solutions mobile landscape styles */
 @media (max-width: 1000px) and (orientation: landscape) {
@@ -1593,9 +1651,18 @@ ul:not([class]) li {
 }
 /* General mobile portrait and landscape styles */
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
-	.shareIcons-mobile {
-    display: block;
-  }
+    
+    .shareIcons-desktop {
+         display: none;
+     }
+     
+     .shareIcons-tablet {
+         display: none;
+     }
+     
+     .shareIcons-mobile {
+         display: block;
+     }
 
 	.footer-links-block > a {
 		width: 100%;
