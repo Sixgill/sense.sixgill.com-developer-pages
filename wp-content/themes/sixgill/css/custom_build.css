@@ -320,6 +320,10 @@ ul:not([class]) li {
 .companyDescription p {
 	margin-bottom: 0px !important;
 }
+
+#board li {
+	color: #ffffff;
+}
 .hr-home-sub-title {
 	max-width: 650px;
 }
