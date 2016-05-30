@@ -1528,7 +1528,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
 -----------------------------------------------------------------*/
 
 
-@media (min-width: 992px) {
+@media (min-width: 1001px) {
 
 .overlay-menu:not(.top-search-open) #primary-menu-trigger {
 	opacity: 1;
@@ -2179,7 +2179,7 @@ body:not(.device-touch) #page-menu nav li a {
 /* Page Menu - Dots Style
 -----------------------------------------------------------------*/
 
-@media (min-width: 992px) {
+@media (min-width: 1001px) {
 
 	#page-menu.dots-menu,
 	#page-menu.dots-menu #page-menu-wrap {
@@ -2297,7 +2297,7 @@ body:not(.device-touch) #page-menu nav li a {
 	Side Header
 -----------------------------------------------------------------*/
 
-@media (min-width: 992px) {
+@media (min-width: 1001px) {
 
 
 .side-header #header {
