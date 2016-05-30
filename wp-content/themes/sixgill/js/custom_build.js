@@ -125,7 +125,6 @@ jQuery(function($) {
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if(heightWithoutFooter < scrollTop + heightIcon){
-            console.log("Yes");
             a.style.position = 'absolute';
             a.style.top =  сurrentScroll +'px'
         }
@@ -136,6 +135,24 @@ jQuery(function($) {
          a.style.top =  'initial';
         }
     });
+    
+    	$(window).resize(function() {
+            console.log('resize');
+                var a = document.querySelector('#aside-blog');
+
+            var footer = $('#footer').height(); 
+            var subfooter = $("#subfooter").height();
+            var heightIcon = $( '#aside-blog' ).height() + parseInt($('#aside-blog').css('margin-top'),10); 
+            
+            var scrollHeight = Math.max(
+                document.body.scrollHeight, document.documentElement.scrollHeight,
+                document.body.offsetHeight, document.documentElement.offsetHeight,
+                document.body.clientHeight, document.documentElement.clientHeight
+            );
+            
+            var heightWithoutFooter = scrollHeight - footer - subfooter;
+            var сurrentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        });
 });
 //jQuery(function($){
 //  if(document.getElementById('single-page-content') && document.getElementById('aside1')){
