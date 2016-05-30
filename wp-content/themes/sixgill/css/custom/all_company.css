@@ -5,3 +5,7 @@
 .companyDescription p {
 	margin-bottom: 0px !important;
 }
+
+#board li {
+	color: #ffffff;
+}

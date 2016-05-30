@@ -23,3 +23,7 @@
 .press-block-container {
 	margin-top: 80px;
 }
+
+.hidden-press-contact {
+	margin-top: 50px !important;
+}
