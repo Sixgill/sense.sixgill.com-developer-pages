@@ -858,11 +858,6 @@ ul:not([class]) li {
 		margin-bottom: 18px;
 	}
 
-	.global-social-buttons-container {
-		text-align: center !important;
-		padding-bottom: 16px;
-	}
-
 	.hidden-top-imageDiagram {
 		display: none;
 	}
@@ -941,7 +936,8 @@ ul:not([class]) li {
 	}
 
 	.global-social-buttons-container {
-		text-align: center;
+		text-align: center !important;
+		padding-bottom: 16px;
 		position: fixed;
 		bottom: 0px;
 		width: 100%;
