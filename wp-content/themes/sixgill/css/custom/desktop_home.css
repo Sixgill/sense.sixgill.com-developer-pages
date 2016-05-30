@@ -1,21 +1,26 @@
 /* Home desktop styles */
 @media only screen and (min-width : 1001px) {
 	.home-text-2{
-		margin-top:120px;
+		margin-top: 120px;
 	}
 
 	.applying-layer-copperOnVideo {
 		background-color: rgba(0,0,0,0);
 	}
 
-	.backgroundForTextVideoHome {
+	.home-video-background {
 		background-image:url(/wp-content/themes/sixgill/images/td/home/shadow.png);
 		padding: 85px 30px 50px 30px;
-		height:380px;
+		height: 380px;
 	}
 
 	#logo {
 		float: left !important;
 		margin-bottom: 20px !important;
+	}
+
+	.home-video-text {
+		font-size: 34px;
+		font-weight: 900;
 	}
 }

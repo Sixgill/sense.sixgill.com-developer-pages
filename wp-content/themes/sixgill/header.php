@@ -67,7 +67,7 @@
 				<div class="container clearfix menu-container">
 
 					<div id="logo" class="noborder nopadding nomargin">
-						<a href="/" class="logoSIXGILL"></a>
+						<a href="/" class="logo-sixgill"></a>
 					</div>
 
 					<div id="primary-menu-trigger" class="tright">

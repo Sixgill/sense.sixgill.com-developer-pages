@@ -551,7 +551,7 @@ ul:not([class]) li {
 		margin-top: 10px;
 	}
 
-	.sizeForTextVideoHome {
+	.home-video-text {
 		font-size: 34px;
 		font-weight: 900;
 	}
@@ -560,7 +560,7 @@ ul:not([class]) li {
 		display: none;
 	}
 
-	.logoSIXGILL {
+	.logo-sixgill {
 		width:140px;
 		height:111px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
@@ -711,7 +711,7 @@ ul:not([class]) li {
 		background-color: rgba(0,0,0,0);
 	}
 
-	.backgroundForTextVideoHome {
+	.home-video-background {
 		background-image:url(/wp-content/themes/sixgill/images/td/home/shadow.png);
 		padding: 85px 30px 50px 30px;
 		height:380px;
@@ -874,7 +874,7 @@ ul:not([class]) li {
 		display: none;
 	}
 
-	.logoSIXGILL {
+	.logo-sixgill {
 		width:245px;
 		height:96px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_tablet.svg");
@@ -1667,7 +1667,7 @@ ul:not([class]) li {
 		margin-right: 0px;
 	}
 
-	.logoSIXGILL {
+	.logo-sixgill {
 		width:150px;
 		height:44px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg");

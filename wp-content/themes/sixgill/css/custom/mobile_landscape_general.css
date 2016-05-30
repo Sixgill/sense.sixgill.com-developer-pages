@@ -35,4 +35,8 @@
 	#primary-menu-trigger {
 		top: 10px;
 	}
+
+	.no-mobile-landscape-display {
+		display: none;
+	}
 }

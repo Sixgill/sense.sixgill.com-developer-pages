@@ -162,7 +162,7 @@
 					</div>
 				</p>
 			</div>
-			<div class="container clearfix" style="text-align: center;">
+			<div class="container clearfix center">
 				<div style="margin-bottom:40px;">
 					<a href="/press/" class="button button-large nobottommargin btnSolutions news-press-button">VIEW ALL NEWS AND PRESS RELEASES</a>
 				</div>
