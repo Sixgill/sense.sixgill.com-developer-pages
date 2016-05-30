@@ -54,7 +54,7 @@
 }
 
 /* Wide tablets or very small laptop screens : */
-@media (min-width: 1001px) and (max-width: 1266px) {
+@media (min-width: 992px) and (max-width: 1266px) {
 
 	.full-block-width {
 		width: 250px;
@@ -67,7 +67,7 @@
 }
 
 /* For share botton on blog: */
-@media (min-width: 1001px) and (max-width: 1300px) {
+@media (min-width: 992px) and (max-width: 1300px) {
 
 	.marginShareButton {
 		margin-left: 5px;

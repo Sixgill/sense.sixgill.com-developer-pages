@@ -1,5 +1,5 @@
 /* General tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 991px) {
 
 	.marginShareButton {
 		margin-left: 20px;
@@ -23,6 +23,11 @@
 	.global-social-buttons-separator {
 		margin-top: 60px;
 		margin-bottom: 18px;
+	}
+
+	.global-social-buttons-container {
+		text-align: center !important;
+		padding-bottom: 16px;
 	}
 
 	.hidden-top-imageDiagram {
@@ -103,12 +108,14 @@
 	}
 
 	.global-social-buttons-container {
-		text-align: center !important;
-		padding-bottom: 16px;
+		text-align: center;
 		position: fixed;
 		bottom: 0px;
 		width: 100%;
 		padding-bottom: 16px;
+		margin-left: -16px;
+		margin-right: -16px;
+		padding-right: 20px;
 	}
 
 	.menu-social-link {
@@ -138,7 +145,7 @@
 	.shareIcons-desktop {
 		display: none;
 	}
-
+    
     .shareIcons-tablet {
          display: block;
      }
@@ -150,21 +157,6 @@
 	.footer_Learn, .footer_Schedule {
 		width: 100%;
 		text-align: center;
-	}
-
-	#logo {
-		float: left;
-	}
-
-	#primary-menu > ul {
-		left: 0px;
-		top: 121px;
-		position: absolute;
-		width: 100%;
-	}
-
-	.menu-social-link:first-of-type {
-		padding-left: 0px !important;
 	}
 
 }

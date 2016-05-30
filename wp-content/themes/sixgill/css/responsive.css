@@ -52,7 +52,7 @@
 
 
 
-@media (min-width: 1001px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
 
 
 
@@ -488,7 +488,7 @@
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 991px) {
 
 
 
@@ -2026,7 +2026,7 @@
 
 
 
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
     .col_press { width: 100%; }
 
@@ -3550,17 +3550,17 @@ only screen and (                min-resolution: 2dppx) {
 
 @media
 
-only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1000px),
+only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 991px),
 
-only screen and (   min--moz-device-pixel-ratio: 2) and (max-width: 1000px),
+only screen and (   min--moz-device-pixel-ratio: 2) and (max-width: 991px),
 
-only screen and (     -o-min-device-pixel-ratio: 2/1) and (max-width: 1000px),
+only screen and (     -o-min-device-pixel-ratio: 2/1) and (max-width: 991px),
 
-only screen and (        min-device-pixel-ratio: 2) and (max-width: 1000px),
+only screen and (        min-device-pixel-ratio: 2) and (max-width: 991px),
 
-only screen and (                min-resolution: 192dpi) and (max-width: 1000px),
+only screen and (                min-resolution: 192dpi) and (max-width: 991px),
 
-only screen and (                min-resolution: 2dppx) and (max-width: 1000px) {
+only screen and (                min-resolution: 2dppx) and (max-width: 991px) {
 
 	#logo a.standard-logo { display: none; }
 

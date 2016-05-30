@@ -211,7 +211,7 @@ input.switch-toggle-round:checked + label:before,
 .dark .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i { box-shadow: 0 0 0 1px #1ABC9C; }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 991px) {
 
     body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li:hover a,
     body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li.current a,

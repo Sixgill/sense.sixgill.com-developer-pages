@@ -320,10 +320,6 @@ ul:not([class]) li {
 .companyDescription p {
 	margin-bottom: 0px !important;
 }
-
-#board li {
-	color: #ffffff;
-}
 .hr-home-sub-title {
 	max-width: 650px;
 }
@@ -512,12 +508,8 @@ ul:not([class]) li {
 .press-block-container {
 	margin-top: 80px;
 }
-
-.hidden-press-contact {
-	margin-top: 50px !important;
-}
 /* General desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width : 992px) {
 	.global-social-buttons-list {
 		margin-left:-16px !important;
 	}
@@ -640,7 +632,7 @@ ul:not([class]) li {
 	}
 }
 /* Blog desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width : 992px) {
 	.subscribe-block-tablet-mobile {
 		display: none;
 	}
@@ -652,7 +644,7 @@ ul:not([class]) li {
 		padding: 15px 20px 26px 20px;
 		text-align: center;
 		font-size: 18px;
-		width: 31%
+		width: 30%
 	}
 
 	.subscribe-block h4 {
@@ -698,11 +690,11 @@ ul:not([class]) li {
 	}
 }
 /* Company desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width : 992px) {
 
 }
 /* Home desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width : 992px) {
 	.home-text-2{
 		margin-top:120px;
 	}
@@ -723,7 +715,7 @@ ul:not([class]) li {
 	}
 }
 /* Solutions desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width : 992px) {
 
 	.solutions-blog-content {
 			float: left;
@@ -787,7 +779,7 @@ ul:not([class]) li {
 	}
 }
 /* Resources desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width : 992px) {
 	.resources-container {
 		padding-top: 29px;
 		padding-bottom: 55px;
@@ -814,11 +806,11 @@ ul:not([class]) li {
 	}
 }
 /* Tech desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width : 992px) {
 
 }
 /* Press desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width : 992px) {
 	.col_press {
 		padding-bottom:55px;
 	}
@@ -828,11 +820,11 @@ ul:not([class]) li {
 	}
 }
 /* Products desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width : 992px) {
 
 }
 /* General tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 991px) {
 
 	.marginShareButton {
 		margin-left: 20px;
@@ -946,6 +938,9 @@ ul:not([class]) li {
 		bottom: 0px;
 		width: 100%;
 		padding-bottom: 16px;
+		margin-left: -16px;
+		margin-right: -16px;
+		padding-right: 20px;
 	}
 
 	.menu-social-link {
@@ -975,7 +970,7 @@ ul:not([class]) li {
 	.shareIcons-desktop {
 		display: none;
 	}
-
+    
     .shareIcons-tablet {
          display: block;
      }
@@ -989,29 +984,14 @@ ul:not([class]) li {
 		text-align: center;
 	}
 
-	#logo {
-		float: left;
-	}
-
-	#primary-menu > ul {
-		left: 0px;
-		top: 121px;
-		position: absolute;
-		width: 100%;
-	}
-
-	.menu-social-link:first-of-type {
-		padding-left: 0px !important;
-	}
-
 }
 /* Blog tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 991px) {
 	.subscribe-input-container {
 		overflow: hidden;
 		width: 100%;
 		padding-right: 15px;
-/*		padding-left: 15px;*/
+		padding-left: 15px;
 	}
 
 	.subscribe-success-title {
@@ -1065,11 +1045,11 @@ ul:not([class]) li {
 	}
 }
 /* Company tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 991px) {
 
 }
 /* Home tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 991px) {
 	.homeSupTit-with-line {
 		background-color: #fff;
 		z-index:2;
@@ -1085,7 +1065,7 @@ ul:not([class]) li {
 	}
 }
 /* Solutions tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 991px) {
 	.solution-subpage-container {
 		margin-top: 100px;
 		margin-left: 70px;
@@ -1127,7 +1107,7 @@ ul:not([class]) li {
 
 }
 /* Resources tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 991px) {
 	.resources-container {
 		padding-top: 20px;
 		padding-bottom: 60px;
@@ -1179,11 +1159,11 @@ ul:not([class]) li {
 	}
 }
 /* Tech tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 991px) {
 
 }
 /* Press tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 991px) {
 	.press-block-title {
 		font-size: 18px;
 		color:#383838;
@@ -1203,7 +1183,7 @@ ul:not([class]) li {
 
 }
 /* Products tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 991px) {
 
 }
 /* General mobile portrait styles */
@@ -1703,7 +1683,7 @@ ul:not([class]) li {
 	}
 }
 /* Portrait tablets & mobiles */
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
 	#header {
 		position: fixed;
 		z-index: 9999;
@@ -1802,7 +1782,7 @@ ul:not([class]) li {
 }
 
 /* Wide tablets or very small laptop screens : */
-@media (min-width: 1001px) and (max-width: 1266px) {
+@media (min-width: 992px) and (max-width: 1266px) {
 
 	.full-block-width {
 		width: 250px;
@@ -1815,7 +1795,7 @@ ul:not([class]) li {
 }
 
 /* For share botton on blog: */
-@media (min-width: 1001px) and (max-width: 1300px) {
+@media (min-width: 992px) and (max-width: 1300px) {
 
 	.marginShareButton {
 		margin-left: 5px;

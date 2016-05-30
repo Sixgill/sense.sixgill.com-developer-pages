@@ -385,7 +385,7 @@ label {
 }
 
 
-@media only screen and (min-width : 1001px) {/* For desktop: */
+@media only screen and (min-width : 992px) {/* For desktop: */
 
 	.global-social-buttons-list {
 		margin-left:-16px !important;
@@ -615,7 +615,7 @@ label {
 }
 
 /* Wide tablets or very small laptop screens : */
-@media (min-width: 1001px) and (max-width: 1266px) {
+@media (min-width: 992px) and (max-width: 1266px) {
 
     .marginShareButton {
 		margin-left: 5px;
@@ -644,7 +644,7 @@ label {
     }
 }
 
-@media (min-width: 500px) and (max-width: 1000px) {/* For tablets: */
+@media (min-width: 500px) and (max-width: 991px) {/* For tablets: */
 
     body:not(.no-transition) #wrapper, .animsition-overlay {
 		opacity: 1;
