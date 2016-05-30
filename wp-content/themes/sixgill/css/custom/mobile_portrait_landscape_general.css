@@ -1,8 +1,17 @@
 /* General mobile portrait and landscape styles */
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
-	.shareIcons-mobile {
-    display: block;
-  }
+    
+    .shareIcons-desktop {
+         display: none;
+     }
+     
+     .shareIcons-tablet {
+         display: none;
+     }
+     
+     .shareIcons-mobile {
+         display: block;
+     }
 
 	.footer-links-block > a {
 		width: 100%;
