@@ -116,6 +116,7 @@
 <!-- External JavaScripts -->
 <script type="text/javascript" src="/wp-content/themes/sixgill/js/jquery-1.12.3.min.js"></script>
 <script type="text/javascript" src="/wp-content/themes/sixgill/js/plugins.js?<?php echo time(); ?>"></script>
+<script type="text/javascript" src="/wp-content/themes/sixgill/js/device.js"></script>
 
 <!-- Footer Scripts  -->
 <script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js?<?php echo time(); ?>"></script>
