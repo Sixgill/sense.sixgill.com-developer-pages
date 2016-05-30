@@ -170,6 +170,8 @@
 					</div>
 				</div>
 			</header><!-- #header end -->
-        <div class="search-form-container">
-            <?php get_search_form(); ?>
+        <div class="search-form-container" style="width:100%; height:60px;">
+            <div style="float:right; margin-top:5px;"><button style="width:322px;  height:40px; line-height: 0px;" href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">SCHEDULE A DEMO</button></div>
+            <div style="width:322px;  height:40px; float:right;margin-top:5px;"><?php get_search_form(); ?></div>
+
         </div>

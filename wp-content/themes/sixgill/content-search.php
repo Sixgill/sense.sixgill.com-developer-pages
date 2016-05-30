@@ -5,5 +5,6 @@
 			</a>	
     	
     <?php the_excerpt(); ?>
-	
+	<hr class="fancy-title-without-bottom fancy-title title-dotted-border title-center mobile-hiden-line">
 </article>
+<br>
