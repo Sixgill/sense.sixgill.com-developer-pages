@@ -517,7 +517,7 @@ ul:not([class]) li {
 	margin-top: 50px !important;
 }
 /* General desktop styles */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {
 		margin-left:-16px !important;
 	}
@@ -640,7 +640,7 @@ ul:not([class]) li {
 	}
 }
 /* Blog desktop styles */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1001px) {
 	.subscribe-block-tablet-mobile {
 		display: none;
 	}
@@ -698,11 +698,11 @@ ul:not([class]) li {
 	}
 }
 /* Company desktop styles */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1001px) {
 
 }
 /* Home desktop styles */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1001px) {
 	.home-text-2{
 		margin-top:120px;
 	}
@@ -723,7 +723,7 @@ ul:not([class]) li {
 	}
 }
 /* Solutions desktop styles */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1001px) {
 
 	.solutions-blog-content {
 			float: left;
@@ -787,7 +787,7 @@ ul:not([class]) li {
 	}
 }
 /* Resources desktop styles */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1001px) {
 	.resources-container {
 		padding-top: 29px;
 		padding-bottom: 55px;
@@ -814,11 +814,11 @@ ul:not([class]) li {
 	}
 }
 /* Tech desktop styles */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1001px) {
 
 }
 /* Press desktop styles */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1001px) {
 	.col_press {
 		padding-bottom:55px;
 	}
@@ -828,11 +828,11 @@ ul:not([class]) li {
 	}
 }
 /* Products desktop styles */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1001px) {
 
 }
 /* General tablet styles */
-@media (min-width: 500px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 
 	.marginShareButton {
 		margin-left: 20px;
@@ -1006,7 +1006,7 @@ ul:not([class]) li {
 
 }
 /* Blog tablet styles */
-@media (min-width: 500px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 	.subscribe-input-container {
 		overflow: hidden;
 		width: 100%;
@@ -1065,11 +1065,11 @@ ul:not([class]) li {
 	}
 }
 /* Company tablet styles */
-@media (min-width: 500px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 
 }
 /* Home tablet styles */
-@media (min-width: 500px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 	.homeSupTit-with-line {
 		background-color: #fff;
 		z-index:2;
@@ -1085,7 +1085,7 @@ ul:not([class]) li {
 	}
 }
 /* Solutions tablet styles */
-@media (min-width: 500px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 	.solution-subpage-container {
 		margin-top: 100px;
 		margin-left: 70px;
@@ -1127,7 +1127,7 @@ ul:not([class]) li {
 
 }
 /* Resources tablet styles */
-@media (min-width: 500px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 	.resources-container {
 		padding-top: 20px;
 		padding-bottom: 60px;
@@ -1179,11 +1179,11 @@ ul:not([class]) li {
 	}
 }
 /* Tech tablet styles */
-@media (min-width: 500px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 
 }
 /* Press tablet styles */
-@media (min-width: 500px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 	.press-block-title {
 		font-size: 18px;
 		color:#383838;
@@ -1203,7 +1203,7 @@ ul:not([class]) li {
 
 }
 /* Products tablet styles */
-@media (min-width: 500px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 
 }
 /* General mobile portrait styles */
@@ -1703,7 +1703,7 @@ ul:not([class]) li {
 	}
 }
 /* Portrait tablets & mobiles */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 	#header {
 		position: fixed;
 		z-index: 9999;
@@ -1802,7 +1802,7 @@ ul:not([class]) li {
 }
 
 /* Wide tablets or very small laptop screens : */
-@media (min-width: 992px) and (max-width: 1266px) {
+@media (min-width: 1001px) and (max-width: 1266px) {
 
 	.full-block-width {
 		width: 250px;
@@ -1815,7 +1815,7 @@ ul:not([class]) li {
 }
 
 /* For share botton on blog: */
-@media (min-width: 992px) and (max-width: 1300px) {
+@media (min-width: 1001px) and (max-width: 1300px) {
 
 	.marginShareButton {
 		margin-left: 5px;

@@ -218,7 +218,7 @@ body, p {
     display: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1001px) {
 
 .side-header #header {
 	width: 180px;
@@ -597,7 +597,7 @@ p {font-size:13px; font-weight:normal;}
 	}
 }
 
-@media only screen and (min-width: 992px) {/* For desktop: */
+@media only screen and (min-width: 1001px) {/* For desktop: */
 	.txtVideo {font-size:28px;font-weight:normal;}
 	.titLegal {font-size:40px; margin-top:60px; margin-bottom:65px;}
 	p {font-size:16px; font-weight:normal;}
