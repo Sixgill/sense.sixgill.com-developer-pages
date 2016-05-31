@@ -80,7 +80,7 @@
 		</section>
 
 		<a name="ssdk"></a>
-		<section background-f8f8f8 id="ssdk">
+		<section class="background-f8f8f8" id="ssdk">
 			<div class="container-fluid center clearfix no-border no-bottom-margin no-bottom-padding" style="max-width:1100px;">
 				<div class="col_one_third titleInside text-right topmargin-sm"><img src="/wp-content/themes/sixgill/images/td/product/logoReach.svg" alt=""/></div>
 				<div class="col_two_third col_last text-left topmargin-sm">
