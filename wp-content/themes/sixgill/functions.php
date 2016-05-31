@@ -132,4 +132,11 @@ set_post_thumbnail_size(600, 315, false);
 add_image_size( 'spec_thumb', 1000, 350, true );
 add_image_size( 'solutions-thumbnails', 300, 650, false );
 
+/* SIX-225 */
+function remove_more_link_scroll( $link ) {
+	$link = preg_replace( '|#more-[0-9]+|', '', $link );
+	return $link;
+}
+add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
+
 ?>
