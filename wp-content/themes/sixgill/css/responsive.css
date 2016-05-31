@@ -1,64 +1,37 @@
 /* ----------------------------------------------------------------
 
-	Responsive CSS
+Responsive CSS
 
 -----------------------------------------------------------------*/
-
-
-
-
-
 @media (max-width: 1199px) {
 
-    .my_containerSolution_indent {
-            margin-left: 7%;
-            margin-right: 10%;
-    }
-
-
-	canvas {
-
-		max-width: 100%;
-
-		height: auto !important;
-
+	.my_containerSolution_indent {
+		margin-left: 7%;
+		margin-right: 10%;
 	}
 
 
+	canvas {
+		max-width: 100%;
+		height: auto !important;
+	}
 
 	.promo h3 { font-size: 20px; }
-
-
 
 	.promo > span,
 
 	.promo > .container > span { font-size: 15px; }
 
-
-
 	.promo-uppercase h3 { font-size: 19px; }
-
-
 
 	.promo-uppercase > span,
 
 	.promo-uppercase > .container > span { font-size: 14px; }
 
-
-
 }
 
-
-
-
-
 @media (min-width: 1001px) and (max-width: 1199px) {
-
-
-
 	#wrapper { width: 1000px; }
-
-
 
 	#header.transparent-header.floating-header .container {
 
@@ -2028,7 +2001,7 @@
 
 @media (min-width: 768px) and (max-width: 1000px) {
 
-    .col_press { width: 100%; }
+	.col_press { width: 100%; }
 
 	.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid),
 
@@ -2086,17 +2059,17 @@
 
 @media (max-width: 767px) {
 
-.titleTech-position-left {
-       text-align: left;
-}
+	.titleTech-position-left {
+		text-align: left;
+	}
 
-.mobile-position-center {
-    text-align: center;
-}
+	.mobile-position-center {
+		text-align: center;
+	}
 
-.mobile-hiden-line {
-    background: none !important;
-}
+	.mobile-hiden-line {
+		background: none !important;
+	}
 
 
 
@@ -2141,7 +2114,7 @@
 	#top-bar { height: auto; }
 
 
-    #top-bar .col_press { width: 100%; }
+	#top-bar .col_press { width: 100%; }
 
 
 	#top-bar .col_half {
@@ -2189,7 +2162,7 @@
 	}
 
 
-/*
+	/*
 	#top-social,
 
 	#slider:not(.swiper_wrapper) .slider-caption,
@@ -2209,7 +2182,7 @@
 	.slider-arrow-top-sm,
 
 	.slider-arrow-bottom-sm { display: none !important; }
-*/
+	*/
 
 
 	.slider-caption h2 { margin-bottom: 0 !important; }
@@ -2248,7 +2221,7 @@
 
 	.col_half,
 
-    .col_press,
+	.col_press,
 
 	.col_one_third,
 
@@ -3100,10 +3073,10 @@
 
 @media (min-width: 480px) and (max-width: 500px) {
 
-    	#primary-menu-trigger {
+	#primary-menu-trigger {
 
 		top: 10px;
-    left: -15px;
+		left: -15px;
 	}
 }
 
@@ -3112,7 +3085,7 @@
 	#primary-menu-trigger {
 
 		top: 10px;
-    left: -15px;
+		left: -15px;
 	}
 
 	.container,
@@ -3428,7 +3401,7 @@
 
 /* ----------------------------------------------------------------
 
-	Retina CSS
+Retina CSS
 
 -----------------------------------------------------------------*/
 
@@ -3552,18 +3525,22 @@ only screen and (                min-resolution: 2dppx) {
 
 only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1000px),
 
-only screen and (   min--moz-device-pixel-ratio: 2) and (max-width: 1000px),
+only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1000px),
 
-only screen and (     -o-min-device-pixel-ratio: 2/1) and (max-width: 1000px),
+only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1000px),
 
-only screen and (        min-device-pixel-ratio: 2) and (max-width: 1000px),
+only screen and (min-device-pixel-ratio: 2) and (max-width: 1000px),
 
-only screen and (                min-resolution: 192dpi) and (max-width: 1000px),
+only screen and (min-resolution: 192dpi) and (max-width: 1000px),
 
-only screen and (                min-resolution: 2dppx) and (max-width: 1000px) {
+only screen and (min-resolution: 2dppx) and (max-width: 1000px) {
 
-	#logo a.standard-logo { display: none; }
+	#logo a.standard-logo {
+		display: none;
+	}
 
-	#logo a.retina-logo { display: inline-block; }
+	#logo a.retina-logo {
+		display: inline-block;
+	}
 
 }

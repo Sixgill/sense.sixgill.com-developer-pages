@@ -1,5 +1,5 @@
 <a name="top"></a>
-<section id="slider" class="slider-parallax swiper_wrapper clearfix" style="border:0px solid #FF0004;">
+<section id="slider" class="slider-parallax no-border swiper_wrapper clearfix">
 	<div class="slider-parallax-inner">
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
@@ -33,7 +33,7 @@
 				</div>
 	    </div>
 			<div class="col_full center">
-				<a href="/solutions/" id="solutions-button-back" class="button button-large nobottommargin btnCompany">
+				<a href="/solutions/" id="solutions-button-back" class="button button-large no-bottom-margin btnCompany">
 					BACK TO SOLUTIONS
 				</a>
 			</div>

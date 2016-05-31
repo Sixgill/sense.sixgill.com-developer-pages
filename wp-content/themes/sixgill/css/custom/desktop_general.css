@@ -53,12 +53,12 @@
 		display: none;
 	}
 
-	.footer_Learn, .footer-links-block {
+	.footer-learn-text, .footer-links-block {
 		text-align:left;
 		font-size:22px;
 	}
 
-	.footer_Learn {
+	.footer-learn-text {
 		width: inherit;
 		margin-right: 0px;
 	}
@@ -98,14 +98,6 @@
 
 	.shareIcons-desktop {
 		display: block;
-	}
-
-	.shareIcons-tablet {
-		display: none;
-	}
-
-	.shareIcons-mobile {
-		display: none;
 	}
 
 	#aside-blog {

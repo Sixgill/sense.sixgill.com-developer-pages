@@ -21,7 +21,7 @@
 		padding-left:10px;
 	}
 
-	.footer_Learn, .footer-links-block {
+	.footer-learn-text, .footer-links-block {
 		text-align:center;
 		font-size:14px;
 	}
@@ -92,14 +92,6 @@
 
 	#wpadminbar {
 		display:none;
-	}
-
-	.shareIcons-desktop {
-		display: none;
-	}
-
-	.shareIcons-tablet {
-		display: none;
 	}
 
 	.post-blog {

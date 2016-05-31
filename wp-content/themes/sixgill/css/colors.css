@@ -1,15 +1,21 @@
 /* ----------------------------------------------------------------
-    Colors
+Colors
 
-    Replace the HEX Code with your Desired Color HEX
+Replace the HEX Code with your Desired Color HEX
 -----------------------------------------------------------------*/
 
 
-::selection { background: #004FC8; }
+::selection {
+	background: #004FC8;
+}
 
-::-moz-selection { background: #004FC8; }
+::-moz-selection {
+	background: #004FC8;
+}
 
-::-webkit-selection { background: #004FC8; }
+::-webkit-selection {
+	background: #004FC8;
+}
 
 
 a,
@@ -56,7 +62,9 @@ a,
 .pagination > li > span:focus,
 .dark .post-timeline .entry:hover .entry-timeline,
 .dark .post-timeline .entry:hover .timeline-divider,
-.clear-rating-active:hover { color: #004FC8; }
+.clear-rating-active:hover {
+	color: #004FC8;
+}
 
 .color,
 .top-cart-item-desc a:hover,
@@ -126,7 +134,7 @@ input.switch-toggle-flat:checked + label:after,
 input.switch-toggle-round:checked + label:before,
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-themecolor,
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-themecolor {
-    //background-color: #004FC8;
+	//background-color: #004FC8;
 }
 
 .bgcolor,
@@ -213,21 +221,21 @@ input.switch-toggle-round:checked + label:before,
 
 @media only screen and (max-width: 1000px) {
 
-    body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li:hover a,
-    body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li.current a,
-    body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li:hover a,
-    body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li.current a,
-    #primary-menu ul ul li:hover > a,
-    #primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title:hover > a,
-    #primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title > a:hover { color: #1ABC9C !important; }
+	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li:hover a,
+	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li.current a,
+	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li:hover a,
+	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li.current a,
+	#primary-menu ul ul li:hover > a,
+	#primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title:hover > a,
+	#primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title > a:hover { color: #1ABC9C !important; }
 
-    #page-menu nav { background-color: #1ABC9C; }
+	#page-menu nav { background-color: #1ABC9C; }
 
 }
 
 
 @media only screen and (max-width: 767px) {
 
-    .portfolio-filter li a:hover { color: #1ABC9C; }
+	.portfolio-filter li a:hover { color: #1ABC9C; }
 
 }

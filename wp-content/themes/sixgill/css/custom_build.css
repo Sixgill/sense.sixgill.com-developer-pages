@@ -50,7 +50,7 @@ body, p {
 	border:0px solid #FE0004;
 }
 
-.footer_Learn, .footer-links-block {
+.footer-learn-text, .footer-links-block {
 	text-align:left;
 	border:0px solid #FE0004;
 	color:#FFF;
@@ -599,12 +599,12 @@ ul:not([class]) li {
 		display: none;
 	}
 
-	.footer_Learn, .footer-links-block {
+	.footer-learn-text, .footer-links-block {
 		text-align:left;
 		font-size:22px;
 	}
 
-	.footer_Learn {
+	.footer-learn-text {
 		width: inherit;
 		margin-right: 0px;
 	}
@@ -644,14 +644,6 @@ ul:not([class]) li {
 
 	.shareIcons-desktop {
 		display: block;
-	}
-
-	.shareIcons-tablet {
-		display: none;
-	}
-
-	.shareIcons-mobile {
-		display: none;
 	}
 
 	#aside-blog {
@@ -887,11 +879,7 @@ ul:not([class]) li {
 	.home-diagram {
 		padding: 0px 50px 45px 50px;
 	}
-
-	.headerBoxSolutionSize {
-		display: none;
-	}
-
+	
 	.logo-sixgill {
 		width:245px;
 		height:96px;
@@ -923,7 +911,7 @@ ul:not([class]) li {
 		width:115px;
 	}
 
-	.footer_Learn, .footer-links-block {
+	.footer-learn-text, .footer-links-block {
 		text-align:left;
 		font-size:22px;
 		font-weight:normal;
@@ -984,19 +972,11 @@ ul:not([class]) li {
 		display:none;
 	}
 
-	.shareIcons-desktop {
-		display: none;
-	}
-
 	.shareIcons-tablet {
 		display: block;
 	}
 
-	.shareIcons-mobile {
-		display: none;
-	}
-
-	.footer_Learn, .footer_Schedule {
+	.footer-learn-text, .footer_Schedule {
 		width: 100%;
 		text-align: center;
 	}
@@ -1244,7 +1224,7 @@ ul:not([class]) li {
 		padding-left:10px;
 	}
 
-	.footer_Learn, .footer-links-block {
+	.footer-learn-text, .footer-links-block {
 		text-align:center;
 		font-size:14px;
 	}
@@ -1315,14 +1295,6 @@ ul:not([class]) li {
 
 	#wpadminbar {
 		display:none;
-	}
-
-	.shareIcons-desktop {
-		display: none;
-	}
-
-	.shareIcons-tablet {
-		display: none;
 	}
 
 	.post-blog {
@@ -1603,10 +1575,6 @@ ul:not([class]) li {
 		height: 120px;
 	}
 
-	.topShareBottonMobile {
-		display: block;
-	}
-
 	#aside-blog {
 		display: none;
 	}
@@ -1617,14 +1585,6 @@ ul:not([class]) li {
 
 	.post-blog {
 		margin-top: 0px;
-	}
-
-	.shareIcons-desktop {
-		display: none;
-	}
-
-	.shareIcons-tablet {
-		display: none;
 	}
 
 }
@@ -1866,7 +1826,7 @@ ul:not([class]) li {
 		padding: 40px 25px 20px 30px;
 	}
 
-	.footer_Learn, .footer_Schedule {
+	.footer-learn-text, .footer_Schedule {
 		text-align: center;
 	}
 }

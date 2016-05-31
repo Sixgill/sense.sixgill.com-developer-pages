@@ -12,7 +12,7 @@
 			<div id="press-text-post" class="col_full post-blog">
 				<?php if ( has_post_thumbnail()) { ?>
 
-					<div class="shareIcons-desktop">
+					<div class="shareIcons-desktop display-only-desktop">
 						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000">
 							<?php echo $post->post_title; ?>
 						</h3>
@@ -26,7 +26,7 @@
 						<?php include(locate_template('social_buttons.php')); ?>
 					</div>
 
-					<div class="shareIcons-tablet">
+					<div class="shareIcons-tablet display-only-tablet">
 						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000; margin-bottom: 10px;">
 							<?php echo $post->post_title; ?>
 						</h3>
@@ -44,7 +44,7 @@
 						</p>
 					</div>
 
-					<div class="shareIcons-mobile">
+					<div class="shareIcons-mobile no-desktop-display no-tablet-display">
 						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000; margin-bottom: 10px;">
 							<?php echo $post->post_title; ?>
 						</h3>
@@ -62,7 +62,7 @@
 						</p>
 					</div>
 				<?php } else { ?>
-					<div class="shareIcons-desktop">
+					<div class="shareIcons-desktop display-only-desktop">
 						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000">
 							<?php echo $post->post_title; ?>
 						</h3>
@@ -73,7 +73,7 @@
 						</h4>
 					</div>
 
-					<div class="shareIcons-tablet">
+					<div class="shareIcons-tablet display-only-tablet">
 						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000">
 							<?php echo $post->post_title; ?>
 						</h3>
@@ -83,7 +83,7 @@
 						<?php include(locate_template('social_buttons.php')); ?>
 					</div>
 
-					<div class="shareIcons-mobile">
+					<div class="shareIcons-mobile no-desktop-display no-tablet-display">
 						<h3 class="press-date no-bottom-margin" style="color:#000; margin-bottom: 30px;">
 							<?php echo $post->post_title; ?>
 						</h3>
@@ -104,7 +104,7 @@
 				<?php comments_template( '', true ); ?>
 
 				<div class="col_full center">
-					<a href="/company_blog" id="blog-button-back" class="button button-large nobottommargin btnCompany">
+					<a href="/company_blog" id="blog-button-back" class="button button-large no-bottom-margin btnCompany">
 						BACK TO BLOG
 					</a>
 				</div>

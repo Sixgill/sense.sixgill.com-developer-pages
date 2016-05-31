@@ -8,7 +8,7 @@
 					<p id="home-text-on-video" data-animate="fadeInDown" class="txtVideo home-video-text">
 						<?php echo get_field('blue_header_text_below_video'); ?>
 					</p>
-					<button id="home-button-on-video" data-animate="fadeInDown" href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">
+					<button id="home-button-on-video" data-animate="fadeInDown" href="#" data-toggle="modal" data-target="#myModal" class="button button-large no-bottom-margin btnSchedule">
 						SCHEDULE A DEMO
 					</button>
 				</div>
@@ -72,7 +72,7 @@
 		<img id="home-image-infographic" src="/wp-content/themes/sixgill/images/td/home/infographic.svg" class="home-diagram display-only-desktop" alt=""/>
 		<img id="home-image-mobile-infographic" src="/wp-content/themes/sixgill/images/td/home/mobile_infographic.svg" class="home-diagram hidden-bottom-imageDiagram" alt=""/>
 		<div class="clear"></div>
-		<a href="/products/" id="home-button-infographic" class="button button-teal button-large nobottommargin btnSchedule">
+		<a href="/products/" id="home-button-infographic" class="button button-teal button-large no-bottom-margin btnSchedule">
 			VIEW PRODUCTS
 		</a>
 	</section>
@@ -114,7 +114,7 @@
 					</div>
 				</div>
 				<div style="margin-bottom:20px;">
-					<a href="/solutions/" id="home-button-proximity-solutions" class="button button-large nobottommargin btnSolutions" style="">VIEW SOLUTIONS</a>
+					<a href="/solutions/" id="home-button-proximity-solutions" class="button button-large no-bottom-margin btnSolutions" style="">VIEW SOLUTIONS</a>
 				</div>
 			</div>
 		</div>
@@ -153,7 +153,7 @@
 				<div class="col_one_fifth col_last">
 					<img id="home-image-company-part2" src="<?php echo get_field('last_image_logos2'); ?>" alt=""/>
 				</div>
-				<a href="/company/" class="button button-large nobottommargin btnCompany">
+				<a href="/company/" class="button button-large no-bottom-margin btnCompany">
 					VIEW COMPANY
 				</a>
 			</div>
@@ -200,7 +200,7 @@
 					</div>
 				</div>
 				<div class="home-diagram hidden-bottom-imageDiagram max-width-720 no-horizontal-padding">
-					<a href="/company/" id="home-button-image-company" class="button button-large nobottommargin btnCompany">
+					<a href="/company/" id="home-button-image-company" class="button button-large no-bottom-margin btnCompany">
 						VIEW COMPANY
 					</a>
 				</div>

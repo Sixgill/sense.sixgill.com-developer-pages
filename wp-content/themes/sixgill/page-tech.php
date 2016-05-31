@@ -13,10 +13,10 @@
 <!-- Content-->
 <section id="content">
 
-  <div class="content-wrap nobottommargin nobottompadding">
+  <div class="content-wrap no-bottom-margin nobottompadding">
 
-    <div class="header-stick" style="background-color:#F8F8F8; border:0px solid #FF0004;">
-			<div class="container-fluid center clearfix" style="padding-top:75px; max-width:950px;  border:0px solid #FF0004;">
+    <div class="header-stick background-f8f8f8 no-border">
+			<div class="container-fluid no-border center clearfix" style="padding-top:75px; max-width:950px;">
 				<div class="col_one_third title-left-col">
 				<?php echo get_field('top_header'); ?>
 				</div>
@@ -28,7 +28,7 @@
     </div>
 
     <div class="clear"></div>
-    <div class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
+    <div class="container-fluid background-f8f8f8 clearfix nomargin nopadding">
       <img src="/wp-content/themes/sixgill/images/td/tech/00_Shape1.jpg" alt="" width="100%"/>
     </div>
 
@@ -55,7 +55,7 @@
   </div>
 
   <a name="proximity"></a>
-  <div id="proximity" class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
+  <div id="proximity" class="container-fluid background-f8f8f8 clearfix nomargin nopadding">
     <div class="container-fluid center clearfix my_containerSolution">
       <div class="col_full"><img src="<?php echo get_field('image_2_header'); ?>" alt="" style="max-width:500px; width: 100%;"/></div>
       <div class="col_two_third text-right-col-noline col_last">
@@ -69,13 +69,13 @@
   </div>
 
 <div class="clear"></div>
-<div class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
+<div class="container-fluid background-f8f8f8 clearfix nomargin nopadding">
   <img src="/wp-content/themes/sixgill/images/td/tech/shape3.png" alt="" width="100%" />
 </div>
 
 
  <a name="openplatform"></a>
-  <div id="openplatform" class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
+  <div id="openplatform" class="container-fluid background-f8f8f8 clearfix nomargin nopadding">
     <div class="container-fluid center clearfix my_containerSolution">
       <div class="col_full"><img src="<?php echo get_field('image_3_header'); ?>" alt="" style="max-width:500px; width: 100%;"/></div>
       <div class="col_one_third my_boxTech_image hidden-top-imageTech"><img src="<?php echo get_field('image_3_tech'); ?>" alt=""/></div>

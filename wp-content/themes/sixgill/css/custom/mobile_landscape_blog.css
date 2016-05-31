@@ -4,10 +4,6 @@
 		height: 120px;
 	}
 
-	.topShareBottonMobile {
-		display: block;
-	}
-
 	#aside-blog {
 		display: none;
 	}
@@ -18,14 +14,6 @@
 
 	.post-blog {
 		margin-top: 0px;
-	}
-
-	.shareIcons-desktop {
-		display: none;
-	}
-
-	.shareIcons-tablet {
-		display: none;
 	}
 
 }
