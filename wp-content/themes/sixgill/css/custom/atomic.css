@@ -70,6 +70,10 @@
 	text-align: center !important;
 }
 
+[class="center"] {
+	display: inline-block;
+}
+
 .normal-font-20-1 {
 	font-size: 20px;
 	font-weight: normal;
