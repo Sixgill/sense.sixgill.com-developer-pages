@@ -1644,6 +1644,16 @@ ul:not([class]) li {
 		display: block;
 	}
 }
+/* Company mobile portrait and landscape styles */
+@media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
+	.btnSolutions {
+		width: 295px;
+	}
+}
+/* Solutions mobile portrait and landscape styles */
+@media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
+	
+}
 /* Resources mobile portrait and landscape styles */
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
 
