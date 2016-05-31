@@ -6,7 +6,7 @@
 	$ptitle = get_the_title();
 ?>
 <section id="content">
-	<div id="single-page-content" class="container-fluid clearfix background-white nomargin nopadding">
+	<div id="single-page-content" class="container-fluid clearfix background-white no-margin nopadding">
 		<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent" style="padding-top:0px;">
 			<?php include(locate_template('fixed_social_buttons.php')); ?>
 			<div id="press-text-post" class="col_full press-post">

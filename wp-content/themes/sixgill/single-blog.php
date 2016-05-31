@@ -6,7 +6,7 @@
 	$ptitle = get_the_title();
 ?>
 <section id="content">
-	<div id="single-page-content" class="container-fluid background-white clearfix nomargin nopadding">
+	<div id="single-page-content" class="container-fluid background-white clearfix no-margin nopadding">
 		<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent" style="padding-top:0px;">
 			<?php include(locate_template('floating_social_buttons.php')); ?>
 			<div id="press-text-post" class="col_full post-blog">

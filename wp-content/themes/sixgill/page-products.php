@@ -27,7 +27,7 @@
 		</div>
 
 
-		<section class="container-fluid center clearfix nomargin nopadding">
+		<section class="container-fluid center clearfix no-margin nopadding">
 			<img src="/wp-content/themes/sixgill/images/td/product_fig1.png" alt="" width="100%"/>
 		</section>
 
@@ -75,13 +75,13 @@
 			</div>
 		</section>
 
-		<section id="before_ssdk" class="container-fluid center clearfix nomargin nopadding">
+		<section id="before_ssdk" class="container-fluid center clearfix no-margin nopadding">
 			<img src="/wp-content/themes/sixgill/images/td/product_fig2.png" alt="" width="100%"/>
 		</section>
 
 		<a name="ssdk"></a>
 		<section background-f8f8f8 id="ssdk">
-			<div class="container-fluid center clearfix no-border no-bottom-margin nobottompadding" style="max-width:1100px;">
+			<div class="container-fluid center clearfix no-border no-bottom-margin no-bottom-padding" style="max-width:1100px;">
 				<div class="col_one_third titleInside text-right topmargin-sm"><img src="/wp-content/themes/sixgill/images/td/product/logoReach.svg" alt=""/></div>
 				<div class="col_two_third col_last text-left topmargin-sm">
 					<?php echo get_field('sixgill_reach_text'); ?>
@@ -100,7 +100,7 @@
 
 		<a name="sassist"></a>
 		<section id="sassist" class="background-white" style="margin-top: 40px;">
-			<div class="container-fluid center clearfix no-top-margin no-top-padding no-border no-bottom-margin nobottompadding" style="max-width:1100px;">
+			<div class="container-fluid center clearfix no-top-margin no-top-padding no-border no-bottom-margin no-bottom-padding" style="max-width:1100px;">
 				<div class="col_one_third titleInside text-right"><img src="/wp-content/themes/sixgill/images/td/product/logoAssist.svg" alt=""/></div>
 				<div class="col_two_third col_last text-left topmargin-sm" style="margin-bottom: -20px;">
 					<?php echo get_field('sixgill_assist_header'); ?>

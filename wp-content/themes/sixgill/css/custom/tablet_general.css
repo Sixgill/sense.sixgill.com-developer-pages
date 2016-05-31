@@ -6,7 +6,7 @@
 		list-style-type: none;
 	}
 
-	section, .nomargin {
+	section {
 		margin-top: -1px !important;
 	}
 
@@ -28,7 +28,7 @@
 	.home-diagram {
 		padding: 0px 50px 45px 50px;
 	}
-	
+
 	.logo-sixgill {
 		width:245px;
 		height:96px;

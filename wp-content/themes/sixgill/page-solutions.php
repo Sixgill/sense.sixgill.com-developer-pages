@@ -14,10 +14,10 @@
 
 <section id="content">
 
-	<div class="content-wrap no-border nomargin nopadding">
+	<div class="content-wrap no-border no-margin nopadding">
 
 		<!-- Header of the section -->
-		<div class="container-fluid background-f8f8f8 clearfix nomargin nopadding">
+		<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
 			<div class="container-fluid center clearfix my_containerSolution">
 
 				<div class="col_one_third title-left-col">
@@ -30,12 +30,12 @@
 			</div>
 		</div>
 		<div class="clear"></div>
-		<div class="container-fluid background-f8f8f8 clearfix nomargin nopadding">
+		<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
 			<img src="/wp-content/themes/sixgill/images/td/solutions_fig1.png" alt="" width="100%"/>
 		</div>
 
 		<a name="people"></a>
-		<div id="people" class="container-fluid background-white clearfix nomargin nopadding">
+		<div id="people" class="container-fluid background-white clearfix no-margin nopadding">
 			<div class="container-fluid center clearfix my_containerSolution" style="max-width: interit !important;">
 				<div class="col_one_third">
 					<img src="<?php echo get_field('people_image'); ?>" class="iconSolutions" alt=""/>
@@ -72,13 +72,13 @@
 		</div>
 
 		<div class="clearfix"></div>
-		<div class="container-fluid background-f8f8f8 clearfix nomargin nopadding">
+		<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
 			<img src="/wp-content/themes/sixgill/images/td/solutions_fig2.png" alt="" width="100%"/>
 		</div>
 
 
 		<a name="assets"></a>
-		<div id="assets" class="container-fluid background-f8f8f8 clearfix nomargin nopadding">
+		<div id="assets" class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
 			<div class="container-fluid center clearfix my_containerSolution">
 				<div class="col_one_third">
 					<img src="<?php echo get_field('assets_image'); ?>" class="iconSolutions" alt=""/>
@@ -113,13 +113,13 @@
 		</div>
 
 		<div class="clearfix"></div>
-		<div class="container-fluid background-f8f8f8 clearfix nomargin nopadding">
+		<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
 			<img src="/wp-content/themes/sixgill/images/td/solutions_fig3.png" alt="" width="100%"/>
 		</div>
 		<div class="clearfix"></div>
 
 		<a name="crowds"></a>
-		<div id="crowds" class="container-fluid background-white clearfix nomargin nopadding">
+		<div id="crowds" class="container-fluid background-white clearfix no-margin nopadding">
 			<div class="container-fluid center clearfix my_containerSolution">
 				<div class="col_one_third">
 					<img src="<?php echo get_field('crowds_image'); ?>" class="iconSolutions" alt=""/>

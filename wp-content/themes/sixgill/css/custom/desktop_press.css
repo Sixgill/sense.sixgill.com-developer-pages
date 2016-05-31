@@ -1,7 +1,7 @@
 /* Press desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width: 1001px) {
 	.col_press {
-		padding-bottom:55px;
+		padding-bottom: 55px;
 	}
 
 	.press-post {
@@ -10,7 +10,7 @@
 
 	.hidden-press-contact {
 		margin-top: 50px !important;
-		padding:0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
 		background-color: #C0C0C5;
 		float: right;
 	}

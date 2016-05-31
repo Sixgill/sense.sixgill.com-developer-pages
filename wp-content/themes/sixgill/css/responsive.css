@@ -2897,7 +2897,7 @@ Responsive CSS
 
 	.portfolio-full.portfolio-notitle:not(.portfolio-1) .portfolio-desc,
 
-	.portfolio-nomargin.portfolio-notitle:not(.portfolio-1) .portfolio-desc {
+	.portfolio-no-margin.portfolio-notitle:not(.portfolio-1) .portfolio-desc {
 
 		bottom: -78px;
 
@@ -2997,7 +2997,7 @@ Responsive CSS
 
 
 
-	.portfolio.portfolio-nomargin,
+	.portfolio.portfolio-no-margin,
 
 	.portfolio.portfolio-full { margin: 0 !important; }
 

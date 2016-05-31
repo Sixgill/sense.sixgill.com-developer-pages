@@ -66,7 +66,7 @@
 
 				<div class="container clearfix menu-container">
 
-					<div id="logo" class="noborder nopadding nomargin">
+					<div id="logo" class="noborder nopadding no-margin">
 						<a href="/" class="logo-sixgill"></a>
 					</div>
 

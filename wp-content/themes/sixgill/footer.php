@@ -11,7 +11,7 @@
 
 	<footer id="footer" class="footer">
 
-		<div class="container-fluid nomargin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_footer.png'); background-size:cover;">
+		<div class="container-fluid no-margin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_footer.png'); background-size:cover;">
 			<div class="footer-widgets-wrap clearfix">
 				<div class="col_half footer-learn-text">
 					Learn how Sixgill can help your business.
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 
-		<div class="container-fluid nomargin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_credit.png'); background-size:cover;">
+		<div class="container-fluid no-margin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_credit.png'); background-size:cover;">
 			<div class="footer-widgets-wrap clearfix">
 				<div class="col_half footer-links-block">
 					<a class="footer-link" href="<?php echo $legalLink; ?>">

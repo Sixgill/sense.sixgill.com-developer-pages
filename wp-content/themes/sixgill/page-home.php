@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section id="slider" class="force-full-screen full-screen">
-	<div class="force-full-screen full-screen dark section nopadding nomargin noborder ohidden">
+	<div class="force-full-screen full-screen dark section nopadding no-margin noborder ohidden">
 		<div class="container clearfix">
 			<div class="slider-caption slider-caption-center" >
 				<div id="text-and-button-on-video" class="home-video-background">
@@ -30,7 +30,7 @@
 <a name="what"></a>
 <section id="content">
 
-	<section id="what" class="container-fluid center clearfix nomargin nopadding">
+	<section id="what" class="container-fluid center clearfix no-margin nopadding">
 		<section id="what2" class="container-fluid center clearfix">
 			<div align="center" class="home-text-2">
 
@@ -56,19 +56,19 @@
 			</div>
 		</section>
 
-		<section id="after_what2" class="container-fluid center clearfix nomargin nopadding">
+		<section id="after_what2" class="container-fluid center clearfix no-margin nopadding">
 			<img id="home-image-background-after_what2" src="/wp-content/themes/sixgill/images/td/home/00_FocusSection_v2.jpg" width="100%" alt=""/>
 		</section>
 
 	</section>
 
 	<a name="products"></a>
-	<section id="products" class="container-fluid center clearfix nomargin nopadding">
+	<section id="products" class="container-fluid center clearfix no-margin nopadding">
 		<div id="home-text-productions" class="home-products-title"><?php echo get_field('text_productions'); ?></div>
 	</section>
 
 
-	<section id="below_products" class="container-fluid center clearfix nomargin nopadding" align="center" style="padding-bottom:0px;">
+	<section id="below_products" class="container-fluid center clearfix no-margin nopadding" align="center" style="padding-bottom:0px;">
 		<img id="home-image-infographic" src="/wp-content/themes/sixgill/images/td/home/infographic.svg" class="home-diagram display-only-desktop" alt=""/>
 		<img id="home-image-mobile-infographic" src="/wp-content/themes/sixgill/images/td/home/mobile_infographic.svg" class="home-diagram hidden-bottom-imageDiagram" alt=""/>
 		<div class="clear"></div>
@@ -77,12 +77,12 @@
 		</a>
 	</section>
 
-	<section id="after_products" class="container-fluid center clearfix nomargin nopadding">
+	<section id="after_products" class="container-fluid center clearfix no-margin nopadding">
 		<img id="home-background-after-products" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Upper.jpg" width="100%" alt=""/>
 	</section>
 
 	<a name="solutions"></a>
-	<section id="solutions" class="container-fluid center clearfix nomargin nopadding" style="background-color:#2e2e2e;" >
+	<section id="solutions" class="container-fluid center clearfix no-margin nopadding" style="background-color:#2e2e2e;" >
 		<div style="margin-top:20px;">
 			<div class="container clearfix">
 				<div class="col_one_third">
@@ -120,7 +120,7 @@
 		</div>
 	</section>
 
-	<section id="before_clients" class="container-fluid center clearfix nomargin nopadding">
+	<section id="before_clients" class="container-fluid center clearfix no-margin nopadding">
 		<img id="home-image-background-before_clients" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Lower.jpg" width="100%" alt=""/>
 	</section>
 

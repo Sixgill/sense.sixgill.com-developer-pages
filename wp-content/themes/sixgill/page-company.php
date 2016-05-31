@@ -27,14 +27,14 @@
 		</div>
 
 		<div class="clear"></div>
-		<div class="container-fluid background-f8f8f8 clearfix nomargin nopadding">
+		<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
 			<img src="/wp-content/themes/sixgill/images/td/company_fig1.png" alt="" width="100%"/>
 		</div>
 
 
 
 		<a name="team"></a>
-		<div id="team" class="container-fluid background-white clearfix nomargin nopadding">
+		<div id="team" class="container-fluid background-white clearfix no-margin nopadding">
 			<div class="container-fluid center clearfix my_containerSolution">
 				<div align="center">
 					<p class="btnInside">
@@ -100,7 +100,7 @@
 			</div>
 		</div>
 
-		<section id="before_board" class="container-fluid center clearfix nomargin nopadding">
+		<section id="before_board" class="container-fluid center clearfix no-margin nopadding">
 			<img src="/wp-content/themes/sixgill/images/td/company/00_BoardSection.jpg" width="100%" alt=""/>
 		</section>
 
@@ -153,7 +153,7 @@
 		</section>
 
 		<div class="clear"></div>
-		<div class="container-fluid clearfix nomargin nopadding" style="background-color:#F8F8F8;">
+		<div class="container-fluid clearfix no-margin nopadding" style="background-color:#F8F8F8;">
 			<img src="/wp-content/themes/sixgill/images/td/company/shape3_v5.png" alt="" width="100%"/>
 		</div>
 

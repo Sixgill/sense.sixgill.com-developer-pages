@@ -873,7 +873,7 @@ ul:not([class]) li {
 		list-style-type: none;
 	}
 
-	section, .nomargin {
+	section, .no-margin {
 		margin-top: -1px !important;
 	}
 
