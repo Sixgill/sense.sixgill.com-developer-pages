@@ -1,5 +1,5 @@
 <a name="top"></a>
-<section id="slider" class="slider-parallax swiper_wrapper clearfix" style="border:0px solid #FF0004;">
+<section id="slider" class="slider-parallax no-border swiper_wrapper clearfix">
 	<div class="slider-parallax-inner">
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
@@ -20,9 +20,7 @@
 
 <!-- Content-->
 <section id="content">
-
-  <div class="content-wrap" style="padding-bottom:0px;">
-
+  <div id="single-post-content" class="content-wrap" style="padding-bottom:0px;">
     <section class="header-stick">
 	    <div class="container-fluid clearfix center solution-subpage-container">
 				<div class="left-aligned subsolution-left-aligned">
@@ -34,13 +32,11 @@
 					</div>
 				</div>
 	    </div>
-			<div class="col_full" style="text-align: center;">
-				<a href="/solutions/" id="press-button-back" class="button button-large nobottommargin btnCompany" style="margin:30px 0px 0px 0px;">
+			<div class="col_full center">
+				<a href="/solutions/" id="solutions-button-back" class="button button-large no-bottom-margin btnCompany">
 					BACK TO SOLUTIONS
 				</a>
 			</div>
     </section>
-
   </div>
-
 </section><!-- #content end -->

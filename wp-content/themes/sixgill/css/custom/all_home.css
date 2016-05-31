@@ -30,16 +30,44 @@
 }
 
 .applying-layer-copperOnVideo {
-    background-color: rgba(0,0,0,0.45);
+	background-color: rgba(0,0,0,0.45);
 }
 
 #products {
 	background-image: url('/wp-content/themes/sixgill/images/td/home/00_BlueShape.jpg');
-	background-size:cover;
-	height:171px;
+	background-size: cover;
+	height: 171px;
 }
 
 .hidden-bottom-imageDiagram {
 	padding-left: 0px;
 	padding-right: 0px;
+}
+
+#home-text-company-with-line {
+	font-size: 20px;
+	font-weight: normal;
+	color: #383838;
+}
+
+#home-image-proximity-people {
+	padding: 60px 0px 38px 0px;
+	width: 170px;
+}
+
+#home-image-proximity-assets {
+	padding: 60px 0px 38px 0px;
+	width: 170px;
+}
+
+#home-image-proximity-crowds {
+	padding: 60px 0px 38px 0px;
+	width: 170px;
+}
+#home-button-proximity-solutions {
+	margin: 30px 0px 0px 0px;
+}
+
+#home-main-text {
+	display: inline-block;
 }

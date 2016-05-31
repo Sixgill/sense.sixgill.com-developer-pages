@@ -313,15 +313,9 @@ span.middot {
 
 .clear-bottommargin-lg { margin-bottom: -80px !important; }
 
-.nomargin {margin: 0 !important; }
-
 .noleftmargin { margin-left: 0 !important; }
 
 .norightmargin { margin-right: 0 !important; }
-
-.notopmargin { margin-top: 0 !important; }
-
-.nobottommargin { margin-bottom: 0 !important; }
 
 .header-stick { margin-top: -50px !important; }
 
@@ -347,14 +341,6 @@ span.middot {
 
 .nopadding { padding: 0 !important; }
 
-.noleftpadding { padding-left: 0 !important; }
-
-.norightpadding { padding-right: 0 !important; }
-
-.notoppadding { padding-top: 0 !important; }
-
-.nobottompadding { padding-bottom: 0 !important; }
-
 .noabsolute { position: relative !important; }
 
 .noshadow { box-shadow: none !important; }
@@ -367,8 +353,6 @@ span.middot {
 	float: none !important;
 	display: inline-block !important;
 }
-
-.center { text-align: center !important; }
 
 .divcenter {
 	position: relative !important;
@@ -3592,7 +3576,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .portfolio-notitle .por
 }
 
 .portfolio-full.portfolio-notitle .portfolio-desc,
-.portfolio-nomargin.portfolio-notitle .portfolio-desc {
+.portfolio-no-margin.portfolio-notitle .portfolio-desc {
 	bottom: -78px;
 	border-bottom: 0;
 }
@@ -3626,13 +3610,13 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 /* Portfolio - No Margin
 -----------------------------------------------------------------*/
 
-.portfolio.portfolio-nomargin,
+.portfolio.portfolio-no-margin,
 .portfolio.portfolio-full { margin: 0 !important; }
 
-.portfolio-nomargin .portfolio-item,
+.portfolio-no-margin .portfolio-item,
 .portfolio-full .portfolio-item { padding: 0 !important; }
 
-.portfolio-nomargin .portfolio-desc { padding: 15px 10px 15px; }
+.portfolio-no-margin .portfolio-desc { padding: 15px 10px 15px; }
 
 
 /* Portfolio - 100% Full Width
@@ -3665,7 +3649,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 }
 
 .postcontent .portfolio-full.portfolio-notitle .portfolio-desc,
-.postcontent .portfolio-nomargin.portfolio-notitle .portfolio-desc { bottom: -70px; }
+.postcontent .portfolio-no-margin.portfolio-notitle .portfolio-desc { bottom: -70px; }
 
 .postcontent .portfolio-notitle .portfolio-item:hover .portfolio-overlay a { margin-top: -50px !important; }
 
@@ -3708,7 +3692,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 }
 
 .postcontent .portfolio-3.portfolio-full.portfolio-notitle .portfolio-desc,
-.postcontent .portfolio-3.portfolio-nomargin.portfolio-notitle .portfolio-desc { bottom: -72px; }
+.postcontent .portfolio-3.portfolio-no-margin.portfolio-notitle .portfolio-desc { bottom: -72px; }
 
 .postcontent .portfolio-3.portfolio-notitle .portfolio-item:hover .portfolio-overlay a { margin-top: -40px !important; }
 
@@ -3736,7 +3720,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 }
 
 .bothsidebar .portfolio-3.portfolio-full.portfolio-notitle .portfolio-desc,
-.bothsidebar .portfolio-3.portfolio-nomargin.portfolio-notitle .portfolio-desc { bottom: -68px; }
+.bothsidebar .portfolio-3.portfolio-no-margin.portfolio-notitle .portfolio-desc { bottom: -68px; }
 
 .bothsidebar .portfolio-3.portfolio-notitle .portfolio-item:hover .portfolio-overlay a { margin-top: -50px !important; }
 
@@ -3764,7 +3748,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 /* Portfolio - Items - 2 Columns - No Margin
 -----------------------------------------------------------------*/
 
-.portfolio-2.portfolio-nomargin .portfolio-desc { padding: 20px 15px 20px; }
+.portfolio-2.portfolio-no-margin .portfolio-desc { padding: 20px 15px 20px; }
 
 
 /* Portfolio - Items - 2 Columns - No Title
@@ -3776,7 +3760,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 }
 
 .portfolio-2.portfolio-full.portfolio-notitle .portfolio-desc,
-.portfolio-2.portfolio-nomargin.portfolio-notitle .portfolio-desc { bottom: -90px; }
+.portfolio-2.portfolio-no-margin.portfolio-notitle .portfolio-desc { bottom: -90px; }
 
 
 /* Portfolio - Sidebar - Items - 2 Columns
@@ -3790,7 +3774,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 /* Portfolio - Sidebar - Items - 2 Columns - No Margin
 -----------------------------------------------------------------*/
 
-.postcontent .portfolio-2.portfolio-nomargin .portfolio-desc { padding-bottom: 20px; }
+.postcontent .portfolio-2.portfolio-no-margin .portfolio-desc { padding-bottom: 20px; }
 
 
 /* Portfolio - Sidebar - Items - 2 Columns - No Title
@@ -3802,7 +3786,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 }
 
 .postcontent .portfolio-2.portfolio-full.portfolio-notitle .portfolio-desc,
-.postcontent .portfolio-2.portfolio-nomargin.portfolio-notitle .portfolio-desc { bottom: -90px; }
+.postcontent .portfolio-2.portfolio-no-margin.portfolio-notitle .portfolio-desc { bottom: -90px; }
 
 .postcontent .portfolio-2.portfolio-notitle .portfolio-item:hover .portfolio-overlay a { margin-top: -40px !important; }
 
@@ -3824,7 +3808,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 /* Portfolio - Both Sidebars - Items - 2 Columns - No Margin
 -----------------------------------------------------------------*/
 
-.bothsidebar .portfolio-2.portfolio-nomargin .portfolio-desc { padding-bottom: 15px; }
+.bothsidebar .portfolio-2.portfolio-no-margin .portfolio-desc { padding-bottom: 15px; }
 
 
 /* Portfolio - Both Sidebars - Items - 2 Columns - No Title
@@ -3836,7 +3820,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 }
 
 .bothsidebar .portfolio-2.portfolio-full.portfolio-notitle .portfolio-desc,
-.bothsidebar .portfolio-2.portfolio-nomargin.portfolio-notitle .portfolio-desc { bottom: -75px; }
+.bothsidebar .portfolio-2.portfolio-no-margin.portfolio-notitle .portfolio-desc { bottom: -75px; }
 
 .bothsidebar .portfolio-2.portfolio-notitle .portfolio-item:hover .portfolio-overlay a { margin-top: -40px !important; }
 
@@ -3863,7 +3847,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 }
 
 .portfolio-5.portfolio-full.portfolio-notitle .portfolio-desc,
-.portfolio-5.portfolio-nomargin.portfolio-notitle .portfolio-desc { bottom: -71px; }
+.portfolio-5.portfolio-no-margin.portfolio-notitle .portfolio-desc { bottom: -71px; }
 
 .portfolio-5.portfolio-notitle .portfolio-item:hover .portfolio-overlay a { margin-top: -30px !important; }
 
@@ -3891,7 +3875,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 }
 
 .postcontent .portfolio-5.portfolio-full.portfolio-notitle .portfolio-desc,
-.postcontent .portfolio-5.portfolio-nomargin.portfolio-notitle .portfolio-desc { bottom: -68px; }
+.postcontent .portfolio-5.portfolio-no-margin.portfolio-notitle .portfolio-desc { bottom: -68px; }
 
 .postcontent .portfolio-5.portfolio-notitle .portfolio-item:hover .portfolio-overlay a { margin-top: -50px !important; }
 
@@ -3920,7 +3904,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 }
 
 .portfolio-6.portfolio-full.portfolio-notitle .portfolio-desc,
-.portfolio-6.portfolio-nomargin.portfolio-notitle .portfolio-desc { bottom: -68px; }
+.portfolio-6.portfolio-no-margin.portfolio-notitle .portfolio-desc { bottom: -68px; }
 
 .portfolio-6.portfolio-notitle .portfolio-item:hover .portfolio-overlay a { margin-top: -40px !important; }
 

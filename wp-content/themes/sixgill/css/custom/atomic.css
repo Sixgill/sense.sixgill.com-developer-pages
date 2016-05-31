@@ -1,0 +1,77 @@
+.background-f8f8f8 {
+	background-color: #f8f8f8;
+}
+
+.background-white {
+	background-color: #ffffff;
+}
+
+.background-black {
+	background-color: #000000;
+}
+
+.color-white {
+	color: #ffffff;
+}
+
+.color-black {
+	color: #000000;
+}
+
+.color-999999 {
+	color: #999999;
+}
+
+.no-border {
+	border: 0px !important;
+}
+
+.no-top-margin {
+	margin-top: 0px !important;
+}
+
+.no-right-margin {
+	margin-right: 0px !important;
+}
+
+.no-bottom-margin {
+	margin-bottom: 0px !important;
+}
+
+.no-left-margin {
+	margin-left: 0px !important;
+}
+
+.no-margin {
+	margin: 0px !important;
+}
+
+.no-top-padding {
+	padding-top: 0px !important;
+}
+
+.no-right-padding {
+	padding-right: 0px !important;
+}
+
+.no-bottom-padding {
+	padding-bottom: 0px !important;
+}
+
+.no-left-padding {
+	padding-left: 0px !important;
+}
+
+.no-padding {
+	padding: 0px !important;
+}
+
+.center {
+	text-align: center !important;
+}
+
+.normal-font-20-1 {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1;
+}
