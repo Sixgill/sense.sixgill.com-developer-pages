@@ -81,9 +81,8 @@
     background-position: 97% 50%, 100% 100%;
     background-size: 20px;
 }
-
 /*
-.form-control {
+.form-control-header {
     display: block;
     width: 100%;
     height: 34px;
@@ -92,11 +91,15 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;
-
 }
- 
 */
 
+.form-search-header {
+    width:322px;  
+    height:40px; 
+    float:right;
+    margin-top:5px;
+}
 
 
 
