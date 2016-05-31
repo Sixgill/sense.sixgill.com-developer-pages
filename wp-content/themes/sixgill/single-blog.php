@@ -39,7 +39,7 @@
 						<p class="color-black" style="font-size: 20px; font-weight: normal; margin-bottom: 0px; line-height: 1;">
 							<?php echo the_time('F j, Y'); ?>
 						</p>
-						<p style="font-size: 20px; font-weight: normal; color:#999999; line-height: 1; ">
+						<p class="color-999999" style="font-size: 20px; font-weight: normal; line-height: 1;">
 							Post by <?php echo get_field('author'); ?>
 						</p>
 					</div>
@@ -57,7 +57,7 @@
 						<p class="color-black" style="font-size: 20px; font-weight: normal; margin-bottom: 0px; line-height: 1;">
 							<?php echo the_time('F j, Y'); ?>
 						</p>
-						<p id="press-author-post" style="font-size: 20px; font-weight: normal; color:#999999; line-height: 1; ">
+						<p class="color-999999" id="press-author-post" style="font-size: 20px; font-weight: normal; line-height: 1; ">
 							Post by <?php echo get_field('author'); ?>
 						</p>
 					</div>
@@ -91,7 +91,7 @@
 						<?php include(locate_template('social_buttons.php')); ?>
 						<p class="color-black" style="font-size: 20px; font-weight: normal; margin-bottom: 0px; line-height: 1;">
 							<?php echo the_time('F j, Y'); ?></p>
-							<p style="font-size: 20px; font-weight: normal; color:#999999; line-height: 1; ">
+							<p class="color-999999" style="font-size: 20px; font-weight: normal; line-height: 1; ">
 								Post by <?php echo get_field('author'); ?>
 							</p>
 						</div>

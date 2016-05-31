@@ -36,7 +36,7 @@
 		<a name="team"></a>
 		<div id="team" class="container-fluid background-white clearfix no-margin nopadding">
 			<div class="container-fluid center clearfix my_containerSolution">
-				<div align="center">
+				<div class="center">
 					<p class="btnInside">
 						<?php echo get_field('team_header'); ?>
 					</p>
@@ -107,7 +107,7 @@
 		<a name="board"></a>
 		<section id="board" class="color-white" style="background-color:#2e2e2e;">
 			<div class="container-fluid center clearfix no-top-margin no-top-padding no-border" style="max-width:1200px; padding-left: 6%; text-align: center;">
-				<div align="center">
+				<div class="center">
 					<p class="btnInside color-white" style="border-color:#FFF;">
 						The Board
 					</p>
@@ -153,7 +153,7 @@
 		</section>
 
 		<div class="clear"></div>
-		<div class="container-fluid clearfix no-margin nopadding" style="background-color:#F8F8F8;">
+		<div class="container-fluid clearfix background-f8f8f8 no-margin nopadding">
 			<img src="/wp-content/themes/sixgill/images/td/company/shape3_v5.png" alt="" width="100%"/>
 		</div>
 
@@ -161,7 +161,7 @@
 		<section id="press" class="background-white">
 
 			<div class="container-fluid center no-border clearfix no-top-margin no-top-padding" style="max-width:1200px; padding-left: 0px; text-align: center;">
-				<div align="center">
+				<div class="center">
 					<p class="btnInside company-single-post-title">
 						Latest press and news
 					</p>

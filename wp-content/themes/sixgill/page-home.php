@@ -32,7 +32,7 @@
 
 	<section id="what" class="container-fluid center clearfix no-margin nopadding">
 		<section id="what2" class="container-fluid center clearfix">
-			<div align="center" class="home-text-2">
+			<div class="home-text-2 center">
 
 				<div id="home-subtitle-with-line" class="homeSupTit">
 					<span class="homeSupTit-with-line">
@@ -68,7 +68,7 @@
 	</section>
 
 
-	<section id="below_products" class="container-fluid center clearfix no-margin nopadding" align="center" style="padding-bottom:0px;">
+	<section id="below_products" class="container-fluid center clearfix no-margin nopadding">
 		<img id="home-image-infographic" src="/wp-content/themes/sixgill/images/td/home/infographic.svg" class="home-diagram display-only-desktop" alt=""/>
 		<img id="home-image-mobile-infographic" src="/wp-content/themes/sixgill/images/td/home/mobile_infographic.svg" class="home-diagram hidden-bottom-imageDiagram" alt=""/>
 		<div class="clear"></div>
@@ -86,7 +86,8 @@
 		<div style="margin-top:20px;">
 			<div class="container clearfix">
 				<div class="col_one_third">
-					<img id="home-image-proximity-people" src="<?php echo get_field('image_people_home'); ?>" alt=""/><br>
+					<img id="home-image-proximity-people" src="<?php echo get_field('image_people_home'); ?>" alt=""/>
+					<br>
 					<div id="home-title-proximity-people" class="home3Tit">
 						<?php echo get_field('title_people'); ?>
 					</div>
@@ -95,7 +96,8 @@
 					</div>
 				</div>
 				<div class="col_one_third">
-					<img id="home-image-proximity-assets" src="<?php echo get_field('image_assets_home'); ?>" alt=""/><br>
+					<img id="home-image-proximity-assets" src="<?php echo get_field('image_assets_home'); ?>" alt=""/>
+					<br>
 					<div id="home-title-proximity-assets" class="home3Tit">
 						<?php echo get_field('title_assets'); ?>
 					</div>
@@ -105,7 +107,8 @@
 				</div>
 
 				<div class="col_one_third col_last">
-					<img id="home-image-proximity-crowds" src="<?php echo get_field('image_crowds_home'); ?>" alt=""/><br>
+					<img id="home-image-proximity-crowds" src="<?php echo get_field('image_crowds_home'); ?>" alt=""/>
+					<br>
 					<div id="home-title-proximity-crowds" class="home3Tit">
 						<?php echo get_field('title_crowds'); ?>
 					</div>
@@ -114,7 +117,9 @@
 					</div>
 				</div>
 				<div style="margin-bottom:20px;">
-					<a href="/solutions/" id="home-button-proximity-solutions" class="button button-large no-bottom-margin btnSolutions" style="">VIEW SOLUTIONS</a>
+					<a href="/solutions/" id="home-button-proximity-solutions" class="button button-large no-bottom-margin btnSolutions" style="">
+						VIEW SOLUTIONS
+					</a>
 				</div>
 			</div>
 		</div>
@@ -125,8 +130,8 @@
 	</section>
 
 	<a name="clients"></a>
-	<section id="clients" class="color-white" align="center">
-		<div align="center">
+	<section id="clients" class="color-white center">
+		<div class="center">
 			<div class="fancy-title-without-bottom fancy-title title-dotted-border title-center mobile-hiden-line">
 				<h3 id="home-text-company-with-line" style="font-size:20px; font-weight:normal; color:#383838;">
 					<?php echo get_field('logo_header_text'); ?>

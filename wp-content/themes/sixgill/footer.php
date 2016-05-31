@@ -62,10 +62,14 @@
 			<div class="modal-body">
 	        <div class="modal-content">
 	          <div class="modal-header" style="background-color:#57B82A;">
-	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	            <h4 class="modal-title color-white" id="myModalLabel" align="center">REQUEST A DEMO</h4>
+	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								&times;
+							</button>
+	            <h4 class="modal-title color-white center" id="myModalLabel">
+								REQUEST A DEMO
+							</h4>
 	          </div>
-	          <div class="modal-body" align="center">
+	          <div class="modal-body center">
 							<!--[if lte IE 8]>
 							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 							<![endif]-->
@@ -94,11 +98,11 @@
 	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 								&times;
 							</button>
-	            <h4 class="modal-title color-white" id="myModalLabel" align="center">
+	            <h4 class="modal-title color-white center" id="myModalLabel">
 								DOWNLOAD CORPORATE PRESENTATION
 							</h4>
 	          </div>
-	          <div class="modal-body" align="center">
+	          <div class="modal-body center">
 							<?php dynamic_sidebar( 'download-access' ); ?>
 	          </div>
 	          <div class="modal-footer center"></div>
@@ -118,11 +122,11 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 							&times;
 						</button>
-						<h4 class="modal-title color-white" id="myModalLabel2" align="center">
+						<h4 class="modal-title color-white center" id="myModalLabel2">
 							<?php echo $contactHeader; ?>
 						</h4>
 					</div>
-					<div class="modal-body" align="center">
+					<div class="modal-body center">
 						<?php
 							echo $contactText;
 							echo $googleMapEmbedCode;

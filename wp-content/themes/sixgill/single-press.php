@@ -13,7 +13,7 @@
 
 				<?php if ( has_post_thumbnail()) { ?>
 					<div>
-						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000">
+						<h3 id="press-date-post" class="press-date no-bottom-margin color-black">
 							<?php echo $post->post_title; ?>
 						</h3>
 						<h4 id="press-author-post" class="press-by-author author-with-date-blogPost">
@@ -27,7 +27,7 @@
 					</div>
 
 					<div class="shareIcons-mobile no-desktop-display no-tablet-display">
-						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000; margin-bottom: 10px;">
+						<h3 id="press-date-post" class="press-date no-bottom-margin color-black">
 							<?php echo $post->post_title; ?>
 						</h3>
 						<div class="swiper-slide" style="background-position: center; height: 350px; width:100%; margin-bottom: 30px;">
@@ -35,33 +35,35 @@
 						</div>
 
 						<?php include(locate_template('social_buttons.php')); ?>
-						<p id="press-author-post" class="no-bottom-margin" style="font-size: 20px; font-weight: normal; color:#000; line-height: 1;">
+						<p id="press-author-post" class="no-bottom-margin color-black" style="font-size: 20px; font-weight: normal; line-height: 1;">
 							<?php echo the_time('F j, Y'); ?>
 						</p>
-						<p id="press-author-post" style="font-size: 20px; font-weight: normal; color:#999999; line-height: 1; ">
+						<p class="color-999999" id="press-author-post" style="font-size: 20px; font-weight: normal; line-height: 1; ">
 							 Post by <?php echo get_field('author'); ?>
 						 </p>
 					</div>
 					<?php } else { ?>
 						<div>
-							<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000">
+							<h3 id="press-date-post" class="press-date no-bottom-margin color-black">
 								<?php echo $post->post_title; ?>
 							</h3>
 							<?php include(locate_template('social_buttons.php')); ?>
 
-							<h4 id="press-author-post" class="press-by-author author-with-date-blogPost"><?php echo the_time('F j, Y'); ?> | Post by <?php echo get_field('author'); ?></h4>
+							<h4 id="press-author-post" class="press-by-author author-with-date-blogPost">
+								<?php echo the_time('F j, Y'); ?> | Post by <?php echo get_field('author'); ?>
+							</h4>
 						</div>
 
 						<div class="shareIcons-mobile no-desktop-display no-tablet-display">
-							<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000; margin-bottom: 30px;">
+							<h3 id="press-date-post" class="press-date no-bottom-margin color-black">
 								<?php echo $post->post_title; ?>
 							</h3>
 							<?php include(locate_template('social_buttons.php')); ?>
 
-							<p id="press-author-post" class="no-bottom-margin" style="font-size: 20px; font-weight: normal; color:#000; line-height: 1;">
+							<p id="press-author-post" class="no-bottom-margin color-black" style="font-size: 20px; font-weight: normal; line-height: 1;">
 								<?php echo the_time('F j, Y'); ?>
 							</p>
-							<p id="press-author-post" style="font-size: 20px; font-weight: normal; color:#999999; line-height: 1; ">
+							<p class="color-999999" id="press-author-post" style="font-size: 20px; font-weight: normal; line-height: 1; ">
 								Post by <?php echo get_field('author'); ?>
 							</p>
 						</div>
