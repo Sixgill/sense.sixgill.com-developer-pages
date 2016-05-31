@@ -3,7 +3,7 @@ $subpages = getChindrenByParentSlug("solutions");
 foreach($subpages as $subpage) {
 	if(get_field('page_part', $subpage->ID) == $categoryName ) {
 		?>
-		<div class="blog-post-preview-header" style="padding-bottom: 5px;">
+		<div class="posts-list solutions-subpages-list">
 			<a href="<?php echo $subpage->guid; ?>">
 				<?php echo $subpage->post_title; ?>
 			</a>

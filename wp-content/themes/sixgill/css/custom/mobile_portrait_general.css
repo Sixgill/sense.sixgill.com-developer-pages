@@ -1,22 +1,9 @@
 /* General mobile portrait styles */
 @media only screen and (max-width: 500px) {
-
-	.topShareBottonMobile {
-		display: block;
-	}
-
 	.marginShareButton {
 		margin-left: 40px;
 		list-style-type: none;
 		display: none;
-	}
-
-	.hidden-press-contact {
-		display: none;
-	}
-
-	.my_subMenus {
-		display:none;
 	}
 
 	.title-left-col {
@@ -30,11 +17,7 @@
 		padding-left:10px;
 	}
 
-	/*.my_iconSolution {
-		width:55px;
-	}*/
-
-	.footer_Learn, .footer-links-block {
+	.footer-learn-text, .footer-links-block {
 		text-align:center;
 		font-size:14px;
 	}
@@ -98,17 +81,8 @@
 		padding-left: 22px !important;
 	}
 
-	/*#top-panel-background {
-		z-index: 9998;
-    position: fixed;
-    background: white;
-    top: 0;
-    width: 100%;
-		height: 69px;
-    left: 0;
-	}*/
-
-	.footer-links-block, .footer_Copy {
+	.footer-links-block,
+	.footer_Copy {
 		width: 100%;
 	}
 
@@ -116,16 +90,14 @@
 		display:none;
 	}
 
-    
-     .shareIcons-desktop {
-         display: none;
-     }
-     
-     .shareIcons-tablet {
-         display: none;
-     }
-     
-     .post-blog {
-        margin-top: 70px;
-     }
+	.post-blog {
+		margin-top: 70px;
+	}
+
+	.no-mobile-portrait-display,
+	.display-only-desktop,
+	.display-only-mobile-landscape,
+	.display-only-tablet {
+		display: none;
+	}
 }

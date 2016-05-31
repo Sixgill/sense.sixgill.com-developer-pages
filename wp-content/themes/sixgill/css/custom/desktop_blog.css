@@ -1,9 +1,5 @@
 /* Blog desktop styles */
 @media only screen and (min-width : 1001px) {
-	.subscribe-block-tablet-mobile {
-		display: none;
-	}
-
 	.subscribe-block {
 		background-color: #fafafa;
 		height: 250px;

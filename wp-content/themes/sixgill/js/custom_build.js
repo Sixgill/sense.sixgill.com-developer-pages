@@ -9,6 +9,12 @@ jQuery(function($){
 		}
 	});
 });
+jQuery(function() {
+	$('.learn-more-link').click(function() {
+		$(this).parent().prev().toggle();
+		$(this).find('.learn-more-expand-icon, .learn-more-close-icon').toggle();
+	});
+});
 jQuery(function($) {
 	$('.resource-link-container').click(function() {
 		window.currentDownloadLink = $(this).attr('data-permalink');

@@ -14,10 +14,6 @@
 		list-style-type: none;
 	}
 
-	.post-by-author {
-
-	}
-
 	.subscribe-element {
 		display: block;
 	}
@@ -33,16 +29,11 @@
 		margin-top: 10px;
 	}
 
-	.sizeForTextVideoHome {
-		font-size: 34px;
-		font-weight: 900;
-	}
-
 	.hidden-bottom-imageDiagram {
 		display: none;
 	}
 
-	.logoSIXGILL {
+	.logo-sixgill {
 		width:140px;
 		height:111px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
@@ -62,12 +53,12 @@
 		display: none;
 	}
 
-	.footer_Learn, .footer-links-block {
+	.footer-learn-text, .footer-links-block {
 		text-align:left;
 		font-size:22px;
 	}
 
-	.footer_Learn {
+	.footer-learn-text {
 		width: inherit;
 		margin-right: 0px;
 	}
@@ -108,16 +99,15 @@
 	.shareIcons-desktop {
 		display: block;
 	}
-    
-    .shareIcons-tablet {
-         display: none;
-     }
-
-	.shareIcons-mobile {
-		display: none;
-	}
 
 	#aside-blog {
 		margin-left: -90px;
+	}
+
+	.no-desktop-display,
+	.display-only-mobile-portrait,
+	.display-only-mobile-landscape,
+	.display-only-tablet {
+		display: none;
 	}
 }
