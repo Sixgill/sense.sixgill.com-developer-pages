@@ -1,0 +1,6 @@
+/* Legal mobile portrait and landscape styles */
+@media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
+	.legal-content {
+		margin-top: 24px;
+	}
+}

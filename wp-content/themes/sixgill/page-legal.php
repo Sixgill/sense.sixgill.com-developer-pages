@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <a name="top"></a>
 <!-- Content-->
-<section id="content">
+<section id="content" class="legal-content">
 
 	<div class="content-wrap" style="padding-bottom:0px;">
 
