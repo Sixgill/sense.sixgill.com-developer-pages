@@ -100,7 +100,11 @@ body, p {
 }
 
 .no-bottom-margin {
-	margin-bottom: 0px;
+	margin-bottom: 0px !important;
+}
+
+.no-top-margin {
+	margin-top: 0px !important;
 }
 
 .single-post-title, .single-post-subtitle {
@@ -244,6 +248,18 @@ ul:not([class]) li {
 
 .no-border {
 	border: 0px;
+}
+
+#myModal {
+	z-index: 9999;
+}
+
+.background-f8f8f8 {
+	background-color: #f8f8f8;
+}
+
+.background-white {
+	background-color: #ffffff;
 }
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;

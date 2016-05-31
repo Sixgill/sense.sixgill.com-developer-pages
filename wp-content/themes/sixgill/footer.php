@@ -63,7 +63,7 @@
 	        <div class="modal-content">
 	          <div class="modal-header" style="background-color:#57B82A;">
 	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	            <h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">REQUEST A DEMO</h4>
+	            <h4 class="modal-title color-white" id="myModalLabel" align="center">REQUEST A DEMO</h4>
 	          </div>
 	          <div class="modal-body" align="center">
 							<!--[if lte IE 8]>
@@ -91,8 +91,10 @@
 			<div class="modal-body">
 	        <div class="modal-content">
 	          <div class="modal-header" style="background-color:#2e2e2e;">
-	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	            <h4 class="modal-title" id="myModalLabel" style="color:#FFF;" align="center">
+	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								&times;
+							</button>
+	            <h4 class="modal-title color-white" id="myModalLabel" align="center">
 								DOWNLOAD CORPORATE PRESENTATION
 							</h4>
 	          </div>
@@ -116,7 +118,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 							&times;
 						</button>
-						<h4 class="modal-title" id="myModalLabel2" style="color:#FFF;" align="center">
+						<h4 class="modal-title color-white" id="myModalLabel2" align="center">
 							<?php echo $contactHeader; ?>
 						</h4>
 					</div>

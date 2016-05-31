@@ -34,9 +34,13 @@
 
 
 		<a name="team"></a>
-		<div id="team" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
+		<div id="team" class="container-fluid background-white clearfix nomargin nopadding">
 			<div class="container-fluid center clearfix my_containerSolution">
-				<div align="center"><p class="btnInside"><?php echo get_field('team_header'); ?></p></div>
+				<div align="center">
+					<p class="btnInside">
+						<?php echo get_field('team_header'); ?>
+					</p>
+				</div>
 
 
 				<p class="pCompany">
@@ -101,10 +105,10 @@
 		</section>
 
 		<a name="board"></a>
-		<section id="board" style="background-color:#2e2e2e; color:#FFFFFF;">
-			<div class="container-fluid center clearfix no-top-margin notoppadding no-border" style="max-width:1200px; padding-left: 6%; text-align: center;">
+		<section id="board" class="color-white" style="background-color:#2e2e2e;">
+			<div class="container-fluid center clearfix no-top-margin no-top-padding no-border" style="max-width:1200px; padding-left: 6%; text-align: center;">
 				<div align="center">
-					<p class="btnInside" style="color:#FFFFFF; border-color:#FFF;">
+					<p class="btnInside color-white" style="border-color:#FFF;">
 						The Board
 					</p>
 				</div>
@@ -154,13 +158,17 @@
 		</div>
 
 		<a name="press"></a>
-		<section id="press" style="background-color:#ffffff;">
+		<section id="press" class="background-white">
 
-			<div class="container-fluid center no-border clearfix no-top-margin notoppadding" style="max-width:1200px; padding-left: 0px; text-align: center;">
-				<div align="center"><p class="btnInside company-single-post-title">Latest press and news</p></div>
+			<div class="container-fluid center no-border clearfix no-top-margin no-top-padding" style="max-width:1200px; padding-left: 0px; text-align: center;">
+				<div align="center">
+					<p class="btnInside company-single-post-title">
+						Latest press and news
+					</p>
+				</div>
 			</div>
 
-			<div class="container-fluid center no-border clearfix no-top-margin notoppadding" style="max-width:1200px; padding-left: 9%; text-align: center;">
+			<div class="container-fluid center no-border clearfix no-top-margin no-top-padding" style="max-width:1200px; padding-left: 9%; text-align: center;">
 
 				<p class="pCompany">
 					<div class="col_half" align="left" style=" margin-bottom: 0px;">
@@ -173,7 +181,9 @@
 			</div>
 			<div class="container clearfix center">
 				<div style="margin-bottom:40px;">
-					<a href="/press/" class="button button-large no-bottom-margin btnSolutions news-press-button">VIEW ALL NEWS AND PRESS RELEASES</a>
+					<a href="/press/" class="button button-large no-bottom-margin btnSolutions news-press-button">
+						VIEW ALL NEWS AND PRESS RELEASES
+					</a>
 				</div>
 			</div>
 		</section>

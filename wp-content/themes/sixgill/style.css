@@ -343,14 +343,6 @@ span.middot {
 
 .nopadding { padding: 0 !important; }
 
-.noleftpadding { padding-left: 0 !important; }
-
-.norightpadding { padding-right: 0 !important; }
-
-.notoppadding { padding-top: 0 !important; }
-
-.nobottompadding { padding-bottom: 0 !important; }
-
 .noabsolute { position: relative !important; }
 
 .noshadow { box-shadow: none !important; }
@@ -363,8 +355,6 @@ span.middot {
 	float: none !important;
 	display: inline-block !important;
 }
-
-.center { text-align: center !important; }
 
 .divcenter {
 	position: relative !important;

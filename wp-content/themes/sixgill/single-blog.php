@@ -6,14 +6,14 @@
 	$ptitle = get_the_title();
 ?>
 <section id="content">
-	<div id="single-page-content" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
+	<div id="single-page-content" class="container-fluid background-white clearfix nomargin nopadding">
 		<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent" style="padding-top:0px;">
 			<?php include(locate_template('floating_social_buttons.php')); ?>
 			<div id="press-text-post" class="col_full post-blog">
 				<?php if ( has_post_thumbnail()) { ?>
 
 					<div class="shareIcons-desktop display-only-desktop">
-						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000">
+						<h3 id="press-date-post" class="press-date color-black no-bottom-margin">
 							<?php echo $post->post_title; ?>
 						</h3>
 						<h4 id="press-author-post" class="press-by-author author-with-date-blogPost">
@@ -27,7 +27,7 @@
 					</div>
 
 					<div class="shareIcons-tablet display-only-tablet">
-						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000; margin-bottom: 10px;">
+						<h3 id="press-date-post" class="press-date color-black no-bottom-margin" style="margin-bottom: 10px;">
 							<?php echo $post->post_title; ?>
 						</h3>
 
@@ -36,7 +36,7 @@
 						</div>
 						<?php include(locate_template('social_buttons.php')); ?>
 
-						<p style="font-size: 20px; font-weight: normal; color:#000; margin-bottom: 0px; line-height: 1;">
+						<p class="color-black" style="font-size: 20px; font-weight: normal; margin-bottom: 0px; line-height: 1;">
 							<?php echo the_time('F j, Y'); ?>
 						</p>
 						<p style="font-size: 20px; font-weight: normal; color:#999999; line-height: 1; ">
@@ -45,7 +45,7 @@
 					</div>
 
 					<div class="shareIcons-mobile no-desktop-display no-tablet-display">
-						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000; margin-bottom: 10px;">
+						<h3 id="press-date-post" class="press-date color-black no-bottom-margin" style=" margin-bottom: 10px;">
 							<?php echo $post->post_title; ?>
 						</h3>
 						<div class="swiper-slide" style="  background-position: center; height: 350px; width:100%;     margin-bottom: 30px;">
@@ -54,7 +54,7 @@
 
 						<?php include(locate_template('social_buttons.php')); ?>
 
-						<p style="font-size: 20px; font-weight: normal; color:#000; margin-bottom: 0px; line-height: 1;">
+						<p class="color-black" style="font-size: 20px; font-weight: normal; margin-bottom: 0px; line-height: 1;">
 							<?php echo the_time('F j, Y'); ?>
 						</p>
 						<p id="press-author-post" style="font-size: 20px; font-weight: normal; color:#999999; line-height: 1; ">
@@ -63,7 +63,7 @@
 					</div>
 				<?php } else { ?>
 					<div class="shareIcons-desktop display-only-desktop">
-						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000">
+						<h3 id="press-date-post" class="press-date color-black no-bottom-margin">
 							<?php echo $post->post_title; ?>
 						</h3>
 
@@ -74,7 +74,7 @@
 					</div>
 
 					<div class="shareIcons-tablet display-only-tablet">
-						<h3 id="press-date-post" class="press-date no-bottom-margin" style="color:#000">
+						<h3 id="press-date-post" class="press-date color-black no-bottom-margin">
 							<?php echo $post->post_title; ?>
 						</h3>
 						<h4 id="press-author-post" class="press-by-author author-with-date-blogPost">
@@ -84,12 +84,12 @@
 					</div>
 
 					<div class="shareIcons-mobile no-desktop-display no-tablet-display">
-						<h3 class="press-date no-bottom-margin" style="color:#000; margin-bottom: 30px;">
+						<h3 class="press-date color-black no-bottom-margin" style=" margin-bottom: 30px;">
 							<?php echo $post->post_title; ?>
 						</h3>
 
 						<?php include(locate_template('social_buttons.php')); ?>
-						<p style="font-size: 20px; font-weight: normal; color:#000; margin-bottom: 0px; line-height: 1;">
+						<p class="color-black" style="font-size: 20px; font-weight: normal; margin-bottom: 0px; line-height: 1;">
 							<?php echo the_time('F j, Y'); ?></p>
 							<p style="font-size: 20px; font-weight: normal; color:#999999; line-height: 1; ">
 								Post by <?php echo get_field('author'); ?>

@@ -4,21 +4,21 @@ body, p {
 
 .title-left-col {
 	font-family: "Lato", serif, sans-serif;
-	font-size:30px;
-	font-weight:bold;
-	text-transform:uppercase;
-	color:#0051C6;
-	text-align:right;
-	padding-right:30px;
-	margin-right:0px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0051C6;
+	text-align: right;
+	padding-right: 30px;
+	margin-right: 0px;
 }
 
 .text-right-col, .text-right-col-noline {
-	border-left:1px solid #9C9C9C;
-	padding-left:30px;
-	text-align:left;
-	font-size:15px;
-	color:#686868;
+	border-left: 1px solid #9C9C9C;
+	padding-left: 30px;
+	text-align: left;
+	font-size: 15px;
+	color: #686868;
 }
 
 .text-right-col-noline {
@@ -34,7 +34,7 @@ body, p {
 	border:4px solid #000000;
 	padding:10px 20px;
 	text-align:center;
-	margin-bottom:35px;
+	margin-bottom: 35px;
 }
 
 .my_txtSolution {
@@ -77,18 +77,17 @@ body, p {
 }
 
 .footer_Schedule, .footer_Copy {
-	text-align:right;
-	border:0px solid #FE0004;
-	color:#FFF;
-	font-size:20px;
-	margin-top:12px;
-	font-weight:normal;
-	padding:0px 20px;
+	text-align: right;
+	border: 0px solid #FE0004;
+	color: #ffffff;
+	font-size: 20px;
+	margin-top: 12px;
+	font-weight: normal;
+	padding: 0px 20px;
 }
 
 .footer_Copy {
 	font-size: 14px;
-	color:#FFF;
 }
 
 .my_headerBoxSolution {
@@ -97,14 +96,6 @@ body, p {
 
 .press-date, .press-by-author, .single-post-title, .single-post-subtitle {
 	font-family: "Lato", serif, sans-serif;
-}
-
-.no-bottom-margin {
-	margin-bottom: 0px !important;
-}
-
-.no-top-margin {
-	margin-top: 0px !important;
 }
 
 .single-post-title, .single-post-subtitle {
@@ -133,8 +124,6 @@ body, p {
 	font-weight: bold;
 	margin-bottom: 0px;
 	color: #b8b8b8;
-	/*color: #000000;
-	font-size: 18px;*/
 	line-height: 1em !important;
 }
 
@@ -176,7 +165,7 @@ label {
 }
 
 .yikes-easy-mc-success-message {
-	display:none !important;
+	display: none !important;
 }
 
 .max-width-720 {
@@ -184,21 +173,21 @@ label {
 }
 
 .fancy-title-without-bottom {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .author-with-date-blogPost {
-     font-size: 14px;
-     line-height: 1.5;
-     color: #999999;
- }
+	font-size: 14px;
+	line-height: 1.5;
+	color: #999999;
+}
 
 .menu-link-selected > div {
 	color: #0051c6 !important;
 }
 
 .solutions-blog-content > p {
-		text-align: left !important;
+	text-align: left !important;
 }
 
 .my_containerSolution_indent {
@@ -243,21 +232,9 @@ ul:not([class]) li {
 }
 
 #press-button-back, #blog-button-back, #solutions-button-back {
-	margin:30px 0px 0px 0px;
-}
-
-.no-border {
-	border: 0px;
+	margin: 30px 0px 0px 0px;
 }
 
 #myModal {
 	z-index: 9999;
-}
-
-.background-f8f8f8 {
-	background-color: #f8f8f8;
-}
-
-.background-white {
-	background-color: #ffffff;
 }

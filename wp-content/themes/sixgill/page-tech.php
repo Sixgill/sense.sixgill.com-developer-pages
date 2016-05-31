@@ -33,7 +33,7 @@
     </div>
 
     <a name="location"></a>
-    <div id="location" class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
+    <div id="location" class="container-fluid background-white clearfix nomargin nopadding">
       <div class="container-fluid center clearfix my_containerSolution">
         <div class="col_full"><img src="<?php echo get_field('image_1_header'); ?>" alt="" style="max-width:500px; width: 100%;"/></div>
         <div class="col_one_third my_boxTech_image hidden-top-imageTech"><img src="<?php echo get_field('image_1_tech'); ?>" alt=""/></div>
@@ -50,7 +50,7 @@
 
 
   <div class="clear"></div>
-  <div class="container-fluid clearfix nomargin nopadding" style="background-color:#FFF;">
+  <div class="container-fluid background-white clearfix nomargin nopadding">
     <img src="/wp-content/themes/sixgill/images/td/tech/shape2.png" alt="" width="100%" />
   </div>
 

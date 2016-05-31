@@ -32,7 +32,7 @@
 		</section>
 
 		<a name="ssense"></a>
-		<section id="ssense" style="background-color:#FFF;">
+		<section id="ssense" class="backround-white">
 			<div class="container-fluid center topmargin-sm no-border" style="max-width:1100px;">
 				<div class="col_one_third titleInside text-right"><img src="/wp-content/themes/sixgill/images/td/product/logoSense.svg" alt=""/></div>
 				<div class="col_two_third col_last text-left topmargin-sm">
@@ -100,7 +100,7 @@
 
 		<a name="sassist"></a>
 		<section id="sassist" class="background-white" style="margin-top: 40px;">
-			<div class="container-fluid center clearfix no-top-margin notoppadding no-border no-bottom-margin nobottompadding" style="max-width:1100px;">
+			<div class="container-fluid center clearfix no-top-margin no-top-padding no-border no-bottom-margin nobottompadding" style="max-width:1100px;">
 				<div class="col_one_third titleInside text-right"><img src="/wp-content/themes/sixgill/images/td/product/logoAssist.svg" alt=""/></div>
 				<div class="col_two_third col_last text-left topmargin-sm" style="margin-bottom: -20px;">
 					<?php echo get_field('sixgill_assist_header'); ?>

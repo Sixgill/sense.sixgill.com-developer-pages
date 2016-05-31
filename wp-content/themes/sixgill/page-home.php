@@ -125,7 +125,7 @@
 	</section>
 
 	<a name="clients"></a>
-	<section id="clients" style="color:#FFFFFF;" align="center">
+	<section id="clients" class="color-white" align="center">
 		<div align="center">
 			<div class="fancy-title-without-bottom fancy-title title-dotted-border title-center mobile-hiden-line">
 				<h3 id="home-text-company-with-line" style="font-size:20px; font-weight:normal; color:#383838;">
