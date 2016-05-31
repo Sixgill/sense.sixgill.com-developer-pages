@@ -20,10 +20,10 @@
 							<?php echo the_time('F j, Y'); ?> | Post by <?php echo get_field('author'); ?>
 						</h4>
 
-						<div class="swiper-slide" style="  background-position: center; height: 350px; width:100%;     margin-bottom: 30px;">
+						<div class="swiper-slide" style="background-position: center; height: 350px; width:100%; margin-bottom: 30px;">
 							<?php the_post_thumbnail( 'spec_thumb' ); ?>
 						</div>
-						<?php include(locate_template('social_buttons.php')); ?>
+						<?php include(locate_template('fixed_social_buttons.php')); ?>
 					</div>
 
 					<div class="shareIcons-tablet display-only-tablet">
@@ -34,7 +34,7 @@
 						<div class="swiper-slide" style="  background-position: center; height: 350px; width:100%;     margin-bottom: 30px;">
 							<?php the_post_thumbnail( 'spec_thumb' ); ?>
 						</div>
-						<?php include(locate_template('social_buttons.php')); ?>
+						<?php include(locate_template('fixed_social_buttons.php')); ?>
 
 						<p class="color-black no-bottom-margin normal-font-20-1">
 							<?php echo the_time('F j, Y'); ?>
@@ -52,7 +52,7 @@
 							<?php the_post_thumbnail( 'spec_thumb' ); ?>
 						</div>
 
-						<?php include(locate_template('social_buttons.php')); ?>
+						<?php include(locate_template('fixed_social_buttons.php')); ?>
 
 						<p class="color-black no-bottom-margin normal-font-20-1">
 							<?php echo the_time('F j, Y'); ?>
@@ -67,7 +67,7 @@
 							<?php echo $post->post_title; ?>
 						</h3>
 
-						<?php include(locate_template('social_buttons.php')); ?>
+						<?php include(locate_template('fixed_social_buttons.php')); ?>
 						<h4 id="press-author-post" class="press-by-author author-with-date-blogPost">
 							<?php echo the_time('F j, Y'); ?> | Post by <?php echo get_field('author'); ?>
 						</h4>
@@ -80,7 +80,7 @@
 						<h4 id="press-author-post" class="press-by-author author-with-date-blogPost">
 							<?php echo the_time('F j, Y'); ?> | Post by <?php echo get_field('author'); ?>
 						</h4>
-						<?php include(locate_template('social_buttons.php')); ?>
+						<?php include(locate_template('fixed_social_buttons.php')); ?>
 					</div>
 
 					<div class="shareIcons-mobile no-desktop-display no-tablet-display">
@@ -88,7 +88,7 @@
 							<?php echo $post->post_title; ?>
 						</h3>
 
-						<?php include(locate_template('social_buttons.php')); ?>
+						<?php include(locate_template('fixed_social_buttons.php')); ?>
 						<p class="color-black no-bottom-margin normal-font-20-1">
 							<?php echo the_time('F j, Y'); ?></p>
 							<p class="color-999999 normal-font-20-1">
