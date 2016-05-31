@@ -1,17 +1,8 @@
 /* General mobile portrait styles */
 @media only screen and (max-width: 500px) {
-
-	.topShareBottonMobile {
-		display: block;
-	}
-
 	.marginShareButton {
 		margin-left: 40px;
 		list-style-type: none;
-		display: none;
-	}
-
-	.hidden-press-contact {
 		display: none;
 	}
 

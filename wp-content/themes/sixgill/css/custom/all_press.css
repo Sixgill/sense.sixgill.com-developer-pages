@@ -23,10 +23,3 @@
 .press-block-container {
 	margin-top: 80px;
 }
-
-.hidden-press-contact {
-	margin-top: 50px !important;
-	padding:0px 0px 0px 0px;
-	background-color: #C0C0C5; 
-	float: right;
-}

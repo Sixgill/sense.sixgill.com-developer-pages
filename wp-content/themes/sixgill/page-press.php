@@ -31,7 +31,7 @@
 				</div>
 
 			</div>
-			<div class="col_two_fifth col_last widget hidden-press-contact center">
+			<div class="col_two_fifth col_last widget center display-only-desktop">
 				<div class="title-press-contact">
 					<?php echo get_field('header_block'); ?>
 				</div>

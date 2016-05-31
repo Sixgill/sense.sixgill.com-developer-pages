@@ -3,4 +3,8 @@
 	.blog-container {
 		padding-top: 20px;
 	}
+
+	.share-buttons-top {
+		display: block;
+	}
 }
