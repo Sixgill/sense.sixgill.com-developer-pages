@@ -18,7 +18,7 @@
 }
 
 .form-control-header {
-    display: inline-block;
+    display: none;
     width: 90%;
     height: 40px;
     padding: 6px 12px;
@@ -26,9 +26,6 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;
-}
-
-.form-control-header:focus {
 }
 
 .form-search-header {
@@ -43,9 +40,14 @@
     min-height: 40px; 
 }
 
-.search input[type="search"] {
-    width: 274px; 
-    vertical-align: middle;
+.search-page {
+    border: 1px solid #cccccc;
+    min-height: 40px; 
+}
+
+.search-hide {
+    width: 10%;
+    float: right;
 }
 
 .search input[type="submit"] {
@@ -59,7 +61,7 @@
     width:10%;
 }
 
-.search input[type="button"] {
+.search-page input[type="submit"] {
     background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
     background-repeat: no-repeat;
     background-position: 50% 50%, 100% 100%;
@@ -70,6 +72,19 @@
     width:10%;
 }
 
+.search-hide input[type="submit"] {
+    background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
+    background-repeat: no-repeat;
+    background-position: 50% 50%, 100% 100%;
+    background-size: 20px;
+    border: none;
+    float: right; 
+    height:40px; 
+    width:10%;
+}
+
+
+
 .pagination-search {
     margin-bottom: 50px;
     text-align: center;
@@ -79,4 +94,14 @@
     color:#0051c6; 
     font-size: 18px; 
     font-weight: bold;
+}
+
+.search-hide input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+}
+
+.search input[type=search]:focus {
+    width: 274px; 
+    vertical-align: middle;
 }

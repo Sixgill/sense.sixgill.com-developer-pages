@@ -46,7 +46,6 @@ jQuery(function($) {
 	e.parentNode.insertBefore(n, e);
 })(document,"script","hs-analytics",300000);
 jQuery(function($) {
-
 	$(document).ready(function () {
 		$(document).on("scroll", onScroll);
 
@@ -112,14 +111,48 @@ jQuery(function($) {
 		$( '#show-menu-icon, #close-menu-icon' ).toggleClass("hide");
 		return false;
 	});
-        
 });
 jQuery(function($) {
-            console.log('fdsfhj');
 
-    function search-height(){
-            //document.getElementById('input-search').attributes["type"] = "submit";
-        console.log('fdsfhj');
+   $('#inputButton').on('click', search_header);
+   $('#inputSearch').on('blur', search_header_hidden);
+    
+        var open_search = false;
+    function search_header() {
+        
+        var el = $('#inputSearch');
+if (el.is(":focus")){
+     alert('Not focused');
+}
+        
+                document.getElementById('inputButton').style.width = '10%';
+                
+                $(".search-hide").removeClass("search-hide");
+                $("#search-header-form").addClass("search");
+                
+                document.getElementById('inputSearch').style.display = 'inline-block';
+                document.getElementById("inputSearch").focus();
+        
+        return false;
+
+        }
+
+    function search_header_hidden() {
+                    
+            if ($('#inputSearch').val() !== "") {
+                
+            }
+            else {
+            document.getElementById('inputButton').style.width = '100%';
+            
+
+            $(".search").removeClass("search");
+            $("#search-header-form").addClass("search-hide");
+            
+            document.getElementById('inputSearch').style.display = 'none';
+            
+                
+        }
     }
 });
 jQuery(function($){
@@ -207,7 +240,7 @@ jQuery(function($){
 });
 
 jQuery(function($){
-
+    
   if(document.getElementById('single-page-content') && document.getElementById('aside-blog')){
  
  		//alert( 'Высота с учетом прокрутки: ' + document.getElementById('footer').offsetHeight);
