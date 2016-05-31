@@ -80,7 +80,7 @@
 }
 
 .resources-container {
-	text-align: center;
+	min-height: 700px;
 }
 
 .resource-link {
