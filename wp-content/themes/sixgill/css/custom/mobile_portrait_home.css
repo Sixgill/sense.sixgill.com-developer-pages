@@ -23,17 +23,13 @@
 		margin-top:60px;
 	}
 
-	.home3Tit_SixGill {
-		font-size:16px;
-		color:#FFF;
-		text-align:center;
-		padding-top:0.5em;
+	.home-products-title {
+		font-size: 16px;
+		color: #FFF;
+		text-align: center;
+		padding-top: 0.5em;
 		padding-bottom: 0.5em;
 		padding-left: 0.3em;
 		padding-right: 0.3em;
-	}
-
-	.hidden-top-imageDiagram {
-		display: none;
 	}
 }

@@ -4,21 +4,21 @@ body, p {
 
 .title-left-col {
 	font-family: "Lato", serif, sans-serif;
-	font-size:30px;
-	font-weight:bold;
-	text-transform:uppercase;
-	color:#0051C6;
-	text-align:right;
-	padding-right:30px;
-	margin-right:0px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0051C6;
+	text-align: right;
+	padding-right: 30px;
+	margin-right: 0px;
 }
 
 .text-right-col, .text-right-col-noline {
-	border-left:1px solid #9C9C9C;
-	padding-left:30px;
-	text-align:left;
-	font-size:15px;
-	color:#686868;
+	border-left: 1px solid #9C9C9C;
+	padding-left: 30px;
+	text-align: left;
+	font-size: 15px;
+	color: #686868;
 }
 
 .text-right-col-noline {
@@ -34,7 +34,7 @@ body, p {
 	border:4px solid #000000;
 	padding:10px 20px;
 	text-align:center;
-	margin-bottom:35px;
+	margin-bottom: 35px;
 }
 
 .my_txtSolution {
@@ -50,7 +50,7 @@ body, p {
 	border:0px solid #FE0004;
 }
 
-.footer_Learn, .footer-links-block {
+.footer-learn-text, .footer-links-block {
 	text-align:left;
 	border:0px solid #FE0004;
 	color:#FFF;
@@ -77,18 +77,17 @@ body, p {
 }
 
 .footer_Schedule, .footer_Copy {
-	text-align:right;
-	border:0px solid #FE0004;
-	color:#FFF;
-	font-size:20px;
-	margin-top:12px;
-	font-weight:normal;
-	padding:0px 20px;
+	text-align: right;
+	border: 0px solid #FE0004;
+	color: #ffffff;
+	font-size: 20px;
+	margin-top: 12px;
+	font-weight: normal;
+	padding: 0px 20px;
 }
 
 .footer_Copy {
 	font-size: 14px;
-	color:#FFF;
 }
 
 .my_headerBoxSolution {
@@ -97,10 +96,6 @@ body, p {
 
 .press-date, .press-by-author, .single-post-title, .single-post-subtitle {
 	font-family: "Lato", serif, sans-serif;
-}
-
-.no-bottom-margin {
-	margin-bottom: 0px;
 }
 
 .single-post-title, .single-post-subtitle {
@@ -115,7 +110,7 @@ body, p {
 	margin-bottom: 0px;
 }
 
-.blog-post-preview-header {
+.posts-list {
 	font-size: 16px;
 }
 
@@ -129,8 +124,6 @@ body, p {
 	font-weight: bold;
 	margin-bottom: 0px;
 	color: #b8b8b8;
-	/*color: #000000;
-	font-size: 18px;*/
 	line-height: 1em !important;
 }
 
@@ -172,7 +165,7 @@ label {
 }
 
 .yikes-easy-mc-success-message {
-	display:none !important;
+	display: none !important;
 }
 
 .max-width-720 {
@@ -180,21 +173,21 @@ label {
 }
 
 .fancy-title-without-bottom {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .author-with-date-blogPost {
-     font-size: 14px;
-     line-height: 1.5;
-     color: #999999;
- }
+	font-size: 14px;
+	line-height: 1.5;
+	color: #999999;
+}
 
 .menu-link-selected > div {
 	color: #0051c6 !important;
 }
 
 .solutions-blog-content > p {
-		text-align: left !important;
+	text-align: left !important;
 }
 
 .my_containerSolution_indent {
@@ -236,6 +229,14 @@ ul:not([class]) li {
 .no-horizontal-padding {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
+}
+
+#press-button-back, #blog-button-back, #solutions-button-back {
+	margin: 30px 0px 0px 0px;
+}
+
+#myModal {
+	z-index: 9999;
 }
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
@@ -356,18 +357,42 @@ ul:not([class]) li {
 }
 
 .applying-layer-copperOnVideo {
-    background-color: rgba(0,0,0,0.45);
+	background-color: rgba(0,0,0,0.45);
 }
 
 #products {
 	background-image: url('/wp-content/themes/sixgill/images/td/home/00_BlueShape.jpg');
-	background-size:cover;
-	height:171px;
+	background-size: cover;
+	height: 171px;
 }
 
 .hidden-bottom-imageDiagram {
 	padding-left: 0px;
 	padding-right: 0px;
+}
+
+#home-text-company-with-line {
+	font-size: 20px;
+	font-weight: normal;
+	color: #383838;
+}
+
+#home-image-proximity-people {
+	padding: 60px 0px 38px 0px;
+	width: 170px;
+}
+
+#home-image-proximity-assets {
+	padding: 60px 0px 38px 0px;
+	width: 170px;
+}
+
+#home-image-proximity-crowds {
+	padding: 60px 0px 38px 0px;
+	width: 170px;
+}
+#home-button-proximity-solutions {
+	margin: 30px 0px 0px 0px;
 }
 .solutions-subpage-text, .solutions-subpage-thumbnail {
 	text-align: left;
@@ -481,7 +506,7 @@ ul:not([class]) li {
 }
 
 .resources-container {
-	text-align: center;
+	min-height: 700px;
 }
 
 .resource-link {
@@ -512,10 +537,6 @@ ul:not([class]) li {
 .press-block-container {
 	margin-top: 80px;
 }
-
-.hidden-press-contact {
-	margin-top: 50px !important;
-}
 /* General desktop styles */
 @media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {
@@ -530,10 +551,6 @@ ul:not([class]) li {
 	.marginShareButton {
 		margin-left: 5px;
 		list-style-type: none;
-	}
-
-	.post-by-author {
-
 	}
 
 	.subscribe-element {
@@ -551,16 +568,11 @@ ul:not([class]) li {
 		margin-top: 10px;
 	}
 
-	.sizeForTextVideoHome {
-		font-size: 34px;
-		font-weight: 900;
-	}
-
 	.hidden-bottom-imageDiagram {
 		display: none;
 	}
 
-	.logoSIXGILL {
+	.logo-sixgill {
 		width:140px;
 		height:111px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
@@ -580,12 +592,12 @@ ul:not([class]) li {
 		display: none;
 	}
 
-	.footer_Learn, .footer-links-block {
+	.footer-learn-text, .footer-links-block {
 		text-align:left;
 		font-size:22px;
 	}
 
-	.footer_Learn {
+	.footer-learn-text {
 		width: inherit;
 		margin-right: 0px;
 	}
@@ -626,25 +638,20 @@ ul:not([class]) li {
 	.shareIcons-desktop {
 		display: block;
 	}
-    
-    .shareIcons-tablet {
-         display: none;
-     }
-
-	.shareIcons-mobile {
-		display: none;
-	}
 
 	#aside-blog {
 		margin-left: -90px;
 	}
+
+	.no-desktop-display,
+	.display-only-mobile-portrait,
+	.display-only-mobile-landscape,
+	.display-only-tablet {
+		display: none;
+	}
 }
 /* Blog desktop styles */
 @media only screen and (min-width : 1001px) {
-	.subscribe-block-tablet-mobile {
-		display: none;
-	}
-
 	.subscribe-block {
 		background-color: #fafafa;
 		height: 250px;
@@ -702,24 +709,29 @@ ul:not([class]) li {
 
 }
 /* Home desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width: 1001px) {
 	.home-text-2{
-		margin-top:120px;
+		margin-top: 120px;
 	}
 
 	.applying-layer-copperOnVideo {
 		background-color: rgba(0,0,0,0);
 	}
 
-	.backgroundForTextVideoHome {
+	.home-video-background {
 		background-image:url(/wp-content/themes/sixgill/images/td/home/shadow.png);
 		padding: 85px 30px 50px 30px;
-		height:380px;
+		height: 380px;
 	}
 
 	#logo {
 		float: left !important;
 		margin-bottom: 20px !important;
+	}
+
+	.home-video-text {
+		font-size: 34px;
+		font-weight: 900;
 	}
 }
 /* Solutions desktop styles */
@@ -737,14 +749,6 @@ ul:not([class]) li {
 		max-width: 350px;
 		text-align: center;
 	}
-
-	/*.sulution-subpage-container {
-		max-width: inherit !important;
-		text-align: center;
-		margin-left: 0px;
-		margin-right: 0px;
-		text-align:center;
-	}*/
 
 	#press-text-post {
 		display: inline-block;
@@ -818,13 +822,20 @@ ul:not([class]) li {
 
 }
 /* Press desktop styles */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width: 1001px) {
 	.col_press {
-		padding-bottom:55px;
+		padding-bottom: 55px;
 	}
 
 	.press-post {
 		padding-top: 32px;
+	}
+
+	.hidden-press-contact {
+		margin-top: 50px !important;
+		padding: 0px 0px 0px 0px;
+		background-color: #C0C0C5;
+		float: right;
 	}
 }
 /* Products desktop styles */
@@ -839,7 +850,7 @@ ul:not([class]) li {
 		list-style-type: none;
 	}
 
-	section, .nomargin {
+	section {
 		margin-top: -1px !important;
 	}
 
@@ -858,30 +869,14 @@ ul:not([class]) li {
 		margin-bottom: 18px;
 	}
 
-	.hidden-top-imageDiagram {
-		display: none;
-	}
-
-	.hidden-press-contact {
-		display: none;
-	}
-
 	.home-diagram {
 		padding: 0px 50px 45px 50px;
 	}
 
-	.headerBoxSolutionSize {
-		display: none;
-	}
-
-	.logoSIXGILL {
+	.logo-sixgill {
 		width:245px;
 		height:96px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_tablet.svg");
-	}
-
-	.my_subMenus {
-		display:none;
 	}
 
 	.title-left-col {
@@ -905,9 +900,7 @@ ul:not([class]) li {
 		width:115px;
 	}
 
-	.my_boxSolution_title {}
-
-	.footer_Learn, .footer-links-block {
+	.footer-learn-text, .footer-links-block {
 		text-align:left;
 		font-size:22px;
 		font-weight:normal;
@@ -968,19 +961,11 @@ ul:not([class]) li {
 		display:none;
 	}
 
-	.shareIcons-desktop {
-		display: none;
+	.shareIcons-tablet {
+		display: block;
 	}
 
-    .shareIcons-tablet {
-         display: block;
-     }
-
-	.shareIcons-mobile {
-		display: none;
-	}
-
-	.footer_Learn, .footer_Schedule {
+	.footer-learn-text, .footer_Schedule {
 		width: 100%;
 		text-align: center;
 	}
@@ -998,6 +983,13 @@ ul:not([class]) li {
 
 	.menu-social-link:first-of-type {
 		padding-left: 0px !important;
+	}
+
+	.no-tablet-display,
+	.display-only-desktop,
+	.display-only-mobile-landscape,
+	.display-only-mobile-portrait {
+		display: none;
 	}
 
 }
@@ -1033,10 +1025,6 @@ ul:not([class]) li {
 		font-size: 18px;
 	}
 
-	.subscribe-block-tablet-mobile  h4 {
-		display: none;
-	}
-
 	.subscribe-email {
 		height: 49px;
 		margin-bottom: 10px;
@@ -1053,9 +1041,9 @@ ul:not([class]) li {
 	}
 
 	.post-blog {
-		text-align: left; 
-         margin-bottom: 30px; 
-         z-index: 200; 
+		text-align: left;
+         margin-bottom: 30px;
+         z-index: 200;
          margin-top:150px;
      }
 	}
@@ -1204,23 +1192,10 @@ ul:not([class]) li {
 }
 /* General mobile portrait styles */
 @media only screen and (max-width: 500px) {
-
-	.topShareBottonMobile {
-		display: block;
-	}
-
 	.marginShareButton {
 		margin-left: 40px;
 		list-style-type: none;
 		display: none;
-	}
-
-	.hidden-press-contact {
-		display: none;
-	}
-
-	.my_subMenus {
-		display:none;
 	}
 
 	.title-left-col {
@@ -1234,11 +1209,7 @@ ul:not([class]) li {
 		padding-left:10px;
 	}
 
-	/*.my_iconSolution {
-		width:55px;
-	}*/
-
-	.footer_Learn, .footer-links-block {
+	.footer-learn-text, .footer-links-block {
 		text-align:center;
 		font-size:14px;
 	}
@@ -1302,17 +1273,8 @@ ul:not([class]) li {
 		padding-left: 22px !important;
 	}
 
-	/*#top-panel-background {
-		z-index: 9998;
-    position: fixed;
-    background: white;
-    top: 0;
-    width: 100%;
-		height: 69px;
-    left: 0;
-	}*/
-
-	.footer-links-block, .footer_Copy {
+	.footer-links-block,
+	.footer_Copy {
 		width: 100%;
 	}
 
@@ -1320,18 +1282,16 @@ ul:not([class]) li {
 		display:none;
 	}
 
-    
-     .shareIcons-desktop {
-         display: none;
-     }
-     
-     .shareIcons-tablet {
-         display: none;
-     }
-     
-     .post-blog {
-        margin-top: 70px;
-     }
+	.post-blog {
+		margin-top: 70px;
+	}
+
+	.no-mobile-portrait-display,
+	.display-only-desktop,
+	.display-only-mobile-landscape,
+	.display-only-tablet {
+		display: none;
+	}
 }
 /* Blog mobile portrait styles */
 @media only screen and (max-width: 500px) {
@@ -1342,10 +1302,6 @@ ul:not([class]) li {
 		width: 100%;
 		text-align: center;
 		font-size: 18px;
-	}
-
-	.subscribe-block-tablet-mobile  h4 {
-		display: none;
 	}
 
 	.subscribe-input-container {
@@ -1416,18 +1372,14 @@ ul:not([class]) li {
 		margin-top:60px;
 	}
 
-	.home3Tit_SixGill {
-		font-size:16px;
-		color:#FFF;
-		text-align:center;
-		padding-top:0.5em;
+	.home-products-title {
+		font-size: 16px;
+		color: #FFF;
+		text-align: center;
+		padding-top: 0.5em;
 		padding-bottom: 0.5em;
 		padding-left: 0.3em;
 		padding-right: 0.3em;
-	}
-
-	.hidden-top-imageDiagram {
-		display: none;
 	}
 }
 /* Solutions mobile portrait styles */
@@ -1502,8 +1454,8 @@ ul:not([class]) li {
 	}
 
 	.resource-link-container {
-			height: 82px;
-			padding-bottom: 61px;
+		height: 82px;
+		padding-bottom: 61px;
 	}
 
 	.resource-link {
@@ -1573,6 +1525,7 @@ ul:not([class]) li {
 	.global-social-buttons-container {
 		position: static;
 	}
+
 	#header {
 		border: 0px;
 	}
@@ -1593,37 +1546,32 @@ ul:not([class]) li {
 	#primary-menu-trigger {
 		top: 10px;
 	}
+
+	.no-mobile-landscape-display,
+	.display-only-mobile-portrait,
+	.display-only-desktop,
+	.display-only-tablet {
+		display: none;
+	}
 }
 /* Blog Mobile landscape styles */
 @media (max-width: 1000px) and (orientation: landscape) {
 	.subscribe-block-tablet-mobile {
 		height: 120px;
-    }
-    
-    .topShareBottonMobile {
- 		display: block;
- 	}
-    
-    #aside-blog {
-         display: none;
-     }
-     
-     .shareIcons-mobile {
-         display: block;
-     }
-     
-     .post-blog {
-         margin-top: 0px;
-     }
-     
-     .shareIcons-desktop {
-         display: none;
-     }
-     
-     .shareIcons-tablet {
-         display: none;
-     }
-	
+	}
+
+	#aside-blog {
+		display: none;
+	}
+
+	.shareIcons-mobile {
+		display: block;
+	}
+
+	.post-blog {
+		margin-top: 0px;
+	}
+
 }
 /* Solutions mobile landscape styles */
 @media (max-width: 1000px) and (orientation: landscape) {
@@ -1647,18 +1595,18 @@ ul:not([class]) li {
 }
 /* General mobile portrait and landscape styles */
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
-    
-    .shareIcons-desktop {
-         display: none;
-     }
-     
-     .shareIcons-tablet {
-         display: none;
-     }
-     
-     .shareIcons-mobile {
-         display: block;
-     }
+
+	.shareIcons-desktop {
+		display: none;
+	}
+
+	.shareIcons-tablet {
+		display: none;
+	}
+
+	.shareIcons-mobile {
+		display: block;
+	}
 
 	.footer-links-block > a {
 		width: 100%;
@@ -1667,7 +1615,7 @@ ul:not([class]) li {
 		margin-right: 0px;
 	}
 
-	.logoSIXGILL {
+	.logo-sixgill {
 		width:150px;
 		height:44px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg");
@@ -1677,6 +1625,10 @@ ul:not([class]) li {
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
 	.blog-container {
 		padding-top: 20px;
+	}
+
+	.share-buttons-top {
+		display: block;
 	}
 }
 /* Resources mobile portrait and landscape styles */
@@ -1714,8 +1666,8 @@ ul:not([class]) li {
 	#primary-menu-trigger {
 		position: inherit;
 		left: 0px;
-    display: inline-block;
-    float: right;
+		display: inline-block;
+		float: right;
 	}
 
 	#logo {
@@ -1822,9 +1774,9 @@ ul:not([class]) li {
 		margin-left: 60px;
 	}
 
-    #aside-blog {
-	margin-left: -70px;
-    }
+	#aside-blog {
+		margin-left: -70px;
+	}
 }
 
 
@@ -1846,22 +1798,22 @@ ul:not([class]) li {
 
 /* mobile landscape */
 @media (max-width: 667px) and (max-height: 400px) {
-    #aside-blog {
-        margin-top: 125px;
-    }
+	#aside-blog {
+		margin-top: 125px;
+	}
 
-    .shareButton-blog {
-        margin-bottom: 10px;
-        height: 35px;
-    }
+	.shareButton-blog {
+		margin-bottom: 10px;
+		height: 35px;
+	}
 
-    .subscribe-block-tablet-mobile {
-        padding: 40px 25px 20px 30px;
-    }
+	.subscribe-block-tablet-mobile {
+		padding: 40px 25px 20px 30px;
+	}
 
-		.footer_Learn, .footer_Schedule {
-			text-align: center;
-		}
+	.footer-learn-text, .footer_Schedule {
+		text-align: center;
+	}
 }
 
 /* Small lanscape screen */
@@ -1878,4 +1830,71 @@ ul:not([class]) li {
 	.subscribe-block-tablet-mobile {
 		padding-top: 10px;
 	}
+}
+.background-f8f8f8 {
+	background-color: #f8f8f8;
+}
+
+.background-white {
+	background-color: #ffffff;
+}
+
+.background-black {
+	background-color: #000000;
+}
+
+.color-white {
+	color: #ffffff;
+}
+
+.color-black {
+	color: #000000;
+}
+
+.no-border {
+	border: 0px;
+}
+
+.no-top-margin {
+	margin-top: 0px;
+}
+
+.no-right-margin {
+	margin-right: 0px;
+}
+
+.no-bottom-margin {
+	margin-bottom: 0px;
+}
+
+.no-left-margin {
+	margin-left: 0px;
+}
+
+.no-margin {
+	margin: 0px;
+}
+
+.no-top-padding {
+	padding-top: 0px;
+}
+
+.no-right-padding {
+	padding-right: 0px;
+}
+
+.no-bottom-padding {
+	padding-bottom: 0px;
+}
+
+.no-left-padding {
+	padding-left: 0px;
+}
+
+.no-padding {
+	padding: 0px;
+}
+
+.center {
+	text-align: center;
 }

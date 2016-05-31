@@ -6,10 +6,10 @@
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" style="background-color: #004cbf;">
-          <div class="slider-caption slider-caption-center">
-            <h1 class="single-post-title">RESOURCES</h1>
-          </div>
-        </div>
+					<div class="slider-caption slider-caption-center">
+						<h1 class="single-post-title">RESOURCES</h1>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -17,7 +17,7 @@
 
 <section id="content">
 
-  <div class="content-wrap resources-container resources-background"  style="min-height: 700px;">
+	<div class="content-wrap resources-container resources-background center">
 		<div class="resources-blocks-container">
 			<div style="padding-top: 0px; overflow:hidden;width:100%">
 				<!--<?php// echo do_shortcode("[af-portfolio]"); ?>-->
@@ -25,7 +25,7 @@
 			</div>
 		</div>
 
-  </div>
+	</div>
 
 </section><!-- #content end -->
 <?php get_footer(); ?>
