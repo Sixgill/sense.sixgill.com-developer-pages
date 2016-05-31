@@ -394,6 +394,10 @@ ul:not([class]) li {
 #home-button-proximity-solutions {
 	margin: 30px 0px 0px 0px;
 }
+
+#home-main-text {
+	display: inline-block;
+}
 .solutions-subpage-text, .solutions-subpage-thumbnail {
 	text-align: left;
 	display: inline-block;
@@ -423,6 +427,10 @@ ul:not([class]) li {
 #press-text-post {
 	text-align: left;
 	margin-bottom: 30px;
+}
+
+.solutions-subpages-list {
+	padding-bottom: 5px;
 }
 .resources-background {
 	background-color: #eeeeee;
@@ -1851,50 +1859,60 @@ ul:not([class]) li {
 	color: #000000;
 }
 
+.color-999999 {
+	color: #999999;
+}
+
 .no-border {
-	border: 0px;
+	border: 0px !important;
 }
 
 .no-top-margin {
-	margin-top: 0px;
+	margin-top: 0px !important;
 }
 
 .no-right-margin {
-	margin-right: 0px;
+	margin-right: 0px !important;
 }
 
 .no-bottom-margin {
-	margin-bottom: 0px;
+	margin-bottom: 0px !important;
 }
 
 .no-left-margin {
-	margin-left: 0px;
+	margin-left: 0px !important;
 }
 
 .no-margin {
-	margin: 0px;
+	margin: 0px !important;
 }
 
 .no-top-padding {
-	padding-top: 0px;
+	padding-top: 0px !important;
 }
 
 .no-right-padding {
-	padding-right: 0px;
+	padding-right: 0px !important;
 }
 
 .no-bottom-padding {
-	padding-bottom: 0px;
+	padding-bottom: 0px !important;
 }
 
 .no-left-padding {
-	padding-left: 0px;
+	padding-left: 0px !important;
 }
 
 .no-padding {
-	padding: 0px;
+	padding: 0px !important;
 }
 
 .center {
-	text-align: center;
+	text-align: center !important;
+}
+
+.normal-font-20-1 {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1;
 }
