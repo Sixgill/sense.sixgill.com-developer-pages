@@ -16,4 +16,9 @@
 		margin-top: 0px;
 	}
 
+	.subscribe-block-tablet-mobile {
+		padding-left: 5px !important;
+    padding-right: 15px !important;
+	}
+
 }
