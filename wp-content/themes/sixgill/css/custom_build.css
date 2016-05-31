@@ -314,6 +314,10 @@ ul:not([class]) li {
 	margin-right: 10%;
 	max-width: none !important;
 }
+
+.mc4wp-form-fields h4 {
+	display: none !important;
+}
 .company-learn-more-text {
 	display: none;
 }
@@ -331,6 +335,7 @@ ul:not([class]) li {
 
 .home-diagram {
 	padding:85px 50px 45px 50px;
+	display: inline-block;
 }
 
 #home-main-text {
@@ -1580,6 +1585,11 @@ ul:not([class]) li {
 		margin-top: 0px;
 	}
 
+	.subscribe-block-tablet-mobile {
+		padding-left: 5px !important;
+    padding-right: 15px !important;
+	}
+
 }
 /* Solutions mobile landscape styles */
 @media (max-width: 1000px) and (orientation: landscape) {
@@ -1639,6 +1649,16 @@ ul:not([class]) li {
 		display: block;
 	}
 }
+/* Company mobile portrait and landscape styles */
+@media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
+	.btnSolutions {
+		width: 295px;
+	}
+}
+/* Solutions mobile portrait and landscape styles */
+@media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
+	
+}
 /* Resources mobile portrait and landscape styles */
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
 
@@ -1656,6 +1676,12 @@ ul:not([class]) li {
 	.press-block-title {
 		font-size: 18px;
 		color:#383838;
+	}
+}
+/* Legal mobile portrait and landscape styles */
+@media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
+	.legal-content {
+		margin-top: 24px;
 	}
 }
 /* Portrait tablets & mobiles */
@@ -1757,7 +1783,7 @@ ul:not([class]) li {
 	}
 }
 
-/* Wide tablets or very small laptop screens : */
+/* Wide tablets or very small laptop screens and landscape tablets */
 @media (min-width: 1001px) and (max-width: 1266px) {
 
 	.full-block-width {
@@ -1767,6 +1793,14 @@ ul:not([class]) li {
 	.resources-blocks-container {
 		min-width: 850px !important;
 		max-width: 850px !important;
+	}
+
+	.subscribe-block {
+		width: 35%;
+	}
+
+	.blog-list {
+		width: 61%;
 	}
 }
 
@@ -1909,6 +1943,10 @@ ul:not([class]) li {
 
 .center {
 	text-align: center !important;
+}
+
+[class="center"] {
+	display: inline-block;
 }
 
 .normal-font-20-1 {

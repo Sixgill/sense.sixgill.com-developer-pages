@@ -53,7 +53,7 @@
 	}
 }
 
-/* Wide tablets or very small laptop screens : */
+/* Wide tablets or very small laptop screens and landscape tablets */
 @media (min-width: 1001px) and (max-width: 1266px) {
 
 	.full-block-width {
@@ -63,6 +63,14 @@
 	.resources-blocks-container {
 		min-width: 850px !important;
 		max-width: 850px !important;
+	}
+
+	.subscribe-block {
+		width: 35%;
+	}
+
+	.blog-list {
+		width: 61%;
 	}
 }
 
