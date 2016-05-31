@@ -1,10 +1,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
-
-			<a href="<?php echo get_permalink(); ?>" id="post-title-page-blog" style="color:#0051c6; font-size: 18px; font-weight: bold;" >
-				<?php the_title(); ?>
-			</a>	
+    <a href="<?php echo get_permalink(); ?>" id="post-title-page-blog" class="search-post-result" >
+        <?php the_title(); ?>
+    </a>	
     	
     <?php the_excerpt(); ?>
-	<hr class="fancy-title-without-bottom fancy-title title-dotted-border title-center mobile-hiden-line">
+    <hr class="fancy-title-without-bottom fancy-title title-dotted-border title-center mobile-hiden-line">
 </article>
 <br>

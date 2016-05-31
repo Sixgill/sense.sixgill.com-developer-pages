@@ -1,21 +1,21 @@
+/*
 .form-search input {
     background-image: url("/wp-content/themes/sixgill/images/icons/search.png");
     background-repeat: no-repeat;
     background-position: 97% 50%, 100% 100%;
     background-size: 20px;
 }
-/*
-.form-control-header {
-    display: block;
-    width: 100%;
-    height: 34px;
+*/
+.form-control {
+    display: inline-block;
+    width: 90%;
+    height: 40px;
     padding: 6px 12px;
     font-size: 14px;
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;
 }
-*/
 
 .form-search-header {
     width:322px;  
@@ -24,5 +24,32 @@
     margin-top:5px;
 }
 
+.search {
+    border: 1px solid #cccccc;
+    min-height: 40px; 
+}
 
+input[type="search"] {
+    width: 274px; 
+    vertical-align: middle;
+}
 
+input[type="submit-search"] {
+    background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
+    background-repeat: no-repeat;
+    background-position: 50% 50%, 100% 100%;
+    background-size: 20px;
+    border: none;
+    float: right; height:40px; width:10%;
+}
+
+.pagination-search {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.search-post-result {
+    color:#0051c6; 
+    font-size: 18px; 
+    font-weight: bold;
+}
