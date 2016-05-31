@@ -4,6 +4,7 @@
 
 .home-diagram {
 	padding:85px 50px 45px 50px;
+	display: inline-block;
 }
 
 #home-main-text {

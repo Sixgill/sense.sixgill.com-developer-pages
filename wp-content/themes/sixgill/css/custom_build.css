@@ -314,6 +314,10 @@ ul:not([class]) li {
 	margin-right: 10%;
 	max-width: none !important;
 }
+
+.mc4wp-form-fields h4 {
+	display: none !important;
+}
 .company-learn-more-text {
 	display: none;
 }
@@ -331,6 +335,7 @@ ul:not([class]) li {
 
 .home-diagram {
 	padding:85px 50px 45px 50px;
+	display: inline-block;
 }
 
 #home-main-text {
@@ -1658,6 +1663,12 @@ ul:not([class]) li {
 		color:#383838;
 	}
 }
+/* Legal mobile portrait and landscape styles */
+@media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
+	.legal-content {
+		margin-top: 24px;
+	}
+}
 /* Portrait tablets & mobiles */
 @media (max-width: 1000px) {
 	#header {
@@ -1909,6 +1920,10 @@ ul:not([class]) li {
 
 .center {
 	text-align: center !important;
+}
+
+[class="center"] {
+	display: inline-block;
 }
 
 .normal-font-20-1 {
