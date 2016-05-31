@@ -46,6 +46,7 @@ jQuery(function($) {
 	e.parentNode.insertBefore(n, e);
 })(document,"script","hs-analytics",300000);
 jQuery(function($) {
+
 	$(document).ready(function () {
 		$(document).on("scroll", onScroll);
 
@@ -111,12 +112,15 @@ jQuery(function($) {
 		$( '#show-menu-icon, #close-menu-icon' ).toggleClass("hide");
 		return false;
 	});
+        
 });
 jQuery(function($) {
+            console.log('fdsfhj');
 
-    function myfunc(){
-  document.getElementById("heretext").innerHTML="Текст, текст, текст!";
-}
+    function search-height(){
+            //document.getElementById('input-search').attributes["type"] = "submit";
+        console.log('fdsfhj');
+    }
 });
 jQuery(function($){
   if(document.getElementById('single-page-content') && document.getElementById('aside1')){

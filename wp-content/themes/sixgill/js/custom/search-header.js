@@ -1,6 +1,8 @@
 jQuery(function($) {
+            console.log('fdsfhj');
 
-    function myfunc(){
-  document.getElementById("heretext").innerHTML="Текст, текст, текст!";
-}
+    function search-height(){
+            //document.getElementById('input-search').attributes["type"] = "submit";
+        console.log('fdsfhj');
+    }
 });
