@@ -35,10 +35,10 @@
 						</div>
 
 						<?php include(locate_template('social_buttons.php')); ?>
-						<p id="press-author-post" class="no-bottom-margin color-black" style="font-size: 20px; font-weight: normal; line-height: 1;">
+						<p id="press-author-post" class="no-bottom-margin color-black normal-font-20-1">
 							<?php echo the_time('F j, Y'); ?>
 						</p>
-						<p class="color-999999" id="press-author-post" style="font-size: 20px; font-weight: normal; line-height: 1; ">
+						<p class="color-999999 normal-font-20-1" id="press-author-post">
 							 Post by <?php echo get_field('author'); ?>
 						 </p>
 					</div>
@@ -60,10 +60,10 @@
 							</h3>
 							<?php include(locate_template('social_buttons.php')); ?>
 
-							<p id="press-author-post" class="no-bottom-margin color-black" style="font-size: 20px; font-weight: normal; line-height: 1;">
+							<p id="press-author-post" class="no-bottom-margin color-black normal-font-20-1">
 								<?php echo the_time('F j, Y'); ?>
 							</p>
-							<p class="color-999999" id="press-author-post" style="font-size: 20px; font-weight: normal; line-height: 1; ">
+							<p class="color-999999 normal-font-20-1" id="press-author-post">
 								Post by <?php echo get_field('author'); ?>
 							</p>
 						</div>

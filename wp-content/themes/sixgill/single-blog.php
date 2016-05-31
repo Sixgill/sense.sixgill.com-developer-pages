@@ -36,10 +36,10 @@
 						</div>
 						<?php include(locate_template('social_buttons.php')); ?>
 
-						<p class="color-black" style="font-size: 20px; font-weight: normal; margin-bottom: 0px; line-height: 1;">
+						<p class="color-black no-bottom-margin normal-font-20-1">
 							<?php echo the_time('F j, Y'); ?>
 						</p>
-						<p class="color-999999" style="font-size: 20px; font-weight: normal; line-height: 1;">
+						<p class="color-999999 normal-font-20-1">
 							Post by <?php echo get_field('author'); ?>
 						</p>
 					</div>
@@ -54,10 +54,10 @@
 
 						<?php include(locate_template('social_buttons.php')); ?>
 
-						<p class="color-black" style="font-size: 20px; font-weight: normal; margin-bottom: 0px; line-height: 1;">
+						<p class="color-black no-bottom-margin normal-font-20-1">
 							<?php echo the_time('F j, Y'); ?>
 						</p>
-						<p class="color-999999" id="press-author-post" style="font-size: 20px; font-weight: normal; line-height: 1; ">
+						<p class="color-999999 normal-font-20-1" id="press-author-post">
 							Post by <?php echo get_field('author'); ?>
 						</p>
 					</div>
@@ -89,9 +89,9 @@
 						</h3>
 
 						<?php include(locate_template('social_buttons.php')); ?>
-						<p class="color-black" style="font-size: 20px; font-weight: normal; margin-bottom: 0px; line-height: 1;">
+						<p class="color-black no-bottom-margin normal-font-20-1">
 							<?php echo the_time('F j, Y'); ?></p>
-							<p class="color-999999" style="font-size: 20px; font-weight: normal; line-height: 1; ">
+							<p class="color-999999 normal-font-20-1">
 								Post by <?php echo get_field('author'); ?>
 							</p>
 						</div>

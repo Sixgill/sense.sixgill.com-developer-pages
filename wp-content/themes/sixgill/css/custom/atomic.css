@@ -69,3 +69,9 @@
 .center {
 	text-align: center;
 }
+
+.normal-font-20-1 {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1;
+}
