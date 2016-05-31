@@ -6,13 +6,14 @@
   <div class="content-wrap" style="padding-bottom:0px;">
 
     <section class="header-stick" >
-        <hr class="title-dotted-border">
+        <hr class="title-dotted-border display-only-desktop">
         
         <div class="container-fluid clearfix" style="margin-bottom:0px; max-width:900px;">
-            
-            <div class="search-form-container" style="width:50%; margin: 0 auto; margin-top: 60px;">
+            <div id="search">
+            <div class="search-form-container form-page-search">
                 <?php get_search_form(); ?>
             </div>
+                </div>
             <h1 style="margin:0">Search Result</h1>
             <p style="color:#999999"> <?php echo $wp_query->found_posts; ?> Results </p>
             

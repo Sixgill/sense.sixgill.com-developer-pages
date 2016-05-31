@@ -1,0 +1,7 @@
+/* Blog tablet styles */
+@media (min-width: 500px) and (max-width: 1000px) {
+    .form-page-search {
+        margin: 0 auto; 
+        margin-top: 150px;
+    }
+}
