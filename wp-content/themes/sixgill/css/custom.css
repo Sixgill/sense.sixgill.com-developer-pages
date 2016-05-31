@@ -385,7 +385,7 @@ body, p {
 .home2SubTit {font-size:24px; color:#FFF; height:24px;}
 .home2Tit { font-size:56px; color:#3CBC48; height:65px;}
 
-.home3Tit_SixGill {font-size:29px; font-weight:normal; color:#FFF; text-align:center;  padding-top:36px;}
+.home-products-title {font-size:29px; font-weight:normal; color:#FFF; text-align:center;  padding-top:36px;}
 
 .btnBlue {
 	color:#FFFFFF;
@@ -547,7 +547,7 @@ p {font-size:13px; font-weight:normal;}
 		width:70px;
 	}
 
-	.home3Tit_SixGill {font-size:20px;}
+	.home-products-title {font-size:20px;}
 
 	#primary-menu {
 		padding-bottom: 5px;

@@ -14,8 +14,8 @@
 	#primary-menu-trigger {
 		position: inherit;
 		left: 0px;
-    display: inline-block;
-    float: right;
+		display: inline-block;
+		float: right;
 	}
 
 	#logo {
@@ -40,9 +40,5 @@
 
 	.global-social-buttons-separator {
 		margin-top: 0px;
-	}
-
-	.no-tablet-mobile-display {
-		display: none;
 	}
 }

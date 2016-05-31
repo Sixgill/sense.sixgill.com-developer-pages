@@ -15,12 +15,13 @@
 <section id="content">
 	<div class="content-wrap" style="padding-bottom:0px;">
 
-		<div class="header-stick" id="company" style="background-color:#F8F8F8; border:0px solid #FF0004;">
+		<div class="header-stick no-border" id="company" style="background-color:#F8F8F8;">
 			<div class="container-fluid center clearfix" style="padding-top:75px; max-width:1100px;  border:0px solid #FF0004;">
-				<div class="col_one_third title-left-col"><?php echo get_field('about_header'); ?></div>
+				<div class="col_one_third title-left-col">
+					<?php echo get_field('about_header'); ?>
+				</div>
 				<div class="col_two_third col_last text-left text-right-col">
 					<?php echo get_field('top_text_left'); ?>
-
 				</div>
 			</div>
 		</div>
@@ -59,8 +60,14 @@
 							<div class="col_two_third col_last text-left" style="padding-bottom:55px;">
 
 								<div class="mobile-position-center">
-									<span class="companyName"><?php echo $item['name']; ?></span><br>
-									<span class="companyJob"><?php echo $item['title']; ?></span><br>
+									<span class="companyName">
+										<?php echo $item['name']; ?>
+									</span>
+									<br>
+									<span class="companyJob">
+										<?php echo $item['title']; ?>
+									</span>
+									<br>
 								</div>
 
 								<span class="companyDescription">
@@ -73,25 +80,19 @@
 								<div class="mobile-position-center">
 									<a class="learn-more-link" href="#">
 										Learn More
-										<span class="learn-more-expand-icon">&or;</span>
-										<span class="learn-more-close-icon">&and;</span>
+										<span class="learn-more-expand-icon">
+											&or;
+										</span>
+										<span class="learn-more-close-icon">
+											&and;
+										</span>
 									</a>
 								</div>
 
 							</div>
 						<?php endforeach; ?>
-						<script>
-							jQuery(function() {
-								$('.learn-more-link').click(function() {
-									$(this).parent().prev().toggle();
-									$(this).find('.learn-more-expand-icon, .learn-more-close-icon').toggle();
-								});
-							});
-						</script>
 					<?php endif; ?>
-
 				</p>
-
 			</div>
 		</div>
 
@@ -102,7 +103,11 @@
 		<a name="board"></a>
 		<section id="board" style="background-color:#2e2e2e; color:#FFFFFF;">
 			<div class="container-fluid center clearfix notopmargin notoppadding" style="max-width:1200px;  border:0px solid #FF0004; padding-left: 6%; text-align: center;">
-				<div align="center"><p class="btnInside" style="color:#FFFFFF; border-color:#FFF;">The Board</p></div>
+				<div align="center">
+					<p class="btnInside" style="color:#FFFFFF; border-color:#FFF;">
+						The Board
+					</p>
+				</div>
 				<p class="pCompany">
 
 
@@ -111,30 +116,34 @@
 							<?php if($i % 3 == 0) : ?>
 
 								<div class="col_one_third col_last" align="left" style="padding:0px 0px 0px 0px;">
-									<span class="companyName"><?php echo $item['name']; ?></span><br>
-									<span class="companyJob"><?php echo $item['title']; ?></span><br>
+									<span class="companyName">
+										<?php echo $item['name']; ?>
+									</span>
+									<br>
+									<span class="companyJob">
+										<?php echo $item['title']; ?>
+									</span>
+									<br>
 									<div class="hrSmallWhite" align="left"></div>
-
 									<?php echo $item['bio']; ?>
-
 								</div>
 								<?php break; ?>
 							<?php endif; ?>
 
 							<div class="col_one_third" align="left">
-								<span class="companyName"><?php echo $item['name']; ?></span><br>
-								<span class="companyJob"><?php echo $item['title']; ?></span><br>
+								<span class="companyName">
+									<?php echo $item['name']; ?>
+								</span>
+								<br>
+								<span class="companyJob">
+									<?php echo $item['title']; ?>
+								</span>
+								<br>
 								<div class="hrSmallWhite" align="left"></div>
-
 								<?php echo $item['bio']; ?>
-
 							</div>
-
-
 						<?php endforeach; ?>
 					<?php endif; ?>
-
-
 				</p>
 			</div>
 		</section>

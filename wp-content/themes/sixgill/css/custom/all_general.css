@@ -241,3 +241,7 @@ ul:not([class]) li {
 #press-button-back, #blog-button-back, #solutions-button-back {
 	margin:30px 0px 0px 0px;
 }
+
+.no-border {
+	border: 0px;
+}

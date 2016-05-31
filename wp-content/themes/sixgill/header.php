@@ -60,7 +60,7 @@
 		<section id="top"></section>
 		<!-- Header -->
 		<div id="menu-background"></div>
-		<header id="header" class="no-sticky">
+		<header id="header" class="no-sticky no-border">
 
 			<div id="header-wrap">
 

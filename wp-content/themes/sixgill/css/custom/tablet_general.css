@@ -165,7 +165,10 @@
 		padding-left: 0px !important;
 	}
 
-	.no-tablet-display {
+	.no-tablet-display,
+	.display-only-desktop,
+	.display-only-mobile-landscape,
+	.display-only-mobile-portrait {
 		display: none;
 	}
 

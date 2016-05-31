@@ -117,10 +117,8 @@
 
 	.no-mobile-portrait-display,
 	.display-only-desktop,
-	.display-only-mobile-landscape-portrait,
 	.display-only-mobile-landscape,
-	.display-only-tablet,
-	.display-only-tablet-mobile {
+	.display-only-tablet {
 		display: none;
 	}
 }

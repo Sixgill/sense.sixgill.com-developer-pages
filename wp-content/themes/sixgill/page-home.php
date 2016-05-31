@@ -64,7 +64,7 @@
 
 	<a name="products"></a>
 	<section id="products" class="container-fluid center clearfix nomargin nopadding">
-		<div id="home-text-productions" class="home3Tit_SixGill"><?php echo get_field('text_productions'); ?></div>
+		<div id="home-text-productions" class="home-products-title"><?php echo get_field('text_productions'); ?></div>
 	</section>
 
 

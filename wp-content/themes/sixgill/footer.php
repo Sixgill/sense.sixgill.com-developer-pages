@@ -16,7 +16,7 @@
 	<div class="container-fluid nomargin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_footer.png'); background-size:cover;">
 		<div class="footer-widgets-wrap clearfix">
 			<div class="col_half footer_Learn">Learn how Sixgill can help your business.</div>
-			<div class="col_half col_last footer_Schedule" style="border: 0px solid #FF0004;">
+			<div class="col_half col_last footer_Schedule no-border">
 				<button href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">SCHEDULE A DEMO</button>
 			</div>
 		</div>

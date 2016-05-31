@@ -15,6 +15,7 @@
 	.global-social-buttons-container {
 		position: static;
 	}
+
 	#header {
 		border: 0px;
 	}
@@ -36,7 +37,10 @@
 		top: 10px;
 	}
 
-	.no-mobile-landscape-display {
+	.no-mobile-landscape-display,
+	.display-only-mobile-portrait,
+	.display-only-desktop,
+	.display-only-tablet {
 		display: none;
 	}
 }
