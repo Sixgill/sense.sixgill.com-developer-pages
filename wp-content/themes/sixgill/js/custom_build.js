@@ -106,6 +106,12 @@ jQuery(function($) {
 		return false;
 	});
 });
+jQuery(function($) {
+
+    function myfunc(){
+  document.getElementById("heretext").innerHTML="Текст, текст, текст!";
+}
+});
 jQuery(function($){
   if(document.getElementById('single-page-content') && document.getElementById('aside1')){
     // 		alert( 'Высота с учетом прокрутки: ' + document.getElementById('footer').offsetHeight);

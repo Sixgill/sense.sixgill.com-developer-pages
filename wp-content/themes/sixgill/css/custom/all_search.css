@@ -17,6 +17,20 @@
     border: none;
 }
 
+.form-control-header {
+    display: inline-block;
+    width: 90%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+.form-control-header:focus {
+}
+
 .form-search-header {
     width:322px;  
     height:40px; 
@@ -29,18 +43,20 @@
     min-height: 40px; 
 }
 
-input[type="search"] {
+.search input[type="search"] {
     width: 274px; 
     vertical-align: middle;
 }
 
-input[type="submit-search"] {
+.search input[type="submit"] {
     background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
     background-repeat: no-repeat;
     background-position: 50% 50%, 100% 100%;
     background-size: 20px;
     border: none;
-    float: right; height:40px; width:10%;
+    float: right; 
+    height:40px; 
+    width:10%;
 }
 
 .pagination-search {

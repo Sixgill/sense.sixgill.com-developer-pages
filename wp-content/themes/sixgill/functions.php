@@ -125,25 +125,21 @@ function sixgill_widgets_init() {
 
 }
 
-function pagination($pages = '', $range = 4)
-{  
+function pagination($pages = '', $range = 4) {  
      $showitems = ($range * 2)+1;  
  
      global $paged;
      if(empty($paged)) $paged = 1;
  
-     if($pages == '')
-     {
+     if($pages == '') {
          global $wp_query;
          $pages = $wp_query->max_num_pages;
-         if(!$pages)
-         {
+         if(!$pages) {
              $pages = 1;
          }
      }   
  
-     if(1 != $pages)
-     {
+     if(1 != $pages) {
 //         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
          if($paged > 1 ) {
              echo "<a href='".get_pagenum_link($paged - 1)."'> <img src=\"/wp-content/themes/sixgill/images/icons/left-page.png\" style=\"height: 30px; margin-right:20px;\"> </a>";
@@ -152,10 +148,8 @@ function pagination($pages = '', $range = 4)
              echo "<img src=\"/wp-content/themes/sixgill/images/icons/left-no-page.png\" style=\"height: 30px; margin-right:20px;\">"; 
          }
  
-         for ($i=1; $i <= $pages; $i++)
-         {
-             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-             {
+         for ($i=1; $i <= $pages; $i++) {
+             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
                  echo ($paged == $i)? "<span style=\"margin-right:10px;\" class=\"current\"><ins><b>".$i."</b></ins></span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\" style=\"margin-right:10px; color: black;\">".$i."</a>";
              }
          }
@@ -171,11 +165,8 @@ function pagination($pages = '', $range = 4)
          else {
              echo "<img src=\"/wp-content/themes/sixgill/images/icons/right-no-page.png\" style=\"height: 30px;\">"; 
          }
-
-         
      }
 }
-
 
 add_filter('excerpt_more', function($more) {
 	return '...';
