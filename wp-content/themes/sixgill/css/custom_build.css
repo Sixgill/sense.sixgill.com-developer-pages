@@ -345,6 +345,7 @@ ul:not([class]) li {
 .logo-subheader {
 	font-size: 15px;
 	color: #383838;
+	display: inline-block;
 }
 
 #home-main-text {
@@ -846,10 +847,6 @@ ul:not([class]) li {
 	.marginShareButton {
 		margin-left: 20px;
 		list-style-type: none;
-	}
-
-	section {
-		margin-top: -1px !important;
 	}
 
 	#primary-menu {
@@ -1938,4 +1935,8 @@ ul:not([class]) li {
 	font-size: 20px;
 	font-weight: normal;
 	line-height: 1;
+}
+
+section {
+	margin-top: -1px !important;
 }
