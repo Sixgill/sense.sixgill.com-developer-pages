@@ -6,10 +6,6 @@
 		list-style-type: none;
 	}
 
-	section {
-		margin-top: -1px !important;
-	}
-
 	#primary-menu {
 		text-align: center;
 		opacity: 0;

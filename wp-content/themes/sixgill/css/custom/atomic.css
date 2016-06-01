@@ -79,3 +79,7 @@
 	font-weight: normal;
 	line-height: 1;
 }
+
+section {
+	margin-top: -1px !important;
+}

@@ -43,7 +43,7 @@
 						 </p>
 					</div>
 					<?php } else { ?>
-						<div>
+						<div class="no-mobile-portrait-display no-mobile-landscape-display">
 							<h3 id="press-date-post" class="press-date no-bottom-margin color-black">
 								<?php echo $post->post_title; ?>
 							</h3>
