@@ -115,45 +115,50 @@ jQuery(function($) {
 jQuery(function($) {
 
    $('#inputButton').on('click', search_header);
-   $('#inputSearch').on('blur', search_header_hidden);
+   $('#inputSearch').on('blur', search_header_hidden);    
     
-        var open_search = false;
-    function search_header() {
-        
-        var el = $('#inputSearch');
-if (el.is(":focus")){
-     alert('Not focused');
-}
-        
-                document.getElementById('inputButton').style.width = '10%';
-                
-                $(".search-hide").removeClass("search-hide");
-                $("#search-header-form").addClass("search");
-                
-                document.getElementById('inputSearch').style.display = 'inline-block';
-                document.getElementById("inputSearch").focus();
-        
-        return false;
-
-        }
-
-    function search_header_hidden() {
-                    
-            if ($('#inputSearch').val() !== "") {
-                
-            }
-            else {
-            document.getElementById('inputButton').style.width = '100%';
-            
-
-            $(".search").removeClass("search");
-            $("#search-header-form").addClass("search-hide");
-            
-            document.getElementById('inputSearch').style.display = 'none';
-            
-                
-        }
-    }
+  function search_header() {
+      $('#inputSearch').toggle();
+      if ($('#inputSearch').is(":visible")) {
+          
+          document.getElementById('inputButton').style.width = '10%';
+          $(".search-hide").removeClass("search-hide");
+          $("#search-header-form").addClass("search");        
+          document.getElementById('inputSearch').style.display = 'inline-block';
+          
+          $('#inputSearch').focus();
+          $('#inputButton').attr('type', 'button');
+      
+      } 
+      else {
+          if ($('#inputSearch').val()) {
+              $('button').attr('type', 'submit');
+              
+              return;
+          }
+          else {
+              document.getElementById('inputButton').style.width = '100%';
+              $(".search").removeClass("search");
+              $("#search-header-form").addClass("search-hide");
+              
+              document.getElementById('inputSearch').style.display = 'none'; 
+              $('#inputSearch').hide();
+              $('#inputButton').attr('type', 'button');
+          }
+      }
+  }
+    
+  function search_header_hidden(e) {
+      if ((e.relatedTarget || {}).nodeName === 'BUTTON') return;
+      if ($('#inputSearch').val()) return;
+      
+      document.getElementById('inputButton').style.width = '100%';
+      $(".search").removeClass("search");
+      $("#search-header-form").addClass("search-hide");
+      document.getElementById('inputSearch').style.display = 'none'; 
+      $('#inputSearch').hide();
+      $('#inputButton').attr('type', 'button');
+  }
 });
 jQuery(function($){
   if(document.getElementById('single-page-content') && document.getElementById('aside1')){
@@ -240,7 +245,7 @@ jQuery(function($){
 });
 
 jQuery(function($){
-    
+
   if(document.getElementById('single-page-content') && document.getElementById('aside-blog')){
  
  		//alert( 'Высота с учетом прокрутки: ' + document.getElementById('footer').offsetHeight);
