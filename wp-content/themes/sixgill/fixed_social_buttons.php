@@ -1,5 +1,5 @@
 <div class="share-buttons-top no-desktop-display no-tablet-display">
-	<div style="width:100%; margin-bottom: 30px;">
+	<div style="width:100%;">
 		<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" target="_blank" title="Share on Facebook.">
 			<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Facebook" id="image-mobile-fecebook-share" class="shareButton-mobile">
 		</a>

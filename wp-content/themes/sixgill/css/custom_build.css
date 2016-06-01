@@ -334,7 +334,7 @@ ul:not([class]) li {
 }
 
 .home-diagram {
-	padding:85px 50px 45px 50px;
+	padding: 85px 50px 45px 50px;
 	display: inline-block;
 }
 
@@ -403,6 +403,10 @@ ul:not([class]) li {
 #home-main-text {
 	display: inline-block;
 }
+
+.hidden-top-imageDiagram {
+	margin-bottom: 35px;
+}
 .solutions-subpage-text, .solutions-subpage-thumbnail {
 	text-align: left;
 	display: inline-block;
@@ -411,6 +415,7 @@ ul:not([class]) li {
 .solutions-subpage-text ul, ol {
     padding:0;
     margin:0;
+		margin-bottom: 5px;
 }
 
 #press-text-post {
@@ -421,8 +426,6 @@ ul:not([class]) li {
 .solutions-subpages-list {
 	padding-bottom: 5px;
 }
-
-solutions-subpage-text
 .resources-background {
 	background-color: #eeeeee;
 }
@@ -565,10 +568,6 @@ solutions-subpage-text
 		font-size: 36px;
 		font-family: "Lato";
 		margin-top: 10px;
-	}
-
-	.hidden-bottom-imageDiagram {
-		display: none;
 	}
 
 	.logo-sixgill {

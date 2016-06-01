@@ -71,6 +71,17 @@ function getChindrenByParentSlug($slug){
 	return $childpages;
 }
 
+function getCategorySlug() {
+	return @get_the_category()[0]->slug;
+}
+
+function getParentSlug() {
+  global $post;
+  if($post->post_parent == 0) return '';
+  $post_data = get_post($post->post_parent);
+  return $post_data->post_name;
+}
+
 function sixgill_widgets_init() {
 
 	register_sidebar( array(
