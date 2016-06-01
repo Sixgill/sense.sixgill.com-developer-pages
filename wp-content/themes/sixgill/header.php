@@ -92,19 +92,21 @@
 							<?php } ?>
 
 								<?php if(strcasecmp(getCurrentSlug(), "solutions")==0) { ?>
-									<a class="my_subMenus menu-link-selected" href="#top"><div>Solutions</div></a>
-									<div class="display-only-desktop" style="margin-left:15px;">
+									<a class="menu-link-selected" href="#top"><div>Solutions</div></a>
+									<div class="my_subMenus display-only-desktop" style="margin-left:15px;">
 										<a href="#people">People</a><br>
 										<a href="#assets">Assets</a><br>
 										<a href="#crowds">Crowds</a>
 									</div>
+								<?php } else if (strcasecmp(getParentSlug(), "solutions")==0) { ?>
+									<a class="menu-link-selected" href="/solutions/"><div>Solutions</div></a>
 								<?php }else{ ?>
 									<a href="/solutions/"><div>Solutions</div></a>
 								<?php } ?>
 
 								<?php if(strcasecmp(getCurrentSlug(), "products")==0) { ?>
-									<a class="my_subMenus menu-link-selected" href="#top"><div>Products</div></a>
-									<div class="display-only-desktop" style="margin-left:15px;">
+									<a class="menu-link-selected" href="#top"><div>Products</div></a>
+									<div class="my_subMenus display-only-desktop" style="margin-left:15px;">
 										<a href="#ssense">Sense</a><br>
 										<a href="#ssdk">Reach</a><br>
 										<a href="#sassist">Assist</a>
@@ -114,8 +116,8 @@
 								<?php } ?>
 
 								<?php if(strcasecmp(getCurrentSlug(), "tech")==0) { ?>
-									<a class="my_subMenus menu-link-selected" href="#top"><div>Tech</div></a>
-									<div class="display-only-desktop" style="margin-left:15px;">
+									<a class="menu-link-selected" href="#top"><div>Tech</div></a>
+									<div class="my_subMenus display-only-desktop" style="margin-left:15px;">
 										<a href="#location">Location</a><br>
 										<a href="#proximity">Proximity</a><br>
 										<a href="#openplatform">Open Platform</a>
@@ -125,8 +127,8 @@
 								<?php } ?>
 
 								<?php if(strcasecmp(getCurrentSlug(), "company")==0) { ?>
-									<a class="my_subMenus menu-link-selected" href="#top"><div>Company</div></a>
-									<div class="display-only-desktop" style="margin-left:15px;">
+									<a class="menu-link-selected" href="#top"><div>Company</div></a>
+									<div class="my_subMenus display-only-desktop" style="margin-left:15px;">
 										<a href="#company">The Company</a><br>
 										<a href="#team">The Team</a><br>
 										<a href="#board">The Board</a><br>
@@ -136,7 +138,7 @@
 									<a href="/company/"><div>Company</div></a>
 								<?php } ?>
 
-								<?php if(strcasecmp(getCurrentSlug(), "company_blog")==0) { ?>
+								<?php if(strcasecmp(getCurrentSlug(), "company_blog")==0 || strcasecmp(getCategorySlug(), "blog")==0) { ?>
 									<a class="menu-link-selected" href="#top"><div>Blog</div></a>
 								<?php }else{ ?>
 									<a href="/company_blog/"><div>Blog</div></a>
