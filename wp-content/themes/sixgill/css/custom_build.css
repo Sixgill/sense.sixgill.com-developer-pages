@@ -535,14 +535,6 @@ ul:not([class]) li {
 .press-block-container {
 	margin-top: 80px;
 }
-/*
-.form-search input {
-    background-image: url("/wp-content/themes/sixgill/images/icons/search.png");
-    background-repeat: no-repeat;
-    background-position: 97% 50%, 100% 100%;
-    background-size: 20px;
-}
-*/
 .form-control {
     display: inline-block;
     width: 90%;
@@ -587,7 +579,7 @@ ul:not([class]) li {
     float: right;
 }
 
-.search button[type="submit"] {
+.search-page button[type="submit"], .image-search {
     background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
     background-repeat: no-repeat;
     background-position: 50% 50%, 100% 100%;
@@ -597,55 +589,9 @@ ul:not([class]) li {
     height:40px; 
     width:10%;
 }
-
-.search button[type="button"] {
-    background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
-    background-repeat: no-repeat;
-    background-position: 50% 50%, 100% 100%;
-    background-size: 20px;
-    border: none;
-    float: right; 
-    height:40px; 
-    width:10%;
-}
-
-.search-page button[type="submit"] {
-    background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
-    background-repeat: no-repeat;
-    background-position: 50% 50%, 100% 100%;
-    background-size: 20px;
-    border: none;
-    float: right; 
-    height:40px; 
-    width:10%;
-}
-
-.search-hide button[type="submit"] {
-    background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
-    background-repeat: no-repeat;
-    background-position: 50% 50%, 100% 100%;
-    background-size: 20px;
-    border: none;
-    float: right; 
-    height:40px; 
-    width:10%;
-}
-
-.search-hide button[type="button"] {
-    background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
-    background-repeat: no-repeat;
-    background-position: 50% 50%, 100% 100%;
-    background-size: 20px;
-    border: none;
-    float: right; 
-    height:40px; 
-    width:10%;
-}
-
-
 
 .pagination-search {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
     text-align: center;
 }
 
@@ -655,14 +601,45 @@ ul:not([class]) li {
     font-weight: bold;
 }
 
-.search-hide input[type=search] {
-	width: 15px;
-	padding-left: 10px;
+#search-query, #search-query:focus, #search-button {
+	border: 1px solid #cecece;
+	display: table-cell; 
+	float: left; 
+	height: 40px;
+	padding: .375rem .75rem;
+	outline: none;
+	background-color: #ffffff;
+	margin-top: 5px;
 }
 
-.search input[type=search]:focus {
-    width: 274px; 
-    vertical-align: middle;
+#search-query, #search-query:focus {
+	border-right: 0px;
+	width: 200px;
+}
+
+#search-button {
+	margin-top: 5px;
+	border-left: 0px;
+	width: 30px;
+	font-size: 16pt;
+	height: 40px;
+}
+
+#search-button:hover {
+	cursor: pointer;
+}
+
+#search-button.closed {
+	border: 0px;
+}
+
+#search-query.closed {
+	display: none;
+}
+
+.container-search-form {
+	float: right;
+	display: inline-block;
 }/* General desktop styles */
 @media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {

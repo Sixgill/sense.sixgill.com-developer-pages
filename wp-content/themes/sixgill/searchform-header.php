@@ -1,8 +1,6 @@
-<form id="searchform"  style="margin-top:5px" class="form-search" role="search" method="get" name="search-form"  action="<?php echo home_url('/'); ?>">
-    <div id="search-header-form" class="search-hide">
-        <input id="inputSearch" type="search" class="form-control-header"  placeholder="Search" value="<?php echo get_search_query() ?>" name="s" title="Search">
-        <button id="inputButton" type="submit" value="" name="search" style="width: 100%;"></button>
-    </div>
-</form>
-
-
+<div class="container-search-form">
+  <form id="search-form" class="form-search" role="search" method="get" action="<?php echo home_url('/'); ?>">
+    <input id="search-query" class="closed" name="s" title="Search" value="<?php echo get_search_query() ?>" placeholder="Search">
+    <div id="search-button"  class="closed image-search"></div>
+  </form>
+</div>
