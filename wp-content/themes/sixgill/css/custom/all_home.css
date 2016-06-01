@@ -4,7 +4,6 @@
 
 .home-diagram {
 	padding: 85px 50px 45px 50px;
-	display: inline-block;
 }
 
 #home-main-text {
@@ -44,6 +43,7 @@
 .hidden-bottom-imageDiagram {
 	padding-left: 0px;
 	padding-right: 0px;
+	display: inline-block;
 }
 
 #home-text-company-with-line {
@@ -76,4 +76,5 @@
 
 .hidden-top-imageDiagram {
 	margin-bottom: 35px;
+	display: block;
 }
