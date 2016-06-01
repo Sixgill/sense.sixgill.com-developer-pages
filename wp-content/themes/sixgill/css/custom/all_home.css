@@ -3,7 +3,7 @@
 }
 
 .home-diagram {
-	padding:85px 50px 45px 50px;
+	padding: 85px 50px 45px 50px;
 	display: inline-block;
 }
 
@@ -71,4 +71,8 @@
 
 #home-main-text {
 	display: inline-block;
+}
+
+.hidden-top-imageDiagram {
+	margin-bottom: 35px;
 }
