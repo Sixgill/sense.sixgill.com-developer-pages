@@ -160,7 +160,7 @@
 		<a name="press"></a>
 		<section id="press" class="background-white">
 
-			<div class="container-fluid center no-border clearfix no-top-margin no-top-padding" style="max-width:1200px; padding-left: 0px; text-align: center;">
+			<div class="container-fluid center no-border clearfix no-top-margin no-padding" style="max-width:1200px; padding-left: 0px; text-align: center;">
 				<div class="center">
 					<p class="btnInside company-single-post-title">
 						Latest press and news

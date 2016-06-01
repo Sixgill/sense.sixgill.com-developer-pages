@@ -3,25 +3,10 @@
 	display: inline-block;
 }
 
-.solutions-subpage-text ul {
-    list-style: none;
+.solutions-subpage-text ul, ol {
     padding:0;
     margin:0;
-}
-
-.solutions-subpage-text ul > li, .solutions-subpage-text ol > li {
-    padding-left: 1em;
-    text-indent: -.7em;
-		padding-bottom: 1em;
-}
-
-.solutions-subpage-text ul > li:before {
-    content: "• ";
-    color: #4ddb5a;
-}
-
-.solutions-subpage-text ol {
-	padding-left: 20px;
+		margin-bottom: 5px;
 }
 
 #press-text-post {
