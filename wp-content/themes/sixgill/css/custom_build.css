@@ -422,9 +422,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .solutions-subpage-text ul, ol {
-    padding:0;
-    margin:0;
-		margin-bottom: 0.5em;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 0.5em;
 }
 
 #press-text-post {
@@ -749,9 +749,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 @media only screen and (min-width : 1001px) {
 
 	.solutions-blog-content {
-			float: left;
-			text-align: left;
-			width:65%;
+		float: left;
+		text-align: left;
+		width:65%;
 	}
 
 	.solutions-blog-post_thumbnail {
