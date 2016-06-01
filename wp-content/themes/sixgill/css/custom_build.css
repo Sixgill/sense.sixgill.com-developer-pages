@@ -411,6 +411,7 @@ ul:not([class]) li {
 .solutions-subpage-text ul, ol {
     padding:0;
     margin:0;
+		margin-bottom: 5px;
 }
 
 #press-text-post {
@@ -421,8 +422,6 @@ ul:not([class]) li {
 .solutions-subpages-list {
 	padding-bottom: 5px;
 }
-
-solutions-subpage-text
 .resources-background {
 	background-color: #eeeeee;
 }
