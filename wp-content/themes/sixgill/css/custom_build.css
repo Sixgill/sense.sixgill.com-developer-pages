@@ -222,9 +222,17 @@ ul:not([class]), ol:not([class]) {
 }
 
 ul:not([class]) li {
-	list-style-image: url(/wp-content/themes/sixgill/images/td/bullet_green.png);
-	margin-bottom: 5px;
+	list-style: none;
+	margin-bottom: 0.5em;
 }
+
+ul:not([class]) li:not(.has-span):before{
+	content: "• ";
+}
+ul:not([class]) li:not(.has-span):before, .bullet-color {
+	color: #4ddb5a;
+}
+
 
 .no-horizontal-padding {
 	padding-left: 0px !important;
@@ -416,7 +424,7 @@ ul:not([class]) li {
 .solutions-subpage-text ul, ol {
     padding:0;
     margin:0;
-		margin-bottom: 5px;
+		margin-bottom: 0.5em;
 }
 
 #press-text-post {
@@ -426,6 +434,10 @@ ul:not([class]) li {
 
 .solutions-subpages-list {
 	padding-bottom: 5px;
+}
+
+.solutions-subpage-text li{
+	font-size: inherit;
 }
 .resources-background {
 	background-color: #eeeeee;
@@ -783,10 +795,6 @@ ul:not([class]) li {
 		max-width: 300px;
 		height:100% !important;
 		width: 100% !important;
-	}
-
-	.solutions-subpage-text li, .solutions-subpage-text li span {
-		font-size: 16px !important;
 	}
 }
 /* Resources desktop styles */
