@@ -78,7 +78,7 @@ body, p {
 	border:0px solid #FF0004;
 }
 
-.btnSchedule, .btnSolutions, .btnCompany {
+.btnSchedule {
 	background: #4ddb5a;
 	background-image: -webkit-linear-gradient(top, #4ddb5a, #3cad46);
 	background-image: -moz-linear-gradient(top, #4ddb5a, #3cad46);
@@ -99,7 +99,49 @@ body, p {
 	text-decoration: none;
 }
 
-.btnSchedule:hover, .btnSolutions:hover, .btnCompany:hover{
+.btnSolutions {
+	background: #0051c6;
+	background-image: -webkit-linear-gradient(top, #0051c6, #013b90);
+	background-image: -moz-linear-gradient(top, #0051c6, #013b90);
+	background-image: -ms-linear-gradient(top, #0051c6, #013b90);
+	background-image: -o-linear-gradient(top, #0051c6, #013b90);
+	background-image: linear-gradient(to bottom, #0051c6, #013b90);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0px;
+	-webkit-box-shadow: 0px 4px 0px #032a63;
+	-moz-box-shadow: 0px 4px 0px #032a63;
+	box-shadow: 0px 4px 0px #032a63;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 14px 30px 14px 30px;
+	text-decoration: none;
+}
+
+.btnCompany {
+	background: #2e2e2e;
+	background-image: -webkit-linear-gradient(top, #2e2e2e, #080808);
+	background-image: -moz-linear-gradient(top, #2e2e2e, #080808);
+	background-image: -ms-linear-gradient(top, #2e2e2e, #080808);
+	background-image: -o-linear-gradient(top, #2e2e2e, #080808);
+	background-image: linear-gradient(to bottom, #2e2e2e, #080808);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0px;
+	-webkit-box-shadow: 0px 4px 0px #343434;
+	-moz-box-shadow: 0px 4px 0px #343434;
+	box-shadow: 0px 4px 0px #343434;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 14px 30px 14px 30px;
+	text-decoration: none;
+}
+
+.btnSchedule:hover {
 	background: #4ddb5a;
 	background-image: -webkit-linear-gradient(top, #4ddb5a, #4ddb5a);
 	background-image: -moz-linear-gradient(top, #4ddb5a, #4ddb5a);
@@ -109,12 +151,24 @@ body, p {
 	text-decoration: none;
 }
 
-.btnSolutions {
-	background-image:url(/wp-content/themes/sixgill/images/td/00-btnBlueContainer_SHARP.png);
+.btnSolutions:hover {
+	background: #0051c6;
+	background-image: -webkit-linear-gradient(top, #0051c6, #0051c6);
+	background-image: -moz-linear-gradient(top, #0051c6, #0051c6);
+	background-image: -ms-linear-gradient(top, #0051c6, #0051c6);
+	background-image: -o-linear-gradient(top, #0051c6, #0051c6);
+	background-image: linear-gradient(to bottom, #0051c6, #0051c6);
+	text-decoration: none;
 }
 
-.btnCompany {
-	background-image:url(/wp-content/themes/sixgill/images/td/00-btnBlackContainer_SHARP.png);
+.btnCompany:hover {
+	background: #2e2e2e;
+	background-image: -webkit-linear-gradient(top, #2e2e2e, #2e2e2e);
+	background-image: -moz-linear-gradient(top, #2e2e2e, #2e2e2e);
+	background-image: -ms-linear-gradient(top, #2e2e2e, #2e2e2e);
+	background-image: -o-linear-gradient(top, #2e2e2e, #2e2e2e);
+	background-image: linear-gradient(to bottom, #2e2e2e, #2e2e2e);
+	text-decoration: none;
 }
 
 .learn-more-link {
