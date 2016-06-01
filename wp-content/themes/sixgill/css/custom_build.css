@@ -322,10 +322,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin-right: 10%;
 	max-width: none !important;
 }
-
-.mc4wp-form-fields h4 {
-	display: none !important;
-}
 .company-learn-more-text {
 	display: none;
 }
@@ -1717,6 +1713,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.global-social-buttons-separator {
 		margin-top: 0px;
+	}
+
+	.mc4wp-form-fields h4 {
+		display: none !important;
 	}
 }
 /* For laptops: */
