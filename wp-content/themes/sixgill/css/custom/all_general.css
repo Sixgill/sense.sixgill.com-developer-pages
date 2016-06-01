@@ -222,9 +222,17 @@ ul:not([class]), ol:not([class]) {
 }
 
 ul:not([class]) li {
-	list-style-image: url(/wp-content/themes/sixgill/images/td/bullet_green.png);
-	margin-bottom: 5px;
+	list-style: none;
+	margin-bottom: 0.5em;
 }
+
+ul:not([class]) li:not(.has-span):before{
+	content: "• ";
+}
+ul:not([class]) li:not(.has-span):before, .bullet-color {
+	color: #4ddb5a;
+}
+
 
 .no-horizontal-padding {
 	padding-left: 0px !important;

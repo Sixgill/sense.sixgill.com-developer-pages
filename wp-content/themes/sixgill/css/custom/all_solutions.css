@@ -6,7 +6,7 @@
 .solutions-subpage-text ul, ol {
     padding:0;
     margin:0;
-		margin-bottom: 5px;
+		margin-bottom: 0.5em;
 }
 
 #press-text-post {
@@ -16,4 +16,8 @@
 
 .solutions-subpages-list {
 	padding-bottom: 5px;
+}
+
+.solutions-subpage-text li{
+	font-size: inherit;
 }
