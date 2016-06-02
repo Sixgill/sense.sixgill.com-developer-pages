@@ -824,6 +824,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.my_subMenus {
 		margin-left:15px;
 	}
+
+	#menu-background {
+		display: none !important;
+	}
 }
 /* Blog desktop styles */
 @media only screen and (min-width : 1001px) {
