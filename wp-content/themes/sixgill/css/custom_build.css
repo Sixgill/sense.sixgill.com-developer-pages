@@ -1284,11 +1284,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		width: 100% !important;
 	}
 	.solutions-subpage-text li, .solutions-subpage-text li span {
-		font-size: 20px !important;
-	}
-
-	.solutions-subpage-text ol {
-		padding-left: 30px;
+		font-size: 20px;
 	}
 
 }
@@ -1604,7 +1600,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.solutions-subpage-text li, .solutions-subpage-text li span {
-		font-size: 20px !important;
+		font-size: 20px;
 	}
 
 	.solutions-subpage-text ol {
