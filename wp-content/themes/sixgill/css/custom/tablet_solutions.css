@@ -31,11 +31,7 @@
 		width: 100% !important;
 	}
 	.solutions-subpage-text li, .solutions-subpage-text li span {
-		font-size: 20px !important;
-	}
-
-	.solutions-subpage-text ol {
-		padding-left: 30px;
+		font-size: 20px;
 	}
 
 }
