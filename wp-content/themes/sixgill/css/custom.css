@@ -79,25 +79,82 @@ body, p {
 }
 
 .btnSchedule, .btnSolutions, .btnCompany {
-	background-image:url(/wp-content/themes/sixgill/images/td/00-btngreencontainer_sharp.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-	color:#FFF;
-	text-align:center;
-	font-size:16px;
-	font-weight:bold;
-	width:238px;
-	height:47px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 14px 30px 14px 30px;
+	text-decoration: none;
+	border-radius: 0px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
 
+.btnSchedule:hover, .btnSolutions:hover, .btnCompany:hover {
+	text-decoration: none;
+}
 
+.btnSchedule {
+	background: #4ddb5a;
+	background-image: -webkit-linear-gradient(top, #4ddb5a, #3cad46);
+	background-image: -moz-linear-gradient(top, #4ddb5a, #3cad46);
+	background-image: -ms-linear-gradient(top, #4ddb5a, #3cad46);
+	background-image: -o-linear-gradient(top, #4ddb5a, #3cad46);
+	background-image: linear-gradient(to bottom, #4ddb5a, #3cad46);
+	-webkit-box-shadow: 0px 4px 0px #115117;
+	-moz-box-shadow: 0px 4px 0px #115117;
+	box-shadow: 0px 4px 0px #115117;
 }
 
 .btnSolutions {
-	background-image:url(/wp-content/themes/sixgill/images/td/00-btnBlueContainer_SHARP.png);
+	background: #0051c6;
+	background-image: -webkit-linear-gradient(top, #0051c6, #013b90);
+	background-image: -moz-linear-gradient(top, #0051c6, #013b90);
+	background-image: -ms-linear-gradient(top, #0051c6, #013b90);
+	background-image: -o-linear-gradient(top, #0051c6, #013b90);
+	background-image: linear-gradient(to bottom, #0051c6, #013b90);
+	-webkit-box-shadow: 0px 4px 0px #032a63;
+	-moz-box-shadow: 0px 4px 0px #032a63;
+	box-shadow: 0px 4px 0px #032a63;
 }
 
 .btnCompany {
-	background-image:url(/wp-content/themes/sixgill/images/td/00-btnBlackContainer_SHARP.png);
+	background: #2e2e2e;
+	background-image: -webkit-linear-gradient(top, #2e2e2e, #080808);
+	background-image: -moz-linear-gradient(top, #2e2e2e, #080808);
+	background-image: -ms-linear-gradient(top, #2e2e2e, #080808);
+	background-image: -o-linear-gradient(top, #2e2e2e, #080808);
+	background-image: linear-gradient(to bottom, #2e2e2e, #080808);
+	-webkit-box-shadow: 0px 4px 0px #343434;
+	-moz-box-shadow: 0px 4px 0px #343434;
+	box-shadow: 0px 4px 0px #343434;
+}
+
+.btnSchedule:hover {
+	background: #4ddb5a;
+	background-image: -webkit-linear-gradient(top, #4ddb5a, #4ddb5a);
+	background-image: -moz-linear-gradient(top, #4ddb5a, #4ddb5a);
+	background-image: -ms-linear-gradient(top, #4ddb5a, #4ddb5a);
+	background-image: -o-linear-gradient(top, #4ddb5a, #4ddb5a);
+	background-image: linear-gradient(to bottom, #4ddb5a, #4ddb5a);
+}
+
+.btnSolutions:hover {
+	background: #0051c6;
+	background-image: -webkit-linear-gradient(top, #0051c6, #0051c6);
+	background-image: -moz-linear-gradient(top, #0051c6, #0051c6);
+	background-image: -ms-linear-gradient(top, #0051c6, #0051c6);
+	background-image: -o-linear-gradient(top, #0051c6, #0051c6);
+	background-image: linear-gradient(to bottom, #0051c6, #0051c6);
+}
+
+.btnCompany:hover {
+	background: #2e2e2e;
+	background-image: -webkit-linear-gradient(top, #2e2e2e, #2e2e2e);
+	background-image: -moz-linear-gradient(top, #2e2e2e, #2e2e2e);
+	background-image: -ms-linear-gradient(top, #2e2e2e, #2e2e2e);
+	background-image: -o-linear-gradient(top, #2e2e2e, #2e2e2e);
+	background-image: linear-gradient(to bottom, #2e2e2e, #2e2e2e);
 }
 
 .learn-more-link {
