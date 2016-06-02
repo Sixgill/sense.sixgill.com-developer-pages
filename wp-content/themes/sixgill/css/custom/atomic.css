@@ -91,3 +91,7 @@
 .full-width {
 	width: 100%;
 }
+
+.section-margin-fix {
+	margin-top: -1px !important;
+}
