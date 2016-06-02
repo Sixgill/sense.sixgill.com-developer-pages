@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <a name="top"></a>
 <!-- Content-->
-<section id="content" class="legal-content">
+<section id="content" class="legal-content section-margin-fix">
 
-	<div class="content-wrap" style="padding-bottom:0px;">
+	<div class="content-wrap no-bottom-padding">
 
-		<section class="header-stick" style="background-color:#EEE; ">
-			<div class="container-fluid clearfix center" style="margin-bottom:0px; max-width:900px;">
+		<section class="header-stick background-eeeeee section-margin-fix">
+			<div id="legal-text" class="container-fluid clearfix center no-bottom-margin">
 				<?php echo get_field('text_legal'); ?>
 			</div>
 		</section>

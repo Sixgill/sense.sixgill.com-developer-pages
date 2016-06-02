@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <a name="top"></a>
-<section id="slider" class="slider-parallax swiper_wrapper clearfix">
+<section id="slider" class="slider-parallax swiper_wrapper clearfix section-margin-fix">
 	<div class="slider-parallax-inner">
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
@@ -10,11 +10,7 @@
 	</div>
 </section>
 
-<section id="content">
-
-</section>
-
-<section id="content">
+<section id="content" class="section-margin-fix">
 	<div class="content-wrap" style="padding:0px;">
 		<div class="container-fluid center clearfix my_containerSolution blog-container subscribe-block-tablet-mobile no-desktop-display">
 				<?php dynamic_sidebar( 'blog-subscribe-sidebar' ); ?>

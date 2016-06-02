@@ -94,7 +94,7 @@
 		<div class="modal-dialog">
 			<div class="modal-body">
 	        <div class="modal-content">
-	          <div class="modal-header" style="background-color:#2e2e2e;">
+	          <div class="modal-header background-2e2e2e">
 	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 								&times;
 							</button>
