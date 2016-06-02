@@ -1924,10 +1924,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.mc4wp-form-fields h4 {
 		display: none !important;
 	}
-
-	.section-margin-fix {
-		margin-top: -1px !important;
-	}
 }
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {
@@ -2166,4 +2162,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .full-width {
 	width: 100%;
+}
+
+.section-margin-fix {
+	margin-top: -1px !important;
 }
