@@ -1283,9 +1283,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		height:100% !important;
 		width: 100% !important;
 	}
-	.solutions-subpage-text li, .solutions-subpage-text li span {
-		font-size: 20px;
-	}
 
 }
 /* Resources tablet styles */
@@ -1597,10 +1594,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.slider-title-adjust {
 		top: 20px;
-	}
-
-	.solutions-subpage-text li, .solutions-subpage-text li span {
-		font-size: 20px;
 	}
 
 	.my_headerBoxSolution {
