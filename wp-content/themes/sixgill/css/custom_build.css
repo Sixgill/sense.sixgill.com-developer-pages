@@ -1795,10 +1795,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* Blog Mobile landscape styles */
 @media (max-width: 1000px) and (orientation: landscape) {
-    .form-page-search {
-        margin: 0 auto; 
-        margin-top: 30px;
-    }
+	.form-page-search {
+		margin: 0 auto; 
+		margin-top: 30px;
+	}
 }
 /* General mobile portrait and landscape styles */
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
