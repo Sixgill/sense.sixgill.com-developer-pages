@@ -99,14 +99,12 @@
 	line-height: 0px;
 }
 
-.pagination-image-left {
+.pagination-image-left, .pagination-image-right {
 	height: 30px; 
 	margin-right: 20px;
 }
 
 .pagination-image-right {
-	height: 30px; 
-	margin-right: 20px;
 	margin-left: 10px;
 }
 

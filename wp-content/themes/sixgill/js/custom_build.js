@@ -118,13 +118,13 @@ jQuery(function($) {
 	var searchQueryInput = $('#search-query');
 	var searchButton = $('#search-button');
 	var searchForm = $('#search-form');
-
+	
 	function hideSearch() {
 		searchOpenned = false;
 		searchButton.addClass('closed');
 		searchQueryInput.addClass('closed');
 	}
-  
+	
 	function showSearch() {
 		searchOpenned = true;
 		searchButton.removeClass('closed');
@@ -142,11 +142,10 @@ jQuery(function($) {
 		}
 		//Add here more conditions with validationResult = false action
 		return validationResult;
-    }
+	}
   
 	searchForm.submit(function(event) {
 		if(!validateSearchForm(searchQueryInput.val())) {
-			alert("Search query is not valid");
 			event.preventDefault();
 		}
 	});
