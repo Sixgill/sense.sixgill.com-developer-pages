@@ -3290,7 +3290,7 @@ var SEMICOLON = SEMICOLON || {};
 			} else {
 				console.log('extras: Bootstrap Popover not defined.');
 			}
-			
+
 			$('#page-submenu-trigger').click(function() {
 				$body.toggleClass('top-search-open', false);
 				$pagemenu.toggleClass("pagemenu-active");
@@ -3342,8 +3342,8 @@ var SEMICOLON = SEMICOLON || {};
 
 			var t = setTimeout( function(){
 				SEMICOLON.header.topsocial();
-				SEMICOLON.header.fullWidthMenu();
-				SEMICOLON.header.overlayMenu();
+				//SEMICOLON.header.fullWidthMenu();
+				//SEMICOLON.header.overlayMenu();
 				SEMICOLON.initialize.fullScreen();
 				SEMICOLON.initialize.verticalMiddle();
 				SEMICOLON.initialize.maxHeight();

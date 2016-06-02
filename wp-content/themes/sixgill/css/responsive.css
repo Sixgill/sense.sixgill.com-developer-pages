@@ -742,13 +742,13 @@ Responsive CSS
 	body:not(.top-search-open) #primary-menu-trigger {
 
 		opacity: 1;
-
+/*
 		-webkit-transition: opacity .2s .2s ease, top .4s ease;
 
 		-o-transition: opacity .2s .2s ease, top .4s ease;
 
 		transition: opacity .2s .2s ease, top .4s ease;
-
+*/
 	}
 
 
@@ -1196,13 +1196,13 @@ Responsive CSS
 		right: 15px;
 
 		margin: 40px 0;
-
+/*
 		-webkit-transition: margin .4s ease;
 
 		-o-transition: margin .4s ease;
 
 		transition: margin .4s ease;
-
+*/
 	}
 
 
@@ -1396,13 +1396,13 @@ Responsive CSS
 	.sticky-responsive-menu #header {
 
 		min-height: 100px;
-
+/*
 		-webkit-transition: min-height .4s ease;
 
 		-o-transition: min-height .4s ease;
 
 		transition: min-height .4s ease;
-
+*/
 	}
 
 
