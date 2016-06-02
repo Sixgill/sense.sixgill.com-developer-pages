@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="slider" class="force-full-screen full-screen">
+<section id="slider" class="force-full-screen full-screen section-margin-fix">
 	<div class="force-full-screen full-screen dark section nopadding no-margin noborder ohidden">
 		<div class="container clearfix">
 			<div class="slider-caption slider-caption-center" >
@@ -30,7 +30,7 @@
 <a name="what"></a>
 <section id="content">
 
-	<section id="what" class="container-fluid center clearfix no-margin nopadding">
+	<section id="what" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
 		<section id="what2" class="container-fluid center clearfix">
 			<div class="home-text-2 center">
 
@@ -56,19 +56,19 @@
 			</div>
 		</section>
 
-		<section id="after_what2" class="container-fluid center clearfix no-margin nopadding">
+		<section id="after_what2" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
 			<img id="home-image-background-after_what2" src="/wp-content/themes/sixgill/images/td/home/00_FocusSection_v2.jpg" width="100%" alt=""/>
 		</section>
 
 	</section>
 
 	<a name="products"></a>
-	<section id="products" class="container-fluid center clearfix no-margin nopadding">
+	<section id="products" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
 		<div id="home-text-productions" class="home-products-title"><?php echo get_field('text_productions'); ?></div>
 	</section>
 
 
-	<section id="below_products" class="container-fluid center clearfix no-margin nopadding">
+	<section id="below_products" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
 		<img id="home-image-infographic" src="/wp-content/themes/sixgill/images/td/home/infographic.svg" class="home-diagram display-only-desktop" alt=""/>
 		<img id="home-image-mobile-infographic" src="/wp-content/themes/sixgill/images/td/home/mobile_infographic.svg" class="home-diagram hidden-bottom-imageDiagram" alt=""/>
 		<div class="clear"></div>
@@ -77,12 +77,12 @@
 		</a>
 	</section>
 
-	<section id="after_products" class="container-fluid center clearfix no-margin nopadding">
+	<section id="after_products" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
 		<img id="home-background-after-products" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Upper.jpg" width="100%" alt=""/>
 	</section>
 
 	<a name="solutions"></a>
-	<section id="solutions" class="container-fluid center clearfix no-margin nopadding" style="background-color:#2e2e2e;" >
+	<section id="solutions" class="container-fluid background-2e2e2e center clearfix no-margin nopadding section-margin-fix" >
 		<div style="margin-top:20px;">
 			<div class="container clearfix">
 				<div class="col_one_third">
@@ -125,15 +125,15 @@
 		</div>
 	</section>
 
-	<section id="before_clients" class="container-fluid center clearfix no-margin nopadding">
+	<section id="before_clients" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
 		<img id="home-image-background-before_clients" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Lower.jpg" width="100%" alt=""/>
 	</section>
 
 	<a name="clients"></a>
-	<section id="clients" class="color-white center">
+	<section id="clients" class="color-white center section-margin-fix">
 		<div class="center">
 			<div class="fancy-title-without-bottom fancy-title title-dotted-border title-center mobile-hiden-line">
-				<h3 id="home-text-company-with-line" style="font-size:20px; font-weight:normal; color:#383838;">
+				<h3 id="home-text-company-with-line">
 					<?php echo get_field('logo_header_text'); ?>
 				</h3>
 			</div>

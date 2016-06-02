@@ -5,9 +5,9 @@
 	if ( have_posts() ) while ( have_posts() ) : the_post();
 	$ptitle = get_the_title();
 ?>
-<section id="content">
+<section id="content" class="section-margin-fix">
 	<div id="single-page-content" class="container-fluid clearfix background-white no-margin nopadding">
-		<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent" style="padding-top:0px;">
+		<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent no-top-padding">
 			<?php include(locate_template('floating_social_buttons.php')); ?>
 			<div id="press-text-post" class="col_full press-post">
 
@@ -20,7 +20,7 @@
 							<?php echo the_time('F j, Y'); ?> | Post by <?php echo get_field('author'); ?>
 						</h4>
 
-						<div class="swiper-slide" style="background-position: center; height: 350px; width:100%;     margin-bottom: 30px;">
+						<div class="swiper-slide" class="full-width" style="background-position: center; height: 350px;     margin-bottom: 30px;">
 							<?php the_post_thumbnail( 'spec_thumb' ); ?>
 						</div>
 						<?php include(locate_template('fixed_social_buttons.php')); ?>
@@ -30,7 +30,7 @@
 						<h3 id="press-date-post" class="press-date no-bottom-margin color-black">
 							<?php echo $post->post_title; ?>
 						</h3>
-						<div class="swiper-slide" style="background-position: center; height: 350px; width:100%; margin-bottom: 30px;">
+						<div class="swiper-slide full-width" style="background-position: center; height: 350px; margin-bottom: 30px;">
 							<?php the_post_thumbnail( 'spec_thumb' ); ?>
 						</div>
 

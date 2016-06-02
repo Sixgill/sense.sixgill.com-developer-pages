@@ -1,20 +1,18 @@
 <?php get_header(); ?>
 <a name="top"></a>
-<section id="slider" class="slider-parallax swiper_wrapper clearfix">
+<section id="slider" class="slider-parallax swiper_wrapper clearfix section-margin-fix">
 	<div class="slider-parallax-inner">
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background-image: url('/wp-content/themes/sixgill/images/td/hero/adobestock_69002740_web.jpg'); background-position:center;"></div>
+				<div id="products-header-image" class="swiper-slide"></div>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!-- Content-->
-<section id="content">
-
-	<div class="content-wrap" style="padding-bottom: 0px;">
-
+<section id="content" class="section-margin-fix">
+	<div class="content-wrap no-bottom-padding">
 		<div class="header-stick no-border background-f8f8f8">
 			<div class="container-fluid no-border center clearfix" style="padding-top:75px; max-width:1100px;">
 				<div class="col_one_third title-left-col">
@@ -27,12 +25,12 @@
 		</div>
 
 
-		<section class="container-fluid center clearfix no-margin nopadding">
+		<section class="container-fluid center clearfix no-margin nopadding section-margin-fix">
 			<img src="/wp-content/themes/sixgill/images/td/product_fig1.png" alt="" width="100%"/>
 		</section>
 
 		<a name="ssense"></a>
-		<section id="ssense" class="backround-white">
+		<section id="ssense" class="backround-white section-margin-fix">
 			<div class="container-fluid center topmargin-sm no-border" style="max-width:1100px;">
 				<div class="col_one_third titleInside text-right"><img src="/wp-content/themes/sixgill/images/td/product/logoSense.svg" alt=""/></div>
 				<div class="col_two_third col_last text-left topmargin-sm">
@@ -44,7 +42,9 @@
 					<?php if(get_field('track_list')) : ?>
 						<ul class="listSolutions">
 							<?php foreach(get_field('track_list') as $item) : ?>
-								<li><?php echo $item['track_list_text']; ?></li>
+								<li>
+									<?php echo $item['track_list_text']; ?>
+								</li>
 							<?php endforeach; ?>
 						</ul>
 					<?php endif; ?>
@@ -55,7 +55,9 @@
 					<?php if(get_field('determine_list')) : ?>
 						<ul class="listSolutions">
 							<?php foreach(get_field('determine_list') as $item) : ?>
-								<li><?php echo $item['determine_list_text']; ?></li>
+								<li>
+									<?php echo $item['determine_list_text']; ?>
+								</li>
 							<?php endforeach; ?>
 						</ul>
 					<?php endif; ?>
@@ -66,7 +68,9 @@
 					<?php if(get_field('act_list')) : ?>
 						<ul class="listSolutions">
 							<?php foreach(get_field('act_list') as $item) : ?>
-								<li><?php echo $item['act_list_text']; ?></li>
+								<li>
+									<?php echo $item['act_list_text']; ?>
+								</li>
 							<?php endforeach; ?>
 						</ul>
 					<?php endif; ?>
@@ -75,21 +79,25 @@
 			</div>
 		</section>
 
-		<section id="before_ssdk" class="container-fluid center clearfix no-margin nopadding">
+		<section id="before_ssdk" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
 			<img src="/wp-content/themes/sixgill/images/td/product_fig2.png" alt="" width="100%"/>
 		</section>
 
 		<a name="ssdk"></a>
-		<section class="background-f8f8f8" id="ssdk">
-			<div class="container-fluid center clearfix no-border no-bottom-margin no-bottom-padding" style="max-width:1100px;">
-				<div class="col_one_third titleInside text-right topmargin-sm"><img src="/wp-content/themes/sixgill/images/td/product/logoReach.svg" alt=""/></div>
+		<section id="ssdk" class="background-f8f8f8 section-margin-fix">
+			<div id="ssdk-container" class="container-fluid center clearfix no-border no-bottom-margin no-bottom-padding">
+				<div class="col_one_third titleInside text-right topmargin-sm">
+					<img src="/wp-content/themes/sixgill/images/td/product/logoReach.svg" alt=""/>
+				</div>
 				<div class="col_two_third col_last text-left topmargin-sm">
 					<?php echo get_field('sixgill_reach_text'); ?>
 
 					<?php if(get_field('sixgill_reach_list')) : ?>
 						<ul class="listProduct">
 							<?php foreach(get_field('sixgill_reach_list') as $item) : ?>
-								<li><?php echo $item['sixgill_reach_list_text']; ?></li>
+								<li>
+									<?php echo $item['sixgill_reach_list_text']; ?>
+								</li>
 							<?php endforeach; ?>
 						</ul>
 					<?php endif; ?>
@@ -99,16 +107,14 @@
 		</section>
 
 		<a name="sassist"></a>
-		<section id="sassist" class="background-white" style="margin-top: 40px;">
+		<section id="sassist" class="background-white section-margin-fix">
 			<div class="container-fluid center clearfix no-top-margin no-top-padding no-border no-bottom-margin no-bottom-padding" style="max-width:1100px;">
 				<div class="col_one_third titleInside text-right"><img src="/wp-content/themes/sixgill/images/td/product/logoAssist.svg" alt=""/></div>
 				<div class="col_two_third col_last text-left topmargin-sm" style="margin-bottom: -20px;">
 					<?php echo get_field('sixgill_assist_header'); ?>
-
-					<div class="col_half" style="margin-bottom: 0px;">
-
+					<div class="col_half no-bottom-margin">
 						<?php if(get_field('sixgill_assist_list')) : ?>
-							<ul class="listProduct" style="margin-bottom: 0px;">
+							<ul class="listProduct no-bottom-margin">
 								<?php foreach(get_field('sixgill_assist_list') as $item) : ?>
 									<li>
 										<?php echo $item['sixgill_assist_list_text']; ?>
@@ -118,9 +124,8 @@
 						<?php endif; ?>
 					</div>
 					<div class="col_half col_last">
-
 						<?php if(get_field('sixgill_assist_list_2')) : ?>
-							<ul class="listProduct" style="margin-bottom: 0px;">
+							<ul class="listProduct no-bottom-margin">
 								<?php foreach(get_field('sixgill_assist_list_2') as $item) : ?>
 									<li>
 										<?php echo $item['sixgill_assist_list_text_2']; ?>
@@ -132,9 +137,6 @@
 				</div>
 			</div>
 		</section>
-
-
 	</div>
-
 </section><!-- #content end -->
 <?php get_footer(); ?>
