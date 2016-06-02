@@ -650,10 +650,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	line-height: 0px;
 }
 
-hr {
-	margin-top: 0px;
-}
-
 .pagination-image-left {
 	height: 30px; 
 	margin-right: 20px;
@@ -678,6 +674,10 @@ hr {
 .current-link {
 	margin-right: 10px; 
 	color: black;
+}
+
+.header-search {
+	margin-top: 0px;
 }/* General desktop styles */
 @media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {

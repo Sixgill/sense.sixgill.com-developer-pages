@@ -99,10 +99,6 @@
 	line-height: 0px;
 }
 
-hr {
-	margin-top: 0px;
-}
-
 .pagination-image-left {
 	height: 30px; 
 	margin-right: 20px;
@@ -127,4 +123,8 @@ hr {
 .current-link {
 	margin-right: 10px; 
 	color: black;
+}
+
+.header-search {
+	margin-top: 0px;
 }
