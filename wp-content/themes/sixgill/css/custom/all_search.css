@@ -104,3 +104,22 @@
 	float: right;
 	display: inline-block;
 }
+
+.search-container {
+	max-width: 900px;
+}
+
+.search-header-position {
+	float:right; 
+	margin-top:5px;
+}
+
+.button.button-large {
+	width:322px;  
+	height:40px; 
+	line-height: 0px;
+}
+
+hr {
+	margin-top: 0px;
+}

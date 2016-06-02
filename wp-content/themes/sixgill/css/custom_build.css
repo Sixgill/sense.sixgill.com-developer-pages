@@ -654,6 +654,25 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .container-search-form {
 	float: right;
 	display: inline-block;
+}
+
+.search-container {
+	max-width: 900px;
+}
+
+.search-header-position {
+	float:right; 
+	margin-top:5px;
+}
+
+.button.button-large {
+	width:322px;  
+	height:40px; 
+	line-height: 0px;
+}
+
+hr {
+	margin-top: 0px;
 }/* General desktop styles */
 @media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {
@@ -961,6 +980,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
     
     .header-search {
         display: block;
+        width:100%; 
+        height:60px;
     }
 }
 /* General tablet styles */
@@ -1856,10 +1877,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.global-social-buttons-separator {
 		margin-top: 0px;
 	}
-    
-    .header-search {
-        display: none;
-    }
 
 	.mc4wp-form-fields h4 {
 		display: none !important;

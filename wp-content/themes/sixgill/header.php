@@ -172,8 +172,7 @@
 					</div>
 				</div>
 			</header><!-- #header end -->
-        <div class="search-form-container header-search" style="width:100%; height:60px;">
-            <div style="float:right; margin-top:5px;"><button style="width:322px;  height:40px; line-height: 0px;" href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">SCHEDULE A DEMO</button></div>
-            <div class="form-search-header"><?php get_search_form_header(); ?></div>
-
-        </div>
+			<div class="search-form-container header-search display-only-desktop">
+				<div class="search-header-position"><button href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">SCHEDULE A DEMO</button></div>
+				<div class="form-search-header"><?php get_search_form_header(); ?></div>
+			</div>
