@@ -352,7 +352,7 @@ jQuery(function($) {
 		$(this).addClass('has-span');
 		$(this).children().each(function() {
 			var currentFontsize = $(this).css('font-size').replace(/\D/g,'');
-			if(currentFontsize > biggestFontsize) {
+			if(currentFontsize > biggestFontsize && currentFontsize < 100) {
 				biggestFontsize = currentFontsize;
 			}
 			$(this).html('<span class="bullet-color">•</span> '+$(this).html());
