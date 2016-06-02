@@ -177,7 +177,7 @@
 				<?php get_search_form(); ?>
 			</div>
 		</div>
-			<div class="search-form-container header-search display-only-desktop">
+			<div class="search-form-container header-search display-only-desktop position-button-schedule">
 				<div class="search-header-position"><button href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">SCHEDULE A DEMO</button></div>
 				<div class="form-search-header"><?php get_search_form_header(); ?></div>
 			</div>
