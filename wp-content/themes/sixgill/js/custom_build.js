@@ -117,7 +117,7 @@ jQuery(function($) {
 	//Chache DOM search
 	var searchQueryInput = $('#search-query');
 	var searchButton = $('#search-button');
-	var searchForm = $('#search-form');
+	var searchForm = $('#search-header-form');
 	
 	function hideSearch() {
 		searchOpenned = false;
