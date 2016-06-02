@@ -1403,6 +1403,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.header-stick {
 		padding-top: 20px;
 	}
+	
+	.background-search {
+		margin-top: 80px;
+	}
 }
 /* General mobile portrait styles */
 @media only screen and (max-width: 500px) {
@@ -1720,6 +1724,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin: 0 auto; 
 		margin-top: 90px;
 	}
+	
+	.background-search {
+		margin-top: 80px;
+	}
 }
 /* General Mobile landscape styles */
 @media (max-width: 1000px) and (orientation: landscape) {
@@ -1820,6 +1828,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	
 	.content-wrap {
 		padding: 0px;
+	}
+	
+	.background-search {
+		margin-top: 0px;
 	}
 }
 /* General mobile portrait and landscape styles */
@@ -1950,7 +1962,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		overflow: hidden;
 	}
 
-	.global-social-buttons-separator {
+	.global-social-buttons-separator, .form-page-search {
 		margin-top: 0px;
 	}
 
@@ -1961,11 +1973,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.background-search {
 		background-color: #f9f9f9; 
 		width: 100%; 
-		margin-bottom: 80px;
-	}
-	
-	.form-page-search {
-		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 	
 	.padding-search {
