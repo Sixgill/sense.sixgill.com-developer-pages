@@ -584,7 +584,134 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	background-image: url('/wp-content/themes/sixgill/images/td/hero/adobestock_69002740_web.jpg');
 	background-position: center;
 }
-/* General desktop styles */
+.form-control {
+	display: inline-block;
+	width: 90%;
+	height: 40px;
+	padding: 6px 12px;
+	font-size: 14px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+
+.form-search-header {
+	width: 322px;  
+	height: 40px; 
+	float: right;
+	margin-top: 5px;
+}
+
+.search {
+	border: 1px solid #cccccc;
+	min-height: 40px; 
+}
+
+.search button[type="submit"], .image-search {
+	background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
+	background-repeat: no-repeat;
+	background-position: 50% 50%, 100% 100%;
+	background-size: 20px;
+	border: none;
+	float: right; 
+	height: 40px; 
+	width: 10%;
+}
+
+.pagination-search {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.search-post-result {
+	color: #0051c6; 
+	font-size: 18px; 
+	font-weight: bold;
+}
+
+#search-query, #search-query:focus, #search-button {
+	border: 1px solid #cecece;
+	display: table-cell; 
+	float: left; 
+	height: 40px;
+	padding: .375rem .75rem;
+	outline: none;
+	background-color: #ffffff;
+	margin-top: 5px;
+}
+
+#search-query, #search-query:focus {
+	border-right: 0px;
+	width: 200px;
+}
+
+#search-button {
+	margin-top: 5px;
+	border-left: 0px;
+	width: 30px;
+	font-size: 16pt;
+	height: 40px;
+}
+
+#search-button:hover {
+	cursor: pointer;
+}
+
+#search-button.closed {
+	border: 0px;
+}
+
+#search-query.closed {
+	display: none;
+}
+
+.container-search-form {
+	float: right;
+	display: inline-block;
+}
+
+.search-container {
+	max-width: 900px;
+}
+
+.search-header-position {
+	float: right; 
+	margin-top: 5px;
+}
+
+.button.button-large {
+	width:322px;  
+	height:40px; 
+	line-height: 0px;
+}
+
+.pagination-image-left, .pagination-image-right {
+	height: 30px; 
+	margin-right: 20px;
+}
+
+.pagination-image-right {
+	margin-left: 10px;
+}
+
+.current {
+	margin-right: 10px;
+}
+
+.pagination-number {
+	margin-right: 20px; 
+	margin-left: 10px; 
+	color: black;
+}
+
+.current-link {
+	margin-right: 10px; 
+	color: black;
+}
+
+.header-search {
+	margin-top: 0px;
+}/* General desktop styles */
 @media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {
 		margin-left:-16px !important;
@@ -887,6 +1014,20 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 /* Products desktop styles */
 @media only screen and (min-width : 1001px) {
 
+}
+/* Blog desktop styles */
+@media only screen and (min-width : 1001px) {
+	.form-page-search {
+		width: 50%; 
+		margin: 0 auto; 
+		margin-top: 60px;
+	}
+	
+	.header-search {
+		display: block;
+		width: 100%; 
+		height: 60px;
+	}
 }
 /* General tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
@@ -1230,6 +1371,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 @media (min-width: 500px) and (max-width: 1000px) {
 
 }
+/* Blog tablet styles */
+@media (min-width: 500px) and (max-width: 1000px) {
+	.form-page-search {
+		margin: 0 auto; 
+		margin-top: 150px;
+	}
+}
 /* General mobile portrait styles */
 @media only screen and (max-width: 500px) {
 	.marginShareButton {
@@ -1548,6 +1696,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 @media only screen and (max-width: 500px) {
 
 }
+/* Blog mobile portrait styles */
+@media only screen and (max-width: 500px) {
+	.form-page-search {
+		margin: 0 auto; 
+		margin-top: 90px;
+	}
+}
 /* General Mobile landscape styles */
 @media (max-width: 1000px) and (orientation: landscape) {
 	#primary-menu-trigger {
@@ -1638,6 +1793,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-top: 16px;
 	}
 }
+/* Blog Mobile landscape styles */
+@media (max-width: 1000px) and (orientation: landscape) {
+    .form-page-search {
+        margin: 0 auto; 
+        margin-top: 30px;
+    }
+}
 /* General mobile portrait and landscape styles */
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
 
@@ -1710,6 +1872,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.legal-content {
 		margin-top: 24px;
 	}
+}
+/* Blog mobile portrait and landscape styles */
+@media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
+
 }
 /* Portrait tablets & mobiles */
 @media (max-width: 1000px) {
