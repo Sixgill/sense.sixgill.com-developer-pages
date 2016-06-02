@@ -12,14 +12,7 @@
 		</div>
 		
 		<section class="header-stick">
-			<div class="container-fluid clearfix search-container">
-				
-<!--
-				<div class="search-form-container form-page-search">
-					<?php get_search_form(); ?>
-				</div>
--->
-				
+			<div class="container-fluid clearfix search-container">	
 			<h1 class="no-margin">Search Result</h1>
 			<p class="color-999999"> <?php echo $wp_query->found_posts; ?> Results </p>
 			
