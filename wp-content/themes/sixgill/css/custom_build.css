@@ -679,11 +679,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin-top: 5px;
 }
 
+
 .button.button-large {
-	width:322px;  
 	height:40px; 
-	line-height: 0px;
+	line-height: 40px;
 }
+
 
 .pagination-image-left, .pagination-image-right {
 	height: 30px; 
