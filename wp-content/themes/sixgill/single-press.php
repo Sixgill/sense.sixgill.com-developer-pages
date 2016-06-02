@@ -76,8 +76,8 @@
 				<?php comments_template( '', true ); ?>
 
 				<div class="col_full center">
-					<a href="/company_blog" id="press-button-back" class="button button-large no-bottom-margin btnCompany">
-						BACK TO BLOG
+					<a href="/press" id="press-button-back" class="button button-large no-bottom-margin btnCompany">
+						BACK TO PRESS
 					</a>
 				</div>
 			</div>

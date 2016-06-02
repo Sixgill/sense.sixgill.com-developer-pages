@@ -46,4 +46,7 @@
         display: none;
     }
 
+	.mc4wp-form-fields h4 {
+		display: none !important;
+	}
 }
