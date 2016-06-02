@@ -81,7 +81,7 @@
 
 							<?php if(strcasecmp(getCurrentSlug(), "home")==0) { ?>
 								<a class="menu-link-selected" href="#top"><div class="menu-first-item">Home</div></a>
-								<div class="my_subMenus display-only-desktop" style="margin-left:15px;">
+								<div class="my_subMenus display-only-desktop">
 									<a href="#what">What we do</a><br>
 									<a href="#products">Products</a><br>
 									<a href="#solutions">Solutions</a><br>
@@ -93,7 +93,7 @@
 
 								<?php if(strcasecmp(getCurrentSlug(), "solutions")==0) { ?>
 									<a class="menu-link-selected" href="#top"><div>Solutions</div></a>
-									<div class="my_subMenus display-only-desktop" style="margin-left:15px;">
+									<div class="my_subMenus display-only-desktop">
 										<a href="#people">People</a><br>
 										<a href="#assets">Assets</a><br>
 										<a href="#crowds">Crowds</a>
@@ -106,7 +106,7 @@
 
 								<?php if(strcasecmp(getCurrentSlug(), "products")==0) { ?>
 									<a class="menu-link-selected" href="#top"><div>Products</div></a>
-									<div class="my_subMenus display-only-desktop" style="margin-left:15px;">
+									<div class="my_subMenus display-only-desktop">
 										<a href="#ssense">Sense</a><br>
 										<a href="#ssdk">Reach</a><br>
 										<a href="#sassist">Assist</a>
@@ -117,7 +117,7 @@
 
 								<?php if(strcasecmp(getCurrentSlug(), "tech")==0) { ?>
 									<a class="menu-link-selected" href="#top"><div>Tech</div></a>
-									<div class="my_subMenus display-only-desktop" style="margin-left:15px;">
+									<div class="my_subMenus display-only-desktop">
 										<a href="#location">Location</a><br>
 										<a href="#proximity">Proximity</a><br>
 										<a href="#openplatform">Open Platform</a>
@@ -128,7 +128,7 @@
 
 								<?php if(strcasecmp(getCurrentSlug(), "company")==0) { ?>
 									<a class="menu-link-selected" href="#top"><div>Company</div></a>
-									<div class="my_subMenus display-only-desktop" style="margin-left:15px;">
+									<div class="my_subMenus display-only-desktop">
 										<a href="#company">The Company</a><br>
 										<a href="#team">The Team</a><br>
 										<a href="#board">The Board</a><br>

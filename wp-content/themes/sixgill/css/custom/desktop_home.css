@@ -23,4 +23,8 @@
 		font-size: 34px;
 		font-weight: 900;
 	}
+
+	.hidden-bottom-imageDiagram {
+		display: inline-block;
+	}
 }

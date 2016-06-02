@@ -141,7 +141,7 @@
 	.display-only-desktop,
 	.display-only-mobile-landscape,
 	.display-only-mobile-portrait {
-		display: none;
+		display: none !important;
 	}
 
 }

@@ -94,7 +94,7 @@
 		<div class="modal-dialog">
 			<div class="modal-body">
 	        <div class="modal-content">
-	          <div class="modal-header" style="background-color:#2e2e2e;">
+	          <div class="modal-header background-2e2e2e">
 	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 								&times;
 							</button>
@@ -152,7 +152,7 @@
 		<iframesrc="//www.googletagmanager.com/ns.html?id=GTM-5X4VP7"height="0"width="0"style="display:none;visibility:hidden"></iframe>
 	</noscript>
 	<script>
-		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':newDate().getTime(),event:'gtm.js'});varf=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5X4VP7');
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5X4VP7');
 	</script>
 	<!-- End Google Tag Manager →
 

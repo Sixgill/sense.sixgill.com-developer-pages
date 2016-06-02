@@ -98,6 +98,6 @@
 	.display-only-desktop,
 	.display-only-mobile-landscape,
 	.display-only-tablet {
-		display: none;
+		display: none !important;
 	}
 }
