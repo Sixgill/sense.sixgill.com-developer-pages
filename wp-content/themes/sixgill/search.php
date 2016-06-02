@@ -5,7 +5,7 @@
 	<div class="content-wrap no-bottom-padding">
 		<hr class="title-dotted-border header-search display-only-desktop">
 
-		<div id="tablet" class="background-search">
+		<div id="tablet" class="background-search display-only-desktop">
 			<div class="search-form-container form-page-search padding-search">
 				<?php get_search_form(); ?>
 			</div>
