@@ -181,7 +181,7 @@
 			</div>
 			<div class="container clearfix center">
 				<div style="margin-bottom:40px;">
-					<a href="/press/" class="button button-large no-bottom-margin btnSolutions news-press-button">
+					<a href="/press/" class="button button-large no-bottom-margin btn-news-press news-press-button">
 						VIEW ALL NEWS AND PRESS RELEASES
 					</a>
 				</div>
