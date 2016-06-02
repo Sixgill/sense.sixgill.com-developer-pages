@@ -560,22 +560,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	border: none;
 }
 
-.form-control-header {
-	display: none;
-	width: 90%;
-	height: 40px;
-	padding: 6px 12px;
-	font-size: 14px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	border: none;
-}
-
 .form-search-header {
-	width:322px;  
-	height:40px; 
-	float:right;
-	margin-top:5px;
+	width: 322px;  
+	height: 40px; 
+	float: right;
+	margin-top: 5px;
 }
 
 .search {
@@ -583,25 +572,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	min-height: 40px; 
 }
 
-.search-page {
-	border: 1px solid #cccccc;
-	min-height: 40px; 
-}
-
-.search-hide {
-	width: 10%;
-	float: right;
-}
-
-.search-page button[type="submit"], .image-search {
+.search button[type="submit"], .image-search {
 	background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
 	background-repeat: no-repeat;
 	background-position: 50% 50%, 100% 100%;
 	background-size: 20px;
 	border: none;
 	float: right; 
-	height:40px; 
-	width:10%;
+	height: 40px; 
+	width: 10%;
 }
 
 .pagination-search {
@@ -610,7 +589,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .search-post-result {
-	color:#0051c6; 
+	color: #0051c6; 
 	font-size: 18px; 
 	font-weight: bold;
 }
@@ -661,8 +640,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .search-header-position {
-	float:right; 
-	margin-top:5px;
+	float: right; 
+	margin-top: 5px;
 }
 
 .button.button-large {
@@ -673,6 +652,32 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 hr {
 	margin-top: 0px;
+}
+
+.pagination-image-left {
+	height: 30px; 
+	margin-right: 20px;
+}
+
+.pagination-image-right {
+	height: 30px; 
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+.current {
+	margin-right: 10px;
+}
+
+.pagination-number {
+	margin-right: 20px; 
+	margin-left: 10px; 
+	color: black;
+}
+
+.current-link {
+	margin-right: 10px; 
+	color: black;
 }/* General desktop styles */
 @media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {

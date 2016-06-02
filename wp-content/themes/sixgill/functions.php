@@ -152,29 +152,29 @@ function pagination($pages = '', $range = 4) {
 	
 	if(1 != $pages) {
 		if($paged > 1 ) {
-			echo "<a href='".get_pagenum_link($paged - 1)."'> <img src=\"/wp-content/themes/sixgill/images/icons/left-page.png\" style=\"height: 30px; margin-right:20px;\"> </a>";
+			echo "<a href='".get_pagenum_link($paged - 1)."'> <img src=\"/wp-content/themes/sixgill/images/icons/left-page.png\" class=\"pagination-image-left\"></a>";
 		}
 		else {
-			echo "<img src=\"/wp-content/themes/sixgill/images/icons/left-no-page.png\" style=\"height: 30px; margin-right:20px;\">";
+			echo "<img src=\"/wp-content/themes/sixgill/images/icons/left-no-page.png\" class=\"pagination-image-left\">";
 		}
 		
 		for ($i=1; $i <= $pages; $i++) {
 			if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
-				echo ($paged == $i)? "<span style=\"margin-right:10px;\" class=\"current\"><ins><b>".$i."</b></ins></span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\" style=\"margin-right:10px; color: black;\">".$i."</a>";
+				echo ($paged == $i)? "<span class=\"current\"><ins><b>".$i."</b></ins></span>":"<a href='".get_pagenum_link($i)."' class=\"inactive current-link\">".$i."</a>";
 			}
 		}
 		
 		if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) {
 			echo "...";
-            echo "<a href='".get_pagenum_link($pages)."' style=\"margin-right:20px; margin-left:10px; color: black;\"> ".$pages." </a>";
-        }
-
-        if ($paged < $pages ) {
-	        echo "<a href=\"".get_pagenum_link($paged + 1)."\"> <img src=\"/wp-content/themes/sixgill/images/icons/right-page.png\" style=\"height: 30px; \"> </a>"; 
-        }
-        else {
-	        echo "<img src=\"/wp-content/themes/sixgill/images/icons/right-no-page.png\" style=\"height: 30px;\">";
-	    }
+			echo "<a href='".get_pagenum_link($pages)."' class=\"pagination-number\"> ".$pages." </a>";
+		}
+		
+		if ($paged < $pages ) {
+			echo "<a href=\"".get_pagenum_link($paged + 1)."\"> <img src=\"/wp-content/themes/sixgill/images/icons/right-page.png\" class=\"pagination-image-right\"> </a>";
+		}
+		else {
+			echo "<img src=\"/wp-content/themes/sixgill/images/icons/right-no-page.png\" class=\"pagination-image-right\">";
+		}
 	}
 }
 
