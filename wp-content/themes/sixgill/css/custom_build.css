@@ -1029,6 +1029,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		width: 100%; 
 		height: 60px;
 	}
+	
+	.form-page-search {
+		margin-top: 10px;
+	}
+	
+	.content-wrap {
+		padding: 0px;
+	}
 }
 /* General tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
@@ -1377,6 +1385,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.form-page-search {
 		margin: 0 auto; 
 		margin-top: 150px;
+	}
+	
+	.padding-search {
+		padding-top: 50px;
 	}
 }
 /* General mobile portrait styles */
@@ -1800,6 +1812,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin: 0 auto; 
 		margin-top: 30px;
 	}
+	
+	.content-wrap {
+		padding: 0px;
+	}
 }
 /* General mobile portrait and landscape styles */
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
@@ -1876,7 +1892,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* Blog mobile portrait and landscape styles */
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
-
+	.padding-search {
+		padding-top: 15px;
+	}
 }
 /* Portrait tablets & mobiles */
 @media (max-width: 1000px) {
@@ -1924,6 +1942,30 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.mc4wp-form-fields h4 {
 		display: none !important;
+	}
+	
+	.background-search {
+		background-color: #f9f9f9; 
+		width: 100%; 
+		margin-bottom: 80px;
+	}
+	
+	.form-page-search {
+		margin-top: 0px;
+	}
+	
+	.padding-search {
+		padding-left: 20px; 
+		padding-right: 20px; 
+		padding-bottom: 15px;
+	}
+	
+	.form-search {
+		margin-bottom: 0px;
+	}
+	
+	.search button[type="submit"] {
+		background-color: #fff;
 	}
 }
 /* For laptops: */

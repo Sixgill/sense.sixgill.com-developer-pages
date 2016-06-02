@@ -1,4 +1,6 @@
 /* Blog mobile portrait and landscape styles */
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
-
+	.padding-search {
+		padding-top: 15px;
+	}
 }
