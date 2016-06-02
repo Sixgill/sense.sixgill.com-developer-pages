@@ -8,4 +8,13 @@
 	.padding-search {
 		padding-top: 50px;
 	}
+	
+	.position-article, .pagination-search {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	
+	.header-stick {
+		padding-top: 20px;
+	}
 }

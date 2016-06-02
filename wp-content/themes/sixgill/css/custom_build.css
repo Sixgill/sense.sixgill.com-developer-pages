@@ -1037,6 +1037,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.content-wrap {
 		padding: 0px;
 	}
+	
+	.header-stick {
+		padding-top: 100px;
+	}
+	
+	.position-article {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
 }
 /* General tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
@@ -1385,6 +1394,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	
 	.padding-search {
 		padding-top: 50px;
+	}
+	
+	.position-article, .pagination-search {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	
+	.header-stick {
+		padding-top: 20px;
 	}
 }
 /* General mobile portrait styles */
@@ -1886,6 +1904,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 @media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
 	.padding-search {
 		padding-top: 15px;
+	}
+	
+	.position-article, .pagination-search {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	.header-stick {
+		padding-top: 10px;
 	}
 }
 /* Portrait tablets & mobiles */

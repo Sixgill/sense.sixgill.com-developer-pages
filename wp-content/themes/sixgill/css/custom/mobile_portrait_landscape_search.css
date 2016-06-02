@@ -3,4 +3,13 @@
 	.padding-search {
 		padding-top: 15px;
 	}
+	
+	.position-article, .pagination-search {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	.header-stick {
+		padding-top: 10px;
+	}
 }

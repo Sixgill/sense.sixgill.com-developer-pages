@@ -19,4 +19,13 @@
 	.content-wrap {
 		padding: 0px;
 	}
+	
+	.header-stick {
+		padding-top: 100px;
+	}
+	
+	.position-article {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
 }
