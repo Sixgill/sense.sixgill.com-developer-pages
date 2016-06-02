@@ -10,6 +10,14 @@
 	background-color: #000000;
 }
 
+.background-2e2e2e {
+	background-color: #2e2e2e;
+}
+
+.background-eeeeee {
+	background-color: #eeeeee;
+}
+
 .color-white {
 	color: #ffffff;
 }
@@ -26,19 +34,19 @@
 	border: 0px !important;
 }
 
-.no-top-margin {
+.no-top-margin, .no-margin-top {
 	margin-top: 0px !important;
 }
 
-.no-right-margin {
+.no-right-margin, .no-margin-right {
 	margin-right: 0px !important;
 }
 
-.no-bottom-margin {
+.no-bottom-margin, .no-margin-bottom {
 	margin-bottom: 0px !important;
 }
 
-.no-left-margin {
+.no-left-margin, .no-margin-left {
 	margin-left: 0px !important;
 }
 
@@ -46,19 +54,19 @@
 	margin: 0px !important;
 }
 
-.no-top-padding {
+.no-top-padding, .no-padding-top {
 	padding-top: 0px !important;
 }
 
-.no-right-padding {
+.no-right-padding, .no-padding-right {
 	padding-right: 0px !important;
 }
 
-.no-bottom-padding {
+.no-bottom-padding, .no-padding-bottom {
 	padding-bottom: 0px !important;
 }
 
-.no-left-padding {
+.no-left-padding, .no-padding-left {
 	padding-left: 0px !important;
 }
 
@@ -80,6 +88,6 @@
 	line-height: 1;
 }
 
-section {
-	margin-top: -1px !important;
+.full-width {
+	width: 100%;
 }
