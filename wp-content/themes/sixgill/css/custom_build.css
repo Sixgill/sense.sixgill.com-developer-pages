@@ -1603,10 +1603,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		font-size: 20px;
 	}
 
-	.solutions-subpage-text ol {
-		padding-left: 30px;
-	}
-
 	.my_headerBoxSolution {
 		display: none;
 	}
