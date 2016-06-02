@@ -41,6 +41,6 @@
 	.display-only-mobile-portrait,
 	.display-only-desktop,
 	.display-only-tablet {
-		display: none;
+		display: none !important;
 	}
 }

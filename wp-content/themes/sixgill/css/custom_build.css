@@ -382,7 +382,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .hidden-bottom-imageDiagram {
 	padding-left: 0px;
 	padding-right: 0px;
-	display: inline-block;
 }
 
 #home-text-company-with-line {
@@ -682,7 +681,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.display-only-mobile-portrait,
 	.display-only-mobile-landscape,
 	.display-only-tablet {
-		display: none;
+		display: none !important;
 	}
 
 	.my_subMenus {
@@ -771,6 +770,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.home-video-text {
 		font-size: 34px;
 		font-weight: 900;
+	}
+
+	.hidden-bottom-imageDiagram {
+		display: inline-block;
 	}
 }
 /* Solutions desktop styles */
@@ -1019,7 +1022,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.display-only-desktop,
 	.display-only-mobile-landscape,
 	.display-only-mobile-portrait {
-		display: none;
+		display: none !important;
 	}
 
 }
@@ -1318,7 +1321,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.display-only-desktop,
 	.display-only-mobile-landscape,
 	.display-only-tablet {
-		display: none;
+		display: none !important;
 	}
 }
 /* Blog mobile portrait styles */
@@ -1579,7 +1582,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.display-only-mobile-portrait,
 	.display-only-desktop,
 	.display-only-tablet {
-		display: none;
+		display: none !important;
 	}
 }
 /* Blog Mobile landscape styles */

@@ -133,7 +133,7 @@
 	<section id="clients" class="color-white center section-margin-fix">
 		<div class="center">
 			<div class="fancy-title-without-bottom fancy-title title-dotted-border title-center mobile-hiden-line">
-				<h3 id="home-text-company-with-line" style="font-size:20px; font-weight:normal; color:#383838;">
+				<h3 id="home-text-company-with-line">
 					<?php echo get_field('logo_header_text'); ?>
 				</h3>
 			</div>
@@ -162,7 +162,7 @@
 					VIEW COMPANY
 				</a>
 			</div>
-			<div class="home-diagram hidden-bottom-imageDiagram no-desktop-display">
+			<div class="home-diagram hidden-bottom-imageDiagram no-desktop-display no-tablet-display">
 				<div>
 					<div style="width: 48%; float: left;">
 						<img id="home-mobile-image-att" src="/wp-content/themes/sixgill/images/td/home/logos/logo_att.jpg" alt="" />
@@ -204,7 +204,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="home-diagram hidden-bottom-imageDiagram max-width-720 no-horizontal-padding no-desktop-display">
+			<div class="home-diagram hidden-bottom-imageDiagram max-width-720 no-horizontal-padding no-desktop-display no-tablet-display">
 				<a href="/company/" id="home-button-image-company" class="button button-large no-bottom-margin btnCompany">
 					VIEW COMPANY
 				</a>

@@ -104,7 +104,7 @@
 	.display-only-mobile-portrait,
 	.display-only-mobile-landscape,
 	.display-only-tablet {
-		display: none;
+		display: none !important;
 	}
 
 	.my_subMenus {
