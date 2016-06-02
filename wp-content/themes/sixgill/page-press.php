@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <a name="top"></a>
-<section id="slider" class="slider-parallax swiper_wrapper clearfix">
+<section id="slider" class="slider-parallax swiper_wrapper clearfix section-margin-fix">
 	<div class="slider-parallax-inner">
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
@@ -11,9 +11,9 @@
 </section>
 
 <!-- Content-->
-<section id="content">
-	<div class="content-wrap" style="padding:0px;">
-		<div class="container-fluid center clearfix my_containerSolution" style="padding-top: 0px;">
+<section id="content" class="section-margin-fix">
+	<div class="content-wrap no-padding">
+		<div class="container-fluid center clearfix my_containerSolution no-top-padding">
 			<div class=" text-left col_press" align="left">
 
 				<div class="press-block-container">

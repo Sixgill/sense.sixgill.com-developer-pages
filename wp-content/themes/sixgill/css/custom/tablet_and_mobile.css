@@ -45,4 +45,8 @@
 	.mc4wp-form-fields h4 {
 		display: none !important;
 	}
+
+	.section-margin-fix {
+		margin-top: -1px !important;
+	}
 }

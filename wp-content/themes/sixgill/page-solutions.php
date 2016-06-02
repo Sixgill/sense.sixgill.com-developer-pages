@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <a name="top"></a>
-<section id="slider" class="slider-parallax no-border swiper_wrapper clearfix">
+<section id="slider" class="slider-parallax no-border swiper_wrapper clearfix section-margin-fix">
 	<div class="slider-parallax-inner">
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
@@ -12,7 +12,7 @@
 
 <!-- Content-->
 
-<section id="content">
+<section id="content" class="section-margin-fix">
 
 	<div class="content-wrap no-border no-margin nopadding">
 
@@ -60,7 +60,9 @@
 							</ul>
 						<?php endif; ?>
 					</div>
-					<b style="padding-bottom: 5px;">LEARN MORE ABOUT USE CASES FOR PEOPLE</b>
+					<b style="padding-bottom: 5px;">
+						LEARN MORE ABOUT USE CASES FOR PEOPLE
+					</b>
 					<?php
 						global $categoryName;
 						$categoryName = "For people";
@@ -144,7 +146,9 @@
 							</ul>
 						<?php endif; ?>
 					</div>
-					<b style="padding-bottom: 5px;">LEARN MORE ABOUT USE CASES FOR PEOPLE</b>
+					<b style="padding-bottom: 5px;">
+						LEARN MORE ABOUT USE CASES FOR PEOPLE
+					</b>
 					<?php
 						global $categoryName;
 						$categoryName = "For crowd";

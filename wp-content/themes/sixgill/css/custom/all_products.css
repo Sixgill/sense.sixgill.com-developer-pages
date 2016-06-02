@@ -1,0 +1,12 @@
+#sassist {
+	margin-top: 40px;
+}
+
+#ssdk-container {
+	max-width:1100px;
+}
+
+#products-header-image {
+	background-image: url('/wp-content/themes/sixgill/images/td/hero/adobestock_69002740_web.jpg');
+	background-position: center;
+}

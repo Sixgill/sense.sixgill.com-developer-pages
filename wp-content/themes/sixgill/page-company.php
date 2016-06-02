@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <a name="top"></a>
-<section id="slider" class="slider-parallax swiper_wrapper clearfix">
+<section id="slider" class="slider-parallax swiper_wrapper clearfix section-margin-fix">
 	<div class="slider-parallax-inner">
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
@@ -12,7 +12,7 @@
 
 <!-- Content-->
 <a name="company"></a>
-<section id="content">
+<section id="content" class="section-margin-fix">
 	<div class="content-wrap" style="padding-bottom:0px;">
 
 		<div class="header-stick background-f8f8f8 no-border" id="company">
@@ -28,7 +28,7 @@
 
 		<div class="clear"></div>
 		<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-			<img src="/wp-content/themes/sixgill/images/td/company_fig1.png" alt="" width="100%"/>
+			<img src="/wp-content/themes/sixgill/images/td/company_fig1.png" alt="" class="full-width"/>
 		</div>
 
 
@@ -100,12 +100,12 @@
 			</div>
 		</div>
 
-		<section id="before_board" class="container-fluid center clearfix no-margin nopadding">
+		<section id="before_board" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
 			<img src="/wp-content/themes/sixgill/images/td/company/00_BoardSection.jpg" width="100%" alt=""/>
 		</section>
 
 		<a name="board"></a>
-		<section id="board" class="color-white" style="background-color:#2e2e2e;">
+		<section id="board" class="color-white section-margin-fix">
 			<div class="container-fluid center clearfix no-top-margin no-top-padding no-border" style="max-width:1200px; padding-left: 6%; text-align: center;">
 				<div class="center">
 					<p class="btnInside color-white" style="border-color:#FFF;">
@@ -158,9 +158,9 @@
 		</div>
 
 		<a name="press"></a>
-		<section id="press" class="background-white">
+		<section id="press" class="background-white section-margin-fix">
 
-			<div class="container-fluid center no-border clearfix no-top-margin no-padding" style="max-width:1200px; padding-left: 0px; text-align: center;">
+			<div class="container-fluid center no-border clearfix no-top-margin no-padding center" style="max-width:1200px;">
 				<div class="center">
 					<p class="btnInside company-single-post-title">
 						Latest press and news
