@@ -742,13 +742,13 @@ Responsive CSS
 	body:not(.top-search-open) #primary-menu-trigger {
 
 		opacity: 1;
-
+/*
 		-webkit-transition: opacity .2s .2s ease, top .4s ease;
 
 		-o-transition: opacity .2s .2s ease, top .4s ease;
 
 		transition: opacity .2s .2s ease, top .4s ease;
-
+*/
 	}
 
 
