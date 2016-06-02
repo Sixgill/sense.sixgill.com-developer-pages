@@ -93,34 +93,28 @@
 	margin-top: 5px;
 }
 
-
 .button.button-large {
 	height:40px; 
 	line-height: 40px;
 }
 
-
 .pagination-image-left, .pagination-image-right {
 	height: 30px; 
-	margin-right: 20px;
 }
 
-.pagination-image-right {
+.pagination-image-right, .pagination-number {
 	margin-left: 10px;
 }
 
-.current {
+.current, .current-link {
 	margin-right: 10px;
 }
 
-.pagination-number {
+.pagination-number, .pagination-image-left, .pagination-image-right {
 	margin-right: 20px; 
-	margin-left: 10px; 
-	color: black;
 }
 
-.current-link {
-	margin-right: 10px; 
+.current-link, .pagination-number {
 	color: black;
 }
 
