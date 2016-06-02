@@ -348,7 +348,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .home-diagram {
 	padding: 85px 50px 45px 50px;
-	display: inline-block;
 }
 
 #home-main-text {
@@ -388,6 +387,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .hidden-bottom-imageDiagram {
 	padding-left: 0px;
 	padding-right: 0px;
+	display: inline-block;
 }
 
 #home-text-company-with-line {
@@ -420,6 +420,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .hidden-top-imageDiagram {
 	margin-bottom: 35px;
+	display: block;
 }
 .solutions-subpage-text, .solutions-subpage-thumbnail {
 	text-align: left;
@@ -1721,6 +1722,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.global-social-buttons-separator {
 		margin-top: 0px;
+	}
+
+	.mc4wp-form-fields h4 {
+		display: none !important;
 	}
 }
 /* For laptops: */

@@ -78,6 +78,22 @@ body, p {
 	border:0px solid #FF0004;
 }
 
+.btnSchedule, .btnSolutions, .btnCompany {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 14px 30px 14px 30px;
+	text-decoration: none;
+	border-radius: 0px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.btnSchedule:hover, .btnSolutions:hover, .btnCompany:hover {
+	text-decoration: none;
+}
+
 .btnSchedule {
 	background: #4ddb5a;
 	background-image: -webkit-linear-gradient(top, #4ddb5a, #3cad46);
@@ -85,18 +101,9 @@ body, p {
 	background-image: -ms-linear-gradient(top, #4ddb5a, #3cad46);
 	background-image: -o-linear-gradient(top, #4ddb5a, #3cad46);
 	background-image: linear-gradient(to bottom, #4ddb5a, #3cad46);
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0px;
 	-webkit-box-shadow: 0px 4px 0px #115117;
 	-moz-box-shadow: 0px 4px 0px #115117;
 	box-shadow: 0px 4px 0px #115117;
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
-	color: #ffffff;
-	font-size: 20px;
-	padding: 14px 30px 14px 30px;
-	text-decoration: none;
 }
 
 .btnSolutions {
@@ -106,18 +113,9 @@ body, p {
 	background-image: -ms-linear-gradient(top, #0051c6, #013b90);
 	background-image: -o-linear-gradient(top, #0051c6, #013b90);
 	background-image: linear-gradient(to bottom, #0051c6, #013b90);
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0px;
 	-webkit-box-shadow: 0px 4px 0px #032a63;
 	-moz-box-shadow: 0px 4px 0px #032a63;
 	box-shadow: 0px 4px 0px #032a63;
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
-	color: #ffffff;
-	font-size: 20px;
-	padding: 14px 30px 14px 30px;
-	text-decoration: none;
 }
 
 .btnCompany {
@@ -127,18 +125,9 @@ body, p {
 	background-image: -ms-linear-gradient(top, #2e2e2e, #080808);
 	background-image: -o-linear-gradient(top, #2e2e2e, #080808);
 	background-image: linear-gradient(to bottom, #2e2e2e, #080808);
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0px;
 	-webkit-box-shadow: 0px 4px 0px #343434;
 	-moz-box-shadow: 0px 4px 0px #343434;
 	box-shadow: 0px 4px 0px #343434;
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
-	color: #ffffff;
-	font-size: 20px;
-	padding: 14px 30px 14px 30px;
-	text-decoration: none;
 }
 
 .btnSchedule:hover {
@@ -148,7 +137,6 @@ body, p {
 	background-image: -ms-linear-gradient(top, #4ddb5a, #4ddb5a);
 	background-image: -o-linear-gradient(top, #4ddb5a, #4ddb5a);
 	background-image: linear-gradient(to bottom, #4ddb5a, #4ddb5a);
-	text-decoration: none;
 }
 
 .btnSolutions:hover {
@@ -158,7 +146,6 @@ body, p {
 	background-image: -ms-linear-gradient(top, #0051c6, #0051c6);
 	background-image: -o-linear-gradient(top, #0051c6, #0051c6);
 	background-image: linear-gradient(to bottom, #0051c6, #0051c6);
-	text-decoration: none;
 }
 
 .btnCompany:hover {
@@ -168,7 +155,6 @@ body, p {
 	background-image: -ms-linear-gradient(top, #2e2e2e, #2e2e2e);
 	background-image: -o-linear-gradient(top, #2e2e2e, #2e2e2e);
 	background-image: linear-gradient(to bottom, #2e2e2e, #2e2e2e);
-	text-decoration: none;
 }
 
 .learn-more-link {
