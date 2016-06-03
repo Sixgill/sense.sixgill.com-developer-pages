@@ -247,7 +247,7 @@ function get_search_form_header( $echo = true ) {
 
 function get_search_form_page($idForm, $idInput, $idButton) {
 	return $form = '<form id="'.$idForm.'" class="form-search" role="search" method="get" action="'.home_url('/').'">
-	<div class="search">
+	<div class="search background-white">
 		<input id="'.$idInput.'" type="search" class="form-control" placeholder="Search" value="'.get_search_query().'" name="s" title="Search">
 		<button id="'.$idButton.'" type="submit" value=""></button>
 	</div>
