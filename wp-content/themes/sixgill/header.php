@@ -63,9 +63,24 @@
 		<header id="header" class="no-sticky no-border">
 
 			<div id="header-wrap">
+				
+					<div id="logo" class="noborder nopadding" style="margin-left: 15px;">
+						<a href="/" class="logo-sixgill"></a>
+					</div>
 
+					<div id="primary-menu-trigger" class="tright" style="margin-right: 15px;">
+						<img id="show-menu-icon" class="" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" height="100%" alt=""/>
+						<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" height="100%" alt=""/>
+					</div>
+			<div id="mobile-table-search" class="background-search no-desktop-display no-mobile-landscape-display hide mobile-margin-search-page">
+				<div class="search-form-container form-page-search padding-search">
+					<?php get_search_form(); ?>
+				</div>
+			</div>
+			
 				<div class="container clearfix menu-container">
 
+<!--
 					<div id="logo" class="noborder nopadding no-margin">
 						<a href="/" class="logo-sixgill"></a>
 					</div>
@@ -74,10 +89,13 @@
 						<img id="show-menu-icon" class="" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" height="100%" alt=""/>
 						<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" height="100%" alt=""/>
 					</div>
+-->
+					
+
 
 					<!-- Primary Navigation -->
 					<nav id="primary-menu">
-						<ul>
+									<ul style="top: 0px;">
 
 							<?php if(strcasecmp(getCurrentSlug(), "home")==0) { ?>
 								<a class="menu-link-selected" href="#top"><div class="menu-first-item">Home</div></a>
@@ -172,11 +190,7 @@
 					</div>
 				</div>
 			</header><!-- #header end -->
-					<div id="tablet" class="background-search no-desktop-display">
-			<div class="search-form-container form-page-search padding-search">
-				<?php get_search_form(); ?>
-			</div>
-		</div>
+
 			<div class="search-form-container header-search display-only-desktop position-button-schedule">
 				<div class="search-header-position"><button href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">SCHEDULE A DEMO</button></div>
 				<div class="form-search-header"><?php get_search_form_header(); ?></div>
