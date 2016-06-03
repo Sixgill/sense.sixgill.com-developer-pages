@@ -38,6 +38,10 @@
 	margin-top: 0px !important;
 }
 
+.no-top {
+	top: 0px;
+}
+
 .no-right-margin, .no-margin-right {
 	margin-right: 0px !important;
 }

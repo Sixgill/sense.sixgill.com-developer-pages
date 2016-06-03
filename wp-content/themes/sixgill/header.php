@@ -64,41 +64,27 @@
 
 			<div id="header-wrap">
 				
-					<div id="logo" class="noborder nopadding" style="margin-left: 15px;">
+					<div id="logo" class="noborder nopadding alignment-logo-left">
 						<a href="/" class="logo-sixgill"></a>
 					</div>
 
-					<div id="primary-menu-trigger" class="tright" style="margin-right: 15px;">
+					<div id="primary-menu-trigger" class="tright alignment-menu-right" >
 						<img id="show-menu-icon" class="" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" height="100%" alt=""/>
 						<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" height="100%" alt=""/>
 					</div>
 			<div id="mobile-table-search" class="background-search no-desktop-display no-mobile-landscape-display hide mobile-margin-search-page">
 				<div class="search-form-container form-page-search padding-search">
-					<?php get_search_form(); ?>
+				<?php echo get_search_form_page('menuSearchFormHeader','menuInputFormHeader','menuButtonFormHeader'); ?>
 				</div>
 			</div>
 			
 				<div class="container clearfix menu-container">
-
-<!--
-					<div id="logo" class="noborder nopadding no-margin">
-						<a href="/" class="logo-sixgill"></a>
-					</div>
-
-					<div id="primary-menu-trigger" class="tright">
-						<img id="show-menu-icon" class="" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" height="100%" alt=""/>
-						<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" height="100%" alt=""/>
-					</div>
--->
-					
-
-
 					<!-- Primary Navigation -->
 					<nav id="primary-menu">
-									<ul style="top: 0px;">
+									<ul style="top:0px;">
 
 							<?php if(strcasecmp(getCurrentSlug(), "home")==0) { ?>
-								<a class="menu-link-selected" href="#top"><div class="menu-first-item">Home</div></a>
+								<a class="menu-link-selected" href="#top"><div class="menu-first-item" style="padding-top: 20px;">Home</div></a>
 								<div class="my_subMenus display-only-desktop" style="margin-left:15px;">
 									<a href="#what">What we do</a><br>
 									<a href="#products">Products</a><br>
@@ -106,7 +92,7 @@
 									<a href="#clients">Clients</a>
 								</div>
 							<?php }else{ ?>
-								<a href="/"><div class="menu-first-item">Home</div></a>
+								<a href="/"><div class="menu-first-item" style="padding-top: 20px;">Home</div></a>
 							<?php } ?>
 
 								<?php if(strcasecmp(getCurrentSlug(), "solutions")==0) { ?>
