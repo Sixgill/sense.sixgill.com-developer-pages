@@ -29,13 +29,13 @@ body, p {
 }
 
 .companyJob {
-	font-size:16px;
-	color:#4DDB5A;
+	font-size: 16px;
+	color: #4DDB5A;
 }
 
 .companyDescription {
-	font-size:16px;
-	font-weight:normal;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 #footer {
@@ -490,10 +490,10 @@ Side Header
 p {font-size:13px; font-weight:normal;}
 
 .logo-sixgill {
-	width:150px;
-	height:44px;
-	background-image:url("/wp-content/themes/sixgill/td/logo/logo_mobile.svg");
-	margin:10px 0px;
+	/*width:150px;*/
+	height: 44px;
+	background-image: url("/wp-content/themes/sixgill/td/logo/logo_mobile.svg");
+	margin: 10px 0px;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -624,15 +624,27 @@ p {font-size:13px; font-weight:normal;}
 }
 
 @media only screen and (min-width: 321px) {/* For tablets: */
-	.txtVideo {font-size:40px;font-weight:normal;}
-	.titLegal {font-size:25px; margin-top:50px; margin-bottom:30px;}
+	.txtVideo {
+		font-size:40px;font-weight:normal;
+	}
+
+	.titLegal {
+		font-size:25px;
+		margin-top:50px;
+		margin-bottom:30px;
+	}
 
 	p {
 		font-size:20px;
 		font-weight:normal;
 	}
 
-	.logo-sixgill {width:245px; height:96px; background-image:url("/wp-content/themes/sixgill/td/logo/logo_tablet.svg");}
+	.logo-sixgill {
+		/*width: 245px;*/
+		height: 96px;
+		background-image:url("/wp-content/themes/sixgill/td/logo/logo_tablet.svg");
+	}
+
 	.titleInside {
 		font-size:30px;
 		font-weight:bold;
@@ -640,6 +652,7 @@ p {font-size:13px; font-weight:normal;}
 		margin:0px;
 		padding-right:20px;
 	}
+
 	.iconSolutions {
 		width:115px;
 	}
@@ -647,10 +660,10 @@ p {font-size:13px; font-weight:normal;}
 	#primary-menu {
 		padding-bottom: 5px;
 	}
+
 	.titleInside-tech {
 		padding-right:0px;
 	}
-
 
 	.tech-first-text-title {
 		width:auto;
@@ -658,10 +671,26 @@ p {font-size:13px; font-weight:normal;}
 }
 
 @media only screen and (min-width: 1001px) {/* For desktop: */
-	.txtVideo {font-size:28px;font-weight:normal;}
-	.titLegal {font-size:40px; margin-top:60px; margin-bottom:65px;}
-	p {font-size:16px; font-weight:normal;}
-	.logo-sixgill {width:140px; height:111px; background-image:url("/wp-content/themes/sixgill/td/logo/logo_desktop.svg");
+	.txtVideo {
+		font-size:28px;
+		font-weight:normal;
+	}
+
+	.titLegal {
+		font-size:40px;
+		margin-top:60px;
+		margin-bottom:65px;
+	}
+
+	p {
+		font-size:16px;
+		font-weight:normal;
+	}
+
+	.logo-sixgill {
+		width:140px;
+		height:111px;
+		background-image:url("/wp-content/themes/sixgill/td/logo/logo_desktop.svg");
 }
 
 
@@ -699,7 +728,7 @@ p {font-size:13px; font-weight:normal;}
 }
 
 .news-press-button {
-	margin:0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	width: 390px;
 }
 
