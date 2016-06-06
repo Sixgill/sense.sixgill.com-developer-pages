@@ -5,7 +5,7 @@
 		</li>
 
 		<li>
-			<a href="http://twitter.com/home/?status=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!"> <img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Twitter" id="image-twitter-share" class="shareButton-blog"></a>
+			<a href="http://twitter.com/home/?status=<?php echo urlencode(rawurldecode(html_entity_decode(($ptitle)))); ?> - <?php echo urlencode(rawurldecode(html_entity_decode(wp_get_shortlink()))); ?>" target="_blank" title="Tweet this!"> <img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Twitter" id="image-twitter-share" class="shareButton-blog"></a>
 		</li>
 
 		<li>
