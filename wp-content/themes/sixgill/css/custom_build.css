@@ -2082,6 +2082,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.blog-list {
 		width: 61%;
 	}
+	
+	.container-slidebar {
+		width: 35%; 
+	}
 }
 
 /* For share botton on blog: */

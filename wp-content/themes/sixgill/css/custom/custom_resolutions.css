@@ -72,6 +72,10 @@
 	.blog-list {
 		width: 61%;
 	}
+	
+	.container-slidebar {
+		width: 35%; 
+	}
 }
 
 /* For share botton on blog: */
