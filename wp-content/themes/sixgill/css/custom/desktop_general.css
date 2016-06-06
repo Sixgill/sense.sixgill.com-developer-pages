@@ -119,4 +119,8 @@
 	#menu-background {
 		display: none !important;
 	}
+
+	.single-post-content {
+		padding-top: 80px;
+	}
 }

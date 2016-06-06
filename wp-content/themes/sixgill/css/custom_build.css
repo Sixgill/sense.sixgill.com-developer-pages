@@ -242,6 +242,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 #myModal {
 	z-index: 9999;
 }
+
+.side-header #logo {
+	margin-left: 15px;
+}
+
+.alignment-menu-right {
+	margin-right: 15px;
+}
+
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
 }
@@ -702,6 +711,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .header-search {
 	margin-top: 0px;
+}
+
+.content-wrap .header-stick {
+	padding-top: 100px;
 }/* General desktop styles */
 @media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {
@@ -822,6 +835,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	#menu-background {
 		display: none !important;
+	}
+
+	.single-post-content {
+		padding-top: 80px;
 	}
 }
 /* Blog desktop styles */
@@ -2177,7 +2194,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 
-/* Small landscape */
 @media (min-width: 486px) and (max-width: 720px) {
 	.resources-blocks-container {
 		min-width: 370px !important;
@@ -2258,6 +2274,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .no-top-margin, .no-margin-top {
 	margin-top: 0px !important;
+}
+
+.no-top {
+	top: 0px;
 }
 
 .no-right-margin, .no-margin-right {

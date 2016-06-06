@@ -5,18 +5,19 @@
 	<div class="content-wrap no-bottom-padding">
 		
 		<hr class="title-dotted-border header-search display-only-desktop">
-			<div id="tablet" class="background-search no-desktop-display margin-table-search">
+			<div id="tablet" class="background-search no-desktop-display margin-table-search" >
 				<div class="search-form-container form-page-search padding-search">
-					<?php get_search_form(); ?>
+				<?php echo get_search_form_page('pageSearchFormHeader','pageInputFormHeader','pageButtonFormHeader'); ?>
+
 				</div>
 			</div>
-		<div id="tablet" class="background-search display-only-desktop">
-			<div class="search-form-container form-page-search padding-search">
-				<?php get_search_form(); ?>
+		<div id="general-search-form-page" class="background-search display-only-desktop" >
+			<div class="search-form-container form-page-search padding-search">				
+				<?php echo get_search_form_page('pageSearchForm','pageInputForm','pageButtonForm'); ?>
 			</div>
 		</div>
 		
-		<section class="header-stick" style="    padding-top: 80px;">
+		<section class="header-stick search-content">
 			<div class="container-fluid clearfix search-container">	
 			<h1 class="no-margin">Search Result</h1>
 			<p class="color-999999"> <?php echo $wp_query->found_posts; ?> Results </p>

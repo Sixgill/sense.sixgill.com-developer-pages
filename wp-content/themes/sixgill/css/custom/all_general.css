@@ -242,3 +242,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 #myModal {
 	z-index: 9999;
 }
+
+.side-header #logo {
+	margin-left: 15px;
+}
+
+.alignment-menu-right {
+	margin-right: 15px;
+}
+
