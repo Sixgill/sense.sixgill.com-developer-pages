@@ -66,11 +66,15 @@
 	}
 
 	.subscribe-block {
-		width: 35%;
+		width: 100%;
 	}
 
 	.blog-list {
 		width: 61%;
+	}
+	
+	.container-slidebar {
+		width: 35%; 
 	}
 }
 
@@ -91,16 +95,6 @@
 	}
 }
 
-
-
-/* Menu for small phones */
-@media (min-height: 400px) and (max-height: 560px) {
-	#primary-menu a div {
-		padding-top: 12% !important;
-	}
-}
-
-/* Small landscape */
 @media (min-width: 486px) and (max-width: 720px) {
 	.resources-blocks-container {
 		min-width: 370px !important;

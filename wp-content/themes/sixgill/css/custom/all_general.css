@@ -145,10 +145,6 @@ body, p {
 	padding-right: 0px !important;
 }
 
-nav#primary-menu > ul {
-	height: 5000px;
-}
-
 #menu-background {
 	display: none;
 	z-index: 9997;
@@ -246,3 +242,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 #myModal {
 	z-index: 9999;
 }
+
+.side-header #logo {
+	margin-left: 15px;
+}
+
+.alignment-menu-right {
+	margin-right: 15px;
+}
+

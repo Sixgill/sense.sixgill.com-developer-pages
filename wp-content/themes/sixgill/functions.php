@@ -113,6 +113,16 @@ function sixgill_widgets_init() {
 		'before_title'  => '<h4 style="font-size:30px; font-weight:bold;">',
 		'after_title'   => '</h4>',
 	) );
+	
+	register_sidebar( array(
+		'name'          => __( 'Twitter Widget sidebar', 'mk' ),
+		'id'            => 'twitter-widget-sidebar',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 style="font-size:30px; font-weight:bold;">',
+		'after_title'   => '</h4>',
+	) );
 
 	register_sidebar( array(
 		'name'          => __( 'Post social links sidebar', 'mk' ),
@@ -243,6 +253,15 @@ function get_search_form_header( $echo = true ) {
 		echo $result;
 	else
 		return $result;
+}
+
+function get_search_form_page($idForm, $idInput, $idButton) {
+	return $form = '<form id="'.$idForm.'" class="form-search" role="search" method="get" action="'.home_url('/').'">
+	<div class="search background-white">
+		<input id="'.$idInput.'" type="search" class="form-control" placeholder="Search" value="'.get_search_query().'" name="s" title="Search">
+		<button id="'.$idButton.'" type="submit" value=""></button>
+	</div>
+</form>';
 }
 
 add_filter('excerpt_more', function($more) {
