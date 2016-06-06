@@ -113,6 +113,16 @@ function sixgill_widgets_init() {
 		'before_title'  => '<h4 style="font-size:30px; font-weight:bold;">',
 		'after_title'   => '</h4>',
 	) );
+	
+	register_sidebar( array(
+		'name'          => __( 'Twitter Widget sidebar', 'mk' ),
+		'id'            => 'twitter-widget-sidebar',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 style="font-size:30px; font-weight:bold;">',
+		'after_title'   => '</h4>',
+	) );
 
 	register_sidebar( array(
 		'name'          => __( 'Post social links sidebar', 'mk' ),

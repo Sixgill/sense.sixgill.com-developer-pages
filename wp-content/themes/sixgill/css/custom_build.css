@@ -331,7 +331,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	width: 100%;
 	margin: 0;
 }
-.company-learn-more-text {
+
+.container-slidebar {
+	width: 31%; 
+	float: right;
+}.company-learn-more-text {
 	display: none;
 }
 
@@ -836,7 +840,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding: 15px 20px 26px 20px;
 		text-align: center;
 		font-size: 18px;
-		width: 31%
+		width: 100%
 	}
 
 	.subscribe-block h4 {
@@ -879,6 +883,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.post-blog {
 		margin-top:30px;
+	}
+	
+	.twitter-block {
+		background-color: #fafafa;
+		height: 535px;
+		max-width: 352px;
+		padding: 15px 20px 26px 20px;
+		text-align: center;
+		font-size: 18px;
+		width: 100%;
+		margin-top: 60px;
 	}
 }
 /* Company desktop styles */
@@ -2061,7 +2076,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.subscribe-block {
-		width: 35%;
+		width: 100%;
 	}
 
 	.blog-list {

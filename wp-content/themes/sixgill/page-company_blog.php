@@ -20,10 +20,15 @@
 					<h1 class="h1-blog">Blog</h1>
 					<?php get_template_part( 'loop-blog'); ?>
 				</div>
-
-				<div class="col_two_fifth col_last widget subscribe-block display-only-desktop" align="left">
+			<div class="container-slidebar">
+				<div class="col_last widget subscribe-block display-only-desktop" align="left">
 					<?php dynamic_sidebar( 'blog-subscribe-sidebar' ); ?>
 				</div>
+				
+				<div class="col_two_fifth col_last widget twitter-block display-only-desktop" align="left">
+					<?php dynamic_sidebar( 'twitter-widget-sidebar' ); ?>
+				</div>
+			</div>
 		</div>
 	</div>
 </section><!-- #content end -->
