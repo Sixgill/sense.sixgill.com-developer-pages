@@ -4,7 +4,7 @@
 			<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Facebook" id="image-mobile-fecebook-share" class="shareButton-mobile">
 		</a>
 
-		<a href="https://twitter.com/intent/tweet?text=<?php echo urlencode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!">
+		<a href="https://twitter.com/intent/tweet?text=<?php echo rawurldecode(html_entity_decode($ptitle)); ?> - <?php echo wp_get_shortlink(); ?>" target="_blank" title="Tweet this!">
 			<img src="/wp-content/themes/sixgill/images/td/blog/social_Twitter.svg" alt="Twitter" id="image-mobile-twitter-share" class="shareButton-mobile">
 		</a>
 

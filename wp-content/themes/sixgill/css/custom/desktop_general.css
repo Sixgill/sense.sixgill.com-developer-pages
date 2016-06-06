@@ -1,7 +1,7 @@
 /* General desktop styles */
 @media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {
-		margin-left:-16px !important;
+		margin-left: -16px !important;
 	}
 
 	#primary-menu {
@@ -30,19 +30,19 @@
 	}
 
 	.logo-sixgill {
-		width:140px;
-		height:111px;
-		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
+		width: 140px;
+		height: 111px;
+		background-image: url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
 	}
 
 	.title-left-col {
-		font-size:30px;
-		padding-right:20px;
-		text-align:right;
+		font-size: 30px;
+		padding-right: 20px;
+		text-align: right;
 	}
 
 	.my_iconSolution {
-		width:115px;
+		width: 115px;
 	}
 
 	.my_boxSolution_title {
@@ -50,8 +50,8 @@
 	}
 
 	.footer-learn-text, .footer-links-block {
-		text-align:left;
-		font-size:22px;
+		text-align: left;
+		font-size: 22px;
 	}
 
 	.footer-learn-text {
@@ -73,7 +73,7 @@
 	}
 
 	.footer_Schedule {
-		text-align:right;
+		text-align: right;
 		float: right;
 		margin-top: 0px;
 	}
@@ -108,10 +108,19 @@
 	}
 
 	.my_subMenus {
-		margin-left:15px;
+		margin-left: 15px;
+	}
+
+	.my_subMenus > a {
+		display: block;
+		margin-top: 3px;
 	}
 
 	#menu-background {
 		display: none !important;
+	}
+
+	.single-post-content {
+		padding-top: 80px;
 	}
 }

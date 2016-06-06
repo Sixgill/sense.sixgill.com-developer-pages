@@ -7,7 +7,7 @@
 		padding: 15px 20px 26px 20px;
 		text-align: center;
 		font-size: 18px;
-		width: 31%
+		width: 100%
 	}
 
 	.subscribe-block h4 {
@@ -50,5 +50,15 @@
 
 	.post-blog {
 		margin-top:30px;
+	}
+	
+	.twitter-block {
+		height: 535px;
+		max-width: 352px;
+		padding: 15px 20px 26px 20px;
+		text-align: center;
+		font-size: 18px;
+		width: 100%;
+		margin-top: 60px;
 	}
 }

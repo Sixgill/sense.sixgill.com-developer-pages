@@ -93,15 +93,20 @@ jQuery(function($) {
 		if(window.menuShowFlag) {
 			$( '#menu-background' ).fadeTo(500, 0, function() {
 				$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
+				$('#mobile-table-search').toggleClass("hide");
 			});
 			$( '#primary-menu' ).fadeTo(400, 0, function() {
 				$(window).scrollTop(savedScroll);
 			});
 		} else {
 			savedScroll = $(window).scrollTop();
+			$('#mobile-table-search').toggleClass("hide");
 			$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			$( '#primary-menu, #menu-background' ).fadeTo(500, 1);
+
 		}
+					$('#mobile-table-search').toggleClass("show");
+
 
 		window.menuShowFlag = !window.menuShowFlag;
 
@@ -171,6 +176,38 @@ jQuery(function($) {
 			}, 100);
 		}
 	});
+});
+jQuery(function($) {
+	var searchOpenned = false;
+	//Chache DOM search
+	var searchQueryInput = $('#pageInputForm, #menuInputFormHeader, #pageInputFormHeader');
+	var searchButton = $('#spageButtonForm, #menuButtonFormHeader, #pageButtonFormHeader');
+	var searchForm = $('#pageSearchForm, #menuSearchFormHeader, #pageSearchFormHeader');
+  
+	function validateSearchForm(searchQuery) {
+		//TODO: improve validation
+		//Validation passed: true
+		//Otherwise: false
+		var validationResult = true;
+		if(searchQuery.length==0) {
+			validationResult = false;
+		}
+		//Add here more conditions with validationResult = false action
+		return validationResult;
+	}
+  
+	searchForm.submit(function(event) {
+		if(!validateSearchForm(searchQueryInput.val())) {
+			event.preventDefault();
+		}
+	});
+  
+	searchButton.click(function() {
+		if(searchQueryInput.val().length==0) {
+			
+		} 
+	});
+  
 });
 jQuery(function($){
   if(document.getElementById('single-page-content') && document.getElementById('aside1')){

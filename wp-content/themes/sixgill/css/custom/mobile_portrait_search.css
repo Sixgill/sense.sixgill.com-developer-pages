@@ -1,11 +1,15 @@
 /* Blog mobile portrait styles */
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) and (orientation: portrait) {
 	.form-page-search {
-		margin: 0 auto; 
+		margin: 0 auto;
 		margin-top: 90px;
 	}
-	
+
 	.background-search {
 		margin-top: 80px;
+	}
+
+	.margin-table-search {
+		margin-top: 0px;
 	}
 }

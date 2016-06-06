@@ -7,15 +7,12 @@
 		top:0px !important;
 	}
 
-	#primary-menu {
-		padding-bottom: 0px;
-	}
-
 	#primary-menu-trigger {
 		position: inherit;
 		left: 0px;
 		display: inline-block;
 		float: right;
+		margin-right: 9px;
 	}
 
 	#logo {
@@ -45,24 +42,31 @@
 	.mc4wp-form-fields h4 {
 		display: none !important;
 	}
-	
+
 	.background-search {
-		background-color: #f9f9f9; 
-		width: 100%; 
+		background-color: #f9f9f9;
+		width: 100%;
 		margin-bottom: 0px;
 	}
-	
+
 	.padding-search {
-		padding-left: 20px; 
-		padding-right: 20px; 
+		padding-left: 20px;
+		padding-right: 20px;
 		padding-bottom: 15px;
 	}
-	
+
 	.form-search {
 		margin-bottom: 0px;
 	}
-	
+
 	.search button[type="submit"] {
 		background-color: #fff;
 	}
+
+	#primary-menu a div {
+		transform: translateY(50%);
+		text-align: center;
+		padding: 0px;
+	}
+
 }

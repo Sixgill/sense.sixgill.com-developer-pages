@@ -1,6 +1,6 @@
 .form-control {
 	display: inline-block;
-	width: 90%;
+	width: 89%;
 	height: 40px;
 	padding: 6px 12px;
 	font-size: 14px;
@@ -120,4 +120,8 @@
 
 .header-search {
 	margin-top: 0px;
+}
+
+.content-wrap .header-stick {
+	padding-top: 100px;
 }

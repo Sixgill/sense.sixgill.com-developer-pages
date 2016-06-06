@@ -1,5 +1,5 @@
 /* Press mobile portrait styles */
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) and (orientation: portrait) {
 	.press-post-title {
 		color: #444;
 	}
