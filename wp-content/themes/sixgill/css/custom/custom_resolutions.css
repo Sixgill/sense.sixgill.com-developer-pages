@@ -66,11 +66,15 @@
 	}
 
 	.subscribe-block {
-		width: 35%;
+		width: 100%;
 	}
 
 	.blog-list {
 		width: 61%;
+	}
+	
+	.container-slidebar {
+		width: 35%; 
 	}
 }
 
