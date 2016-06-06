@@ -822,6 +822,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	#menu-background {
 		display: none !important;
 	}
+
+	.single-post-content {
+		padding-top: 80px;
+	}
 }
 /* Blog desktop styles */
 @media only screen and (min-width : 1001px) {
@@ -1244,10 +1248,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.post-blog {
 		text-align: left;
-         margin-bottom: 30px;
-         z-index: 200;
-         margin-top:150px;
-     }
+		margin-bottom: 30px;
+		z-index: 200;
+		margin-top:150px;
 	}
 }
 /* Company tablet styles */
