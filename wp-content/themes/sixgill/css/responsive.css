@@ -629,11 +629,11 @@ Responsive CSS
 
 		display: block;
 
-		//height: 100px;
+/* 		height: 100px; */
 
 		float: none;
 
-		margin: 0 auto 0 !important;
+/* 		margin: 0 auto 0 !important; */
 
 		max-width: none;
 

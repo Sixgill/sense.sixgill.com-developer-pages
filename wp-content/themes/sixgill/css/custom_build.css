@@ -246,6 +246,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 #myModal {
 	z-index: 9999;
 }
+
+.side-header #logo {
+	margin-left: 15px;
+}
+
+.alignment-menu-right {
+	margin-right: 15px;
+}
+
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
 }
@@ -706,6 +715,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .header-search {
 	margin-top: 0px;
+}
+
+.content-wrap .header-stick {
+	padding-top: 100px;
 }/* General desktop styles */
 @media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {
@@ -1178,7 +1191,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	#logo {
-		float: left;
+/* 		float: left; */
 	}
 
 	#primary-menu > ul {
@@ -1197,6 +1210,21 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.display-only-mobile-landscape,
 	.display-only-mobile-portrait {
 		display: none !important;
+	}
+	
+	.padding-search-menu {
+		padding-top: 15px;
+		padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+	}
+	
+	.padding-search {
+		padding-top: 15px;
+	}
+	
+	.background-search{
+		margin-top: 0px;
 	}
 
 }
@@ -1395,7 +1423,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 	
 	.padding-search {
-		padding-top: 50px;
+		padding-top: 15px;
 	}
 	
 	.position-article, .pagination-search {
@@ -1408,7 +1436,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 	
 	.background-search {
-		margin-top: 80px;
+		margin-top: 0px;
+	}
+	
+	.margin-table-search {
+		margin-top: 40px;
 	}
 }
 /* General mobile portrait styles */
@@ -1731,6 +1763,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.background-search {
 		margin-top: 80px;
 	}
+	
+	.margin-table-search {
+		margin-top: 0px;
+	}
 }
 /* General Mobile landscape styles */
 @media (max-width: 1000px) and (orientation: landscape) {
@@ -1924,6 +1960,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.header-stick {
 		padding-top: 10px;
 	}
+	
+	.mobile-margin-search-page {
+		margin-top: 11px;
+	}
 }
 /* Portrait tablets & mobiles */
 @media (max-width: 1000px) {
@@ -1992,6 +2032,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.search button[type="submit"] {
 		background-color: #fff;
 	}
+	
 }
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {
@@ -2091,7 +2132,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 /* Menu for small phones */
 @media (min-height: 400px) and (max-height: 560px) {
 	#primary-menu a div {
-		padding-top: 12% !important;
+		padding-top: 8% !important;
 	}
 }
 
@@ -2176,6 +2217,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .no-top-margin, .no-margin-top {
 	margin-top: 0px !important;
+}
+
+.no-top {
+	top: 0px;
 }
 
 .no-right-margin, .no-margin-right {

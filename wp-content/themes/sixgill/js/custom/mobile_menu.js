@@ -6,15 +6,20 @@ jQuery(function($) {
 		if(window.menuShowFlag) {
 			$( '#menu-background' ).fadeTo(500, 0, function() {
 				$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
+				$('#mobile-table-search').toggleClass("hide");
 			});
 			$( '#primary-menu' ).fadeTo(400, 0, function() {
 				$(window).scrollTop(savedScroll);
 			});
 		} else {
 			savedScroll = $(window).scrollTop();
+			$('#mobile-table-search').toggleClass("hide");
 			$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			$( '#primary-menu, #menu-background' ).fadeTo(500, 1);
+
 		}
+					$('#mobile-table-search').toggleClass("show");
+
 
 		window.menuShowFlag = !window.menuShowFlag;
 

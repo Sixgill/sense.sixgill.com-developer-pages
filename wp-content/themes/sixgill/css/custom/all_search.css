@@ -121,3 +121,7 @@
 .header-search {
 	margin-top: 0px;
 }
+
+.content-wrap .header-stick {
+	padding-top: 100px;
+}
