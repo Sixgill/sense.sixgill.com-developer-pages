@@ -1,5 +1,5 @@
 /* Company mobile portrait and landscape styles */
-@media (max-width: 1000px) and (orientation: landscape), screen and (max-width: 500px) {
+@media (max-width: 1000px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
 	.btnSolutions {
 		width: 295px;
 	}
