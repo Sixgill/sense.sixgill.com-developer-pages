@@ -4,16 +4,8 @@
 		top: 10px;
 	}
 
-	nav#primary-menu > ul {
-		height: 300px;
-	}
-
 	.hide-landscape-mobile {
 		display: none;
-	}
-
-	.global-social-buttons-container {
-		position: static;
 	}
 
 	#header {
@@ -21,8 +13,10 @@
 	}
 
 	.global-social-buttons-container {
-		margin-left: 10px;
-		padding-right: 35px;
+		position: static;
+		margin-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
 	}
 
 	#header {
@@ -42,5 +36,13 @@
 	.display-only-desktop,
 	.display-only-tablet {
 		display: none !important;
+	}
+
+	#primary-menu a div {
+		height: 70px;
+	}
+
+	#primary-menu a:last-of-type div {
+		margin-bottom: 25px;
 	}
 }

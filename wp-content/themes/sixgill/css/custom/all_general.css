@@ -145,10 +145,6 @@ body, p {
 	padding-right: 0px !important;
 }
 
-nav#primary-menu > ul {
-	height: 5000px;
-}
-
 #menu-background {
 	display: none;
 	z-index: 9997;

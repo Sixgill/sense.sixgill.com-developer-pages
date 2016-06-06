@@ -1,5 +1,5 @@
 /* General mobile portrait styles */
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) and (orientation: portrait) {
 	.marginShareButton {
 		margin-left: 40px;
 		list-style-type: none;
@@ -57,14 +57,6 @@
 		bottom: 0px;
 		width: 100%;
 		padding-bottom: 16px;
-		margin-left: -16px;
-		margin-right: -16px;
-		padding-right: 10px;
-	}
-
-	#primary-menu {
-		text-align: center;
-		opacity: 0;
 	}
 
 	.my_containerSolution_indent {
@@ -72,13 +64,17 @@
 		margin-right: 15px;
 	}
 
-	#primary-menu a div {
-		padding-top:42px;
-	}
-
 	.menu-social-link {
 		padding-right: 22px !important;
 		padding-left: 22px !important;
+	}
+
+	.menu-social-link:first-child {
+		padding-left: 0px !important;
+	}
+
+	.menu-social-link:last-child {
+		padding-right: 0px !important;
 	}
 
 	.footer-links-block,
@@ -99,5 +95,40 @@
 	.display-only-mobile-landscape,
 	.display-only-tablet {
 		display: none !important;
+	}
+
+	#primary-menu > ul {
+		position: fixed;
+		width: 100%;
+		top: 153px;
+		left: 0px;
+		right: 0px;
+		bottom: 65px;
+	}
+
+	#primary-menu a div {
+		padding-top: 0px;
+		transform: translateY(50%);
+		bottom: 0px;
+	}
+
+	.menu-4 {
+		height: calc(100% / 4);
+	}
+
+	.menu-5 {
+		height: calc(100% / 5);
+	}
+
+	.menu-6 {
+		height: calc(100% / 6);
+	}
+
+	.menu-7 {
+		height: calc(100% / 7);
+	}
+
+	.menu-8 {
+		height: calc(100% / 8);
 	}
 }
