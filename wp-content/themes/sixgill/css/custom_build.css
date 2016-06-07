@@ -1875,7 +1875,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* General Mobile landscape styles */
-@media (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
 	#primary-menu-trigger {
 		top: 10px;
 	}
@@ -1923,7 +1923,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* Blog Mobile landscape styles */
-@media (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
 	.subscribe-block-tablet-mobile {
 		height: 120px;
 	}
@@ -1947,7 +1947,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 }
 /* Solutions mobile landscape styles */
-@media (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
 	.solution-image-title-container {
 		text-align: center;
 	}
@@ -1957,17 +1957,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* Resources mobile landscape styles */
-@media (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
 
 }
 /* Press Mobile landscape styles */
-@media (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
 	.press-post {
 		padding-top: 16px;
 	}
 }
 /* Blog Mobile landscape styles */
-@media (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
 	.form-page-search {
 		margin: 0 auto; 
 		margin-top: 30px;
@@ -1982,7 +1982,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* General mobile portrait and landscape styles */
-@media (max-width: 1000px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
 
 	.shareIcons-desktop {
 		display: none;
@@ -2010,7 +2010,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* Blog mobile portrait and landscape styles */
-@media (max-width: 1000px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
 	.blog-container {
 		padding-top: 20px;
 	}
@@ -2020,21 +2020,21 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* Company mobile portrait and landscape styles */
-@media (max-width: 1000px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
 	.btnSolutions {
 		width: 295px;
 	}
 }
 /* Solutions mobile portrait and landscape styles */
-@media (max-width: 1000px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
 
 }
 /* Resources mobile portrait and landscape styles */
-@media (max-width: 1000px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
 
 }
 /* Press mobile portrait and landscape styles */
-@media (max-width: 1000px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
 	.press-block-container {
 		margin-top: 40px;
 	}
@@ -2049,13 +2049,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* Legal mobile portrait and landscape styles */
-@media (max-width: 1000px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
 	.legal-content {
 		margin-top: 24px;
 	}
 }
 /* Blog mobile portrait and landscape styles */
-@media (max-width: 1000px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
 	.padding-search {
 		padding-top: 15px;
 	}
@@ -2252,7 +2252,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 /* Small lanscape screen */
-@media (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
 	.subscribe-input-container {
 		padding-left: 20px;
 		padding-right: 20px;

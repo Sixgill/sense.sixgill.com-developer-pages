@@ -1,5 +1,5 @@
 /* Press mobile portrait and landscape styles */
-@media (max-width: 1000px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
 	.press-block-container {
 		margin-top: 40px;
 	}
