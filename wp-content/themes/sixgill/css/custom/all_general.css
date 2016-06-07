@@ -285,3 +285,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .share-buttons-list {
 	list-style-type: none;
 }
+
+.share-buttons-list li:last-of-type img {
+	margin-bottom: 0px;
+}

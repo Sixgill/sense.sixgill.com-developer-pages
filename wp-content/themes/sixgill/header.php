@@ -80,7 +80,7 @@
 			</div>
 		</header>
 
-		<div class="search-form-container header-search display-only-desktop position-button-schedule">
+		<div id="search-form-desktop" class="search-form-container header-search display-only-desktop position-button-schedule">
 			<div class="search-header-position">
 				<button href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">
 					SCHEDULE A DEMO
