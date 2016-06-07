@@ -265,6 +265,26 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	width: 48%;
 	float: right;
 }
+
+#single-page-content > div {
+	position: relative;
+}
+
+#sidebar-floating {
+	position: fixed;
+}
+
+#sidebar-fixed {
+	position: absolute;
+}
+
+.floating-social-buttons {
+	z-index: 100;
+}
+
+.share-buttons-list {
+	list-style-type: none;
+}
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
 }
@@ -330,7 +350,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
     color: #999999;
 }
 
-.marginShareButton img {
+.share-buttons-list img {
     max-width: initial;
 }
 
@@ -748,11 +768,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		opacity: 1 !important;
 	}
 
-	.marginShareButton {
-		margin-left: 5px;
-		list-style-type: none;
-	}
-
 	.subscribe-element {
 		display: block;
 	}
@@ -1103,11 +1118,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* General tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
-
-	.marginShareButton {
-		margin-left: 20px;
-		list-style-type: none;
-	}
 
 	#primary-menu a div {
 		font-size:18px;
@@ -1508,12 +1518,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* General mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
-	.marginShareButton {
-		margin-left: 40px;
-		list-style-type: none;
-		display: none;
-	}
-
 	.title-left-col {
 		font-size:30px;
 		font-weight:bold;
@@ -2136,11 +2140,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {
 
-	.marginShareButton {
-		margin-left: 5px;
-		list-style-type: none;
-	}
-
 	.full-block-width {
 		width: 250px;
 	}
@@ -2174,10 +2173,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 /* In the middle of fullhd and laptop: */
 @media (min-width: 1500px) and (max-width: 1750px) {
 
-	.marginShareButton {
-		margin-left: 5px;
-	}
-
 	.full-block-width {
 		width: 300px;
 	}
@@ -2207,26 +2202,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.blog-list {
 		width: 61%;
 	}
-	
+
 	.container-slidebar {
-		width: 35%; 
+		width: 35%;
 	}
 }
 
 /* For share botton on blog: */
 @media (min-width: 1001px) and (max-width: 1300px) {
 
-	.marginShareButton {
-		margin-left: 5px;
-		list-style-type: none;
-	}
-
 	.my_containerSolution {
 		margin-left: 60px;
-	}
-
-	#aside-blog {
-		margin-left: -70px;
 	}
 }
 

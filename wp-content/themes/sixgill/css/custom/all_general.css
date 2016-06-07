@@ -265,3 +265,23 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	width: 48%;
 	float: right;
 }
+
+#single-page-content > div {
+	position: relative;
+}
+
+#sidebar-floating {
+	position: fixed;
+}
+
+#sidebar-fixed {
+	position: absolute;
+}
+
+.floating-social-buttons {
+	z-index: 100;
+}
+
+.share-buttons-list {
+	list-style-type: none;
+}
