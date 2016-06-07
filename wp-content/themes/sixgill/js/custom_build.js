@@ -117,6 +117,7 @@ jQuery(function($) {
 	});
 });
 jQuery(function($) {
+	if(!$('#sidebar-floating').length) return;
 	var fixedFlag = false;
 	var sidebarFloating = $('#sidebar-floating');
 	var sidebarFixed = $('#sidebar-fixed');
