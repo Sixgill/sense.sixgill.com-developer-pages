@@ -18,11 +18,11 @@ if ( $query->have_posts() ) {
 			<a href="<?php echo get_permalink(); ?>" id="post-title-page-blog" class="press-post-title" >
 				<?php the_title(); ?>
 			</a>
-
+			<?php
+				the_content("read more");
+			?>
 		</div>
-		<?php
-			the_content("read more");
-		?>
+
 <?php
 	}
 }

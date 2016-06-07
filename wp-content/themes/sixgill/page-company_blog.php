@@ -12,7 +12,7 @@
 
 <section id="content" class="section-margin-fix">
 	<div class="content-wrap" style="padding:0px;">
-		<div class="container-fluid center clearfix my_containerSolution blog-container subscribe-block-tablet-mobile no-desktop-display">
+		<div class="container-fluid center clearfix my_containerSolution blog-container subscribe-block-tablet-mobile no-desktop-display oke">
 				<?php dynamic_sidebar( 'blog-subscribe-sidebar' ); ?>
 		</div>
 		<div class="container-fluid center clearfix my_containerSolution blog-container">

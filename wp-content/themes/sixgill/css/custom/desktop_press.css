@@ -14,4 +14,9 @@
 		background-color: #C0C0C5;
 		float: right;
 	}
+	
+	.container-fluid {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
