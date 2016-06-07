@@ -341,7 +341,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	width: 31%; 
 	float: right;
 }
-.company-learn-more-text {
+
+.posts-list {
+	margin-bottom: 30px;
+}.company-learn-more-text {
 	display: none;
 }
 
@@ -587,7 +590,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .posts-list {
 	margin-bottom: 30px;
 }
-#legal-text {
+
+.container-fluid {
+	padding-left: 0px;
+}#legal-text {
 	max-width:900px;
 }
 #sassist {
