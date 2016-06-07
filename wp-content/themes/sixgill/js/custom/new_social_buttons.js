@@ -1,5 +1,4 @@
 jQuery(function($) {
-	if(!$('#sidebar-floating').length) return;
 	var fixedFlag = false;
 	var sidebarFloating = $('#sidebar-floating');
 	var sidebarFixed = $('#sidebar-fixed');
@@ -45,7 +44,6 @@ jQuery(function($) {
 			showSidebar(sidebarFloating);
 		}
 	}
-	$(document).on('scroll', checkSidebar);
-	$(window).on('resize', checkSidebar);
-	checkSidebar();
+
+	window.onscroll = window.onresize = window.onload = checkSidebar;
 });
