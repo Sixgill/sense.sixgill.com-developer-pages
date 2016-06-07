@@ -105,8 +105,7 @@ jQuery(function($) {
 			$( '#primary-menu, #menu-background' ).fadeTo(500, 1);
 
 		}
-					$('#mobile-table-search').toggleClass("show");
-
+		$('#mobile-table-search').toggleClass("show");
 
 		window.menuShowFlag = !window.menuShowFlag;
 
