@@ -877,6 +877,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.single-post-content {
 		padding-top: 80px;
 	}
+
+	#sidebar-floating {
+		top: 150px;
+	}
 }
 /* Blog desktop styles */
 @media only screen and (min-width : 1001px) {
@@ -1298,6 +1302,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	#mobile-table-search {
 		top: 120px;
 		position: fixed;
+	}
+
+	#sidebar-floating {
+		top: 200px;
 	}
 
 }

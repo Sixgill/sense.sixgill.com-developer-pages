@@ -5,7 +5,7 @@ jQuery(function($) {
 	var contentDiv = $('#press-text-post');
 	var sidebarHeight = sidebarFloating.height();
 	var contentScrollHeight = contentDiv.offset().top + contentDiv.height();
-	var hist = 100;
+	var hist = 0;
 
 	function hideSidebar(sidebar) {
 		sidebar.css('opacity', 0);

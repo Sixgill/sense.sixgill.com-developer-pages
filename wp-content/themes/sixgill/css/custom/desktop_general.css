@@ -118,4 +118,8 @@
 	.single-post-content {
 		padding-top: 80px;
 	}
+
+	#sidebar-floating {
+		top: 150px;
+	}
 }

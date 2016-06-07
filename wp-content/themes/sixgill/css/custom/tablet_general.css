@@ -182,4 +182,8 @@
 		position: fixed;
 	}
 
+	#sidebar-floating {
+		top: 200px;
+	}
+
 }
