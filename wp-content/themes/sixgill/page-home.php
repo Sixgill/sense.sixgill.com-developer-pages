@@ -83,7 +83,7 @@
 
 	<a name="solutions"></a>
 	<section id="solutions" class="container-fluid background-2e2e2e center clearfix no-margin nopadding section-margin-fix" >
-		<div style="margin-top:20px;">
+		<div>
 			<div class="container clearfix">
 				<div class="col_one_third">
 					<img id="home-image-proximity-people" src="<?php echo get_field('image_people_home'); ?>" alt=""/>
@@ -116,7 +116,7 @@
 						<?php echo get_field('text_crowds'); ?>
 					</div>
 				</div>
-				<div style="margin-bottom:20px;">
+				<div>
 					<a href="/solutions/" id="home-button-proximity-solutions" class="button button-large no-bottom-margin btnSolutions" style="">
 						VIEW SOLUTIONS
 					</a>
@@ -164,42 +164,42 @@
 			</div>
 			<div class="home-diagram hidden-bottom-imageDiagram no-desktop-display no-tablet-display">
 				<div>
-					<div style="width: 48%; float: left;">
+					<div class="col-48-left">
 						<img id="home-mobile-image-att" src="/wp-content/themes/sixgill/images/td/home/logos/logo_att.jpg" alt="" />
 					</div>
-					<div style="width: 48%; float: right; ">
+					<div class="col-48-right">
 						<img id="home-mobile-image-rugby" src="/wp-content/themes/sixgill/images/td/home/logos/logo_rugby.jpg" alt="" />
 					</div>
 				</div>
 				<div>
-					<div style="width: 48%; float: left;">
+					<div class="col-48-left">
 						<img id="home-mobile-image-nyautoshow" src="/wp-content/themes/sixgill/images/td/home/logos/logo_nyautoshow.jpg" alt="" />
 					</div>
-					<div style="width: 48%; float: right; ">
+					<div class="col-48-right">
 						<img id="home-mobile-image-nyfashion" src="/wp-content/themes/sixgill/images/td/home/logos/logo_nyfashion.jpg" alt="" />
 					</div>
 				</div>
 				<div>
-					<div style="width: 48%; float: left;">
+					<div  class="col-48-left">
 						<img id="home-mobile-image-livenation" src="/wp-content/themes/sixgill/images/td/home/logos/logo_livenation.jpg" alt="" />
 					</div>
-					<div style="width: 48%; float: right; ">
+					<div  class="col-48-right">
 						<img id="home-mobile-image-lemon" src="/wp-content/themes/sixgill/images/td/home/logos/logo_lemon.jpg" alt="" />
 					</div>
 				</div>
 				<div>
-					<div style="width: 48%; float: left;">
+					<div class="col-48-left">
 						<img id="home-mobile-image-img" src="/wp-content/themes/sixgill/images/td/home/logos/logo_img.jpg" alt="" />
 					</div>
-					<div style="width: 48%; float: right; ">
+					<div  class="col-48-right">
 						<img id="home-mobile-image-hsbc" src="/wp-content/themes/sixgill/images/td/home/logos/logo_hsbc.jpg" alt="" />
 					</div>
 				</div>
-				<div>
-					<div style="width: 48%; float: left; padding-bottom: 20px; ">
+				<div class="home-content-padding">
+					<div class="col-48-left ">
 						<img id="home-mobile-image-auburn" src="/wp-content/themes/sixgill/images/td/home/logos/logo_auburn.jpg" alt="" />
 					</div>
-					<div style="width: 48%; float: right; padding-bottom: 20px; ">
+					<div class="col-48-right">
 						<img id="home-mobile-image-nyjets" src="/wp-content/themes/sixgill/images/td/home/logos/logo_nyjets.jpg" alt="" />
 					</div>
 				</div>
