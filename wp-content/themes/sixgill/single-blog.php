@@ -3,12 +3,17 @@
 <!-- Content-->
 <?php
 	if ( have_posts() ) while ( have_posts() ) : the_post();
-	$ptitle = get_the_title();
 ?>
 <section id="content" class="section-margin-fix">
 	<div id="single-page-content" class="container-fluid background-white clearfix no-margin nopadding">
 		<div class="container-fluid center clearfix my_containerSolution my_containerSolution_indent no-top-padding">
-			<?php include(locate_template('floating_social_buttons.php')); ?>
+			<?php
+				$sidebarType = "sidebar-floating";
+				include(locate_template('floating_social_buttons.php'));
+
+				$sidebarType = "sidebar-fixed";
+				include(locate_template('floating_social_buttons.php'));
+			?>
 			<div id="press-text-post" class="col_full post-blog">
 				<?php if ( has_post_thumbnail()) { ?>
 

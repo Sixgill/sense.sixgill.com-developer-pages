@@ -9,7 +9,7 @@
 	<!-- Stylesheets -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/style.css?<?php echo time(); ?>" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/style.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/animate.css" type="text/css" />
@@ -18,7 +18,7 @@
 
 
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/colors.css" type="text/css" />
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom.css?<?php echo time(); ?>" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom.css" type="text/css" />
 
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom_build.css?<?php echo time(); ?>" type="text/css" />
 
@@ -80,7 +80,7 @@
 			</div>
 		</header>
 
-		<div class="search-form-container header-search display-only-desktop position-button-schedule">
+		<div id="search-form-desktop" class="search-form-container header-search display-only-desktop position-button-schedule">
 			<div class="search-header-position">
 				<button href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">
 					SCHEDULE A DEMO

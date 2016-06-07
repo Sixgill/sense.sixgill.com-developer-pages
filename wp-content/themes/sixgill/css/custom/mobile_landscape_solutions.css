@@ -1,5 +1,5 @@
 /* Solutions mobile landscape styles */
-@media (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
 	.solution-image-title-container {
 		text-align: center;
 	}

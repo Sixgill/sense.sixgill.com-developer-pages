@@ -1,5 +1,5 @@
 /* General Mobile landscape styles */
-@media (max-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
 	#primary-menu-trigger {
 		top: 10px;
 	}
@@ -44,5 +44,21 @@
 
 	#primary-menu a:last-of-type div {
 		margin-bottom: 25px;
+	}
+
+	#primary-menu > ul {
+    left: 0px;
+    top: 121px;
+    position: absolute;
+    width: 100%;
+	}
+
+	#mobile-table-search {
+    top: 60px;
+    position: absolute;
+	}
+
+	.global-social-buttons-list {
+		padding-bottom: 18px;
 	}
 }

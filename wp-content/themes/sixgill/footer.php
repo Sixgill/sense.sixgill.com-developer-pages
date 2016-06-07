@@ -11,7 +11,7 @@
 
 	<footer id="footer" class="footer">
 
-		<div class="container-fluid no-margin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_footer.png'); background-size:cover;">
+		<div id="footer-scedule" class="container-fluid no-margin nopadding">
 			<div class="footer-widgets-wrap clearfix">
 				<div class="col_half footer-learn-text">
 					Learn how Sixgill can help your business.
@@ -141,11 +141,11 @@
 
 	<!-- External JavaScripts -->
 	<script type="text/javascript" src="/wp-content/themes/sixgill/js/jquery-1.12.3.min.js"></script>
-	<script type="text/javascript" src="/wp-content/themes/sixgill/js/plugins.js?<?php echo time(); ?>"></script>
+	<script type="text/javascript" src="/wp-content/themes/sixgill/js/plugins.js"></script>
 
 	<!-- Footer Scripts  -->
-	<script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js?<?php echo time(); ?>"></script>
-	<script type="text/javascript" src="/wp-content/themes/sixgill/js/custom_build.js?<?php echo time(); ?>"></script>
+	<script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js"></script>
+	<script type="text/javascript" src="/wp-content/themes/sixgill/js/custom_build.js"></script>
 
 	<!--GoogleTagManager-->
 	<noscript>

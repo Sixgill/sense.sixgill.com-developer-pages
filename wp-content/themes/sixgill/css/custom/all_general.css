@@ -38,32 +38,32 @@ body, p {
 }
 
 .my_txtSolution {
-	border:0px solid #FF0004;
+	border: 0px solid #FF0004;
 }
 
 .my_containerSolution {
 	max-width: 930px;
-	padding-top:75px;
-	margin-top:0px;
-	margin-bottom:0px;
-	padding-bottom:0px;
-	border:0px solid #FE0004;
+	padding-top: 75px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	border: 0px solid #FE0004;
 }
 
 .footer-learn-text, .footer-links-block {
-	text-align:left;
-	border:0px solid #FE0004;
-	color:#FFF;
-	font-size:20px;
-	margin-top:12px;
-	font-weight:normal;
-	padding:0px 20px;
+	text-align: left;
+	border: 0px solid #FE0004;
+	color: #FFF;
+	font-size: 20px;
+	margin-top: 12px;
+	font-weight: normal;
+	padding: 0px 20px;
 }
 
 .footer-links-block {
 	text-decoration:none;
 	font-size: 14px;
-	color:#FFF
+	color: #FFF
 }
 
 .footer-links-block a {
@@ -165,7 +165,7 @@ label {
 }
 
 .max-width-720 {
-	max-width:720px;
+	max-width: 720px;
 }
 
 .fancy-title-without-bottom {
@@ -251,3 +251,41 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin-right: 15px;
 }
 
+#footer-scedule {
+	background-image: url('/wp-content/themes/sixgill/images/td/solutions_footer.png');
+	background-size: cover;
+}
+
+.col-48-left {
+	width: 48%;
+	float: left;
+}
+
+.col-48-right {
+	width: 48%;
+	float: right;
+}
+
+#single-page-content > div {
+	position: relative;
+}
+
+#sidebar-floating {
+	position: fixed;
+}
+
+#sidebar-fixed {
+	position: absolute;
+}
+
+.floating-social-buttons {
+	z-index: 100;
+}
+
+.share-buttons-list {
+	list-style-type: none;
+}
+
+.share-buttons-list li:last-of-type img {
+	margin-bottom: 0px;
+}
