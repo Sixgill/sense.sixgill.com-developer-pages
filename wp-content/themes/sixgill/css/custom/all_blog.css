@@ -75,16 +75,12 @@
 	max-width: none !important;
 }
 
-.mc4wp-form-fields h4 {
-	display: none !important;
-}
-
 .subscribe-blog-button {
 	width: 100%;
 	margin: 0;
 }
 
 .container-slidebar {
-	width: 31%; 
+	width: 31%;
 	float: right;
 }

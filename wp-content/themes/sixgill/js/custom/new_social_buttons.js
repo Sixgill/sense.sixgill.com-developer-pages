@@ -45,7 +45,6 @@ jQuery(function($) {
 			showSidebar(sidebarFloating);
 		}
 	}
-	$(document).on('scroll', checkSidebar);
-	$(window).on('resize', checkSidebar);
-	checkSidebar();
+
+	window.onscroll = window.onresize = window.onload = checkSidebar;
 });

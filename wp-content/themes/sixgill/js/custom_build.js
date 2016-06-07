@@ -91,9 +91,9 @@ jQuery(function($) {
 
 	$('#primary-menu-trigger,#overlay-menu-close').click(function() {
 		if(window.menuShowFlag) {
+			$('#mobile-table-search').toggleClass("hide");
 			$( '#menu-background' ).fadeTo(500, 0, function() {
 				$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
-				$('#mobile-table-search').toggleClass("hide");
 			});
 			$( '#primary-menu' ).fadeTo(400, 0, function() {
 				$(window).scrollTop(savedScroll);
@@ -105,8 +105,7 @@ jQuery(function($) {
 			$( '#primary-menu, #menu-background' ).fadeTo(500, 1);
 
 		}
-					$('#mobile-table-search').toggleClass("show");
-
+		$('#mobile-table-search').toggleClass("show");
 
 		window.menuShowFlag = !window.menuShowFlag;
 
@@ -164,9 +163,8 @@ jQuery(function($) {
 			showSidebar(sidebarFloating);
 		}
 	}
-	$(document).on('scroll', checkSidebar);
-	$(window).on('resize', checkSidebar);
-	checkSidebar();
+
+	window.onscroll = window.onresize = window.onload = checkSidebar;
 });
 jQuery(function($) {
 	var searchOpenned = false;
