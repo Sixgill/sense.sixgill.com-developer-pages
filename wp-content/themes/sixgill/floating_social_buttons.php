@@ -1,5 +1,5 @@
 <div id="<?php echo $sidebarType; ?>" class="floating-social-buttons no-mobile-portrait-display no-mobile-landscape-display">
-	<ul class="share-buttons-list">
+	<ul class="share-buttons-list no-margin no-padding">
 		<li>
 			<a href="<?php echo getFacebookShareLink(get_the_title(), get_the_permalink()); ?>" target="_blank" title="Share on Facebook.">
 				<img src="/wp-content/themes/sixgill/images/td/blog/social_Facebook.svg" alt="Facebook" id="image-fecebook-share" class="shareButton-blog">

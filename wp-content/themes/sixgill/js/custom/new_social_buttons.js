@@ -6,6 +6,7 @@ jQuery(function($) {
 	var sidebarHeight = sidebarFloating.height();
 	var contentScrollHeight = contentDiv.offset().top + contentDiv.height();
 	var hist = 0;
+	var searchFormCorrection = $('#search-form-desktop').height();
 
 	function hideSidebar(sidebar) {
 		sidebar.css('opacity', 0);
@@ -32,13 +33,12 @@ jQuery(function($) {
 		sidebarFloating.css('left', leftPos+contentDivParentLeftOffset);
 		sidebarFixed.css('left', fixedLeftPos);
 		sidebarFixed.css('top', fixedSidebarTopOffset);
-		// Sidebar is under content block
-		if(contentScrollHeight - hist < sidebarHeight + sidebarFloating.offset().top) {
+		var floatingSidebarTopOffset = sidebarFloating.offset().top - searchFormCorrection;
+		if(floatingSidebarTopOffset > fixedSidebarTopOffset) {
 			console.log('bottom');
 			hideSidebar(sidebarFloating);
 			showSidebar(sidebarFixed);
-		//Sidebar is above content block
-		} else if(contentScrollHeight - hist > sidebarHeight + sidebarFloating.offset().top) {
+		} else if(floatingSidebarTopOffset < fixedSidebarTopOffset) {
 			console.log('floating');
 			hideSidebar(sidebarFixed);
 			showSidebar(sidebarFloating);
