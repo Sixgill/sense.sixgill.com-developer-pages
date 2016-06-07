@@ -1,11 +1,5 @@
 /* General mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
-	.marginShareButton {
-		margin-left: 40px;
-		list-style-type: none;
-		display: none;
-	}
-
 	.title-left-col {
 		font-size:30px;
 		font-weight:bold;
