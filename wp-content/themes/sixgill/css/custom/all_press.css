@@ -21,5 +21,17 @@
 }
 
 .press-block-container {
+	margin-top: 75px;
+}
+
+.widget {
 	margin-top: 80px;
+}
+
+.posts-list {
+	margin-bottom: 30px;
+}
+
+.container-fluid {
+	padding-left: 0px;
 }

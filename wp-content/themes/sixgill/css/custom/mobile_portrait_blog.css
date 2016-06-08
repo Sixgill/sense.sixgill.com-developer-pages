@@ -1,14 +1,5 @@
 /* Blog mobile portrait styles */
-@media only (max-width: 500px) and screen {
-	.subscribe-block-tablet-mobile {
-		padding: 15px 18px 25px 19px;
-		margin: 0px auto;
-		height: 210px;
-		width: 100%;
-		text-align: center;
-		font-size: 18px;
-	}
-
+@media (max-width: 500px) and (orientation: portrait) {
 	.subscribe-input-container {
 		overflow: hidden;
 		width: 100%;
@@ -34,11 +25,14 @@
 	.subscribe-element {
 		display: block;
 	}
-
-	.subscribe-button {
-		background-image: url('/wp-content/themes/sixgill/images/td/blog/subscribe_mobile.png');
-		width: 280px;
-		height: 49px;
-		margin-top: 2px;
+	
+	.subscribe-block-tablet-mobile {
+		padding: 15px 18px 25px 19px;
+		margin: 0px auto;
+		height: 210px;
+		width: 100%;
+		text-align: center;
+		font-size: 18px;
 	}
+
 }

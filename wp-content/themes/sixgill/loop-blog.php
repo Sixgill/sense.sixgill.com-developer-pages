@@ -18,10 +18,12 @@
 				<p id="post-subtitle-and-author" class="blog-post-suptitle color-999999">
 					<?php the_time('F j, Y'); ?> | by <?php echo get_field('author'); ?>
 				</p>
+				
+				<?php
+					the_content("read more");
+				?>
 			</div>
-			<?php
-				the_content("read more");
-			?>
+
 			<?php
 		}
 	} else {
