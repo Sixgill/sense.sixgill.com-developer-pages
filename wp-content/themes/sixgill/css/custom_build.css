@@ -1741,6 +1741,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-left: 0.3em;
 		padding-right: 0.3em;
 	}
+	
+	.home-diagram {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
 }
 /* Solutions mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
@@ -1962,6 +1968,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
     padding-right: 15px !important;
 	}
 
+}
+/* Home Mobile landscape styles */
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
+	.home-diagram {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 0px;
+	}
 }
 /* Solutions mobile landscape styles */
 @media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
@@ -2266,6 +2280,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.footer-learn-text, .footer_Schedule {
 		text-align: center;
 	}
+	
 }
 
 /* Small lanscape screen */

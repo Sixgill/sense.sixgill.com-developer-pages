@@ -32,4 +32,10 @@
 		padding-left: 0.3em;
 		padding-right: 0.3em;
 	}
+	
+	.home-diagram {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
 }
