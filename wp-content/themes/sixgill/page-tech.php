@@ -16,7 +16,7 @@
 
     <div class="header-stick background-f8f8f8 no-border">
 			<div class="container-fluid no-border center clearfix" style="padding-top:75px; max-width:950px;">
-				<div class="col_one_third title-left-col">
+				<div class="col_one_third title-left-col center">
 					<?php echo get_field('top_header'); ?>
 				</div>
 				<div class="col_two_third col_last text-left text-right-col">
