@@ -13,4 +13,8 @@
 	.home-text-2{
 		margin-top:110px;
 	}
+	
+	.video-wrap video {
+		height: 100%;	
+	}
 }

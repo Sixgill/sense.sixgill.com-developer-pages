@@ -29,4 +29,8 @@
 	.hidden-bottom-imageDiagram {
 		display: inline-block;
 	}
+	
+	.video-wrap video {
+		width: 100%;	
+	}
 }
