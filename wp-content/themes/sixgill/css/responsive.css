@@ -2186,21 +2186,17 @@ Responsive CSS
 		margin-right: 0;
 
 		float: none;
-
 	}
 
 	.col_one_fifth {
-				    display: block;
-    position: relative;
-    margin-right: 4%;
-    margin-bottom: 50px;
-    float: left;
+		display: block;
+		position: relative;
+		margin-right: 4%;
+		margin-bottom: 50px;
+		float: left;
 	}
 
-
 	.sidebar.col_last { margin-bottom: 0 !important; }
-
-
 
 	form .col_full,
 

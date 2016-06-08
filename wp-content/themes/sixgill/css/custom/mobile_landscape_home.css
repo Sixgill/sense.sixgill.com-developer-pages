@@ -1,4 +1,4 @@
-/* Press Mobile landscape styles */
+/* Home Mobile landscape styles */
 @media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
 	.home-diagram {
 		padding-left: 15px;

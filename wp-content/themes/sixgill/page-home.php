@@ -162,7 +162,7 @@
 					VIEW COMPANY
 				</a>
 			</div>
-			<div class="home-diagram hidden-bottom-imageDiagram no-desktop-display no-tablet-display">
+			<div class="home-diagram hidden-bottom-imageDiagram no-desktop-display no-tablet-display no-mobile-landscape-display">
 				<div>
 					<div class="col-48-left">
 						<img id="home-mobile-image-att" src="/wp-content/themes/sixgill/images/td/home/logos/logo_att.jpg" alt="" />
@@ -204,7 +204,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="home-diagram hidden-bottom-imageDiagram max-width-720 no-horizontal-padding no-desktop-display no-tablet-display">
+			<div class="home-diagram hidden-bottom-imageDiagram max-width-720 no-horizontal-padding no-desktop-display no-tablet-display no-mobile-landscape-display">
 				<a href="/company/" id="home-button-image-company" class="button button-large no-bottom-margin btnCompany">
 					VIEW COMPANY
 				</a>
