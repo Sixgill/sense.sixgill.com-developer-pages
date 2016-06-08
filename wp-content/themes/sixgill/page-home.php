@@ -70,7 +70,7 @@
 
 	<section id="below_products" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
 		<img id="home-image-infographic" src="/wp-content/themes/sixgill/images/td/home/infographic.svg" class="home-diagram display-only-desktop" alt=""/>
-		<img id="home-image-mobile-infographic" src="/wp-content/themes/sixgill/images/td/home/mobile_infographic.svg" class="home-diagram hidden-bottom-imageDiagram" alt=""/>
+		<img id="home-image-mobile-infographic" src="/wp-content/themes/sixgill/images/td/home/mobile_infographic.svg" class="home-diagram hidden-bottom-imageDiagram no-desktop-display" alt=""/>
 		<div class="clear"></div>
 		<a href="/products/" id="home-button-infographic" class="button button-teal button-large no-bottom-margin btnSchedule">
 			VIEW PRODUCTS
