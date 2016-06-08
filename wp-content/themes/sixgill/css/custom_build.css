@@ -1511,7 +1511,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.press-block-container:first-child {
-		margin-top: 18px;
+		margin-top: 65px;
 	}
 
 	.press-block-title {
@@ -1520,6 +1520,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.press-post {
 		padding-top: 140px;
+	}
+	
+	.press-content-padding {
+		padding-left: 75px;
+		padding-right: 75px;
 	}
 
 }
@@ -1890,6 +1895,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.press-post {
 		padding-top: 85px;
 	}
+	
+	.press-content-padding {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 /* Products mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
@@ -2123,7 +2133,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 /* Press mobile portrait and landscape styles */
 @media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
 	.press-block-container {
-		margin-top: 40px;
+		margin-top: 45px;
 	}
 
 	.press-block-title {
