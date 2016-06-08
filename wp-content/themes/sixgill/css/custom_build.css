@@ -354,7 +354,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
     color: #999999;
 }
 
-.marginShareButton img {
+.share-buttons-list img {
     max-width: initial;
 }
 
@@ -372,13 +372,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .container-slidebar {
-	width: 31%; 
+	width: 31%;
 	float: right;
 }
 
 .posts-list {
 	margin-bottom: 30px;
-}.company-learn-more-text {
+}
+.company-learn-more-text {
 	display: none;
 }
 
