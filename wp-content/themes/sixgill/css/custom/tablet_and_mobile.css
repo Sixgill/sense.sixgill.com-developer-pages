@@ -8,9 +8,10 @@
 	}
 
 	#primary-menu-trigger {
-		position: inherit;
-		left: 0px;
-		display: inline-block;
+		position: absolute;;
+		left: inherit;
+		right: 0px;
+		display: absolute;
 		float: right;
 		margin-right: 9px;
 	}
