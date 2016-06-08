@@ -102,6 +102,13 @@
 	.footer-learn-text, .footer_Schedule {
 		text-align: center;
 	}
+	
+}
+/* mobile home */
+@media (max-width: 500px) {
+	.hidden-top-imageDiagram {
+		display: none;
+	}
 }
 
 /* Small lanscape screen */

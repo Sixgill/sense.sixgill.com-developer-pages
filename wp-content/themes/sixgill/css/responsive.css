@@ -2171,8 +2171,6 @@ Responsive CSS
 
 	.col_one_fourth,
 
-	.col_one_fifth,
-
 	.col_two_fifth,
 
 	.col_three_fifth,
@@ -2191,6 +2189,13 @@ Responsive CSS
 
 	}
 
+	.col_one_fifth {
+				    display: block;
+    position: relative;
+    margin-right: 4%;
+    margin-bottom: 50px;
+    float: left;
+	}
 
 
 	.sidebar.col_last { margin-bottom: 0 !important; }

@@ -140,7 +140,7 @@
       <p class="logo-subheader">
 				<?php echo get_field('logo_header_subheader'); ?>
 			</p>
-			<div class="home-diagram hidden-top-imageDiagram max-width-720 no-mobile-portrait-display no-mobile-landscape-display">
+			<div class="home-diagram hidden-top-imageDiagram max-width-720 no-mobile-portrait-display">
 				<?php foreach(get_field('logo_images_part1') as $logo) : ?>
 					<div class="col_one_fifth">
 						<img id="home-image-company-part1" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
