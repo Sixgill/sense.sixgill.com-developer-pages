@@ -1032,6 +1032,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.solutions-subpage-text {
 		width: 65%;
 		max-width: 900px;
+		font-size: 16px;
+		font-weight: normal;
 	}
 
 	.solution-subpage-onlytext {
