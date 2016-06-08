@@ -366,10 +366,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	max-width: none !important;
 }
 
-.mc4wp-form-fields h4 {
-	display: none !important;
-}
-
 .subscribe-blog-button {
 	width: 100%;
 	margin: 0;
