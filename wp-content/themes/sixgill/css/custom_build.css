@@ -1761,6 +1761,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+	
+	.video-wrap video {
+		height: 100%;	
+	}
 
 }
 /* Solutions mobile portrait styles */
@@ -2012,6 +2016,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-left: 15px;
 		padding-right: 15px;
 		padding-top: 0px;
+	}
+	
+	.video-wrap video {
+		width: 100%;	
 	}
 }
 /* Solutions mobile landscape styles */
