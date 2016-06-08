@@ -28,6 +28,8 @@
 	.solutions-subpage-text {
 		width: 65%;
 		max-width: 900px;
+		font-size: 16px;
+		font-weight: normal;
 	}
 
 	.solution-subpage-onlytext {
