@@ -14,4 +14,9 @@
 		background-color: #C0C0C5;
 		float: right;
 	}
+	
+	.padding-edges {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }

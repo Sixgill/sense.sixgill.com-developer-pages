@@ -13,8 +13,8 @@
 <!-- Content-->
 <section id="content" class="section-margin-fix">
 	<div class="content-wrap no-padding">
-		<div class="container-fluid center clearfix my_containerSolution no-top-padding">
-			<div class=" text-left col_press" align="left">
+		<div class="container-fluid center clearfix my_containerSolution no-top-padding padding-edges">
+			<div class=" text-left col_press no-margin-bottom" align="left">
 
 				<div class="press-block-container">
 					<h4 class="press-block-title">
@@ -31,7 +31,7 @@
 				</div>
 
 			</div>
-			<div class="col_two_fifth col_last widget center display-only-desktop">
+			<div class="col_two_fifth col_last widget center background-f8f8f8 pull-right display-only-desktop">
 				<div class="title-press-contact">
 					<?php echo get_field('header_block'); ?>
 				</div>

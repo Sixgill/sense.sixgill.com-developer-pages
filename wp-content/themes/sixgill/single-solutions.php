@@ -22,7 +22,7 @@
 <section id="content" class="section-margin-fix">
   <div id="single-post-content" class="content-wrap no-bottom-padding">
     <div class="container-fluid clearfix center solution-subpage-container">
-			<div class="left-aligned subsolution-left-aligned">
+			<div class="left-aligned subsolution-left-aligned topmargin-lg">
 				<div class="solutions-subpage-text <?php if(!has_post_thumbnail()) echo "solution-subpage-onlytext" ?>">
 					<?php the_content(); ?>
 				</div>
