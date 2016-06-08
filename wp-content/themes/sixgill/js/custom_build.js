@@ -163,8 +163,9 @@ jQuery(function($) {
 			showSidebar(sidebarFloating);
 		}
 	}
-
-	window.onscroll = window.onresize = window.onload = checkSidebar;
+	checkSidebar();
+	$(window).on('scroll', checkSidebar);
+	$(window).on('resize', checkSidebar);
 });
 jQuery(function($) {
 	var searchOpenned = false;
