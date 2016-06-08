@@ -375,6 +375,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	width: 31%;
 	float: right;
 }
+
+.posts-list {
+	margin-bottom: 30px;
+}
 .company-learn-more-text {
 	display: none;
 }
@@ -615,9 +619,20 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .press-block-container {
+	margin-top: 75px;
+}
+
+.widget {
 	margin-top: 80px;
 }
-#legal-text {
+
+.posts-list {
+	margin-bottom: 30px;
+}
+
+.container-fluid {
+	padding-left: 0px;
+}#legal-text {
 	max-width:900px;
 }
 #sassist {
@@ -1081,6 +1096,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		background-color: #C0C0C5;
 		float: right;
 	}
+	
+	.padding-edges {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 /* Products desktop styles */
 @media only screen and (min-width : 1001px) {
@@ -1333,7 +1353,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.subscribe-block-tablet-mobile {
-		padding: 40px 60px 20px 98px;
+		padding: 40px 50px 20px 80px;
 		margin: 0px auto;
 		height: 195px;
 		width: 100%;
@@ -1654,16 +1674,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* Blog mobile portrait styles */
-@media only (max-width: 500px) and screen {
-	.subscribe-block-tablet-mobile {
-		padding: 15px 18px 25px 19px;
-		margin: 0px auto;
-		height: 210px;
-		width: 100%;
-		text-align: center;
-		font-size: 18px;
-	}
-
+@media (max-width: 500px) and (orientation: portrait) {
 	.subscribe-input-container {
 		overflow: hidden;
 		width: 100%;
@@ -1689,13 +1700,16 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.subscribe-element {
 		display: block;
 	}
-
-	.subscribe-button {
-		background-image: url('/wp-content/themes/sixgill/images/td/blog/subscribe_mobile.png');
-		width: 280px;
-		height: 49px;
-		margin-top: 2px;
+	
+	.subscribe-block-tablet-mobile {
+		padding: 15px 18px 25px 19px;
+		margin: 0px auto;
+		height: 210px;
+		width: 100%;
+		text-align: center;
+		font-size: 18px;
 	}
+
 }
 /* Company mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
@@ -1706,6 +1720,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.company-single-post-title {
 		font-size: 14px !important;
 	}
+	
 }
 /* Home mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
@@ -1741,6 +1756,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-left: 0.3em;
 		padding-right: 0.3em;
 	}
+	
+	.home-diagram {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
 }
 /* Solutions mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
@@ -1961,7 +1982,37 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-left: 5px !important;
     padding-right: 15px !important;
 	}
+	
+	.subscribe-block-tablet-mobile {
+		padding: 40px 25px 20px 30px;
+		margin: 0px auto;
+		height: 120px;
+		width: 100%;
+		text-align: center;
+		font-size: 18px;
+	}
+	
+	.subscribe-input-container {
+		overflow: hidden;
+		width: 100%;
+		padding-right: 0px;
+	}
 
+	.subscribe-email {
+		height: 49px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		text-align: center;
+		width: 280px;
+	}
+}
+/* Home Mobile landscape styles */
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
+	.home-diagram {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 0px;
+	}
 }
 /* Solutions mobile landscape styles */
 @media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
@@ -2248,6 +2299,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 
+@media (min-width: 480px) and (max-width: 515px) {
+	.subscribe-block-tablet-mobile {
+		height: 130px;
+	}
+}
+
 /* mobile landscape */
 @media (max-width: 667px) and (max-height: 400px) {
 	#aside-blog {
@@ -2266,6 +2323,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.footer-learn-text, .footer_Schedule {
 		text-align: center;
 	}
+	
 }
 
 /* Small lanscape screen */
