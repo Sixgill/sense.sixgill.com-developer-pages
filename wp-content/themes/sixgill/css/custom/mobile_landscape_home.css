@@ -5,4 +5,8 @@
 		padding-right: 15px;
 		padding-top: 0px;
 	}
+	
+	.video-wrap video {
+		width: 100%;	
+	}
 }
