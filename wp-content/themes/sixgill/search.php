@@ -6,18 +6,8 @@
 
 		<hr class="title-dotted-border header-search display-only-desktop">
 
-		
-
-		<div id="tablet" class="background-search no-desktop-display margin-table-search" >
-			<div class="search-form-container form-page-search padding-search">
-				<?php echo get_search_form_page('pageSearchFormHeader','pageInputFormHeader','pageButtonFormHeader'); ?>
-			</div>
-		</div>
-
-		<div id="general-search-form-page" class="background-search display-only-desktop" >
-			<div class="search-form-container form-page-search padding-search">
-				<?php echo get_search_form_page('pageSearchForm','pageInputForm','pageButtonForm'); ?>
-			</div>
+		<div class="searchform-result">
+			<?php get_template_part('searchform-static'); ?>
 		</div>
 
 		<section class="header-stick search-content">
@@ -30,23 +20,23 @@
 				</p>
 
 				<?php
-				if( have_posts() ):
-					while( have_posts() ): the_post();
-					get_template_part('content', 'search');
-				endwhile;
-			endif;
-			?>
-
-			<div id="pagination" class="pagination-search">
-				<?php
-				if (function_exists("pagination")) {
-					pagination($wp_query->max_num_pages);
-				}
+					if( have_posts() ):
+						while( have_posts() ): the_post();
+							get_template_part('content', 'search');
+						endwhile;
+					endif;
 				?>
+
+				<div id="pagination" class="pagination-search">
+					<?php
+						if (function_exists("pagination")) {
+							pagination($wp_query->max_num_pages);
+						}
+					?>
+				</div>
 			</div>
-		</div>
-	</section>
-</div>
+		</section>
+	</div>
 
 </section><!-- #content end -->
 <?php get_footer();	?>

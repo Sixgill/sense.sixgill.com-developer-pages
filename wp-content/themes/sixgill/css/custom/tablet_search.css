@@ -1,28 +1,16 @@
 /* Blog tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
 	.form-page-search {
-		margin: 0 auto; 
+		margin: 0 auto;
 		margin-top: 150px;
 	}
-	
-	.padding-search {
-		padding-top: 15px;
-	}
-	
+
 	.position-article, .pagination-search {
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
-	
+
 	.header-stick {
 		padding-top: 20px;
-	}
-	
-	.background-search {
-		margin-top: 0px;
-	}
-	
-	.margin-table-search {
-		margin-top: 40px;
 	}
 }

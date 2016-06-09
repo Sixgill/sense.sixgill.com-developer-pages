@@ -94,7 +94,7 @@
 	#primary-menu > ul {
 		position: fixed;
 		width: 100%;
-		top: 153px;
+		top: 68px;
 		left: 0px;
 		right: 0px;
 		bottom: 65px;
@@ -124,5 +124,25 @@
 
 	.menu-8 {
 		height: calc(100% / 8);
+	}
+
+	.menu-4-with-search {
+		height: calc((100% - 72px) / 4);
+	}
+
+	.menu-5-with-search {
+		height: calc((100% - 72px) / 5);
+	}
+
+	.menu-6-with-search {
+		height: calc((100% - 72px) / 6);
+	}
+
+	.menu-7-with-search {
+		height: calc((100% - 72px) / 7);
+	}
+
+	.menu-8-with-search {
+		height: calc((100% - 72px) / 8);
 	}
 }

@@ -1,7 +1,7 @@
 jQuery(function($) {
 	var searchOpenned = false;
 	//Chache DOM search
-	var searchQueryInput = $('#search-query');
+	var searchQueryInput = $('[role="search-query"]');
 	var searchButton = $('#search-button');
 	var searchForm = $('#search-header-form');
 

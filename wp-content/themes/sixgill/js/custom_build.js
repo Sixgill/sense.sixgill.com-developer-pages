@@ -400,7 +400,6 @@ jQuery(function($) {
 
 	$('#primary-menu-trigger,#overlay-menu-close').click(function() {
 		if(window.menuShowFlag) {
-			$('#mobile-table-search').toggleClass("hide");
 			$( '#menu-background' ).fadeTo(500, 0, function() {
 				$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			});
@@ -409,10 +408,8 @@ jQuery(function($) {
 			});
 		} else {
 			savedScroll = $(window).scrollTop();
-			$('#mobile-table-search').toggleClass("hide");
 			$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			$( '#primary-menu, #menu-background' ).fadeTo(500, 1);
-
 		}
 		$('#mobile-table-search').toggleClass("show");
 
@@ -479,7 +476,7 @@ jQuery(function($) {
 jQuery(function($) {
 	var searchOpenned = false;
 	//Chache DOM search
-	var searchQueryInput = $('#search-query');
+	var searchQueryInput = $('[role="search-query"]');
 	var searchButton = $('#search-button');
 	var searchForm = $('#search-header-form');
 
@@ -496,15 +493,11 @@ jQuery(function($) {
 		searchQueryInput.focus();
 	}
 
-	function validateSearchForm(searchQuery) {
-		//TODO: improve validation
-		//Validation passed: true
-		//Otherwise: false
+	function validateSearchForm(event, form) {
 		var validationResult = true;
-		if(searchQuery.length==0) {
+		if(searchQuery.length == 0) {
 			validationResult = false;
 		}
-		//Add here more conditions with validationResult = false action
 		return validationResult;
 	}
 
@@ -513,7 +506,7 @@ jQuery(function($) {
 			event.preventDefault();
 		}
 	});
-	
+
 	searchButton.click(function() {
 		if(searchOpenned) {
 			if(searchQueryInput.val().length>0) {
@@ -535,38 +528,7 @@ jQuery(function($) {
 			}, 100);
 		}
 	});
-});
-jQuery(function($) {
-	var searchOpenned = false;
-	//Chache DOM search
-	var searchQueryInput = $('#pageInputForm, #menuInputFormHeader, #pageInputFormHeader');
-	var searchButton = $('#spageButtonForm, #menuButtonFormHeader, #pageButtonFormHeader');
-	var searchForm = $('#pageSearchForm, #menuSearchFormHeader, #pageSearchFormHeader');
-  
-	function validateSearchForm(searchQuery) {
-		//TODO: improve validation
-		//Validation passed: true
-		//Otherwise: false
-		var validationResult = true;
-		if(searchQuery.length==0) {
-			validationResult = false;
-		}
-		//Add here more conditions with validationResult = false action
-		return validationResult;
-	}
-  
-	searchForm.submit(function(event) {
-		if(!validateSearchForm(searchQueryInput.val())) {
-			event.preventDefault();
-		}
-	});
-  
-	searchButton.click(function() {
-		if(searchQueryInput.val().length==0) {
-			
-		} 
-	});
-  
+
 });
 jQuery(function($){
   if(document.getElementById('single-page-content') && document.getElementById('aside1')){

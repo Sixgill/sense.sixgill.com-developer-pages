@@ -7,7 +7,7 @@
 				$html .= 'class="menu-link-selected" ';
 			}
 			$html .= 'href="#top">';
-				$html .= '<div class="menu-'.$listSize.'">';
+				$html .= '<div class="menu-'.$listSize.'-with-search">';
 					$html .= $elementName;
 				$html .= '</div>';
 			$html .= '</a>';
@@ -22,7 +22,7 @@
 			}
 		} else {
 			$html .= '<a href="'.$link.'">';
-				$html .= '<div class="menu-'.$listSize.'">';
+				$html .= '<div class="menu-'.$listSize.'-with-search">';
 					$html .= $elementName;
 				$html .= '</div>';
 			$html .= '</a>';
@@ -36,6 +36,9 @@
 
 <nav id="primary-menu">
 	<ul>
+		<div class="menu-search-mobile-tablet no-desktop-display">
+			<?php get_template_part('searchform-static'); ?>
+		</div>
 		<?php
 			foreach($menu as $menuElement) {
 				echo makeMenuElement(
