@@ -1336,6 +1336,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		top: 200px;
 	}
 
+	#legal-text {
+		padding-top: 50px;
+	}
+
+	/* TEMP FIX */
+	#primary-menu > ul {
+		top: 110px;
+	}
+
 }
 /* Blog tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
@@ -1693,6 +1702,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.menu-8 {
 		height: calc(100% / 8);
 	}
+
+	/* TEMP FIX */
+
+	#primary-menu > ul {
+		top: 60px;
+		bottom: 90px;
+	}
 }
 /* Blog mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
@@ -1993,6 +2009,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.global-social-buttons-list {
 		padding-bottom: 18px;
+	}
+
+	/* TEMP FIX */
+
+	#primary-menu > ul {
+		top: 50px;
 	}
 }
 /* Blog Mobile landscape styles */

@@ -6,7 +6,7 @@
 	<div class="content-wrap no-bottom-padding">
 
 		<section class="header-stick background-eeeeee section-margin-fix">
-			<div id="legal-text" class="container-fluid clearfix center no-bottom-margin">
+			<div id="legal-text" class="container-fluid clearfix no-bottom-margin">
 				<?php echo get_field('text_legal'); ?>
 			</div>
 		</section>
