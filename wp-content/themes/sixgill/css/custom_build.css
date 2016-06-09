@@ -751,13 +751,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	height: 30px; 
 }
 
-/*
 .pagination-image-right, .pagination-number {
 	margin-left: 10px;
 }
-*/
 
-/*
 .current, .current-link {
 	margin-right: 10px;
 }
@@ -765,7 +762,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .pagination-number, .pagination-image-left, .pagination-image-right {
 	margin-right: 20px; 
 }
-*/
 
 .current-link, .pagination-number {
 	color: black;
