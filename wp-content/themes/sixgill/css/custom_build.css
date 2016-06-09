@@ -629,10 +629,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .posts-list {
 	margin-bottom: 30px;
 }
-
-.container-fluid {
-	padding-left: 0px;
-}#legal-text {
+#legal-text {
 	max-width:900px;
 }
 #sassist {
