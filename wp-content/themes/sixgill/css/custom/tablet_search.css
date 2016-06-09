@@ -5,13 +5,9 @@
 		margin-top: 150px;
 	}
 	
-	.padding-search {
-		padding-top: 15px;
-	}
-	
-	.position-article, .pagination-search {
-		margin-top: 15px;
-		margin-bottom: 15px;
+	.position-article {
+		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 	
 	.header-stick {
@@ -29,5 +25,22 @@
 	.search-content {
 		padding-left: 25px;
 		padding-right: 25px;
+	}
+	
+	.table-pagination {
+		width:443px;
+		margin: 0 auto;
+	}
+	
+	.pagination-search {
+		margin-top: 25px;
+		margin-bottom: 45px;
+	}
+	
+	.padding-search {
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 10px;
+		padding-top: 12px;
 	}
 }

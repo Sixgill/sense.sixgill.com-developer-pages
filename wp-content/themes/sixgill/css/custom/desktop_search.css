@@ -1,4 +1,4 @@
-/* Blog desktop styles */
+/* Search desktop styles */
 @media only screen and (min-width : 1001px) {
 	.form-page-search {
 		width: 50%; 
@@ -31,5 +31,19 @@
 	
 	.position-button-schedule {
 		padding-right: 20px;
+	}
+	
+	.table-pagination {
+		width:363px;
+		margin: 0 auto;
+	}
+	
+	.pagination-search {
+		margin-top: 40px;
+		margin-bottom: 65px;
+	}
+	
+	.margin-results-search {
+		margin-bottom: 45px;
 	}
 }

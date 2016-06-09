@@ -18,15 +18,17 @@
 		</div>
 		
 		<section class="header-stick search-content">
-			<div class="container-fluid clearfix search-container">	
+			<div class="container-fluid clearfix search-container no-padding-left no-padding-right">	
 			<?php $countResults =  $wp_query->found_posts;?>
 			<h1 class="no-margin"><?php if ($countResults > 1) {
 				echo "Search Results";
-			?> </h1> <p class="color-999999"> <?php echo $countResults; ?> Results </p> <?php
+			?> 
+			</h1> <p class="color-999999 margin-results-search"> <?php echo $countResults; ?> Results </p> <?php
 			}
 			else {
 				echo "Search Result";
-			?> </h1> <p class="color-999999"> <?php echo $countResults; ?> Result </p> <?php
+			?> 
+			</h1> <p class="color-999999 margin-results-search"> <?php echo $countResults; ?> Result </p> <?php
 
 			}
 
