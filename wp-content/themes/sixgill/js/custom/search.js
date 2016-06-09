@@ -18,15 +18,11 @@ jQuery(function($) {
 		searchQueryInput.focus();
 	}
 
-	function validateSearchForm(searchQuery) {
-		//TODO: improve validation
-		//Validation passed: true
-		//Otherwise: false
+	function validateSearchForm(event, form) {
 		var validationResult = true;
-		if(searchQuery.length==0) {
+		if(searchQuery.length == 0) {
 			validationResult = false;
 		}
-		//Add here more conditions with validationResult = false action
 		return validationResult;
 	}
 
@@ -35,7 +31,7 @@ jQuery(function($) {
 			event.preventDefault();
 		}
 	});
-	
+
 	searchButton.click(function() {
 		if(searchOpenned) {
 			if(searchQueryInput.val().length>0) {
@@ -57,4 +53,5 @@ jQuery(function($) {
 			}, 100);
 		}
 	});
+
 });

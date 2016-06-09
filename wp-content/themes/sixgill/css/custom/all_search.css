@@ -10,25 +10,25 @@
 }
 
 .form-search-header {
-	width: 322px;  
-	height: 40px; 
+	width: 322px;
+	height: 40px;
 	float: right;
 	margin-top: 5px;
 }
 
 .search {
 	border: 1px solid #cccccc;
-	min-height: 40px; 
+	min-height: 40px;
 }
 
-.search button[type="submit"], .image-search {
-	background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
+[role="search-button"] {
+	background: url("/wp-content/themes/sixgill/images/icons/search.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%, 100% 100%;
 	background-size: 20px;
 	border: none;
-	float: right; 
-	height: 40px; 
+	float: right;
+	height: 40px;
 	width: 10%;
 }
 
@@ -38,15 +38,15 @@
 }
 
 .search-post-result {
-	color: #0051c6; 
-	font-size: 18px; 
+	color: #0051c6;
+	font-size: 18px;
 	font-weight: bold;
 }
 
 #search-query, #search-query:focus, #search-button {
 	border: 1px solid #cecece;
-	display: table-cell; 
-	float: left; 
+	display: table-cell;
+	float: left;
 	height: 40px;
 	padding: .375rem .75rem;
 	outline: none;
@@ -89,17 +89,17 @@
 }
 
 .search-header-position {
-	float: right; 
+	float: right;
 	margin-top: 5px;
 }
 
 .button.button-large {
-	height:40px; 
+	height:40px;
 	line-height: 40px;
 }
 
 .pagination-image-left, .pagination-image-right {
-	height: 30px; 
+	height: 30px;
 }
 
 .pagination-image-right, .pagination-number {
@@ -111,7 +111,7 @@
 }
 
 .pagination-number, .pagination-image-left, .pagination-image-right {
-	margin-right: 20px; 
+	margin-right: 20px;
 }
 
 .current-link, .pagination-number {
