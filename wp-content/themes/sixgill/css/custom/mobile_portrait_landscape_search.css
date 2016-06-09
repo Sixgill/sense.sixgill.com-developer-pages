@@ -16,4 +16,9 @@
 	.mobile-margin-search-page {
 		margin-top: 11px;
 	}
+	
+	.search-content {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }

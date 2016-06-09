@@ -1560,6 +1560,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.margin-table-search {
 		margin-top: 40px;
 	}
+	
+	.search-content {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 }
 /* General mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
@@ -2189,6 +2194,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.mobile-margin-search-page {
 		margin-top: 11px;
 	}
+	
+	.search-content {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 /* Portrait tablets & mobiles */
 @media (max-width: 1000px) {
@@ -2331,6 +2341,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.container-slidebar {
 		width: 35%;
+	}
+	
+	.search-content {
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 }
 
