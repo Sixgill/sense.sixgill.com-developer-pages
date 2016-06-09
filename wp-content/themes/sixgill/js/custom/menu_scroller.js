@@ -22,7 +22,7 @@ jQuery(function($) {
 		});
 		
 		if(device.tablet()) {
-			$('#body').removeClass('no-touch');
+			$('body').removeClass('no-touch');
 		}
 
 	});

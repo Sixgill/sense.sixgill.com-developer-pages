@@ -50,7 +50,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body id="body" class="side-header stretched no-touch" data-loader-timeout="7000">
+<body class="side-header stretched no-touch" data-loader-timeout="7000">
 
 	<!-- Document Wrapper -->
 	<div id="wrapper" class="clearfix">

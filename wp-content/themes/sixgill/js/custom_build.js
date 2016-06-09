@@ -371,7 +371,9 @@ jQuery(function($) {
 			});
 		});
 		
-if(device.tablet()) $('#body').removeClass('no-touch');
+		if(device.tablet()) {
+			$('body').removeClass('no-touch');
+		}
 
 	});
 
