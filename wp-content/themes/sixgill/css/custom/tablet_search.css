@@ -25,4 +25,9 @@
 	.margin-table-search {
 		margin-top: 40px;
 	}
+	
+	.search-content {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 }
