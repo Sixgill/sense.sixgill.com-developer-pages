@@ -193,12 +193,24 @@ body, p {
 	font-weight:normal;
 }
 
-#primary-menu div a:hover, #primary-menu div .active {
+.no-touch #primary-menu div a:hover, #primary-menu div .active {
+
 	text-transform:none;
 	color:#0051C6;
 	font-size:12px;
 	text-decoration:none;
 	font-weight:bold;
+	
+}
+
+#primary-menu div .active {
+
+	text-transform:none;
+	color:#0051C6;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+	
 }
 
 #primary-menu ul li ul li div {

@@ -6,7 +6,7 @@
 	}
 
 	.press-block-container:first-child {
-		margin-top: 18px;
+		margin-top: 65px;
 	}
 
 	.press-block-title {
@@ -15,6 +15,11 @@
 
 	.press-post {
 		padding-top: 140px;
+	}
+	
+	.press-content-padding {
+		padding-left: 75px;
+		padding-right: 75px;
 	}
 
 }

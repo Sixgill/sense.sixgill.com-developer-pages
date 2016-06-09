@@ -14,7 +14,7 @@
 <section id="content" class="section-margin-fix">
 	<div class="content-wrap no-padding">
 		<div class="container-fluid center clearfix my_containerSolution no-top-padding padding-edges">
-			<div class=" text-left col_press no-margin-bottom" align="left">
+			<div class=" text-left col_press no-margin-bottom press-content-padding" align="left">
 
 				<div class="press-block-container">
 					<h4 class="press-block-title">
