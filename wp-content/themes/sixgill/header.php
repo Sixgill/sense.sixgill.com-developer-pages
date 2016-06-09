@@ -68,18 +68,19 @@
 					<img id="show-menu-icon" class="" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" height="100%" alt=""/>
 					<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" height="100%" alt=""/>
 				</div>
+				<!--
 				<div id="mobile-table-search" class="background-search no-desktop-display hide mobile-margin-search-page">
 					<div class="search-form-container form-page-search padding-search">
 						<?php get_search_form(); ?>
 					</div>
 				</div>
-
+-->
 				<div class="container clearfix menu-container">
 					<?php get_template_part('menu'); ?>
 				</div>
 			</div>
 		</header>
-
+<!--
 		<div id="search-form-desktop" class="search-form-container header-search display-only-desktop position-button-schedule">
 			<div class="search-header-position">
 				<button href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">
@@ -90,3 +91,4 @@
 				<?php get_search_form_header(); ?>
 			</div>
 		</div>
+-->
