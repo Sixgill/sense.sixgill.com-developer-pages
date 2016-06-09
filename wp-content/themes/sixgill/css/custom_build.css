@@ -1747,7 +1747,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-bottom: 10px;
 		margin-top: 10px;
 		text-align: center;
-		width: 280px;
+		width: 100%;
 	}
 
 	.subscribe-success-title {
@@ -1761,7 +1761,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.subscribe-element {
 		display: block;
 	}
-	
+
 	.subscribe-block-tablet-mobile {
 		padding: 15px 18px 25px 19px;
 		margin: 0px auto;
