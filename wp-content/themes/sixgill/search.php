@@ -19,10 +19,17 @@
 		
 		<section class="header-stick search-content">
 			<div class="container-fluid clearfix search-container">	
-			<h1 class="no-margin">Search Result</h1>
-			<p class="color-999999"> <?php echo $wp_query->found_posts; ?> Results </p>
-			
-			<?php
+			<?php $countResults =  $wp_query->found_posts;?>
+			<h1 class="no-margin"><?php if ($countResults > 1) {
+				echo "Search Results";
+			?> </h1> <p class="color-999999"> <?php echo $countResults; ?> Results </p> <?php
+			}
+			else {
+				echo "Search Result";
+			?> </h1> <p class="color-999999"> <?php echo $countResults; ?> Result </p> <?php
+
+			}
+
 			if( have_posts() ):
 				while( have_posts() ): the_post();
 					get_template_part('content', 'search');
