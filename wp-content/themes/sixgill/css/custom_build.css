@@ -2143,9 +2143,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* Blog mobile portrait and landscape styles */
 @media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
-	.blog-container {
-		padding-top: 20px;
-	}
 
 	.share-buttons-top {
 		display: block;
