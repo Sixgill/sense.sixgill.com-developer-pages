@@ -125,4 +125,11 @@
 	.menu-8 {
 		height: calc(100% / 8);
 	}
+
+	/* TEMP FIX */
+
+	#primary-menu > ul {
+		top: 60px;
+		bottom: 90px;
+	}
 }
