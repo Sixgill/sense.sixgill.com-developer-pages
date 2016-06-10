@@ -35,4 +35,10 @@
 		display: inline-block;
 		float: right;
 	}
+	
+	.compact-search-container {
+		width: 267px;
+		border: 1px solid #cccccc;
+		height: 40px;
+	}
 }
