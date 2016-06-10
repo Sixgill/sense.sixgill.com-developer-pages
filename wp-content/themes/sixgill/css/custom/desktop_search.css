@@ -18,7 +18,7 @@
 	}
 
 	.table-pagination {
-		width:363px;
+		width: 363px;
 		margin: 0 auto;
 	}
 
@@ -31,7 +31,27 @@
 		margin-bottom: 45px;
 	}
 
-	.compact-search-container {
+	.compact-search-container, .search-schedule-button-container {
+		display: inline-block;
+		float: right;
+	}
 
+	.compact-search-container {
+		height: 50px;
+		width: 354px;
+		margin-right: 20px;
+	}
+
+	.search-panel-desktop {
+		height: 75px;
+	}
+
+	.search-schedule-button {
+    margin: -4px 24px 0px 0px !important;
+	}
+
+	.search-query-compact {
+		padding-left: 18px;
+		font-size: 18px;
 	}
 }

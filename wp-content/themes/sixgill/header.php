@@ -78,13 +78,13 @@
 				<div class="container clearfix menu-container">
 					<?php get_template_part('menu'); ?>
 				</div>
-				
+
 			</div>
 		</header>
 
-		<div id="search-form-desktop" class="search-form-container header-search display-only-desktop position-button-schedule">
-			<div class="search-header-position">
-				<button href="#" data-toggle="modal" data-target="#myModal" class="button button-large nobottommargin btnSchedule">
+		<div id="search-form-desktop" class="search-panel-desktop display-only-desktop">
+			<div class="search-schedule-button-container vertical-centered">
+				<button href="#" data-toggle="modal" data-target="#myModal" class="button button-large btnSchedule search-schedule-button">
 					SCHEDULE A DEMO
 				</button>
 			</div>

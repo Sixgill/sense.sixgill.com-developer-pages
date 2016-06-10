@@ -673,17 +673,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	padding-top: 100px;
 }
 
-.searchform {
-	width: 100%;
-}
-
 .searchform, .search-query, .search-button {
 	height: 100%;
+	width: 100%;
+	height: 100%;
 	background-color: #ffffff;
-}
-
-.searchform-compact {
-
+	border: none;
+	margin: 0 auto;
+	float: right;
 }
 
 .searchform-static {
@@ -691,11 +688,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .search-query {
-
+	float: left;
 }
 
 .search-query-compact {
-
+	width: calc(100% - 50px);
 }
 
 .search-query-static {
@@ -703,11 +700,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .search-button {
-
-}
-
-.search-button-compact {
-
+	background: url("/wp-content/themes/sixgill/images/icons/search.png");
+ 	background-repeat: no-repeat;
+	background-size: contain;
+ 	height: 70%;
+ 	width: 50px;
 }
 
 .search-button-static {
@@ -1077,7 +1074,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.table-pagination {
-		width:363px;
+		width: 363px;
 		margin: 0 auto;
 	}
 
@@ -1090,8 +1087,28 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-bottom: 45px;
 	}
 
-	.compact-search-container {
+	.compact-search-container, .search-schedule-button-container {
+		display: inline-block;
+		float: right;
+	}
 
+	.compact-search-container {
+		height: 50px;
+		width: 354px;
+		margin-right: 20px;
+	}
+
+	.search-panel-desktop {
+		height: 75px;
+	}
+
+	.search-schedule-button {
+    margin: -4px 24px 0px 0px !important;
+	}
+
+	.search-query-compact {
+		padding-left: 18px;
+		font-size: 18px;
 	}
 }
 /* General tablet styles */
@@ -2535,4 +2552,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .section-margin-fix {
 	margin-top: -1px !important;
+}
+
+.vertical-centered {
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
