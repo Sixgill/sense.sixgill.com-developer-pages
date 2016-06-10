@@ -673,7 +673,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	padding-top: 100px;
 }
 
-.searchform, .search-query, .search-button {
+.searchform, .search-input, .search-button {
 	height: 100%;
 	width: 100%;
 	height: 100%;
@@ -687,15 +687,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 }
 
-.search-query {
+.search-input {
 	float: left;
 }
 
-.search-query-compact {
+.search-input-compact {
 	width: calc(100% - 50px);
 }
 
-.search-query-static {
+.search-input-static {
 
 }
 
@@ -705,6 +705,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	background-size: contain;
  	height: 70%;
  	width: 50px;
+	cursor: pointer;
 }
 
 .search-button-static {
@@ -1087,12 +1088,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-bottom: 45px;
 	}
 
-	.compact-search-container, .search-schedule-button-container {
+	.search-container-compact, .search-schedule-button-container {
 		display: inline-block;
 		float: right;
 	}
 
-	.compact-search-container {
+	.search-container-compact {
 		height: 50px;
 		width: 354px;
 		margin-right: 20px;
@@ -1106,7 +1107,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
     margin: -4px 24px 0px 0px !important;
 	}
 
-	.search-query-compact {
+	.search-input-compact {
 		padding-left: 18px;
 		font-size: 18px;
 	}
@@ -2216,15 +2217,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	}
 
-	.search-query {
+	.search-input {
 
 	}
 
-	.search-query-compact {
+	.search-input-compact {
 
 	}
 
-	.search-query-static {
+	.search-input-static {
 
 	}
 
@@ -2556,6 +2557,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .vertical-centered {
 	position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+	top: 50%;
+	transform: translateY(-50%);
 }

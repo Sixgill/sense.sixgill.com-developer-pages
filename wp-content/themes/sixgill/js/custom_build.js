@@ -476,7 +476,7 @@ jQuery(function($) {
 jQuery(function($) {
 	var searchOpenned = false;
 	//Chache DOM search
-	var searchQueryInput = $('[role="search-query"]');
+	var searchQueryInput = $('[role="search-input"]');
 	var searchButton = $('#search-button');
 	var searchForm = $('#search-header-form');
 

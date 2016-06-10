@@ -31,12 +31,12 @@
 		margin-bottom: 45px;
 	}
 
-	.compact-search-container, .search-schedule-button-container {
+	.search-container-compact, .search-schedule-button-container {
 		display: inline-block;
 		float: right;
 	}
 
-	.compact-search-container {
+	.search-container-compact {
 		height: 50px;
 		width: 354px;
 		margin-right: 20px;
@@ -50,7 +50,7 @@
     margin: -4px 24px 0px 0px !important;
 	}
 
-	.search-query-compact {
+	.search-input-compact {
 		padding-left: 18px;
 		font-size: 18px;
 	}

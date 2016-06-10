@@ -1,57 +1,31 @@
 jQuery(function($) {
-	var searchOpenned = false;
-	//Chache DOM search
-	var searchQueryInput = $('[role="search-query"]');
-	var searchButton = $('#search-button');
-	var searchForm = $('#search-header-form');
+	var isMenuOpenned = false;
+	var compactSearchContainer = $('#search-container-compact');
+	var compactSearchButton = $('#search-button-compact');
+	var compactSearchInput = $('#search-input-compact');
 
-	function hideSearch() {
-		searchOpenned = false;
-		searchButton.addClass('closed');
-		searchQueryInput.addClass('closed');
+	function hideSearchInputIfEmpty(searchInput, searchContainer) {
+		if(!searchInput.val().length) {
+			searchInput.hide();
+			searchContainer.removeClass('search-border');
+		}
 	}
 
-	function showSearch() {
-		searchOpenned = true;
-		searchButton.removeClass('closed');
-		searchQueryInput.removeClass('closed');
-		searchQueryInput.focus();
+	function showSearchForm(searchInput, searchContainer) {
+		searchContainer.addClass('search-border');
+		searchInput.show();
 	}
 
-	function validateSearchForm(event, form) {
-		var validationResult = true;
-		if(searchQuery.length == 0) {
-			validationResult = false;
-		}
-		return validationResult;
-	}
-
-	searchForm.submit(function(event) {
-		if(!validateSearchForm(searchQueryInput.val())) {
-			event.preventDefault();
-		}
+	compactSearchInput.focusin(function() {
+		showSearchForm(compactSearchInput, compactSearchContainer);
 	});
 
-	searchButton.click(function() {
-		if(searchOpenned) {
-			if(searchQueryInput.val().length>0) {
-				searchForm.submit();
-			} else {
-				hideSearch();
-			}
-		} else {
-			showSearch();
-		}
+	compactSearchInput.focusout(function() {
+		setTimeout(function() {
+			hideEmptySearchInput();
+		}, 100);
 	});
 
-	searchForm.focusout(function() {
-		if(searchQueryInput.val().length==0) {
-			setTimeout(function() {
-				if(searchOpenned) {
-					hideSearch();
-				}
-			}, 100);
-		}
-	});
+	hideSearchInputIfEmpty();
 
 });
