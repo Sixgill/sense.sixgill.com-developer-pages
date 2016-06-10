@@ -101,9 +101,9 @@ body, p {
 	background-image: -ms-linear-gradient(top, #4ddb5a, #3cad46);
 	background-image: -o-linear-gradient(top, #4ddb5a, #3cad46);
 	background-image: linear-gradient(to bottom, #4ddb5a, #3cad46);
-	-webkit-box-shadow: 0px 4px 0px #115117;
-	-moz-box-shadow: 0px 4px 0px #115117;
-	box-shadow: 0px 4px 0px #115117;
+	-webkit-box-shadow: 0px 4px 0px #26722d;
+	-moz-box-shadow: 0px 4px 0px #26722d;
+	box-shadow: 0px 4px 0px #26722d;
 }
 
 .btnSolutions, .btn-news-press {
