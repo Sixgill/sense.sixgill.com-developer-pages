@@ -1,4 +1,11 @@
 /* Company desktop styles */
 @media only screen and (min-width : 1001px) {
+	/* Menu scroll fix */
+	#before_board {
+		margin-bottom: -145px !important;
+	}
 
+	#board {
+		padding-top: 145px;
+	}
 }
