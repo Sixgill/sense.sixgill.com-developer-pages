@@ -31,7 +31,8 @@
 		margin-bottom: 45px;
 	}
 
-	.compact-search-container {
-
+	.compact-search-container, .search-header-position {
+		display: inline-block;
+		float: right;
 	}
 }

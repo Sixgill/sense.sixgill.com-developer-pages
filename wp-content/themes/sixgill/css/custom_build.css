@@ -674,16 +674,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .searchform {
-	width: 100%;
+	width: 267px;
 }
 
 .searchform, .search-query, .search-button {
 	height: 100%;
 	background-color: #ffffff;
+	border: 1px solid #cccccc;
 }
 
 .searchform-compact {
-
+	
 }
 
 .searchform-static {
@@ -695,7 +696,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .search-query-compact {
-
+	width: calc(100% - 40px);
+	height: 38px;
+	border: 0px;
 }
 
 .search-query-static {
@@ -707,7 +710,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .search-button-compact {
-
+	background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
+ 	background-repeat: no-repeat;
+ 	background-position: 50% 50%, 100% 100%;
+ 	background-size: 20px;
+ 	border: none;
+ 	float: right; 
+ 	height: 40px; 
+ 	width: 40px;
 }
 
 .search-button-static {
@@ -1090,8 +1100,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-bottom: 45px;
 	}
 
-	.compact-search-container {
-
+	.compact-search-container, .search-header-position {
+		display: inline-block;
+		float: right;
 	}
 }
 /* General tablet styles */
