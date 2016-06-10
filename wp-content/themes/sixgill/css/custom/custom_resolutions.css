@@ -67,6 +67,11 @@
 	.container-slidebar {
 		width: 35%;
 	}
+	
+	.search-content {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 }
 
 /* For share botton on blog: */

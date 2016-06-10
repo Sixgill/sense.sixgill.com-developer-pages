@@ -1,10 +1,7 @@
-/* Blog mobile portrait and landscape styles */
+/* Search mobile portrait and landscape styles */
 @media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
-	.padding-search {
-		padding-top: 15px;
-	}
 
-	.position-article, .pagination-search {
+	.position-article {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
@@ -43,5 +40,31 @@
 
 	.search-button-static {
 
+	}
+	
+	.search-content {
+		padding-left: 10px;
+		padding-right: 15px;
+	}
+	
+	.table-pagination {
+		width:100%;
+		margin: 0 auto;
+	}
+	
+	.pagination-search {
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	
+	.padding-search {
+		padding-left: 13px;
+		padding-right: 13px;
+		padding-bottom: 8px;
+		padding-top: 8px;
+	}
+	
+	.margin-results-search {
+		margin-bottom: 20px;
 	}
 }

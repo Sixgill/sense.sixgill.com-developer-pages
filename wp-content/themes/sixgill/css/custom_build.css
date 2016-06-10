@@ -629,10 +629,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .posts-list {
 	margin-bottom: 30px;
 }
-
-.container-fluid {
-	padding-left: 0px;
-}#legal-text {
+#legal-text {
 	max-width:900px;
 }
 #sassist {
@@ -1060,7 +1057,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 @media only screen and (min-width : 1001px) {
 
 }
-/* Blog desktop styles */
+/* Search desktop styles */
 @media only screen and (min-width : 1001px) {
 	.content-wrap {
 		padding: 0px;
@@ -1079,8 +1076,22 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-right: 20px;
 	}
 
-	.compact-search {
-		
+	.table-pagination {
+		width:363px;
+		margin: 0 auto;
+	}
+
+	.pagination-search {
+		margin-top: 40px;
+		margin-bottom: 65px;
+	}
+
+	.margin-results-search {
+		margin-bottom: 45px;
+	}
+
+	.compact-search-container {
+
 	}
 }
 /* General tablet styles */
@@ -1291,6 +1302,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		top: 200px;
 	}
 
+	#legal-text {
+		padding-top: 50px;
+	}
+
+	/* TEMP FIX */
+	#primary-menu > ul {
+		top: 110px;
+	}
+
 }
 /* Blog tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
@@ -1495,13 +1515,35 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-top: 150px;
 	}
 
-	.position-article, .pagination-search {
-		margin-top: 15px;
-		margin-bottom: 15px;
+	.position-article {
+		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 
 	.header-stick {
 		padding-top: 20px;
+	}
+
+	.search-content {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.table-pagination {
+		width:443px;
+		margin: 0 auto;
+	}
+
+	.pagination-search {
+		margin-top: 25px;
+		margin-bottom: 45px;
+	}
+
+	.padding-search {
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 10px;
+		padding-top: 12px;
 	}
 }
 /* General mobile portrait styles */
@@ -1665,7 +1707,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-bottom: 10px;
 		margin-top: 10px;
 		text-align: center;
-		width: 280px;
+		width: 100%;
 	}
 
 	.subscribe-success-title {
@@ -1679,7 +1721,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.subscribe-element {
 		display: block;
 	}
-	
+
 	.subscribe-block-tablet-mobile {
 		padding: 15px 18px 25px 19px;
 		margin: 0px auto;
@@ -1952,6 +1994,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.global-social-buttons-list {
 		padding-bottom: 18px;
 	}
+
+	/* TEMP FIX */
+
+	#primary-menu > ul {
+		top: 50px;
+	}
 }
 /* Blog Mobile landscape styles */
 @media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
@@ -2082,9 +2130,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* Blog mobile portrait and landscape styles */
 @media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
-	.blog-container {
-		padding-top: 20px;
-	}
 
 	.share-buttons-top {
 		display: block;
@@ -2134,13 +2179,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-top: 24px;
 	}
 }
-/* Blog mobile portrait and landscape styles */
+/* Search mobile portrait and landscape styles */
 @media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
-	.padding-search {
-		padding-top: 15px;
-	}
 
-	.position-article, .pagination-search {
+	.position-article {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
@@ -2179,6 +2221,32 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.search-button-static {
 
+	}
+	
+	.search-content {
+		padding-left: 10px;
+		padding-right: 15px;
+	}
+	
+	.table-pagination {
+		width:100%;
+		margin: 0 auto;
+	}
+	
+	.pagination-search {
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	
+	.padding-search {
+		padding-left: 13px;
+		padding-right: 13px;
+		padding-bottom: 8px;
+		padding-top: 8px;
+	}
+	
+	.margin-results-search {
+		margin-bottom: 20px;
 	}
 }
 /* Portrait tablets & mobiles */
@@ -2226,16 +2294,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.mc4wp-form-fields h4 {
 		display: none !important;
 	}
-	
+
 	#primary-menu a div {
 		transform: translateY(50%);
 		text-align: center;
 		padding: 0px;
-	}
-
-	.menu-search-mobile-tablet {
-		background-color: #f9f9f9;
-		width: 100%;
 	}
 
 }
@@ -2307,6 +2370,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.container-slidebar {
 		width: 35%;
+	}
+	
+	.search-content {
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 }
 

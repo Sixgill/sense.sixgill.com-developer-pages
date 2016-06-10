@@ -147,10 +147,12 @@
 	}
 
 	function pagination($pages = '', $range = 4) {
-		$showitems = ($range * 2)+1;
+		$showitems = 6;
 
 		global $paged;
-
+		
+		echo "<table class=\"table-pagination\"><tr>";
+		
 		if(empty($paged)) $paged = 1;
 		if($pages == '') {
 			global $wp_query;
@@ -159,31 +161,52 @@
 				$pages = 1;
 			}
 		}
+		$paddingPagination = 100/($pages + 2);
 
 		if(1 != $pages) {
 			if($paged > 1 ) {
+				echo "<td style=\"width:".$paddingPagination."%;text-align: left;\">";
 				echo "<a href='".get_pagenum_link($paged - 1)."'> <img src=\"/wp-content/themes/sixgill/images/icons/left-page.png\" class=\"pagination-image-left\"></a>";
+				echo "</td>";
+
 			} else {
+				echo "<td style=\"width:".$paddingPagination."%;text-align: left;\">";
 				echo "<img src=\"/wp-content/themes/sixgill/images/icons/left-no-page.png\" class=\"pagination-image-left\">";
+				echo "</td>";
 			}
 
 			for ($i=1; $i <= $pages; $i++) {
+				
 				if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
+					echo "<td style=\"width:".$paddingPagination."%;\">";
+
 					echo ($paged == $i)? "<span class=\"current\"><ins><b>".$i."</b></ins></span>":"<a href='".get_pagenum_link($i)."' class=\"inactive current-link\">".$i."</a>";
+					echo "</td>";
 				}
 			}
 
 			if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) {
+				echo "<td style=\"width:".$paddingPagination."%;\">";
 				echo "...";
+				echo "</td>";
+				echo "<td style=\"width:".$paddingPagination."%;\">";
 				echo "<a href='".get_pagenum_link($pages)."' class=\"pagination-number\"> ".$pages." </a>";
+				echo "</td>";
 			}
+			
+			echo "<td style=\"width:".$paddingPagination."%;text-align: right; \">";
 
 			if ($paged < $pages ) {
 				echo "<a href=\"".get_pagenum_link($paged + 1)."\"> <img src=\"/wp-content/themes/sixgill/images/icons/right-page.png\" class=\"pagination-image-right\"> </a>";
+				echo "</td>";
+
 			} else {
 				echo "<img src=\"/wp-content/themes/sixgill/images/icons/right-no-page.png\" class=\"pagination-image-right\">";
+				echo "</td>";
 			}
 		}
+		echo "</tr></table>";
+
 	}
 
 

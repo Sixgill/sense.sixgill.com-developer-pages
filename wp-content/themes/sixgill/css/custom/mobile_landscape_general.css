@@ -61,4 +61,10 @@
 	.global-social-buttons-list {
 		padding-bottom: 18px;
 	}
+
+	/* TEMP FIX */
+
+	#primary-menu > ul {
+		top: 50px;
+	}
 }

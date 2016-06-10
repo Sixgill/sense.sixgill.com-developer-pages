@@ -43,16 +43,11 @@
 	.mc4wp-form-fields h4 {
 		display: none !important;
 	}
-	
+
 	#primary-menu a div {
 		transform: translateY(50%);
 		text-align: center;
 		padding: 0px;
-	}
-
-	.menu-search-mobile-tablet {
-		background-color: #f9f9f9;
-		width: 100%;
 	}
 
 }

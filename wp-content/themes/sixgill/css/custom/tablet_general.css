@@ -206,4 +206,13 @@
 		top: 200px;
 	}
 
+	#legal-text {
+		padding-top: 50px;
+	}
+
+	/* TEMP FIX */
+	#primary-menu > ul {
+		top: 110px;
+	}
+
 }
