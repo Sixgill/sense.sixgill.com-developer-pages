@@ -54,4 +54,9 @@
 		padding-left: 18px;
 		font-size: 18px;
 	}
+
+	.search-button-compact {
+		height: 70%;
+		width: 50px;
+	}
 }
