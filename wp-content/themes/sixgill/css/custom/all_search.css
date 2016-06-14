@@ -67,3 +67,9 @@
 .search-border {
 	outline: 1px solid #e2e2e2;
 }
+
+.search-button-hitbox {
+	height: 100%;
+	display: inline-block;
+	float: right;
+}

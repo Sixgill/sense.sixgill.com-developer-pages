@@ -3,10 +3,12 @@ jQuery(function($) {
 	var compactSearchContainer = $('#search-container-compact');
 	var compactSearchButton = $('#search-button-compact');
 	var compactSearchInput = $('#search-input-compact');
+	var compactSearchForm = $('#searchform-compact');
 
 	function openSearchForm(searchInput, searchContainer) {
 			searchContainer.addClass('search-border');
 			searchInput.show();
+			searchInput.focus();
 			isSearchOpenned = true;
 	}
 
@@ -22,22 +24,20 @@ jQuery(function($) {
 		}
 	}
 
-	function toggleSearchForm(searchInput, searchContainer) {
-		var result = true;
-		if(isSearchOpenned) {
-			closeSearchForm(searchInput, searchContainer);
-			result = false;
-		} else {
-			openSearchForm(searchInput, searchContainer);
-		}
-		return result;
-	}
-
 	compactSearchButton.click(function() {
-		if(toggleSearchForm(compactSearchInput, compactSearchContainer)) {
-			compactSearchInput.focus();
+		if(isSearchOpenned) {
+			var searchQuery = compactSearchInput.val();
+			if(searchQuery.length) {
+				if(validateSearchQuery(searchQuery)) {
+					compactSearchForm.submit();
+				} else {
+					//TODO: show validation error
+				}
+			} else {
+				closeSearchForm(compactSearchInput, compactSearchContainer);
+			}
 		} else {
-
+			openSearchForm(compactSearchInput, compactSearchContainer);
 		}
 	});
 

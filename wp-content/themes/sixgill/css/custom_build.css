@@ -713,6 +713,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .search-border {
 	outline: 1px solid #e2e2e2;
 }
+
+.search-button-hitbox {
+	height: 100%;
+	display: inline-block;
+	float: right;
+}
 /* General desktop styles */
 @media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {
