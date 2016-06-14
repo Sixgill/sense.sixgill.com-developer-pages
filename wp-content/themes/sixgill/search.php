@@ -13,15 +13,15 @@
 		<section class="header-stick search-content">
 			<div class="container-fluid clearfix search-container no-padding-left no-padding-right">
 				<?php $countResults =  $wp_query->found_posts;?>
-				<h1 class="no-margin"><?php if ($countResults > 1) {
+				<p class="no-margin text-search-results" style="line-height: 1.5;"><?php if ($countResults > 1) {
 					echo "Search Results";
 				?>
-				</h1> <p class="color-999999 margin-results-search"> <?php echo $countResults; ?> Results </p> <?php
+				</p> <p class="color-999999 margin-results-search"> <?php echo $countResults; ?> Results </p> <?php
 				}
 				else {
 					echo "Search Result";
 				?>
-				</h1> <p class="color-999999 margin-results-search"> <?php echo $countResults; ?> Result </p> <?php
+				</p> <p class="color-999999 margin-results-search"> <?php echo $countResults; ?> Result </p> <?php
 
 				}
 
