@@ -7,7 +7,7 @@
 
 	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 	<!-- Stylesheets -->
-	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext'>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" />
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Crete+Round" />
 
