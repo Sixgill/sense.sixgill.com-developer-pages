@@ -1561,22 +1561,19 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.padding-search {
-		padding-left: 25px;
-		padding-right: 25px;
-		padding-bottom: 10px;
-		padding-top: 12px;
+		padding: 12px 25px 10px 25px;
 	}
 
 	.menu-search-mobile-tablet {
 		height: 110px;
 		width: 100%;
 		background-color: #f8f8f8;
+		padding: 12px 25px 12px 25px;
 	}
 
 	.search-container-static {
-		height: 85px;
-		margin-right: 25px;
-		margin-left: 25px;
+		height: 100%;
+		width: 100%;
 	}
 
 	.search-input-static {
@@ -2285,10 +2282,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 	
 	.padding-search {
-		padding-left: 13px;
-		padding-right: 13px;
-		padding-bottom: 8px;
-		padding-top: 8px;
+		padding: 8px 13px 8px 13px;
 	}
 	
 	.margin-results-search {
@@ -2299,12 +2293,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		height: 58px;
 		width: 100%;
 		background-color: #f8f8f8;
+		padding: 7px 12px 7px 12px;
 	}
 
 	.search-container-static {
-		height: 44px;
-		margin-right: 12px;
-		margin-left: 12px;
+		height: 100%;
+		width: 100%;
 	}
 }
 /* Portrait tablets & mobiles */
