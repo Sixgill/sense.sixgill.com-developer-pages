@@ -1,31 +1,62 @@
 jQuery(function($) {
-	var isMenuOpenned = false;
+	var isSearchOpenned = true;
 	var compactSearchContainer = $('#search-container-compact');
 	var compactSearchButton = $('#search-button-compact');
 	var compactSearchInput = $('#search-input-compact');
 
+	function openSearchForm(searchInput, searchContainer) {
+			searchContainer.addClass('search-border');
+			searchInput.show();
+			isSearchOpenned = true;
+	}
+
+	function closeSearchForm(searchInput, searchContainer) {
+		searchContainer.removeClass('search-border');
+		searchInput.hide();
+		isSearchOpenned = false;
+	}
+
 	function hideSearchInputIfEmpty(searchInput, searchContainer) {
-		if(!searchInput.val().length) {
-			searchInput.hide();
-			searchContainer.removeClass('search-border');
+		if(!searchInput.val().length && isSearchOpenned) {
+			closeSearchForm(searchInput, searchContainer);
 		}
 	}
 
-	function showSearchForm(searchInput, searchContainer) {
-		searchContainer.addClass('search-border');
-		searchInput.show();
+	function toggleSearchForm(searchInput, searchContainer) {
+		var result = true;
+		if(isSearchOpenned) {
+			closeSearchForm(searchInput, searchContainer);
+			result = false;
+		} else {
+			openSearchForm(searchInput, searchContainer);
+		}
+		return result;
 	}
 
-	compactSearchInput.focusin(function() {
-		showSearchForm(compactSearchInput, compactSearchContainer);
+	compactSearchButton.click(function() {
+		if(toggleSearchForm(compactSearchInput, compactSearchContainer)) {
+			compactSearchInput.focus();
+		} else {
+
+		}
 	});
+
+	function validateSearchQuery(query) {
+		var validationResult = true;
+		//Not valid if empty
+		if(!query.length) {
+			validationResult = false;
+		} //TODO: add more validation conditions using else if
+
+		return validationResult;
+	}
 
 	compactSearchInput.focusout(function() {
 		setTimeout(function() {
-			hideEmptySearchInput();
+			hideSearchInputIfEmpty(compactSearchInput, compactSearchContainer);
 		}, 100);
 	});
 
-	hideSearchInputIfEmpty();
+	hideSearchInputIfEmpty(compactSearchInput, compactSearchContainer);
 
 });
