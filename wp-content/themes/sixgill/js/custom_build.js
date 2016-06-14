@@ -493,7 +493,7 @@ jQuery(function($) {
 	$('.search-container-static').each(function(){
 		var currentSearchQuery = $(this).find('.search-input-static').val();
 		var currentSearchForm = $(this).find('.searchform-static');
-		$(this).find('.search-button-static').click(function() {
+		$(this).find('.search-button-hitbox').click(function() {
 			if(validateSearchQuery(currentSearchQuery)) {
 				currentSearchForm.submit();
 			}
