@@ -121,7 +121,7 @@
 	);
 
 	$isSelected = (strcasecmp(getCurrentSlug(), "company_blog")==0 || strcasecmp(getCategorySlug(), "blog")==0);
-	$isExpanded = !(strcasecmp(getCategorySlug(), "blog")==0);
+	$isExpanded = (strcasecmp(getCurrentSlug(), "company_blog")==0);
 	$menu[] = array(
 		"elementName" => "Blog",
 		"link" => "/company_blog/",
