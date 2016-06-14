@@ -77,8 +77,8 @@
 				</div>
 
 				<div id="primary-menu-trigger" class="tright">
-					<img id="show-menu-icon" class="" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" height="100%" alt=""/>
-					<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" height="100%" alt=""/>
+					<img id="show-menu-icon" class="" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" style="height: 100%;" alt=""/>
+					<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" style="height: 100%;" alt=""/>
 				</div>
 
 <!-- 				<div id="mobile-table-search" class="background-search no-desktop-display hide mobile-margin-search-page">
