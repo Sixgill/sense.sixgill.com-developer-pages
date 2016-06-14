@@ -2358,6 +2358,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		text-align: center;
 		padding: 0px;
 	}
+
 }
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {
