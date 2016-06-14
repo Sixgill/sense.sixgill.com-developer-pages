@@ -1,49 +1,62 @@
 /* Search desktop styles */
 @media only screen and (min-width : 1001px) {
-	.form-page-search {
-		width: 50%; 
-		margin: 0 auto; 
-		margin-top: 60px;
-	}
-	
-	.header-search {
-		display: block;
-		width: 100%; 
-		height: 60px;
-	}
-	
-	.form-page-search {
-		margin-top: 10px;
-	}
-	
 	.content-wrap {
 		padding: 0px;
 	}
-	
+
 	.header-stick {
 		padding-top: 100px;
 	}
-	
+
 	.position-article {
 		margin-top: 25px;
 		margin-bottom: 25px;
 	}
-	
+
 	.position-button-schedule {
 		padding-right: 20px;
 	}
-	
+
 	.table-pagination {
-		width:363px;
+		width: 363px;
 		margin: 0 auto;
 	}
-	
+
 	.pagination-search {
 		margin-top: 40px;
 		margin-bottom: 65px;
 	}
-	
+
 	.margin-results-search {
 		margin-bottom: 45px;
+	}
+
+	.search-container-compact, .search-schedule-button-container {
+		display: inline-block;
+		float: right;
+	}
+
+	.search-container-compact {
+		height: 50px;
+		width: 354px;
+		margin-right: 20px;
+	}
+
+	.search-panel-desktop {
+		height: 75px;
+	}
+
+	.search-schedule-button {
+    margin: -4px 24px 0px 0px !important;
+	}
+
+	.search-input-compact {
+		padding-left: 18px;
+		font-size: 18px;
+	}
+
+	.search-button-compact {
+		height: 70%;
+		width: 50px;
 	}
 }
