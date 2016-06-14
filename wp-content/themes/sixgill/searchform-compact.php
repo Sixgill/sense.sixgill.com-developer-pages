@@ -8,10 +8,7 @@
 			placeholder="Search"
 			>
 		<div id="search-button-compact" class="search-button-hitbox">
-			<div
-				class="search-button search-button-compact vertical-centered"
-			>
-			</div>
+			<div class="search-button search-button-compact vertical-centered"></div>
 		</div>
 	</form>
 </div>

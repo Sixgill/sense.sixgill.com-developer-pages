@@ -480,6 +480,26 @@ jQuery(function($) {
 	var compactSearchInput = $('#search-input-compact');
 	var compactSearchForm = $('#searchform-compact');
 
+	function validateSearchQuery(query) {
+		var validationResult = true;
+		//Not valid if empty
+		if(!query.length) {
+			validationResult = false;
+		} //TODO: add more validation conditions using else if
+
+		return validationResult;
+	}
+
+	$('.search-container-static').each(function(){
+		var currentSearchQuery = $(this).find('.search-input-static').val();
+		var currentSearchForm = $(this).find('.searchform-static');
+		$(this).find('.search-button-static').click(function() {
+			if(validateSearchQuery(currentSearchQuery)) {
+				currentSearchForm.submit();
+			}
+		})
+	});
+
 	function openSearchForm(searchInput, searchContainer) {
 			searchContainer.addClass('search-border');
 			searchInput.show();
@@ -515,16 +535,6 @@ jQuery(function($) {
 			openSearchForm(compactSearchInput, compactSearchContainer);
 		}
 	});
-
-	function validateSearchQuery(query) {
-		var validationResult = true;
-		//Not valid if empty
-		if(!query.length) {
-			validationResult = false;
-		} //TODO: add more validation conditions using else if
-
-		return validationResult;
-	}
 
 	compactSearchInput.focusout(function() {
 		setTimeout(function() {
