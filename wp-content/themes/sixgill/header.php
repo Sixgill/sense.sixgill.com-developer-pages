@@ -69,12 +69,12 @@
 					<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" height="100%" alt=""/>
 				</div>
 
-				<div id="mobile-table-search" class="background-search no-desktop-display hide mobile-margin-search-page">
+<!-- 				<div id="mobile-table-search" class="background-search no-desktop-display hide mobile-margin-search-page">
 					<div class="search-form-container form-page-search padding-search">
 						<?php get_search_form(); ?>
 					</div>
-				</div>
-
+				</div> -->
+ 
 				<div class="container clearfix menu-container">
 					<?php get_template_part('menu'); ?>
 				</div>

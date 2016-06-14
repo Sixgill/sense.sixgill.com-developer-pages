@@ -50,15 +50,13 @@
 }
 
 .search-input-static {
-
+	width: calc(100% - 70px);
 }
 
 .search-button {
 	background: url("/wp-content/themes/sixgill/images/icons/search.png");
  	background-repeat: no-repeat;
 	background-size: contain;
- 	height: 70%;
- 	width: 50px;
 	cursor: pointer;
 }
 

@@ -696,15 +696,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .search-input-static {
-
+	width: calc(100% - 70px);
 }
 
 .search-button {
 	background: url("/wp-content/themes/sixgill/images/icons/search.png");
  	background-repeat: no-repeat;
 	background-size: contain;
- 	height: 70%;
- 	width: 50px;
 	cursor: pointer;
 }
 
@@ -1110,6 +1108,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.search-input-compact {
 		padding-left: 18px;
 		font-size: 18px;
+	}
+
+	.search-button-compact {
+		height: 70%;
+		width: 50px;
 	}
 }
 /* General tablet styles */
@@ -1562,6 +1565,28 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-right: 25px;
 		padding-bottom: 10px;
 		padding-top: 12px;
+	}
+
+	.menu-search-mobile-tablet {
+		height: 110px;
+		width: 100%;
+		background-color: #f8f8f8;
+	}
+
+	.search-container-static {
+		height: 85px;
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+
+	.search-input-static {
+		padding-left: 18px;
+		font-size: 18px;
+	}
+
+	.search-button-static {
+		height: 60%;
+		width: 70px;
 	}
 }
 /* General mobile portrait styles */
@@ -2117,6 +2142,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.background-search {
 		margin-top: 0px;
 	}
+
+	.menu-search-mobile-tablet {
+		margin-top: 15px;
+	}
+
 }
 /* General mobile portrait and landscape styles */
 @media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), (max-width: 500px) and (orientation: portrait) {
@@ -2214,7 +2244,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.searchform-static {
-
+		
 	}
 
 	.search-input {
@@ -2226,19 +2256,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.search-input-static {
-
+		padding-left: 12px;
+		font-size: 17px;	
 	}
 
 	.search-button {
 
 	}
 
-	.search-button-compact {
-
-	}
-
 	.search-button-static {
-
+		height: 60%;
+		width: 35px;
 	}
 	
 	.search-content {
@@ -2265,6 +2293,18 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	
 	.margin-results-search {
 		margin-bottom: 20px;
+	}
+
+	.menu-search-mobile-tablet {
+		height: 58px;
+		width: 100%;
+		background-color: #f8f8f8;
+	}
+
+	.search-container-static {
+		height: 44px;
+		margin-right: 12px;
+		margin-left: 12px;
 	}
 }
 /* Portrait tablets & mobiles */
@@ -2318,7 +2358,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		text-align: center;
 		padding: 0px;
 	}
-
 }
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {

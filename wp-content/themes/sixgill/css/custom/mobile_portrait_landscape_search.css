@@ -15,7 +15,7 @@
 	}
 
 	.searchform-static {
-
+		
 	}
 
 	.search-input {
@@ -27,19 +27,17 @@
 	}
 
 	.search-input-static {
-
+		padding-left: 12px;
+		font-size: 17px;	
 	}
 
 	.search-button {
 
 	}
 
-	.search-button-compact {
-
-	}
-
 	.search-button-static {
-
+		height: 60%;
+		width: 35px;
 	}
 	
 	.search-content {
@@ -66,5 +64,17 @@
 	
 	.margin-results-search {
 		margin-bottom: 20px;
+	}
+
+	.menu-search-mobile-tablet {
+		height: 58px;
+		width: 100%;
+		background-color: #f8f8f8;
+	}
+
+	.search-container-static {
+		height: 44px;
+		margin-right: 12px;
+		margin-left: 12px;
 	}
 }

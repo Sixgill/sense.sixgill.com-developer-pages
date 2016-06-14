@@ -35,4 +35,26 @@
 		padding-bottom: 10px;
 		padding-top: 12px;
 	}
+
+	.menu-search-mobile-tablet {
+		height: 110px;
+		width: 100%;
+		background-color: #f8f8f8;
+	}
+
+	.search-container-static {
+		height: 85px;
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+
+	.search-input-static {
+		padding-left: 18px;
+		font-size: 18px;
+	}
+
+	.search-button-static {
+		height: 60%;
+		width: 70px;
+	}
 }
