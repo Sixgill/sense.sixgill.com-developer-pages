@@ -1,46 +1,57 @@
 /* Blog tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
 	.form-page-search {
-		margin: 0 auto; 
+		margin: 0 auto;
 		margin-top: 150px;
 	}
-	
+
 	.position-article {
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
-	
+
 	.header-stick {
 		padding-top: 20px;
 	}
-	
-	.background-search {
-		margin-top: 0px;
-	}
-	
-	.margin-table-search {
-		margin-top: 40px;
-	}
-	
+
 	.search-content {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
-	
+
 	.table-pagination {
 		width:443px;
 		margin: 0 auto;
 	}
-	
+
 	.pagination-search {
 		margin-top: 25px;
 		margin-bottom: 45px;
 	}
-	
+
 	.padding-search {
-		padding-left: 25px;
-		padding-right: 25px;
-		padding-bottom: 10px;
-		padding-top: 12px;
+		padding: 12px 25px 10px 25px;
+	}
+
+	.menu-search-mobile-tablet {
+		height: 110px;
+		width: 100%;
+		background-color: #f8f8f8;
+		padding: 12px 25px 12px 25px;
+	}
+
+	.search-container-static {
+		height: 100%;
+		width: 100%;
+	}
+
+	.search-input-static {
+		padding-left: 18px;
+		font-size: 18px;
+	}
+
+	.search-button-static {
+		height: 60%;
+		width: 70px;
 	}
 }

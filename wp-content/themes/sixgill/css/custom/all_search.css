@@ -1,105 +1,10 @@
-.form-control {
-	display: inline-block;
-	width: 89%;
-	height: 40px;
-	padding: 6px 12px;
-	font-size: 14px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	border: none;
-}
-
-.form-search-header {
-	width: 322px;  
-	height: 40px; 
-	float: right;
-	margin-top: 5px;
-}
-
-.search {
-	border: 1px solid #cccccc;
-	min-height: 40px; 
-}
-
-.search button[type="submit"], .image-search {
-	background: url("/wp-content/themes/sixgill/images/icons/search.png"); 
-	background-repeat: no-repeat;
-	background-position: 50% 50%, 100% 100%;
-	background-size: 20px;
-	border: none;
-	float: right; 
-	height: 40px; 
-	width: 10%;
-}
-
 .pagination-search {
 	margin-bottom: 50px;
 	text-align: center;
 }
 
-.search-post-result {
-	color: #0051c6; 
-	font-size: 18px; 
-	font-weight: bold;
-}
-
-#search-query, #search-query:focus, #search-button {
-	border: 1px solid #cecece;
-	display: table-cell; 
-	float: left; 
-	height: 40px;
-	padding: .375rem .75rem;
-	outline: none;
-	background-color: #ffffff;
-	margin-top: 5px;
-}
-
-#search-query, #search-query:focus {
-	border-right: 0px;
-	width: 200px;
-}
-
-#search-button {
-	margin-top: 5px;
-	border-left: 0px;
-	width: 30px;
-	font-size: 16pt;
-	height: 40px;
-}
-
-#search-button:hover {
-	cursor: pointer;
-}
-
-#search-button.closed {
-	border: 0px;
-}
-
-#search-query.closed {
-	display: none;
-}
-
-.container-search-form {
-	float: right;
-	display: inline-block;
-}
-
-.search-container {
-	max-width: 900px;
-}
-
-.search-header-position {
-	float: right; 
-	margin-top: 5px;
-}
-
-.button.button-large {
-	height:40px; 
-	line-height: 40px;
-}
-
 .pagination-image-left, .pagination-image-right {
-	height: 30px; 
+	height: 30px;
 }
 
 .pagination-image-right, .pagination-number {
@@ -111,17 +16,60 @@
 }
 
 .pagination-number, .pagination-image-left, .pagination-image-right {
-	margin-right: 20px; 
+	margin-right: 20px;
 }
 
 .current-link, .pagination-number {
 	color: black;
 }
 
-.header-search {
-	margin-top: 0px;
-}
-
 .content-wrap .header-stick {
 	padding-top: 100px;
+}
+
+.searchform, .search-input, .search-button {
+	height: 100%;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	border: none;
+	margin: 0 auto;
+	float: right;
+}
+
+.searchform-static {
+
+}
+
+.search-input {
+	float: left;
+}
+
+.search-input-compact {
+	width: calc(100% - 50px);
+}
+
+.search-input-static {
+	width: calc(100% - 70px);
+}
+
+.search-button {
+	background: url("/wp-content/themes/sixgill/images/icons/search.png");
+ 	background-repeat: no-repeat;
+	background-size: contain;
+	cursor: pointer;
+}
+
+.search-button-static {
+
+}
+
+.search-border {
+	outline: 1px solid #e2e2e2;
+}
+
+.search-button-hitbox {
+	height: 100%;
+	display: inline-block;
+	float: right;
 }

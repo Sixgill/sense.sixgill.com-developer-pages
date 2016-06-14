@@ -99,3 +99,9 @@
 .section-margin-fix {
 	margin-top: -1px !important;
 }
+
+.vertical-centered {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
