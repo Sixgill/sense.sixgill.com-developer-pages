@@ -7,7 +7,10 @@
 
 	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 	<!-- Stylesheets -->
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext'>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" />
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Crete+Round" />
+
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/style.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/swiper.css" type="text/css" />
@@ -52,6 +55,15 @@
 
 <body class="side-header stretched no-touch" data-loader-timeout="7000">
 
+	<!--GoogleTagManager-->
+	<noscript>
+		<iframe src="http://www.googletagmanager.com/ns.html?id=GTM-5X4VP7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<script>
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5X4VP7');
+	</script>
+	<!-- End Google Tag Manager -->
+
 	<!-- Document Wrapper -->
 	<div id="wrapper" class="clearfix">
 		<a name="top"></a>
@@ -74,7 +86,7 @@
 						<?php get_search_form(); ?>
 					</div>
 				</div> -->
- 
+
 				<div class="container clearfix menu-container">
 					<?php get_template_part('menu'); ?>
 				</div>
@@ -84,7 +96,7 @@
 
 		<div id="search-form-desktop" class="search-panel-desktop display-only-desktop">
 			<div class="search-schedule-button-container vertical-centered">
-				<button href="#" data-toggle="modal" data-target="#myModal" class="button button-large btnSchedule search-schedule-button">
+				<button data-toggle="modal" data-target="#myModal" class="button button-large btnSchedule search-schedule-button">
 					SCHEDULE A DEMO
 				</button>
 			</div>

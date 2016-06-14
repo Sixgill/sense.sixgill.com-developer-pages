@@ -17,7 +17,7 @@
 					Learn how Sixgill can help your business.
 				</div>
 				<div class="col_half col_last footer_Schedule no-border">
-					<button href="#" data-toggle="modal" data-target="#myModal" class="button button-large no-bottom-margin btnSchedule">
+					<button data-toggle="modal" data-target="#myModal" class="button button-large no-bottom-margin btnSchedule">
 						SCHEDULE A DEMO
 					</button>
 				</div>
@@ -57,7 +57,7 @@
 	<div id="gotoTop" class="icon-angle-up"></div>
 
 	<!-- MODAL Request a DEMO -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="requestModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-body">
 	        <div class="modal-content">
@@ -65,7 +65,7 @@
 	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 								&times;
 							</button>
-	            <h4 class="modal-title color-white center" id="myModalLabel">
+	            <h4 class="modal-title color-white center" id="requestModalLabel">
 								REQUEST A DEMO
 							</h4>
 	          </div>
@@ -90,7 +90,7 @@
 	<!-- END MODAL Request a DEMO -->
 
 	<!-- MODAL RESOURCES -->
-	<div class="modal fade" style="z-index:9999" id="myResource" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" style="z-index:9999" id="myResource" tabindex="-1" role="dialog" aria-labelledby="resourcesModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-body">
 	        <div class="modal-content">
@@ -98,7 +98,7 @@
 	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 								&times;
 							</button>
-	            <h4 class="modal-title color-white center" id="myModalLabel">
+	            <h4 class="modal-title color-white center" id="resourcesModalLabel">
 								DOWNLOAD CORPORATE PRESENTATION
 							</h4>
 	          </div>
@@ -113,7 +113,7 @@
 	<!-- END MODAL Request a DEMO -->
 
 	<!-- MODAL Contact -->
-	<div class="modal fade" style="z-index:9999" id="myModalContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" style="z-index:9999" id="myModalContact" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-body">
 
@@ -122,7 +122,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 							&times;
 						</button>
-						<h4 class="modal-title color-white center" id="myModalLabel2">
+						<h4 class="modal-title color-white center" id="contactModalLabel">
 							<?php echo $contactHeader; ?>
 						</h4>
 					</div>
@@ -146,15 +146,6 @@
 	<!-- Footer Scripts  -->
 	<script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js"></script>
 	<script type="text/javascript" src="/wp-content/themes/sixgill/js/custom_build.js"></script>
-
-	<!--GoogleTagManager-->
-	<noscript>
-		<iframesrc="//www.googletagmanager.com/ns.html?id=GTM-5X4VP7"height="0"width="0"style="display:none;visibility:hidden"></iframe>
-	</noscript>
-	<script>
-		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5X4VP7');
-	</script>
-	<!-- End Google Tag Manager →
 
 
 	<!-- Google Analytics -->
