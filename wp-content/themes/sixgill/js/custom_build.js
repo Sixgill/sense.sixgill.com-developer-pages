@@ -400,7 +400,6 @@ jQuery(function($) {
 
 	$('#primary-menu-trigger,#overlay-menu-close').click(function() {
 		if(window.menuShowFlag) {
-			$('#mobile-table-search').toggleClass("hide");
 			$( '#menu-background' ).fadeTo(500, 0, function() {
 				$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			});
@@ -409,10 +408,8 @@ jQuery(function($) {
 			});
 		} else {
 			savedScroll = $(window).scrollTop();
-			$('#mobile-table-search').toggleClass("hide");
 			$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			$( '#primary-menu, #menu-background' ).fadeTo(500, 1);
-
 		}
 		$('#mobile-table-search').toggleClass("show");
 
@@ -477,96 +474,76 @@ jQuery(function($) {
 	$(window).on('resize', checkSidebar);
 });
 jQuery(function($) {
-	var searchOpenned = false;
-	//Chache DOM search
-	var searchQueryInput = $('#search-query');
-	var searchButton = $('#search-button');
-	var searchForm = $('#search-header-form');
+	var isSearchOpenned = true;
+	var compactSearchContainer = $('#search-container-compact');
+	var compactSearchButton = $('#search-button-compact');
+	var compactSearchInput = $('#search-input-compact');
+	var compactSearchForm = $('#searchform-compact');
 
-	function hideSearch() {
-		searchOpenned = false;
-		searchButton.addClass('closed');
-		searchQueryInput.addClass('closed');
-	}
-
-	function showSearch() {
-		searchOpenned = true;
-		searchButton.removeClass('closed');
-		searchQueryInput.removeClass('closed');
-		searchQueryInput.focus();
-	}
-
-	function validateSearchForm(searchQuery) {
-		//TODO: improve validation
-		//Validation passed: true
-		//Otherwise: false
+	function validateSearchQuery(query) {
 		var validationResult = true;
-		if(searchQuery.length==0) {
+		//Not valid if empty
+		if(!query.length) {
 			validationResult = false;
-		}
-		//Add here more conditions with validationResult = false action
+		} //TODO: add more validation conditions using else if
+
 		return validationResult;
 	}
 
-	searchForm.submit(function(event) {
-		if(!validateSearchForm(searchQueryInput.val())) {
-			event.preventDefault();
-		}
+	$('.search-container-static').each(function(){
+		var currentSearchQuery = $(this).find('.search-input-static').val();
+		var currentSearchForm = $(this).find('.searchform-static');
+		$(this).find('.search-button-static').click(function() {
+			if(validateSearchQuery(currentSearchQuery)) {
+				currentSearchForm.submit();
+			}
+		})
 	});
-	
-	searchButton.click(function() {
-		if(searchOpenned) {
-			if(searchQueryInput.val().length>0) {
-				searchForm.submit();
+
+	function openSearchForm(searchInput, searchContainer) {
+			searchContainer.addClass('search-border');
+			searchInput.show();
+			searchInput.focus();
+			isSearchOpenned = true;
+	}
+
+	function closeSearchForm(searchInput, searchContainer) {
+		searchContainer.removeClass('search-border');
+		searchInput.hide();
+		isSearchOpenned = false;
+	}
+
+	function hideSearchInputIfEmpty(searchInput, searchContainer) {
+		if(!searchInput.val().length && isSearchOpenned) {
+			closeSearchForm(searchInput, searchContainer);
+		}
+	}
+
+	compactSearchButton.click(function() {
+		if(isSearchOpenned) {
+			var searchQuery = compactSearchInput.val();
+			if(searchQuery.length) {
+				if(validateSearchQuery(searchQuery)) {
+					compactSearchForm.submit();
+				} else {
+					//TODO: show validation error
+				}
 			} else {
-				hideSearch();
+				closeSearchForm(compactSearchInput, compactSearchContainer);
 			}
 		} else {
-			showSearch();
+			openSearchForm(compactSearchInput, compactSearchContainer);
 		}
 	});
 
-	searchForm.focusout(function() {
-		if(searchQueryInput.val().length==0) {
-			setTimeout(function() {
-				if(searchOpenned) {
-					hideSearch();
-				}
-			}, 100);
-		}
+	compactSearchInput.focusout(function() {
+		setTimeout(function() {
+			hideSearchInputIfEmpty(compactSearchInput, compactSearchContainer);
+		}, 100);
 	});
-});
-jQuery(function($) {
-	var searchOpenned = false;
-	//Chache DOM search
-	var searchQueryInput = $('#pageInputForm, #menuInputFormHeader, #pageInputFormHeader');
-	var searchButton = $('#spageButtonForm, #menuButtonFormHeader, #pageButtonFormHeader');
-	var searchForm = $('#pageSearchForm, #menuSearchFormHeader, #pageSearchFormHeader');
-  
-	function validateSearchForm(searchQuery) {
-		//TODO: improve validation
-		//Validation passed: true
-		//Otherwise: false
-		var validationResult = true;
-		if(searchQuery.length==0) {
-			validationResult = false;
-		}
-		//Add here more conditions with validationResult = false action
-		return validationResult;
-	}
-  
-	searchForm.submit(function(event) {
-		if(!validateSearchForm(searchQueryInput.val())) {
-			event.preventDefault();
-		}
-	});
-  
-	searchButton.click(function() {
-		if(searchQueryInput.val().length==0) {
-			
-		} 
-	});
-  
+
+	hideSearchInputIfEmpty(compactSearchInput, compactSearchContainer);
+
 });
 jQuery(function($){
   if(document.getElementById('single-page-content') && document.getElementById('aside1')){

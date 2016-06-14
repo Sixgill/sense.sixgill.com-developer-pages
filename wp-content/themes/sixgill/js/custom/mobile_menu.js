@@ -4,7 +4,6 @@ jQuery(function($) {
 
 	$('#primary-menu-trigger,#overlay-menu-close').click(function() {
 		if(window.menuShowFlag) {
-			$('#mobile-table-search').toggleClass("hide");
 			$( '#menu-background' ).fadeTo(500, 0, function() {
 				$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			});
@@ -13,10 +12,8 @@ jQuery(function($) {
 			});
 		} else {
 			savedScroll = $(window).scrollTop();
-			$('#mobile-table-search').toggleClass("hide");
 			$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			$( '#primary-menu, #menu-background' ).fadeTo(500, 1);
-
 		}
 		$('#mobile-table-search').toggleClass("show");
 
