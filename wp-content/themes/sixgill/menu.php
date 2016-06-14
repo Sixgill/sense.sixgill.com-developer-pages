@@ -6,7 +6,11 @@
 			if($isSelected) {
 				$html .= 'class="menu-link-selected" ';
 			}
-			$html .= 'href="#top">';
+			if($isExpanded) {
+				$html .= 'href="#top">';
+			} else {
+				$html .= 'href="'.$link.'">';
+			}
 				$html .= '<div class="menu-'.$listSize.'-with-search">';
 					$html .= $elementName;
 				$html .= '</div>';
