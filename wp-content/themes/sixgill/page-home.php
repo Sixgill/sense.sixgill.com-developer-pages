@@ -8,7 +8,7 @@
 					<p id="home-text-on-video" data-animate="fadeInDown" class="txtVideo home-video-text">
 						<?php echo get_field('blue_header_text_below_video'); ?>
 					</p>
-					<button id="home-button-on-video" data-animate="fadeInDown" href="#" data-toggle="modal" data-target="#myModal" class="button button-large no-bottom-margin btnSchedule">
+					<button id="home-button-on-video" data-animate="fadeInDown" data-toggle="modal" data-target="#myModal" class="button button-large no-bottom-margin btnSchedule">
 						SCHEDULE A DEMO
 					</button>
 				</div>
@@ -57,7 +57,7 @@
 		</section>
 
 		<section id="after_what2" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
-			<img id="home-image-background-after_what2" src="/wp-content/themes/sixgill/images/td/home/00_FocusSection_v2.jpg" width="100%" alt=""/>
+			<img id="home-image-background-after_what2" src="/wp-content/themes/sixgill/images/td/home/00_FocusSection_v2.jpg" style="width: 100%;" alt=""/>
 		</section>
 
 	</section>
@@ -78,7 +78,7 @@
 	</section>
 
 	<section id="after_products" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
-		<img id="home-background-after-products" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Upper.jpg" width="100%" alt=""/>
+		<img id="home-background-after-products" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Upper.jpg" style="width: 100%;" alt=""/>
 	</section>
 
 	<a name="solutions"></a>
@@ -126,7 +126,7 @@
 	</section>
 
 	<section id="before_clients" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
-		<img id="home-image-background-before_clients" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Lower.jpg" width="100%" alt=""/>
+		<img id="home-image-background-before_clients" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Lower.jpg" style="width: 100%;" alt=""/>
 	</section>
 
 	<a name="clients"></a>
@@ -143,20 +143,20 @@
 			<div class="home-diagram hidden-top-imageDiagram max-width-720 no-mobile-portrait-display">
 				<?php foreach(get_field('logo_images_part1') as $logo) : ?>
 					<div class="col_one_fifth">
-						<img id="home-image-company-part1" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+						<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
 					</div>
 				<?php endforeach; ?>
 				<div class="col_one_fifth col_last">
-					<img id="home-last-image-company-part1" src="<?php echo get_field('last_image_logos1'); ?>" alt=""/>
+					<img src="<?php echo get_field('last_image_logos1'); ?>" alt=""/>
 				</div>
 
 				<?php foreach(get_field('logo_images_part2') as $logo) : ?>
 					<div class="col_one_fifth">
-						<img id="home-image-company-part2" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+						<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
 					</div>
 				<?php endforeach; ?>
 				<div class="col_one_fifth col_last">
-					<img id="home-image-company-part2" src="<?php echo get_field('last_image_logos2'); ?>" alt=""/>
+					<img src="<?php echo get_field('last_image_logos2'); ?>" alt=""/>
 				</div>
 				<a href="/company/" class="button button-large no-bottom-margin btnCompany">
 					VIEW COMPANY

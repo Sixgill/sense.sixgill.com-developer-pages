@@ -28,7 +28,7 @@
 
     <div class="clear"></div>
     <div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-      <img src="/wp-content/themes/sixgill/images/td/tech/00_Shape1.jpg" alt="" width="100%"/>
+      <img src="/wp-content/themes/sixgill/images/td/tech/00_Shape1.jpg" alt="" style="width: 100%;"/>
     </div>
 
     <a name="location"></a>
@@ -53,7 +53,7 @@
 
 	  <div class="clear"></div>
 	  <div class="container-fluid background-white clearfix no-margin nopadding">
-	    <img src="/wp-content/themes/sixgill/images/td/tech/shape2.png" alt="" width="100%" />
+	    <img src="/wp-content/themes/sixgill/images/td/tech/shape2.png" alt="" style="width: 100%;" />
 	  </div>
 
 	  <a name="proximity"></a>
@@ -75,7 +75,7 @@
 
 	<div class="clear"></div>
 	<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-	  <img src="/wp-content/themes/sixgill/images/td/tech/shape3.png" alt="" width="100%" />
+	  <img src="/wp-content/themes/sixgill/images/td/tech/shape3.png" alt="" style="width: 100%;" />
 	</div>
 
 
