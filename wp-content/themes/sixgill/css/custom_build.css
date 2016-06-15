@@ -665,18 +665,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	height: 30px;
 }
 
-.pagination-image-right, .pagination-number {
-	margin-left: 10px;
-}
-
-.current, .current-link {
-	margin-right: 10px;
-}
-
-.pagination-number, .pagination-image-left, .pagination-image-right {
-	margin-right: 20px;
-}
-
 .current-link, .pagination-number {
 	color: black;
 }
@@ -2558,11 +2546,18 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		transform: translateY(-50%);
 	}
 
+	.pagination-image-right {
+		padding-left: 20px;
+	}
+
+	.pagination-image-left {
+		padding-right: 20px;
+	}
+
 	a.search-post-result {
 		font-weight: 700;
 		letter-spacing: 1px;
 	}
-
 }
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {

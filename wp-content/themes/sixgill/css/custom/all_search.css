@@ -7,18 +7,6 @@
 	height: 30px;
 }
 
-.pagination-image-right, .pagination-number {
-	margin-left: 10px;
-}
-
-.current, .current-link {
-	margin-right: 10px;
-}
-
-.pagination-number, .pagination-image-left, .pagination-image-right {
-	margin-right: 20px;
-}
-
 .current-link, .pagination-number {
 	color: black;
 }
