@@ -31,7 +31,7 @@
 		</div>
 		<div class="clear"></div>
 		<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-			<img src="/wp-content/themes/sixgill/images/td/solutions_fig1.png" alt="" style="width: 100%;"/>
+			<img src="/wp-content/themes/sixgill/images/td/solutions_fig1.png" alt="" class="full-width"/>
 		</div>
 
 		<a name="people"></a>
@@ -75,7 +75,7 @@
 
 		<div class="clearfix"></div>
 		<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-			<img src="/wp-content/themes/sixgill/images/td/solutions_fig2.png" alt="" style="width: 100%;"/>
+			<img src="/wp-content/themes/sixgill/images/td/solutions_fig2.png" alt="" class="full-width"/>
 		</div>
 
 
@@ -116,7 +116,7 @@
 
 		<div class="clearfix"></div>
 		<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-			<img src="/wp-content/themes/sixgill/images/td/solutions_fig3.png" alt="" style="width: 100%;"/>
+			<img src="/wp-content/themes/sixgill/images/td/solutions_fig3.png" alt="" class="full-width"/>
 		</div>
 		<div class="clearfix"></div>
 

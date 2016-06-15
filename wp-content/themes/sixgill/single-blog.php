@@ -53,7 +53,7 @@
 						<h3 id="press-date-post" class="press-date color-black no-bottom-margin" style=" margin-bottom: 10px;">
 							<?php echo $post->post_title; ?>
 						</h3>
-						<div class="swiper-slide" style="  background-position: center; height: 350px; width:100%;     margin-bottom: 30px;">
+						<div class="swiper-slide full-width" style="background-position: center; height: 350px; margin-bottom: 30px;">
 							<?php the_post_thumbnail( 'spec_thumb' ); ?>
 						</div>
 
