@@ -7,14 +7,6 @@
 	height: 30px;
 }
 
-.pagination-image-right {
-    padding-left: 25px;
-}
-
-.pagination-image-left {
-    padding-right: 25px;
-}
-
 .current-link, .pagination-number {
 	color: black;
 }

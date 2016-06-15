@@ -22,8 +22,8 @@
 				echo "Search Result".$pluralEnding;
 				?>
 				</p> 
-				<p class="color-999999 margin-results-search"> <?php echo $countResults." Result".$pluralEnding ;?></p> <?php
-
+				<p class="color-999999 margin-results-search"> <?php echo $countResults." Result".$pluralEnding ;?></p> 
+				<?php
 				if( have_posts() ):
 					while( have_posts() ): the_post();
 						get_template_part('content', 'search');
@@ -31,7 +31,7 @@
 				endif;
 				?>
 
-				<div id="pagination" class="pagination-search no-desktop-display no-tablet-display">
+				<div id="pagination" class="pagination-search no-desktop-display no-tablet-display no-mobile-landscape-display">
 					<?php
 						if (function_exists("pagination")) {
 							pagination($wp_query->max_num_pages, 1);

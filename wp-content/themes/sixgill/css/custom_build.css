@@ -665,14 +665,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	height: 30px;
 }
 
-.pagination-image-right {
-    padding-left: 25px;
-}
-
-.pagination-image-left {
-    padding-right: 25px;
-}
-
 .current-link, .pagination-number {
 	color: black;
 }
@@ -2506,6 +2498,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		transform: translateY(-50%);
 	}
 
+	.pagination-image-right {
+    	padding-left: 20px;
+    }
+
+    .pagination-image-left {
+    	padding-right: 20px;
+    }
 }
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {
