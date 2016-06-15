@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <a name="top"></a>
-<section id="slider" class="slider-parallax no-border swiper_wrapper clearfix section-margin-fix">
+<section id="slider" class="slider-parallax no-border swiper_wrapper clearfix">
 	<div class="slider-parallax-inner">
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
@@ -20,7 +20,7 @@
 		<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
 			<div class="container-fluid center clearfix my_containerSolution">
 
-				<div class="col_one_third title-left-col">
+				<div class="col_one_third title-left-col solutions-top-title-spacing">
 					<?php echo get_field('top_paragraph_title'); ?>
 				</div>
 				<div class="col_two_third text-right-col col_last">

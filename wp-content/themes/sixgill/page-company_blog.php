@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <a name="top"></a>
-<section id="slider" class="slider-parallax swiper_wrapper clearfix section-margin-fix">
+<section id="slider" class="slider-parallax swiper_wrapper clearfix">
 	<div class="slider-parallax-inner">
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
@@ -24,7 +24,7 @@
 				<div class="col_last widget subscribe-block display-only-desktop" align="left">
 					<?php dynamic_sidebar( 'blog-subscribe-sidebar' ); ?>
 				</div>
-				
+
 				<div class="col_two_fifth col_last widget twitter-block display-only-desktop" align="left">
 					<?php dynamic_sidebar( 'twitter-widget-sidebar' ); ?>
 				</div>

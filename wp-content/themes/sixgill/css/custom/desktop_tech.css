@@ -1,4 +1,7 @@
 /* Tech desktop styles */
 @media only screen and (min-width : 1001px) {
-
+	.tech-top-spacing {
+		padding-top:75px;
+		max-width:950px;
+	}
 }
