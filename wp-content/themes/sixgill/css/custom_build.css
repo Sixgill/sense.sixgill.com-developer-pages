@@ -665,16 +665,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	height: 30px;
 }
 
-.pagination-image-right, .pagination-number {
-	margin-left: 10px;
+.pagination-image-right {
+    padding-left: 25px;
 }
 
-.current, .current-link {
-	margin-right: 10px;
-}
-
-.pagination-number, .pagination-image-left, .pagination-image-right {
-	margin-right: 20px;
+.pagination-image-left {
+    padding-right: 25px;
 }
 
 .current-link, .pagination-number {
