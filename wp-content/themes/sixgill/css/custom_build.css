@@ -2429,7 +2429,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.search-content {
 		padding-left: 10px;
-		padding-right: 15px;
+		padding-right: 10px;
 	}
 
 	.table-pagination {
