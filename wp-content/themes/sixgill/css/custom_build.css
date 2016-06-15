@@ -2603,6 +2603,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	width: 100%;
 }
 
+.max-width-500 {
+	max-width: 500px;
+}
+
 .section-margin-fix {
 	margin-top: -1px !important;
 }
