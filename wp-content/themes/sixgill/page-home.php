@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="slider" class="force-full-screen full-screen section-margin-fix">
+<section id="slider" class="force-full-screen full-screen">
 	<div class="force-full-screen full-screen dark section nopadding no-margin noborder ohidden">
 		<div class="container clearfix">
 			<div class="slider-caption slider-caption-center" >
