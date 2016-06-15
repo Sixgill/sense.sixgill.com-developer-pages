@@ -58,10 +58,15 @@
 	}
 
 	.pagination-image-right {
-    	padding-left: 20px;
-    }
+		padding-left: 20px;
+	}
 
-    .pagination-image-left {
-    	padding-right: 20px;
-    }
+	.pagination-image-left {
+		padding-right: 20px;
+	}
+
+	a.search-post-result {
+		font-weight: 700;
+		letter-spacing: 1px;
+	}
 }

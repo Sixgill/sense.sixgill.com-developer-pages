@@ -15,12 +15,26 @@ jQuery(function($) {
 		return validationResult;
 	}
 
+	function showValidationError(errorMessage) {
+		//TODO: make validation alert
+	}
+
 	$('.search-button-hitbox').each(function() {
 		var searchForm = $(this).parent();
 		var searchQueryInput = searchForm.find('input[name="s"]');
+
+		searchForm.submit(function(event) {
+			if(!validateSearchQuery(searchQueryInput.val())) {
+				event.preventDefault();
+				showValidationError("Search query is too short");
+			}
+		});
+
 		$(this).click(function(){
 			if(validateSearchQuery(searchQueryInput.val())) {
 				searchForm.submit();
+			} else {
+				showValidationError("Search query is too short");
 			}
 		});
 	});

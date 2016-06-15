@@ -4,4 +4,14 @@
 	.share-buttons-top {
 		display: block;
 	}
+
+	.blog-container {
+		margin-left: 0px;
+		margin-right: 0px;
+		max-width: none !important;
+	}
+
+	.h1-blog {
+		margin-bottom: 18px;
+	}
 }
