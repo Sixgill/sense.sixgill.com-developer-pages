@@ -301,7 +301,7 @@ img.mfp-img {
 .mfp-gallery .mfp-image-holder .mfp-figure {
 	cursor: pointer; }
 
-@media screen and (max-width: 1000px) and (max-height: 500px) and (orientation: landscape), screen and (max-height: 300px) {
+@media screen and (max-width: 1000px) and (min-aspect-ratio: 4/3), screen and (max-height: 300px) {
 	/**
 			 * Remove all paddings around the image on small screen
 			 */
