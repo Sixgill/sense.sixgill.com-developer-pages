@@ -1,8 +1,5 @@
 /* Search desktop styles */
 @media only screen and (min-width : 1001px) {
-	.content-wrap {
-		padding: 0px;
-	}
 
 	.header-stick {
 		padding-top: 100px;

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <a name="top"></a>
-<section id="slider" class="slider-parallax swiper_wrapper clearfix section-margin-fix">
+<section id="slider" class="slider-parallax swiper_wrapper clearfix">
 	<div class="slider-parallax-inner">
 		<div class="swiper-container swiper-parent">
 			<div class="swiper-wrapper">
@@ -16,8 +16,8 @@
 	<div class="content-wrap" style="padding-bottom:0px;">
 
 		<div class="header-stick background-f8f8f8 no-border" id="company">
-			<div class="container-fluid center clearfix no-border" style="padding-top:75px; max-width:1100px;">
-				<div class="col_one_third title-left-col">
+			<div class="container-fluid center clearfix no-border company-top-spacing">
+				<div class="col_one_third title-left-col company-top-title-spacing">
 					<?php echo get_field('about_header'); ?>
 				</div>
 				<div class="col_two_third col_last text-left text-right-col">

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="slider" class="force-full-screen full-screen section-margin-fix">
+<section id="slider" class="force-full-screen full-screen">
 	<div class="force-full-screen full-screen dark section nopadding no-margin noborder ohidden">
 		<div class="container clearfix">
 			<div class="slider-caption slider-caption-center" >
@@ -159,7 +159,9 @@
 					<img src="<?php echo get_field('last_image_logos2'); ?>" alt=""/>
 				</div>
 				<a href="/company/" class="button button-large no-bottom-margin btnCompany">
-					VIEW COMPANY
+					<div class="vertical-centered">
+						VIEW COMPANY
+					</div>
 				</a>
 			</div>
 			<div class="home-diagram hidden-bottom-imageDiagram no-desktop-display no-tablet-display no-mobile-landscape-display">

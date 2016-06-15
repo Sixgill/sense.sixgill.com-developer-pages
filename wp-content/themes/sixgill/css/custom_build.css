@@ -289,6 +289,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .share-buttons-list li:last-of-type img {
 	margin-bottom: 0px;
 }
+
+.content-wrap {
+	padding: 0px;
+}
+
+.mobile-vertical-centered  {
+	padding: 0px !important;
+}
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
 }
@@ -633,7 +641,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	max-width:900px;
 }
 #sassist {
-	margin-top: 40px;
+	padding-top: 40px;
 }
 
 #ssdk-container {
@@ -643,6 +651,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 #products-header-image {
 	background-image: url('/wp-content/themes/sixgill/images/td/hero/adobestock_69002740_web.jpg');
 	background-position: center;
+}
+
+.products-content-spacing {
+	padding-top: 75px;
 }
 .pagination-search {
 	margin-bottom: 50px;
@@ -930,6 +942,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	#board {
 		padding-top: 145px;
 	}
+	/* Menu scroll fix end */
+
+	.company-top-spacing {
+		padding-top: 75px;
+		max-width: 1100px;
+	}
 }
 /* Home desktop styles */
 @media only screen and (min-width: 1001px) {
@@ -1049,7 +1067,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* Tech desktop styles */
 @media only screen and (min-width : 1001px) {
-
+	.tech-top-spacing {
+		padding-top:75px;
+		max-width:950px;
+	}
 }
 /* Press desktop styles */
 @media only screen and (min-width: 1001px) {
@@ -1076,13 +1097,22 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* Products desktop styles */
 @media only screen and (min-width : 1001px) {
+	/* Fix scrolling to Reach */
+	#before_ssdk {
+		margin-bottom: -145px !important;
+	}
 
+	#ssdk {
+		padding-top: 145px;
+	}
+	/* End of scrolling fix */
+
+	#sassist {
+		padding-bottom: 40px;
+	}
 }
 /* Search desktop styles */
 @media only screen and (min-width : 1001px) {
-	.content-wrap {
-		padding: 0px;
-	}
 
 	.header-stick {
 		padding-top: 100px;
@@ -1233,6 +1263,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.widgettitle {
 		color: #444;
+	}
+
+	.my_containerSolution{
+		padding-top: 45px;
 	}
 
 	.my_containerSolution_indent {
@@ -1441,7 +1475,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* Company tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
-
+	.company-top-spacing {
+		padding-top: 75px;
+		max-width: 1100px;
+	}
 }
 /* Home tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
@@ -1551,7 +1588,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* Tech tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
+	.tech-top-spacing {
+		padding-top: 20px;
+		max-width: 950px;
+	}
 
+	.tech-top-header > p {
+		display: inline-block !important;
+	}
 }
 /* Press tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
@@ -1580,7 +1624,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* Products tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
-
+	.products-content-spacing {
+		padding-top: 20px;
+	}
 }
 /* Blog tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
@@ -1791,6 +1837,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.menu-8-with-search {
 		height: calc((100% - 72px) / 8);
 	}
+
+	#slider {
+		margin-top: 28px !important;
+	}
 }
 /* Blog mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
@@ -1821,7 +1871,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.subscribe-block-tablet-mobile {
-		padding: 15px 18px 25px 19px;
+		padding: 15px 18px 25px 19px !important;
 		margin: 0px auto;
 		height: 210px;
 		width: 100%;
@@ -2098,6 +2148,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	#primary-menu > ul {
 		top: 50px;
 	}
+
 }
 /* Blog Mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
@@ -2230,6 +2281,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		height:44px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg");
 	}
+
+	.footer_Copy {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 }
 /* Blog mobile portrait and landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (orientation: portrait) {
@@ -2243,18 +2299,31 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.btnSolutions {
 		width: 295px;
 	}
+
+	.company-top-title-spacing {
+		margin-bottom: 16px;
+	}
 }
 /* Solutions mobile portrait and landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (orientation: portrait) {
 	.topmargin-lg {
 		margin-top: 20px !important;
 	}
-	
+
 	.solution-subpage-container {
-    	margin-left: 30px;
+		margin-left: 30px;
 		margin-right: 30px;
 		padding-left: 0px;
 		padding-right: 0px;
+	}
+
+	.my_containerSolution {
+		padding-top: 28px;
+		margin-top: 0px;
+	}
+
+	.solutions-top-title-spacing {
+		margin-bottom: 20px;
 	}
 }
 /* Resources mobile portrait and landscape styles */
@@ -2280,6 +2349,16 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (orientation: portrait) {
 	.legal-content {
 		margin-top: 24px;
+	}
+}
+/* Products mobile portrait and landscape styles */
+@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (orientation: portrait) {
+	.products-content-spacing {
+		padding-top: 10px;
+	}
+
+	.products-top-title-spacing {
+		margin-bottom: 20px;
 	}
 }
 /* Search mobile portrait and landscape styles */
