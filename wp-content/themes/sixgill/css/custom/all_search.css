@@ -85,3 +85,7 @@
     font-size: 30px;
     letter-spacing: 1.5px;
 }
+
+.line-height-results {
+	line-height: 1.5 !important;
+}
