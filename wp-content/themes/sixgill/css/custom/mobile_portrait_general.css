@@ -6,11 +6,6 @@
 		padding:0px;
 	}
 
-	.text-right-col {
-		border-left:0px;
-		padding-left:10px;
-	}
-
 	.footer-learn-text, .footer-links-block {
 		text-align:center;
 		font-size:14px;
@@ -146,6 +141,6 @@
 	}
 
 	#slider {
-		margin-top: 28px !important;
+		margin-top: 70px !important;
 	}
 }
