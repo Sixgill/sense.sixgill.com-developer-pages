@@ -78,4 +78,8 @@
 		padding: 6px 12px 6px 12px;
 		background-color: #f8f8f8;
 	}
+
+	a.search-post-result {
+		font-size: 15px;
+	}
 }

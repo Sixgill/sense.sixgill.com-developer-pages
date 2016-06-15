@@ -1705,6 +1705,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding: 8px 16px 8px 16px;
 		background-color: #f8f8f8;
 	}
+
+	a.search-post-result {
+		font-size: 18px;
+	}
 }
 /* General mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
@@ -2464,6 +2468,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding: 6px 12px 6px 12px;
 		background-color: #f8f8f8;
 	}
+
+	a.search-post-result {
+		font-size: 15px;
+	}
 }
 /* Portrait tablets & mobiles */
 @media (max-width: 1000px) {
@@ -2527,7 +2535,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	a.search-post-result {
 		font-weight: 700;
 		letter-spacing: 1px;
-		font-size: 14px;
 	}
 
 }
