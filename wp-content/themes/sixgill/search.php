@@ -13,30 +13,30 @@
 		<section class="header-stick search-content">
 			<div class="container-fluid clearfix search-container no-padding-left no-padding-right">
 				<p class="no-margin text-search-results line-height-results">
+					<?php
+						$countResults =  $wp_query->found_posts;
+						$pluralEnding = "";
+						if($countResults > 1) {
+							$pluralEnding = "s";
+						}
+						echo "Search Result".$pluralEnding;
+					?>
+
+				</p>
+
+				<p class="color-999999 margin-results-search">
+					<?php
+						echo $countResults." Result".$pluralEnding ;
+					?>
+				</p>
+
 				<?php
-				$countResults =  $wp_query->found_posts;
-				$pluralEnding = "";
-				if($countResults > 1) {
-					$pluralEnding = "s";
-				}
-				echo "Search Result".$pluralEnding;
-				?>
 
-			</p>
-
-			<p class="color-999999 margin-results-search">
-				<?php
-					echo $countResults." Result".$pluralEnding ;
-				?>
-			</p>
-
-			<?php
-
-				if( have_posts() ):
-					while( have_posts() ): the_post();
-						get_template_part('content', 'search');
-					endwhile;
-				endif;
+					if( have_posts() ):
+						while( have_posts() ): the_post();
+							get_template_part('content', 'search');
+						endwhile;
+					endif;
 				?>
 
 				<div id="pagination" class="pagination-search no-desktop-display no-tablet-display no-mobile-landscape-display">
