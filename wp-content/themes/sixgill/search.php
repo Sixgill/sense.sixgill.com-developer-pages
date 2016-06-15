@@ -32,7 +32,6 @@
 				endif;
 				?>
 
-
 				<div id="pagination" class="pagination-search no-desktop-display no-tablet-display">
 					<?php
 						if (function_exists("pagination")) {
