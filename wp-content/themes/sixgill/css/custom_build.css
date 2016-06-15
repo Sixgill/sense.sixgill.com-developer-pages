@@ -695,10 +695,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	width: calc(100% - 50px);
 }
 
-.search-input-static {
-	width: calc(100% - 70px);
-}
-
 .search-button {
 	background: url("/wp-content/themes/sixgill/images/icons/search.png");
  	background-repeat: no-repeat;
@@ -718,6 +714,22 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	height: 100%;
 	display: inline-block;
 	float: right;
+}
+
+.search-container-static {
+	height: 100%;
+	width: 100%;
+}
+
+.search-content {
+	max-width: 930px;
+	margin: 0 auto;
+}
+
+.text-search-results {
+	font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 1.5px;
 }
 /* General desktop styles */
 @media only screen and (min-width : 1001px) {
@@ -1096,7 +1108,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.margin-results-search {
-		margin-bottom: 45px;
+		margin-bottom: 35px;
 	}
 
 	.search-container-compact, .search-schedule-button-container {
@@ -1118,14 +1130,43 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
     margin: -4px 24px 0px 0px !important;
 	}
 
+	.search-input {
+		font-size: 18px;
+	}
+
 	.search-input-compact {
 		padding-left: 18px;
-		font-size: 18px;
+	}
+
+	.search-input-static {
+		padding-left: 15px;
+		width: calc(100% - 45px);
 	}
 
 	.search-button-compact {
 		height: 70%;
 		width: 50px;
+	}
+
+	.searchform-result {
+		width: 554px;
+		height: 50px;
+		margin: auto;
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
+
+	.search-button-static {
+		height: 60%;
+		width: 45px;
+	}
+
+	.header-search {
+		margin-top: 0px;
+	}
+
+	.search-content {
+
 	}
 }
 /* General tablet styles */
@@ -1577,25 +1618,31 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.menu-search-mobile-tablet {
-		height: 110px;
+		height: 73px;
 		width: 100%;
 		background-color: #f8f8f8;
-		padding: 12px 25px 12px 25px;
-	}
-
-	.search-container-static {
-		height: 100%;
-		width: 100%;
+		padding: 8px 16px 8px 16px;
 	}
 
 	.search-input-static {
 		padding-left: 18px;
 		font-size: 18px;
+		width: calc(100% - 47px);
 	}
 
 	.search-button-static {
 		height: 60%;
-		width: 70px;
+		width: 47px;
+	}
+
+	.searchform-result {
+		width: 100%;
+		height: 73px;
+		margin: auto;
+		margin-top: 35px;
+		margin-bottom: 20px;
+		padding: 8px 16px 8px 16px;
+		background-color: #f8f8f8;
 	}
 }
 /* General mobile portrait styles */
@@ -2265,7 +2312,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.search-input-static {
 		padding-left: 12px;
-		font-size: 17px;	
+		font-size: 17px;
+		width: calc(100% - 35px);
 	}
 
 	.search-button {
@@ -2307,9 +2355,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding: 7px 12px 7px 12px;
 	}
 
-	.search-container-static {
-		height: 100%;
+	.searchform-result {
 		width: 100%;
+		height: 55px;
+		margin: auto;
+		padding: 6px 12px 6px 12px;
+		background-color: #f8f8f8;
 	}
 }
 /* Portrait tablets & mobiles */
