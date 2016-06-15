@@ -1111,6 +1111,16 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 	/* End of scrolling fix */
 
+	/* Fix scrolling to Sense */
+	#before_ssense {
+		margin-bottom: -90px !important;
+	}
+
+	#ssense {
+		padding-top: 90px;
+	}
+	/* End of scrolling fix */
+
 	#sassist {
 		padding-bottom: 40px;
 	}
@@ -1695,6 +1705,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding: 8px 16px 8px 16px;
 		background-color: #f8f8f8;
 	}
+
+	a.search-post-result {
+		font-size: 18px;
+	}
 }
 /* General mobile portrait styles */
 @media (max-width: 500px) and (orientation: portrait) {
@@ -2158,6 +2172,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		top: 50px;
 	}
 
+	#primary-menu a:first-of-type > div {
+		margin-top: 30px;
+	}
+
 }
 /* Blog Mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
@@ -2387,7 +2405,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.searchform-static {
-		
+
 	}
 
 	.search-input {
@@ -2412,26 +2430,26 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		height: 60%;
 		width: 35px;
 	}
-	
+
 	.search-content {
 		padding-left: 10px;
-		padding-right: 15px;
+		padding-right: 10px;
 	}
-	
+
 	.table-pagination {
 		width:100%;
 		margin: 0 auto;
 	}
-	
+
 	.pagination-search {
 		margin-top: 10px;
 		margin-bottom: 25px;
 	}
-	
+
 	.padding-search {
 		padding: 8px 13px 8px 13px;
 	}
-	
+
 	.margin-results-search {
 		margin-bottom: 20px;
 	}
@@ -2449,6 +2467,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin: auto;
 		padding: 6px 12px 6px 12px;
 		background-color: #f8f8f8;
+	}
+
+	a.search-post-result {
+		font-size: 15px;
 	}
 }
 /* Portrait tablets & mobiles */
@@ -2508,6 +2530,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
+	}
+
+	a.search-post-result {
+		font-weight: 700;
+		letter-spacing: 1px;
 	}
 
 }

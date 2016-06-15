@@ -10,6 +10,16 @@
 	}
 	/* End of scrolling fix */
 
+	/* Fix scrolling to Sense */
+	#before_ssense {
+		margin-bottom: -90px !important;
+	}
+
+	#ssense {
+		padding-top: 90px;
+	}
+	/* End of scrolling fix */
+
 	#sassist {
 		padding-bottom: 40px;
 	}
