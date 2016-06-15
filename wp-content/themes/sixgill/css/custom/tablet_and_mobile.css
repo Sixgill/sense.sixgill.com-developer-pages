@@ -57,4 +57,9 @@
 		transform: translateY(-50%);
 	}
 
+	a.search-post-result {
+		font-weight: 700;
+		letter-spacing: 1px;
+	}
+
 }
