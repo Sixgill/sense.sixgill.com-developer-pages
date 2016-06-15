@@ -101,7 +101,7 @@
 		</div>
 
 		<section id="before_board" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
-			<img src="/wp-content/themes/sixgill/images/td/company/00_BoardSection.jpg" style="width: 100%;" alt=""/>
+			<img src="/wp-content/themes/sixgill/images/td/company/00_BoardSection.jpg" class="full-width" alt=""/>
 		</section>
 
 		<a name="board"></a>
@@ -154,7 +154,7 @@
 
 		<div class="clear"></div>
 		<div class="container-fluid clearfix background-f8f8f8 no-margin nopadding">
-			<img src="/wp-content/themes/sixgill/images/td/company/shape3_v5.png" alt="" style="width: 100%;"/>
+			<img src="/wp-content/themes/sixgill/images/td/company/shape3_v5.png" alt="" class="full-width"/>
 		</div>
 
 		<a name="press"></a>

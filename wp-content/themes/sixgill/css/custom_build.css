@@ -178,7 +178,7 @@ label {
 	color: #999999;
 }
 
-.menu-link-selected > div {
+.menu-link-selected > div > div {
 	color: #0051c6 !important;
 }
 
@@ -707,7 +707,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .search-border {
-	outline: 1px solid #e2e2e2;
+	outline: 1px solid #e2e2e2 !important;
 }
 
 .search-button-hitbox {
@@ -1121,7 +1121,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.search-container-compact {
-		height: 50px;
+		height: 48px;
 		width: 354px;
 		margin-right: 20px;
 	}
@@ -1328,7 +1328,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	#primary-menu a div {
 		padding-top: 0px;
-		transform: translateY(50%);
 		bottom: 0px;
 	}
 
@@ -1755,7 +1754,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	#primary-menu a div {
 		padding-top: 0px;
-		transform: translateY(50%);
 		bottom: 0px;
 	}
 
@@ -2421,9 +2419,16 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	#primary-menu a div {
-		transform: translateY(50%);
 		text-align: center;
 		padding: 0px;
+	}
+
+	.mobile-vertical-centered {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
 	}
 
 }
@@ -2658,6 +2663,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	width: 100%;
 }
 
+.max-width-500 {
+	max-width: 500px;
+}
+
 .section-margin-fix {
 	margin-top: -1px !important;
 }
@@ -2665,5 +2674,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .vertical-centered {
 	position: relative;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }

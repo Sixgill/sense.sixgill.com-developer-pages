@@ -61,7 +61,7 @@
 }
 
 .search-border {
-	outline: 1px solid #e2e2e2;
+	outline: 1px solid #e2e2e2 !important;
 }
 
 .search-button-hitbox {
