@@ -26,7 +26,7 @@
 
 
 		<section class="container-fluid center clearfix no-margin nopadding section-margin-fix">
-			<img src="/wp-content/themes/sixgill/images/td/product_fig1.png" alt="" style="width: 100%;"/>
+			<img src="/wp-content/themes/sixgill/images/td/product_fig1.png" alt="" class="full-width"/>
 		</section>
 
 		<a name="ssense"></a>
@@ -80,7 +80,7 @@
 		</section>
 
 		<section id="before_ssdk" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
-			<img src="/wp-content/themes/sixgill/images/td/product_fig2.png" alt="" style="width: 100%;"/>
+			<img src="/wp-content/themes/sixgill/images/td/product_fig2.png" alt="" class="full-width"/>
 		</section>
 
 		<a name="ssdk"></a>
@@ -103,7 +103,7 @@
 					<?php endif; ?>
 				</div>
 			</div>
-			<img src="/wp-content/themes/sixgill/images/td/product_fig3.png" alt="" style="width: 100%;"/>
+			<img src="/wp-content/themes/sixgill/images/td/product_fig3.png" alt="" class="full-width"/>
 		</section>
 
 		<a name="sassist"></a>
