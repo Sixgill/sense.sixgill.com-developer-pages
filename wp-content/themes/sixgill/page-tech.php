@@ -28,14 +28,14 @@
 
     <div class="clear"></div>
     <div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-      <img src="/wp-content/themes/sixgill/images/td/tech/00_Shape1.jpg" alt="" style="width: 100%;"/>
+      <img src="/wp-content/themes/sixgill/images/td/tech/00_Shape1.jpg" alt="" class="full-width"/>
     </div>
 
     <a name="location"></a>
     <div id="location" class="container-fluid background-white clearfix no-margin nopadding">
       <div class="container-fluid center clearfix my_containerSolution">
         <div class="col_full">
-					<img src="<?php echo get_field('image_1_header'); ?>" alt="" style="max-width:500px; width: 100%;"/>
+					<img src="<?php echo get_field('image_1_header'); ?>" alt="" class="full-width max-width-500"/>
 				</div>
         <div class="col_one_third my_boxTech_image hidden-top-imageTech">
 					<img src="<?php echo get_field('image_1_tech'); ?>" alt=""/>
@@ -53,14 +53,14 @@
 
 	  <div class="clear"></div>
 	  <div class="container-fluid background-white clearfix no-margin nopadding">
-	    <img src="/wp-content/themes/sixgill/images/td/tech/shape2.png" alt="" style="width: 100%;" />
+	    <img src="/wp-content/themes/sixgill/images/td/tech/shape2.png" alt="" class="full-width"/>
 	  </div>
 
 	  <a name="proximity"></a>
 	  <div id="proximity" class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
 	    <div class="container-fluid center clearfix my_containerSolution">
 	      <div class="col_full">
-					<img src="<?php echo get_field('image_2_header'); ?>" alt="" class="full-width" style="max-width:500px;"/>
+					<img src="<?php echo get_field('image_2_header'); ?>" alt="" class="full-width max-width-500"/>
 				</div>
 	      <div class="col_two_third text-right-col-noline col_last">
 	        <div class="my_txtSolution">
@@ -75,7 +75,7 @@
 
 	<div class="clear"></div>
 	<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-	  <img src="/wp-content/themes/sixgill/images/td/tech/shape3.png" alt="" style="width: 100%;" />
+	  <img src="/wp-content/themes/sixgill/images/td/tech/shape3.png" alt="" class="full-width" />
 	</div>
 
 
@@ -83,7 +83,7 @@
 	  <div id="openplatform" class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
 	    <div class="container-fluid center clearfix my_containerSolution">
 	      <div class="col_full">
-					<img src="<?php echo get_field('image_3_header'); ?>" alt="" style="max-width:500px; width: 100%;"/>
+					<img src="<?php echo get_field('image_3_header'); ?>" alt="" class="full-width max-width-500"/>
 				</div>
 	      <div class="col_one_third my_boxTech_image hidden-top-imageTech">
 					<img src="<?php echo get_field('image_3_tech'); ?>" alt=""/>

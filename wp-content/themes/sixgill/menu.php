@@ -12,7 +12,9 @@
 				$html .= 'href="'.$link.'">';
 			}
 				$html .= '<div class="menu-'.$listSize.'-with-search">';
-					$html .= $elementName;
+					$html .= '<div class="mobile-vertical-centered">';
+						$html .= $elementName;
+					$html .= '</div>';
 				$html .= '</div>';
 			$html .= '</a>';
 			if($isExpanded) {
@@ -27,7 +29,9 @@
 		} else {
 			$html .= '<a href="'.$link.'">';
 				$html .= '<div class="menu-'.$listSize.'-with-search">';
-					$html .= $elementName;
+					$html .= '<div class="mobile-vertical-centered">';
+						$html .= $elementName;
+					$html .= '</div>';
 				$html .= '</div>';
 			$html .= '</a>';
 		}

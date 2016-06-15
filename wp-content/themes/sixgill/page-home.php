@@ -57,7 +57,7 @@
 		</section>
 
 		<section id="after_what2" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
-			<img id="home-image-background-after_what2" src="/wp-content/themes/sixgill/images/td/home/00_FocusSection_v2.jpg" style="width: 100%;" alt=""/>
+			<img id="home-image-background-after_what2" src="/wp-content/themes/sixgill/images/td/home/00_FocusSection_v2.jpg" class="full-width" alt=""/>
 		</section>
 
 	</section>
@@ -78,7 +78,7 @@
 	</section>
 
 	<section id="after_products" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
-		<img id="home-background-after-products" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Upper.jpg" style="width: 100%;" alt=""/>
+		<img id="home-background-after-products" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Upper.jpg" class="full-width" alt=""/>
 	</section>
 
 	<a name="solutions"></a>
@@ -126,7 +126,7 @@
 	</section>
 
 	<section id="before_clients" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
-		<img id="home-image-background-before_clients" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Lower.jpg" style="width: 100%;" alt=""/>
+		<img id="home-image-background-before_clients" src="/wp-content/themes/sixgill/images/td/home/00_IconsSection_Lower.jpg" class="full-width" alt=""/>
 	</section>
 
 	<a name="clients"></a>
