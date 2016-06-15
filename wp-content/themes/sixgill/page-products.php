@@ -14,8 +14,8 @@
 <section id="content" class="section-margin-fix">
 	<div class="content-wrap no-bottom-padding">
 		<div class="header-stick no-border background-f8f8f8">
-			<div class="container-fluid no-border center clearfix" style="padding-top:75px; max-width:1100px;">
-				<div class="col_one_third title-left-col">
+			<div class="container-fluid no-border center clearfix products-content-spacing" style="max-width:1100px;">
+				<div class="col_one_third title-left-col products-top-title-spacing">
 					<?php echo get_field('title_header'); ?>
 				</div>
 				<div class="col_two_third col_last text-left text-right-col">
