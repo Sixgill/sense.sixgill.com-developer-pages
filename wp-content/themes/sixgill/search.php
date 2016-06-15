@@ -13,7 +13,7 @@
 		<section class="header-stick search-content">
 			<div class="container-fluid clearfix search-container no-padding-left no-padding-right">
 				<?php $countResults =  $wp_query->found_posts;?>
-				<p class="no-margin text-search-results" style="line-height: 1.5;"><?php if ($countResults > 1) {
+				<p class="no-margin text-search-results line-height-results"><?php if ($countResults > 1) {
 					echo "Search Results";
 				?>
 				</p> <p class="color-999999 margin-results-search"> <?php echo $countResults; ?> Results </p> <?php
@@ -32,13 +32,21 @@
 				endif;
 				?>
 
-				<div id="pagination" class="pagination-search">
+
+				<div id="pagination" class="pagination-search no-desktop-display no-tablet-display">
+					<?php
+						if (function_exists("pagination")) {
+							pagination($wp_query->max_num_pages, 1);
+						}
+					?>
+				</div>
+				<div id="pagination" class="pagination-search no-mobile-portrait-display">
 					<?php
 						if (function_exists("pagination")) {
 							pagination($wp_query->max_num_pages);
 						}
 					?>
-				</div>
+				</div>	
 			</div>
 		</section>
 	</div>
