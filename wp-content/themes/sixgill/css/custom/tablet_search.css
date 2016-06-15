@@ -65,4 +65,8 @@
 	a.search-post-result {
 		font-size: 18px;
 	}
+
+	.search-result-section {
+		margin-top: 81px;
+	}
 }
