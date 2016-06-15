@@ -144,4 +144,8 @@
 	.menu-8-with-search {
 		height: calc((100% - 72px) / 8);
 	}
+
+	#slider {
+		margin-top: 28px !important;
+	}
 }

@@ -64,6 +64,10 @@
 		color: #444;
 	}
 
+	.my_containerSolution{
+		padding-top: 45px;
+	}
+
 	.my_containerSolution_indent {
 		margin-right: 50px;
 		margin-left: 80px;

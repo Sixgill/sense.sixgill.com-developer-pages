@@ -8,4 +8,10 @@
 	#board {
 		padding-top: 145px;
 	}
+	/* Menu scroll fix end */
+
+	.company-top-spacing {
+		padding-top: 75px;
+		max-width: 1100px;
+	}
 }
