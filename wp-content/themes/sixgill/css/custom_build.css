@@ -1627,6 +1627,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		width: 100%;
 		background-color: #f8f8f8;
 		padding: 8px 16px 8px 16px;
+		margin-top: 5px;
 	}
 
 	.search-input-static {
@@ -2034,6 +2035,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.margin-table-search {
 		margin-top: 0px;
 	}
+
+	.menu-search-mobile-tablet {
+		margin-top: 12px;
+	}
 }
 /* General Mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
@@ -2205,7 +2210,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.menu-search-mobile-tablet {
-		margin-top: 15px;
+		margin-top: 14px;
 	}
 
 }
@@ -2355,10 +2360,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.menu-search-mobile-tablet {
-		height: 58px;
+		height: 55px;
 		width: 100%;
 		background-color: #f8f8f8;
-		padding: 7px 12px 7px 12px;
+		padding: 6px 12px 6px 12px;
 	}
 
 	.searchform-result {
