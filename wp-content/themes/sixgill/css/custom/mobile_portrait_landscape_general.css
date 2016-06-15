@@ -30,4 +30,13 @@
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+
+	.text-right-col, .text-right-col-noline {
+		border-left: 0px;
+		padding-left: 0px;
+	}
+
+	.container-fluid {
+		padding-left: 25px;
+	}
 }

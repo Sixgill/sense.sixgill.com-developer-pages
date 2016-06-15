@@ -665,18 +665,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	height: 30px;
 }
 
-.pagination-image-right, .pagination-number {
-	margin-left: 10px;
-}
-
-.current, .current-link {
-	margin-right: 10px;
-}
-
-.pagination-number, .pagination-image-left, .pagination-image-right {
-	margin-right: 20px;
-}
-
 .current-link, .pagination-number {
 	color: black;
 }
@@ -1722,11 +1710,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding:0px;
 	}
 
-	.text-right-col {
-		border-left:0px;
-		padding-left:10px;
-	}
-
 	.footer-learn-text, .footer-links-block {
 		text-align:center;
 		font-size:14px;
@@ -1862,7 +1845,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	#slider {
-		margin-top: 28px !important;
+		margin-top: 70px !important;
 	}
 }
 /* Blog mobile portrait styles */
@@ -2325,12 +2308,31 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+
+	.text-right-col, .text-right-col-noline {
+		border-left: 0px;
+		padding-left: 0px;
+	}
+
+	.container-fluid {
+		padding-left: 25px;
+	}
 }
 /* Blog mobile portrait and landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (orientation: portrait) {
 
 	.share-buttons-top {
 		display: block;
+	}
+
+	.blog-container {
+		margin-left: 0px;
+		margin-right: 0px;
+		max-width: none !important;
+	}
+
+	.h1-blog {
+		margin-bottom: 18px;
 	}
 }
 /* Company mobile portrait and landscape styles */
@@ -2544,11 +2546,18 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		transform: translateY(-50%);
 	}
 
+	.pagination-image-right {
+		padding-left: 20px;
+	}
+
+	.pagination-image-left {
+		padding-right: 20px;
+	}
+
 	a.search-post-result {
 		font-weight: 700;
 		letter-spacing: 1px;
 	}
-
 }
 /* For laptops: */
 @media (min-width: 1000px) and (max-width: 1650px) {

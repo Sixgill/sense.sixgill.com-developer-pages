@@ -165,12 +165,12 @@
 
 		if(1 != $pages) {
 			if($paged > 1 ) {
-				echo "<td style=\"width:".$paddingPagination."%;text-align: left;\">";
+				echo "<td style=\"width:".$paddingPagination."%;\">";
 				echo "<a href='".get_pagenum_link($paged - 1)."'> <img src=\"/wp-content/themes/sixgill/images/icons/left-page.png\" class=\"pagination-image-left\"></a>";
 				echo "</td>";
 
 			} else {
-				echo "<td style=\"width:".$paddingPagination."%;text-align: left;\">";
+				echo "<td style=\"width:".$paddingPagination."%;\">";
 				echo "<img src=\"/wp-content/themes/sixgill/images/icons/left-no-page.png\" class=\"pagination-image-left\">";
 				echo "</td>";
 			}
@@ -194,7 +194,7 @@
 				echo "</td>";
 			}
 			
-			echo "<td style=\"width:".$paddingPagination."%;text-align: right; \">";
+			echo "<td style=\"width:".$paddingPagination."%;\">";
 
 			if ($paged < $pages ) {
 				echo "<a href=\"".get_pagenum_link($paged + 1)."\"> <img src=\"/wp-content/themes/sixgill/images/icons/right-page.png\" class=\"pagination-image-right\"> </a>";
