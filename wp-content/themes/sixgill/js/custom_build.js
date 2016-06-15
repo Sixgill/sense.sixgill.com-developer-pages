@@ -490,14 +490,14 @@ jQuery(function($) {
 		return validationResult;
 	}
 
-	$('.search-container-static').each(function(){
-		var currentSearchQuery = $(this).find('.search-input-static').val();
-		var currentSearchForm = $(this).find('.searchform-static');
-		$(this).find('.search-button-hitbox').click(function() {
-			if(validateSearchQuery(currentSearchQuery)) {
-				currentSearchForm.submit();
+	$('.search-button-hitbox').each(function() {
+		var searchForm = $(this).parent();
+		var searchQueryInput = searchForm.find('input[name="s"]');
+		$(this).click(function(){
+			if(validateSearchQuery(searchQueryInput.val())) {
+				searchForm.submit();
 			}
-		})
+		});
 	});
 
 	function openSearchForm(searchInput, searchContainer) {
