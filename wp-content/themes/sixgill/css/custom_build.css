@@ -620,6 +620,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .resources-page-background {
 	background-color: #004cbf;
 }
+
+.yikes-easy-mc-submit-button {
+	display: inline-block !important;
+}
 #tech-page-header-background {
 	background-image: url('/wp-content/themes/sixgill/images/td/hero/dollarphotoclub_77872129_web.jpg'); 
 	background-position: center bottom;
