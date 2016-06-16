@@ -19,4 +19,12 @@
 	.solutions-top-title-spacing {
 		margin-bottom: 11px;
 	}
+
+	.iconSolutions {
+		width: 115px;
+	}
+
+	.my_boxSolution_title {
+		border:0px;
+	}
 }
