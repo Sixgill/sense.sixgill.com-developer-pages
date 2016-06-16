@@ -1,5 +1,5 @@
 /* Blog tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.form-page-search {
 		margin: 0 auto;
 		margin-top: 150px;

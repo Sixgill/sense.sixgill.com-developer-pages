@@ -41,6 +41,7 @@
 
 	#primary-menu a div {
 		height: 70px;
+		font-size: 18px;
 	}
 
 	#primary-menu a:last-of-type div {
@@ -63,14 +64,17 @@
 		padding-bottom: 18px;
 	}
 
-	/* TEMP FIX */
-	
 	#primary-menu a:first-of-type > div {
 		margin-top: 30px;
 	}
 
 
 	.footer-learn-text, .footer_Schedule {
+		text-align: center;
+	}
+
+	.footer-links-block, .footer_Copy {
+		width: 100%;
 		text-align: center;
 	}
 
