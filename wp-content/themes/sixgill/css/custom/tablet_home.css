@@ -1,5 +1,5 @@
 /* Home tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.homeSupTit-with-line {
 		background-color: #fff;
 		z-index:2;

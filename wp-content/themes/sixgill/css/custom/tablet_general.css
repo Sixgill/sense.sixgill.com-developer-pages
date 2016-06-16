@@ -1,9 +1,5 @@
 /* General tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
-
-	#primary-menu a div {
-		font-size:18px;
-	}
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 
 	.global-social-buttons-separator {
 		margin-top: 60px;
@@ -158,6 +154,7 @@
 	#primary-menu a div {
 		padding-top: 0px;
 		bottom: 0px;
+		font-size: 18px;
 	}
 
 	.menu-4 {
