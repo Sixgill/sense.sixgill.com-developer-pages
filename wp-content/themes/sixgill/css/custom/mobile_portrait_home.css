@@ -1,5 +1,5 @@
 /* Home mobile portrait styles */
-@media (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 500px) and (max-aspect-ratio: 4/3) {
 	.logo-subheader {
 		font-size: 15px;
 		color: #383838;
@@ -8,11 +8,6 @@
 
 	.video-wrap video {
 		width: initial;
-	}
-
-	.homeSupTit-with-line {
-		background-color: #fff;
-		z-index:2;
 	}
 
 	.home-diagram {
@@ -32,14 +27,20 @@
 		padding-left: 0.3em;
 		padding-right: 0.3em;
 	}
-	
+
 	.home-diagram {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	
+
 	.video-wrap video {
-		height: 100%;	
+		height: 100%;
+	}
+
+	.hr-home-sup-title {
+		max-width: 400px;
+		margin-right: 10px;
+
 	}
 
 }

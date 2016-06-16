@@ -24,10 +24,6 @@
 		width: 100% !important;
 	}
 
-	.hr-home-sup-title {
-		max-width: 600px;
-	}
-
 	.hide-landscape-mobile {
 		display: none;
 	}
@@ -75,4 +71,8 @@
 		font-weight: normal;
 	}
 
+	.homeSupTit-with-line {
+		background-color: #fff;
+		z-index:2;
+	}
 }

@@ -1,5 +1,5 @@
 /* General tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
+@media (min-width: 500px) and (max-width: 1000px) and (max-aspect-ratio: 4/3) {
 
 	.global-social-buttons-separator {
 		margin-top: 60px;
@@ -49,11 +49,6 @@
 
 	.title-left-col {
 		text-align:left;
-	}
-
-	.homeSupTit-with-line {
-		background-color: #fff;
-		z-index:2;
 	}
 
 	.widgettitle {
