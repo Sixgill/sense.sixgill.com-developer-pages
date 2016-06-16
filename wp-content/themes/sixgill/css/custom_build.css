@@ -2846,4 +2846,5 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	transform
+	transform: translateY(-50%);
+}
