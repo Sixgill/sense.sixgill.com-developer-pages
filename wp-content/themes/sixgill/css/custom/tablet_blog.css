@@ -1,5 +1,5 @@
 /* Blog tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.subscribe-input-container {
 		overflow: hidden;
 		width: 100%;

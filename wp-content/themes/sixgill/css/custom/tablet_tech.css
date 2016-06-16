@@ -1,5 +1,5 @@
 /* Tech tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.tech-top-spacing {
 		padding-top: 20px;
 		max-width: 950px;
