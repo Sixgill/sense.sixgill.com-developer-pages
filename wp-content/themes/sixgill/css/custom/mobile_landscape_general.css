@@ -78,4 +78,9 @@
 		text-align: center;
 	}
 
+	.menu-social-link {
+		padding-right: 33px !important;
+		padding-left: 33px !important;
+	}
+
 }
