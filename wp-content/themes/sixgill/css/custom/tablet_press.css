@@ -1,5 +1,5 @@
 /* Press tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
+@media (min-width: 500px) and (max-width: 1000px) and (max-aspect-ratio: 4/3) {
 	.press-block-title {
 		font-size: 18px;
 		color:#383838;

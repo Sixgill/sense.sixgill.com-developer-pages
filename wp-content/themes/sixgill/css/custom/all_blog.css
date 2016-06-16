@@ -28,6 +28,11 @@
 .subscribe-block-tablet-mobile {
 	background-color: #f0f0f0;
 	width: 100%;
+	height: inherit;
+}
+
+.subscribe-block-tablet-mobile form {
+	margin: 0 auto !important;
 }
 
 .subscribe-success-icon {
