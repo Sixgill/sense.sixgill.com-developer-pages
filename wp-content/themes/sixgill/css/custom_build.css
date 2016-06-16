@@ -2706,7 +2706,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 @media (min-width: 480px) and (max-width: 767px) {
 	.company-top-spacing {
-		
+			padding-top: 15px;
 	}
 }
 .background-f8f8f8 {
