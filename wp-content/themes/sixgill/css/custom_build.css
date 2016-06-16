@@ -505,11 +505,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin-bottom: 10px;
 	font-family: "Lato";
 }
-
-.homeSupTit-with-line {
-	background-color: #fff;
-	z-index:2;
-}
 .solutions-subpage-text, .solutions-subpage-thumbnail {
 	text-align: left;
 	display: inline-block;
@@ -1998,21 +1993,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		top: 20px;
 	}
 
-	.my_headerBoxSolution {
-		display: none;
-	}
-
 	.my_boxSolution_title {
 		padding-left: 0px;
 	}
 
-	.my_boxSolution_title {
-		border:0px;
-	}
-	
 	.thumbnail-solutions-mobile {
 		width: 100%;
 		text-align: center;
+	}
+
+	.iconSolutions {
+		margin-right: 15px;
 	}
 }
 /* Resources mobile portrait styles */
@@ -2329,7 +2320,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 }
 /* General mobile portrait and landscape styles */
-@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {
+@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (orientation: portrait) {
 
 	.shareIcons-desktop {
 		display: none;
@@ -2370,6 +2361,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-left: 25px;
 	}
 
+	.menu-social-link {
+		padding-right: 22px !important;
+		padding-left: 22px !important;
+	}
+
 	.menu-social-link:first-child {
 		padding-left: 0px !important;
 	}
@@ -2380,12 +2376,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.company-h1, .solutions-h1, .products-h1 {
 		font-size: 30px;
-    }
-	.global-social-buttons-separator {
-		margin-top: 46px;
-		margin-bottom: 18px;
-		margin-left: 18px;
-		margin-right: 18px;
 	}
 }
 /* Blog mobile portrait and landscape styles */
@@ -2445,7 +2435,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.iconSolutions {
-		width: 115px;	
+		width: 115px;
+	}
+
+	.my_boxSolution_title {
+		border:0px;
 	}
 }
 /* Resources mobile portrait and landscape styles */
