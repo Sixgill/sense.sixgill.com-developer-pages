@@ -20,7 +20,7 @@
 		padding-left: 5px !important;
     padding-right: 15px !important;
 	}
-	
+
 	.subscribe-block-tablet-mobile {
 		padding: 40px 25px 20px 30px;
 		margin: 0px auto;
@@ -29,7 +29,7 @@
 		text-align: center;
 		font-size: 18px;
 	}
-	
+
 	.subscribe-input-container {
 		overflow: hidden;
 		width: 100%;
@@ -42,5 +42,31 @@
 		margin-top: 10px;
 		text-align: center;
 		width: 280px;
+	}
+
+	.subscribe-input-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.subscribe-email {
+		width: 100%;
+	}
+
+	.subscribe-block-tablet-mobile {
+		padding-top: 10px;
+	}
+
+	.subscribe-block-tablet-mobile {
+		padding: 40px 25px 20px 30px;
+	}
+
+	.shareButton-blog {
+		margin-bottom: 10px;
+		height: 35px;
+	}
+
+	#aside-blog {
+		margin-top: 125px;
 	}
 }
