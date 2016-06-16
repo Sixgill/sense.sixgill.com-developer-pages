@@ -1,5 +1,5 @@
 /* General mobile portrait and landscape styles */
-@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {
+@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (orientation: portrait) {
 
 	.shareIcons-desktop {
 		display: none;
@@ -40,6 +40,11 @@
 		padding-left: 25px;
 	}
 
+	.menu-social-link {
+		padding-right: 22px !important;
+		padding-left: 22px !important;
+	}
+
 	.menu-social-link:first-child {
 		padding-left: 0px !important;
 	}
@@ -48,10 +53,7 @@
 		padding-right: 0px !important;
 	}
 
-	.global-social-buttons-separator {
-		margin-top: 46px;
-		margin-bottom: 18px;
-		margin-left: 18px;
-		margin-right: 18px;
+	.company-h1, .solutions-h1, .products-h1 {
+		font-size: 30px;
 	}
 }

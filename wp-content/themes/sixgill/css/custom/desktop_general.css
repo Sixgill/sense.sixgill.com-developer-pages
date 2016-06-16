@@ -117,4 +117,9 @@
 	#sidebar-floating {
 		top: 150px;
 	}
+
+	.company-h1, .products-h1, .solutions-h1 {
+		font-size: 30px;
+		text-align: right;
+	}
 }
