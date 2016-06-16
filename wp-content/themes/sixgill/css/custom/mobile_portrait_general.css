@@ -1,5 +1,5 @@
 /* General mobile portrait styles */
-@media (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 500px) and (max-aspect-ratio: 4/3) {
 	.title-left-col {
 		font-size:30px;
 		font-weight:bold;

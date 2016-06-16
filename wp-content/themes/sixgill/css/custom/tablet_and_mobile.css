@@ -24,10 +24,6 @@
 		width: 100% !important;
 	}
 
-	.hr-home-sup-title {
-		max-width: 600px;
-	}
-
 	.hide-landscape-mobile {
 		display: none;
 	}
@@ -68,5 +64,10 @@
 	a.search-post-result {
 		font-weight: 700;
 		letter-spacing: 1px;
+	}
+
+	.homeSupTit-with-line {
+		background-color: #fff;
+		z-index:2;
 	}
 }

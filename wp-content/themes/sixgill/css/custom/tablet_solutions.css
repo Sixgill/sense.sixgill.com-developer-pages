@@ -1,5 +1,5 @@
 /* Solutions tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
+@media (min-width: 500px) and (max-width: 1000px) and (max-aspect-ratio: 4/3) {
 	.solution-subpage-container {
 		margin-left: 70px;
 		margin-right: 40px;

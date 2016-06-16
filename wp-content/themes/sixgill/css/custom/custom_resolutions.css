@@ -76,7 +76,6 @@
 
 /* For share botton on blog: */
 @media (min-width: 1001px) and (max-width: 1300px) {
-
 	.my_containerSolution {
 		margin-left: 60px;
 	}
@@ -89,20 +88,12 @@
 	}
 }
 
-@media (min-width: 480px) and (max-width: 515px) {
-	.subscribe-block-tablet-mobile {
-		height: 130px;
-	}
-}
-
-@media (min-width: 480px) and (max-width: 515px) {
-	.subscribe-block-tablet-mobile {
-		height: 130px;
-	}
-}
-
 @media (min-width: 480px) and (max-width: 767px) {
 	.company-top-spacing {
 			padding-top: 15px;
 	}
+}
+
+@media (min-width: 535px) and (max-width: 1000px) {
+	
 }
