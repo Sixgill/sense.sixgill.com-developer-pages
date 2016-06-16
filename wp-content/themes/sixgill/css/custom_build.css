@@ -327,6 +327,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .subscribe-block-tablet-mobile {
 	background-color: #f0f0f0;
 	width: 100%;
+	height: inherit;
+}
+
+.subscribe-block-tablet-mobile form {
+	margin: 0 auto !important;
 }
 
 .subscribe-success-icon {
@@ -1439,7 +1444,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.subscribe-block-tablet-mobile {
 		padding: 40px 50px 20px 80px;
 		margin: 0px auto;
-		height: 195px;
 		width: 100%;
 		text-align: center;
 		font-size: 18px;
@@ -1747,13 +1751,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		line-height: 1.5em !important;
 	}
 
-	.global-social-buttons-separator {
-		margin-top: 46px;
-		margin-bottom: 18px;
-		margin-left: 18px;
-		margin-right: 18px;
-	}
-
 	.global-social-buttons-container {
 		text-align: center;
 		position: fixed;
@@ -1844,6 +1841,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	#slider {
 		margin-top: 70px !important;
 	}
+
+	.menu-social-link {
+		padding-right: 22px !important;
+		padding-left: 22px !important;
+	}
 }
 /* Blog mobile portrait styles */
 @media (max-width: 500px) and (max-aspect-ratio: 4/3) {
@@ -1876,7 +1878,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.subscribe-block-tablet-mobile {
 		padding: 15px 18px 25px 19px !important;
 		margin: 0px auto;
-		height: 210px;
 		width: 100%;
 		text-align: center;
 		font-size: 18px;
@@ -2171,6 +2172,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		text-align: center;
 	}
 
+	.menu-social-link {
+		padding-right: 33px !important;
+		padding-left: 33px !important;
+	}
+
 }
 /* Blog Mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
@@ -2191,7 +2197,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding: 40px 15px 20px 5px;
 		margin: 0px auto;
 		width: 100%;
-		height: 160px;
 		text-align: center;
 		font-size: 18px;
 	}
@@ -2340,17 +2345,19 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-left: 25px;
 	}
 
-	.menu-social-link {
-		padding-right: 22px !important;
-		padding-left: 22px !important;
-	}
-
 	.menu-social-link:first-child {
 		padding-left: 0px !important;
 	}
 
 	.menu-social-link:last-child {
 		padding-right: 0px !important;
+	}
+
+	.global-social-buttons-separator {
+		margin-top: 46px;
+		margin-bottom: 18px;
+		margin-left: 18px;
+		margin-right: 18px;
 	}
 }
 /* Blog mobile portrait and landscape styles */
@@ -2696,10 +2703,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.company-top-spacing {
 			padding-top: 15px;
 	}
-}
-
-@media (min-width: 535px) and (max-width: 1000px) {
-	
 }
 .background-f8f8f8 {
 	background-color: #f8f8f8;

@@ -33,13 +33,6 @@
 		line-height: 1.5em !important;
 	}
 
-	.global-social-buttons-separator {
-		margin-top: 46px;
-		margin-bottom: 18px;
-		margin-left: 18px;
-		margin-right: 18px;
-	}
-
 	.global-social-buttons-container {
 		text-align: center;
 		position: fixed;
@@ -129,5 +122,10 @@
 
 	#slider {
 		margin-top: 70px !important;
+	}
+
+	.menu-social-link {
+		padding-right: 22px !important;
+		padding-left: 22px !important;
 	}
 }
