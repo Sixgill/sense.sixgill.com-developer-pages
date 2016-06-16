@@ -39,4 +39,17 @@
 	.container-fluid {
 		padding-left: 25px;
 	}
+
+	.menu-social-link {
+		padding-right: 22px !important;
+		padding-left: 22px !important;
+	}
+
+	.menu-social-link:first-child {
+		padding-left: 0px !important;
+	}
+
+	.menu-social-link:last-child {
+		padding-right: 0px !important;
+	}
 }

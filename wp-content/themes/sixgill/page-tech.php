@@ -19,7 +19,7 @@
 				<div class="col_one_third title-left-col center no-bottom-margin tech-top-header">
 					<?php echo get_field('top_header'); ?>
 				</div>
-				<div class="col_two_third col_last text-left text-right-col">
+				<div class="col_two_third col_last text-left text-right-col tech-top-text">
 					<?php echo get_field('top_paragraph'); ?>
 				</div>
 			</div>

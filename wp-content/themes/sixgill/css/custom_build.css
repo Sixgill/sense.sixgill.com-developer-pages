@@ -1478,8 +1478,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 /* Company tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
 	.company-top-spacing {
-		padding-top: 75px;
+		padding-top: 20px;
 		max-width: 1100px;
+	}
+
+	.company-top-title-spacing {
+		padding-right: 0;
+		padding-left: 20px;
+		margin-bottom: 18px;
 	}
 }
 /* Home tablet styles */
@@ -1598,6 +1604,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.tech-top-header > p {
 		display: inline-block !important;
 	}
+
+	.tech-top-text {
+		padding-left: 40px;
+	}
+
+	.tech-top-header {
+		padding-left: 15px;
+	}
 }
 /* Press tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
@@ -1627,7 +1641,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 /* Products tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
 	.products-content-spacing {
-		padding-top: 20px;
+		padding-top: 10px;
 	}
 }
 /* Blog tablet styles */
@@ -1757,19 +1771,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-right: 15px;
 	}
 
-	.menu-social-link {
-		padding-right: 22px !important;
-		padding-left: 22px !important;
-	}
-
-	.menu-social-link:first-child {
-		padding-left: 0px !important;
-	}
-
-	.menu-social-link:last-child {
-		padding-right: 0px !important;
-	}
-
 	.footer-links-block,
 	.footer_Copy {
 		width: 100%;
@@ -1796,7 +1797,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		top: 68px;
 		left: 0px;
 		right: 0px;
-		bottom: 65px;
+		bottom: 0px;
 	}
 
 	#primary-menu a div {
@@ -2112,6 +2113,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-left: 0px;
 		padding-right: 0px;
 		padding-bottom: 0px;
+		text-align: center;
 	}
 
 	#header {
@@ -2143,7 +2145,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	#primary-menu > ul {
     left: 0px;
-    top: 71px;
+    top: 0px;
     position: absolute;
     width: 100%;
 	}
@@ -2158,13 +2160,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	/* TEMP FIX */
-
-	#primary-menu > ul {
-		top: 50px;
-	}
-
+	
 	#primary-menu a:first-of-type > div {
 		margin-top: 30px;
+	}
+
+
+	.footer-learn-text, .footer_Schedule {
+		text-align: center;
 	}
 
 }
@@ -2190,7 +2193,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-left: 5px !important;
     padding-right: 15px !important;
 	}
-	
+
 	.subscribe-block-tablet-mobile {
 		padding: 40px 25px 20px 30px;
 		margin: 0px auto;
@@ -2199,7 +2202,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		text-align: center;
 		font-size: 18px;
 	}
-	
+
 	.subscribe-input-container {
 		overflow: hidden;
 		width: 100%;
@@ -2212,6 +2215,32 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-top: 10px;
 		text-align: center;
 		width: 280px;
+	}
+
+	.subscribe-input-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.subscribe-email {
+		width: 100%;
+	}
+
+	.subscribe-block-tablet-mobile {
+		padding-top: 10px;
+	}
+
+	.subscribe-block-tablet-mobile {
+		padding: 40px 25px 20px 30px;
+	}
+
+	.shareButton-blog {
+		margin-bottom: 10px;
+		height: 35px;
+	}
+
+	#aside-blog {
+		margin-top: 125px;
 	}
 }
 /* Home Mobile landscape styles */
@@ -2317,6 +2346,19 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.container-fluid {
 		padding-left: 25px;
 	}
+
+	.menu-social-link {
+		padding-right: 22px !important;
+		padding-left: 22px !important;
+	}
+
+	.menu-social-link:first-child {
+		padding-left: 0px !important;
+	}
+
+	.menu-social-link:last-child {
+		padding-right: 0px !important;
+	}
 }
 /* Blog mobile portrait and landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (orientation: portrait) {
@@ -2359,12 +2401,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.my_containerSolution {
-		padding-top: 28px;
+		padding-top: 19px;
 		margin-top: 0px;
 	}
 
 	.solutions-top-title-spacing {
-		margin-bottom: 20px;
+		margin-bottom: 11px;
 	}
 }
 /* Resources mobile portrait and landscape styles */
@@ -2395,11 +2437,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 /* Products mobile portrait and landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (orientation: portrait) {
 	.products-content-spacing {
-		padding-top: 10px;
+		padding-top: 0px;
 	}
 
 	.products-top-title-spacing {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 }
 /* Search mobile portrait and landscape styles */
@@ -2628,7 +2670,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.container-slidebar {
 		width: 35%;
 	}
-	
+
 	.search-content {
 		padding-left: 25px;
 		padding-right: 25px;
@@ -2656,40 +2698,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 
-/* mobile landscape */
-@media (max-width: 667px) and (max-height: 400px) {
-	#aside-blog {
-		margin-top: 125px;
-	}
-
-	.shareButton-blog {
-		margin-bottom: 10px;
-		height: 35px;
-	}
-
+@media (min-width: 480px) and (max-width: 515px) {
 	.subscribe-block-tablet-mobile {
-		padding: 40px 25px 20px 30px;
+		height: 130px;
 	}
-
-	.footer-learn-text, .footer_Schedule {
-		text-align: center;
-	}
-	
 }
 
-/* Small lanscape screen */
-@media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
-	.subscribe-input-container {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-	.subscribe-email {
-		width: 100%;
-	}
-
-	.subscribe-block-tablet-mobile {
-		padding-top: 10px;
+@media (min-width: 480px) and (max-width: 767px) {
+	.company-top-spacing {
+		
 	}
 }
 .background-f8f8f8 {

@@ -1,6 +1,6 @@
 /* Products tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) {
 	.products-content-spacing {
-		padding-top: 20px;
+		padding-top: 10px;
 	}
 }
