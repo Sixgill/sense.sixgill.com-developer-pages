@@ -21,6 +21,10 @@
 	}
 
 	.iconSolutions {
-		width: 115px;	
+		width: 115px;
+	}
+
+	.my_boxSolution_title {
+		border:0px;
 	}
 }
