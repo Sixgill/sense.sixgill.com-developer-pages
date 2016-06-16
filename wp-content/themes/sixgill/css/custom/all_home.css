@@ -82,7 +82,7 @@
 	padding-bottom: 20px;
 }
 
-.homeSupTit-with-line {
-	background-color: #fff;
-	z-index:2;
+.home-video-text-h1 {
+	margin-bottom: 10px;
+	font-family: "Lato";
 }

@@ -16,7 +16,7 @@
 		<div class="header-stick no-border background-f8f8f8">
 			<div class="container-fluid no-border center clearfix products-content-spacing" style="max-width:1100px;">
 				<div class="col_one_third title-left-col products-top-title-spacing">
-					<?php echo get_field('title_header'); ?>
+					<h1 class="products-h1"><?php echo get_field('title_header'); ?></h1>
 				</div>
 				<div class="col_two_third col_last text-left text-right-col">
 					<?php echo get_field('top_paragraph'); ?>

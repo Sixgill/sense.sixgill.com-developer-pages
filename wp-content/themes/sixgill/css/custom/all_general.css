@@ -297,3 +297,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .mobile-vertical-centered  {
 	padding: 0px !important;
 }
+
+.products-h1, .solutions-h1, .company-h1 {
+	font-family: "Lato", serif, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0051C6;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
