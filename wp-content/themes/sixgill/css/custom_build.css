@@ -1202,11 +1202,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* General tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
-
-	#primary-menu a div {
-		font-size:18px;
-	}
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 
 	.global-social-buttons-separator {
 		margin-top: 60px;
@@ -1361,6 +1357,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	#primary-menu a div {
 		padding-top: 0px;
 		bottom: 0px;
+		font-size: 18px;
 	}
 
 	.menu-4 {
@@ -1423,7 +1420,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 }
 /* Blog tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.subscribe-input-container {
 		overflow: hidden;
 		width: 100%;
@@ -1476,7 +1473,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* Company tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.company-top-spacing {
 		padding-top: 20px;
 		max-width: 1100px;
@@ -1489,7 +1486,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* Home tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.homeSupTit-with-line {
 		background-color: #fff;
 		z-index:2;
@@ -1509,7 +1506,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* Solutions tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.solution-subpage-container {
 		margin-left: 70px;
 		margin-right: 40px;
@@ -1543,7 +1540,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 }
 /* Resources tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.resources-container {
 		padding-top: 20px;
 		padding-bottom: 60px;
@@ -1595,7 +1592,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* Tech tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.tech-top-spacing {
 		padding-top: 20px;
 		max-width: 950px;
@@ -1614,7 +1611,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 }
 /* Press tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.press-block-title {
 		font-size: 18px;
 		color:#383838;
@@ -1639,13 +1636,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 }
 /* Products tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.products-content-spacing {
 		padding-top: 10px;
 	}
 }
 /* Blog tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.form-page-search {
 		margin: 0 auto;
 		margin-top: 150px;
@@ -2137,6 +2134,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	#primary-menu a div {
 		height: 70px;
+		font-size: 18px;
 	}
 
 	#primary-menu a:last-of-type div {
@@ -2159,14 +2157,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-bottom: 18px;
 	}
 
-	/* TEMP FIX */
-	
 	#primary-menu a:first-of-type > div {
 		margin-top: 30px;
 	}
 
 
 	.footer-learn-text, .footer_Schedule {
+		text-align: center;
+	}
+
+	.footer-links-block, .footer_Copy {
+		width: 100%;
 		text-align: center;
 	}
 
@@ -2250,10 +2251,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-right: 15px;
 		padding-top: 0px;
 	}
-	
+
 	.video-wrap video {
 		width: 100%;
 		height: initial;
+	}
+
+	.home-text-2{
+		margin-top: 110px;
 	}
 }
 /* Solutions mobile landscape styles */
@@ -2706,7 +2711,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 @media (min-width: 480px) and (max-width: 767px) {
 	.company-top-spacing {
-		
+			padding-top: 15px;
 	}
 }
 .background-f8f8f8 {

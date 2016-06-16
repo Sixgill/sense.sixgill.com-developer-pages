@@ -1,5 +1,5 @@
 /* Resources tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
 	.resources-container {
 		padding-top: 20px;
 		padding-bottom: 60px;
