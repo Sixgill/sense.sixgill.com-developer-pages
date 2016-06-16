@@ -1,8 +1,8 @@
 /* Home tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
+@media (min-width: 500px) and (max-width: 1000px) and (max-aspect-ratio: 4/3) {
 	.homeSupTit-with-line {
-		background-color: #fff;
-		z-index:2;
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 
 	.home-diagram {
@@ -13,8 +13,12 @@
 	.home-text-2{
 		margin-top:110px;
 	}
-	
+
 	.video-wrap video {
-		height: 100%;	
+		height: 100%;
+	}
+
+	.hr-home-sup-title {
+		max-width: 600px;
 	}
 }

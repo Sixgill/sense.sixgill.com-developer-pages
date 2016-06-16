@@ -81,3 +81,8 @@
 .home-content-bottom-padding {
 	padding-bottom: 20px;
 }
+
+.homeSupTit-with-line {
+	background-color: #fff;
+	z-index:2;
+}

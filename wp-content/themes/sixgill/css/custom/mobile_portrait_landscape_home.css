@@ -1,0 +1,7 @@
+/* Home mobile portrait and landscape styles */
+@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {
+	.homeSupTit-with-line {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}

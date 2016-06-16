@@ -1,8 +1,5 @@
 /* Blog Mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
-	.subscribe-block-tablet-mobile {
-		height: 120px;
-	}
 
 	#aside-blog {
 		display: none;
@@ -17,14 +14,8 @@
 	}
 
 	.subscribe-block-tablet-mobile {
-		padding-left: 5px !important;
-    padding-right: 15px !important;
-	}
-
-	.subscribe-block-tablet-mobile {
-		padding: 40px 25px 20px 30px;
+		padding: 40px 15px 20px 5px;
 		margin: 0px auto;
-		height: 120px;
 		width: 100%;
 		text-align: center;
 		font-size: 18px;
@@ -51,14 +42,6 @@
 
 	.subscribe-email {
 		width: 100%;
-	}
-
-	.subscribe-block-tablet-mobile {
-		padding-top: 10px;
-	}
-
-	.subscribe-block-tablet-mobile {
-		padding: 40px 25px 20px 30px;
 	}
 
 	.shareButton-blog {
