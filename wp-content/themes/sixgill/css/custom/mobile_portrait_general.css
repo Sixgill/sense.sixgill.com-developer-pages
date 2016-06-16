@@ -53,19 +53,6 @@
 		margin-right: 15px;
 	}
 
-	.menu-social-link {
-		padding-right: 22px !important;
-		padding-left: 22px !important;
-	}
-
-	.menu-social-link:first-child {
-		padding-left: 0px !important;
-	}
-
-	.menu-social-link:last-child {
-		padding-right: 0px !important;
-	}
-
 	.footer-links-block,
 	.footer_Copy {
 		width: 100%;
@@ -92,7 +79,7 @@
 		top: 68px;
 		left: 0px;
 		right: 0px;
-		bottom: 65px;
+		bottom: 0px;
 	}
 
 	#primary-menu a div {

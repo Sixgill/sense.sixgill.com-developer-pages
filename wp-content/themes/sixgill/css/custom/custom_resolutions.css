@@ -67,7 +67,7 @@
 	.container-slidebar {
 		width: 35%;
 	}
-	
+
 	.search-content {
 		padding-left: 25px;
 		padding-right: 25px;
@@ -95,39 +95,14 @@
 	}
 }
 
-/* mobile landscape */
-@media (max-width: 667px) and (max-height: 400px) {
-	#aside-blog {
-		margin-top: 125px;
-	}
-
-	.shareButton-blog {
-		margin-bottom: 10px;
-		height: 35px;
-	}
-
+@media (min-width: 480px) and (max-width: 515px) {
 	.subscribe-block-tablet-mobile {
-		padding: 40px 25px 20px 30px;
+		height: 130px;
 	}
-
-	.footer-learn-text, .footer_Schedule {
-		text-align: center;
-	}
-	
 }
 
-/* Small lanscape screen */
-@media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
-	.subscribe-input-container {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-	.subscribe-email {
-		width: 100%;
-	}
-
-	.subscribe-block-tablet-mobile {
-		padding-top: 10px;
+@media (min-width: 480px) and (max-width: 767px) {
+	.company-top-spacing {
+		
 	}
 }

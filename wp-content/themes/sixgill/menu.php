@@ -44,9 +44,11 @@
 
 <nav id="primary-menu">
 	<ul>
+		<!--
 		<div class="menu-search-mobile-tablet no-desktop-display">
 			<?php get_template_part('searchform-static'); ?>
 		</div>
+		-->
 		<?php
 			foreach($menu as $menuElement) {
 				echo makeMenuElement(

@@ -17,6 +17,7 @@
 		margin-left: 0px;
 		padding-right: 0px;
 		padding-bottom: 0px;
+		text-align: center;
 	}
 
 	#header {
@@ -48,7 +49,7 @@
 
 	#primary-menu > ul {
     left: 0px;
-    top: 71px;
+    top: 0px;
     position: absolute;
     width: 100%;
 	}
@@ -63,13 +64,14 @@
 	}
 
 	/* TEMP FIX */
-
-	#primary-menu > ul {
-		top: 50px;
-	}
-
+	
 	#primary-menu a:first-of-type > div {
 		margin-top: 30px;
+	}
+
+
+	.footer-learn-text, .footer_Schedule {
+		text-align: center;
 	}
 
 }

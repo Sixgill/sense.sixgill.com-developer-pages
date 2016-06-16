@@ -8,4 +8,12 @@
 	.tech-top-header > p {
 		display: inline-block !important;
 	}
+
+	.tech-top-text {
+		padding-left: 40px;
+	}
+
+	.tech-top-header {
+		padding-left: 15px;
+	}
 }
