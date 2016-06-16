@@ -215,4 +215,8 @@
 		top: 110px;
 	}
 
+	.products-h1, .solutions-h1, .company-h1 {
+		font-size: 28px;
+	}
+
 }

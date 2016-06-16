@@ -21,7 +21,7 @@
 			<div class="container-fluid center clearfix my_containerSolution">
 
 				<div class="col_one_third title-left-col solutions-top-title-spacing">
-					<?php echo get_field('top_paragraph_title'); ?>
+					<h1 class="solutions-h1"><?php echo get_field('top_paragraph_title'); ?></h1>
 				</div>
 				<div class="col_two_third text-right-col col_last">
 					<?php echo get_field('top_paragraph'); ?>

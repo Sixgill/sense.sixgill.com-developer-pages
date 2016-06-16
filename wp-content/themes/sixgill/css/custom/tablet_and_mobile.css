@@ -69,4 +69,10 @@
 		font-weight: 700;
 		letter-spacing: 1px;
 	}
+
+	.home-video-text-h1 {
+		font-size: 24px;
+		font-weight: normal;
+	}
+
 }

@@ -52,4 +52,8 @@
 	.menu-social-link:last-child {
 		padding-right: 0px !important;
 	}
+
+	.company-h1, .solutions-h1, .products-h1 {
+		font-size: 30px;
+	}
 }

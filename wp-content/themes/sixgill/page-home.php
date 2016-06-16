@@ -5,9 +5,9 @@
 			<div class="slider-caption slider-caption-center" >
 				<div id="text-and-button-on-video" class="home-video-background">
 
-					<p id="home-text-on-video" data-animate="fadeInDown" class="txtVideo home-video-text">
+					<h1 id="home-text-on-video" data-animate="fadeInDown" class="txtVideo home-video-text-h1">
 						<?php echo get_field('blue_header_text_below_video'); ?>
-					</p>
+					</h1>
 					<button id="home-button-on-video" data-animate="fadeInDown" data-toggle="modal" data-target="#myModal" class="button button-large no-bottom-margin btnSchedule">
 						SCHEDULE A DEMO
 					</button>

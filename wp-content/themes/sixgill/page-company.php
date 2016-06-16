@@ -18,7 +18,7 @@
 		<div class="header-stick background-f8f8f8 no-border" id="company">
 			<div class="container-fluid center clearfix no-border company-top-spacing">
 				<div class="col_one_third title-left-col company-top-title-spacing">
-					<?php echo get_field('about_header'); ?>
+					<h1 class="company-h1"><?php echo get_field('about_header'); ?></h1>
 				</div>
 				<div class="col_two_third col_last text-left text-right-col">
 					<?php echo get_field('top_text_left'); ?>
