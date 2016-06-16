@@ -90,3 +90,7 @@
 .resources-page-background {
 	background-color: #004cbf;
 }
+
+.yikes-easy-mc-submit-button {
+	display: inline-block !important;
+}
