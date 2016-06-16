@@ -87,7 +87,7 @@
 				</div>
 				<div class="col_two_third text-right-col-noline col_last">
 					<div class="solution-image-title-container">
-						<img src="/wp-content/themes/sixgill/images/td/solutions/header_assets.png" class="my_headerBoxSolution" alt=""/>
+						<img src="/wp-content/themes/sixgill/images/td/solutions/header_assets.png" class="my_headerBoxSolution no-mobile-landscape-display no-mobile-portrait-display" alt=""/>
 					</div>
 					<div class="my_boxSolution_title no-tablet-display">
 						<?php echo get_field('assets_header'); ?>
@@ -128,7 +128,7 @@
 				</div>
 				<div class="col_two_third text-right-col-noline col_last">
 					<div class="solution-image-title-container">
-						<img src="/wp-content/themes/sixgill/images/td/solutions/header_crowds.png" class="my_headerBoxSolution" alt=""/>
+						<img src="/wp-content/themes/sixgill/images/td/solutions/header_crowds.png" class="my_headerBoxSolution no-mobile-portrait-display no-mobile-landscape-display" alt=""/>
 					</div>
 					<div class="my_boxSolution_title no-tablet-display">
 						<?php echo get_field('crowds_header'); ?>
