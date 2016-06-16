@@ -297,6 +297,16 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .mobile-vertical-centered  {
 	padding: 0px !important;
 }
+
+.products-h1, .solutions-h1, .company-h1 {
+	font-family: "Lato", serif, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0051C6;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
 }
@@ -489,6 +499,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .home-content-bottom-padding {
 	padding-bottom: 20px;
+}
+
+.home-video-text-h1 {
+	margin-bottom: 10px;
+	font-family: "Lato";
 }
 
 .homeSupTit-with-line {
@@ -864,6 +879,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	#sidebar-floating {
 		top: 150px;
 	}
+
+	.company-h1, .products-h1, .solutions-h1 {
+		font-size: 30px;
+		text-align: right;
+	}
 }
 /* Blog desktop styles */
 @media only screen and (min-width : 1001px) {
@@ -969,9 +989,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-top: 0px !important;
 	}
 
-	.home-video-text {
-		font-size: 34px;
+	.home-video-text-h1 {
+		font-size: 36px;
 		font-weight: 900;
+		margin-top: 10px;
 	}
 
 	.hidden-bottom-imageDiagram {
@@ -1416,6 +1437,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	/* TEMP FIX */
 	#primary-menu > ul {
 		top: 110px;
+	}
+
+	.products-h1, .solutions-h1, .company-h1 {
+		font-size: 28px;
 	}
 
 }
@@ -2353,6 +2378,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-right: 0px !important;
 	}
 
+	.company-h1, .solutions-h1, .products-h1 {
+		font-size: 30px;
+    }
 	.global-social-buttons-separator {
 		margin-top: 46px;
 		margin-bottom: 18px;
@@ -2414,6 +2442,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.solutions-top-title-spacing {
 		margin-bottom: 11px;
+	}
+
+	.iconSolutions {
+		width: 115px;	
 	}
 }
 /* Resources mobile portrait and landscape styles */
@@ -2602,6 +2634,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	a.search-post-result {
 		font-weight: 700;
 		letter-spacing: 1px;
+	}
+
+	.home-video-text-h1 {
+		font-size: 24px;
+		font-weight: normal;
 	}
 
 	.homeSupTit-with-line {
