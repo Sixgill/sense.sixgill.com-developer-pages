@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<section id="slider" class="force-full-screen full-screen">
-	<div class="force-full-screen full-screen dark section nopadding no-margin noborder ohidden">
+<section id="slider" class="force-full-screen full-screen height-video-container">
+	<div class="force-full-screen full-screen dark section nopadding no-margin noborder ohidden height-video-container">
 		<div class="container clearfix">
 			<div class="slider-caption slider-caption-center" >
 				<div id="text-and-button-on-video" class="home-video-background">
