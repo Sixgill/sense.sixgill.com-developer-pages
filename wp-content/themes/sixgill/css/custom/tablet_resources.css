@@ -6,47 +6,14 @@
 	}
 
 	.resource-block {
-		margin-left: 10px;
-		margin-right: 10px !important;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
 
-	.resource-block:nth-child(odd) {
-		margin-left: 0px;
-	}
-
-	.resource-block:nth-child(even) {
-		margin-right: 0px;
-	}
-
-	.resource-title-container {
-		height: 180px;
-	}
-
-	.resource-link-container {
-		height: 82px;
-		padding-bottom: 61px;
 	}
 
 	.resource-link {
 		font-size: 20px;
 	}
 
-	.resource-image-container {
-		height: 200px;
-	}
-
-	.full-block-width {
-		width: 345px;
-	}
-
 	.resources-blocks-container {
-		min-width: 723px !important;
-		max-width: 723px !important;
-	}
 
-	.resource-line {
-		margin-bottom: 13px;
 	}
 }

@@ -3,31 +3,17 @@
 }
 
 .resource-block {
-	height: 438px;
 	display: inline-block;
 	background-color: #ffffff;
 }
 
 .resource-title {
-	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
 }
 
-.resource-line {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #e7e7e7;
-	width: 100%;
-	margin: 0px auto;
-	margin-bottom: 12px;
-}
-
 .resources-blocks-container {
 	text-align: left;
-	min-width: 1520px !important;
-	max-width: 1520px !important;
 	display: inline-block;
 }
 
@@ -61,34 +47,20 @@
 	background-position: top center !important;
 }
 
-.resource-title-container {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.submit-resource-form-button {
-	background: url(/wp-content/themes/sixgill/images/td/resources/download_now.png);
-	border: 0px;
-	height: 67px;
-	width: 293px !important;
-	max-width: 293px !important;
-	font-size: 0px;
-}
-
-.full-block-width {
-	width: 350px;
-}
-
-.resources-container {
-	min-height: 700px;
-}
-
 .resource-link {
 	color: #999999;
 }
 
 .resources-page-background {
 	background-color: #004cbf;
+}
+
+.resource-block:nth-child(odd) {
+	margin-left: 0px;
+}
+
+.resource-block:nth-child(even) {
+	margin-right: 0px;
 }
 
 .yikes-easy-mc-submit-button {
