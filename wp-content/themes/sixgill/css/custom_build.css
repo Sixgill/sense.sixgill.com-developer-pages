@@ -2001,11 +2001,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-left: 0px;
 	}
 
-	.thumbnail-solutions-mobile {
-		width: 100%;
-		text-align: center;
-	}
-
 	.iconSolutions {
 		margin-right: 15px;
 	}
@@ -2220,6 +2215,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.hr-home-sup-title {
 		max-width: 550px;
 	}
+
+	.height-video-container {
+		min-height: 246px;
+	}
 }
 /* Solutions mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
@@ -2391,6 +2390,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.my_boxSolution_title {
 		border:0px;
+	}
+
+	.thumbnail-solutions-mobile {
+		width: 100%;
+		text-align: center;
 	}
 }
 /* Resources mobile portrait and landscape styles */
