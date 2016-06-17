@@ -2220,6 +2220,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.hr-home-sup-title {
 		max-width: 550px;
 	}
+
+	.height-video-container {
+		min-height: 246px;
+	}
 }
 /* Solutions mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
