@@ -50,7 +50,6 @@
 	.submit-resource-form-button {
 		background-size: contain;
 		background-repeat: no-repeat;
-		width: 200px !important;
 		max-width: 200px !important;
 		max-height: 46px !important;
 	}
