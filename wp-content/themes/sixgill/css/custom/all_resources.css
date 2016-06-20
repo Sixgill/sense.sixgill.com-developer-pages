@@ -9,7 +9,6 @@
 
 .resource-title {
 	font-weight: bold;
-	text-align: center;
 }
 
 .resources-blocks-container {
@@ -22,11 +21,11 @@
 	margin: 0px auto;
 	width: 100%;
 	text-align: center;
-	height: 110px;
 	overflow: hidden;
 }
 
 .resource-image-container {
+	height: 52%;
 	overflow: hidden;
 	background-repeat: no-repeat !important;
 	background-size: contain !important;

@@ -1,14 +1,14 @@
 /* Resources mobile portrait styles */
 @media (max-width: 500px) and (max-aspect-ratio: 4/3) {
 	.resources-container {
-
+		width: %;
 	}
 
 	.resource-block {
-
+		width: %;
 	}
 
 	.resources-blocks-container {
-
+		width: %;
 	}
 }

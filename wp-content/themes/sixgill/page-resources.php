@@ -19,13 +19,10 @@
 
 <section id="content" class="section-margin-fix">
 
-	<div class="content-wrap resources-container resources-background center">
+	<div class="content-wrap resources-container resources-background">
 		<div class="resources-blocks-container">
-			<div class="full-width no-top-padding" style="overflow:hidden;">
-				<?php echo do_shortcode('[sdm_show_dl_from_category category_slug="resources" fancy="2"]'); ?>
-			</div>
+			<?php echo do_shortcode('[sdm_show_dl_from_category category_slug="resources" fancy="2"]'); ?>
 		</div>
-
 	</div>
 
 </section><!-- #content end -->
