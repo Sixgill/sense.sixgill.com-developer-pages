@@ -607,12 +607,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .submit-resource-form-button {
-	background: url(/wp-content/themes/sixgill/images/td/resources/download_now.png);
 	border: 0px;
-	height: 67px;
-	width: 293px !important;
-	max-width: 293px !important;
-	font-size: 0px;
 }
 
 .full-block-width {
@@ -2370,11 +2365,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-bottom: 18px;
 	}
 
-	.normal-font-18-1 {
-		font-size: 13px;
-		line-height: 1 !important;
-	}
-
 	.margin-bottom-post {
 		margin-bottom: 25px;
 	}
@@ -2487,7 +2477,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.submit-resource-form-button {
 		background-size: contain;
 		background-repeat: no-repeat;
-		width: 200px !important;
 		max-width: 200px !important;
 		max-height: 46px !important;
 	}
