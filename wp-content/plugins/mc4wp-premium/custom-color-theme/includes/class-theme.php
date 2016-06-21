@@ -66,7 +66,7 @@ class MC4WP_Custom_Color_Theme {
 	 */
 	public function print_css_template( $form_id, $color, $darker_color, $darkest_color, $font_color = 'white' ) {
 		echo '<style type="text/css">';
-		include $this->plugin->dir( '/views/css/custom-css.php' );
+		include $this->plugin->dir( '/views/custom-css.php' );
 		echo '</style>';
 	}
 

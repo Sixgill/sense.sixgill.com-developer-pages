@@ -10,7 +10,7 @@ class MC4WP_Styles_Builder {
 	/**
 	 * @const string
 	 */
-	const DIR = '/mc4wp-stylesheets/';
+	const DIR = '/mc4wp-stylesheets';
 
 	/**
 	 * @const string
@@ -21,35 +21,6 @@ class MC4WP_Styles_Builder {
 	 * @const string
 	 */
 	const VERSION_OPTION = 'mc4wp_forms_styles_builder_version';
-
-	/**
-	 * @param $styles
-	 *
-	 * @return MC4WP_Styles_Builder
-	 */
-	public static function build( $styles ) {
-
-		if( ! self::$instance instanceof MC4WP_Styles_Builder ) {
-			self::$instance = new MC4WP_Styles_Builder();
-		}
-
-		$builder = self::$instance;
-
-		// clean-up styles array
-		$builder->clean();
-
-		// sanitize submitted styles
-		$builder->sanitize( $styles );
-
-		// listen for user-triggered actions (delete, copy, ..)
-		$builder->act();
-
-		// re-bundle
-		self::bundle_stylesheets();
-
-		// return all styles (for WP options API)
-		return $builder->styles;
-	}
 
 	/**
 	 * Array with all available CSS fields, their default value and their type
@@ -223,12 +194,64 @@ class MC4WP_Styles_Builder {
 	public $styles = array();
 
 	/**
+	 * @var MC4WP_Admin_Messages
+	 */
+	protected $messages;
+
+	/**
 	 * Constructor
 	 */
 	public function __construct() {
 		$this->default_form_styles = $this->load_default_form_styles();
 		$this->styles = $this->load_styles();
+		$this->messages = mc4wp( 'admin.messages' );
 	}
+
+	/**
+	 * @return MC4WP_Styles_Builder
+	 */
+	public static function instance() {
+		if( ! self::$instance instanceof MC4WP_Styles_Builder ) {
+			self::$instance = new MC4WP_Styles_Builder();
+		}
+
+		return self::$instance;
+	}
+
+	/**
+	 * @param $styles
+	 *
+	 * @return MC4WP_Styles_Builder
+	 */
+	public static function build( $styles ) {
+
+		$builder = self::instance();
+
+		// clean-up styles array
+		$builder->clean();
+
+		// sanitize submitted styles
+		$builder->sanitize( $styles );
+
+		// listen for user-triggered actions (delete, copy, ..)
+		$builder->act();
+
+		// re-bundle
+		$builder->create_bundle();
+
+		// return all styles (for WP options API)
+		return $builder->styles;
+	}
+
+	/**
+	 * @return void
+	 */
+	public static function bundle() {
+		$instance = self::instance();
+		$instance->create_bundle();
+	}
+
+
 
 	/**
 	 * Act on user-triggered actions
@@ -465,18 +488,23 @@ class MC4WP_Styles_Builder {
 	 * @return bool
 	 */
 	protected function delete_stylesheet( $form_id = 0 ) {
-		$upload = wp_upload_dir();
 
-		$pattern = $form_id > 0 ? sprintf( 'form-%d*.css', $form_id ) : '*.css';
+		$dir = $this->get_stylesheets_dir();
 
-		// find all stylesheets created by Styles Builder
-		$stylesheets = glob( $upload['basedir'] . sprintf( '/mc4wp-stylesheets/%s', $pattern ) );
+		// if form id not given, delete all .css files in directory
+		if( ! $form_id ) {
+			$stylesheets = glob( $dir . '/*.css');
 
-		if( is_array( $stylesheets ) ) {
-			// unlink all stylesheets
-			array_map( 'unlink', $stylesheets );
+			if( is_array( $stylesheets ) ) {
+				// unlink all stylesheets
+				array_map( 'unlink', $stylesheets );
+			}
+
+			return true;
 		}
 
+		// unlink just this specific stylesheet
+		unlink( $dir . sprintf( '/form-%d.css', $form_id ) );
 		return true;
 	}
 
@@ -489,49 +517,49 @@ class MC4WP_Styles_Builder {
 	protected function build_stylesheet( $form_id ) {
 
 		$css_string = $this->get_css_string( $form_id );
-		$filename = sprintf( self::DIR . 'form-%d.css', $form_id );
-
-		// upload CSS file with CSS string as content
-		$upload = wp_upload_dir();
-		$target = $upload['basedir'];
+		$dir = $this->get_stylesheets_dir();
+		$filename = sprintf( '/form-%d.css', $form_id );
+		$file = $dir . $filename;
 
 		// try to create stylesheets dir with proper permissions
-		@mkdir( $target . rtrim( self::DIR, '/' ), 0755 );
-		@chmod( $target . rtrim( self::DIR, '/' ), 0755 );
+		if( ! file_exists( $dir ) ) {
+			@mkdir( $dir, 0755 );
+		}
 
-		// remove previous file
-		@unlink( $target . $filename );
+		@chmod( $dir, 0755 );
+		@chmod( $file, 0755 );
 
-		// create new file
-		$success = file_put_contents( $target . $filename, $css_string );
-		@chmod( $target . $filename, 0755 );
+		// write css string to file
+		$handle = fopen( $file, 'w' );
+		$success = false;
 
+		// show error when opening file for writing fails
+		if( is_resource( $handle ) ) {
+			$success = fwrite( $handle, $css_string );
+			fclose( $handle );
+		}
+
+		// success should be > 0 now
 		if( ! $success ) {
-			$message = __( 'Error creating stylesheet.', 'mailchimp-for-wp' ) . '</strong><br />';
-			$message .= sprintf( __( 'Please add the generated CSS to your theme stylesheet manually or use a plugin like <em>%s</em>.', 'mailchimp-for-wp' ), '<a href="https://wordpress.org/plugins/simple-custom-css/">Simple Custom CSS</a>' ) . '<br />';
-			$message .= '<a class="mc4wp-show-css button" href="javascript:void(0);">' . __( 'Show generated CSS', 'mailchimp-for-wp' ) . '</a>';
-			$message .= '<textarea id="mc4wp_generated_css" readonly style="display:none; width: 100%; min-height: 300px; margin-top: 20px;">'. esc_html( $css_string ) .'</textarea><strong>';
-			add_settings_error( 'mc4wp', 'mc4wp-css', $message );
-			return;
+			$this->messages->flash( sprintf( 'Error writing stylesheet. File <code>%s</code> is not writable, please check your file permissions.', $file ), 'error' );
+			return false;
 		}
 
 		// create url
-		$url = $upload['baseurl'] . $filename;
-
-
-		$message = sprintf( __( 'The <a href="%s">CSS Stylesheet</a> was successfully created.', 'mailchimp-for-wp'  ), $url );
+		$url = $this->get_stylesheets_url( $filename );
+		$message = '<strong>' . sprintf( __( '<a href="%s">CSS stylesheet</a> created.', 'mailchimp-for-wp'  ), $url ) . '</strong>';
 
 		// check if stylesheet is being loaded for this form, otherwise show notice.
 		$form = mc4wp_get_form( $form_id );
 		if( $form->settings['css'] !== 'styles-builder' ) {
-			$message .= '</strong><br /><br />' . sprintf( __( 'Please note that you need to <a href="%s">select "Use Styles Builder" in the form appearance settings</a> if you want to use these styles.', 'mailchimp-for-wp' ), mc4wp_get_edit_form_url( $form_id, 'appearance' ) ) . '<strong>';
+			$message .= '<br /><br />' . sprintf( __( 'Please note that you need to <a href="%s">select "Use Styles Builder" in the form appearance settings</a> if you want to use these styles.', 'mailchimp-for-wp' ), mc4wp_get_edit_form_url( $form_id, 'appearance' ) );
 		}
 
 		// add "back to form" link in notice
-		$message .= '</strong><br /><br />' . sprintf( '<a href="%s"> &laquo; ' . __( 'Back to form', 'mailchimp-for-wp' ) .'</a>', mc4wp_get_edit_form_url( $form_id ) ) . '<strong>';
+		$message .= '<br /><br />' . sprintf( '<a href="%s"> &laquo; ' . __( 'Back to form', 'mailchimp-for-wp' ) .'</a>', mc4wp_get_edit_form_url( $form_id ) );
 
 		// show notice
-		add_settings_error( 'mc4wp', 'mc4wp-css', $message, 'updated' );
+		$this->messages->flash( $message, 'success' );
 		return true;
 	}
 
@@ -602,13 +630,9 @@ class MC4WP_Styles_Builder {
 	}
 
 	/**
-	 * Bundle all activated stylesheets into a single "bundle.css" file.
-	 *
-	 * TODO: Only re-run if something changed
+	 * @return array
 	 */
-	public static function bundle_stylesheets() {
-		$upload = wp_upload_dir();
-
+	public function get_enabled_form_ids() {
 		// find all forms where "css" is set to "styles-builder"
 		$forms = mc4wp_get_forms();
 		$enabled_forms = array();
@@ -619,32 +643,100 @@ class MC4WP_Styles_Builder {
 			}
 		}
 
+		return $enabled_forms;
+	}
+
+	/**
+	 * @param string $path
+	 * @return string
+	 */
+	public function get_stylesheets_dir( $path = '' ) {
+		$upload = wp_upload_dir();
+		$dir = $upload['basedir'] . rtrim( self::DIR, '/' );
+
+		if( ! empty( $path ) ) {
+			$dir .= '/' . ltrim( $path, '/' );
+		}
+
+		return $dir;
+	}
+
+	/**
+	 * @param string $path
+	 * @return string
+	 */
+	public function get_stylesheets_url( $path = '' ) {
+		$upload = wp_upload_dir();
+		$url = $upload['baseurl'] . rtrim( self::DIR, '/' );
+
+		if( ! empty( $path ) ) {
+			$url .= '/' . ltrim( $path, '/' );
+		}
+
+		return $url;
+	}
+
+	/**
+	 * Bundle all activated stylesheets into a single "bundle.css" file.
+	 */
+	public function create_bundle() {
+
 		// bail if none of the forms have Styles Builder styles enabled
-		if( empty( $enabled_forms ) ) {
+		$enabled_form_ids = $this->get_enabled_form_ids();
+		if( empty( $enabled_form_ids ) ) {
 			return;
 		}
 
-		// find all stylesheets created by Styles Builder
-		$dir = $upload['basedir'] . rtrim( self::DIR, '/' ) . '/';
-		$stylesheets = glob( $dir . 'form-{'. join( ',', $enabled_forms ) .'}.css', GLOB_BRACE );
+		// find all stylesheet files created by Styles Builder
+		$stylesheet_files = $this->get_stylesheet_files( $enabled_form_ids );
+		$dir = $this->get_stylesheets_dir();
+		$filename = $dir . '/' . self::BUNDLE_FILENAME;
+		@chmod( $filename, 0755 );
+		$handle = fopen( $filename, 'w' );
 
-		// do nothing if no individual stylesheets where found.
-		if( empty( $stylesheets ) ) {
+		// show error when opening file for writing fails
+		if( ! is_resource( $handle ) ) {
+			$message = sprintf( 'File <code>%s</code> is not writable. Please set the correct file permissions or manually include the styles on your site using a plugin like %s.', $filename, '<a href="https://wordpress.org/plugins/simple-custom-css/">Simple Custom CSS' );
+			$message .= '<br /><br /><a href="#" onclick="this.nextSibling.style.display = \'\';">' . __( 'Show CSS', 'mailchimp-for-wp' ) . '</a>';
+
+			$css_string = esc_html( join( PHP_EOL, array_map( 'file_get_contents', $stylesheet_files ) ) );
+			$message .= '<textarea readonly style="display:none; width: 100%; min-height: 200px; margin-top: 20px; font-size: 13px; font-weight: normal; font-family: Monospace, Courier, consola;">'. $css_string .'</textarea><strong>';
+
+			$this->messages->flash( $message, 'error' );
 			return;
 		}
+		
+		// write stylesheet files to bundle file
+		foreach( $stylesheet_files as $stylesheet_file ) {
+			$content = file_get_contents( $stylesheet_file );
+			fwrite( $handle, $content );
+			fwrite( $handle, PHP_EOL . PHP_EOL );
+		}
 
-		// get all content
-		$contents = array_map( 'file_get_contents', $stylesheets );
-
-		// join content together
-		$contents = join( PHP_EOL . PHP_EOL, $contents );
-
-		// write joined content to bundle file
-		$filename = $dir . self::BUNDLE_FILENAME;
-		file_put_contents( $filename, $contents );
+		fclose( $handle );
 
 		// store version as option (for cache busting)
 		update_option( self::VERSION_OPTION, time(), false );
+	}
+
+
+	/**
+	 * @param array $form_ids
+	 *
+	 * @return array
+	 */
+	public function get_stylesheet_files( array $form_ids = array() ) {
+		$dir = $this->get_stylesheets_dir();
+
+		$stylesheet_files = array();
+		foreach( $form_ids as $form_id ) {
+			$stylesheet_file = $dir . '/' . sprintf( 'form-%d.css', $form_id );
+			if( file_exists( $stylesheet_file ) ) {
+				$stylesheet_files[] = $stylesheet_file;
+			}
+		}
+
+		return $stylesheet_files;
 	}
 
 }

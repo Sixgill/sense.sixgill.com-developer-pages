@@ -159,6 +159,7 @@ class MC4WP_Logging_Admin {
 		$exporter = new MC4WP_Log_Exporter();
 		$exporter->filter( $args );
 		$exporter->output();
+		exit;
 	}
 
 	/**

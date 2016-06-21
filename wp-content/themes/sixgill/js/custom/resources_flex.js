@@ -12,8 +12,10 @@ $(function() {
 
 	function resizeResourcesContainers() {
 		resourcesBlocks.each(function() {
+			var blockWidth = $(this).width();
 			if (!blockHeight) {
-				blockHeight = $(this).width() * resourceBlockAspectRatio;
+				oldWidth = blockWidth;
+				blockHeight = blockWidth * resourceBlockAspectRatio;
 				defaultMargin = blockHeight * resourcesMarginRatio;
 				boxShadowSize = blockHeight * boxShadowSizeRatio;
 			}
@@ -32,9 +34,27 @@ $(function() {
 		$(this).css('box-shadow', 'none');
 	});
 
-	$(window).resize(function() {
+	function recalcResourcesBlocksSizes() {
 		blockHeight = 0;
 		resizeResourcesContainers();
+	}
+
+	function timeoutResizeCheck() {
+		console.log('timeoutResizeCheck');
+		recalcResourcesBlocksSizes();
+		setTimeout(timeoutResizeCheck, 3000);
+	}
+
+	setTimeout(timeoutResizeCheck, 1000);
+
+	$(window).on('resize', function() {
+		console.log('resize');
+		recalcResourcesBlocksSizes();
+	});
+
+	$(window).on('orientationchange', function() {
+		console.log('orientationchange');
+		setTimeout(recalcResourcesBlocksSizes, 1000);
 	});
 
 	resizeResourcesContainers();

@@ -1,6 +1,33 @@
 Changelog
 ==========
 
+##### 3.1.9 - June 21, 2016
+
+**Fixes**
+
+- eCommerce360: campaign cookie wasn't taken into account for orders that require manual action before they are "completed"
+
+**Improvements**
+
+- Styles Builder: Improved file creation.
+- Styles Builder: Better error messages
+- Styles Builder: Don't show "copy from other form" dropdown if there is just 1 form.
+
+
+##### 3.1.8 - June 7, 2016
+
+**Fixes**
+
+- eCommerce360 campaign cookie was stored for just 7 hours, instead of 7 days.
+- Custom colored theme not printing CSS styles.
+- Log export not working on Windows servers.
+
+**Improvements**
+
+- eCommerce360 order sync now stops on errors.
+- Show "draft" forms on Forms overview page.
+
+
 ##### 3.1.7 - May 23, 2016
 
 **Fixes**
