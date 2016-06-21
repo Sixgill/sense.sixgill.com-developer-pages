@@ -14,4 +14,12 @@
 	.h1-blog {
 		margin-bottom: 18px;
 	}
+
+	.margin-bottom-post {
+		margin-bottom: 25px;
+	}
+
+	.margin-top-post {
+		margin-top: 10px;
+	}
 }

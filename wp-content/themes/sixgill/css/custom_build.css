@@ -408,6 +408,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .posts-list {
 	margin-bottom: 30px;
 }
+
+.margin-bottom-title {
+	margin-bottom: 25px;
+}
 .company-learn-more-text {
 	display: none;
 }
@@ -947,6 +951,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		font-size: 18px;
 		width: 100%;
 		margin-top: 60px;
+	}
+
+	.blog-post-with-image {
+		margin-bottom: 35px;
 	}
 }
 /* Company desktop styles */
@@ -1494,6 +1502,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-bottom: 30px;
 		z-index: 200;
 		margin-top:150px;
+	}
+
+	.normal-font-18-1 {
+		font-size: 18px;
+		line-height: 1 !important;
+	}
+
+	.blog-post-with-image {
+		background-position: center; 
+		height: 350px; 
+		margin-bottom: 35px;
 	}
 }
 /* Company tablet styles */
@@ -2345,6 +2364,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.h1-blog {
 		margin-bottom: 18px;
 	}
+
+	.margin-bottom-post {
+		margin-bottom: 25px;
+	}
+
+	.margin-top-post {
+		margin-top: 10px;
+	}
 }
 /* Company mobile portrait and landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {
@@ -2828,6 +2855,18 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	font-size: 20px;
 	font-weight: normal;
 	line-height: 1;
+}
+
+.line-height-1 {
+	line-height: 1 !important;
+}
+
+.line-height-1-5 {
+	line-height: 1.5 !important;
+}
+
+.line-height-1-8 {
+	line-height: 1.8 !important;
 }
 
 .full-width {
