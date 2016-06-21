@@ -44,23 +44,25 @@
 
 <nav id="primary-menu">
 	<ul>
-		<!--
-		<div class="menu-search-mobile-tablet no-desktop-display">
-			<?php get_template_part('searchform-static'); ?>
-		</div>
-		-->
-		<?php
-			foreach($menu as $menuElement) {
-				echo makeMenuElement(
-					$menuElement['elementName'],
-					$menuElement['link'],
-					$menuElement['sublinksList'],
-					$menuElement['isSelected'],
-					$menuElement['isExpanded'],
-					count($menu)
-				);
-			}
-			get_template_part('global_social_buttons');
-		?>
+		<li>
+			<!--
+			<div class="menu-search-mobile-tablet no-desktop-display">
+				<?php get_template_part('searchform-static'); ?>
+			</div>
+			-->
+			<?php
+				foreach($menu as $menuElement) {
+					echo makeMenuElement(
+						$menuElement['elementName'],
+						$menuElement['link'],
+						$menuElement['sublinksList'],
+						$menuElement['isSelected'],
+						$menuElement['isExpanded'],
+						count($menu)
+					);
+				}
+				get_template_part('global_social_buttons');
+			?>
+		</li>
 	</ul>
 </nav>
