@@ -500,7 +500,7 @@ Side Header
 
 .titLegal { margin-top:30px; margin-bottom:25px;}
 
-p {font-size:13px; font-weight:normal;}
+p {font-size:16px; font-weight:normal;}
 
 .logo-sixgill {
 	/*width:150px;*/
@@ -642,11 +642,6 @@ p {font-size:13px; font-weight:normal;}
 		font-size:25px;
 		margin-top:50px;
 		margin-bottom:30px;
-	}
-
-	p {
-		font-size:20px;
-		font-weight:normal;
 	}
 
 	.logo-sixgill {
