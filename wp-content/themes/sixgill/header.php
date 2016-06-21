@@ -2,6 +2,8 @@
 <html dir="ltr" lang="en-US">
 <head>
 	<?php include(locate_template('build.php')); ?>
+	<?php include(locate_template('share_scheme.php')); ?>
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Sixgill" />
 
@@ -26,7 +28,6 @@
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom.css" type="text/css" />
 
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom_build.css" type="text/css" />
-
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
