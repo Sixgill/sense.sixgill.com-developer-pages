@@ -1101,7 +1101,7 @@ body.stretched #header.full-header .container {
 
 #primary-menu > ul > li:first-child { margin-left: 0; }
 
-#primary-menu ul li > a {
+/*#primary-menu ul li > a {
 	display: block;
 	line-height: 22px;
 	padding: 39px 15px;
@@ -1114,7 +1114,7 @@ body.stretched #header.full-header .container {
 	-webkit-transition: margin .4s ease, padding .4s ease;
 	-o-transition: margin .4s ease, padding .4s ease;
 	transition: margin .4s ease, padding .4s ease;
-}
+}*/
 
 #primary-menu ul li > a span { display: none; }
 
@@ -2345,12 +2345,12 @@ body:not(.device-touch) #page-menu nav li a {
 
 .side-header #primary-menu ul li:first-child { margin-top: 0; }
 
-.side-header #primary-menu ul li a {
+/*.side-header #primary-menu ul li a {
 	height: 25px;
 	line-height: 25px;
 	padding: 0;
 	text-transform: uppercase;
-}
+}*/
 
 .side-header #primary-menu ul li i { line-height: 24px; }
 

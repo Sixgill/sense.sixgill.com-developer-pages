@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+	$firstFieldTitle = get_field('top_header_first_line');
+	$secondFieldTitle = get_field('top_header_second_line');
+	$thirdFieldTitle = get_field('top_header_third_line');
+?>
 <a name="top"></a>
 <section id="slider" class="slider-parallax swiper_wrapper clearfix">
   <div class="slider-parallax-inner">
@@ -17,7 +22,15 @@
     <div class="header-stick background-f8f8f8 no-border">
 			<div class="container-fluid no-border center clearfix tech-top-spacing">
 				<div class="col_one_third title-left-col center no-bottom-margin tech-top-header">
-					<h1 ><?php echo get_field('top_header'); ?></h1>
+					<h1 class="no-mobile-landscape-display no-mobile-portrait-display">
+					<p class="tech-top-header-blue no-margin line-height-1-5"><?php echo $firstFieldTitle; ?></p>
+					<p class="tech-top-header-gray no-margin line-height-1-5"><?php echo $secondFieldTitle; ?></p>
+					<p class="tech-top-header-blue no-margin line-height-1-5"><?php echo $thirdFieldTitle; ?></p>
+					</h1>
+					<h1 class="no-desktop-display no-tablet-display tech-title-margin">
+					<p class="tech-top-header-blue no-margin line-height-1-5"><?php echo "$firstFieldTitle $secondFieldTitle $thirdFieldTitle"; ?></p>
+					</h1>
+
 				</div>
 				<div class="col_two_third col_last text-left text-right-col tech-top-text">
 					<?php echo get_field('top_paragraph'); ?>
