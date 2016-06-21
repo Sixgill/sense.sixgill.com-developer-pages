@@ -7,12 +7,12 @@
 	background-color: #ffffff;
 	width: 24%;
 	margin-left: 0.5%;
-  margin-right: 0.5%;
-  transition: all 0.5s;
+	margin-right: 0.5%;
+	transition: all 0.5s;
 }
 
 .resource-block:hover {
-  transform: scale(1.066);
+	transform: scale(1.066);
 }
 
 .resources-blocks-container {
