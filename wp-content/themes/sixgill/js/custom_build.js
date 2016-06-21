@@ -517,7 +517,7 @@ $(function() {
 	function timeoutResizeCheck() {
 		console.log('timeoutResizeCheck');
 		recalcResourcesBlocksSizes();
-		setTimeout(timeoutResizeCheck, 500);
+		setTimeout(timeoutResizeCheck, 3000);
 	}
 
 	setTimeout(timeoutResizeCheck, 1000);
