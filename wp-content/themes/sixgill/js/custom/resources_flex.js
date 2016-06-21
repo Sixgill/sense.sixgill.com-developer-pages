@@ -32,10 +32,14 @@ $(function() {
 		$(this).css('box-shadow', 'none');
 	});
 
-	$(window).on('resize orientationchange', function() {
+	function recalcResourcesBlocksSizes() {
 		blockHeight = 0;
 		resizeResourcesContainers();
-	});
+	}
+
+	$(window)
+		.on('resize', recalcResourcesBlocksSizes())
+		.on('orientationchange', recalcResourcesBlocksSizes());
 
 	resizeResourcesContainers();
 });
