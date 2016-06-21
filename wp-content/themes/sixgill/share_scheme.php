@@ -11,9 +11,9 @@
 
  	<meta property="og:description schema:description" content="<?php  
 		if (strlen(get_field('descriptions_post_to_share')) == 0)  {
- 			echo substr($post->post_content, 0, 80);
+ 			echo substr($post->post_content, 0, 80)."...";
 		}
 		else {
-			echo get_field('descriptions_post_to_share');
+			echo get_field('descriptions_post_to_share')."...";
 		} ?>" 
 	/>
