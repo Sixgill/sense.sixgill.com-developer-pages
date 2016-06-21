@@ -26,10 +26,10 @@ function ProgressBar( element, count ) {
 		progress += ( step_size * ticks );
 		bar.style.width = progress + "%";
 
-		bar.innerHTML =  parseInt( progress ) + "%";
+		bar.innerText = parseInt( progress ) + "%";
 
 		if( done() ) {
-			bar.innerHTML = 'Done!';
+			bar.innerText = 'Done!';
 		}
 	}
 

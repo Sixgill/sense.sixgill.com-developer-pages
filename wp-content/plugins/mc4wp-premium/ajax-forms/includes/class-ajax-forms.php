@@ -28,7 +28,6 @@ class MC4WP_AJAX_Forms {
 		add_filter( 'mc4wp_form_css_classes', array( $this, 'form_css_classes' ), 10, 2 );
 		add_filter( 'mc4wp_form_settings', array( $this, 'form_settings' ) );
 		add_action( 'mc4wp_output_form', array( $this, 'maybe_enqueue_script' ) );
-		add_action( 'mc4wp_register_form_assets', array( $this, 'register_assets' ) );
 		add_action( 'mc4wp_form_respond', array( $this, 'respond_to_request' ) );
 	}
 
@@ -43,16 +42,6 @@ class MC4WP_AJAX_Forms {
 		);
 		$settings = array_merge( $defaults, $settings );
 		return $settings;
-	}
-
-	/**
-	 * Register AJAX scripts
-	 *
-	 * @param string $suffix
-	 */
-	public function register_assets( $suffix = '' ) {
-		// register ajax script
-		wp_register_script( 'mc4wp-ajax-forms', $this->plugin->url( '/assets/js/ajax-forms' . $suffix . '.js' ), array( 'mc4wp-forms-api' ), $this->plugin->version(), true );
 	}
 
 	/**
@@ -82,9 +71,12 @@ class MC4WP_AJAX_Forms {
 		if( ! $form->settings['ajax'] || $this->is_script_enqueued ) {
 			return;
 		}
-		
-		wp_enqueue_script( 'mc4wp-ajax-forms' );
 
+		// enqueue ajax script
+		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '.js' : '.min.js';
+		wp_enqueue_script( 'mc4wp-ajax-forms', $this->plugin->url( '/assets/js/ajax-forms' . $suffix ), array( 'mc4wp-forms-api' ), $this->plugin->version(), true );
+
+		// default loading character
 		$character = "&bull;";
 
 		/**
@@ -97,13 +89,14 @@ class MC4WP_AJAX_Forms {
 		// generate AJAX url
 		$ajax_url = add_query_arg( array( 'action' => 'mc4wp-form' ), admin_url( 'admin-ajax.php' ) );
 
-		// error message text
-
+		// get error text in BC way
+		$error_text = class_exists( 'MC4WP_API_v3' ) ? $form->get_message( 'error' ) : $form->messages['error'];
+		
 		// Print vars required by AJAX script
 		$vars = array(
 			'loading_character'     => (string) $loading_character,
 			'ajax_url'              => (string) $ajax_url,
-			'error_text'            => (string) $form->messages['error'],
+			'error_text'            => (string) $error_text,
 		);
 		wp_localize_script( 'mc4wp-ajax-forms', 'mc4wp_ajax_vars', $vars );
 

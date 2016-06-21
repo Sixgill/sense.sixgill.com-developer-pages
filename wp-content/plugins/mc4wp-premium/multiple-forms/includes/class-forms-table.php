@@ -23,6 +23,8 @@ class MC4WP_Forms_Table extends WP_List_Table {
 
 	/**
 	 * Constructor
+	 *
+	 * @param MC4WP_MailChimp $mailchimp
 	 */
 	public function __construct( MC4WP_MailChimp $mailchimp ) {
 		parent::__construct(
@@ -65,8 +67,10 @@ class MC4WP_Forms_Table extends WP_List_Table {
 		$counts = wp_count_posts( 'mc4wp-form' );
 		$current = isset( $_GET['post_status'] ) ? $_GET['post_status'] : '';
 
+		$count_any = $counts->publish + $counts->draft + $counts->future + $counts->pending;
+
 		return array(
-			'' => sprintf( '<a href="%s" class="%s">%s</a> (%d)', remove_query_arg( 'post_status' ), $current == '' ? 'current' : '', __( 'All' ), $counts->publish ),
+			'' => sprintf( '<a href="%s" class="%s">%s</a> (%d)', remove_query_arg( 'post_status' ), $current == '' ? 'current' : '', __( 'All' ), $count_any ),
 			'trash' => sprintf( '<a href="%s" class="%s">%s</a> (%d)', add_query_arg( array( 'post_status' => 'trash' ) ), $current == 'trash' ? 'current' : '', __( 'Trash' ), $counts->trash ),
 		);
 	}
@@ -124,7 +128,9 @@ class MC4WP_Forms_Table extends WP_List_Table {
 	 * @return array
 	 */
 	public function get_items() {
-		$args = array();
+		$args = array(
+			'post_status' =>  array( 'publish', 'draft', 'pending', 'future' )
+		);
 
 		if( ! empty( $_GET['s'] ) ) {
 			$args['s'] = sanitize_text_field( $_GET['s'] );

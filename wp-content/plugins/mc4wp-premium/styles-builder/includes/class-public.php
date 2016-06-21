@@ -42,7 +42,7 @@ class MC4WP_Styles_Builder_Public {
 
 		// get stylesheet file
 		$uploads = wp_upload_dir();
-		$bundle_filename = MC4WP_Styles_Builder::DIR . MC4WP_Styles_Builder::BUNDLE_FILENAME;
+		$bundle_filename = MC4WP_Styles_Builder::DIR . '/' . MC4WP_Styles_Builder::BUNDLE_FILENAME;
 		$version = get_option( MC4WP_Styles_Builder::VERSION_OPTION, 1 );
 
 		// use protocol relative URL's
@@ -59,7 +59,7 @@ class MC4WP_Styles_Builder_Public {
 
 		// if this a preview, load single stylesheet (because styles may not be in bundle yet)
 		if( defined( 'MC4WP_FORM_IS_PREVIEW' ) && MC4WP_FORM_IS_PREVIEW ) {
-			$single_filename = MC4WP_Styles_Builder::DIR . 'form-' . intval( $_GET['form_id'] ) .'.css';
+			$single_filename = MC4WP_Styles_Builder::DIR . '/form-' . intval( $_GET['form_id'] ) .'.css';
 			$url = $base_url . $single_filename;
 			wp_enqueue_style( 'mc4wp-form-styles-builder', $url, array(), $version );
 		}
