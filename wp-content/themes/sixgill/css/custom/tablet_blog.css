@@ -49,4 +49,15 @@
 		z-index: 200;
 		margin-top:150px;
 	}
+
+	.normal-font-18-1 {
+		font-size: 18px;
+		line-height: 1 !important;
+	}
+
+	.blog-post-with-image {
+		background-position: center; 
+		height: 350px; 
+		margin-bottom: 35px;
+	}
 }
