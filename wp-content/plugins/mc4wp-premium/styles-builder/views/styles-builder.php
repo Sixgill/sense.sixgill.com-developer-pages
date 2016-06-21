@@ -1,4 +1,7 @@
-<?php defined( 'ABSPATH' ) or exit; ?>
+<?php defined( 'ABSPATH' ) or exit;
+
+/** @var MC4WP_Styles_Builder $builder */
+?>
 <style>#mc4wp-admin label{ font-weight: bold; display: block; }</style>
 
 <div id="mc4wp-admin" class="wrap mc4wp-settings">
@@ -14,15 +17,7 @@
 	<h1 class="page-title">
 		<?php _e( 'Styles Builder', 'mailchimp-for-wordpress' ); ?>
 	</h1>
-
-	<h2 style="display: none;"></h2>
-	<?php settings_errors(); ?>
-
-	<p class="mc4wp-notice">
-		<span class="dashicons dashicons-info" style="color: #999;"></span>
-		<?php printf( __( 'Tip: have a look at our <a href="%s">knowledge base</a> articles on <a href="%s">creating an inline form</a> or <a href="%s">styling your form</a> in general.', 'mailchimp-for-wp' ), 'https://mc4wp.com/kb/', 'https://mc4wp.com/kb/single-line-forms/', 'https://mc4wp.com/kb/category/styling-your-form/' ); ?>
-	</p>
-
+	
 	<div class="row">
 		<div class="main-content col col-3">
 			<!-- Main Content -->
@@ -51,10 +46,11 @@
 				<input type="submit" value="Apply" style="display: none;" />
 			</form>
 
-			<form action="options.php" method="post">
+			<form action="" method="post">
+				<input type="hidden" name="_mc4wp_action" value="styles_builder_save" />
+				<?php wp_nonce_field( 'styles_builder_save' ); ?>
 				<input type="hidden" name="form_id" value="<?php echo esc_attr( $form_id ); ?>" />
 				<input type="submit" name="submit" class="button button-primary" value="Build CSS File" style="display: none;">
-				<?php settings_fields( 'mc4wp_form_styles_settings' ); ?>
 
 				<noscript><p><?php _e( 'You need to have JavaScript enabled to see a preview of your form.', 'mailchimp-for-wp' ); ?></p></noscript>
 
@@ -320,6 +316,7 @@
 
 							<div class="small-margin"></div>
 
+							<?php if( count( $forms ) > 1 ) { // only show copy feature if multiple forms exist ?>
 							<label for="copy_from_form_id"><?php _e( 'Copy styles from other form', 'mailchimp-for-wp' );?></label>
 							<select name="copy_from_form_id" id="copy_from_form_id">
 								<?php foreach( $forms as $form ) {
@@ -330,7 +327,7 @@
 								<?php } ?>
 							</select>
 							<input type="submit" name="_mc4wp_copy_form_styles" value="<?php _e( 'Copy Styles', 'mailchimp-for-wp' ); ?>" class="button-secondary" onclick="return confirm('<?php esc_attr_e( 'Are you sure you want to copy form styles from another form? This will overwrite current styles for this form.', 'mailchimp-for-wp' ); ?>');"/>
-
+							<?php } ?>
 							<!-- end of block -->
 
 						</div>
@@ -354,6 +351,12 @@
 			<!-- / Preview -->
 		</div>
 	</div>
+
+
+	<p class="mc4wp-notice">
+		<span class="dashicons dashicons-info" style="color: #999;"></span>
+		<?php printf( __( 'Tip: have a look at our <a href="%s">knowledge base</a> articles on <a href="%s">creating an inline form</a> or <a href="%s">styling your form</a> in general.', 'mailchimp-for-wp' ), 'https://mc4wp.com/kb/', 'https://mc4wp.com/kb/single-line-forms/', 'https://mc4wp.com/kb/category/styling-your-form/' ); ?>
+	</p>
 
 
 

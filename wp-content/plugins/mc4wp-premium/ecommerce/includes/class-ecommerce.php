@@ -75,6 +75,17 @@ class MC4WP_Ecommerce {
 	 */
 	protected function add_order_data( array $data ) {
 
+		// add general order data
+		$data = array_merge( $this->get_general_order_data(), $data );
+
+		// add campaign id & email id
+		$campaign_id = $this->tracker->get_campaign_id( $data['id'] );
+		$email_id = $this->tracker->get_email_id( $data['id'] );
+		if( ! empty( $campaign_id ) && ! empty( $email_id ) ) {
+			$data['campaign_id'] = $campaign_id;
+			$data['email_id'] = $email_id;
+		}
+
 		/**
 		 * Filters the order data for all orders before it is sent to MailChimp.
 		 *
@@ -161,8 +172,6 @@ class MC4WP_Ecommerce {
 			'items' => $data_items
 		);
 
-		$data = array_merge( $this->get_general_order_data(), $data );
-
 		return $this->add_order_data( $data );
 	}
 
@@ -218,8 +227,6 @@ class MC4WP_Ecommerce {
 			'items' => $data_items,
 		);
 
-		$data = array_merge( $this->get_general_order_data(), $data );
-		
 		return $this->add_order_data( $data );
 	}
 
@@ -258,15 +265,6 @@ class MC4WP_Ecommerce {
 			'store_name' => $this->get_store_name(),
 			'store_id' => $this->get_store_id(),
 		);
-
-		// get campaign id & email id
-		$campaign_id = $this->tracker->get_campaign_id();
-		$email_id = $this->tracker->get_email_id();
-
-		if( ! empty( $campaign_id ) && ! empty( $email_id ) ) {
-			$data['campaign_id'] = $campaign_id;
-			$data['email_id'] = $email_id;
-		}
 
 		return $data;
 	}

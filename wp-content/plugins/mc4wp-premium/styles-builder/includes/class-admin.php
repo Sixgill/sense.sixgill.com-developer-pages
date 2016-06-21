@@ -24,7 +24,6 @@ class MC4WP_Styles_Builder_Admin {
 	 * Add necessary hooks
 	 */
 	public function add_hooks() {
-		add_action( 'admin_init', array( $this, 'register_setting' ) );
 		add_action( 'admin_init', array( $this, 'run_upgrade_routines' ) );
 		add_action( 'mc4wp_admin_enqueue_assets', array( $this, 'enqueue_assets' ) );
 		add_action( 'mc4wp_admin_form_after_appearance_settings_rows', array( $this, 'add_settings_row' ), 10, 2 );
@@ -32,7 +31,8 @@ class MC4WP_Styles_Builder_Admin {
 		add_action( 'mc4wp_admin_show_forms_page-styles-builder', array( $this, 'show_page' ) );
 
 		// re-create stylesheet every time a form is saved
-		add_action( 'mc4wp_save_form', array( 'MC4WP_Styles_Builder', 'bundle_stylesheets' ) );
+		add_action( 'mc4wp_save_form', array( 'MC4WP_Styles_Builder', 'bundle' ) );
+		add_action( 'mc4wp_admin_styles_builder_save', array( $this, 'save_settings' ) );
 	}
 
 	/**
@@ -53,10 +53,13 @@ class MC4WP_Styles_Builder_Admin {
 	}
 
 	/**
-	 * Register setting
+	 * Save Styles Builder settings
 	 */
-	public function register_setting() {
-		register_setting( 'mc4wp_form_styles_settings', 'mc4wp_form_styles', array( 'MC4WP_Styles_Builder', 'build' ) );
+	public function save_settings() {
+		check_admin_referer( 'styles_builder_save' );
+		$styles = $_POST['mc4wp_form_styles'];
+		$all = MC4WP_Styles_Builder::build( $styles );
+		update_option( 'mc4wp_form_styles', $all, false );
 	}
 
 	/**
@@ -84,7 +87,7 @@ class MC4WP_Styles_Builder_Admin {
 	 * Show Styles Builder page
 	 */
 	function show_page() {
-		$forms = mc4wp_get_forms();
+		$forms = mc4wp_get_forms( array( 'post_status' =>  array( 'publish', 'draft', 'pending', 'future' ) ) );
 		$form_id = $forms[0]->ID;
 
 		// get form to which styles should apply

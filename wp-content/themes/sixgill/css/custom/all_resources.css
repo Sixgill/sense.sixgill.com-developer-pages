@@ -5,9 +5,6 @@
 .resource-block {
 	display: inline-block;
 	background-color: #ffffff;
-	width: 24%;
-	margin-left: 0.5%;
-	margin-right: 0.5%;
 	transition: all 0.5s;
 }
 
@@ -18,7 +15,6 @@
 .resources-blocks-container {
 	text-align: left;
 	display: inline-block;
-	width: 96%;
 }
 
 .resources-container {
