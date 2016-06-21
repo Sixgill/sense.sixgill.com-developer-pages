@@ -78,7 +78,7 @@ body, p {
 	border:0px solid #FF0004;
 }
 
-.btnSchedule, .btnSolutions, .btnCompanym, .btn-news-press {
+.btnSchedule, .btnSolutions, .btnCompanym, .btn-news-press, .submit-resource-form-button {
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	color: #ffffff;
@@ -90,11 +90,11 @@ body, p {
 	-moz-border-radius: 0;
 }
 
-.btnSchedule:hover, .btnSolutions:hover, .btnCompany:hover, .btn-news-press:hover {
+.btnSchedule:hover, .btnSolutions:hover, .btnCompany:hover, .btn-news-press:hover, .submit-resource-form-button:hover {
 	text-decoration: none;
 }
 
-.btnSchedule {
+.btnSchedule, .submit-resource-form-button {
 	background: #4ddb5a;
 	background-image: -webkit-linear-gradient(top, #4ddb5a, #3cad46);
 	background-image: -moz-linear-gradient(top, #4ddb5a, #3cad46);
@@ -131,7 +131,7 @@ body, p {
 	line-height: inherit;
 }
 
-.btnSchedule:hover {
+.btnSchedule:hover, .submit-resource-form-button:hover {
 	background: #4ddb5a;
 	background-image: -webkit-linear-gradient(top, #4ddb5a, #4ddb5a);
 	background-image: -moz-linear-gradient(top, #4ddb5a, #4ddb5a);
