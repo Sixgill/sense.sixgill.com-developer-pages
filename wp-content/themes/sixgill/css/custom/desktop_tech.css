@@ -4,4 +4,16 @@
 		padding-top:75px;
 		max-width:950px;
 	}
+
+	.tech-top-header-blue {
+		font-size: 32px; 
+		color: #004cbf; 
+		font-weight: bold;
+	}
+
+	.tech-top-header-gray {
+		font-size: 21px; 
+		color: #9a9a9a; 
+		font-weight: normal;
+	}
 }
