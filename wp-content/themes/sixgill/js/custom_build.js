@@ -485,15 +485,9 @@ $(function() {
 
 	var resourcesBlocks = $('.resource-block');
 
-	var oldWidth = 0;
-
 	function resizeResourcesContainers() {
 		resourcesBlocks.each(function() {
 			var blockWidth = $(this).width();
-			if(blockWidth==oldWidth) {
-				return;
-			}
-
 			if (!blockHeight) {
 				oldWidth = blockWidth;
 				blockHeight = blockWidth * resourceBlockAspectRatio;
@@ -529,7 +523,7 @@ $(function() {
 
 	$(window)
 		.on('resize', recalcResourcesBlocksSizes())
-		.on('orientationchange', recalcResourcesBlocksSizes());
+		.on('orientationchange', setTimeout(recalcResourcesBlocksSizes, 1000));
 
 	resizeResourcesContainers();
 });
@@ -556,6 +550,4 @@ jQuery(function($) {
 			}
 			$(this).html('<span class="bullet-color">•</span> '+$(this).html());
 		});
-		$(this).css('margin-bottom', (biggestFontsize/2)+'px');
-	});
-});
+		$(this).css('margin-bottom', (biggestFontsize/2)+

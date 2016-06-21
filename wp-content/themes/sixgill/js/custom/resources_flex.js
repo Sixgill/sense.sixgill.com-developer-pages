@@ -10,15 +10,9 @@ $(function() {
 
 	var resourcesBlocks = $('.resource-block');
 
-	var oldWidth = 0;
-
 	function resizeResourcesContainers() {
 		resourcesBlocks.each(function() {
 			var blockWidth = $(this).width();
-			if(blockWidth==oldWidth) {
-				return;
-			}
-
 			if (!blockHeight) {
 				oldWidth = blockWidth;
 				blockHeight = blockWidth * resourceBlockAspectRatio;
@@ -54,7 +48,7 @@ $(function() {
 
 	$(window)
 		.on('resize', recalcResourcesBlocksSizes())
-		.on('orientationchange', recalcResourcesBlocksSizes());
+		.on('orientationchange', setTimeout(recalcResourcesBlocksSizes, 1000));
 
 	resizeResourcesContainers();
 });
