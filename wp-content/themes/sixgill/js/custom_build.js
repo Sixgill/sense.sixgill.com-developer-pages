@@ -526,10 +526,11 @@ $(function() {
 		console.log('resize');
 		recalcResourcesBlocksSizes();
 	});
+
 	$(window).on('orientationchange', function() {
 		console.log('orientationchange');
 		setTimeout(recalcResourcesBlocksSizes, 1000);
-	);
+	});
 
 	resizeResourcesContainers();
 });
