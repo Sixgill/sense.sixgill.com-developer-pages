@@ -509,7 +509,7 @@ $(function() {
 
 	function recalcResourcesBlocksSizes() {
 		blockHeight = 0;
-		resizeResourcesContainers();
+		setTimeout(resizeResourcesContainers(), 500);
 	}
 
 	$(window)
