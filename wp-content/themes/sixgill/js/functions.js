@@ -701,7 +701,7 @@ var SEMICOLON = SEMICOLON || {};
 				outClass : animationOut,
 				inDuration : Number(durationIn),
 				outDuration : Number(durationOut),
-				linkElement : '#primary-menu ul li a:not([target="_blank"]):not([href="#"]):not([data-lightbox])',
+				/*linkElement : '#primary-menu ul li a:not([target="_blank"]):not([href="#"]):not([data-lightbox])',*/
 				loading : true,
 				loadingParentElement : 'body',
 				loadingClass : 'css3-spinner',

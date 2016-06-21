@@ -57,12 +57,12 @@ if( !$color OR !checkhexcolor( $color ) ) {
 
 a,
 .header-extras li .he-text span,
-#primary-menu ul li:hover > a,
-#primary-menu ul li.current > a,
+/*#primary-menu ul li:hover > a,*/
+/*#primary-menu ul li.current > a,*/
 #primary-menu div ul li:hover > a,
 #primary-menu div ul li.current > a,
 #primary-menu ul ul li:hover > a,
-#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a:hover,
+/*#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a:hover,*/
 #top-cart a:hover,
 .top-cart-action span.top-checkout-price,
 .breadcrumb a:hover,
@@ -201,7 +201,7 @@ input.switch-toggle-round:checked + label:before,
 .top-links ul ul,
 .top-links ul div.top-link-section,
 #primary-menu ul ul:not(.mega-menu-column),
-#primary-menu ul li .mega-menu-content,
+/*#primary-menu ul li .mega-menu-content,*/
 #primary-menu.style-6 > ul > li > a:after,
 #primary-menu.style-6 > ul > li.current > a:after,
 #top-cart .top-cart-content,
@@ -259,8 +259,8 @@ input.switch-toggle-round:checked + label:before,
     body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li:hover a,
     body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li.current a,
     #primary-menu ul ul li:hover > a,
-    #primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title:hover > a,
-    #primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title > a:hover { color: <?php echo $color; ?> !important; }
+    /*#primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title:hover > a,
+    #primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title > a:hover { color: <?php echo $color; ?> !important; }*/
 
     #page-menu nav { background-color: <?php echo $color; ?>; }
 
