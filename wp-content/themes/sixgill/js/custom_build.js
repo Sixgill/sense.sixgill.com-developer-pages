@@ -550,4 +550,6 @@ jQuery(function($) {
 			}
 			$(this).html('<span class="bullet-color">•</span> '+$(this).html());
 		});
-		$(this).css('margin-bottom', (biggestFontsize/2)+
+		$(this).css('margin-bottom', (biggestFontsize/2)+'px');
+	});
+});
