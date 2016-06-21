@@ -5,23 +5,32 @@
 .resource-block {
 	display: inline-block;
 	background-color: #ffffff;
+	width: 24%;
+	margin-left: 0.5%;
+  margin-right: 0.5%;
+  transition: all 0.5s;
 }
 
-.resource-title {
-	font-weight: bold;
+.resource-block:hover {
+  transform: scale(1.066);
 }
 
 .resources-blocks-container {
 	text-align: left;
 	display: inline-block;
+	width: 96%;
 }
 
-.resource-container {
-	padding: 0px;
-	margin: 0px auto;
-	width: 100%;
+.resources-container {
 	text-align: center;
+}
+
+.resource-block-part {
+	padding: 0;
+	margin: 0;
+	width: 100%;
 	overflow: hidden;
+	text-align: center;
 }
 
 .resource-image-container {
@@ -31,6 +40,22 @@
 	background-size: contain !important;
 	background-position-x: 50% !important;
 	background-position: center center !important;
+}
+
+.resource-title {
+	font-weight: bold;
+	height: 33%;
+	font-size: 16px;
+}
+
+.resource-link-container {
+	height: 15%;
+	border-top: 1px solid #e7e7e7;
+}
+
+.resource-link {
+	color: #999999 !important;
+	font-size: 15px;
 }
 
 .resource-image-container-centered {
@@ -46,20 +71,8 @@
 	background-position: top center !important;
 }
 
-.resource-link {
-	color: #999999;
-}
-
 .resources-page-background {
 	background-color: #004cbf;
-}
-
-.resource-block:nth-child(odd) {
-	margin-left: 0px;
-}
-
-.resource-block:nth-child(even) {
-	margin-right: 0px;
 }
 
 .yikes-easy-mc-submit-button {

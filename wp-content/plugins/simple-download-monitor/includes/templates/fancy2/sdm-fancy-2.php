@@ -127,21 +127,21 @@ function sdm_generate_fancy2_display_output($args) {
 
     $color_opt = $main_opts['download_button_color'];
 
-		$output = '<div class="resource-block">\n';
-			$output .= '<div ';
-			$output .= 'class="resource-container resource-image-container';
-			$output .= " resource-image-container-".$item_download_imagemode." ";
-			$output .= ' "';
-			$output .= 'style="background: url(\''.$item_download_thumbnail.'\');"> \n';
-			$output .= '</div>\n';
-			$output .= '<div class="resource-container resource-title"> \n';
-				$output .= $isset_item_title.'\n';
-			$output .= '</div> \n';
-			$output .= '<div data-permalink="'.$download_url.'" class="resource-container resource-link-container"> \n';
-				$output .= '<hr class="resource-line"> \n';
-				$output .= '<a class="resource-link" href="#" data-toggle="modal" data-target="#myResource">Click to download</a> \n';
-			$output .= '</div> \n';
-		$output .= '</div> \n';
+		$output = '<div class="resource-block">';
+			$output .= '<div class="resource-block-part resource-image-container resource-image-container-'.$item_download_imagemode.'"';
+			$output .= 'style="background: url(\''.$item_download_thumbnail.'\');">';
+			$output .= '</div>';
+			$output .= '<div class="resource-block-part resource-title">';
+				$output .= '<div class="vertical-centered">';
+					$output .= $isset_item_title;
+				$output .= '</div>';
+			$output .= '</div>';
+			$output .= '<div data-permalink="'.$download_url.'" class="resource-block-part resource-link-container">';
+				$output .= '<div class="vertical-centered">';
+					$output .= '<a class="resource-link" href="#" data-toggle="modal" data-target="#myResource">Click to download</a>';
+				$output .= '</div>';
+			$output .= '</div>';
+		$output .= '</div>';
 
     return $output;
 }
