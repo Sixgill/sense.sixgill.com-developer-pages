@@ -515,15 +515,21 @@ $(function() {
 	}
 
 	function timeoutResizeCheck() {
+		console.log('timeoutResizeCheck');
 		recalcResourcesBlocksSizes();
 		setTimeout(timeoutResizeCheck, 500);
 	}
 
 	setTimeout(timeoutResizeCheck, 1000);
 
-	$(window)
-		.on('resize', recalcResourcesBlocksSizes())
-		.on('orientationchange', setTimeout(recalcResourcesBlocksSizes, 1000));
+	$(window).on('resize', function() {
+		console.log('resize');
+		recalcResourcesBlocksSizes();
+	});
+	$(window).on('orientationchange', function() {
+		console.log('orientationchange');
+		setTimeout(recalcResourcesBlocksSizes, 1000);
+	);
 
 	resizeResourcesContainers();
 });
