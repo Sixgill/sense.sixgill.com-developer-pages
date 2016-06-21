@@ -27,4 +27,9 @@
 	.my_boxSolution_title {
 		border:0px;
 	}
+
+	.thumbnail-solutions-mobile {
+		width: 100%;
+		text-align: center;
+	}
 }

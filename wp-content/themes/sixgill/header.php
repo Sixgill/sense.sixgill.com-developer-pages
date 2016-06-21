@@ -5,6 +5,8 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Sixgill" />
 
+	<meta name="google-site-verification" content="YI36Rs0Zki_Iw6jdf8RNTnIkOZIrqcUoilY5LNDFrBY" />
+
 	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
@@ -23,7 +25,7 @@
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/colors.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom.css" type="text/css" />
 
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom_build.css?<?php echo time(); ?>" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom_build.css" type="text/css" />
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
