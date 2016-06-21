@@ -16,4 +16,16 @@
 	.tech-top-header {
 		padding-left: 15px;
 	}
+
+	.tech-top-header-blue {
+		font-size: 23px; 
+		color: #004cbf; 
+		font-weight: bold;
+	}
+
+	.tech-top-header-gray {
+		font-size: 14px; 
+		color: #9a9a9a; 
+		font-weight: normal;
+	}
 }
