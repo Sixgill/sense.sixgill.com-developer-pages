@@ -554,4 +554,8 @@ jQuery(function($) {
 			if(currentFontsize > biggestFontsize && currentFontsize < 100) {
 				biggestFontsize = currentFontsize;
 			}
-			$(t
+			$(this).html('<span class="bullet-color">•</span> '+$(this).html());
+		});
+		$(this).css('margin-bottom', (biggestFontsize/2)+'px');
+	});
+});
