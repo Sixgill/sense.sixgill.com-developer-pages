@@ -507,7 +507,7 @@ $(function() {
 		$(this).css('box-shadow', 'none');
 	});
 
-	$(window).resize(function() {
+	$(window).on('resize, orientationchange', function() {
 		blockHeight = 0;
 		resizeResourcesContainers();
 	});
