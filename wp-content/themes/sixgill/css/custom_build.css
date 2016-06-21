@@ -408,6 +408,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .posts-list {
 	margin-bottom: 30px;
 }
+
+.margin-bottom-title {
+	margin-bottom: 25px;
+}
 .company-learn-more-text {
 	display: none;
 }
@@ -545,7 +549,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .resource-title {
 	font-weight: bold;
-	text-align: center;
 }
 
 .resources-blocks-container {
@@ -558,11 +561,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin: 0px auto;
 	width: 100%;
 	text-align: center;
-	height: 110px;
 	overflow: hidden;
 }
 
 .resource-image-container {
+	height: 52%;
 	overflow: hidden;
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
@@ -925,6 +928,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		width: 100%;
 		margin-top: 60px;
 	}
+
+	.blog-post-with-image {
+		margin-bottom: 35px;
+	}
 }
 /* Company desktop styles */
 @media only screen and (min-width : 1001px) {
@@ -1035,30 +1042,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 /* Resources desktop styles */
 @media only screen and (min-width : 1001px) {
-	.resources-container {
-		padding-top: 29px;
-		padding-bottom: 55px;
-	}
 
 	.resource-block {
-		margin-left: 10px;
-		margin-right: 10px;
-		margin-top: 13px;
-		margin-bottom: 13px;
+		width: %;
 	}
 
-	.resource-title-container {
-		height: 170px;
+	.resources-blocks-container {
+		width: %;
 	}
 
-	.resource-link-container {
-		height: 63px;
-		padding-bottom: 55px;
-	}
-
-	.resource-image-container {
-		height: 220px;
-	}
 }
 /* Tech desktop styles */
 @media only screen and (min-width : 1001px) {
@@ -1472,6 +1464,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		z-index: 200;
 		margin-top:150px;
 	}
+
+	.normal-font-18-1 {
+		font-size: 18px;
+		line-height: 1 !important;
+	}
+
+	.blog-post-with-image {
+		background-position: center; 
+		height: 350px; 
+		margin-bottom: 35px;
+	}
 }
 /* Company tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) and (max-aspect-ratio: 4/3) {
@@ -1560,7 +1563,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.resources-blocks-container {
-
+		width: %;
 	}
 }
 /* Tech tablet styles */
@@ -1953,15 +1956,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 /* Resources mobile portrait styles */
 @media (max-width: 500px) and (max-aspect-ratio: 4/3) {
 	.resources-container {
-
+		width: %;
 	}
 
 	.resource-block {
-
+		width: %;
 	}
 
 	.resources-blocks-container {
-
+		width: %;
 	}
 }
 /* Tech mobile portrait styles */
@@ -2309,6 +2312,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.h1-blog {
 		margin-bottom: 18px;
 	}
+
+	.margin-bottom-post {
+		margin-bottom: 25px;
+	}
+
+	.margin-top-post {
+		margin-top: 10px;
+	}
 }
 /* Company mobile portrait and landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {
@@ -2366,6 +2377,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {
 	.resource-link {
 		font-size: 18px;
+	}
+	
+	.submit-resource-form-button {
+		background-size: contain;
+		background-repeat: no-repeat;
+		max-width: 200px !important;
+		max-height: 46px !important;
 	}
 }
 /* Press mobile portrait and landscape styles */
@@ -2689,6 +2707,18 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	line-height: 1;
 }
 
+.line-height-1 {
+	line-height: 1 !important;
+}
+
+.line-height-1-5 {
+	line-height: 1.5 !important;
+}
+
+.line-height-1-8 {
+	line-height: 1.8 !important;
+}
+
 .full-width {
 	width: 100%;
 }
@@ -2708,3 +2738,4 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
