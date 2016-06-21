@@ -24,7 +24,7 @@
 
  	<meta property="og:description schema:description" content="<?php  
 		if (strlen($customFieldDescriptions) == 0)  {
-			if (strlen($contentPost) < 105) {
+			if (strlen($contentPost) < 108) {
  			echo $$contentPost;
 			} else {
  			echo substr($contentPost, 0, 105)."...";
