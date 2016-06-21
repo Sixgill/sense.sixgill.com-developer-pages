@@ -25,18 +25,18 @@
 							<?php echo the_time('F j, Y'); ?> | Post by <?php echo get_field('author'); ?>
 						</h4>
 
-						<div class="swiper-slide full-width" style="background-position: center; height: 350px; margin-bottom: 30px;">
+						<div class="swiper-slide full-width blog-post-with-image">
 							<?php the_post_thumbnail( 'spec_thumb' ); ?>
 						</div>
 						<?php include(locate_template('fixed_social_buttons.php')); ?>
 					</div>
 
 					<div class="shareIcons-tablet display-only-tablet">
-						<h3 id="press-date-post" class="press-date color-black no-bottom-margin" style="margin-bottom: 10px;">
+						<h3 id="press-date-post" class="press-date color-black margin-bottom-post">
 							<?php echo $post->post_title; ?>
 						</h3>
 
-						<div class="swiper-slide" class="full-width" style="  background-position: center; height: 350px;     margin-bottom: 30px;">
+						<div class="swiper-slide full-width blog-post-with-image">
 							<?php the_post_thumbnail( 'spec_thumb' ); ?>
 						</div>
 						<?php include(locate_template('fixed_social_buttons.php')); ?>
@@ -44,16 +44,16 @@
 						<p class="color-black no-bottom-margin normal-font-20-1">
 							<?php echo the_time('F j, Y'); ?>
 						</p>
-						<p class="color-999999 normal-font-20-1">
+						<p class="color-999999 normal-font-18-1">
 							Post by <?php echo get_field('author'); ?>
 						</p>
 					</div>
 
 					<div class="shareIcons-mobile no-desktop-display no-tablet-display">
-						<h3 id="press-date-post" class="press-date color-black no-bottom-margin" style=" margin-bottom: 10px;">
+						<h3 id="press-date-post" class="press-date color-black margin-bottom-title">
 							<?php echo $post->post_title; ?>
 						</h3>
-						<div class="swiper-slide full-width" style="background-position: center; height: 350px; margin-bottom: 30px;">
+						<div class="swiper-slide full-width" style="background-position: center; height: 350px;">
 							<?php the_post_thumbnail( 'spec_thumb' ); ?>
 						</div>
 
@@ -62,7 +62,7 @@
 						<p class="color-black no-bottom-margin normal-font-20-1">
 							<?php echo the_time('F j, Y'); ?>
 						</p>
-						<p class="color-999999 normal-font-20-1" id="press-author-post">
+						<p class="color-999999 normal-font-20-1 line-height-1 margin-bottom-post" id="press-author-post">
 							Post by <?php echo get_field('author'); ?>
 						</p>
 					</div>
@@ -79,24 +79,27 @@
 					</div>
 
 					<div class="shareIcons-tablet display-only-tablet">
-						<h3 id="press-date-post" class="press-date color-black no-bottom-margin">
+						<h3 id="press-date-post" class="press-date color-black margin-bottom-title">
 							<?php echo $post->post_title; ?>
 						</h3>
-						<h4 id="press-author-post" class="press-by-author author-with-date-blogPost">
-							<?php echo the_time('F j, Y'); ?> | Post by <?php echo get_field('author'); ?>
-						</h4>
+
+						<p id="press-author-post" class="color-black no-bottom-margin normal-font-20-1">
+						<?php echo the_time('F j, Y'); ?></p>
+						<p class="color-999999 normal-font-18-1">
+							Post by <?php echo get_field('author'); ?>
+						</p>
 						<?php include(locate_template('fixed_social_buttons.php')); ?>
 					</div>
 
 					<div class="shareIcons-mobile no-desktop-display no-tablet-display">
-						<h3 class="press-date color-black no-bottom-margin" style=" margin-bottom: 30px;">
+						<h3 class="press-date color-black margin-bottom-title">
 							<?php echo $post->post_title; ?>
 						</h3>
 
 						<?php include(locate_template('fixed_social_buttons.php')); ?>
-						<p class="color-black no-bottom-margin normal-font-20-1">
+						<p class="color-black no-bottom-margin normal-font-13-1">
 							<?php echo the_time('F j, Y'); ?></p>
-							<p class="color-999999 normal-font-20-1">
+							<p class="color-999999 normal-font-13-1 margin-bottom-title">
 								Post by <?php echo get_field('author'); ?>
 							</p>
 						</div>
