@@ -515,15 +515,21 @@ $(function() {
 	}
 
 	function timeoutResizeCheck() {
+		console.log('timeoutResizeCheck');
 		recalcResourcesBlocksSizes();
 		setTimeout(timeoutResizeCheck, 500);
 	}
 
 	setTimeout(timeoutResizeCheck, 1000);
 
-	$(window)
-		.on('resize', recalcResourcesBlocksSizes())
-		.on('orientationchange', setTimeout(recalcResourcesBlocksSizes, 1000));
+	$(window).on('resize', function() {
+		console.log('resize');
+		recalcResourcesBlocksSizes();
+	});
+	$(window).on('orientationchange', function() {
+		console.log('orientationchange');
+		setTimeout(recalcResourcesBlocksSizes, 1000);
+	);
 
 	resizeResourcesContainers();
 });
@@ -548,8 +554,4 @@ jQuery(function($) {
 			if(currentFontsize > biggestFontsize && currentFontsize < 100) {
 				biggestFontsize = currentFontsize;
 			}
-			$(this).html('<span class="bullet-color">•</span> '+$(this).html());
-		});
-		$(this).css('margin-bottom', (biggestFontsize/2)+'px');
-	});
-});
+			$(t
