@@ -765,67 +765,6 @@ Responsive CSS
 	}
 
 
-
-	#primary-menu ul li {
-
-		float: none;
-
-		margin: 0 !important;
-
-		text-align: left !important;
-
-		border-top: 1px solid #EEE;
-
-	}
-
-
-
-	#primary-menu ul li:first-child { border-top: 0; }
-
-
-
-	#primary-menu ul > li > a,
-
-	#primary-menu.style-2 > div > ul > li > a {
-
-		padding: 14px 5px !important;
-
-		border: none !important;
-
-		margin: 0 !important;
-
-	}
-
-
-
-	#primary-menu.style-5 > ul > li > a > div { line-height: 22px; }
-
-
-
-	#primary-menu.style-5 > ul > li > a > div i {
-
-		display: inline-block;
-
-		margin: 0 6px 0 0;
-
-		top: -1px;
-
-		width: 16px;
-
-		font-size: 14px;
-
-		line-height: inherit;
-
-	}
-
-
-
-	#primary-menu.style-6 > ul > li > a:after,
-
-	#primary-menu.style-6 > ul > li.current > a:after { display: none; }
-
-
-
 	#primary-menu.sub-title > ul > li,
 
 	#primary-menu.sub-title.style-2 > div > ul > li {

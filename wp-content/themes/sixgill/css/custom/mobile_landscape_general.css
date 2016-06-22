@@ -48,7 +48,7 @@
 		margin-bottom: 25px;
 	}
 
-	#primary-menu > ul {
+	#primary-menu > ul > li {
     left: 0px;
     top: 0px;
     position: absolute;

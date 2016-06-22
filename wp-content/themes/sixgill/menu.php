@@ -11,7 +11,7 @@
 			} else {
 				$html .= 'href="'.$link.'">';
 			}
-				$html .= '<div class="menu-'.$listSize.'-with-search">';
+				$html .= '<div class="menu-'.$listSize.'">';
 					$html .= '<div class="mobile-vertical-centered">';
 						$html .= $elementName;
 					$html .= '</div>';
@@ -28,7 +28,7 @@
 			}
 		} else {
 			$html .= '<a href="'.$link.'">';
-				$html .= '<div class="menu-'.$listSize.'-with-search">';
+				$html .= '<div class="menu-'.$listSize.'">';
 					$html .= '<div class="mobile-vertical-centered">';
 						$html .= $elementName;
 					$html .= '</div>';
