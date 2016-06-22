@@ -9,7 +9,7 @@
  	<meta property="og:type" content="website" /> 
  	<meta property="og:title" content="<?php echo $post->post_title; ?>" />
 
- 	<meta property="og:image" href="<?php 
+ 	<meta property="og:image" content="<?php 
  		if (!has_post_thumbnail() && !$imageFieldShare) { 
  			echo $homeImageShare; 
 		} else if (!has_post_thumbnail()){
@@ -20,7 +20,7 @@
 		} ?>" 
 	/>
 
- 	<meta property="og:url" href="<?php echo wp_get_shortlink(); ?>" />
+ 	<meta property="og:url" content="<?php echo wp_get_shortlink(); ?>" />
 
  	<meta property="og:description" content="<?php  
 		if (strlen($customFieldDescriptions) == 0)  {
