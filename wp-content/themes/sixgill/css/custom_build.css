@@ -548,10 +548,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	transition: all 0.5s;
 }
 
-.resource-block:hover {
-	transform: scale(1.066);
-}
-
 .resources-blocks-container {
 	text-align: left;
 	display: inline-block;
@@ -1064,6 +1060,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.resources-container {
 		min-height: 680px;
+	}
+
+	.resource-block:hover {
+		transform: scale(1.066);
 	}
 
 }
@@ -2746,4 +2746,3 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
-}
