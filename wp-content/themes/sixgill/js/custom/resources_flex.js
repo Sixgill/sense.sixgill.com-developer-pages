@@ -1,9 +1,10 @@
 $(function() {
 	var resourcesBlocks = $('.resource-block');
 
-	if(resourcesBlocks.length == 0 || $(window).width()<1000) {
+	if(resourcesBlocks.length == 0) {
 		return;
 	}
+
 	var blockHeight = 0;
 	var resourceBlockAspectRatio = 1.22;
 	// Margin-top/block_height or margin-bottom/block_height ratio
@@ -28,13 +29,16 @@ $(function() {
 		});
 	}
 
-	resourcesBlocks.mouseenter(function() {
-		$(this).css('box-shadow', '0px 0px '+boxShadowSize+'px #c1c1c1')
-	});
+	if($(window).width() > 1000) {
+		resourcesBlocks.mouseenter(function() {
+			$(this).css('box-shadow', '0px 0px '+boxShadowSize+'px #c1c1c1')
+		});
 
-	resourcesBlocks.mouseleave(function() {
-		$(this).css('box-shadow', 'none');
-	});
+		resourcesBlocks.mouseleave(function() {
+			$(this).css('box-shadow', 'none');
+		});
+	}
+
 
 	function recalcResourcesBlocksSizes() {
 		blockHeight = 0;
