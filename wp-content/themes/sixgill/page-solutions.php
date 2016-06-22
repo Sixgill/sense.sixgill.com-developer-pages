@@ -61,7 +61,7 @@
 						<?php endif; ?>
 					</div>
 					<b style="padding-bottom: 5px;">
-						LEARN MORE ABOUT USE CASES FOR PEOPLE
+						<?php echo get_field('learn_more_people'); ?>
 					</b>
 					<?php
 						global $categoryName;
@@ -147,7 +147,7 @@
 						<?php endif; ?>
 					</div>
 					<b style="padding-bottom: 5px;">
-						LEARN MORE ABOUT USE CASES FOR PEOPLE
+						<?php echo get_field('learn_more_crowds'); ?>
 					</b>
 					<?php
 						global $categoryName;
