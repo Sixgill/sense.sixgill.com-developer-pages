@@ -1371,7 +1371,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-top: 0px;
 	}
 
-	#primary-menu > ul {
+	#primary-menu > ul > li {
 		position: fixed;
 		width: 100%;
 		top: 110px;
@@ -1437,11 +1437,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	#legal-text {
 		padding-top: 50px;
-	}
-
-	/* TEMP FIX */
-	#primary-menu > ul {
-		top: 110px;
 	}
 
 	.products-h1, .solutions-h1, .company-h1 {
@@ -1802,13 +1797,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		display: none !important;
 	}
 
-	#primary-menu > ul {
+	#primary-menu > ul > li {
 		position: fixed;
 		width: 100%;
 		top: 68px;
 		left: 0px;
 		right: 0px;
-		bottom: 0px;
+		bottom: 60px;
 	}
 
 	#primary-menu a div {
@@ -2106,7 +2101,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-bottom: 25px;
 	}
 
-	#primary-menu > ul {
+	#primary-menu > ul > li {
     left: 0px;
     top: 0px;
     position: absolute;
@@ -2280,7 +2275,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 }
 /* General mobile portrait and landscape styles */
-@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {
 
 	.shareIcons-desktop {
 		display: none;
