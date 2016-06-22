@@ -8,10 +8,6 @@
 	transition: all 0.5s;
 }
 
-.resource-block:hover {
-	transform: scale(1.066);
-}
-
 .resources-blocks-container {
 	text-align: left;
 	display: inline-block;

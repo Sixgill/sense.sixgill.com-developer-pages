@@ -1,5 +1,9 @@
 $(function() {
+	var resourcesBlocks = $('.resource-block');
 
+	if(resourcesBlocks.length == 0 || $(window).width()<1000) {
+		return;
+	}
 	var blockHeight = 0;
 	var resourceBlockAspectRatio = 1.22;
 	// Margin-top/block_height or margin-bottom/block_height ratio
@@ -7,8 +11,6 @@ $(function() {
 	var hoverRatio = 1.066;
 	var boxShadowSizeRatio = 0.05;
 	var boxShadowSize = 0;
-
-	var resourcesBlocks = $('.resource-block');
 
 	function resizeResourcesContainers() {
 		resourcesBlocks.each(function() {
