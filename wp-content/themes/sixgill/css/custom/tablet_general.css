@@ -137,7 +137,7 @@
 		margin-top: 0px;
 	}
 
-	#primary-menu > ul {
+	#primary-menu > ul > li {
 		position: fixed;
 		width: 100%;
 		top: 110px;
@@ -203,11 +203,6 @@
 
 	#legal-text {
 		padding-top: 50px;
-	}
-
-	/* TEMP FIX */
-	#primary-menu > ul {
-		top: 110px;
 	}
 
 	.products-h1, .solutions-h1, .company-h1 {
