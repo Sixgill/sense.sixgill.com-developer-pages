@@ -20,6 +20,6 @@
 	}
 
 	.height-video-container {
-		min-height: 246px;
+		min-height: 246px !important;
 	}
 }
