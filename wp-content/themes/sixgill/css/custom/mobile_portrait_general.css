@@ -66,13 +66,13 @@
 		display: none !important;
 	}
 
-	#primary-menu > ul {
+	#primary-menu > ul > li {
 		position: fixed;
 		width: 100%;
 		top: 68px;
 		left: 0px;
 		right: 0px;
-		bottom: 0px;
+		bottom: 60px;
 	}
 
 	#primary-menu a div {
