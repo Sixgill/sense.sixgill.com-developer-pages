@@ -90,6 +90,12 @@ body, p {
 	-moz-border-radius: 0;
 }
 
+.submit-resource-form-button {
+	font-size: 16px;
+	padding: 0 26px !important;
+	min-height: 46px !important;
+}
+
 .btnSchedule:hover, .btnSolutions:hover, .btnCompany:hover, .btn-news-press:hover, .submit-resource-form-button:hover {
 	text-decoration: none;
 }
