@@ -2,7 +2,6 @@
 <html dir="ltr" lang="en-US">
 <head>
 	<?php include(locate_template('build.php')); ?>
-	<?php include(locate_template('share_scheme.php')); ?>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Sixgill" />
@@ -54,6 +53,8 @@
 	</title>
 
 	<?php wp_head(); ?>
+	<?php include(locate_template('share_scheme.php')); ?>
+
 </head>
 
 <body class="side-header stretched no-touch" data-loader-timeout="7000">
