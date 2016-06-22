@@ -2219,7 +2219,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.height-video-container {
-		min-height: 246px;
+		min-height: 246px !important;
 	}
 }
 /* Solutions mobile landscape styles */
