@@ -23,7 +23,7 @@
   <div id="single-post-content" class="content-wrap no-bottom-padding no-padding-top">
     <div class="container-fluid clearfix center solution-subpage-container no-margin-top">
 			<div class="left-aligned subsolution-left-aligned topmargin-lg">
-				<div class="solutions-subpage-text <?php if(!has_post_thumbnail()) echo "solution-subpage-onlytext" ?>">
+				<div class="solutions-subpage-text <?php if(!has_post_thumbnail()){ echo "solution-subpage-onlytext"; } ?>">
 					<?php the_content(); ?>
 				</div>
 				<div class="solutions-subpage-thumbnail thumbnail-solutions-mobile ">
