@@ -8,10 +8,6 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 
 /* TD */
 
-body, p {
-	font-family: "Lato", serif, sans-serif;
-}
-
 .pSolutions, .pProduct, .pCompany {
 	font-size:15px;
 	color:#686868;
@@ -401,20 +397,7 @@ Side Header
 		background-color: transparent !important;
 		color: #444 !important;
 	}
-
-	.side-header #primary-menu ul > li.sub-menu > a,
-	.side-header #primary-menu ul > li.sub-menu:hover > a { background-image: none !important; }
-
-	.side-header #primary-menu ul > li.sub-menu > a:after {
-		position: absolute;
-		content: '\e7a5';
-		top: 1px;
-		right: 0;
-		-webkit-transition: transform .2s linear;
-		-o-transition: transform .2s linear;
-		transition: transform .2s linear;
-	}
-
+/*
 	.side-header #primary-menu ul > li.sub-menu:hover > a:after {
 		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 		-webkit-transform: rotate(90deg);
@@ -423,7 +406,7 @@ Side Header
 		-o-transform: rotate(90deg);
 		transform: rotate(90deg);
 	}
-
+*/
 	.side-header:not(.open-header) #wrapper {
 		margin: 0 0 0 180px !important;
 		width: auto !important;
