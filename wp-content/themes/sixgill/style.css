@@ -1724,7 +1724,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 /* ----------------------------------------------------------------
 	Top Cart
 -----------------------------------------------------------------*/
-
+/*
 
 #top-cart { margin-right: 0; }
 
@@ -4680,7 +4680,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 /* ----------------------------------------------------------------
 	Blog
 -----------------------------------------------------------------*/
-
+/*
 
 #posts { position: relative; }
 
@@ -4822,7 +4822,7 @@ body:not(.device-touch) .entry-link {
 
 /* Small Thumbs
 -----------------------------------------------------------------*/
-
+/*
 .small-thumbs .entry-image,
 .ievent .entry-image {
 	float: left;
@@ -4969,7 +4969,7 @@ body:not(.device-touch) .entry-link {
 
 /* Blog - Masonry Full
 -----------------------------------------------------------------*/
-
+/*
 .post-masonry-full { margin: -80px 0 -80px -1px !important; }
 
 .post-masonry-full .entry {
@@ -4986,7 +4986,7 @@ body:not(.device-touch) .entry-link {
 
 /* Blog - Timeline
 -----------------------------------------------------------------*/
-
+/*
 .timeline-border {
 	position: absolute;
 	top: 0;
@@ -5087,7 +5087,7 @@ body:not(.device-touch) .entry-link {
 
 /* Blog - Timeline - Sidebar
 -----------------------------------------------------------------*/
-
+/*
 .postcontent .timeline-border {
 	left: 32px;
 	margin-left: 0;
@@ -5126,7 +5126,7 @@ body:not(.device-touch) .entry-link {
 
 /* Individual Post
 -----------------------------------------------------------------*/
-
+/*
 .ipost .entry-image img { border-radius: 0; }
 
 .ipost .entry-title h3,
@@ -5191,7 +5191,7 @@ body:not(.device-touch) .entry-link {
 
 /* Small Post
 -----------------------------------------------------------------*/
-
+/*
 .spost,
 .mpost {
 	margin-top: 20px;
@@ -5258,7 +5258,7 @@ body:not(.device-touch) .entry-link {
 
 /* Medium Post
 -----------------------------------------------------------------*/
-
+/*
 .mpost .entry-image { margin-right: 20px; }
 
 .mpost .entry-image,
@@ -5295,7 +5295,7 @@ body:not(.device-touch) .entry-link {
 /* ----------------------------------------------------------------
 	Blog - Author
 -----------------------------------------------------------------*/
-
+/*
 .author-image {
 	float: left;
 	width: 84px;
@@ -5312,7 +5312,7 @@ body:not(.device-touch) .entry-link {
 /* ----------------------------------------------------------------
 	Comments List
 -----------------------------------------------------------------*/
-
+/*
 
 #comments {
 	position: relative;
@@ -5462,7 +5462,7 @@ body:not(.device-touch) .entry-link {
 /* ----------------------------------------------------------------
 	Comment Form
 -----------------------------------------------------------------*/
-
+/*
 
 #respond,
 #respond form { margin-bottom: 0; }
@@ -5568,7 +5568,7 @@ p.wp-caption-text {
 
 /* Infinity Scroll - Message Style
 -----------------------------------------------------------------*/
-
+/*
 #infscr-loading,
 #portfolio-ajax-loader {
 	position: fixed;
@@ -5603,7 +5603,7 @@ p.wp-caption-text {
 	Shop
 -----------------------------------------------------------------*/
 
-
+/*
 .shop {
 	position: relative;
 	margin: 0 -20px -20px 0;
@@ -5755,7 +5755,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 
 /* Shop - 3 Columns
 -----------------------------------------------------------------*/
-
+/*
 .shop.product-3 { margin: 0 -30px -30px 0; }
 
 .product-3 .product {
@@ -5766,7 +5766,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 
 /* Shop - 3 Columns - Sidebar
 -----------------------------------------------------------------*/
-
+/*
 .postcontent .shop.product-3 { margin: 0 -25px -25px 0; }
 
 .postcontent .product-3 .product { padding: 0 25px 25px 0; }
@@ -5774,7 +5774,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 
 /* Shop - 2 Columns - Sidebar
 -----------------------------------------------------------------*/
-
+/*
 .postcontent .shop.product-2 { margin: 0 -40px -40px 0; }
 
 .postcontent .product-2 .product {
@@ -5785,7 +5785,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 
 /* Shop - 2 Columns - Both Sidebar
 -----------------------------------------------------------------*/
-
+/*
 .bothsidebar .shop.product-2 { margin: 0 -40px -20px 0; }
 
 .bothsidebar .product-2 .product { padding: 0 40px 20px 0; }
@@ -5793,7 +5793,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 
 /* Shop - 1 Column
 -----------------------------------------------------------------*/
-
+/*
 .shop.product-1 { margin: 0 0 -40px 0; }
 
 .product-1 .product {
@@ -5830,7 +5830,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 
 /* Shop - 1 Column - Both Sidebar
 -----------------------------------------------------------------*/
-
+/*
 .bothsidebar .product-1 .product {
 	border-top: 1px solid #F5F5F5;
 	padding-top: 40px;
@@ -5853,7 +5853,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 
 /* Shop - Single
 -----------------------------------------------------------------*/
-
+/*
 .single-product .product {
 	width: 100%;
 	margin: 0;
@@ -5975,7 +5975,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 
 /* Individual Product
 -----------------------------------------------------------------*/
-
+/*
 .product.iproduct {
 	float: none;
 	margin: 0;
@@ -5991,7 +5991,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 /* ----------------------------------------------------------------
 	Cart
 -----------------------------------------------------------------*/
-
+/*
 
 .cart .remove {
 	font-size: 14px;
@@ -6056,7 +6056,7 @@ td.actions {
 /* ----------------------------------------------------------------
 	Events
 -----------------------------------------------------------------*/
-
+/*
 
 .events .entry,
 .ievent {
@@ -6206,7 +6206,7 @@ td.actions {
 
 /* Individual Events
 -----------------------------------------------------------------*/
-
+/*
 .ievent {
 	position: relative;
 	margin-top: 20px;
@@ -6243,7 +6243,7 @@ td.actions {
 /* ----------------------------------------------------------------
 	Countdown
 -----------------------------------------------------------------*/
-
+/*
 .countdown { display: block; }
 
 .countdown-row {
@@ -6280,7 +6280,7 @@ td.actions {
 
 /* Countdown - Medium
 -----------------------------------------------------------------*/
-
+/*
 .countdown-medium .countdown-section { font-size: 14px; }
 
 .countdown-medium .countdown-amount {
@@ -6291,7 +6291,7 @@ td.actions {
 
 /* Countdown - Large
 -----------------------------------------------------------------*/
-
+/*
 .countdown-large .countdown-section { font-size: 18px; }
 
 .countdown-large .countdown-amount {
@@ -6303,7 +6303,7 @@ td.actions {
 
 /* Countdown - Inline
 -----------------------------------------------------------------*/
-
+/*
 .countdown.countdown-inline { display: inline-block; }
 
 .countdown.countdown-inline .countdown-row {
@@ -6340,7 +6340,7 @@ td.actions {
 
 /* Countdown - Coming Soon
 -----------------------------------------------------------------*/
-
+/*
 body:not(.device-xs):not(.device-xxs) .countdown.countdown-large.coming-soon .countdown-section {
 	border: none;
 	padding: 15px;
@@ -7216,7 +7216,7 @@ body:not(.device-touch) .button.button-full strong {
 
 /* Feature Box - Plain
 -----------------------------------------------------------------*/
-
+/*
 .feature-box.fbox-plain .fbox-icon {
 	border: none !important;
 	height: auto !important;
@@ -7273,7 +7273,7 @@ body:not(.device-touch) .button.button-full strong {
 
 /* Feature Box - Center
 -----------------------------------------------------------------*/
-
+/**
 .feature-box.fbox-center {
 	padding: 0;
 	text-align: center;
@@ -7303,7 +7303,7 @@ body:not(.device-touch) .button.button-full strong {
 
 /* Feature Box - Center & Large Icons
 -----------------------------------------------------------------*/
-
+/*
 .feature-box.fbox-center.fbox-large .fbox-icon {
 	width: 128px;
 	height: 128px;
@@ -7337,7 +7337,7 @@ body:not(.device-touch) .button.button-full strong {
 
 /* Feature Box - Center & Large Icons
 -----------------------------------------------------------------*/
-
+/*
 .feature-box.fbox-center.fbox-small .fbox-icon {
 	width: 64px;
 	height: 64px;
@@ -7368,7 +7368,7 @@ body:not(.device-touch) .button.button-full strong {
 
 /* Feature Box - Right
 -----------------------------------------------------------------*/
-
+/*
 .feature-box.fbox-right {
 	padding: 0 80px 0 0;
 	text-align: right;
@@ -8730,7 +8730,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a {
 
 /* Tabs - Navigation Style 2
 -----------------------------------------------------------------*/
-
+/*
 
 ul.tab-nav.tab-nav2 {
 	border-bottom: 0;
@@ -9568,7 +9568,7 @@ body:not(.device-touch) .team-overlay {
 
 /* Pricing Boxes - Features
 -----------------------------------------------------------------*/
-
+/*
 .pricing-features { border-bottom: 1px solid rgba(0,0,0,0.075); }
 
 .pricing-features ul {
@@ -9585,13 +9585,13 @@ body:not(.device-touch) .team-overlay {
 
 /* Pricing Boxes - Action
 -----------------------------------------------------------------*/
-
+/*
 .pricing-action { padding: 15px 30px; }
 
 
 /* Pricing Boxes - Best Price
 -----------------------------------------------------------------*/
-
+/*
 .pricing-box.best-price {
 	background-color: #FFF;
 	box-shadow: 0 0 8px rgba(0,0,0,0.1);
@@ -9615,7 +9615,7 @@ body:not(.device-touch) .team-overlay {
 
 /* Pricing Boxes - Minimal
 -----------------------------------------------------------------*/
-
+/*
 .pricing-box.pricing-minimal .pricing-price {
 	background-color: #FFF;
 	border-bottom: 1px solid rgba(0,0,0,0.075);
@@ -9626,7 +9626,7 @@ body:not(.device-touch) .team-overlay {
 
 /* Pricing Boxes - 5 Columns
 -----------------------------------------------------------------*/
-
+/*
 .pricing.pricing-5 .pricing-box {
 	float: left;
 	width: 20%;
@@ -9644,7 +9644,7 @@ body:not(.device-touch) .team-overlay {
 
 /* Pricing Boxes - Extended
 -----------------------------------------------------------------*/
-
+/*
 .pricing-box.pricing-extended {
 	background-color: #FFF;
 	text-align: left;
@@ -9731,8 +9731,7 @@ body:not(.device-touch) .team-overlay {
 /* ----------------------------------------------------------------
 	Counter
 -----------------------------------------------------------------*/
-
-
+/*
 .counter {
 	font-size: 42px;
 	font-weight: 600;
