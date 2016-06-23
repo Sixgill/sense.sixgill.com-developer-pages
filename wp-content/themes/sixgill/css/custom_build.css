@@ -532,6 +532,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin-bottom: 10px;
 	font-family: "Lato";
 }
+
+#home-image-infographic {
+	width: 100%;
+}
 .solutions-subpage-text, .solutions-subpage-thumbnail {
 	text-align: left;
 	display: inline-block;
