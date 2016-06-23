@@ -139,12 +139,7 @@
 	</div>
 	<!-- END MODAL Contact -->
 
-	<!-- External JavaScripts -->
-	<script type="text/javascript" src="/wp-content/themes/sixgill/js/plugins.js"></script>
 
-	<!-- Footer Scripts  -->
-	<script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js"></script>
-	<script type="text/javascript" src="/wp-content/themes/sixgill/js/custom_build.js"></script>
 
 
 	<!-- Google Analytics -->
@@ -170,6 +165,13 @@
 	<!-- End of Async HubSpot Analytics Code -->
 
 	<?php wp_footer(); ?>
+
+	<!-- External JavaScripts -->
+	<script type="text/javascript" src="/wp-content/themes/sixgill/js/plugins.js"></script>
+
+	<!-- Footer Scripts  -->
+	<script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js"></script>
+	<script type="text/javascript" src="/wp-content/themes/sixgill/js/custom_build.js"></script>
 </body>
 </html>
 <!-- footer.php end -->
