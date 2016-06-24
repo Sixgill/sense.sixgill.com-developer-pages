@@ -150,9 +150,9 @@
 		$showitems = 6;
 
 		global $paged;
-		
+
 		echo "<table class=\"table-pagination\"><tr>";
-		
+
 		if(empty($paged)) $paged = 1;
 		if($pages == '') {
 			global $wp_query;
@@ -176,7 +176,7 @@
 			}
 
 			for ($i=1; $i <= $pages; $i++) {
-				
+
 				if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
 					echo "<td style=\"width:".$paddingPagination."%;\">";
 
@@ -193,7 +193,7 @@
 				echo "<a href='".get_pagenum_link($pages)."' class=\"pagination-number\"> ".$pages." </a>";
 				echo "</td>";
 			}
-			
+
 			echo "<td style=\"width:".$paddingPagination."%;\">";
 
 			if ($paged < $pages ) {
@@ -289,7 +289,7 @@
 	}
 
 	function getFacebookShareLink($title, $link) {
-		return "http://www.facebook.com/sharer/sharer.php?u=".rawurlencode($link);
+		return "https://www.facebook.com/sharer/sharer.php?u=".rawurlencode($link);
 	}
 
 	function getLinkedinShareLink($title, $link) {

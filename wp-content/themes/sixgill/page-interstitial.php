@@ -12,7 +12,7 @@
 <br>
 <br>
 <h1>ZOS Communications is now Sixgill</h1>
-<br/><br/>You will be redirected to <a href="http://www.sixgill.com">sixgill.com</a> in<br><br>
+<br/><br/>You will be redirected to <a href="https://www.sixgill.com">sixgill.com</a> in<br><br>
 <form>
 <input type="text" size="3" name="redirect2">
 </form>
@@ -29,7 +29,7 @@ Over 400+ free scripts here!
 */
 
 //change below target URL to your own
-var targetURL="http://sixgill.com"
+var targetURL="https://www.sixgill.com"
 //change the second to start counting down from
 var countdownfrom=7
 
