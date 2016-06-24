@@ -15,6 +15,16 @@
  * keep your config separate, we recommend using a 'wp-config-local.php' file,
  * which you should also make sure you .gitignore.
  */
+
+ // Require HTTPS, www.
+ if (isset($_SERVER['PANTHEON_ENVIRONMENT']) && ($_SERVER['PANTHEON_ENVIRONMENT'] === 'live') && (php_sapi_name() != "cli")) {
+   if ($_SERVER['HTTP_HOST'] != 'www.sixgill.com' || !isset($_SERVER['HTTP_X_SSL']) || $_SERVER['HTTP_X_SSL'] != 'ON' ) {
+     header('HTTP/1.0 301 Moved Permanently');
+     header('Location: https://www.sixgill.com'. $_SERVER['REQUEST_URI']);
+     exit();
+   }
+ }
+
 if (file_exists(dirname(__FILE__) . '/wp-config-local.php') && !isset($_ENV['PANTHEON_ENVIRONMENT'])):
   # IMPORTANT: ensure your local config does not include wp-settings.php
   require_once(dirname(__FILE__) . '/wp-config-local.php');
@@ -67,7 +77,7 @@ else:
 
     /** A couple extra tweaks to help things run well on Pantheon. **/
     if (isset($_SERVER['HTTP_HOST'])) {
-        // HTTP is still the default scheme for now. 
+        // HTTP is still the default scheme for now.
         $scheme = 'http';
         // If we have detected that the end use is HTTPS, make sure we pass that
         // through here, so <img> tags and the like don't generate mixed-mode
