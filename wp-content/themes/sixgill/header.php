@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Crete+Round" />
 
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/style.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/font-icons.css" type="text/css" />

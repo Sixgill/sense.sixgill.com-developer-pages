@@ -123,3 +123,39 @@
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
+
+.uppercase {
+	text-transform: uppercase !important;
+}
+
+.lowercase {
+	text-transform: lowercase !important;
+}
+
+.capitalize {
+	text-transform: capitalize !important;
+}
+
+.nott {
+	text-transform: none !important;
+}
+
+.tright {
+	text-align: right !important;
+}
+
+.tleft {
+	text-align: left !important;
+}
+
+.fright {
+	float: right !important;
+}
+
+.fleft {
+	float: left !important;
+}
+
+.fnone {
+	float: none !important;
+}

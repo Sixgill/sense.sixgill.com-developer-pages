@@ -10,10 +10,6 @@
 		width: initial;
 	}
 
-	.home-diagram {
-		padding: 0px 50px 45px 50px;
-	}
-
 	.home-text-2{
 		margin-top:60px;
 	}
@@ -26,11 +22,6 @@
 		padding-bottom: 0.5em;
 		padding-left: 0.3em;
 		padding-right: 0.3em;
-	}
-
-	.home-diagram {
-		padding-left: 0px;
-		padding-right: 0px;
 	}
 
 	.video-wrap video {
