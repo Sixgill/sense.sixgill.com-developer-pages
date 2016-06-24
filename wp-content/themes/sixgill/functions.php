@@ -276,16 +276,12 @@
 		return $result;
 	}
 
-	function so_handle_038($content) {
-		$content = str_replace(array("&#038;","&amp;"), "&", $content); 
-		return $content;
+	function textToTwitter ($textTwitter) {
+		return $textTwitter;
 	}
 
-	add_filter('the_title', 'so_handle_038', 199, 1);
-
-
 	function getTwitterShareLink($statusText) {
-		return "https://twitter.com/intent/tweet?text=".rawurlencode($statusText);
+		return "https://twitter.com/intent/tweet?text=".rawurlencode(htmlspecialchars_decode($statusText));
 	}
 
 	function getFacebookShareLink($title, $link) {
@@ -293,7 +289,7 @@
 	}
 
 	function getLinkedinShareLink($title, $link) {
-		return "https://www.linkedin.com/shareArticle?title=".rawurlencode($title)."&url=".rawurlencode($link);
+		return "https://www.linkedin.com/shareArticle?title=".rawurlencode(htmlspecialchars_decode($title))."&url=".rawurlencode($link);
 	}
 
 	function getMailtoShareLink($title, $link) {
@@ -317,6 +313,6 @@
 		$link = preg_replace( '|#more-[0-9]+|', '', $link );
 		return $link;
 	}
-	add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
+
 
 ?>
