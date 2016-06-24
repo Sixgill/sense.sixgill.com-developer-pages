@@ -276,10 +276,6 @@
 		return $result;
 	}
 
-	function textToTwitter ($textTwitter) {
-		return $textTwitter;
-	}
-
 	function getTwitterShareLink($statusText) {
 		return "https://twitter.com/intent/tweet?text=".rawurlencode(htmlspecialchars_decode($statusText));
 	}
