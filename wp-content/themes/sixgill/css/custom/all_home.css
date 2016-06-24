@@ -2,10 +2,6 @@
 	max-width: 650px;
 }
 
-.home-diagram {
-	padding: 85px 50px 45px 50px;
-}
-
 #home-main-text {
 	max-width: 650px;
 }
@@ -89,4 +85,8 @@
 
 #home-image-infographic {
 	width: 100%;
+}
+
+.home-logos {
+	text-align: left;
 }

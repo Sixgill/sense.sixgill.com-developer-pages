@@ -30,8 +30,24 @@
 	.hidden-bottom-imageDiagram {
 		display: inline-block;
 	}
-	
+
 	.video-wrap video {
-		width: 100%;	
+		width: 100%;
+	}
+
+	.home-logo-container {
+		width: 20%;
+	}
+
+	.home-clients-block {
+		margin-bottom: 36px;
+	}
+
+	.logo-subheader {
+		margin-bottom: 45px;
+	}
+
+	.home-logos {
+		width: 620px;
 	}
 }

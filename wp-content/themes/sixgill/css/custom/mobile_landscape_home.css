@@ -1,11 +1,6 @@
 /* Home Mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
-	.home-diagram {
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-top: 0px;
-	}
-
+	
 	.video-wrap video {
 		width: 100%;
 		height: initial;
