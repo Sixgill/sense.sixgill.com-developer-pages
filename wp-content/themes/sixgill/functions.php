@@ -277,18 +277,25 @@
 	}
 
 	function getTwitterShareLink($statusText) {
-		return "https://twitter.com/intent/tweet?text=".rawurlencode(htmlspecialchars_decode($statusText));
+		$statusText = htmlspecialchars_decode($statusText);
+		return "https://twitter.com/intent/tweet?text=".rawurlencode($statusText);
 	}
 
 	function getFacebookShareLink($title, $link) {
+		$title = htmlspecialchars_decode($title);
+		$link = htmlspecialchars_decode($link);
 		return "https://www.facebook.com/sharer/sharer.php?u=".rawurlencode($link);
 	}
 
 	function getLinkedinShareLink($title, $link) {
-		return "https://www.linkedin.com/shareArticle?title=".rawurlencode(htmlspecialchars_decode($title))."&url=".rawurlencode($link);
+		$title = htmlspecialchars_decode($title);
+		$link = htmlspecialchars_decode($link);
+		return "https://www.linkedin.com/shareArticle?title=".rawurlencode($title)."&url=".rawurlencode($link);
 	}
 
 	function getMailtoShareLink($title, $link) {
+		$title = htmlspecialchars_decode($title);
+		$link = htmlspecialchars_decode($link);
 		return "mailto:?subject=".rawurlencode($title)."&body=".rawurlencode($link);
 	}
 
