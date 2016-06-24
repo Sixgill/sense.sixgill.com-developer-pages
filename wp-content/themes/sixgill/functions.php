@@ -276,6 +276,14 @@
 		return $result;
 	}
 
+	function so_handle_038($content) {
+		$content = str_replace(array("&#038;","&amp;"), "&", $content); 
+		return $content;
+	}
+
+	add_filter('the_title', 'so_handle_038', 199, 1);
+
+
 	function getTwitterShareLink($statusText) {
 		return "https://twitter.com/intent/tweet?text=".rawurlencode($statusText);
 	}
