@@ -277,18 +277,25 @@
 	}
 
 	function getTwitterShareLink($statusText) {
+		$statusText = htmlspecialchars_decode($statusText);
 		return "https://twitter.com/intent/tweet?text=".rawurlencode($statusText);
 	}
 
 	function getFacebookShareLink($title, $link) {
+		$title = htmlspecialchars_decode($title);
+		$link = htmlspecialchars_decode($link);
 		return "https://www.facebook.com/sharer/sharer.php?u=".rawurlencode($link);
 	}
 
 	function getLinkedinShareLink($title, $link) {
+		$title = htmlspecialchars_decode($title);
+		$link = htmlspecialchars_decode($link);
 		return "https://www.linkedin.com/shareArticle?title=".rawurlencode($title)."&url=".rawurlencode($link);
 	}
 
 	function getMailtoShareLink($title, $link) {
+		$title = htmlspecialchars_decode($title);
+		$link = htmlspecialchars_decode($link);
 		return "mailto:?subject=".rawurlencode($title)."&body=".rawurlencode($link);
 	}
 
@@ -310,5 +317,6 @@
 		return $link;
 	}
 	add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
+
 
 ?>
