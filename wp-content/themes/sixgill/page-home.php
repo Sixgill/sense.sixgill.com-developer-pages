@@ -143,13 +143,17 @@
 				<?php echo get_field('logos_subtitle'); ?>
 			</p>
 
-			<div class="home-logos">
-				<?php foreach(get_field('logos') as $logo) : ?><div class="home-logo-container center">
-						<div class="vertical-centered">
-							<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+				<div class="home-logos">
+					<?php foreach(get_field('logos') as $logo) : ?><div class="home-logo-container center"><div class="vertical-centered"><img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" /></div></div><?php endforeach; ?>
+
+						<div class="home-logo-container full-width no-margin">
+							<a href="/company/" id="home-button-image-company" class="button button-large no-bottom-margin btnCompany">
+								VIEW COMPANY
+							</a>
 						</div>
-					</div><?php endforeach; ?>
-			</div>
+				</div>
+
+
 
 		</div>
 	</section>

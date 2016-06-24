@@ -534,7 +534,29 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .home-logos {
-	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.home-logo-container {
+	height: 120px;
+}
+
+.home-logo-container {
+	width: 16.8%;
+	display: block;
+	position: relative;
+	margin-right: 3%;
+	margin-bottom: 50px;
+	float: left;
+
+}
+
+.home-clients-block {
+	margin-bottom: 36px;
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .solutions-subpage-text, .solutions-subpage-thumbnail {
 	text-align: left;
@@ -1017,20 +1039,16 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		width: 100%;
 	}
 
-	.home-logo-container {
-		width: 20%;
-	}
-
-	.home-clients-block {
-		margin-bottom: 36px;
-	}
-
 	.logo-subheader {
 		margin-bottom: 45px;
 	}
 
 	.home-logos {
-		width: 620px;
+		width: 650px;
+	}
+
+	.home-logos-titles {
+		width: 720px;
 	}
 }
 /* Solutions desktop styles */
@@ -2389,7 +2407,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.home-diagram {
-		
+
+	}
+
+	.home-logo-container {
+		width: 50%;
 	}
 
 }
