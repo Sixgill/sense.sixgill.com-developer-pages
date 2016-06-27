@@ -536,6 +536,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .home-logos {
 	margin-left: auto;
 	margin-right: auto;
+	width: 90%;
+	max-width: 720px;
 }
 
 .home-logo-container {
@@ -554,9 +556,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .home-clients-block {
 	margin-bottom: 36px;
-	width: 720px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.home-logo-container:nth-child(5n) {
+	margin-right: 0px;
 }
 .solutions-subpage-text, .solutions-subpage-thumbnail {
 	text-align: left;
@@ -660,6 +666,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	max-width: 200px !important;
 	max-height: 46px !important;
 	border-color: transparent;
+	border: 0px;
 }
 	#tech-page-header-background {
 		background-image: url('/wp-content/themes/sixgill/images/td/hero/dollarphotoclub_77872129_web.jpg'); 
@@ -1056,6 +1063,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.home-logos-titles {
+		width: 720px;
+	}
+
+	.home-clients-block {
 		width: 720px;
 	}
 }
@@ -2420,6 +2431,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.home-logo-container {
 		width: 50%;
+		margin-right: 0;
 	}
 
 }
