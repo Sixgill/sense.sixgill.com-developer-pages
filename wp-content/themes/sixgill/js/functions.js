@@ -111,6 +111,13 @@ var killRequesting = debounce(function () {
 	requesting = false;
 }, 100);
 
+var fullScreenLockout = false;
+var flagOrientation = false;
+
+window.addEventListener("orientationchange", function() {
+	flagOrientation = true;
+}, false);
+
 function onScrollSliderParallax() {
 	if (!requesting) {
 		requesting = true;
@@ -304,11 +311,16 @@ var SEMICOLON = SEMICOLON || {};
 		},
 
 		fullScreen: function(){
-			if( $fullScreenEl.length > 0 ) {
+
+
+			if( $fullScreenEl.length > 0  && (flagOrientation == true || fullScreenLockout == false)) {
+				fullScreenLockout = true;
+				flagOrientation = false;
 				$fullScreenEl.each( function(){
 					var element = $(this),
 						scrHeight = window.innerHeight ? window.innerHeight : $window.height(),
 						negativeHeight = element.attr('data-negative-height');
+
 
 					if( element.attr('id') == 'slider' ) {
 						var sliderHeightOff = $slider.offset().top;
@@ -327,6 +339,8 @@ var SEMICOLON = SEMICOLON || {};
 					if( element.parents('.full-screen').length > 0 ) { 
 						scrHeight = element.parents('.full-screen').height(); 
 					}
+
+
 
 					if( $body.hasClass('device-xs') || $body.hasClass('device-xxs') ) {
 						if( !element.hasClass('force-full-screen') ){ 
