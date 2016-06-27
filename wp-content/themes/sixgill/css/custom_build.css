@@ -702,10 +702,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin-top: 75px;
 }
 
-.widget {
-	margin-top: 80px;
-}
-
 .posts-list {
 	margin-bottom: 30px;
 }
