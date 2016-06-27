@@ -324,6 +324,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .global-twitter-icon {
 	width: 22px;
 }
+
+[data-dismiss="modal"] {
+	color: #ffffff ;
+	opacity: 1;
+}
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
 }
@@ -668,6 +673,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	border-color: transparent;
 	border: 0px;
 }
+
+
+
 	#tech-page-header-background {
 		background-image: url('/wp-content/themes/sixgill/images/td/hero/dollarphotoclub_77872129_web.jpg'); 
 		background-position: center bottom;
