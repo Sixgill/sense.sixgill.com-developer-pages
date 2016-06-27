@@ -60,12 +60,11 @@
 							</ul>
 						<?php endif; ?>
 					</div>
-					<b style="padding-bottom: 5px;">
-						<?php echo get_field('learn_more_people'); ?>
-					</b>
+
 					<?php
-						global $categoryName;
+						global $categoryName, $supTitleCategory;
 						$categoryName = "For people";
+						$supTitleCategory = "learn_more_people";
 						include(locate_template('loop-solutions.php'));
 					?>
 
@@ -106,8 +105,9 @@
 						<?php endif; ?>
 					</div>
 					<?php
-						global $categoryName;
+						global $categoryName, $supTitleCategory;
 						$categoryName = "For assets";
+						$supTitleCategory = "learn_more_assets";
 						include(locate_template('loop-solutions.php'));
 					?>
 				</div>
@@ -146,12 +146,10 @@
 							</ul>
 						<?php endif; ?>
 					</div>
-					<b style="padding-bottom: 5px;">
-						<?php echo get_field('learn_more_crowds'); ?>
-					</b>
 					<?php
-						global $categoryName;
+						global $categoryName, $supTitleCategory;
 						$categoryName = "For crowd";
+						$supTitleCategory = "learn_more_crowds";
 						include(locate_template('loop-solutions.php'));
 					?>
 				</div>
