@@ -1,4 +1,54 @@
 <?php
+	//Concat all custom js and css
+	if($_SERVER['SERVER_NAME']=="dev-sixgill.pantheonsite.io") {
+		$path = getCurrentDir();
+
+		$jsResultFile = $path."/wp-content/themes/sixgill/js/custom_build.js";
+		$jsSource = array(
+			$path."/wp-content/themes/sixgill/js/plugins.js",
+			$path."/wp-content/themes/sixgill/js/functions.js",
+			$path."/wp-content/themes/sixgill/js/custom/*.{js, JS}",
+		);
+
+		$cssResultFile = $path."/wp-content/themes/sixgill/css/custom_build.css";
+		$cssSource = array(
+			$path."/wp-content/themes/sixgill/css/bootstrap.min.css",
+			$path."/wp-content/themes/sixgill/style.css",
+			$path."/wp-content/themes/sixgill/css/swiper.css",
+			$path."/wp-content/themes/sixgill/css/font-icons.css",
+			$path."/wp-content/themes/sixgill/css/animate.css",
+			$path."/wp-content/themes/sixgill/css/magnific-popup.css",
+			$path."/wp-content/themes/sixgill/css/responsive.css",
+			$path."/wp-content/themes/sixgill/css/colors.css",
+			$path."/wp-content/themes/sixgill/css/custom.css",
+			$path."/wp-content/themes/sixgill/css/custom/all_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
+			$path."/wp-content/themes/sixgill/css/custom/desktop_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
+			$path."/wp-content/themes/sixgill/css/custom/tablet_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
+			$path."/wp-content/themes/sixgill/css/custom/mobile_portrait_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
+			$path."/wp-content/themes/sixgill/css/custom/mobile_landscape_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
+			$path."/wp-content/themes/sixgill/css/custom/mobile_portrait_landscape_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
+			$path."/wp-content/themes/sixgill/css/custom/tablet_and_mobile.css",
+			$path."/wp-content/themes/sixgill/css/custom/custom_resolutions.css",
+			$path."/wp-content/themes/sixgill/css/custom/atomic.css"
+		);
+
+		function concatFiles($filesList, $resultFilename) {
+			$out = fopen($resultFilename, "w");
+			foreach($filesList as $filesSelector) {
+				foreach(glob($filesSelector, GLOB_BRACE) as $file) {
+					$in = fopen($file, "r");
+					while ($line = fgets($in)) {
+						fwrite($out, $line);
+					}
+					fclose($in);
+				}
+			}
+			fclose($out);
+		}
+
+		concatFiles($jsSource, $jsResultFile);
+		concatFiles($cssSource, $cssResultFile);
+	}
 
 	function getPageContentBySlug($slug) {
 		$args = array(
