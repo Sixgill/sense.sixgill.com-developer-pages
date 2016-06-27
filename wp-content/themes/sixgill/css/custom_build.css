@@ -1065,6 +1065,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.home-clients-block {
 		width: 720px;
 	}
+
+	.home-diagram {
+		padding: 85px 50px 45px 50px;
+	}
 }
 /* Solutions desktop styles */
 @media only screen and (min-width : 1001px) {

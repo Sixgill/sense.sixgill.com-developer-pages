@@ -50,4 +50,8 @@
 	.home-clients-block {
 		width: 720px;
 	}
+
+	.home-diagram {
+		padding: 85px 50px 45px 50px;
+	}
 }
