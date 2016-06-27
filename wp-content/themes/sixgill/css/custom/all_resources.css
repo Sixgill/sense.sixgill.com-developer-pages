@@ -70,3 +70,12 @@
 .yikes-easy-mc-submit-button {
 	display: inline-block !important;
 }
+
+.submit-resource-form-button {
+	background-size: contain;
+	background-repeat: no-repeat;
+	max-width: 200px !important;
+	max-height: 46px !important;
+	border-color: transparent;
+	border: 0px;
+}

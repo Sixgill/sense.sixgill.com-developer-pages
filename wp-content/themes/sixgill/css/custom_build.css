@@ -653,6 +653,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .yikes-easy-mc-submit-button {
 	display: inline-block !important;
 }
+
+.submit-resource-form-button {
+	background-size: contain;
+	background-repeat: no-repeat;
+	max-width: 200px !important;
+	max-height: 46px !important;
+	border-color: transparent;
+}
 	#tech-page-header-background {
 		background-image: url('/wp-content/themes/sixgill/images/td/hero/dollarphotoclub_77872129_web.jpg'); 
 		background-position: center bottom;
@@ -2454,13 +2462,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {
 	.resource-link {
 		font-size: 18px;
-	}
-	
-	.submit-resource-form-button {
-		background-size: contain;
-		background-repeat: no-repeat;
-		max-width: 200px !important;
-		max-height: 46px !important;
 	}
 }
 /* Tech mobile portrait and landscape styles */
