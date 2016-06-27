@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Crete+Round" />
-
+<!--
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/style.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/swiper.css" type="text/css" />
@@ -25,7 +25,7 @@
 
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/colors.css" type="text/css" />
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom.css" type="text/css" />
-
+-->
 	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom_build.css" type="text/css" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />

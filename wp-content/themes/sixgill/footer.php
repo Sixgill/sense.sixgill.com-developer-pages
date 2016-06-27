@@ -167,10 +167,10 @@
 	<?php wp_footer(); ?>
 
 	<!-- External JavaScripts -->
-	<script type="text/javascript" src="/wp-content/themes/sixgill/js/plugins.js"></script>
+	<!--<script type="text/javascript" src="/wp-content/themes/sixgill/js/plugins.js"></script>-->
 
 	<!-- Footer Scripts  -->
-	<script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js"></script>
+	<!--<script type="text/javascript" src="/wp-content/themes/sixgill/js/functions.js"></script>-->
 	<script type="text/javascript" src="/wp-content/themes/sixgill/js/custom_build.js"></script>
 </body>
 </html>
