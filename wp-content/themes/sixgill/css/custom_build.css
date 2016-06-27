@@ -702,10 +702,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin-top: 75px;
 }
 
-.widget {
-	margin-top: 80px;
-}
-
 .posts-list {
 	margin-bottom: 30px;
 }
@@ -1068,6 +1064,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.home-clients-block {
 		width: 720px;
+	}
+
+	.home-diagram {
+		padding: 85px 50px 45px 50px;
 	}
 }
 /* Solutions desktop styles */
