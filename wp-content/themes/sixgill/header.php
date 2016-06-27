@@ -9,24 +9,12 @@
 	<meta name="google-site-verification" content="YI36Rs0Zki_Iw6jdf8RNTnIkOZIrqcUoilY5LNDFrBY" />
 
 	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
-	<!-- Stylesheets -->
+
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Crete+Round" />
-<!--
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/style.css" type="text/css" />
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/swiper.css" type="text/css" />
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/magnific-popup.css" type="text/css" />
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/responsive.css" type="text/css" />
 
-
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/colors.css" type="text/css" />
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom.css" type="text/css" />
--->
-	<link rel="stylesheet" href="/wp-content/themes/sixgill/css/custom_build.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/custom_build.css" type="text/css" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
