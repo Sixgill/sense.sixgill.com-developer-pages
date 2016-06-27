@@ -3,11 +3,4 @@
 	.resource-link {
 		font-size: 18px;
 	}
-	
-	.submit-resource-form-button {
-		background-size: contain;
-		background-repeat: no-repeat;
-		max-width: 200px !important;
-		max-height: 46px !important;
-	}
 }
