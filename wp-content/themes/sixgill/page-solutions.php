@@ -60,10 +60,6 @@
 							</ul>
 						<?php endif; ?>
 					</div>
-
-
-
-
 					<?php
 						global $categoryName, $supTitleCategory;
 						$categoryName = "people";

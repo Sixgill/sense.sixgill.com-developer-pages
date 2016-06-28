@@ -3,7 +3,7 @@ $subpages = getChindrenByParentSlug("solutions");
 $flagPrint = false;
 
 foreach($subpages as $subpage) {
-	$selected = get_field('page_prat', $subpage->ID);
+	$selected = get_field('page_part', $subpage->ID);
 
 	if( in_array($categoryName, $selected) ) {
 		if (!$flagPrint) {
