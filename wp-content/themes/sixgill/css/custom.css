@@ -469,7 +469,6 @@ p {
 
 .logo-sixgill {
 	height: 44px;
-	background-image: url("/wp-content/themes/sixgill/td/logo/logo_mobile.svg");
 	margin: 10px 0px;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -585,7 +584,6 @@ p {
 
 	.logo-sixgill {
 		height: 96px;
-		background-image:url("/wp-content/themes/sixgill/td/logo/logo_tablet.svg");
 	}
 
 	.titleInside {
@@ -633,7 +631,6 @@ p {
 	.logo-sixgill {
 		width:140px;
 		height:111px;
-		background-image:url("/wp-content/themes/sixgill/td/logo/logo_desktop.svg");
 	}
 
 
