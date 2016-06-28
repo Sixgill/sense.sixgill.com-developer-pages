@@ -47,7 +47,7 @@
 		<li>
 			<!--
 			<div class="menu-search-mobile-tablet no-desktop-display">
-				<?php get_template_part('searchform-static'); ?>
+				get_template_part('searchform-static');
 			</div>
 			-->
 			<?php

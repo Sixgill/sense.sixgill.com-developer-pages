@@ -62,7 +62,6 @@ a,
 #primary-menu div ul li:hover > a,
 #primary-menu div ul li.current > a,
 #primary-menu ul ul li:hover > a,
-/*#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a:hover,*/
 #top-cart a:hover,
 .top-cart-action span.top-checkout-price,
 .breadcrumb a:hover,

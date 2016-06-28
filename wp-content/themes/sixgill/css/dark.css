@@ -147,15 +147,11 @@ body #side-panel.dark {
 .overlay-menu #primary-menu.dark > ul > li > a,
 .dark.overlay-menu #header-wrap:not(.not-dark) #primary-menu > #overlay-menu-close,
 .overlay-menu #primary-menu.dark > #overlay-menu-close,
-.dark #header-wrap:not(.not-dark) #top-search a,
 .dark #header-wrap:not(.not-dark) #top-cart a,
 .dark #header-wrap:not(.not-dark) #side-panel-trigger a,
 .dark #top-cart .top-cart-item-desc a,
-body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
-.dark #header-wrap:not(.not-dark) #top-search a:hover,
 .dark #header-wrap:not(.not-dark) #top-cart a:hover,
-.dark #header-wrap:not(.not-dark) #side-panel-trigger a:hover,
-.dark #header-wrap:not(.not-dark) #top-search form input {
+.dark #header-wrap:not(.not-dark) #side-panel-trigger a:hover {
 	color: #EEE;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
@@ -168,10 +164,6 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 
 .dark #header.transparent-header:not(.sticky-header) #header-wrap:not(.not-dark) form input,
 #header.dark.transparent-header:not(.sticky-header) #header-wrap:not(.not-dark) form input { border-bottom-color: rgba(255,255,255,0.15) !important; }
-
-.dark #header-wrap:not(.not-dark) #top-search form input::-moz-placeholder { color: rgba(255,255,255,0.6); }
-.dark #header-wrap:not(.not-dark) #top-search form input:-ms-input-placeholder { color: rgba(255,255,255,0.6); }
-.dark #header-wrap:not(.not-dark) #top-search form input::-webkit-input-placeholder { color: rgba(255,255,255,0.6); }
 
 .dark #header-wrap:not(.not-dark) #primary-menu > ul > li:hover > a,
 .dark #header-wrap:not(.not-dark) #primary-menu > ul > li.current > a,
@@ -217,14 +209,6 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 	background-color: rgba(0,0,0,0.1);
 	color: #CCC !important;
 }
-
-.dark #primary-menu:not(.not-dark) ul ul > li.sub-menu > a,
-.dark #primary-menu:not(.not-dark) ul ul > li.sub-menu:hover > a,
-#primary-menu.dark ul ul > li.sub-menu > a,
-#primary-menu.dark ul ul > li.sub-menu:hover > a { background-image: url("../images/icons/submenu-dark.png"); }
-
-/*.dark #primary-menu ul li .mega-menu-content ul.mega-menu-column:not(:first-child),
-#primary-menu.dark ul li .mega-menu-content ul.mega-menu-column:not(:first-child) { border-left-color: #3F3F3F; }*/
 
 .dark #primary-menu:not(.not-dark) ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a,
 .dark #primary-menu:not(.not-dark) ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title:hover > a,
@@ -1708,20 +1692,6 @@ body #side-panel.dark #side-panel-trigger-close a {
 	.dark #primary-menu:not(.not-dark) ul li .mega-menu-content.col-4 > ul,
 	.dark #primary-menu:not(.not-dark) ul li .mega-menu-content.col-5 > ul,
 	.dark #primary-menu:not(.not-dark) ul li .mega-menu-content.style-2 li { border-top-color: rgba(255,255,255,0.1) !important; }
-
-	.dark #primary-menu:not(.not-dark) > ul > li.sub-menu > a,
-	.dark #primary-menu:not(.not-dark) > .container > ul > li.sub-menu > a { background-image: url("../images/icons/submenu-dark.png"); }
-
-	/*body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul li,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul ul,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul li .mega-menu-content,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul ul li,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul li .mega-menu-content ul ul,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul li .mega-menu-content.col-2 > ul,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul li .mega-menu-content.col-3 > ul,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul li .mega-menu-content.col-4 > ul,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul li .mega-menu-content.col-5 > ul,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul li .mega-menu-content.style-2 li { border-top-color: #EEE !important; }*/
 
 	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li:hover a,
 	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li.current a,
