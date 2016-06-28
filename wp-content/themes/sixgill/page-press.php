@@ -31,7 +31,7 @@
 				</div>
 
 			</div>
-			<div class="col_two_fifth col_last widget center background-f8f8f8 pull-right display-only-desktop">
+			<div class="col_two_fifth col_last widget press-contact-block pull-right display-only-desktop">
 				<div class="title-press-contact">
 					<?php echo get_field('header_block'); ?>
 				</div>

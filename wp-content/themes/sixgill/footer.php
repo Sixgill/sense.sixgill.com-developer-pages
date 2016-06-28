@@ -51,7 +51,7 @@
 		</div>
 
 	</footer><!-- #footer end -->
-	</div><!-- #wrapper end -->
+</div><!-- #wrapper end -->
 
 	<!-- Go To Top -->
 	<div id="gotoTop" class="icon-angle-up"></div>
@@ -70,9 +70,6 @@
 							</h4>
 	          </div>
 	          <div class="modal-body center">
-							<!--[if lte IE 8]>
-							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-							<![endif]-->
 							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 							<script>
 							  hbspt.forms.create({
@@ -80,7 +77,6 @@
 							    formId: '7b5388d8-0979-4961-ac97-1f36fc2d70c0'
 							  });
 							</script>
-
 	          </div>
 	          <div class="modal-footer center"></div>
 	        </div>
@@ -138,10 +134,6 @@
 		</div>
 	</div>
 	<!-- END MODAL Contact -->
-
-
-
-
 	<!-- Google Analytics -->
 	<script async="" src="//www.google-analytics.com/analytics.js"></script>
 	<script>
@@ -165,7 +157,5 @@
 	<!-- End of Async HubSpot Analytics Code -->
 
 	<?php wp_footer(); ?>
-	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/custom_build.js"></script>
 </body>
 </html>
-<!-- footer.php end -->
