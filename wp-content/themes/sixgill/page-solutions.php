@@ -60,10 +60,9 @@
 							</ul>
 						<?php endif; ?>
 					</div>
-
 					<?php
 						global $categoryName, $supTitleCategory;
-						$categoryName = "For people";
+						$categoryName = "people";
 						$supTitleCategory = "learn_more_people";
 						include(locate_template('loop-solutions.php'));
 					?>
@@ -106,7 +105,7 @@
 					</div>
 					<?php
 						global $categoryName, $supTitleCategory;
-						$categoryName = "For assets";
+						$categoryName = "assets";
 						$supTitleCategory = "learn_more_assets";
 						include(locate_template('loop-solutions.php'));
 					?>
@@ -148,7 +147,7 @@
 					</div>
 					<?php
 						global $categoryName, $supTitleCategory;
-						$categoryName = "For crowd";
+						$categoryName = "crowd";
 						$supTitleCategory = "learn_more_crowds";
 						include(locate_template('loop-solutions.php'));
 					?>
