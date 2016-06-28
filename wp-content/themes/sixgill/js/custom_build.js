@@ -4852,6 +4852,14 @@ $(function() {
 	});
 
 	resizeResourcesContainers();
+
+	if (device.mobile() || device.tablet()){
+		resourcesBlocks.click(function() { 
+			$(this).find('.resource-link').attr({'data-target':'#'});
+			window.currentDownloadLink = $(this).find('.resource-link-container').attr('data-permalink');
+			$('#myResource').modal('show'); 
+		});
+	} 
 });
 jQuery(function($) {
 	$(window).resize(function() {

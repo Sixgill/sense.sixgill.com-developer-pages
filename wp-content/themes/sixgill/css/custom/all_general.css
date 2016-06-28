@@ -324,3 +324,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .global-twitter-icon {
 	width: 22px;
 }
+
+[data-dismiss="modal"] {
+	color: #ffffff ;
+	opacity: 1;
+}

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
-	<?php include(locate_template('build.php')); ?>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Sixgill" />
