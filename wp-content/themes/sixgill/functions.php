@@ -11,6 +11,7 @@
 		);
 
 		$cssResultFile = $path."/css/custom_build.css";
+		$pagesList = "{general,blog,company,home,solutions,resources,tech,press,legal,products}";
 		$cssSource = array(
 			$path."/css/custom/fonts.css",
 			$path."/css/bootstrap.min.css",
@@ -22,12 +23,12 @@
 			$path."/css/responsive.css",
 			$path."/css/colors.css",
 			$path."/css/custom.css",
-			$path."/css/custom/all_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
-			$path."/css/custom/desktop_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
-			$path."/css/custom/tablet_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
-			$path."/css/custom/mobile_portrait_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
-			$path."/css/custom/mobile_landscape_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
-			$path."/css/custom/mobile_portrait_landscape_{general,blog,company,home,solutions,resources,tech,press,legal,products,search}.css",
+			$path."/css/custom/all_".$pagesList.".css",
+			$path."/css/custom/desktop_".$pagesList.".css",
+			$path."/css/custom/tablet_".$pagesList.".css",
+			$path."/css/custom/mobile_portrait_".$pagesList.".css",
+			$path."/css/custom/mobile_landscape_".$pagesList.".css",
+			$path."/css/custom/mobile_portrait_landscape_".$pagesList.".css",
 			$path."/css/custom/tablet_and_mobile.css",
 			$path."/css/custom/custom_resolutions.css",
 			$path."/css/custom/atomic.css"
