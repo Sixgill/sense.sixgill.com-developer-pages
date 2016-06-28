@@ -215,10 +215,6 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 
 }
 
-/*#primary-menu ul li ul li div {
-	text-transform:none;
-}*/
-
 .toggle .togglet,
 .toggle .toggleta {
 	display: block;
@@ -337,22 +333,6 @@ Side Header
 		height: auto;
 	}
 
-	/*.side-header #primary-menu ul li {
-		float: none;
-		margin: 15px 0 0;
-	}*/
-
-	/*.side-header #primary-menu ul li:first-child { margin-top: 0; }
-
-	.side-header #primary-menu ul li a {
-		height: 25px;
-		line-height: 25px;
-		padding: 0;
-		text-transform: uppercase;
-	}
-
-	.side-header #primary-menu ul li i { line-height: 24px; }*/
-
 	.side-header #primary-menu ul ul {
 		position: relative;
 		width: 100%;
@@ -397,16 +377,7 @@ Side Header
 		background-color: transparent !important;
 		color: #444 !important;
 	}
-/*
-	.side-header #primary-menu ul > li.sub-menu:hover > a:after {
-		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-		-webkit-transform: rotate(90deg);
-		-moz-transform: rotate(90deg);
-		-ms-transform: rotate(90deg);
-		-o-transform: rotate(90deg);
-		transform: rotate(90deg);
-	}
-*/
+
 	.side-header:not(.open-header) #wrapper {
 		margin: 0 0 0 180px !important;
 		width: auto !important;
@@ -492,12 +463,11 @@ Side Header
 }
 
 p {
-	font-size:13px;
-	font-weight:normal;
+	font-size: 13px;
+	font-weight: normal;
 }
 
 .logo-sixgill {
-	/*width:150px;*/
 	height: 44px;
 	background-image: url("/wp-content/themes/sixgill/td/logo/logo_mobile.svg");
 	margin: 10px 0px;
@@ -596,40 +566,10 @@ p {
 	width:250px;
 }
 
-@media only screen and (max-width: 320px) {/* For mobiles: */
-	.btnInside {
-		font-family: "Lato", serif, sans-serif;
-		font-size:27px;
-		font-weight:bolder;
-		text-transform:uppercase;
-		color:#000;
-		border:0px solid #000000;
-		padding:10px 20px;
-		text-align:center;
-		width:250px;
-		clear:both;
-	}
-
-	.home-products-title {font-size:20px;}
-
-	#primary-menu {
-		padding-bottom: 5px;
-	}
-
-	.tech-first-text {
-		padding-right:0px;
-		border:0px;
-	}
-
-	.tech-first-text-title {
-		width:auto;
-	}
-
-}
-
 @media only screen and (min-width: 321px) {/* For tablets: */
 	.txtVideo {
-		font-size:40px;font-weight:normal;
+		font-size:40px;
+		font-weight:normal;
 	}
 
 	.titLegal {
@@ -644,7 +584,6 @@ p {
 	}
 
 	.logo-sixgill {
-		/*width: 245px;*/
 		height: 96px;
 		background-image:url("/wp-content/themes/sixgill/td/logo/logo_tablet.svg");
 	}
@@ -687,7 +626,7 @@ p {
 	}
 
 	p {
-		font-size:16px;
+		font-size: 16px;
 		font-weight:normal;
 	}
 
@@ -695,47 +634,48 @@ p {
 		width:140px;
 		height:111px;
 		background-image:url("/wp-content/themes/sixgill/td/logo/logo_desktop.svg");
-}
+	}
 
 
-/* PRESS-RELEASES */
-.title-press-contact {
-	font-size: 25px;
-	font-family: "Lato Bold" serif, sans-serif;
-	padding-top: 15px;
-}
+	/* PRESS-RELEASES */
+	.title-press-contact {
+		font-size: 25px;
+		font-family: "Lato Bold" serif, sans-serif;
+		padding-top: 15px;
+	}
 
-.title-press-contact-2 {
-	font-size: 22px;
-	color: #999999;
-	padding-top: 15px;
-}
+	.title-press-contact-2 {
+		font-size: 22px;
+		color: #999999;
+		padding-top: 15px;
+	}
 
-.press-contact-info {
-	font-size: 22px;
-	color: #000;
-	padding-top: 0px;
-	padding-bottom: 30px;
-	line-height: 1.8em;
-}
+	.press-contact-info {
+		font-size: 22px;
+		color: #000;
+		padding-top: 0px;
+		padding-bottom: 30px;
+		line-height: 1.8em;
+	}
 
-.press-post-title {
-	color: #444;
-	font-size: 18px;
-	font-weight: bold;
-}
+	.press-post-title {
+		color: #444;
+		font-size: 18px;
+		font-weight: bold;
+	}
 
-.press-preview {
-	font-size: 14px;
-	font-family: "Lato", serif, sans-serif;
-	font-weight: normal;
-}
+	.press-preview {
+		font-size: 14px;
+		font-family: "Lato", serif, sans-serif;
+		font-weight: normal;
+	}
 
-.news-press-button {
-	margin: 0px 0px 0px 0px;
-	width: 390px;
-}
+	.news-press-button {
+		margin: 0px 0px 0px 0px;
+		width: 390px;
+	}
 
-.company-single-post-title {
-	width: 390px;
+	.company-single-post-title {
+		width: 390px;
+	}
 }
