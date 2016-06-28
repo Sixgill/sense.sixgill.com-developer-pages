@@ -3,8 +3,9 @@ $subpages = getChindrenByParentSlug("solutions");
 $flagPrint = false;
 
 foreach($subpages as $subpage) {
-	if(get_field('page_part', $subpage->ID) == $categoryName ) {
+	$selected = get_field('page_prat', $subpage->ID);
 
+	if( in_array($categoryName, $selected) ) {
 		if (!$flagPrint) {
 			$flagPrint = true; ?>
 		<b style="padding-bottom: 5px;"> 
