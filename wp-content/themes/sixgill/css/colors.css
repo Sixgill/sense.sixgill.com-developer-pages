@@ -20,14 +20,9 @@ Replace the HEX Code with your Desired Color HEX
 
 a,
 .header-extras li .he-text span,
-/*#primary-menu ul li:hover > a,*/
-/*#primary-menu ul li.current > a,*/
 #primary-menu div ul li:hover > a,
 #primary-menu div ul li.current > a,
 #primary-menu ul ul li:hover > a,
-/*#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a:hover,*/
-#top-cart a:hover,
-.top-cart-action span.top-checkout-price,
 .breadcrumb a:hover,
 .portfolio-filter li a:hover,
 .portfolio-desc h3 a:hover,
@@ -67,10 +62,8 @@ a,
 }
 
 .color,
-.top-cart-item-desc a:hover,
 .faqlist li a:hover,
 .tagcloud a:hover,
-.dark .top-cart-item-desc a:hover,
 .iconlist-color li i,
 .dark.overlay-menu #header-wrap:not(.not-dark) #primary-menu > ul > li:hover > a,
 .dark.overlay-menu #header-wrap:not(.not-dark) #primary-menu > ul > li.current > a,
@@ -85,7 +78,6 @@ a,
 #primary-menu.sub-title > ul > li.current > a,
 #primary-menu.sub-title > div > ul > li:hover > a,
 #primary-menu.sub-title > div > ul > li.current > a,
-#top-cart > a > span,
 #page-menu-wrap,
 #page-menu ul ul,
 #page-menu.dots-menu nav li.current a,
@@ -167,18 +159,12 @@ input.switch-toggle-round:checked + label:before,
 
 .top-links ul ul,
 .top-links ul div.top-link-section,
-#primary-menu ul ul:not(.mega-menu-column),
-/*#primary-menu ul li .mega-menu-content,*/
 #primary-menu.style-6 > ul > li > a:after,
 #primary-menu.style-6 > ul > li.current > a:after,
 #top-cart .top-cart-content,
 .fancy-title.title-border-color:before,
 .dark #primary-menu:not(.not-dark) ul ul,
-.dark #primary-menu:not(.not-dark) ul li .mega-menu-content,
 #primary-menu.dark ul ul,
-#primary-menu.dark ul li .mega-menu-content,
-.dark #primary-menu:not(.not-dark) ul li .mega-menu-content.style-2,
-#primary-menu.dark ul li .mega-menu-content.style-2,
 .dark #top-cart .top-cart-content,
 .tabs.tabs-tb ul.tab-nav li.ui-tabs-active a,
 .irs-from:after,
@@ -217,21 +203,6 @@ input.switch-toggle-round:checked + label:before,
 .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i,
 .dark .fbox-border.fbox-effect.fbox-dark .fbox-icon i:hover,
 .dark .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i { box-shadow: 0 0 0 1px #1ABC9C; }
-
-
-@media only screen and (max-width: 1000px) {
-
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li:hover a,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li.current a,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li:hover a,
-	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li.current a,
-	#primary-menu ul ul li:hover > a,
-	/*#primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title:hover > a,*/
-	/*#primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title > a:hover { color: #1ABC9C !important; }*/
-
-	#page-menu nav { background-color: #1ABC9C; }
-
-}
 
 
 @media only screen and (max-width: 767px) {

@@ -809,8 +809,6 @@ body.stretched #header.full-header .container {
 
 #primary-menu ul li { position: relative; }
 
-#primary-menu ul li.mega-menu { position: inherit; }
-
 #primary-menu ul > li {
 	float: left;
 	margin-left: 2px;
@@ -838,36 +836,13 @@ body.stretched #header.full-header .container {
 #primary-menu ul li:hover > a,
 #primary-menu ul li.current > a { color: #1ABC9C; }
 
-#primary-menu > ul > li.sub-menu > a > div { }
-
-body.no-superfish #primary-menu li:hover > ul:not(.mega-menu-column),
-body.no-superfish #primary-menu li:hover > .mega-menu-content { display: block; }
-
-#primary-menu ul ul:not(.mega-menu-column),
-#primary-menu ul li .mega-menu-content {
-	display: none;
-	position: absolute;
-	width: 220px;
-	background-color: #FFF;
-	box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
-	border: 1px solid #EEE;
-	border-top: 2px solid #1ABC9C;
-	height: auto;
-	z-index: 199;
-	top: 100%;
-	left: 0;
-	margin: 0;
+body.no-superfish #primary-menu li:hover > ul:not(.mega-menu-column) {
+	display: block;
 }
 
 #primary-menu ul ul:not(.mega-menu-column) ul {
 	top: -2px !important;
 	left: 218px;
-}
-
-#primary-menu ul ul.menu-pos-invert:not(.mega-menu-column),
-#primary-menu ul li .mega-menu-content.menu-pos-invert {
-	left: auto;
-	right: 0;
 }
 
 #primary-menu ul ul:not(.mega-menu-column) ul.menu-pos-invert { right: 218px; }
@@ -901,121 +876,6 @@ body.no-superfish #primary-menu li:hover > .mega-menu-content { display: block; 
 	color: #1ABC9C;
 }
 
-#primary-menu ul ul > li.sub-menu > a,
-#primary-menu ul ul > li.sub-menu:hover > a {
-	background-image: url("images/icons/submenu.png");
-	background-position: right center;
-	background-repeat: no-repeat;
-}
-
-
-/* ----------------------------------------------------------------
-	Mega Menu
------------------------------------------------------------------*/
-
-
-#primary-menu ul li .mega-menu-content,
-#primary-menu ul li.mega-menu-small .mega-menu-content {
-	width: 720px;
-	max-width: 400px;
-}
-
-#primary-menu ul li.mega-menu .mega-menu-content,
-.floating-header.sticky-header #primary-menu ul li.mega-menu .mega-menu-content {
-	margin: 0 15px;
-	width: 1140px;
-	max-width: none;
-}
-
-.floating-header #primary-menu ul li.mega-menu .mega-menu-content {
-	margin: 0;
-	width: 1220px;
-}
-
-body.stretched .container-fullwidth #primary-menu ul li.mega-menu .mega-menu-content { margin: 0 60px; }
-
-body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-content { margin: 0 30px; }
-
-#primary-menu ul li.mega-menu .mega-menu-content.style-2 { padding: 0 10px; }
-
-#primary-menu ul li .mega-menu-content ul {
-	display: block;
-	position: relative;
-	top: 0;
-	min-width: inherit;
-	border: 0;
-	box-shadow: none;
-	background-color: transparent;
-}
-
-#primary-menu ul li .mega-menu-content ul:not(.megamenu-dropdown) {
-	display: block !important;
-	opacity: 1 !important;
-	top: 0;
-	left: 0;
-}
-
-#primary-menu ul li .mega-menu-content ul.mega-menu-column {
-	float: left;
-	margin: 0;
-}
-
-#primary-menu ul li .mega-menu-content ul.mega-menu-column.col-5 { width: 20%; }
-
-#primary-menu ul li .mega-menu-content ul:not(.mega-menu-column) { width: 100%; }
-
-#primary-menu ul li .mega-menu-content ul.mega-menu-column:not(:first-child) { border-left: 1px solid #F2F2F2; }
-
-#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column { padding: 30px 20px; }
-
-#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title { margin-top: 20px; }
-
-#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title:first-child { margin-top: 0; }
-
-#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a {
-	font-size: 13px;
-	font-weight: bold;
-	font-family: 'Raleway', sans-serif;
-	letter-spacing: 1px;
-	text-transform: uppercase !important;
-	margin-bottom: 15px;
-	color: #444;
-	padding: 0 !important;
-	line-height: 1.3 !important;
-}
-
-#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title:hover > a { background-color: transparent; }
-
-#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a:hover { color: #1ABC9C; }
-
-#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title.sub-menu > a,
-#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title.sub-menu:hover > a { background: none; }
-
-#primary-menu ul li .mega-menu-content.style-2 li { border: 0; }
-
-#primary-menu ul li .mega-menu-content.style-2 ul li > a {
-	padding-left: 5px;
-	padding-top: 7px;
-	padding-bottom: 7px;
-}
-
-#primary-menu ul li .mega-menu-content.style-2 ul li > a:hover { padding-left: 12px; }
-
-
-.mega-menu-column .entry-meta {
-	margin: 8px -10px 0 0 !important;
-	border: none !important;
-	padding: 0 !important;
-}
-
-.mega-menu-column .entry-meta li {
-	float: left !important;
-	border: none !important;
-	margin: 0 10px 0 0 !important;
-}
-
-
-
 /* Primary Menu - Style 2
 -----------------------------------------------------------------*/
 
@@ -1034,8 +894,6 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 
 #logo + #primary-menu.style-2 { border-top: 0; }
 
-#primary-menu.style-2 > div #top-search,
-#primary-menu.style-2 > div #top-cart,
 #primary-menu.style-2 > div #side-panel-trigger {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -1192,8 +1050,6 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
 
 #primary-menu.sub-title.style-2 > div > ul > li { background-position: left center; }
 
-#primary-menu.sub-title.style-2 > div #top-search,
-#primary-menu.sub-title.style-2 > div #top-cart,
 #primary-menu.sub-title.style-2 > div #side-panel-trigger {
 	float: right;
 	margin-top: 30px;
@@ -1339,21 +1195,6 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
 
 #header.sticky-style-3 #header-wrap { height: 80px; }
 
-#primary-menu > ul > li > ul,
-#primary-menu > ul > li > .mega-menu-content,
-#primary-menu > ul > li.mega-menu > .mega-menu-content {
-	-webkit-transition: top .4s ease;
-	-o-transition: top .4s ease;
-	transition: top .4s ease;
-}
-
-#top-search,
-#top-cart {
-	-webkit-transition: margin .4s ease, opacity .3s ease;
-	-o-transition: margin .4s ease, opacity .3s ease;
-	transition: margin .4s ease, opacity .3s ease;
-}
-
 body:not(.top-search-open) #header-wrap #logo,
 body:not(.top-search-open) #primary-menu > ul,
 body:not(.top-search-open) #primary-menu > .container > ul,
@@ -1364,12 +1205,6 @@ body:not(.top-search-open) #side-panel-trigger {
 	-o-transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
 	transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
 }
-
-body.top-search-open #header-wrap #logo,
-body.top-search-open #primary-menu > ul,
-body.top-search-open #primary-menu > .container > ul,
-body.top-search-open #top-cart,
-body.top-search-open #side-panel-trigger { opacity: 0; }
 
 #header.sticky-header.semi-transparent { background-color: transparent; }
 
@@ -1405,8 +1240,6 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 #header.sticky-header:not(.static-sticky).sticky-style-2 #primary-menu,
 #header.sticky-header:not(.static-sticky).sticky-style-3 #primary-menu { border-top: 0; }
 
-#header.sticky-header:not(.static-sticky) #top-search,
-#header.sticky-header:not(.static-sticky) #top-cart,
 #header.sticky-header:not(.static-sticky) #side-panel-trigger {
 	margin-top: 20px !important;
 	margin-bottom: 20px !important;
@@ -1835,19 +1668,6 @@ body:not(.device-touch) #page-menu nav li a {
 .side-header #primary-menu ul ul li:hover > a {
 	background-color: transparent !important;
 	color: #444 !important;
-}
-
-.side-header #primary-menu ul > li.sub-menu > a,
-.side-header #primary-menu ul > li.sub-menu:hover > a { background-image: none !important; }
-
-.side-header #primary-menu ul > li.sub-menu > a:after {
-	position: absolute;
-	content: '\e7a5';
-	top: 1px;
-	right: 0;
-	-webkit-transition: transform .2s linear;
-	-o-transition: transform .2s linear;
-	transition: transform .2s linear;
 }
 
 .side-header #primary-menu ul > li.sub-menu:hover > a:after {
@@ -3950,8 +3770,6 @@ blockquote.pull-right {
 }
 
 .owl-carousel.owl-hidden { opacity: 0; }
-
-.mega-menu-content .owl-carousel.owl-hidden { opacity: 1; }
 
 .owl-carousel.owl-refresh .owl-item { display: none; }
 

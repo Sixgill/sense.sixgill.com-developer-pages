@@ -1082,30 +1082,30 @@ var SEMICOLON = SEMICOLON || {};
 							scrHeight = scrHeight - headerHeightOff;
 						}
 					}
-					if( element.parents('.full-screen').length > 0 ) { 
-						scrHeight = element.parents('.full-screen').height(); 
+					if( element.parents('.full-screen').length > 0 ) {
+						scrHeight = element.parents('.full-screen').height();
 					}
 
 
 
 					if( $body.hasClass('device-xs') || $body.hasClass('device-xxs') ) {
-						if( !element.hasClass('force-full-screen') ){ 
-							scrHeight = 'auto'; 
+						if( !element.hasClass('force-full-screen') ){
+							scrHeight = 'auto';
 						}
 					}
 
-					if( negativeHeight ) { 
-						scrHeight = scrHeight - Number(negativeHeight); 
+					if( negativeHeight ) {
+						scrHeight = scrHeight - Number(negativeHeight);
 					}
 
 					if (scrHeight < 246) {
 						scrHeight = 246;
 					}
 					element.css('height', scrHeight);
-					if( element.attr('id') == 'slider' && !element.hasClass('canvas-slider-grid') ) { 
-						if( element.has('.swiper-slide') ) { 
-							element.find('.swiper-slide').css('height', scrHeight); 
-						} 
+					if( element.attr('id') == 'slider' && !element.hasClass('canvas-slider-grid') ) {
+						if( element.has('.swiper-slide') ) {
+							element.find('.swiper-slide').css('height', scrHeight);
+						}
 					}
 				});
 			}
