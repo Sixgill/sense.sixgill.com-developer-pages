@@ -39,18 +39,6 @@ Responsive CSS
 
 	}
 
-
-
-	#primary-menu ul li.mega-menu .mega-menu-content,
-
-	.floating-header.sticky-header #primary-menu ul li.mega-menu .mega-menu-content { width: 940px; }
-
-
-
-	.floating-header #primary-menu ul li.mega-menu .mega-menu-content { width: 1030px; }
-
-
-
 	.ei-slider { height: 450px; }
 
 
@@ -709,17 +697,6 @@ Responsive CSS
 	#primary-menu > div > ul { margin-top: 60px !important; }
 
 
-
-	body:not(.top-search-open) #primary-menu-trigger {
-		opacity: 1;
-	}
-
-
-
-	body.top-search-open #primary-menu-trigger { opacity: 0; }
-
-
-
 	body.side-push-panel #side-panel-trigger-close a {
 
 		display: block;
@@ -809,25 +786,8 @@ Responsive CSS
 
 
 
-	#primary-menu > ul > li.sub-menu > a,
 
-	#primary-menu > .container > ul > li.sub-menu > a {
-
-		background-image: url("../images/icons/submenu.png");
-
-		background-position: right center;
-
-		background-repeat: no-repeat;
-
-	}
-
-
-
-
-
-	#primary-menu ul ul:not(.mega-menu-column),
-
-	#primary-menu ul li .mega-menu-content {
+	#primary-menu ul ul:not(.mega-menu-column) {
 
 		position: relative;
 
@@ -853,27 +813,11 @@ Responsive CSS
 
 
 
-	#primary-menu ul li .mega-menu-content { padding-left: 0; }
-
-
-
 	#primary-menu ul ul:not(.mega-menu-column) ul {
 
 		top: 0 !important;
 
 		left: 0;
-
-	}
-
-
-
-	#primary-menu ul ul.menu-pos-invert:not(.mega-menu-column),
-
-	#primary-menu ul li .mega-menu-content.menu-pos-invert {
-
-		left: 0;
-
-		right: 0;
 
 	}
 
@@ -921,28 +865,6 @@ Responsive CSS
 
 	}
 
-
-
-	#primary-menu ul li .mega-menu-content,
-
-	#primary-menu ul li.mega-menu-small .mega-menu-content,
-
-	#primary-menu ul li.mega-menu .mega-menu-content,
-
-	.floating-header.sticky-header #primary-menu ul li.mega-menu .mega-menu-content,
-
-	.floating-header #primary-menu ul li.mega-menu .mega-menu-content {
-
-		width: auto;
-
-		margin: 0;
-
-		top: 0;
-
-	}
-
-
-
 	.container-fullwidth #primary-menu ul li.mega-menu .mega-menu-content,
 
 	#header.full-header #primary-menu ul li.mega-menu .mega-menu-content {
@@ -961,106 +883,25 @@ Responsive CSS
 
 	}
 
-
-
-	#top-search { margin: 0 !important; }
-
-
-
-	#top-search a,
-
-	#top-cart,
-
 	#side-panel-trigger {
-
 		position: absolute;
-
 		top: 0;
-
 		left: auto;
-
 		right: 15px;
-
 		margin: 40px 0;
-		/*
 		-webkit-transition: margin .4s ease;
-
 		-o-transition: margin .4s ease;
-
 		transition: margin .4s ease;
-		*/
 	}
-
-
-
-	#primary-menu > div > #top-search a,
-
-	#primary-menu > div > #top-cart,
 
 	#primary-menu > div > #side-panel-trigger { margin: 20px 0 !important; }
-
-
-
-
-
-	#primary-menu ul.windows-mobile-menu li.sub-menu { position: relative; }
-
-
-
-	#primary-menu ul.windows-mobile-menu li.sub-menu a { background-image: none !important; }
-
-
-
-	#primary-menu ul.windows-mobile-menu li.sub-menu a.wn-submenu-trigger {
-
-		position: absolute;
-
-		cursor: pointer;
-
-		width: 32px;
-
-		top: 0;
-
-		right: 0;
-
-		z-index: 1;
-
-		padding: 0 !important;
-
-		text-align: center !important;
-
-	}
 
 
 
 	#primary-menu ul.windows-mobile-menu .mega-menu-content a.wn-submenu-trigger { display: none; }
 
 
-
-	#primary-menu ul.windows-mobile-menu li.sub-menu a.wn-submenu-trigger i { margin: 0 !important; }
-
-
-
-
-
 	#header.sticky-style-3 #top-cart .top-cart-content { top: 40px; }
-
-
-
-	#top-search a { right: 43px; }
-
-
-
-	#top-search form { height: 100px !important; }
-
-
-
-	#primary-menu > div > #top-search form { height: 60px !important; }
-
-
-
-	#top-search form input { font-size: 24px; }
-
 
 
 	#side-panel-trigger { right: 71px; }
@@ -1289,22 +1130,7 @@ Responsive CSS
 
 	.responsive-sticky-header #primary-menu > .container > ul { margin-bottom: 20px !important; }
 
-
-
-	.responsive-sticky-header #top-search a,
-
-	.responsive-sticky-header #top-cart,
-
 	.responsive-sticky-header #side-panel-trigger { margin: 20px 0; }
-
-
-
-	.responsive-sticky-header #top-search form { height: 60px !important; }
-
-
-
-	.responsive-sticky-header #top-cart .top-cart-content { top: 40px; }
-
 
 
 
@@ -2514,11 +2340,6 @@ Responsive CSS
 	.full-screen:not(.force-full-screen) .container.vertical-middle { width: 470px !important; }
 
 
-
-	#top-search form input { padding-right: 60px; }
-
-
-
 	.swiper_wrapper:not(.force-full-screen),
 
 	.swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide { height: 300px !important; }
@@ -2652,19 +2473,6 @@ Responsive CSS
 
 
 	.full-screen:not(.force-full-screen) .container.vertical-middle { width: 310px !important; }
-
-
-
-	#top-cart { display: none; }
-
-
-
-	#top-search a { right: 15px; }
-
-
-
-	#top-search form input { padding-right: 30px; }
-
 
 
 	#side-panel-trigger { right: 43px; }

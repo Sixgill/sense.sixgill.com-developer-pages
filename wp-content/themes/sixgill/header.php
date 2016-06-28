@@ -9,10 +9,6 @@
 
 	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Crete+Round" />
-
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/custom_build.css" type="text/css" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -84,6 +80,6 @@
 					SCHEDULE A DEMO
 				</button>
 			</div>
-			<?php get_template_part('searchform-compact'); ?>
+			 get_template_part('searchform-compact');
 		</div>
 -->
