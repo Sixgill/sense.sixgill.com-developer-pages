@@ -1,40 +1,66 @@
-<a name="top"></a>
-<section id="slider" class="slider-parallax no-border swiper_wrapper clearfix">
-	<div class="slider-parallax-inner">
-		<div class="swiper-container swiper-parent">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background-color: #004cbf;">
-					<div class="slider-caption slider-caption-center">
-						<h1 id="post-title-slider" class="single-post-title">
-							<?php echo $post->post_title; ?>
-						</h1>
-						<h4 id="post-subtitle-slider" class="single-post-subtitle">
-							<?php echo get_field('subtitle'); ?>
-						</h4>
-					</div>
-				</div>
+<section class="no-border swiper_wrapper clearfix">
+	<div class="swiper-slide slider-subpage">
+		<div class="slider-text-subpage">
+			<div id="post-title-slider" class="title-slider-subpage">
+				<?php echo $post->post_title; ?>
 			</div>
+			<dev id="post-subtitle-slider" class="single-post-subtitle font-size-45">
+				<?php echo get_field('subtitle'); ?>
+			</dev>
 		</div>
 	</div>
 </section>
 
+<div id="first-block-with-image" class="first-block-images-subpage">
+	<div id="first-left-container" class="first-left-container-subpage fleft full-height-container-subpage">
+		<div class="first-text-subpage">
+			<h1 class="font-size-30"><?php echo get_field('one_title_subpage'); ?></h1>
+			<p class="color-2e2e2e"><?php echo get_field('one_text_subpage'); ?></p>
+		</div>
+	</div>
+
+	<div id="first-right-container" class="first-right-container-subpage fleft full-height-container-subpage">
+		<img src="<?php echo get_field('one_image_subpage'); ?>" alt=""/>
+	</div>
+</div>
+
+<div id="second-block-with-image" class="second-block-images-subpage">
+	<div id="second-left-container" class="center second-left-container-subpage fleft full-height-container-subpage">
+		<img src="<?php echo get_field('second_image_subpage'); ?>" alt="" class="full-height-container-subpage"/>
+	</div>
+
+	<div id="second-right-container" class="second-right-container-subpage fleft full-height-container-subpage">
+		<div class="second-text-subpage">
+			<h1 class="font-size-30"><?php echo get_field('second_title_subpage'); ?></h1>
+			<p><?php echo get_field('second_text_subpage'); ?></p>
+		</div>
+	</div>
+</div>
+
+<div id="block-with-link" class="block-link-subpage">
+	<div id="left-block" class="left-block-subpage fleft full-height-container-subpage">
+		<div style="display:table-cell; vertical-align: middle;">
+			<div class="title-left-block-subpage line-height-1-8"><?php echo get_field('title_left_button_subpage'); ?></div>
+			<div class="text-left-block-subpage"><?php echo get_field('text_left_button_subpage'); ?></div>
+		</div>
+	</div>
+
+	<div id="right-block" class="right-block-subpage fleft full-height-container-subpage">
+		<div style="display:table-cell; vertical-align: middle;">
+			<div class="title-left-block-subpage line-height-1-8"><?php echo get_field('title_right_button_subpage'); ?></div>
+			<div class="text-left-block-subpage"><?php echo get_field('text_right_button_subpage'); ?></div>
+		</div>
+	</div>
+</div>
+
 <!-- Content-->
-<section id="content" class="section-margin-fix">
-  <div id="single-post-content" class="content-wrap no-bottom-padding no-padding-top">
-    <div class="container-fluid clearfix center solution-subpage-container no-margin-top">
-			<div class="left-aligned subsolution-left-aligned topmargin-lg">
-				<div class="solutions-subpage-text <?php if(!has_post_thumbnail()){ echo "solution-subpage-onlytext"; } ?>">
-					<?php the_content(); ?>
-				</div>
-				<div class="solutions-subpage-thumbnail thumbnail-solutions-mobile ">
-					<?php the_post_thumbnail(); ?>
-				</div>
+<section id="content">
+	<div id="single-post-content" class="content-wrap no-bottom-padding no-padding-top">
+		<div class="container-subpage clearfix centerno-margin-top">
+			<div class="topmargin-lg">
+					<?php echo get_field('general_text'); ?>
 			</div>
-    </div>
-		<div class="col_full center">
-			<a href="/solutions/" id="solutions-button-back" class="button button-large no-bottom-margin btnCompany">
-				BACK TO SOLUTIONS
-			</a>
 		</div>
   </div>
-</section><!-- #content end -->
+</section>
+<!-- #content end -->
