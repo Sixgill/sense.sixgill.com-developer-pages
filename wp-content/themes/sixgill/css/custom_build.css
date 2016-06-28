@@ -16807,6 +16807,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 [data-dismiss="modal"] {
 	color: #ffffff ;
 	opacity: 1;
+	text-shadow: none;
+}
+
+[data-dismiss="modal"]:hover {
+	color: blue; ;
+	opacity: 1;
 }
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
