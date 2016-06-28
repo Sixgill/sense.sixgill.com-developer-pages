@@ -17338,6 +17338,105 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		font-size: 30px;
 		text-align: right;
 	}
+
+	.left-block-subpage, .right-block-subpage  {
+		text-align: center; 
+		background-color: #2e2e2e; 
+		display: table;
+	}
+
+	.right-block-subpage {
+		border-left: 1px solid #4e4e4e; 
+	}
+
+	.full-height-container-subpage {
+		height: 100%; 
+	}
+
+	.first-right-container-subpage, .first-left-container-subpage, .left-block-subpage, .right-block-subpage {
+		width: 50%;
+	}
+
+	.first-right-container-subpage, .first-left-container-subpage, .second-left-container-subpage, .second-right-container-subpage {
+		display: inline-block; 
+	}
+
+	.first-block-images-subpage, .second-block-images-subpage {
+		height:365px; 
+		width: 100%; 
+	}
+	.first-block-images-subpage {
+		background-color: #f8f8f8;
+	}
+
+	.second-left-container-subpage {
+		width: 44%;
+	}
+
+	.second-right-container-subpage {
+		width: 56%;
+	}
+
+	.first-text-subpage {
+		margin: 67px 65px 70px 77px;
+	}
+
+	.second-text-subpage {
+		margin: 67px 65px 70px 0;
+	}
+
+	.block-link-subpage {
+		height:133px; 
+		width: 100%;
+	}
+
+	.color-2e2e2e {
+		color: #2e2e2e;
+	}
+
+	.font-size-30 {
+		font-size:30px;
+	}
+
+	.slider-subpage {
+		height:100%; 
+		background-image: url('../../../../wp-content/themes/sixgill/images/td/hero/dollarphotoclub_79195916_web.jpg'); 
+		background-position: center top; 
+		display: table;
+	}
+
+	.slider-text-subpage {
+		vertical-align: middle; 
+		text-align: center; 
+		display: table-cell;
+	}
+
+	.title-slider-subpage {
+		color:#4ddb5a; 
+		font-size:25px;
+	}
+
+	.font-size-45 {
+		font-size:45px;
+	}
+
+	.title-left-block-subpage {
+    	font-weight: 400;
+	}
+
+	.text-left-block-subpage, .title-left-block-subpage {
+		color: white; 
+		margin-bottom:0px;
+		font-size: 16px;
+	}
+
+	.container-subpage {
+		padding-right: 57px;
+		padding-left: 57px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 }
 /* Blog desktop styles */
 @media only screen and (min-width : 1001px) {
