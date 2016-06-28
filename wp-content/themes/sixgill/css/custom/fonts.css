@@ -2,19 +2,19 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url('fonts/lato.woff') format('woff');
+  src: local('Lato Regular'), local('Lato-Regular'), url('/wp-content/themes/sixgill/css/fonts/lato.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url('fonts/raleway.woff') format('woff');
+  src: local('Raleway'), local('Raleway-Regular'), url('/wp-content/themes/sixgill/css/fonts/raleway.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Crete Round';
   font-style: normal;
   font-weight: 400;
-  src: local('Crete Round'), local('CreteRound-Regular'), url('fonts/creteround.woff') format('woff');
+  src: local('Crete Round'), local('CreteRound-Regular'), url('/wp-content/themes/sixgill/css/fonts/creteround.woff') format('woff');
 }

@@ -52,6 +52,20 @@
 		concatFiles($cssSource, $cssResultFile);
 	}
 
+	function sixgill_custom_stylesheets() {
+		if ( ! is_admin() ) {
+			wp_enqueue_style( 'sixgill_custom_styles', get_template_directory_uri() . '/css/custom_build.css' );
+		}
+	}
+	add_action( 'wp_enqueue_scripts', 'sixgill_custom_stylesheets', 11 );
+
+	function sixgill_custom_scripts() {
+		if ( ! is_admin() ) {
+			wp_enqueue_script( 'sixgill_custom_scripts', get_template_directory_uri() . '/js/custom_build.js' );
+		}
+	}
+	add_action( 'wp_enqueue_scripts', 'sixgill_custom_scripts', 11 );
+
 	function getPageContentBySlug($slug) {
 		$args = array(
 			'name'        => $slug,

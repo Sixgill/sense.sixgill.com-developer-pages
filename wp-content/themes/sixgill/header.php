@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
-
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Sixgill" />
-
 	<meta name="google-site-verification" content="YI36Rs0Zki_Iw6jdf8RNTnIkOZIrqcUoilY5LNDFrBY" />
-
 	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
-
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/custom_build.css" type="text/css" />
-
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
 	<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -73,13 +67,3 @@
 
 			</div>
 		</header>
-<!--
-		<div id="search-form-desktop" class="search-panel-desktop display-only-desktop">
-			<div class="search-schedule-button-container vertical-centered">
-				<button data-toggle="modal" data-target="#myModal" class="button button-large btnSchedule search-schedule-button">
-					SCHEDULE A DEMO
-				</button>
-			</div>
-			 get_template_part('searchform-compact');
-		</div>
--->

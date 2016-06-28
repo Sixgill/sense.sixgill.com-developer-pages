@@ -99,7 +99,6 @@ a,
 ul.tab-nav.tab-nav2 li.ui-state-active a,
 .testimonial .flex-control-nav li a,
 .skills li .progress,
-.owl-carousel .owl-dots .owl-dot span,
 #gotoTop:hover,
 .dark .button-dark:hover,
 .dark .fbox-effect.fbox-dark .fbox-icon i:hover,
@@ -203,10 +202,3 @@ input.switch-toggle-round:checked + label:before,
 .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i,
 .dark .fbox-border.fbox-effect.fbox-dark .fbox-icon i:hover,
 .dark .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i { box-shadow: 0 0 0 1px #1ABC9C; }
-
-
-@media only screen and (max-width: 767px) {
-
-	.portfolio-filter li a:hover { color: #1ABC9C; }
-
-}
