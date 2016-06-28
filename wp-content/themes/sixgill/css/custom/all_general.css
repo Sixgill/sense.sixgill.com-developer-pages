@@ -332,6 +332,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 [data-dismiss="modal"]:hover {
-	color: blue; ;
+	color: blue;
 	opacity: 1;
 }
