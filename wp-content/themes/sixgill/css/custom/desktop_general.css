@@ -182,4 +182,76 @@
 		max-width: none;
 	}
 
+	.vertical-centered {
+		position: relative !important;
+		top: 50% !important;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.background-content {
+		position: relative;
+		width: 50%;
+		height: 100%;
+		text-align: center;
+		display: inline-block;
+	}
+
+	.container-links {
+		width: 100%;
+		height: 133px;
+		background-color: black;
+	}
+
+	.gallery-links-overlay {
+		background-color: #054eb7;
+		z-index: 2;
+		opacity: 0.9;
+	}
+
+	.inner-links-contaner {
+		height: 50%;
+	}
+
+	.gallery-description, .gallery-links-overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	.inner-links-contaner a {
+		color: white !important;
+	}
+
+	.gallery-description-title, .gallery-description-subtitle, .gallery-link, .gallery-download-link {
+		font-size: 16px;
+		margin: 0;
+		display: block;
+		color: white;
+	}
+
+	.gallery-links-overlay {
+		display: none;
+	}
+
+	.gallery-description-title {
+		margin-bottom: 20px;
+	}
+
+	.gallery-link {
+		margin-bottom: 20px;
+	}
+
+	.gallery-description:hover .gallery-links-overlay{
+		display:block;
+	}
+
+	.liks-block-icon {
+		width:25px; 
+		height:25px; 
+		margin-right: 15px;
+	}
 }
