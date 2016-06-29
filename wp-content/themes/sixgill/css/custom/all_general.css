@@ -335,3 +335,60 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	color: blue;
 	opacity: 1;
 }
+
+.slider-subpage {
+	height:100%; 
+	background-image: url('/wp-content/themes/sixgill/images/td/hero/subpages.png'); 
+	background-position: center top; 
+	display: table;
+}
+
+.slider-text-subpage {
+	vertical-align: middle; 
+	text-align: center; 
+	display: table-cell;
+}
+
+.right-block-subpage {
+	border-left: 1px solid #4e4e4e; 
+}
+
+.full-height-container-subpage {
+	height: 100%; 
+}
+
+.first-right-container-subpage {
+	overflow: hidden;
+}
+
+.first-right-container-subpage, .first-left-container-subpage, .second-left-container-subpage, .second-right-container-subpage {
+	display: inline-block; 
+}
+
+.left-block-subpage, .right-block-subpage {
+	text-align: center; 
+	background-color: #2e2e2e; 
+	display: table;
+}
+
+.first-block-images-subpage {
+	background-color: #f8f8f8;
+}
+
+.color-2e2e2e {
+	color: #2e2e2e;
+}
+
+.title-left-block-subpage {
+	font-weight: 400;
+}
+
+.text-left-block-subpage, .title-left-block-subpage {
+	color: white; 
+	margin-bottom:0px;
+	font-size: 16px;
+}
+
+.first-block-images-subpage, .second-block-images-subpage, .content-subpage {
+	display: inline-block;
+}

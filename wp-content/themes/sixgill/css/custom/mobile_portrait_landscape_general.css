@@ -56,4 +56,49 @@
 	.company-h1, .solutions-h1, .products-h1 {
 		font-size: 30px;
 	}
+
+	.first-right-container-subpage, 
+	.first-left-container-subpage, 
+	.left-block-subpage, 
+	.right-block-subpage, 
+	.second-left-container-subpage, 
+	.second-right-container-subpage,
+	.second-block-images-subpage {
+		width: 100%;
+	}
+
+	.first-left-container-subpage, .second-right-container-subpage {
+		height:422px; 
+		width: 100%; 
+	}
+	.second-left-container-subpage{
+		margin-top: 35px;
+		height:156px; 
+		width: 100%; 
+	}
+
+	.block-link-subpage {
+		height:270px; 
+		width: 100%;
+	}
+
+	.second-right-container-subpage {
+		height: 350px;
+	}
+
+	.left-block-subpage, .right-block-subpage, .first-right-container-subpage {
+		height:135px; 
+	}
+
+	.first-text-subpage, .second-text-subpage  {
+		margin: 41px 30px 0px 28px;
+	}
+
+	.container-subpage {
+		margin-top: 43px;
+		padding-right: 28px;
+		padding-left: 28px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
