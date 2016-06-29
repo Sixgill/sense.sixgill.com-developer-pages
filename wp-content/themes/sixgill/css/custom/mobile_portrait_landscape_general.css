@@ -62,7 +62,8 @@
 	.left-block-subpage, 
 	.right-block-subpage, 
 	.second-left-container-subpage, 
-	.second-right-container-subpage {
+	.second-right-container-subpage,
+	.second-block-images-subpage {
 		width: 100%;
 	}
 
@@ -94,7 +95,7 @@
 	}
 
 	.container-subpage {
-		margin-top: 42px;
+		margin-top: 43px;
 		padding-right: 28px;
 		padding-left: 28px;
 		margin-right: auto;

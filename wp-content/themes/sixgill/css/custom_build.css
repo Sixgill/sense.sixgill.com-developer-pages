@@ -15994,51 +15994,55 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	display: table;
 }
 
-	.slider-text-subpage {
-		vertical-align: middle; 
-		text-align: center; 
-		display: table-cell;
-	}
+.slider-text-subpage {
+	vertical-align: middle; 
+	text-align: center; 
+	display: table-cell;
+}
 
-	.right-block-subpage {
-		border-left: 1px solid #4e4e4e; 
-	}
+.right-block-subpage {
+	border-left: 1px solid #4e4e4e; 
+}
 
-	.full-height-container-subpage {
-		height: 100%; 
-	}
+.full-height-container-subpage {
+	height: 100%; 
+}
 
-	.first-right-container-subpage {
-		overflow: hidden;
-	}
+.first-right-container-subpage {
+	overflow: hidden;
+}
 
-	.first-right-container-subpage, .first-left-container-subpage, .second-left-container-subpage, .second-right-container-subpage {
-		display: inline-block; 
-	}
+.first-right-container-subpage, .first-left-container-subpage, .second-left-container-subpage, .second-right-container-subpage {
+	display: inline-block; 
+}
 
-	.left-block-subpage, .right-block-subpage  {
-		text-align: center; 
-		background-color: #2e2e2e; 
-		display: table;
-	}
+.left-block-subpage, .right-block-subpage {
+	text-align: center; 
+	background-color: #2e2e2e; 
+	display: table;
+}
 
-	.first-block-images-subpage {
-		background-color: #f8f8f8;
-	}
+.first-block-images-subpage {
+	background-color: #f8f8f8;
+}
 
-	.color-2e2e2e {
-		color: #2e2e2e;
-	}
+.color-2e2e2e {
+	color: #2e2e2e;
+}
 
-	.title-left-block-subpage {
-    	font-weight: 400;
-	}
+.title-left-block-subpage {
+	font-weight: 400;
+}
 
-	.text-left-block-subpage, .title-left-block-subpage {
-		color: white; 
-		margin-bottom:0px;
-		font-size: 16px;
-	}
+.text-left-block-subpage, .title-left-block-subpage {
+	color: white; 
+	margin-bottom:0px;
+	font-size: 16px;
+}
+
+.first-block-images-subpage, .second-block-images-subpage, .content-subpage {
+	display: inline-block;
+}
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
 }
@@ -16623,6 +16627,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		max-width: none;
 	}
 
+	.left-block-subpage: hover {
+		background: blue;
+	}
 }
 /* Blog desktop styles */
 @media only screen and (min-width : 1001px) {
@@ -17942,7 +17949,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.left-block-subpage, 
 	.right-block-subpage, 
 	.second-left-container-subpage, 
-	.second-right-container-subpage {
+	.second-right-container-subpage,
+	.second-block-images-subpage {
 		width: 100%;
 	}
 
@@ -17974,7 +17982,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.container-subpage {
-		margin-top: 42px;
+		margin-top: 43px;
 		padding-right: 28px;
 		padding-left: 28px;
 		margin-right: auto;
