@@ -9,6 +9,18 @@ $.fn.doOnce = function( func ) {
 	return this;
 }
 
+$(function() {
+	function fixAspectRatios() {
+		$('[aspectratio]').each(function() {
+			var aspectRatio = parseFloat($(this).attr('aspectratio'));
+			$(this).height($(this).width() / aspectRatio);
+		});
+	}
+	$(window).resize(fixAspectRatios);
+	fixAspectRatios();
+})
+
+
 if( $().infinitescroll ) {
 
 	$.extend($.infinitescroll.prototype,{
