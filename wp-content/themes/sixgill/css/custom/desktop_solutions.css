@@ -40,8 +40,13 @@
 		display: inline-block;
 	}
 
+	.solution-subpage-viewproccess-block:first-child {
+		border-right: 1px solid #4e4e4e;
+	}
+
 	.solution-subpage-viewproccess-block:only-child {
 		width: 100%;
+		border-right: 0px;
 	}
 
 	.gallery-links-overlay {
@@ -109,6 +114,23 @@
 		font-size: 20px;
 		font-weight: normal;
 		margin-bottom: 70px;
+	}
+
+	.solution-subpage-bottom-line {
+		margin-top: 100px;
+		margin-bottom: 120px;
+	}
+
+	.solution-subpage-bottom-section-column {
+		width: 45%;
+	}
+
+	.solution-subpage-bottom-section-column:first-child {
+		float: left;
+	}
+
+	.solution-subpage-bottom-section-column:last-child {
+		float: right;
 	}
 
 }

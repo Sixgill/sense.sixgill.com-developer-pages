@@ -136,10 +136,26 @@
 			<h2 class="solution-subpage-bottom-section-subtitle">
 				<?php echo get_field('last_section_subtitle'); ?>
 			</h2>
-			<div class="left">
+
+			<div class="solution-subpage-bottom-section-content left">
+				<div class="solution-subpage-bottom-section-column">
+					<?php echo get_field('last_section_text_left_column'); ?>
+				</div>
+				<div class="solution-subpage-bottom-section-column">
+					<?php echo get_field('last_section_text_right_column'); ?>
+				</div>
 				<?php echo get_field('last_section_text'); ?>
 			</div>
+
 		</div>
 	</div>
+
+	<div class="solution-subpage-bottom-line"></div>
+
+	<h1 class="solution-subpage-section-title center">
+		Additional use cases
+	</h1>
+
+	
 
 </section>
