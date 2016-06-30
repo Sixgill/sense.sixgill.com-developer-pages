@@ -5,7 +5,7 @@ $flagPrint = false;
 foreach($subpages as $subpage) {
 	$selected = get_field('page_part', $subpage->ID);
 
-	if( in_array($categoryName, $selected) ) {
+if (is_array($selected) && in_array( $categoryName, $selected ) ) {
 		if (!$flagPrint) {
 			$flagPrint = true; ?>
 		<b style="padding-bottom: 5px;"> 
