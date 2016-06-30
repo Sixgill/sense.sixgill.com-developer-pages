@@ -29,15 +29,15 @@
 		</div>
 
 		<div class="solution-subpage-first-block-image-container full-height">
-			<img aspectratio="1.63273728" src="<?php echo get_field('first_section_image_desktop')['url']; ?>" alt="" class="display-only-desktop full-width">
-			<img aspectratio="0.91346" src="<?php echo get_field('first_section_image_tablet')['url']; ?>" alt="" class="display-only-tablet full-width">
-			<img aspectratio="1.737" src="<?php echo get_field('first_section_image_mobile')['url']; ?>" alt="" class="no-tablet-display no-desktop-display full-width">
+			<img aspectratio="1.63273728" src="<?php echo get_field('first_section_image_desktop'); ?>" alt="" class="display-only-desktop full-width">
+			<img aspectratio="0.91346" src="<?php echo get_field('first_section_image_tablet'); ?>" alt="" class="display-only-tablet full-width">
+			<img aspectratio="1.737" src="<?php echo get_field('first_section_image_mobile'); ?>" alt="" class="no-tablet-display no-desktop-display full-width">
 		</div>
 	</div>
 
 	<div class="solution-subpage-second-block">
 		<div class="solution-subpage-second-block-image-container full-height center">
-			<img src="<?php echo get_field('second_section_image')['url']; ?>" alt="" class="full-height">
+			<img src="<?php echo get_field('second_section_image'); ?>" alt="" class="full-height">
 		</div>
 
 		<div class="second-right-container-subpage full-height">
