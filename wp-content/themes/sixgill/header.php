@@ -6,8 +6,6 @@
 	<meta name="google-site-verification" content="YI36Rs0Zki_Iw6jdf8RNTnIkOZIrqcUoilY5LNDFrBY" />
 	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	  <link rel="stylesheet" href="/wp-content/themes/sixgill/css/lightbox.min.css" type="text/css" />
-
 	<!--[if lt IE 9]>
 	<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->

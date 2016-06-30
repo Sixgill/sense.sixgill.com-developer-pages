@@ -8,6 +8,7 @@
 			$path."/js/plugins.js",
 			$path."/js/functions.js",
 			$path."/js/custom/*.{js, JS}",
+			$path."/js/lightbox.min.js",
 		);
 
 		$cssResultFile = $path."/css/custom_build.css";
@@ -23,6 +24,7 @@
 			$path."/css/responsive.css",
 			$path."/css/colors.css",
 			$path."/css/custom.css",
+			$path."/css/lightbox.min.css",
 			$path."/css/custom/all_".$pagesList.".css",
 			$path."/css/custom/desktop_".$pagesList.".css",
 			$path."/css/custom/tablet_".$pagesList.".css",

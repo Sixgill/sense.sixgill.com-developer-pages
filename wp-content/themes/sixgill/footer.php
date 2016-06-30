@@ -155,9 +155,6 @@
 	   })(document,"script","hs-analytics",300000);
 	 </script>
 	<!-- End of Async HubSpot Analytics Code -->
-	<script src="/wp-content/themes/sixgill/js/jquery.js"></script>
-	<script src="/wp-content/themes/sixgill/js/lightbox.min.js"></script>
-
 	<?php wp_footer(); ?>
-</body>
+ </body>
 </html>

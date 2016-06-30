@@ -113,10 +113,10 @@ if (count($SecondGlleryList) == 0) { ?>
 		<div class="gallery-description">
 			<div class="gallery-description-inner vertical-centered">
 				<div class="gallery-description-title">
-					<?php echo get_field('title_left_button_subpage'); ?>
+					<?php echo get_field('title_right_button_subpage'); ?>
 				</div>
 				<div class="gallery-description-subtitle">
-					<?php echo get_field('text_left_button_subpage'); ?>
+					<?php echo get_field('text_right_button_subpage'); ?>
 				</div>
 			</div>
 			<div class="gallery-links-overlay">
@@ -138,6 +138,34 @@ if (count($SecondGlleryList) == 0) { ?>
 		</div>
 	</div>
 </section>
+
+
+<div class="container-links">
+	<div class="background-content fleft">
+		<div class="gallery-description">
+			<div class="gallery-description-inner vertical-centered">
+				<div class="gallery-description-title">
+					<?php echo get_field('title_left_button_subpage'); ?>
+				</div>
+				<div class="gallery-description-subtitle">
+					<?php echo get_field('text_left_button_subpage'); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="background-content fleft">
+		<div class="gallery-description">
+			<div class="gallery-description-inner vertical-centered">
+				<div class="gallery-description-title">
+					<?php echo get_field('title_right_button_subpage'); ?>
+				</div>
+				<div class="gallery-description-subtitle">
+					<?php echo get_field('text_right_button_subpage'); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <?php
 	for($i=1; $i < count($OneGalleryList); $i++) {
