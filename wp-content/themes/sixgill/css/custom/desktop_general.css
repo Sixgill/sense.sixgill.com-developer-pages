@@ -72,7 +72,7 @@
 		float: right;
 		margin-top: 0px;
 	}
-	
+
 	.widgettitle {
 		color: #004FC8;
 	}
@@ -123,14 +123,14 @@
 		text-align: right;
 	}
 
-	.first-block-images-subpage {
-		height:365px; 
-		width: 100%; 
+	.solution-subpage-first-block {
+		min-height: 365px;
+		width: 100%;
 	}
-	.second-block-images-subpage {
+	.solution-subpage-second-block {
 		margin-top: 35px;
-		height:330px; 
-		width: 100%; 
+		height:330px;
+		width: 100%;
 	}
 
 	.first-text-subpage {
@@ -142,32 +142,21 @@
 	}
 
 	.block-link-subpage {
-		height:133px; 
+		height:133px;
 		width: 100%;
 	}
 
-	.font-size-title-first-text {
-		font-size:30px;
+	.solution-subpage-section-title, .solution-subpage-second-block-title {
+		font-size: 33px;
+		font-weight: 100;
 	}
 
-	.title-slider-subpage {
-		color:#4ddb5a; 
-		font-size:25px;
+	.solution-subpage-suptitle {
+		font-size: 23px;
 	}
 
-	.font-size-title-subtitle {
-		font-size:45px;
-	}
-
-	.first-right-container-subpage, .first-left-container-subpage, .left-block-subpage, .right-block-subpage {
-		width: 50%;
-	}
-	.second-left-container-subpage {
-		width: 44%;
-	}
-
-	.second-right-container-subpage {
-		width: 56%;
+	.solution-subpage-title {
+		font-size: 45px;
 	}
 
 	.container-subpage {
@@ -180,64 +169,5 @@
 	.image-subpage {
 		height: 100%;
 		max-width: none;
-	}
-
-	.background-content {
-		position: relative;
-		width: 50%;
-		height: 100%;
-		text-align: center;
-		display: inline-block;
-	}
-
-	.gallery-links-overlay {
-		background-color: #054eb7;
-		z-index: 2;
-		opacity: 0.9;
-	}
-
-	.inner-links-contaner {
-		height: 50%;
-	}
-
-	.gallery-description, .gallery-links-overlay {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-	}
-
-	.inner-links-contaner a {
-		color: white !important;
-	}
-
-	.gallery-description-title, .gallery-description-subtitle, .gallery-link, .gallery-download-link {
-		font-size: 16px;
-		margin: 0;
-		display: block;
-		color: white;
-	}
-
-	.gallery-links-overlay {
-		display: none;
-	}
-
-	.gallery-description-title {
-		margin-bottom: 20px;
-	}
-
-	.gallery-link {
-		margin-bottom: 20px;
-	}
-
-	.gallery-description:hover .gallery-links-overlay{
-		display:block;
-	}
-
-	.liks-block-icon {
-		width:25px; 
-		height:25px; 
-		margin-right: 15px;
 	}
 }

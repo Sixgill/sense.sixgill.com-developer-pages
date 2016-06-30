@@ -21,3 +21,16 @@
 .solutions-subpage-text li{
 	font-size: inherit;
 }
+
+.solution-subpage-suptitle {
+	color: #4ddb5a;
+}
+
+.solution-subpage-title {
+	color: #f9f8f8;
+}
+
+.solution-subpage-title , .solution-subpage-suptitle {
+	font-weight: 800;
+	text-transform: uppercase;
+}

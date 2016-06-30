@@ -336,41 +336,37 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .slider-subpage {
-	height:100%; 
-	background-image: url('/wp-content/themes/sixgill/images/td/hero/subpages.png'); 
-	background-position: center top; 
+	height:100%;
+	background-image: url('/wp-content/themes/sixgill/images/td/hero/subpages.png');
+	background-position: center top;
 	display: table;
 }
 
 .slider-text-subpage {
-	vertical-align: middle; 
-	text-align: center; 
+	vertical-align: middle;
+	text-align: center;
 	display: table-cell;
 }
 
 .right-block-subpage {
-	border-left: 1px solid #4e4e4e; 
+	border-left: 1px solid #4e4e4e;
 }
 
-.full-height-container-subpage {
-	height: 100%; 
-}
-
-.first-right-container-subpage {
+.solution-subpage-first-block-image-container {
 	overflow: hidden;
 }
 
-.first-right-container-subpage, .first-left-container-subpage, .second-left-container-subpage, .second-right-container-subpage {
-	display: inline-block; 
+.solution-subpage-first-block-image-container, .first-left-container-subpage, .solution-subpage-second-block-image-container, .second-right-container-subpage {
+	display: inline-block;
 }
 
 .left-block-subpage, .right-block-subpage {
-	text-align: center; 
-	background-color: #2e2e2e; 
+	text-align: center;
+	background-color: #2e2e2e;
 	display: table;
 }
 
-.first-block-images-subpage {
+.solution-subpage-first-block {
 	background-color: #f8f8f8;
 }
 
@@ -383,11 +379,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .text-left-block-subpage, .title-left-block-subpage {
-	color: white; 
+	color: white;
 	margin-bottom: 0px;
 }
 
-.first-block-images-subpage, .second-block-images-subpage, .content-subpage {
+.solution-subpage-first-block, .solution-subpage-second-block, .solution-subpage-last-block {
 	display: inline-block;
 }
 
@@ -399,7 +395,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	font-size: 16px;
 }
 
-.container-links {
+.solution-subpage-third-block {
 	width: 100%;
 	height: 133px;
 	background-color: black;
