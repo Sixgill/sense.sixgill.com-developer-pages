@@ -6,3 +6,5 @@ define( 'DB_HOST', 'localhost' );
 define( 'WPLANG', '' );
 define( 'WP_DEBUG', false );
 define( 'SCRIPT_DEBUG', false );
+define('WP_HOME','http://dev-sixgill.pantheonsite.io');
+define('WP_SITEURL','http://dev-sixgill.pantheonsite.io');
