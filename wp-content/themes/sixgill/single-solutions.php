@@ -11,6 +11,23 @@
 	</div>
 </section>
 
+<?php 
+	$OneGalleryList = array();
+	$SecondGlleryList = array();
+
+	foreach(get_field('one_gallery') as $logo) : 
+		array_push($OneGalleryList, $logo['url']);
+	endforeach;
+
+	foreach(get_field('second_gallery') as $logo) : 
+		array_push($SecondGlleryList, $logo['url']);
+	endforeach;
+
+	$OneGalleryID = "one";
+	$SecondGalleryID = "second";
+?>
+
+<section id="content" class="font-size-0">
 <div id="first-block-with-image" class="first-block-images-subpage">
 	<div id="first-left-container" class="first-left-container-subpage fleft full-height-container-subpage">
 		<div class="first-text-subpage">
@@ -45,26 +62,118 @@
 		<img src="<?php echo get_field('second_image_subpage'); ?>" alt="" class="full-height-container-subpage"/>
 	</div>
 </div>
-<div id="block-with-link" class="block-link-subpage">
-	<div id="left-block" class="left-block-subpage fleft full-height-container-subpage">
-		<div style="display:table-cell; vertical-align: middle;">
-			<div class="title-left-block-subpage line-height-1-8"><?php echo get_field('title_left_button_subpage'); ?></div>
-			<div class="text-left-block-subpage"><?php echo get_field('text_left_button_subpage'); ?></div>
+
+
+<?php 
+if (count($SecondGlleryList) == 0) { ?>
+
+	<div class="container-links">
+		<div class="background-content" style="width:100%;">
+			<div class="gallery-description">
+				<div class="gallery-description-inner vertical-centered" style="width: 50%; margin: auto;">
+					<div class="gallery-description-title">
+						<?php echo get_field('title_left_button_subpage'); ?>
+					</div>
+					<div class="gallery-description-subtitle">
+						<?php echo get_field('text_left_button_subpage'); ?>
+					</div>
+				</div>
+				<div class="gallery-links-overlay">
+					<div class="inner-links-contaner vertical-centered">
+						<?php echo '<a href="'.$OneGalleryList[0].'" rel="lightbox['.$OneGalleryID.']" class="gallery-link"><img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="liks-block-icon">View gallery</a>'; ?>
+						<a href="#" class="gallery-download-link"><img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="liks-block-icon">Download</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div id="right-block" class="right-block-subpage fleft full-height-container-subpage">
-		<div style="display:table-cell; vertical-align: middle;">
-			<div class="title-left-block-subpage line-height-1-8"><?php echo get_field('title_right_button_subpage'); ?></div>
-			<div class="text-left-block-subpage"><?php echo get_field('text_right_button_subpage'); ?></div>
+
+<?php } else { ?>
+
+<div class="container-links">
+	<div class="background-content">
+		<div class="gallery-description">
+			<div class="gallery-description-inner vertical-centered">
+				<div class="gallery-description-title">
+					<?php echo get_field('title_left_button_subpage'); ?>
+				</div>
+				<div class="gallery-description-subtitle">
+					<?php echo get_field('text_left_button_subpage'); ?>
+				</div>
+			</div>
+			<div class="gallery-links-overlay">
+				<div class="inner-links-contaner vertical-centered">
+					<?php echo '<a href="'.$OneGalleryList[0].'" rel="lightbox['.$OneGalleryID.']" class="gallery-link"><img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="liks-block-icon">View gallery</a>'; ?>
+					<a href="#" class="gallery-download-link"><img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="liks-block-icon">Download</a>
+				</div>  
+			</div>
+		</div>
+	</div>
+	<div class="background-content">
+		<div class="gallery-description">
+			<div class="gallery-description-inner vertical-centered">
+				<div class="gallery-description-title">
+					<?php echo get_field('title_right_button_subpage'); ?>
+				</div>
+				<div class="gallery-description-subtitle">
+					<?php echo get_field('text_right_button_subpage'); ?>
+				</div>
+			</div>
+			<div class="gallery-links-overlay">
+				<div class="inner-links-contaner vertical-centered">
+					<?php echo '<a href="'.$SecondGlleryList[0].'" rel="lightbox['.$SecondGalleryID.']" class="gallery-link"><img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="liks-block-icon">View gallery</a>'; ?>
+					<a href="#" class="gallery-download-link"><img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="liks-block-icon">Download</a>
+				</div>  
+			</div>
 		</div>
 	</div>
 </div>
+<?php } ?>
 <!-- Content-->
-	<div id="single-post-content" class="content-subpage content-wrap no-bottom-padding no-padding-top">
+	<div id="single-post-content" class="content-subpage content-wrap no-bottom-padding no-padding-top font-size-16">
 		<div class="container-subpage clearfix centerno-margin-top">
 			<div class="topmargin-lg">
 					<?php echo get_field('general_text'); ?>
 			</div>
 		</div>
-  </div>
+	</div>
+</section>
+
+
+<div class="container-links">
+	<div class="background-content fleft">
+		<div class="gallery-description">
+			<div class="gallery-description-inner vertical-centered">
+				<div class="gallery-description-title">
+					<?php echo get_field('title_left_button_subpage'); ?>
+				</div>
+				<div class="gallery-description-subtitle">
+					<?php echo get_field('text_left_button_subpage'); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="background-content fleft">
+		<div class="gallery-description">
+			<div class="gallery-description-inner vertical-centered">
+				<div class="gallery-description-title">
+					<?php echo get_field('title_right_button_subpage'); ?>
+				</div>
+				<div class="gallery-description-subtitle">
+					<?php echo get_field('text_right_button_subpage'); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php
+	for($i=1; $i < count($OneGalleryList); $i++) {
+		echo '<a style="display: none;" href="'.$OneGalleryList[$i].'" rel="lightbox['.$OneGalleryID.']"></a>';
+	}
+
+	for($i=1; $i < count($SecondGlleryList); $i++) {
+		echo '<a style="display: none;" href="'.$SecondGlleryList[$i].'" rel="lightbox['.$SecondGalleryID.']"></a>';
+	}
+?>
 <!-- #content end -->

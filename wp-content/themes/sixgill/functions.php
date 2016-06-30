@@ -8,11 +8,13 @@
 			$path."/js/plugins.js",
 			$path."/js/functions.js",
 			$path."/js/custom/*.{js, JS}",
+			$path."/js/lightbox.min.js",
 		);
 
 		$cssResultFile = $path."/css/custom_build.css";
 		$pagesList = "{general,blog,company,home,solutions,resources,tech,press,legal,products}";
 		$cssSource = array(
+			$path."/css/lightbox.min.css",
 			$path."/css/custom/fonts.css",
 			$path."/css/bootstrap.min.css",
 			$path."/style.css",
