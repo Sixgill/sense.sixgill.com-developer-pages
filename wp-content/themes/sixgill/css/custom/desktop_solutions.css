@@ -18,36 +18,97 @@
 		display: inline-block;
 	}
 
-	.solution-subpage-container {
-		margin-left: 40px;
-		margin-right: 15px;
-		padding-left: 0px;
-		padding-right: 0px;
+	.solution-subpage-first-block-image-container, .first-left-container-subpage, .left-block-subpage, .right-block-subpage {
+		width: 50%;
 	}
 
-	.solutions-subpage-text {
-		width: 65%;
-		max-width: 900px;
-		font-size: 16px;
-		font-weight: normal;
+	.solution-subpage-second-block-image-container {
+		width: 44%;
+		float: left;
 	}
 
-	.solution-subpage-onlytext {
-		width: inherit;
-		max-width: 1000px;
-		padding-right: 40px;
-	}
-
-	.solutions-subpage-thumbnail {
+	.second-right-container-subpage {
+		width: 56%;
 		float: right;
-		width: 34%;
-		text-align: left;
 	}
 
-	.solutions-subpage-thumbnail .size-post-thumbnail {
-		height:inherit !important;
-		max-width: 300px;
-		height:100% !important;
-		width: 100% !important;
+	.solution-subpage-viewproccess-block {
+		position: relative;
+		width: 50%;
+		height: 100%;
+		text-align: center;
+		display: inline-block;
 	}
+
+	.solution-subpage-viewproccess-block:only-child {
+		width: 100%;
+	}
+
+	.gallery-links-overlay {
+		background-color: rgba(5, 78, 183, 0.9);
+		z-index: 2;
+	}
+
+	.inner-links-contaner {
+		height: 50%;
+	}
+
+	.gallery-description, .gallery-links-overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	.inner-links-contaner a {
+		color: white !important;
+	}
+
+	.gallery-description-title, .gallery-description-subtitle, .gallery-link, .gallery-download-link {
+		font-size: 16px;
+		margin: 0;
+		display: block;
+		color: white;
+	}
+
+	.gallery-links-overlay {
+		display: none;
+	}
+
+	.gallery-description-title {
+		margin-bottom: 20px;
+	}
+
+	.gallery-link {
+		margin-bottom: 20px;
+	}
+
+	.gallery-description:hover .gallery-links-overlay{
+		display: block;
+	}
+
+	.solutions-subpage-icon {
+		width:25px;
+		height:25px;
+		margin-right: 15px;
+	}
+
+	.solution-subpage-last-block {
+		margin-top: 70px;
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 14%;
+	}
+
+	.solution-subpage-last-block-title {
+		margin-bottom: 15px;
+	}
+
+	.solution-subpage-bottom-section-subtitle {
+		font-size: 20px;
+		font-weight: normal;
+		margin-bottom: 70px;
+	}
+
 }
