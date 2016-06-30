@@ -83,7 +83,7 @@
 }
 
 .left {
-	text-align: left !important;
+	text-align: left;
 }
 
 [class="center"] {
