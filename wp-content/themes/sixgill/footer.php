@@ -60,28 +60,28 @@
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="requestModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-body">
-	        <div class="modal-content">
-	          <div class="modal-header" style="background-color:#57B82A;">
-	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+				<div class="modal-content">
+				<div class="modal-header" style="background-color:#57B82A;">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 								&times;
-							</button>
-	            <h4 class="modal-title color-white center" id="requestModalLabel">
+					</button>
+				<h4 class="modal-title color-white center" id="requestModalLabel">
 								REQUEST A DEMO
-							</h4>
-	          </div>
-	          <div class="modal-body center">
+				</h4>
+				</div>
+				<div class="modal-body center">
 							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 							<script>
-							  hbspt.forms.create({
-							    portalId: '1792815',
-							    formId: '7b5388d8-0979-4961-ac97-1f36fc2d70c0'
-							  });
+								hbspt.forms.create({
+								portalId: '1792815',
+								formId: '7b5388d8-0979-4961-ac97-1f36fc2d70c0'
+								});
 							</script>
-	          </div>
-	          <div class="modal-footer center"></div>
-	        </div>
-	      </div>
+				</div>
+			<div class="modal-footer center"></div>
 		</div>
+	</div>
+</div>
 	</div>
 	<!-- END MODAL Request a DEMO -->
 
@@ -155,7 +155,6 @@
 	   })(document,"script","hs-analytics",300000);
 	 </script>
 	<!-- End of Async HubSpot Analytics Code -->
-
 	<?php wp_footer(); ?>
-</body>
+ </body>
 </html>

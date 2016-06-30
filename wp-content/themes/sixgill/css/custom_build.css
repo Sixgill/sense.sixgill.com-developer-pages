@@ -16627,9 +16627,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		max-width: none;
 	}
 
-	.left-block-subpage: hover {
-		background: blue;
-	}
 }
 /* Blog desktop styles */
 @media only screen and (min-width : 1001px) {
