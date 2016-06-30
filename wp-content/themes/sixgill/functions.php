@@ -14,6 +14,7 @@
 		$cssResultFile = $path."/css/custom_build.css";
 		$pagesList = "{general,blog,company,home,solutions,resources,tech,press,legal,products}";
 		$cssSource = array(
+			$path."/css/lightbox.min.css",
 			$path."/css/custom/fonts.css",
 			$path."/css/bootstrap.min.css",
 			$path."/style.css",
@@ -24,7 +25,6 @@
 			$path."/css/responsive.css",
 			$path."/css/colors.css",
 			$path."/css/custom.css",
-			$path."/css/lightbox.min.css",
 			$path."/css/custom/all_".$pagesList.".css",
 			$path."/css/custom/desktop_".$pagesList.".css",
 			$path."/css/custom/tablet_".$pagesList.".css",
