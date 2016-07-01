@@ -19,7 +19,7 @@
 <section id="content" class="section-margin-fix">
   <div class="content-wrap no-bottom-margin no-bottom-padding">
 
-    <div class="header-stick background-f8f8f8 no-border">
+    <div class="container-fluid header-stick background-f8f8f8 no-border indent-from-slider">
 			<div class="container-fluid no-border center clearfix tech-top-spacing">
 				<div class="col_one_third title-left-col center no-bottom-margin tech-top-header">
 					<h1 class="no-mobile-landscape-display no-mobile-portrait-display">
