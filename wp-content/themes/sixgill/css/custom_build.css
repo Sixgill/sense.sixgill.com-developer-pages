@@ -16342,6 +16342,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	display: inline-block;
 }
 
+.solution-subpage-bottom-section-column:first-of-type {
+		float: left;
+}
+
 .solution-subpage-bottom-section-column:last-of-type {
 		float: right;
 }
