@@ -150,8 +150,10 @@
 
 		</div>
 	</div>
-
+	<!--
 	<div class="solution-subpage-bottom-line"></div>
+
+
 
 	<h1 class="solution-subpage-section-title center">
 		Additional use cases
@@ -193,8 +195,16 @@
 					</a>
 				</div>
 			</div>
-
 		</div>
-	</div>
+
+			</div>
+		-->
+
+		<div class="col_full center">
+			<a href="/solutions/" id="solutions-button-back" class="button button-large no-bottom-margin btnCompany">
+				BACK TO SOLUTIONS
+			</a>
+		</div>
+
 
 </section>
