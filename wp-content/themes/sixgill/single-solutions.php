@@ -56,7 +56,7 @@
 		$rightGallery = get_field('right_gallery_images');
 	?>
 
-	<?php if(count($leftGallery) || count($rightGallery)) { ?>
+	<?php if((count($leftGallery) && is_array($leftGallery)) || (count($rightGallery) && is_array($rightGallery)) ) { ?>
 		<div class="solution-subpage-third-block">
 
 			<div class="solution-subpage-viewproccess-block">
