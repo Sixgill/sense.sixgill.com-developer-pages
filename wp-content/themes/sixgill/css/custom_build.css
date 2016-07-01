@@ -16533,6 +16533,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .products-content-spacing {
 	padding-top: 75px;
 }
+
+.indent-from-slider {
+	padding-top: 100px;
+}
 /* General desktop styles */
 @media only screen and (min-width : 1001px) {
 	.global-social-buttons-list {

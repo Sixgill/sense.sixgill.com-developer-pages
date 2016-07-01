@@ -13,7 +13,7 @@
 <!-- Content-->
 <section id="content" class="section-margin-fix">
 	<div class="content-wrap no-bottom-padding">
-		<div class="header-stick no-border background-f8f8f8">
+		<div class="header-stick no-border background-f8f8f8 indent-from-slider">
 			<div class="container-fluid no-border center clearfix products-content-spacing" style="max-width:1100px;">
 				<div class="col_one_third title-left-col products-top-title-spacing">
 					<h1 class="products-h1"><?php echo get_field('title_header'); ?></h1>
