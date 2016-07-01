@@ -157,6 +157,48 @@
 		Additional use cases
 	</h1>
 
+	<div class="solution-subpage-bottom-links background-f8f8f8">
+		<div class="solution-subpage-bottom-link-col full-height" aspectratio="4.4566">
 
+			<div class="solution-subpage-bottom-link-image-wrapper full-height">
+				<div class="vertical-centered">
+					<img class="full-width" src="/wp-content/themes/sixgill/images/td/solutions/left-use-case-thumbnail.jpg" aspectratio="1.86">
+				</div>
+			</div>
+
+			<div class="solution-subpage-bottom-link-text full-height center">
+				<div class="vertical-centered solution-subpage-bottom-link-text-width">
+					<p class="solution-subpage-bottom-link-description">
+						Wordforce Communications and Productivity Solutions
+					</p>
+					<a href="#" class="solution-subpage-bottom-link">
+						Learn More
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="solution-subpage-bottom-link-col full-height" aspectratio="4.4566">
+
+			<div class="solution-subpage-bottom-link-image-wrapper full-height">
+				<div class="vertical-centered">
+					<img class="full-width" src="/wp-content/themes/sixgill/images/td/solutions/left-use-case-thumbnail.jpg" aspectratio="1.86">
+				</div>
+			</div>
+
+			<div class="solution-subpage-bottom-link-text full-height center">
+				<div class="vertical-centered solution-subpage-bottom-link-text-width">
+					<p class="solution-subpage-bottom-link-description">
+						Wordforce Communications and Productivity Solutions
+					</p>
+					<a href="#" class="solution-subpage-bottom-link">
+						Learn More
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
 
 </section>
