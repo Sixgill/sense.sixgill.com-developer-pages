@@ -16487,9 +16487,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .resource-link:hover {
-    color: blue !important;
+	color: blue !important;
 }
-
 
 .resource-image-container-centered {
 	background-position-y: 50% !important;
@@ -17523,6 +17522,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.solution-subpage-bottom-link-description {
 		margin-bottom: 0px;
+	}
+
+	.solution-subpage-header {
+		margin-top: 110px;
 	}
 
 }
