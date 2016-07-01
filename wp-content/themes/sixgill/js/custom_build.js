@@ -755,18 +755,6 @@ $.fn.doOnce = function( func ) {
 	return this;
 }
 
-$(function() {
-	function fixAspectRatios() {
-		$('[aspectratio]').each(function() {
-			var aspectRatio = parseFloat($(this).attr('aspectratio'));
-			$(this).height($(this).width() / aspectRatio);
-		});
-	}
-	$(window).resize(fixAspectRatios);
-	fixAspectRatios();
-})
-
-
 if( $().infinitescroll ) {
 
 	$.extend($.infinitescroll.prototype,{
@@ -4626,12 +4614,6 @@ var SEMICOLON = SEMICOLON || {};
   }
 
 }).call(this);
-(function(d,s,i,r) {
-	if (d.getElementById(i)){return;}
-	var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-	n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1792815.js';
-	e.parentNode.insertBefore(n, e);
-})(document,"script","hs-analytics",300000);
 jQuery(function($){
 	$('input.subscribe-email').focusin(function(){
 		$(this).addClass('subscribe-email-focus');
@@ -4916,6 +4898,60 @@ jQuery(function($) {
 		});
 		$(this).css('margin-bottom', (biggestFontsize/2)+'px');
 	});
+});
+jQuery(function($){
+	function fixAspectRatios(attrName) {
+		console.log(attrName);
+		$('['+attrName+']').each(function() {
+			var aspectRatio = parseFloat($(this).attr(attrName));
+			$(this).height($(this).width() / aspectRatio);
+		});
+	}
+
+	function fixGlobalAspectRatio() {
+		fixAspectRatios('aspectratio');
+	}
+
+	function fixDesktopAspectRatio() {
+		fixAspectRatios('desktop-aspectratio');
+	}
+
+	function fixTabletAspectRatio() {
+		fixAspectRatios('tablet-aspectratio');
+	}
+
+	function fixMobileLadnscapeAspectRatio() {
+		fixAspectRatios('mobilelandscape-aspectratio');
+	}
+
+	function fixMobilePortraitAspectRatio() {
+		fixAspectRatios('mobileportrait-aspectratio');
+	}
+
+	function fixMobileAspectRatio() {
+		fixAspectRatios('mobile-aspectratio');
+	}
+
+	function bindFixFunction(fixFunction) {
+		$(window).resize(fixFunction);
+		fixFunction();
+	}
+
+	bindFixFunction(fixGlobalAspectRatio);
+
+	if(window.screenType == "desktop") {
+		bindFixFunction(fixDesktopAspectRatio);
+	} else if(window.screenType == "tablet") {
+		bindFixFunction(fixTabletAspectRatio);
+	} else if(window.screenType == "mobile-landscape") {
+		bindFixFunction(fixMobileLandscapeAspectRatio);
+	} else if(window.screenType == "mobile-portrait") {
+		bindFixFunction(fixMobilePortraitAspectRatio);
+	}
+
+	if(window.screenType == "mobile-landscape" || window.screenType == "mobile-portrait") {
+		bindFixFunction(fixMobileAspectRatio);
+	}
 });
 jQuery(function($) {
 	if(window.screenType == "mobile-landscape" || window.screenType == "mobile-portrait") {
