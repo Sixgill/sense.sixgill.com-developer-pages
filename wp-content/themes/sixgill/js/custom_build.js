@@ -4649,6 +4649,16 @@ jQuery(function() {
 		$(this).find('.learn-more-expand-icon, .learn-more-close-icon').toggle();
 	});
 });
+jQuery(function($){
+	window.screenType = "desktop";
+	if(screen.width >= 500 && screen.width<=1000 && (screen.width / screen.height) <= 4/3) {
+		window.screenType = "tablet";
+	} else if(screen.width<=1000 && (screen.width / screen.height) >= 4/3) {
+		window.screenType = "mobile-landscape";
+	} else if(screen.width <= 500 && (screen.width / screen.height) <= 4/3) {
+		window.screenType = "mobile-portrait";
+	}
+})
 jQuery(function($) {
 	$('.resource-link-container').click(function() {
 		window.currentDownloadLink = $(this).attr('data-permalink');
@@ -4908,6 +4918,10 @@ jQuery(function($) {
 	});
 });
 jQuery(function($) {
+	if(window.screenType == "mobile-landscape" || window.screenType == "mobile-portrait") {
+		return;
+	}
+
 	var secondBlock = $('#solution-subpage-second-block')
 	var secondBlockImage = $('#solution-subpage-second-block-image');
 	var secondBlockHeight = 0;

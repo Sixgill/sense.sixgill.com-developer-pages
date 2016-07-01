@@ -1,4 +1,8 @@
 jQuery(function($) {
+	if(window.screenType == "mobile-landscape" || window.screenType == "mobile-portrait") {
+		return;
+	}
+
 	var secondBlock = $('#solution-subpage-second-block')
 	var secondBlockImage = $('#solution-subpage-second-block-image');
 	var secondBlockHeight = 0;

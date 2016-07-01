@@ -93,4 +93,13 @@
 		width: 100%;
 	}
 
+	.solution-subpage-viewproccess-block:first-child {
+		border-right: 1px solid #4e4e4e;
+	}
+
+	.solution-subpage-viewproccess-block:only-child {
+		width: 100%;
+		border-right: 0px;
+	}
+
 }

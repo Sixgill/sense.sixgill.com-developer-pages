@@ -32,4 +32,57 @@
 		width: 100%;
 		text-align: center;
 	}
+
+	.solution-subpage-first-block-image-container {
+		margin-top: 30px;
+	}
+
+	.solution-subpage-viewproccess-block {
+		position: relative;
+		width: 100%;
+		height: 170px;
+		text-align: center;
+		display: inline-block;
+	}
+
+	.solution-subpage-viewproccess-block:first-child {
+		border-bottom: 1px solid #4e4e4e;
+	}
+
+	.solution-subpage-viewproccess-block:only-child {
+		border-bottom: 0px;
+	}
+
+	.solution-subpage-section-title {
+		margin-bottom: 15px;
+	}
+
+	.solution-subpage-second-block-image-container {
+		position: relative;
+	}
+
+	.solution-subpage-third-block {
+		height: inherit;
+	}
+
+	.solution-subpage-last-block {
+		margin-top: 50px;
+	}
+
+	.solution-subpage-last-block-title, .solution-subpage-bottom-section-subtitle {
+		text-align: left;
+	}
+
+	.solution-subpage-bottom-section-subtitle {
+		margin-bottom: 30px;
+		font-size: 17px;
+    font-family: "Lato";
+    font-weight: normal;
+	}
+
+	.solution-subpage-bottom-line {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
 }
