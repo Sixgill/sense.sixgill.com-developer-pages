@@ -145,6 +145,7 @@
 				<div class="solution-subpage-bottom-section-column">
 					<?php echo get_field('last_section_text_right_column'); ?>
 				</div>
+				<div class="clear"></div>
 				<?php echo get_field('last_section_text'); ?>
 			</div>
 
