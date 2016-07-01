@@ -394,3 +394,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .font-size-16, .text-left-block-subpage, .title-left-block-subpage  {
 	font-size: 16px;
 }
+
+#primary-menu > ul > li:first-child {
+	margin-left: 0;
+}
