@@ -53,6 +53,10 @@
 	display: inline-block;
 }
 
+.solution-subpage-bottom-section-column:last-of-type {
+		float: right;
+}
+
 .solution-subpage-bottom-link-image-wrapper {
 	width: 42%;
 }

@@ -129,4 +129,8 @@
 		margin-top: 110px;
 	}
 
+	.solution-subpage-bottom-section-column:last-of-type {
+			float: right;
+	}
+
 }
