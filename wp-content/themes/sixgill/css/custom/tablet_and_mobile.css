@@ -75,4 +75,13 @@
 		background-color: #fff;
 		z-index:2;
 	}
+
+	.solution-subpage-bottom-section-column:first-child ul {
+		margin-bottom: 0px;
+	}
+
+	.gallery-description-title, .gallery-description-subtitle {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
 }

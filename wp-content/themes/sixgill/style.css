@@ -717,8 +717,6 @@ body.stretched #header.full-header .container {
 	margin-left: 2px;
 }
 
-#primary-menu > ul > li:first-child { margin-left: 0; }
-
 #primary-menu ul li > a span { display: none; }
 
 #primary-menu ul li > a i {
