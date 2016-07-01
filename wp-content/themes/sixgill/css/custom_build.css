@@ -16430,7 +16430,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .solution-subpage-bottom-link-text-width {
-	width: 67%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -17507,6 +17507,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		border-right: 0px;
 	}
 
+	.solution-subpage-bottom-link-text {
+		width: 58%;
+		float: right;
+	}
+
+	.solution-subpage-bottom-link-description {
+		margin-bottom: 0px;
+	}
+
 }
 /* Resources tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) and (max-aspect-ratio: 4/3) {
@@ -18458,6 +18467,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.gallery-description-title, .gallery-description-subtitle {
 		padding-left: 15%;
 		padding-right: 15%;
+	}
+
+	.solution-subpage-bottom-link-text-width {
+		width: 90%;
+	}
+
+	.solution-subpage-bottom-link-description, .solution-subpage-bottom-link {
+		font-size: 18px;
 	}
 }
 /* Wide tablets or very small laptop screens and landscape tablets */
