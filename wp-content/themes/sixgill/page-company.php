@@ -15,7 +15,7 @@
 <section id="content" class="section-margin-fix">
 	<div class="content-wrap" style="padding-bottom:0px;">
 
-		<div class="header-stick background-f8f8f8 no-border" id="company">
+		<div class="header-stick background-f8f8f8 no-border indent-from-slider" id="company">
 			<div class="container-fluid center clearfix no-border company-top-spacing">
 				<div class="col_one_third title-left-col company-top-title-spacing">
 					<h1 class="company-h1"><?php echo get_field('about_header'); ?></h1>

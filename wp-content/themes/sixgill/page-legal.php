@@ -5,7 +5,7 @@
 
 	<div class="content-wrap no-bottom-padding">
 
-		<section class="header-stick background-eeeeee section-margin-fix">
+		<section class="header-stick background-eeeeee section-margin-fix indent-from-slider">
 			<div id="legal-text" class="container-fluid clearfix no-bottom-margin">
 				<?php echo get_field('text_legal'); ?>
 			</div>
