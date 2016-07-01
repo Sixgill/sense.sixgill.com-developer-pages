@@ -35,9 +35,9 @@
 		</div>
 	</div>
 
-	<div class="solution-subpage-second-block">
-		<div class="solution-subpage-second-block-image-container full-height center">
-			<img src="<?php echo get_field('second_section_image'); ?>" alt="" class="full-height">
+	<div id="solution-subpage-second-block" class="solution-subpage-second-block">
+		<div class="solution-subpage-second-block-image-container center">
+			<img id="solution-subpage-second-block-image" src="<?php echo get_field('second_section_image'); ?>" alt="" class="solution-subpage-second-block-image" aspectratio="0.8">
 		</div>
 
 		<div class="second-right-container-subpage full-height">
@@ -69,7 +69,7 @@
 						</div>
 					</div>
 
-					<div class="gallery-links-overlay">
+					<div class="gallery-links-overlay display-only-desktop">
 						<div class="inner-links-contaner vertical-centered">
 
 							<a href="<?php echo $leftGallery[0]['url']; ?>" rel="lightbox[leftGallery]" class="gallery-link">
@@ -103,7 +103,7 @@
 								<?php echo get_field('text_right_button_subpage'); ?>
 							</div>
 						</div>
-						<div class="gallery-links-overlay">
+						<div class="gallery-links-overlay display-only-desktop">
 							<div class="inner-links-contaner vertical-centered">
 								<a href="<?php echo $rightGallery[0]['url']; ?>" rel="lightbox[rightGallery]" class="gallery-link">
 									<img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="solutions-subpage-icon">
@@ -156,6 +156,6 @@
 		Additional use cases
 	</h1>
 
-	
+
 
 </section>

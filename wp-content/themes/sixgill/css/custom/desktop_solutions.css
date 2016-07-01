@@ -32,23 +32,6 @@
 		float: right;
 	}
 
-	.solution-subpage-viewproccess-block {
-		position: relative;
-		width: 50%;
-		height: 100%;
-		text-align: center;
-		display: inline-block;
-	}
-
-	.solution-subpage-viewproccess-block:first-child {
-		border-right: 1px solid #4e4e4e;
-	}
-
-	.solution-subpage-viewproccess-block:only-child {
-		width: 100%;
-		border-right: 0px;
-	}
-
 	.gallery-links-overlay {
 		background-color: rgba(5, 78, 183, 0.9);
 		z-index: 2;
@@ -58,23 +41,8 @@
 		height: 50%;
 	}
 
-	.gallery-description, .gallery-links-overlay {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-	}
-
 	.inner-links-contaner a {
 		color: white !important;
-	}
-
-	.gallery-description-title, .gallery-description-subtitle, .gallery-link, .gallery-download-link {
-		font-size: 16px;
-		margin: 0;
-		display: block;
-		color: white;
 	}
 
 	.gallery-links-overlay {
@@ -131,6 +99,12 @@
 
 	.solution-subpage-bottom-section-column:last-child {
 		float: right;
+	}
+
+	.solution-subpage-second-block {
+		margin-top: 35px;
+		min-height: 330px;
+		width: 100%;
 	}
 
 }

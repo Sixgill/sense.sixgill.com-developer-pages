@@ -74,7 +74,7 @@
 
 	.solution-subpage-second-block-image-container{
 		margin-top: 35px;
-		height: 156px; 
+		height: 156px;
 	}
 
 	.block-link-subpage {
@@ -100,5 +100,9 @@
 		padding-left: 28px;
 		margin-right: auto;
 		margin-left: auto;
+	}
+
+	#primary-menu > ul > li:first-child {
+		max-height: 500px;
 	}
 }
