@@ -4323,23 +4323,6 @@ var SEMICOLON = SEMICOLON || {};
 	$window.on( 'resize', SEMICOLON.documentOnResize.init );
 
 })(jQuery);
-jQuery(function($){
-	$('input.subscribe-email').focusin(function(){
-		$(this).addClass('subscribe-email-focus');
-	});
-
-	$('input.subscribe-email').focusout(function(){
-		if($(this).val()==='') {
-			$(this).removeClass('subscribe-email-focus');
-		}
-	});
-});
-jQuery(function() {
-	$('.learn-more-link').click(function() {
-		$(this).parent().prev().toggle();
-		$(this).find('.learn-more-expand-icon, .learn-more-close-icon').toggle();
-	});
-});
 // Device.js
 // (c) 2014 Matthew Hudson
 // Device.js is freely distributable under the MIT license.
@@ -4643,6 +4626,39 @@ jQuery(function() {
   }
 
 }).call(this);
+(function(d,s,i,r) {
+	if (d.getElementById(i)){return;}
+	var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+	n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1792815.js';
+	e.parentNode.insertBefore(n, e);
+})(document,"script","hs-analytics",300000);
+jQuery(function($){
+	$('input.subscribe-email').focusin(function(){
+		$(this).addClass('subscribe-email-focus');
+	});
+
+	$('input.subscribe-email').focusout(function(){
+		if($(this).val()==='') {
+			$(this).removeClass('subscribe-email-focus');
+		}
+	});
+});
+jQuery(function() {
+	$('.learn-more-link').click(function() {
+		$(this).parent().prev().toggle();
+		$(this).find('.learn-more-expand-icon, .learn-more-close-icon').toggle();
+	});
+});
+jQuery(function($){
+	window.screenType = "desktop";
+	if(screen.width >= 500 && screen.width<=1000 && (screen.width / screen.height) <= 4/3) {
+		window.screenType = "tablet";
+	} else if(screen.width<=1000 && (screen.width / screen.height) >= 4/3) {
+		window.screenType = "mobile-landscape";
+	} else if(screen.width <= 500 && (screen.width / screen.height) <= 4/3) {
+		window.screenType = "mobile-portrait";
+	}
+})
 jQuery(function($) {
 	$('.resource-link-container').click(function() {
 		window.currentDownloadLink = $(this).attr('data-permalink');
@@ -4667,12 +4683,6 @@ jQuery(function($) {
 		watchSuccess();
 	});
 });
-(function(d,s,i,r) {
-	if (d.getElementById(i)){return;}
-	var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-	n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1792815.js';
-	e.parentNode.insertBefore(n, e);
-})(document,"script","hs-analytics",300000);
 jQuery(function($) {
 	$(document).ready(function () {
 		$(document).on("scroll", onScroll);
@@ -4873,6 +4883,14 @@ $(function() {
 		});
 	} 
 });
+jQuery(function($){
+	if(screen.width < 1000) {
+		$('.gallery-description-inner').click(function() {
+			$(this).parent().find('.gallery-link').trigger('click');
+			console.log('click');
+		});
+	}
+});
 jQuery(function($) {
 	$(window).resize(function() {
 		if(window.menuShowFlag && $(window).width()>1000) {
@@ -4898,6 +4916,27 @@ jQuery(function($) {
 		});
 		$(this).css('margin-bottom', (biggestFontsize/2)+'px');
 	});
+});
+jQuery(function($) {
+	if(window.screenType == "mobile-landscape" || window.screenType == "mobile-portrait") {
+		return;
+	}
+
+	var secondBlock = $('#solution-subpage-second-block')
+	var secondBlockImage = $('#solution-subpage-second-block-image');
+	var secondBlockHeight = 0;
+	var secondBlockImageHeight = 0;
+
+	function checkSecondBlockHeight() {
+		secondBlockHeight = secondBlock.height();
+		secondBlockImageHeight = secondBlockImage.height();
+		if(secondBlockHeight < secondBlockImageHeight) {
+			secondBlock.height(secondBlockImageHeight);
+		}
+	}
+
+	$(window).resize(checkSecondBlockHeight);
+	checkSecondBlockHeight();
 });
 /*!
  * Lightbox v2.8.2
