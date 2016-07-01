@@ -116,4 +116,13 @@
 		border-right: 0px;
 	}
 
+	.solution-subpage-bottom-link-text {
+		width: 58%;
+		float: right;
+	}
+
+	.solution-subpage-bottom-link-description {
+		margin-bottom: 0px;
+	}
+
 }

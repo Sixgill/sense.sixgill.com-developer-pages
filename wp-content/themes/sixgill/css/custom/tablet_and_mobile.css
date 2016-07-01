@@ -84,4 +84,12 @@
 		padding-left: 15%;
 		padding-right: 15%;
 	}
+
+	.solution-subpage-bottom-link-text-width {
+		width: 90%;
+	}
+
+	.solution-subpage-bottom-link-description, .solution-subpage-bottom-link {
+		font-size: 18px;
+	}
 }

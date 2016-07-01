@@ -150,13 +150,61 @@
 
 		</div>
 	</div>
-
+	<!--
 	<div class="solution-subpage-bottom-line"></div>
+
+
 
 	<h1 class="solution-subpage-section-title center">
 		Additional use cases
 	</h1>
 
+	<div class="solution-subpage-bottom-links background-f8f8f8">
+		<div
+			class="solution-subpage-bottom-link-col"
+			desktop-aspectratio="4.46"
+			tablet-aspectratio="2.9"
+			mobile-aspectratio="3.97"
+		>
+
+			<div class="solution-subpage-bottom-link-image-wrapper full-height">
+				<div class="vertical-centered">
+					<img
+						class="full-width display-only-desktop"
+						src="/wp-content/themes/sixgill/images/td/solutions/left-use-case-thumbnail.jpg"
+						desktop-aspectratio="1.86"
+					>
+					<img
+						class="full-width display-only-tablet"
+						src="/wp-content/themes/sixgill/images/td/solutions/left-use-case-thumbnail_tablet.jpg"
+						tablet-aspectratio="1.21">
+					<img
+						class="full-width no-desktop-display no-tablet-display"
+						src="/wp-content/themes/sixgill/images/td/solutions/left-use-case-thumbnail_moble.jpg"
+						mobile-aspectratio="1.1">
+				</div>
+			</div>
+
+			<div class="solution-subpage-bottom-link-text full-height center">
+				<div class="vertical-centered solution-subpage-bottom-link-text-width">
+					<p class="solution-subpage-bottom-link-description">
+						Wordforce Communications and Productivity Solutions
+					</p>
+					<a href="#" class="solution-subpage-bottom-link">
+						Learn More
+					</a>
+				</div>
+			</div>
+		</div>
+
+			</div>
+		-->
+
+		<div class="col_full center">
+			<a href="/solutions/" id="solutions-button-back" class="button button-large no-bottom-margin btnCompany">
+				BACK TO SOLUTIONS
+			</a>
+		</div>
 
 
 </section>
