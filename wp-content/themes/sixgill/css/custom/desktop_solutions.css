@@ -74,16 +74,6 @@
 		margin-right: 14%;
 	}
 
-	.solution-subpage-last-block-title {
-		margin-bottom: 15px;
-	}
-
-	.solution-subpage-bottom-section-subtitle {
-		font-size: 20px;
-		font-weight: normal;
-		margin-bottom: 70px;
-	}
-
 	.solution-subpage-bottom-line {
 		margin-top: 100px;
 		margin-bottom: 120px;
@@ -93,12 +83,8 @@
 		width: 45%;
 	}
 
-	.solution-subpage-bottom-section-column:first-child {
-		float: left;
-	}
-
-	.solution-subpage-bottom-section-column:last-child {
-		float: right;
+	.solution-subpage-bottom-section-column:nth-child(2n+1) {
+		margin-right: 5%;
 	}
 
 	.solution-subpage-second-block {

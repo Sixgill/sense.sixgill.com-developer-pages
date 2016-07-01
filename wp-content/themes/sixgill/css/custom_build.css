@@ -16340,7 +16340,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .solution-subpage-third-block {
 	width: 100%;
-	height: 133px;
+	height: 170px;
 	background-color: #2e2e2e;
 }
 
@@ -16389,6 +16389,16 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin: 0;
 	display: block;
 	color: white;
+}
+
+.solution-subpage-bottom-section-subtitle {
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 70px;
+}
+
+.solution-subpage-last-block-title {
+	margin-bottom: 15px;
 }
 .resources-background {
 	background-color: #eeeeee;
@@ -16913,16 +16923,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-right: 14%;
 	}
 
-	.solution-subpage-last-block-title {
-		margin-bottom: 15px;
-	}
-
-	.solution-subpage-bottom-section-subtitle {
-		font-size: 20px;
-		font-weight: normal;
-		margin-bottom: 70px;
-	}
-
 	.solution-subpage-bottom-line {
 		margin-top: 100px;
 		margin-bottom: 120px;
@@ -16932,12 +16932,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		width: 45%;
 	}
 
-	.solution-subpage-bottom-section-column:first-child {
-		float: left;
-	}
-
-	.solution-subpage-bottom-section-column:last-child {
-		float: right;
+	.solution-subpage-bottom-section-column:nth-child(2n+1) {
+		margin-right: 5%;
 	}
 
 	.solution-subpage-second-block {
@@ -17418,7 +17414,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.solution-subpage-section-title {
-		font-size:30px;
+		font-size: 30px;
 	}
 
 	.container-subpage {
@@ -17448,6 +17444,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.second-right-container-subpage {
 		width: 56%;
 		float: right;
+	}
+
+	.solution-subpage-last-block {
+		margin-top: 70px;
+	}
+
+	.solution-subpage-bottom-line {
+		margin-top: 80px;
+		margin-bottom: 100px;
 	}
 
 }
@@ -18336,6 +18341,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.homeSupTit-with-line {
 		background-color: #fff;
 		z-index:2;
+	}
+
+	.solution-subpage-bottom-section-column:first-child ul {
+		margin-bottom: 0px;
 	}
 }
 /* Wide tablets or very small laptop screens and landscape tablets */
