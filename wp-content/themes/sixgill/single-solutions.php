@@ -63,10 +63,10 @@
 				<div class="gallery-description">
 					<div class="gallery-description-inner vertical-centered">
 						<div class="gallery-description-title">
-							<?php echo get_field('title_left_button_subpage'); ?>
+							<?php echo get_field('left_gallery_title'); ?>
 						</div>
 						<div class="gallery-description-subtitle">
-							<?php echo get_field('text_left_button_subpage'); ?>
+							<?php echo get_field('left_gallery_subtitle'); ?>
 						</div>
 					</div>
 
@@ -103,10 +103,10 @@
 					<div class="gallery-description">
 						<div class="gallery-description-inner vertical-centered">
 							<div class="gallery-description-title">
-								<?php echo get_field('title_right_button_subpage'); ?>
+								<?php echo get_field('right_gallery_title'); ?>
 							</div>
 							<div class="gallery-description-subtitle">
-								<?php echo get_field('text_right_button_subpage'); ?>
+								<?php echo get_field('right_gallery_subtitle'); ?>
 							</div>
 						</div>
 						<div class="gallery-links-overlay display-only-desktop">
