@@ -302,6 +302,16 @@
 	add_image_size( 'spec_thumb', 1000, 350, true );
 	add_image_size( 'solutions-thumbnails', 300, 650, false );
 
+	function wrapDirectFileLink($absFilePath) {
+		$uploadsDir = "wp-content/uploads/";
+		$absFilePathParts = explode($uploadsDir, $absFilePath);
+		$result = "";
+		if(isset($absFilePathParts[1]) && file_exists($uploadsDir.$absFilePathParts[1])) {
+			$result = "/file.php?filename=".$absFilePathParts[1];
+		}
+		return $result;
+	}
+
 	/* SIX-225 */
 	function remove_more_link_scroll( $link ) {
 		$link = preg_replace( '|#more-[0-9]+|', '', $link );
