@@ -63,10 +63,10 @@
 				<div class="gallery-description">
 					<div class="gallery-description-inner vertical-centered">
 						<div class="gallery-description-title">
-							<?php echo get_field('title_left_button_subpage'); ?>
+							<?php echo get_field('left_gallery_title'); ?>
 						</div>
 						<div class="gallery-description-subtitle">
-							<?php echo get_field('text_left_button_subpage'); ?>
+							<?php echo get_field('left_gallery_subtitle'); ?>
 						</div>
 					</div>
 
@@ -81,13 +81,18 @@
 								for($i=1; $i < count($leftGallery); $i++) {
 									echo '<a class="hidden" href="'.$leftGallery[$i]['url'].'" rel="lightbox[leftGallery]"></a>';
 								}
+
+								$downloadLink = wrapDirectFileLink(get_field('left_gallery_file'));
+								if(!empty($downloadLink)) {
 							?>
 
-							<a href="<?php echo get_field('left_gallery_file'); ?>" class="gallery-download-link">
-								<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
-								Download
-							</a>
-
+								<a href="<?php echo $downloadLink; ?>" target="_blank" class="gallery-download-link">
+									<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
+									Download
+								</a>
+							<?php
+								}
+							?>
 						</div>
 					</div>
 				</div>
@@ -98,10 +103,10 @@
 					<div class="gallery-description">
 						<div class="gallery-description-inner vertical-centered">
 							<div class="gallery-description-title">
-								<?php echo get_field('title_right_button_subpage'); ?>
+								<?php echo get_field('right_gallery_title'); ?>
 							</div>
 							<div class="gallery-description-subtitle">
-								<?php echo get_field('text_right_button_subpage'); ?>
+								<?php echo get_field('right_gallery_subtitle'); ?>
 							</div>
 						</div>
 						<div class="gallery-links-overlay display-only-desktop">
@@ -114,12 +119,18 @@
 									for($i=1; $i < count($rightGallery); $i++) {
 										echo '<a class="hidden" href="'.$rightGallery[$i]['url'].'" rel="lightbox[rightGallery]"></a>';
 									}
+
+									$downloadLink = wrapDirectFileLink(get_field('right_gallery_file'));
+									if(!empty($downloadLink)) {
 								?>
 
-								<a href="<?php echo get_field('left_gallery_file'); ?>" class="gallery-download-link">
-									<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
-									Download
-								</a>
+									<a href="<?php echo $downloadLink; ?>" target="_blank" class="gallery-download-link">
+										<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
+										Download
+									</a>
+								<?php
+									}
+								?>
 							</div>
 						</div>
 					</div>
