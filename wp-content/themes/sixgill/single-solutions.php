@@ -81,13 +81,18 @@
 								for($i=1; $i < count($leftGallery); $i++) {
 									echo '<a class="hidden" href="'.$leftGallery[$i]['url'].'" rel="lightbox[leftGallery]"></a>';
 								}
+
+								$downloadLink = wrapDirectFileLink(get_field('left_gallery_file'));
+								if(!empty($downloadLink)) {
 							?>
 
-							<a href="<?php echo get_field('left_gallery_file'); ?>" class="gallery-download-link">
-								<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
-								Download
-							</a>
-
+								<a href="<?php echo $downloadLink; ?>" target="_blank" class="gallery-download-link">
+									<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
+									Download
+								</a>
+							<?php
+								}
+							?>
 						</div>
 					</div>
 				</div>
@@ -114,12 +119,18 @@
 									for($i=1; $i < count($rightGallery); $i++) {
 										echo '<a class="hidden" href="'.$rightGallery[$i]['url'].'" rel="lightbox[rightGallery]"></a>';
 									}
+
+									$downloadLink = wrapDirectFileLink(get_field('right_gallery_file'));
+									if(!empty($downloadLink)) {
 								?>
 
-								<a href="<?php echo get_field('left_gallery_file'); ?>" class="gallery-download-link">
-									<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
-									Download
-								</a>
+									<a href="<?php echo $downloadLink; ?>" target="_blank" class="gallery-download-link">
+										<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
+										Download
+									</a>
+								<?php
+									}
+								?>
 							</div>
 						</div>
 					</div>
