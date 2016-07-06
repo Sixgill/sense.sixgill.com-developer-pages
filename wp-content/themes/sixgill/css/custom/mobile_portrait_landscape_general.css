@@ -13,22 +13,10 @@
 		display: block;
 	}
 
-	.footer-links-block > a {
-		width: 100%;
-		display: block;
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-
 	.logo-sixgill {
 		width:150px;
 		height:44px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg");
-	}
-
-	.footer_Copy {
-		padding-left: 5px;
-		padding-right: 5px;
 	}
 
 	.text-right-col, .text-right-col-noline {

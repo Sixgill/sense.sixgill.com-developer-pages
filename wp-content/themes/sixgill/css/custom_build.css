@@ -14242,32 +14242,6 @@ Responsive CSS
 
 
 
-
-
-	/* Copyrights
-
-	-----------------------------------------------------------------*/
-
-
-
-	#copyrights .col_half { text-align: center; }
-
-
-
-	#copyrights .col_half:last-child { display: none; }
-
-
-
-	#copyrights .footer-logo {
-
-		margin-left: auto;
-
-		margin-right: auto;
-
-	}
-
-
-
 }
 
 
@@ -15005,17 +14979,6 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 	font-weight: normal;
 }
 
-#footer {
-	position: relative;
-	height:96px;
-	border-top: 0px;
-}
-
-#footer .footer-widgets-wrap {
-	position: relative;
-	padding: 10px 0;
-}
-
 #copyrights {
 	padding: 20px 0px 0px 0px;
 	height:71px;
@@ -15704,46 +15667,6 @@ p {
 	border: 0px solid #FE0004;
 }
 
-.footer-learn-text, .footer-links-block {
-	text-align: left;
-	border: 0px solid #FE0004;
-	color: #FFF;
-	font-size: 20px;
-	margin-top: 12px;
-	font-weight: normal;
-	padding: 0px 20px;
-}
-
-.footer-links-block {
-	text-decoration:none;
-	font-size: 14px;
-	color: #FFF
-}
-
-.footer-links-block a {
-	margin: 0 10px;
-	color: #FFF;
-	border-bottom: 0px;
-}
-
-.footer-links-block a:hover {
-	color: #CCC;
-}
-
-.footer_Schedule, .footer_Copy {
-	text-align: right;
-	border: 0px solid #FE0004;
-	color: #ffffff;
-	font-size: 20px;
-	margin-top: 12px;
-	font-weight: normal;
-	padding: 0px 20px;
-}
-
-.footer_Copy {
-	font-size: 14px;
-}
-
 .my_headerBoxSolution {
 	margin-bottom: 30px;
 }
@@ -15902,11 +15825,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .alignment-menu-right {
 	margin-right: 15px;
-}
-
-#footer-scedule {
-	background-image: url('/wp-content/themes/sixgill/images/td/solutions_footer.png');
-	background-size: cover;
 }
 
 .col-48-left {
@@ -16633,35 +16551,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		display: none;
 	}
 
-	.footer-learn-text, .footer-links-block {
-		text-align: left;
-		font-size: 22px;
-	}
-
-	.footer-learn-text {
-		width: inherit;
-		margin-right: 0px;
-	}
-
-	.footer-links-block {
-		margin-right: 0px;
-		padding-right: 0px;
-		width: inherit;
-		margin-top: 5px;
-	}
-
-	.footer_Copy {
-		padding-left: 0px;
-		width: inherit;
-		float: right;
-	}
-
-	.footer_Schedule {
-		text-align: right;
-		float: right;
-		margin-top: 0px;
-	}
-
 	.widgettitle {
 		color: #004FC8;
 	}
@@ -16716,7 +16605,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		min-height: 365px;
 		width: 100%;
 	}
-	
+
 	.first-text-subpage {
 		margin: 67px 65px 0px 77px;
 	}
@@ -17138,16 +17027,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		width:115px;
 	}
 
-	.footer-learn-text, .footer-links-block {
-		text-align:left;
-		font-size:22px;
-		font-weight:normal;
-	}
-
-	.footer_Schedule {
-		text-align:right;
-	}
-
 	.title-left-col {
 		text-align:left;
 	}
@@ -17188,23 +17067,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		height: 121px;
 		left: 0;
 	}
-
-	.footer-links-block, .footer_Copy {
-		width: 100%;
-		text-align: center;
-	}
-
+	
 	#wpadminbar {
 		display:none;
 	}
 
 	.shareIcons-tablet {
 		display: block;
-	}
-
-	.footer-learn-text, .footer_Schedule {
-		width: 100%;
-		text-align: center;
 	}
 
 	#logo {
@@ -17633,15 +17502,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding:0px;
 	}
 
-	.footer-learn-text, .footer-links-block {
-		text-align:center;
-		font-size:14px;
-	}
-
-	.footer_Schedule, .footer_Copy {
-		text-align:center;
-	}
-
 	.title-left-col {
 		text-align:center;
 	}
@@ -17671,11 +17531,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.my_containerSolution_indent {
 		margin-left: 15px;
 		margin-right: 15px;
-	}
-
-	.footer-links-block,
-	.footer_Copy {
-		width: 100%;
 	}
 
 	#wpadminbar {
@@ -17990,16 +17845,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-top: 30px;
 	}
 
-
-	.footer-learn-text, .footer_Schedule {
-		text-align: center;
-	}
-
-	.footer-links-block, .footer_Copy {
-		width: 100%;
-		text-align: center;
-	}
-
 	.menu-social-link {
 		padding-right: 33px !important;
 		padding-left: 33px !important;
@@ -18129,22 +17974,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		display: block;
 	}
 
-	.footer-links-block > a {
-		width: 100%;
-		display: block;
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-
 	.logo-sixgill {
 		width:150px;
 		height:44px;
 		background-image:url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg");
-	}
-
-	.footer_Copy {
-		padding-left: 5px;
-		padding-right: 5px;
 	}
 
 	.text-right-col, .text-right-col-noline {

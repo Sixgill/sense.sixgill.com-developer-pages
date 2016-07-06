@@ -10,46 +10,73 @@
 	?>
 
 	<footer id="footer" class="footer">
+		<div class="footer-container">
 
-		<div id="footer-scedule" class="container-fluid no-margin nopadding">
-			<div class="footer-widgets-wrap clearfix">
-				<div class="col_half footer-learn-text">
-					Learn how Sixgill can help your business.
+			<div class="footer-top-block">
+				<div class="footer-top-block-left">
+					<div class="footer-top-text vertical-centered">
+						Stay up to date with Sixgill News and Events
+					</div>
+					<div class="footer-subscription-form-wrapper">
+						<form id="footer-subscription-form" name="footer-subscription-form" action="#">
+							<input name="email" class="footer-subscription-email">
+							<div class="footer-subscription-button">
+								<div class="vertical-centered">
+									SUBSCRIBE
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
-				<div class="col_half col_last footer_Schedule no-border">
-					<button data-toggle="modal" data-target="#myModal" class="button button-large no-bottom-margin btnSchedule">
-						SCHEDULE A DEMO
-					</button>
+				<div class="footer-top-block-right">
+					<div class="vertical-centered">
+						<a href="" class="footer-social-icon-link">
+							<img src="/wp-content/themes/sixgill/images/td/footer/" class="footer-social-icon-img">
+						</a>
+						<a href="" class="footer-social-icon-link">
+							<img src="/wp-content/themes/sixgill/images/td/footer/" class="footer-social-icon-img">
+						</a>
+						<a href="" class="footer-social-icon-link">
+							<img src="/wp-content/themes/sixgill/images/td/footer/" class="footer-social-icon-img">
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="footer-middle-block">
+				<div class="footer-link-col">
+					<a class="footer-main-link">
+						Legal
+					</a>
+				</div>
+
+				<div class="footer-link-col">
+					<a class="footer-main-link">
+						Press
+					</a>
+				</div>
+
+				<div class="footer-link-col">
+					<a class="footer-main-link">
+						Resources
+					</a>
+				</div>
+
+				<div class="footer-link-col">
+					<a class="footer-main-link">
+						Contact
+					</a>
 				</div>
 			</div>
-		</div>
 
-		<div class="container-fluid no-margin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_credit.png'); background-size:cover;">
-			<div class="footer-widgets-wrap clearfix">
-				<div class="col_half footer-links-block">
-					<a class="footer-link" href="<?php echo $legalLink; ?>">
-						LEGAL
-					</a>
-					&nbsp;
-					<a class="footer-link" href="#" data-toggle="modal" data-target="#myModalContact">
-						CONTACT
-					</a>
-					&nbsp;
-					<a class="footer-link" href="<?php echo $pressLink; ?>">
-						PRESS
-					</a>
-					&nbsp;
-					<a class="footer-link" href="<?php echo $resourceLink; ?>">
-						RESOURCES
-					</a>
-					&nbsp;
-				</div>
-				<div class="col_half col_last footer_Copy">
+			<div class="footer-bottom-block">
+				<div class="footer-copyright-block">
 					&copy; Copyright Sixgill, 2016. All Rights Reserved.
 				</div>
 			</div>
-		</div>
 
+		</div>
 	</footer><!-- #footer end -->
 </div><!-- #wrapper end -->
 
@@ -66,17 +93,17 @@
 								&times;
 					</button>
 				<h4 class="modal-title color-white center" id="requestModalLabel">
-								REQUEST A DEMO
+					REQUEST A DEMO
 				</h4>
 				</div>
 				<div class="modal-body center">
-							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-							<script>
-								hbspt.forms.create({
-								portalId: '1792815',
-								formId: '7b5388d8-0979-4961-ac97-1f36fc2d70c0'
-								});
-							</script>
+					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+					<script>
+						hbspt.forms.create({
+						portalId: '1792815',
+						formId: '7b5388d8-0979-4961-ac97-1f36fc2d70c0'
+						});
+					</script>
 				</div>
 			<div class="modal-footer center"></div>
 		</div>

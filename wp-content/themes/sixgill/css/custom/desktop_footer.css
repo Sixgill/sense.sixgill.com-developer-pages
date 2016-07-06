@@ -1,0 +1,70 @@
+/* Footer desktop styles */
+@media only screen and (min-width : 1001px) {
+
+	.footer {
+		margin: 0;
+		padding: 0;
+		font-size: 0px;
+	}
+
+	.footer-container {
+		width: 92%;
+	}
+
+	.footer-top-block {
+		height: 73px;
+	}
+
+	.footer-top-block-left, .footer-top-block-right {
+		height: 100%;
+	}
+
+	.footer-top-block-right {
+		text-align: center;
+	}
+
+	.footer-top-text {
+
+	}
+
+	.footer-subscription-form-wrapper {
+
+	}
+
+	.footer-middle-block {
+
+	}
+
+	.footer-link-col {
+
+	}
+
+	.footer-main-link {
+
+	}
+
+	.footer-bottom-block {
+
+	}
+
+	.footer-social-icons-block {
+
+	}
+
+	.footer-social-icon-link {
+		display: inline-block;
+	}
+
+	.footer-social-icon-link:not(:last-child) {
+		margin-right: 23px;
+	}
+
+	.footer-social-icon-img {
+
+	}
+
+	.footer-copyright-block {
+
+	}
+
+}

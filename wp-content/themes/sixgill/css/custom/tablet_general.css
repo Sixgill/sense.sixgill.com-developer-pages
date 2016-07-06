@@ -33,16 +33,6 @@
 		width:115px;
 	}
 
-	.footer-learn-text, .footer-links-block {
-		text-align:left;
-		font-size:22px;
-		font-weight:normal;
-	}
-
-	.footer_Schedule {
-		text-align:right;
-	}
-
 	.title-left-col {
 		text-align:left;
 	}
@@ -83,23 +73,13 @@
 		height: 121px;
 		left: 0;
 	}
-
-	.footer-links-block, .footer_Copy {
-		width: 100%;
-		text-align: center;
-	}
-
+	
 	#wpadminbar {
 		display:none;
 	}
 
 	.shareIcons-tablet {
 		display: block;
-	}
-
-	.footer-learn-text, .footer_Schedule {
-		width: 100%;
-		text-align: center;
 	}
 
 	#logo {
