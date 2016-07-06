@@ -210,11 +210,41 @@
 
 			</div>
 		-->
-
+		<!--
 		<div class="col_full center">
 			<a href="/solutions/" id="solutions-button-back" class="button button-large no-bottom-margin btnCompany">
 				BACK TO SOLUTIONS
 			</a>
+		</div>
+		-->
+
+		<div class="col_full">
+			<div class="green-line"></div> 
+		</div>
+
+		<div class="col_full center">
+			<div class="solution-subpage-section-title">Additional Use Cases</div>
+		</div>
+
+		<div class="solution-use-cases-block-content">
+				<div class="solution-use-cases-block-half">
+					<div class="solution-use-cases-block-image">
+						<img src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-workforse-image-500x265.png" alt="">	
+					</div>
+					<div class="solution-use-cases-block-subtitle">
+						<p class="">Workforce Communications and Productivity Solution</p>
+						<a href="#">Learn more</a>
+					</div>
+				</div>
+				<div class="solution-use-cases-block-half">
+					<div class="solution-use-cases-block-image">
+						<img src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-image-500x265.png" alt="">	
+					</div>	
+					<div class="solution-use-cases-block-subtitle">	
+						<p class="">Mobile Workforce Audit & Compliance Solution</p>
+						<a href="#">Learn more</a>
+					</div>
+				</div>
 		</div>
 
 

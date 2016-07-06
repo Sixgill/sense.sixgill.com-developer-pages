@@ -7,4 +7,13 @@
 	.title-left-col {
 		text-align: center;
 	}
+
+	.solution-subpage-section-title{
+		font-size: 38px; 
+	}
+
+	.solution-use-cases-block-half{
+		width:100%;
+	}
+
 }

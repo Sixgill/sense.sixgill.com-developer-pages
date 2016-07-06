@@ -121,8 +121,16 @@
 		float: right;
 	}
 
+	.solution-subpage-section-title{
+		font-size: 36px; 
+	}
+
 	.solution-subpage-bottom-link-description {
 		margin-bottom: 0px;
+	}
+
+	.solution-use-cases-block-half{
+		width:50%;
 	}
 
 }
