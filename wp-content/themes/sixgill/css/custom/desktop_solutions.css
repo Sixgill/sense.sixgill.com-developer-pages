@@ -57,6 +57,11 @@
 		margin-bottom: 20px;
 	}
 
+	.gallery-link,
+	.gallery-download-link {
+		display: inline-block;
+	}
+
 	.gallery-description:hover .gallery-links-overlay{
 		display: block;
 	}
