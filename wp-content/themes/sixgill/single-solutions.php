@@ -73,19 +73,19 @@
 					<div class="gallery-links-overlay display-only-desktop">
 						<div class="inner-links-contaner vertical-centered">
 
-							<a href="<?php echo $leftGallery[0]['url']; ?>" rel="lightbox[leftGallery]" class="gallery-link">
+							<a href="<?php echo $leftGallery[0]['url']; ?>" rel="leftGallery" class="gallery-link swipebox">
 								<img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="solutions-subpage-icon">
 								View gallery
 							</a>
 							<?php
 								for($i=1; $i < count($leftGallery); $i++) {
-									echo '<a class="hidden" href="'.$leftGallery[$i]['url'].'" rel="lightbox[leftGallery]"></a>';
+									echo '<a class="hidden swipebox" href="'.$leftGallery[$i]['url'].'" rel="leftGallery"></a>';
 								}
 
 								$downloadLink = wrapDirectFileLink(get_field('left_gallery_file'));
 								if(!empty($downloadLink)) {
 							?>
-
+								<div class="clear"></div>
 								<a href="<?php echo $downloadLink; ?>" target="_blank" class="gallery-download-link">
 									<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
 									Download
@@ -111,19 +111,19 @@
 						</div>
 						<div class="gallery-links-overlay display-only-desktop">
 							<div class="inner-links-contaner vertical-centered">
-								<a href="<?php echo $rightGallery[0]['url']; ?>" rel="lightbox[rightGallery]" class="gallery-link">
+								<a href="<?php echo $rightGallery[0]['url']; ?>" rel="rightGallery" class="gallery-link swipebox">
 									<img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="solutions-subpage-icon">
 									View gallery
 								</a>
 								<?php
 									for($i=1; $i < count($rightGallery); $i++) {
-										echo '<a class="hidden" href="'.$rightGallery[$i]['url'].'" rel="lightbox[rightGallery]"></a>';
+										echo '<a class="hidden swipebox" href="'.$rightGallery[$i]['url'].'" rel="rightGallery"></a>';
 									}
 
 									$downloadLink = wrapDirectFileLink(get_field('right_gallery_file'));
 									if(!empty($downloadLink)) {
 								?>
-
+									<div class="clear"></div>
 									<a href="<?php echo $downloadLink; ?>" target="_blank" class="gallery-download-link">
 										<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
 										Download
