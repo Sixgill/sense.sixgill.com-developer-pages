@@ -13,7 +13,7 @@
 		);
 
 		$cssResultFile = $path."/css/custom_build.css";
-		$pagesList = "{general,blog,company,home,solutions,resources,tech,press,legal,products}";
+		$pagesList = "{general,footer,blog,company,home,solutions,resources,tech,press,legal,products}";
 		$cssSource = array(
 			//$path."/css/lightbox.min.css",
 			$path."/css/swipebox.min.css",
@@ -180,6 +180,16 @@
 			'description'   => '',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',
+			'before_title'  => '<h4 style="font-size:30px; font-weight:bold;">',
+			'after_title'   => '</h4>',
+		));
+
+		register_sidebar( array(
+			'name'          => __( 'Footer Subscribe sidebar', 'mk' ),
+			'id'            => 'footer-subscribe-sidebar',
+			'description'   => '',
+			'before_widget' => '',
+			'after_widget'  => '',
 			'before_title'  => '<h4 style="font-size:30px; font-weight:bold;">',
 			'after_title'   => '</h4>',
 		));

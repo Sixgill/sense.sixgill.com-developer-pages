@@ -44,35 +44,6 @@
 		display: none;
 	}
 
-	.footer-learn-text, .footer-links-block {
-		text-align: left;
-		font-size: 22px;
-	}
-
-	.footer-learn-text {
-		width: inherit;
-		margin-right: 0px;
-	}
-
-	.footer-links-block {
-		margin-right: 0px;
-		padding-right: 0px;
-		width: inherit;
-		margin-top: 5px;
-	}
-
-	.footer_Copy {
-		padding-left: 0px;
-		width: inherit;
-		float: right;
-	}
-
-	.footer_Schedule {
-		text-align: right;
-		float: right;
-		margin-top: 0px;
-	}
-
 	.widgettitle {
 		color: #004FC8;
 	}
@@ -127,7 +98,7 @@
 		min-height: 365px;
 		width: 100%;
 	}
-	
+
 	.first-text-subpage {
 		margin: 67px 65px 0px 77px;
 	}
@@ -164,5 +135,13 @@
 	.image-subpage {
 		height: 100%;
 		max-width: none;
+	}
+
+	.desktop-vertical-centered {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
 	}
 }

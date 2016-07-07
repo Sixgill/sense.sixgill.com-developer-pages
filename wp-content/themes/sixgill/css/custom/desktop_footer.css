@@ -1,0 +1,84 @@
+/* Footer desktop styles */
+@media only screen and (min-width : 1001px) {
+
+	.footer {
+		height: 220px;
+	}
+
+	.footer-top-block {
+		height: 36.5%;
+	}
+
+	.footer-top-block {
+		border-bottom: 2px solid rgba(131, 131, 131, 0.35);
+	}
+
+	.footer-middle-block {
+		border-bottom: 1px solid rgba(131, 131, 131, 0.35);
+	}
+
+	.footer-top-block-left {
+		width: 75%;
+		border-right: 2px solid rgba(131, 131, 131, 0.35);
+	}
+
+	.footer-top-block-right {
+		width: 25%;
+	}
+
+	.footer-top-text {
+		font-size: 20px;
+		font-weight: normal;
+		margin-right: 4%;
+		max-width: 50%;
+	}
+
+	.footer-subscription-form-wrapper {
+		height: 45%;
+		width: 38%;
+	}
+
+	.footer-middle-block {
+		height: 34%;
+	}
+
+	.footer-link-col {
+		width: 13.5%;
+	}
+
+	.footer-main-link {
+		font-size: 20px;
+	}
+
+	.footer-bottom-block {
+		height: 29.5%;
+	}
+
+	.footer-social-icon-link {
+		width: 23%;
+	}
+
+	.footer-social-icon-link:not(:last-child) {
+		margin-right: 15%;
+	}
+
+	.footer-icons-wrapper {
+		width: 53%;
+	}
+
+	.footer-copyright-wrapper {
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	.footer-subscription-button {
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.footer-subscription-email {
+		font-size: 16px;
+		padding-left: 12px;
+	}
+
+}

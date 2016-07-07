@@ -12,7 +12,7 @@
 				$html .= 'href="'.$link.'">';
 			}
 				$html .= '<div class="menu-'.$listSize.'">';
-					$html .= '<div class="mobile-vertical-centered">';
+					$html .= '<div class="tabletmobile-vertical-centered">';
 						$html .= $elementName;
 					$html .= '</div>';
 				$html .= '</div>';
@@ -29,7 +29,7 @@
 		} else {
 			$html .= '<a href="'.$link.'">';
 				$html .= '<div class="menu-'.$listSize.'">';
-					$html .= '<div class="mobile-vertical-centered">';
+					$html .= '<div class="tabletmobile-vertical-centered">';
 						$html .= $elementName;
 					$html .= '</div>';
 				$html .= '</div>';
