@@ -16646,7 +16646,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		position: relative;
 	}
 
-	.footer-container {
+	.footer-container,
+	.footer-top-block-left,
+	.footer-top-block-right,
+	.footer-subscription-form,
+	.footer-subscription-button,
+	.footer-subscription-email {
 		height: 100%;
 	}
 
@@ -16664,26 +16669,26 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.footer-top-block-left {
 		width: 75%;
-		vertical-align: top;
 		border-right: 2px solid rgba(131, 131, 131, 0.35);
 	}
 
-	.footer-top-block-left, .footer-top-block-right {
-		height: 100%;
+	.footer-top-block-left,
+	.footer-top-block-right{
 		display: inline-block;
 	}
 
 	.footer-top-block-right {
 		width: 25%;
-		vertical-align: top;
+	}
+
+	.footer-copyright-wrapper, .footer-top-text {
+		color: #999999;
 	}
 
 	.footer-top-text {
 		font-size: 20px;
-		color: #999999;
 		font-weight: normal;
 		display: inline-block;
-		vertical-align: top;
 		margin-right: 4%;
 	}
 
@@ -16696,7 +16701,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.footer-subscription-form {
 		padding: 0px;
 		margin: 0px;
-		height: 100%;
 	}
 
 	.footer-middle-block {
@@ -16716,16 +16720,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	}
 
-	.footer-main-link, .footer-main-link:hover {
+	.footer-subscription-button, .footer-main-link, .footer-main-link:hover {
 		color: #ffffff;
 	}
 
 	.footer-bottom-block {
 		height: 29.5%;
-	}
-
-	.footer-social-icons-block {
-
 	}
 
 	.footer-social-icon-link {
@@ -16750,27 +16750,29 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.footer-copyright-wrapper {
 		font-size: 18px;
 		font-weight: normal;
-		color: #999999;
 		display: inline-block;
+	}
+
+	.footer-subscription-button,
+	.footer-subscription-email,
+	.footer-top-text,
+	.footer-top-block-right,
+	.footer-top-block-left {
+		vertical-align: top;
 	}
 
 	.footer-subscription-button {
 		font-size: 18px;
 		font-weight: bold;
 		background-color: #4ddb5a;
-		color: #ffffff;
-		height: 100%;
 		display: inline-block;
 		width: 38%;
-		float: right;
 		cursor: pointer;
 	}
 
 	.footer-subscription-email {
-		height: 100%;
 		display: inline-block;
 		width: 62%;
-		float: left;
 		border: 0px;
 		outline: 0px;
 		font-size: 18px;
