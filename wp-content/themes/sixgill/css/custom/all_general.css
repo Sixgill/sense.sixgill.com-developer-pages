@@ -253,7 +253,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	padding: 0px;
 }
 
-.mobile-vertical-centered  {
+.tabletmobile-vertical-centered  {
 	padding: 0px !important;
 }
 

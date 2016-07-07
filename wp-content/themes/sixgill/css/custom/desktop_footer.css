@@ -3,26 +3,13 @@
 
 	.footer {
 		height: 220px;
-		background-color: #2e2e2e;
-		position: relative;
-	}
-
-	.footer-container,
-	.footer-top-block-left,
-	.footer-top-block-right,
-	.footer-subscription-form,
-	.footer-subscription-button,
-	.footer-subscription-email {
-		height: 100%;
 	}
 
 	.footer-top-block {
 		height: 36.5%;
 	}
 
-
-
-	.footer-top-block, {
+	.footer-top-block {
 		border-bottom: 2px solid rgba(131, 131, 131, 0.35);
 	}
 
@@ -35,35 +22,20 @@
 		border-right: 2px solid rgba(131, 131, 131, 0.35);
 	}
 
-	.footer-top-block-left,
-	.footer-top-block-right{
-		display: inline-block;
-	}
-
 	.footer-top-block-right {
 		width: 25%;
-	}
-
-	.footer-copyright-wrapper, .footer-top-text {
-		color: #999999;
 	}
 
 	.footer-top-text {
 		font-size: 20px;
 		font-weight: normal;
-		display: inline-block;
 		margin-right: 4%;
+		max-width: 50%;
 	}
 
 	.footer-subscription-form-wrapper {
-		display: inline-block;
 		height: 45%;
 		width: 38%;
-	}
-
-	.footer-subscription-form {
-		padding: 0px;
-		margin: 0px;
 	}
 
 	.footer-middle-block {
@@ -71,20 +43,11 @@
 	}
 
 	.footer-link-col {
-		display: inline-block;
 		width: 13.5%;
 	}
 
 	.footer-main-link {
 		font-size: 20px;
-		font-weight: bold;
-		text-transform: uppercase;
-		cursor: pointer;
-
-	}
-
-	.footer-subscription-button, .footer-main-link, .footer-main-link:hover {
-		color: #ffffff;
 	}
 
 	.footer-bottom-block {
@@ -92,7 +55,6 @@
 	}
 
 	.footer-social-icon-link {
-		display: inline-block;
 		width: 23%;
 	}
 
@@ -101,45 +63,22 @@
 	}
 
 	.footer-icons-wrapper {
-		display: inline-block;
 		width: 53%;
-	}
-
-	.footer-social-icon-img {
-		width: 100%;
-		height: auto;
 	}
 
 	.footer-copyright-wrapper {
 		font-size: 18px;
 		font-weight: normal;
-		display: inline-block;
-	}
-
-	.footer-subscription-button,
-	.footer-subscription-email,
-	.footer-top-text,
-	.footer-top-block-right,
-	.footer-top-block-left {
-		vertical-align: top;
 	}
 
 	.footer-subscription-button {
 		font-size: 18px;
 		font-weight: bold;
-		background-color: #4ddb5a;
-		display: inline-block;
-		width: 38%;
-		cursor: pointer;
 	}
 
 	.footer-subscription-email {
-		display: inline-block;
-		width: 62%;
-		border: 0px;
-		outline: 0px;
-		font-size: 18px;
-		padding-left: 10px;
+		font-size: 16px;
+		padding-left: 12px;
 	}
 
 }

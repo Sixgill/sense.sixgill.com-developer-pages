@@ -73,7 +73,7 @@
 		height: 121px;
 		left: 0;
 	}
-	
+
 	#wpadminbar {
 		display:none;
 	}
@@ -183,6 +183,14 @@
 
 	.products-h1, .solutions-h1, .company-h1 {
 		font-size: 28px;
+	}
+
+	.tablet-vertical-centered {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
 	}
 
 }

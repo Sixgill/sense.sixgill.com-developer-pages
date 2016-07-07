@@ -91,4 +91,12 @@
 	#primary-menu > ul > li:first-child {
 		max-height: 500px;
 	}
+
+	.mobile-portrait-landscape-vertical-centered {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
 }

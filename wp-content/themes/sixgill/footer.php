@@ -3,7 +3,7 @@
 
 		$legalLink = get_field('legal_link', $footerInfoId);
 		$pressLink = get_field('press_link', $footerInfoId);
-		$resourceLink = get_field('resource_link', $footerInfoId);
+		$resourcesLink = get_field('resource_link', $footerInfoId);
 		$contactHeader = get_field('contact_header', $footerInfoId);
 		$contactText = get_field('contact_text', $footerInfoId);
 		$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
@@ -13,20 +13,26 @@
 		<div class="footer-container">
 
 			<div class="footer-top-block">
-				<div class="footer-top-block-left">
-					<div class="footer-top-text vertical-centered">
+				<div class="footer-top-block-tablet display-only-tablet">
+					<div class="footer-top-text-tablet vertical-centered">
 						Stay up to date with Sixgill News and Events
 					</div>
-					<div class="footer-subscription-form-wrapper vertical-centered">
+				</div>
+				<div class="footer-top-block-left">
+					<div class="footer-top-text no-tablet-display vertical-centered">
+						Stay up to date with Sixgill News and Events
+					</div>
+					<div class="footer-subscription-form-wrapper desktop-vertical-centered">
 						<form id="footer-subscription-form" class="footer-subscription-form" name="footer-subscription-form" action="#">
 							<input name="email" class="footer-subscription-email">
-							<div class="footer-subscription-button">
+							<div class="footer-subscription-button center">
 								<div class="vertical-centered">
 									Subscribe
 								</div>
 							</div>
 						</form>
 					</div>
+					<div class="footer-tablet-vertical-line display-only-tablet"></div>
 				</div>
 				<div class="footer-top-block-right">
 					<div class="footer-icons-wrapper vertical-centered">
@@ -47,25 +53,25 @@
 			<div class="footer-middle-block">
 				<div class="vertical-centered">
 					<div class="footer-link-col">
-						<a class="footer-main-link">
+						<a href="<?php echo $legalLink; ?>" class="footer-main-link">
 							Legal
 						</a>
 					</div>
 
 					<div class="footer-link-col">
-						<a class="footer-main-link">
+						<a href="<?php echo $pressLink; ?>" class="footer-main-link">
 							Press
 						</a>
 					</div>
 
 					<div class="footer-link-col">
-						<a class="footer-main-link">
+						<a href="<?php echo $resourcesLink; ?>" class="footer-main-link">
 							Resources
 						</a>
 					</div>
 
 					<div class="footer-link-col">
-						<a class="footer-main-link">
+						<a href="<?php echo $legalLink; ?>" class="footer-main-link">
 							Contact
 						</a>
 					</div>
