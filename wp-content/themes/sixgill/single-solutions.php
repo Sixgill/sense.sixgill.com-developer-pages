@@ -210,11 +210,47 @@
 
 			</div>
 		-->
-
+		<!--
 		<div class="col_full center">
 			<a href="/solutions/" id="solutions-button-back" class="button button-large no-bottom-margin btnCompany">
 				BACK TO SOLUTIONS
 			</a>
+		</div>
+		-->
+
+		<div class="col_full">
+			<div class="green-line"></div> 
+		</div>
+
+		<div class="col_full center">
+			<div class="solution-subpage-section-title">Additional Use Cases</div>
+		</div>
+
+		<div class="solution-use-cases-block-content">
+				<div class="solution-use-cases-block-half">
+					<div class="solution-use-cases-block-image">
+						<img class="display-only-desktop" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-workforse-desktop-image.png" alt="">
+						<img class="display-only-tablet" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-workforse-table-image.png" alt="">
+						<img class="display-only-mobile-portrait" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-workforse-mobile-image.png" alt="">
+						<img class="display-only-mobile-landscape" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-workforse-mobile-image.png" alt="">
+					</div>
+					<div class="solution-use-cases-block-subtitle">
+						<p class="">Workforce Communications and Productivity Solution</p>
+						<a href="#">Learn more</a>
+					</div>
+				</div>
+				<div class="solution-use-cases-block-half">
+					<div class="solution-use-cases-block-image">
+						<img class="display-only-desktop" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-desktop-image.png" alt="">
+						<img class="display-only-tablet" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-table-image.png" alt="">
+						<img class="display-only-mobile-portrait" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-mobile-image.png" alt="">
+						<img class="display-only-mobile-landscape" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-mobile-image.png" alt="">
+					</div>	
+					<div class="solution-use-cases-block-subtitle">	
+						<p class="">Mobile Workforce Audit & Compliance Solution</p>
+						<a href="#">Learn more</a>
+					</div>
+				</div>
 		</div>
 
 
