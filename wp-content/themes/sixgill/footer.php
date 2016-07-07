@@ -29,15 +29,22 @@
 					</div>
 					<div class="footer-tablet-vertical-line display-only-tablet"></div>
 				</div>
+				<?php
+					$globalSocialButtonsInfoId = getPageBySlug('global-social-buttons')->ID;
+
+					$facebookLink = get_field('facebook_link', $globalSocialButtonsInfoId);
+					$twitterLink = get_field('twitter_link', $globalSocialButtonsInfoId);
+					$linkedinLink = get_field('linkedin_link', $globalSocialButtonsInfoId);
+				?>
 				<div class="footer-top-block-right">
 					<div class="footer-icons-wrapper vertical-centered">
-						<a href="#" class="footer-social-icon-link">
+						<a href="<?php echo $facebookLink; ?>" class="footer-social-icon-link" target="_blank">
 							<img src="/wp-content/themes/sixgill/images/td/footer/facebook_icon.png" class="footer-social-icon-img">
 						</a>
-						<a href="#" class="footer-social-icon-link">
+						<a href="<?php echo $twitterLink; ?>" class="footer-social-icon-link" target="_blank">
 							<img src="/wp-content/themes/sixgill/images/td/footer/twitter_icon.png" class="footer-social-icon-img">
 						</a>
-						<a href="#" class="footer-social-icon-link">
+						<a href="<?php echo $linkedinLink; ?>" class="footer-social-icon-link" target="_blank">
 							<img src="/wp-content/themes/sixgill/images/td/footer/linkedin_icon.png" class="footer-social-icon-img">
 						</a>
 					</div>

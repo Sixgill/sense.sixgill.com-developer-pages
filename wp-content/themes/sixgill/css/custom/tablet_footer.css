@@ -102,4 +102,9 @@
 		width: 24%;
 	}
 
+	.footer-copyright-wrapper {
+		font-size: 18px;
+		font-weight: normal;
+	}
+
 }
