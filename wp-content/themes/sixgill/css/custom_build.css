@@ -16659,7 +16659,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		height: 36.5%;
 	}
 
-	.footer-top-block{
+
+
+	.footer-top-block, {
 		border-bottom: 2px solid rgba(131, 131, 131, 0.35);
 	}
 
