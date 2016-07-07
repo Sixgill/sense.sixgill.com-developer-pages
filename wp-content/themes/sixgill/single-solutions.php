@@ -179,9 +179,9 @@
 			$leftPageTabletThumbnail = get_field('tablet_thumbnail', $subpagesLinks[0]);
 			$leftPageMobileThumbnail = get_field('mobile_thumbnail', $subpagesLinks[0]);
 
-			$leftPageDesktopThumbnail = get_field('desktop_thumbnail', $subpagesLinks[1]);
-			$leftPageTabletThumbnail = get_field('tablet_thumbnail', $subpagesLinks[1]);
-			$leftPageMobileThumbnail = get_field('mobile_thumbnail', $subpagesLinks[1]);
+			$rightPageDesktopThumbnail = get_field('desktop_thumbnail', $subpagesLinks[1]);
+			$rightPageTabletThumbnail = get_field('tablet_thumbnail', $subpagesLinks[1]);
+			$rightPageMobileThumbnail = get_field('mobile_thumbnail', $subpagesLinks[1]);
 		?>
 		<div class="solution-use-cases-block-content">
 				<div class="solution-use-cases-block-half">
