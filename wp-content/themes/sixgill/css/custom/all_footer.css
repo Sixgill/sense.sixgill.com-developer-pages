@@ -6,7 +6,8 @@
 .footer-container,
 .footer-top-block-left,
 .footer-top-block-right,
-.footer-subscription-form,
+.footer-subscription-form-wrapper > form,
+.footer-subscription-form-wrapper > form > .mc4wp-form-fields,
 .footer-subscription-button,
 .footer-subscription-email {
 	height: 100%;
@@ -47,7 +48,7 @@
 	color: #ffffff;
 }
 
-.footer-subscription-form {
+.footer-subscription-form-wrapper > form {
 	padding: 0px;
 	margin: 0px;
 }
@@ -72,4 +73,8 @@
 
 .footer-subscription-button {
 	width: 38%;
+}
+
+.footer-subscription-form-wrapper p {
+	margin-bottom: 0px !important;
 }
