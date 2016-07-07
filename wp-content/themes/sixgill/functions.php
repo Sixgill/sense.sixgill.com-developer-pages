@@ -185,6 +185,16 @@
 		));
 
 		register_sidebar( array(
+			'name'          => __( 'Footer Subscribe sidebar', 'mk' ),
+			'id'            => 'footer-subscribe-sidebar',
+			'description'   => '',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<h4 style="font-size:30px; font-weight:bold;">',
+			'after_title'   => '</h4>',
+		));
+
+		register_sidebar( array(
 			'name'          => __( 'Twitter Widget sidebar', 'mk' ),
 			'id'            => 'twitter-widget-sidebar',
 			'description'   => '',

@@ -15966,7 +15966,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .footer-container,
 .footer-top-block-left,
 .footer-top-block-right,
-.footer-subscription-form,
+.footer-subscription-form-wrapper > form,
+.footer-subscription-form-wrapper > form > .mc4wp-form-fields,
 .footer-subscription-button,
 .footer-subscription-email {
 	height: 100%;
@@ -16007,7 +16008,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	color: #ffffff;
 }
 
-.footer-subscription-form {
+.footer-subscription-form-wrapper > form {
 	padding: 0px;
 	margin: 0px;
 }
@@ -16032,6 +16033,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .footer-subscription-button {
 	width: 38%;
+}
+
+.footer-subscription-form-wrapper p {
+	margin-bottom: 0px !important;
 }
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
@@ -17358,9 +17363,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.footer-top-block-tablet{
 		width: 100%;
 		height: 50%;
-		font-size: 16px;
-		color: #999999;
-		font-size: 20px;
+	}
+
+	.footer-top-block-tablet, .footer-top-block-left p {
+		color: #999999 !important;
+		font-size: 20px !important;
 		font-weight: normal;
 	}
 
