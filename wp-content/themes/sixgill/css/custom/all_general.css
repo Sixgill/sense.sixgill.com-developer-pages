@@ -55,46 +55,6 @@ p {
 	border: 0px solid #FE0004;
 }
 
-.footer-learn-text, .footer-links-block {
-	text-align: left;
-	border: 0px solid #FE0004;
-	color: #FFF;
-	font-size: 20px;
-	margin-top: 12px;
-	font-weight: normal;
-	padding: 0px 20px;
-}
-
-.footer-links-block {
-	text-decoration:none;
-	font-size: 14px;
-	color: #FFF
-}
-
-.footer-links-block a {
-	margin: 0 10px;
-	color: #FFF;
-	border-bottom: 0px;
-}
-
-.footer-links-block a:hover {
-	color: #CCC;
-}
-
-.footer_Schedule, .footer_Copy {
-	text-align: right;
-	border: 0px solid #FE0004;
-	color: #ffffff;
-	font-size: 20px;
-	margin-top: 12px;
-	font-weight: normal;
-	padding: 0px 20px;
-}
-
-.footer_Copy {
-	font-size: 14px;
-}
-
 .my_headerBoxSolution {
 	margin-bottom: 30px;
 }
@@ -255,11 +215,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin-right: 15px;
 }
 
-#footer-scedule {
-	background-image: url('/wp-content/themes/sixgill/images/td/solutions_footer.png');
-	background-size: cover;
-}
-
 .col-48-left {
 	width: 48%;
 	float: left;
@@ -298,7 +253,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	padding: 0px;
 }
 
-.mobile-vertical-centered  {
+.tabletmobile-vertical-centered  {
 	padding: 0px !important;
 }
 
