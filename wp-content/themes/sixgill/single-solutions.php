@@ -73,13 +73,13 @@
 					<div class="gallery-links-overlay display-only-desktop">
 						<div class="inner-links-contaner vertical-centered">
 
-							<a href="<?php echo $leftGallery[0]['url']; ?>" rel="leftGallery" class="gallery-link swipebox">
+							<a href="<?php echo $leftGallery[0]['url']; ?>" data-lightbox="leftGallery" class="gallery-link swipebox">
 								<img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="solutions-subpage-icon">
 								View gallery
 							</a>
 							<?php
 								for($i=1; $i < count($leftGallery); $i++) {
-									echo '<a class="hidden swipebox" href="'.$leftGallery[$i]['url'].'" rel="leftGallery"></a>';
+									echo '<a class="hidden swipebox" href="'.$leftGallery[$i]['url'].'" data-lightbox="leftGallery"></a>';
 								}
 
 								$downloadLink = wrapDirectFileLink(get_field('left_gallery_file'));
@@ -111,13 +111,13 @@
 						</div>
 						<div class="gallery-links-overlay display-only-desktop">
 							<div class="inner-links-contaner vertical-centered">
-								<a href="<?php echo $rightGallery[0]['url']; ?>" rel="rightGallery" class="gallery-link swipebox">
+								<a href="<?php echo $rightGallery[0]['url']; ?>" data-lightbox="rightGallery" class="gallery-link swipebox">
 									<img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="solutions-subpage-icon">
 									View gallery
 								</a>
 								<?php
 									for($i=1; $i < count($rightGallery); $i++) {
-										echo '<a class="hidden swipebox" href="'.$rightGallery[$i]['url'].'" rel="rightGallery"></a>';
+										echo '<a class="hidden swipebox" href="'.$rightGallery[$i]['url'].'" data-lightbox="rightGallery"></a>';
 									}
 
 									$downloadLink = wrapDirectFileLink(get_field('right_gallery_file'));
