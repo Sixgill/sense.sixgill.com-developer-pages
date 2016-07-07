@@ -4670,7 +4670,7 @@ jQuery(function($) {
 		$(this).closest('form').submit();
 	});
 
-	$('.input').keypress(function (e) {
+	$('.footer-subscription-email').keypress(function (e) {
 	  if (e.which == 13) {
 	    $(this).closest('form').submit();
 	    return false;
