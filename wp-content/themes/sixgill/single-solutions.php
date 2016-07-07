@@ -162,71 +162,19 @@
 
 		</div>
 	</div>
-	<!--
-	<div class="solution-subpage-bottom-line"></div>
-
-
-
-	<h1 class="solution-subpage-section-title center">
-		Additional use cases
-	</h1>
-
-	<div class="solution-subpage-bottom-links background-f8f8f8">
-		<div
-			class="solution-subpage-bottom-link-col"
-			desktop-aspectratio="4.46"
-			tablet-aspectratio="2.9"
-			mobile-aspectratio="3.97"
-		>
-
-			<div class="solution-subpage-bottom-link-image-wrapper full-height">
-				<div class="vertical-centered">
-					<img
-						class="full-width display-only-desktop"
-						src="/wp-content/themes/sixgill/images/td/solutions/left-use-case-thumbnail.jpg"
-						desktop-aspectratio="1.86"
-					>
-					<img
-						class="full-width display-only-tablet"
-						src="/wp-content/themes/sixgill/images/td/solutions/left-use-case-thumbnail_tablet.jpg"
-						tablet-aspectratio="1.21">
-					<img
-						class="full-width no-desktop-display no-tablet-display"
-						src="/wp-content/themes/sixgill/images/td/solutions/left-use-case-thumbnail_moble.jpg"
-						mobile-aspectratio="1.1">
-				</div>
-			</div>
-
-			<div class="solution-subpage-bottom-link-text full-height center">
-				<div class="vertical-centered solution-subpage-bottom-link-text-width">
-					<p class="solution-subpage-bottom-link-description">
-						Wordforce Communications and Productivity Solutions
-					</p>
-					<a href="#" class="solution-subpage-bottom-link">
-						Learn More
-					</a>
-				</div>
-			</div>
-		</div>
-
-			</div>
-		-->
-		<!--
-		<div class="col_full center">
-			<a href="/solutions/" id="solutions-button-back" class="button button-large no-bottom-margin btnCompany">
-				BACK TO SOLUTIONS
-			</a>
-		</div>
-		-->
 
 		<div class="col_full">
-			<div class="green-line"></div> 
+			<div class="green-line"></div>
 		</div>
 
 		<div class="col_full center">
 			<div class="solution-subpage-section-title">Additional Use Cases</div>
 		</div>
-
+		<?php
+			$subpagesLinks = getSolutionsSubpagesLinks(get_the_ID());
+			$leftPage = get_post($subpagesLinks[0]);
+			$rightPage = get_post($subpagesLinks[1]);
+		?>
 		<div class="solution-use-cases-block-content">
 				<div class="solution-use-cases-block-half">
 					<div class="solution-use-cases-block-image">
@@ -236,8 +184,8 @@
 						<img class="display-only-mobile-landscape" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-workforse-mobile-image.png" alt="">
 					</div>
 					<div class="solution-use-cases-block-subtitle">
-						<p class="">Workforce Communications and Productivity Solution</p>
-						<a href="#">Learn more</a>
+						<p class=""><?php echo $leftPage->post_title; ?></p>
+						<a href="<?php echo $leftPage->guid; ?>">Learn more</a>
 					</div>
 				</div>
 				<div class="solution-use-cases-block-half">
@@ -246,10 +194,10 @@
 						<img class="display-only-tablet" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-table-image.png" alt="">
 						<img class="display-only-mobile-portrait" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-mobile-image.png" alt="">
 						<img class="display-only-mobile-landscape" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-mobile-image.png" alt="">
-					</div>	
-					<div class="solution-use-cases-block-subtitle">	
-						<p class="">Mobile Workforce Audit & Compliance Solution</p>
-						<a href="#">Learn more</a>
+					</div>
+					<div class="solution-use-cases-block-subtitle">
+						<p class=""><?php echo $rightPage->post_title; ?></p>
+						<a href="<?php echo $rightPage->guid; ?>">Learn more</a>
 					</div>
 				</div>
 		</div>

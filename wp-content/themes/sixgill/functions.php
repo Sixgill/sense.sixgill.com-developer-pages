@@ -322,4 +322,24 @@
 	add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
 
 
+	function getSolutionsSubpagesLinks($currentSubpageId) {
+		$subpages = getChindrenByParentSlug("solutions");
+		$result = array(0, array_shift(array_slice($subpages, 0, 1)), $subpages);
+		$currentSubpageFound = false;
+		foreach($subpages as $subpage) {
+			if($currentSubpageId != $subpage->ID) {
+				if($result[0]==0 || !$currentSubpageFound) {
+					$result[0] = $subpage->ID;
+				} else {
+					$result[1] = $subpage->ID;
+					break;
+				}
+			} else {
+				$currentSubpageFound = true;
+			}
+		}
+
+		return $result;
+	}
+
 ?>
