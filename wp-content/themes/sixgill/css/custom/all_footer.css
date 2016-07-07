@@ -1,0 +1,75 @@
+.footer {
+	background-color: #2e2e2e;
+	position: relative;
+}
+
+.footer-container,
+.footer-top-block-left,
+.footer-top-block-right,
+.footer-subscription-form,
+.footer-subscription-button,
+.footer-subscription-email {
+	height: 100%;
+}
+
+.footer-top-block-left,
+.footer-top-block-right,
+.footer-top-text,
+.footer-subscription-form-wrapper,
+.footer-link-col,
+.footer-social-icon-link,
+.footer-icons-wrapper,
+.footer-copyright-wrapper,
+.footer-subscription-button,
+.footer-subscription-email
+{
+	display: inline-block;
+}
+
+.footer-subscription-button,
+.footer-subscription-email,
+.footer-top-text,
+.footer-top-block-right,
+.footer-top-block-left {
+	vertical-align: top;
+}
+
+.footer-container {
+	width: 100%;
+}
+
+.footer-social-icon-img {
+	width: 100%;
+	height: auto;
+}
+
+.footer-subscription-button, .footer-main-link, .footer-main-link:hover {
+	color: #ffffff;
+}
+
+.footer-subscription-form {
+	padding: 0px;
+	margin: 0px;
+}
+
+.footer-copyright-wrapper, .footer-top-text {
+	color: #999999;
+}
+
+.footer-subscription-button {
+	background-color: #4ddb5a;
+	cursor: pointer;
+}
+
+.footer-subscription-email {
+	border: 0px;
+	outline: 0px;
+}
+
+.footer-subscription-email {
+	width: 62%;
+}
+
+.footer-subscription-button {
+	width: 38%;
+}

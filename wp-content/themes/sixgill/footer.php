@@ -3,53 +3,88 @@
 
 		$legalLink = get_field('legal_link', $footerInfoId);
 		$pressLink = get_field('press_link', $footerInfoId);
-		$resourceLink = get_field('resource_link', $footerInfoId);
+		$resourcesLink = get_field('resource_link', $footerInfoId);
 		$contactHeader = get_field('contact_header', $footerInfoId);
 		$contactText = get_field('contact_text', $footerInfoId);
 		$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
 	?>
 
-	<footer id="footer" class="footer">
+	<footer id="footer" class="footer font-size-0 center">
+		<div class="footer-container">
 
-		<div id="footer-scedule" class="container-fluid no-margin nopadding">
-			<div class="footer-widgets-wrap clearfix">
-				<div class="col_half footer-learn-text">
-					Learn how Sixgill can help your business.
+			<div class="footer-top-block">
+				<div class="footer-top-block-tablet display-only-tablet">
+					<div class="footer-top-text-tablet vertical-centered">
+						Stay up to date with Sixgill News and Events
+					</div>
 				</div>
-				<div class="col_half col_last footer_Schedule no-border">
-					<button data-toggle="modal" data-target="#myModal" class="button button-large no-bottom-margin btnSchedule">
-						SCHEDULE A DEMO
-					</button>
+				<div class="footer-top-block-left">
+					<div class="footer-top-text no-tablet-display vertical-centered">
+						Stay up to date with Sixgill News and Events
+					</div>
+					<div class="footer-subscription-form-wrapper desktop-vertical-centered">
+						<form id="footer-subscription-form" class="footer-subscription-form" name="footer-subscription-form" action="#">
+							<input name="email" class="footer-subscription-email">
+							<div class="footer-subscription-button center">
+								<div class="vertical-centered">
+									Subscribe
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="footer-tablet-vertical-line display-only-tablet"></div>
+				</div>
+				<div class="footer-top-block-right">
+					<div class="footer-icons-wrapper vertical-centered">
+						<a href="#" class="footer-social-icon-link">
+							<img src="/wp-content/themes/sixgill/images/td/footer/facebook_icon.png" class="footer-social-icon-img">
+						</a>
+						<a href="#" class="footer-social-icon-link">
+							<img src="/wp-content/themes/sixgill/images/td/footer/twitter_icon.png" class="footer-social-icon-img">
+						</a>
+						<a href="#" class="footer-social-icon-link">
+							<img src="/wp-content/themes/sixgill/images/td/footer/linkedin_icon.png" class="footer-social-icon-img">
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="footer-middle-block">
+				<div class="vertical-centered">
+					<div class="footer-link-col">
+						<a href="<?php echo $legalLink; ?>" class="footer-main-link">
+							Legal
+						</a>
+					</div>
+
+					<div class="footer-link-col">
+						<a href="<?php echo $pressLink; ?>" class="footer-main-link">
+							Press
+						</a>
+					</div>
+
+					<div class="footer-link-col">
+						<a href="<?php echo $resourcesLink; ?>" class="footer-main-link">
+							Resources
+						</a>
+					</div>
+
+					<div class="footer-link-col">
+						<a href="<?php echo $legalLink; ?>" class="footer-main-link">
+							Contact
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="container-fluid no-margin nopadding"  style="background-image:url('/wp-content/themes/sixgill/images/td/solutions_credit.png'); background-size:cover;">
-			<div class="footer-widgets-wrap clearfix">
-				<div class="col_half footer-links-block">
-					<a class="footer-link" href="<?php echo $legalLink; ?>">
-						LEGAL
-					</a>
-					&nbsp;
-					<a class="footer-link" href="#" data-toggle="modal" data-target="#myModalContact">
-						CONTACT
-					</a>
-					&nbsp;
-					<a class="footer-link" href="<?php echo $pressLink; ?>">
-						PRESS
-					</a>
-					&nbsp;
-					<a class="footer-link" href="<?php echo $resourceLink; ?>">
-						RESOURCES
-					</a>
-					&nbsp;
-				</div>
-				<div class="col_half col_last footer_Copy">
+			<div class="footer-bottom-block">
+				<div class="footer-copyright-wrapper vertical-centered">
 					&copy; Copyright Sixgill, 2016. All Rights Reserved.
 				</div>
 			</div>
-		</div>
 
+		</div>
 	</footer><!-- #footer end -->
 </div><!-- #wrapper end -->
 
@@ -66,17 +101,17 @@
 								&times;
 					</button>
 				<h4 class="modal-title color-white center" id="requestModalLabel">
-								REQUEST A DEMO
+					REQUEST A DEMO
 				</h4>
 				</div>
 				<div class="modal-body center">
-							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-							<script>
-								hbspt.forms.create({
-								portalId: '1792815',
-								formId: '7b5388d8-0979-4961-ac97-1f36fc2d70c0'
-								});
-							</script>
+					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+					<script>
+						hbspt.forms.create({
+						portalId: '1792815',
+						formId: '7b5388d8-0979-4961-ac97-1f36fc2d70c0'
+						});
+					</script>
 				</div>
 			<div class="modal-footer center"></div>
 		</div>

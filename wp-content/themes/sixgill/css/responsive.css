@@ -2291,32 +2291,6 @@ Responsive CSS
 
 
 
-
-
-	/* Copyrights
-
-	-----------------------------------------------------------------*/
-
-
-
-	#copyrights .col_half { text-align: center; }
-
-
-
-	#copyrights .col_half:last-child { display: none; }
-
-
-
-	#copyrights .footer-logo {
-
-		margin-left: auto;
-
-		margin-right: auto;
-
-	}
-
-
-
 }
 
 

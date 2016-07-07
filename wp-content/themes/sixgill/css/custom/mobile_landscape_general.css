@@ -68,19 +68,17 @@
 		margin-top: 30px;
 	}
 
-
-	.footer-learn-text, .footer_Schedule {
-		text-align: center;
-	}
-
-	.footer-links-block, .footer_Copy {
-		width: 100%;
-		text-align: center;
-	}
-
 	.menu-social-link {
 		padding-right: 33px !important;
 		padding-left: 33px !important;
+	}
+
+	.mobile-landscape-vertical-centered {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
 	}
 
 }

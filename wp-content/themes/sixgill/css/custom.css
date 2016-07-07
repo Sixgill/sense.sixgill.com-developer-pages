@@ -34,17 +34,6 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 	font-weight: normal;
 }
 
-#footer {
-	position: relative;
-	height:96px;
-	border-top: 0px;
-}
-
-#footer .footer-widgets-wrap {
-	position: relative;
-	padding: 10px 0;
-}
-
 #copyrights {
 	padding: 20px 0px 0px 0px;
 	height:71px;
