@@ -3971,13 +3971,6 @@ body:not(.device-touch) #gotoTop {
 	32. Footer
 -----------------------------------------------------------------*/
 
-
-#footer {
-	position: relative;
-	background-color: #EEE;
-	border-top: 5px solid rgba(0,0,0,0.2);
-}
-
 .device-lg.sticky-footer #top-bar,
 .device-md.sticky-footer #top-bar { z-index: 299; }
 
@@ -16644,6 +16637,147 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		max-width: none;
 	}
 }
+/* Footer desktop styles */
+@media only screen and (min-width : 1001px) {
+
+	.footer {
+		height: 220px;
+		background-color: #2e2e2e;
+		position: relative;
+	}
+
+	.footer-container {
+		height: 100%;
+	}
+
+	.footer-top-block {
+		height: 36.5%;
+	}
+
+	.footer-top-block{
+		border-bottom: 2px solid rgba(131, 131, 131, 0.35);
+	}
+
+	.footer-middle-block {
+		border-bottom: 1px solid rgba(131, 131, 131, 0.35);
+	}
+
+	.footer-top-block-left {
+		width: 75%;
+		vertical-align: top;
+		border-right: 2px solid rgba(131, 131, 131, 0.35);
+	}
+
+	.footer-top-block-left, .footer-top-block-right {
+		height: 100%;
+		display: inline-block;
+	}
+
+	.footer-top-block-right {
+		width: 25%;
+		vertical-align: top;
+	}
+
+	.footer-top-text {
+		font-size: 20px;
+		color: #999999;
+		font-weight: normal;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 4%;
+	}
+
+	.footer-subscription-form-wrapper {
+		display: inline-block;
+		height: 45%;
+		width: 38%;
+	}
+
+	.footer-subscription-form {
+		padding: 0px;
+		margin: 0px;
+		height: 100%;
+	}
+
+	.footer-middle-block {
+		height: 34%;
+	}
+
+	.footer-link-col {
+		display: inline-block;
+		width: 13.5%;
+	}
+
+	.footer-main-link {
+		font-size: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		cursor: pointer;
+
+	}
+
+	.footer-main-link, .footer-main-link:hover {
+		color: #ffffff;
+	}
+
+	.footer-bottom-block {
+		height: 29.5%;
+	}
+
+	.footer-social-icons-block {
+
+	}
+
+	.footer-social-icon-link {
+		display: inline-block;
+		width: 23%;
+	}
+
+	.footer-social-icon-link:not(:last-child) {
+		margin-right: 15%;
+	}
+
+	.footer-icons-wrapper {
+		display: inline-block;
+		width: 53%;
+	}
+
+	.footer-social-icon-img {
+		width: 100%;
+		height: auto;
+	}
+
+	.footer-copyright-wrapper {
+		font-size: 18px;
+		font-weight: normal;
+		color: #999999;
+		display: inline-block;
+	}
+
+	.footer-subscription-button {
+		font-size: 18px;
+		font-weight: bold;
+		background-color: #4ddb5a;
+		color: #ffffff;
+		height: 100%;
+		display: inline-block;
+		width: 38%;
+		float: right;
+		cursor: pointer;
+	}
+
+	.footer-subscription-email {
+		height: 100%;
+		display: inline-block;
+		width: 62%;
+		float: left;
+		border: 0px;
+		outline: 0px;
+		font-size: 18px;
+		padding-left: 10px;
+	}
+
+}
 /* Blog desktop styles */
 @media only screen and (min-width : 1001px) {
 	.subscribe-block {
@@ -17180,6 +17314,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 }
+/* General tablet styles */
+@media (min-width: 500px) and (max-width: 1000px) and (max-aspect-ratio: 4/3) {
+
+	
+
+}
 /* Blog tablet styles */
 @media (min-width: 500px) and (max-width: 1000px) and (max-aspect-ratio: 4/3) {
 	.subscribe-input-container {
@@ -17616,6 +17756,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 }
+/* Footer mobile portrait styles */
+@media (max-width: 500px) and (max-aspect-ratio: 4/3) {
+
+
+
+}
 /* Blog mobile portrait styles */
 @media (max-width: 500px) and (max-aspect-ratio: 4/3) {
 	.subscribe-input-container {
@@ -17851,6 +17997,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 }
+/* Footer Mobile landscape styles */
+@media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
+
+	
+
+}
 /* Blog Mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
 
@@ -18052,6 +18204,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	#primary-menu > ul > li:first-child {
 		max-height: 500px;
 	}
+}
+/* Footer mobile portrait and landscape styles */
+@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {
+
+
+
 }
 /* Blog mobile portrait and landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {

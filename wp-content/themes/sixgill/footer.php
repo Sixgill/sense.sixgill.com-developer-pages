@@ -9,7 +9,7 @@
 		$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
 	?>
 
-	<footer id="footer" class="footer">
+	<footer id="footer" class="footer font-size-0 center">
 		<div class="footer-container">
 
 			<div class="footer-top-block">
@@ -17,27 +17,27 @@
 					<div class="footer-top-text vertical-centered">
 						Stay up to date with Sixgill News and Events
 					</div>
-					<div class="footer-subscription-form-wrapper">
-						<form id="footer-subscription-form" name="footer-subscription-form" action="#">
+					<div class="footer-subscription-form-wrapper vertical-centered">
+						<form id="footer-subscription-form" class="footer-subscription-form" name="footer-subscription-form" action="#">
 							<input name="email" class="footer-subscription-email">
 							<div class="footer-subscription-button">
 								<div class="vertical-centered">
-									SUBSCRIBE
+									Subscribe
 								</div>
 							</div>
 						</form>
 					</div>
 				</div>
 				<div class="footer-top-block-right">
-					<div class="vertical-centered">
-						<a href="" class="footer-social-icon-link">
-							<img src="/wp-content/themes/sixgill/images/td/footer/" class="footer-social-icon-img">
+					<div class="footer-icons-wrapper vertical-centered">
+						<a href="#" class="footer-social-icon-link">
+							<img src="/wp-content/themes/sixgill/images/td/footer/facebook_icon.png" class="footer-social-icon-img">
 						</a>
-						<a href="" class="footer-social-icon-link">
-							<img src="/wp-content/themes/sixgill/images/td/footer/" class="footer-social-icon-img">
+						<a href="#" class="footer-social-icon-link">
+							<img src="/wp-content/themes/sixgill/images/td/footer/twitter_icon.png" class="footer-social-icon-img">
 						</a>
-						<a href="" class="footer-social-icon-link">
-							<img src="/wp-content/themes/sixgill/images/td/footer/" class="footer-social-icon-img">
+						<a href="#" class="footer-social-icon-link">
+							<img src="/wp-content/themes/sixgill/images/td/footer/linkedin_icon.png" class="footer-social-icon-img">
 						</a>
 					</div>
 				</div>
@@ -45,33 +45,35 @@
 			</div>
 
 			<div class="footer-middle-block">
-				<div class="footer-link-col">
-					<a class="footer-main-link">
-						Legal
-					</a>
-				</div>
+				<div class="vertical-centered">
+					<div class="footer-link-col">
+						<a class="footer-main-link">
+							Legal
+						</a>
+					</div>
 
-				<div class="footer-link-col">
-					<a class="footer-main-link">
-						Press
-					</a>
-				</div>
+					<div class="footer-link-col">
+						<a class="footer-main-link">
+							Press
+						</a>
+					</div>
 
-				<div class="footer-link-col">
-					<a class="footer-main-link">
-						Resources
-					</a>
-				</div>
+					<div class="footer-link-col">
+						<a class="footer-main-link">
+							Resources
+						</a>
+					</div>
 
-				<div class="footer-link-col">
-					<a class="footer-main-link">
-						Contact
-					</a>
+					<div class="footer-link-col">
+						<a class="footer-main-link">
+							Contact
+						</a>
+					</div>
 				</div>
 			</div>
 
 			<div class="footer-bottom-block">
-				<div class="footer-copyright-block">
+				<div class="footer-copyright-wrapper vertical-centered">
 					&copy; Copyright Sixgill, 2016. All Rights Reserved.
 				</div>
 			</div>
