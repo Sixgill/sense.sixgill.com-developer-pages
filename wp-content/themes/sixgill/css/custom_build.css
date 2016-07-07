@@ -16342,6 +16342,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	display: inline-block;
 }
 
+.solution-subpage-bottom-section-column:first-of-type {
+		float: left;
+}
+
+.solution-subpage-bottom-section-column:last-of-type {
+		float: right;
+}
+
 .solution-subpage-bottom-link-image-wrapper {
 	width: 42%;
 }
@@ -16528,6 +16536,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	font-size: 15px;
 }
 
+.resource-link:hover {
+	color: blue !important;
+}
+
 .resource-image-container-centered {
 	background-position-y: 50% !important;
 	background-position: center center !important;
@@ -16612,6 +16624,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .products-content-spacing {
 	padding-top: 75px;
+}
+
+.indent-from-slider {
+	padding-top: 100px;
 }
 /* General desktop styles */
 @media only screen and (min-width : 1001px) {
@@ -17560,19 +17576,27 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.solution-subpage-section-title{
-		font-size: 36px; 
+		font-size: 36px;
 	}
 
 	.solution-subpage-bottom-link-description {
 		margin-bottom: 0px;
 	}
 
-	.solution-use-cases-block-half{
+	.solution-use-cases-block-half {
 		width:50%;
 	}
 
 	.solution-use-cases-block-subtitle > p {
 		padding: 2vw;
+	}
+
+	.solution-subpage-header {
+		margin-top: 110px;
+	}
+
+	.solution-subpage-bottom-section-column:last-of-type {
+			float: right;
 	}
 
 }

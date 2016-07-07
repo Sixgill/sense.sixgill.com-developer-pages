@@ -56,17 +56,17 @@
 		$rightGallery = get_field('right_gallery_images');
 	?>
 
-	<?php if(count($leftGallery) || count($rightGallery)) { ?>
+	<?php if((count($leftGallery) && is_array($leftGallery)) || (count($rightGallery) && is_array($rightGallery)) ) { ?>
 		<div class="solution-subpage-third-block">
 
 			<div class="solution-subpage-viewproccess-block">
 				<div class="gallery-description">
 					<div class="gallery-description-inner vertical-centered">
 						<div class="gallery-description-title">
-							<?php echo get_field('title_left_button_subpage'); ?>
+							<?php echo get_field('left_gallery_title'); ?>
 						</div>
 						<div class="gallery-description-subtitle">
-							<?php echo get_field('text_left_button_subpage'); ?>
+							<?php echo get_field('left_gallery_subtitle'); ?>
 						</div>
 					</div>
 
@@ -103,10 +103,10 @@
 					<div class="gallery-description">
 						<div class="gallery-description-inner vertical-centered">
 							<div class="gallery-description-title">
-								<?php echo get_field('title_right_button_subpage'); ?>
+								<?php echo get_field('right_gallery_title'); ?>
 							</div>
 							<div class="gallery-description-subtitle">
-								<?php echo get_field('text_right_button_subpage'); ?>
+								<?php echo get_field('right_gallery_subtitle'); ?>
 							</div>
 						</div>
 						<div class="gallery-links-overlay display-only-desktop">
@@ -156,6 +156,7 @@
 				<div class="solution-subpage-bottom-section-column">
 					<?php echo get_field('last_section_text_right_column'); ?>
 				</div>
+				<div class="clear"></div>
 				<?php echo get_field('last_section_text'); ?>
 			</div>
 

@@ -50,6 +50,10 @@
 	font-size: 15px;
 }
 
+.resource-link:hover {
+	color: blue !important;
+}
+
 .resource-image-container-centered {
 	background-position-y: 50% !important;
 	background-position: center center !important;

@@ -53,6 +53,14 @@
 	display: inline-block;
 }
 
+.solution-subpage-bottom-section-column:first-of-type {
+		float: left;
+}
+
+.solution-subpage-bottom-section-column:last-of-type {
+		float: right;
+}
+
 .solution-subpage-bottom-link-image-wrapper {
 	width: 42%;
 }
