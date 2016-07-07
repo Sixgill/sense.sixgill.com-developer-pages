@@ -133,4 +133,8 @@
 		width:50%;
 	}
 
+	.solution-use-cases-block-subtitle > p {
+		padding: 2vw;
+	}
+
 }

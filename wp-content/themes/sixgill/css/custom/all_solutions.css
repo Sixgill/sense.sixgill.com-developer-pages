@@ -152,16 +152,19 @@
 	background-color: green;
 	margin:0 auto;
 }
+
+.solution-use-cases-block-content {
+	background-color: #f8f8f8;
+	border: 1px solid #dfdfdf;
+}
 	
 .solution-use-cases-block-half{
 	width: 50%;
 	display: inline-block;
-	background-color: #f8f8f8;
-	border: 1px solid #dfdfdf;
+	
 }
 
-.solution-use-cases-block-content {
-}
+
 
 .solution-use-cases-block-image {
 	display: inline-block;

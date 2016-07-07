@@ -16,4 +16,8 @@
 		width:100%;
 	}
 
+	.solution-use-cases-block-subtitle > p {
+		padding: 2vw;
+	}
+
 }
