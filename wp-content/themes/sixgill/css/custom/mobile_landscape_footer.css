@@ -1,10 +1,7 @@
 /* Footer Mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
-	.footer-top-block-mobile-landscape{
 
-	}
-
-	.footer-top-text-mobile-landscape{
+	.footer-top-text-mobile{
 		font-size: 16px;
 		padding: 22px 59px;
 	}
@@ -45,7 +42,8 @@
 
 	.footer-subscription-button{
 		height: 33px;
-    	width: 100%;
+		width: 100%;
+		font-weight: bold;
 	}
 
 	.footer-icons-wrapper{
