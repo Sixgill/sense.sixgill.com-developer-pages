@@ -17491,7 +17491,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.footer-tablet-vertical-line {
 		vertical-align: top;
 		width: 1px;
-		height: 50%;
+		height: 67%;
 		background-color: rgba(131, 131, 131, 0.35);
 		display: inline-block;
 	}
@@ -18025,6 +18025,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.footer-subscription-button{
 		height: 33px;
     	width: 100%;
+    	font-weight: bold;
 	}
 
 	.footer-icons-wrapper{
@@ -18354,7 +18355,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.footer-subscription-button{
 		height: 33px;
-    	width: 100%;
+		width: 100%;
+		font-weight: bold;
 	}
 
 	.footer-icons-wrapper{
