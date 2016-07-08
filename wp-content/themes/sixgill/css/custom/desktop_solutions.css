@@ -14,10 +14,6 @@
 		text-align: center;
 	}
 
-	#press-text-post {
-		display: inline-block;
-	}
-
 	.solution-subpage-first-block-image-container, .first-left-container-subpage, .left-block-subpage, .right-block-subpage {
 		width: 50%;
 	}
@@ -30,46 +26,6 @@
 	.second-right-container-subpage {
 		width: 56%;
 		float: right;
-	}
-
-	.gallery-links-overlay {
-		background-color: rgba(5, 78, 183, 0.9);
-		z-index: 2;
-	}
-
-	.inner-links-contaner {
-		height: 50%;
-	}
-
-	.inner-links-contaner a {
-		color: white !important;
-	}
-
-	.gallery-links-overlay {
-		display: none;
-	}
-
-	.gallery-description-title {
-		margin-bottom: 20px;
-	}
-
-	.gallery-link {
-		margin-bottom: 20px;
-	}
-
-	.gallery-link,
-	.gallery-download-link {
-		display: inline-block;
-	}
-
-	.gallery-description:hover .gallery-links-overlay{
-		display: block;
-	}
-
-	.solutions-subpage-icon {
-		width:25px;
-		height:25px;
-		margin-right: 15px;
 	}
 
 	.solution-subpage-last-block {
@@ -93,18 +49,49 @@
 	}
 
 	.solution-subpage-second-block {
-		margin-top: 35px;
-		min-height: 330px;
+		text-align: center;
 		width: 100%;
+		margin-top: 100px;
+		text-align: center;
 	}
 
-	.solution-subpage-viewproccess-block:first-child {
-		border-right: 1px solid #4e4e4e;
+	.solution-subpage-second-block-wrapper {
+		width: 77%;
+		display: inline-block;
 	}
 
-	.solution-subpage-viewproccess-block:only-child {
-		width: 100%;
-		border-right: 0px;
+	.solution-subpage-gallery-block {
+		text-align: center;
+	}
+
+	.solution-subpage-gallery-block-title {
+		margin-bottom: 2.19vw;
+	}
+
+	.solution-subpage-gallery-thumbnail-wrapper {
+		width: 72.87vw;
+		margin-bottom: 1.94vw;
+		display: inline-block;
+		border: 1px solid #999999;
+	}
+
+	.solution-subpage-gallery-button {
+		width: 16.69vw;
+		height: 3.1vw;
+		vertical-align: top;
+		display: inline-block;
+		font-family: Lato;
+	  font-size: 1.17vw;
+	  font-weight: bold;
+	  color: #ffffff;
+	}
+
+	.solution-subpage-gallery-button:not(:last-child) {
+		margin-right: 0.73vw;
+	}
+
+	.solution-subpage-gallery-button-icon {
+		margin-right: 1vw;
 	}
 
 }

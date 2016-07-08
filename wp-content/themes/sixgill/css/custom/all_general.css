@@ -7,6 +7,14 @@ p {
 	font-weight:normal;
 }
 
+a {
+	color: #004FC8;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 .title-left-col {
 	font-family: "Lato", serif, sans-serif;
 	font-size: 30px;

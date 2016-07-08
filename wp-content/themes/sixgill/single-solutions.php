@@ -36,108 +36,48 @@
 	</div>
 
 	<div id="solution-subpage-second-block" class="solution-subpage-second-block">
-
-		<div class="second-right-container-subpage full-height">
-			<div class="second-text-subpage">
-				<h1 class="solution-subpage-section-title">
-					<?php echo get_field('second_section_title'); ?>
-				</h1>
-				<?php echo get_field('second_section_text'); ?>
-			</div>
-		</div>
-
-		<div class="solution-subpage-second-block-image-container center">
-			<img id="solution-subpage-second-block-image" src="<?php echo get_field('second_section_image'); ?>" alt="" class="solution-subpage-second-block-image" aspectratio="0.8">
+		<div class="solution-subpage-second-block-wrapper">
+			<h1 class="solution-subpage-section-title">
+				<?php echo get_field('second_section_title'); ?>
+			</h1>
+			<?php echo get_field('second_section_text'); ?>
 		</div>
 	</div>
 
 	<?php
-		$leftGallery = get_field('left_gallery_images');
-		$rightGallery = get_field('right_gallery_images');
+		$galleryImages = get_field('gallery_images');
 	?>
 
-	<?php if((count($leftGallery) && is_array($leftGallery)) || (count($rightGallery) && is_array($rightGallery)) ) { ?>
-		<div class="solution-subpage-third-block">
-
-			<div class="solution-subpage-viewproccess-block">
-				<div class="gallery-description">
-					<div class="gallery-description-inner vertical-centered">
-						<div class="gallery-description-title">
-							<?php echo get_field('left_gallery_title'); ?>
-						</div>
-						<div class="gallery-description-subtitle">
-							<?php echo get_field('left_gallery_subtitle'); ?>
-						</div>
-					</div>
-
-					<div class="gallery-links-overlay display-only-desktop">
-						<div class="inner-links-contaner vertical-centered">
-
-							<a href="<?php echo $leftGallery[0]['url']; ?>" data-lightbox="leftGallery" class="gallery-link swipebox">
-								<img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="solutions-subpage-icon">
-								View gallery
-							</a>
-							<?php
-								for($i=1; $i < count($leftGallery); $i++) {
-									echo '<a class="hidden swipebox" href="'.$leftGallery[$i]['url'].'" data-lightbox="leftGallery"></a>';
-								}
-
-								$downloadLink = wrapDirectFileLink(get_field('left_gallery_file'));
-								if(!empty($downloadLink)) {
-							?>
-								<div class="clear"></div>
-								<a href="<?php echo $downloadLink; ?>" target="_blank" class="gallery-download-link">
-									<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
-									Download
-								</a>
-							<?php
-								}
-							?>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<?php if(is_array($rightGallery) && count($rightGallery)) { ?>
-				<div class="solution-subpage-viewproccess-block">
-					<div class="gallery-description">
-						<div class="gallery-description-inner vertical-centered">
-							<div class="gallery-description-title">
-								<?php echo get_field('right_gallery_title'); ?>
-							</div>
-							<div class="gallery-description-subtitle">
-								<?php echo get_field('right_gallery_subtitle'); ?>
-							</div>
-						</div>
-						<div class="gallery-links-overlay display-only-desktop">
-							<div class="inner-links-contaner vertical-centered">
-								<a href="<?php echo $rightGallery[0]['url']; ?>" data-lightbox="rightGallery" class="gallery-link swipebox">
-									<img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="solutions-subpage-icon">
-									View gallery
-								</a>
-								<?php
-									for($i=1; $i < count($rightGallery); $i++) {
-										echo '<a class="hidden swipebox" href="'.$rightGallery[$i]['url'].'" data-lightbox="rightGallery"></a>';
-									}
-
-									$downloadLink = wrapDirectFileLink(get_field('right_gallery_file'));
-									if(!empty($downloadLink)) {
-								?>
-									<div class="clear"></div>
-									<a href="<?php echo $downloadLink; ?>" target="_blank" class="gallery-download-link">
-										<img src="/wp-content/themes/sixgill/images/icons/download-icon.png" alt="" class="solutions-subpage-icon">
-										Download
-									</a>
-								<?php
-									}
-								?>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php } ?>
+	<div class="solution-subpage-gallery-block">
+		<div class="solution-subpage-gallery-block-title">
+			VIEW THE PROCESS
 		</div>
-	<?php } ?>
+
+		<div class="solution-subpage-gallery-thumbnail-wrapper">
+			<img src="/wp-content/themes/sixgill/images/td/solutions/ssubpage_demo_slide.jpg" class="solution-subpage-gallery-thumbnail">
+		</div>
+
+		<div class="solution-subpage-gallery-button solution-subpage-gallery-view-button">
+			<img
+				src="/wp-content/themes/sixgill/images/td/solutions/subpage_zoom_icon.png"
+				class="solution-subpage-gallery-button-icon vertical-centered"
+			>
+			<div class="solution-subpage-gallery-button-title-wrapper vertical-centered">
+				View Presentation
+			</div>
+		</div>
+
+		<div class="solution-subpage-gallery-button solution-subpage-gallery-download-button">
+			<img
+				src="/wp-content/themes/sixgill/images/td/solutions/subpage_download_icon.png"
+				class="solution-subpage-gallery-button-icon vertical-centered"
+			>
+			<div class="solution-subpage-gallery-button-title-wrapper vertical-centered">
+				Download
+			</div>
+		</div>
+
+	</div>
 
 	<div class="solution-subpage-last-block no-bottom-padding no-padding-top font-size-16">
 		<div class="container-subpage clearfix center no-margin-top">
