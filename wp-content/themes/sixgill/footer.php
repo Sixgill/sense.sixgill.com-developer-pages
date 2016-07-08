@@ -19,7 +19,12 @@
 					</div>
 				</div>
 				<div class="footer-top-block-left">
-					<div class="footer-top-text no-tablet-display vertical-centered">
+					<div class="footer-top-block-mobile no-desktop-display no-tablet-display">
+						<div class="footer-top-text-mobile">
+							Stay up to date with Sixgill News and Events
+						</div>
+					</div>
+					<div class="footer-top-text display-only-desktop desktop-vertical-centered">
 						Stay up to date with Sixgill News and Events
 					</div>
 					<div class="footer-subscription-form-wrapper desktop-vertical-centered">
@@ -29,7 +34,6 @@
 				</div>
 				<?php
 					$globalSocialButtonsInfoId = getPageBySlug('global-social-buttons')->ID;
-
 					$facebookLink = get_field('facebook_link', $globalSocialButtonsInfoId);
 					$twitterLink = get_field('twitter_link', $globalSocialButtonsInfoId);
 					$linkedinLink = get_field('linkedin_link', $globalSocialButtonsInfoId);
@@ -77,7 +81,7 @@
 					</div>
 				</div>
 			</div>
-
+			
 			<div class="footer-bottom-block">
 				<div class="footer-copyright-wrapper vertical-centered">
 					&copy; Copyright Sixgill, 2016. All Rights Reserved.
