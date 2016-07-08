@@ -19,6 +19,16 @@
 					</div>
 				</div>
 				<div class="footer-top-block-left">
+					<div class="footer-top-block-mobile-landscape display-only-mobile-landscape">
+						<div class="footer-top-text-mobile-landscape">
+							Stay up to date with Sixgill News and Events
+						</div>
+					</div>
+					<div class="footer-top-block-mobile-portrait display-only-mobile-portrait">
+						<div class="footer-top-text-mobile-portrait">
+							Stay up to date with Sixgill News and Events
+						</div>
+					</div>
 					<div class="footer-top-text no-tablet-display vertical-centered">
 						Stay up to date with Sixgill News and Events
 					</div>
@@ -31,7 +41,6 @@
 				</div>
 				<?php
 					$globalSocialButtonsInfoId = getPageBySlug('global-social-buttons')->ID;
-
 					$facebookLink = get_field('facebook_link', $globalSocialButtonsInfoId);
 					$twitterLink = get_field('twitter_link', $globalSocialButtonsInfoId);
 					$linkedinLink = get_field('linkedin_link', $globalSocialButtonsInfoId);
