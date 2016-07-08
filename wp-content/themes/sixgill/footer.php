@@ -86,7 +86,7 @@
 					</div>
 				</div>
 			</div>
-
+			
 			<div class="footer-bottom-block">
 				<div class="footer-copyright-wrapper vertical-centered">
 					&copy; Copyright Sixgill, 2016. All Rights Reserved.
