@@ -56,7 +56,7 @@
 	.solution-subpage-second-block {
 		text-align: center;
 		width: 100%;
-		padding-top: 7.32vw;
+		padding-top: 6.4vw;
 		text-align: center;
 		background-color: #f8f8f8;
 	}
@@ -69,6 +69,7 @@
 	.solution-subpage-gallery-block {
 		text-align: center;
 		background-color: #f8f8f8;
+		padding-bottom: 5.6vw;
 	}
 
 	.solution-subpage-gallery-block-title {

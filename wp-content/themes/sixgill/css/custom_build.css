@@ -16376,6 +16376,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .solution-subpage-gallery-button-title-wrapper {
 	display: inline-block;
 }
+
+.solution-subpage-first-block-image {
+	width: 100%;
+}
 .resources-background {
 	background-color: #eeeeee;
 }
@@ -16623,7 +16627,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.first-text-subpage {
-		margin: 67px 65px 0px 77px;
+		margin: 4.9vw 2vw 0px 5.64vw;
 	}
 
 	.second-text-subpage {
@@ -16918,6 +16922,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		width: 50%;
 	}
 
+	.solution-subpage-first-block-image {
+		width: 100%;
+		height: 29.24vw;
+	}
+
 	.solution-subpage-second-block-image-container {
 		width: 44%;
 		float: left;
@@ -16951,7 +16960,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.solution-subpage-second-block {
 		text-align: center;
 		width: 100%;
-		padding-top: 7.32vw;
+		padding-top: 6.4vw;
 		text-align: center;
 		background-color: #f8f8f8;
 	}
@@ -16964,6 +16973,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.solution-subpage-gallery-block {
 		text-align: center;
 		background-color: #f8f8f8;
+		padding-bottom: 5.6vw;
 	}
 
 	.solution-subpage-gallery-block-title {
