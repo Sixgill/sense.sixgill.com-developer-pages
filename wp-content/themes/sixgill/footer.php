@@ -41,13 +41,13 @@
 				<div class="footer-top-block-right">
 					<div class="footer-icons-wrapper vertical-centered">
 						<a href="<?php echo $facebookLink; ?>" class="footer-social-icon-link" target="_blank">
-							<img src="/wp-content/themes/sixgill/images/td/footer/facebook_icon.png" class="footer-social-icon-img">
+							<img src="/wp-content/themes/sixgill/images//facebook_icon.svg" class="footer-social-icon-img">
 						</a>
 						<a href="<?php echo $twitterLink; ?>" class="footer-social-icon-link" target="_blank">
-							<img src="/wp-content/themes/sixgill/images/td/footer/twitter_icon.png" class="footer-social-icon-img">
+							<img src="/wp-content/themes/sixgill/images//twitter_icon.svg" class="footer-social-icon-img">
 						</a>
 						<a href="<?php echo $linkedinLink; ?>" class="footer-social-icon-link" target="_blank">
-							<img src="/wp-content/themes/sixgill/images/td/footer/linkedin_icon.png" class="footer-social-icon-img">
+							<img src="/wp-content/themes/sixgill/images/linkedin_icon.svg" class="footer-social-icon-img">
 						</a>
 					</div>
 				</div>
@@ -81,7 +81,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="footer-bottom-block">
 				<div class="footer-copyright-wrapper vertical-centered">
 					&copy; Copyright Sixgill, 2016. All Rights Reserved.
