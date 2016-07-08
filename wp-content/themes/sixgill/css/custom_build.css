@@ -15832,10 +15832,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	display: table;
 }
 
-.solution-subpage-first-block {
-	background-color: #f8f8f8;
-}
-
 .color-2e2e2e {
 	color: #2e2e2e;
 }
@@ -16260,11 +16256,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	width: 100%;
 	height: 170px;
 	background-color: #2e2e2e;
-}
-
-.solution-subpage-second-block-image {
-	width: 70%;
-	max-width: 370px;
 }
 
 .solution-subpage-second-block {
@@ -16960,8 +16951,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.solution-subpage-second-block {
 		text-align: center;
 		width: 100%;
-		margin-top: 100px;
+		padding-top: 7.32vw;
 		text-align: center;
+		background-color: #f8f8f8;
 	}
 
 	.solution-subpage-second-block-wrapper {
@@ -16971,6 +16963,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.solution-subpage-gallery-block {
 		text-align: center;
+		background-color: #f8f8f8;
 	}
 
 	.solution-subpage-gallery-block-title {
@@ -16981,7 +16974,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		width: 72.87vw;
 		margin-bottom: 1.94vw;
 		display: inline-block;
-		border: 1px solid #999999;
+		border: 1px solid #dfdfdf;
 	}
 
 	.solution-subpage-gallery-button {

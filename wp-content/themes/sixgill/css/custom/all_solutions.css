@@ -76,11 +76,6 @@
 	background-color: #2e2e2e;
 }
 
-.solution-subpage-second-block-image {
-	width: 70%;
-	max-width: 370px;
-}
-
 .solution-subpage-second-block {
 	position: relative;
 }
@@ -198,4 +193,8 @@
 
 .solution-subpage-gallery-button-title-wrapper {
 	display: inline-block;
+}
+
+.solution-subpage-first-block-image {
+	width: 100%;
 }

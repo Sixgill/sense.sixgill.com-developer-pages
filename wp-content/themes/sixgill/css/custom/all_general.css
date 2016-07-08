@@ -329,10 +329,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	display: table;
 }
 
-.solution-subpage-first-block {
-	background-color: #f8f8f8;
-}
-
 .color-2e2e2e {
 	color: #2e2e2e;
 }

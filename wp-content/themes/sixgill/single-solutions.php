@@ -29,9 +29,9 @@
 		</div>
 
 		<div class="solution-subpage-first-block-image-container full-height">
-			<img aspectratio="1.63273728" src="<?php echo get_field('first_section_image_desktop'); ?>" alt="" class="display-only-desktop full-width">
-			<img aspectratio="0.91346" src="<?php echo get_field('first_section_image_tablet'); ?>" alt="" class="display-only-tablet full-width">
-			<img aspectratio="1.5" src="<?php echo get_field('first_section_image_mobile'); ?>" alt="" class="no-tablet-display no-desktop-display full-width">
+			<img src="<?php echo get_field('first_section_image_desktop'); ?>" alt="" class="solution-subpage-first-block-image display-only-desktop">
+			<img aspectratio="0.91346" src="<?php echo get_field('first_section_image_tablet'); ?>" alt="" class="solution-subpage-first-block-image display-only-tablet">
+			<img aspectratio="1.5" src="<?php echo get_field('first_section_image_mobile'); ?>" alt="" class="solution-subpage-first-block-image no-tablet-display no-desktop-display">
 		</div>
 	</div>
 
