@@ -73,13 +73,13 @@
 					<div class="gallery-links-overlay display-only-desktop">
 						<div class="inner-links-contaner vertical-centered">
 
-							<a href="<?php echo $leftGallery[0]['url']; ?>" rel="leftGallery" class="gallery-link swipebox">
+							<a href="<?php echo $leftGallery[0]['url']; ?>" data-lightbox="leftGallery" class="gallery-link swipebox">
 								<img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="solutions-subpage-icon">
 								View gallery
 							</a>
 							<?php
 								for($i=1; $i < count($leftGallery); $i++) {
-									echo '<a class="hidden swipebox" href="'.$leftGallery[$i]['url'].'" rel="leftGallery"></a>';
+									echo '<a class="hidden swipebox" href="'.$leftGallery[$i]['url'].'" data-lightbox="leftGallery"></a>';
 								}
 
 								$downloadLink = wrapDirectFileLink(get_field('left_gallery_file'));
@@ -111,13 +111,13 @@
 						</div>
 						<div class="gallery-links-overlay display-only-desktop">
 							<div class="inner-links-contaner vertical-centered">
-								<a href="<?php echo $rightGallery[0]['url']; ?>" rel="rightGallery" class="gallery-link swipebox">
+								<a href="<?php echo $rightGallery[0]['url']; ?>" data-lightbox="rightGallery" class="gallery-link swipebox">
 									<img src="/wp-content/themes/sixgill/images/icons/see-icon.png" alt="" class="solutions-subpage-icon">
 									View gallery
 								</a>
 								<?php
 									for($i=1; $i < count($rightGallery); $i++) {
-										echo '<a class="hidden swipebox" href="'.$rightGallery[$i]['url'].'" rel="rightGallery"></a>';
+										echo '<a class="hidden swipebox" href="'.$rightGallery[$i]['url'].'" data-lightbox="rightGallery"></a>';
 									}
 
 									$downloadLink = wrapDirectFileLink(get_field('right_gallery_file'));
@@ -174,14 +174,21 @@
 			$subpagesLinks = getSolutionsSubpagesLinks(get_the_ID());
 			$leftPage = get_post($subpagesLinks[0]);
 			$rightPage = get_post($subpagesLinks[1]);
+
+			$leftPageDesktopThumbnail = get_field('desktop_thumbnail', $subpagesLinks[0]);
+			$leftPageTabletThumbnail = get_field('tablet_thumbnail', $subpagesLinks[0]);
+			$leftPageMobileThumbnail = get_field('mobile_thumbnail', $subpagesLinks[0]);
+
+			$rightPageDesktopThumbnail = get_field('desktop_thumbnail', $subpagesLinks[1]);
+			$rightPageTabletThumbnail = get_field('tablet_thumbnail', $subpagesLinks[1]);
+			$rightPageMobileThumbnail = get_field('mobile_thumbnail', $subpagesLinks[1]);
 		?>
 		<div class="solution-use-cases-block-content">
 				<div class="solution-use-cases-block-half">
 					<div class="solution-use-cases-block-image">
-						<img class="display-only-desktop" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-workforse-desktop-image.png" alt="">
-						<img class="display-only-tablet" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-workforse-table-image.png" alt="">
-						<img class="display-only-mobile-portrait" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-workforse-mobile-image.png" alt="">
-						<img class="display-only-mobile-landscape" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-workforse-mobile-image.png" alt="">
+						<img class="display-only-desktop" src="<?php echo $leftPageDesktopThumbnail; ?>" alt="">
+						<img class="display-only-tablet" src="<?php echo $leftPageTabletThumbnail; ?>" alt="">
+						<img class="no-desktop-display no-tablet-display" src="<?php echo $leftPageMobileThumbnail; ?>" alt="">
 					</div>
 					<div class="solution-use-cases-block-subtitle">
 						<p class=""><?php echo $leftPage->post_title; ?></p>
@@ -190,10 +197,9 @@
 				</div>
 				<div class="solution-use-cases-block-half">
 					<div class="solution-use-cases-block-image">
-						<img class="display-only-desktop" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-desktop-image.png" alt="">
-						<img class="display-only-tablet" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-table-image.png" alt="">
-						<img class="display-only-mobile-portrait" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-mobile-image.png" alt="">
-						<img class="display-only-mobile-landscape" src="/wp-content/themes/sixgill/images/Solutions/solution-use-cases-audit-mobile-image.png" alt="">
+						<img class="display-only-desktop" src="<?php echo $rightPageDesktopThumbnail; ?>" alt="">
+						<img class="display-only-tablet" src="<?php echo $rightPageTabletThumbnail; ?>" alt="">
+						<img class="no-desktop-display no-tablet-display" src="<?php echo $rightPageMobileThumbnail; ?>" alt="">
 					</div>
 					<div class="solution-use-cases-block-subtitle">
 						<p class=""><?php echo $rightPage->post_title; ?></p>

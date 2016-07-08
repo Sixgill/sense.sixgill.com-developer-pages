@@ -33,9 +33,7 @@
 						Stay up to date with Sixgill News and Events
 					</div>
 					<div class="footer-subscription-form-wrapper desktop-vertical-centered">
-						<!--<form id="footer-subscription-form" class="footer-subscription-form" name="footer-subscription-form" action="#"> -->
 						<?php dynamic_sidebar( 'footer-subscribe-sidebar' ); ?>
-						<!--</form> -->
 					</div>
 					<div class="footer-tablet-vertical-line display-only-tablet"></div>
 				</div>
@@ -82,7 +80,7 @@
 					</div>
 
 					<div class="footer-link-col">
-						<a href="<?php echo $legalLink; ?>" class="footer-main-link">
+						<a href="#" data-toggle="modal" data-target="#myModalContact" class="footer-main-link">
 							Contact
 						</a>
 					</div>
