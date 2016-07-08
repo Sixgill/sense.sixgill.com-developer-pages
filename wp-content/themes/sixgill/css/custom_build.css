@@ -16365,6 +16365,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .solution-subpage-gallery-button {
 	box-shadow: 0px 3px 0 0 #002d6f;
+	cursor: pointer;
 }
 
 .solution-subpage-gallery-view-button {
@@ -16964,7 +16965,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.solution-subpage-second-block-wrapper {
-		width: 77%;
+		width: 63vw;
 		display: inline-block;
 	}
 
