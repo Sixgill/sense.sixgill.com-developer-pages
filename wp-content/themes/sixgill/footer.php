@@ -19,7 +19,12 @@
 					</div>
 				</div>
 				<div class="footer-top-block-left">
-					<div class="footer-top-text no-tablet-display vertical-centered">
+					<div class="footer-top-block-mobile no-desktop-display no-tablet-display">
+						<div class="footer-top-text-mobile">
+							Stay up to date with Sixgill News and Events
+						</div>
+					</div>
+					<div class="footer-top-text display-only-desktop desktop-vertical-centered">
 						Stay up to date with Sixgill News and Events
 					</div>
 					<div class="footer-subscription-form-wrapper desktop-vertical-centered">
@@ -29,7 +34,6 @@
 				</div>
 				<?php
 					$globalSocialButtonsInfoId = getPageBySlug('global-social-buttons')->ID;
-
 					$facebookLink = get_field('facebook_link', $globalSocialButtonsInfoId);
 					$twitterLink = get_field('twitter_link', $globalSocialButtonsInfoId);
 					$linkedinLink = get_field('linkedin_link', $globalSocialButtonsInfoId);
@@ -37,13 +41,13 @@
 				<div class="footer-top-block-right">
 					<div class="footer-icons-wrapper vertical-centered">
 						<a href="<?php echo $facebookLink; ?>" class="footer-social-icon-link" target="_blank">
-							<img src="/wp-content/themes/sixgill/images/td/footer/facebook_icon.png" class="footer-social-icon-img">
+							<img src="/wp-content/themes/sixgill/images//facebook_icon.svg" class="footer-social-icon-img">
 						</a>
 						<a href="<?php echo $twitterLink; ?>" class="footer-social-icon-link" target="_blank">
-							<img src="/wp-content/themes/sixgill/images/td/footer/twitter_icon.png" class="footer-social-icon-img">
+							<img src="/wp-content/themes/sixgill/images//twitter_icon.svg" class="footer-social-icon-img">
 						</a>
 						<a href="<?php echo $linkedinLink; ?>" class="footer-social-icon-link" target="_blank">
-							<img src="/wp-content/themes/sixgill/images/td/footer/linkedin_icon.png" class="footer-social-icon-img">
+							<img src="/wp-content/themes/sixgill/images/linkedin_icon.svg" class="footer-social-icon-img">
 						</a>
 					</div>
 				</div>
