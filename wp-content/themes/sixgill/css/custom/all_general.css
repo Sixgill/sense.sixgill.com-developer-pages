@@ -7,6 +7,14 @@ p {
 	font-weight:normal;
 }
 
+a {
+	color: #004FC8;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 .title-left-col {
 	font-family: "Lato", serif, sans-serif;
 	font-size: 30px;
@@ -309,6 +317,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .solution-subpage-first-block-image-container {
 	overflow: hidden;
+	float: right;
+	text-align: right;
 }
 
 .solution-subpage-first-block-image-container, .first-left-container-subpage, .solution-subpage-second-block-image-container, .second-right-container-subpage {
@@ -319,10 +329,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	text-align: center;
 	background-color: #2e2e2e;
 	display: table;
-}
-
-.solution-subpage-first-block {
-	background-color: #f8f8f8;
 }
 
 .color-2e2e2e {
@@ -352,4 +358,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 #primary-menu > ul > li:first-child {
 	margin-left: 0;
+}
+
+.solution-subpage-section-title {
+	font-weight: 100;
+	line-height: 1em;
 }

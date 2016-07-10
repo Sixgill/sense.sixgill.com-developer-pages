@@ -100,7 +100,7 @@
 	}
 
 	.first-text-subpage {
-		margin: 67px 65px 0px 77px;
+		margin: 4.9vw 2vw 0px 5.64vw;
 	}
 
 	.second-text-subpage {
@@ -128,8 +128,6 @@
 	.container-subpage {
 		padding-right: 57px;
 		padding-left: 57px;
-		margin-right: auto;
-		margin-left: auto;
 	}
 
 	.image-subpage {
@@ -143,5 +141,9 @@
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
+	}
+
+	#press-text-post {
+		display: inline-block;
 	}
 }
