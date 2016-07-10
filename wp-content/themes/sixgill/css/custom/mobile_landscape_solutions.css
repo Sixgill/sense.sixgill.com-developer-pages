@@ -9,7 +9,7 @@
 	}
 
 	.solution-subpage-section-title{
-		font-size: 38px; 
+		font-size: 38px;
 	}
 
 	.solution-use-cases-block-half{
@@ -18,6 +18,10 @@
 
 	.solution-use-cases-block-subtitle > p {
 		padding: 2vw;
+	}
+
+	.solution-subpage-second-block-wrapper {
+		text-align: left !important;
 	}
 
 }
