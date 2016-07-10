@@ -29,9 +29,23 @@
 		</div>
 
 		<div class="solution-subpage-first-block-image-container full-height">
-			<img src="<?php echo get_field('first_section_image_desktop'); ?>" alt="" class="solution-subpage-first-block-image display-only-desktop">
-			<img aspectratio="0.91346" src="<?php echo get_field('first_section_image_tablet'); ?>" alt="" class="solution-subpage-first-block-image display-only-tablet">
-			<img aspectratio="1.5" src="<?php echo get_field('first_section_image_mobile'); ?>" alt="" class="solution-subpage-first-block-image no-tablet-display no-desktop-display">
+			<img
+				src="<?php echo get_field('first_section_image_desktop'); ?>"
+				alt=""
+				class="solution-subpage-first-block-image display-only-desktop"
+			>
+
+			<img
+				src="<?php echo get_field('first_section_image_tablet'); ?>"
+				alt=""
+				class="solution-subpage-first-block-image display-only-tablet"
+			>
+
+			<img
+				src="<?php echo get_field('first_section_image_mobile'); ?>"
+				alt=""
+				class="solution-subpage-first-block-image no-tablet-display no-desktop-display"
+			>
 		</div>
 	</div>
 
@@ -46,38 +60,63 @@
 
 	<?php
 		$galleryImages = get_field('gallery_images');
+		$galleryFile = wrapDirectFileLink(get_field('gallery_file'));
+		if(is_array($galleryImages) && count($galleryImages)) {
 	?>
 
-	<div class="solution-subpage-gallery-block">
-		<div class="solution-subpage-gallery-block-title">
-			VIEW THE PROCESS
-		</div>
 
-		<div class="solution-subpage-gallery-thumbnail-wrapper">
-			<img src="/wp-content/themes/sixgill/images/td/solutions/ssubpage_demo_slide.jpg" class="solution-subpage-gallery-thumbnail">
-		</div>
 
-		<div class="solution-subpage-gallery-button solution-subpage-gallery-view-button">
-			<img
-				src="/wp-content/themes/sixgill/images/td/solutions/subpage_zoom_icon.png"
-				class="solution-subpage-gallery-button-icon vertical-centered"
-			>
-			<div class="solution-subpage-gallery-button-title-wrapper vertical-centered">
-				View Presentation
+		<div class="solution-subpage-gallery-block">
+			<div class="solution-subpage-gallery-block-title">
+				VIEW THE PROCESS
 			</div>
-		</div>
 
-		<div class="solution-subpage-gallery-button solution-subpage-gallery-download-button">
-			<img
-				src="/wp-content/themes/sixgill/images/td/solutions/subpage_download_icon.png"
-				class="solution-subpage-gallery-button-icon vertical-centered"
-			>
-			<div class="solution-subpage-gallery-button-title-wrapper vertical-centered">
-				Download
+			<div class="solution-subpage-gallery-thumbnail-wrapper">
+				<img src="<?php echo $galleryImages[0]['url']; ?>" class="solution-subpage-gallery-thumbnail">
 			</div>
-		</div>
+
+			<a
+				rel="lightbox[solutionGallery]"
+				class="solution-subpage-gallery-button-link"
+				href="<?php echo $galleryImages[0]['url']; ?>"
+			>
+				<div class="solution-subpage-gallery-button solution-subpage-gallery-view-button">
+					<img
+						src="/wp-content/themes/sixgill/images/td/solutions/subpage_zoom_icon.png"
+						class="solution-subpage-gallery-button-icon vertical-centered"
+					>
+					<div class="solution-subpage-gallery-button-title-wrapper vertical-centered">
+						View Presentation
+					</div>
+				</div>
+			</a>
+			<?php
+				for($i=1; $i < count($galleryImages); $i++) {
+					echo '<a class="hidden" href="'.$galleryImages[$i]['url'].'" rel="lightbox[solutionGallery]"></a>';
+				}
+			?>
+
+			<?php if(!empty($galleryFile)) { ?>
+				<a
+					href="<?php echo $galleryFile; ?>"
+					class="solution-subpage-gallery-button-link"
+				>
+					<div class="solution-subpage-gallery-button solution-subpage-gallery-download-button">
+						<img
+							src="/wp-content/themes/sixgill/images/td/solutions/subpage_download_icon.png"
+							class="solution-subpage-gallery-button-icon vertical-centered"
+						>
+
+						<div class="solution-subpage-gallery-button-title-wrapper vertical-centered">
+							Download
+						</div>
+					</div>
+				</a>
+			<?php } ?>
+
 
 	</div>
+	<?php } ?>
 
 	<div class="solution-subpage-last-block no-bottom-padding no-padding-top font-size-16">
 		<div class="container-subpage clearfix center no-margin-top">

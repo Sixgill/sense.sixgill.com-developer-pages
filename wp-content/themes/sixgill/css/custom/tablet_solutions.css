@@ -43,9 +43,11 @@
 		width: 100%;
 	}
 	.solution-subpage-second-block {
-		margin-top: 35px;
-		width: 100%;
-		min-height: 330px;
+		padding-top: 6.9vw;
+	}
+
+	.solution-subpage-second-block-wrapper {
+		width: 88.2vw;
 	}
 
 	.block-link-subpage {
@@ -68,8 +70,6 @@
 	.container-subpage {
 		padding-right: 57px;
 		padding-left: 57px;
-		margin-right: auto;
-		margin-left: auto;
 	}
 
 	.left-block-subpage, .right-block-subpage {
@@ -77,16 +77,11 @@
 	}
 
 	.first-left-container-subpage {
-		width: 57%;
+		width: 56%;
 	}
 
-	.solution-subpage-first-block-image-container {
-		width: 43%;
-	}
-
-	.solution-subpage-second-block-image-container {
-		width: 44%;
-		float: left;
+	.solution-subpage-first-block-image {
+		width: 43.29vw;
 	}
 
 	.second-right-container-subpage {
@@ -130,6 +125,43 @@
 
 	.solution-subpage-bottom-section-column:last-of-type {
 			float: right;
+	}
+
+	.solution-subpage-second-block {
+		padding-top: 6.4vw;
+	}
+
+	.solution-subpage-second-block-wrapper {
+		width: 88.28vw;
+	}
+
+	.solution-subpage-gallery-block {
+		padding-bottom: 5.6vw;
+		padding-top: calc(5.38vw - 30px);
+	}
+
+	.solution-subpage-gallery-block-title {
+		margin-bottom: 2.19vw;
+		font-size: 22px;
+	}
+
+	.solution-subpage-gallery-thumbnail-wrapper {
+		width: 92.44vw;
+		margin-bottom: 4vw;
+	}
+
+	.solution-subpage-gallery-button {
+		width: 30vw;
+		height: 5.6vw;
+	  font-size: 2.08vw;
+	}
+
+	.solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
+		margin-right: 1.3vw;
+	}
+
+	.solution-subpage-gallery-button-icon {
+		margin-right: 1.3vw;
 	}
 
 }

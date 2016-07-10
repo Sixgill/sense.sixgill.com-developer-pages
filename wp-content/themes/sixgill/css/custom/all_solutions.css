@@ -78,12 +78,17 @@
 
 .solution-subpage-second-block {
 	position: relative;
+	text-align: center;
+	width: 100%;
+	background-color: #f8f8f8;
 }
 
-.solution-subpage-second-block-image-container {
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
+.solution-subpage-second-block-wrapper {
+	display: inline-block;
+}
+
+.solution-subpage-gallery-block-title {
+	font-weight: bold;
 }
 
 .solution-subpage-bottom-link-col {
@@ -196,5 +201,28 @@
 }
 
 .solution-subpage-first-block-image {
-	width: 100%;
+	height: auto;
+}
+
+.container-subpage {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.solution-subpage-gallery-button {
+	vertical-align: top;
+	display: inline-block;
+	font-family: Lato;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.solution-subpage-gallery-thumbnail-wrapper {
+	display: inline-block;
+	border: 1px solid #dfdfdf;
+}
+
+.solution-subpage-gallery-block {
+	text-align: center;
+	background-color: #f8f8f8;
 }

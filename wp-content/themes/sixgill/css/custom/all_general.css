@@ -317,6 +317,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .solution-subpage-first-block-image-container {
 	overflow: hidden;
+	float: right;
 }
 
 .solution-subpage-first-block-image-container, .first-left-container-subpage, .solution-subpage-second-block-image-container, .second-right-container-subpage {
