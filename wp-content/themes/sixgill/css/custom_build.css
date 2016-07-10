@@ -15821,6 +15821,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .solution-subpage-first-block-image-container {
 	overflow: hidden;
 	float: right;
+	text-align: right;
 }
 
 .solution-subpage-first-block-image-container, .first-left-container-subpage, .solution-subpage-second-block-image-container, .second-right-container-subpage {
@@ -15860,6 +15861,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 #primary-menu > ul > li:first-child {
 	margin-left: 0;
+}
+
+.solution-subpage-section-title {
+	font-weight: 100;
+	line-height: 1em;
 }
 .footer {
 	background-color: #2e2e2e;
@@ -17602,10 +17608,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin: 58px 25px 0px 0;
 	}
 
-	.solution-subpage-section-title {
-		font-size: 30px;
-	}
-
 	.container-subpage {
 		padding-right: 57px;
 		padding-left: 57px;
@@ -18418,7 +18420,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.solution-subpage-section-title{
-		font-size: 38px; 
+		font-size: 38px;
 	}
 
 	.solution-use-cases-block-half{
@@ -18427,6 +18429,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.solution-use-cases-block-subtitle > p {
 		padding: 2vw;
+	}
+
+	.solution-subpage-second-block-wrapper {
+		text-align: left !important;
 	}
 
 }
@@ -18652,6 +18658,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-top: 30px;
 	}
 
+	.solution-subpage-first-block-image-container {
+		width: 100%;
+		height: auto;
+	}
+
 	.solution-subpage-section-title {
 		margin-bottom: 15px;
 	}
@@ -18684,16 +18695,53 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		margin-bottom: 50px;
 	}
 
-	.solution-subpage-section-title{
-		font-size: 40px;
+	.solution-subpage-section-title {
+		font-size: 28px;
 	}
 
-	.solution-use-cases-block-half{
+	.solution-use-cases-block-half {
 		width:100%;
 	}
 
+	.solution-subpage-second-block {
+		padding-top: 6.4vw;
+	}
+
+	.solution-subpage-second-block-wrapper {
+		width: 88.28vw;
+	}
+
+	.solution-subpage-gallery-block {
+		padding-bottom: 5.6vw;
+		padding-top: calc(5.38vw - 30px);
+	}
+
+	.solution-subpage-gallery-block-title {
+		margin-bottom: 11.25vw;
+		font-size: 22px;
+	}
+
 	.solution-subpage-gallery-thumbnail-wrapper {
-		width: 90%;
+		width: 92.44vw;
+		margin-bottom: 4vw;
+	}
+
+	.solution-subpage-gallery-button {
+		width: 90.625vw;
+		height: 13.44vw;
+	  font-size: 5vw;
+	}
+
+	.solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
+		margin-bottom: 2.5vw;
+	}
+
+	.solution-subpage-gallery-button-icon {
+		margin-right: 3.13vw;
+	}
+
+	.solution-subpage-second-block-wrapper {
+		text-align: left;
 	}
 
 }

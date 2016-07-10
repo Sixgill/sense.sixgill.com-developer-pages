@@ -318,6 +318,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .solution-subpage-first-block-image-container {
 	overflow: hidden;
 	float: right;
+	text-align: right;
 }
 
 .solution-subpage-first-block-image-container, .first-left-container-subpage, .solution-subpage-second-block-image-container, .second-right-container-subpage {
@@ -357,4 +358,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 #primary-menu > ul > li:first-child {
 	margin-left: 0;
+}
+
+.solution-subpage-section-title {
+	font-weight: 100;
+	line-height: 1em;
 }
