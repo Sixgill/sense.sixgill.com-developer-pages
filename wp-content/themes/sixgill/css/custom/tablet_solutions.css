@@ -123,10 +123,6 @@
 			float: right;
 	}
 
-	.solution-subpage-second-block {
-		padding-top: 6.4vw;
-	}
-
 	.solution-subpage-second-block-wrapper {
 		width: 88.28vw;
 	}
@@ -158,6 +154,10 @@
 
 	.solution-subpage-gallery-button-icon {
 		margin-right: 1.3vw;
+	}
+
+	.solution-subpage-viewprocess-placeholder {
+		height: 6.9vw;
 	}
 
 }

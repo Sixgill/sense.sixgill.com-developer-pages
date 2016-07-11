@@ -16417,6 +16417,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	text-align: center;
 	background-color: #f8f8f8;
 }
+
+.solution-subpage-viewprocess-placeholder {
+	display: block;
+	background-color: #f8f8f8;
+	width: 100%;
+}
 .resources-background {
 	background-color: #eeeeee;
 }
@@ -17028,6 +17034,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.solution-subpage-gallery-button-icon {
 		margin-right: 1vw;
+	}
+
+	.solution-subpage-viewprocess-placeholder {
+		height: 6.4vw;
 	}
 
 }
@@ -17668,10 +17678,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 			float: right;
 	}
 
-	.solution-subpage-second-block {
-		padding-top: 6.4vw;
-	}
-
 	.solution-subpage-second-block-wrapper {
 		width: 88.28vw;
 	}
@@ -17703,6 +17709,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.solution-subpage-gallery-button-icon {
 		margin-right: 1.3vw;
+	}
+
+	.solution-subpage-viewprocess-placeholder {
+		height: 6.9vw;
 	}
 
 }
