@@ -29,9 +29,7 @@
 
 	.solution-subpage-last-block {
 		margin-top: 70px;
-		width: 70%;
-		margin-left: 15%;
-		margin-right: 14%;
+		width: 74%;
 	}
 
 	.solution-subpage-bottom-line {
@@ -41,10 +39,6 @@
 
 	.solution-subpage-bottom-section-column {
 		width: 45%;
-	}
-
-	.solution-subpage-bottom-section-column:nth-child(2n+1) {
-		margin-right: 5%;
 	}
 
 	.solution-subpage-second-block {
@@ -86,6 +80,14 @@
 
 	.solution-subpage-viewprocess-placeholder {
 		height: 6.4vw;
+	}
+
+	.solution-subpage-last-section-text-wrapper {
+		width: 50.73vw;
+	}
+
+	.solution-subpage-last-section-text-wrapper p {
+		text-align: center;
 	}
 
 }
