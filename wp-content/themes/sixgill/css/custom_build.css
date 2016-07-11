@@ -16440,6 +16440,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .solution-subpage-bottom-section-content {
 	text-align: center;
+	display: inline-block;
 }
 
 .solution-subpage-last-section-text-wrapper {
