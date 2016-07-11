@@ -360,6 +360,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin-left: 0;
 }
 
+#primary-menu a {
+	text-decoration: none !important;
+}
+
 .solution-subpage-section-title {
 	font-weight: 100;
 	line-height: 1em;
