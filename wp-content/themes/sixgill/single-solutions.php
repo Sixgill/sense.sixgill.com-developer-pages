@@ -58,19 +58,17 @@
 		</div>
 	</div>
 
+	<a name="presentation"></a>
 	<?php
 		$galleryImages = get_field('gallery_images');
 		$galleryFile = wrapDirectFileLink(get_field('gallery_file'));
 		if(is_array($galleryImages) && count($galleryImages)) {
 	?>
-
-
-
 		<div class="solution-subpage-gallery-block">
+
 			<div class="solution-subpage-gallery-block-title">
 				VIEW THE PROCESS
 			</div>
-
 			<div class="solution-subpage-gallery-thumbnail-wrapper">
 				<img src="<?php echo $galleryImages[0]['url']; ?>" class="solution-subpage-gallery-thumbnail">
 			</div>
