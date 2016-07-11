@@ -120,15 +120,15 @@
 
 	<div class="solution-subpage-last-block-wrapper">
 		<div class="solution-subpage-last-block no-bottom-padding no-padding-top font-size-16">
-			<h1 class="solution-subpage-section-title solution-subpage-last-block-title">
-				<?php echo get_field('last_section_title'); ?>
-			</h1>
-
-			<h2 class="solution-subpage-bottom-section-subtitle">
-				<?php echo get_field('last_section_subtitle'); ?>
-			</h2>
-
 			<div class="solution-subpage-bottom-section-content">
+				<h1 class="solution-subpage-section-title solution-subpage-last-block-title">
+					<?php echo get_field('last_section_title'); ?>
+				</h1>
+
+				<h2 class="solution-subpage-bottom-section-subtitle">
+					<?php echo get_field('last_section_subtitle'); ?>
+				</h2>
+
 				<div class="solution-subpage-bottom-section-column">
 					<?php echo get_field('last_section_text_left_column'); ?>
 				</div>
