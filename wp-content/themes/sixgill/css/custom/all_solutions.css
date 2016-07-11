@@ -245,6 +245,7 @@
 
 .solution-subpage-bottom-section-content {
 	text-align: center;
+	display: inline-block;
 }
 
 .solution-subpage-last-section-text-wrapper {
