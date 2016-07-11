@@ -56,7 +56,7 @@
 	}
 
 	.first-text-subpage {
-		margin: 58px 25px 0px 40px;
+		margin: 7.5vw 3.05vw 0px 4.56vw;
 	}
 
 	.second-text-subpage {
@@ -87,6 +87,11 @@
 
 	.solution-subpage-last-block {
 		margin-top: 70px;
+		width: 90.02vw;
+	}
+
+	.solution-subpage-last-section-text-wrapper {
+		width: 100%;
 	}
 
 	.solution-subpage-bottom-line {
@@ -119,8 +124,18 @@
 		margin-top: 110px;
 	}
 
-	.solution-subpage-bottom-section-column:last-of-type {
+	.solution-subpage-bottom-section-column {
+		width: 38.15vw;
+	}
+
+	.solution-subpage-bottom-section-column:nth-child(2n+1) {
+			float: left;
+			margin-left: 4vw;
+	}
+
+	.solution-subpage-bottom-section-column:nth-child(2n) {
 			float: right;
+			margin-right: 2vw;
 	}
 
 	.solution-subpage-second-block-wrapper {
@@ -158,6 +173,10 @@
 
 	.solution-subpage-viewprocess-placeholder {
 		height: 6.9vw;
+	}
+
+	.solution-subpage-last-section-text-wrapper p {
+		text-align: center;
 	}
 
 }
