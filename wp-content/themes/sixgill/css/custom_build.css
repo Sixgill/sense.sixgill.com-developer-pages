@@ -16338,37 +16338,46 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	margin:0 auto;
 }
 
-.solution-use-cases-block-content {
-	background-color: #f8f8f8;
-	border: 1px solid #dfdfdf;
-}
 
 .solution-use-cases-block-half{
-	width: 50%;
+	width: 48%;
+	margin: 0 1%;	
 	display: inline-block;
 
 }
 
 .solution-use-cases-block-image {
-	display: inline-block;
+	display: block;
 	height: auto;
-	width: 50%;
+	width: 100%;
+}
+
+.solution-use-cases-block-image>img {
+	width:100%;
+	margin:0;
+	padding:0;
 }
 
 .solution-use-cases-block-subtitle{
-	display: inline-block;
-	width: 50%;
+	width: 100%;
+	display: block;
 	text-align: center;
 	vertical-align: middle;
+	background-color: #f8f8f8;
+	padding: 30px;
 }
 
 .solution-use-cases-block-subtitle > p{
-	margin:0;
-	padding: 1vw;
+	font-size: 19px;
+	line-height: 20px !important;
+	margin: 0 auto;
+	width: 56%;
 }
 
 .solution-use-cases-block-subtitle > a{
-	font-size:16px;
+	display: inline-block;
+	font-size: 19px;
+	padding: 15px;
 }
 
 .solution-subpage-gallery-button-icon, .solution-subpage-gallery-thumbnail {
@@ -17064,6 +17073,12 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		text-align: center;
 	}
 
+	.solution-use-cases-block-content {
+		width: 68vw;
+		margin: 0 auto 4vw;
+
+	}
+
 }
 /* Resources desktop styles */
 @media only screen and (min-width : 1001px) {
@@ -17692,11 +17707,21 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.solution-use-cases-block-half {
-		width:50%;
+		width:47%;
+		margin-left: 1%;
+		margin-right: 1%;
+
+	}
+
+	.solution-use-cases-block-subtitle {
+		padding: 20px;
 	}
 
 	.solution-use-cases-block-subtitle > p {
-		padding: 2vw;
+		font-size: 18px;
+		line-height: 20px !important;
+		margin: 0 auto;
+		width: 65%;
 	}
 
 	.solution-subpage-header {
@@ -17756,6 +17781,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.solution-subpage-last-section-text-wrapper p {
 		text-align: center;
+	}
+
+	.solution-use-cases-block-content{
+		margin-bottom: 4vw;
+
 	}
 
 }
@@ -18753,7 +18783,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.solution-use-cases-block-half {
-		width:100%;
+		width:92%;
+		margin: 2vw auto;
 	}
 
 	.solution-subpage-second-block {
@@ -18803,6 +18834,18 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	.solution-subpage-bottom-section-content p {
 		text-align: left;
+	}
+
+	.solution-use-cases-block-subtitle {
+		padding: 20px;	
+	}
+
+	.solution-use-cases-block-subtitle > p {
+		width:100%;
+	}
+
+	.solution-use-cases-block-content{
+		text-align: center;
 	}
 
 }
