@@ -226,3 +226,9 @@
 	text-align: center;
 	background-color: #f8f8f8;
 }
+
+.solution-subpage-viewprocess-placeholder {
+	display: block;
+	background-color: #f8f8f8;
+	width: 100%;
+}

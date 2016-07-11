@@ -116,6 +116,8 @@
 
 
 	</div>
+	<?php } else { ?>
+		<div class="solution-subpage-viewprocess-placeholder"></div>
 	<?php } ?>
 
 	<div class="solution-subpage-last-block no-bottom-padding no-padding-top font-size-16">
