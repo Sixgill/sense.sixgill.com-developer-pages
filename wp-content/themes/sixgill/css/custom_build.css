@@ -19149,4 +19149,5 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .fnone {
-	float
+	float: none !important;
+}
