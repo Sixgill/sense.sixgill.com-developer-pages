@@ -148,7 +148,7 @@
 	width: 48%;
 	margin: 0 1%;	
 	display: inline-block;
-
+	vertical-align: top;
 }
 
 .solution-use-cases-block-image {
@@ -169,7 +169,8 @@
 	text-align: center;
 	vertical-align: middle;
 	background-color: #f8f8f8;
-	padding: 30px;
+	min-height: 135px;
+	padding: 25px;
 }
 
 .solution-use-cases-block-subtitle > p{
@@ -182,7 +183,7 @@
 .solution-use-cases-block-subtitle > a{
 	display: inline-block;
 	font-size: 19px;
-	padding: 15px;
+	padding: 15px 0 0;
 }
 
 .solution-subpage-gallery-button-icon, .solution-subpage-gallery-thumbnail {

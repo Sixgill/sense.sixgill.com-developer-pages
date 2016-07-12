@@ -168,25 +168,27 @@
 		<div class="solution-use-cases-block-content">
 				<div class="solution-use-cases-block-half">
 					<div class="solution-use-cases-block-image">
-<!-- 						<img class="display-only-desktop" src="<?php echo $leftPageDesktopThumbnail; ?>" alt="">
+						<img class="display-only-desktop" src="<?php echo $leftPageDesktopThumbnail; ?>" alt="">
 						<img class="display-only-tablet" src="<?php echo $leftPageTabletThumbnail; ?>" alt="">
-						<img class="no-desktop-display no-tablet-display" src="<?php echo $leftPageMobileThumbnail; ?>" alt=""> -->
-						<img src="<?php echo get_template_directory_uri();?>/images/Solutions/solution-use-cases-audit-image-500x265.png" alt="">
+						<img class="no-desktop-display no-tablet-display" src="<?php echo $leftPageMobileThumbnail; ?>" alt="">
+
+						<!-- <img src="<?php echo get_template_directory_uri();?>/images/Solutions/solution-use-cases-audit-image-500x265.png" alt=""> -->
 					</div>
-					<div class="solution-use-cases-block-subtitle">
-						<p class="">Workforce Communications and Productivity Solution</p>
+					<div class="solution-use-cases-block-subtitle">						
+						<p class=""><?php echo $leftPage->post_title; ?></p>
 						<a href="<?php echo $leftPage->guid; ?>">Learn more</a>
 					</div>
 				</div>
 				<div class="solution-use-cases-block-half">
 					<div class="solution-use-cases-block-image">
-						<!-- <img class="display-only-desktop" src="<?php echo $rightPageDesktopThumbnail; ?>" alt="">
+						<img class="display-only-desktop" src="<?php echo $rightPageDesktopThumbnail; ?>" alt="">
 						<img class="display-only-tablet" src="<?php echo $rightPageTabletThumbnail; ?>" alt="">
-						<img class="no-desktop-display no-tablet-display" src="<?php echo $rightPageMobileThumbnail; ?>" alt=""> -->
-						<img src="<?php echo get_template_directory_uri();?>/images/Solutions/solution-use-cases-workforse-image-500x265.png" alt="">
+						<img class="no-desktop-display no-tablet-display" src="<?php echo $rightPageMobileThumbnail; ?>" alt="">
+
+						<!-- <img src="<?php echo get_template_directory_uri();?>/images/Solutions/solution-use-cases-workforse-image-500x265.png" alt=""> -->
 					</div>
 					<div class="solution-use-cases-block-subtitle">
-						<p class="">Workforce Communications and Productivity Solution</p>
+						<p class=""><?php echo $rightPage->post_title; ?></p>
 						<a href="<?php echo $rightPage->guid; ?>">Learn more</a>
 					</div>
 				</div>
