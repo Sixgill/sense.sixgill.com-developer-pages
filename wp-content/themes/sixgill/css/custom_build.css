@@ -16249,6 +16249,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .solution-subpage-bottom-section-column {
 	text-align: left;
+	position: relative;
 }
 
 .solution-subpage-bottom-section-column:nth-child(2n+1) {
