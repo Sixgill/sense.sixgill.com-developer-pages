@@ -90,4 +90,10 @@
 		text-align: center;
 	}
 
+	.solution-use-cases-block-content {
+		width: 68vw;
+		margin: 0 auto 4vw;
+
+	}
+
 }
