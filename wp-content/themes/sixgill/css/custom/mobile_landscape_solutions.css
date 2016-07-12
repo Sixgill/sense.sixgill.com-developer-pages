@@ -24,4 +24,23 @@
 		text-align: left !important;
 	}
 
+	.solution-subpage-first-block-image {
+		width: 100%;
+	}
+
+	.solution-subpage-gallery-button {
+		width: 45.312vw;
+		height: 6.72vw;
+		font-size: 2.5vw;
+	}
+
+	.solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
+		margin-right: 1.3vw;
+	}
+
+	.solution-subpage-gallery-block-title {
+		margin-bottom: 5vw;
+		font-size: 22px;
+	}
+
 }
