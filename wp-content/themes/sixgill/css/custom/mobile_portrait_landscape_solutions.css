@@ -96,20 +96,9 @@
 		padding-top: calc(5.38vw - 30px);
 	}
 
-	.solution-subpage-gallery-block-title {
-		margin-bottom: 11.25vw;
-		font-size: 22px;
-	}
-
 	.solution-subpage-gallery-thumbnail-wrapper {
 		width: 92.44vw;
 		margin-bottom: 4vw;
-	}
-
-	.solution-subpage-gallery-button {
-		width: 90.625vw;
-		height: 13.44vw;
-	  font-size: 5vw;
 	}
 
 	.solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {

@@ -18212,6 +18212,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	.iconSolutions {
 		margin-right: 15px;
 	}
+
+	.solution-subpage-gallery-button {
+		width: 90.625vw;
+		height: 13.44vw;
+		font-size: 5vw;
+	}
+
+	.solution-subpage-gallery-block-title {
+		margin-bottom: 11.25vw;
+		font-size: 22px;
+	}
 }
 /* Resources mobile portrait styles */
 @media (max-width: 500px) and (max-aspect-ratio: 4/3) {
@@ -18521,6 +18532,25 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		text-align: left !important;
 	}
 
+	.solution-subpage-first-block-image {
+		width: 100%;
+	}
+
+	.solution-subpage-gallery-button {
+		width: 45.312vw;
+		height: 6.72vw;
+		font-size: 2.5vw;
+	}
+
+	.solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
+		margin-right: 1.3vw;
+	}
+
+	.solution-subpage-gallery-block-title {
+		margin-bottom: 5vw;
+		font-size: 22px;
+	}
+
 }
 /* Resources mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
@@ -18803,20 +18833,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		padding-top: calc(5.38vw - 30px);
 	}
 
-	.solution-subpage-gallery-block-title {
-		margin-bottom: 11.25vw;
-		font-size: 22px;
-	}
-
 	.solution-subpage-gallery-thumbnail-wrapper {
 		width: 92.44vw;
 		margin-bottom: 4vw;
-	}
-
-	.solution-subpage-gallery-button {
-		width: 90.625vw;
-		height: 13.44vw;
-	  font-size: 5vw;
 	}
 
 	.solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
