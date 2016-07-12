@@ -37,4 +37,15 @@
 	.iconSolutions {
 		margin-right: 15px;
 	}
+
+	.solution-subpage-gallery-button {
+		width: 90.625vw;
+		height: 13.44vw;
+		font-size: 5vw;
+	}
+
+	.solution-subpage-gallery-block-title {
+		margin-bottom: 11.25vw;
+		font-size: 22px;
+	}
 }
