@@ -45,7 +45,8 @@
 }
 
 .footer-subscription-button, .footer-main-link, .footer-main-link:hover {
-	color: #ffffff;
+	color: #ffffff !important;
+	text-decoration: none !important;
 }
 
 .footer-subscription-form-wrapper > form {
@@ -78,5 +79,3 @@
 .footer-subscription-form-wrapper p {
 	margin-bottom: 0px !important;
 }
-
-
