@@ -357,11 +357,32 @@ Side Header
 	text-transform:uppercase;
 }
 
-.home2SupTit {font-size:40px; color:#FFF; padding-top:0px; margin-top:0px; height:40px;}
-.home2SubTit {font-size:24px; color:#FFF; height:24px;}
-.home2Tit { font-size:56px; color:#3CBC48; height:65px;}
+.home2SupTit {
+	font-size: 40px;
+	color: #FFF;
+	padding-top: 0px;
+	margin-top: 0px;
+	height: 40px;
+}
 
-.home-products-title {font-size:29px; font-weight:normal; color:#FFF; text-align:center;  padding-top:36px;}
+.home2SubTit {
+	font-size: 24px;
+	color: #FFF;
+	height: 24px;
+}
+.home2Tit {
+	font-size: 56px;
+	color: #3CBC48;
+	height: 65px;
+}
+
+.home-products-title {
+	font-size: 29px;
+	font-weight: normal;
+	color: #FFF;
+	text-align: center;
+	padding-top: 36px;
+}
 
 .btnBlue {
 	color:#FFFFFF;
@@ -420,13 +441,13 @@ p {
 
 #what2 {
 	background-image: url('/wp-content/themes/sixgill/images/td/home/shapes1_1.jpg');
-	background-position:top;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-color:#FFF;
-	padding-top:0px;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #FFF;
+	padding-top: 0px;
 	background-size: contain;
-	border:0px solid #FF0004;
+	border: 0px solid #FF0004;
 }
 
 
@@ -442,54 +463,54 @@ p {
 	}
 
 	.titleInside2 {
-		font-size:30px;
-		font-weight:bold;
-		text-align:center;
-		margin:0px;
-		padding-right:20px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		margin: 0px;
+		padding-right: 20px;
 	}
 }
 
 .titleInside2 {
 	font-family: "Lato", serif, sans-serif;
-	font-size:30px;
-	font-weight:bold;
-	text-transform:uppercase;
-	color:#0051C6;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0051C6;
 }
 
 .titleInside {
 	font-family: "Lato", serif, sans-serif;
-	font-size:30px;
-	font-weight:bold;
-	text-transform:uppercase;
-	color:#0051C6;
-	text-align:center;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0051C6;
+	text-align: center;
 }
 
 .btnInside {
 	font-family: "Lato", serif, sans-serif;
-	font-size:27px;
-	font-weight:bolder;
-	text-transform:uppercase;
-	color:#000;
-	border:4px solid #000000;
-	padding:10px 20px;
-	text-align:center;
-	width:250px;
+	font-size: 27px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #000;
+	border: 4px solid #000000;
+	padding: 10px 20px;
+	text-align: center;
+	width: 250px;
 }
 
 .iconSolutions {
-	width:140px;
+	width: 140px;
 }
 
 .tech-first-text {
-	padding-right:20px;
-	border:0px;
+	padding-right: 20px;
+	border: 0px;
 }
 
 .tech-first-text-title {
-	width:250px;
+	width: 250px;
 }
 
 @media only screen and (min-width: 321px) {/* For tablets: */
@@ -514,11 +535,11 @@ p {
 	}
 
 	.titleInside {
-		font-size:30px;
-		font-weight:bold;
-		text-align:center;
-		margin:0px;
-		padding-right:20px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		margin: 0px;
+		padding-right: 20px;
 	}
 
 	.iconSolutions {
@@ -530,11 +551,11 @@ p {
 	}
 
 	.titleInside-tech {
-		padding-right:0px;
+		padding-right: 0px;
 	}
 
 	.tech-first-text-title {
-		width:auto;
+		width: auto;
 	}
 }
 
