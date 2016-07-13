@@ -15,6 +15,11 @@ a:hover {
 	text-decoration: none;
 }
 
+.listSolutions li, .listProduct li {
+	list-style-image: url(/wp-content/themes/sixgill/images/td/bullet_green.png);
+	margin-bottom:5px;
+}
+
 .title-left-col {
 	font-family: "Lato", serif, sans-serif;
 	font-size: 30px;
