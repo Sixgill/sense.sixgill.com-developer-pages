@@ -1,7 +1,7 @@
 <section class="no-border swiper_wrapper clearfix solution-subpage-header">
 	<div
 		class="swiper-slide slider-subpage"
-		style="background-color: url('<?php echo get_field('header_image'); ?>');"
+		style="background-image: url('<?php echo get_field('header_image'); ?>');"
 	>
 		<div class="slider-text-subpage">
 			<div class="solution-subpage-suptitle">
@@ -175,7 +175,7 @@
 
 						<!-- <img src="<?php echo get_template_directory_uri();?>/images/Solutions/solution-use-cases-audit-image-500x265.png" alt=""> -->
 					</div>
-					<div class="solution-use-cases-block-subtitle">						
+					<div class="solution-use-cases-block-subtitle">
 						<p class=""><?php echo $leftPage->post_title; ?></p>
 						<a href="<?php echo $leftPage->guid; ?>">Learn more</a>
 					</div>
