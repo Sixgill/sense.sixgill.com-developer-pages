@@ -300,7 +300,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .slider-subpage {
 	height:100%;
-	background-image: url('/wp-content/themes/sixgill/images/td/hero/subpages.png');
 	background-position: center top;
 	display: table;
 }
