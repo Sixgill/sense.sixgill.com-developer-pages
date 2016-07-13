@@ -61,7 +61,7 @@
 					<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" style="height: 100%;" alt=""/>
 				</div>
 
-				<div class="container clearfix menu-container">
+				<div class="clearfix menu-container">
 					<?php get_template_part('menu'); ?>
 				</div>
 

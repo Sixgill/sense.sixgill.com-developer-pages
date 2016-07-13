@@ -41,7 +41,7 @@
 	include(locate_template('menu_list.php'));
 
 ?>
-
+<div class="clear"></div>
 <nav id="primary-menu">
 	<ul>
 		<li>
@@ -61,7 +61,6 @@
 						count($menu)
 					);
 				}
-				get_template_part('global_social_buttons');
 			?>
 		</li>
 	</ul>

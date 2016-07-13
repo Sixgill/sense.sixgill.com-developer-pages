@@ -1177,15 +1177,8 @@ body:not(.device-touch) #page-menu nav li a {
 	padding-right: 40px;
 }
 
-.side-header #header .container {
-	width: 260px !important;
-	padding: 0 30px !important;
-	margin: 0 !important;
-}
-
 .side-header #logo {
 	float: none;
-	margin: 60px 0 40px;
 }
 
 .side-header #logo img { height: auto !important; }
@@ -14123,14 +14116,6 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 	border-bottom:1px solid #000000;
 }
 
-#primary-menu a div {
-	text-transform:uppercase;
-	padding-top:15px;
-	color:#2e2e2e;
-	font-size:12px;
-	font-weight:bold;
-}
-
 #primary-menu div a {
 	text-transform:none;
 	color:#2e2e2e;
@@ -14240,12 +14225,6 @@ Side Header
 		height: 100%;
 		overflow: auto;
 		padding-right: 40px;
-	}
-
-	.side-header #header .container {
-		width: 180px !important;
-		padding: 0 20px !important;
-		margin: 0 !important;
 	}
 
 	.side-header #logo {
@@ -14827,10 +14806,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	z-index: 9999;
 }
 
-.side-header #logo {
-	margin-left: 15px;
-}
-
 .alignment-menu-right {
 	margin-right: 15px;
 }
@@ -14978,6 +14953,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .solution-subpage-section-title {
 	font-weight: 100;
 	line-height: 1em;
+}
+
+#primary-menu a div {
+	text-transform: uppercase;
+	color: #2e2e2e;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#primary-menu a:not(:first-child) div {
+	padding-top: 15px;
 }
 .footer {
 	background-color: #2e2e2e;
@@ -15717,7 +15703,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	#primary-menu {
-		margin-left: 16px;
 		opacity: 1 !important;
 	}
 
@@ -16053,9 +16038,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	#logo {
 		float: left !important;
-		margin-bottom: 20px !important;
-		margin-left: 20px !important;
-		margin-top: 0px !important;
 	}
 
 	.home-video-text-h1 {

@@ -1156,15 +1156,8 @@ body:not(.device-touch) #page-menu nav li a {
 	padding-right: 40px;
 }
 
-.side-header #header .container {
-	width: 260px !important;
-	padding: 0 30px !important;
-	margin: 0 !important;
-}
-
 .side-header #logo {
 	float: none;
-	margin: 60px 0 40px;
 }
 
 .side-header #logo img { height: auto !important; }

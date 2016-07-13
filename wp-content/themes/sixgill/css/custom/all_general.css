@@ -220,10 +220,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	z-index: 9999;
 }
 
-.side-header #logo {
-	margin-left: 15px;
-}
-
 .alignment-menu-right {
 	margin-right: 15px;
 }
@@ -371,4 +367,15 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .solution-subpage-section-title {
 	font-weight: 100;
 	line-height: 1em;
+}
+
+#primary-menu a div {
+	text-transform: uppercase;
+	color: #2e2e2e;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#primary-menu a:not(:first-child) div {
+	padding-top: 15px;
 }
