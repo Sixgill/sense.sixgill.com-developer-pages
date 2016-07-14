@@ -15715,7 +15715,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	#primary-menu {
 		opacity: 1 !important;
 		position: fixed;
-		left: 78px;
+		left: 64px;
 		top: 36.83vh;
 	}
 
