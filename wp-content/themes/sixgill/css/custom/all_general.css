@@ -1,3 +1,4 @@
+/* General Common styles */
 body, p {
 	font-family: "Lato", serif, sans-serif;
 }
@@ -9,6 +10,12 @@ p {
 
 a:hover {
 	text-decoration: none;
+}
+
+.listSolutions li,
+.listProduct li {
+	list-style-image: url(/wp-content/themes/sixgill/images/td/bullet_green.png);
+	margin-bottom:5px;
 }
 
 .title-left-col {
@@ -41,7 +48,7 @@ a:hover {
 	text-transform:uppercase;
 	color:#000;
 	border:4px solid #000000;
-	padding:10px 20px;
+	padding: 10px 20px;
 	text-align:center;
 	margin-bottom: 35px;
 }
@@ -211,10 +218,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	z-index: 9999;
 }
 
-.side-header #logo {
-	margin-left: 15px;
-}
-
 .alignment-menu-right {
 	margin-right: 15px;
 }
@@ -343,10 +346,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	display: inline-block;
 }
 
-.font-size-0 {
-	font-size: 0;
-}
-
 .font-size-16, .text-left-block-subpage, .title-left-block-subpage  {
 	font-size: 16px;
 }
@@ -364,8 +363,19 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	line-height: 1em;
 }
 
+#primary-menu a div {
+	text-transform: uppercase;
+	color: #2e2e2e;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#primary-menu a:not(:first-child) div {
+	padding-top: 15px;
+}
+
 /* For iOS Safary */
 input {
-    border-radius: 0 !important;
-		-webkit-appearance: none !important;
+	border-radius: 0 !important;
+	-webkit-appearance: none !important;
 }

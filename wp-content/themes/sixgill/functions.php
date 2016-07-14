@@ -13,7 +13,7 @@
 		);
 
 		$cssResultFile = $path."/css/custom_build.css";
-		$pagesList = "{general,footer,blog,company,home,solutions,resources,tech,press,legal,products}";
+		$pagesList = "{general,menu,footer,blog,company,home,solutions,resources,tech,press,legal,products}";
 		$cssSource = array(
 			$path."/css/lightbox.min.css",
 			//$path."/css/swipebox.min.css",

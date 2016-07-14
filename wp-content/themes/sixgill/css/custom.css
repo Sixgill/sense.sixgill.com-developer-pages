@@ -13,11 +13,6 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 	color:#686868;
 }
 
-.listSolutions li, .listProduct li {
-	list-style-image: url(/wp-content/themes/sixgill/images/td/bullet_green.png);
-	margin-bottom:5px;
-}
-
 .companyName, .companyJob, .companyDescription {
 	font-family: "Lato", serif, sans-serif;
 	font-weight:bold;
@@ -32,35 +27,6 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 .companyDescription {
 	font-size: 16px;
 	font-weight: normal;
-}
-
-#copyrights {
-	padding: 20px 0px 0px 0px;
-	height:71px;
-	font-size: 14px;
-	color:#FFF;
-}
-
-#copyrights a {
-	display: inline-block;
-	margin: 0 10px;
-	color: #FFF;
-	border-bottom: 0px;
-}
-
-#copyrights a:hover {
-	color: #CCC;
-}
-
-#copyrights .col_half {
-	text-align: center;
-}
-
-#copyrights .col_half:last-child {
-	display:block;
-	visibility:visible;
-	text-align: center;
-	border:0px solid #FF0004;
 }
 
 .btnSchedule, .btnSolutions, .btnCompanym, .btn-news-press, .submit-resource-form-button {
@@ -169,14 +135,6 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 	border-bottom:1px solid #000000;
 }
 
-#primary-menu a div {
-	text-transform:uppercase;
-	padding-top:15px;
-	color:#2e2e2e;
-	font-size:12px;
-	font-weight:bold;
-}
-
 #primary-menu div a {
 	text-transform:none;
 	color:#2e2e2e;
@@ -185,7 +143,6 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 }
 
 .no-touch #primary-menu div a:hover, #primary-menu div .active {
-
 	text-transform:none;
 	color:#0051C6;
 	font-size:12px;
@@ -274,14 +231,6 @@ Side Header
 
 @media (min-width: 1001px) {
 
-	.side-header #header {
-		width: 180px;
-		background-color: #FFF;
-		border: none;
-		overflow: hidden;
-		box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
-	}
-
 	.side-header #header-wrap {
 		width: 300px;
 		height: 100%;
@@ -289,18 +238,9 @@ Side Header
 		padding-right: 40px;
 	}
 
-	.side-header #header .container {
-		width: 180px !important;
-		padding: 0 20px !important;
-		margin: 0 !important;
-	}
-
 	.side-header #logo {
 		float: none;
-		margin: 30px 0 40px;
 	}
-
-	.side-header #logo img {height: auto !important; min-height:83px; }
 
 	.side-header #logo:not(.nobottomborder):after,
 	.side-header #primary-menu:not(.nobottomborder):after {
@@ -310,11 +250,17 @@ Side Header
 		border-bottom: 0px solid #E5E5E5;
 	}
 
-	.side-header .center #logo:after { margin: 0 auto; }
+	.side-header .center #logo:after {
+		margin: 0 auto;
+	}
 
-	.side-header #primary-menu { margin-bottom: 30px; }
+	.side-header #primary-menu {
+		margin-bottom: 30px;
+	}
 
-	.side-header #primary-menu:not(.nobottomborder):after { margin-top: 40px; }
+	.side-header #primary-menu:not(.nobottomborder):after {
+		margin-top: 40px;
+	}
 
 	.side-header #primary-menu,
 	.side-header #primary-menu ul {
@@ -353,7 +299,9 @@ Side Header
 		border: 0;
 	}
 
-	.side-header #primary-menu ul ul li:first-child { border-top: 0; }
+	.side-header #primary-menu ul ul li:first-child {
+		border-top: 0;
+	}
 
 	.side-header #primary-menu ul ul a {
 		font-size: 12px;
@@ -401,11 +349,32 @@ Side Header
 	text-transform:uppercase;
 }
 
-.home2SupTit {font-size:40px; color:#FFF; padding-top:0px; margin-top:0px; height:40px;}
-.home2SubTit {font-size:24px; color:#FFF; height:24px;}
-.home2Tit { font-size:56px; color:#3CBC48; height:65px;}
+.home2SupTit {
+	font-size: 40px;
+	color: #FFF;
+	padding-top: 0px;
+	margin-top: 0px;
+	height: 40px;
+}
 
-.home-products-title {font-size:29px; font-weight:normal; color:#FFF; text-align:center;  padding-top:36px;}
+.home2SubTit {
+	font-size: 24px;
+	color: #FFF;
+	height: 24px;
+}
+.home2Tit {
+	font-size: 56px;
+	color: #3CBC48;
+	height: 65px;
+}
+
+.home-products-title {
+	font-size: 29px;
+	font-weight: normal;
+	color: #FFF;
+	text-align: center;
+	padding-top: 36px;
+}
 
 .btnBlue {
 	color:#FFFFFF;
@@ -458,20 +427,19 @@ p {
 
 .logo-sixgill {
 	height: 44px;
-	margin: 10px 0px;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #what2 {
 	background-image: url('/wp-content/themes/sixgill/images/td/home/shapes1_1.jpg');
-	background-position:top;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-color:#FFF;
-	padding-top:0px;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #FFF;
+	padding-top: 0px;
 	background-size: contain;
-	border:0px solid #FF0004;
+	border: 0px solid #FF0004;
 }
 
 
@@ -487,88 +455,71 @@ p {
 	}
 
 	.titleInside2 {
-		font-size:30px;
-		font-weight:bold;
-		text-align:center;
-		margin:0px;
-		padding-right:20px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		margin: 0px;
+		padding-right: 20px;
 	}
 }
-
-@media (max-width: 767px) {
-
-	.hidden-top-imageTech {
-		display: none;
-	}
-
-	.titleInside2 {
-		font-family: "Lato", serif, sans-serif;
-		font-size:30px;
-		font-weight:bold;
-		text-transform:uppercase;
-		color:#0051C6;
-		text-align:left;
-	}
-}
-
 
 .titleInside2 {
 	font-family: "Lato", serif, sans-serif;
-	font-size:30px;
-	font-weight:bold;
-	text-transform:uppercase;
-	color:#0051C6;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0051C6;
 }
 
 .titleInside {
 	font-family: "Lato", serif, sans-serif;
-	font-size:30px;
-	font-weight:bold;
-	text-transform:uppercase;
-	color:#0051C6;
-	text-align:center;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0051C6;
+	text-align: center;
 }
 
 .btnInside {
 	font-family: "Lato", serif, sans-serif;
-	font-size:27px;
-	font-weight:bolder;
-	text-transform:uppercase;
-	color:#000;
-	border:4px solid #000000;
-	padding:10px 20px;
-	text-align:center;
-	width:250px;
+	font-size: 27px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #000;
+	border: 4px solid #000000;
+	padding: 10px 20px;
+	text-align: center;
+	width: 250px;
 }
 
 .iconSolutions {
-	width:140px;
+	width: 140px;
 }
 
 .tech-first-text {
-	padding-right:20px;
-	border:0px;
+	padding-right: 20px;
+	border: 0px;
 }
 
 .tech-first-text-title {
-	width:250px;
+	width: 250px;
 }
 
 @media only screen and (min-width: 321px) {/* For tablets: */
 	.txtVideo {
-		font-size:40px;
-		font-weight:normal;
+		font-size: 40px;
+		font-weight: normal;
 	}
 
 	.titLegal {
-		font-size:25px;
-		margin-top:50px;
-		margin-bottom:30px;
+		font-size: 25px;
+		margin-top: 50px;
+		margin-bottom: 30px;
 	}
 
 	p {
-		font-size:20px;
-		font-weight:normal;
+		font-size: 20px;
+		font-weight: normal;
 	}
 
 	.logo-sixgill {
@@ -576,15 +527,15 @@ p {
 	}
 
 	.titleInside {
-		font-size:30px;
-		font-weight:bold;
-		text-align:center;
-		margin:0px;
-		padding-right:20px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		margin: 0px;
+		padding-right: 20px;
 	}
 
 	.iconSolutions {
-		width:115px;
+		width: 115px;
 	}
 
 	#primary-menu {
@@ -592,34 +543,34 @@ p {
 	}
 
 	.titleInside-tech {
-		padding-right:0px;
+		padding-right: 0px;
 	}
 
 	.tech-first-text-title {
-		width:auto;
+		width: auto;
 	}
 }
 
 @media only screen and (min-width: 1001px) {/* For desktop: */
 	.txtVideo {
-		font-size:28px;
-		font-weight:normal;
+		font-size: 28px;
+		font-weight: normal;
 	}
 
 	.titLegal {
-		font-size:40px;
-		margin-top:60px;
-		margin-bottom:65px;
+		font-size: 40px;
+		margin-top: 60px;
+		margin-bottom: 65px;
 	}
 
 	p {
 		font-size: 16px;
-		font-weight:normal;
+		font-weight: normal;
 	}
 
 	.logo-sixgill {
-		width:140px;
-		height:111px;
+		width: 140px;
+		height: 111px;
 	}
 
 
