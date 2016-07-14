@@ -167,3 +167,7 @@
 .fnone {
 	float: none !important;
 }
+
+.font-size-0 {
+	font-size: 0;
+}

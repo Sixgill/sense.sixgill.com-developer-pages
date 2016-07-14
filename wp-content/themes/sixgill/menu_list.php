@@ -6,7 +6,7 @@
 		"elementName" => "Home",
 		"link" => "/",
 		"sublinksList" => array(
-			array(
+			/*array(
 				"name" => "What we do",
 				"anchor" => "what"
 			),
@@ -21,7 +21,7 @@
 			array(
 				"name" => "Clients",
 				"anchor" => "clients"
-			)
+			)*/
 		),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded

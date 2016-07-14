@@ -14212,14 +14212,6 @@ Side Header
 
 @media (min-width: 1001px) {
 
-	.side-header #header {
-		width: 180px;
-		background-color: #FFF;
-		border: none;
-		overflow: hidden;
-		box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
-	}
-
 	.side-header #header-wrap {
 		width: 300px;
 		height: 100%;
@@ -14338,11 +14330,32 @@ Side Header
 	text-transform:uppercase;
 }
 
-.home2SupTit {font-size:40px; color:#FFF; padding-top:0px; margin-top:0px; height:40px;}
-.home2SubTit {font-size:24px; color:#FFF; height:24px;}
-.home2Tit { font-size:56px; color:#3CBC48; height:65px;}
+.home2SupTit {
+	font-size: 40px;
+	color: #FFF;
+	padding-top: 0px;
+	margin-top: 0px;
+	height: 40px;
+}
 
-.home-products-title {font-size:29px; font-weight:normal; color:#FFF; text-align:center;  padding-top:36px;}
+.home2SubTit {
+	font-size: 24px;
+	color: #FFF;
+	height: 24px;
+}
+.home2Tit {
+	font-size: 56px;
+	color: #3CBC48;
+	height: 65px;
+}
+
+.home-products-title {
+	font-size: 29px;
+	font-weight: normal;
+	color: #FFF;
+	text-align: center;
+	padding-top: 36px;
+}
 
 .btnBlue {
 	color:#FFFFFF;
@@ -14401,13 +14414,13 @@ p {
 
 #what2 {
 	background-image: url('/wp-content/themes/sixgill/images/td/home/shapes1_1.jpg');
-	background-position:top;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-color:#FFF;
-	padding-top:0px;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #FFF;
+	padding-top: 0px;
 	background-size: contain;
-	border:0px solid #FF0004;
+	border: 0px solid #FF0004;
 }
 
 
@@ -14423,54 +14436,54 @@ p {
 	}
 
 	.titleInside2 {
-		font-size:30px;
-		font-weight:bold;
-		text-align:center;
-		margin:0px;
-		padding-right:20px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		margin: 0px;
+		padding-right: 20px;
 	}
 }
 
 .titleInside2 {
 	font-family: "Lato", serif, sans-serif;
-	font-size:30px;
-	font-weight:bold;
-	text-transform:uppercase;
-	color:#0051C6;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0051C6;
 }
 
 .titleInside {
 	font-family: "Lato", serif, sans-serif;
-	font-size:30px;
-	font-weight:bold;
-	text-transform:uppercase;
-	color:#0051C6;
-	text-align:center;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0051C6;
+	text-align: center;
 }
 
 .btnInside {
 	font-family: "Lato", serif, sans-serif;
-	font-size:27px;
-	font-weight:bolder;
-	text-transform:uppercase;
-	color:#000;
-	border:4px solid #000000;
-	padding:10px 20px;
-	text-align:center;
-	width:250px;
+	font-size: 27px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #000;
+	border: 4px solid #000000;
+	padding: 10px 20px;
+	text-align: center;
+	width: 250px;
 }
 
 .iconSolutions {
-	width:140px;
+	width: 140px;
 }
 
 .tech-first-text {
-	padding-right:20px;
-	border:0px;
+	padding-right: 20px;
+	border: 0px;
 }
 
 .tech-first-text-title {
-	width:250px;
+	width: 250px;
 }
 
 @media only screen and (min-width: 321px) {/* For tablets: */
@@ -14495,11 +14508,11 @@ p {
 	}
 
 	.titleInside {
-		font-size:30px;
-		font-weight:bold;
-		text-align:center;
-		margin:0px;
-		padding-right:20px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		margin: 0px;
+		padding-right: 20px;
 	}
 
 	.iconSolutions {
@@ -14511,11 +14524,11 @@ p {
 	}
 
 	.titleInside-tech {
-		padding-right:0px;
+		padding-right: 0px;
 	}
 
 	.tech-first-text-title {
-		width:auto;
+		width: auto;
 	}
 }
 
@@ -14601,7 +14614,8 @@ a:hover {
 	text-decoration: none;
 }
 
-.listSolutions li, .listProduct li {
+.listSolutions li,
+.listProduct li {
 	list-style-image: url(/wp-content/themes/sixgill/images/td/bullet_green.png);
 	margin-bottom:5px;
 }
@@ -14636,7 +14650,7 @@ a:hover {
 	text-transform:uppercase;
 	color:#000;
 	border:4px solid #000000;
-	padding:10px 20px;
+	padding: 10px 20px;
 	text-align:center;
 	margin-bottom: 35px;
 }
@@ -14932,10 +14946,6 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .solution-subpage-first-block, .solution-subpage-second-block, .solution-subpage-last-block {
 	display: inline-block;
-}
-
-.font-size-0 {
-	font-size: 0;
 }
 
 .font-size-16, .text-left-block-subpage, .title-left-block-subpage  {
@@ -15704,6 +15714,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	#primary-menu {
 		opacity: 1 !important;
+		position: fixed;
+		left: 78px;
+		top: 36.83vh;
 	}
 
 	.subscribe-element {
@@ -15722,9 +15735,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.logo-sixgill {
-		width: 140px;
-		height: 111px;
+		width: 163px;
+		height: 129.5px;
 		background-image: url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
+		margin-top: 2.6vh;
+		margin-left: 31px;
 	}
 
 	.title-left-col {
@@ -15805,7 +15820,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	}
 
 	.block-link-subpage {
-		height:133px;
+		height: 133px;
 		width: 100%;
 	}
 
@@ -15842,6 +15857,14 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 	#press-text-post {
 		display: inline-block;
+	}
+
+	.side-header #header {
+		width: 225px;
+		background-color: #FFF;
+		border: none;
+		overflow: hidden;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
 	}
 }
 /* Footer desktop styles */
@@ -18319,4 +18342,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .fnone {
 	float: none !important;
+}
+
+.font-size-0 {
+	font-size: 0;
 }

@@ -231,14 +231,6 @@ Side Header
 
 @media (min-width: 1001px) {
 
-	.side-header #header {
-		width: 180px;
-		background-color: #FFF;
-		border: none;
-		overflow: hidden;
-		box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
-	}
-
 	.side-header #header-wrap {
 		width: 300px;
 		height: 100%;

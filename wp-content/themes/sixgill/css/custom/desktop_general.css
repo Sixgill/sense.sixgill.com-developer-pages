@@ -6,6 +6,9 @@
 
 	#primary-menu {
 		opacity: 1 !important;
+		position: fixed;
+		left: 64px;
+		top: 36.83vh;
 	}
 
 	.subscribe-element {
@@ -24,9 +27,11 @@
 	}
 
 	.logo-sixgill {
-		width: 140px;
-		height: 111px;
+		width: 163px;
+		height: 129.5px;
 		background-image: url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
+		margin-top: 2.6vh;
+		margin-left: 31px;
 	}
 
 	.title-left-col {
@@ -107,7 +112,7 @@
 	}
 
 	.block-link-subpage {
-		height:133px;
+		height: 133px;
 		width: 100%;
 	}
 
@@ -144,5 +149,13 @@
 
 	#press-text-post {
 		display: inline-block;
+	}
+
+	.side-header #header {
+		width: 225px;
+		background-color: #FFF;
+		border: none;
+		overflow: hidden;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
 	}
 }
