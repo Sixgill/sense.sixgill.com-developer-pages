@@ -48,4 +48,9 @@
 		margin-bottom: 11.25vw;
 		font-size: 22px;
 	}
+
+	.solution-use-cases-block-half {
+		width:92%;
+		margin: 2vw auto;
+	}
 }

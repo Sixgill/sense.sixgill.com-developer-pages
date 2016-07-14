@@ -66,7 +66,8 @@
 				</div>
 
 				<div class="menu-schedule-button-wrapper display-only-desktop">
-					<a href="#" class="menu-schedule-button-link">
+					<div class="nav-divider-line"></div>
+					<a href="#" class="menu-schedule-button-link" data-toggle="modal" data-target="#myModal">
 						<div class="menu-schedule-button">
 							<div class="vertical-centered">
 								Schedule a Demo

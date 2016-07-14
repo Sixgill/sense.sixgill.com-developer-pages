@@ -6,13 +6,18 @@
 		height: 43px;
 		background-color: #0051c6;
 		box-shadow: 0px 3px 0 0 #002d6f;
+		display: inline-block;
+		font-size: 16px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		color: #ffffff;
 	}
 
 	.menu-schedule-button-wrapper {
 		width: 225px;
 		position: fixed;
 		text-align: center;
-		bottom: 0px;
+		bottom: 20px;
 		left: 0px;
 	}
 

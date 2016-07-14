@@ -8,10 +8,6 @@ p {
 	font-weight:normal;
 }
 
-a {
-	color: #004FC8;
-}
-
 a:hover {
 	text-decoration: none;
 }
@@ -376,4 +372,10 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 #primary-menu a:not(:first-child) div {
 	padding-top: 15px;
+}
+
+/* For iOS Safary */
+input {
+	border-radius: 0 !important;
+	-webkit-appearance: none !important;
 }
