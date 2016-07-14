@@ -15903,6 +15903,14 @@ input {
 		left: 0px;
 	}
 
+	.nav-divider-line {
+		margin-bottom: 1.34vh;
+		width: 206.5px;
+	  height: 1px;
+	  background-color: #ebebeb;
+		display: inline-block;
+	}
+
 }
 /* Footer desktop styles */
 @media only screen and (min-width : 1001px) {
