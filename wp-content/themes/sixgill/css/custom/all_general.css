@@ -363,3 +363,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	font-weight: 100;
 	line-height: 1em;
 }
+
+/* For iOS Safary */
+input {
+    border-radius: 0 !important;
+		-webkit-appearance: none !important;
+}

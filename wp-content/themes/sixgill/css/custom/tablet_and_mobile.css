@@ -87,4 +87,8 @@
 	.solution-subpage-bottom-link-description, .solution-subpage-bottom-link {
 		font-size: 18px;
 	}
+
+	.footer-subscription-form-wrapper {
+		max-width: 490px;
+	}
 }
