@@ -14597,6 +14597,7 @@ p {
 		width: 390px;
 	}
 }
+/* General Common styles */
 body, p {
 	font-family: "Lato", serif, sans-serif;
 }
@@ -14975,6 +14976,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 #primary-menu a:not(:first-child) div {
 	padding-top: 15px;
 }
+/* Footer Common styles */
 .footer {
 	background-color: #2e2e2e;
 	position: relative;
@@ -15055,8 +15057,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .footer-subscription-form-wrapper p {
 	margin-bottom: 0px !important;
 }
-
-
+/* Blog Common styles */
 .subscribe-email-focus::-webkit-input-placeholder{
 	font-size: 0px;
 }
@@ -15162,6 +15163,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .margin-bottom-title {
 	margin-bottom: 25px;
 }
+/* Company Common styles */
 .company-learn-more-text {
 	display: none;
 }
@@ -15177,6 +15179,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 #board {
 	background-color:#2e2e2e;
 }
+/* General Common styles */
 .hr-home-sub-title {
 	max-width: 650px;
 }
@@ -15297,6 +15300,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .home-logo-container:nth-child(5n) {
 	margin-right: 0px;
 }
+/* Solutions Common styles */
 .solutions-subpage-text, .solutions-subpage-thumbnail {
 	text-align: left;
 }
@@ -15446,7 +15450,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 .solution-use-cases-block-half{
 	width: 48%;
-	margin: 0 1%;	
+	margin: 0 1%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -15561,6 +15565,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .solution-subpage-last-section-text-wrapper {
 	display: inline-block;
 }
+/* Resources Common styles */
 .resources-background {
 	background-color: #eeeeee;
 }
@@ -15646,14 +15651,16 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	border-color: transparent;
 	border: 0px;
 }
-	#tech-page-header-background {
-		background-image: url('/wp-content/themes/sixgill/images/td/hero/dollarphotoclub_77872129_web.jpg'); 
-		background-position: center bottom;
-	}
+/* Tech Common styles */
+#tech-page-header-background {
+	background-image: url('/wp-content/themes/sixgill/images/td/hero/dollarphotoclub_77872129_web.jpg');
+	background-position: center bottom;
+}
 
-	.tech-top-header-gray, .tech-top-header-blue {
-		line-height: 1.2;
-	}
+.tech-top-header-gray, .tech-top-header-blue {
+	line-height: 1.2;
+}
+/* Press Common styles */
 .press-post-source {
 	font-size: 16px;
 	font-weight: bold;
@@ -15683,9 +15690,11 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 .posts-list {
 	margin-bottom: 30px;
 }
+/* Legal Common styles */
 #legal-text {
 	max-width:900px;
 }
+/* Products Common styles */
 #sassist {
 	padding-top: 40px;
 }
@@ -18125,7 +18134,8 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 		font-size: 18px;
 	}
 }
-/* Wide tablets or very small laptop screens and landscape tablets */
+/* Custom resolutions */
+
 @media (min-width: 1001px) and (max-width: 1266px) {
 
 	.subscribe-block {

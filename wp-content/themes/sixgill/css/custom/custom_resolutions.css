@@ -1,4 +1,5 @@
-/* Wide tablets or very small laptop screens and landscape tablets */
+/* Custom resolutions */
+
 @media (min-width: 1001px) and (max-width: 1266px) {
 
 	.subscribe-block {

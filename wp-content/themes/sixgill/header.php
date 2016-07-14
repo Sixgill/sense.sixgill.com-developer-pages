@@ -65,5 +65,15 @@
 					<?php get_template_part('menu'); ?>
 				</div>
 
+				<div class="menu-schedule-button-wrapper display-only-desktop">
+					<a href="#" class="menu-schedule-button-link">
+						<div class="menu-schedule-button">
+							<div class="vertical-centered">
+								Schedule a Demo
+							</div>
+						</div>
+					</a>
+				</div>
+
 			</div>
 		</header>
