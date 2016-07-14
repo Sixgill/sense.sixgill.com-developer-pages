@@ -4881,6 +4881,14 @@ $(function() {
 jQuery(function($){
 	
 });
+jQuery(function($){
+	if(screen.width < 1000) {
+		$('.gallery-description-inner').on("click touchstart", function() {
+			$(this).parent().find('.gallery-link').trigger('click');
+			console.log('click');
+		});
+	}
+});
 jQuery(function($) {
 	$(window).resize(function() {
 		if(window.menuShowFlag && $(window).width()>1000) {
