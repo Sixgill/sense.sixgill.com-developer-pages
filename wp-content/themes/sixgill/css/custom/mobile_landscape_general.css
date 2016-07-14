@@ -50,7 +50,7 @@
 
 	#primary-menu > ul > li {
     left: 0px;
-    top: 0px;
+    top: 40px;
     position: absolute;
     width: 100%;
 	}

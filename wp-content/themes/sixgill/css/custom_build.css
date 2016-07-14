@@ -17157,8 +17157,7 @@ input {
 /* Menu mobile portrait styles */
 @media (max-width: 500px) and (max-aspect-ratio: 4/3) {
 
-
-
+	
 }
 /* Footer mobile portrait styles */
 @media (max-width: 500px) and (max-aspect-ratio: 4/3) {
@@ -17393,7 +17392,7 @@ input {
 
 	#primary-menu > ul > li {
     left: 0px;
-    top: 0px;
+    top: 40px;
     position: absolute;
     width: 100%;
 	}
@@ -17428,7 +17427,7 @@ input {
 /* Press Mobile landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
 
-
+	
 
 }
 /* Footer Mobile landscape styles */
@@ -17689,7 +17688,9 @@ input {
 /* Legal mobile portrait and landscape styles */
 @media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {
 
-
+	#logo {
+		margin: 10px 40px 10px 15px;
+	}
 
 }
 /* Footer mobile portrait and landscape styles */
