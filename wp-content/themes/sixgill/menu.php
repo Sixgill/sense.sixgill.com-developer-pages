@@ -41,15 +41,10 @@
 	include(locate_template('menu_list.php'));
 
 ?>
-
+<div class="clear"></div>
 <nav id="primary-menu">
 	<ul>
 		<li>
-			<!--
-			<div class="menu-search-mobile-tablet no-desktop-display">
-				get_template_part('searchform-static');
-			</div>
-			-->
 			<?php
 				foreach($menu as $menuElement) {
 					echo makeMenuElement(
@@ -61,7 +56,6 @@
 						count($menu)
 					);
 				}
-				get_template_part('global_social_buttons');
 			?>
 		</li>
 	</ul>

@@ -61,8 +61,19 @@
 					<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" style="height: 100%;" alt=""/>
 				</div>
 
-				<div class="container clearfix menu-container">
+				<div class="clearfix menu-container">
 					<?php get_template_part('menu'); ?>
+				</div>
+
+				<div class="menu-schedule-button-wrapper display-only-desktop">
+					<div class="nav-divider-line"></div>
+					<a href="#" class="menu-schedule-button-link" data-toggle="modal" data-target="#myModal">
+						<div class="menu-schedule-button">
+							<div class="vertical-centered">
+								Schedule a Demo
+							</div>
+						</div>
+					</a>
 				</div>
 
 			</div>
