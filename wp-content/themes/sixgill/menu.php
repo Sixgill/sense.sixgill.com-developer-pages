@@ -56,6 +56,7 @@
 						count($menu)
 					);
 				}
+				get_template_part('mobile_social_buttons');
 			?>
 		</li>
 	</ul>
