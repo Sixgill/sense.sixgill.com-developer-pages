@@ -1,14 +1,12 @@
 /* Press mobile portrait styles */
-@media (max-width: 500px) and (max-aspect-ratio: 4/3) {
-	.press-post-title {
-		color: #444;
-	}
-	.press-post {
-		padding-top: 85px;
-	}
-	
-	.press-content-padding {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+.press-post-title {
+	color: #444;
+}
+.press-post {
+	padding-top: 85px;
+}
+
+.press-content-padding {
+	padding-left: 20px;
+	padding-right: 20px;
 }

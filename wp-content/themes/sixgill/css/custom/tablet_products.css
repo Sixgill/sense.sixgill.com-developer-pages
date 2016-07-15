@@ -1,6 +1,4 @@
 /* Products tablet styles */
-@media (min-width: 500px) and (max-width: 1000px) and (max-aspect-ratio: 4/3) {
-	.products-content-spacing {
-		padding-top: 10px;
-	}
+.products-content-spacing {
+	padding-top: 10px;
 }
