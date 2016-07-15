@@ -1,11 +1,9 @@
 /* Press Mobile landscape styles */
-@media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
-	.press-post {
-		padding-top: 16px;
-	}
-	
-	.press-content-padding {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+.press-post {
+	padding-top: 16px;
+}
+
+.press-content-padding {
+	padding-left: 20px;
+	padding-right: 20px;
 }

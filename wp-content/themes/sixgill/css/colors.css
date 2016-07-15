@@ -43,7 +43,9 @@ Replace the HEX Code with your Desired Color HEX
 .pagination > .active > a:hover,
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
-.pagination > .active > span:focus { background-color: #004FC8 !important; }
+.pagination > .active > span:focus {
+	background-color: #004FC8 !important;
+}
 
 #primary-menu.style-4 > ul > li:hover > a,
 #primary-menu.style-4 > ul > li.current > a,
@@ -57,26 +59,31 @@ Replace the HEX Code with your Desired Color HEX
 .dark .post-timeline .entry:hover .entry-timeline,
 .dark .post-timeline .entry:hover .timeline-divider,
 .dark .cart-product-thumbnail img:hover,
-.heading-block.border-color:after { border-color: #1ABC9C; }
+.heading-block.border-color:after {
+	border-color: #1ABC9C;
+}
 
-.top-links ul ul,
 .top-links ul div.top-link-section,
 #primary-menu.style-6 > ul > li > a:after,
 #primary-menu.style-6 > ul > li.current > a:after,
 #top-cart .top-cart-content,
 .fancy-title.title-border-color:before,
-.dark #primary-menu:not(.not-dark) ul ul,
-#primary-menu.dark ul ul,
 .dark #top-cart .top-cart-content,
 .tabs.tabs-tb ul.tab-nav li.ui-tabs-active a,
 .irs-from:after,
 .irs-single:after,
-.irs-to:after { border-top-color: #1ABC9C; }
+.irs-to:after {
+	border-top-color: #1ABC9C;
+}
 
 #page-menu.dots-menu nav li span:after,
-.title-block { border-left-color: #1ABC9C; }
+.title-block {
+	border-left-color: #1ABC9C;
+}
 
-.title-block-right { border-right-color: #1ABC9C; }
+.title-block-right {
+	border-right-color: #1ABC9C;
+}
 
 .fancy-title.title-bottom-border h1,
 .fancy-title.title-bottom-border h2,
@@ -85,7 +92,9 @@ Replace the HEX Code with your Desired Color HEX
 .fancy-title.title-bottom-border h5,
 .fancy-title.title-bottom-border h6,
 .more-link,
-.tabs.tabs-bb ul.tab-nav li.ui-tabs-active a { border-bottom-color: #1ABC9C; }
+.tabs.tabs-bb ul.tab-nav li.ui-tabs-active a {
+	border-bottom-color: #1ABC9C;
+}
 
 .border-color,
 .process-steps li.active a,
@@ -96,12 +105,18 @@ Replace the HEX Code with your Desired Color HEX
 .pagination > .active > a:hover,
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
-.pagination > .active > span:focus { border-color: #1ABC9C !important; }
+.pagination > .active > span:focus {
+	border-color: #1ABC9C !important;
+}
 
 .fbox-effect.fbox-dark .fbox-icon i:after,
-.dark .fbox-effect.fbox-dark .fbox-icon i:after { box-shadow: 0 0 0 2px #1ABC9C; }
+.dark .fbox-effect.fbox-dark .fbox-icon i:after {
+	box-shadow: 0 0 0 2px #1ABC9C;
+}
 
 .fbox-border.fbox-effect.fbox-dark .fbox-icon i:hover,
 .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i,
 .dark .fbox-border.fbox-effect.fbox-dark .fbox-icon i:hover,
-.dark .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i { box-shadow: 0 0 0 1px #1ABC9C; }
+.dark .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i {
+	box-shadow: 0 0 0 1px #1ABC9C;
+}
