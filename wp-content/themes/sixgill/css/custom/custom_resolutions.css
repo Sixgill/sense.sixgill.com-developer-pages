@@ -1,7 +1,6 @@
 /* Custom resolutions */
 
-@media (min-width: 1001px) and (max-width: 1266px) {
-
+@media (min-width: 1201px) and (max-width: 1266px) {
 	.subscribe-block {
 		width: 100%;
 	}
@@ -37,7 +36,7 @@
 }
 
 /* For share botton on blog: */
-@media (min-width: 1001px) and (max-width: 1300px) {
+@media (min-width: 1201px) and (max-width: 1300px) {
 	.my_containerSolution {
 		margin-left: 60px;
 	}

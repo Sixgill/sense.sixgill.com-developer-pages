@@ -1,20 +1,17 @@
-/* Home Mobile landscape styles */
-@media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
-	
-	.video-wrap video {
-		width: 100%;
-		height: initial;
-	}
+/* Home Mobile landscape styles */	
+.video-wrap video {
+	width: 100%;
+	height: initial;
+}
 
-	.home-text-2{
-		margin-top: 110px;
-	}
+.home-text-2{
+	margin-top: 110px;
+}
 
-	.hr-home-sup-title {
-		max-width: 550px;
-	}
+.hr-home-sup-title {
+	max-width: 550px;
+}
 
-	.height-video-container {
-		min-height: 246px !important;
-	}
+.height-video-container {
+	min-height: 246px !important;
 }

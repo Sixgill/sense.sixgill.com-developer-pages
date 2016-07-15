@@ -1,23 +1,21 @@
 /* Blog mobile portrait styles */
-@media (max-width: 500px) and (max-aspect-ratio: 4/3) {
-	.form-page-search {
-		margin: 0 auto;
-		margin-top: 90px;
-	}
+.form-page-search {
+	margin: 0 auto;
+	margin-top: 90px;
+}
 
-	.background-search {
-		margin-top: 80px;
-	}
+.background-search {
+	margin-top: 80px;
+}
 
-	.margin-table-search {
-		margin-top: 0px;
-	}
+.margin-table-search {
+	margin-top: 0px;
+}
 
-	.menu-search-mobile-tablet {
-		margin-top: 12px;
-	}
+.menu-search-mobile-tablet {
+	margin-top: 12px;
+}
 
-	.search-result-section {
-		margin-top: 81px;
-	}
+.search-result-section {
+	margin-top: 81px;
 }

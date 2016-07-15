@@ -1,26 +1,24 @@
 /* Products desktop styles */
-@media only screen and (min-width : 1001px) {
-	/* Fix scrolling to Reach */
-	#before_ssdk {
-		margin-bottom: -145px !important;
-	}
+/* Fix scrolling to Reach */
+#before_ssdk {
+	margin-bottom: -145px !important;
+}
 
-	#ssdk {
-		padding-top: 145px;
-	}
-	/* End of scrolling fix */
+#ssdk {
+	padding-top: 145px;
+}
+/* End of scrolling fix */
 
-	/* Fix scrolling to Sense */
-	#before_ssense {
-		margin-bottom: -90px !important;
-	}
+/* Fix scrolling to Sense */
+#before_ssense {
+	margin-bottom: -90px !important;
+}
 
-	#ssense {
-		padding-top: 90px;
-	}
-	/* End of scrolling fix */
+#ssense {
+	padding-top: 90px;
+}
+/* End of scrolling fix */
 
-	#sassist {
-		padding-bottom: 40px;
-	}
+#sassist {
+	padding-bottom: 40px;
 }

@@ -1,61 +1,6 @@
 <?php
-	//Concat all custom js and css
-	if($_SERVER['SERVER_NAME']=="dev-sixgill.pantheonsite.io") {
-		$path = getCurrentDir()."/wp-content/themes/sixgill";
 
-		$jsResultFile = $path."/js/custom_build.js";
-		$jsSource = array(
-			$path."/js/plugins.js",
-			$path."/js/functions.js",
-			$path."/js/custom/*.{js, JS}",
-			$path."/js/lightbox.min.js",
-			//$path."/js/jquery.swipebox.min.js"
-		);
-
-		$cssResultFile = $path."/css/custom_build.css";
-		$pagesList = "{general,menu,footer,blog,company,home,solutions,resources,tech,press,legal,products}";
-		$cssSource = array(
-			$path."/css/lightbox.min.css",
-			//$path."/css/swipebox.min.css",
-			$path."/css/custom/fonts.css",
-			$path."/css/bootstrap.min.css",
-			$path."/style.css",
-			$path."/css/swiper.css",
-			$path."/css/font-icons.css",
-			$path."/css/animate.css",
-			$path."/css/magnific-popup.css",
-			$path."/css/responsive.css",
-			$path."/css/colors.css",
-			$path."/css/custom.css",
-			$path."/css/custom/all_".$pagesList.".css",
-			$path."/css/custom/desktop_".$pagesList.".css",
-			$path."/css/custom/tablet_".$pagesList.".css",
-			$path."/css/custom/mobile_portrait_".$pagesList.".css",
-			$path."/css/custom/mobile_landscape_".$pagesList.".css",
-			$path."/css/custom/mobile_portrait_landscape_".$pagesList.".css",
-			$path."/css/custom/tablet_and_mobile.css",
-			$path."/css/custom/custom_resolutions.css",
-			$path."/css/custom/atomic.css"
-		);
-
-		function concatFiles($filesList, $resultFilename) {
-			$out = fopen($resultFilename, "w");
-			foreach($filesList as $filesSelector) {
-				foreach(glob($filesSelector, GLOB_BRACE) as $file) {
-					$in = fopen($file, "r");
-					while ($line = fgets($in)) {
-						fwrite($out, $line);
-					}
-					fclose($in);
-				}
-			}
-			fclose($out);
-		}
-
-		concatFiles($jsSource, $jsResultFile);
-		concatFiles($cssSource, $cssResultFile);
-	}
-
+	include(locate_template('builder.php'));
 	function sixgill_custom_stylesheets() {
 		if ( ! is_admin() ) {
 			wp_enqueue_style( 'sixgill_custom_styles', get_template_directory_uri() . '/css/custom_build.css', array(), "14082016");
