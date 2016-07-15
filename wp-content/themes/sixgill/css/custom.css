@@ -268,53 +268,6 @@ Side Header
 		height: auto;
 	}
 
-	.side-header #primary-menu ul ul {
-		position: relative;
-		width: 100%;
-		background-color: transparent;
-		box-shadow: none;
-		border: none;
-		height: auto;
-		z-index: 1;
-		top: 0;
-		left: 0;
-		margin: 5px 0;
-		padding-left: 12px;
-	}
-
-	.side-header #primary-menu ul ul ul {
-		top: 0 !important;
-		left: 0;
-	}
-
-	.side-header #primary-menu ul ul.menu-pos-invert {
-		left: 0;
-		right: auto;
-	}
-
-	.side-header #primary-menu ul ul ul.menu-pos-invert { right: auto; }
-
-	.side-header #primary-menu ul ul li {
-		margin: 0;
-		border: 0;
-	}
-
-	.side-header #primary-menu ul ul li:first-child {
-		border-top: 0;
-	}
-
-	.side-header #primary-menu ul ul a {
-		font-size: 12px;
-		height: auto !important;
-		line-height: 24px !important;
-		padding: 2px 0 !important;
-	}
-
-	.side-header #primary-menu ul ul li:hover > a {
-		background-color: transparent !important;
-		color: #444 !important;
-	}
-
 	.side-header:not(.open-header) #wrapper {
 		margin: 0 0 0 225px !important;
 		width: auto !important;
