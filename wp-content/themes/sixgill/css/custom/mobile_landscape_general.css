@@ -1,84 +1,81 @@
 /* General Mobile landscape styles */
-@media (max-width: 1000px) and (min-aspect-ratio: 4/3) {
-	#primary-menu-trigger {
-		top: 10px;
-	}
+#primary-menu-trigger {
+	top: 10px;
+}
 
-	.hide-landscape-mobile {
-		display: none;
-	}
+.hide-landscape-mobile {
+	display: none;
+}
 
-	#header {
-		border: 0px;
-	}
+#header {
+	border: 0px;
+}
 
-	.global-social-buttons-container {
-		position: static;
-		margin-left: 0px;
-		padding-right: 0px;
-		padding-bottom: 0px;
-		text-align: center;
-	}
+.global-social-buttons-container {
+	position: static;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+}
 
-	#header {
-		position: relative !important;
-	}
+#header {
+	position: relative !important;
+}
 
-	.btnInside {
-		width: 400px;
-	}
+.btnInside {
+	width: 400px;
+}
 
-	#primary-menu-trigger {
-		top: 10px;
-	}
+#primary-menu-trigger {
+	top: 10px;
+}
 
-	.no-mobile-landscape-display,
-	.display-only-mobile-portrait,
-	.display-only-desktop,
-	.display-only-tablet {
-		display: none !important;
-	}
+.no-mobile-landscape-display,
+.display-only-mobile-portrait,
+.display-only-desktop,
+.display-only-tablet {
+	display: none !important;
+}
 
-	#primary-menu a div {
-		height: 70px;
-		font-size: 18px;
-	}
+#primary-menu a div {
+	height: 70px;
+	font-size: 18px;
+}
 
-	#primary-menu a:last-of-type div {
-		margin-bottom: 25px;
-	}
+#primary-menu a:last-of-type div {
+	margin-bottom: 25px;
+}
 
-	#primary-menu > ul > li {
-    left: 0px;
-    top: 40px;
-    position: absolute;
-    width: 100%;
-	}
+#primary-menu > ul > li {
+  left: 0px;
+  top: 40px;
+  position: absolute;
+  width: 100%;
+}
 
-	#mobile-table-search {
-    top: 60px;
-    position: absolute;
-	}
+#mobile-table-search {
+  top: 60px;
+  position: absolute;
+}
 
-	.global-social-buttons-list {
-		padding-bottom: 18px;
-	}
+.global-social-buttons-list {
+	padding-bottom: 18px;
+}
 
-	#primary-menu a:first-of-type > div {
-		margin-top: 30px;
-	}
+#primary-menu a:first-of-type > div {
+	margin-top: 30px;
+}
 
-	.menu-social-link {
-		padding-right: 33px !important;
-		padding-left: 33px !important;
-	}
+.menu-social-link {
+	padding-right: 33px !important;
+	padding-left: 33px !important;
+}
 
-	.mobile-landscape-vertical-centered {
-		position: relative;
-		top: 50%;
-		-webkit-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		transform: translateY(-50%);
-	}
-
+.mobile-landscape-vertical-centered {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
