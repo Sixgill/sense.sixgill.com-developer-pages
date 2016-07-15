@@ -14,9 +14,9 @@ jQuery(function($){
   });
 
 	$("#solution-carousel-button-left").click(function(){
-    owl.trigger('owl.next');
+    owl.trigger('owl.prev');
   })
   $("#solution-carousel-button-right").click(function(){
-    owl.trigger('owl.prev');
+    owl.trigger('owl.next');
   })
 });
