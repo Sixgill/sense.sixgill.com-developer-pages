@@ -1,5 +1,8 @@
 jQuery(function($){
-	$("#owl-demo").owlCarousel({
+
+	 var owl = $("#solution-subpage-carousel");
+
+	owl.owlCarousel({
 
       navigation : false, // Show next and prev buttons
       slideSpeed : 300,
@@ -9,4 +12,11 @@ jQuery(function($){
     	autoHeight : true
 
   });
+
+	$("#solution-carousel-button-left").click(function(){
+    owl.trigger('owl.next');
+  })
+  $("#solution-carousel-button-right").click(function(){
+    owl.trigger('owl.prev');
+  })
 });

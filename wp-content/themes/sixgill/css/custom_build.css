@@ -14289,7 +14289,6 @@ input {
 }
 
 .owl-carousel {
-	width: 100%;
 	background-color: #ffffff;
 	border: 1px solid rgba(153, 153, 153, 0.32);
 }
@@ -14300,6 +14299,31 @@ input {
 
 .solution-subpage-slide-info {
 	margin-top: 1.72vw;
+}
+
+.solution-carousel-button {
+	display: inline-block;
+	font-size: 5.07vw;
+	font-weight: 100;
+	color: #999999;
+	padding-bottom: 5vw;
+	cursor: pointer;
+	margin-right: 0.5vw;
+}
+
+.solution-carousel-button-left {
+	float: left;
+}
+
+.solution-carousel-button-right {
+	float: right;
+}
+
+.own-carousel-n-controls-wrapper {
+	width: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* Resources desktop styles */
 .resource-block {
