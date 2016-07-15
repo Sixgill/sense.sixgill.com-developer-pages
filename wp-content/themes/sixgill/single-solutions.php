@@ -100,7 +100,7 @@
 						?>
 					</div>
 				</div>
-				<div id="solution-carousel-button-left" class="solution-carousel-button solution-carousel-button-right">
+				<div id="solution-carousel-button-right" class="solution-carousel-button solution-carousel-button-right">
 					&gt;
 				</div>
 			</div>
