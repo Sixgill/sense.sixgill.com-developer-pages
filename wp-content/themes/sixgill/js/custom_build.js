@@ -4805,7 +4805,8 @@ jQuery(function($) {
 });
 jQuery(function($){
 
-	 var owl = $("#solution-subpage-carousel");
+	var owl = $("#solution-subpage-carousel");
+	var autoHeightOption = (owl.attr('autoheight') == "on");
 
 	owl.owlCarousel({
 
@@ -4814,7 +4815,7 @@ jQuery(function($){
       paginationSpeed : 400,
 			pagination: false,
 			singleItem : true,
-    	autoHeight : false
+    	autoHeight : autoHeightOption
 
   });
 

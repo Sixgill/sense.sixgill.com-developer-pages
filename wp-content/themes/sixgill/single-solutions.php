@@ -79,7 +79,7 @@
 					</div>
 				</div>
 				<div class="own-carousel-outside-wrapper">
-					<div id="solution-subpage-carousel" class="owl-carousel owl-theme">
+					<div id="solution-subpage-carousel" class="owl-carousel owl-theme" autoheight="<?php echo get_field('carousel_auto_height') ? 'on' : 'off'; ?>">
 
 						<?php
 							foreach($galleryImages as $slide) {
