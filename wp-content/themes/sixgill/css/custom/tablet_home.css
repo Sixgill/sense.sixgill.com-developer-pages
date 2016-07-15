@@ -1,23 +1,21 @@
 /* Home tablet styles */
-@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3) {
-	.homeSupTit-with-line {
-		padding-left: 8px;
-		padding-right: 8px;
-	}
+.homeSupTit-with-line {
+	padding-left: 8px;
+	padding-right: 8px;
+}
 
-	.home-diagram {
-		
-	}
+.home-diagram {
 
-	.home-text-2{
-		margin-top:110px;
-	}
+}
 
-	.video-wrap video {
-		height: 100%;
-	}
+.home-text-2{
+	margin-top:110px;
+}
 
-	.hr-home-sup-title {
-		max-width: 600px;
-	}
+.video-wrap video {
+	height: 100%;
+}
+
+.hr-home-sup-title {
+	max-width: 600px;
 }

@@ -72,30 +72,28 @@
 			<div class="solution-subpage-gallery-block-title">
 				VIEW THE PROCESS
 			</div>
-			<div class="solution-subpage-gallery-thumbnail-wrapper">
-				<img src="<?php echo $galleryImages[0]['url']; ?>" class="solution-subpage-gallery-thumbnail">
-			</div>
+			<div class="own-carousel-outside-wrapper">
+				<div id="owl-demo" class="owl-carousel owl-theme">
 
-			<a
-				rel="lightbox[solutionGallery]"
-				class="solution-subpage-gallery-button-link"
-				href="<?php echo $galleryImages[0]['url']; ?>"
-			>
-				<div class="solution-subpage-gallery-button solution-subpage-gallery-view-button">
-					<img
-						src="/wp-content/themes/sixgill/images/td/solutions/subpage_zoom_icon.png"
-						class="solution-subpage-gallery-button-icon vertical-centered"
-					>
-					<div class="solution-subpage-gallery-button-title-wrapper vertical-centered">
-						View Presentation
-					</div>
+					<?php
+						foreach($galleryImages as $slide) {
+							echo '
+								<div class="item">
+									<img class="solution-subpage-slide-image" src="'.$slide['url'].'" alt="'.$slide['alt'].'">
+									<div class="solution-subpage-slide-info">
+										<div class="solution-subpage-slide-title">
+											'.$slide['title'].'
+										</div>
+										<div class="solution-subpage-slide-description">
+											'.$slide['description'].'
+										</div>
+									</div>
+								</div>
+							';
+						}
+					?>
 				</div>
-			</a>
-			<?php
-				for($i=1; $i < count($galleryImages); $i++) {
-					echo '<a class="hidden" href="'.$galleryImages[$i]['url'].'" rel="lightbox[solutionGallery]"></a>';
-				}
-			?>
+			</div>
 
 			<?php if(!empty($galleryFile)) { ?>
 				<a
@@ -109,7 +107,7 @@
 						>
 
 						<div class="solution-subpage-gallery-button-title-wrapper vertical-centered">
-							Download
+							Download Presentation
 						</div>
 					</div>
 				</a>

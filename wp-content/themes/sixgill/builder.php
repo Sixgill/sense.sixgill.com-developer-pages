@@ -9,7 +9,7 @@
 			$path."/js/plugins.js",
 			$path."/js/functions.js",
 			$path."/js/custom/*.{js, JS}",
-			$path."/js/lightbox.min.js",
+			$path."/js/owl.carousel.min.js",
 		);
 
 		$cssResultFile = $path."/css/custom_build.css";
@@ -30,15 +30,23 @@
 
 		$cssSource = array(
 			array(
-				"selector" => $path."/css/lightbox.min.css",
-				"wrapper" => false
-			),
-			array(
 				"selector" => $path."/css/custom/fonts.css",
 				"wrapper" => false
 			),
 			array(
 				"selector" => $path."/css/bootstrap.min.css",
+				"wrapper" => false
+			),
+			array(
+				"selector" => $path."/css/owl.carousel.css",
+				"wrapper" => false
+			),
+			array(
+				"selector" => $path."/css/owl.theme.css",
+				"wrapper" => false
+			),
+			array(
+				"selector" => $path."/css/owl.transition.css",
 				"wrapper" => false
 			),
 			array(
@@ -83,7 +91,7 @@
 			),
 			array(
 				"selector" => $path."/css/custom/tablet_".$pagesList.".css",
-				"wrapper" => "@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3) {"
+				"wrapper" => "@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1200px) {"
 			),
 			array(
 				"selector" => $path."/css/custom/mobile_portrait_".$pagesList.".css",
@@ -91,11 +99,11 @@
 			),
 			array(
 				"selector" => $path."/css/custom/mobile_landscape_".$pagesList.".css",
-				"wrapper" => "@media (max-width: 1200px) and (min-aspect-ratio: 4/3) {"
+				"wrapper" => "@media (max-width: 1000px) and (min-aspect-ratio: 4/3) {"
 			),
 			array(
 				"selector" => $path."/css/custom/mobile_portrait_landscape_".$pagesList.".css",
-				"wrapper" => "@media (max-width: 1200px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {"
+				"wrapper" => "@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {"
 			),
 			array(
 				"selector" => $path."/css/custom/tablet_and_mobile.css",

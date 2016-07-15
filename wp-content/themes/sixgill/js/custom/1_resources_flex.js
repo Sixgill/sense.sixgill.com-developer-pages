@@ -29,7 +29,7 @@ $(function() {
 		});
 	}
 
-	if($(window).width() > 1000) {
+	if($(window).width() > 1200) {
 		resourcesBlocks.mouseenter(function() {
 			$(this).css('box-shadow', '0px 0px '+boxShadowSize+'px #c1c1c1')
 		});
@@ -66,10 +66,10 @@ $(function() {
 	resizeResourcesContainers();
 
 	if (device.mobile() || device.tablet()){
-		resourcesBlocks.click(function() { 
+		resourcesBlocks.click(function() {
 			$(this).find('.resource-link').attr({'data-target':'#'});
 			window.currentDownloadLink = $(this).find('.resource-link-container').attr('data-permalink');
-			$('#myResource').modal('show'); 
+			$('#myResource').modal('show');
 		});
-	} 
+	}
 });

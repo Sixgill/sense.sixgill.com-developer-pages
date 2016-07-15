@@ -50,6 +50,7 @@
 .solution-subpage-gallery-block {
 	padding-bottom: 5.6vw;
 	padding-top: calc(5.38vw - 30px);
+	text-align: center;
 }
 
 .solution-subpage-gallery-block-title {
@@ -63,8 +64,8 @@
 }
 
 .solution-subpage-gallery-button {
-	width: 16.69vw;
-	height: 3.1vw;
+	width: 20.79vw;
+	height: 3.148vw;
   font-size: 1.17vw;
 }
 
@@ -91,4 +92,46 @@
 .solution-use-cases-block-content {
 	width: 68vw;
 	margin: 0 auto 4vw;
+}
+
+.solution-subpage-slide-title {
+	font-family: Lato;
+  font-size: 1.78vw;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  color: #0051c6;
+	margin-bottom: 1vw;
+}
+
+.solution-subpage-slide-description {
+  font-size: 18px;
+	margin-bottom: 1.8vw;
+	color: #000000;
+}
+
+.solution-subpage-slide-description, .solution-subpage-slide-title {
+	text-align: left;
+	width: 95.68%;
+	display: inline-block;
+	font-family: 'Lato';
+}
+
+.own-carousel-outside-wrapper {
+	display: inline-block;
+	width: 87.55%;
+	margin-bottom: 2.232vw;
+}
+
+.owl-carousel {
+	width: 100%;
+	background-color: #ffffff;
+	border: 1px solid rgba(153, 153, 153, 0.32);
+}
+
+.solution-subpage-slide-image {
+	border-bottom: 1px solid rgba(153, 153, 153, 0.32);
+}
+
+.solution-subpage-slide-info {
+	margin-top: 1.72vw;
 }

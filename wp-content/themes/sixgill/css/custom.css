@@ -229,7 +229,7 @@ Side Header
 	margin-right: 10px;
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1201px) {
 
 	.side-header #header-wrap {
 		width: 300px;
@@ -316,7 +316,7 @@ Side Header
 	}
 
 	.side-header:not(.open-header) #wrapper {
-		margin: 0 0 0 180px !important;
+		margin: 0 0 0 225px !important;
 		width: auto !important;
 	}
 
@@ -551,7 +551,7 @@ p {
 	}
 }
 
-@media only screen and (min-width: 1001px) {/* For desktop: */
+@media only screen and (min-width: 1201px) {/* For desktop: */
 	.txtVideo {
 		font-size: 28px;
 		font-weight: normal;
