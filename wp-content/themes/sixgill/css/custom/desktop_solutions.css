@@ -142,15 +142,6 @@
 	color: #999999;
 	padding-bottom: 5vw;
 	cursor: pointer;
-	margin-right: 0.5vw;
-}
-
-.solution-carousel-button-left {
-	float: left;
-}
-
-.solution-carousel-button-right {
-	float: right;
 }
 
 .own-carousel-n-controls-wrapper {
@@ -158,4 +149,14 @@
 	display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.solution-carousel-button-image {
+	width: 2.16vw;
+	height: 4.03vw;
+}
+
+.solution-carousel-button-wrapper {
+	text-align: center;
+	width: 5.5%;
 }
