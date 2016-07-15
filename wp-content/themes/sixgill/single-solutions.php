@@ -75,7 +75,7 @@
 			<div class="own-carousel-n-controls-wrapper">
 				<div class="solution-carousel-button-wrapper">
 					<div id="solution-carousel-button-left" class="solution-carousel-button solution-carousel-button-left">
-						&lt;
+						<img class="solution-carousel-button-image" src="<?php echo get_template_directory_uri();?>/images/carousel_left.svg">
 					</div>
 				</div>
 				<div class="own-carousel-outside-wrapper">
@@ -100,8 +100,10 @@
 						?>
 					</div>
 				</div>
-				<div id="solution-carousel-button-right" class="solution-carousel-button solution-carousel-button-right">
-					&gt;
+				<div class="solution-carousel-button-wrapper">
+					<div id="solution-carousel-button-right" class="solution-carousel-button solution-carousel-button-right">
+						<img class="solution-carousel-button-image" src="<?php echo get_template_directory_uri();?>/images/carousel_right.svg">
+					</div>
 				</div>
 			</div>
 			<?php if(!empty($galleryFile)) { ?>
