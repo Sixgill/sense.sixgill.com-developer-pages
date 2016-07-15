@@ -65,6 +65,7 @@
 
 .footer-icons-wrapper {
 	width: 46%;
+	min-width: 180px;
 }
 
 .footer-copyright-wrapper {

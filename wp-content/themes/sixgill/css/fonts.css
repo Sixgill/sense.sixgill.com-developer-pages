@@ -5,12 +5,12 @@ Replace your Fonts as necessary
 -----------------------------------------------------------------*/
 body,
 small,
-#primary-menu ul ul li > a,
 .wp-caption,
 .feature-box.fbox-center.fbox-italic p,
 .skills li .progress-percent .counter,
-.nav-tree ul ul a,
-.font-body { font-family: 'Lato', sans-serif; }
+.font-body {
+	font-family: 'Lato', sans-serif;
+}
 
 h1,
 h2,
@@ -65,12 +65,6 @@ h6 {
 #logo {
 	font-size: 36px;
 	line-height: 100%;
-}
-
-#primary-menu ul ul li > a {
-	font-size: 12px;
-	font-weight: 600;
-	letter-spacing: 0;
 }
 
 .entry-meta li {
