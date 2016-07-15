@@ -9,7 +9,7 @@ jQuery(function($){
       paginationSpeed : 400,
 			pagination: false,
 			singleItem : true,
-    	autoHeight : true
+    	autoHeight : false
 
   });
 
