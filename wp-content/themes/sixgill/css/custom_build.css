@@ -15960,9 +15960,12 @@ input {
 	margin-bottom: 4vw;
 }
 
+.solution-subpage-gallery-button {
+	display: none !important;
+}
+
 .solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
 	margin-bottom: 2.5vw;
-	display: none !important;
 }
 
 .solution-subpage-gallery-button-icon {
