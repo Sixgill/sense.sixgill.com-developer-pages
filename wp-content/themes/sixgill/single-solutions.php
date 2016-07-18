@@ -128,7 +128,7 @@
 					href="<?php echo $galleryFile; ?>"
 					class="solution-subpage-gallery-button-link"
 				>
-					<div class="solution-subpage-gallery-button solution-subpage-gallery-download-button">
+					<div class="solution-subpage-gallery-button">
 						<img
 							src="/wp-content/themes/sixgill/images/td/solutions/subpage_download_icon.png"
 							class="solution-subpage-gallery-button-icon vertical-centered"
