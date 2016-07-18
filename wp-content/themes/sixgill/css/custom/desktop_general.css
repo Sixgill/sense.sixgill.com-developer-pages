@@ -64,10 +64,6 @@
 	display: none !important;
 }
 
-.my_subMenus {
-	margin-left: 15px;
-}
-
 .my_subMenus > a {
 	display: block;
 	margin-top: 3px;
@@ -146,7 +142,5 @@
 .side-header #header {
 	width: 225px;
 	background-color: #FFF;
-	border: none;
 	overflow: hidden;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
 }

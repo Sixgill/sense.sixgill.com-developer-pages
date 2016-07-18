@@ -1278,10 +1278,7 @@ body:not(.device-touch) #page-menu nav li a {
 	width: 260px;
 	height: 100%;
 	background-color: #FFF;
-	border: none;
-	border-right: 1px solid #EEE;
 	overflow: hidden;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
 }
 
 .side-header #logo {
@@ -13810,10 +13807,6 @@ input {
 	display: none !important;
 }
 
-.my_subMenus {
-	margin-left: 15px;
-}
-
 .my_subMenus > a {
 	display: block;
 	margin-top: 3px;
@@ -13892,9 +13885,7 @@ input {
 .side-header #header {
 	width: 225px;
 	background-color: #FFF;
-	border: none;
 	overflow: hidden;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
 }
 /* Menu desktop styles */
 .menu-schedule-button {
@@ -13944,6 +13935,17 @@ input {
 
 #primary-menu a {
 	display: inline-block;
+}
+
+#header {
+	border-width: 0px 5px 0px 0px;
+	border-style: solid;
+	border-color: #5ede6a;
+	-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5ede6a), to(#5eb26a)) 1 100%;
+	-webkit-border-image: -webkit-linear-gradient(#5ede6a, #5eb26a) 1 100%;
+	-moz-border-image: -moz-linear-gradient(#5ede6a, #5eb26a) 1 100%;
+	-o-border-image: -o-linear-gradient(#5ede6a, #5eb26a) 1 100%;
+	border-image: linear-gradient(to bottom, #5ede6a, #5eb26a) 1 100%;
 }
 /* Footer desktop styles */
 .footer {
