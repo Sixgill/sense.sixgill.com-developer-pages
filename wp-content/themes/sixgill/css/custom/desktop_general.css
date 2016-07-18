@@ -3,13 +3,6 @@
 	margin-left: -16px !important;
 }
 
-#primary-menu {
-	opacity: 1 !important;
-	position: fixed;
-	left: 64px;
-	top: 36.83vh;
-}
-
 .subscribe-element {
 	display: block;
 }

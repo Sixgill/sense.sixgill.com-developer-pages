@@ -1113,13 +1113,6 @@ body:not(.device-touch) #page-menu nav li a {
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
 }
 
-.side-header #header-wrap {
-	width: 300px;
-	height: 100%;
-	overflow: auto;
-	padding-right: 40px;
-}
-
 .side-header #logo {
 	float: none;
 }
