@@ -13902,12 +13902,10 @@ input {
 
 .menu-schedule-button-wrapper {
 	width: 225px;
-	position: fixed;
+	position: absolute;
 	text-align: center;
 	bottom: 20px;
 	left: 0px;
-	display: none;
-	transition: none;
 }
 
 .nav-divider-line {

@@ -11,17 +11,17 @@ jQuery(function($){
 
 	var homeScheduleButton = $('#home-button-on-video');
 	var menuScheduleButton = $('#menu-schedule-button-wrapper');
-	var isMenuScheduleButtonVisible = false;
+	var isMenuScheduleButtonVisible = true;
 
 	function checkHomeButton() {
 		if(isMenuScheduleButtonVisible) {
 			if(isScrolledIntoView(homeScheduleButton)) {
-				menuScheduleButton.toggle();
+				menuScheduleButton.fadeOut();
 				isMenuScheduleButtonVisible = false;
 			}
 		} else if(!isScrolledIntoView(homeScheduleButton)) {
-			 menuScheduleButton.toggle();
-			 isMenuScheduleButtonVisible = true;
+			menuScheduleButton.fadeIn();
+			isMenuScheduleButtonVisible = true;
 		}
 	}
 
