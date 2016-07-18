@@ -73,13 +73,17 @@
 				VIEW THE PROCESS
 			</div>
 			<div class="own-carousel-n-controls-wrapper">
-				<div class="solution-carousel-button-wrapper">
+				<div class="solution-carousel-button-wrapper no-mobile-landscape-display no-mobile-portrait-display">
 					<div id="solution-carousel-button-left" class="solution-carousel-button solution-carousel-button-left">
 						<img class="solution-carousel-button-image" src="<?php echo get_template_directory_uri();?>/images/carousel_left.svg">
 					</div>
 				</div>
 				<div class="own-carousel-outside-wrapper">
-					<div id="solution-subpage-carousel" class="owl-carousel owl-theme" autoheight="<?php echo get_field('carousel_auto_height') ? 'on' : 'off'; ?>">
+					<div
+						id="solution-subpage-carousel"
+						class="owl-carousel owl-theme"
+						autoheight="<?php echo get_field('carousel_auto_height') ? 'on' : 'off'; ?>"
+					>
 
 						<?php
 							foreach($galleryImages as $slide) {
@@ -100,11 +104,24 @@
 						?>
 					</div>
 				</div>
-				<div class="solution-carousel-button-wrapper">
+				<div class="solution-carousel-button-wrapper no-mobile-landscape-display no-mobile-portrait-display">
 					<div id="solution-carousel-button-right" class="solution-carousel-button solution-carousel-button-right">
 						<img class="solution-carousel-button-image" src="<?php echo get_template_directory_uri();?>/images/carousel_right.svg">
 					</div>
 				</div>
+
+				<div id="solution-carousel-mobile-button-left" class="solution-carousel-mobile-button no-desktop-display no-mobile-display">
+					<div class="solution-carousel-mobile-button-icon vertical-centered">
+						<img class="solution-carousel-button-image" src="<?php echo get_template_directory_uri();?>/images/carousel_left.svg">
+					</div>
+				</div>
+
+				<div id="solution-carousel-mobile-button-right" class="solution-carousel-mobile-button no-desktop-display no-mobile-display">
+					<div class="solution-carousel-mobile-button-icon vertical-centered">
+						<img class="solution-carousel-button-image" src="<?php echo get_template_directory_uri();?>/images/carousel_right.svg">
+					</div>
+				</div>
+
 			</div>
 			<?php if(!empty($galleryFile)) { ?>
 				<a

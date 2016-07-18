@@ -4819,10 +4819,10 @@ jQuery(function($){
 
   });
 
-	$("#solution-carousel-button-left").click(function(){
+	$("#solution-carousel-button-left, #solution-carousel-mobile-button-left").click(function(){
     owl.trigger('owl.prev');
   })
-  $("#solution-carousel-button-right").click(function(){
+  $("#solution-carousel-button-right, #solution-carousel-mobile-button-right").click(function(){
     owl.trigger('owl.next');
   })
 });
