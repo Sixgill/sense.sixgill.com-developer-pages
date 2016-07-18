@@ -13539,16 +13539,8 @@ input {
 
 .solution-subpage-gallery-button {
 	box-shadow: 0px 3px 0 0 #002d6f;
-	cursor: pointer;
-}
-
-.solution-subpage-gallery-view-button {
-	background-color: #0051c6;
-
-}
-
-.solution-subpage-gallery-download-button {
 	background-color: #2e2e2e;
+	cursor: pointer;
 }
 
 .solution-subpage-gallery-button-icon {
@@ -13643,15 +13635,8 @@ input {
 
 .own-carousel-n-controls-wrapper {
 	width: 100%;
-	display: -webkit-box;
-	display: -ms-flex;
-	display: -webkit-flex;
 	display: flex;
-	-ms-align-items: center;
-	-webkit-align-items: center;
   align-items: center;
-	-ms-justify-content: center;
-	-webkit-justify-content: center;
   justify-content: center;
 }
 
@@ -15007,7 +14992,7 @@ input {
 }
 
 .solution-subpage-gallery-button {
-	width: 30vw;
+	width: 37vw;
 	height: 5.6vw;
   font-size: 2.08vw;
 }
@@ -15395,7 +15380,7 @@ input {
 }
 
 .solution-subpage-gallery-button {
-	width: 90.625vw;
+	width: 87.5vw;
 	height: 13.44vw;
 	font-size: 5vw;
 }
@@ -15977,6 +15962,7 @@ input {
 
 .solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
 	margin-bottom: 2.5vw;
+	display: none !important;
 }
 
 .solution-subpage-gallery-button-icon {
