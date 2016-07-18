@@ -95,29 +95,22 @@
 }
 
 .solution-subpage-slide-title {
-	font-family: Lato;
   font-size: 1.78vw;
   font-weight: 500;
-  letter-spacing: 0.7px;
-  color: #0051c6;
 	margin-bottom: 1vw;
 }
 
 .solution-subpage-slide-description {
-  font-size: 18px;
+  font-size: 1.171vw;
 	margin-bottom: 1.8vw;
-	color: #000000;
 }
 
 .solution-subpage-slide-description, .solution-subpage-slide-title {
-	text-align: left;
 	width: 95.68%;
 	display: inline-block;
-	font-family: 'Lato';
 }
 
 .own-carousel-outside-wrapper {
-	display: inline-block;
 	width: 87.55%;
 	margin-bottom: 2.232vw;
 }
@@ -136,19 +129,10 @@
 }
 
 .solution-carousel-button {
-	display: inline-block;
 	font-size: 5.07vw;
 	font-weight: 100;
-	color: #999999;
 	padding-bottom: 5vw;
 	cursor: pointer;
-}
-
-.own-carousel-n-controls-wrapper {
-	width: 100%;
-	display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .solution-carousel-button-image {
@@ -157,6 +141,5 @@
 }
 
 .solution-carousel-button-wrapper {
-	text-align: center;
 	width: 5.5%;
 }
