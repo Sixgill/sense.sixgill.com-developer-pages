@@ -110,13 +110,13 @@
 					</div>
 				</div>
 
-				<div id="solution-carousel-mobile-button-left" class="solution-carousel-mobile-button no-desktop-display no-mobile-display">
+				<div id="solution-carousel-mobile-button-left" class="solution-carousel-mobile-button no-desktop-display no-tablet-display">
 					<div class="solution-carousel-mobile-button-icon vertical-centered">
 						<img class="solution-carousel-button-image" src="<?php echo get_template_directory_uri();?>/images/carousel_left.svg">
 					</div>
 				</div>
 
-				<div id="solution-carousel-mobile-button-right" class="solution-carousel-mobile-button no-desktop-display no-mobile-display">
+				<div id="solution-carousel-mobile-button-right" class="solution-carousel-mobile-button no-desktop-display no-tablet-display">
 					<div class="solution-carousel-mobile-button-icon vertical-centered">
 						<img class="solution-carousel-button-image" src="<?php echo get_template_directory_uri();?>/images/carousel_right.svg">
 					</div>
