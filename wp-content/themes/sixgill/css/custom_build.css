@@ -13643,8 +13643,15 @@ input {
 
 .own-carousel-n-controls-wrapper {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flex;
+	display: -webkit-flex;
 	display: flex;
+	-ms-align-items: center;
+	-webkit-align-items: center;
   align-items: center;
+	-ms-justify-content: center;
+	-webkit-justify-content: center;
   justify-content: center;
 }
 
