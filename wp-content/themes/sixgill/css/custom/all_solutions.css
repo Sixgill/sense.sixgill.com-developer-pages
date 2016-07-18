@@ -195,16 +195,8 @@
 
 .solution-subpage-gallery-button {
 	box-shadow: 0px 3px 0 0 #002d6f;
-	cursor: pointer;
-}
-
-.solution-subpage-gallery-view-button {
-	background-color: #0051c6;
-
-}
-
-.solution-subpage-gallery-download-button {
 	background-color: #2e2e2e;
+	cursor: pointer;
 }
 
 .solution-subpage-gallery-button-icon {
@@ -299,15 +291,8 @@
 
 .own-carousel-n-controls-wrapper {
 	width: 100%;
-	display: -webkit-box;
-	display: -ms-flex;
-	display: -webkit-flex;
 	display: flex;
-	-ms-align-items: center;
-	-webkit-align-items: center;
   align-items: center;
-	-ms-justify-content: center;
-	-webkit-justify-content: center;
   justify-content: center;
 }
 
