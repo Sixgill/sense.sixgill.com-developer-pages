@@ -126,3 +126,64 @@
 .solution-use-cases-block-content{
 	text-align: center;
 }
+
+.solution-carousel-mobile-button {
+	width: 50%;
+	height: 9.53vw;
+	background-color: #2e2e2e;
+	cursor: pointer;
+	display: inline-block;
+	margin-bottom: 9.7vw;
+}
+
+#solution-carousel-mobile-button-left {
+	border-right: 1px solid rgba(153, 153, 153, 0.32);
+	padding-left: 3.125vw;
+	text-align: left;
+}
+
+#solution-carousel-mobile-button-right {
+	text-align: right;
+	padding-right: 3.125vw;
+}
+
+.own-carousel-outside-wrapper {
+	width: 100%;
+}
+
+.own-carousel-n-controls-wrapper {
+	width: 93.75%;
+	display: inline-block;
+}
+
+
+.owl-wrapper-outer {
+	display: inline-block;
+}
+
+.solution-carousel-button-image {
+	height: 5.625vw;
+}
+
+.solution-carousel-mobile-button-icon {
+	display: inline-block;
+}
+
+.solution-subpage-slide-info {
+	text-align: left;
+	width: 87.5vw;
+	padding: 0 3.125vw 0 3.125vw;
+}
+
+.solution-subpage-slide-title {
+  font-size: 5.625vw;
+  font-weight: 500;
+	margin-bottom: 1vw;
+	font-weight: 500;
+}
+
+.solution-subpage-slide-description {
+  font-size: 4vw;
+	margin-bottom: 7.66vw;
+	font-weight: normal;
+}
