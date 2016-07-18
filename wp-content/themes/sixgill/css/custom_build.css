@@ -13502,6 +13502,7 @@ input {
 	display: block;
 	height: auto;
 	width: 100%;
+	overflow: hidden;
 }
 
 .solution-use-cases-block-image>img {
@@ -13635,9 +13636,16 @@ input {
 
 .own-carousel-n-controls-wrapper {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flex;
+	display: -webkit-flex;
 	display: flex;
-  align-items: center;
-  justify-content: center;
+	-ms-align-items: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-ms-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
 }
 
 .solution-carousel-button-wrapper {
@@ -14347,7 +14355,7 @@ input {
 }
 
 .solution-use-cases-block-image {
-	height: 21.73vw;
+	height: 13.2vw;
 }
 /* Resources desktop styles */
 .resource-block {
