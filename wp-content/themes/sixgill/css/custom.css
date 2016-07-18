@@ -46,18 +46,17 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 	min-height: 46px !important;
 }
 
-.btnSchedule:hover, .btnSolutions:hover, .btnCompany:hover, .btn-news-press:hover, .submit-resource-form-button:hover {
-	text-decoration: none;
+.btnSchedule:hover, .btnSchedule:active, .btnSolutions:hover, btnSolutions:active, .btnCompany:hover, .btn-news-press:hover, .submit-resource-form-button:hover {
+	text-decoration: none !important;
 }
 
-.btnSchedule, .submit-resource-form-button {
+.btnSchedule, .btnSchedule:hover, .submit-resource-form-button {
 	background: #4dc85a;
 
 }
 
-.btnSolutions, .btn-news-press {
+.btnSolutions, .btnSolutions:hover, .btn-news-press, .btn-news-press:hover {
 	background: #0051c6;
-	box-shadow: 0px 3px 0 0 #002d6f;
 }
 
 .btnCompany {
@@ -68,7 +67,7 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 .learn-more-link {
 	font-size:15px;
 	font-weight:bold;
-	color:#000;
+	color:#000000;
 }
 
 .learn-more-close-icon, .extra-description {
