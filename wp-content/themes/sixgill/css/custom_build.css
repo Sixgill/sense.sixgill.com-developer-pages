@@ -13495,6 +13495,7 @@ input {
 	margin: 0 1%;
 	display: inline-block;
 	vertical-align: top;
+	background-color: #f8f8f8;
 }
 
 .solution-use-cases-block-image {
@@ -13514,7 +13515,6 @@ input {
 	display: block;
 	text-align: center;
 	vertical-align: middle;
-	background-color: #f8f8f8;
 	min-height: 135px;
 	padding: 25px;
 }
@@ -14345,6 +14345,10 @@ input {
 .solution-carousel-button-wrapper {
 	width: 5.5%;
 }
+
+.solution-use-cases-block-image {
+	height: 21.73vw;
+}
 /* Resources desktop styles */
 .resource-block {
 	width: 24%;
@@ -15065,6 +15069,10 @@ input {
 
 .solution-carousel-button-wrapper {
 	width: 5%;
+}
+
+.solution-use-cases-block-image {
+	height: 38.9vw;
 }
 /* Resources tablet styles */
 .resource-block {

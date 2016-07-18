@@ -151,6 +151,7 @@
 	margin: 0 1%;
 	display: inline-block;
 	vertical-align: top;
+	background-color: #f8f8f8;
 }
 
 .solution-use-cases-block-image {
@@ -170,7 +171,6 @@
 	display: block;
 	text-align: center;
 	vertical-align: middle;
-	background-color: #f8f8f8;
 	min-height: 135px;
 	padding: 25px;
 }
