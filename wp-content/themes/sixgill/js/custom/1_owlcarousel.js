@@ -2,10 +2,12 @@ jQuery(function($){
 
 	var owl = $("#solution-subpage-carousel");
 	var autoHeightOption = (owl.attr('autoheight') == "on");
+	var rewindEnabled = (owl.attr('rewindenabled') == "on");
 
 	owl.owlCarousel({
 
       navigation : false, // Show next and prev buttons
+			rewindNav: rewindEnabled,
       slideSpeed : 300,
       paginationSpeed : 400,
 			pagination: false,
