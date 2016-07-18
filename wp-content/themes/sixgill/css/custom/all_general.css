@@ -8,8 +8,12 @@ p {
 	font-weight:normal;
 }
 
-a:hover {
-	text-decoration: none;
+a {
+	color: #004FC8;
+}
+
+a:hover, a:active, a::selection, a:focus {
+	text-decoration: none !important;
 }
 
 .listSolutions li,
