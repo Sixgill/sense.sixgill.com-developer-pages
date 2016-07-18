@@ -15380,7 +15380,7 @@ input {
 }
 
 .solution-subpage-gallery-button {
-	width: 90.625vw;
+	width: 87.5vw;
 	height: 13.44vw;
 	font-size: 5vw;
 }
@@ -15962,6 +15962,7 @@ input {
 
 .solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
 	margin-bottom: 2.5vw;
+	display: none !important;
 }
 
 .solution-subpage-gallery-button-icon {
