@@ -65,7 +65,7 @@
 					<?php get_template_part('menu'); ?>
 				</div>
 
-				<div class="menu-schedule-button-wrapper display-only-desktop">
+				<div id="menu-schedule-button-wrapper" class="menu-schedule-button-wrapper display-only-desktop">
 					<div class="nav-divider-line"></div>
 					<a href="#" class="menu-schedule-button-link" data-toggle="modal" data-target="#myModal">
 						<div class="menu-schedule-button">

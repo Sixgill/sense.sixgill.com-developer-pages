@@ -4678,6 +4678,40 @@ jQuery(function($) {
 	});
 
 });
+jQuery(function($){
+	function isScrolledIntoView(elem) {
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height();
+
+		var elemTop = elem.offset().top;
+		var elemBottom = elemTop + elem.height();
+
+		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}
+
+	var homeScheduleButton = $('#home-button-on-video');
+	var menuScheduleButton = $('#menu-schedule-button-wrapper');
+	var isMenuScheduleButtonVisible = false;
+
+	function checkHomeButton() {
+		if(isMenuScheduleButtonVisible) {
+			if(isScrolledIntoView(homeScheduleButton)) {
+				menuScheduleButton.toggle();
+				isMenuScheduleButtonVisible = false;
+			}
+		} else if(!isScrolledIntoView(homeScheduleButton)) {
+			 menuScheduleButton.toggle();
+			 isMenuScheduleButtonVisible = true;
+		}
+	}
+
+	if(homeScheduleButton.length) {
+		checkHomeButton();
+		$(window).scroll(checkHomeButton);
+	}
+
+
+});
 jQuery(function($) {
 	$(document).ready(function () {
 		$(document).on("scroll", onScroll);
@@ -4930,27 +4964,6 @@ jQuery(function($) {
 		});
 		$(this).css('margin-bottom', (biggestFontsize/2)+'px');
 	});
-});
-jQuery(function($) {
-	if(window.screenType == "mobile-landscape" || window.screenType == "mobile-portrait") {
-		return;
-	}
-
-	var secondBlock = $('#solution-subpage-second-block')
-	var secondBlockImage = $('#solution-subpage-second-block-image');
-	var secondBlockHeight = 0;
-	var secondBlockImageHeight = 0;
-
-	function checkSecondBlockHeight() {
-		secondBlockHeight = secondBlock.height();
-		secondBlockImageHeight = secondBlockImage.height();
-		if(secondBlockHeight < secondBlockImageHeight) {
-			secondBlock.height(secondBlockImageHeight);
-		}
-	}
-
-	$(window).resize(checkSecondBlockHeight);
-	checkSecondBlockHeight();
 });
 "function"!==typeof Object.create&&(Object.create=function(f){function g(){}g.prototype=f;return new g});
 (function(f,g,k){var l={init:function(a,b){this.$elem=f(b);this.options=f.extend({},f.fn.owlCarousel.options,this.$elem.data(),a);this.userOptions=a;this.loadContent()},loadContent:function(){function a(a){var d,e="";if("function"===typeof b.options.jsonSuccess)b.options.jsonSuccess.apply(this,[a]);else{for(d in a.owl)a.owl.hasOwnProperty(d)&&(e+=a.owl[d].item);b.$elem.html(e)}b.logIn()}var b=this,e;"function"===typeof b.options.beforeInit&&b.options.beforeInit.apply(this,[b.$elem]);"string"===typeof b.options.jsonPath?
