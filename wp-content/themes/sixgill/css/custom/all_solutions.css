@@ -158,6 +158,7 @@
 	display: block;
 	height: auto;
 	width: 100%;
+	overflow: hidden;
 }
 
 .solution-use-cases-block-image>img {
