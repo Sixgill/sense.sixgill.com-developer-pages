@@ -83,6 +83,7 @@
 						id="solution-subpage-carousel"
 						class="owl-carousel owl-theme"
 						autoheight="<?php echo get_field('carousel_auto_height') ? 'on' : 'off'; ?>"
+						rewindenabled="<?php echo get_field('rewind_enabled') ? 'on' : 'off'; ?>"
 					>
 
 						<?php
