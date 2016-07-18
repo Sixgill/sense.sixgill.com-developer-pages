@@ -292,9 +292,16 @@
 
 .own-carousel-n-controls-wrapper {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flex;
+	display: -webkit-flex;
 	display: flex;
-  align-items: center;
-  justify-content: center;
+	-ms-align-items: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-ms-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
 }
 
 .solution-carousel-button-wrapper {
