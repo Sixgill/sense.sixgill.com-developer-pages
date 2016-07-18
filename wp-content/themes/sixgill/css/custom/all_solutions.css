@@ -263,3 +263,47 @@
 .solution-subpage-last-section-text-wrapper {
 	display: inline-block;
 }
+
+.solution-subpage-slide-title {
+  color: #0051c6;
+	letter-spacing: 0.7px;
+}
+
+.solution-subpage-slide-description {
+	color: #000000;
+}
+
+.solution-subpage-slide-description, .solution-subpage-slide-title {
+	text-align: left;
+	display: inline-block;
+	font-family: 'Lato';
+}
+
+.own-carousel-outside-wrapper {
+	display: inline-block;
+}
+
+.owl-carousel {
+	background-color: #ffffff;
+	border: 1px solid rgba(153, 153, 153, 0.32);
+}
+
+.solution-subpage-slide-image {
+	border-bottom: 1px solid rgba(153, 153, 153, 0.32);
+}
+
+.solution-carousel-button {
+	display: inline-block;
+	color: #999999;
+}
+
+.own-carousel-n-controls-wrapper {
+	width: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solution-carousel-button-wrapper {
+	text-align: center;
+}
