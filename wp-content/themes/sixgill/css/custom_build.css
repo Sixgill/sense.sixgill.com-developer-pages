@@ -13991,7 +13991,11 @@ input {
 }
 
 .footer-link-col {
-	width: 13.5%;
+	margin-left: 10%;
+}
+
+.footer-link-col:last-child{
+	margin-right: 10%;
 }
 
 .footer-main-link {

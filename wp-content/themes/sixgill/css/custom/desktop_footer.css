@@ -41,7 +41,11 @@
 }
 
 .footer-link-col {
-	width: 17%;
+	margin-left: 11%;
+}
+
+.footer-link-col:last-child{
+	margin-right: 11%;
 }
 
 .footer-main-link {
