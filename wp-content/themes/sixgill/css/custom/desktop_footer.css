@@ -13,6 +13,8 @@
 
 .footer-menu-block {
 	border-bottom: 1px solid rgba(131, 131, 131, 0.35);
+	height: 34%;
+	text-align: left;
 }
 
 .footer-top-block-left {
@@ -36,16 +38,12 @@
 	width: 38%;
 }
 
-.footer-menu-block {
-	height: 34%;
-}
-
 .footer-link-col {
-	margin-left: 11%;
+	width: 13.5vw;
 }
 
-.footer-link-col:last-child {
-	margin-right: 11%;
+.footer-link-col:first-child {
+	margin-left: 22.7%;
 }
 
 .footer-main-link {
