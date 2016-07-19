@@ -1,99 +1,149 @@
-/* Solutions desktop styles */
-@media only screen and (min-width : 1001px) {
 
-	.solutions-blog-content {
-		float: left;
-		text-align: left;
-		width:65%;
-	}
+.solutions-blog-content {
+	float: left;
+	text-align: left;
+	width:65%;
+}
 
-	.solutions-blog-post_thumbnail {
-		float: left;
-		width:30%;
-		max-width: 350px;
-		text-align: center;
-	}
+.solutions-blog-post_thumbnail {
+	float: left;
+	width:30%;
+	max-width: 350px;
+	text-align: center;
+}
 
-	.solution-subpage-first-block-image-container, .first-left-container-subpage, .left-block-subpage, .right-block-subpage {
-		width: 50%;
-	}
+.solution-subpage-first-block-image-container, .first-left-container-subpage, .left-block-subpage, .right-block-subpage {
+	width: 50%;
+}
 
-	.solution-subpage-first-block-image {
-		width: 39.86vw;
-	}
+.solution-subpage-first-block-image {
+	width: 39.86vw;
+}
 
-	.second-right-container-subpage {
-		width: 56%;
-		float: right;
-	}
+.second-right-container-subpage {
+	width: 56%;
+	float: right;
+}
 
-	.solution-subpage-last-block {
-		margin-top: 70px;
-		width: 74%;
-	}
+.solution-subpage-last-block {
+	margin-top: 70px;
+	width: 74%;
+}
 
-	.solution-subpage-bottom-line {
-		margin-top: 100px;
-		margin-bottom: 120px;
-	}
+.solution-subpage-bottom-line {
+	margin-top: 100px;
+	margin-bottom: 120px;
+}
 
-	.solution-subpage-bottom-section-column {
-		width: 45%;
-	}
+.solution-subpage-bottom-section-column {
+	width: 45%;
+}
 
-	.solution-subpage-second-block {
-		padding-top: 6.4vw;
-	}
+.solution-subpage-second-block {
+	padding-top: 6.4vw;
+}
 
-	.solution-subpage-second-block-wrapper {
-		width: 63vw;
-	}
+.solution-subpage-second-block-wrapper {
+	width: 63vw;
+}
 
-	.solution-subpage-gallery-block {
-		padding-bottom: 5.6vw;
-		padding-top: calc(5.38vw - 30px);
-	}
+.solution-subpage-gallery-block {
+	padding-bottom: 5.6vw;
+	padding-top: calc(5.38vw - 30px);
+	text-align: center;
+}
 
-	.solution-subpage-gallery-block-title {
-		margin-bottom: 2.19vw;
-		font-size: 22px;
-	}
+.solution-subpage-gallery-block-title {
+	margin-bottom: 2.19vw;
+	font-size: 22px;
+}
 
-	.solution-subpage-gallery-thumbnail-wrapper {
-		width: 72.87vw;
-		margin-bottom: 1.94vw;
-	}
+.solution-subpage-gallery-thumbnail-wrapper {
+	width: 72.87vw;
+	margin-bottom: 1.94vw;
+}
 
-	.solution-subpage-gallery-button {
-		width: 16.69vw;
-		height: 3.1vw;
-	  font-size: 1.17vw;
-	}
+.solution-subpage-gallery-button {
+	width: 20.79vw;
+	height: 3.148vw;
+  font-size: 1.17vw;
+}
 
-	.solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
-		margin-right: 0.73vw;
-	}
+.solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
+	margin-right: 0.73vw;
+}
 
-	.solution-subpage-gallery-button-icon {
-		margin-right: 1vw;
-	}
+.solution-subpage-gallery-button-icon {
+	margin-right: 1vw;
+}
 
-	.solution-subpage-viewprocess-placeholder {
-		height: 6.4vw;
-	}
+.solution-subpage-viewprocess-placeholder {
+	height: 6.4vw;
+}
 
-	.solution-subpage-last-section-text-wrapper {
-		width: 50.73vw;
-	}
+.solution-subpage-last-section-text-wrapper {
+	width: 50.73vw;
+}
 
-	.solution-subpage-last-section-text-wrapper p {
-		text-align: center;
-	}
+.solution-subpage-last-section-text-wrapper p {
+	text-align: center;
+}
 
-	.solution-use-cases-block-content {
-		width: 68vw;
-		margin: 0 auto 4vw;
+.solution-use-cases-block-content {
+	width: 68vw;
+	margin: 0 auto 4vw;
+}
 
-	}
+.solution-subpage-slide-title {
+  font-size: 1.78vw;
+  font-weight: 500;
+	margin-bottom: 1vw;
+}
 
+.solution-subpage-slide-description {
+  font-size: 1.171vw;
+	margin-bottom: 1.8vw;
+}
+
+.solution-subpage-slide-description, .solution-subpage-slide-title {
+	width: 95.68%;
+	display: inline-block;
+}
+
+.own-carousel-outside-wrapper {
+	width: 87.55%;
+	margin-bottom: 2.232vw;
+}
+
+.owl-carousel {
+	background-color: #ffffff;
+	border: 1px solid rgba(153, 153, 153, 0.32);
+}
+
+.solution-subpage-slide-image {
+	border-bottom: 1px solid rgba(153, 153, 153, 0.32);
+}
+
+.solution-subpage-slide-info {
+	margin-top: 1.72vw;
+}
+
+.solution-carousel-button {
+	font-size: 5.07vw;
+	font-weight: 100;
+	padding-bottom: 5vw;
+	cursor: pointer;
+}
+
+.solution-carousel-button-image {
+	width: 2.16vw;
+	height: 4.03vw;
+}
+
+.solution-carousel-button-wrapper {
+	width: 5.5%;
+}
+
+.solution-use-cases-block-image {
+	height: 13.2vw;
 }

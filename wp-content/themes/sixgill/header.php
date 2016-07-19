@@ -50,7 +50,7 @@
 		<section id="top"></section>
 		<!-- Header -->
 		<div id="menu-background"></div>
-		<header id="header" class="no-sticky no-border">
+		<header id="header" class="no-sticky">
 			<div id="header-wrap">
 				<div id="logo" class="noborder nopadding">
 					<a href="/" class="logo-sixgill"></a>
@@ -65,10 +65,10 @@
 					<?php get_template_part('menu'); ?>
 				</div>
 
-				<div class="menu-schedule-button-wrapper display-only-desktop">
+				<div id="menu-schedule-button-wrapper" class="menu-schedule-button-wrapper display-only-desktop">
 					<div class="nav-divider-line"></div>
 					<a href="#" class="menu-schedule-button-link" data-toggle="modal" data-target="#myModal">
-						<div class="menu-schedule-button">
+						<div id="menu-schedule-button" class="menu-schedule-button">
 							<div class="vertical-centered">
 								Schedule a Demo
 							</div>

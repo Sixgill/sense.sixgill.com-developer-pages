@@ -1,25 +1,22 @@
 /* Blog mobile portrait and landscape styles */
-@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and (max-aspect-ratio: 4/3) {
+.share-buttons-top {
+	display: block;
+}
 
-	.share-buttons-top {
-		display: block;
-	}
+.blog-container {
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: none !important;
+}
 
-	.blog-container {
-		margin-left: 0px;
-		margin-right: 0px;
-		max-width: none !important;
-	}
+.h1-blog {
+	margin-bottom: 18px;
+}
 
-	.h1-blog {
-		margin-bottom: 18px;
-	}
+.margin-bottom-post {
+	margin-bottom: 25px;
+}
 
-	.margin-bottom-post {
-		margin-bottom: 25px;
-	}
-
-	.margin-top-post {
-		margin-top: 10px;
-	}
+.margin-top-post {
+	margin-top: 10px;
 }

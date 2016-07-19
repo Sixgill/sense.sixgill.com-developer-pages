@@ -760,48 +760,12 @@ body.no-superfish #primary-menu li:hover > ul:not(.mega-menu-column) {
 	display: block;
 }
 
-#primary-menu ul ul:not(.mega-menu-column) ul {
-	top: -2px !important;
-	left: 218px;
-}
-
-#primary-menu ul ul:not(.mega-menu-column) ul.menu-pos-invert { right: 218px; }
-
-#primary-menu ul ul li {
-	float: none;
-	margin: 0;
-}
-
-#primary-menu ul ul li:first-child { border-top: 0; }
-
-#primary-menu ul ul li > a {
-	font-size: 12px;
-	font-weight: 600;
-	color: #666;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border: 0;
-	letter-spacing: 0;
-	font-family: 'Lato', sans-serif;
-	-webkit-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-}
-
-#primary-menu ul ul li > a i { top: 0; }
-
-#primary-menu ul ul li:hover > a {
-	background-color: #F9F9F9;
-	padding-left: 18px;
-	color: #1ABC9C;
-}
-
 
 /* Primary Menu - Overlay Menu
 -----------------------------------------------------------------*/
 
 
-@media (min-width: 1001px) {
+@media (min-width: 1201px) {
 
 .overlay-menu:not(.top-search-open) #primary-menu-trigger {
 	opacity: 1;
@@ -1132,7 +1096,7 @@ body:not(.device-touch) #page-menu nav li a {
 	Side Header
 -----------------------------------------------------------------*/
 
-@media (min-width: 1001px) {
+@media (min-width: 1201px) {
 
 
 .side-header #header {
@@ -1143,17 +1107,7 @@ body:not(.device-touch) #page-menu nav li a {
 	width: 260px;
 	height: 100%;
 	background-color: #FFF;
-	border: none;
-	border-right: 1px solid #EEE;
 	overflow: hidden;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
-}
-
-.side-header #header-wrap {
-	width: 300px;
-	height: 100%;
-	overflow: auto;
-	padding-right: 40px;
 }
 
 .side-header #logo {
@@ -1189,51 +1143,8 @@ body:not(.device-touch) #page-menu nav li a {
 
 .side-header #primary-menu ul li:first-child { margin-top: 0; }
 
-.side-header #primary-menu ul li i { line-height: 24px; }
-
-.side-header #primary-menu ul ul {
-	position: relative;
-	width: 100%;
-	background-color: transparent;
-	box-shadow: none;
-	border: none;
-	height: auto;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	margin: 5px 0;
-	padding-left: 12px;
-}
-
-.side-header #primary-menu ul ul ul {
-	top: 0 !important;
-	left: 0;
-}
-
-.side-header #primary-menu ul ul.menu-pos-invert {
-	left: 0;
-	right: auto;
-}
-
-.side-header #primary-menu ul ul ul.menu-pos-invert { right: auto; }
-
-.side-header #primary-menu ul ul li {
-	margin: 0;
-	border: 0;
-}
-
-.side-header #primary-menu ul ul li:first-child { border-top: 0; }
-
-.side-header #primary-menu ul ul a {
-	font-size: 12px;
-	height: auto !important;
-	line-height: 24px !important;
-	padding: 2px 0 !important;
-}
-
-.side-header #primary-menu ul ul li:hover > a {
-	background-color: transparent !important;
-	color: #444 !important;
+.side-header #primary-menu ul li i {
+	line-height: 24px;
 }
 
 .side-header #primary-menu ul > li.sub-menu:hover > a:after {

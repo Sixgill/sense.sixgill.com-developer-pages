@@ -1,161 +1,146 @@
 /* General desktop styles */
-@media only screen and (min-width : 1001px) {
-	.global-social-buttons-list {
-		margin-left: -16px !important;
-	}
+.global-social-buttons-list {
+	margin-left: -16px !important;
+}
 
-	#primary-menu {
-		opacity: 1 !important;
-		position: fixed;
-		left: 64px;
-		top: 36.83vh;
-	}
+.subscribe-element {
+	display: block;
+}
 
-	.subscribe-element {
-		display: block;
-	}
+.slider-caption.slider-caption-center {
+	max-width: 900px;
+}
 
-	.slider-caption.slider-caption-center {
-		max-width: 900px;
-	}
+.slider-caption p {
+	margin-bottom: 10px;
+	font-size: 36px;
+	font-family: "Lato";
+	margin-top: 10px;
+}
 
-	.slider-caption p {
-		margin-bottom: 10px;
-		font-size: 36px;
-		font-family: "Lato";
-		margin-top: 10px;
-	}
+.logo-sixgill {
+	width: 163px;
+	height: 129.5px;
+	background-image: url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
+	margin-top: 2.6vh;
+	margin-left: 31px;
+}
 
-	.logo-sixgill {
-		width: 163px;
-		height: 129.5px;
-		background-image: url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
-		margin-top: 2.6vh;
-		margin-left: 31px;
-	}
+.title-left-col {
+	font-size: 30px;
+	padding-right: 20px;
+	text-align: right;
+}
 
-	.title-left-col {
-		font-size: 30px;
-		padding-right: 20px;
-		text-align: right;
-	}
+.my_iconSolution {
+	width: 115px;
+}
 
-	.my_iconSolution {
-		width: 115px;
-	}
+.my_boxSolution_title {
+	display: none;
+}
 
-	.my_boxSolution_title {
-		display: none;
-	}
+.widgettitle {
+	color: #004FC8;
+}
 
-	.widgettitle {
-		color: #004FC8;
-	}
+.blog-list {
+	padding-bottom:55px;
+	width: 65%;
+}
 
-	.blog-list {
-		padding-bottom:55px;
-		width: 65%;
-	}
+.shareIcons-desktop {
+	display: block;
+}
 
-	.shareIcons-desktop {
-		display: block;
-	}
+#aside-blog {
+	margin-left: -90px;
+}
 
-	#aside-blog {
-		margin-left: -90px;
-	}
+.no-desktop-display,
+.display-only-mobile-portrait,
+.display-only-mobile-landscape,
+.display-only-tablet {
+	display: none !important;
+}
 
-	.no-desktop-display,
-	.display-only-mobile-portrait,
-	.display-only-mobile-landscape,
-	.display-only-tablet {
-		display: none !important;
-	}
+.my_subMenus > a {
+	display: block;
+	margin-top: 3px;
+}
 
-	.my_subMenus {
-		margin-left: 15px;
-	}
+#menu-background {
+	display: none !important;
+}
 
-	.my_subMenus > a {
-		display: block;
-		margin-top: 3px;
-	}
+.single-post-content {
+	padding-top: 80px;
+}
 
-	#menu-background {
-		display: none !important;
-	}
+#sidebar-floating {
+	top: 150px;
+}
 
-	.single-post-content {
-		padding-top: 80px;
-	}
+.company-h1, .products-h1, .solutions-h1 {
+	font-size: 30px;
+	text-align: right;
+}
 
-	#sidebar-floating {
-		top: 150px;
-	}
+.solution-subpage-first-block {
+	min-height: 365px;
+	width: 100%;
+}
 
-	.company-h1, .products-h1, .solutions-h1 {
-		font-size: 30px;
-		text-align: right;
-	}
+.first-text-subpage {
+	margin: 4.9vw 2vw 0px 5.64vw;
+}
 
-	.solution-subpage-first-block {
-		min-height: 365px;
-		width: 100%;
-	}
+.second-text-subpage {
+	margin: 67px 65px 0px 0;
+}
 
-	.first-text-subpage {
-		margin: 4.9vw 2vw 0px 5.64vw;
-	}
+.block-link-subpage {
+	height: 133px;
+	width: 100%;
+}
 
-	.second-text-subpage {
-		margin: 67px 65px 0px 0;
-	}
+.solution-subpage-section-title, .solution-subpage-second-block-title {
+	font-size: 33px;
+	font-weight: 100;
+}
 
-	.block-link-subpage {
-		height: 133px;
-		width: 100%;
-	}
+.solution-subpage-suptitle {
+	font-size: 23px;
+}
 
-	.solution-subpage-section-title, .solution-subpage-second-block-title {
-		font-size: 33px;
-		font-weight: 100;
-	}
+.solution-subpage-title {
+	font-size: 45px;
+}
 
-	.solution-subpage-suptitle {
-		font-size: 23px;
-	}
+.container-subpage {
+	padding-right: 57px;
+	padding-left: 57px;
+}
 
-	.solution-subpage-title {
-		font-size: 45px;
-	}
+.image-subpage {
+	height: 100%;
+	max-width: none;
+}
 
-	.container-subpage {
-		padding-right: 57px;
-		padding-left: 57px;
-	}
+.desktop-vertical-centered {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
 
-	.image-subpage {
-		height: 100%;
-		max-width: none;
-	}
+#press-text-post {
+	display: inline-block;
+}
 
-	.desktop-vertical-centered {
-		position: relative;
-		top: 50%;
-		-webkit-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		transform: translateY(-50%);
-	}
-
-	#press-text-post {
-		display: inline-block;
-	}
-
-	.side-header #header {
-		width: 225px;
-		background-color: #FFF;
-		border: none;
-		overflow: hidden;
-		box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
-	}
+.side-header #header {
+	width: 225px;
+	background-color: #FFF;
+	overflow: hidden;
 }

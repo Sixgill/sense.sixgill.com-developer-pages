@@ -1,37 +1,34 @@
 /* Home mobile portrait styles */
-@media (max-width: 500px) and (max-aspect-ratio: 4/3) {
-	.logo-subheader {
-		font-size: 15px;
-		color: #383838;
-		max-width: 260px;
-	}
+.logo-subheader {
+	font-size: 15px;
+	color: #383838;
+	max-width: 260px;
+}
 
-	.video-wrap video {
-		width: initial;
-	}
+.video-wrap video {
+	width: initial;
+}
 
-	.home-text-2{
-		margin-top:60px;
-	}
+.home-text-2{
+	margin-top:60px;
+}
 
-	.home-products-title {
-		font-size: 16px;
-		color: #FFF;
-		text-align: center;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
-		padding-left: 0.3em;
-		padding-right: 0.3em;
-	}
+.home-products-title {
+	font-size: 16px;
+	color: #FFF;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
 
-	.video-wrap video {
-		height: 100%;
-	}
+.video-wrap video {
+	height: 100%;
+}
 
-	.hr-home-sup-title {
-		max-width: 400px;
-		margin-right: 10px;
-
-	}
+.hr-home-sup-title {
+	max-width: 400px;
+	margin-right: 10px;
 
 }

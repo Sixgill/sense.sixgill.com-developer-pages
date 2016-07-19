@@ -46,78 +46,28 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 	min-height: 46px !important;
 }
 
-.btnSchedule:hover, .btnSolutions:hover, .btnCompany:hover, .btn-news-press:hover, .submit-resource-form-button:hover {
-	text-decoration: none;
+.btnSchedule:hover, .btnSchedule:active, .btnSolutions:hover, btnSolutions:active, .btnCompany:hover, .btn-news-press:hover, .submit-resource-form-button:hover {
+	text-decoration: none !important;
 }
 
-.btnSchedule, .submit-resource-form-button {
-	background: #4ddb5a;
-	background-image: -webkit-linear-gradient(top, #4ddb5a, #3cad46);
-	background-image: -moz-linear-gradient(top, #4ddb5a, #3cad46);
-	background-image: -ms-linear-gradient(top, #4ddb5a, #3cad46);
-	background-image: -o-linear-gradient(top, #4ddb5a, #3cad46);
-	background-image: linear-gradient(to bottom, #4ddb5a, #3cad46);
-	-webkit-box-shadow: 0px 4px 0px #26722d;
-	-moz-box-shadow: 0px 4px 0px #26722d;
-	box-shadow: 0px 4px 0px #26722d;
+.btnSchedule, .btnSchedule:hover, .submit-resource-form-button {
+	background: #4dc85a;
+
 }
 
-.btnSolutions, .btn-news-press {
+.btnSolutions, .btnSolutions:hover, .btn-news-press, .btn-news-press:hover {
 	background: #0051c6;
-	background-image: -webkit-linear-gradient(top, #0051c6, #013b90);
-	background-image: -moz-linear-gradient(top, #0051c6, #013b90);
-	background-image: -ms-linear-gradient(top, #0051c6, #013b90);
-	background-image: -o-linear-gradient(top, #0051c6, #013b90);
-	background-image: linear-gradient(to bottom, #0051c6, #013b90);
-	-webkit-box-shadow: 0px 4px 0px #032a63;
-	-moz-box-shadow: 0px 4px 0px #032a63;
-	box-shadow: 0px 4px 0px #032a63;
 }
 
 .btnCompany {
 	background: #2e2e2e;
-	background-image: -webkit-linear-gradient(top, #2e2e2e, #080808);
-	background-image: -moz-linear-gradient(top, #2e2e2e, #080808);
-	background-image: -ms-linear-gradient(top, #2e2e2e, #080808);
-	background-image: -o-linear-gradient(top, #2e2e2e, #080808);
-	background-image: linear-gradient(to bottom, #2e2e2e, #080808);
-	-webkit-box-shadow: 0px 4px 0px #343434;
-	-moz-box-shadow: 0px 4px 0px #343434;
-	box-shadow: 0px 4px 0px #343434;
 	line-height: inherit;
-}
-
-.btnSchedule:hover, .submit-resource-form-button:hover {
-	background: #4ddb5a;
-	background-image: -webkit-linear-gradient(top, #4ddb5a, #4ddb5a);
-	background-image: -moz-linear-gradient(top, #4ddb5a, #4ddb5a);
-	background-image: -ms-linear-gradient(top, #4ddb5a, #4ddb5a);
-	background-image: -o-linear-gradient(top, #4ddb5a, #4ddb5a);
-	background-image: linear-gradient(to bottom, #4ddb5a, #4ddb5a);
-}
-
-.btnSolutions:hover, .btn-news-press:hover {
-	background: #0051c6;
-	background-image: -webkit-linear-gradient(top, #0051c6, #0051c6);
-	background-image: -moz-linear-gradient(top, #0051c6, #0051c6);
-	background-image: -ms-linear-gradient(top, #0051c6, #0051c6);
-	background-image: -o-linear-gradient(top, #0051c6, #0051c6);
-	background-image: linear-gradient(to bottom, #0051c6, #0051c6);
-}
-
-.btnCompany:hover {
-	background: #2e2e2e;
-	background-image: -webkit-linear-gradient(top, #2e2e2e, #2e2e2e);
-	background-image: -moz-linear-gradient(top, #2e2e2e, #2e2e2e);
-	background-image: -ms-linear-gradient(top, #2e2e2e, #2e2e2e);
-	background-image: -o-linear-gradient(top, #2e2e2e, #2e2e2e);
-	background-image: linear-gradient(to bottom, #2e2e2e, #2e2e2e);
 }
 
 .learn-more-link {
 	font-size:15px;
 	font-weight:bold;
-	color:#000;
+	color:#000000;
 }
 
 .learn-more-close-icon, .extra-description {
@@ -229,13 +179,12 @@ Side Header
 	margin-right: 10px;
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1201px) {
 
 	.side-header #header-wrap {
-		width: 300px;
+		width: 225px;
 		height: 100%;
 		overflow: auto;
-		padding-right: 40px;
 	}
 
 	.side-header #logo {
@@ -268,55 +217,8 @@ Side Header
 		height: auto;
 	}
 
-	.side-header #primary-menu ul ul {
-		position: relative;
-		width: 100%;
-		background-color: transparent;
-		box-shadow: none;
-		border: none;
-		height: auto;
-		z-index: 1;
-		top: 0;
-		left: 0;
-		margin: 5px 0;
-		padding-left: 12px;
-	}
-
-	.side-header #primary-menu ul ul ul {
-		top: 0 !important;
-		left: 0;
-	}
-
-	.side-header #primary-menu ul ul.menu-pos-invert {
-		left: 0;
-		right: auto;
-	}
-
-	.side-header #primary-menu ul ul ul.menu-pos-invert { right: auto; }
-
-	.side-header #primary-menu ul ul li {
-		margin: 0;
-		border: 0;
-	}
-
-	.side-header #primary-menu ul ul li:first-child {
-		border-top: 0;
-	}
-
-	.side-header #primary-menu ul ul a {
-		font-size: 12px;
-		height: auto !important;
-		line-height: 24px !important;
-		padding: 2px 0 !important;
-	}
-
-	.side-header #primary-menu ul ul li:hover > a {
-		background-color: transparent !important;
-		color: #444 !important;
-	}
-
 	.side-header:not(.open-header) #wrapper {
-		margin: 0 0 0 180px !important;
+		margin: 0 0 0 225px !important;
 		width: auto !important;
 	}
 
@@ -551,7 +453,7 @@ p {
 	}
 }
 
-@media only screen and (min-width: 1001px) {/* For desktop: */
+@media only screen and (min-width: 1201px) {/* For desktop: */
 	.txtVideo {
 		font-size: 28px;
 		font-weight: normal;

@@ -1,56 +1,54 @@
 /* Solutions mobile portrait styles */
-@media (max-width: 500px) and (max-aspect-ratio: 4/3) {
-	.solution-subpage-container {
-		margin-top: 50px;
-		margin-left: 30px;
-		margin-right: 30px;
-		padding-left: 0px;
-		padding-right: 0px;
-	}
+.solution-subpage-container {
+	margin-top: 50px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
 
-	.solutions-subpage-text {
-		width: 100%;
-	}
+.solutions-subpage-text {
+	width: 100%;
+}
 
-	.solution-subpage-onlytext {
-		width: 100%;
-	}
+.solution-subpage-onlytext {
+	width: 100%;
+}
 
-	.solutions-subpage-thumbnail {
-		width: 100%;
-		text-align: center;
-	}
+.solutions-subpage-thumbnail {
+	width: 100%;
+	text-align: center;
+}
 
-	.solutions-subpage-thumbnail .size-post-thumbnail {
-		height:100% !important;
-		width: 100% !important;
-	}
+.solutions-subpage-thumbnail .size-post-thumbnail {
+	height:100% !important;
+	width: 100% !important;
+}
 
-	.slider-title-adjust {
-		top: 20px;
-	}
+.slider-title-adjust {
+	top: 20px;
+}
 
-	.my_boxSolution_title {
-		padding-left: 0px;
-	}
+.my_boxSolution_title {
+	padding-left: 0px;
+}
 
-	.iconSolutions {
-		margin-right: 15px;
-	}
+.iconSolutions {
+	margin-right: 15px;
+}
 
-	.solution-subpage-gallery-button {
-		width: 90.625vw;
-		height: 13.44vw;
-		font-size: 5vw;
-	}
+.solution-subpage-gallery-button {
+	width: 87.5vw;
+	height: 13.44vw;
+	font-size: 5vw;
+}
 
-	.solution-subpage-gallery-block-title {
-		margin-bottom: 11.25vw;
-		font-size: 22px;
-	}
+.solution-subpage-gallery-block-title {
+	margin-bottom: 11.25vw;
+	font-size: 22px;
+}
 
-	.solution-use-cases-block-half {
-		width:92%;
-		margin: 2vw auto;
-	}
+.solution-use-cases-block-half {
+	width:92%;
+	margin: 2vw auto;
 }

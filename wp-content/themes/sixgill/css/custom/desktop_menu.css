@@ -1,32 +1,59 @@
 /* Menu desktop styles */
-@media only screen and (min-width : 1001px) {
+.menu-schedule-button {
+	width: 206.5px;
+	height: 43px;
+	background-color: #0051c6;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
 
-	.menu-schedule-button {
-		width: 206.5px;
-		height: 43px;
-		background-color: #0051c6;
-		box-shadow: 0px 3px 0 0 #002d6f;
-		display: inline-block;
-		font-size: 16px;
-		font-weight: bold;
-		letter-spacing: 1px;
-		color: #ffffff;
-	}
+.menu-schedule-button-wrapper {
+	width: 225px;
+	position: absolute;
+	text-align: center;
+	bottom: 20px;
+	left: 0px;
+}
 
-	.menu-schedule-button-wrapper {
-		width: 225px;
-		position: fixed;
-		text-align: center;
-		bottom: 20px;
-		left: 0px;
-	}
+.nav-divider-line {
+	margin-bottom: 1.34vh;
+	width: 206.5px;
+  height: 1px;
+  background-color: #ebebeb;
+	display: inline-block;
+}
 
-	.nav-divider-line {
-		margin-bottom: 1.34vh;
-		width: 206.5px;
-	  height: 1px;
-	  background-color: #ebebeb;
-		display: inline-block;
-	}
+#primary-menu {
+	opacity: 1 !important;
+	position: fixed;
+	left: 0px;
+	top: 36.83vh;
+	width: 225px;
+}
 
+#primary-menu li{
+	display: inline-block;
+	text-align: center;
+}
+
+#primary-menu ul, #primary-menu li, #primary-menu a, #primary-menu a > div {
+	width: 100%;
+}
+
+#primary-menu a {
+	display: inline-block;
+}
+
+#header {
+	border-width: 0px 5px 0px 0px;
+	border-style: solid;
+	border-color: #5ede6a;
+	-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5ede6a), to(#5eb26a)) 1 100%;
+	-webkit-border-image: -webkit-linear-gradient(#5ede6a, #5eb26a) 1 100%;
+	-moz-border-image: -moz-linear-gradient(#5ede6a, #5eb26a) 1 100%;
+	-o-border-image: -o-linear-gradient(#5ede6a, #5eb26a) 1 100%;
+	border-image: linear-gradient(to bottom, #5ede6a, #5eb26a) 1 100%;
 }
