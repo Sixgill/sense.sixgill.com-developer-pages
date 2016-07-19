@@ -13718,12 +13718,7 @@ input {
 	margin-bottom: 0px;
 }
 
-.resources-download-form-require::after{
-	content:"*";
-	color:#4ddb5a;
-	font-size: 20px;
-	line-height: 20px;
-}
+
 /* Tech Common styles */
 #tech-page-header-background {
 	background-image: url('/wp-content/themes/sixgill/images/td/hero/dollarphotoclub_77872129_web.jpg');
@@ -14008,6 +14003,8 @@ input {
 
 .footer-menu-block {
 	border-bottom: 1px solid rgba(131, 131, 131, 0.35);
+	height: 34%;
+	text-align: left;
 }
 
 .footer-top-block-left {
@@ -14031,16 +14028,12 @@ input {
 	width: 38%;
 }
 
-.footer-menu-block {
-	height: 34%;
-}
-
 .footer-link-col {
-	margin-left: 11%;
+	width: 13.5vw;
 }
 
-.footer-link-col:last-child {
-	margin-right: 11%;
+.footer-link-col:first-child {
+	margin-left: 22.7%;
 }
 
 .footer-main-link {
@@ -14742,11 +14735,7 @@ input {
 }
 
 .footer-link-col {
-	margin-left: 13vw;
-}
-
-.footer-link-col:last-child{
-	margin-right: 13vw;
+	width: 24vw;
 }
 
 .footer-copyright-wrapper {
