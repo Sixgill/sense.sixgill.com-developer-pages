@@ -13991,11 +13991,11 @@ input {
 }
 
 .footer-link-col {
-	margin-left: 10%;
+	margin-left: 11%;
 }
 
 .footer-link-col:last-child{
-	margin-right: 10%;
+	margin-right: 11%;
 }
 
 .footer-main-link {
@@ -14697,7 +14697,11 @@ input {
 }
 
 .footer-link-col {
-	width: 24%;
+	margin-left: 11%;
+}
+
+.footer-link-col:last-child{
+	margin-right: 11%;
 }
 
 .footer-copyright-wrapper {
