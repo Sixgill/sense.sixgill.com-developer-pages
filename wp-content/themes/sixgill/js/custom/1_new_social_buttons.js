@@ -20,7 +20,6 @@ jQuery(function($) {
 	}
 
 	function checkSidebar() {
-		console.log('check');
 		// Check sidebar offset
 		var contentDivLeftOffset = contentDiv.offset().left;
 		var contentDivParentLeftOffset = contentDiv.parent().parent().offset().left;
@@ -36,11 +35,9 @@ jQuery(function($) {
 		sidebarFixed.css('top', fixedSidebarTopOffset);
 		var floatingSidebarTopOffset = sidebarFloating.offset().top - searchFormCorrection;
 		if(floatingSidebarTopOffset > fixedSidebarTopOffset) {
-			console.log('bottom');
 			hideSidebar(sidebarFloating);
 			showSidebar(sidebarFixed);
 		} else if(floatingSidebarTopOffset < fixedSidebarTopOffset) {
-			console.log('floating');
 			hideSidebar(sidebarFixed);
 			showSidebar(sidebarFloating);
 		}
