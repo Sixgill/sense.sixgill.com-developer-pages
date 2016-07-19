@@ -121,4 +121,9 @@
 	margin-bottom: 0px;
 }
 
-
+.resources-download-form-require::after{
+	content:"*";
+	color:#4ddb5a;
+	font-size: 20px;
+	line-height: 20px;
+}
