@@ -44,15 +44,17 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 .submit-resource-form-button {
 	font-size: 16px;
 	min-height: 46px !important;
+	outline: none !important;
+	border: none !important;
+	box-shadow: none !important;
 }
 
 .btnSchedule:hover, .btnSchedule:active, .btnSolutions:hover, btnSolutions:active, .btnCompany:hover, .btn-news-press:hover, .submit-resource-form-button:hover {
 	text-decoration: none !important;
 }
 
-.btnSchedule, .btnSchedule:hover, .submit-resource-form-button {
-	background: #4dc85a;
-
+.btnSchedule, .btnSchedule:hover, .submit-resource-form-button, .submit-resource-form-button:hover {
+	background: #4dc85a !important;
 }
 
 .btnSolutions, .btnSolutions:hover, .btn-news-press, .btn-news-press:hover {
