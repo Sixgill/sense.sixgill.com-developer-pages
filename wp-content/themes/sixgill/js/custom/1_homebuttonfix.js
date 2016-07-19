@@ -13,7 +13,7 @@ jQuery(function($){
 	var menuScheduleButton = $('#menu-schedule-button-wrapper');
 	var isMenuScheduleButtonVisible = true;
 
-	window.checkHomeButton() {
+	window.checkHomeButton = function() {
 		if(isMenuScheduleButtonVisible) {
 			if(isScrolledIntoView(homeScheduleButton)) {
 				menuScheduleButton.fadeOut();
