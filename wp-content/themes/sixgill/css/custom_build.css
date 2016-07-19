@@ -14034,7 +14034,7 @@ input {
 	margin-left: 11%;
 }
 
-.footer-link-col:last-child{
+.footer-link-col:last-child {
 	margin-right: 11%;
 }
 
@@ -14737,11 +14737,11 @@ input {
 }
 
 .footer-link-col {
-	margin-left: 11%;
+	margin-left: 13vw;
 }
 
 .footer-link-col:last-child{
-	margin-right: 11%;
+	margin-right: 13vw;
 }
 
 .footer-copyright-wrapper {
@@ -16211,6 +16211,10 @@ a.search-post-result {
 
 .footer-subscription-form-wrapper {
 	max-width: 490px;
+}
+
+.resource-link {
+	color: #0051c6 !important;
 }
 }/* Custom resolutions */
 

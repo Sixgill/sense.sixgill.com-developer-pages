@@ -90,3 +90,7 @@ a.search-post-result {
 .footer-subscription-form-wrapper {
 	max-width: 490px;
 }
+
+.resource-link {
+	color: #0051c6 !important;
+}
