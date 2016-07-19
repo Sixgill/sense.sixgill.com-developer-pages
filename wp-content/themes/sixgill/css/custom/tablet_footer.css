@@ -96,7 +96,11 @@
 }
 
 .footer-link-col {
-	width: 24%;
+	margin-left: 13vw;
+}
+
+.footer-link-col:last-child{
+	margin-right: 13vw;
 }
 
 .footer-copyright-wrapper {
