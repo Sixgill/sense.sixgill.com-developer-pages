@@ -13718,12 +13718,7 @@ input {
 	margin-bottom: 0px;
 }
 
-.resources-download-form-require::after{
-	content:"*";
-	color:#4ddb5a;
-	font-size: 20px;
-	line-height: 20px;
-}
+
 /* Tech Common styles */
 #tech-page-header-background {
 	background-image: url('/wp-content/themes/sixgill/images/td/hero/dollarphotoclub_77872129_web.jpg');
