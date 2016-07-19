@@ -4734,7 +4734,7 @@ jQuery(function($) {
 				$(document).on("scroll", onScroll);
 			});
 		});
-		
+
 		if(device.tablet()) {
 			$('body').removeClass('no-touch');
 		}
