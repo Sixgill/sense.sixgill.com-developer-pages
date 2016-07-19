@@ -4747,8 +4747,10 @@ jQuery(function($) {
 		$('.my_subMenus > a').each(function(index, item) {
 			var currentLink = $(this);
 			if ($(currentLink.attr("href")).length > 0) {
+				console.log('current link href > 0');
 				var refElement = $(currentLink.attr("href"));
 				if (refElement.position().top <= windowPos && (refElement.position().top + refElement.height() + $("#primary-navwrapper").height() ) > windowPos) {
+					console.log('switch to the next one');
 					$('.my_subMenus > a').removeClass("active");
 					currentLink.addClass("active");
 				} else{
