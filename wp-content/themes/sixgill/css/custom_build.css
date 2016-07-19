@@ -13957,7 +13957,7 @@ input {
 
 #primary-menu {
 	opacity: 1 !important;
-	position: fixed;
+	position: absolute;
 	left: 0px;
 	top: 36.83vh;
 	width: 225px;
