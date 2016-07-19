@@ -68,13 +68,13 @@
 			<div class="footer-top-block-right">
 				<div class="footer-icons-wrapper vertical-centered">
 					<a href="<?php echo $facebookLink; ?>" class="footer-social-icon-link" target="_blank">
-						<img src="/wp-content/themes/sixgill/images/td/footer/facebook_icon.svg" class="footer-social-icon-img">
+						<img src="/wp-content/themes/sixgill/images/td/footer/facebook_icon.svg" alt="Facebook icon" class="footer-social-icon-img">
 					</a>
 					<a href="<?php echo $twitterLink; ?>" class="footer-social-icon-link" target="_blank">
-						<img src="/wp-content/themes/sixgill/images/td/footer/twitter_icon.svg" class="footer-social-icon-img">
+						<img src="/wp-content/themes/sixgill/images/td/footer/twitter_icon.svg" alt="Twitter icon" class="footer-social-icon-img">
 					</a>
 					<a href="<?php echo $linkedinLink; ?>" class="footer-social-icon-link" target="_blank">
-						<img src="/wp-content/themes/sixgill/images/td/footer/linkedin_icon.svg" class="footer-social-icon-img">
+						<img src="/wp-content/themes/sixgill/images/td/footer/linkedin_icon.svg" alt="Linkedin icon" class="footer-social-icon-img">
 					</a>
 				</div>
 			</div>
