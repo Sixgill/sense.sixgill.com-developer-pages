@@ -13895,11 +13895,18 @@ input {
 }
 
 .solution-subpage-suptitle {
-	font-size: 23px;
+	font-size: 25.2px;
+	font-weight: 500;
+	letter-spacing: 0.8px;
 }
 
 .solution-subpage-title {
 	font-size: 45px;
+	font-size: 59.7px;
+	font-weight: 300;
+	letter-spacing: 1.8px;
+	text-align: center;
+	color: #f9f8f8;
 }
 
 .container-subpage {
@@ -14210,7 +14217,7 @@ input {
 .home-diagram {
 	padding: 85px 50px 45px 50px;
 }
-
+/* Solutions desktop styles */
 .solutions-blog-content {
 	float: left;
 	text-align: left;
@@ -14358,6 +14365,10 @@ input {
 
 .solution-use-cases-block-image {
 	height: 13.2vw;
+}
+
+.swiper_wrapper {
+	height: 324px;
 }
 /* Resources desktop styles */
 .resource-block {

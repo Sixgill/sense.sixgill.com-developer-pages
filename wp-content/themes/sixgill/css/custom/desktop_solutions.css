@@ -1,4 +1,4 @@
-
+/* Solutions desktop styles */
 .solutions-blog-content {
 	float: left;
 	text-align: left;
@@ -146,4 +146,8 @@
 
 .solution-use-cases-block-image {
 	height: 13.2vw;
+}
+
+.swiper_wrapper {
+	height: 324px;
 }
