@@ -148,35 +148,31 @@
 		<div class="solution-subpage-viewprocess-placeholder"></div>
 	<?php } ?>
 
-	<div class="solution-subpage-last-block-wrapper">
-		<div class="solution-subpage-last-block no-bottom-padding no-padding-top font-size-16">
-			<div class="solution-subpage-bottom-section-content">
-				<h1 class="solution-subpage-section-title solution-subpage-last-block-title">
-					<?php echo get_field('last_section_title'); ?>
-				</h1>
+		<div class="solution-subpage-last-block-wrapper" style="background-image: url('<?php echo get_field('last_block_image'); ?>');">
+			<div class="solution-subpage-last-block no-bottom-padding no-padding-top font-size-16">
+				<div class="solution-subpage-bottom-section-content">
+					<h1 class="solution-subpage-last-block-title">
+						<?php echo get_field('last_section_title'); ?>
+					</h1>
 
-				<h2 class="solution-subpage-bottom-section-subtitle">
-					<?php echo get_field('last_section_subtitle'); ?>
-				</h2>
+					<h2 class="solution-subpage-bottom-section-subtitle">
+						<?php echo get_field('last_section_subtitle'); ?>
+					</h2>
 
-				<div class="solution-subpage-bottom-section-column">
-					<?php echo get_field('last_section_text_left_column'); ?>
-				</div>
-				<div class="solution-subpage-bottom-section-column">
-					<?php echo get_field('last_section_text_right_column'); ?>
-				</div>
-				<div class="clear"></div>
-				<div class="solution-subpage-last-section-text-wrapper">
-					<?php echo get_field('last_section_text'); ?>
+					<div class="solution-subpage-bottom-section-column">
+						<?php echo get_field('last_section_text_left_column'); ?>
+					</div>
+					<div class="solution-subpage-bottom-section-column">
+						<?php echo get_field('last_section_text_right_column'); ?>
+					</div>
+					<div class="clear"></div>
+					<div class="solution-subpage-last-section-text-wrapper">
+						<?php echo get_field('last_section_text'); ?>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-		<div class="col_full">
-			<div class="green-line"></div>
-		</div>
-
+		
 		<div class="col_full center">
 			<div class="solution-subpage-section-title">Additional Use Cases</div>
 		</div>
