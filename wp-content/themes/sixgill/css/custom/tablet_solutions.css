@@ -151,11 +151,6 @@
 	width: 88.28vw;
 }
 
-.solution-subpage-gallery-block {
-	padding-bottom: 5.6vw;
-	padding-top: calc(5.38vw - 30px);
-}
-
 .solution-subpage-gallery-block-title {
 	margin-bottom: 2.19vw;
 	font-size: 22px;
@@ -244,4 +239,13 @@
 
 .solution-use-cases-block-image {
 	height: 38.9vw;
+}
+
+.solution-subgape-carousels-div {
+	width: 72.73vw;
+	margin: 6.3vw 0px 6vw 0px;
+}
+
+.solution-subpage-galleries-wrapper {
+	padding: calc(3vw - 30px) 0px 4.6vw 0px;
 }
