@@ -139,8 +139,6 @@ ul:not([class]) li {
 }
 
 .solution-subpage-gallery-block {
-	padding-bottom: 5.6vw;
-	padding-top: calc(5.38vw - 30px);
 }
 
 .solution-subpage-gallery-thumbnail-wrapper {
@@ -190,16 +188,15 @@ ul:not([class]) li {
 	background-color: #2e2e2e;
 	cursor: pointer;
 	display: inline-block;
-	margin-bottom: 9.7vw;
 }
 
-#solution-carousel-mobile-button-left {
+[id$="carousel-mobile-button-left"] {
 	border-right: 1px solid rgba(153, 153, 153, 0.32);
 	padding-left: 3.125vw;
 	text-align: left;
 }
 
-#solution-carousel-mobile-button-right {
+[id$="carousel-mobile-button-right"] {
 	text-align: right;
 	padding-right: 3.125vw;
 }
@@ -268,4 +265,13 @@ ul:not([class]) li {
 
 .solution-use-cases-block-subtitle > a:hover {
 	color: #0051c6;
+}
+
+.solution-subgape-carousels-div {
+	width: 72.73vw;
+	margin: 10vw 0px 10vw 0px;
+}
+
+.solution-subpage-galleries-wrapper {
+	padding: 10vw 0px 9vw 0px;
 }

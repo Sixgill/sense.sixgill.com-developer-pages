@@ -34,7 +34,7 @@
 	font-family: 'Lato light';
 	font-size: 59.7px;
 	font-weight: 300;
-	letter-spacing: 1.8px;	
+	letter-spacing: 1.8px;
 	color: #f9f8f8;
 }
 
@@ -255,7 +255,7 @@
 	border: 1px solid #dfdfdf;
 }
 
-.solution-subpage-gallery-block {
+.solution-subpage-galleries-wrapper {
 	text-align: center;
 	background-color: #f8f8f8;
 }
@@ -350,3 +350,8 @@
 	font-family: 'Lato light';
 }
 
+.solution-subgape-carousels-div {
+	display: inline-block;
+	height: 1px;
+	background-color: #dfdfdf;
+}

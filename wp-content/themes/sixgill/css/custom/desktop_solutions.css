@@ -56,8 +56,6 @@
 }
 
 .solution-subpage-gallery-block {
-	padding-bottom: 5.6vw;
-	padding-top: calc(5.38vw - 30px);
 	text-align: center;
 }
 
@@ -168,4 +166,13 @@
 
 .solution-subpage-last-block-wrapper {
 	background: url("../images/Solutions/getStartedBg-Desktop@1x.png") no-repeat scroll 0 0 / cover ;
+}
+
+.solution-subgape-carousels-div {
+	width: 72.73vw;
+	margin: 3.66vw 0px 3.66vw 0px;
+}
+
+.solution-subpage-galleries-wrapper {
+	padding: calc(3vw - 30px) 0px 4.6vw 0px;
 }
