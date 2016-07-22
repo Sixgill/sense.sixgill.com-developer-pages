@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: 'Lato light';
+  font-weight: normal;
+  font-style: 400;
+  src: local('Lato Light'), local('Lato-Light'), url('/wp-content/themes/sixgill/css/fonts/lato-light-webfont.woff') format('woff');
+}
+
+@font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
@@ -13312,16 +13319,25 @@ input {
 }
 
 .solution-subpage-suptitle {
+	font-family: 'Lato';
+	font-size: 25.2px;
+	font-weight: 500;
+	letter-spacing: 0.8px;
 	color: #4ddb5a;
 }
 
 .solution-subpage-title {
+	font-family: 'Lato light';
+	font-size: 59.7px;
+	font-weight: 300;
+	letter-spacing: 1.8px;	
 	color: #f9f8f8;
 }
 
+
 .solution-subpage-title , .solution-subpage-suptitle {
-	font-weight: 800;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .solution-subpage-bottom-line {
@@ -13346,6 +13362,16 @@ input {
 	text-align: left;
 	position: relative;
 }
+
+.solution-subpage-bottom-section-column ul li {
+	font-family: Lato;
+	font-weight: normal;
+	line-height: 1.25;
+	letter-spacing: 0.5px;
+	color:#f8f8f8;
+}
+
+
 
 .solution-subpage-bottom-section-column:nth-child(2n+1) {
 		float: left;
@@ -13382,22 +13408,28 @@ input {
 	display: inline-block;
 }
 
-.solution-subpage-gallery-block-title {
-	font-weight: bold;
-}
-
 .solution-subpage-bottom-link-col {
 	width: 50%;
 }
 
 .solution-subpage-bottom-section-subtitle {
-	font-size: 20px;
-	font-weight: normal;
-	margin-bottom: 70px;
+	font-family: Lato;
+	font-size: 16.2px;
+	font-weight: lighter;
+	line-height: 1.25;
+	letter-spacing: 0.5px;
+	color: #f8f8f8;
+	width: 40vw;
+	margin: 32px auto;
 }
 
 .solution-subpage-last-block-title {
-	margin-bottom: 15px;
+	font-size: 44.6px;
+	font-weight: 300;
+	line-height: 0.45;
+	letter-spacing: 1.3px;
+	color: #4ddb5a;
+	font-family: 'Lato light';
 }
 
 .solution-subpage-bottom-link-col {
@@ -13534,6 +13566,7 @@ input {
 	text-align: center;
 	width: 100%;
 	display: block;
+	margin-bottom: 61px;
 }
 
 .solution-subpage-bottom-section-content {
@@ -13543,6 +13576,14 @@ input {
 
 .solution-subpage-last-section-text-wrapper {
 	display: inline-block;
+}
+
+.solution-subpage-last-section-text-wrapper p{
+	font-size: 16.2px;
+	font-weight: normal;
+	line-height: 1.25;
+	letter-spacing: 0.5px;
+	color: #f8f8f8;
 }
 
 .solution-subpage-slide-title {
@@ -13595,6 +13636,16 @@ input {
 .solution-carousel-button-wrapper {
 	text-align: center;
 }
+
+.solution-subpage-section-title, .solution-subpage-second-block-title {
+	font-size: 44.6px;
+	font-weight: 300;
+	line-height: 0.45;
+	letter-spacing: 1.3px;
+	color: #0051c6;
+	font-family: 'Lato light';
+}
+
 /* Resources Common styles */
 .resources-background {
 	background-color: #eeeeee;
@@ -13887,19 +13938,6 @@ input {
 .block-link-subpage {
 	height: 133px;
 	width: 100%;
-}
-
-.solution-subpage-section-title, .solution-subpage-second-block-title {
-	font-size: 33px;
-	font-weight: 100;
-}
-
-.solution-subpage-suptitle {
-	font-size: 23px;
-}
-
-.solution-subpage-title {
-	font-size: 45px;
 }
 
 .container-subpage {
@@ -14210,7 +14248,7 @@ input {
 .home-diagram {
 	padding: 85px 50px 45px 50px;
 }
-
+/* Solutions desktop styles */
 .solutions-blog-content {
 	float: left;
 	text-align: left;
@@ -14224,12 +14262,20 @@ input {
 	text-align: center;
 }
 
-.solution-subpage-first-block-image-container, .first-left-container-subpage, .left-block-subpage, .right-block-subpage {
+.left-block-subpage, .right-block-subpage {
 	width: 50%;
 }
 
+.first-left-container-subpage {
+	width:51%;
+}
+
+.solution-subpage-first-block-image-container {
+	width:48.1%;
+}
+
 .solution-subpage-first-block-image {
-	width: 39.86vw;
+	max-width: 52.5vw;
 }
 
 .second-right-container-subpage {
@@ -14267,7 +14313,11 @@ input {
 
 .solution-subpage-gallery-block-title {
 	margin-bottom: 2.19vw;
-	font-size: 22px;
+	font-size: 16.2px;
+	font-weight: bold;
+	line-height: 1.42;
+	letter-spacing: 0.5px;
+	color: #2e2e2e;
 }
 
 .solution-subpage-gallery-thumbnail-wrapper {
@@ -14294,16 +14344,18 @@ input {
 }
 
 .solution-subpage-last-section-text-wrapper {
-	width: 50.73vw;
+	width: 52vw;
 }
 
 .solution-subpage-last-section-text-wrapper p {
 	text-align: center;
+	margin-bottom: 67px;
 }
 
 .solution-use-cases-block-content {
 	width: 68vw;
 	margin: 0 auto 4vw;
+	padding-top: 1vw;
 }
 
 .solution-subpage-slide-title {
@@ -14358,6 +14410,14 @@ input {
 
 .solution-use-cases-block-image {
 	height: 13.2vw;
+}
+
+.swiper_wrapper {
+	height: 324px;
+}
+
+.solution-subpage-last-block-wrapper {
+	background: url("../images/Solutions/getStartedBg-Desktop@1x.png") no-repeat scroll 0 0 / cover ;
 }
 /* Resources desktop styles */
 .resource-block {
@@ -14838,6 +14898,10 @@ input {
 	max-width: 600px;
 }
 /* Solutions tablet styles */
+.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid), .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide {
+	height: 263px !important;
+}
+
 .solution-subpage-container {
 	margin-left: 70px;
 	margin-right: 40px;
@@ -14870,11 +14934,14 @@ input {
 }
 
 .solution-subpage-title {
-	font-size: 32px;
+	font-size: 39.8px;
+	font-weight: 300;
+	letter-spacing: 1.2px;
 }
 
 .solution-subpage-suptitle {
 	font-size: 20px;
+	font-weight: 500;
 }
 
 .solution-subpage-first-block {
@@ -14894,7 +14961,7 @@ input {
 }
 
 .first-text-subpage {
-	margin: 7.5vw 3.05vw 0px 4.56vw;
+	margin: 7vw 3.05vw 0px 4.56vw;
 }
 
 .second-text-subpage {
@@ -14911,11 +14978,15 @@ input {
 }
 
 .first-left-container-subpage {
-	width: 56%;
+	width: 55.5%;
+}
+
+.solution-subpage-first-block-image-container {
+	width: 43.5%;
 }
 
 .solution-subpage-first-block-image {
-	width: 43.29vw;
+	max-width: 42.3vw;
 }
 
 .second-right-container-subpage {
@@ -14944,6 +15015,8 @@ input {
 
 .solution-subpage-section-title{
 	font-size: 36px;
+	margin-bottom: 26px;
+	line-height: 1;
 }
 
 .solution-subpage-bottom-link-description {
@@ -14955,6 +15028,14 @@ input {
 	margin-left: 1%;
 	margin-right: 1%;
 
+}
+
+#content .solution-subpage-first-block > .first-left-container-subpage > .first-text-subpage > .solution-subpage-first-block-text p{
+	font-size: 16.2px;
+	font-weight: normal;
+	line-height: 1.42;
+	letter-spacing: 0.5px;
+	color: #2e2e2e;
 }
 
 .solution-use-cases-block-subtitle {
@@ -14974,6 +15055,7 @@ input {
 
 .solution-subpage-bottom-section-column {
 	width: 38.15vw;
+	margin-bottom: 3.5vw;
 }
 
 .solution-subpage-bottom-section-column:nth-child(2n+1) {
@@ -14996,8 +15078,13 @@ input {
 }
 
 .solution-subpage-gallery-block-title {
-	margin-bottom: 2.19vw;
-	font-size: 22px;
+	font-size: 16.2px;
+	font-weight: bold;
+	line-height: 1.25;
+	letter-spacing: 0.8px;
+	text-align: center;
+	color: #2e2e2e;
+	padding-bottom: 22px;
 }
 
 .solution-subpage-gallery-thumbnail-wrapper {
@@ -15025,10 +15112,15 @@ input {
 
 .solution-subpage-last-section-text-wrapper p {
 	text-align: center;
+	margin-bottom: 57px;
+}
+
+#content .solution-subpage-last-section-text-wrapper p {
+	line-height: 1.25;
 }
 
 .solution-use-cases-block-content{
-	margin-bottom: 4vw;
+	margin-bottom: 6vw;
 }
 
 .solution-subpage-slide-title {
@@ -15082,9 +15174,32 @@ input {
 }
 
 .solution-use-cases-block-image {
-	height: 38.9vw;
+	height: 23vw;
 }
-/* Resources tablet styles */
+
+.solution-subpage-bottom-section-subtitle {
+	width: 68vw;
+	margin: 32px auto 63px;
+}
+
+ul:not([class]) li {
+	margin-bottom: 1.5em;
+}
+
+.solution-subpage-last-block-title {
+	font-size: 35.2px;
+	font-weight: 300;
+	line-height: 0.58;
+	letter-spacing: 1.1px;
+}
+
+#content > .col_full {
+	margin-bottom: 0;
+}
+
+.solution-subpage-last-block-wrapper {
+	background: url('../images/Solutions/getStartedBg-Tablet@1x.png') no-repeat scroll 0 0 / cover ;
+}/* Resources tablet styles */
 .resource-block {
 	width: 48%;
 	margin-left: 1%;
@@ -15886,6 +16001,22 @@ input {
 	margin-top: 20px !important;
 }
 
+.swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide, .ei-slider {
+	height: 127px !important;
+}
+
+.solution-subpage-suptitle {
+	font-size: 13.2px;
+	font-weight: 500;
+	letter-spacing: 0.4px;
+}
+
+.solution-subpage-title {
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+}
+
 .solution-subpage-container {
 	margin-left: 30px;
 	margin-right: 30px;
@@ -15916,7 +16047,7 @@ input {
 }
 
 .solution-subpage-first-block-image-container {
-	margin-top: 30px;
+
 }
 
 .solution-subpage-first-block-image-container {
@@ -15925,11 +16056,18 @@ input {
 }
 
 .solution-subpage-section-title {
-	margin-bottom: 15px;
+	margin-bottom: 23px;
 }
 
 .solution-subpage-second-block-image-container {
 	position: relative;
+}
+
+#content .solution-subpage-first-block-text p {
+	font-size: 16.2px;
+	font-weight: normal;
+	line-height: 1.25;
+	letter-spacing: 0.5px;
 }
 
 .solution-subpage-third-block {
@@ -15944,11 +16082,31 @@ input {
 	text-align: left;
 }
 
+.solution-subpage-last-block-title{
+	font-size: 28.4px;
+	font-weight: 300;
+	line-height: 0.71;
+	letter-spacing: 0.9px;
+}
+
 .solution-subpage-bottom-section-subtitle {
 	margin-bottom: 30px;
-	font-size: 17px;
-  font-family: "Lato";
-  font-weight: normal;
+	width: inherit;
+	font-size: 16.2px;
+	font-weight: normal;
+	line-height: 1.25;
+	letter-spacing: 0.5px;
+}
+
+..solution-subpage-bottom-section-column ul li {
+	font-size: 16.2px;
+	font-weight: normal;
+	line-height: 1.25;
+	letter-spacing: 0.5px;
+}
+
+ul:not([class]) li {
+	margin-bottom: 1em;
 }
 
 .solution-subpage-bottom-line {
@@ -15958,6 +16116,9 @@ input {
 
 .solution-subpage-section-title {
 	font-size: 28px;
+	font-weight: 300;
+	line-height: 0.71;
+	letter-spacing: 0.9px;
 }
 
 .solution-subpage-second-block {
@@ -15966,6 +16127,13 @@ input {
 
 .solution-subpage-second-block-wrapper {
 	width: 88.28vw;
+}
+
+#content .solution-subpage-second-block-wrapper p{
+	font-size: 16.2px;
+	font-weight: normal;
+	line-height: 1.42;
+	letter-spacing: 0.5px;
 }
 
 .solution-subpage-gallery-block {
@@ -16074,7 +16242,31 @@ input {
 	margin-bottom: 7.66vw;
 	font-weight: normal;
 }
-/* Resources mobile portrait and landscape styles */
+
+.solution-subpage-gallery-block-title {
+	font-size: 13.5px;
+	font-weight: bold;
+	line-height: 1.5;
+	letter-spacing: 0.7px;
+	margin-bottom: 6vw;
+}
+
+.solution-subpage-last-block-wrapper {
+	margin-bottom: 32px;
+	background: url('../images/Solutions/getStartedBg-Mobile@1x.png') no-repeat scroll 0 0 / cover ;
+}
+
+#content .col_full {
+	margin-bottom: 38px;
+}
+
+.solution-use-cases-block-image {
+	height: 53vw;
+}
+
+.solution-use-cases-block-subtitle > a:hover {
+	color: #0051c6;
+}/* Resources mobile portrait and landscape styles */
 .resource-link {
 	font-size: 18px;
 }
