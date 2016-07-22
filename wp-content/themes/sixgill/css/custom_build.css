@@ -14011,6 +14011,7 @@ input {
 #primary-menu li{
 	display: inline-block;
 	text-align: center;
+	width: 100%;
 }
 
 #primary-menu ul, #primary-menu li, #primary-menu a, #primary-menu a > div {
@@ -14030,6 +14031,11 @@ input {
 	-moz-border-image: -moz-linear-gradient(#5ede6a, #5eb26a) 1 100%;
 	-o-border-image: -o-linear-gradient(#5ede6a, #5eb26a) 1 100%;
 	border-image: linear-gradient(to bottom, #5ede6a, #5eb26a) 1 100%;
+}
+
+.desktop-menu-wrapper {
+	display: inline-block;
+	text-align: left;
 }
 /* Footer desktop styles */
 .footer {
@@ -14707,6 +14713,10 @@ input {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+}
+
+#wrapper {
+	margin-top: 121px !important;
 }
 /* Press tablet styles */
 /* General tablet styles */
