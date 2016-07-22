@@ -230,7 +230,7 @@
 	border: 1px solid #dfdfdf;
 }
 
-.solution-subpage-gallery-block {
+.solution-subpage-galleries-wrapper {
 	text-align: center;
 	background-color: #f8f8f8;
 }
@@ -305,4 +305,10 @@
 
 .solution-carousel-button-wrapper {
 	text-align: center;
+}
+
+.solution-subgape-carousels-div {
+	display: inline-block;
+	height: 1px;
+	background-color: #dfdfdf;
 }
