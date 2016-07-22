@@ -94,3 +94,7 @@ a.search-post-result {
 .resource-link {
 	color: #0051c6 !important;
 }
+
+.desktop-menu-wrapper {
+	height: 100%;
+}
