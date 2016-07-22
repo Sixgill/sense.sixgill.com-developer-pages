@@ -4553,7 +4553,7 @@ jQuery(function($){
 	      paginationSpeed : 400,
 				pagination: false,
 				singleItem : true,
-				lazyLoad : false,
+				lazyLoad : true,
 	    	autoHeight : autoHeightOption
 
 	  });
