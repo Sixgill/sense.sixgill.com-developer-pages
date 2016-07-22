@@ -45,7 +45,7 @@
 ?>
 <div class="clear"></div>
 <nav id="primary-menu">
-	<ul>
+	<ul class="menu-ul-wrapper">
 		<li class="menu-li-wrapper">
 			<div class="desktop-menu-wrapper">
 				<?php
