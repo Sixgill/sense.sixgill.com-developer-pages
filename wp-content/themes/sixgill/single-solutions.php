@@ -57,37 +57,52 @@
 	</div>
 
 	<a name="presentation"></a>
-	<?php
-		$firstSlidesTitle = get_field('first_slides_title');
-		$firstSlides = get_field('first_gallery_images');
-		$firstFile = wrapDirectFileLink(get_field('first_gallery_file'));
+	<div class="solution-subpage-galleries-wrapper">
+		<?php
 
-		$secondSlidesTitle = get_field('first_slides_title');
-		$secondSlides = get_field('first_gallery_images');
-		$secondFile = wrapDirectFileLink(get_field('first_gallery_file'));
+			$firstSlidesTitle = get_field('first_carousel_title');
+			$firstSlides = get_field('first_carousel_slides');
+			$firstFile = wrapDirectFileLink(get_field('first_carousel_file'));
+			$firstAutoHeight = get_field('first_carousel_auto_height') ? 'on' : 'off';
+			$firstRewindEnabled = get_field('first_carousel_rewind_enabled') ? 'on' : 'off';
 
-		$isThereFirstCarousel = is_array($firstSlides) && count($firstSlides);
-		$isThereSecondCarousel = is_array($secondSlides) && count($secondSlides);
-		if($isThereFirstCarousel) {
-			$carouselTitle = $firstSlidesTitle;
-			$carouselSlides = $firstSlides;
-			$carouselFile = $firstFile;
-			include(locate_template('part-carousel.php'));
-		}
+			$secondSlidesTitle = get_field('second_carousel_title');
+			$secondSlides = get_field('second_carousel_slides');
+			$secondFile = wrapDirectFileLink(get_field('second_carousel_file'));
+			$secondAutoHeight = get_field('second_carousel_auto_height') ? 'on' : 'off';
+			$secondRewindEnabled = get_field('second_carousel_rewind_enabled') ? 'on' : 'off';
 
-		if($isThereFirstCarousel && $isThereSecondCarousel)
+			$isThereFirstCarousel = is_array($firstSlides) && count($firstSlides);
+			$isThereSecondCarousel = is_array($secondSlides) && count($secondSlides);
 
-		if($isThereSecondCarousel) {
-			$carouselTitle = $secondSlidesTitle;
-			$carouselSlides = $secondSlides;
-			$carouselFile = $firstFile;
-			include(locate_template('part-carousel.php'));
-		}
-	?>
+			if($isThereFirstCarousel) {
+				$carouselTitle = $firstSlidesTitle;
+				$carouselSlides = $firstSlides;
+				$carouselFile = $firstFile;
+				$carouselAutoHeight = $firstAutoHeight;
+				$carouselRewindEnabled = $firstRewindEnabled;
+				$carouselName = "first";
+				include(locate_template('part-carousel.php'));
+			}
 
-	<?php if(!$isThereAnyGallery) { ?>
-		<div class="solution-subpage-viewprocess-placeholder"></div>
-	<?php } ?>
+			if($isThereFirstCarousel && $isThereSecondCarousel) {
+				?>
+				<div class="solution-subgape-carousels-div"></div>
+				<?php
+			}
+
+			if($isThereSecondCarousel) {
+				$carouselTitle = $secondSlidesTitle;
+				$carouselSlides = $secondSlides;
+				$carouselFile = $secondFile;
+				$carouselAutoHeight = $secondAutoHeight;
+				$carouselRewindEnabled = $secondRewindEnabled;
+				$carouselName = "second";
+				include(locate_template('part-carousel.php'));
+			}
+
+		?>
+	</div>
 
 	<div class="solution-subpage-last-block-wrapper">
 		<div class="solution-subpage-last-block no-bottom-padding no-padding-top font-size-16">

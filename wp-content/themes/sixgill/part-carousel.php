@@ -1,10 +1,10 @@
 <div class="solution-subpage-gallery-block">
 	<div class="solution-subpage-gallery-block-title">
-		<?php echo  ?>
+		<?php echo $carouselTitle ?>
 	</div>
 	<div class="own-carousel-n-controls-wrapper">
 		<div class="solution-carousel-button-wrapper no-mobile-landscape-display no-mobile-portrait-display">
-			<div id="solution-carousel-button-left" class="solution-carousel-button solution-carousel-button-left">
+			<div id="<?php echo $carouselName; ?>-solution-carousel-button-left" class="solution-carousel-button solution-carousel-button-left">
 				<img
 					class="solution-carousel-button-image"
 					alt="Prev slide button"
@@ -14,14 +14,14 @@
 		</div>
 		<div class="own-carousel-outside-wrapper">
 			<div
-				id="solution-subpage-carousel"
+				id="<?php echo $carouselName; ?>-solution-subpage-carousel"
 				class="owl-carousel owl-theme"
-				autoheight="<?php echo get_field('carousel_auto_height') ? 'on' : 'off'; ?>"
-				rewindenabled="<?php echo get_field('rewind_enabled') ? 'on' : 'off'; ?>"
+				autoheight="<?php echo $carouselAutoHeight; ?>"
+				rewindenabled="<?php echo $carouselRewindEnabled; ?>"
 			>
 
 				<?php
-					foreach($galleryImages as $slide) {
+					foreach($carouselSlides as $slide) {
 						echo '
 							<div class="item">
 								<img
@@ -44,7 +44,7 @@
 			</div>
 		</div>
 		<div class="solution-carousel-button-wrapper no-mobile-landscape-display no-mobile-portrait-display">
-			<div id="solution-carousel-button-right" class="solution-carousel-button solution-carousel-button-right">
+			<div id="<?php echo $carouselName; ?>-solution-carousel-button-right" class="solution-carousel-button solution-carousel-button-right">
 				<img
 					class="solution-carousel-button-image"
 					alt="Next slide button"
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 
-		<div id="solution-carousel-mobile-button-left" class="solution-carousel-mobile-button no-desktop-display no-tablet-display">
+		<div id="<?php echo $carouselName; ?>-solution-carousel-mobile-button-left" class="solution-carousel-mobile-button no-desktop-display no-tablet-display">
 			<div class="solution-carousel-mobile-button-icon vertical-centered">
 				<img
 					class="solution-carousel-button-image"
@@ -63,7 +63,7 @@
 			</div>
 		</div>
 
-		<div id="solution-carousel-mobile-button-right" class="solution-carousel-mobile-button no-desktop-display no-tablet-display">
+		<div id="<?php echo $carouselName; ?>-solution-carousel-mobile-button-right" class="solution-carousel-mobile-button no-desktop-display no-tablet-display">
 			<div class="solution-carousel-mobile-button-icon vertical-centered">
 				<img
 					class="solution-carousel-button-image"
@@ -74,9 +74,9 @@
 		</div>
 
 	</div>
-	<?php if(!empty($galleryFile)) { ?>
+	<?php if(!empty($carouselFile)) { ?>
 		<a
-			href="<?php echo $galleryFile; ?>"
+			href="<?php echo $carouselFile; ?>"
 			class="solution-subpage-gallery-button-link"
 		>
 			<div class="solution-subpage-gallery-button">
