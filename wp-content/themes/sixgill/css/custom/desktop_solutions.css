@@ -166,4 +166,6 @@
 	height: 324px;
 }
 
-
+.solution-subpage-last-block-wrapper {
+	background: url("../images/Solutions/getStartedBg-Desktop@1x.png") no-repeat scroll 0 0 / cover ;
+}

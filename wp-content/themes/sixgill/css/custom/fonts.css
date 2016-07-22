@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: 'Lato light';
+  font-weight: normal;
+  font-style: 400;
+  src: local('Lato Light'), local('Lato-Light'), url('/wp-content/themes/sixgill/css/fonts/lato-light-webfont.woff') format('woff');
+}
+
+@font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;

@@ -297,3 +297,7 @@ ul:not([class]) li {
 #content > .col_full {
 	margin-bottom: 0;
 }
+
+.solution-subpage-last-block-wrapper {
+	background: url('../images/Solutions/getStartedBg-Tablet@1x.png') no-repeat scroll 0 0 / cover ;
+}

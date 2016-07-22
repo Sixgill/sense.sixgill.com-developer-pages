@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: 'Lato light';
+  font-weight: normal;
+  font-style: 400;
+  src: local('Lato Light'), local('Lato-Light'), url('/wp-content/themes/sixgill/css/fonts/lato-light-webfont.woff') format('woff');
+}
+
+@font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
@@ -13312,16 +13319,25 @@ input {
 }
 
 .solution-subpage-suptitle {
+	font-family: 'Lato';
+	font-size: 25.2px;
+	font-weight: 500;
+	letter-spacing: 0.8px;
 	color: #4ddb5a;
 }
 
 .solution-subpage-title {
+	font-family: 'Lato light';
+	font-size: 59.7px;
+	font-weight: 300;
+	letter-spacing: 1.8px;	
 	color: #f9f8f8;
 }
 
+
 .solution-subpage-title , .solution-subpage-suptitle {
-	font-weight: 800;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .solution-subpage-bottom-line {
@@ -13413,7 +13429,7 @@ input {
 	line-height: 0.45;
 	letter-spacing: 1.3px;
 	color: #4ddb5a;
-	font-family: Lato;
+	font-family: 'Lato light';
 }
 
 .solution-subpage-bottom-link-col {
@@ -13627,8 +13643,9 @@ input {
 	line-height: 0.45;
 	letter-spacing: 1.3px;
 	color: #0051c6;
-	font-family: Lato;
+	font-family: 'Lato light';
 }
+
 /* Resources Common styles */
 .resources-background {
 	background-color: #eeeeee;
@@ -13921,21 +13938,6 @@ input {
 .block-link-subpage {
 	height: 133px;
 	width: 100%;
-}
-
-.solution-subpage-suptitle {
-	font-size: 25.2px;
-	font-weight: 500;
-	letter-spacing: 0.8px;
-}
-
-.solution-subpage-title {
-	font-size: 45px;
-	font-size: 59.7px;
-	font-weight: 300;
-	letter-spacing: 1.8px;
-	text-align: center;
-	color: #f9f8f8;
 }
 
 .container-subpage {
@@ -14414,7 +14416,9 @@ input {
 	height: 324px;
 }
 
-
+.solution-subpage-last-block-wrapper {
+	background: url("../images/Solutions/getStartedBg-Desktop@1x.png") no-repeat scroll 0 0 / cover ;
+}
 /* Resources desktop styles */
 .resource-block {
 	width: 24%;
@@ -15191,6 +15195,10 @@ ul:not([class]) li {
 
 #content > .col_full {
 	margin-bottom: 0;
+}
+
+.solution-subpage-last-block-wrapper {
+	background: url('../images/Solutions/getStartedBg-Tablet@1x.png') no-repeat scroll 0 0 / cover ;
 }/* Resources tablet styles */
 .resource-block {
 	width: 48%;
@@ -16245,6 +16253,7 @@ ul:not([class]) li {
 
 .solution-subpage-last-block-wrapper {
 	margin-bottom: 32px;
+	background: url('../images/Solutions/getStartedBg-Mobile@1x.png') no-repeat scroll 0 0 / cover ;
 }
 
 #content .col_full {

@@ -148,7 +148,7 @@
 		<div class="solution-subpage-viewprocess-placeholder"></div>
 	<?php } ?>
 
-		<div class="solution-subpage-last-block-wrapper" style="background-image: url('<?php echo get_field('last_block_image'); ?>');">
+		<div class="solution-subpage-last-block-wrapper">
 			<div class="solution-subpage-last-block no-bottom-padding no-padding-top font-size-16">
 				<div class="solution-subpage-bottom-section-content">
 					<h1 class="solution-subpage-last-block-title">

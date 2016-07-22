@@ -255,6 +255,7 @@ ul:not([class]) li {
 
 .solution-subpage-last-block-wrapper {
 	margin-bottom: 32px;
+	background: url('../images/Solutions/getStartedBg-Mobile@1x.png') no-repeat scroll 0 0 / cover ;
 }
 
 #content .col_full {
