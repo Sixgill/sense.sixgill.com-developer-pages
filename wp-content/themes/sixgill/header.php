@@ -33,7 +33,7 @@
 
 </head>
 
-<body class="side-header stretched no-touch" data-loader-timeout="7000">
+<body class="side-header stretched no-touch" data-loader-timeout="9000">
 
 	<!--GoogleTagManager-->
 	<noscript>
