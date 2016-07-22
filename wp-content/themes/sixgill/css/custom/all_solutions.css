@@ -23,16 +23,25 @@
 }
 
 .solution-subpage-suptitle {
+	font-family: 'Lato';
+	font-size: 25.2px;
+	font-weight: 500;
+	letter-spacing: 0.8px;
 	color: #4ddb5a;
 }
 
 .solution-subpage-title {
+	font-family: 'Lato light';
+	font-size: 59.7px;
+	font-weight: 300;
+	letter-spacing: 1.8px;
 	color: #f9f8f8;
 }
 
+
 .solution-subpage-title , .solution-subpage-suptitle {
-	font-weight: 800;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .solution-subpage-bottom-line {
@@ -57,6 +66,16 @@
 	text-align: left;
 	position: relative;
 }
+
+.solution-subpage-bottom-section-column ul li {
+	font-family: Lato;
+	font-weight: normal;
+	line-height: 1.25;
+	letter-spacing: 0.5px;
+	color:#f8f8f8;
+}
+
+
 
 .solution-subpage-bottom-section-column:nth-child(2n+1) {
 		float: left;
@@ -93,22 +112,28 @@
 	display: inline-block;
 }
 
-.solution-subpage-gallery-block-title {
-	font-weight: bold;
-}
-
 .solution-subpage-bottom-link-col {
 	width: 50%;
 }
 
 .solution-subpage-bottom-section-subtitle {
-	font-size: 20px;
-	font-weight: normal;
-	margin-bottom: 70px;
+	font-family: Lato;
+	font-size: 16.2px;
+	font-weight: lighter;
+	line-height: 1.25;
+	letter-spacing: 0.5px;
+	color: #f8f8f8;
+	width: 40vw;
+	margin: 32px auto;
 }
 
 .solution-subpage-last-block-title {
-	margin-bottom: 15px;
+	font-size: 44.6px;
+	font-weight: 300;
+	line-height: 0.45;
+	letter-spacing: 1.3px;
+	color: #4ddb5a;
+	font-family: 'Lato light';
 }
 
 .solution-subpage-bottom-link-col {
@@ -245,6 +270,7 @@
 	text-align: center;
 	width: 100%;
 	display: block;
+	margin-bottom: 61px;
 }
 
 .solution-subpage-bottom-section-content {
@@ -254,6 +280,14 @@
 
 .solution-subpage-last-section-text-wrapper {
 	display: inline-block;
+}
+
+.solution-subpage-last-section-text-wrapper p{
+	font-size: 16.2px;
+	font-weight: normal;
+	line-height: 1.25;
+	letter-spacing: 0.5px;
+	color: #f8f8f8;
 }
 
 .solution-subpage-slide-title {
@@ -305,6 +339,15 @@
 
 .solution-carousel-button-wrapper {
 	text-align: center;
+}
+
+.solution-subpage-section-title, .solution-subpage-second-block-title {
+	font-size: 44.6px;
+	font-weight: 300;
+	line-height: 0.45;
+	letter-spacing: 1.3px;
+	color: #0051c6;
+	font-family: 'Lato light';
 }
 
 .solution-subgape-carousels-div {

@@ -107,11 +107,11 @@
 	<div class="solution-subpage-last-block-wrapper">
 		<div class="solution-subpage-last-block no-bottom-padding no-padding-top font-size-16">
 			<div class="solution-subpage-bottom-section-content">
-				<h2 class="solution-subpage-section-title solution-subpage-last-block-title">
+				<h1 class="solution-subpage-last-block-title">
 					<?php echo get_field('last_section_title'); ?>
-				</h2>
+				</h1>
 
-				<h3 class="solution-subpage-bottom-section-subtitle">
+				<h2 class="solution-subpage-bottom-section-subtitle">
 					<?php echo get_field('last_section_subtitle'); ?>
 				</h2>
 
@@ -129,14 +129,8 @@
 		</div>
 	</div>
 
-	<div class="col_full">
-		<div class="green-line"></div>
-	</div>
-
 	<div class="col_full center">
-		<div class="solution-subpage-section-title">
-			Additional Use Cases
-		</div>
+		<div class="solution-subpage-section-title">Additional Use Cases</div>
 	</div>
 	<?php
 		$subpagesLinks = getSolutionsSubpagesLinks(get_the_ID());
