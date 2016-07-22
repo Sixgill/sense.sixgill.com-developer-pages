@@ -131,7 +131,6 @@
 
 	<div class="col_full center">
 		<div class="solution-subpage-section-title">Additional Use Cases</div>
-		</div>
 	</div>
 	<?php
 		$subpagesLinks = getSolutionsSubpagesLinks(get_the_ID());
