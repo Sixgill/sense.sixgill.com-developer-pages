@@ -1,6 +1,6 @@
 <?php
 	function makeMenuElement($elementName, $link, $sublinksList, $isSelected, $isExpanded, $listSize) {
-		$html = '';
+		$html .= '';
 		if($isSelected) {
 			$html .= '<a ';
 			if($isSelected) {
@@ -23,6 +23,7 @@
 					$html .= '<a href="#'.$sublink['anchor'].'">';
 						$html .= $sublink['name'];
 					$html .= '</a>';
+					$html .= '<div class="clear"></div>';
 				}
 				$html .= '</div>';
 			}
@@ -35,6 +36,7 @@
 				$html .= '</div>';
 			$html .= '</a>';
 		}
+		$html .= '<div class="clear"></div>';
 		return $html;
 	}
 
@@ -45,19 +47,21 @@
 <nav id="primary-menu">
 	<ul>
 		<li>
-			<?php
-				foreach($menu as $menuElement) {
-					echo makeMenuElement(
-						$menuElement['elementName'],
-						$menuElement['link'],
-						$menuElement['sublinksList'],
-						$menuElement['isSelected'],
-						$menuElement['isExpanded'],
-						count($menu)
-					);
-				}
-				get_template_part('mobile_social_buttons');
-			?>
+			<div class="desktop-menu-wrapper">
+				<?php
+					foreach($menu as $menuElement) {
+						echo makeMenuElement(
+							$menuElement['elementName'],
+							$menuElement['link'],
+							$menuElement['sublinksList'],
+							$menuElement['isSelected'],
+							$menuElement['isExpanded'],
+							count($menu)
+						);
+					}
+					get_template_part('mobile_social_buttons');
+				?>
+			</div>
 		</li>
 	</ul>
 </nav>
