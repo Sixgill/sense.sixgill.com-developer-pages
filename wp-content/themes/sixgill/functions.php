@@ -279,7 +279,7 @@
 
 	function getSolutionsSubpagesLinks($currentSubpageId) {
 		$subpages = getChindrenByParentSlug("solutions");
-		$result = array(0, array_shift(array_slice($subpages, 0, 1)));
+		$result = array(0, 0, $subpages, $currentSubpageId);
 		$currentSubpageFound = false;
 		foreach($subpages as $subpage) {
 			if($currentSubpageId != $subpage->ID) {
