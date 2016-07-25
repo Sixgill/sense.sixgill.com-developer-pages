@@ -129,8 +129,10 @@
 		</div>
 	</div>
 
-	<div class="col_full center">
-		<div class="solution-subpage-section-title">Additional Use Cases</div>
+	<div class="full-width center">
+		<div class="solution-subpage-section-title">
+			Additional Use Cases
+		</div>
 	</div>
 	<?php
 		$subpagesLinks = getSolutionsSubpagesLinks(get_the_ID());

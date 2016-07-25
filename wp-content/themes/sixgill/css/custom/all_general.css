@@ -8,12 +8,13 @@ p {
 	font-weight:normal;
 }
 
-a {
-	color: #004FC8;
-}
-
-a:hover, a:active, a::selection, a:focus {
+a,
+a:hover,
+a:active,
+a::selection,
+a:focus {
 	text-decoration: none !important;
+	color: #0051C6;
 }
 
 .listSolutions li,
