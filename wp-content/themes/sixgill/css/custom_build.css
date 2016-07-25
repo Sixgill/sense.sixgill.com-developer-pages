@@ -12593,12 +12593,13 @@ p {
 	font-weight:normal;
 }
 
-a {
-	color: #004FC8;
-}
-
-a:hover, a:active, a::selection, a:focus {
+a,
+a:hover,
+a:active,
+a::selection,
+a:focus {
 	text-decoration: none !important;
+	color: #0051C6;
 }
 
 .listSolutions li,
@@ -13331,6 +13332,7 @@ input {
 	font-size: 59.7px;
 	font-weight: 300;
 	color: #f9f8f8;
+	margin: 0px 10px 0px 10px;
 }
 
 
@@ -14259,22 +14261,6 @@ input {
 	padding: 85px 50px 45px 50px;
 }
 /* Solutions desktop styles */
-.solutions-blog-content {
-	float: left;
-	text-align: left;
-	width:65%;
-}
-
-.solutions-blog-post_thumbnail {
-	float: left;
-	width:30%;
-	max-width: 350px;
-	text-align: center;
-}
-
-.left-block-subpage, .right-block-subpage {
-	width: 50%;
-}
 
 .first-left-container-subpage {
 	width:51%;
@@ -14522,6 +14508,11 @@ input {
 	padding-bottom: 40px;
 }
 }@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1200px) {/* General tablet styles */
+
+.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid), .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide {
+	height: 263px !important;
+}
+
 .global-social-buttons-separator {
 	margin-top: 60px;
 	margin-bottom: 18px;
@@ -14923,37 +14914,6 @@ input {
 	height: 263px !important;
 }
 
-.solution-subpage-container {
-	margin-left: 70px;
-	margin-right: 40px;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-.solutions-subpage-text {
-	width: 65%;
-	max-width: 900px;
-}
-
-.solution-subpage-onlytext {
-	width: inherit;
-	max-width: 1000px;
-	padding-right: 100px;
-}
-
-.solutions-subpage-thumbnail {
-	float: right;
-	width: 34%;
-	text-align: left;
-}
-
-.solutions-subpage-thumbnail .size-post-thumbnail {
-	height:inherit !important;
-	max-width: 300px;
-	height:100% !important;
-	width: 100% !important;
-}
-
 .solution-subpage-title {
 	font-size: 39.8px;
 	font-weight: 300;
@@ -15202,10 +15162,6 @@ ul:not([class]) li {
 	font-weight: 300;
 	line-height: 0.58;
 	letter-spacing: 1.1px;
-}
-
-#content > .col_full {
-	margin-bottom: 0;
 }
 
 .solution-subpage-last-block-wrapper {
