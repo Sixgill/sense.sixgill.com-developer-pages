@@ -1,4 +1,9 @@
 /* General tablet styles */
+
+.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid), .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide {
+	height: 263px !important;
+}
+
 .global-social-buttons-separator {
 	margin-top: 60px;
 	margin-bottom: 18px;

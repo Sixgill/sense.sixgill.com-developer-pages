@@ -1,20 +1,4 @@
 /* Solutions desktop styles */
-.solutions-blog-content {
-	float: left;
-	text-align: left;
-	width:65%;
-}
-
-.solutions-blog-post_thumbnail {
-	float: left;
-	width:30%;
-	max-width: 350px;
-	text-align: center;
-}
-
-.left-block-subpage, .right-block-subpage {
-	width: 50%;
-}
 
 .first-left-container-subpage {
 	width:51%;
