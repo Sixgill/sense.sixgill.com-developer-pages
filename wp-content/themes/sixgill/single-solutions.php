@@ -7,9 +7,9 @@
 			<div class="solution-subpage-suptitle">
 				<?php echo get_field('suptitle'); ?>
 			</div>
-			<div class="solution-subpage-title">
+			<h1 class="solution-subpage-title">
 				<?php echo $post->post_title; ?>
-			</div>
+			</h1>
 		</div>
 	</div>
 </section>
@@ -107,13 +107,13 @@
 	<div class="solution-subpage-last-block-wrapper">
 		<div class="solution-subpage-last-block no-bottom-padding no-padding-top font-size-16">
 			<div class="solution-subpage-bottom-section-content">
-				<h1 class="solution-subpage-last-block-title">
+				<h2 class="solution-subpage-last-block-title">
 					<?php echo get_field('last_section_title'); ?>
-				</h1>
-
-				<h2 class="solution-subpage-bottom-section-subtitle">
-					<?php echo get_field('last_section_subtitle'); ?>
 				</h2>
+
+				<h3 class="solution-subpage-bottom-section-subtitle">
+					<?php echo get_field('last_section_subtitle'); ?>
+				</h3>
 
 				<div class="solution-subpage-bottom-section-column">
 					<?php echo get_field('last_section_text_left_column'); ?>
