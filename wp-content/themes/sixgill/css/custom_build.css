@@ -13330,7 +13330,6 @@ input {
 	font-family: 'Lato light';
 	font-size: 59.7px;
 	font-weight: 300;
-	letter-spacing: 1.8px;
 	color: #f9f8f8;
 }
 
@@ -13643,6 +13642,7 @@ input {
 	letter-spacing: 1.3px;
 	color: #0051c6;
 	font-family: 'Lato light';
+	line-height: 1.2em;
 }
 
 .solution-subgape-carousels-div {
