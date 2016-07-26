@@ -1,0 +1,106 @@
+/* Blog Common styles */
+.subscribe-email-focus::-webkit-input-placeholder{
+	font-size: 0px;
+}
+
+.subscribe-email-focus:-moz-placeholder {
+	font-size: 0px;
+}
+
+.subscribe-email-focus::-moz-placeholder {
+	font-size: 0px;
+}
+
+.subscribe-email-focus:-ms-input-placeholder {
+	font-size: 0px;
+}
+
+.subscribe-email{
+	border: 1px solid;
+	border-color: #e9e9e9;
+	outline: none !important;
+}
+
+.subscribe-email-focus {
+	padding-left: 10px;
+	text-align: left !important;
+}
+
+.blog-list {
+	padding-bottom: 0px;
+	width: 100%;
+	padding-right: 5px;
+}
+
+.subscribe-block-tablet-mobile {
+	background-color: #f0f0f0;
+	width: 100%;
+	height: inherit;
+}
+
+.subscribe-block-tablet-mobile form {
+	margin: 0 auto !important;
+}
+
+.subscribe-success-icon {
+	background-image: url('/wp-content/themes/sixgill/images/td/blog/subscribe_success.svg');
+	width: 100%;
+	height: 64px;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.subscribe-row {
+	display: table;
+	width: 100%;
+	padding-top: 20px;
+}
+
+.subscribe-element {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.subscribe-input-container {
+	width:100%;
+}
+
+.author-with-date-blogPost {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #999999;
+}
+
+.share-buttons-list img {
+    max-width: initial;
+}
+
+.blog-container {
+	padding-top: 0px;
+	margin-left: 5%;
+	margin-top: 40px;
+	margin-right: 10%;
+	max-width: none !important;
+}
+
+.subscribe-blog-button {
+	width: 100%;
+	margin: 0;
+}
+
+.container-slidebar {
+	width: 31%;
+	float: right;
+}
+
+.posts-list {
+	margin-bottom: 30px;
+}
+
+.margin-bottom-title {
+	margin-bottom: 25px;
+}

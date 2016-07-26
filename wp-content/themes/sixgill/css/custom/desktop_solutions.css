@@ -160,3 +160,8 @@
 .solution-subpage-galleries-wrapper {
 	padding: calc(3vw - 30px) 0px 4.6vw 0px;
 }
+
+.solution-use-cases-block-half:only-child {
+	margin-left: 25%;
+	margin-right: 25%;
+}

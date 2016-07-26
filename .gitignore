@@ -53,3 +53,13 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+
+# nodejs components #
+node_modules/
+# bower components #
+bower_components/
+
+# idea components #
+.idea/
+.tmp/
+dist/
