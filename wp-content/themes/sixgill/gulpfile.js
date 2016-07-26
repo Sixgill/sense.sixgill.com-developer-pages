@@ -34,9 +34,8 @@ gulp.task('scripts', function() {
   gutil.log(gutil.colors.green('Concatinate into ./src/custom_build.js'));
   return gulp.src('./src/js/**/*.js')
     .pipe(concat('./src/custom_build.js'))
+    .pipe(uglify().on('error', handleError))
     .pipe(gulp.dest('./'))
-    .pipe(uglify().on('error', gutil.log))
-    .pipe(gulp.dest('build'))
 });
 
 // Concatinate css scripts into "./src/custom_build.css"
@@ -44,7 +43,7 @@ gulp.task('styles', function() {
   gutil.log(gutil.colors.green('Concatinate into ./src/custom_build.css'));  
   return gulp.src('./src/css/**/*.css')
     .pipe(concat('./src/custom_build.css'))
-    .pipe(uglify().on('error', gutil.log))
+    .pipe(uglify().on('error', handleError))
     .pipe(gulp.dest('./'))
 });
 
