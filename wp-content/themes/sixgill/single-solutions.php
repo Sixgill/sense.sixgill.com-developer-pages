@@ -129,82 +129,93 @@
 		</div>
 	</div>
 
-	<div class="full-width center">
-		<div class="solution-subpage-section-title">
-			Additional Use Cases
+	<?php
+	$subpagesLinks = getSolutionsSubpagesLinks(get_the_ID());
+
+	$leftPage = get_post($subpagesLinks[0]);
+	$rightPage = get_post($subpagesLinks[1]);
+	$additionalUsecasesExist = ($subpagesLinks[0] !==0 || $subpagesLinks[1] !==0);
+	if($additionalUsecasesExist) {
+	?>
+
+		<div class="full-width center">
+			<div class="solution-subpage-section-title">
+				Additional Use Cases
+			</div>
 		</div>
+		<div class="solution-use-cases-block-content">
+	<?php
+	}
+	?>
+
+
+	<?php if($subpagesLinks[0]!=0) {
+		$leftPageDesktopThumbnail = get_field('desktop_thumbnail', $subpagesLinks[0]);
+		$leftPageTabletThumbnail = get_field('tablet_thumbnail', $subpagesLinks[0]);
+		$leftPageMobileThumbnail = get_field('mobile_thumbnail', $subpagesLinks[0]);
+		?>
+		<div class="solution-use-cases-block-half">
+			<div class="solution-use-cases-block-image">
+				<img
+					class="display-only-desktop" src="<?php echo $leftPageDesktopThumbnail; ?>"
+					alt="Use case thumbnail"
+				>
+				<img
+					class="display-only-tablet" src="<?php echo $leftPageTabletThumbnail; ?>"
+					alt="Use case thumbnail"
+				>
+				<img
+					class="no-desktop-display no-tablet-display" src="<?php echo $leftPageMobileThumbnail; ?>"
+					alt="Use case thumbnail"
+				>
+			</div>
+			<div class="solution-use-cases-block-subtitle">
+				<p>
+					<?php echo $leftPage->post_title; ?>
+				</p>
+				<a href="<?php echo $leftPage->guid; ?>">
+					Learn more
+				</a>
+			</div>
+		</div>
+	<?php
+	}
+
+	if($subpagesLinks[1]!=0) {
+		$rightPageDesktopThumbnail = get_field('desktop_thumbnail', $subpagesLinks[1]);
+		$rightPageTabletThumbnail = get_field('tablet_thumbnail', $subpagesLinks[1]);
+		$rightPageMobileThumbnail = get_field('mobile_thumbnail', $subpagesLinks[1]); ?>
+		<div class="solution-use-cases-block-half">
+			<div class="solution-use-cases-block-image">
+				<img
+					class="display-only-desktop"
+					src="<?php echo $rightPageDesktopThumbnail; ?>"
+					alt="Use case thumbnail"
+				>
+				<img
+					class="display-only-tablet" src="<?php echo $rightPageTabletThumbnail; ?>"
+					alt="Use case thumbnail"
+					>
+				<img
+					class="no-desktop-display no-tablet-display" src="<?php echo $rightPageMobileThumbnail; ?>"
+					alt="Use case thumbnail"
+					>
+			</div>
+			<div class="solution-use-cases-block-subtitle">
+				<p>
+					<?php echo $rightPage->post_title; ?>
+				</p>
+				<a href="<?php echo $rightPage->guid; ?>">
+					Learn more
+				</a>
+			</div>
+		</div>
+	<?php
+	}
+	if($additionalUsecasesExist) {
+ 	?>
 	</div>
 	<?php
-		$subpagesLinks = getSolutionsSubpagesLinks(get_the_ID());
-
-		$leftPage = get_post($subpagesLinks[0]);
-		$rightPage = get_post($subpagesLinks[1]);
-
+	}
 	?>
-	<div class="solution-use-cases-block-content">
-		<?php if($subpagesLinks[0]!=0) {
-			$leftPageDesktopThumbnail = get_field('desktop_thumbnail', $subpagesLinks[0]);
-			$leftPageTabletThumbnail = get_field('tablet_thumbnail', $subpagesLinks[0]);
-			$leftPageMobileThumbnail = get_field('mobile_thumbnail', $subpagesLinks[0]);
-			?>
-			<div class="solution-use-cases-block-half">
-				<div class="solution-use-cases-block-image">
-					<img
-						class="display-only-desktop" src="<?php echo $leftPageDesktopThumbnail; ?>"
-						alt="Use case thumbnail"
-					>
-					<img
-						class="display-only-tablet" src="<?php echo $leftPageTabletThumbnail; ?>"
-						alt="Use case thumbnail"
-					>
-					<img
-						class="no-desktop-display no-tablet-display" src="<?php echo $leftPageMobileThumbnail; ?>"
-						alt="Use case thumbnail"
-					>
-				</div>
-				<div class="solution-use-cases-block-subtitle">
-					<p>
-						<?php echo $leftPage->post_title; ?>
-					</p>
-					<a href="<?php echo $leftPage->guid; ?>">
-						Learn more
-					</a>
-				</div>
-			</div>
-		<?php
-		}
-
-		if($subpagesLinks[1]!=0) {
-			$rightPageDesktopThumbnail = get_field('desktop_thumbnail', $subpagesLinks[1]);
-			$rightPageTabletThumbnail = get_field('tablet_thumbnail', $subpagesLinks[1]);
-			$rightPageMobileThumbnail = get_field('mobile_thumbnail', $subpagesLinks[1]); ?>
-			<div class="solution-use-cases-block-half">
-				<div class="solution-use-cases-block-image">
-					<img
-						class="display-only-desktop"
-						src="<?php echo $rightPageDesktopThumbnail; ?>"
-						alt="Use case thumbnail"
-					>
-					<img
-						class="display-only-tablet" src="<?php echo $rightPageTabletThumbnail; ?>"
-						alt="Use case thumbnail"
-						>
-					<img
-						class="no-desktop-display no-tablet-display" src="<?php echo $rightPageMobileThumbnail; ?>"
-						alt="Use case thumbnail"
-						>
-				</div>
-				<div class="solution-use-cases-block-subtitle">
-					<p>
-						<?php echo $rightPage->post_title; ?>
-					</p>
-					<a href="<?php echo $rightPage->guid; ?>">
-						Learn more
-					</a>
-				</div>
-			</div>
-		<?php
-		}
-	 	?>
-	</div>
 </section>
