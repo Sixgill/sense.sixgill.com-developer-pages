@@ -100,6 +100,11 @@
 
 }
 
+.solution-use-cases-block-half:only-child {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
 #content .solution-subpage-first-block > .first-left-container-subpage > .first-text-subpage > .solution-subpage-first-block-text p{
 	font-size: 16.2px;
 	font-weight: normal;
