@@ -2,59 +2,51 @@
  * Created by WIZARD on 25.07.2016.
  */
 
-
+// The flow
+// 1. Concat js -> custom_build.js
+// 2. Concat css -> custom_build.css
+// 3. Compress custom_build.js
+// 4. Compress custom_build.css
+// 5. Watch *.js, *.css changes in src/js & src/css dirs
+// 5.1 If changed: goto 1
 
 var gulp = require('gulp');
-
-gulp.task('default', function() {
-    // default task
-});
-
-var concat = require('gulp-concat');
- 
-gulp.task('scripts', function() {
-  return gulp.src('./src/js/**/*.js')
-    .pipe(concat('custom_build.js'))
-    .pipe(gulp.dest('./dist/'));
-});
-
-gulp.task('styles', function() {
-  return gulp.src('./src/css/**/*.css')
-    .pipe(concat('custom_build.css'))
-    .pipe(gulp.dest('./dist/'));
-});
-
+var concat = require('gulp-concat')
 var uglify = require('gulp-uglify');
 var pump = require('pump');
- 
-gulp.task('compress', function (cb) {
-  pump([
-        gulp.src('./src/js/**/*.js'),
-        uglify(),
-        gulp.dest('dist')
-    ],
-    cb
-  );
-});
-
-
 var watch = require('gulp-watch');
 var livereload = require('gulp-livereload');
 var gutil = require('gulp-util')
 
- 
+// Gulp flow
+gulp.task('default', ['scripts', 'styles', 'watch']);
+
+// Concatinate js scripts into "./src/custom_build.js"
+gulp.task('scripts', function() {
+  gutil.log(gutil.colors.green('Concatinate into ./src/custom_build.js'));
+  return gulp.src('./src/js/**/*.js')
+    .pipe(concat('./src/custom_build.js'))
+    .pipe(gulp.dest('./'))
+});
+
+// Concatinate css scripts into "./src/custom_build.css"
+gulp.task('styles', function() {
+  gutil.log(gutil.colors.green('Concatinate into ./src/custom_build.css'));  
+  return gulp.src('./src/css/**/*.css')
+    .pipe(concat('./src/custom_build.css'))
+    .pipe(gulp.dest('./'))
+});
+
+// Watch for changes in js & css files
 gulp.task('watch', function () {
     livereload.listen();
-
-    // Javascript change + prints log in console
-    gulp.watch('./src/js/**/*.js').on('change', function(file) {
+    gulp.watch('./src/js/**/*.js', ['scripts']).on('change', function(file) {
         livereload.changed(file.path);
         gutil.log(gutil.colors.yellow('JS changed' + ' (' + file.path + ')'));
     });
 
-    gulp.watch('./src/css/**/*.css').on('change', function(file) {
+    gulp.watch('./src/css/**/*.css', ['styles']).on('change', function(file) {
         livereload.changed(file.path);
         gutil.log(gutil.colors.yellow('CSS changed' + ' (' + file.path + ')'));
     });
-
 });
