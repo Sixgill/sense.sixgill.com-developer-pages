@@ -17,6 +17,17 @@ var pump = require('pump');
 var watch = require('gulp-watch');
 var livereload = require('gulp-livereload');
 var gutil = require('gulp-util')
+var ignore = require('gulp-ignore');
+var sourcemaps = require('gulp-sourcemaps');
+
+function handleError (error) {
+
+  // If you want details of the error in the console
+  console.log(error.toString())
+
+  this.emit('end')
+}
+
 
 // Gulp flow
 gulp.task('default', ['scripts', 'styles', 'watch']);
@@ -27,6 +38,8 @@ gulp.task('scripts', function() {
   return gulp.src('./src/js/**/*.js')
     .pipe(concat('./src/custom_build.js'))
     .pipe(gulp.dest('./'))
+    .pipe(uglify().on('error', gutil.log))
+    .pipe(gulp.dest('build'))
 });
 
 // Concatinate css scripts into "./src/custom_build.css"
@@ -34,6 +47,7 @@ gulp.task('styles', function() {
   gutil.log(gutil.colors.green('Concatinate into ./src/custom_build.css'));  
   return gulp.src('./src/css/**/*.css')
     .pipe(concat('./src/custom_build.css'))
+    .pipe(uglify().on('error', gutil.log))
     .pipe(gulp.dest('./'))
 });
 
