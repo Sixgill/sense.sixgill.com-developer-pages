@@ -1,25 +1,22 @@
 /**
- * Created by WIZARD on 25.07.2016.
- */
-
-// The flow
-// 1. Concat js -> custom_build.js
-// 2. Concat css -> custom_build.css
-// 3. Compress custom_build.js
-// 4. Compress custom_build.css
-// 5. Watch *.js, *.css changes in src/js & src/css dirs
-// 5.1 If changed: goto 1
+* The flow
+* 1. Concat js -> custom_build.js
+* 2. Concat css -> custom_build.css
+* 3. Compress custom_build.js
+* 4. Compress custom_build.css
+* 5. Watch *.js, *.css changes in src/js & src/css dirs
+* 5.1 If changed: goto 1
+*/
 
 var gulp = require('gulp');
 var concat = require('gulp-concat')
 var uglify = require('gulp-uglify');
-var pump = require('pump');
 var watch = require('gulp-watch');
 var livereload = require('gulp-livereload');
 var gutil = require('gulp-util')
-var ignore = require('gulp-ignore');
 var sourcemaps = require('gulp-sourcemaps');
 
+// Custom error handling
 function handleError (error) {
 
   // If you want details of the error in the console
