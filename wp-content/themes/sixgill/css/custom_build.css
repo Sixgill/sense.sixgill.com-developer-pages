@@ -13489,6 +13489,7 @@ input {
 	background-color: #f8f8f8;
 }
 
+
 .solution-use-cases-block-image {
 	display: block;
 	height: auto;
@@ -14447,6 +14448,11 @@ input {
 .solution-subpage-galleries-wrapper {
 	padding: calc(3vw - 30px) 0px 4.6vw 0px;
 }
+
+.solution-use-cases-block-half:only-child {
+	margin-left: 25%;
+	margin-right: 25%;
+}
 /* Resources desktop styles */
 .resource-block {
 	width: 24%;
@@ -15034,6 +15040,11 @@ input {
 	margin-left: 1%;
 	margin-right: 1%;
 
+}
+
+.solution-use-cases-block-half:only-child {
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 #content .solution-subpage-first-block > .first-left-container-subpage > .first-text-subpage > .solution-subpage-first-block-text p{
