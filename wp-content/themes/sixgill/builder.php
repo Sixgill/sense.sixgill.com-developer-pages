@@ -74,6 +74,10 @@
 				"wrapper" => false
 			),
 			array(
+				"selector" => $path."/css/jquery.fullpage.min.css",
+				"wrapper" => false
+			),
+			array(
 				"selector" => $path."/css/colors.css",
 				"wrapper" => false
 			),

@@ -1,0 +1,16 @@
+/* Company Common styles */
+.company-learn-more-text {
+	display: none;
+}
+
+.companyDescription p {
+	margin-bottom: 0px !important;
+}
+
+#board li {
+	color: #ffffff;
+}
+
+#board {
+	background-color:#2e2e2e;
+}

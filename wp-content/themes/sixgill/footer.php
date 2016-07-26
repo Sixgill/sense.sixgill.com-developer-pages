@@ -9,8 +9,8 @@
 	$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
 ?>
 
-<footer id="footer" class="footer font-size-0 center">
-	<div class="footer-container">
+<footer id="footer" class="footer font-size-0 center home-page-section fp-auto-height">
+	<div class="footer-container ">
 
 		<div class="footer-menu-block">
 			<div class="vertical-centered">
@@ -88,6 +88,7 @@
 
 	</div>
 </footer><!-- #footer end -->
+</div><!-- #fullpage end -->
 </div><!-- #wrapper end -->
 
 <!-- Go To Top -->
