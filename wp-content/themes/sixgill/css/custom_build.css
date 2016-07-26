@@ -13567,7 +13567,6 @@ input {
 	text-align: center;
 	width: 100%;
 	display: block;
-	margin-bottom: 61px;
 }
 
 .solution-subpage-bottom-section-content {
@@ -13660,6 +13659,10 @@ input {
 	display: inline-block;
 	height: 1px;
 	background-color: #dfdfdf;
+}
+
+.solution-subpage-section-title {
+	margin-top: 61px;
 }
 /* Resources Common styles */
 .resources-background {
