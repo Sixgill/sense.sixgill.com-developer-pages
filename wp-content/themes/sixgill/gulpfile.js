@@ -24,17 +24,37 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('./dist/'));
 });
 
-var minify = require('gulp-minify');
+var uglify = require('gulp-uglify');
+var pump = require('pump');
  
-gulp.task('compress', function() {
-  gulp.src('./src/js/**/*.js')
-    .pipe(minify({
-        ext:{
-            src:'-debug.js',
-            min:'.js'
-        },
-        exclude: ['tasks'],
-        ignoreFiles: ['.combo.js', '-min.js']
-    }))
-    .pipe(gulp.dest('dist'))
+gulp.task('compress', function (cb) {
+  pump([
+        gulp.src('./src/js/**/*.js'),
+        uglify(),
+        gulp.dest('dist')
+    ],
+    cb
+  );
+});
+
+
+var watch = require('gulp-watch');
+var livereload = require('gulp-livereload');
+var gutil = require('gulp-util')
+
+ 
+gulp.task('watch', function () {
+    livereload.listen();
+
+    // Javascript change + prints log in console
+    gulp.watch('./src/js/**/*.js').on('change', function(file) {
+        livereload.changed(file.path);
+        gutil.log(gutil.colors.yellow('JS changed' + ' (' + file.path + ')'));
+    });
+
+    gulp.watch('./src/css/**/*.css').on('change', function(file) {
+        livereload.changed(file.path);
+        gutil.log(gutil.colors.yellow('CSS changed' + ' (' + file.path + ')'));
+    });
+
 });

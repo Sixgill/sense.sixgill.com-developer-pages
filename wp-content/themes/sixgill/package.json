@@ -10,6 +10,12 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-minify": "0.0.13"
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify": "0.0.13",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.9",
+    "livereload": "^0.5.0",
+    "pump": "^1.0.1"
   }
 }
