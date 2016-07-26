@@ -1,0 +1,22 @@
+/* Press tablet styles */
+.press-block-title {
+	font-size: 18px;
+	color:#383838;
+}
+
+.press-block-container:first-child {
+	margin-top: 65px;
+}
+
+.press-block-title {
+	margin-bottom: 20px;
+}
+
+.press-post {
+	padding-top: 140px;
+}
+
+.press-content-padding {
+	padding-left: 75px;
+	padding-right: 75px;
+}
