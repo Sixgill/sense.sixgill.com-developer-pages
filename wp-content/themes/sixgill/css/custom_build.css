@@ -12952,13 +12952,13 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 }
 
 .dotted-background {
-	background-image: -webkit-repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 2px, transparent 2px, transparent 100%);
+	background-image: -webkit-repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 1px, transparent 1px, transparent 100%);
 	background-image: -moz-repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 1px, transparent 1px, transparent 100%);
 	background-image: -ms-repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 1px, transparent 1px, transparent 100%);
 	background-image: repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 1px, transparent 1px, transparent 100%);
-	-webkit-background-size: 5px 5px;
-	-moz-background-size: 5px 5px;
-	background-size: 5px 5px;
+	-webkit-background-size: 6px 6px;
+	-moz-background-size: 6px 6px;
+	background-size: 6px 6px;
 }
 
 /* For iOS Safari */
@@ -12971,7 +12971,8 @@ input {
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
 	font-size: 0;
-}/* Menu Common styles */
+}
+/* Menu Common styles */
 /* Footer Common styles */
 .footer {
 	background-color: #2e2e2e;
@@ -14560,6 +14561,24 @@ input {
 	text-align: center;
 	margin: 0px calc(50% - 50px) 0px calc(50% - 50px);
 	cursor: pointer;
+}
+
+.products-second-section-image-wrapper {
+	width: 37.5vw;
+	margin-bottom: 2.5vw;
+}
+
+.products-second-section-text {
+	width: 37.7vw;
+	font-size: 16px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+.products-second-section-image-wrapper,
+.products-second-section-text {
+	margin-left: auto;
+	margin-right: auto;
 }
 }@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1200px) {/* General tablet styles */
 

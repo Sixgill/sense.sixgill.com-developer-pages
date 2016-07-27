@@ -62,3 +62,21 @@
 	margin: 0px calc(50% - 50px) 0px calc(50% - 50px);
 	cursor: pointer;
 }
+
+.products-second-section-image-wrapper {
+	width: 37.5vw;
+	margin-bottom: 2.5vw;
+}
+
+.products-second-section-text {
+	width: 37.7vw;
+	font-size: 16px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+.products-second-section-image-wrapper,
+.products-second-section-text {
+	margin-left: auto;
+	margin-right: auto;
+}
