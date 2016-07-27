@@ -1,0 +1,11 @@
+/* Tech mobile portrait and landscape styles */
+.tech-top-header-blue {
+	text-align: left;
+	font-size: 19px;
+	color: #004cbf;
+	font-weight: bold;
+}
+
+.tech-title-margin {
+	margin: 0 0 20px 0;
+}
