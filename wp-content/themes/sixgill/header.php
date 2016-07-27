@@ -78,4 +78,3 @@
 
 			</div>
 		</header>
-		<div id="fullpage">

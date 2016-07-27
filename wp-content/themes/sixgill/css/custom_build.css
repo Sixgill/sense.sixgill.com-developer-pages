@@ -12956,9 +12956,9 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	background-image: -moz-repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 1px, transparent 1px, transparent 100%);
 	background-image: -ms-repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 1px, transparent 1px, transparent 100%);
 	background-image: repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 1px, transparent 1px, transparent 100%);
-	-webkit-background-size: 6px 6px;
-	-moz-background-size: 6px 6px;
-	background-size: 6px 6px;
+	-webkit-background-size: 6px 6px !important;
+	-moz-background-size: 6px 6px !important;
+	background-size: 6px 6px !important;
 }
 
 /* For iOS Safari */
@@ -13849,6 +13849,10 @@ input {
 .products-first-section-image-wrapper,
 .products-first-section-block-text {
 	height: 100%;
+}
+
+.products-section {
+	background-size: cover;
 }
 @media only screen and (min-width: 1201px) {/* General desktop styles */
 .global-social-buttons-list {
