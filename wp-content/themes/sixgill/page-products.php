@@ -5,6 +5,7 @@
 	fullpage-navigation = "false"
 ></div>
 <a name="top"></a>
+<div id="fullpage-debug">
 <div
 	id="products-first-section"
 	class="section products-first-section"
@@ -29,7 +30,10 @@
 			Learn More
 		</div>
 		<div class="products-first-section-scroll-link-ico-wrapper">
-			<img class="products-first-section-scroll-link-ico" src="">
+			<img
+				class="products-first-section-scroll-link-ico"
+				src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+			>
 		</div>
 	</div>
 </div>
@@ -37,7 +41,10 @@
 <div id="products-second-section" class="section products-second-section">
 	<div class="vertical-centered">
 		<div class="products-second-section-image-wrapper">
-			<img class="products-second-section-image" src="<?php echo get_field('second_section_image'); ?>">
+			<img
+				class="products-second-section-image"
+				src="<?php echo get_field('second_section_image'); ?>"
+			>
 		</div>
 		<div class="products-second-section-text">
 			<?php echo get_field('second_section_text'); ?>
@@ -49,7 +56,10 @@
 	<div class="products-fixed-panel-col">
 		<div class="vertical-centered">
 			<div class="products-fixed-panel-icon-wrapper">
-				<img class="products-fixed-panel-icon" src="">
+				<img
+					class="products-fixed-panel-icon"
+					src="<?php echo get_template_directory_uri();?>\images\products_panel_track_ico.png"
+				>
 			</div>
 			<div class="products-fixed-panel-title">
 				Track
@@ -59,7 +69,10 @@
 	<div class="products-fixed-panel-col">
 		<div class="vertical-centered">
 			<div class="products-fixed-panel-icon-wrapper">
-				<img class="products-fixed-panel-icon" src="">
+				<img
+					class="products-fixed-panel-icon"
+					src="<?php echo get_template_directory_uri();?>\images\products_panel_determine_ico.png"
+				>
 			</div>
 			<div class="products-fixed-panel-title">
 				Determine
@@ -69,7 +82,10 @@
 	<div class="products-fixed-panel-col">
 		<div class="vertical-centered">
 			<div class="products-fixed-panel-icon-wrapper">
-				<img class="products-fixed-panel-icon" src="">
+				<img
+					class="products-fixed-panel-icon"
+					src="<?php echo get_template_directory_uri();?>\images\products_panel_track_act.png"
+				>
 			</div>
 			<div class="products-fixed-panel-title">
 				Act
@@ -81,7 +97,10 @@
 <div id="products-third-section" class="section products-third-section">
 	<div class="products-third-section-left-col">
 		<div class="products-third-section-image-wrapper">
-			<img class="products-third-section-image" src="<?php echo get_field('third_section_image'); ?>">
+			<img
+				class="products-third-section-image"
+				src="<?php echo get_field('third_section_image'); ?>"
+			>
 		</div>
 	</div>
 	<div class="products-third-section-right-col">
@@ -111,7 +130,10 @@
 	<div class="products-fourth-section-left-col">
 		<div class="products-fourth-section-header-wrapper">
 			<div class="products-fourth-section-ico-wrapper">
-				<img class="products-fourth-section-ico-wrapper" src="">
+				<img
+					class="products-fourth-section-ico"
+					src="<?php echo get_template_directory_uri();?>\images\products_fourth_section_ico.png"
+				>
 			</div>
 			<div class="products-fourth-section-title-wrapper">
 				<div class="products-fourth-section-title">
@@ -128,7 +150,10 @@
 	</div>
 	<div class="products-fourth-section-right-col">
 		<div class="products-fourth-section-image-wrapper">
-			<img class="products-fourth-section-image" src="<?php echo get_field('forth_section_image'); ?>">
+			<img
+				class="products-fourth-section-image"
+				src="<?php echo get_field('forth_section_image'); ?>"
+			>
 		</div>
 	</div>
 </div>
@@ -136,7 +161,10 @@
 <div id="products-fifth-section" class="section products-fifth-section">
 	<div class="products-fifth-section-left-col">
 		<div class="products-fifth-section-image-wrapper">
-			<img class="products-fifth-section-image" src="">
+			<img
+				class="products-fifth-section-image"
+				src="<?php echo get_field('fifth_section_image'); ?>"
+			>
 		</div>
 	</div>
 	<div class="products-fifth-section-right-col">
@@ -169,32 +197,59 @@
 	<div class="products-last-section-wrapper">
 		<div class="products-last-section-left-col">
 			<div data-tabid="reach" class="products-last-section-tab-logo selected">
-				<img class="products-last-section-tab-image products-last-section-tab-image-active" src="">
-				<img class="products-last-section-tab-image" src="">
+				<img
+					class="products-last-section-tab-image products-last-section-tab-image-active"
+					src="<?php echo get_template_directory_uri();?>\images\products_reach_tab_logo.png"
+				>
+				<img
+					class="products-last-section-tab-image"
+					src="<?php echo get_template_directory_uri();?>\images\products_reach_tab_logo_active.png"
+				>
 			</div>
 			<div data-tabid="sync" class="products-last-section-tab-logo">
-				<img class="products-last-section-tab-image products-last-section-tab-image-active" src="">
-				<img class="products-last-section-tab-image" src="">
+				<img
+					class="products-last-section-tab-image products-last-section-tab-image-active"
+					src="<?php echo get_template_directory_uri();?>\images\products_sync_tab_logo.png"
+				>
+				<img
+					class="products-last-section-tab-image"
+					src="<?php echo get_template_directory_uri();?>\images\products_sync_tab_logo_active.png"
+				>
 			</div>
 			<div data-tabid="assist" class="products-last-section-tab-logo">
-				<img class="products-last-section-tab-image products-last-section-tab-image-active" src="">
-				<img class="products-last-section-tab-image" src="">
+				<img
+					class="products-last-section-tab-image products-last-section-tab-image-active"
+					src="<?php echo get_template_directory_uri();?>\images\products_assist_tab_logo.png"
+				>
+				<img
+					class="products-last-section-tab-image"
+					src="<?php echo get_template_directory_uri();?>\images\products_assist_tab_logo_active.png"
+				>
 			</div>
 		</div>
 		<div class="products-last-section-right-col">
 			<div class="products-last-section-bubble">
 				<div id="products-tab-reach" class="products-last-section-text">
-
+					<h3 class="products-last-section-title">
+						<?php echo get_field('last_section_reach_title'); ?>
+					</h3>
+					<?php echo get_field('last_section_reach_text'); ?>
 				</div>
 				<div id="products-tab-sync" class="products-last-section-text">
-
+					<h3 class="products-last-section-title">
+						<?php echo get_field('last_section_sync_title'); ?>
+					</h3>
+					<?php echo get_field('last_section_sync_text'); ?>
 				</div>
 				<div id="products-tab-assist" class="products-last-section-text">
-
+					<h3 class="products-last-section-title">
+						<?php echo get_field('last_section_assist_title'); ?>
+					</h3>
+					<?php echo get_field('last_section_assist_text'); ?>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
+</div>
 <?php get_footer(); ?>
