@@ -1,142 +1,196 @@
 <?php get_header(); ?>
+<div
+	id="fullpage-config"
+	fullpage-section-selector = "section"
+	fullpage-navigation = "false"
+></div>
 <a name="top"></a>
-<section id="slider" class="slider-parallax swiper_wrapper clearfix">
-	<div class="slider-parallax-inner">
-		<div class="swiper-container swiper-parent">
-			<div class="swiper-wrapper">
-				<div id="products-header-image" class="swiper-slide"></div>
+<div id="products-first-section" class="section">
+	<div class="products-first-section-block">
+		<div class="products-first-section-image-wrapper">
+			<img class="" src="">
+		</div>
+		<div class="products-first-section-block-text">
+			<h1 class="products-first-section-block-title">
+				<?php echo get_field('first_section_title'); ?>
+			</h1>
+			<div class="products-first-section-block-paragraph">
+				<?php echo get_field('first_section_text'); ?>
 			</div>
 		</div>
 	</div>
-</section>
 
-<!-- Content-->
-<section id="content" class="section-margin-fix">
-	<div class="content-wrap no-bottom-padding">
-		<div class="header-stick no-border background-f8f8f8 indent-from-slider">
-			<div class="container-fluid no-border center clearfix products-content-spacing" style="max-width:1100px;">
-				<div class="col_one_third title-left-col products-top-title-spacing">
-					<h1 class="products-h1"><?php echo get_field('title_header'); ?></h1>
+	<div class="products-first-section-scroll-link-wrapper">
+		<div class="products-first-section-scroll-link-text">
+			Learn More
+		</div>
+		<div class="products-first-section-scroll-link-ico-wrapper">
+			<img class="products-first-section-scroll-link-ico" src="">
+		</div>
+	</div>
+</div>
+
+<div id="products-second-section" class="section">
+	<div class="vertical-centered">
+		<div class="products-second-section-image-wrapper">
+			<img class="products-second-section-image" src="">
+		</div>
+		<div class="products-second-section-text">
+			<?php echo get_field('second_section_text'); ?>
+		</div>
+	</div>
+</div>
+
+<div class="products-fixed-panel">
+	<div class="products-fixed-panel-col">
+		<div class="vertical-centered">
+			<div class="products-fixed-panel-icon-wrapper">
+				<img class="products-fixed-panel-icon" src="">
+			</div>
+			<div class="products-fixed-panel-title">
+				Track
+			</div>
+		</div>
+	</div>
+	<div class="products-fixed-panel-col">
+		<div class="vertical-centered">
+			<div class="products-fixed-panel-icon-wrapper">
+				<img class="products-fixed-panel-icon" src="">
+			</div>
+			<div class="products-fixed-panel-title">
+				Determine
+			</div>
+		</div>
+	</div>
+	<div class="products-fixed-panel-col">
+		<div class="vertical-centered">
+			<div class="products-fixed-panel-icon-wrapper">
+				<img class="products-fixed-panel-icon" src="">
+			</div>
+			<div class="products-fixed-panel-title">
+				Act
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="products-third-section" class="section">
+	<div class="products-third-section-left-col">
+		<div class="products-third-section-image-wrapper">
+			<img class="products-third-section-image" src="">
+		</div>
+	</div>
+	<div class="products-third-section-right-col">
+		<div class="products-third-section-content-wrapper">
+			<div class="products-third-section-header-wrapper">
+				<div class="products-third-section-ico-wrapper">
+					<img class="products-third-section-ico-wrapper" src="">
 				</div>
-				<div class="col_two_third col_last text-left text-right-col">
-					<?php echo get_field('top_paragraph'); ?>
+				<div class="products-third-section-title-wrapper">
+					<div class="products-third-section-title">
+						<?php echo get_field('third_section_title'); ?>
+					</div>
+					<div class="products-third-section-subtitle">
+						<?php echo get_field('third_section_subtitle'); ?>
+					</div>
+				</div>
+			</div>
+			<div class="products-third-section-line"></div>
+			<div class="products-third-section-text">
+				<?php echo get_field('third_section_text'); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="products-fourth-section" class="section">
+	<div class="products-fourth-section-left-col">
+		<div class="products-fourth-section-header-wrapper">
+			<div class="products-fourth-section-ico-wrapper">
+				<img class="products-fourth-section-ico-wrapper" src="">
+			</div>
+			<div class="products-fourth-section-title-wrapper">
+				<div class="products-fourth-section-title">
+					<?php echo get_field('forth_section_title'); ?>
+				</div>
+				<div class="products-fourth-section-subtitle">
+					<?php echo get_field('forth_section_subtitle'); ?>
 				</div>
 			</div>
 		</div>
-
-
-		<section class="container-fluid center clearfix no-margin nopadding section-margin-fix">
-			<img src="/wp-content/themes/sixgill/images/td/product_fig1.png" alt="" class="full-width"/>
-		</section>
-
-		<a name="ssense"></a>
-		<section id="ssense" class="backround-white section-margin-fix">
-			<div class="container-fluid center topmargin-sm no-border" style="max-width:1100px;">
-				<div class="col_one_third titleInside text-right"><img src="/wp-content/themes/sixgill/images/td/product/logoSense.svg" alt=""/></div>
-				<div class="col_two_third col_last text-left topmargin-sm">
-					<?php echo get_field('sixgill_sense_header'); ?>
-
-					<?php echo get_field('track_header'); ?>
-					<?php echo get_field('track_text'); ?>
-
-					<?php if(get_field('track_list')) : ?>
-						<ul class="listSolutions">
-							<?php foreach(get_field('track_list') as $item) : ?>
-								<li>
-									<?php echo $item['track_list_text']; ?>
-								</li>
-							<?php endforeach; ?>
-						</ul>
-					<?php endif; ?>
-
-					<?php echo get_field('determine_header'); ?>
-					<?php echo get_field('determine_text'); ?>
-
-					<?php if(get_field('determine_list')) : ?>
-						<ul class="listSolutions">
-							<?php foreach(get_field('determine_list') as $item) : ?>
-								<li>
-									<?php echo $item['determine_list_text']; ?>
-								</li>
-							<?php endforeach; ?>
-						</ul>
-					<?php endif; ?>
-
-					<?php echo get_field('act_header'); ?>
-					<?php echo get_field('act_text'); ?>
-
-					<?php if(get_field('act_list')) : ?>
-						<ul class="listSolutions">
-							<?php foreach(get_field('act_list') as $item) : ?>
-								<li>
-									<?php echo $item['act_list_text']; ?>
-								</li>
-							<?php endforeach; ?>
-						</ul>
-					<?php endif; ?>
-
-				</div>
-			</div>
-		</section>
-
-		<section id="before_ssdk" class="container-fluid center clearfix no-margin nopadding section-margin-fix">
-			<img src="/wp-content/themes/sixgill/images/td/product_fig2.png" alt="" class="full-width"/>
-		</section>
-
-		<a name="ssdk"></a>
-		<section id="ssdk" class="background-f8f8f8 section-margin-fix">
-			<div id="ssdk-container" class="container-fluid center clearfix no-border no-bottom-margin no-bottom-padding">
-				<div class="col_one_third titleInside text-right topmargin-sm">
-					<img src="/wp-content/themes/sixgill/images/td/product/logoReach.svg" alt=""/>
-				</div>
-				<div class="col_two_third col_last text-left topmargin-sm">
-					<?php echo get_field('sixgill_reach_text'); ?>
-
-					<?php if(get_field('sixgill_reach_list')) : ?>
-						<ul class="listProduct">
-							<?php foreach(get_field('sixgill_reach_list') as $item) : ?>
-								<li>
-									<?php echo $item['sixgill_reach_list_text']; ?>
-								</li>
-							<?php endforeach; ?>
-						</ul>
-					<?php endif; ?>
-				</div>
-			</div>
-			<img src="/wp-content/themes/sixgill/images/td/product_fig3.png" alt="" class="full-width"/>
-		</section>
-
-		<a name="sassist"></a>
-		<section id="sassist" class="background-white section-margin-fix">
-			<div class="container-fluid center clearfix no-top-margin no-top-padding no-border no-bottom-margin no-bottom-padding" style="max-width:1100px;">
-				<div class="col_one_third titleInside text-right"><img src="/wp-content/themes/sixgill/images/td/product/logoAssist.svg" alt=""/></div>
-				<div class="col_two_third col_last text-left topmargin-sm" style="margin-bottom: -20px;">
-					<?php echo get_field('sixgill_assist_header'); ?>
-					<div class="col_half no-bottom-margin">
-						<?php if(get_field('sixgill_assist_list')) : ?>
-							<ul class="listProduct no-bottom-margin">
-								<?php foreach(get_field('sixgill_assist_list') as $item) : ?>
-									<li>
-										<?php echo $item['sixgill_assist_list_text']; ?>
-									</li>
-								<?php endforeach; ?>
-							</ul>
-						<?php endif; ?>
-					</div>
-					<div class="col_half col_last">
-						<?php if(get_field('sixgill_assist_list_2')) : ?>
-							<ul class="listProduct no-bottom-margin">
-								<?php foreach(get_field('sixgill_assist_list_2') as $item) : ?>
-									<li>
-										<?php echo $item['sixgill_assist_list_text_2']; ?>
-									</li>
-								<?php endforeach; ?>
-							</ul>
-						<?php endif; ?>
-					</div>
-				</div>
-			</div>
-		</section>
+		<div class="products-fourth-section-text">
+			<?php echo get_field('forth_section_text'); ?>
+		</div>
 	</div>
-</section><!-- #content end -->
+	<div class="products-fourth-section-right-col">
+		<div class="products-fourth-section-image-wrapper">
+			<img class="products-fourth-section-image" src="">
+		</div>
+	</div>
+</div>
+
+<div id="products-fifth-section" class="section">
+	<div class="products-fifth-section-left-col">
+		<div class="products-fifth-section-image-wrapper">
+			<img class="products-fifth-section-image" src="">
+		</div>
+	</div>
+	<div class="products-fifth-section-right-col">
+		<div class="products-fifth-section-content-wrapper">
+			<div class="products-fifth-section-header-wrapper">
+				<div class="products-fifth-section-ico-wrapper">
+					<img class="products-fifth-section-ico-wrapper" src="">
+				</div>
+				<div class="products-fifth-section-title-wrapper">
+					<div class="products-fifth-section-title">
+						<?php echo get_field('fifth_section_title'); ?>
+					</div>
+					<div class="products-fifth-section-subtitle">
+						<?php echo get_field('fifth_section_subtitle'); ?>
+					</div>
+				</div>
+			</div>
+			<div class="products-fifth-section-line"></div>
+			<div class="products-fifth-section-text">
+				<?php echo get_field('fifth_section_text'); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="products-last-section" class="section">
+	<h2 class="products-last-section-title">
+		<?php echo get_field('last_section_title'); ?>
+	</h2>
+	<div class="products-last-section-wrapper">
+		<div class="products-last-section-left-col">
+			<div data-tabid="reach" class="products-last-section-tab-logo selected">
+				<img class="products-last-section-tab-image products-last-section-tab-image-active" src="">
+				<img class="products-last-section-tab-image" src="">
+			</div>
+			<div data-tabid="sync" class="products-last-section-tab-logo">
+				<img class="products-last-section-tab-image products-last-section-tab-image-active" src="">
+				<img class="products-last-section-tab-image" src="">
+			</div>
+			<div data-tabid="assist" class="products-last-section-tab-logo">
+				<img class="products-last-section-tab-image products-last-section-tab-image-active" src="">
+				<img class="products-last-section-tab-image" src="">
+			</div>
+		</div>
+		<div class="products-last-section-right-col">
+			<div class="products-last-section-bubble">
+				<div id="products-tab-reach" class="products-last-section-text">
+
+				</div>
+				<div id="products-tab-sync" class="products-last-section-text">
+
+				</div>
+				<div id="products-tab-assist" class="products-last-section-text">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <?php get_footer(); ?>

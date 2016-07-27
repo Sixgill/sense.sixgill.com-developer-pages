@@ -3956,13 +3956,23 @@ var SEMICOLON = SEMICOLON || {};
 	$window.on( 'resize', SEMICOLON.documentOnResize.init );
 
 })(jQuery);
+jQuery(function($){
+	window.screenType = "desktop";
+	if(screen.width >= 500 && screen.width<=1200 && (screen.width / screen.height) <= 4/3) {
+		window.screenType = "tablet";
+	} else if(screen.width<=1200 && (screen.width / screen.height) >= 4/3) {
+		window.screenType = "mobile-landscape";
+	} else if(screen.width <= 500 && (screen.width / screen.height) <= 4/3) {
+		window.screenType = "mobile-portrait";
+	}
+})
 // Device.js
 // (c) 2014 Matthew Hudson
 // Device.js is freely distributable under the MIT license.
 // For all details and documentation:
 // http://matthewhudson.me/projects/device.js/
 
-(function() {
+jQuery(function($) {
 
   var device,
     previousDevice,
@@ -4258,7 +4268,7 @@ var SEMICOLON = SEMICOLON || {};
     window.device = device;
   }
 
-}).call(this);
+});
 /*!
  * fullPage 2.8.2
  * https://github.com/alvarotrigo/fullPage.js
@@ -4285,16 +4295,6 @@ jQuery(function() {
 		$(this).find('.learn-more-expand-icon, .learn-more-close-icon').toggle();
 	});
 });
-jQuery(function($){
-	window.screenType = "desktop";
-	if(screen.width >= 500 && screen.width<=1200 && (screen.width / screen.height) <= 4/3) {
-		window.screenType = "tablet";
-	} else if(screen.width<=1200 && (screen.width / screen.height) >= 4/3) {
-		window.screenType = "mobile-landscape";
-	} else if(screen.width <= 500 && (screen.width / screen.height) <= 4/3) {
-		window.screenType = "mobile-portrait";
-	}
-})
 jQuery(function($) {
 	$('.resource-link-container').click(function() {
 		window.currentDownloadLink = $(this).attr('data-permalink');
@@ -4333,12 +4333,23 @@ jQuery(function($) {
 
 });
 jQuery(function($) {
-	$('#content').fullpage({
-		navigation: true,
+
+	fullpageConfig = $('#fullpage-config');
+	if(fullpageConfig.length==0){
+		console.log('Fullpage is not implemented on this page');
+		return;
+	}
+	fullpageWrapper = $('#fullpage');
+	fullpageSectionSelector = fullpageConfig.attr('fullpage-section-selector');
+	fullpageNavigation = (fullpageConfig.attr('fullpage-navigation') === 'true');
+
+	fullpageWrapper.fullpage({
+		navigation: fullpageNavigation,
 		scrollBar: true,
-		sectionSelector: '.home-page-section'
+		sectionSelector: fullpageSectionSelector
 	});
-});jQuery(function($){
+});
+jQuery(function($){
 	function isScrolledIntoView(elem) {
 		var docViewTop = $(window).scrollTop();
 		var docViewBottom = docViewTop + $(window).height();
