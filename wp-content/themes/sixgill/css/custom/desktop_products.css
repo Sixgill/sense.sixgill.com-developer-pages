@@ -1,24 +1,64 @@
 /* Products desktop styles */
-/* Fix scrolling to Reach */
-#before_ssdk {
-	margin-bottom: -145px !important;
+
+.products-first-section-block {
+	width: 88.34%;
+	height: calc((100vw - 225px)*0.23415 - 1px);
+	float: right;
+	font-size: 0px;
 }
 
-#ssdk {
-	padding-top: 145px;
-}
-/* End of scrolling fix */
-
-/* Fix scrolling to Sense */
-#before_ssense {
-	margin-bottom: -90px !important;
+.products-first-section-image-wrapper {
+	width: 28.1%;
 }
 
-#ssense {
-	padding-top: 90px;
+.products-first-section-block-text {
+	width: 71%;
+	padding: 0px 2.4vw 0px 2.4vw;
 }
-/* End of scrolling fix */
 
-#sassist {
-	padding-bottom: 40px;
+.products-first-section-block-title {
+	font-size: 61px;
+  font-weight: 300;
+	color: #ffffff;
+	line-height: 1em;
+	margin-bottom: 2vw;
+}
+
+.products-first-section-block-paragraph {
+	font-size: 15.9px;
+  font-weight: 400;
+}
+
+.products-first-section-block-paragraph,
+.products-first-section-block-paragraph p,
+.products-first-section-scroll-link-text {
+	color: #ffffff !important;
+}
+
+.products-first-section-image-wrapper {
+	float: left;
+}
+
+.products-first-section-scroll-link-text {
+	font-size: 17px;
+  font-weight: 600;
+  text-shadow: -3.1px 3.9px 12px #000000;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.products-first-section-scroll-link-ico-wrapper {
+	width: 37px;
+	height: 18px;
+	text-align: center;
+	display: inline-block;
+}
+
+.products-first-section-scroll-link-wrapper {
+	width: 100px;
+	position: absolute;
+	bottom: 38px;
+	text-align: center;
+	margin: 0px calc(50% - 50px) 0px calc(50% - 50px);
+	cursor: pointer;
 }
