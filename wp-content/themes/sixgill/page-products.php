@@ -13,14 +13,18 @@
 >
 	<div class="products-first-section-block">
 		<div class="products-first-section-image-wrapper">
-			<img class="products-first-section-image" src="<?php echo get_field('first_section_image'); ?>">
+			<div class="vertical-centered">
+				<img class="products-first-section-image" src="<?php echo get_field('first_section_image'); ?>">
+			</div>
 		</div>
 		<div class="products-first-section-block-text">
-			<h1 class="products-first-section-block-title">
-				<?php echo get_field('first_section_title'); ?>
-			</h1>
-			<div class="products-first-section-block-paragraph">
-				<?php echo get_field('first_section_text'); ?>
+			<div class="vertical-centered">
+				<h1 class="products-first-section-block-title">
+					<?php echo get_field('first_section_title'); ?>
+				</h1>
+				<div class="products-first-section-block-paragraph">
+					<?php echo get_field('first_section_text'); ?>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -1,8 +1,8 @@
 /* Products desktop styles */
 
 .products-first-section-block {
-	height: 19.472vw;
 	width: 88.34%;
+	height: calc((100vw - 225px)*0.23415 - 1px);
 	float: right;
 	font-size: 0px;
 }
@@ -13,12 +13,15 @@
 
 .products-first-section-block-text {
 	width: 71%;
+	padding: 0px 2.4vw 0px 2.4vw;
 }
 
 .products-first-section-block-title {
 	font-size: 61px;
   font-weight: 300;
 	color: #ffffff;
+	line-height: 1em;
+	margin-bottom: 2vw;
 }
 
 .products-first-section-block-paragraph {
@@ -41,9 +44,21 @@
   font-weight: 600;
   text-shadow: -3.1px 3.9px 12px #000000;
 	margin-bottom: 16px;
+	text-align: center;
 }
 
 .products-first-section-scroll-link-ico-wrapper {
 	width: 37px;
 	height: 18px;
+	text-align: center;
+	display: inline-block;
+}
+
+.products-first-section-scroll-link-wrapper {
+	width: 100px;
+	position: absolute;
+	bottom: 38px;
+	text-align: center;
+	margin: 0px calc(50% - 50px) 0px calc(50% - 50px);
+	cursor: pointer;
 }
