@@ -3876,9 +3876,8 @@ jQuery(function($) {
 	fullpageNavigation = (fullpageConfig.attr('fullpage-navigation') === 'true');
 
 	fullpageWrapper.fullpage({
-		/*navigation: fullpageNavigation,
-		scrollBar: true,
-		sectionSelector: fullpageSectionSelector*/
+		navigation: fullpageNavigation,
+		sectionSelector: fullpageSectionSelector
 	});
 });
 jQuery(function($){

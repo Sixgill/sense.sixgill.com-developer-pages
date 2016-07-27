@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 <div
 	id="fullpage-config"
-	fullpage-section-selector = "section"
+	fullpage-section-selector = ".products-section"
 	fullpage-navigation = "false"
 ></div>
 <a name="top"></a>
 <div id="fullpage-debug">
 <div
 	id="products-first-section"
-	class="section products-first-section"
+	class="products-section products-first-section"
 	style="background-image: url('<?php echo get_field('first_section_background'); ?>');"
 >
 	<div class="products-first-section-block">
@@ -42,17 +42,15 @@
 	</div>
 </div>
 
-<div id="products-second-section" class="section products-second-section">
-	<div class="vertical-centered">
-		<div class="products-second-section-image-wrapper">
-			<img
-				class="products-second-section-image"
-				src="<?php echo get_field('second_section_image'); ?>"
-			>
-		</div>
-		<div class="products-second-section-text">
-			<?php echo get_field('second_section_text'); ?>
-		</div>
+<div id="products-second-section" class="products-section products-second-section dotted-background">
+	<div class="products-second-section-image-wrapper">
+		<img
+			class="products-second-section-image"
+			src="<?php echo get_field('second_section_image'); ?>"
+		>
+	</div>
+	<div class="products-second-section-text">
+		<?php echo get_field('second_section_text'); ?>
 	</div>
 </div>
 
@@ -98,7 +96,7 @@
 	</div>
 </div>
 
-<div id="products-third-section" class="section products-third-section">
+<div id="products-third-section" class="products-section products-third-section">
 	<div class="products-third-section-left-col">
 		<div class="products-third-section-image-wrapper">
 			<img
@@ -130,7 +128,7 @@
 	</div>
 </div>
 
-<div id="products-fourth-section" class="section products-fourth-section">
+<div id="products-fourth-section" class="products-section products-fourth-section">
 	<div class="products-fourth-section-left-col">
 		<div class="products-fourth-section-header-wrapper">
 			<div class="products-fourth-section-ico-wrapper">
@@ -162,7 +160,7 @@
 	</div>
 </div>
 
-<div id="products-fifth-section" class="section products-fifth-section">
+<div id="products-fifth-section" class="products-section products-fifth-section">
 	<div class="products-fifth-section-left-col">
 		<div class="products-fifth-section-image-wrapper">
 			<img
@@ -194,7 +192,7 @@
 	</div>
 </div>
 
-<div id="products-last-section" class="section products-last-section">
+<div id="products-last-section" class="products-section products-last-section">
 	<h2 class="products-last-section-title">
 		<?php echo get_field('last_section_title'); ?>
 	</h2>
