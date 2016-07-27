@@ -1,21 +1,15 @@
 /* Products Common styles */
-#sassist {
-	padding-top: 40px;
+
+.products-first-section-image-wrapper,
+.products-first-section-block-text {
+	display: inline-block;
 }
 
-#ssdk-container {
-	max-width:1100px;
+.products-first-section-block {
+	background-color: rgba(77, 219, 90, 0.7);
 }
 
-#products-header-image {
-	background-image: url('/wp-content/themes/sixgill/images/td/hero/adobestock_69002740_web.jpg');
-	background-position: center;
-}
-
-.products-content-spacing {
-	padding-top: 75px;
-}
-
-.indent-from-slider {
-	padding-top: 100px;
+.products-first-section-image-wrapper,
+.products-first-section-block-text {
+	height: 100%;
 }

@@ -406,33 +406,12 @@ span.middot {
 
 .magnific-max-width .mfp-content { max-width: 800px; }
 
-
-/* ----------------------------------------------------------------
-	Sections
------------------------------------------------------------------*/
-
-
-.section {
-	position: relative;
-	margin: 60px 0;
-	padding: 60px 0;
-	background-color: #F9F9F9;
-	overflow: hidden;
-}
-
 .parallax {
 	background-color: transparent;
 	background-attachment: fixed;
 	background-position: 50% 0;
 	background-repeat: no-repeat;
 	overflow: hidden;
-}
-
-.mobile-parallax,
-.video-placeholder {
-	background-size: cover !important;
-	background-attachment: scroll !important;
-	background-position: center center;
 }
 
 .section .container { z-index: 2; }
