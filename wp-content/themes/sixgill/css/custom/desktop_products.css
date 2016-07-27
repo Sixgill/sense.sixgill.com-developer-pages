@@ -80,3 +80,16 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.products-third-section {
+	background-image: url('/wp-content/themes/sixgill/css/images/products/third_section_bg_at2.png')
+}
+
+.products-section {
+	min-height: 100vh;
+}
+
+.products-first-section,
+.products-second-section {
+	height: 100vh;
+}

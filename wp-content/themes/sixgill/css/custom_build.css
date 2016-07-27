@@ -14584,6 +14584,19 @@ input {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.products-third-section {
+	background-image: url('/wp-content/themes/sixgill/css/images/products/third_section_bg_at2.png')
+}
+
+.products-section {
+	min-height: 100vh;
+}
+
+.products-first-section,
+.products-second-section {
+	height: 100vh;
+}
 }@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1200px) {/* General tablet styles */
 
 .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid), .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide {
@@ -16607,7 +16620,8 @@ a.search-post-result {
 	text-align: left;
 }
 
-[class="center"] {
+[class="center"],
+.inline-block {
 	display: inline-block;
 }
 
