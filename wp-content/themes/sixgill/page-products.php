@@ -1,24 +1,26 @@
 <?php get_header(); ?>
-<div id="fullpage-products">
+<div>
 	<a name="top"></a>
 	<div
 		id="products-first-section"
 		class="products-section products-first-section"
 		style="background-image: url('<?php echo get_field('first_section_background'); ?>');"
 	>
-		<div class="products-first-section-block">
-			<div class="products-first-section-image-wrapper">
-				<div class="vertical-centered">
-					<img class="products-first-section-image" src="<?php echo get_field('first_section_image'); ?>">
+		<div class="vertical-centered inline-block">
+			<div class="products-first-section-block">
+				<div class="products-first-section-image-wrapper">
+					<div class="vertical-centered">
+						<img class="products-first-section-image" src="<?php echo get_field('first_section_image'); ?>">
+					</div>
 				</div>
-			</div>
-			<div class="products-first-section-block-text">
-				<div class="vertical-centered">
-					<h1 class="products-first-section-block-title">
-						<?php echo get_field('first_section_title'); ?>
-					</h1>
-					<div class="products-first-section-block-paragraph">
-						<?php echo get_field('first_section_text'); ?>
+				<div class="products-first-section-block-text">
+					<div class="vertical-centered">
+						<h1 class="products-first-section-block-title">
+							<?php echo get_field('first_section_title'); ?>
+						</h1>
+						<div class="products-first-section-block-paragraph">
+							<?php echo get_field('first_section_text'); ?>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -40,55 +42,15 @@
 	</div>
 
 	<div id="products-second-section" class="products-section products-second-section dotted-background">
-		<div class="products-second-section-image-wrapper">
-			<img
-				class="products-second-section-image"
-				src="<?php echo get_field('second_section_image'); ?>"
-			>
-		</div>
-		<div class="products-second-section-text">
-			<?php echo get_field('second_section_text'); ?>
-		</div>
-	</div>
-
-	<div class="products-fixed-panel">
-		<div class="products-fixed-panel-col">
-			<div class="vertical-centered">
-				<div class="products-fixed-panel-icon-wrapper">
-					<img
-						class="products-fixed-panel-icon"
-						src="<?php echo get_template_directory_uri();?>\images\products_panel_track_ico.png"
-					>
-				</div>
-				<div class="products-fixed-panel-title">
-					Track
-				</div>
+		<div class="vertical-centered inline-block full-width">
+			<div class="products-second-section-image-wrapper">
+				<img
+					class="products-second-section-image"
+					src="<?php echo get_field('second_section_image'); ?>"
+				>
 			</div>
-		</div>
-		<div class="products-fixed-panel-col">
-			<div class="vertical-centered">
-				<div class="products-fixed-panel-icon-wrapper">
-					<img
-						class="products-fixed-panel-icon"
-						src="<?php echo get_template_directory_uri();?>\images\products_panel_determine_ico.png"
-					>
-				</div>
-				<div class="products-fixed-panel-title">
-					Determine
-				</div>
-			</div>
-		</div>
-		<div class="products-fixed-panel-col">
-			<div class="vertical-centered">
-				<div class="products-fixed-panel-icon-wrapper">
-					<img
-						class="products-fixed-panel-icon"
-						src="<?php echo get_template_directory_uri();?>\images\products_panel_track_act.png"
-					>
-				</div>
-				<div class="products-fixed-panel-title">
-					Act
-				</div>
+			<div class="products-second-section-text">
+				<?php echo get_field('second_section_text'); ?>
 			</div>
 		</div>
 	</div>
@@ -250,5 +212,46 @@
 			</div>
 		</div>
 	</div>
-</div>
+
+	<div class="products-fixed-panel">
+		<div class="products-fixed-panel-col">
+			<div class="vertical-centered">
+				<div class="products-fixed-panel-icon-wrapper">
+					<img
+						class="products-fixed-panel-icon"
+						src="<?php echo get_template_directory_uri();?>\images\products_panel_track_ico.png"
+					>
+				</div>
+				<div class="products-fixed-panel-title">
+					Track
+				</div>
+			</div>
+		</div>
+		<div class="products-fixed-panel-col">
+			<div class="vertical-centered">
+				<div class="products-fixed-panel-icon-wrapper">
+					<img
+						class="products-fixed-panel-icon"
+						src="<?php echo get_template_directory_uri();?>\images\products_panel_determine_ico.png"
+					>
+				</div>
+				<div class="products-fixed-panel-title">
+					Determine
+				</div>
+			</div>
+		</div>
+		<div class="products-fixed-panel-col">
+			<div class="vertical-centered">
+				<div class="products-fixed-panel-icon-wrapper">
+					<img
+						class="products-fixed-panel-icon"
+						src="<?php echo get_template_directory_uri();?>\images\products_panel_track_act.png"
+					>
+				</div>
+				<div class="products-fixed-panel-title">
+					Act
+				</div>
+			</div>
+		</div>
+	</div>
 <?php get_footer(); ?>

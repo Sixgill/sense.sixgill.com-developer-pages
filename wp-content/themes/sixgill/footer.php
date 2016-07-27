@@ -1,93 +1,93 @@
-<?php
-	$footerInfoId = getPageBySlug('footer-details-contact-popup')->ID;
+	<?php
+		$footerInfoId = getPageBySlug('footer-details-contact-popup')->ID;
 
-	$legalLink = get_field('legal_link', $footerInfoId);
-	$pressLink = get_field('press_link', $footerInfoId);
-	$resourcesLink = get_field('resource_link', $footerInfoId);
-	$contactHeader = get_field('contact_header', $footerInfoId);
-	$contactText = get_field('contact_text', $footerInfoId);
-	$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
-?>
+		$legalLink = get_field('legal_link', $footerInfoId);
+		$pressLink = get_field('press_link', $footerInfoId);
+		$resourcesLink = get_field('resource_link', $footerInfoId);
+		$contactHeader = get_field('contact_header', $footerInfoId);
+		$contactText = get_field('contact_text', $footerInfoId);
+		$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
+	?>
 
-<footer id="footer" class="footer font-size-0 center home-page-section fp-auto-height">
-	<div class="footer-container ">
+	<footer id="footer" class="fullpage-section footer font-size-0 center home-page-section fp-auto-height">
+		<div class="footer-container ">
 
-		<div class="footer-menu-block">
-			<div class="vertical-centered">
-				<div class="footer-link-col">
-					<a href="<?php echo $legalLink; ?>" class="footer-main-link">
-						Legal
-					</a>
-				</div>
+			<div class="footer-menu-block">
+				<div class="vertical-centered">
+					<div class="footer-link-col">
+						<a href="<?php echo $legalLink; ?>" class="footer-main-link">
+							Legal
+						</a>
+					</div>
 
-				<div class="footer-link-col">
-					<a href="<?php echo $pressLink; ?>" class="footer-main-link">
-						Press
-					</a>
-				</div>
+					<div class="footer-link-col">
+						<a href="<?php echo $pressLink; ?>" class="footer-main-link">
+							Press
+						</a>
+					</div>
 
-				<div class="footer-link-col">
-					<a href="<?php echo $resourcesLink; ?>" class="footer-main-link">
-						Resources
-					</a>
-				</div>
+					<div class="footer-link-col">
+						<a href="<?php echo $resourcesLink; ?>" class="footer-main-link">
+							Resources
+						</a>
+					</div>
 
-				<div class="footer-link-col">
-					<a href="#" data-toggle="modal" data-target="#myModalContact" class="footer-main-link">
-						Contact
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="footer-top-block">
-			<div class="footer-top-block-tablet display-only-tablet">
-				<div class="footer-top-text-tablet vertical-centered">
-					Stay up to date with Sixgill News and Events
+					<div class="footer-link-col">
+						<a href="#" data-toggle="modal" data-target="#myModalContact" class="footer-main-link">
+							Contact
+						</a>
+					</div>
 				</div>
 			</div>
-			<div class="footer-top-block-left">
-				<div class="footer-top-block-mobile no-desktop-display no-tablet-display">
-					<div class="footer-top-text-mobile">
+
+			<div class="footer-top-block">
+				<div class="footer-top-block-tablet display-only-tablet">
+					<div class="footer-top-text-tablet vertical-centered">
 						Stay up to date with Sixgill News and Events
 					</div>
 				</div>
-				<div class="footer-top-text display-only-desktop desktop-vertical-centered">
-					Stay up to date with Sixgill News and Events
+				<div class="footer-top-block-left">
+					<div class="footer-top-block-mobile no-desktop-display no-tablet-display">
+						<div class="footer-top-text-mobile">
+							Stay up to date with Sixgill News and Events
+						</div>
+					</div>
+					<div class="footer-top-text display-only-desktop desktop-vertical-centered">
+						Stay up to date with Sixgill News and Events
+					</div>
+					<div class="footer-subscription-form-wrapper desktop-vertical-centered">
+						<?php dynamic_sidebar( 'footer-subscribe-sidebar' ); ?>
+					</div>
 				</div>
-				<div class="footer-subscription-form-wrapper desktop-vertical-centered">
-					<?php dynamic_sidebar( 'footer-subscribe-sidebar' ); ?>
+				<?php
+					$globalSocialButtonsInfoId = getPageBySlug('global-social-buttons')->ID;
+					$facebookLink = get_field('facebook_link', $globalSocialButtonsInfoId);
+					$twitterLink = get_field('twitter_link', $globalSocialButtonsInfoId);
+					$linkedinLink = get_field('linkedin_link', $globalSocialButtonsInfoId);
+				?>
+				<div class="footer-top-block-right">
+					<div class="footer-icons-wrapper vertical-centered">
+						<a href="<?php echo $facebookLink; ?>" class="footer-social-icon-link" target="_blank">
+							<img src="/wp-content/themes/sixgill/images/td/footer/facebook_icon.svg" alt="Facebook icon" class="footer-social-icon-img">
+						</a>
+						<a href="<?php echo $twitterLink; ?>" class="footer-social-icon-link" target="_blank">
+							<img src="/wp-content/themes/sixgill/images/td/footer/twitter_icon.svg" alt="Twitter icon" class="footer-social-icon-img">
+						</a>
+						<a href="<?php echo $linkedinLink; ?>" class="footer-social-icon-link" target="_blank">
+							<img src="/wp-content/themes/sixgill/images/td/footer/linkedin_icon.svg" alt="Linkedin icon" class="footer-social-icon-img">
+						</a>
+					</div>
 				</div>
 			</div>
-			<?php
-				$globalSocialButtonsInfoId = getPageBySlug('global-social-buttons')->ID;
-				$facebookLink = get_field('facebook_link', $globalSocialButtonsInfoId);
-				$twitterLink = get_field('twitter_link', $globalSocialButtonsInfoId);
-				$linkedinLink = get_field('linkedin_link', $globalSocialButtonsInfoId);
-			?>
-			<div class="footer-top-block-right">
-				<div class="footer-icons-wrapper vertical-centered">
-					<a href="<?php echo $facebookLink; ?>" class="footer-social-icon-link" target="_blank">
-						<img src="/wp-content/themes/sixgill/images/td/footer/facebook_icon.svg" alt="Facebook icon" class="footer-social-icon-img">
-					</a>
-					<a href="<?php echo $twitterLink; ?>" class="footer-social-icon-link" target="_blank">
-						<img src="/wp-content/themes/sixgill/images/td/footer/twitter_icon.svg" alt="Twitter icon" class="footer-social-icon-img">
-					</a>
-					<a href="<?php echo $linkedinLink; ?>" class="footer-social-icon-link" target="_blank">
-						<img src="/wp-content/themes/sixgill/images/td/footer/linkedin_icon.svg" alt="Linkedin icon" class="footer-social-icon-img">
-					</a>
-				</div>
-			</div>
-		</div>
 
-		<div class="footer-bottom-block">
-			<div class="footer-copyright-wrapper vertical-centered">
-				&copy; Copyright Sixgill, 2016. All Rights Reserved.
+			<div class="footer-bottom-block">
+				<div class="footer-copyright-wrapper vertical-centered">
+					&copy; Copyright Sixgill, 2016. All Rights Reserved.
+				</div>
 			</div>
-		</div>
 
-	</div>
-</footer><!-- #footer end -->
+		</div>
+	</footer><!-- #footer end -->
 </div><!-- #fullpage end -->
 </div><!-- #wrapper end -->
 
