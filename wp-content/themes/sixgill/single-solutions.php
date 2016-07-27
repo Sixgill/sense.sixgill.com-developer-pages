@@ -135,12 +135,17 @@
 	$leftPage = get_post($subpagesLinks[0]);
 	$rightPage = get_post($subpagesLinks[1]);
 	$additionalUsecasesExist = ($subpagesLinks[0] !==0 || $subpagesLinks[1] !==0);
+	$bothUseCasesFlag = ($subpagesLinks[0] !==0 && $subpagesLinks[1] !==0);
 	if($additionalUsecasesExist) {
 	?>
 
 		<div class="full-width center">
 			<div class="solution-subpage-section-title">
-				Additional Use Cases
+				Additional Use Case<?php
+					if($bothUseCasesFlag) {
+						echo "s";
+					}
+				?>
 			</div>
 		</div>
 		<div class="solution-use-cases-block-content">
