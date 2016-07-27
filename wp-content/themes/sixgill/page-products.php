@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+<div
+	id="fullpage-config"
+	fullpage-section-selector = "section"
+	fullpage-navigation = "false"
+></div>
 <a name="top"></a>
 <div id="products-first-section" class="section">
 	<div class="products-first-section-block">

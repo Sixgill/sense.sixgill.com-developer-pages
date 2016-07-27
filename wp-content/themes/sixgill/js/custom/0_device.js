@@ -4,7 +4,7 @@
 // For all details and documentation:
 // http://matthewhudson.me/projects/device.js/
 
-(function() {
+jQuery(function($) {
 
   var device,
     previousDevice,
@@ -300,4 +300,4 @@
     window.device = device;
   }
 
-}).call(this);
+});
