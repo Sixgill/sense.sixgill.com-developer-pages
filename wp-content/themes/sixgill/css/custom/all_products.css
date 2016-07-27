@@ -13,3 +13,7 @@
 .products-first-section-block-text {
 	height: 100%;
 }
+
+.products-section {
+	background-size: cover;
+}
