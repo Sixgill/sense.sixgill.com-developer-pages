@@ -4,55 +4,6 @@ $.fn.inlineStyle = function (prop) {
 	return this.prop("style")[$.camelCase(prop)];
 };
 
-$.fn.doOnce = function( func ) {
-	this.length && func.apply( this );
-	return this;
-}
-
-if( $().infinitescroll ) {
-
-	$.extend($.infinitescroll.prototype,{
-		_setup_portfolioinfiniteitemsloader: function infscr_setup_portfolioinfiniteitemsloader() {
-			var opts = this.options,
-				instance = this;
-			// Bind nextSelector link to retrieve
-			$(opts.nextSelector).click(function(e) {
-				if (e.which == 1 && !e.metaKey && !e.shiftKey) {
-					e.preventDefault();
-					instance.retrieve();
-				}
-			});
-			// Define loadingStart to never hide pager
-			instance.options.loading.start = function (opts) {
-				opts.loading.msg
-					.appendTo(opts.loading.selector)
-					.show(opts.loading.speed, function () {
-						instance.beginAjax(opts);
-					});
-			}
-		},
-		_showdonemsg_portfolioinfiniteitemsloader: function infscr_showdonemsg_portfolioinfiniteitemsloader () {
-			var opts = this.options,
-				instance = this;
-			//Do all the usual stuff
-			opts.loading.msg
-				.find('img')
-				.hide()
-				.parent()
-				.find('div').html(opts.loading.finishedMsg).animate({ opacity: 1 }, 2000, function () {
-					$(this).parent().fadeOut('normal');
-				});
-			//And also hide the navSelector
-			$(opts.navSelector).fadeOut('normal');
-			// user provided callback when done
-			opts.errorCallback.call($(opts.contentSelector)[0],'done');
-		}
-	});
-
-} else {
-	console.log('Infinite Scroll not defined.');
-}
-
 (function() {
 	var lastTime = 0;
 	var vendors = ['ms', 'moz', 'webkit', 'o'];
@@ -149,7 +100,6 @@ var SEMICOLON = SEMICOLON || {};
 			SEMICOLON.initialize.lazyLoad();
 			SEMICOLON.initialize.fullScreen();
 			SEMICOLON.initialize.verticalMiddle();
-			SEMICOLON.initialize.lightbox();
 			SEMICOLON.initialize.resizeVideos();
 			SEMICOLON.initialize.imageFade();
 			SEMICOLON.initialize.pageTransition();
@@ -1060,7 +1010,6 @@ var SEMICOLON = SEMICOLON || {};
 
 		init: function(){
 
-			SEMICOLON.header.superfish();
 			SEMICOLON.header.menufunctions();
 			SEMICOLON.header.fullWidthMenu();
 			SEMICOLON.header.overlayMenu();
@@ -1073,55 +1022,6 @@ var SEMICOLON = SEMICOLON || {};
 			SEMICOLON.header.logo();
 			SEMICOLON.header.topsearch();
 			SEMICOLON.header.topcart();
-
-		},
-
-		superfish: function(){
-
-			if( $body.hasClass('device-lg') || $body.hasClass('device-md') ) {
-				$('#primary-menu ul ul, #primary-menu ul .mega-menu-content').css('display', 'block');
-				SEMICOLON.header.menuInvert();
-				$('#primary-menu ul ul, #primary-menu ul .mega-menu-content').css('display', '');
-			}
-
-			if( !$().superfish ) {
-				$body.addClass('no-superfish');
-				console.log('superfish: Superfish not Defined.');
-				return true;
-			}
-
-			$('body:not(.side-header) #primary-menu > ul, body:not(.side-header) #primary-menu > div > ul, .top-links > ul').superfish({
-				popUpSelector: 'ul,.mega-menu-content,.top-link-section',
-				delay: 250,
-				speed: 350,
-				animation: {opacity:'show'},
-				animationOut:  {opacity:'hide'},
-				cssArrows: false,
-				onShow: function(){
-					var megaMenuContent = $(this);
-					if( megaMenuContent.find('.owl-carousel.customjs').length > 0 ) {
-						megaMenuContent.find('.owl-carousel').removeClass('customjs');
-						SEMICOLON.widget.carousel();
-					}
-
-					if( megaMenuContent.hasClass('mega-menu-content') && megaMenuContent.find('.widget').length > 0 ) {
-						if( $body.hasClass('device-lg') || $body.hasClass('device-md') ) {
-							setTimeout( function(){ SEMICOLON.initialize.commonHeight( megaMenuContent ); }, 200);
-						} else {
-							megaMenuContent.children().height('');
-						}
-					}
-				}
-			});
-
-			$('body.side-header #primary-menu > ul').superfish({
-				popUpSelector: 'ul',
-				delay: 250,
-				speed: 350,
-				animation: {opacity:'show',height:'show'},
-				animationOut:  {opacity:'hide',height:'hide'},
-				cssArrows: false
-			});
 
 		},
 
@@ -2090,26 +1990,16 @@ var SEMICOLON = SEMICOLON || {};
 		init: function(){
 
 			SEMICOLON.widget.animations();
-			SEMICOLON.widget.youtubeBgVideo();
 			SEMICOLON.widget.tabs();
 			SEMICOLON.widget.tabsJustify();
 			SEMICOLON.widget.toggles();
 			SEMICOLON.widget.accordions();
-			SEMICOLON.widget.counter();
-			SEMICOLON.widget.roundedSkill();
 			SEMICOLON.widget.progress();
-			SEMICOLON.widget.twitterFeed();
-			SEMICOLON.widget.flickrFeed();
-			SEMICOLON.widget.instagramPhotos( '36286274.b9e559e.4824cbc1d0c94c23827dc4a2267a9f6b', 'b9e559ec7c284375bf41e9a9fb72ae01' );
-			SEMICOLON.widget.dribbbleShots( '01530280af335d298e756ed8ef786c8c4e92a50b88e53a185531b1a639e768b8' );
 			SEMICOLON.widget.navTree();
 			SEMICOLON.widget.textRotater();
-			SEMICOLON.widget.carousel();
 			SEMICOLON.widget.linkScroll();
 			SEMICOLON.widget.contactForm();
 			SEMICOLON.widget.subscription();
-			SEMICOLON.widget.quickContact();
-			SEMICOLON.widget.cookieNotify();
 			SEMICOLON.widget.extras();
 
 		},
@@ -2452,38 +2342,6 @@ var SEMICOLON = SEMICOLON || {};
 			}
 		},
 
-		counter: function(){
-
-			if( !$().appear ) {
-				console.log('counter: Appear not Defined.');
-				return true;
-			}
-
-			if( !$().countTo ) {
-				console.log('counter: countTo not Defined.');
-				return true;
-			}
-
-			var $counterEl = $('.counter:not(.counter-instant)');
-			if( $counterEl.length > 0 ){
-				$counterEl.each(function(){
-					var element = $(this);
-					var counterElementComma = $(this).find('span').attr('data-comma');
-					if( !counterElementComma ) { counterElementComma = false; } else { counterElementComma = true; }
-					if( $body.hasClass('device-lg') || $body.hasClass('device-md') ){
-						element.appear( function(){
-							SEMICOLON.widget.runCounter( element, counterElementComma );
-							if( element.parents('.common-height') ) {
-								SEMICOLON.initialize.maxHeight();
-							}
-						},{accX: 0, accY: -120},'easeInCubic');
-					} else {
-						SEMICOLON.widget.runCounter( element, counterElementComma );
-					}
-				});
-			}
-		},
-
 		runCounter: function( counterElement,counterElementComma ){
 			if( counterElementComma == true ) {
 				counterElement.find('span').countTo({
@@ -2495,53 +2353,6 @@ var SEMICOLON = SEMICOLON || {};
 				});
 			} else {
 				counterElement.find('span').countTo();
-			}
-		},
-
-		roundedSkill: function(){
-
-			if( !$().appear ) {
-				console.log('roundedSkill: Appear not Defined.');
-				return true;
-			}
-
-			if( !$().easyPieChart ) {
-				console.log('roundedSkill: EasyPieChart not Defined.');
-				return true;
-			}
-
-			var $roundedSkillEl = $('.rounded-skill');
-			if( $roundedSkillEl.length > 0 ){
-				$roundedSkillEl.each(function(){
-					var element = $(this);
-
-					var roundSkillSize = element.attr('data-size');
-					var roundSkillSpeed = element.attr('data-speed');
-					var roundSkillWidth = element.attr('data-width');
-					var roundSkillColor = element.attr('data-color');
-					var roundSkillTrackColor = element.attr('data-trackcolor');
-
-					if( !roundSkillSize ) { roundSkillSize = 140; }
-					if( !roundSkillSpeed ) { roundSkillSpeed = 2000; }
-					if( !roundSkillWidth ) { roundSkillWidth = 8; }
-					if( !roundSkillColor ) { roundSkillColor = '#0093BF'; }
-					if( !roundSkillTrackColor ) { roundSkillTrackColor = 'rgba(0,0,0,0.04)'; }
-
-					var properties = {roundSkillSize:roundSkillSize, roundSkillSpeed:roundSkillSpeed, roundSkillWidth:roundSkillWidth, roundSkillColor:roundSkillColor, roundSkillTrackColor:roundSkillTrackColor};
-
-					if( $body.hasClass('device-lg') || $body.hasClass('device-md') ){
-						element.css({'width':roundSkillSize+'px','height':roundSkillSize+'px','line-height':roundSkillSize+'px'}).animate({opacity:0}, 10);
-						element.appear( function(){
-							if (!element.hasClass('skills-animated')) {
-								var t = setTimeout( function(){ element.css({opacity: 1}); }, 100 );
-								SEMICOLON.widget.runRoundedSkills( element, properties );
-								element.addClass('skills-animated');
-							}
-						},{accX: 0, accY: -120},'easeInCubic');
-					} else {
-						SEMICOLON.widget.runRoundedSkills( element, properties );
-					}
-				});
 			}
 		},
 
@@ -2582,239 +2393,6 @@ var SEMICOLON = SEMICOLON || {};
 						element.find('.counter-instant span').countTo();
 						skillsBar.find('.progress').css({width: skillValue + "%"});
 					}
-				});
-			}
-		},
-
-		twitterFeed: function(){
-
-			if( typeof sm_format_twitter === 'undefined' ) {
-				console.log('twitterFeed: sm_format_twitter() not Defined.');
-				return true;
-			}
-
-			if( typeof sm_format_twitter3 === 'undefined' ) {
-				console.log('twitterFeed: sm_format_twitter3() not Defined.');
-				return true;
-			}
-
-			var $twitterFeedEl = $('.twitter-feed');
-			if( $twitterFeedEl.length > 0 ){
-				$twitterFeedEl.each(function() {
-					var element = $(this),
-						twitterFeedUser = element.attr('data-username'),
-						twitterFeedCount = element.attr('data-count'),
-						twitterFeedLoader = element.attr('data-loader');
-
-					if( !twitterFeedUser ) { twitterFeedUser = 'twitter' }
-					if( !twitterFeedCount ) { twitterFeedCount = 3 }
-					if( !twitterFeedLoader ) { twitterFeedLoader = 'include/twitter/tweets.php'; }
-
-					$.getJSON( twitterFeedLoader + '?username='+ twitterFeedUser +'&count='+ twitterFeedCount, function(tweets){
-						if( element.hasClass('fslider') ) {
-							element.find(".slider-wrap").html(sm_format_twitter3(tweets)).promise().done( function(){
-								var timer = setInterval(function(){
-									if( element.find('.slide').length > 1 ) {
-										element.removeClass('customjs');
-										var t = setTimeout( function(){ SEMICOLON.widget.loadFlexSlider(); }, 500);
-										clearInterval(timer);
-									}
-								},500);
-							});
-						} else {
-							element.html(sm_format_twitter(tweets));
-						}
-					});
-				});
-			}
-		},
-
-		flickrFeed: function(){
-
-			if( !$().jflickrfeed ) {
-				console.log('flickrFeed: jflickrfeed not Defined.');
-				return true;
-			}
-
-			var $flickrFeedEl = $('.flickr-feed');
-			if( $flickrFeedEl.length > 0 ){
-				$flickrFeedEl.each(function() {
-					var element = $(this),
-						flickrFeedID = element.attr('data-id'),
-						flickrFeedCount = element.attr('data-count'),
-						flickrFeedType = element.attr('data-type'),
-						flickrFeedTypeGet = 'photos_public.gne';
-
-					if( flickrFeedType == 'group' ) { flickrFeedTypeGet = 'groups_pool.gne'; }
-					if( !flickrFeedCount ) { flickrFeedCount = 9; }
-
-					element.jflickrfeed({
-						feedapi: flickrFeedTypeGet,
-						limit: Number(flickrFeedCount),
-						qstrings: {
-							id: flickrFeedID
-						},
-						itemTemplate: '<a href="{{image_b}}" title="{{title}}" data-lightbox="gallery-item">' +
-											'<img src="{{image_s}}" alt="{{title}}" />' +
-									  '</a>'
-					}, function(data) {
-						SEMICOLON.initialize.lightbox();
-					});
-				});
-			}
-		},
-
-		instagramPhotos: function( c_accessToken, c_clientID ){
-
-			if( typeof Instafeed === 'undefined' ) {
-				console.log('Instafeed not Defined.');
-				return true;
-			}
-
-			var $instagramPhotosEl = $('.instagram-photos');
-			if( $instagramPhotosEl.length > 0 ){
-
-				$instagramPhotosEl.each(function() {
-					var element = $(this),
-						instaGramTarget = element.attr('id'),
-						instaGramUserId = element.attr('data-user'),
-						instaGramTag = element.attr('data-tag'),
-						instaGramLocation = element.attr('data-location'),
-						instaGramCount = element.attr('data-count'),
-						instaGramType = element.attr('data-type'),
-						instaGramSortBy = element.attr('data-sortBy'),
-						instaGramRes = element.attr('data-resolution');
-
-					if( !instaGramCount ) { instaGramCount = 9; }
-					if( !instaGramSortBy ) { instaGramSortBy = 'none'; }
-					if( !instaGramRes ) { instaGramRes = 'thumbnail'; }
-
-					if( instaGramType == 'user' ) {
-
-						var feed = new Instafeed({
-							target: instaGramTarget,
-							get: instaGramType,
-							userId: Number(instaGramUserId),
-							limit: Number(instaGramCount),
-							sortBy: instaGramSortBy,
-							resolution: instaGramRes,
-							accessToken: c_accessToken,
-							clientId: c_clientID
-						});
-
-					} else if( instaGramType == 'tagged' ) {
-
-						var feed = new Instafeed({
-							target: instaGramTarget,
-							get: instaGramType,
-							tagName: instaGramTag,
-							limit: Number(instaGramCount),
-							sortBy: instaGramSortBy,
-							resolution: instaGramRes,
-							clientId: c_clientID
-						});
-
-					} else if( instaGramType == 'location' ) {
-
-						var feed = new Instafeed({
-							target: instaGramTarget,
-							get: instaGramType,
-							locationId: Number(instaGramUserId),
-							limit: Number(instaGramCount),
-							sortBy: instaGramSortBy,
-							resolution: instaGramRes,
-							clientId: c_clientID
-						});
-
-					} else {
-
-						var feed = new Instafeed({
-							target: instaGramTarget,
-							get: 'popular',
-							limit: Number(instaGramCount),
-							sortBy: instaGramSortBy,
-							resolution: instaGramRes,
-							clientId: c_clientID
-						});
-
-					}
-
-					feed.run();
-				});
-			}
-		},
-
-		dribbbleShots: function( c_accessToken ){
-
-			if( !$.jribbble ) {
-				console.log('dribbbleShots: Jribbble not Defined.');
-				return true;
-			}
-
-			if( !$().imagesLoaded ) {
-				console.log('dribbbleShots: imagesLoaded not Defined.');
-				return true;
-			}
-
-			var $dribbbleShotsEl = $('.dribbble-shots');
-			if( $dribbbleShotsEl.length > 0 ){
-
-				$.jribbble.setToken( c_accessToken );
-
-				$dribbbleShotsEl.each(function() {
-					var element = $(this),
-						dribbbleUsername = element.attr('data-user'),
-						dribbbleCount = element.attr('data-count'),
-						dribbbleList = element.attr('data-list'),
-						dribbbleType = element.attr('data-type');
-
-					element.addClass('customjs');
-
-					if( !dribbbleCount ) { dribbbleCount = 9; }
-
-					if( dribbbleType == 'user' ) {
-
-						$.jribbble.users( dribbbleUsername ).shots({
-							'sort': 'recent',
-							'page': 1,
-							'per_page': Number(dribbbleCount)
-						}).then( function(res) {
-							var html = [];
-							res.forEach( function(shot) {
-								html.push('<a href="' + shot.html_url + '" target="_blank">');
-								html.push('<img src="' + shot.images.teaser + '" ');
-								html.push('alt="' + shot.title + '"></a>');
-							});
-							element.html(html.join(''));
-
-							element.imagesLoaded().done( function() {
-								element.removeClass('customjs');
-								SEMICOLON.widget.masonryThumbs();
-							});
-						});
-
-					} else if( dribbbleType == 'list' ) {
-
-						$.jribbble.shots( dribbbleList, {
-							'sort': 'recent',
-							'page': 1,
-							'per_page': Number(dribbbleCount)
-						}).then( function(res) {
-							var html = [];
-							res.forEach( function(shot) {
-								html.push('<a href="' + shot.html_url + '" target="_blank">');
-								html.push('<img src="' + shot.images.teaser + '" ');
-								html.push('alt="' + shot.title + '"></a>');
-							});
-							element.html(html.join(''));
-
-							element.imagesLoaded().done( function() {
-								element.removeClass('customjs');
-								SEMICOLON.widget.masonryThumbs();
-							});
-						});
-					}
-
 				});
 			}
 		},
@@ -3210,98 +2788,6 @@ var SEMICOLON = SEMICOLON || {};
 				});
 
 			});
-		},
-
-		quickContact: function(){
-
-			if( !$().validate ) {
-				console.log('quickContact: Form Validate not Defined.');
-				return true;
-			}
-
-			if( !$().ajaxSubmit ) {
-				console.log('quickContact: jQuery Form not Defined.');
-				return true;
-			}
-
-			var $quickContact = $('.quick-contact-widget:not(.customjs)');
-			if( $quickContact.length < 1 ){ return true; }
-
-			$quickContact.each( function(){
-				var element = $(this),
-					elementAlert = element.attr('data-alert-type'),
-					elementLoader = element.attr('data-loader'),
-					elementResult = element.find('.quick-contact-form-result');
-
-				element.find('form').validate({
-					submitHandler: function(form) {
-
-						elementResult.hide();
-						$(form).animate({ opacity: 0.4 });
-
-						if( elementLoader == 'button' ) {
-							var defButton = $(form).find('button'),
-								defButtonText = defButton.html();
-
-							defButton.html('<i class="icon-line-loader icon-spin no-margin"></i>');
-						} else {
-							$(form).find('.form-process').fadeIn();
-						}
-
-						$(form).ajaxSubmit({
-							target: elementResult,
-							dataType: 'json',
-							resetForm: true,
-							success: function( data ) {
-								$(form).animate({ opacity: 1 });
-								if( elementLoader == 'button' ) {
-									defButton.html( defButtonText );
-								} else {
-									$(form).find('.form-process').fadeOut();
-								}
-								if( elementAlert == 'inline' ) {
-									if( data.alert == 'error' ) {
-										var alertType = 'alert-danger';
-									} else {
-										var alertType = 'alert-success';
-									}
-
-									elementResult.addClass( 'alert ' + alertType ).html( data.message ).slideDown( 400 );
-								} else {
-									elementResult.attr( 'data-notify-type', data.alert ).attr( 'data-notify-msg', data.message ).html('');
-									SEMICOLON.widget.notifications( elementResult );
-								}
-								if( $(form).find('.g-recaptcha').children('div').length > 0 ) { grecaptcha.reset(); }
-							}
-						});
-					}
-				});
-
-			});
-		},
-
-		cookieNotify: function(){
-
-			if( !$.cookie ) {
-				console.log('cookieNotify: Cookie Function not defined.');
-				return true;
-			}
-
-			if( $cookieNotification.length > 0 ) {
-				var cookieNotificationHeight = $cookieNotification.outerHeight();
-
-				$cookieNotification.css({ bottom: -cookieNotificationHeight });
-
-				if( $.cookie('websiteUsesCookies') != 'yesConfirmed' ) {
-					$cookieNotification.css({ bottom: 0 });
-				}
-
-				$('.cookie-accept').click( function(){
-					$cookieNotification.css({ bottom: -cookieNotificationHeight });
-					$.cookie('websiteUsesCookies', 'yesConfirmed', { expires: 30 });
-					return false;
-				});
-			}
 		},
 
 		extras: function(){

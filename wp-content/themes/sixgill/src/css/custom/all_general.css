@@ -384,3 +384,9 @@ input {
 	border-radius: 0 !important;
 	-webkit-appearance: none !important;
 }
+
+/*for full page scroll*/
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	font-size: 0;
+}

@@ -15,6 +15,7 @@ var watch = require('gulp-watch');
 var livereload = require('gulp-livereload');
 var gutil = require('gulp-util')
 var sourcemaps = require('gulp-sourcemaps');
+var cleanCSS = require('gulp-clean-css');
 
 // Custom error handling
 function handleError (error) {
@@ -43,7 +44,7 @@ gulp.task('styles', function() {
   gutil.log(gutil.colors.green('Concatinate into ./src/custom_build.css'));  
   return gulp.src('./src/css/**/*.css')
     .pipe(concat('./src/custom_build.css'))
-    .pipe(uglify().on('error', handleError))
+    .pipe(cleanCSS())
     .pipe(gulp.dest('./'))
 });
 

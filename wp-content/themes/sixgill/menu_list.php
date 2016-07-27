@@ -5,24 +5,7 @@
 	$menu[] = array(
 		"elementName" => "Home",
 		"link" => "/",
-		"sublinksList" => array(
-			/*array(
-				"name" => "What we do",
-				"anchor" => "what"
-			),
-			array(
-				"name" => "Products",
-				"anchor" => "products"
-			),
-			array(
-				"name" => "Solutions",
-				"anchor" => "solutions"
-			),
-			array(
-				"name" => "Clients",
-				"anchor" => "clients"
-			)*/
-		),
+		"sublinksList" => array(),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded
 	);
@@ -56,16 +39,12 @@
 		"link" => "/products/",
 		"sublinksList" => array(
 			array(
-				"name" => "Sense",
-				"anchor" => "ssense"
+				"name" => "Sixgill Sence",
+				"anchor" => "sixgill-sense"
 			),
 			array(
-				"name" => "Reach",
-				"anchor" => "ssdk"
-			),
-			array(
-				"name" => "Assist",
-				"anchor" => "sassist"
+				"name" => "Ancillary Products",
+				"anchor" => "ancillary-products"
 			)
 		),
 		"isSelected" => $isSelected,

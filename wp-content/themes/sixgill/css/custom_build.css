@@ -584,33 +584,12 @@ span.middot {
 
 .magnific-max-width .mfp-content { max-width: 800px; }
 
-
-/* ----------------------------------------------------------------
-	Sections
------------------------------------------------------------------*/
-
-
-.section {
-	position: relative;
-	margin: 60px 0;
-	padding: 60px 0;
-	background-color: #F9F9F9;
-	overflow: hidden;
-}
-
 .parallax {
 	background-color: transparent;
 	background-attachment: fixed;
 	background-position: 50% 0;
 	background-repeat: no-repeat;
 	overflow: hidden;
-}
-
-.mobile-parallax,
-.video-placeholder {
-	background-size: cover !important;
-	background-attachment: scroll !important;
-	background-position: center center;
 }
 
 .section .container { z-index: 2; }
@@ -12972,7 +12951,17 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	padding-top: 15px;
 }
 
-/* For iOS Safary */
+.dotted-background {
+	background-image: -webkit-repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 2px, transparent 2px, transparent 100%);
+	background-image: -moz-repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 1px, transparent 1px, transparent 100%);
+	background-image: -ms-repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 1px, transparent 1px, transparent 100%);
+	background-image: repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 1px, transparent 1px, transparent 100%);
+	-webkit-background-size: 5px 5px;
+	-moz-background-size: 5px 5px;
+	background-size: 5px 5px;
+}
+
+/* For iOS Safari */
 input {
 	border-radius: 0 !important;
 	-webkit-appearance: none !important;
@@ -13846,25 +13835,19 @@ input {
 	max-width:900px;
 }
 /* Products Common styles */
-#sassist {
-	padding-top: 40px;
+
+.products-first-section-image-wrapper,
+.products-first-section-block-text {
+	display: inline-block;
 }
 
-#ssdk-container {
-	max-width:1100px;
+.products-first-section-block {
+	background-color: rgba(77, 219, 90, 0.7);
 }
 
-#products-header-image {
-	background-image: url('/wp-content/themes/sixgill/images/td/hero/adobestock_69002740_web.jpg');
-	background-position: center;
-}
-
-.products-content-spacing {
-	padding-top: 75px;
-}
-
-.indent-from-slider {
-	padding-top: 100px;
+.products-first-section-image-wrapper,
+.products-first-section-block-text {
+	height: 100%;
 }
 @media only screen and (min-width: 1201px) {/* General desktop styles */
 .global-social-buttons-list {
@@ -14515,28 +14498,68 @@ input {
 	background-color: #f8f8f8;
 }
 /* Products desktop styles */
-/* Fix scrolling to Reach */
-#before_ssdk {
-	margin-bottom: -145px !important;
+
+.products-first-section-block {
+	width: 88.34%;
+	height: calc((100vw - 225px)*0.23415 - 1px);
+	float: right;
+	font-size: 0px;
 }
 
-#ssdk {
-	padding-top: 145px;
-}
-/* End of scrolling fix */
-
-/* Fix scrolling to Sense */
-#before_ssense {
-	margin-bottom: -90px !important;
+.products-first-section-image-wrapper {
+	width: 28.1%;
 }
 
-#ssense {
-	padding-top: 90px;
+.products-first-section-block-text {
+	width: 71%;
+	padding: 0px 2.4vw 0px 2.4vw;
 }
-/* End of scrolling fix */
 
-#sassist {
-	padding-bottom: 40px;
+.products-first-section-block-title {
+	font-size: 61px;
+  font-weight: 300;
+	color: #ffffff;
+	line-height: 1em;
+	margin-bottom: 2vw;
+}
+
+.products-first-section-block-paragraph {
+	font-size: 15.9px;
+  font-weight: 400;
+}
+
+.products-first-section-block-paragraph,
+.products-first-section-block-paragraph p,
+.products-first-section-scroll-link-text {
+	color: #ffffff !important;
+}
+
+.products-first-section-image-wrapper {
+	float: left;
+}
+
+.products-first-section-scroll-link-text {
+	font-size: 17px;
+  font-weight: 600;
+  text-shadow: -3.1px 3.9px 12px #000000;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.products-first-section-scroll-link-ico-wrapper {
+	width: 37px;
+	height: 18px;
+	text-align: center;
+	display: inline-block;
+}
+
+.products-first-section-scroll-link-wrapper {
+	width: 100px;
+	position: absolute;
+	bottom: 38px;
+	text-align: center;
+	margin: 0px calc(50% - 50px) 0px calc(50% - 50px);
+	cursor: pointer;
 }
 }@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1200px) {/* General tablet styles */
 
