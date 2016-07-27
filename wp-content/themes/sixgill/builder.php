@@ -8,8 +8,9 @@
 		$jsSource = array(
 			$path."/js/plugins.js",
 			$path."/js/functions.js",
-			$path."/js/custom/*.{js, JS}",
 			$path."/js/owl.carousel.min.js",
+			$path."/js/jquery.fullpage.min.js",
+			$path."/js/custom/*.{js, JS}"
 		);
 
 		$cssResultFile = $path."/css/custom_build.css";

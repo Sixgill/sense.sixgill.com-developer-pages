@@ -5,10 +5,14 @@
 	fullpage-navigation = "false"
 ></div>
 <a name="top"></a>
-<div id="products-first-section" class="section">
+<div
+	id="products-first-section"
+	class="section products-first-section"
+	style="background-image: url('<?php echo get_field('first_section_background'); ?>');"
+>
 	<div class="products-first-section-block">
 		<div class="products-first-section-image-wrapper">
-			<img class="" src="">
+			<img class="products-first-section-image" src="<?php echo get_field('first_section_image'); ?>">
 		</div>
 		<div class="products-first-section-block-text">
 			<h1 class="products-first-section-block-title">
@@ -30,10 +34,10 @@
 	</div>
 </div>
 
-<div id="products-second-section" class="section">
+<div id="products-second-section" class="section products-second-section">
 	<div class="vertical-centered">
 		<div class="products-second-section-image-wrapper">
-			<img class="products-second-section-image" src="">
+			<img class="products-second-section-image" src="<?php echo get_field('second_section_image'); ?>">
 		</div>
 		<div class="products-second-section-text">
 			<?php echo get_field('second_section_text'); ?>
@@ -74,10 +78,10 @@
 	</div>
 </div>
 
-<div id="products-third-section" class="section">
+<div id="products-third-section" class="section products-third-section">
 	<div class="products-third-section-left-col">
 		<div class="products-third-section-image-wrapper">
-			<img class="products-third-section-image" src="">
+			<img class="products-third-section-image" src="<?php echo get_field('third_section_image'); ?>">
 		</div>
 	</div>
 	<div class="products-third-section-right-col">
@@ -103,7 +107,7 @@
 	</div>
 </div>
 
-<div id="products-fourth-section" class="section">
+<div id="products-fourth-section" class="section products-fourth-section">
 	<div class="products-fourth-section-left-col">
 		<div class="products-fourth-section-header-wrapper">
 			<div class="products-fourth-section-ico-wrapper">
@@ -124,12 +128,12 @@
 	</div>
 	<div class="products-fourth-section-right-col">
 		<div class="products-fourth-section-image-wrapper">
-			<img class="products-fourth-section-image" src="">
+			<img class="products-fourth-section-image" src="<?php echo get_field('forth_section_image'); ?>">
 		</div>
 	</div>
 </div>
 
-<div id="products-fifth-section" class="section">
+<div id="products-fifth-section" class="section products-fifth-section">
 	<div class="products-fifth-section-left-col">
 		<div class="products-fifth-section-image-wrapper">
 			<img class="products-fifth-section-image" src="">
@@ -158,7 +162,7 @@
 	</div>
 </div>
 
-<div id="products-last-section" class="section">
+<div id="products-last-section" class="section products-last-section">
 	<h2 class="products-last-section-title">
 		<?php echo get_field('last_section_title'); ?>
 	</h2>

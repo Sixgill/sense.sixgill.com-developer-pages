@@ -43,7 +43,7 @@
 				"anchor" => "sixgill-sense"
 			),
 			array(
-				"name" => "Ancillary Products that Enhance Sense",
+				"name" => "Ancillary Products",
 				"anchor" => "ancillary-products"
 			)
 		),
