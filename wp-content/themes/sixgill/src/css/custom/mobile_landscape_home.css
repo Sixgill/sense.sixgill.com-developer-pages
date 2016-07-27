@@ -1,0 +1,17 @@
+/* Home Mobile landscape styles */	
+.video-wrap video {
+	width: 100%;
+	height: initial;
+}
+
+.home-text-2{
+	margin-top: 110px;
+}
+
+.hr-home-sup-title {
+	max-width: 550px;
+}
+
+.height-video-container {
+	min-height: 246px !important;
+}

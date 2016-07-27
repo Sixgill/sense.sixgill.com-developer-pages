@@ -3,14 +3,14 @@
 	include(locate_template('builder.php'));
 	function sixgill_custom_stylesheets() {
 		if ( ! is_admin() ) {
-			wp_enqueue_style( 'sixgill_custom_styles', get_template_directory_uri() . '/css/custom_build.css', array(), "220820163");
+			wp_enqueue_style( 'sixgill_custom_styles', get_template_directory_uri() . '/css/custom_build.css', array(), "26082016");
 		}
 	}
 	add_action( 'wp_enqueue_scripts', 'sixgill_custom_stylesheets', 11 );
 
 	function sixgill_custom_scripts() {
 		if ( ! is_admin() ) {
-			wp_enqueue_script( 'sixgill_custom_scripts', get_template_directory_uri() . '/js/custom_build.js', array(), "220820163");
+			wp_enqueue_script( 'sixgill_custom_scripts', get_template_directory_uri() . '/js/custom_build.js', array(), "26082016");
 		}
 	}
 	add_action( 'wp_enqueue_scripts', 'sixgill_custom_scripts', 11 );
