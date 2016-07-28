@@ -1,5 +1,6 @@
 <?php
 	get_header();
+	echo "<div> <!-- fullpage wrapper placeholder -->";
 	$post = get_post();
 	$categorySlug = get_the_category()[0]->slug;
 	if($categorySlug == "blog") {

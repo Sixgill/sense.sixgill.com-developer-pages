@@ -86,7 +86,8 @@
 	text-align: left;
 }
 
-[class="center"] {
+[class="center"],
+.inline-block {
 	display: inline-block;
 }
 
