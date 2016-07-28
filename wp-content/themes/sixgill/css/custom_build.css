@@ -14514,16 +14514,36 @@ input {
 }
 
 .products-first-section {
+
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 	display: flex;
+
+	-ms-flex-pack: end;
+	-webkit-justify-content: flex-end;
 	justify-content: flex-end;
 }
 
 .products-first-section-block {
 	width: 88.34%;
 	height: calc((100vw - 225px)*0.23415 - 1px);
-	align-self: center;
+
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 	display: flex;
+
+	-ms-flex-item-align: center;
+	-webkit-align-self: center;
+	align-self: center;
+
+	flex-align: center;
+	-webkit-align-items: center;
   align-items: center;
+
 	z-index: 2;
 }
 
@@ -14582,7 +14602,6 @@ input {
 
 .products-second-section {
 	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
-
 }
 
 .products-second-section-image-wrapper {
@@ -14616,14 +14635,26 @@ input {
 	min-height: inherit !important;
 }
 
-.products-third-section-wrapper {
-	background-image: url('/wp-content/themes/sixgill/images/products/third_section_bg_at2.png');
+.products-third-section-wrapper,
+.products-fourth-section-wrapper,
+.products-fifth-section-wrapper {
+
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 	display: flex;
+
   align-items: flex-flex;
 	height: auto;
 	max-height: none;
 	width: 100%;
 }
+
+.products-third-section-wrapper {
+	background-image: url('/wp-content/themes/sixgill/images/products/third_section_bg_at2.png');
+}
+
 .products-third-section-content-wrapper {
 	width: 77%;
 	margin-left: auto;
@@ -14637,6 +14668,8 @@ input {
 
 .products-third-section-right-col {
 	width: 66%;
+	-ms-flex-item-align: center;
+	-webkit-align-self: center;
 	align-self: center;
 }
 
@@ -14660,7 +14693,9 @@ input {
   font-weight: 700;
 }
 
-.products-third-section-line {
+.products-third-section-line,
+.products-fourth-section-line,
+.products-fifth-section-line {
 	margin: 3vw 0px 3vw 0px;
 	height: 2.5px;
 	width: 100%;
@@ -14677,24 +14712,12 @@ input {
 	float: left;
 }
 
-.products-third-section-text,
-.products-third-section-text p,
-.products-third-section-text li {
-	font-size: 15.9px;
-  font-weight: 500;
-}
-
 .products-fourth-section {
 	min-height: inherit !important;
 }
 
 .products-fourth-section-wrapper {
 	background-image: url('/wp-content/themes/sixgill/images/products/fourth_section_bg_at2.png');
-	display: flex;
-  align-items: flex-flex;
-	height: auto;
-	max-height: none;
-	width: 100%;
 }
 .products-fourth-section-content-wrapper {
 	width: 77%;
@@ -14709,6 +14732,8 @@ input {
 
 .products-fourth-section-left-col {
 	width: 59%;
+	-ms-flex-item-align: center;
+	-webkit-align-self: center;
 	align-self: center;
 }
 
@@ -14733,10 +14758,6 @@ input {
 }
 
 .products-fourth-section-line {
-	margin: 3vw 0px 3vw 0px;
-	height: 2.5px;
-	width: 100%;
-	clear: both;
 	background-color: #d1d0ce;
 }
 
@@ -14760,11 +14781,6 @@ input {
 
 .products-fifth-section-wrapper {
 	background-image: url('/wp-content/themes/sixgill/images/products/fifth_section_bg_at2.png');
-	display: flex;
-  align-items: flex-flex;
-	height: auto;
-	max-height: none;
-	width: 100%;
 }
 .products-fifth-section-content-wrapper {
 	width: 77%;
@@ -14779,6 +14795,8 @@ input {
 
 .products-fifth-section-right-col {
 	width: 66%;
+	-ms-flex-item-align: center;
+	-webkit-align-self: center;
 	align-self: center;
 }
 
@@ -14802,14 +14820,6 @@ input {
   font-weight: 700;
 }
 
-.products-fifth-section-line {
-	margin: 3vw 0px 3vw 0px;
-	height: 2.5px;
-	width: 100%;
-	clear: both;
-	background-color: #ffffff;
-}
-
 .products-fifth-section-header-wrapper {
 	display: inline-block;
 }
@@ -14821,8 +14831,11 @@ input {
 
 .products-fifth-section-text,
 .products-fifth-section-text p,
-.products-fifth-section-text li {
-	font-size: 15.9px;
+.products-fifth-section-text li,
+.products-third-section-text,
+.products-third-section-text p,
+.products-third-section-text li {
+	font-size: 16px;
   font-weight: 500;
 }
 }@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1200px) {/* General tablet styles */
@@ -16934,4 +16947,3 @@ a.search-post-result {
 .font-size-0 {
 	font-size: 0;
 }
- 
