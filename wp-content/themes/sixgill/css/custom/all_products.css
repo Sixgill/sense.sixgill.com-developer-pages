@@ -9,11 +9,23 @@
 	background-color: rgba(77, 219, 90, 0.7);
 }
 
-.products-first-section-image-wrapper,
-.products-first-section-block-text {
+.products-first-section-image-wrapper {
 	height: 100%;
 }
 
 .products-section {
 	background-size: cover;
+}
+
+.products-first-section-block-paragraph,
+.products-first-section-block-paragraph p,
+.products-first-section-scroll-link-text,
+.products-third-section-title,
+.products-third-section-subtitle,
+.products-third-section-text p,
+.products-third-section-text ul li,
+.products-fifth-section-subtitle,
+.products-fifth-section-text p,
+.products-fifth-section-text ul li {
+	color: #ffffff !important;
 }
