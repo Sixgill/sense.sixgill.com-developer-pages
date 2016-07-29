@@ -22,7 +22,9 @@
 				<div class="container-fluid center clearfix my_containerSolution">
 
 					<div class="col_one_third title-left-col solutions-top-title-spacing">
-						<h1 class="solutions-h1"><?php echo get_field('top_paragraph_title'); ?></h1>
+						<h1 class="solutions-h1">
+							<?php echo get_field('top_paragraph_title'); ?>
+						</h1>
 					</div>
 					<div class="col_two_third text-right-col col_last">
 						<?php echo get_field('top_paragraph'); ?>
@@ -36,14 +38,28 @@
 			</div>
 
 			<a name="people"></a>
-			<div id="people" class="container-fluid background-white clearfix no-margin nopadding">
-				<div class="container-fluid center clearfix my_containerSolution" style="max-width: interit !important;">
+			<div
+				id="people"
+				class="container-fluid background-white clearfix no-margin nopadding"
+			>
+				<div
+					class="container-fluid center clearfix my_containerSolution"
+					style="max-width: interit !important;"
+				>
 					<div class="col_one_third">
-						<img src="<?php echo get_field('people_image'); ?>" class="iconSolutions" alt=""/>
+						<img
+							src="<?php echo get_field('people_image'); ?>"
+							class="iconSolutions"
+							alt=""
+						/>
 					</div>
 					<div class="col_two_third text-right-col-noline col_last">
 						<div class="solution-image-title-container">
-							<img src="/wp-content/themes/sixgill/images/td/solutions/header_people.png" class="my_headerBoxSolution no-mobile-portrait-display no-mobile-landscape-display" alt=""/>
+							<img
+								src="/wp-content/themes/sixgill/images/td/solutions/header_people.png"
+								class="my_headerBoxSolution no-mobile-portrait-display no-mobile-landscape-display"
+								alt=""
+							/>
 						</div>
 						<div class="my_boxSolution_title no-tablet-display">
 							<?php echo get_field('people_header'); ?>
