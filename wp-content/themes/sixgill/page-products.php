@@ -13,7 +13,7 @@
 				<img
 					class="products-first-section-scroll-link-ico"
 					src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-				>
+				/>
 			</div>
 		</div>
 	</a>
@@ -176,50 +176,50 @@
 				<div data-tabid="reach" class="products-last-section-tab-logo selected">
 					<img
 						class="products-last-section-tab-image products-last-section-tab-image-active"
-						src="<?php echo get_template_directory_uri();?>\images\products_reach_tab_logo.png"
+						src="<?php echo get_template_directory_uri();?>/images/products/products_reach_tab_logo.svg"
 					>
 					<img
 						class="products-last-section-tab-image"
-						src="<?php echo get_template_directory_uri();?>\images\products_reach_tab_logo_active.png"
+						src="<?php echo get_template_directory_uri();?>/images/products/products_reach_tab_logo_active.svg"
 					>
 				</div>
 				<div data-tabid="sync" class="products-last-section-tab-logo">
 					<img
 						class="products-last-section-tab-image products-last-section-tab-image-active"
-						src="<?php echo get_template_directory_uri();?>\images\products_sync_tab_logo.png"
+						src="<?php echo get_template_directory_uri();?>/images/products/products_sync_tab_logo.svg"
 					>
 					<img
 						class="products-last-section-tab-image"
-						src="<?php echo get_template_directory_uri();?>\images\products_sync_tab_logo_active.png"
+						src="<?php echo get_template_directory_uri();?>/images/products/products_sync_tab_logo_active.svg"
 					>
 				</div>
 				<div data-tabid="assist" class="products-last-section-tab-logo">
 					<img
 						class="products-last-section-tab-image products-last-section-tab-image-active"
-						src="<?php echo get_template_directory_uri();?>\images\products_assist_tab_logo.png"
+						src="<?php echo get_template_directory_uri();?>/images/products/products_assist_tab_logo.svg"
 					>
 					<img
 						class="products-last-section-tab-image"
-						src="<?php echo get_template_directory_uri();?>\images\products_assist_tab_logo_active.png"
+						src="<?php echo get_template_directory_uri();?>/images/products/products_assist_tab_logo_active.svg"
 					>
 				</div>
 			</div>
 			<div class="products-last-section-right-col">
 				<div class="products-last-section-bubble">
 					<div id="products-tab-reach" class="products-last-section-text">
-						<h3 class="products-last-section-title">
+						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_reach_title'); ?>
 						</h3>
 						<?php echo get_field('last_section_reach_text'); ?>
 					</div>
 					<div id="products-tab-sync" class="products-last-section-text">
-						<h3 class="products-last-section-title">
+						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_sync_title'); ?>
 						</h3>
 						<?php echo get_field('last_section_sync_text'); ?>
 					</div>
 					<div id="products-tab-assist" class="products-last-section-text">
-						<h3 class="products-last-section-title">
+						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_assist_title'); ?>
 						</h3>
 						<?php echo get_field('last_section_assist_text'); ?>

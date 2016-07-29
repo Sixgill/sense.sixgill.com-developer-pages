@@ -194,5 +194,10 @@
  </script>
 <!-- End of Async HubSpot Analytics Code -->
 <?php wp_footer(); ?>
+<style type="text/css" media="screen">
+	body,html {
+		margin-top: 0px !important;
+	}
+</>
 </body>
 </html>
