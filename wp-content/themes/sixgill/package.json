@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.12",
     "gulp-concat": "^2.6.0",
@@ -16,12 +17,12 @@
     "gulp-ignore": "^2.0.1",
     "gulp-livereload": "^3.8.1",
     "gulp-minify": "0.0.13",
-    "gulp-run-sequence": "^0.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.4",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.9",
     "livereload": "^0.5.0",
-    "pump": "^1.0.1"
+    "pump": "^1.0.1",
+    "run-sequence": "^1.2.2"
   }
 }

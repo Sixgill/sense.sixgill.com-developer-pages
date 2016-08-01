@@ -177,43 +177,26 @@ function handleError (error) {
  *
  ******************************/
 
-// Concatinate js scripts into "./src/custom_build.js"
+// Concatenate js scripts into "./src/custom_build.js"
 gulp.task('scripts', function() {
-  gutil.log(gutil.colors.green('Concatinate into ./src/custom_build.js'));
-  return gulp.src('./src/js/**/*.js')
-    .pipe(concat('./src/custom_build.js'))
+  gutil.log(gutil.colors.green('Concatenate into ./custom_build.js'));
+  return gulp.src('./js/**/*.js')
+    .pipe(concat('custom_build.js'))
     .pipe(uglify().on('error', handleError))
-    .pipe(gulp.dest('./'))
+     .pipe(gulp.dest('./'))
 });
 
 gulp.task('styles', function() {
-  gutil.log(gutil.colors.green('Concatinate into ./src/custom_build.css'));  
+  gutil.log(gutil.colors.green('Concatenate into ./custom_build.css'));  
   return gulp.src(builds)
-    .pipe(concat('./custom_build.css'))
-    .pipe(gulp.dest('./src'))
+    .pipe(concat('custom_build.css'))
+    .pipe(gulp.dest('./'))
 });
 
 
-// Watch for changes in js & css files
-gulp.task('watch', function () {
-    livereload.listen();
-    gulp.watch('./js/**/*.js', ['default']).on('change', function(file) {
-        livereload.changed(file.path);
-        gutil.log(gutil.colors.yellow('JS changed' + ' (' + file.path + ')'));
-    });
-
-    gulp.watch('./css/**/*.css', ['default']).on('change', function(file) {
-        livereload.changed(file.path);
-        gutil.log(gutil.colors.yellow('CSS changed' + ' (' + file.path + ')'));
-    });
-});
-
-
-gulp.task('wrap_it', function() {
+gulp.task('wrap_it', function(callback) {
   object.forEach( function (style) {
-    
     if (style.wrapper != null) {
-      gutil.log(gutil.colors.green('[Wrap & Build:] ' + style.name ))
       gulp.src(style.style_list)
         .pipe(concat('./' + style.name + '.css'))
         .pipe(map(function(file, cb) {
@@ -233,33 +216,52 @@ gulp.task('wrap_it', function() {
         .pipe(gulp.dest('./build'));
       }
   })
+  callback();
 });
 
-var runSequence = require('gulp-run-sequence');
+
+gulp.task('watch', function () {
+    livereload.listen();
+    gulp.watch('./js/**/*.js', ['build']).on('change', function(file) {
+        livereload.changed(file.path);
+        gutil.log(gutil.colors.yellow('JS changed' + ' (' + file.path + ')'));
+    });
+
+    gulp.watch('./css/**/*.css', ['build']).on('change', function(file) {
+        livereload.changed(file.path);
+        gutil.log(gutil.colors.yellow('CSS changed' + ' (' + file.path + ')'));
+    });
+});
+
+var runSequence = require('run-sequence');
+var del = require('del');
 
 gulp.task('default')
 
 /******************************
  * Default task
  ******************************/
-gulp.task('default', function() {
+
+gulp.task('build', function() {
   runSequence(
     'wrap_it',
     'scripts',
-    'styles',
-    'watch'
+    'styles'
     )
 });
 
-//  gulp.task('default', [
-//   //'wrap_it',
-//  //'scripts',
-  
-//   'styles',
-//   // 'watch',
-//   ])
-// // gulp.task('default', [
-// //  // 'jsConcat',
-// //  'cssConcat'
-// //  // 'watch',
-// // ]);
+gulp.task('clean', function () {
+  return del([
+    './custom_build.css',
+    './custom_build.js',
+    'build',
+  ]);
+});
+
+gulp.task('default', function() {
+  runSequence(
+    'clean',
+    'build',
+    'watch'
+    )
+});
