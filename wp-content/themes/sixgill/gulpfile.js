@@ -7,6 +7,8 @@ var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps');
   cleanCSS = require('gulp-clean-css');
   map = require('map-stream');
+  runSequence = require('run-sequence');
+  del = require('del');
 
 
 
@@ -161,23 +163,12 @@ var builds = [
   './build/tail_styles.css',
 ]
 
-// Custom error handling
 function handleError (error) {
-
-  // If you want details of the error in the console
   console.log(error.toString())
 
   this.emit('end')
 }
 
-
-/******************************
- * Helpers
- * Wrapper for media queries
- *
- ******************************/
-
-// Concatenate js scripts into "./src/custom_build.js"
 gulp.task('scripts', function() {
   gutil.log(gutil.colors.green('Concatenate into ./custom_build.js'));
   return gulp.src('./js/**/*.js')
@@ -188,7 +179,7 @@ gulp.task('scripts', function() {
 
 gulp.task('styles', function() {
   gutil.log(gutil.colors.green('Concatenate into ./custom_build.css'));  
-  return gulp.src(builds)
+  gulp.src(builds)
     .pipe(concat('custom_build.css'))
     .pipe(gulp.dest('./'))
 });
@@ -209,9 +200,7 @@ gulp.task('wrap_it', function(callback) {
         .pipe(gulp.dest('./build'))
     }
       else {
-        gutil.log(gutil.colors.red('[Build:] ' + style.name ))
         gulp.src(style.style_list)
-        
         .pipe(concat('./' + style.name + '.css'))
         .pipe(gulp.dest('./build'));
       }
@@ -233,21 +222,18 @@ gulp.task('watch', function () {
     });
 });
 
-var runSequence = require('run-sequence');
-var del = require('del');
-
-gulp.task('default')
 
 /******************************
  * Default task
  ******************************/
 
-gulp.task('build', function() {
+gulp.task('build', function(callback) {
   runSequence(
     'wrap_it',
     'scripts',
-    'styles'
-    )
+    'styles',
+    callback
+    );
 });
 
 gulp.task('clean', function () {
