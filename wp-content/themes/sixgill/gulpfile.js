@@ -179,7 +179,7 @@ gulp.task('scripts', function() {
 
 gulp.task('styles', function() {
   gutil.log(gutil.colors.green('Concatenate into ./custom_build.css'));  
-  gulp.src(builds)
+  return gulp.src(builds)
     .pipe(concat('custom_build.css'))
     .pipe(gulp.dest('./'))
 });
