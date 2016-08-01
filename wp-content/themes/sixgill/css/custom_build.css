@@ -15658,7 +15658,8 @@ ul:not([class]) li {
 .products-first-section-block,
 .products-third-section-wrapper,
 .products-fourth-section-wrapper,
-.products-fifth-section-wrapper {
+.products-fifth-section-wrapper,
+.products-third-section-left-col {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -15669,7 +15670,8 @@ ul:not([class]) li {
 .products-first-section-block,
 .products-third-section-right-col,
 .products-fourth-section-left-col,
-.products-fifth-section-right-col {
+.products-fifth-section-right-col,
+.products-third-section-left-col {
 	-ms-flex-item-align: center;
 	-webkit-align-self: center;
 	align-self: center;
@@ -15694,12 +15696,12 @@ ul:not([class]) li {
 }
 
 .products-first-section-image-wrapper {
-	width: 28.3%;
+	width: 47.34%;
 }
 
 .products-first-section-block-text {
-	width: 71%;
-	padding: 0px 2.4vw 0px 2.4vw;
+	width: 52.5%;
+	padding: 0px 4vw 0px 4vw;
 }
 
 .products-first-section-block-title {
@@ -15778,12 +15780,27 @@ ul:not([class]) li {
 	background-image: url('/wp-content/themes/sixgill/images/products/third_section_bg_at2.png');
 }
 
+.products-third-section-content-wrapper {
+	margin-top: 5.2vw;
+}
+
 .products-third-section-content-wrapper,
 .products-fourth-section-content-wrapper,
 .products-fifth-section-content-wrapper {
 	width: 77%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.products-third-section-title {
+	font-size: 35px;
+  font-weight: 300;
+  color: #2adc3a;
+}
+
+.products-third-section-subtitle {
+	font-weight: bold;
+
 }
 
 .products-third-section-left-col {
@@ -15796,9 +15813,9 @@ ul:not([class]) li {
 }
 
 .products-third-section-ico-wrapper {
-	width: 3.84vw;
-	height: 5.16vw;
-	margin-right: 1.4vw;
+	width: 6.84vw;
+	height: 9.2vw;
+	margin-right: 2vw;
 	float: left;
 }
 
@@ -15821,6 +15838,10 @@ ul:not([class]) li {
 	height: 2.5px;
 	width: 100%;
 	clear: both;
+}
+
+.products-third-section-title-wrapper {
+	width: calc(100% - 10vw);
 }
 
 .products-third-section-header-wrapper,
@@ -15858,9 +15879,9 @@ ul:not([class]) li {
 }
 
 .products-fourth-section-ico-wrapper {
-	width: 3.84vw;
-	height: 5.16vw;
-	margin-right: 1.4vw;
+	width: 8.14vw;
+	height: 8.14vw;
+	margin-right: 3.52vw;
 	float: left;
 }
 
@@ -15922,6 +15943,10 @@ ul:not([class]) li {
   font-weight: 500;
 }
 
+.products-third-section-text li {
+	margin-bottom: 1em !important;
+}
+
 .products-last-section {
 	min-height: inherit;
 	margin-bottom: 5.82vw;
@@ -15979,7 +16004,7 @@ ul:not([class]) li {
 
 .products-last-section-col-title {
 	font-size: 24px;
-  font-weight: 500;
+  font-weight: 500;products-third-section-content-wrapper
 	margin: 2.74vw 0px 2.2vw 0px;
 	line-height: 1em;
 }

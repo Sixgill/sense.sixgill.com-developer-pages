@@ -20,7 +20,7 @@
 	</a>
 	<div
 		id="products-first-section"
-		class="products-section products-first-section"
+		class="products-section products-first-section responsive-background"
 		style="background-image: url('<?php echo get_field('first_section_background'); ?>');"
 	>
 		<div class="products-first-section-block">
@@ -45,14 +45,13 @@
 
 	</div>
 
+	<a name="second-section"></a>
 	<div id="products-second-section" class="products-section products-second-section">
 		<div class="vertical-centered inline-block full-width">
 			<div class="products-second-section-image-wrapper">
 				<img
-					class="products-second-section-image responsive-image"
-					desktop-src="<?php echo get_field('second_section_image_desktop'); ?>"
-					tablet-src="<?php echo get_field('second_section_image_tablet'); ?>"
-					mobile-src="<?php echo get_field('second_section_image_mobile'); ?>"
+					class="products-second-section-image "
+					src="<?php echo get_field('second_section_image'); ?>"
 				>
 			</div>
 			<div class="products-second-section-text">
@@ -69,7 +68,6 @@
 						class="products-third-section-image responsive-image"
 						desktop-src="<?php echo get_field('third_section_image_desktop'); ?>"
 						tablet-src="<?php echo get_field('third_section_image_tablet'); ?>"
-						mobile-src="<?php echo get_field('third_section_image_mobile'); ?>"
 					>
 				</div>
 			</div>
@@ -134,7 +132,6 @@
 						class="products-fourth-section-image responsive-image"
 						desktop-src="<?php echo get_field('fourth_section_image_desktop'); ?>"
 						tablet-src="<?php echo get_field('fourth_section_image_tablet'); ?>"
-						mobile-src="<?php echo get_field('fourth_section_image_mobile'); ?>"
 					>
 				</div>
 			</div>
@@ -149,9 +146,8 @@
 					<img
 						class="products-fifth-section-image responsive-image"
 						src="<?php echo get_field('fifth_section_image'); ?>"
-						desktop-src="<?php echo get_field('fourth_section_image_desktop'); ?>"
-						tablet-src="<?php echo get_field('fourth_section_image_tablet'); ?>"
-						mobile-src="<?php echo get_field('fourth_section_image_mobile'); ?>"
+						desktop-src="<?php echo get_field('fifth_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('fifth_section_image_tablet'); ?>"
 					>
 				</div>
 			</div>
