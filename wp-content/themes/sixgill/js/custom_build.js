@@ -4166,6 +4166,10 @@ jQuery(function($){
         responsiveImage.DOMLink.css('display', 'none');
       }
     });
+
+    responsiveBackgrounds.forEach(function(responsiveBackground) {
+      
+    })
   });
 });
 jQuery(function($){

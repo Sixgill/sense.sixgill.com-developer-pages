@@ -223,13 +223,13 @@
 						</h3>
 						<?php echo get_field('last_section_reach_text'); ?>
 					</div>
-					<div id="products-tab-sync" class="products-last-section-text">
+					<div id="products-tab-sync" class="products-last-section-text hidden">
 						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_sync_title'); ?>
 						</h3>
 						<?php echo get_field('last_section_sync_text'); ?>
 					</div>
-					<div id="products-tab-assist" class="products-last-section-text">
+					<div id="products-tab-assist" class="products-last-section-text hidden">
 						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_assist_title'); ?>
 						</h3>
