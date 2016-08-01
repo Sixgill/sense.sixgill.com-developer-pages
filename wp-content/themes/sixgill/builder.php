@@ -55,10 +55,6 @@
 				"wrapper" => false
 			),
 			array(
-				"selector" => $path."/css/swiper.css",
-				"wrapper" => false
-			),
-			array(
 				"selector" => $path."/css/font-icons.css",
 				"wrapper" => false
 			),

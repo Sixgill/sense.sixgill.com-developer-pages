@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div>
 	<a name="top"></a>
 	<a
@@ -24,7 +25,12 @@
 	>
 		<div class="products-first-section-block">
 			<div class="products-first-section-image-wrapper">
-				<img class="products-first-section-image" src="<?php echo get_field('first_section_image'); ?>">
+				<img
+					class="products-first-section-image responsive-image"
+					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
+					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
+					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
+				>
 			</div>
 			<div class="products-first-section-block-text">
 				<h1 class="products-first-section-block-title">
@@ -43,8 +49,10 @@
 		<div class="vertical-centered inline-block full-width">
 			<div class="products-second-section-image-wrapper">
 				<img
-					class="products-second-section-image"
-					src="<?php echo get_field('second_section_image'); ?>"
+					class="products-second-section-image responsive-image"
+					desktop-src="<?php echo get_field('second_section_image_desktop'); ?>"
+					tablet-src="<?php echo get_field('second_section_image_tablet'); ?>"
+					mobile-src="<?php echo get_field('second_section_image_mobile'); ?>"
 				>
 			</div>
 			<div class="products-second-section-text">
@@ -58,8 +66,10 @@
 			<div class="products-third-section-left-col">
 				<div class="products-third-section-image-wrapper">
 					<img
-						class="products-third-section-image"
-						src="<?php echo get_field('third_section_image'); ?>"
+						class="products-third-section-image responsive-image"
+						desktop-src="<?php echo get_field('third_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('third_section_image_tablet'); ?>"
+						mobile-src="<?php echo get_field('third_section_image_mobile'); ?>"
 					>
 				</div>
 			</div>
@@ -121,8 +131,10 @@
 			<div class="products-fourth-section-right-col">
 				<div class="products-fourth-section-image-wrapper">
 					<img
-						class="products-fourth-section-image"
-						src="<?php echo get_field('fourth_section_image'); ?>"
+						class="products-fourth-section-image responsive-image"
+						desktop-src="<?php echo get_field('fourth_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('fourth_section_image_tablet'); ?>"
+						mobile-src="<?php echo get_field('fourth_section_image_mobile'); ?>"
 					>
 				</div>
 			</div>
@@ -135,8 +147,11 @@
 			<div class="products-fifth-section-left-col">
 				<div class="products-fifth-section-image-wrapper">
 					<img
-						class="products-fifth-section-image"
+						class="products-fifth-section-image responsive-image"
 						src="<?php echo get_field('fifth_section_image'); ?>"
+						desktop-src="<?php echo get_field('fourth_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('fourth_section_image_tablet'); ?>"
+						mobile-src="<?php echo get_field('fourth_section_image_mobile'); ?>"
 					>
 				</div>
 			</div>
