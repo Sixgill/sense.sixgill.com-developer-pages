@@ -26,6 +26,41 @@
 .products-third-section-text ul li,
 .products-fifth-section-subtitle,
 .products-fifth-section-text p,
-.products-fifth-section-text ul li {
+.products-fifth-section-text ul li,
+.products-first-section-block-title {
 	color: #ffffff !important;
+}
+
+.products-last-section-text,
+.products-last-section-text p
+.products-last-section-text li,
+.products-last-section-col-title,
+.products-second-section-text {
+	color: #2e2e2e;
+}
+
+.products-last-section-title {
+  color: #4ddb5a;
+}
+
+.products-third-section-line,
+.products-fourth-section-line,
+.products-fifth-section-line {
+	background-color: #ffffff;
+}
+
+.products-third-section-title,
+.products-fourth-section-title,
+.products-fifth-section-title {
+	font-family: Lato;
+  color: #2adc3a;
+}
+
+.products-first-section-scroll-link-wrapper {
+	cursor: pointer;
+	text-align: center;
+}
+
+.products-last-section-tab-logo {
+	cursor: pointer;
 }
