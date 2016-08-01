@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div>
 	<a name="top"></a>
 	<a
@@ -19,12 +20,17 @@
 	</a>
 	<div
 		id="products-first-section"
-		class="products-section products-first-section"
+		class="products-section products-first-section responsive-background"
 		style="background-image: url('<?php echo get_field('first_section_background'); ?>');"
 	>
 		<div class="products-first-section-block">
 			<div class="products-first-section-image-wrapper">
-				<img class="products-first-section-image" src="<?php echo get_field('first_section_image'); ?>">
+				<img
+					class="products-first-section-image responsive-image"
+					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
+					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
+					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
+				>
 			</div>
 			<div class="products-first-section-block-text">
 				<h1 class="products-first-section-block-title">
@@ -39,11 +45,12 @@
 
 	</div>
 
+	<a name="second-section"></a>
 	<div id="products-second-section" class="products-section products-second-section">
 		<div class="vertical-centered inline-block full-width">
 			<div class="products-second-section-image-wrapper">
 				<img
-					class="products-second-section-image"
+					class="products-second-section-image "
 					src="<?php echo get_field('second_section_image'); ?>"
 				>
 			</div>
@@ -58,8 +65,9 @@
 			<div class="products-third-section-left-col">
 				<div class="products-third-section-image-wrapper">
 					<img
-						class="products-third-section-image"
-						src="<?php echo get_field('third_section_image'); ?>"
+						class="products-third-section-image responsive-image"
+						desktop-src="<?php echo get_field('third_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('third_section_image_tablet'); ?>"
 					>
 				</div>
 			</div>
@@ -121,8 +129,9 @@
 			<div class="products-fourth-section-right-col">
 				<div class="products-fourth-section-image-wrapper">
 					<img
-						class="products-fourth-section-image"
-						src="<?php echo get_field('fourth_section_image'); ?>"
+						class="products-fourth-section-image responsive-image"
+						desktop-src="<?php echo get_field('fourth_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('fourth_section_image_tablet'); ?>"
 					>
 				</div>
 			</div>
@@ -135,8 +144,10 @@
 			<div class="products-fifth-section-left-col">
 				<div class="products-fifth-section-image-wrapper">
 					<img
-						class="products-fifth-section-image"
+						class="products-fifth-section-image responsive-image"
 						src="<?php echo get_field('fifth_section_image'); ?>"
+						desktop-src="<?php echo get_field('fifth_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('fifth_section_image_tablet'); ?>"
 					>
 				</div>
 			</div>
@@ -212,13 +223,13 @@
 						</h3>
 						<?php echo get_field('last_section_reach_text'); ?>
 					</div>
-					<div id="products-tab-sync" class="products-last-section-text">
+					<div id="products-tab-sync" class="products-last-section-text hidden">
 						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_sync_title'); ?>
 						</h3>
 						<?php echo get_field('last_section_sync_text'); ?>
 					</div>
-					<div id="products-tab-assist" class="products-last-section-text">
+					<div id="products-tab-assist" class="products-last-section-text hidden">
 						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_assist_title'); ?>
 						</h3>
