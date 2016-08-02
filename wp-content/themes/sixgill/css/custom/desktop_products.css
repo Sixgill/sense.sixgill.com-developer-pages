@@ -325,6 +325,14 @@
   z-index: 1;
 }
 
+.bubble-sync::before {
+	top: 18vw;
+}
+
+.bubble-assist::before {
+	top: 34.5vw;
+}
+
 .products-last-section-col-title {
 	font-size: 24px;
   font-weight: 500;
