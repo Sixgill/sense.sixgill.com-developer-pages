@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div>
+<div class="full-width">
 	<a name="top"></a>
 	<a
 		href="#second-section"
@@ -12,8 +12,9 @@
 			</div>
 			<div class="products-first-section-scroll-link-ico-wrapper">
 				<img
-					class="products-first-section-scroll-link-ico"
-					src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					class="products-first-section-scroll-link-ico responsive-image"
+					desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
 				/>
 			</div>
 		</div>
