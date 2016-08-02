@@ -301,7 +301,7 @@
 }
 
 .products-last-section-right-col {
-	width: calc(67% - 7vw);
+	width: calc(66% - 7vw);
 	margin-right: 7vw;
 	margin-left: 5vw;
 
@@ -322,11 +322,11 @@
   height: 34px;
   position: absolute;
   top: 36px;
-  transform: rotate( 29deg ) skew( -35deg );
-  moz-transform: rotate( 29deg ) skew( -35deg );
+  -moz-transform: rotate( 29deg ) skew( -35deg );
   -ms-transform: rotate( 29deg ) skew( -35deg );
   -o-transform: rotate( 29deg ) skew( -35deg );
   -webkit-transform: rotate( 29deg ) skew( -35deg );
+	transform: rotate( 29deg ) skew( -35deg );
   width:  30px;
   left: -11px;
   z-index: 1;
