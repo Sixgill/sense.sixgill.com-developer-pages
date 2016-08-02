@@ -52,7 +52,11 @@ jQuery(function($){
     });
 
     responsiveBackgrounds.forEach(function(responsiveBackground) {
-      
-    })
+			if(responsiveBackground.sources[newScreenTypeName]) {
+        responsiveBackground.DOMLink.css('background-image', 'url("'+responsiveBackground.sources[newScreenTypeName]+'")');
+      } else {
+        responsiveBackground.DOMLink.css('background-image', 'none');
+      }
+    });
   });
 });

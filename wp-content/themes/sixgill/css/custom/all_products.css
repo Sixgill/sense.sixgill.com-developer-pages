@@ -31,6 +31,14 @@
 	color: #ffffff !important;
 }
 
+.products-third-section-text ul {
+	margin-bottom: 0px !important;
+}
+
+.products-third-section-text li:last-child {
+	margin-bottom: 0.5em !important;
+}
+
 .products-last-section-text,
 .products-last-section-text p
 .products-last-section-text li,
