@@ -26,7 +26,6 @@
 					class="products-first-section-image responsive-image"
 					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
 					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
-					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
 				>
 			</div>
 			<div class="products-first-section-block-text">
@@ -37,6 +36,13 @@
 					<?php echo get_field('first_section_text'); ?>
 				</div>
 			</div>
+
+			<div class="products-first-section-image-wrapper-mobile">
+				<img
+					class="products-first-section-image responsive-image"
+					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
+				>
+			</div>
 		</div>
 
 
@@ -44,7 +50,7 @@
 
 	<a name="second-section"></a>
 	<div id="products-second-section" class="products-section products-second-section">
-		<div class="vertical-centered inline-block full-width">
+		<div class="inline-block full-width">
 			<div class="products-second-section-image-wrapper">
 				<img
 					class="products-second-section-image "
@@ -73,7 +79,7 @@
 					<div class="products-third-section-header-wrapper">
 						<div class="products-third-section-ico-wrapper">
 							<img
-								class="products-third-section-ico-wrapper"
+								class="products-third-section-ico"
 								src="<?php echo get_template_directory_uri();?>/images/products/third_section_icon.svg"
 							>
 						</div>
@@ -103,7 +109,7 @@
 					<div class="products-fourth-section-header-wrapper">
 						<div class="products-fourth-section-ico-wrapper">
 							<img
-								class="products-fourth-section-ico-wrapper"
+								class="products-fourth-section-ico"
 								src="<?php echo get_template_directory_uri();?>/images/products/fourth_section_icon.svg"
 							>
 						</div>
@@ -153,7 +159,7 @@
 					<div class="products-fifth-section-header-wrapper">
 						<div class="products-fifth-section-ico-wrapper">
 							<img
-								class="products-fifth-section-ico-wrapper"
+								class="products-fifth-section-ico"
 								src="<?php echo get_template_directory_uri();?>/images/products/fifth_section_icon.svg"
 							>
 						</div>
@@ -175,7 +181,7 @@
 		</div>
 	</div>
 
-	<div id="products-last-section" class="products-section products-last-section">
+	<div id="products-last-section" class="products-section products-last-section no-mobile-portrait-display no-mobile-landscape-display">
 		<h2 class="products-last-section-title">
 			<?php echo get_field('last_section_title'); ?>
 		</h2>
@@ -235,6 +241,45 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div id="products-last-section-mobile" class="products-section products-last-section no-desktop-display no-tablet-display">
+		<h2 class="products-last-section-title">
+			<?php echo get_field('last_section_title'); ?>
+		</h2>
+		<!-- REACH -->
+		<div class="products-last-section-tab-logo">
+			<img
+				class="products-last-section-tab-image"
+				src="<?php echo get_template_directory_uri();?>/images/products/products_reach_tab_logo_active.svg"
+			>
+		</div>
+		<h3 class="products-last-section-col-title">
+			<?php echo get_field('last_section_reach_title'); ?>
+		</h3>
+		<?php echo get_field('last_section_reach_text'); ?>
+		<!-- SYNC -->
+		<div class="products-last-section-tab-logo">
+			<img
+				class="products-last-section-tab-image"
+				src="<?php echo get_template_directory_uri();?>/images/products/products_sync_tab_logo_active.svg"
+			>
+		</div>
+		<h3 class="products-last-section-col-title">
+			<?php echo get_field('last_section_sync_title'); ?>
+		</h3>
+		<?php echo get_field('last_section_sync_text'); ?>
+		<!-- ASSIST -->
+		<div class="products-last-section-tab-logo">
+			<img
+				class="products-last-section-tab-image"
+				src="<?php echo get_template_directory_uri();?>/images/products/products_assist_tab_logo_active.svg"
+			>
+		</div>
+		<h3 class="products-last-section-col-title">
+			<?php echo get_field('last_section_assist_title'); ?>
+		</h3>
+		<?php echo get_field('last_section_assist_text'); ?>
 	</div>
 
 	<div class="products-fixed-panel">
