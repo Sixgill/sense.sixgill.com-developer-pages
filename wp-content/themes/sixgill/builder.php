@@ -55,10 +55,6 @@
 				"wrapper" => false
 			),
 			array(
-				"selector" => $path."/css/swiper.css",
-				"wrapper" => false
-			),
-			array(
 				"selector" => $path."/css/font-icons.css",
 				"wrapper" => false
 			),
@@ -92,11 +88,11 @@
 			),
 			array(
 				"selector" => $path."/css/custom/desktop_".$pagesList.".css",
-				"wrapper" => "@media only screen and (min-width: 1201px) {"
+				"wrapper" => "@media only screen and (min-width: 1101px) {"
 			),
 			array(
 				"selector" => $path."/css/custom/tablet_".$pagesList.".css",
-				"wrapper" => "@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1200px) {"
+				"wrapper" => "@media (min-width: 500px) and (max-width: 1100px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1100px) {"
 			),
 			array(
 				"selector" => $path."/css/custom/mobile_portrait_".$pagesList.".css",
@@ -112,7 +108,7 @@
 			),
 			array(
 				"selector" => $path."/css/custom/tablet_and_mobile.css",
-				"wrapper" => "@media (max-width: 1200px) {"
+				"wrapper" => "@media (max-width: 1100px) {"
 			),
 			array(
 				"selector" => $path."/css/custom/custom_resolutions.css",
