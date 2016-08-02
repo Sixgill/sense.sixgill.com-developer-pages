@@ -18,13 +18,7 @@
 			</div>
 		</div>
 	</a>
-	<div
-		id="products-first-section"
-		class="products-section products-first-section responsive-background"
-		desktop-src="<?php echo get_field('first_section_background_desktop'); ?>"
-		tablet-src="<?php echo get_field('first_section_background_tablet'); ?>"
-		mobile-src="<?php echo get_field('first_section_background_mobile'); ?>"
-	>
+	<div id="products-first-section" class="products-section products-first-section">
 		<div class="products-first-section-block">
 			<div class="products-first-section-image-wrapper">
 				<img
