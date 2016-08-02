@@ -1,0 +1,1044 @@
+@media only screen and (min-width: 1201px) {
+/* General desktop styles */
+.global-social-buttons-list {
+	margin-left: -16px !important;
+}
+
+.subscribe-element {
+	display: block;
+}
+
+.slider-caption.slider-caption-center {
+	max-width: 900px;
+}
+
+.slider-caption p {
+	margin-bottom: 10px;
+	font-size: 36px;
+	font-family: "Lato";
+	margin-top: 10px;
+}
+
+.logo-sixgill {
+	width: 163px;
+	height: 129.5px;
+	background-image: url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
+	margin-top: 2.6vh;
+	margin-left: 31px;
+}
+
+.title-left-col {
+	font-size: 30px;
+	padding-right: 20px;
+	text-align: right;
+}
+
+.my_iconSolution {
+	width: 115px;
+}
+
+.my_boxSolution_title {
+	display: none;
+}
+
+.widgettitle {
+	color: #004FC8;
+}
+
+.blog-list {
+	padding-bottom:55px;
+	width: 65%;
+}
+
+.shareIcons-desktop {
+	display: block;
+}
+
+#aside-blog {
+	margin-left: -90px;
+}
+
+.no-desktop-display,
+.display-only-mobile-portrait,
+.display-only-mobile-landscape,
+.display-only-tablet {
+	display: none !important;
+}
+
+.my_subMenus > a {
+	display: block;
+	margin-top: 3px;
+}
+
+#menu-background {
+	display: none !important;
+}
+
+.single-post-content {
+	padding-top: 80px;
+}
+
+#sidebar-floating {
+	top: 150px;
+}
+
+.company-h1, .products-h1, .solutions-h1 {
+	font-size: 30px;
+	text-align: right;
+}
+
+.solution-subpage-first-block {
+	min-height: 365px;
+	width: 100%;
+}
+
+.first-text-subpage {
+	margin: 4.9vw 2vw 0px 5.64vw;
+}
+
+.second-text-subpage {
+	margin: 67px 65px 0px 0;
+}
+
+.block-link-subpage {
+	height: 133px;
+	width: 100%;
+}
+
+.container-subpage {
+	padding-right: 57px;
+	padding-left: 57px;
+}
+
+.image-subpage {
+	height: 100%;
+	max-width: none;
+}
+
+.desktop-vertical-centered {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#press-text-post {
+	display: inline-block;
+}
+
+.side-header #header {
+	width: 225px;
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+/* Menu desktop styles */
+.menu-schedule-button {
+	width: 206.5px;
+	height: 43px;
+	background-color: #0051c6;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
+
+.menu-schedule-button-wrapper {
+	width: 225px;
+	position: absolute;
+	text-align: center;
+	bottom: 20px;
+	left: 0px;
+}
+
+.nav-divider-line {
+	margin-bottom: 1.34vh;
+	width: 206.5px;
+  height: 1px;
+  background-color: #ebebeb;
+	display: inline-block;
+}
+
+#primary-menu {
+	opacity: 1 !important;
+	position: absolute;
+	left: 0px;
+	top: 36.83vh;
+	width: 225px;
+}
+
+#primary-menu li{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+#primary-menu ul, #primary-menu li, #primary-menu a, #primary-menu a > div {
+	width: 100%;
+}
+
+#primary-menu a {
+	display: inline-block;
+}
+
+#header {
+	border-width: 0px 5px 0px 0px;
+	border-style: solid;
+	border-color: #5ede6a;
+	-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5ede6a), to(#5eb26a)) 1 100%;
+	-webkit-border-image: -webkit-linear-gradient(#5ede6a, #5eb26a) 1 100%;
+	-moz-border-image: -moz-linear-gradient(#5ede6a, #5eb26a) 1 100%;
+	-o-border-image: -o-linear-gradient(#5ede6a, #5eb26a) 1 100%;
+	border-image: linear-gradient(to bottom, #5ede6a, #5eb26a) 1 100%;
+}
+
+.desktop-menu-wrapper {
+	display: inline-block;
+	text-align: left;
+}
+
+/* Footer desktop styles */
+.footer {
+	height: 146px;
+}
+
+.footer-top-block {
+	height: 36.5%;
+}
+
+.footer-top-block {
+	border-bottom: 2px solid rgba(131, 131, 131, 0.35);
+}
+
+.footer-menu-block {
+	border-bottom: 1px solid rgba(131, 131, 131, 0.35);
+	height: 34%;
+	text-align: left;
+}
+
+.footer-top-block-left {
+	width: 75%;
+}
+
+.footer-top-block-right {
+	width: 25%;
+}
+
+.footer-top-text {
+	font-size: 14px;
+	letter-spacing: 0.7px;
+	font-weight: normal;
+	margin-right: 4%;
+	max-width: 50%;
+}
+
+.footer-subscription-form-wrapper {
+	height: 65%;
+	width: 38%;
+}
+
+.footer-link-col {
+	width: 13.5vw;
+}
+
+.footer-link-col:first-child {
+	margin-left: 22.7%;
+}
+
+.footer-main-link {
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.footer-bottom-block {
+	height: 29.5%;
+}
+
+.footer-social-icon-link {
+	width: 23%;
+}
+
+.footer-social-icon-link:not(:last-child) {
+	margin-right: 15%;
+}
+
+.footer-icons-wrapper {
+	width: 46%;
+	min-width: 180px;
+}
+
+.footer-copyright-wrapper {
+	font-size: 11px;
+	font-weight: normal;
+	letter-spacing: 0.7px;
+}
+
+.footer-subscription-email {
+	font-size: 14px;
+	letter-spacing: 0.7px;
+	padding-left: 12px;
+}
+
+.footer-subscription-button {
+	font-size: 16px;
+	letter-spacing: 0.8px;
+	font-weight: bold;
+}
+
+/* Blog desktop styles */
+.subscribe-block {
+	background-color: #fafafa;
+	height: 250px;
+	max-width: 350px;
+	padding: 15px 20px 26px 20px;
+	text-align: center;
+	font-size: 18px;
+	width: 100%
+}
+
+.subscribe-block h4 {
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.subscribe-email {
+	height: 51px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	text-align: center;
+	width: 100%;
+}
+
+.subscribe-button {
+	background-image: url('/wp-content/themes/sixgill/images/td/blog/subscribe_desktop.png');
+	max-width: 311px;
+	height: 45px;
+	width: 100%;
+	background-position: center center;
+}
+
+.mc4wp-success > p {
+	font-size: 20px !important;
+	color: #999999;
+	line-height: 1.5em !important;
+}
+
+.subscribe-success-title {
+	font-size: 24px;
+	color: #2e2e2e;
+	display: block;
+}
+
+.blog-container {
+	margin-right: 0px;
+}
+
+.post-blog {
+	margin-top:30px;
+}
+
+.twitter-block {
+	height: 535px;
+	max-width: 352px;
+	padding: 15px 20px 26px 20px;
+	text-align: center;
+	font-size: 18px;
+	width: 100%;
+	margin-top: 60px;
+}
+
+.blog-post-with-image {
+	margin-bottom: 35px;
+}
+
+/* Company desktop styles */
+/* Menu scroll fix */
+#before_board {
+	margin-bottom: -145px !important;
+}
+
+#board {
+	padding-top: 145px;
+}
+/* Menu scroll fix end */
+
+.company-top-spacing {
+	padding-top: 75px;
+	max-width: 1100px;
+}
+
+/* Home desktop styles */
+.home-text-2{
+	margin-top: 120px;
+}
+
+.applying-layer-copperOnVideo {
+	background-color: rgba(0,0,0,0);
+}
+
+.home-video-background {
+	background-image:url(/wp-content/themes/sixgill/images/td/home/shadow.png);
+	padding: 85px 30px 50px 30px;
+	height: 380px;
+}
+
+#logo {
+	float: left !important;
+}
+
+.home-video-text-h1 {
+	font-size: 36px;
+	font-weight: 900;
+	margin-top: 10px;
+}
+
+.hidden-bottom-imageDiagram {
+	display: inline-block;
+}
+
+.video-wrap video {
+	width: 100%;
+}
+
+.logo-subheader {
+	margin-bottom: 45px;
+}
+
+.home-logos {
+	width: 650px;
+}
+
+.home-logos-titles {
+	width: 720px;
+}
+
+.home-clients-block {
+	width: 720px;
+}
+
+.home-diagram {
+	padding: 85px 50px 45px 50px;
+}
+
+/* Solutions desktop styles */
+
+.first-left-container-subpage {
+	width:51%;
+}
+
+.solution-subpage-first-block-image-container {
+	width:48.1%;
+}
+
+.solution-subpage-first-block-image {
+	max-width: 52.5vw;
+}
+
+.second-right-container-subpage {
+	width: 56%;
+	float: right;
+}
+
+.solution-subpage-last-block {
+	margin-top: 70px;
+	width: 74%;
+}
+
+.solution-subpage-bottom-line {
+	margin-top: 100px;
+	margin-bottom: 120px;
+}
+
+.solution-subpage-bottom-section-column {
+	width: 45%;
+}
+
+.solution-subpage-second-block {
+	padding-top: 6.4vw;
+}
+
+.solution-subpage-second-block-wrapper {
+	width: 63vw;
+}
+
+.solution-subpage-gallery-block {
+	text-align: center;
+}
+
+.solution-subpage-gallery-block-title {
+	margin-bottom: 2.19vw;
+	font-size: 16.2px;
+	font-weight: bold;
+	line-height: 1.42;
+	letter-spacing: 0.5px;
+	color: #2e2e2e;
+}
+
+.solution-subpage-gallery-thumbnail-wrapper {
+	width: 72.87vw;
+	margin-bottom: 1.94vw;
+}
+
+.solution-subpage-gallery-button {
+	width: 20.79vw;
+	height: 3.148vw;
+  font-size: 1.17vw;
+}
+
+.solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
+	margin-right: 0.73vw;
+}
+
+.solution-subpage-gallery-button-icon {
+	margin-right: 1vw;
+}
+
+.solution-subpage-viewprocess-placeholder {
+	height: 6.4vw;
+}
+
+.solution-subpage-last-section-text-wrapper {
+	width: 52vw;
+}
+
+.solution-subpage-last-section-text-wrapper p {
+	text-align: center;
+	margin-bottom: 67px;
+}
+
+.solution-use-cases-block-content {
+	width: 68vw;
+	margin: 0 auto 4vw;
+	padding-top: 1vw;
+}
+
+.solution-subpage-slide-title {
+  font-size: 1.78vw;
+  font-weight: 500;
+	margin-bottom: 1vw;
+}
+
+.solution-subpage-slide-description {
+  font-size: 1.171vw;
+	margin-bottom: 1.8vw;
+}
+
+.solution-subpage-slide-description, .solution-subpage-slide-title {
+	width: 95.68%;
+	display: inline-block;
+}
+
+.own-carousel-outside-wrapper {
+	width: 87.55%;
+	margin-bottom: 2.232vw;
+}
+
+.owl-carousel {
+	background-color: #ffffff;
+	border: 1px solid rgba(153, 153, 153, 0.32);
+}
+
+.solution-subpage-slide-image {
+	border-bottom: 1px solid rgba(153, 153, 153, 0.32);
+}
+
+.solution-subpage-slide-info {
+	margin-top: 1.72vw;
+}
+
+.solution-carousel-button {
+	font-size: 5.07vw;
+	font-weight: 100;
+	padding-bottom: 5vw;
+	cursor: pointer;
+}
+
+.solution-carousel-button-image {
+	width: 2.16vw;
+	height: 4.03vw;
+}
+
+.solution-carousel-button-wrapper {
+	width: 5.5%;
+}
+
+.solution-use-cases-block-image {
+	height: 13.2vw;
+}
+
+.swiper_wrapper {
+	height: 324px;
+}
+
+.solution-subpage-last-block-wrapper {
+	background: url("../images/Solutions/getStartedBg-Desktop@1x.png") no-repeat scroll 0 0 / cover ;
+}
+
+.solution-subgape-carousels-div {
+	width: 72.73vw;
+	margin: 3.66vw 0px 3.66vw 0px;
+}
+
+.solution-subpage-galleries-wrapper {
+	padding: calc(3vw - 30px) 0px 4.6vw 0px;
+}
+
+.solution-use-cases-block-half:only-child {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+/* Resources desktop styles */
+.resource-block {
+	width: 24%;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+}
+
+.resources-blocks-container {
+	width: 96%;
+}
+
+.resources-container {
+	min-height: 680px;
+}
+
+.resource-block:hover {
+	transform: scale(1.066);
+}
+
+/* Tech desktop styles */
+.tech-top-spacing {
+	padding-top:75px;
+	max-width:950px;
+}
+
+.tech-top-header-blue {
+	font-size: 32px;
+	color: #004cbf;
+	font-weight: bold;
+}
+
+.tech-top-header-gray {
+	font-size: 21px;
+	color: #9a9a9a;
+	font-weight: normal;
+}
+
+/* Press desktop styles */
+.col_press {
+	padding-bottom: 55px;
+}
+
+.press-post {
+	padding-top: 32px;
+}
+
+.hidden-press-contact {
+	margin-top: 50px !important;
+	padding: 0px 0px 0px 0px;
+	background-color: #C0C0C5;
+	float: right;
+}
+
+.padding-edges {
+	padding-left: 0px;
+	padding-right: 15px;
+}
+
+.press-contact-block {
+	margin-top: 80px;
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+/* Products desktop styles */
+
+.products-learn-more-link {
+	display: block;
+  position: absolute;
+  top: calc(100vh - 85px);
+  width: 100%;
+}
+
+.products-last-section-wrapper,
+.products-first-section,
+.products-first-section-block,
+.products-third-section-wrapper,
+.products-fourth-section-wrapper,
+.products-fifth-section-wrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.products-first-section-block,
+.products-third-section-right-col,
+.products-fourth-section-left-col,
+.products-fifth-section-right-col {
+	-ms-flex-item-align: center;
+	-webkit-align-self: center;
+	align-self: center;
+}
+
+
+.products-first-section {
+	-ms-flex-pack: end;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+.products-first-section-block {
+	width: 88.34%;
+	height: calc((100vw - 225px)*0.23415 - 1px);
+
+	flex-align: center;
+	-webkit-align-items: center;
+  align-items: center;
+
+	z-index: 2;
+}
+
+.products-first-section-image-wrapper {
+	width: 28.3%;
+}
+
+.products-first-section-block-text {
+	width: 71%;
+	padding: 0px 2.4vw 0px 2.4vw;
+}
+
+.products-first-section-block-title {
+	font-size: 61px;
+  font-weight: 300;
+	color: #ffffff;
+	line-height: 1em;
+	margin-bottom: 2vw;
+}
+
+.products-first-section-block-paragraph p {
+	margin-bottom: 0px;
+}
+
+.products-first-section-image-wrapper,
+.products-first-section-image {
+	height: 100%;
+}
+
+.products-first-section-scroll-link-text {
+	font-size: 17px;
+  font-weight: 600;
+  text-shadow: -3.1px 3.9px 12px #000000;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.products-first-section-scroll-link-ico-wrapper {
+	width: 37px;
+	height: 18px;
+	text-align: center;
+}
+
+.products-second-section {
+	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
+}
+
+.products-second-section-image-wrapper {
+	width: 37.5vw;
+	margin-bottom: 2.5vw;
+}
+
+.products-second-section-text {
+	width: 37.7vw;
+}
+
+.products-second-section-image-wrapper,
+.products-second-section-text {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.products-section {
+	min-height: 100vh;
+}
+
+.products-first-section,
+.products-second-section {
+	height: 100vh;
+}
+
+.products-third-section {
+	min-height: inherit !important;
+}
+
+.products-third-section-wrapper,
+.products-fourth-section-wrapper,
+.products-fifth-section-wrapper {
+  align-items: flex-flex;
+	height: auto;
+	max-height: none;
+	width: 100%;
+}
+
+.products-third-section-wrapper {
+	background-image: url('/wp-content/themes/sixgill/images/products/third_section_bg_at2.png');
+}
+
+.products-third-section-content-wrapper,
+.products-fourth-section-content-wrapper,
+.products-fifth-section-content-wrapper {
+	width: 77%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.products-third-section-left-col {
+	width: 34%;
+	padding-top: 6.5vw;
+}
+
+.products-third-section-right-col,
+.products-fifth-section-right-col {
+	width: 66%;
+}
+
+.products-third-section-ico-wrapper {
+	width: 3.84vw;
+	height: 5.16vw;
+	margin-right: 1.4vw;
+	float: left;
+}
+
+.products-third-section-title,
+.products-fourth-section-title,
+.products-fifth-section-title {
+  font-size: 44px;
+	line-height: 1.3em;
+}
+
+.produtcts-third-section-subtitle {
+	font-size: 14px;
+  font-weight: 700;
+}
+
+.products-third-section-line,
+.products-fourth-section-line,
+.products-fifth-section-line {
+	margin: 3vw 0px 3vw 0px;
+	height: 2.5px;
+	width: 100%;
+	clear: both;
+}
+
+.products-third-section-header-wrapper,
+.products-third-section-title-wrapper,
+.products-fourth-section-ico-wrapper,
+.products-fourth-section-header-wrapper,
+.products-fifth-section-header-wrapper,
+.products-fourth-section-title-wrapper,
+.products-fifth-section-ico-wrapper,
+.products-fifth-section-title-wrapper,
+.products-first-section-scroll-link-ico-wrapper,
+.products-third-section-ico-wrapper {
+	display: inline-block;
+}
+
+.products-third-section-title-wrapper {
+	float: left;
+}
+
+.products-fourth-section {
+	min-height: inherit !important;
+}
+
+.products-fourth-section-wrapper {
+	background-image: url('/wp-content/themes/sixgill/images/products/fourth_section_bg_at2.png');
+}
+
+.products-fourth-section-right-col {
+	width: 41%;
+	padding: 8vw 4.75vw 0px 7.7vw;
+}
+
+.products-fourth-section-left-col {
+	width: 59%;
+}
+
+.products-fourth-section-ico-wrapper {
+	width: 3.84vw;
+	height: 5.16vw;
+	margin-right: 1.4vw;
+	float: left;
+}
+
+.produtcts-fourth-section-subtitle {
+	font-size: 14px;
+  font-weight: 700;
+}
+
+.products-fourth-section-line {
+	background-color: #d1d0ce;
+}
+
+.products-fourth-section-title-wrapper {
+	float: left;
+}
+
+.products-fourth-section-text,
+.products-first-section-block-paragraph,
+.products-second-section-text {
+  font-weight: 400;
+}
+
+.products-fifth-section {
+	min-height: inherit !important;
+}
+
+.products-fifth-section-wrapper {
+	background-image: url('/wp-content/themes/sixgill/images/products/fifth_section_bg_at2.png');
+}
+
+.products-fifth-section-left-col {
+	width: 34%;
+	padding-top: 6.5vw;
+}
+
+.products-fifth-section-ico-wrapper {
+	width: 3.84vw;
+	height: 5.16vw;
+	margin-right: 1.4vw;
+	float: left;
+}
+
+.produtcts-fifth-section-subtitle {
+	font-size: 14px;
+  font-weight: 700;
+}
+
+.products-fifth-section-title-wrapper {
+	float: left;
+}
+
+.products-fifth-section-text,
+.products-fifth-section-text p,
+.products-fifth-section-text li,
+.products-third-section-text,
+.products-third-section-text p,
+.products-third-section-text li {
+	font-size: 16px;
+  font-weight: 500;
+}
+
+.products-last-section {
+	min-height: inherit;
+	margin-bottom: 5.82vw;
+}
+
+.products-last-section-title {
+	font-size: 45px;
+  font-weight: 300;
+  text-align: center;
+	margin: 4.6vw 0px 5vw 0px;
+	line-height: 1em;
+}
+
+.products-last-section-left-col {
+	width: 33%;
+	text-align: right;
+}
+
+.products-last-section-right-col::before,
+.products-last-section-right-col {
+	background-color: #e9e9e9;
+}
+
+.products-last-section-right-col {
+	width: calc(66% - 7vw);
+	margin-right: 7vw;
+	margin-left: 5vw;
+
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px 18px;
+	position: relative;
+	vertical-align: top;
+	float: left;
+	z-index: 2;
+	padding-left: 38px;
+}
+
+.products-last-section-right-col::before {
+	background-color: #e9e9e9;
+  content: "\00a0";
+  display: block;
+  height: 34px;
+  position: absolute;
+  top: 36px;
+  -moz-transform: rotate( 29deg ) skew( -35deg );
+  -ms-transform: rotate( 29deg ) skew( -35deg );
+  -o-transform: rotate( 29deg ) skew( -35deg );
+  -webkit-transform: rotate( 29deg ) skew( -35deg );
+	transform: rotate( 29deg ) skew( -35deg );
+  width:  30px;
+  left: -11px;
+  z-index: 1;
+}
+
+.products-last-section-col-title {
+	font-size: 24px;
+  font-weight: 500;
+	margin: 2.74vw 0px 2.2vw 0px;
+	line-height: 1em;
+}
+
+.products-last-section-text,
+.products-last-section-text p
+.products-last-section-text li,
+.products-first-section-block-paragraph,
+.products-second-section-text,
+.products-fourth-section-text {
+	font-size: 16px;
+}
+
+.products-last-section-right-col,
+.products-last-section-right-col p {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.products-last-section-tab-logo {
+	width: 19.9vw;
+	display: inline-block;
+}
+
+.products-last-section-tab-logo:not(:last-child) {
+	margin-bottom: 7.17vw;
+}
+
+.products-last-section-tab-logo .products-last-section-tab-image {
+	display: none;
+}
+
+.products-last-section-tab-logo .products-last-section-tab-image-active {
+	display: block;
+}
+
+.products-last-section-tab-logo.selected .products-last-section-tab-image {
+	display: block;
+}
+
+.products-last-section-tab-logo.selected .products-last-section-tab-image-active {
+	display: none;
+}
+
+.products-fixed-panel {
+	display: none;
+}
+}
