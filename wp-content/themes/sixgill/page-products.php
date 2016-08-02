@@ -21,7 +21,9 @@
 	<div
 		id="products-first-section"
 		class="products-section products-first-section responsive-background"
-		style="background-image: url('<?php echo get_field('first_section_background'); ?>');"
+		desktop-src="<?php echo get_field('first_section_background_desktop'); ?>"
+		tablet-src="<?php echo get_field('first_section_background_tablet'); ?>"
+		mobile-src="<?php echo get_field('first_section_background_mobile'); ?>"
 	>
 		<div class="products-first-section-block">
 			<div class="products-first-section-image-wrapper">
@@ -223,13 +225,13 @@
 						</h3>
 						<?php echo get_field('last_section_reach_text'); ?>
 					</div>
-					<div id="products-tab-sync" class="products-last-section-text hidden">
+					<div id="products-tab-sync" class="products-last-section-text hide">
 						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_sync_title'); ?>
 						</h3>
 						<?php echo get_field('last_section_sync_text'); ?>
 					</div>
-					<div id="products-tab-assist" class="products-last-section-text hidden">
+					<div id="products-tab-assist" class="products-last-section-text hide">
 						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_assist_title'); ?>
 						</h3>
