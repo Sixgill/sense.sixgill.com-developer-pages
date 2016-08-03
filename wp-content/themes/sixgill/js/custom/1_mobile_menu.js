@@ -2,7 +2,7 @@ jQuery(function($) {
 	window.menuShowFlag = false;
 	var savedScroll;
 
-	$('#primary-menu-trigger,#overlay-menu-close').click(function() {
+	$('#primary-menu-trigger').click(function() {
 		if(window.menuShowFlag) {
 			$( '#menu-background' ).fadeTo(500, 0, function() {
 				$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
