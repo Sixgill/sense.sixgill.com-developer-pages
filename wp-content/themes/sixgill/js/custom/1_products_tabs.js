@@ -1,6 +1,7 @@
 jQuery(function($) {
 
 	var productsTabsInfo = [];
+	var productsTabRightCol = $('.products-last-section-right-col');
 
 	function ProductsTabInfo(tabID, logoLink, contentDivLink) {
 		this.tabID = tabID;
@@ -20,9 +21,11 @@ jQuery(function($) {
 			if(currentTabInfo.tabID == currentTabID) {
 				currentTabInfo.logoLink.addClass('selected');
 				currentTabInfo.contentDivLink.removeClass('hide');
+				productsTabRightCol.addClass('bubble-' + currentTabInfo.tabID);
 			} else {
 				currentTabInfo.logoLink.removeClass('selected');
 				currentTabInfo.contentDivLink.addClass('hide');
+				productsTabRightCol.removeClass('bubble-' + currentTabInfo.tabID);
 			}
 		});
 	});
