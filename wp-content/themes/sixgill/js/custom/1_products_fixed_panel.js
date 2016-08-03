@@ -12,8 +12,9 @@ jQuery(function($) {
             scrollTop: $().offset().top - 121
         }, 1000);
       } else {
+        
         $('html, body').animate({
-            scrollTop: $($(this).attr(sectionLinkAttrName).offset().top
+            scrollTop: $($(this).attr(sectionLinkAttrName)).offset().top
         }, 1000);
 
         fixedPanelCols.each(function() {
@@ -25,7 +26,6 @@ jQuery(function($) {
         });
       }
     });
-  }
 
   if(window.screenType != 'desktop') {
     panelDOMLink.removeClass('hide');
