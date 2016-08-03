@@ -7,11 +7,11 @@ jQuery(function($) {
     this.scrollInCallback = scrollInCallback;
     this.scrollOutCallback = scrollOutCallback;
     this.isScrolledTo = false;
+		checkElemVisibility(this);
   }
 
   window.onScrolledTo = function (domLink, scrollInCallback, scrollOutCallback) {
     var newElemInfo = new scrolledElemInfo(domLink, scrollInCallback, scrollOutCallback);
-    checkElemVisibility(newElemInfo);
     callbacksList.push(newElemInfo);
   }
 
