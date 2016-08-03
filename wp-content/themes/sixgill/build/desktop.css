@@ -613,21 +613,287 @@
 }
 
 /* Tech desktop styles */
-.tech-top-spacing {
-	padding-top:75px;
-	max-width:950px;
+
+
+.tech-learn-more-link {
+	display: block;
+  position: absolute;
+  top: calc(100vh - 85px);
+  width: 100%;
 }
 
-.tech-top-header-blue {
-	font-size: 32px;
-	color: #004cbf;
-	font-weight: bold;
+.tech-first-section,
+.tech-first-section-block,
+.tech-third-section-wrapper,
+.tech-fourth-section-wrapper,
+.tech-fifth-section-wrapper,
+.tech-fixed-panel,
+.tech-fixed-panel-col {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
 }
 
-.tech-top-header-gray {
-	font-size: 21px;
-	color: #9a9a9a;
-	font-weight: normal;
+.tech-first-section-block,
+.tech-third-section-right-col,
+.tech-fourth-section-left-col,
+.tech-fifth-section-right-col,
+.tech-fixed-panel-col,
+.tech-fixed-panel-col-content,
+.tech-first-section-image-wrapper,
+.tech-first-section-block-text,
+.tech-second-section > div {
+	-ms-flex-item-align: center;
+	-webkit-align-self: center;
+	align-self: center;
+}
+
+
+.tech-first-section {
+	-ms-flex-pack: end;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+
+	background-image: url('/wp-content/themes/sixgill/images/tech/first_section_bg_desktop.jpg');
+}
+
+.tech-first-section-block {
+	width: 88.34%;
+	height: 34.7vw;
+
+	flex-align: center;
+	-webkit-align-items: center;
+  align-items: center;
+
+	z-index: 2;
+}
+
+.tech-first-section-image-wrapper {
+	width: 28.3%;
+}
+
+.tech-first-section-block-text {
+	width: 71%;
+	padding: 0px 2.4vw 0px 2.4vw;
+}
+
+.tech-first-section-block-title {
+	font-size: 61px;
+  font-weight: 300;
+	line-height: 1em;
+	margin-bottom: 2vw;
+}
+
+.tech-first-section-block-paragraph p {
+	margin-bottom: 0px;
+}
+
+.tech-first-section-image-wrapper,
+.tech-first-section-image {
+	height: 100%;
+}
+
+.tech-first-section-scroll-link-text {
+	font-size: 17px;
+  font-weight: 600;
+  text-shadow: -3.1px 3.9px 12px #000000;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.tech-first-section-scroll-link-ico-wrapper {
+	width: 37px;
+	height: 18px;
+	text-align: center;
+}
+
+.tech-second-section {
+	background-image: url('/wp-content/themes/sixgill/images/tech/single_dot.png');
+}
+
+.tech-second-section-image-wrapper {
+	width: 37.5vw;
+	margin-bottom: 2.5vw;
+}
+
+.tech-second-section-text {
+	width: 37.7vw;
+}
+
+.tech-second-section-image-wrapper,
+.tech-second-section-text {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tech-section {
+	min-height: 100vh;
+}
+
+.tech-first-section,
+.tech-second-section {
+	height: 100vh;
+}
+
+.tech-third-section {
+	min-height: inherit !important;
+}
+
+.tech-third-section-wrapper,
+.tech-fourth-section-wrapper,
+.tech-fifth-section-wrapper {
+	height: auto;
+	max-height: none;
+	width: 100%;
+}
+
+.tech-third-section-wrapper {
+	background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_at2.png');
+}
+
+.tech-third-section-content-wrapper,
+.tech-fourth-section-content-wrapper,
+.tech-fifth-section-content-wrapper {
+	width: 77%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tech-third-section-left-col {
+	width: 34%;
+	padding-top: 6.5vw;
+}
+
+.tech-third-section-right-col,
+.tech-fifth-section-right-col {
+	width: 66%;
+}
+
+.tech-third-section-ico-wrapper {
+	width: 3.84vw;
+	height: 5.16vw;
+	margin-right: 1.4vw;
+	float: left;
+}
+
+.tech-third-section-title,
+.tech-fourth-section-title,
+.tech-fifth-section-title {
+  font-size: 44px;
+	line-height: 1.3em;
+}
+
+.tech-third-section-subtitle,
+.tech-fourth-section-subtitle,
+.tech-fifth-section-subtitle {
+	font-size: 15px;
+  font-weight: 700;
+}
+
+.tech-third-section-line,
+.tech-fourth-section-line,
+.tech-fifth-section-line {
+	margin: 3vw 0px 3vw 0px;
+	height: 2.5px;
+	width: 100%;
+	clear: both;
+}
+
+.tech-third-section-header-wrapper,
+.tech-third-section-title-wrapper,
+.tech-fourth-section-ico-wrapper,
+.tech-fourth-section-header-wrapper,
+.tech-fifth-section-header-wrapper,
+.tech-fourth-section-title-wrapper,
+.tech-fifth-section-ico-wrapper,
+.tech-fifth-section-title-wrapper,
+.tech-first-section-scroll-link-ico-wrapper,
+.tech-third-section-ico-wrapper {
+	display: inline-block;
+}
+
+.tech-third-section-title-wrapper {
+	float: left;
+}
+
+.tech-fourth-section {
+	min-height: inherit !important;
+}
+
+.tech-fourth-section-wrapper {
+	background-image: url('/wp-content/themes/sixgill/images/tech/fourth_section_bg_at2.png');
+}
+
+.tech-fourth-section-right-col {
+	width: 41%;
+	padding: 8vw 4.75vw 0px 7.7vw;
+}
+
+.tech-fourth-section-left-col {
+	width: 59%;
+}
+
+.tech-fourth-section-ico-wrapper {
+	width: 3.84vw;
+	height: 5.16vw;
+	margin-right: 1.4vw;
+	float: left;
+}
+
+.tech-fourth-section-line {
+	background-color: #d1d0ce;
+}
+
+.tech-fourth-section-title-wrapper {
+	float: left;
+}
+
+.tech-fourth-section-text,
+.tech-first-section-block-paragraph,
+.tech-second-section-text {
+  font-weight: 400;
+}
+
+.tech-fifth-section {
+	min-height: inherit !important;
+}
+
+.tech-fifth-section-wrapper {
+	background-image: url('/wp-content/themes/sixgill/images/tech/fifth_section_bg_at2.png');
+}
+
+.tech-fifth-section-left-col {
+	width: 34%;
+	padding-top: 6.5vw;
+}
+
+.tech-fifth-section-ico-wrapper {
+	width: 3.84vw;
+	height: 5.16vw;
+	margin-right: 1.4vw;
+	float: left;
+}
+
+.tech-fifth-section-title-wrapper {
+	float: left;
+}
+
+.tech-fifth-section-text,
+.tech-fifth-section-text p,
+.tech-fifth-section-text li,
+.tech-third-section-text,
+.tech-third-section-text p,
+.tech-third-section-text li {
+	font-size: 16px;
+  font-weight: 500;
+}
+
+.tech-first-section-block-paragraph,
+.tech-second-section-text,
+.tech-fourth-section-text {
+	font-size: 16px;
 }
 
 /* Press desktop styles */

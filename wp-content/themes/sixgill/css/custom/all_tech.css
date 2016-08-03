@@ -1,9 +1,86 @@
 /* Tech Common styles */
-#tech-page-header-background {
-	background-image: url('/wp-content/themes/sixgill/images/td/hero/dollarphotoclub_77872129_web.jpg');
-	background-position: center bottom;
+
+.tech-first-section-image-wrapper,
+.tech-first-section-block-text {
+	display: inline-block;
 }
 
-.tech-top-header-gray, .tech-top-header-blue {
-	line-height: 1.2;
+.tech-first-section-block {
+	background-color: rgba(77, 219, 90, 0.7);
+}
+
+.tech-first-section-image-wrapper {
+	height: 100%;
+}
+
+.tech-section {
+	background-size: cover;
+}
+
+.tech-first-section-block-paragraph,
+.tech-first-section-block-paragraph p,
+.tech-first-section-scroll-link-text,
+.tech-third-section-title,
+.tech-third-section-subtitle,
+.tech-third-section-text p,
+.tech-third-section-text ul li,
+.tech-fifth-section-subtitle,
+.tech-fifth-section-text p,
+.tech-fifth-section-text ul li,
+.tech-first-section-block-title {
+	color: #ffffff !important;
+}
+
+.tech-third-section-text ul {
+	margin-bottom: 0px !important;
+}
+
+.tech-third-section-text li:last-child {
+	margin-bottom: 0.5em !important;
+}
+
+.tech-last-section-text,
+.tech-last-section-text p
+.tech-last-section-text li,
+.tech-last-section-col-title,
+.tech-second-section-text {
+	color: #2e2e2e;
+}
+
+.tech-last-section-title {
+  color: #4ddb5a;
+}
+
+.tech-third-section-line,
+.tech-fourth-section-line,
+.tech-fifth-section-line {
+	background-color: #ffffff;
+}
+
+.tech-third-section-title,
+.tech-fourth-section-title,
+.tech-fifth-section-title {
+	font-family: Lato;
+  color: #2adc3a;
+}
+
+.tech-first-section-scroll-link-wrapper {
+	cursor: pointer;
+	text-align: center;
+}
+
+.tech-last-section-tab-logo {
+	cursor: pointer;
+}
+
+.tech-second-section {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	flex-align: center;
+	-webkit-align-items: center;
+  align-items: center;
 }
