@@ -235,51 +235,6 @@ Side Header
 
 /* first for mobile phones: */
 
-.homeSupTit , .home2SupTit {
-	font-size:14px;
-	font-weight:bold;
-	color:#000000;
-	text-transform:uppercase;
-}
-
-.homeSubTit, .home2SubTit {
-	font-weight:normal;
-	text-transform:none;
-}
-
-.homeTit, .home2Tit {
-	font-size:43px;
-	color:#0051C6;
-	text-transform:uppercase;
-}
-
-.home2SupTit {
-	font-size: 40px;
-	color: #FFF;
-	padding-top: 0px;
-	margin-top: 0px;
-	height: 40px;
-}
-
-.home2SubTit {
-	font-size: 24px;
-	color: #FFF;
-	height: 24px;
-}
-.home2Tit {
-	font-size: 56px;
-	color: #3CBC48;
-	height: 65px;
-}
-
-.home-products-title {
-	font-size: 29px;
-	font-weight: normal;
-	color: #FFF;
-	text-align: center;
-	padding-top: 36px;
-}
-
 .btnBlue {
 	color:#FFFFFF;
 	font-size:16px;
@@ -333,23 +288,6 @@ p {
 	height: 44px;
 	background-repeat: no-repeat;
 	background-size: contain;
-}
-
-#what2 {
-	background-image: url('/wp-content/themes/sixgill/images/td/home/shapes1_1.jpg');
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #FFF;
-	padding-top: 0px;
-	background-size: contain;
-	border: 0px solid #FF0004;
-}
-
-
-.what2-div {
-	margin-top: 0px;
-	text-align: center;
 }
 
 @media (min-width: 767px) {

@@ -1,10 +1,11 @@
 /* Home mobile portrait and landscape styles */
-.homeSupTit-with-line {
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
 .home-logo-container {
 	width: 50%;
 	margin-right: 0;
 }
+
+#what {
+	background-image: url("../images/4-Home/bgMap1-mobile@1x.png");
+}
+
+

@@ -47,6 +47,12 @@
 	width: 720px;
 }
 
-.home-diagram {
-	padding: 85px 50px 45px 50px;
+#what {
+	background-image: url("../images/4-Home/bgMap-desktop@1x.png");
 }
+
+#solutions {
+	background-image: url("../images/4-Home/bgMap-desktop@1x.png");
+}
+
+

@@ -1,9 +1,4 @@
 /* Home tablet styles */
-.homeSupTit-with-line {
-	padding-left: 8px;
-	padding-right: 8px;
-}
-
 .home-diagram {
 
 }
@@ -19,3 +14,10 @@
 .hr-home-sup-title {
 	max-width: 600px;
 }
+
+#what {
+	background-image: url("../images/4-Home/bgMap-tablet@1x.png");
+	height: auto;
+	min-height: 100vh;
+}
+
