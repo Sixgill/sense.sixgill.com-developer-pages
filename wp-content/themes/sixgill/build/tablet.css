@@ -1,4 +1,4 @@
-@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1200px) {
+@media (min-width: 500px) and (max-width: 1100px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1100px) {
 /* General tablet styles */
 
 .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid), .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide {
@@ -765,7 +765,9 @@ ul:not([class]) li {
 .products-fifth-section-wrapper,
 .products-third-section-left-col,
 .products-fifth-section-left-col,
-.products-last-section-left-col {
+.products-last-section-left-col,
+.products-fixed-panel,
+.products-fixed-panel-col {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -790,7 +792,9 @@ ul:not([class]) li {
 .products-fifth-section-right-col,
 .products-third-section-left-col,
 .products-fifth-section-left-col,
-.products-last-section-left-col {
+.products-last-section-left-col,
+.products-fixed-panel-col,
+.products-fixed-panel-col-content  {
 	-ms-flex-item-align: center;
 	-webkit-align-self: center;
 	align-self: center;
@@ -900,15 +904,12 @@ ul:not([class]) li {
 	background-image: url('/wp-content/themes/sixgill/images/products/third_section_bg_at2.png');
 }
 
-.products-third-section-content-wrapper {
-	margin-top: 3vw;
-}
-
 .products-third-section-content-wrapper,
 .products-fifth-section-content-wrapper {
 	width: 77%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 3vw;
 }
 
 .products-third-section-content-wrapper {
@@ -1179,6 +1180,47 @@ ul:not([class]) li {
 }
 
 .products-fixed-panel {
-	display: none;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 11.72vw;
+	z-index: 10;
+}
+
+.products-fixed-panel-col {
+	width: calc(100% / 3);
+	height: 100%;
+	background-color: #f8f8f8;
+	border: solid 1.5px #e0e0e0;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.products-fixed-panel-col:first-child {
+	border-left: none;
+}
+
+.products-fixed-panel-col:last-child {
+	border-right: none;
+}
+
+.products-fixed-panel-col.selected {
+	background-color: #4ddb5a;
+}
+
+.products-fixed-panel-title {
+	font-size: 3.54vw;
+  font-weight: 500;
+	line-height: 1em;
+	display: inline-block;
+}
+
+.products-fixed-panel-icon-wrapper {
+	width: 3.9vw;
+	height: 5.2vw;
+	display: inline-block;
+	margin-right: 1.37vw;
+	float: left;
 }
 }
