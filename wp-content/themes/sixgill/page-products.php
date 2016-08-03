@@ -64,53 +64,49 @@
 	</div>
 
 	<div id="products-fixed-panel" class="products-fixed-panel hide">
-		<a href="#products-third-section">
-			<div class="products-fixed-panel-col">
-				<div class="products-fixed-panel-col-content">
-					<div class="products-fixed-panel-icon-wrapper">
-						<img
-							class="products-fixed-panel-icon"
-							src="<?php echo get_template_directory_uri();?>/images/products/products_panel_track_ico.svg"
-						>
-					</div>
-					<div class="products-fixed-panel-title">
-						Track
-					</div>
-				</div>
-			</div>
-		</a>
 
-		<a href="#products-fourth-section">
-			<div class="products-fixed-panel-col">
-				<div class="products-fixed-panel-col-content">
-					<div class="products-fixed-panel-icon-wrapper">
-						<img
-							class="products-fixed-panel-icon"
-							src="<?php echo get_template_directory_uri();?>/images/products/products_panel_determine_ico.svg"
-						>
-					</div>
-					<div class="products-fixed-panel-title">
-						Determine
-					</div>
+		<div data-section-link="#products-third-section" class="products-fixed-panel-col">
+			<div class="products-fixed-panel-col-content">
+				<div class="products-fixed-panel-icon-wrapper">
+					<img
+						class="products-fixed-panel-icon"
+						src="<?php echo get_template_directory_uri();?>/images/products/products_panel_track_ico.svg"
+					>
+				</div>
+				<div class="products-fixed-panel-title">
+					Track
 				</div>
 			</div>
-		</a>
+		</div>
 
-		<a href="#products-fifth-section">
-			<div class="products-fixed-panel-col">
-				<div class="products-fixed-panel-col-content">
-					<div class="products-fixed-panel-icon-wrapper">
-						<img
-							class="products-fixed-panel-icon"
-							src="<?php echo get_template_directory_uri();?>/images/products/products_panel_track_act.svg"
-						>
-					</div>
-					<div class="products-fixed-panel-title">
-						Act
-					</div>
+		<div data-section-link="#products-fourth-section" class="products-fixed-panel-col">
+			<div class="products-fixed-panel-col-content">
+				<div class="products-fixed-panel-icon-wrapper">
+					<img
+						class="products-fixed-panel-icon"
+						src="<?php echo get_template_directory_uri();?>/images/products/products_panel_determine_ico.svg"
+					>
+				</div>
+				<div class="products-fixed-panel-title">
+					Determine
 				</div>
 			</div>
-		</a>
+		</div>
+
+		<div data-section-link="#products-fifth-section"  class="products-fixed-panel-col">
+			<div class="products-fixed-panel-col-content">
+				<div class="products-fixed-panel-icon-wrapper">
+					<img
+						class="products-fixed-panel-icon"
+						src="<?php echo get_template_directory_uri();?>/images/products/products_panel_track_act.svg"
+					>
+				</div>
+				<div class="products-fixed-panel-title">
+					Act
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<a name="products-third-section"></a>
