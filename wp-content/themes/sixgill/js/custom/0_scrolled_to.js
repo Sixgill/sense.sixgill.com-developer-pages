@@ -10,26 +10,33 @@ jQuery(function($) {
   }
 
   window.onScrolledTo = function (domLink, scrollInCallback, scrollOutCallback) {
-    callbacksList.push(new scrolledElemInfo(domLink, scrollInCallback, scrollOutCallback));
+    var newElemInfo = new scrolledElemInfo(domLink, scrollInCallback, scrollOutCallback);
+    checkElemVisibility(newElemInfo);
+    callbacksList.push(newElemInfo);
+  }
+
+  function checkElemVisibility(callbackInfo) {
+    if(
+      $(window).scrollTop()>=callbackInfo.domLink.position().top
+      &&
+      $(window).scrollTop()<=callbackInfo.domLink.position().top+callbackInfo.domLink.height()+200
+    ){
+      if(!callbackInfo.isScrolledTo) {
+        callbackInfo.scrollInCallback();
+        callbackInfo.isScrolledTo = true;
+      }
+    } else {
+      if(callbackInfo.isScrolledTo) {
+        callbackInfo.scrollOutCallback();
+        callbackInfo.isScrolledTo = false;
+      }
+    }
   }
 
   $(window).on('scroll', function() {
     callbacksList.forEach(function(callbackInfo) {
-      if(
-        $(this).scrollTop()>=callbackInfo.domLink.position().top
-        &&
-        $(this).scrollTop()<=callbackInfo.domLink.position().top+callbackInfo.domLink.height()
-      ){
-        if(!callbackInfo.isScrolledTo) {
-          callbackInfo.scrollInCallback();
-          callbackInfo.isScrolledTo = true;
-        }
-      } else {
-        if(callbackInfo.isScrolledTo) {
-          callbackInfo.scrollOutCallback();
-          callbackInfo.isScrolledTo = false;
-        }
-      }
+      checkElemVisibility(callbackInfo);
     });
   });
+
 });

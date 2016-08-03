@@ -55,16 +55,20 @@ jQuery(function($) {
   function checkPanelVisibility() {
     if (isPanelVisible) {
       if(!thirdSectionVisible && !fourthSectionVisible && !fifthSectionVisible) {
-        panelDOMLink.addClass('hide')
         isPanelVisible = false;
+        panelDOMLink.fadeTo(500, 0, function() {
+          panelDOMLink.addClass('hide');
+        });
       }
     } else {
       if(thirdSectionVisible || fourthSectionVisible || fifthSectionVisible) {
-        panelDOMLink.removeClass('hide')
+        panelDOMLink.removeClass('hide');
         isPanelVisible = true;
+        panelDOMLink.fadeTo(500, 1, function() {
+        });
       }
     }
   }
-  
+
   checkPanelVisibility();
 });
