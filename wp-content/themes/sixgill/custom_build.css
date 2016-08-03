@@ -14990,25 +14990,20 @@ input {
 	padding-left: 225px;
 }
 
-.products-fixed-panel a {
-	width: calc(100% / 3);
-	height: 100%;
-	display: inline-block;
-}
-
 .products-fixed-panel-col {
-	width: 100%;
+	width: calc(100% / 3);
 	height: 100%;
 	background-color: #f8f8f8;
 	border: solid 1.5px #e0e0e0;
 	justify-content: center;
+	cursor: pointer;
 }
 
-.products-fixed-panel a:first-child .products-fixed-panel-col {
+.products-fixed-panel-col:first-child {
 	border-left: none;
 }
 
-.products-fixed-panel a:last-child .products-fixed-panel-col {
+.products-fixed-panel-col:last-child {
 	border-right: none;
 }
 
