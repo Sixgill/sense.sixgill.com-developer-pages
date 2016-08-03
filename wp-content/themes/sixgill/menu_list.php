@@ -40,11 +40,11 @@
 		"sublinksList" => array(
 			array(
 				"name" => "Sixgill Sence",
-				"anchor" => "sixgill-sense"
+				"anchor" => "products-second-section"
 			),
 			array(
 				"name" => "Ancillary Products",
-				"anchor" => "ancillary-products"
+				"anchor" => "products-last-section"
 			)
 		),
 		"isSelected" => $isSelected,

@@ -14514,7 +14514,7 @@ input {
 }
 
 .solution-subpage-last-block-wrapper {
-	background: url("../images/Solutions/getStartedBg-Desktop@1x.png") no-repeat scroll 0 0 / cover ;
+	background: url('/wp-content/themes/sixgill/images/solutions/getstarted_bg_desktop.png') no-repeat scroll 0 0 / cover ;
 }
 
 .solution-subgape-carousels-div {
@@ -15705,7 +15705,7 @@ ul:not([class]) li {
 }
 
 .solution-subpage-last-block-wrapper {
-	background: url('../images/Solutions/getStartedBg-Tablet@1x.png') no-repeat scroll 0 0 / cover ;
+	background: url('/wp-content/themes/sixgill/images/solutions/getstarted_bg_tablet.png') no-repeat scroll 0 0 / cover ;
 }
 
 .solution-subgape-carousels-div {
@@ -17284,7 +17284,7 @@ ul:not([class]) li {
 
 .solution-subpage-last-block-wrapper {
 	margin-bottom: 32px;
-	background: url('../images/Solutions/getStartedBg-Mobile@1x.png') no-repeat scroll 0 0 / cover ;
+	background: url('/wp-content/themes/sixgill/images/solutions/getstarted_bg_mobile.png') no-repeat scroll 0 0 / cover ;
 }
 
 #content .col_full {

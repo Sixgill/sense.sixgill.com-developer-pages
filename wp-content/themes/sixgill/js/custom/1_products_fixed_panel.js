@@ -1,41 +1,56 @@
 jQuery(function($) {
 
+	var thirdSectionVisible = false,
+			fourthSectionVisible = false,
+			fifthSectionVisible = false,
+			thirdSection = $('#products-third-section'),
+			fourthSection = $('#products-fourth-section'),
+			fifthSection = $('#products-fifth-section');
+
   var panelDOMLink = $('#products-fixed-panel'),
       fixedPanelCols = $('.products-fixed-panel-col'),
       sectionLinkAttrName = 'data-section-link';
 
 
-    fixedPanelCols.click(function() {
-      var currentSectionLink = $(this).attr(sectionLinkAttrName);
-      if(window.screenType == 'tablet') {
-        $('html, body').animate({
-            scrollTop: $().offset().top - 121
-        }, 1000);
-      } else {
+	function checkPanelHighlighting(currentSectionLink) {
+		if(fifthSectionVisible) {
+			thirdSection.removeClass('selected');
+			fourthSection.removeClass('selected');
+			fifthSection.addClass('selected');
+		} else if(fourthSectionVisible) {
+			thirdSection.removeClass('selected');
+			fourthSection.addClass('selected');
+			fifthSection.removeClass('selected');
+		} else if (thirdSectionVisible) {
+			thirdSection.addClass('selected');
+			fourthSection.removeClass('selected');
+			fifthSection.removeClass('selected');
+		}
+	}
 
-        $('html, body').animate({
-            scrollTop: $($(this).attr(sectionLinkAttrName)).offset().top
-        }, 1000);
+  fixedPanelCols.click(function() {
+    var currentSectionLink = $(this).attr(sectionLinkAttrName);
+    if(window.screenType == 'tablet') {
+      $('html, body').animate({
+          scrollTop: $(currentSectionLink).offset().top - 121
+      }, 1000);
+    } else {
 
-        fixedPanelCols.each(function() {
-          if($(this).attr(sectionLinkAttrName) == currentSectionLink) {
-            $(this).addClass('selected');
-          } else {
-            $(this).removeClass('selected');
-          }
-        });
-      }
-    });
+      $('html, body').animate({
+          scrollTop: $(currentSectionLink).offset().top
+      }, 1000);
+    }
+  });
+
+  var isPanelVisible = false;
 
   if(window.screenType != 'desktop') {
     panelDOMLink.removeClass('hide');
+		panelDOMLink.css('opacity', '1');
+		isPanelVisible = true;
   }
 
-  var thirdSectionVisible = false,
-      fourthSectionVisible = false,
-      fifthSectionVisible = false;
 
-  var isPanelVisible = false;
 
   //TODO: use factory pattern
 
@@ -103,7 +118,6 @@ jQuery(function($) {
 
 	setTimeout(function() {
 		checkPanelVisibility();
-		console.log(thirdSectionVisible || fourthSectionVisible || fifthSectionVisible);
 	}, 1000);
 
 });
