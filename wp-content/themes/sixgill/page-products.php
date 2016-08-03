@@ -63,7 +63,7 @@
 		</div>
 	</div>
 
-	<div id="products-fixed-panel" class="products-fixed-panel hide">
+	<div id="products-fixed-panel" class="products-fixed-panel hide" style="opacity: 0;">
 
 		<div data-section-link="#products-third-section" class="products-fixed-panel-col">
 			<div class="products-fixed-panel-col-content">

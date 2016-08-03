@@ -12,7 +12,7 @@ jQuery(function($) {
             scrollTop: $().offset().top - 121
         }, 1000);
       } else {
-        
+
         $('html, body').animate({
             scrollTop: $($(this).attr(sectionLinkAttrName)).offset().top
         }, 1000);
@@ -88,19 +88,22 @@ jQuery(function($) {
     if (isPanelVisible) {
       if(!thirdSectionVisible && !fourthSectionVisible && !fifthSectionVisible) {
         isPanelVisible = false;
-        panelDOMLink.fadeTo(500, 0, function() {
+        panelDOMLink.animate({opacity: 0}, 500, 'swing', function() {
           panelDOMLink.addClass('hide');
         });
       }
     } else {
       if(thirdSectionVisible || fourthSectionVisible || fifthSectionVisible) {
+				isPanelVisible = true;
         panelDOMLink.removeClass('hide');
-        isPanelVisible = true;
-        panelDOMLink.fadeTo(500, 1, function() {
-        });
+        panelDOMLink.animate({opacity: 1}, 500);
       }
     }
   }
 
-  checkPanelVisibility();
+	setTimeout(function() {
+		checkPanelVisibility();
+		console.log(thirdSectionVisible || fourthSectionVisible || fifthSectionVisible);
+	}, 1000);
+
 });
