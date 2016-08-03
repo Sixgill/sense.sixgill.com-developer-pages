@@ -27,7 +27,10 @@
 .products-fourth-section-left-col,
 .products-fifth-section-right-col,
 .products-fixed-panel-col,
-.products-fixed-panel-col-content {
+.products-fixed-panel-col-content,
+.products-first-section-image-wrapper,
+.products-first-section-block-text,
+.products-second-section > div {
 	-ms-flex-item-align: center;
 	-webkit-align-self: center;
 	align-self: center;
@@ -398,8 +401,13 @@
 	height: 100%;
 	background-color: #f8f8f8;
 	border: solid 1.5px #e0e0e0;
-	justify-content: center;
+	-webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 	cursor: pointer;
+	font-size: 0px;
 }
 
 .products-fixed-panel-col:first-child {
