@@ -31,7 +31,7 @@
 			<div class="home-block-what-subtitle-on-line">
 				<?php echo get_field('the_text_on_the_line'); ?>
 			</div>
-			<hr class="hr-home-suptitle-line" />
+			<hr class="hr-home-suptitle-line no-mobile-portrait-display no-mobile-landscape-display" />
 			<div class="home-block-what-title">
 				<?php echo get_field('large_text_title'); ?>
 			</div>
@@ -43,13 +43,13 @@
 		<div class="home-block-what-wrapper">
 			<div class="home-block-what-col">
 				<div class="home-block-what-item">
-					<img class="home-block-what-item-icon" src="<?php echo get_field('section_what_block-1_icon'); ?>" alt=""/>
+					<img class="home-block-what-item-icon no-mobile-portrait-display no-mobile-landscape-display" src="<?php echo get_field('section_what_block-1_icon'); ?>" alt=""/>
 					<div class="home-block-what-item-title"> <?php echo get_field('section_what_block-1_title'); ?> </div>
 					<div class="home-block-what-item-text"> <?php echo get_field('section_what_block-1_text'); ?> </div>
 				</div>
 				<div class="clear"></div>
 				<div class="home-block-what-item">
-					<img class="home-block-what-item-icon" src="<?php echo get_field('section_what_block-2_icon'); ?>" alt=""/>
+					<img class="home-block-what-item-icon no-mobile-portrait-display no-mobile-landscape-display" src="<?php echo get_field('section_what_block-2_icon'); ?>" alt=""/>
 					<div class="home-block-what-item-title"> <?php echo get_field('section_what_block-2_title'); ?> </div>
 					<div class="home-block-what-item-text"> <?php echo get_field('section_what_block-2_text'); ?> </div>
 				</div>
@@ -57,13 +57,13 @@
 			</div>
 			<div class="home-block-what-col">
 				<div class="home-block-what-item">
-					<img class="home-block-what-item-icon" src="<?php echo get_field('section_what_block-3_icon'); ?>" alt=""/>
+					<img class="home-block-what-item-icon no-mobile-portrait-display no-mobile-landscape-display" src="<?php echo get_field('section_what_block-3_icon'); ?>" alt=""/>
 					<div class="home-block-what-item-title"> <?php echo get_field('section_what_block-3_title'); ?> </div>
 					<div class="home-block-what-item-text"> <?php echo get_field('section_what_block-3_text'); ?> </div>
 				</div>
 				<div class="clear"></div>
 				<div class="home-block-what-item">
-					<img class="home-block-what-item-icon" src="<?php echo get_field('section_what_block-4_icon'); ?>" alt=""/>
+					<img class="home-block-what-item-icon no-mobile-portrait-display no-mobile-landscape-display" src="<?php echo get_field('section_what_block-4_icon'); ?>" alt=""/>
 					<div class="home-block-what-item-title"> <?php echo get_field('section_what_block-4_title'); ?> </div>
 					<div class="home-block-what-item-text"> <?php echo get_field('section_what_block-4_text'); ?> </div>
 				</div>
@@ -76,7 +76,8 @@
 		<div id="home-block-products-title" class="home-block-products-title"><?php echo get_field('text_productions'); ?></div>
 		<img id="home-image-infographic" src="<?php echo get_field('flow_chart_image'); ?>" class="home-block-products-diagram display-only-desktop" alt=""/>
 		<!-- 		<img id="home-image-infographic" src="/wp-content/themes/sixgill/images/4-Home/infographic.svg" class="home-block-products-diagram display-only-desktop" alt=""/> -->
-		<img id="home-image-mobile-infographic" src="<?php echo get_field('flow_chart_image_mobile_size'); ?>" class="home-diagram hidden-bottom-imageDiagram no-desktop-display" alt=""/>
+		<img id="home-image-infographic" src="<?php echo get_field('flow_chart_image'); ?>" class="home-block-products-diagram display-only-tablet" alt=""/>
+		<img id="home-image-mobile-infographic" src="<?php echo get_field('flow_chart_image_mobile_size'); ?>" class="home-diagram hidden-bottom-imageDiagram no-desktop-display no-tablet-display" alt=""/>
 		<!-- 		<img id="home-image-mobile-infographic" src="/wp-content/themes/sixgill/images/4-Home/mobile_infographic.svg" class="home-diagram hidden-bottom-imageDiagram no-desktop-display" alt=""/> -->
 		<div class="clear"></div>
 		<div id="home-block-products-subtitle" class="home-block-products-subtitle"><?php echo get_field('before_button_text'); ?></div>

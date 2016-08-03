@@ -58,6 +58,9 @@
 .home-video-text-h1 {
 	margin-bottom: 10px;
 	font-family: "Lato";
+	text-align: center;
+	color: #ffffff;
+	text-shadow: 0 0 11.5px rgba(0, 0, 0, 0.7);
 }
 
 #home-image-infographic {
@@ -107,19 +110,17 @@
 
 .home-block-what-title-wrapper {
 	font-family: 'Lato';
-	margin: 107px auto 62.5px;
 	text-align: center;
-	max-width: 62.5em;
+}
+
+.home-block-what-wrapper {
+	margin:0 auto;
 }
 
 .home-block-what-subtitle-on-line {
 	background-color: #244B82;
 	padding: 0 0.5em;
-	color: #ffffff;
-	font-size: 21.3px;
-	font-weight: 700;
-	line-height: 1;
-	letter-spacing: 1.1px;	
+	color: #ffffff;	
 	text-transform: uppercase;
 	display: inline-block;
 }
@@ -138,67 +139,25 @@
 }
 
 .home-block-what-title {
-	font-size: 57.5px;
-	font-weight: 700;
-	line-height: 1.16;
-	letter-spacing: 1.7px;
 	color: #4ddb5a;
 	text-transform: uppercase;
 }
 
 .home-block-what-subtitle {
-	font-size: 18.7px;
-	font-weight: 400;
-	letter-spacing: 0.9px;
 	color: #ffffff;
-}
-
-.home-block-what-wrapper {
-	max-width: 62.5em;
-	margin:0 auto;
-}
-
-.home-block-what-col {
-	width:49.5%;
-	float: left;
-}
-
-.home-block-what-item {
-	margin-bottom:40px;
-	min-height: 220px;
-}
-
-.home-block-what-item-icon {
-	float: left;
-	width: 16%;
-	height: auto;
-	margin-right: 5%
 }
 
 .home-block-what-item-title {
 	font-family: Lato;
-	font-size: 16.2px;
-	font-weight: 700;
-	line-height: 2.17;
-	letter-spacing: 0.5px;
 	color: #ffffff;
 	text-align: left;
-	display: inline-block;
-	width: 78%;
-	float: right;
+	text-transform: uppercase;
 }
 
 .home-block-what-item-text {
 	font-family: Lato;
-	font-size: 18.2px;
-	font-weight: 400;
-	line-height: 1.42;
-	letter-spacing: 0.9px;
 	text-align: left;
 	color:#A9D8DD;
-	display: inline-block;
-	width: 78%;
-	float: right;
 }
 
 /*---products section---*/
@@ -212,10 +171,6 @@
 
 .home-block-products-title {
 	font-family: 'Lato';
-	font-size: 23.5px;
-	font-weight: 700;
-	line-height: 1.25;
-	letter-spacing: 1.2px;
 	text-align: center;
 	color: #0c3979;
 	margin-top:39px;
@@ -229,9 +184,6 @@
 
 .home-block-products-subtitle {
 	font-family: 'Lato';
-	font-size: 13.8px;
-	font-weight: 400;
-	letter-spacing: 0.7px;
 	text-align: center;
 	color: #2e2e2e;
 	margin-top: 39px;
@@ -249,24 +201,19 @@
 
 .home-block-solutions-title{
 	font-family: 'Lato';
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 1.08;
-	letter-spacing: 2.4px;
 	text-align: center;
 	color: #4ddb5a;
-	margin-top: 92px;
 }
 
 .home-block-solutions-subtitle {
 	font-family: Lato;
-	font-size: 18.2px;
-	font-weight: 400;
-	line-height: 1.42;
 	letter-spacing: 0.9px;
 	text-align: center;
 	color: #ffffff;
 	margin-top: 12px;
+	font-size: 18.2px;
+	font-weight: 400;
+	line-height: 1.42;
 }
 
 
@@ -292,9 +239,8 @@
 
 .home-block-solutions-carousel-theme {
 	background-color: transparent !important;
-	//border: none !important;
-	width:768px;
-	margin:61px auto 0;
+	border: none !important;
+
 }
 
 .home-block-solutions-carousel-theme .owl-buttons{
