@@ -71,4 +71,12 @@ jQuery(function($) {
   }
 
   checkPanelVisibility();
+
+  $('.products-fixed-panel-col').click(function() {
+    $('html, body').animate({
+        scrollTop: $($(this).attr('data-section-link')).offset().top
+    }, 1000);
+  });
+
+
 });
