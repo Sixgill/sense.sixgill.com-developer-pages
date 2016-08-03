@@ -1,12 +1,41 @@
 jQuery(function($) {
 
+  var panelDOMLink = $('#products-fixed-panel'),
+      fixedPanelCols = $('.products-fixed-panel-col'),
+      sectionLinkAttrName = 'data-section-link';
+
+
+    fixedPanelCols.click(function() {
+      var currentSectionLink = $(this).attr(sectionLinkAttrName);
+      if(window.screenType == 'tablet') {
+        $('html, body').animate({
+            scrollTop: $().offset().top - 121
+        }, 1000);
+      } else {
+        $('html, body').animate({
+            scrollTop: $($(this).attr(sectionLinkAttrName).offset().top
+        }, 1000);
+
+        fixedPanelCols.each(function() {
+          if($(this).attr(sectionLinkAttrName) == currentSectionLink) {
+            $(this).addClass('selected');
+          } else {
+            $(this).removeClass('selected');
+          }
+        });
+      }
+    });
+  }
+
+  if(window.screenType != 'desktop') {
+    panelDOMLink.removeClass('hide');
+  }
+
   var thirdSectionVisible = false,
       fourthSectionVisible = false,
       fifthSectionVisible = false;
 
   var isPanelVisible = false;
-
-  var panelDOMLink = $('#products-fixed-panel');
 
   //TODO: use factory pattern
 
@@ -53,6 +82,9 @@ jQuery(function($) {
   );
 
   function checkPanelVisibility() {
+    if(window.screenType != 'desktop') {
+      return;
+    }
     if (isPanelVisible) {
       if(!thirdSectionVisible && !fourthSectionVisible && !fifthSectionVisible) {
         isPanelVisible = false;
@@ -71,12 +103,4 @@ jQuery(function($) {
   }
 
   checkPanelVisibility();
-
-  $('.products-fixed-panel-col').click(function() {
-    $('html, body').animate({
-        scrollTop: $($(this).attr('data-section-link')).offset().top
-    }, 1000);
-  });
-
-
 });

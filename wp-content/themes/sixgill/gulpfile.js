@@ -46,7 +46,7 @@ var all = [
   "./css/custom/all_products.css",
 ]
 
-var desktop_wrapper = "@media only screen and (min-width: 1201px) {"
+var desktop_wrapper = "@media only screen and (min-width: 1101px) {"
 var desktop = [
   "./css/custom/desktop_general.css",
   "./css/custom/desktop_menu.css",
@@ -62,7 +62,7 @@ var desktop = [
   "./css/custom/desktop_products.css",
 ]
 
-var tablet_wrapper = "@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1200px) {"
+var tablet_wrapper = "@media (min-width: 500px) and (max-width: 1100px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1100px) {"
 var tablet = [
   "./css/custom/tablet_general.css",
   "./css/custom/tablet_menu.css",
@@ -126,7 +126,7 @@ var mobile_portrait_landscape = [
   "./css/custom/mobile_portrait_landscape_products.css",
 ]
 
-var tablet_and_mobile_wrapper = "@media (max-width: 1200px) {"
+var tablet_and_mobile_wrapper = "@media (max-width: 1100px) {"
 var tablet_and_mobile = [
   "./css/custom/tablet_and_mobile.css",
 ]
@@ -178,7 +178,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('styles', function() {
-  gutil.log(gutil.colors.green('Concatenate into ./custom_build.css'));  
+  gutil.log(gutil.colors.green('Concatenate into ./custom_build.css'));
   return gulp.src(builds)
     .pipe(concat('custom_build.css'))
     .pipe(gulp.dest('./'))
@@ -196,7 +196,7 @@ gulp.task('wrap_it', function(callback) {
             file.contents = new Buffer(fileContents);
               cb(null, file);
           }))
-        
+
         .pipe(gulp.dest('./build'))
     }
       else {
