@@ -19,7 +19,7 @@ jQuery(function($) {
     if(
       $(window).scrollTop()>=callbackInfo.domLink.position().top
       &&
-      $(window).scrollTop()<=callbackInfo.domLink.position().top+callbackInfo.domLink.height()+200
+      $(window).scrollTop()<=callbackInfo.domLink.position().top+callbackInfo.domLink.height()+250
     ){
       if(!callbackInfo.isScrolledTo) {
         callbackInfo.scrollInCallback();
