@@ -63,6 +63,49 @@
 		</div>
 	</div>
 
+	<div id="products-fixed-panel" class="products-fixed-panel">
+		<div class="products-fixed-panel-col">
+			<div class="products-fixed-panel-col-content">
+				<div class="products-fixed-panel-icon-wrapper">
+					<img
+						class="products-fixed-panel-icon"
+						src="<?php echo get_template_directory_uri();?>\images\products_panel_track_ico.svg"
+					>
+				</div>
+				<div class="products-fixed-panel-title">
+					Track
+				</div>
+			</div>
+		</div>
+		<div class="products-fixed-panel-col">
+			<div class="products-fixed-panel-col-content">
+				<div class="products-fixed-panel-icon-wrapper">
+					<img
+						class="products-fixed-panel-icon"
+						src="<?php echo get_template_directory_uri();?>\images\products_panel_determine_ico.svg"
+					>
+				</div>
+				<div class="products-fixed-panel-title">
+					Determine
+				</div>
+			</div>
+		</div>
+		<div class="products-fixed-panel-col">
+			<div class="products-fixed-panel-col-content">
+				<div class="products-fixed-panel-icon-wrapper">
+					<img
+						class="products-fixed-panel-icon"
+						src="<?php echo get_template_directory_uri();?>\images\products_panel_track_act.svg"
+					>
+				</div>
+				<div class="products-fixed-panel-title">
+					Act
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a name="products-third-section"></a>
 	<div id="products-third-section" class="products-section products-third-section">
 		<div class="products-third-section-wrapper">
 			<div class="products-third-section-left-col">
@@ -101,6 +144,7 @@
 		</div>
 	</div>
 
+	<a name="products-fourth-section"></a>
 	<div id="products-fourth-section" class="products-section products-fourth-section">
 		<div class="products-fourth-section-wrapper">
 
@@ -139,9 +183,10 @@
 				</div>
 			</div>
 
-		</div>
+		</div><a name="products-fourth-section"></a>
 	</div>
 
+	<a name="products-fifth-section"></a>
 	<div id="products-fifth-section" class="products-section products-fifth-section">
 		<div class="products-fifth-section-wrapper">
 			<div class="products-fifth-section-left-col">
@@ -282,45 +327,5 @@
 		<?php echo get_field('last_section_assist_text'); ?>
 	</div>
 
-	<div class="products-fixed-panel">
-		<div class="products-fixed-panel-col">
-			<div class="vertical-centered">
-				<div class="products-fixed-panel-icon-wrapper">
-					<img
-						class="products-fixed-panel-icon"
-						src="<?php echo get_template_directory_uri();?>\images\products_panel_track_ico.png"
-					>
-				</div>
-				<div class="products-fixed-panel-title">
-					Track
-				</div>
-			</div>
-		</div>
-		<div class="products-fixed-panel-col">
-			<div class="vertical-centered">
-				<div class="products-fixed-panel-icon-wrapper">
-					<img
-						class="products-fixed-panel-icon"
-						src="<?php echo get_template_directory_uri();?>\images\products_panel_determine_ico.png"
-					>
-				</div>
-				<div class="products-fixed-panel-title">
-					Determine
-				</div>
-			</div>
-		</div>
-		<div class="products-fixed-panel-col">
-			<div class="vertical-centered">
-				<div class="products-fixed-panel-icon-wrapper">
-					<img
-						class="products-fixed-panel-icon"
-						src="<?php echo get_template_directory_uri();?>\images\products_panel_track_act.png"
-					>
-				</div>
-				<div class="products-fixed-panel-title">
-					Act
-				</div>
-			</div>
-		</div>
-	</div>
+
 <?php get_footer(); ?>
