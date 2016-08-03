@@ -3831,6 +3831,48 @@ jQuery(function($) {
   }
 
 });
+jQuery(function($) {
+
+  var callbacksList = [];
+
+  function scrolledElemInfo(domLink, scrollInCallback, scrollOutCallback) {
+    this.domLink = domLink;
+    this.scrollInCallback = scrollInCallback;
+    this.scrollOutCallback = scrollOutCallback;
+    this.isScrolledTo = false;
+  }
+
+  window.onScrolledTo = function (domLink, scrollInCallback, scrollOutCallback) {
+    var newElemInfo = new scrolledElemInfo(domLink, scrollInCallback, scrollOutCallback);
+    checkElemVisibility(newElemInfo);
+    callbacksList.push(newElemInfo);
+  }
+
+  function checkElemVisibility(callbackInfo) {
+    if(
+      $(window).scrollTop()>=callbackInfo.domLink.position().top
+      &&
+      $(window).scrollTop()<=callbackInfo.domLink.position().top+callbackInfo.domLink.height()+200
+    ){
+      if(!callbackInfo.isScrolledTo) {
+        callbackInfo.scrollInCallback();
+        callbackInfo.isScrolledTo = true;
+      }
+    } else {
+      if(callbackInfo.isScrolledTo) {
+        callbackInfo.scrollOutCallback();
+        callbackInfo.isScrolledTo = false;
+      }
+    }
+  }
+
+  $(window).on('scroll', function() {
+    callbacksList.forEach(function(callbackInfo) {
+      checkElemVisibility(callbackInfo);
+    });
+  });
+
+});
 jQuery(function($){
 	$('input.subscribe-email').focusin(function(){
 		$(this).addClass('subscribe-email-focus');
@@ -3900,6 +3942,29 @@ jQuery(function($) {
 	}
 });
 jQuery(function($){
+	$("#home-block-solutions-carousel").owlCarousel({
+		// Most important owl features
+		items : 3, //3 items above 1200px browser width
+		itemsDesktop : [1200,3], //3 items between 1200px and 300px
+		itemsDesktopSmall : false, // disabled - inherit from itemsDesktop option
+		itemsTablet: [1200,2], //2 items between 1200 and 600
+		itemsMobile : [500,1], //1 items between 600 and 0
+		// Navigation
+		navigation : true,
+		navigationText : ["<",">"],
+	 
+		//Pagination
+		pagination : false,
+			 
+		// // Responsive 
+		responsive: true,
+		// responsiveRefreshRate : 200,
+		//responsiveBaseWidth: "#home-block-solutions-carousel",
+
+		theme : "home-block-solutions-carousel-theme",
+	 
+	})
+});jQuery(function($){
 	function isScrolledIntoView(elem) {
 		var docViewTop = $(window).scrollTop();
 		var docViewBottom = docViewTop + $(window).height();
@@ -4042,6 +4107,144 @@ jQuery(function($){
 
 
 });
+jQuery(function($) {
+
+  var panelDOMLink = $('#products-fixed-panel'),
+      fixedPanelCols = $('.products-fixed-panel-col'),
+      sectionLinkAttrName = 'data-section-link';
+
+
+    fixedPanelCols.click(function() {
+      var currentSectionLink = $(this).attr(sectionLinkAttrName);
+      if(window.screenType == 'tablet') {
+        $('html, body').animate({
+            scrollTop: $().offset().top - 121
+        }, 1000);
+      } else {
+        
+        $('html, body').animate({
+            scrollTop: $($(this).attr(sectionLinkAttrName)).offset().top
+        }, 1000);
+
+        fixedPanelCols.each(function() {
+          if($(this).attr(sectionLinkAttrName) == currentSectionLink) {
+            $(this).addClass('selected');
+          } else {
+            $(this).removeClass('selected');
+          }
+        });
+      }
+    });
+
+  if(window.screenType != 'desktop') {
+    panelDOMLink.removeClass('hide');
+  }
+
+  var thirdSectionVisible = false,
+      fourthSectionVisible = false,
+      fifthSectionVisible = false;
+
+  var isPanelVisible = false;
+
+  //TODO: use factory pattern
+
+  window.onScrolledTo(
+    $('#products-third-section'),
+
+    function() {
+      thirdSectionVisible = true;
+      checkPanelVisibility();
+    },
+
+    function() {
+      thirdSectionVisible = false;
+      checkPanelVisibility();
+    }
+  );
+
+  window.onScrolledTo(
+    $('#products-fourth-section'),
+
+    function() {
+      fourthSectionVisible = true;
+      checkPanelVisibility();
+    },
+
+    function() {
+      fourthSectionVisible = false;
+      checkPanelVisibility();
+    }
+  );
+
+  window.onScrolledTo(
+    $('#products-fifth-section'),
+
+    function() {
+      fifthhSectionVisible = true;
+      checkPanelVisibility();
+    },
+
+    function() {
+      fifthSectionVisible = false;
+      checkPanelVisibility();
+    }
+  );
+
+  function checkPanelVisibility() {
+    if(window.screenType != 'desktop') {
+      return;
+    }
+    if (isPanelVisible) {
+      if(!thirdSectionVisible && !fourthSectionVisible && !fifthSectionVisible) {
+        isPanelVisible = false;
+        panelDOMLink.fadeTo(500, 0, function() {
+          panelDOMLink.addClass('hide');
+        });
+      }
+    } else {
+      if(thirdSectionVisible || fourthSectionVisible || fifthSectionVisible) {
+        panelDOMLink.removeClass('hide');
+        isPanelVisible = true;
+        panelDOMLink.fadeTo(500, 1, function() {
+        });
+      }
+    }
+  }
+
+  checkPanelVisibility();
+});
+jQuery(function($) {
+
+	var productsTabsInfo = [];
+	var productsTabRightCol = $('.products-last-section-right-col');
+
+	function ProductsTabInfo(tabID, logoLink, contentDivLink) {
+		this.tabID = tabID;
+		this.logoLink = logoLink;
+		this.contentDivLink = contentDivLink;
+	}
+
+	$('.products-last-section-tab-logo').each(function() {
+		var tabID = $(this).attr('data-tabid');
+		var contentDivLink = $('#products-tab-' + tabID);
+		productsTabsInfo.push(new ProductsTabInfo(tabID, $(this), contentDivLink));
+	});
+
+	$('.products-last-section-tab-logo').on('touchstart click', function() {
+		var currentTabID = $(this).attr('data-tabid');
+		productsTabsInfo.forEach(function(currentTabInfo) {
+			if(currentTabInfo.tabID == currentTabID) {
+				currentTabInfo.logoLink.addClass('selected');
+				currentTabInfo.contentDivLink.removeClass('hide');
+				productsTabRightCol.addClass('bubble-' + currentTabInfo.tabID);
+			} else {
+				currentTabInfo.logoLink.removeClass('selected');
+				currentTabInfo.contentDivLink.addClass('hide');
+				productsTabRightCol.removeClass('bubble-' + currentTabInfo.tabID);
+			}
+		});
+	});
+});
 $(function() {
 	var resourcesBlocks = $('.resource-block');
 
@@ -4168,8 +4371,12 @@ jQuery(function($){
     });
 
     responsiveBackgrounds.forEach(function(responsiveBackground) {
-      
-    })
+			if(responsiveBackground.sources[newScreenTypeName]) {
+        responsiveBackground.DOMLink.css('background-image', 'url("'+responsiveBackground.sources[newScreenTypeName]+'")');
+      } else {
+        responsiveBackground.DOMLink.css('background-image', 'none');
+      }
+    });
   });
 });
 jQuery(function($){
