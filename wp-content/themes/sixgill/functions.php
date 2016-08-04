@@ -1,16 +1,16 @@
 <?php
 
-	// include(locate_template('builder.php'));
+	include(locate_template('builder.php'));
 	function sixgill_custom_stylesheets() {
 		if ( ! is_admin() ) {
-			wp_enqueue_style( 'sixgill_custom_styles', get_template_directory_uri() . '/custom_build.css', array(), "26082016");
+			wp_enqueue_style( 'sixgill_custom_styles', get_template_directory_uri() . '/css/custom_build.css', array(), "220820163");
 		}
 	}
 	add_action( 'wp_enqueue_scripts', 'sixgill_custom_stylesheets', 11 );
 
 	function sixgill_custom_scripts() {
 		if ( ! is_admin() ) {
-			wp_enqueue_script( 'sixgill_custom_scripts', get_template_directory_uri() . '/custom_build.js', array(), "26082016");
+			wp_enqueue_script( 'sixgill_custom_scripts', get_template_directory_uri() . '/js/custom_build.js', array(), "220820163");
 		}
 	}
 	add_action( 'wp_enqueue_scripts', 'sixgill_custom_scripts', 11 );
@@ -258,6 +258,7 @@
 	set_post_thumbnail_size(600, 315, false);
 	add_image_size( 'spec_thumb', 1000, 350, true );
 	add_image_size( 'solutions-thumbnails', 300, 650, false );
+	add_image_size( 'home-solutions-slider', 240, 288, array( 'center', 'center' ) );
 
 	function wrapDirectFileLink($absFilePath) {
 		$uploadsDir = "wp-content/uploads/";
@@ -295,6 +296,11 @@
 		}
 
 		return $result;
+	}
+
+	function limit_words($string, $word_limit) {
+		$words = explode(' ', $string);
+		return implode(' ', array_slice($words, 0, $word_limit, ' ...' ));
 	}
 
 ?>
