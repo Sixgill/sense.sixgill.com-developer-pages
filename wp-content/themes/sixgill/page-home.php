@@ -143,9 +143,9 @@
 						<div class="carousel-text-content-wrapper">
 							<hr class="carousel-text-content-line">
 							<div class="carousel-text-content">
-								<?php echo limit_words(get_field('first_section_text'), '30'); ?>
+								<?php echo limit_words(get_field('first_section_text'), '29'); ?>
 							</div>
-							<a href="<?php the_permalink(); ?>" class="carousel-text-content-link-more"> Learn More</a>
+							<a href="<?php the_permalink(); ?>" class="carousel-text-content-link-more">> Learn More</a>
 						</div>
 					</div>
 				</div>
