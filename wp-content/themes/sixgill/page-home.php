@@ -3,7 +3,7 @@
 	 id="fullpage-config"
 	 fullpage-section-selector="home-page-section"
 	 fullpage-navigation="true"
-></div>
+>
 <a name="top"></a>
 <section id="slider" class="force-full-screen full-screen height-video-container home-page-section fp-auto-height">
 	<div class="force-full-screen full-screen dark section nopadding no-margin noborder ohidden height-video-container">
@@ -171,5 +171,6 @@
 			</div> -->
 		</div>
 	</section>
-	</section><!-- #content end -->
-	<?php get_footer(); ?>
+</section><!-- #content end -->
+</div>
+<?php get_footer(); ?>

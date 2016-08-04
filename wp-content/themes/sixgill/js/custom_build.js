@@ -3849,11 +3849,11 @@ jQuery(function($) {
     this.scrollInCallback = scrollInCallback;
     this.scrollOutCallback = scrollOutCallback;
     this.isScrolledTo = false;
+		checkElemVisibility(this);
   }
 
   window.onScrolledTo = function (domLink, scrollInCallback, scrollOutCallback) {
     var newElemInfo = new scrolledElemInfo(domLink, scrollInCallback, scrollOutCallback);
-    checkElemVisibility(newElemInfo);
     callbacksList.push(newElemInfo);
   }
 
@@ -3861,7 +3861,7 @@ jQuery(function($) {
     if(
       $(window).scrollTop()>=callbackInfo.domLink.position().top
       &&
-      $(window).scrollTop()<=callbackInfo.domLink.position().top+callbackInfo.domLink.height()+200
+      $(window).scrollTop()<=callbackInfo.domLink.position().top+callbackInfo.domLink.height()+250
     ){
       if(!callbackInfo.isScrolledTo) {
         callbackInfo.scrollInCallback();
@@ -4029,7 +4029,7 @@ jQuery(function($) {
 	window.menuShowFlag = false;
 	var savedScroll;
 
-	$('#primary-menu-trigger,#overlay-menu-close').click(function() {
+	$('#primary-menu-trigger').click(function() {
 		if(window.menuShowFlag) {
 			$( '#menu-background' ).fadeTo(500, 0, function() {
 				$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
@@ -4136,42 +4136,57 @@ jQuery(function($){
 });
 jQuery(function($) {
 
+	var thirdSectionVisible = false,
+			fourthSectionVisible = false,
+			fifthSectionVisible = false,
+			thirdSection = $('#products-third-section'),
+			fourthSection = $('#products-fourth-section'),
+			fifthSection = $('#products-fifth-section');
+
   var panelDOMLink = $('#products-fixed-panel'),
       fixedPanelCols = $('.products-fixed-panel-col'),
       sectionLinkAttrName = 'data-section-link';
 
 
-    fixedPanelCols.click(function() {
-      var currentSectionLink = $(this).attr(sectionLinkAttrName);
-      if(window.screenType == 'tablet') {
-        $('html, body').animate({
-            scrollTop: $().offset().top - 121
-        }, 1000);
-      } else {
-        
-        $('html, body').animate({
-            scrollTop: $($(this).attr(sectionLinkAttrName)).offset().top
-        }, 1000);
+	function checkPanelHighlighting(currentSectionLink) {
+		if(fifthSectionVisible) {
+			thirdSection.removeClass('selected');
+			fourthSection.removeClass('selected');
+			fifthSection.addClass('selected');
+		} else if(fourthSectionVisible) {
+			thirdSection.removeClass('selected');
+			fourthSection.addClass('selected');
+			fifthSection.removeClass('selected');
+		} else if (thirdSectionVisible) {
+			thirdSection.addClass('selected');
+			fourthSection.removeClass('selected');
+			fifthSection.removeClass('selected');
+		}
+	}
 
-        fixedPanelCols.each(function() {
-          if($(this).attr(sectionLinkAttrName) == currentSectionLink) {
-            $(this).addClass('selected');
-          } else {
-            $(this).removeClass('selected');
-          }
-        });
-      }
-    });
+  fixedPanelCols.click(function() {
+    var currentSectionLink = $(this).attr(sectionLinkAttrName);
+    if(window.screenType == 'tablet') {
+      $('html, body').animate({
+          scrollTop: $(currentSectionLink).offset().top - 121
+      }, 1000);
+    } else {
+
+      $('html, body').animate({
+          scrollTop: $(currentSectionLink).offset().top
+      }, 1000);
+    }
+  });
+
+  var isPanelVisible = false;
 
   if(window.screenType != 'desktop') {
     panelDOMLink.removeClass('hide');
+		panelDOMLink.css('opacity', '1');
+		isPanelVisible = true;
   }
 
-  var thirdSectionVisible = false,
-      fourthSectionVisible = false,
-      fifthSectionVisible = false;
 
-  var isPanelVisible = false;
 
   //TODO: use factory pattern
 
@@ -4224,21 +4239,23 @@ jQuery(function($) {
     if (isPanelVisible) {
       if(!thirdSectionVisible && !fourthSectionVisible && !fifthSectionVisible) {
         isPanelVisible = false;
-        panelDOMLink.fadeTo(500, 0, function() {
+        panelDOMLink.animate({opacity: 0}, 500, 'swing', function() {
           panelDOMLink.addClass('hide');
         });
       }
     } else {
       if(thirdSectionVisible || fourthSectionVisible || fifthSectionVisible) {
+				isPanelVisible = true;
         panelDOMLink.removeClass('hide');
-        isPanelVisible = true;
-        panelDOMLink.fadeTo(500, 1, function() {
-        });
+        panelDOMLink.animate({opacity: 1}, 500);
       }
     }
   }
 
-  checkPanelVisibility();
+	setTimeout(function() {
+		checkPanelVisibility();
+	}, 1000);
+
 });
 jQuery(function($) {
 
@@ -4408,6 +4425,47 @@ jQuery(function($){
 });
 jQuery(function($){
 	
+});
+jQuery(function($) {
+
+	var sublinks = [];
+
+	function SubsectionLinkInfo(menuLink, section, selector) {
+		this.menuLink = menuLink;
+		this.section = section;
+		this.selector = selector;
+	}
+
+	$('.menu-sublink').each(function() {
+		var link = $(this);
+		var selector = $(this).attr('href');
+		console.log(selector);
+		var currentSublink = new SubsectionLinkInfo(
+			link,
+			$(selector),
+			selector
+		);
+
+		sublinks.push(currentSublink);
+
+		window.onScrolledTo(
+			currentSublink.section,
+			function() {
+				sublinks.forEach(function(sublink) {
+					if(sublink.selector == selector) {
+						sublink.menuLink.addClass('active');
+					} else {
+						sublink.menuLink.removeClass('active');
+					}
+				});
+			},
+			function() {
+				currentSublink.menuLink.removeClass('active');
+			}
+		);
+
+	});
+
 });
 jQuery(function($) {
 	$(window).resize(function() {
