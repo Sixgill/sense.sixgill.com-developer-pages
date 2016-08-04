@@ -18,9 +18,9 @@
 				$html .= '</div>';
 			$html .= '</a>';
 			if($isExpanded) {
-				$html .= '<div class="my_subMenus display-only-desktop">';
+				$html .= '<div class="display-only-desktop">';
 				foreach($sublinksList as $sublink) {
-					$html .= '<a href="#'.$sublink['anchor'].'">';
+					$html .= '<a class="menu-sublink" href="#'.$sublink['anchor'].'">';
 						$html .= $sublink['name'];
 					$html .= '</a>';
 					$html .= '<div class="clear"></div>';

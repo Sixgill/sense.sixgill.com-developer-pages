@@ -3,7 +3,7 @@
 <div class="full-width">
 	<a name="top"></a>
 	<a
-		href="#second-section"
+		href="#products-second-section"
 		class="products-learn-more-link"
 	>
 		<div class="products-first-section-scroll-link-wrapper">
@@ -48,7 +48,7 @@
 
 	</div>
 
-	<a name="second-section"></a>
+	<a name="products-second-section"></a>
 	<div id="products-second-section" class="products-section products-second-section">
 		<div class="inline-block full-width">
 			<div class="products-second-section-image-wrapper">
@@ -63,7 +63,7 @@
 		</div>
 	</div>
 
-	<div id="products-fixed-panel" class="products-fixed-panel hide">
+	<div id="products-fixed-panel" class="products-fixed-panel hide" style="opacity: 0;">
 
 		<div data-section-link="#products-third-section" class="products-fixed-panel-col">
 			<div class="products-fixed-panel-col-content">
@@ -230,6 +230,7 @@
 		</div>
 	</div>
 
+	<a name="products-second-section"></a>
 	<div id="products-last-section" class="products-section products-last-section no-mobile-portrait-display no-mobile-landscape-display">
 		<h2 class="products-last-section-title">
 			<?php echo get_field('last_section_title'); ?>

@@ -1,116 +1,46 @@
-<?php get_header();
+<?php get_header(); ?>
+<div class="full-width"> <!-- fullpage wrapper placeholder -->
 
-	$firstFieldTitle = get_field('top_header_first_line');
-	$secondFieldTitle = get_field('top_header_second_line');
-	$thirdFieldTitle = get_field('top_header_third_line');
-?>
-<div> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
-	<section id="slider" class="slider-parallax swiper_wrapper clearfix">
-	  <div class="slider-parallax-inner">
-	    <div class="swiper-container swiper-parent">
-	      <div class="swiper-wrapper">
-	        <div id="tech-page-header-background" class="swiper-slide"></div>
-	      </div>
-	    </div>
-	  </div>
-	</section>
-
-	<!-- Content-->
-	<section id="content" class="section-margin-fix">
-	  <div class="content-wrap no-bottom-margin no-bottom-padding">
-
-	    <div class="container-fluid header-stick background-f8f8f8 no-border indent-from-slider">
-				<div class="container-fluid no-border center clearfix tech-top-spacing">
-					<div class="col_one_third title-left-col center no-bottom-margin tech-top-header">
-						<h1 class="no-mobile-landscape-display no-mobile-portrait-display">
-						<p class="tech-top-header-blue no-margin line-height-1-5"><?php echo $firstFieldTitle; ?></p>
-						<p class="tech-top-header-gray no-margin line-height-1-5"><?php echo $secondFieldTitle; ?></p>
-						<p class="tech-top-header-blue no-margin line-height-1-5"><?php echo $thirdFieldTitle; ?></p>
-						</h1>
-						<h1 class="no-desktop-display no-tablet-display tech-title-margin">
-						<p class="tech-top-header-blue no-margin line-height-1-5"><?php echo "$firstFieldTitle $secondFieldTitle $thirdFieldTitle"; ?></p>
-						</h1>
-
-					</div>
-					<div class="col_two_third col_last text-left text-right-col tech-top-text">
-						<?php echo get_field('top_paragraph'); ?>
-					</div>
-				</div>
-
-	    </div>
-
-	    <div class="clear"></div>
-	    <div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-	      <img src="/wp-content/themes/sixgill/images/td/tech/00_Shape1.jpg" alt="" class="full-width"/>
-	    </div>
-
-	    <a name="location"></a>
-	    <div id="location" class="container-fluid background-white clearfix no-margin nopadding">
-	      <div class="container-fluid center clearfix my_containerSolution">
-	        <div class="col_full">
-						<img src="<?php echo get_field('image_1_header'); ?>" alt="" class="full-width max-width-500"/>
-					</div>
-	        <div class="col_one_third my_boxTech_image hidden-top-imageTech">
-						<img src="<?php echo get_field('image_1_tech'); ?>" alt=""/>
-					</div>
-	        <div class="col_two_third text-right-col-noline col_last">
-	          <div class="my_txtSolution">
-	            <?php echo get_field('section_1_text'); ?>
-	          </div>
-	        </div>
-	        <div class="col_one_third my_boxTech_image hidden-bottom-imageTech">
-						<img src="/wp-content/themes/sixgill/images/td/tech/heatmap.png" alt=""/>
-					</div>
-	      </div>
-	    </div>
-
-		  <div class="clear"></div>
-		  <div class="container-fluid background-white clearfix no-margin nopadding">
-		    <img src="/wp-content/themes/sixgill/images/td/tech/shape2.png" alt="" class="full-width"/>
-		  </div>
-
-		  <a name="proximity"></a>
-		  <div id="proximity" class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-		    <div class="container-fluid center clearfix my_containerSolution">
-		      <div class="col_full">
-						<img src="<?php echo get_field('image_2_header'); ?>" alt="" class="full-width max-width-500"/>
-					</div>
-		      <div class="col_two_third text-right-col-noline col_last">
-		        <div class="my_txtSolution">
-		            <?php echo get_field('section_2_text'); ?>
-		        </div>
-		      </div>
-		      <div class="col_one_third my_boxTech_image" style="padding-left: 5%;">
-						<img src="<?php echo get_field('image_2_tech'); ?>" alt=""/>
-					</div>
-		    </div>
-		  </div>
-
-		<div class="clear"></div>
-		<div class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-		  <img src="/wp-content/themes/sixgill/images/td/tech/shape3.png" alt="" class="full-width" />
+	<a
+		href="#second-section"
+		class="tech-learn-more-link"
+	>
+		<div class="tech-first-section-scroll-link-wrapper">
+			<div class="tech-first-section-scroll-link-ico-wrapper">
+				<img
+					class="tech-first-section-scroll-link-ico responsive-image"
+					desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+				/>
+			</div>
 		</div>
+	</a>
+	<div id="tech-first-section" class="tech-section tech-first-section">
+		<div class="tech-first-section-block">
+			<div class="tech-first-section-image-wrapper">
+				<img
+					class="tech-first-section-image responsive-image"
+					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
+					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
+				>
+			</div>
+			<div class="tech-first-section-block-text">
+				<h1 class="tech-first-section-block-title">
+					<?php echo get_field('first_section_title'); ?>
+				</h1>
+				<div class="tech-first-section-block-paragraph">
+					<?php echo get_field('first_section_text'); ?>
+				</div>
+			</div>
 
+			<div class="tech-first-section-image-wrapper-mobile">
+				<img
+					class="tech-first-section-image responsive-image"
+					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
+				>
+			</div>
+		</div>
+	</div>
 
-		 <a name="openplatform"></a>
-		  <div id="openplatform" class="container-fluid background-f8f8f8 clearfix no-margin nopadding">
-		    <div class="container-fluid center clearfix my_containerSolution">
-		      <div class="col_full">
-						<img src="<?php echo get_field('image_3_header'); ?>" alt="" class="full-width max-width-500"/>
-					</div>
-		      <div class="col_one_third my_boxTech_image hidden-top-imageTech">
-						<img src="<?php echo get_field('image_3_tech'); ?>" alt=""/>
-					</div>
-		      <div class="col_two_third text-right-col-noline col_last">
-		        <div class="my_txtSolution" style="    margin-bottom: 0px;">
-		            <?php echo get_field('section_3_text'); ?>
-		        </div>
-		      </div>
-		    	<div class="col_one_third my_boxTech_image hidden-bottom-imageTech"><img src="/wp-content/themes/sixgill/images/td/tech/imageExtensiblePlatform.png" alt=""/></div>
-		    </div>
-		  </div>
-	  </div>
-
-	</section><!-- #content end -->
 	<?php get_footer(); ?>
