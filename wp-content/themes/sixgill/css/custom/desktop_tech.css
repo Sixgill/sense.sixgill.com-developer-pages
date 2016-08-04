@@ -2,10 +2,7 @@
 
 
 .tech-learn-more-link {
-	display: block;
-  position: absolute;
-  top: calc(100vh - 85px);
-  width: 100%;
+	display: none;
 }
 
 .tech-first-section,
@@ -70,6 +67,12 @@
   font-weight: 300;
 	line-height: 1em;
 	margin-bottom: 2vw;
+}
+
+.tech-first-section-block-subtitle {
+	font-size: 16px;
+  font-weight: 700;
+	margin-bottom: 1.21vw;
 }
 
 .tech-first-section-block-paragraph p {

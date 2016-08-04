@@ -29,6 +29,9 @@
 				<h1 class="tech-first-section-block-title">
 					<?php echo get_field('first_section_title'); ?>
 				</h1>
+				<h2 class="tech-first-section-block-subtitle">
+					<?php echo get_field('first_section_subtitle'); ?>
+				</h2>
 				<div class="tech-first-section-block-paragraph">
 					<?php echo get_field('first_section_text'); ?>
 				</div>

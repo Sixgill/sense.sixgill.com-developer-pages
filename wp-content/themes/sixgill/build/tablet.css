@@ -701,7 +701,7 @@ ul:not([class]) li {
 .tech-learn-more-link {
 	display: block;
   position: absolute;
-  top: calc(100vh - 206px);
+  top: calc(100vh - 161px);
   width: 100%;
 }
 
@@ -771,7 +771,6 @@ ul:not([class]) li {
 
 .tech-first-section-image-wrapper {
 	width: 47.34%;
-	max-height: 46.875vw;
 }
 
 .tech-first-section-block-text {

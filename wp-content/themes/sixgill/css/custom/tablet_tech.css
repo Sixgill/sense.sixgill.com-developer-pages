@@ -4,7 +4,7 @@
 .tech-learn-more-link {
 	display: block;
   position: absolute;
-  top: calc(100vh - 206px);
+  top: calc(100vh - 161px);
   width: 100%;
 }
 
@@ -74,7 +74,6 @@
 
 .tech-first-section-image-wrapper {
 	width: 47.34%;
-	max-height: 46.875vw;
 }
 
 .tech-first-section-block-text {
@@ -87,6 +86,12 @@
   font-weight: 300;
 	line-height: 1em;
 	margin-bottom: 2vw;
+}
+
+.tech-first-section-block-subtitle {
+	font-size: 16px;
+  font-weight: 700;
+	margin-bottom: 1.21vw;
 }
 
 .tech-first-section-block-paragraph p {

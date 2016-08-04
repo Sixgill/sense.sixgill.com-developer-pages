@@ -147,6 +147,10 @@
 	margin-right: auto;
 }
 
+.products-fourth-section-content-wrapper {
+	margin-top: 6vw;
+}
+
 .products-third-section-left-col {
 	width: 34%;
 	padding-top: 6.5vw;
@@ -215,6 +219,15 @@
 .products-fourth-section-right-col {
 	width: 41%;
 	padding: 8vw 4.75vw 0px 7.7vw;
+
+	-ms-flex-item-align: flex-end;
+	flex-item-align: flex-end;
+	-webkit-align-self: flex-end;
+	align-self: flex-end;
+}
+
+.products-fourth-section-image-wrapper {
+	margin-bottom: -1px;
 }
 
 .products-fourth-section-left-col {
