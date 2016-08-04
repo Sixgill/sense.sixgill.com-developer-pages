@@ -3978,7 +3978,7 @@ jQuery(function($){
 		itemsMobile : [500,1], //1 items between 600 and 0
 		// Navigation
 		navigation : true,
-		navigationText : ["<",">"],
+		navigationText : ["",""],
 	 
 		//Pagination
 		pagination : false,

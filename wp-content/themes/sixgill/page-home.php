@@ -18,7 +18,7 @@
 					</button>
 				</div>
 			</div>
-			<div class="slider-learn-more-link">
+			<div class="slider-learn-more-link no-mobile-portrait-display no-mobile-landscape-display">
 				<a href="#what">
 					<div class="home-first-section-scroll-link-wrapper">
 						<div class="home-first-section-scroll-link-text">
@@ -143,8 +143,7 @@
 						<div class="carousel-text-content-wrapper">
 							<hr class="carousel-text-content-line">
 							<div class="carousel-text-content">
-								<?php echo limit_words(get_field('first_section_text'), '35'); ?>
-								<?php// echo limit_words(get_field('first_section_text'), '27'); //why this value break all slider??>
+								<?php echo limit_words(get_field('first_section_text'), '30'); ?>
 							</div>
 							<a href="<?php the_permalink(); ?>" class="carousel-text-content-link-more"> Learn More</a>
 						</div>
