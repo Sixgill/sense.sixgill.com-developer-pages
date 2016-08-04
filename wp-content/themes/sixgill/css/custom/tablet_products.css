@@ -85,6 +85,7 @@
 .products-first-section-block-title {
 	font-size: 7vw;
   font-weight: 300;
+	font-family: "Lato Light";
 	line-height: 1em;
 	margin-bottom: 2vw;
 }
@@ -171,6 +172,7 @@
 .products-third-section-title {
 	font-size: 35px;
   font-weight: 300;
+	font-family: "Lato Light";
   color: #2adc3a;
 }
 
@@ -195,6 +197,7 @@
 .products-fifth-section-title {
 	font-size: 4.57vw;
   font-weight: 300;
+	font-family: "Lato Light";
   line-height: 5.7vw;
 }
 
@@ -323,6 +326,7 @@
 .products-last-section-title {
 	font-size: 45px;
   font-weight: 300;
+	font-family: "Lato Light";
   text-align: center;
 	margin: 4.6vw 0px 5vw 0px;
 	line-height: 1em;

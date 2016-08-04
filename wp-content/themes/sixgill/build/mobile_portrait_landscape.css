@@ -252,6 +252,7 @@
 .solution-subpage-title {
 	font-size: 18px;
 	font-weight: 300;
+	font-family: "Lato Light";
 	letter-spacing: 0.5px;
 }
 
@@ -323,6 +324,7 @@
 .solution-subpage-last-block-title{
 	font-size: 28.4px;
 	font-weight: 300;
+	font-family: "Lato Light";
 	line-height: 0.71;
 	letter-spacing: 0.9px;
 }
@@ -355,6 +357,7 @@ ul:not([class]) li {
 .solution-subpage-section-title {
 	font-size: 28px;
 	font-weight: 300;
+	font-family: "Lato Light";
 	letter-spacing: 0.9px;
 }
 
@@ -559,6 +562,7 @@ ul:not([class]) li {
 .tech-first-section-block-title {
 	font-size: 9vw;
   font-weight: 300;
+	font-family: "Lato Light";
 	letter-spacing: 1.5px;
 	line-height: 1em;
 	margin-bottom: 2vw;
@@ -824,6 +828,7 @@ ul:not([class]) li {
 .products-first-section-block-title {
 	font-size: 9vw;
   font-weight: 300;
+	font-family: "Lato Light";
 	letter-spacing: 1.5px;
 	line-height: 1em;
 	margin-bottom: 2vw;
@@ -1011,6 +1016,7 @@ ul:not([class]) li {
 .products-last-section-title {
 	font-size: 7.66vw;
   font-weight: 300;
+	font-family: "Lato Light";
   text-align: center;
 	margin-bottom: 0px;
 	margin-top: 10vw;

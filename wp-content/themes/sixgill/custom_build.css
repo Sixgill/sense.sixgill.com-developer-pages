@@ -13822,61 +13822,17 @@ input {
 	background-size: cover;
 }
 
-.tech-first-section-block-paragraph,
-.tech-first-section-block-paragraph p,
-.tech-first-section-scroll-link-text,
-.tech-third-section-title,
-.tech-third-section-subtitle,
-.tech-third-section-text p,
-.tech-third-section-text ul li,
-.tech-fifth-section-subtitle,
-.tech-fifth-section-text p,
-.tech-fifth-section-text ul li,
 .tech-first-section-block-title,
-.tech-first-section-block-subtitle {
-	color: #ffffff !important;
-}
-
-.tech-third-section-text ul {
-	margin-bottom: 0px !important;
-}
-
-.tech-third-section-text li:last-child {
-	margin-bottom: 0.5em !important;
-}
-
-.tech-last-section-text,
-.tech-last-section-text p
-.tech-last-section-text li,
-.tech-last-section-col-title,
-.tech-second-section-text {
-	color: #2e2e2e;
-}
-
-.tech-last-section-title {
-  color: #4ddb5a;
-}
-
-.tech-third-section-line,
-.tech-fourth-section-line,
-.tech-fifth-section-line {
-	background-color: #ffffff;
-}
-
+.tech-second-section-title,
 .tech-third-section-title,
-.tech-fourth-section-title,
-.tech-fifth-section-title {
-	font-family: Lato;
-  color: #2adc3a;
+.tech-fourth-section-title {
+	font-family: "Lato Light";
+	font-weight: 300;
 }
 
 .tech-first-section-scroll-link-wrapper {
 	cursor: pointer;
 	text-align: center;
-}
-
-.tech-last-section-tab-logo {
-	cursor: pointer;
 }
 
 .tech-second-section {
@@ -13889,6 +13845,26 @@ input {
 	flex-align: center;
 	-webkit-align-items: center;
   align-items: center;
+}
+
+.tech-first-section-block-title,
+.tech-first-section-block-subtitle,
+.tech-first-section-block-text,
+.tech-first-section-block-text p,
+.tech-first-section-block-text li,
+.tech-third-section-text,
+.tech-third-section-text p,
+.tech-third-section-text li {
+	color: #ffffff;
+}
+
+.tech-second-section-block-title,
+.tech-fourth-section-block-title {
+	color: #0051c6;
+}
+
+.tech-third-section-title {
+	color: #4ddb5a;
 }
 
 /* Press Common styles */
@@ -13916,6 +13892,7 @@ input {
 
 .press-block-container {
 	margin-top: 75px;
+	font-size: 9001px;
 }
 
 .posts-list {
@@ -14630,7 +14607,6 @@ input {
 
 /* Tech desktop styles */
 
-
 .tech-learn-more-link {
 	display: none;
 }
@@ -14641,7 +14617,9 @@ input {
 .tech-fourth-section-wrapper,
 .tech-fifth-section-wrapper,
 .tech-fixed-panel,
-.tech-fixed-panel-col {
+.tech-fixed-panel-col,
+.tech-third-section,
+.tech-third-section-wrapper {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -14652,11 +14630,9 @@ input {
 .tech-first-section-block,
 .tech-second-section-right-col,
 .tech-fourth-section-left-col,
-.tech-fifth-section-right-col,
-.tech-fixed-panel-col,
-.tech-fixed-panel-col-content,
 .tech-first-section-image-wrapper,
-.tech-first-section-block-text {
+.tech-first-section-block-text,
+.tech-third-section-wrapper {
 	-ms-flex-item-align: center;
 	-webkit-align-self: center;
 	align-self: center;
@@ -14696,6 +14672,7 @@ input {
   font-weight: 300;
 	line-height: 1em;
 	margin-bottom: 2vw;
+	font-family: "Lato Light";
 }
 
 .tech-first-section-block-subtitle {
@@ -14747,21 +14724,33 @@ input {
 	width: 100%;
 }
 
-.tech-second-section-wrapper {
-	background-image: url('/wp-content/themes/sixgill/images/tech/second_section_bg_at2.png');
+.tech-second-section {
+	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 }
 
-.tech-second-section-content-wrapper,
-.tech-fourth-section-content-wrapper,
-.tech-fifth-section-content-wrapper {
-	width: 77%;
+.tech-second-section-content-wrapper {
+	width: 34.19vw;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+
+.tech-third-section {
+	height: 100vh;
+	background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_desktop.png');
+}
+
+.tech-third-section-content-wrapper,
+.tech-fourth-section-content-wrapper {
+	width: 38.58vw;
+}
+
+.tech-third-section-content-wrapper {
+	margin-left: 5.67vw;
+}
+
 .tech-second-section-left-col {
 	width: 34%;
-	padding-top: 6.5vw;
 }
 
 .tech-second-section-right-col,
@@ -14777,26 +14766,11 @@ input {
 }
 
 .tech-second-section-title,
-.tech-fourth-section-title,
-.tech-fifth-section-title {
-  font-size: 44px;
-	line-height: 1.3em;
-}
-
-.tech-second-section-subtitle,
-.tech-fourth-section-subtitle,
-.tech-fifth-section-subtitle {
-	font-size: 15px;
-  font-weight: 700;
-}
-
-.tech-second-section-line,
-.tech-fourth-section-line,
-.tech-fifth-section-line {
-	margin: 3vw 0px 3vw 0px;
-	height: 2.5px;
-	width: 100%;
-	clear: both;
+.tech-third-section-title,
+.tech-fourth-section-title {
+	font-size: 44px;
+	line-height: 1em;
+	margin-bottom: 1.756vw;
 }
 
 .tech-second-section-header-wrapper,
@@ -14818,6 +14792,7 @@ input {
 
 .tech-fourth-section {
 	min-height: inherit !important;
+	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 }
 
 .tech-fourth-section-wrapper {
@@ -14825,12 +14800,14 @@ input {
 }
 
 .tech-fourth-section-right-col {
-	width: 41%;
-	padding: 8vw 4.75vw 0px 7.7vw;
+	width: 59%;
+	padding-top: 11.46vw;
 }
 
 .tech-fourth-section-left-col {
-	width: 59%;
+	width: 41%;
+	text-align:center;
+	padding-top: 5.1vw;
 }
 
 .tech-fourth-section-ico-wrapper {
@@ -14838,10 +14815,6 @@ input {
 	height: 5.16vw;
 	margin-right: 1.4vw;
 	float: left;
-}
-
-.tech-fourth-section-line {
-	background-color: #d1d0ce;
 }
 
 .tech-fourth-section-title-wrapper {
@@ -14890,6 +14863,14 @@ input {
 .tech-first-section-block-paragraph,
 .tech-fourth-section-text {
 	font-size: 16px;
+}
+
+.tech-fourth-section-image-wrapper {
+	text-align: center;
+}
+
+.tech-fourth-section-image {
+	width: 76.2%;
 }
 
 /* Press desktop styles */
@@ -14991,6 +14972,7 @@ input {
   font-weight: 300;
 	line-height: 1em;
 	margin-bottom: 2vw;
+	font-family: "Lato Light";
 }
 
 .products-first-section-block-paragraph p {
@@ -15218,6 +15200,7 @@ input {
 .products-last-section-title {
 	font-size: 45px;
   font-weight: 300;
+	font-family: "Lato Light";
   text-align: center;
 	margin: 4.6vw 0px 5vw 0px;
 	line-height: 1em;
@@ -15790,6 +15773,7 @@ input {
 	font-size: 39.8px;
 	font-weight: 300;
 	letter-spacing: 1.2px;
+	font-family: "Lato Light";
 }
 
 .solution-subpage-suptitle {
@@ -16037,6 +16021,7 @@ ul:not([class]) li {
 .solution-subpage-last-block-title {
 	font-size: 35.2px;
 	font-weight: 300;
+	font-family: "Lato Light";
 	line-height: 0.58;
 	letter-spacing: 1.1px;
 }
@@ -16157,6 +16142,7 @@ ul:not([class]) li {
   font-weight: 300;
 	line-height: 1em;
 	margin-bottom: 2vw;
+	font-family: "Lato Light";
 }
 
 .tech-first-section-block-subtitle {
@@ -16247,6 +16233,7 @@ ul:not([class]) li {
 .tech-third-section-title {
 	font-size: 35px;
   font-weight: 300;
+	font-family: "Lato Light";
   color: #2adc3a;
 }
 
@@ -16271,6 +16258,7 @@ ul:not([class]) li {
 .tech-fifth-section-title {
 	font-size: 4.57vw;
   font-weight: 300;
+	font-family: "Lato Light";
   line-height: 5.7vw;
 }
 
@@ -16507,6 +16495,7 @@ ul:not([class]) li {
 .products-first-section-block-title {
 	font-size: 7vw;
   font-weight: 300;
+	font-family: "Lato Light";
 	line-height: 1em;
 	margin-bottom: 2vw;
 }
@@ -16593,6 +16582,7 @@ ul:not([class]) li {
 .products-third-section-title {
 	font-size: 35px;
   font-weight: 300;
+	font-family: "Lato Light";
   color: #2adc3a;
 }
 
@@ -16617,6 +16607,7 @@ ul:not([class]) li {
 .products-fifth-section-title {
 	font-size: 4.57vw;
   font-weight: 300;
+	font-family: "Lato Light";
   line-height: 5.7vw;
 }
 
@@ -16745,6 +16736,7 @@ ul:not([class]) li {
 .products-last-section-title {
 	font-size: 45px;
   font-weight: 300;
+	font-family: "Lato Light";
   text-align: center;
 	margin: 4.6vw 0px 5vw 0px;
 	line-height: 1em;
@@ -17684,6 +17676,7 @@ ul:not([class]) li {
 .solution-subpage-title {
 	font-size: 18px;
 	font-weight: 300;
+	font-family: "Lato Light";
 	letter-spacing: 0.5px;
 }
 
@@ -17755,6 +17748,7 @@ ul:not([class]) li {
 .solution-subpage-last-block-title{
 	font-size: 28.4px;
 	font-weight: 300;
+	font-family: "Lato Light";
 	line-height: 0.71;
 	letter-spacing: 0.9px;
 }
@@ -17787,6 +17781,7 @@ ul:not([class]) li {
 .solution-subpage-section-title {
 	font-size: 28px;
 	font-weight: 300;
+	font-family: "Lato Light";
 	letter-spacing: 0.9px;
 }
 
@@ -17991,6 +17986,7 @@ ul:not([class]) li {
 .tech-first-section-block-title {
 	font-size: 9vw;
   font-weight: 300;
+	font-family: "Lato Light";
 	letter-spacing: 1.5px;
 	line-height: 1em;
 	margin-bottom: 2vw;
@@ -18256,6 +18252,7 @@ ul:not([class]) li {
 .products-first-section-block-title {
 	font-size: 9vw;
   font-weight: 300;
+	font-family: "Lato Light";
 	letter-spacing: 1.5px;
 	line-height: 1em;
 	margin-bottom: 2vw;
@@ -18443,6 +18440,7 @@ ul:not([class]) li {
 .products-last-section-title {
 	font-size: 7.66vw;
   font-weight: 300;
+	font-family: "Lato Light";
   text-align: center;
 	margin-bottom: 0px;
 	margin-top: 10vw;

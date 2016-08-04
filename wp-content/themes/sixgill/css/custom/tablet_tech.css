@@ -86,6 +86,7 @@
   font-weight: 300;
 	line-height: 1em;
 	margin-bottom: 2vw;
+	font-family: "Lato Light";
 }
 
 .tech-first-section-block-subtitle {
@@ -176,6 +177,7 @@
 .tech-third-section-title {
 	font-size: 35px;
   font-weight: 300;
+	font-family: "Lato Light";
   color: #2adc3a;
 }
 
@@ -200,6 +202,7 @@
 .tech-fifth-section-title {
 	font-size: 4.57vw;
   font-weight: 300;
+	font-family: "Lato Light";
   line-height: 5.7vw;
 }
 

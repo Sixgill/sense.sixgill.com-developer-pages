@@ -17,61 +17,17 @@
 	background-size: cover;
 }
 
-.tech-first-section-block-paragraph,
-.tech-first-section-block-paragraph p,
-.tech-first-section-scroll-link-text,
-.tech-third-section-title,
-.tech-third-section-subtitle,
-.tech-third-section-text p,
-.tech-third-section-text ul li,
-.tech-fifth-section-subtitle,
-.tech-fifth-section-text p,
-.tech-fifth-section-text ul li,
 .tech-first-section-block-title,
-.tech-first-section-block-subtitle {
-	color: #ffffff !important;
-}
-
-.tech-third-section-text ul {
-	margin-bottom: 0px !important;
-}
-
-.tech-third-section-text li:last-child {
-	margin-bottom: 0.5em !important;
-}
-
-.tech-last-section-text,
-.tech-last-section-text p
-.tech-last-section-text li,
-.tech-last-section-col-title,
-.tech-second-section-text {
-	color: #2e2e2e;
-}
-
-.tech-last-section-title {
-  color: #4ddb5a;
-}
-
-.tech-third-section-line,
-.tech-fourth-section-line,
-.tech-fifth-section-line {
-	background-color: #ffffff;
-}
-
+.tech-second-section-title,
 .tech-third-section-title,
-.tech-fourth-section-title,
-.tech-fifth-section-title {
-	font-family: Lato;
-  color: #2adc3a;
+.tech-fourth-section-title {
+	font-family: "Lato Light";
+	font-weight: 300;
 }
 
 .tech-first-section-scroll-link-wrapper {
 	cursor: pointer;
 	text-align: center;
-}
-
-.tech-last-section-tab-logo {
-	cursor: pointer;
 }
 
 .tech-second-section {
@@ -84,4 +40,24 @@
 	flex-align: center;
 	-webkit-align-items: center;
   align-items: center;
+}
+
+.tech-first-section-block-title,
+.tech-first-section-block-subtitle,
+.tech-first-section-block-text,
+.tech-first-section-block-text p,
+.tech-first-section-block-text li,
+.tech-third-section-text,
+.tech-third-section-text p,
+.tech-third-section-text li {
+	color: #ffffff;
+}
+
+.tech-second-section-block-title,
+.tech-fourth-section-block-title {
+	color: #0051c6;
+}
+
+.tech-third-section-title {
+	color: #4ddb5a;
 }

@@ -1,6 +1,5 @@
 /* Tech desktop styles */
 
-
 .tech-learn-more-link {
 	display: none;
 }
@@ -11,7 +10,9 @@
 .tech-fourth-section-wrapper,
 .tech-fifth-section-wrapper,
 .tech-fixed-panel,
-.tech-fixed-panel-col {
+.tech-fixed-panel-col,
+.tech-third-section,
+.tech-third-section-wrapper {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -22,11 +23,9 @@
 .tech-first-section-block,
 .tech-second-section-right-col,
 .tech-fourth-section-left-col,
-.tech-fifth-section-right-col,
-.tech-fixed-panel-col,
-.tech-fixed-panel-col-content,
 .tech-first-section-image-wrapper,
-.tech-first-section-block-text {
+.tech-first-section-block-text,
+.tech-third-section-wrapper {
 	-ms-flex-item-align: center;
 	-webkit-align-self: center;
 	align-self: center;
@@ -66,6 +65,7 @@
   font-weight: 300;
 	line-height: 1em;
 	margin-bottom: 2vw;
+	font-family: "Lato Light";
 }
 
 .tech-first-section-block-subtitle {
@@ -117,21 +117,33 @@
 	width: 100%;
 }
 
-.tech-second-section-wrapper {
-	background-image: url('/wp-content/themes/sixgill/images/tech/second_section_bg_at2.png');
+.tech-second-section {
+	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 }
 
-.tech-second-section-content-wrapper,
-.tech-fourth-section-content-wrapper,
-.tech-fifth-section-content-wrapper {
-	width: 77%;
+.tech-second-section-content-wrapper {
+	width: 34.19vw;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+
+.tech-third-section {
+	height: 100vh;
+	background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_desktop.png');
+}
+
+.tech-third-section-content-wrapper,
+.tech-fourth-section-content-wrapper {
+	width: 38.58vw;
+}
+
+.tech-third-section-content-wrapper {
+	margin-left: 5.67vw;
+}
+
 .tech-second-section-left-col {
 	width: 34%;
-	padding-top: 6.5vw;
 }
 
 .tech-second-section-right-col,
@@ -147,26 +159,11 @@
 }
 
 .tech-second-section-title,
-.tech-fourth-section-title,
-.tech-fifth-section-title {
-  font-size: 44px;
-	line-height: 1.3em;
-}
-
-.tech-second-section-subtitle,
-.tech-fourth-section-subtitle,
-.tech-fifth-section-subtitle {
-	font-size: 15px;
-  font-weight: 700;
-}
-
-.tech-second-section-line,
-.tech-fourth-section-line,
-.tech-fifth-section-line {
-	margin: 3vw 0px 3vw 0px;
-	height: 2.5px;
-	width: 100%;
-	clear: both;
+.tech-third-section-title,
+.tech-fourth-section-title {
+	font-size: 44px;
+	line-height: 1em;
+	margin-bottom: 1.756vw;
 }
 
 .tech-second-section-header-wrapper,
@@ -188,6 +185,7 @@
 
 .tech-fourth-section {
 	min-height: inherit !important;
+	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 }
 
 .tech-fourth-section-wrapper {
@@ -195,12 +193,14 @@
 }
 
 .tech-fourth-section-right-col {
-	width: 41%;
-	padding: 8vw 4.75vw 0px 7.7vw;
+	width: 59%;
+	padding-top: 11.46vw;
 }
 
 .tech-fourth-section-left-col {
-	width: 59%;
+	width: 41%;
+	text-align:center;
+	padding-top: 5.1vw;
 }
 
 .tech-fourth-section-ico-wrapper {
@@ -208,10 +208,6 @@
 	height: 5.16vw;
 	margin-right: 1.4vw;
 	float: left;
-}
-
-.tech-fourth-section-line {
-	background-color: #d1d0ce;
 }
 
 .tech-fourth-section-title-wrapper {
@@ -260,4 +256,12 @@
 .tech-first-section-block-paragraph,
 .tech-fourth-section-text {
 	font-size: 16px;
+}
+
+.tech-fourth-section-image-wrapper {
+	text-align: center;
+}
+
+.tech-fourth-section-image {
+	width: 76.2%;
 }
