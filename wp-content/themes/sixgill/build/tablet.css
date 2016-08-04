@@ -1,4 +1,4 @@
-@media (min-width: 500px) and (max-width: 1100px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1100px) {
+@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px) and (max-width: 1200px) {
 /* General tablet styles */
 
 .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid), .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide {
@@ -783,6 +783,12 @@ ul:not([class]) li {
   font-weight: 300;
 	line-height: 1em;
 	margin-bottom: 2vw;
+}
+
+.tech-first-section-block-subtitle {
+	font-size: 16px;
+  font-weight: 700;
+	margin-bottom: 1.21vw;
 }
 
 .tech-first-section-block-paragraph p {
