@@ -29,4 +29,3 @@ jQuery(function($) {
 		sectionSelector: fullpageSectionSelector
 	});
 });
-
