@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+<div
+	 id="fullpage-config"
+	 fullpage-section-selector="home-page-section"
+	 fullpage-navigation="true"
+></div>
+<a name="top"></a>
 <section id="slider" class="force-full-screen full-screen height-video-container home-page-section fp-auto-height">
 	<div class="force-full-screen full-screen dark section nopadding no-margin noborder ohidden height-video-container">
 		<div class="container clearfix">
@@ -12,7 +18,30 @@
 					</button>
 				</div>
 			</div>
+			<div class="slider-learn-more-link">
+				<a href="#what">
+					<div class="home-first-section-scroll-link-wrapper">
+						<div class="home-first-section-scroll-link-text">
+							Learn More
+						</div>
+						<div class="home-first-section-scroll-link-ico-wrapper">
+							<!-- <img
+								class="home-first-section-scroll-link-ico responsive-image"
+								desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+								tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+							/> -->
+							<img 
+							class="home-first-section-scroll-link-ico"
+							src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+							/>
+						</div>
+					</div>
+				</a>
+			</div>
 		</div>
+		
+
+
 		<div id="myVideo" class="video-wrap">
 			<video id="home-video" poster="<?php echo get_field('top_banner'); ?>" preload="none" loop autoplay muted>
 				<source src="<?php echo get_field('video_url'); ?>" type="video/mp4">

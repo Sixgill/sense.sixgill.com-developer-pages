@@ -13247,6 +13247,43 @@ input {
 	margin-right: 0px;
 }
 
+/*--video section----*/
+
+.slider-learn-more-link {
+    position: absolute;
+    top: calc(100vh - 85px);
+    width: 100%;
+}
+
+.home-first-section-scroll-link-wrapper {
+    cursor: pointer;
+    text-align: center;
+}
+
+.home-first-section-scroll-link-text {
+	font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+    text-shadow: -3.1px 3.9px 12px #000000;
+    color:#fff;
+}
+
+.home-first-section-scroll-link-text:hover {
+	color:#fff;
+	text-decoration: none;
+}
+
+.home-first-section-scroll-link-ico-wrapper {
+    display: inline-block;
+    height: 59px;
+    text-align: center;
+    width: 37px;
+}
+
+.home-first-section-scroll-link-ico {
+
+}
 /*----what section---*/
 
 #what {
