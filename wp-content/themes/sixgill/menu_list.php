@@ -16,7 +16,7 @@
 		"elementName" => "Solutions",
 		"link" => "/solutions/",
 		"sublinksList" => array(
-			array(
+			/*array(
 				"name" => "People",
 				"anchor" => "people"
 			),
@@ -27,7 +27,7 @@
 			array(
 				"name" => "Crowds",
 				"anchor" => "crowds"
-			)
+			)*/
 		),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded
@@ -55,7 +55,7 @@
 	$menu[] = array(
 		"elementName" => "Tech",
 		"link" => "/tech/",
-		"sublinksList" => array(
+		"sublinksList" => array(/*
 			array(
 				"name" => "Location",
 				"anchor" => "location"
@@ -67,7 +67,7 @@
 			array(
 				"name" => "Open Platform",
 				"anchor" => "openplatform"
-			)
+			)*/
 		),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded
@@ -77,7 +77,7 @@
 	$menu[] = array(
 		"elementName" => "Company",
 		"link" => "/company/",
-		"sublinksList" => array(
+		"sublinksList" => array(/*
 			array(
 				"name" => "The Company",
 				"anchor" => "company"
@@ -93,7 +93,7 @@
 			array(
 				"name" => "Press",
 				"anchor" => "press"
-			)
+			)*/
 		),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded
