@@ -14637,7 +14637,7 @@ input {
 
 .tech-first-section,
 .tech-first-section-block,
-.tech-third-section-wrapper,
+.tech-second-section-wrapper,
 .tech-fourth-section-wrapper,
 .tech-fifth-section-wrapper,
 .tech-fixed-panel,
@@ -14650,14 +14650,13 @@ input {
 }
 
 .tech-first-section-block,
-.tech-third-section-right-col,
+.tech-second-section-right-col,
 .tech-fourth-section-left-col,
 .tech-fifth-section-right-col,
 .tech-fixed-panel-col,
 .tech-fixed-panel-col-content,
 .tech-first-section-image-wrapper,
-.tech-first-section-block-text,
-.tech-second-section > div {
+.tech-first-section-block-text {
 	-ms-flex-item-align: center;
 	-webkit-align-self: center;
 	align-self: center;
@@ -14728,39 +14727,19 @@ input {
 	text-align: center;
 }
 
-.tech-second-section {
-	background-image: url('/wp-content/themes/sixgill/images/tech/single_dot.png');
-}
-
-.tech-second-section-image-wrapper {
-	width: 37.5vw;
-	margin-bottom: 2.5vw;
-}
-
-.tech-second-section-text {
-	width: 37.7vw;
-}
-
-.tech-second-section-image-wrapper,
-.tech-second-section-text {
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .tech-section {
 	min-height: 100vh;
 }
 
-.tech-first-section,
-.tech-second-section {
+.tech-first-section {
 	height: 100vh;
 }
 
-.tech-third-section {
+.tech-second-section {
 	min-height: inherit !important;
 }
 
-.tech-third-section-wrapper,
+.tech-second-section-wrapper,
 .tech-fourth-section-wrapper,
 .tech-fifth-section-wrapper {
 	height: auto;
@@ -14768,11 +14747,11 @@ input {
 	width: 100%;
 }
 
-.tech-third-section-wrapper {
-	background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_at2.png');
+.tech-second-section-wrapper {
+	background-image: url('/wp-content/themes/sixgill/images/tech/second_section_bg_at2.png');
 }
 
-.tech-third-section-content-wrapper,
+.tech-second-section-content-wrapper,
 .tech-fourth-section-content-wrapper,
 .tech-fifth-section-content-wrapper {
 	width: 77%;
@@ -14780,38 +14759,38 @@ input {
 	margin-right: auto;
 }
 
-.tech-third-section-left-col {
+.tech-second-section-left-col {
 	width: 34%;
 	padding-top: 6.5vw;
 }
 
-.tech-third-section-right-col,
+.tech-second-section-right-col,
 .tech-fifth-section-right-col {
 	width: 66%;
 }
 
-.tech-third-section-ico-wrapper {
+.tech-second-section-ico-wrapper {
 	width: 3.84vw;
 	height: 5.16vw;
 	margin-right: 1.4vw;
 	float: left;
 }
 
-.tech-third-section-title,
+.tech-second-section-title,
 .tech-fourth-section-title,
 .tech-fifth-section-title {
   font-size: 44px;
 	line-height: 1.3em;
 }
 
-.tech-third-section-subtitle,
+.tech-second-section-subtitle,
 .tech-fourth-section-subtitle,
 .tech-fifth-section-subtitle {
 	font-size: 15px;
   font-weight: 700;
 }
 
-.tech-third-section-line,
+.tech-second-section-line,
 .tech-fourth-section-line,
 .tech-fifth-section-line {
 	margin: 3vw 0px 3vw 0px;
@@ -14820,8 +14799,8 @@ input {
 	clear: both;
 }
 
-.tech-third-section-header-wrapper,
-.tech-third-section-title-wrapper,
+.tech-second-section-header-wrapper,
+.tech-second-section-title-wrapper,
 .tech-fourth-section-ico-wrapper,
 .tech-fourth-section-header-wrapper,
 .tech-fifth-section-header-wrapper,
@@ -14829,11 +14808,11 @@ input {
 .tech-fifth-section-ico-wrapper,
 .tech-fifth-section-title-wrapper,
 .tech-first-section-scroll-link-ico-wrapper,
-.tech-third-section-ico-wrapper {
+.tech-second-section-ico-wrapper {
 	display: inline-block;
 }
 
-.tech-third-section-title-wrapper {
+.tech-second-section-title-wrapper {
 	float: left;
 }
 
@@ -14870,8 +14849,7 @@ input {
 }
 
 .tech-fourth-section-text,
-.tech-first-section-block-paragraph,
-.tech-second-section-text {
+.tech-first-section-block-paragraph {
   font-weight: 400;
 }
 
@@ -14902,15 +14880,14 @@ input {
 .tech-fifth-section-text,
 .tech-fifth-section-text p,
 .tech-fifth-section-text li,
-.tech-third-section-text,
-.tech-third-section-text p,
-.tech-third-section-text li {
+.tech-second-section-text,
+.tech-second-section-text p,
+.tech-second-section-text li {
 	font-size: 16px;
   font-weight: 500;
 }
 
 .tech-first-section-block-paragraph,
-.tech-second-section-text,
 .tech-fourth-section-text {
 	font-size: 16px;
 }

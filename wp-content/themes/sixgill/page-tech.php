@@ -46,4 +46,30 @@
 		</div>
 	</div>
 
+	<a name="products-second-section"></a>
+	<div id="products-second-section" class="products-section products-second-section">
+		<div class="products-second-section-wrapper">
+			<div class="products-second-section-left-col">
+				<div class="products-second-section-image-wrapper">
+					<img
+						class="products-second-section-image responsive-image"
+						desktop-src="<?php echo get_field('second_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('second_section_image_tablet'); ?>"
+						mobile-src="<?php echo get_field('second_section_image_mobile'); ?>"
+					>
+				</div>
+			</div>
+			<div class="products-second-section-right-col">
+				<div class="products-second-section-content-wrapper">
+					<div class="products-second-section-title">
+						<?php echo get_field('second_section_title'); ?>
+					</div>
+					<div class="products-second-section-text">
+						<?php echo get_field('second_section_text'); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<?php get_footer(); ?>
