@@ -16,6 +16,7 @@
 .solution-subpage-title {
 	font-size: 18px;
 	font-weight: 300;
+	font-family: "Lato Light";
 	letter-spacing: 0.5px;
 }
 
@@ -87,6 +88,7 @@
 .solution-subpage-last-block-title{
 	font-size: 28.4px;
 	font-weight: 300;
+	font-family: "Lato Light";
 	line-height: 0.71;
 	letter-spacing: 0.9px;
 }
@@ -119,6 +121,7 @@ ul:not([class]) li {
 .solution-subpage-section-title {
 	font-size: 28px;
 	font-weight: 300;
+	font-family: "Lato Light";
 	letter-spacing: 0.9px;
 }
 
