@@ -18,6 +18,15 @@ gulp.task('watch', function () {
             remember.forget('scripts', file.path);
         }
     });
+    // var watcher_css = gulp.watch('./css/**/*.css', ['styles']);
+    // watcher_css.on('change', function (file) {
+    //     livereload.changed(file.path);
+    //     gutil.log(gutil.colors.yellow('CSS changed' + ' (' + file.path + ')'));
+    //     if (file.type === 'deleted') { // if a file is deleted, forget about it
+    //         delete cache.caches['styles'][file.path];
+    //         remember.forget('styles', file.path);
+    //     }
+    // });
 
     gulp.watch('./css/**/*.css', ['styles']).on('change', function(file) {
         livereload.changed(file.path);

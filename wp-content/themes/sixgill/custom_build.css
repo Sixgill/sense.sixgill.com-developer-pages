@@ -13299,6 +13299,7 @@ input {
     text-align: center;
     text-shadow: -3.1px 3.9px 12px #000000;
     color:#fff;
+    text-decoration: none;
 }
 
 .home-first-section-scroll-link-text:hover {
@@ -13472,12 +13473,20 @@ input {
 	position: absolute;
 	left: -42px;
 	top:50%;
+	background-image: url('/wp-content/themes/sixgill/images/4-Home/carousel_left.svg');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 30.5px;
 }
 
 .home-block-solutions-carousel-theme .owl-buttons .owl-next{	
 	position: absolute;
 	right: -42px;
 	top:50%;
+	background-image: url('/wp-content/themes/sixgill/images/4-Home/carousel_right.svg');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 30.5px;
 }
 
 .home-block-solutions-carousel-theme .home-block-solutions-carousel-slide {
@@ -13534,9 +13543,9 @@ input {
 
 .home-block-solutions-carousel-theme .carousel-text-content {
 	display: inline-block;
-    margin-bottom: 20px;
-    max-height: 15em;
-    overflow: hidden;
+	margin-bottom: 10px;
+	max-height: 15.5em;
+	overflow: hidden;
 }
 
 .home-block-solutions-carousel-theme .carousel-text-content p {
@@ -13558,7 +13567,7 @@ input {
 	line-height: 1.33;
 	letter-spacing: 1px;
 	color: #0051c6;
-	margin: 20px 22px 35px 22px;
+	margin: 0 22px;
 }
 
 
