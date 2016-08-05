@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     map = require('map-stream'),
     plumber = require('gulp-plumber'),
     // autoprefixer = require('gulp-autoprefixer'),
-    minifyCSS = require('gulp-minify-css'),
+    cleanCSS = require('gulp-clean-css'),
     notify = require('gulp-notify'),
     less = require('gulp-less');
 
@@ -52,7 +52,7 @@ gulp.task('styles', function() {
         //     browsers: ['last 5 versions'],
         //     cascade: false
         // }))
-    // .pipe(minifyCSS()) TODO: add for deploy
+        .pipe(cleanCSS())// TODO: add for deploy
         .pipe(concat('custom_build.css'))
         .pipe(gulp.dest('./'))
 });
