@@ -117,6 +117,10 @@
 	height: 100%;
 }
 
+.full-screen-height {
+	height: 100vh;
+}
+
 .max-width-500 {
 	max-width: 500px;
 }
