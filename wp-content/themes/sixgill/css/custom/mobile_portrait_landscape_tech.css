@@ -79,20 +79,22 @@
 
 .tech-second-section-wrapper {
 	width: 100%;
-	padding: 12vw 6.25vw 12 6.25vw;
+	padding: 12vw 6.25vw 12vw 6.25vw;
 }
 
 .tech-second-section-title {
 	font-family: "Lato Light";
   font-size: 8.22vw;
+	line-height: 1em;
   font-weight: 300;
-	margin: 0px 6.25vw 10.3vw 6.25vw;
+	padding-bottom: 10.3vw;
 	width: 100%;
 	text-align: left;
+	color: #0051c6;
 }
 
 .tech-second-section-right-col {
-	margin-bottom: calc()
+	margin-bottom: calc();
 }
 
 .tech-second-section-image,
@@ -102,7 +104,6 @@
 }
 
 .tech-second-section-text,
-.tech-third-section-text,
 .tech-fourth-section-text {
 	margin-left: auto;
 	margin-right: auto;
@@ -110,7 +111,12 @@
 }
 
 .tech-third-section {
-	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
+	background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_mobile.png');
+}
+
+.tech-third-section-wrapper {
+	width: 100%;
+	padding: 13vw 5.31vw 13vw 5.31vw;
 }
 
 .tech-third-section-wrapper,
@@ -121,16 +127,11 @@
 	width: 100%;
 }
 
-.tech-third-section-wrapper {
-	background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_at2.png');
-}
-
 .tech-third-section-subtitle,
 .tech-fourth-section-subtitle {
 	font-size: 4.56vw;
   font-weight: 700;
 	line-height: 2em;
-	width: 88.75vw
 	margin: auto;
 }
 
@@ -141,10 +142,10 @@
 
 .tech-third-section-title,
 .tech-fourth-section-title {
-  font-size: 11vw;
+  font-size: 9vw;
 	line-height: 1.25em;
 	width: 100%;
-	text-align: center;
+	text-align: left;
 }
 
 .tech-third-section-line,

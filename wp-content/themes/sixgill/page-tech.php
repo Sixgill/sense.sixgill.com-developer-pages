@@ -68,13 +68,14 @@
 				</div>
 			</div>
 
-			<div class="tech-second-section-image-wrapper-mobile no-desktop-display">
-				<img
-					class="tech-second-section-image responsive-image"
-					tablet-src="<?php echo get_field('second_section_image_tablet'); ?>"
-					mobile-src="<?php echo get_field('second_section_image_mobile'); ?>"
-				>
-			</div>
+
+		</div>
+		<div class="tech-second-section-image-wrapper-mobile no-desktop-display">
+			<img
+				class="tech-second-section-image responsive-image"
+				tablet-src="<?php echo get_field('second_section_image_tablet'); ?>"
+				mobile-src="<?php echo get_field('second_section_image_mobile'); ?>"
+			>
 		</div>
 	</div>
 
