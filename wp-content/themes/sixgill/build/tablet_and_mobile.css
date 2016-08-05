@@ -1,4 +1,4 @@
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
 /* Portrait tablets & mobiles */
 #header {
 	position: fixed;
@@ -64,11 +64,6 @@
 a.search-post-result {
 	font-weight: 700;
 	letter-spacing: 1px;
-}
-
-.home-video-text-h1 {
-	font-size: 24px;
-	font-weight: normal;
 }
 
 .homeSupTit-with-line {

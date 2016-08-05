@@ -70,6 +70,7 @@
   font-weight: 300;
 	line-height: 1em;
 	margin-bottom: 2vw;
+	font-family: "Lato Light";
 }
 
 .products-first-section-block-paragraph p {
@@ -147,6 +148,10 @@
 	margin-right: auto;
 }
 
+.products-fourth-section-content-wrapper {
+	margin-top: 6vw;
+}
+
 .products-third-section-left-col {
 	width: 34%;
 	padding-top: 6.5vw;
@@ -215,6 +220,15 @@
 .products-fourth-section-right-col {
 	width: 41%;
 	padding: 8vw 4.75vw 0px 7.7vw;
+
+	-ms-flex-item-align: flex-end;
+	flex-item-align: flex-end;
+	-webkit-align-self: flex-end;
+	align-self: flex-end;
+}
+
+.products-fourth-section-image-wrapper {
+	margin-bottom: -1px;
 }
 
 .products-fourth-section-left-col {
@@ -284,6 +298,7 @@
 .products-last-section-title {
 	font-size: 45px;
   font-weight: 300;
+	font-family: "Lato Light";
   text-align: center;
 	margin: 4.6vw 0px 5vw 0px;
 	line-height: 1em;

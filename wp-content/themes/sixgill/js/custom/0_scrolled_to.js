@@ -16,6 +16,7 @@ jQuery(function($) {
   }
 
   function checkElemVisibility(callbackInfo) {
+		if(!callbackInfo.domLink.position()) return;
     if(
       $(window).scrollTop()>=callbackInfo.domLink.position().top
       &&

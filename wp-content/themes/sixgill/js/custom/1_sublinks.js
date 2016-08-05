@@ -11,10 +11,14 @@ jQuery(function($) {
 	$('.menu-sublink').each(function() {
 		var link = $(this);
 		var selector = $(this).attr('href');
+		var selectedSection = $(selector);
+		if(!selectedSection.length) {
+			return;
+		}
 		console.log(selector);
 		var currentSublink = new SubsectionLinkInfo(
 			link,
-			$(selector),
+			selectedSection,
 			selector
 		);
 
