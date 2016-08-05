@@ -338,11 +338,11 @@
 	margin:51px auto 0;
 }
 
-.home-block-solutions-carousel-theme .owl-buttons .owl-prev{
+.home-block-solutions-carousel-theme .owl-buttons .owl-prev{	
 	left: -35px;
 }
 
-.home-block-solutions-carousel-theme .owl-buttons .owl-next{
+.home-block-solutions-carousel-theme .owl-buttons .owl-next{	
 	right: -35px;
 }
 
@@ -728,7 +728,7 @@ ul:not([class]) li {
   font-weight: 300;
 	margin: 0px 6.25vw 10.3vw 6.25vw;
 	width: 100%;
-	text-align: justify;
+	text-align: left;
 }
 
 .tech-second-section-right-col {
