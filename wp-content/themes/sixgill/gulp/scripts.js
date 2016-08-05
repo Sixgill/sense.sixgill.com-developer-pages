@@ -24,7 +24,7 @@ gulp.task('scripts', function() {
 
 //*Description*//
 gulp.task('scripts:fast', function() {
-    return gulp.src(['./js/**/*.js',  '!js/**/*.min.js'])
+    return gulp.src('./js/**/*.js')
         .pipe(concat('custom_build.js'))
         .pipe(gulp.dest('./'))
 });
