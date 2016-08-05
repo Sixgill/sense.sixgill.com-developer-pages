@@ -1,5 +1,4 @@
 jQuery(function($){
-	console.log('responsiveImages.js');
   var responsiveImages = [],
       responsiveBackgrounds = [],
       desktopSrcAttrName = 'desktop-src',
@@ -32,12 +31,10 @@ jQuery(function($){
       'mobile-portrait': mobilePortraitSrc,
       'mobile-landscape': mobileLandscapeSrc
     }
-		console.log(this);
   }
 
   $('.responsive-image').each(function(){
       responsiveImages.push(new ResponsiveImage(this));
-			console.log('new responsiveImage');
   });
 
   $('.responsive-background').each(function(){
