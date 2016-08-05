@@ -9,6 +9,7 @@
 
 .subscribe-email-focus::-moz-placeholder {
 	font-size: 0px;
+	font: 9999999px;
 }
 
 .subscribe-email-focus:-ms-input-placeholder {
