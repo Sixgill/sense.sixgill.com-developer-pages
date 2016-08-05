@@ -3,7 +3,7 @@
 
 	<a name="top"></a>
 	<a
-		href="#second-section"
+		href="#tech-second-section"
 		class="tech-learn-more-link"
 	>
 		<div class="tech-first-section-scroll-link-wrapper">
@@ -54,8 +54,6 @@
 					<img
 						class="tech-second-section-image responsive-image"
 						desktop-src="<?php echo get_field('second_section_image_desktop'); ?>"
-						tablet-src="<?php echo get_field('second_section_image_tablet'); ?>"
-						mobile-src="<?php echo get_field('second_section_image_mobile'); ?>"
 					>
 				</div>
 			</div>
@@ -68,6 +66,14 @@
 						<?php echo get_field('second_section_text'); ?>
 					</div>
 				</div>
+			</div>
+
+			<div class="tech-second-section-image-wrapper-mobile no-desktop-display">
+				<img
+					class="tech-second-section-image responsive-image"
+					tablet-src="<?php echo get_field('second_section_image_tablet'); ?>"
+					mobile-src="<?php echo get_field('second_section_image_mobile'); ?>"
+				>
 			</div>
 		</div>
 	</div>

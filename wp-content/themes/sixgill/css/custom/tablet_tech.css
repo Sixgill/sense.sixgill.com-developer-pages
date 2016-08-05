@@ -13,9 +13,7 @@
 .tech-first-section-block,
 .tech-third-section-wrapper,
 .tech-fourth-section-wrapper,
-.tech-fifth-section-wrapper,
 .tech-third-section-left-col,
-.tech-fifth-section-left-col,
 .tech-last-section-left-col,
 .tech-fixed-panel,
 .tech-fixed-panel-col {
@@ -39,10 +37,7 @@
 
 .tech-first-section-block,
 .tech-third-section-right-col,
-.tech-fourth-section-left-col,
-.tech-fifth-section-right-col,
 .tech-third-section-left-col,
-.tech-fifth-section-left-col,
 .tech-last-section-left-col,
 .tech-fixed-panel-col,
 .tech-fixed-panel-col-content  {
@@ -50,6 +45,13 @@
 	-webkit-align-self: center;
 	align-self: center;
 }
+
+.tech-fourth-section-left-col {
+	-ms-flex-item-align: end;
+	-webkit-align-self: flex-end;
+	align-self: flex-end;
+}
+
 
 
 .tech-first-section {
@@ -115,7 +117,7 @@
 }
 
 .tech-second-section {
-	background-image: url('/wp-content/themes/sixgill/images/tech/single_dot.png');
+	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 }
 
 .tech-second-section-image-wrapper {
@@ -123,8 +125,24 @@
 	margin-bottom: 2.5vw;
 }
 
+.tech-second-section-title {
+	font-size: 4.56vw;
+	line-height: 1em;
+  font-weight: 300;
+	font-family: "Lato Light";
+	width: 100%;
+  text-align: center;
+  color: #0051c6;
+	margin-bottom: 4.62vw;
+}
+
+.tech-second-section-image-wrapper-mobile {
+	width: 100%;
+	text-align: center;
+}
+
 .tech-second-section-text {
-	width: 67%;
+	width: 92.7%;
 }
 
 .tech-second-section-image-wrapper,
@@ -147,8 +165,7 @@
 }
 
 .tech-third-section-wrapper,
-.tech-fourth-section-wrapper,
-.tech-fifth-section-wrapper {
+.tech-fourth-section-wrapper {
 	flex-align: end;
 	-webkit-align-items: flex-end;
   align-items: flex-end;
@@ -158,35 +175,29 @@
 	width: 100%;
 }
 
-.tech-third-section-wrapper {
-	background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_at2.png');
-}
-
-.tech-third-section-content-wrapper,
-.tech-fifth-section-content-wrapper {
-	width: 77%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 3vw;
+.tech-third-section {
+	background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_tablet.png');
 }
 
 .tech-third-section-content-wrapper {
-	width: 80%;
+	width: 100%;
+	padding: 8vw 3.45vw 8vw 3.45vw;
 }
 
 .tech-third-section-title {
 	font-size: 35px;
+	line-height: 1em;
   font-weight: 300;
 	font-family: "Lato Light";
   color: #2adc3a;
+	margin-bottom: 4.5vw;
 }
 
 .tech-third-section-left-col {
-	width: 34%;
+	width: 100%;
 }
 
-.tech-third-section-right-col,
-.tech-fifth-section-right-col {
+.tech-third-section-right-col {
 	width: 66%;
 }
 
@@ -198,8 +209,7 @@
 }
 
 .tech-third-section-title,
-.tech-fourth-section-title,
-.tech-fifth-section-title {
+.tech-fourth-section-title {
 	font-size: 4.57vw;
   font-weight: 300;
 	font-family: "Lato Light";
@@ -207,15 +217,13 @@
 }
 
 .tech-third-section-subtitle,
-.tech-fourth-section-subtitle,
-.tech-fifth-section-subtitle {
+.tech-fourth-section-subtitle {
 	font-size: 1.9vw;
   font-weight: 700;
 }
 
 .tech-third-section-line,
-.tech-fourth-section-line,
-.tech-fifth-section-line {
+.tech-fourth-section-line {
 	margin: 3vw 0px 3vw 0px;
 	height: 2.5px;
 	width: 100%;
@@ -230,10 +238,7 @@
 .tech-third-section-title-wrapper,
 .tech-fourth-section-ico-wrapper,
 .tech-fourth-section-header-wrapper,
-.tech-fifth-section-header-wrapper,
 .tech-fourth-section-title-wrapper,
-.tech-fifth-section-ico-wrapper,
-.tech-fifth-section-title-wrapper,
 .tech-first-section-scroll-link-ico-wrapper,
 .tech-third-section-ico-wrapper {
 	display: inline-block;
@@ -248,21 +253,24 @@
 }
 
 .tech-fourth-section-wrapper {
-	padding-top: 7.88vw;
-	background-image: url('/wp-content/themes/sixgill/images/tech/fourth_section_bg_at2.png');
+	padding-top: 8.2vw;
+	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 }
 
 .tech-fourth-section-right-col {
-	padding-left: 7.1vw;
+	width: 47%;
+	padding-right: 3.4vw;
+	text-align: left;
 }
 
 .tech-fourth-section-image-wrapper {
-	width: 29.3vw;
+	width: 84.65%;
+	display: inline-block;
 }
 
 .tech-fourth-section-left-col {
-	width: 56.25%;
-	margin-left: 3.65vw;
+	width: 52.6%;
+	text-align: center;
 }
 
 .tech-fourth-section-ico-wrapper {
@@ -286,32 +294,6 @@
   font-weight: 400;
 }
 
-.tech-fifth-section {
-	min-height: inherit !important;
-}
-
-.tech-fifth-section-wrapper {
-	background-image: url('/wp-content/themes/sixgill/images/tech/fifth_section_bg_at2.png');
-}
-
-.tech-fifth-section-left-col {
-	width: 34%;
-}
-
-.tech-fifth-section-ico-wrapper {
-	width: 6.05vw;
-	height: 10.813vw;
-	margin-right: 1.4vw;
-	float: left;
-}
-
-.tech-fifth-section-title-wrapper {
-	float: left;
-}
-
-.tech-fifth-section-text,
-.tech-fifth-section-text p,
-.tech-fifth-section-text li,
 .tech-third-section-text,
 .tech-third-section-text p,
 .tech-third-section-text li {
@@ -327,4 +309,5 @@
 .tech-second-section-text,
 .tech-fourth-section-text {
 	font-size: 16px;
+	font-size: 9000px;
 }

@@ -74,32 +74,47 @@
 }
 
 .tech-second-section {
-	background-image: url('/wp-content/themes/sixgill/images/tech/single_dot.png');
-	padding-top: 12vw;
+	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 }
 
+.tech-second-section-wrapper {
+	width: 100%;
+	padding: 12vw 6.25vw 12 6.25vw;
+}
+
+.tech-second-section-title {
+	font-family: "Lato Light";
+  font-size: 8.22vw;
+  font-weight: 300;
+	margin: 0px 6.25vw 10.3vw 6.25vw;
+	width: 100%;
+	text-align: left;
+}
+
+.tech-second-section-right-col {
+	margin-bottom: calc()
+}
+
+.tech-second-section-image,
 .tech-second-section-image-wrapper {
-	width: 81.1vw;
-	margin-bottom: 12.8vw;
+	max-width: none;
+	width: 100%;
 }
 
-.tech-second-section-image-wrapper,
 .tech-second-section-text,
 .tech-third-section-text,
-.tech-fourth-section-text,
-.tech-fifth-section-text {
+.tech-fourth-section-text {
 	margin-left: auto;
 	margin-right: auto;
 	width: 88.75vw;
 }
 
 .tech-third-section {
-	min-height: inherit !important;
+	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 }
 
 .tech-third-section-wrapper,
-.tech-fourth-section-wrapper,
-.tech-fifth-section-wrapper {
+.tech-fourth-section-wrapper {
   align-items: flex-flex;
 	height: auto;
 	max-height: none;
@@ -111,8 +126,7 @@
 }
 
 .tech-third-section-subtitle,
-.tech-fourth-section-subtitle,
-.tech-fifth-section-subtitle {
+.tech-fourth-section-subtitle {
 	font-size: 4.56vw;
   font-weight: 700;
 	line-height: 2em;
@@ -126,8 +140,7 @@
 }
 
 .tech-third-section-title,
-.tech-fourth-section-title,
-.tech-fifth-section-title {
+.tech-fourth-section-title {
   font-size: 11vw;
 	line-height: 1.25em;
 	width: 100%;
@@ -135,8 +148,7 @@
 }
 
 .tech-third-section-line,
-.tech-fourth-section-line,
-.tech-fifth-section-line {
+.tech-fourth-section-line {
 	margin: 3vw 0px 3vw 0px;
 	height: 2.5px;
 	width: 88.75vw;
@@ -147,8 +159,7 @@
 }
 
 .tech-third-section-header-wrapper,
-.tech-fourth-section-header-wrapper,
-.tech-fifth-section-header-wrapper {
+.tech-fourth-section-header-wrapper {
 	text-align: center;
 	padding-top: 12.34vw;
 }
@@ -157,18 +168,14 @@
 .tech-third-section-header-wrapper,
 .tech-third-section-title-wrapper,
 .tech-fourth-section-header-wrapper,
-.tech-fifth-section-header-wrapper,
 .tech-fourth-section-title-wrapper,
-.tech-fifth-section-title-wrapper,
 .tech-third-section-ico-wrapper,
-.tech-fourth-section-ico-wrapper,
-.tech-fifth-section-ico-wrapper {
+.tech-fourth-section-ico-wrapper {
 	display: inline-block;
 }
 
 .tech-third-section-title-wrapper,
-.tech-fourth-section-title-wrapper,
-.tech-fifth-section-title-wrapper {
+.tech-fourth-section-title-wrapper {
 	width: 100%;
 	padding-left: 5.6vw;
 	padding-right: 5.6vw;
@@ -202,23 +209,6 @@
   font-weight: 400;
 }
 
-.tech-fifth-section {
-	min-height: inherit !important;
-}
-
-.tech-fifth-section-wrapper {
-	background-image: url('/wp-content/themes/sixgill/images/tech/fifth_section_bg_at2.png');
-}
-
-.tech-fifth-section-left-col {
-	padding-top: 6.5vw;
-}
-
-.tech-fifth-section-ico-wrapper {
-	width: 12.5vw;
-	height: 13.59vw;
-}
-
 .tech-third-section-text li {
 	margin-bottom: 1em !important;
 }
@@ -237,10 +227,7 @@
 .tech-third-section-text li,
 .tech-fourth-section-text,
 .tech-fourth-section-text li,
-.tech-fourth-section-text p,
-.tech-fifth-section-text,
-.tech-fifth-section-text li,
-.tech-fifth-section-text p {
+.tech-fourth-section-text p {
 	font-size: 4.97vw;
 	font-weight: 400;
 }
