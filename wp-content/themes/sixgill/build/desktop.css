@@ -751,7 +751,6 @@
 
 .tech-first-section-block,
 .tech-second-section-right-col,
-.tech-fourth-section-left-col,
 .tech-first-section-image-wrapper,
 .tech-first-section-block-text,
 .tech-third-section-wrapper {
@@ -760,6 +759,11 @@
 	align-self: center;
 }
 
+.tech-fourth-section-left-col {
+	-ms-flex-item-align: end;
+	-webkit-align-self: flex-end;
+	align-self: flex-end;
+}
 
 .tech-first-section {
 	-ms-flex-pack: end;
