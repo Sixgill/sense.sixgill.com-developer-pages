@@ -1,6 +1,5 @@
 <?php
 
-	//include(locate_template('builder.php'));
 	function sixgill_custom_stylesheets() {
 		if ( ! is_admin() ) {
 			wp_enqueue_style( 'sixgill_custom_styles', get_template_directory_uri() . '/custom_build.css', array(), "220820164");
