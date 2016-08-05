@@ -8,7 +8,9 @@ var gulp = require('gulp'),
     // autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
     notify = require('gulp-notify'),
-    less = require('gulp-less');
+    less = require('gulp-less'),
+    cache = require('gulp-cached'),
+    remember = require('gulp-remember');
 
 var objects = require('./objects')
 var paths = require('./paths')
@@ -42,6 +44,7 @@ gulp.task('wrap_it', function(callback) {
 gulp.task('styles', function() {
     var buildings = paths.path.builds.values
     return gulp.src(buildings)
+        .pipe(cache('styles'))
         // ffu: catch less errors
         // .pipe(plumber())
         // .pipe(less())
@@ -52,7 +55,8 @@ gulp.task('styles', function() {
         //     browsers: ['last 5 versions'],
         //     cascade: false
         // }))
-        .pipe(cleanCSS())// TODO: add for deploy
+        .pipe(cleanCSS())
+        .pipe(remember('styles'))
         .pipe(concat('custom_build.css'))
         .pipe(gulp.dest('./'))
 });
