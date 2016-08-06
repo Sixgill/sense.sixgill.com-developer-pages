@@ -10,11 +10,20 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     less = require('gulp-less'),
     cache = require('gulp-cached'),
-    remember = require('gulp-remember');
+    remember = require('gulp-remember'),
+    less = require('gulp-less');
 
-var objects = require('./objects')
-var paths = require('./paths')
+var objects = require('./objects');
+var paths = require('./paths');
 
+gulp.task('less', function () {
+  var lessSource = paths.path.less.source,
+      lessDest = paths.path.less.dest;
+
+  return gulp.src(lessSource)
+    .pipe(less())
+    .pipe(gulp.dest(lessDest));
+});
 
 gulp.task('wrap_it', function(callback) {
     var object = objects.object.wrapper

@@ -1,17 +1,32 @@
 /**
  *
  */
+
+var pagesList = [
+  'general',
+  'menu',
+  'footer',
+  'blog',
+  'company',
+  'home',
+  'solutions',
+  'resources',
+  'tech',
+  'press',
+  'legal',
+  'products'
+];
+
 exports.path = {
     base: {
         wrapper: null,
         values: [
-            "./css/custom/fonts.css",
+            "./css/google_fonts.css",
             "./css/bootstrap.min.css",
             "./css/owl.carousel.css",
             "./css/owl.theme.css",
             "./css/owl.transition.css",
             "./style.css",
-            "./css/swiper.css",
             "./css/font-icons.css",
             "./css/animate.css",
             "./css/magnific-popup.css",
@@ -23,119 +38,41 @@ exports.path = {
     },
     all: {
         wrapper: null,
-        values: [
-            "./css/custom/all_general.css",
-            "./css/custom/all_menu.css",
-            "./css/custom/all_footer.css",
-            "./css/custom/all_blog.css",
-            "./css/custom/all_company.css",
-            "./css/custom/all_home.css",
-            "./css/custom/all_solutions.css",
-            "./css/custom/all_resources.css",
-            "./css/custom/all_tech.css",
-            "./css/custom/all_press.css",
-            "./css/custom/all_legal.css",
-            "./css/custom/all_products.css",
-        ]
+        values: []
     },
     desktop: {
         wrapper: "@media only screen and (min-width: 1201px) {",
-        values: [
-            "./css/custom/desktop_general.css",
-            "./css/custom/desktop_menu.css",
-            "./css/custom/desktop_footer.css",
-            "./css/custom/desktop_blog.css",
-            "./css/custom/desktop_company.css",
-            "./css/custom/desktop_home.css",
-            "./css/custom/desktop_solutions.css",
-            "./css/custom/desktop_resources.css",
-            "./css/custom/desktop_tech.css",
-            "./css/custom/desktop_press.css",
-            "./css/custom/desktop_legal.css",
-            "./css/custom/desktop_products.css",
-        ]
+        values: []
     },
     tablet: {
         wrapper: "@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px)" +
         " and (max-width: 1200px) {",
-        values: [
-            "./css/custom/tablet_general.css",
-            "./css/custom/tablet_menu.css",
-            "./css/custom/tablet_footer.css",
-            "./css/custom/tablet_blog.css",
-            "./css/custom/tablet_company.css",
-            "./css/custom/tablet_home.css",
-            "./css/custom/tablet_solutions.css",
-            "./css/custom/tablet_resources.css",
-            "./css/custom/tablet_tech.css",
-            "./css/custom/tablet_press.css",
-            "./css/custom/tablet_legal.css",
-            "./css/custom/tablet_products.css",
-        ]
+        values: []
     },
     mobile_portrait: {
         wrapper: "@media (max-width: 500px) and (max-aspect-ratio: 4/3) {",
-        values: [
-            "./css/custom/mobile_portrait_general.css",
-            "./css/custom/mobile_portrait_menu.css",
-            "./css/custom/mobile_portrait_footer.css",
-            "./css/custom/mobile_portrait_blog.css",
-            "./css/custom/mobile_portrait_company.css",
-            "./css/custom/mobile_portrait_home.css",
-            "./css/custom/mobile_portrait_solutions.css",
-            "./css/custom/mobile_portrait_resources.css",
-            "./css/custom/mobile_portrait_tech.css",
-            "./css/custom/mobile_portrait_press.css",
-            "./css/custom/mobile_portrait_legal.css",
-            "./css/custom/mobile_portrait_products.css",
-        ]
+        values: []
     },
     mobile_landscape: {
         wrapper: "@media (max-width: 1000px) and (min-aspect-ratio: 4/3) {",
-        values: [
-            "./css/custom/mobile_landscape_general.css",
-            "./css/custom/mobile_landscape_menu.css",
-            "./css/custom/mobile_landscape_footer.css",
-            "./css/custom/mobile_landscape_blog.css",
-            "./css/custom/mobile_landscape_company.css",
-            "./css/custom/mobile_landscape_home.css",
-            "./css/custom/mobile_landscape_solutions.css",
-            "./css/custom/mobile_landscape_resources.css",
-            "./css/custom/mobile_landscape_tech.css",
-            "./css/custom/mobile_landscape_press.css",
-            "./css/custom/mobile_landscape_legal.css",
-            "./css/custom/mobile_landscape_products.css",
-        ]
+        values: []
     },
     mobile_portrait_landscape: {
         wrapper: "@media (max-width: 1000px) and (min-aspect-ratio: 4/3), (max-width: 500px) and " +
         "(max-aspect-ratio: 4/3) {",
-        values: [
-            "./css/custom/mobile_portrait_landscape_general.css",
-            "./css/custom/mobile_portrait_landscape_menu.css",
-            "./css/custom/mobile_portrait_landscape_footer.css",
-            "./css/custom/mobile_portrait_landscape_blog.css",
-            "./css/custom/mobile_portrait_landscape_company.css",
-            "./css/custom/mobile_portrait_landscape_home.css",
-            "./css/custom/mobile_portrait_landscape_solutions.css",
-            "./css/custom/mobile_portrait_landscape_resources.css",
-            "./css/custom/mobile_portrait_landscape_tech.css",
-            "./css/custom/mobile_portrait_landscape_press.css",
-            "./css/custom/mobile_portrait_landscape_legal.css",
-            "./css/custom/mobile_portrait_landscape_products.css",
-        ]
+        values: []
     },
     tablet_and_mobile: {
         wrapper: "@media (max-width: 1200px) {",
         values: [
-            "./css/custom/tablet_and_mobile.css",
+            "./css/less_compiled/tablet_and_mobile.css",
         ]
     },
     tail_styles: {
         wrapper: null,
         values: [
-            "./css/custom/custom_resolutions.css",
-            "./css/custom/atomic.css",
+            "./css/less_compiled/custom_resolutions.css",
+            "./css/less_compiled/atomic.css",
         ]
     },
     builds: {
@@ -152,6 +89,18 @@ exports.path = {
             './build/tail_styles.css',
         ]
     },
+    less: {
+      source: './less/*.less',
+      dest: './css/less_compiled/'
+    },
+    watcher: {
+      styles: [
+        './less/*.less',
+        './css/*.css',
+        './style.css'
+      ],
+      scripts: './js/**/*.js'
+    }
     // Add new exports
     // all: {
     //     wrapper: null,
@@ -160,3 +109,12 @@ exports.path = {
     //     ]
     // },
 }
+
+pagesList.forEach(function(pageName) {
+  exports.path.all.values.push('./css/less_compiled/all_' + pageName + '.css');
+  exports.path.desktop.values.push('./css/less_compiled/desktop_' + pageName + '.css');
+  exports.path.tablet.values.push('./css/less_compiled/tablet_' + pageName + '.css');
+  exports.path.mobile_portrait.values.push('./css/less_compiled/mobile_portrait_' + pageName + '.css');
+  exports.path.mobile_landscape.values.push('./css/less_compiled/mobile_landscape_' + pageName + '.css');
+  exports.path.mobile_portrait_landscape.values.push('./css/less_compiled/mobile_portrait_landscape_' + pageName + '.css');
+})
