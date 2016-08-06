@@ -1,0 +1,43 @@
+/* Blog Mobile landscape styles */
+#aside-blog {
+  display: none;
+}
+.shareIcons-mobile {
+  display: block;
+}
+.post-blog {
+  margin-top: 0px;
+}
+.subscribe-block-tablet-mobile {
+  padding: 40px 15px 20px 5px;
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+.subscribe-input-container {
+  overflow: hidden;
+  width: 100%;
+  padding-right: 0px;
+}
+.subscribe-email {
+  height: 49px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  width: 280px;
+}
+.subscribe-input-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.subscribe-email {
+  width: 100%;
+}
+.shareButton-blog {
+  margin-bottom: 10px;
+  height: 35px;
+}
+#aside-blog {
+  margin-top: 125px;
+}
