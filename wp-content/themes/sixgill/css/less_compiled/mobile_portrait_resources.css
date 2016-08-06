@@ -1,0 +1,9 @@
+/* Resources mobile portrait styles */
+.resource-block {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.resources-blocks-container {
+  width: 94%;
+}

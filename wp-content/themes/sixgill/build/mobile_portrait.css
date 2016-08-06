@@ -1,130 +1,105 @@
 @media (max-width: 500px) and (max-aspect-ratio: 4/3) {
 /* General mobile portrait styles */
 .title-left-col {
-	font-size:30px;
-	font-weight:bold;
-	padding:0px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px;
 }
-
 .title-left-col {
-	text-align:center;
+  text-align: center;
 }
-
 #products {
-	height: auto;
+  height: auto;
 }
-
 .widgettitle {
-	color: #444;
+  color: #444;
 }
-
 .mc4wp-success > p {
-	font-size: 20px !important;
-	color: #2e2e2e;
-	line-height: 1.5em !important;
+  font-size: 20px !important;
+  color: #2e2e2e;
+  line-height: 1.5em !important;
 }
-
 .global-social-buttons-container {
-	text-align: center;
-	position: fixed;
-	bottom: 0px;
-	width: 100%;
-	padding-bottom: 16px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding-bottom: 16px;
 }
-
 .my_containerSolution_indent {
-	margin-left: 15px;
-	margin-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
-
 #wpadminbar {
-	display:none;
+  display: none;
 }
-
 .post-blog {
-	margin-top: 70px;
+  margin-top: 70px;
 }
-
 .no-mobile-portrait-display,
 .display-only-desktop,
 .display-only-mobile-landscape,
 .display-only-tablet {
-	display: none !important;
+  display: none !important;
 }
-
 #primary-menu > ul > li {
-	position: fixed;
-	width: 100%;
-	top: 68px;
-	left: 0px;
-	right: 0px;
-	bottom: 60px;
+  position: fixed;
+  width: 100%;
+  top: 68px;
+  left: 0px;
+  right: 0px;
+  bottom: 60px;
 }
-
 #primary-menu a div {
-	padding-top: 0px;
-	bottom: 0px;
+  padding-top: 0px;
+  bottom: 0px;
 }
-
 .menu-4 {
-	height: calc(100% / 4);
+  height: calc(25%);
 }
-
 .menu-5 {
-	height: calc(100% / 5);
+  height: calc(20%);
 }
-
 .menu-6 {
-	height: calc(100% / 6);
+  height: calc(16.66666667%);
 }
-
 .menu-7 {
-	height: calc(100% / 7);
+  height: calc(14.28571429%);
 }
-
 .menu-8 {
-	height: calc(100% / 8);
+  height: calc(12.5%);
 }
-
 .menu-4-with-search {
-	height: calc((100% - 72px) / 4);
+  height: calc((100% - 72px) / 4);
 }
-
 .menu-5-with-search {
-	height: calc((100% - 72px) / 5);
+  height: calc((100% - 72px) / 5);
 }
-
 .menu-6-with-search {
-	height: calc((100% - 72px) / 6);
+  height: calc((100% - 72px) / 6);
 }
-
 .menu-7-with-search {
-	height: calc((100% - 72px) / 7);
+  height: calc((100% - 72px) / 7);
 }
-
 .menu-8-with-search {
-	height: calc((100% - 72px) / 8);
+  height: calc((100% - 72px) / 8);
 }
-
 #slider {
-	margin-top: 30px !important;
+  margin-top: 30px !important;
 }
-
 .menu-social-link {
-	padding-right: 22px !important;
-	padding-left: 22px !important;
+  padding-right: 22px !important;
+  padding-left: 22px !important;
 }
-
 .solution-subpage-header {
-	margin-top: 74px;
+  margin-top: 74px;
 }
-
 .mobile-portrait-vertical-centered {
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* Menu mobile portrait styles */
@@ -133,161 +108,137 @@
 
 /* Blog mobile portrait styles */
 .subscribe-input-container {
-	overflow: hidden;
-	width: 100%;
-	padding-right: 0px;
+  overflow: hidden;
+  width: 100%;
+  padding-right: 0px;
 }
-
 .subscribe-email {
-	height: 49px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	text-align: center;
-	width: 100%;
+  height: 49px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
 }
-
 .subscribe-success-title {
-	display:none;
+  display: none;
 }
-
 .subscribe-success-icon {
-	margin-top: 0px;
+  margin-top: 0px;
 }
-
 .subscribe-element {
-	display: block;
+  display: block;
 }
-
 .subscribe-block-tablet-mobile {
-	padding: 15px 18px 25px 19px !important;
-	margin: 0px auto;
-	width: 100%;
-	text-align: center;
-	font-size: 18px;
+  padding: 15px 18px 25px 19px !important;
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
 }
 
 /* Company mobile portrait styles */
 .news-press-button {
-	font-size: 12px !important;
+  font-size: 12px !important;
 }
-
 .company-single-post-title {
-	font-size: 14px !important;
+  font-size: 14px !important;
 }
 
 /* Home mobile portrait styles */
 .logo-subheader {
-	font-size: 15px;
-	color: #383838;
-	max-width: 260px;
+  font-size: 15px;
+  color: #383838;
+  max-width: 260px;
 }
-
 .video-wrap video {
-	width: initial;
+  width: initial;
 }
-
-.home-text-2{
-	margin-top:60px;
+.home-text-2 {
+  margin-top: 60px;
 }
-
 .home-products-title {
-	font-size: 16px;
-	color: #FFF;
-	text-align: center;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	padding-left: 0.3em;
-	padding-right: 0.3em;
+  font-size: 16px;
+  color: #FFF;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
-
 .video-wrap video {
-	height: 100%;
+  height: 100%;
 }
-
 .hr-home-sup-title {
-	max-width: 400px;
-	margin-right: 10px;
-
+  max-width: 400px;
+  margin-right: 10px;
 }
 
 /* Solutions mobile portrait styles */
 .solution-subpage-container {
-	margin-top: 50px;
-	margin-left: 30px;
-	margin-right: 30px;
-	padding-left: 0px;
-	padding-right: 0px;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
 .solutions-subpage-text {
-	width: 100%;
+  width: 100%;
 }
-
 .solution-subpage-onlytext {
-	width: 100%;
+  width: 100%;
 }
-
 .solutions-subpage-thumbnail {
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
-
 .solutions-subpage-thumbnail .size-post-thumbnail {
-	height:100% !important;
-	width: 100% !important;
+  height: 100% !important;
+  width: 100% !important;
 }
-
 .slider-title-adjust {
-	top: 20px;
+  top: 20px;
 }
-
 .my_boxSolution_title {
-	padding-left: 0px;
+  padding-left: 0px;
 }
-
 .iconSolutions {
-	margin-right: 15px;
+  margin-right: 15px;
 }
-
 .solution-subpage-gallery-button {
-	width: 87.5vw;
-	height: 13.44vw;
-	font-size: 5vw;
+  width: 87.5vw;
+  height: 13.44vw;
+  font-size: 5vw;
 }
-
 .solution-subpage-gallery-block-title {
-	font-size: 22px;
+  font-size: 22px;
 }
-
 .solution-use-cases-block-half {
-	width:92%;
-	margin: 2vw auto;
+  width: 92%;
+  margin: 2vw auto;
 }
 
 /* Resources mobile portrait styles */
 .resource-block {
-	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
-
 .resources-blocks-container {
-	width: 94%;
+  width: 94%;
 }
 
 /* Tech mobile portrait styles */
 
 /* Press mobile portrait styles */
 .press-post-title {
-	color: #444;
+  color: #444;
 }
 .press-post {
-	padding-top: 85px;
+  padding-top: 85px;
 }
-
 .press-content-padding {
-	padding-left: 20px;
-	padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Products mobile portrait styles */

@@ -3,7 +3,7 @@
 
 	<a name="top"></a>
 	<a
-		href="#second-section"
+		href="#tech-second-section"
 		class="tech-learn-more-link"
 	>
 		<div class="tech-first-section-scroll-link-wrapper">
@@ -54,8 +54,6 @@
 					<img
 						class="tech-second-section-image responsive-image"
 						desktop-src="<?php echo get_field('second_section_image_desktop'); ?>"
-						tablet-src="<?php echo get_field('second_section_image_tablet'); ?>"
-						mobile-src="<?php echo get_field('second_section_image_mobile'); ?>"
 					>
 				</div>
 			</div>
@@ -69,7 +67,15 @@
 					</div>
 				</div>
 			</div>
+			<div class="tech-second-section-image-wrapper-mobile no-desktop-display">
+				<img
+					class="tech-second-section-image responsive-image"
+					tablet-src="<?php echo get_field('second_section_image_tablet'); ?>"
+					mobile-src="<?php echo get_field('second_section_image_mobile'); ?>"
+				>
+			</div>
 		</div>
+
 	</div>
 
 	<a name="tech-third-section"></a>
@@ -94,13 +100,12 @@
 	<div id="tech-fourth-section" class="tech-section tech-fourth-section">
 		<div class="tech-fourth-section-wrapper">
 
-			<div class="tech-fourth-section-left-col">
+			<div class="tech-fourth-section-left-col no-mobile-portrait-display no-mobile-landscape-display">
 				<div class="tech-fourth-section-image-wrapper">
 					<img
 						class="tech-fourth-section-image responsive-image"
 						desktop-src="<?php echo get_field('fourth_section_image_desktop'); ?>"
 						tablet-src="<?php echo get_field('fourth_section_image_tablet'); ?>"
-						mobile-src="<?php echo get_field('fourth_section_image_mobile'); ?>"
 					>
 				</div>
 			</div>
@@ -117,6 +122,12 @@
 				</div>
 			</div>
 
+			<div class="tech-fourth-section-image-wrapper-mobile">
+				<img
+					class="tech-fourth-section-image responsive-image"
+					mobile-src="<?php echo get_field('fourth_section_image_mobile'); ?>"
+				>
+			</div>
 
 		</div>
 	</div>

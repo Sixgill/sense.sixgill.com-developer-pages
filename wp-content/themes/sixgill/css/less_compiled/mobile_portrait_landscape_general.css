@@ -1,0 +1,87 @@
+/* General mobile portrait and landscape styles */
+.shareIcons-desktop {
+  display: none;
+}
+.shareIcons-tablet {
+  display: none;
+}
+.shareIcons-mobile {
+  display: block;
+}
+.logo-sixgill {
+  width: 150px;
+  height: 44px;
+  background-image: url("/wp-content/themes/sixgill/images/td/logo/logo_mobile.svg");
+}
+.text-right-col,
+.text-right-col-noline {
+  border-left: 0px;
+  padding-left: 0px;
+}
+.container-fluid {
+  padding-left: 25px;
+}
+.menu-social-link {
+  padding-right: 22px !important;
+  padding-left: 22px !important;
+}
+.menu-social-link:first-child {
+  padding-left: 0px !important;
+}
+.menu-social-link:last-child {
+  padding-right: 0px !important;
+}
+.company-h1,
+.solutions-h1,
+.products-h1 {
+  font-size: 30px;
+}
+.solution-subpage-first-block-image-container,
+.first-left-container-subpage,
+.left-block-subpage,
+.right-block-subpage,
+.solution-subpage-second-block-image-container,
+.second-right-container-subpage,
+.solution-subpage-second-block {
+  width: 100%;
+}
+.first-left-container-subpage,
+.second-right-container-subpage {
+  width: 100%;
+}
+.solution-subpage-second-block-image-container {
+  margin-top: 35px;
+}
+.block-link-subpage {
+  height: 270px;
+  width: 100%;
+}
+.second-right-container-subpage {
+  height: 350px;
+}
+.left-block-subpage,
+.right-block-subpage,
+.solution-subpage-first-block-image-container {
+  height: 135px;
+}
+.first-text-subpage,
+.second-text-subpage {
+  margin: 30px 30px 0px 28px;
+}
+.container-subpage {
+  margin-top: 43px;
+  padding-right: 28px;
+  padding-left: 28px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#primary-menu > ul > li:first-child {
+  max-height: 500px;
+}
+.mobile-portrait-landscape-vertical-centered {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
