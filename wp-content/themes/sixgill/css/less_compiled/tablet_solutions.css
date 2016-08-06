@@ -1,0 +1,222 @@
+/* Solutions tablet styles */
+.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid),
+.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide {
+  height: 263px !important;
+}
+.solution-subpage-title {
+  font-size: 39.8px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  font-family: "Lato Light";
+}
+.solution-subpage-suptitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+.solution-subpage-first-block {
+  width: 100%;
+}
+.solution-subpage-second-block {
+  padding-top: 6.9vw;
+}
+.solution-subpage-second-block-wrapper {
+  width: 88.2vw;
+}
+.block-link-subpage {
+  height: 133px;
+  width: 100%;
+}
+.first-text-subpage {
+  margin: 7vw 3.05vw 0px 4.56vw;
+}
+.second-text-subpage {
+  margin: 58px 25px 0px 0;
+}
+.container-subpage {
+  padding-right: 57px;
+  padding-left: 57px;
+}
+.left-block-subpage,
+.right-block-subpage {
+  width: 50%;
+}
+.first-left-container-subpage {
+  width: 55.5%;
+}
+.solution-subpage-first-block-image-container {
+  width: 43.5%;
+}
+.solution-subpage-first-block-image {
+  max-width: 42.3vw;
+}
+.second-right-container-subpage {
+  width: 56%;
+  float: right;
+}
+.solution-subpage-last-block {
+  margin-top: 70px;
+  width: 90.02vw;
+}
+.solution-subpage-last-section-text-wrapper {
+  width: 100%;
+}
+.solution-subpage-bottom-line {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.solution-subpage-bottom-link-text {
+  width: 58%;
+  float: right;
+}
+.solution-subpage-section-title {
+  font-size: 36px;
+  margin-bottom: 26px;
+  line-height: 1;
+}
+.solution-subpage-bottom-link-description {
+  margin-bottom: 0px;
+}
+.solution-use-cases-block-half {
+  width: 47%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.solution-use-cases-block-half:only-child {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#content .solution-subpage-first-block > .first-left-container-subpage > .first-text-subpage > .solution-subpage-first-block-text p {
+  font-size: 16.2px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  color: #2e2e2e;
+}
+.solution-use-cases-block-subtitle {
+  padding: 20px;
+}
+.solution-use-cases-block-subtitle > p {
+  font-size: 18px;
+  line-height: 20px !important;
+  margin: 0 auto;
+  width: 65%;
+}
+.solution-subpage-bottom-section-column {
+  width: 38.15vw;
+  margin-bottom: 3.5vw;
+}
+.solution-subpage-bottom-section-column:nth-child(2n+1) {
+  float: left;
+  margin-left: 4vw;
+}
+.solution-subpage-bottom-section-column:nth-child(2n) {
+  float: right;
+  margin-right: 2vw;
+}
+.solution-subpage-second-block-wrapper {
+  width: 88.28vw;
+}
+.solution-subpage-gallery-block-title {
+  font-size: 16.2px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #2e2e2e;
+  padding-bottom: 22px;
+}
+.solution-subpage-gallery-thumbnail-wrapper {
+  width: 92.44vw;
+  margin-bottom: 4vw;
+}
+.solution-subpage-gallery-button {
+  width: 37vw;
+  height: 5.6vw;
+  font-size: 2.08vw;
+}
+.solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
+  margin-right: 1.3vw;
+}
+.solution-subpage-gallery-button-icon {
+  margin-right: 1.3vw;
+}
+.solution-subpage-viewprocess-placeholder {
+  height: 6.9vw;
+}
+.solution-subpage-last-section-text-wrapper p {
+  text-align: center;
+  margin-bottom: 57px;
+}
+#content .solution-subpage-last-section-text-wrapper p {
+  line-height: 1.25;
+}
+.solution-use-cases-block-content {
+  margin-bottom: 6vw;
+}
+.solution-subpage-slide-title {
+  font-size: 3.05vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+.solution-subpage-slide-description {
+  font-size: 2.03vw;
+  margin-bottom: 1.8vw;
+}
+.solution-subpage-slide-description,
+.solution-subpage-slide-title {
+  width: 95.68%;
+  display: inline-block;
+}
+.own-carousel-outside-wrapper {
+  width: 90.16%;
+  margin-bottom: 2.232vw;
+}
+.owl-carousel {
+  background-color: #ffffff;
+  border: 1px solid rgba(153, 153, 153, 0.32);
+}
+.solution-subpage-slide-image {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.32);
+}
+.solution-subpage-slide-info {
+  margin-top: 1.72vw;
+}
+.solution-carousel-button {
+  font-size: 5.07vw;
+  font-weight: 100;
+  padding-bottom: 5vw;
+  cursor: pointer;
+}
+.solution-carousel-button-image {
+  width: 2.16vw;
+  height: 4.03vw;
+}
+.solution-carousel-button-wrapper {
+  width: 5%;
+}
+.solution-use-cases-block-image {
+  height: 23vw;
+}
+.solution-subpage-bottom-section-subtitle {
+  width: 68vw;
+  margin: 32px auto 63px;
+}
+ul:not([class]) li {
+  margin-bottom: 1.5em;
+}
+.solution-subpage-last-block-title {
+  font-size: 35.2px;
+  font-weight: 300;
+  font-family: "Lato Light";
+  line-height: 0.58;
+  letter-spacing: 1.1px;
+}
+.solution-subpage-last-block-wrapper {
+  background: url('/wp-content/themes/sixgill/images/solutions/getstarted_bg_tablet.png') no-repeat scroll 0 0 / cover;
+}
+.solution-subgape-carousels-div {
+  width: 72.73vw;
+  margin: 6.3vw 0px 6vw 0px;
+}
+.solution-subpage-galleries-wrapper {
+  padding: calc(3vw - 30px) 0px 4.6vw 0px;
+}

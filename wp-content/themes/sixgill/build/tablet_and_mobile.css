@@ -1,97 +1,80 @@
 @media (max-width: 1200px) {
 /* Portrait tablets & mobiles */
 #header {
-	position: fixed;
-	z-index: 9999;
-	width: 100%;
-	top:0px !important;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0px !important;
 }
-
 #primary-menu-trigger {
-	position: absolute;;
-	left: inherit;
-	right: 0px;
-	display: absolute;
-	float: right;
-	margin-right: 9px;
+  position: absolute;
+  left: inherit;
+  right: 0px;
+  display: absolute;
+  float: right;
+  margin-right: 9px;
 }
-
 #logo {
-	display: inline-block;
+  display: inline-block;
 }
-
 .menu-container {
-	width: 100% !important;
+  width: 100% !important;
 }
-
 .hide-landscape-mobile {
-	display: none;
+  display: none;
 }
-
 .no-mobile-scroll {
-	overflow: hidden;
+  overflow: hidden;
 }
-
-.global-social-buttons-separator, .form-page-search {
-	margin-top: 0px;
+.global-social-buttons-separator,
+.form-page-search {
+  margin-top: 0px;
 }
-
 .mc4wp-form-fields h4 {
-	display: none !important;
+  display: none !important;
 }
-
 #primary-menu a div {
-	text-align: center;
-	padding: 0px;
+  text-align: center;
+  padding: 0px;
 }
-
 .tabletmobile-vertical-centered {
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 .pagination-image-right {
-	padding-left: 20px;
+  padding-left: 20px;
 }
-
 .pagination-image-left {
-	padding-right: 20px;
+  padding-right: 20px;
 }
-
 a.search-post-result {
-	font-weight: 700;
-	letter-spacing: 1px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
-
 .homeSupTit-with-line {
-	background-color: #fff;
-	z-index:2;
+  background-color: #fff;
+  z-index: 2;
 }
-
 .solution-subpage-bottom-section-column:first-child ul {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
-
 .solution-subpage-bottom-link-text-width {
-	width: 90%;
+  width: 90%;
 }
-
-.solution-subpage-bottom-link-description, .solution-subpage-bottom-link {
-	font-size: 18px;
+.solution-subpage-bottom-link-description,
+.solution-subpage-bottom-link {
+  font-size: 18px;
 }
-
 .footer-subscription-form-wrapper {
-	max-width: 490px;
+  max-width: 490px;
 }
-
 .resource-link {
-	color: #0051c6 !important;
+  color: #0051c6 !important;
 }
-
 .desktop-menu-wrapper {
-	height: 100%;
+  height: 100%;
 }
 }

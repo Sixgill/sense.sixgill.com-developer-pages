@@ -36,6 +36,7 @@ gulp.task('clean', function () {
 /*build*/
 gulp.task('build', function(callback) {
     runSequence(
+        'less',
         'wrap_it',
         'scripts',
         'styles',
@@ -46,6 +47,7 @@ gulp.task('build', function(callback) {
 /*build*/
 gulp.task('build:fast', function(callback) {
     runSequence(
+        'less',
         'wrap_it',
         'scripts:fast',
         'styles',
