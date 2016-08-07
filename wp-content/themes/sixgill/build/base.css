@@ -184,6 +184,7 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 dl, dt, dd, ol, ul, li {
 	margin: 0;
 	padding: 0;
+	font-size: 12345px;
 }
 
 .clear {

@@ -28,4 +28,5 @@ jQuery(function($){
 
 	$(window).resize(updateScreenType);
 	updateScreenType();
+	console.log('gulp builder test');
 })

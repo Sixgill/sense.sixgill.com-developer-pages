@@ -1,6 +1,3 @@
-/**
- *
- */
 
 var pagesList = [
   'general',
@@ -17,7 +14,7 @@ var pagesList = [
   'products'
 ];
 
-exports.path = {
+exports = {
     base: {
         wrapper: null,
         values: [
@@ -101,20 +98,13 @@ exports.path = {
       ],
       scripts: './js/**/*.js'
     }
-    // Add new exports
-    // all: {
-    //     wrapper: null,
-    //     values: [
-    //
-    //     ]
-    // },
 }
 
 pagesList.forEach(function(pageName) {
-  exports.path.all.values.push('./css/less_compiled/all_' + pageName + '.css');
-  exports.path.desktop.values.push('./css/less_compiled/desktop_' + pageName + '.css');
-  exports.path.tablet.values.push('./css/less_compiled/tablet_' + pageName + '.css');
-  exports.path.mobile_portrait.values.push('./css/less_compiled/mobile_portrait_' + pageName + '.css');
-  exports.path.mobile_landscape.values.push('./css/less_compiled/mobile_landscape_' + pageName + '.css');
-  exports.path.mobile_portrait_landscape.values.push('./css/less_compiled/mobile_portrait_landscape_' + pageName + '.css');
+  exports.all.values.push('./css/less_compiled/all_' + pageName + '.css');
+  exports.desktop.values.push('./css/less_compiled/desktop_' + pageName + '.css');
+  exports.tablet.values.push('./css/less_compiled/tablet_' + pageName + '.css');
+  exports.mobile_portrait.values.push('./css/less_compiled/mobile_portrait_' + pageName + '.css');
+  exports.mobile_landscape.values.push('./css/less_compiled/mobile_landscape_' + pageName + '.css');
+  exports.mobile_portrait_landscape.values.push('./css/less_compiled/mobile_portrait_landscape_' + pageName + '.css');
 })
