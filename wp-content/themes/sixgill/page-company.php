@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<<<<<<< HEAD
 <div> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
 	<a
@@ -41,5 +42,9 @@
 			</div>
 		</div>
 	</div>
+=======
+
+	<!-- TODO: SIX-375 -->
+>>>>>>> develop
 
 	<?php get_footer(); ?>
