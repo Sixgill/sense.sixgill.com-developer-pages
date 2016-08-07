@@ -31,6 +31,7 @@
   height: 34.7vw;
   align-items: center;
   z-index: 2;
+  margin: 1vw 0px 1vw 0px;
 }
 .tech-first-section-image-wrapper {
   width: 28.3%;
@@ -68,9 +69,6 @@
 .tech-section {
   min-height: 100vh;
 }
-.tech-first-section {
-  height: 100vh;
-}
 .tech-second-section {
   min-height: inherit !important;
 }
@@ -90,6 +88,7 @@
 }
 .tech-third-section {
   height: 100vh;
+  min-height: 33.3vw;
   background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_desktop.png');
 }
 .tech-third-section-content-wrapper,

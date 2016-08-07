@@ -43,12 +43,12 @@
   z-index: 2;
 }
 .products-first-section-image-wrapper {
-  width: 47.34%;
   max-height: 46.875vw;
 }
 .products-first-section-block-text {
   width: 52.5%;
   padding: 0px 4vw 0px 4vw;
+  margin: auto;
 }
 .products-first-section-block-title {
   font-size: 7vw;
@@ -114,6 +114,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 3vw;
+  margin-bottom: 1vw;
 }
 .products-third-section-content-wrapper {
   width: 80%;
@@ -160,7 +161,7 @@
   clear: both;
 }
 .products-third-section-title-wrapper {
-  width: calc(90%);
+  width: calc(100% - 10vw);
 }
 .products-third-section-header-wrapper,
 .products-third-section-title-wrapper,

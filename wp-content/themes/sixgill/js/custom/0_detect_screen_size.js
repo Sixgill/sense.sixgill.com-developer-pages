@@ -11,7 +11,7 @@ jQuery(function($){
 	function updateScreenType() {
 		oldScreenType = window.screenType;
 		window.screenType = 'desktop';
-		if(screen.width >= 500 && screen.width<=1200 && (screen.width / screen.height) <= 4/3) {
+		if(screen.width >= 500 && screen.width<=1100 && (screen.width / screen.height) <= 4/3) {
 			window.screenType = 'tablet';
 		} else if(screen.width<=1000 && (screen.width / screen.height) >= 4/3) {
 			window.screenType = 'mobile-landscape';
