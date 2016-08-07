@@ -29,6 +29,7 @@
 .products-first-section {
   justify-content: flex-end;
   background-image: url('/wp-content/themes/sixgill/images/products/first_section_bg_desktop.png');
+  min-height: 33.3vw !important;
 }
 .products-first-section-block {
   align-items: center;
@@ -133,7 +134,8 @@
 .products-fourth-section-title,
 .products-fifth-section-title {
   font-size: 44px;
-  line-height: 1.3em;
+  line-height: 1em;
+  margin-bottom: 0.2em;
 }
 .products-third-section-subtitle,
 .products-fourth-section-subtitle,
@@ -161,8 +163,12 @@
 .products-third-section-ico-wrapper {
   display: inline-block;
 }
+.products-third-section-header-wrapper {
+  width: 100%;
+}
 .products-third-section-title-wrapper {
   float: left;
+  width: calc(100% - 5.5vw);
 }
 .products-fourth-section {
   min-height: inherit !important;

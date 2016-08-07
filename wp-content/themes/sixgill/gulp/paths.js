@@ -13,7 +13,6 @@ module.exports = () => {
             "./style.css",
             "./css/font-icons.css",
             "./css/animate.css",
-            "./css/magnific-popup.css",
             "./css/responsive.css",
             "./css/jquery.fullpage.min.css",
             "./css/colors.css",
@@ -25,12 +24,12 @@ module.exports = () => {
         values: []
     },
     desktop: {
-        wrapper: "@media only screen and (min-width: 1201px) {",
+        wrapper: "@media only screen and (min-width: 1101px) {",
         values: []
     },
     tablet: {
-        wrapper: "@media (min-width: 500px) and (max-width: 1200px) and (max-aspect-ratio: 4/3), (min-width: 1001px)" +
-        " and (max-width: 1200px) {",
+        wrapper: "@media (min-width: 500px) and (max-width: 1100px) and (max-aspect-ratio: 4/3), (min-width: 1001px)" +
+        " and (max-width: 1100px) {",
         values: []
     },
     mobile_portrait: {
@@ -47,7 +46,7 @@ module.exports = () => {
         values: []
     },
     tablet_and_mobile: {
-        wrapper: "@media (max-width: 1200px) {",
+        wrapper: "@media (max-width: 1100px) {",
         values: [
             "./css/less_compiled/tablet_and_mobile.css",
         ]

@@ -3,7 +3,6 @@
   display: none;
 }
 .products-first-section {
-  margin-top: 74px;
   background-image: url('/wp-content/themes/sixgill/images/products/first_section_bg_mobile.png');
 }
 .products-first-section-block {
@@ -226,8 +225,9 @@
   margin: 2.74vw 0px 6.1vw 0px;
   line-height: 1em;
 }
-.products-last-section-text,
-.products-last-section-text p .products-last-section-text li,
+.products-last-section,
+.products-last-section p,
+.products-last-section li,
 .products-first-section-block-paragraph,
 .products-first-section-block-paragraph p,
 .products-first-section-block-paragraph li,
