@@ -13,7 +13,6 @@ module.exports = () => {
             "./style.css",
             "./css/font-icons.css",
             "./css/animate.css",
-            "./css/magnific-popup.css",
             "./css/responsive.css",
             "./css/jquery.fullpage.min.css",
             "./css/colors.css",
