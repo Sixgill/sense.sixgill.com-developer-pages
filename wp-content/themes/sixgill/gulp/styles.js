@@ -1,71 +1,59 @@
 //*Description*//
 'use strict';
 
-var gulp = require('gulp'),
-    concat = require('gulp-concat'),
-    map = require('map-stream'),
-    plumber = require('gulp-plumber'),
-    // autoprefixer = require('gulp-autoprefixer'),
-    cleanCSS = require('gulp-clean-css'),
-    notify = require('gulp-notify'),
-    less = require('gulp-less'),
-    cache = require('gulp-cached'),
-    remember = require('gulp-remember'),
-    less = require('gulp-less');
+module.exports = (gulpComponents) => {
+  var gulp = gulpComponents.gulp,
+      less = gulpComponents.less,
+      cache = gulpComponents.cache,
+      cleanCSS = gulpComponents.cleanCSS,
+      cssWrappers = gulpComponents.cssWrappers,
+      concat = gulpComponents.concat,
+      map = gulpComponents.map,
+      remember = gulpComponents.remember,
+      paths = gulpComponents.paths,
+      eventStream = gulpComponents.eventStream;
 
-var objects = require('./objects');
-var paths = require('./paths');
+var lessSource = paths.less.source,
+    lessDest = paths.less.dest;
 
-gulp.task('less', function () {
-  var lessSource = paths.path.less.source,
-      lessDest = paths.path.less.dest;
+var buildings = paths.builds.values;
+console.log(buildings);
 
-  return gulp.src(lessSource)
-    .pipe(less())
-    .pipe(gulp.dest(lessDest));
-});
+  gulp.task('less',
+    () => gulp.src(lessSource)
+          .pipe(less())
+          .pipe(gulp.dest(lessDest))
+  );
 
-gulp.task('wrap_it', function(callback) {
-    var object = objects.object.wrapper
-    object.forEach( function (style) {
-        if (style.wrapper != null) {
-            gulp.src(style.style_list)
-            // .pipe(concat('./' + style.name + '.less')) ffu: catch less errors
-                .pipe(concat('./' + style.name + '.css'))
-                .pipe(map(function(file, cb) {
-                    var fileContents = file.contents.toString();
-                    fileContents = style.wrapper + '\n' + fileContents + '}\n';
-                    file.contents = new Buffer(fileContents);
-                    cb(null, file);
-                }))
-                .pipe(gulp.dest('./build'))
-        }
-        else {
-            gulp.src(style.style_list)
-                // .pipe(concat('./' + style.name + '.less')) ffu: catch less errors
-                .pipe(concat('./' + style.name + '.css'))
-                .pipe(gulp.dest('./build'));
-        }
-    })
-    callback();
-});
+  gulp.task('wrap_css', (callback) => {
+    var currentIndex = 0;
+    var gulpPromises = [];
+    return eventStream.merge(cssWrappers.map(function (style) {
+      if (style.wrapper !== null) {
+        return gulp.src(style.style_list)
+        .pipe(concat('./' + style.name + '.css'))
+        .pipe(map( (file, cb) => {
+            var fileContents = file.contents.toString();
+                  fileContents = style.wrapper + '\n' + fileContents + '}\n';
+                  file.contents = new Buffer(fileContents);
+                  cb(null, file);
+        }))
+        .pipe(gulp.dest('./build'))
+      } else {
+        return gulp.src(style.style_list)
+          .pipe(concat('./' + style.name + '.css'))
+          .pipe(gulp.dest('./build'));
+      }
+    }));
+  });
 
-gulp.task('styles', function() {
-    var buildings = paths.path.builds.values
-    return gulp.src(buildings)
-        .pipe(cache('styles'))
-        // ffu: catch less errors
-        // .pipe(plumber())
-        // .pipe(less())
-        // .on('error', notify.onError(function (error) {
-        //     return '\nError compiling css.' + error;
-        // }))
-        // .pipe(autoprefixer({
-        //     browsers: ['last 5 versions'],
-        //     cascade: false
-        // }))
-        .pipe(cleanCSS())
-        .pipe(remember('styles'))
-        .pipe(concat('custom_build.css'))
-        .pipe(gulp.dest('./'))
-});
+  gulp.task('styles',
+    () => gulp.src(buildings)
+            .pipe(cache('styles'))
+            .pipe(cleanCSS())
+            .pipe(remember('styles'))
+            .pipe(concat('custom_build.css'))
+            .pipe(gulp.dest('./'))
+  );
+
+}

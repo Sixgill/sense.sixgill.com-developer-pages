@@ -1,56 +1,65 @@
-var paths = require('./gulp/paths');
-var paths = require('./gulp/scripts');
-var paths = require('./gulp/styles');
-var paths = require('./gulp/watcher');
 
-var gulp = require('gulp'),
-    runSequence = require('run-sequence'),
-    del = require('del');
 
-/*default*/
-gulp.task('default', function() {
-    runSequence(
-        'clean',
-        'build',
-        'watch'
-    )
-});
+var gulpComponents = {
+  autoprefixer: require('gulp-autoprefixer'),
+  cache: require('gulp-cached'),
+  concat: require('gulp-concat'),
+  cleanCSS: require('gulp-clean-css'),
+  gutil: require('gulp-util'),
+  gulp: require('gulp'),
+  map: require('map-stream'),
+  paths: require('./gulp/paths')(),
+  plumber: require('gulp-plumber'),
+  pump: require('pump'),
+  notify: require('gulp-notify'),
+  less: require('gulp-less'),
+  runSequence: require('run-sequence'),
+  remember: require('gulp-remember'),
+  uglify: require('gulp-uglify'),
+  watch: require('gulp-watch'),
+  eventStream: require('event-stream')
+}
 
-gulp.task('fast', function() {
-    runSequence(
-        'clean',
-        'build:fast',
-        'watch:fast'
-    )
-});
+gulpComponents.cssWrappers = require('./gulp/css_wrappers')(gulpComponents);
 
-/*clean*/
-gulp.task('clean', function () {
-    return del([
-        './custom_build.css',
-        './custom_build.js',
-        'build',
-    ]);
-});
+var gulp = gulpComponents.gulp,
+    runSequence = gulpComponents.runSequence,
+    argv = require('yargs').argv;
 
-/*build*/
-gulp.task('build', function(callback) {
-    runSequence(
-        'less',
-        'wrap_it',
-        'scripts',
-        'styles',
-        callback
-    );
-});
+if(argv.fast) console.log('This is fast');
 
-/*build*/
-gulp.task('build:fast', function(callback) {
-    runSequence(
-        'less',
-        'wrap_it',
-        'scripts:fast',
-        'styles',
-        callback
-    );
-});
+require('./gulp/scripts')(gulpComponents);
+require('./gulp/styles')(gulpComponents);
+require('./gulp/watcher')(gulpComponents);
+
+gulp.task('default',
+  (callback) => runSequence(
+      'build',
+      'watch',
+      callback
+  )
+);
+
+gulp.task('build',
+  (callback) => runSequence(
+      ['build_js', 'build_css'],
+      callback
+  )
+);
+
+gulp.task('build_js',
+  (callback) => runSequence(
+      'wrap_scripts',
+      'scripts',
+      callback
+  )
+);
+
+gulp.task('build_css',
+  (callback) => runSequence(
+      'less',
+      'wrap_css',
+      'styles',
+      callback
+  )
+);
