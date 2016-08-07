@@ -17,7 +17,9 @@ var gulpComponents = {
   remember: require('gulp-remember'),
   uglify: require('gulp-uglify'),
   watch: require('gulp-watch'),
-  eventStream: require('event-stream')
+  eventStream: require('event-stream'),
+  replace: require('gulp-replace'),
+  wrapper: require('./gulp/wrappers')
 }
 
 gulpComponents.cssWrappers = require('./gulp/css_wrappers')(gulpComponents);

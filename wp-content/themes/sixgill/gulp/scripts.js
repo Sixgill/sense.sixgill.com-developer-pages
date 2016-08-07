@@ -8,10 +8,23 @@ module.exports = (gulpComponents) => {
       pump = gulpComponents.pump,
       cache = gulpComponents.cache,
       remember = gulpComponents.remember,
-      notify = gulpComponents.notify;
+      notify = gulpComponents.notify,
+      wrapper = gulpComponents.wrapper,
+      replace = gulpComponents.replace;
+
+var s_head = wrapper.source_head,
+    head = wrapper.head,
+    regex = wrapper.regex,
+    tail = wrapper.tail
+
 
   gulp.task('wrap_scripts',
-    () => gulp
+    () => gulp.src('./js/custom/*.js')
+      .pipe(replace(s_head, head))
+      .pipe(replace(regex, tail))
+      .pipe(concat('custom_build.js'))
+      // TODO: need to be debugged
+      .pipe(gulp.dest('./'))
   );
 
   gulp.task('scripts',
@@ -33,3 +46,4 @@ module.exports = (gulpComponents) => {
             .pipe(gulp.dest('./'))
   );
 }
+
