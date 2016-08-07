@@ -9,14 +9,6 @@ Replace the HEX Code with your Desired Color HEX
 	background: #004FC8;
 }
 
-::-moz-selection {
-	background: #004FC8;
-}
-
-::-webkit-selection {
-	background: #004FC8;
-}
-
 .color,
 .faqlist li a:hover,
 .tagcloud a:hover,

@@ -3,6 +3,7 @@
 
 module.exports = (gulpComponents) => {
   var gulp = gulpComponents.gulp,
+      autoprefixer = gulpComponents.autoprefixer,
       less = gulpComponents.less,
       cache = gulpComponents.cache,
       cleanCSS = gulpComponents.cleanCSS,
@@ -47,6 +48,7 @@ var buildings = paths.builds.values;
   gulp.task('styles',
     () => gulp.src(buildings)
             .pipe(cache('styles'))
+            .pipe(autoprefixer({ browsers: ['ie >= 10', 'Firefox >= 45', 'ios >= 8']}))
             .pipe(cleanCSS())
             .pipe(remember('styles'))
             .pipe(concat('custom_build.css'))
