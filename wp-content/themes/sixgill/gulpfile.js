@@ -8,7 +8,7 @@ var gulpComponents = {
   gutil: require('gulp-util'),
   gulp: require('gulp'),
   map: require('map-stream'),
-  paths: require('./gulp/paths'),
+  paths: require('./gulp/paths')(),
   plumber: require('gulp-plumber'),
   pump: require('pump'),
   notify: require('gulp-notify'),
@@ -19,7 +19,11 @@ var gulpComponents = {
   watch: require('gulp-watch'),
 }
 
-var argv = require('yargs').argv;
+gulpComponents.cssWrappers = require('./gulp/css_wrappers')(gulpComponents);
+
+var gulp = gulpComponents.gulp,
+    runSequence = gulpComponents.runSequence,
+    argv = require('yargs').argv;
 
 if(argv.fast) console.log('This is fast');
 

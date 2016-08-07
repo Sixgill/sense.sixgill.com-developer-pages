@@ -1,30 +1,49 @@
 'use strict';
 
-gulp.task('watch',
-  (callback) => runSequence(
-      ['watch_js', 'watch_css'],
-      callback
-  )
-);
+module.exports = (gulpComponents) => {
+  var gulp = gulpComponents.gulp,
+      gutil = gulpComponents.gutil,
+      cache = gulpComponents.cache,
+      watch = gulpComponents.watch,
+      remember = gulpComponents.remember,
+      runSequence = gulpComponents.runSequence,
+      paths = gulpComponents.paths;
 
-gulp.task('watch_js', () => {
-    var watcher = gulp.watch(paths.path.watcher.scripts, ['build_js']); // watch the same files in our scripts task
-    watcher.on('change', function (file) {
-        gutil.log(gutil.colors.yellow('JS changed' + ' (' + file.path + ')'));
+
+  gulp.task('watch',
+    (callback) => runSequence(
+        ['watch_js', 'watch_css'],
+        callback
+    )
+  );
+
+  function watchFiles(watchingFilesPatterns, onChangeTasks, fileTypeName, cacheName) {
+    var watcher = gulp.watch(watchingFilesPatterns, onChangeTasks); // watch the same files in our scripts task
+    watcher.on('change', (file) => {
+        gutil.log(gutil.colors.yellow(fileTypeName + ' changed' + ' (' + file.path + ')'));
         if (file.type === 'deleted') { // if a file is deleted, forget about it
-            delete cache.caches['scripts'][file.path];
-            remember.forget('scripts', file.path);
+            delete cache.caches[cacheName][file.path];
+            remember.forget(cacheName, file.path);
         }
     });
-});
+  }
 
-gulp.task('watch_css', () => {
-    var watcher_css = gulp.watch(paths.path.watcher.styles, ['build_css']);
-    watcher_css.on('change', function (file) {
-        gutil.log(gutil.colors.yellow('CSS changed' + ' (' + file.path + ')'));
-        if (file.type === 'deleted') { // if a file is deleted, forget about it
-            delete cache.caches['styles'][file.path];
-            remember.forget('styles', file.path);
-        }
-    });
-});
+  gulp.task('watch_js',
+    () => watchFiles(
+            paths.watcher.scripts,
+            ['build_js'],
+            'JS',
+            'scripts'
+          )
+  );
+
+  gulp.task('watch_css', () => {
+    () => watchFiles(
+            paths.watcher.scripts,
+            ['build_css'],
+            'CSS',
+            'styles'
+          )
+  });
+
+}

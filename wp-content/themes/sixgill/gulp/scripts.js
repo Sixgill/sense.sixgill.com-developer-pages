@@ -1,7 +1,7 @@
 //*Description*//
 'use strict';
 
-module.exports = function(gulpComponents) {
+module.exports = (gulpComponents) => {
   var gulp = gulpComponents.gulp,
       concat = gulpComponents.concat,
       uglify = gulpComponents.uglify,
@@ -18,9 +18,9 @@ module.exports = function(gulpComponents) {
     () => gulp.src('./js/**/*.js')
             .pipe(cache('scripts'))
             .pipe(uglify())
-            .on('error', notify.onError(function (error) {
-              return 'Error uglifying js.' + error;
-            }))
+            .on('error', notify.onError(
+              (error) => 'Error uglifying js. ' + error
+            ))
             .pipe(remember('scripts'))
             .pipe(concat('custom_build.js'))
             .pipe(gulp.dest('./'))

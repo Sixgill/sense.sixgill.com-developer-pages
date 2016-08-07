@@ -1,15 +1,21 @@
 //*Description*//
 'use strict';
 
-module.exports = function(gulpComponents) {
+module.exports = (gulpComponents) => {
   var gulp = gulpComponents.gulp,
       less = gulpComponents.less,
       cache = gulpComponents.cache,
-      clean = gulpComponents.clean,
+      cleanCSS = gulpComponents.cleanCSS,
+      cssWrappers = gulpComponents.cssWrappers,
       concat = gulpComponents.concat,
       map = gulpComponents.map,
-      remember = gulpComponents.remember;
+      remember = gulpComponents.remember,
+      paths = gulpComponents.paths;
 
+var lessSource = paths.less.source,
+    lessDest = paths.less.dest;
+
+var buildings = paths.builds.values;
 
   gulp.task('less',
     () => gulp.src(lessSource)
@@ -18,7 +24,7 @@ module.exports = function(gulpComponents) {
   );
 
   gulp.task('wrap_css', (callback) => {
-    object.forEach((style) => {
+    cssWrappers.forEach((style) => {
       if (style.wrapper !== null) {
         gulp.src(style.style_list)
           .pipe(concat('./' + style.name + '.css'))

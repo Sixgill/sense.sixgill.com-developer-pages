@@ -1,20 +1,7 @@
 
-var pagesList = [
-  'general',
-  'menu',
-  'footer',
-  'blog',
-  'company',
-  'home',
-  'solutions',
-  'resources',
-  'tech',
-  'press',
-  'legal',
-  'products'
-];
+module.exports = () => {
 
-exports = {
+  var paths = {
     base: {
         wrapper: null,
         values: [
@@ -98,13 +85,32 @@ exports = {
       ],
       scripts: './js/**/*.js'
     }
-}
+  }
 
-pagesList.forEach(function(pageName) {
-  exports.all.values.push('./css/less_compiled/all_' + pageName + '.css');
-  exports.desktop.values.push('./css/less_compiled/desktop_' + pageName + '.css');
-  exports.tablet.values.push('./css/less_compiled/tablet_' + pageName + '.css');
-  exports.mobile_portrait.values.push('./css/less_compiled/mobile_portrait_' + pageName + '.css');
-  exports.mobile_landscape.values.push('./css/less_compiled/mobile_landscape_' + pageName + '.css');
-  exports.mobile_portrait_landscape.values.push('./css/less_compiled/mobile_portrait_landscape_' + pageName + '.css');
-})
+  var pagesList = [
+    'general',
+    'menu',
+    'footer',
+    'blog',
+    'company',
+    'home',
+    'solutions',
+    'resources',
+    'tech',
+    'press',
+    'legal',
+    'products'
+  ];
+
+  pagesList.forEach(function(pageName) {
+    paths.all.values.push('./css/less_compiled/all_' + pageName + '.css');
+    paths.desktop.values.push('./css/less_compiled/desktop_' + pageName + '.css');
+    paths.tablet.values.push('./css/less_compiled/tablet_' + pageName + '.css');
+    paths.mobile_portrait.values.push('./css/less_compiled/mobile_portrait_' + pageName + '.css');
+    paths.mobile_landscape.values.push('./css/less_compiled/mobile_landscape_' + pageName + '.css');
+    paths.mobile_portrait_landscape.values.push('./css/less_compiled/mobile_portrait_landscape_' + pageName + '.css');
+  });
+
+  return paths;
+
+}
