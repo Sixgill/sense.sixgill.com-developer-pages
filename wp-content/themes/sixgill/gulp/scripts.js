@@ -5,6 +5,7 @@ module.exports = (gulpComponents) => {
   var gulp = gulpComponents.gulp,
       concat = gulpComponents.concat,
       uglify = gulpComponents.uglify,
+      paths = gulpComponents.paths,
       pump = gulpComponents.pump,
       cache = gulpComponents.cache,
       remember = gulpComponents.remember,
