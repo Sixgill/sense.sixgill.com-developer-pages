@@ -23,10 +23,15 @@ var gulpComponents = {
 gulpComponents.cssWrappers = require('./gulp/css_wrappers')(gulpComponents);
 
 var gulp = gulpComponents.gulp,
+    gutil = gulpComponents.gutil;
     runSequence = gulpComponents.runSequence,
     argv = require('yargs').argv;
 
-if(argv.fast) console.log('This is fast');
+if(argv.fast) {
+  gutil.log(gutil.colors.green('Fast mode is active: unglifying is supressed'));
+  gulpComponents.cleanCSS = require('gulp-empty');
+  gulpComponents.uglify = require('gulp-empty');
+}
 
 require('./gulp/scripts')(gulpComponents);
 require('./gulp/styles')(gulpComponents);
