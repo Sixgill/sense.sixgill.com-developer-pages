@@ -12,7 +12,7 @@ module.exports = (gulpComponents) => {
 
   gulp.task('watch',
     (callback) => runSequence(
-        ['watch_js', 'watch_css'],
+        ['watch_css', 'watch_js'],
         callback
     )
   );
@@ -37,13 +37,13 @@ module.exports = (gulpComponents) => {
           )
   );
 
-  gulp.task('watch_css', () => {
+  gulp.task('watch_css',
     () => watchFiles(
-            paths.watcher.scripts,
+            paths.watcher.styles,
             ['build_css'],
             'CSS',
             'styles'
           )
-  });
+  );
 
 }

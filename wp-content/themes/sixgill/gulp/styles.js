@@ -10,12 +10,14 @@ module.exports = (gulpComponents) => {
       concat = gulpComponents.concat,
       map = gulpComponents.map,
       remember = gulpComponents.remember,
-      paths = gulpComponents.paths;
+      paths = gulpComponents.paths,
+      eventStream = gulpComponents.eventStream;
 
 var lessSource = paths.less.source,
     lessDest = paths.less.dest;
 
 var buildings = paths.builds.values;
+console.log(buildings);
 
   gulp.task('less',
     () => gulp.src(lessSource)
@@ -24,24 +26,25 @@ var buildings = paths.builds.values;
   );
 
   gulp.task('wrap_css', (callback) => {
-    cssWrappers.forEach((style) => {
+    var currentIndex = 0;
+    var gulpPromises = [];
+    return eventStream.merge(cssWrappers.map(function (style) {
       if (style.wrapper !== null) {
-        gulp.src(style.style_list)
-          .pipe(concat('./' + style.name + '.css'))
-          .pipe(map( (file, cb) => {
-              var fileContents = file.contents.toString();
-                    fileContents = style.wrapper + '\n' + fileContents + '}\n';
-                    file.contents = new Buffer(fileContents);
-                    cb(null, file);
-          }))
-          .pipe(gulp.dest('./build'));
+        return gulp.src(style.style_list)
+        .pipe(concat('./' + style.name + '.css'))
+        .pipe(map( (file, cb) => {
+            var fileContents = file.contents.toString();
+                  fileContents = style.wrapper + '\n' + fileContents + '}\n';
+                  file.contents = new Buffer(fileContents);
+                  cb(null, file);
+        }))
+        .pipe(gulp.dest('./build'))
       } else {
-        gulp.src(style.style_list)
+        return gulp.src(style.style_list)
           .pipe(concat('./' + style.name + '.css'))
           .pipe(gulp.dest('./build'));
       }
-    });
-    callback();
+    }));
   });
 
   gulp.task('styles',
