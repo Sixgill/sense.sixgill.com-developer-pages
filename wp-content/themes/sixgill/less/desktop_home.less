@@ -1,5 +1,76 @@
 /* Home desktop styles */
-.home-text-2{
+
+.home-learn-more-link {
+	display: block;
+  position: absolute;
+  top: calc(~"100vh - 85px");
+  width: 100%;
+	z-index: 2;
+}
+
+.home-first-section,
+.home-first-section-block {
+	display: flex;
+}
+
+.home-first-section-block,
+.home-first-section-block-text {
+	align-self: center;
+	text-align: center;
+	display: inline-block;
+}
+
+.home-first-section {
+	justify-content: center;
+	min-height: 33.3vw !important;
+}
+
+.home-first-section-block {
+	align-items: center;
+	width: 50%;
+	z-index: 3;
+}
+
+.home-first-section-scroll-link-text {
+	font-size: 17px;
+  font-weight: 600;
+  text-shadow: -3.1px 3.9px 12px #000000;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.home-first-section-scroll-link-ico-wrapper {
+	width: 37px;
+	height: 18px;
+	text-align: center;
+}
+
+.home-first-section {
+	height: 100vh;
+}
+
+#home-video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100vw;
+	height: 100vh;
+	background-size: 100% 100%;
+	background-color: black; /* in case the video doesn't fit the whole page*/
+	background-image:url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
+	background-position: center center;
+	background-size: contain;
+	object-fit: cover; /*cover video background */
+	z-index: 1;
+}
+
+.products-first-section-block-text {
+	width: 100%;
+}
+
+.home-text-2 {
 	margin-top: 120px;
 }
 
@@ -8,7 +79,7 @@
 }
 
 .home-video-background {
-	background-image:url(/wp-content/themes/sixgill/images/td/home/shadow.png);
+	background-image:url("/wp-content/themes/sixgill/images/td/home/shadow.png");
 	padding: 85px 30px 50px 30px;
 	height: 380px;
 }
@@ -17,23 +88,16 @@
 	float: left !important;
 }
 
-.home-video-text-h1 {
+.home-video-text-h1 p {
 	font-size: 32.3px;
 	font-weight: 900;
 	line-height: 1;
 	letter-spacing: 1.6px;
 }
 
-.home-block-what-title-wrapper {
-	max-width: 62.5em;
-}
-
+.home-block-what-title-wrapper,
 .home-block-what-wrapper {
-	max-width: 62.5em;	
-}
-
-.home-block-what-title-wrapper {
-	margin: 107px auto 62.5px;
+	max-width: 62.5em;
 }
 
 .home-block-what-subtitle-on-line {
@@ -56,7 +120,7 @@
 	letter-spacing: 0.9px;
 }
 
-.home-block-what-item {
+.home-block-what-item:not(:last-child) {
 	margin-bottom:40px;
 	min-height: 220px;
 }
@@ -95,14 +159,14 @@
 
 /*---products section---*/
 
-.home-block-products-title {
+.home-block-home-title {
 	font-size: 23.5px;
 	font-weight: 700;
 	line-height: 1.25;
 	letter-spacing: 1.2px;
 }
 
-.home-block-products-subtitle {
+.home-block-home-subtitle {
 	font-size: 13.8px;
 	font-weight: 400;
 	letter-spacing: 0.7px;
@@ -157,11 +221,9 @@
 }
 
 #what {
-	background-image: url("images/4-Home/bgMap-desktop@1x.png");
+	background-image: url("/wp-content/themes/sixgill/images/4-Home/bgMap-desktop@1x.png");
 }
 
 #solutions {
-	background-image: url("images/4-Home/bgMap-desktop@1x.png");
+	background-image: url("/wp-content/themes/sixgill/images/4-Home/bgMap-desktop@1x.png");
 }
-
-
