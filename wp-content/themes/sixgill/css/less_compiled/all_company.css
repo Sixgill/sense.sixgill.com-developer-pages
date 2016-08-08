@@ -1,13 +1,46 @@
 /* Company Common styles */
-.company-learn-more-text {
-  display: none;
+.company-first-section-image-wrapper,
+.company-first-section-block-text {
+  display: inline-block;
 }
-.companyDescription p {
-  margin-bottom: 0px !important;
+.company-first-section-block {
+  background-color: rgba(77, 219, 90, 0.7);
 }
-#board li {
+.company-first-section-image-wrapper {
+  height: 100%;
+}
+.company-section {
+  background-size: cover;
+}
+.company-first-section-block-title,
+.company-second-section-title,
+.company-third-section-title,
+.company-fourth-section-title {
+  font-family: "Lato Light";
+  font-weight: 300;
+}
+.company-first-section-scroll-link-wrapper {
+  cursor: pointer;
+  text-align: center;
+}
+.company-second-section {
+  display: flex;
+  align-items: center;
+}
+.company-first-section-block-title,
+.company-first-section-block-subtitle,
+.company-first-section-block-text,
+.company-first-section-block-text p,
+.company-first-section-block-text li,
+.company-third-section-text,
+.company-third-section-text p,
+.company-third-section-text li {
   color: #ffffff;
 }
-#board {
-  background-color: #2e2e2e;
+.company-second-section-block-title,
+.company-fourth-section-block-title {
+  color: #0051c6;
+}
+.company-third-section-title {
+  color: #4ddb5a;
 }
