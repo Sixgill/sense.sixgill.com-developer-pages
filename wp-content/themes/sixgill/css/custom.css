@@ -8,27 +8,6 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 
 /* TD */
 
-.pSolutions, .pProduct, .pCompany {
-	font-size:15px;
-	color:#686868;
-}
-
-.companyName, .companyJob, .companyDescription {
-	font-family: "Lato", serif, sans-serif;
-	font-weight:bold;
-	font-size:28px;
-}
-
-.companyJob {
-	font-size: 16px;
-	color: #4DDB5A;
-}
-
-.companyDescription {
-	font-size: 16px;
-	font-weight: normal;
-}
-
 .btnSchedule, .btnSolutions, .btnCompanym, .btn-news-press, .submit-resource-form-button {
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
@@ -37,8 +16,6 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 	padding: 14px 30px 14px 30px;
 	text-decoration: none;
 	border-radius: 0px;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
 }
 
 .submit-resource-form-button {
@@ -181,7 +158,7 @@ Side Header
 	margin-right: 10px;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1101px) {
 
 	.side-header #header-wrap {
 		width: 225px;
@@ -348,20 +325,10 @@ p {
 }
 
 @media only screen and (min-width: 321px) {/* For tablets: */
-	.txtVideo {
-		font-size: 40px;
-		font-weight: normal;
-	}
-
 	.titLegal {
 		font-size: 25px;
 		margin-top: 50px;
 		margin-bottom: 30px;
-	}
-
-	p {
-		font-size: 20px;
-		font-weight: normal;
 	}
 
 	.logo-sixgill {
@@ -393,7 +360,7 @@ p {
 	}
 }
 
-@media only screen and (min-width: 1201px) {/* For desktop: */
+@media only screen and (min-width: 1101px) {/* For desktop: */
 	.txtVideo {
 		font-size: 28px;
 		font-weight: normal;
@@ -403,11 +370,6 @@ p {
 		font-size: 40px;
 		margin-top: 60px;
 		margin-bottom: 65px;
-	}
-
-	p {
-		font-size: 16px;
-		font-weight: normal;
 	}
 
 	.logo-sixgill {
@@ -451,10 +413,6 @@ p {
 
 	.news-press-button {
 		margin: 0px 0px 0px 0px;
-		width: 390px;
-	}
-
-	.company-single-post-title {
 		width: 390px;
 	}
 }

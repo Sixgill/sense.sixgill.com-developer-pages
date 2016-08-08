@@ -1,30 +1,36 @@
 //*Description*//
 'use strict';
 
-var gulp = require('gulp'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    pump = require('pump'),
-    cache = require('gulp-cached'),
-    remember = require('gulp-remember'),
-    notify = require('gulp-notify');
+module.exports = (gulpComponents) => {
+  var gulp = gulpComponents.gulp,
+      concat = gulpComponents.concat,
+      uglify = gulpComponents.uglify,
+      paths = gulpComponents.paths,
+      pump = gulpComponents.pump,
+      cache = gulpComponents.cache,
+      remember = gulpComponents.remember,
+      notify = gulpComponents.notify;
 
-//*Description*//
-gulp.task('scripts', function() {
-    return gulp.src('./js/**/*.js')
-        .pipe(cache('scripts'))
-        .pipe(uglify())
-        .on('error', notify.onError(function (error) {
-            return 'Error uglifying js.' + error;
-        }))
-        .pipe(remember('scripts'))
-        .pipe(concat('custom_build.js'))
-        .pipe(gulp.dest('./'))
-});
+  gulp.task('wrap_scripts',
+    () => gulp
+  );
 
-//*Description*//
-gulp.task('scripts:fast', function() {
-    return gulp.src('./js/**/*.js')
-        .pipe(concat('custom_build.js'))
-        .pipe(gulp.dest('./'))
-});
+  gulp.task('scripts',
+    () => gulp.src('./js/**/*.js')
+            .pipe(cache('scripts'))
+            .pipe(uglify())
+            .on('error', notify.onError(
+              (error) => 'Error uglifying js. ' + error
+            ))
+            .pipe(remember('scripts'))
+            .pipe(concat('custom_build.js'))
+            .pipe(gulp.dest('./'))
+  );
+
+  //*Description*//
+  gulp.task('scripts:fast',
+    () => gulp.src('./js/**/*.js')
+            .pipe(concat('custom_build.js'))
+            .pipe(gulp.dest('./'))
+  );
+}
