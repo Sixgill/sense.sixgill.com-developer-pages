@@ -1,0 +1,204 @@
+/* Company tablet styles */
+.company-learn-more-link {
+  display: block;
+  position: absolute;
+  top: calc(100vh - 161px);
+}
+.company-last-section-wrapper,
+.company-first-section,
+.company-first-section-block,
+.company-third-section-wrapper,
+.company-fourth-section-wrapper,
+.company-third-section-left-col,
+.company-last-section-left-col,
+.company-fixed-panel,
+.company-fixed-panel-col {
+  display: flex;
+}
+.company-last-section-wrapper {
+  flex-direction: column;
+  width: 100%;
+}
+.company-first-section-block,
+.company-third-section-right-col,
+.company-third-section-left-col,
+.company-last-section-left-col,
+.company-fixed-panel-col,
+.company-fixed-panel-col-content {
+  align-self: center;
+}
+.company-fourth-section-left-col {
+  align-self: flex-end;
+}
+.company-first-section {
+  justify-content: center;
+  background-image: url('/wp-content/themes/sixgill/images/company/first_section_bg_tablet.png');
+}
+.company-first-section-block {
+  width: 95.5%;
+  align-items: center;
+  z-index: 2;
+}
+.company-first-section-image-wrapper {
+  width: 47.34%;
+}
+.company-first-section-block-text {
+  width: 52.5%;
+  padding: 0px 4vw 0px 4vw;
+}
+.company-first-section-block-title {
+  font-size: 7vw;
+  font-weight: 300;
+  line-height: 1em;
+  margin-bottom: 2vw;
+  font-family: "Lato Light";
+}
+.company-first-section-block-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 1.21vw;
+}
+.company-first-section-block-paragraph p {
+  margin-bottom: 0px;
+}
+.company-first-section-scroll-link-text {
+  font-size: 17px;
+  font-weight: 600;
+  text-shadow: -3.1px 3.9px 12px #000000;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.company-second-section {
+  background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
+}
+.company-second-section-image-wrapper {
+  width: 67%;
+  margin-bottom: 2.5vw;
+}
+.company-second-section-title {
+  font-size: 4.56vw;
+  line-height: 1em;
+  font-weight: 300;
+  font-family: "Lato Light";
+  width: 100%;
+  text-align: center;
+  color: #0051c6;
+  margin-bottom: 4.62vw;
+}
+.company-second-section-image-wrapper-mobile {
+  width: 100%;
+  text-align: center;
+}
+.company-second-section-text {
+  width: 92.7%;
+}
+.company-second-section-image-wrapper,
+.company-second-section-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+.company-section {
+  min-height: calc(100vh - 121px);
+}
+.company-first-section,
+.company-second-section {
+  height: calc(100vh - 121px);
+}
+.company-third-section {
+  min-height: inherit !important;
+}
+.company-third-section-wrapper,
+.company-fourth-section-wrapper {
+  align-items: flex-end;
+  height: auto;
+  max-height: none;
+  width: 100%;
+}
+.company-third-section {
+  background-image: url('/wp-content/themes/sixgill/images/company/third_section_bg_tablet.png');
+}
+.company-third-section-content-wrapper {
+  width: 100%;
+  padding: 8vw 3.45vw 8vw 3.45vw;
+}
+.company-third-section-title {
+  font-size: 35px;
+  line-height: 1em;
+  font-weight: 300;
+  font-family: "Lato Light";
+  color: #2adc3a;
+  margin-bottom: 4.5vw;
+}
+.company-third-section-left-col,
+.company-learn-more-link {
+  width: 100%;
+}
+.company-third-section-right-col {
+  width: 66%;
+}
+.company-third-section-title,
+.company-fourth-section-title {
+  font-size: 4.57vw;
+  font-weight: 300;
+  font-family: "Lato Light";
+  line-height: 5.7vw;
+}
+.company-third-section-subtitle,
+.company-fourth-section-subtitle {
+  font-size: 1.9vw;
+  font-weight: 700;
+}
+.company-third-section-title-wrapper {
+  width: calc(100% - 10vw);
+}
+.company-third-section-header-wrapper,
+.company-third-section-title-wrapper,
+.company-fourth-section-header-wrapper,
+.company-fourth-section-title-wrapper {
+  display: inline-block;
+}
+.company-third-section-title-wrapper {
+  float: left;
+}
+.company-fourth-section {
+  min-height: inherit !important;
+}
+.company-fourth-section-wrapper {
+  padding-top: 8.2vw;
+  background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
+}
+.company-fourth-section-right-col {
+  width: 47%;
+  padding-right: 3.4vw;
+  text-align: left;
+}
+.company-fourth-section-image-wrapper {
+  width: 84.65%;
+  display: inline-block;
+}
+.company-fourth-section-left-col {
+  width: 52.6%;
+  text-align: center;
+}
+.company-fourth-section-title-wrapper {
+  float: left;
+}
+.company-fourth-section-text,
+.company-first-section-block-paragraph,
+.company-second-section-text {
+  font-weight: 400;
+}
+.company-third-section-text,
+.company-third-section-text p,
+.company-third-section-text li {
+  font-size: 16px;
+  font-weight: 500;
+}
+.company-third-section-text li {
+  margin-bottom: 1em !important;
+}
+.company-first-section-block-paragraph,
+.company-second-section-text,
+.company-fourth-section-text {
+  font-size: 16px;
+}

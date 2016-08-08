@@ -1,72 +1,49 @@
 'use strict';
-var gulp = require('gulp'),
-    watch = require('gulp-watch'),
-    livereload = require('gulp-livereload'),
-    gutil = require('gulp-util'),
-    cache = require('gulp-cached'),
-    remember = require('gulp-remember');
-    
 
-gulp.task('watch', function () {
-    // livereload.listen();
-    var watcher = gulp.watch('./js/**/*.js', ['scripts']); // watch the same files in our scripts task
-    watcher.on('change', function (file) {
-        // livereload.changed(file.path);
-        gutil.log(gutil.colors.yellow('JS changed' + ' (' + file.path + ')'));
-        if (file.type === 'deleted') { // if a file is deleted, forget about it
-            delete cache.caches['scripts'][file.path];
-            remember.forget('scripts', file.path);
-        }
-    });
-    // var watcher_css = gulp.watch('./css/**/*.css', ['styles']);
-    // watcher_css.on('change', function (file) {
-    //     livereload.changed(file.path);
-    //     gutil.log(gutil.colors.yellow('CSS changed' + ' (' + file.path + ')'));
-    //     if (file.type === 'deleted') { // if a file is deleted, forget about it
-    //         delete cache.caches['styles'][file.path];
-    //         remember.forget('styles', file.path);
-    //     }
-    // });
+module.exports = (gulpComponents) => {
+  var gulp = gulpComponents.gulp,
+      gutil = gulpComponents.gutil,
+      cache = gulpComponents.cache,
+      watch = gulpComponents.watch,
+      remember = gulpComponents.remember,
+      runSequence = gulpComponents.runSequence,
+      paths = gulpComponents.paths;
 
-    var watcher_css = gulp.watch('./css/**/*.css', ['build']);
-    watcher_css.on('change', function (file) {
-        // livereload.changed(file.path);
-        gutil.log(gutil.colors.yellow('CSS changed' + ' (' + file.path + ')'));
-        if (file.type === 'deleted') { // if a file is deleted, forget about it
-            delete cache.caches['styles'][file.path];
-            remember.forget('styles', file.path);
-        }
-    });
-    
-    // gulp.watch('./css/**/*.css', ['build']).on('change', function(file) {
-    //     livereload.changed(file.path);
-    //     gutil.log(gutil.colors.yellow('CSS changed' + ' (' + file.path + ')'));
-    // });
-});
 
-gulp.task('watch:fast', function () {
-    // livereload.listen();
-    var watcher = gulp.watch('./js/**/*.js', ['scripts:fast']); // watch the same files in our scripts task
-    watcher.on('change', function (file) {
-        // livereload.changed(file.path);
-        gutil.log(gutil.colors.yellow('JS changed' + ' (' + file.path + ')'));
+  gulp.task('watch',
+    (callback) => runSequence(
+        ['watch_css', 'watch_js'],
+        callback
+    )
+  );
+
+  function watchFiles(watchingFilesPatterns, onChangeTasks, fileTypeName, cacheName) {
+    var watcher = gulp.watch(watchingFilesPatterns, onChangeTasks); // watch the same files in our scripts task
+    watcher.on('change', (file) => {
+        gutil.log(gutil.colors.yellow(fileTypeName + ' changed' + ' (' + file.path + ')'));
         if (file.type === 'deleted') { // if a file is deleted, forget about it
-            delete cache.caches['scripts'][file.path];
-            remember.forget('scripts', file.path);
+            delete cache.caches[cacheName][file.path];
+            remember.forget(cacheName, file.path);
         }
     });
-    var watcher_css = gulp.watch('./css/**/*.css', ['build']);
-    watcher_css.on('change', function (file) {
-        // livereload.changed(file.path);
-        gutil.log(gutil.colors.yellow('CSS changed' + ' (' + file.path + ')'));
-        if (file.type === 'deleted') { // if a file is deleted, forget about it
-            delete cache.caches['styles'][file.path];
-            remember.forget('styles', file.path);
-        }
-    });
-        
-    // gulp.watch('./css/**/*.css', ['build']).on('change', function(file) {
-    //     livereload.changed(file.path);
-    //     gutil.log(gutil.colors.yellow('CSS changed' + ' (' + file.path + ')'));
-    // });
-});
+  }
+
+  gulp.task('watch_js',
+    () => watchFiles(
+            paths.watcher.scripts,
+            ['build_js'],
+            'JS',
+            'scripts'
+          )
+  );
+
+  gulp.task('watch_css',
+    () => watchFiles(
+            paths.watcher.styles,
+            ['build_css'],
+            'CSS',
+            'styles'
+          )
+  );
+
+}

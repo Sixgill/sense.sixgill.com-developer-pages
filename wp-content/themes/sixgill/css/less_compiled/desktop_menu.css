@@ -1,0 +1,56 @@
+/* Menu desktop styles */
+.menu-schedule-button {
+  width: 206.5px;
+  height: 43px;
+  background-color: #0051c6;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.menu-schedule-button-wrapper {
+  width: 225px;
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  left: 0px;
+}
+.nav-divider-line {
+  margin-bottom: 1.34vh;
+  width: 206.5px;
+  height: 1px;
+  background-color: #ebebeb;
+  display: inline-block;
+}
+#primary-menu {
+  opacity: 1 !important;
+  position: absolute;
+  left: 0px;
+  top: 36.83vh;
+  width: 225px;
+}
+#primary-menu li {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+#primary-menu ul,
+#primary-menu li,
+#primary-menu a,
+#primary-menu a > div {
+  width: 100%;
+}
+#primary-menu a {
+  display: inline-block;
+}
+#header {
+  border-width: 0px 5px 0px 0px;
+  border-style: solid;
+  border-color: #5ede6a;
+  border-image: linear-gradient(to bottom, #5ede6a, #5eb26a) 1 100%;
+}
+.desktop-menu-wrapper {
+  display: inline-block;
+  text-align: left;
+}
