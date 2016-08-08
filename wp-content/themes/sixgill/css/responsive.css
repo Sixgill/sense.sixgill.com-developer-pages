@@ -11,7 +11,7 @@ Responsive CSS
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
 	#wrapper {
 		width: 100%;
 		margin: 0;
@@ -113,8 +113,6 @@ Responsive CSS
 		border: 0 !important;
 		padding: 0 !important;
 		margin: 0 !important;
-		-webkit-transition: none;
-		-o-transition: none;
 		transition: none;
 
 	}
@@ -185,8 +183,6 @@ Responsive CSS
 		left: auto;
 		right: 15px;
 		margin: 40px 0;
-		-webkit-transition: margin .4s ease;
-		-o-transition: margin .4s ease;
 		transition: margin .4s ease;
 	}
 

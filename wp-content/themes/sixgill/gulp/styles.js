@@ -3,6 +3,7 @@
 
 module.exports = (gulpComponents) => {
   var gulp = gulpComponents.gulp,
+      autoprefixer = gulpComponents.autoprefixer,
       less = gulpComponents.less,
       cache = gulpComponents.cache,
       cleanCSS = gulpComponents.cleanCSS,
@@ -17,7 +18,6 @@ var lessSource = paths.less.source,
     lessDest = paths.less.dest;
 
 var buildings = paths.builds.values;
-console.log(buildings);
 
   gulp.task('less',
     () => gulp.src(lessSource)
@@ -26,9 +26,7 @@ console.log(buildings);
   );
 
   gulp.task('wrap_css', (callback) => {
-    var currentIndex = 0;
-    var gulpPromises = [];
-    return eventStream.merge(cssWrappers.map(function (style) {
+    return eventStream.merge(cssWrappers.map((style) => {
       if (style.wrapper !== null) {
         return gulp.src(style.style_list)
         .pipe(concat('./' + style.name + '.css'))
@@ -50,6 +48,7 @@ console.log(buildings);
   gulp.task('styles',
     () => gulp.src(buildings)
             .pipe(cache('styles'))
+            .pipe(autoprefixer({ browsers: ['ie >= 10', 'Firefox >= 45', 'ios >= 8']}))
             .pipe(cleanCSS())
             .pipe(remember('styles'))
             .pipe(concat('custom_build.css'))
