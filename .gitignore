@@ -16,6 +16,7 @@ sitemap.xml.gz
 *.log
 
 wp-content/themes/sixgill/build/
+wp-content/themes/sixgill/css/less_compiled/
 
 # @TODO writable paths
 wp-content/cache/
