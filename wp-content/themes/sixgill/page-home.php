@@ -125,7 +125,11 @@
 					Sixgill SenseTM tracks, determines, and acts on the changing proximity of people, places and things.
 			</h2>
 			<div class="home-third-section-image-wrapper">
-				<img class="home-third-section-image" src="/wp-content/themes/sixgill/images/home/iconTruck.svg">
+				<img class="home-third-section-image responsive-image"
+          desktop-src="/wp-content/themes/sixgill/images/home/infographic.svg"
+          tablet-src="/wp-content/themes/sixgill/images/home/infographic.svg"
+          mobile-src="/wp-content/themes/sixgill/images/home/mobile_infographic.svg"
+        >
 			</div>
 			<div class="home-third-section-bottom-part-wrapper">
 				<div class="home-third-section-bottom-part-text">
