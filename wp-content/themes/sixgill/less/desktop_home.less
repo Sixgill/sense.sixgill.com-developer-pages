@@ -1,80 +1,272 @@
 /* Home desktop styles */
 
-.home-learn-more-link {
-	display: block;
-  position: absolute;
-  top: calc(~"100vh - 85px");
-  width: 100%;
-	z-index: 2;
-}
+.home {
 
-.home-first-section {
-	justify-content: center;
-	height: 100vh;
+	&-learn-more-link {
+		display: block;
+	  position: absolute;
+	  top: calc(~"100vh - 85px");
+	}
 
-	&-video {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		top: 0;
-		right: 0;
-		width: 100vw;
+	&-first-section {
+		justify-content: center;
 		height: 100vh;
-		background-size: 100% 100%;
-		background-color: black; /* in case the video doesn't fit the whole page*/
-		background-image: url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
-		background-position: center center;
-		background-size: contain;
-		object-fit: cover; /*cover video background */
-		z-index: 1;
-	}
 
-	&, &-block {
-		display: flex;
-	}
-
-	&-block {
-		&, &-text {
-			align-self: center;
-			text-align: center;
-			display: inline-block;
+		&-video {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			right: 0;
+			width: 100vw;
+			height: 100vh;
+			background-size: 100% 100%;
+			background-color: black; /* in case the video doesn't fit the whole page*/
+			background-image: url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
+			background-position: center center;
+			background-size: contain;
+			object-fit: cover; /*cover video background */
+			z-index: 1;
 		}
-	}
 
-	&-block {
-		align-items: center;
-		width: 50%;
-		z-index: 3;
+		&, &-block {
+			display: flex;
+		}
+
+		&-block {
+			&, &-text {
+				align-self: center;
+				text-align: center;
+				display: inline-block;
+			}
+		}
+
+		&-block {
+			align-items: center;
+			width: 50%;
+			z-index: 3;
+
+			&-text {
+				width: 100%;
+			}
+		}
 
 		&-text {
-			width: 100%;
+			&, & p {
+				font-size: 32px;
+				font-weight: 900;
+				line-height: 1;
+				letter-spacing: 1.6px;
+				margin-bottom: 10px;
+				text-shadow: 0 0 11.5px rgba(0,0,0,.7);
+			}
+		}
+
+		&-scroll-link {
+			&-text {
+				font-size: 17px;
+			  font-weight: 600;
+			  text-shadow: -3.1px 3.9px 12px #000000;
+				margin-bottom: 16px;
+				text-align: center;
+			}
+
+			&-ico-wrapper {
+				width: 37px;
+				height: 18px;
+				text-align: center;
+			}
 		}
 	}
 
-	&-text {
-		&, & p {
-			font-size: 32px;
-			font-weight: 900;
-			line-height: 1;
-			letter-spacing: 1.6px;
-			margin-bottom: 10px;
-			text-shadow: 0 0 11.5px rgba(0,0,0,.7);
+
+	&-second-section {
+		background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
+
+	  &-wrapper {
+			width: 74.5%;
+	  }
+
+	  &-header-wrapper {
+			height: 150px;
+	  }
+
+	  &-header-top {
+			font-size: 22px;
+	    &-line {
+	    }
+
+	    &-title {
+				margin: 0px 8px 0px 8px;
+	    }
+	  }
+
+	  &-title {
+			font-family: Lato;
+			font-size: 47px;
+			font-weight: 700;
+			line-height: 54.6px;
+			letter-spacing: 1.4px;
+			text-align: center;
+			color: #4ddb5a;
+	  }
+
+	  &-subtitle {
+			font-size: 16px;
+	  }
+
+	  &-content-wrapper {
+
+	  }
+
+		&-row {
+
+		}
+
+		&-block {
+
+
+			&-title {
+
+			}
+
+			&-content {
+
+			}
+		}
+
+		&-icon-wrapper {
+
+		}
+
+		&-icon {
+
 		}
 	}
 
-	&-scroll-link {
-		&-text {
-			font-size: 17px;
-		  font-weight: 600;
-		  text-shadow: -3.1px 3.9px 12px #000000;
-			margin-bottom: 16px;
-			text-align: center;
+	&-third-section {
+
+		&-wrapper {
+
 		}
 
-		&-ico-wrapper {
-			width: 37px;
-			height: 18px;
-			text-align: center;
+		&-title {
+
+		}
+
+		&-image-wrapper {
+
+		}
+
+		&-image {
+
+		}
+
+		&-bottom-part {
+			&-wrapper {
+
+			}
+
+			&-text {
+
+			}
+		}
+
+		&-button {
+
+		}
+	}
+
+	&-fourth-section {
+		&-wrapper {
+
+		}
+
+		&-header-wrapper {
+
+		}
+
+		&-title {
+
+		}
+
+		&-subtitle {
+
+		}
+
+		&-link {
+
+		}
+
+		&-carousel {
+			&-wrapper {
+
+			}
+
+			&-slide {
+
+			}
+
+			&-image-wrapper {
+
+			}
+
+			&-text {
+				&-wrapper {
+
+				}
+
+				&-caption {
+
+					&-wrapper {
+
+					}
+				}
+
+				&-content {
+
+					&-wrapper {
+
+					}
+
+					&-line {
+
+					}
+				}
+			}
+
+			&-link-more {
+
+			}
+		}
+	}
+
+	&-fifth-section {
+
+		&-wrapper {
+
+		}
+
+		&-header-wrapper {
+
+		}
+
+		&-dash {
+
+		}
+
+		&-title {
+
+		}
+
+		&-subtitle {
+
+		}
+
+		&-logo {
+			&s-wrapper {
+
+			}
 		}
 	}
 }

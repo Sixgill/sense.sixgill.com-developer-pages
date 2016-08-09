@@ -150,7 +150,36 @@
 				</a>
 			</div>
 			<div class="home-fourth-section-carousel-wrapper">
-
+				<div id="home-fourth-section-carousel" class="home-fourth-section-carousel">
+					<?php query_posts
+					(array(
+						'post_parent' => 36,
+						'post_type' => 'page'
+						));
+					if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+						<div class="home-fourth-section-carousel-slide">
+							<div class="home-fourth-section-carousel-image-wrapper">
+								<?php the_post_thumbnail('home-solutions-slider');?>
+							</div>
+							<div class="home-fourth-section-carousel-text-wrapper">
+								<div class="home-fourth-section-carousel-text-caption-wrapper">
+									<span class="home-fourth-section-carousel-text-caption">
+										<?php the_title();?>
+									</span>
+								</div>
+								<div class="home-fourth-section-carousel-text-content-wrapper">
+									<hr class="home-fourth-section-carousel-text-content-line">
+									<div class="home-fourth-section-carousel-text-content">
+										<?php echo limit_words(get_field('first_section_text'), '29'); ?>
+									</div>
+									<a href="<?php the_permalink(); ?>" class="home-fourth-section-carousel-link-more">
+										Learn More
+									</a>
+								</div>
+							</div>
+						</div>
+					<?php endwhile; else: endif;  wp_reset_query(); ?>
+				</div>
 			</div>
 		</div>
 	</div>

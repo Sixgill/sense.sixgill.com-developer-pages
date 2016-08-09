@@ -1,6 +1,18 @@
 /* General Common styles */
 
 .home {
+
+	&-learn-more-link {
+	  width: 100%;
+		z-index: 2;
+	}
+
+	&-section {
+		width: 100%;
+		overflow: hidden;
+		background-size: cover;
+	}
+
 	&-first-section {
 
 	  &-scroll-link {
@@ -42,31 +54,51 @@
 	}
 
 	&-second-section {
-	  &-wrapper {
+		display: flex;
+    justify-content: center;
+    align-items: center;
 
+	  &-wrapper {
+			display: inline-block;
 	  }
 
 	  &-header-wrapper {
-
+			border-bottom: 1px solid #2e2e2e;
 	  }
 
 	  &-header-top {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
 
 	    &-line {
-
+				display: inline-block;
+				height: 1px;
+				background-color: #2e2e2e;
+				transform: translateY(0.5em);
 	    }
 
 	    &-title {
-
+				font-family: "Lato";
+				font-weight: 700;
+				text-align: center;
+				color: #ffffff;
+				line-height: 1em;
 	    }
 	  }
 
 	  &-title {
-
+			font-family: "Lato";
+			font-weight: 700;
+			text-align: center;
+			color: #4ddb5a;
 	  }
 
 	  &-subtitle {
-
+			font-family: "Lato";
+			font-weight: 400;
+			text-align: center;
+			color: #ffffff;
 	  }
 
 	  &-content-wrapper {
@@ -152,8 +184,46 @@
 
 		}
 
-		&-carousel-wrapper {
+		&-carousel {
+			&-wrapper {
 
+			}
+
+			&-slide {
+
+			}
+
+			&-image-wrapper {
+
+			}
+
+			&-text {
+				&-wrapper {
+
+				}
+
+				&-caption {
+
+					&-wrapper {
+
+					}
+				}
+
+				&-content {
+
+					&-wrapper {
+
+					}
+
+					&-line {
+
+					}
+				}
+			}
+
+			&-link-more {
+
+			}
 		}
 	}
 
