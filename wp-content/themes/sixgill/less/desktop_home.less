@@ -56,7 +56,6 @@
 				font-size: 32px;
 				font-weight: 900;
 				line-height: 1;
-				letter-spacing: 1.6px;
 				margin-bottom: 10px;
 				text-shadow: 0 0 11.5px rgba(0,0,0,.7);
 			}
@@ -65,10 +64,8 @@
 		&-scroll-link {
 			&-text {
 				font-size: 17px;
-			  font-weight: 600;
-			  text-shadow: -3.1px 3.9px 12px #000000;
-				margin-bottom: 16px;
-				text-align: center;
+	    	margin-bottom: 16px;
+	    	text-shadow: -3.1px 3.9px 12px #000000;
 			}
 
 			&-ico-wrapper {
@@ -97,6 +94,8 @@
 	    }
 
 	    &-title {
+				width: 810px;
+    		white-space: nowrap;
 				margin: 0px 8px 0px 8px;
 	    }
 	  }
@@ -113,6 +112,7 @@
 
 	  &-subtitle {
 			font-size: 16px;
+			margin-bottom: 26px;
 	  }
 
 	  &-content-wrapper {
@@ -120,11 +120,21 @@
 	  }
 
 		&-row {
-
+			width: 100%;
 		}
 
 		&-block {
+			width: 45.5%;
+			display: flex;
+			flex-direction: row;
 
+			&:first-child {
+				float: left;
+			}
+
+			&:last-child {
+				float: right;
+			}
 
 			&-title {
 

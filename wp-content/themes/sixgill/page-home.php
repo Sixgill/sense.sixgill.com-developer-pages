@@ -87,6 +87,8 @@
 					</div>
 				</div>
 
+				<div class="clear"></div>
+
 				<div class="home-second-section-row">
 					<div class="home-second-section-block">
 						<div class="home-second-section-icon-wrapper">
