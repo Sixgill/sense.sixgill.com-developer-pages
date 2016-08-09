@@ -64,7 +64,7 @@
 				<div class="home-second-section-row">
 					<div class="home-second-section-block">
 						<div class="home-second-section-icon-wrapper">
-							<img class="home-second-section-icon" src="">
+							<img class="home-second-section-icon" src="/wp-content/themes/sixgill/images/home/iconCheckmark.svg">
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
@@ -76,7 +76,7 @@
 
 					<div class="home-second-section-block">
 						<div class="home-second-section-icon-wrapper">
-							<img class="home-second-section-icon" src="">
+							<img class="home-second-section-icon" src="/wp-content/themes/sixgill/images/home/iconEngine.svg">
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
@@ -92,7 +92,7 @@
 				<div class="home-second-section-row">
 					<div class="home-second-section-block">
 						<div class="home-second-section-icon-wrapper">
-							<img class="home-second-section-icon" src="">
+							<img class="home-second-section-icon" src="/wp-content/themes/sixgill/images/home/iconTruck.svg">
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
@@ -104,7 +104,7 @@
 
 					<div class="home-second-section-block">
 						<div class="home-second-section-icon-wrapper">
-							<img class="home-second-section-icon" src="">
+							<img class="home-second-section-icon" src="/wp-content/themes/sixgill/images/home/iconTarget.svg">
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
@@ -125,7 +125,7 @@
 					Sixgill SenseTM tracks, determines, and acts on the changing proximity of people, places and things.
 			</h2>
 			<div class="home-third-section-image-wrapper">
-				<img class="home-third-section-image" src="">
+				<img class="home-third-section-image" src="/wp-content/themes/sixgill/images/home/iconTruck.svg">
 			</div>
 			<div class="home-third-section-bottom-part-wrapper">
 				<div class="home-third-section-bottom-part-text">
