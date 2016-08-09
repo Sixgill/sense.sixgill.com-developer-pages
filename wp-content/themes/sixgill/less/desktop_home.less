@@ -12,6 +12,23 @@
 	justify-content: center;
 	height: 100vh;
 
+	&-video {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		right: 0;
+		width: 100vw;
+		height: 100vh;
+		background-size: 100% 100%;
+		background-color: black; /* in case the video doesn't fit the whole page*/
+		background-image: url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
+		background-position: center center;
+		background-size: contain;
+		object-fit: cover; /*cover video background */
+		z-index: 1;
+	}
+
 	&, &-block {
 		display: flex;
 	}
@@ -60,67 +77,4 @@
 			text-align: center;
 		}
 	}
-}
-
-#home-video {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	top:0;
-	right:0;
-	width: 100vw;
-	height: 100vh;
-	background-size: 100% 100%;
-	background-color: black; /* in case the video doesn't fit the whole page*/
-	background-image:url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
-	background-position: center center;
-	background-size: contain;
-	object-fit: cover; /*cover video background */
-	z-index: 1;
-}
-
-.home-video-text-h1 p {
-	font-size: 32.3px;
-	font-weight: 900;
-	line-height: 1;
-	letter-spacing: 1.6px;
-}
-
-/*---products section---*/
-
-.home-block-home-title {
-	font-size: 23.5px;
-	font-weight: 700;
-	line-height: 1.25;
-	letter-spacing: 1.2px;
-}
-
-.home-block-home-subtitle {
-	font-size: 13.8px;
-	font-weight: 400;
-	letter-spacing: 0.7px;
-}
-
-/*----solutions section--*/
-
-.home-block-solutions-title{
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 1.08;
-	letter-spacing: 2.4px;
-	margin-top: 92px;
-}
-
-.home-block-solutions-subtitle {
-	margin-top: 12px;
-	font-size: 18.2px;
-	font-weight: 400;
-	line-height: 1.42;
-}
-
-/*slider theme*/
-
-.home-block-solutions-carousel-theme {
-	width: 768px;
-	margin: 61px auto 0;
 }

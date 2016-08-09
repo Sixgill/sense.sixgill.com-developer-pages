@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+ <?php get_header(); ?>
 
 <a
 	href="#home-second-section"
@@ -20,7 +20,7 @@
 
 <div id="home-fullpage-wrapper" class="full-width">
 	<div id="home-first-section" class="home-section home-first-section">
-		<video autoplay loop muted id="home-video">
+		<video autoplay loop muted id="home-video" class="home-first-section-video">
 			<source src="<?php echo get_field('video_url'); ?>" type="video/mp4">
 			<source src="<?php echo get_field('video_url_ogv'); ?>" type="video/ogv">
 			<source src="<?php echo get_field('video_url_webm'); ?>" type="video/webm">
@@ -125,7 +125,7 @@
 			<div class="home-third-section-image-wrapper">
 				<img class="home-third-section-image" src="">
 			</div>
-			<div class="home-third-section-bottom-part">
+			<div class="home-third-section-bottom-part-wrapper">
 				<div class="home-third-section-bottom-part-text">
 					See what the Sixgill Sense Platform can do for your company.
 				</div>
