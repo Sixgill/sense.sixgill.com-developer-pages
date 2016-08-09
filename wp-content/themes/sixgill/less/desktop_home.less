@@ -8,45 +8,58 @@
 	z-index: 2;
 }
 
-.home-first-section,
-.home-first-section-block {
-	display: flex;
-}
-
-.home-first-section-block,
-.home-first-section-block-text {
-	align-self: center;
-	text-align: center;
-	display: inline-block;
-}
-
 .home-first-section {
 	justify-content: center;
-	min-height: 33.3vw !important;
-}
-
-.home-first-section-block {
-	align-items: center;
-	width: 50%;
-	z-index: 3;
-}
-
-.home-first-section-scroll-link-text {
-	font-size: 17px;
-  font-weight: 600;
-  text-shadow: -3.1px 3.9px 12px #000000;
-	margin-bottom: 16px;
-	text-align: center;
-}
-
-.home-first-section-scroll-link-ico-wrapper {
-	width: 37px;
-	height: 18px;
-	text-align: center;
-}
-
-.home-first-section {
 	height: 100vh;
+
+	&, &-block {
+		display: flex;
+	}
+
+	&-block {
+		&, &-text {
+			align-self: center;
+			text-align: center;
+			display: inline-block;
+		}
+	}
+
+	&-block {
+		align-items: center;
+		width: 50%;
+		z-index: 3;
+
+		&-text {
+			width: 100%;
+		}
+	}
+
+	&-text {
+		&, & p {
+			font-size: 32px;
+			font-weight: 900;
+			line-height: 1;
+			letter-spacing: 1.6px;
+			margin-bottom: 10px;
+			text-shadow: 0 0 11.5px rgba(0,0,0,.7);
+		}
+	}
+
+	&-scroll-link {
+		&-text {
+			font-size: 17px;
+		  font-weight: 600;
+		  text-shadow: -3.1px 3.9px 12px #000000;
+			margin-bottom: 16px;
+			text-align: center;
+		}
+
+		&-ico-wrapper {
+			width: 37px;
+			height: 18px;
+			text-align: center;
+		}
+	}
 }
 
 #home-video {
@@ -66,95 +79,11 @@
 	z-index: 1;
 }
 
-.products-first-section-block-text {
-	width: 100%;
-}
-
-.home-text-2 {
-	margin-top: 120px;
-}
-
-.applying-layer-copperOnVideo {
-	background-color: rgba(0,0,0,0);
-}
-
-.home-video-background {
-	background-image:url("/wp-content/themes/sixgill/images/td/home/shadow.png");
-	padding: 85px 30px 50px 30px;
-	height: 380px;
-}
-
-#logo {
-	float: left !important;
-}
-
 .home-video-text-h1 p {
 	font-size: 32.3px;
 	font-weight: 900;
 	line-height: 1;
 	letter-spacing: 1.6px;
-}
-
-.home-block-what-title-wrapper,
-.home-block-what-wrapper {
-	max-width: 62.5em;
-}
-
-.home-block-what-subtitle-on-line {
-	font-size: 21.3px;
-	font-weight: 700;
-	line-height: 1;
-	letter-spacing: 1.1px;
-}
-
-.home-block-what-title {
-	font-size: 57.5px;
-	font-weight: 700;
-	line-height: 1.16;
-	letter-spacing: 1.7px;
-}
-
-.home-block-what-subtitle {
-	font-size: 18.7px;
-	font-weight: 400;
-	letter-spacing: 0.9px;
-}
-
-.home-block-what-item:not(:last-child) {
-	margin-bottom:40px;
-	min-height: 220px;
-}
-
-.home-block-what-item-icon {
-	float: left;
-	width: 16%;
-	height: auto;
-	margin-right: 5%
-}
-
-.home-block-what-item-title {
-	font-size: 16.2px;
-	font-weight: 700;
-	line-height: 2.17;
-	letter-spacing: 0.5px;
-	width: 78%;
-	float: right;
-	display: inline-block;
-}
-
-.home-block-what-item-text {
-	font-size: 18.2px;
-	font-weight: 400;
-	line-height: 1.42;
-	letter-spacing: 0.9px;
-	width: 78%;
-	float: right;
-	display: inline-block;
-}
-
-.home-block-what-col {
-	width:49.5%;
-	float: left;
 }
 
 /*---products section---*/
@@ -192,38 +121,6 @@
 /*slider theme*/
 
 .home-block-solutions-carousel-theme {
-	width:768px;
-	margin:61px auto 0;
-}
-
-.hidden-bottom-imageDiagram {
-	display: inline-block;
-}
-
-.video-wrap video {
-	width: 100%;
-}
-
-.logo-subheader {
-	margin-bottom: 45px;
-}
-
-.home-logos {
-	width: 650px;
-}
-
-.home-logos-titles {
-	width: 720px;
-}
-
-.home-clients-block {
-	width: 720px;
-}
-
-#what {
-	background-image: url("/wp-content/themes/sixgill/images/4-Home/bgMap-desktop@1x.png");
-}
-
-#solutions {
-	background-image: url("/wp-content/themes/sixgill/images/4-Home/bgMap-desktop@1x.png");
+	width: 768px;
+	margin: 61px auto 0;
 }
