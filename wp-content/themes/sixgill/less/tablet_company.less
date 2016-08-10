@@ -1,4 +1,10 @@
 /* Company tablet styles */
+.company-first-section-scroll-link-ico-wrapper {
+	width: 37px;
+	height: 18px;
+	margin: 0 auto;
+}
+
 .company-learn-more-link {
 	display: block;
   position: absolute;
@@ -82,11 +88,11 @@
 	padding: 2vw 0px 2vw 0px;
 
 	&-image-wrapper {
-		min-width: 12em;
-		max-height: 12em;
+		min-width: 215px;
+		max-height: 215px;
 	}
 	&-block-title {
-	  font-family: Lato;
+	  font-family: Lato light;
 	  font-size: 35.1px;
 	  font-weight: 300;
 	  line-height: 1.25;
@@ -96,7 +102,7 @@
   	  margin-bottom: 5vw;
 	}
 	&-block {
-		width: 80%;
+		width: 92%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -115,14 +121,15 @@
 	&-rows {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 44px;
 	}
 	&-team-description {
-		margin-left: 2vw;
+		margin-left: 37px;
 	}
 
 	&-name {
 	  height: 26px;
-	  font-family: Lato;
+	  font-family: Lato light;
 	  font-size: 34.5px;
 	  font-weight: 300;
 	  line-height: 0.62;
@@ -178,10 +185,14 @@
 		color: #0051c6;
 	}
 }
+
 .company-third-section {
 	display: flex;
 	background-image: url('/wp-content/themes/sixgill/images/company/boardBg-tablet@1x.png');
 	padding: 2vw 0px 2vw 0px;
+	& p {
+		margin-bottom: 0;
+	}
 
 	&-text{
 		width: 37.7vw;
@@ -193,25 +204,26 @@
 	}
 
 	&-title {
-	  font-family: Lato;
-	  font-size: 43.9px;
-	  font-weight: 300;
-	  line-height: 1;
-	  letter-spacing: 4.8px;
-	  text-align: center;
-	  color: #4ddb5a;
+		font-family: Lato light;
+		font-size: 35.1px;
+		font-weight: 300;
+		line-height: 1.25;
+		letter-spacing: 3.9px;
+		text-align: center;
+		color: #4ddb5a;
 	}
 	&-name {
-		margin-bottom: 1.21vw;
-		font-family: Lato;
+		font-family: Lato light;;
 		font-size: 34.5px;
 		font-weight: 300;
-		line-height: 0.8;
+		line-height: 0.62;
 		letter-spacing: 1px;
 		color: #ffffff;
+		margin-bottom: 12px;
 	}
 	&-job {
-		margin-bottom: 1.21vw;
+		margin-bottom: 23px !important;
+		margin-top: 12px !important; 
 		font-family: Lato;
 		font-size: 18.6px;
 		font-weight: 700;
@@ -225,7 +237,7 @@
 		font-weight: 500;
 		line-height: 1.33;
 		letter-spacing: 0.5px;
-		color: #ffffff;
+		color: #a9d8dd;
 	}
 	&-rows {
 		display: flex;
@@ -233,7 +245,12 @@
 		align-items:flex-start;
 	}
 	&-row-item {
-		margin-left:10vw;
+		margin-left: 8vw;
+		margin-right: 5vw;
+		margin-top: 46px;
+	}
+	&-row-item:first-of-type {
+		margin-top: 0px;
 	}
 	&-list-dot {
 		color: #5cc468;
@@ -241,4 +258,7 @@
 	& > div {
 		align-self: center;
 	}
+	
+	
+
 }
