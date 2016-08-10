@@ -121,6 +121,7 @@
 
 			&-wrapper {
 				width: calc(~"100% - 10vw");
+				float: left;
 			}
 		}
 
@@ -156,18 +157,30 @@
 	}
 
 	&-fourth-section {
+		min-height: inherit !important;
 
 		&-wrapper {
 			display: flex;
 			align-items: flex-end;
-
 			height: auto;
 			max-height: none;
 			width: 100%;
+			padding-top: 7.88vw;
+			background-image: url('/wp-content/themes/sixgill/images/products/fourth_section_bg_at2.png');
+		}
+
+		&-image-wrapper {
+			width: 29.3vw;
 		}
 
 		&-left-col {
 			align-self: center;
+			width: 56.25%;
+			margin-left: 3.65vw;
+		}
+
+		&-right-col {
+			padding-left: 7.1vw;
 		}
 
 		&-title {
@@ -175,6 +188,10 @@
 		  font-weight: 300;
 			font-family: "Lato Light";
 		  line-height: 5.7vw;
+
+			&-wrapper {
+				float: left;
+			}
 		}
 
 		&-subtitle {
@@ -187,6 +204,7 @@
 			height: 2.5px;
 			width: 100%;
 			clear: both;
+			background-color: #d1d0ce;
 		}
 
 	}
@@ -196,10 +214,10 @@
 		&-wrapper {
 			display: flex;
 			align-items: flex-end;
-
 			height: auto;
 			max-height: none;
 			width: 100%;
+			background-image: url('/wp-content/themes/sixgill/images/products/fifth_section_bg_at2.png');
 		}
 
 		&-content-wrapper {
@@ -213,6 +231,7 @@
 		&-left-col {
 			display: flex;
 			align-self: center;
+			width: 34%;
 		}
 
 		&-right-col {
@@ -250,6 +269,31 @@
 
 		&-left-col {
 			align-self: center;
+		}
+
+		&-right-col {
+
+			border-radius: 3px;
+			display: inline-block;
+			padding: 10px 18px;
+			position: relative;
+			vertical-align: top;
+			float: left;
+			z-index: 2;
+			padding-left: 38px;
+
+			&::before {
+				background-color: #e9e9e9;
+			  content: "\00a0";
+			  display: block;
+			  height: 34px;
+			  position: absolute;
+			  top: -11px;
+			  transform: rotate( 119deg ) skew( -35deg );
+			  width:  30px;
+			  left: 8vw;
+			  z-index: -1;
+			}
 		}
 	}
 
@@ -313,44 +357,10 @@
 	display: inline-block;
 }
 
-.products-third-section-title-wrapper {
-	float: left;
-}
-
-.products-fourth-section {
-	min-height: inherit !important;
-}
-
-.products-fourth-section-wrapper {
-	padding-top: 7.88vw;
-	background-image: url('/wp-content/themes/sixgill/images/products/fourth_section_bg_at2.png');
-}
-
-.products-fourth-section-right-col {
-	padding-left: 7.1vw;
-}
-
-.products-fourth-section-image-wrapper {
-	width: 29.3vw;
-}
-
-.products-fourth-section-left-col {
-	width: 56.25%;
-	margin-left: 3.65vw;
-}
-
 .products-fourth-section-ico-wrapper {
 	width: 8.14vw;
 	height: 8.14vw;
 	margin-right: 3.52vw;
-	float: left;
-}
-
-.products-fourth-section-line {
-	background-color: #d1d0ce;
-}
-
-.products-fourth-section-title-wrapper {
 	float: left;
 }
 
@@ -364,12 +374,8 @@
 	min-height: inherit !important;
 }
 
-.products-fifth-section-wrapper {
-	background-image: url('/wp-content/themes/sixgill/images/products/fifth_section_bg_at2.png');
-}
-
 .products-fifth-section-left-col {
-	width: 34%;
+
 }
 
 .products-fifth-section-ico-wrapper {
@@ -411,12 +417,11 @@
 	line-height: 1em;
 }
 
-.products-last-section-left-col {
-	padding: 6.45vw 3.78vw 7.16vw 3.78vw;
-}
-
 .products-last-section-left-col{
+	display: flex;
 	width: 100%;
+	padding: 6.45vw 3.78vw 7.16vw 3.78vw;
+	justify-content: space-between;
 }
 
 .products-last-section-right-col {
@@ -426,37 +431,9 @@
 	display: block;
 }
 
-.products-last-section-left-col {
-  justify-content: space-between;
-}
-
 .products-last-section-right-col::before,
 .products-last-section-right-col {
 	background-color: #e9e9e9;
-}
-
-.products-last-section-right-col {
-	border-radius: 3px;
-	display: inline-block;
-	padding: 10px 18px;
-	position: relative;
-	vertical-align: top;
-	float: left;
-	z-index: 2;
-	padding-left: 38px;
-}
-
-.products-last-section-right-col::before {
-	background-color: #e9e9e9;
-  content: "\00a0";
-  display: block;
-  height: 34px;
-  position: absolute;
-  top: -11px;
-  transform: rotate( 119deg ) skew( -35deg );
-  width:  30px;
-  left: 8vw;
-  z-index: -1;
 }
 
 .bubble-sync::before {
