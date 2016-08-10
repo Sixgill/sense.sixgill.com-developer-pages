@@ -65,29 +65,29 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 }
 
 #primary-menu div a {
-	display: inline-block;
 	text-transform:none;
 	color:#2e2e2e;
 	font-size:12px;
 	font-weight:normal;
 }
 
-.no-touch #primary-menu div a:hover + #arrow, #primary-menu div .active {
-	display: inline-block;
+.no-touch #primary-menu div a:hover, #primary-menu div .active {
 	text-transform:none;
-	color:#2e2e2e;
+	color:#0051C6;
 	font-size:12px;
 	text-decoration:none;
 	font-weight:bold;
+
 }
 
-#primary-menu div .arrow {
-  /*font-size: 22px;*/
-  /*transform: scaleX(0.5);*/
-  display: none;
-  /*display: inline-block;*/
-  width: 12px;
-  height: 10.5px;
+#primary-menu div .active {
+
+	text-transform:none;
+	color:#0051C6;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+
 }
 
 .toggle .togglet,
