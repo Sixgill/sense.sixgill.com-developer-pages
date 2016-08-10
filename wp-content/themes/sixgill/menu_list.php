@@ -16,18 +16,18 @@
 		"elementName" => "Solutions",
 		"link" => "/solutions/",
 		"sublinksList" => array(
-			/*array(
+			array(
 				"name" => "People",
-				"anchor" => "people"
+				"anchor" => "solution-second-section"
 			),
 			array(
 				"name" => "Assets",
-				"anchor" => "assets"
+				"anchor" => "solution-third-section"
 			),
 			array(
 				"name" => "Crowds",
-				"anchor" => "crowds"
-			)*/
+				"anchor" => "solution-fourth-section"
+			),			
 		),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded
