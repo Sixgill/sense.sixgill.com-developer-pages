@@ -59,7 +59,7 @@
 			</div>
 			<div class="tech-second-section-right-col">
 				<div class="tech-second-section-content-wrapper">
-					<div class="tech-second-section-title">
+					<div class="tech-second-section-title tech-section-title-blue">
 						<?php echo get_field('second_section_title'); ?>
 					</div>
 					<div class="tech-second-section-text">
@@ -112,7 +112,7 @@
 
 			<div class="tech-fourth-section-right-col">
 				<div class="tech-fourth-section-content-wrapper">
-					<div class="tech-fourth-section-title">
+					<div class="tech-fourth-section-title tech-section-title-blue">
 						<?php echo get_field('fourth_section_title'); ?>
 					</div>
 
