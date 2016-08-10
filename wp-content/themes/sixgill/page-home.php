@@ -1,7 +1,7 @@
  <?php get_header(); ?>
 
 <a
-	href="#second-section"
+	href="#what"
 	class="home-learn-more-link"
 >
 	<div class="home-first-section-scroll-link-wrapper">
@@ -19,7 +19,7 @@
 </a>
 
 <div id="home-fullpage-wrapper" class="full-width">
-	<div id="home-first-section" data-anchor="first-section" class="home-section home-first-section">
+	<div id="home-first-section" data-anchor="video" class="home-section home-first-section">
 		<video autoplay loop muted id="home-video" class="home-first-section-video display-only-desktop">
 			<source src="<?php echo get_field('video_url'); ?>" type="video/mp4">
 			<source src="<?php echo get_field('video_url_ogv'); ?>" type="video/ogv">
@@ -43,7 +43,7 @@
 		</div>
 	</div>
 
-	<div id="home-second-section" data-anchor="second-section" class="home-section home-second-section">
+	<div id="home-second-section" data-anchor="what" class="home-section home-second-section">
 		<div class="home-second-section-wrapper">
 			<div class="home-second-section-header-wrapper">
 				<div class="home-second-section-header-top">
@@ -119,7 +119,7 @@
 		</div>
 	</div>
 
-	<div id="home-third-section" data-anchor="third-section" class="home-section home-third-section">
+	<div id="home-third-section" data-anchor="chart" class="home-section home-third-section">
 		<div class="home-third-section-wrapper">
 			<h2 class="home-third-section-title">
 					Sixgill SenseTM tracks, determines, and acts on the changing proximity of people, places and things.
@@ -142,7 +142,7 @@
 		</div>
 	</div>
 
-	<div id="home-fourth-section" data-anchor="fourth-section" class="home-section home-fourth-section">
+	<div id="home-fourth-section" data-anchor="usecases" class="home-section home-fourth-section">
 		<div class="home-fourth-section-wrapper">
 			<div class="home-fourth-section-header-wrapper">
 				<h2 class="home-fourth-section-title">
@@ -190,7 +190,7 @@
 		</div>
 	</div>
 
-	<div id="home-fifth-section" data-anchor="fifth-section" class="home-section home-fifth-section">
+	<div id="home-fifth-section" data-anchor="consumers" class="home-section home-fifth-section">
 		<div class="home-fifth-section-wrapper">
 			<div class="home-fifth-section-header-wrapper">
 				<div class="home-fifth-section-dash"></div>
