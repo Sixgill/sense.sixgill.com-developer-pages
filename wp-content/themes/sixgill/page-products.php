@@ -65,7 +65,7 @@
 
 	<div id="products-fixed-panel" class="products-fixed-panel hide" style="opacity: 0;">
 
-		<div data-section-link="#products-third-section" class="products-fixed-panel-col">
+		<div data-section-link="#products-third-section" class="products-fixed-panel-col" id="products-fixed-panel-col-track">
 			<div class="products-fixed-panel-col-content">
 				<div class="products-fixed-panel-icon-wrapper">
 					<img
@@ -79,7 +79,7 @@
 			</div>
 		</div>
 
-		<div data-section-link="#products-fourth-section" class="products-fixed-panel-col">
+		<div data-section-link="#products-fourth-section" class="products-fixed-panel-col" id="products-fixed-panel-col-determine">
 			<div class="products-fixed-panel-col-content">
 				<div class="products-fixed-panel-icon-wrapper">
 					<img
@@ -93,7 +93,7 @@
 			</div>
 		</div>
 
-		<div data-section-link="#products-fifth-section"  class="products-fixed-panel-col">
+		<div data-section-link="#products-fifth-section"  class="products-fixed-panel-col" id="products-fixed-panel-col-act">
 			<div class="products-fixed-panel-col-content">
 				<div class="products-fixed-panel-icon-wrapper">
 					<img

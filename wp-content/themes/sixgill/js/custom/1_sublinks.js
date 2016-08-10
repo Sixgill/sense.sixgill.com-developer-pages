@@ -15,7 +15,6 @@ jQuery(function($) {
 		if(!selectedSection.length) {
 			return;
 		}
-		console.log(selector);
 		var currentSublink = new SubsectionLinkInfo(
 			link,
 			selectedSection,
