@@ -11,13 +11,14 @@ jQuery(function($) {
 		scrollBar: true,
 		sectionSelector: '.home-section',
 		verticalCentered: false,
-		onLeave: function(index, nextIndex, direction){
+		onLeave: function(index, nextIndex, direction) {
       var vid = document.getElementById("home-video");
       if(nextIndex == 1) {
 				vid.play();
 			} else {
 				vid.pause();
 			}
-    }
+    },
+		anchors:['first-section', 'second-section', 'third-section', 'fourth-section', 'fifth-section']
 	});
 });

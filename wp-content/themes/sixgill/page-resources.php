@@ -2,20 +2,10 @@
 <div> <!-- fullpage wrapper placeholder -->
 	<iframe id="frame1" class="hidden"></iframe>
 	<a name="top"></a>
-	<section id="slider" class="slider-parallax swiper_wrapper swiper_wrapper_small clearfix">
-		<div class="slider-parallax-inner">
-			<div class="swiper-container swiper-parent">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide resources-page-background">
-						<div class="slider-caption slider-caption-center">
-							<h1 class="single-post-title">
-								RESOURCES
-							</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<section id="slider" class="slider-parallax swiper_wrapper swiper_wrapper_small clearfix resource-header">
+		<h1 class="single-post-title">
+			RESOURCES
+		</h1>
 	</section><!-- Content-->
 
 	<section id="content" class="section-margin-fix">
