@@ -176,10 +176,10 @@
 								<div class="home-fourth-section-carousel-text-content-wrapper">
 									<hr class="home-fourth-section-carousel-text-content-line">
 									<div class="home-fourth-section-carousel-text-content">
-										<?php echo limit_words(get_field('first_section_text'), '29'); ?>
+										<?php echo limit_words(get_field('first_section_text'), '20'); ?>
 									</div>
 									<a href="<?php the_permalink(); ?>" class="home-fourth-section-carousel-link-more">
-										Learn More
+										> Learn More
 									</a>
 								</div>
 							</div>
