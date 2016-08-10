@@ -1,14 +1,7 @@
 <?php get_header(); ?>
 <div> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
-	<section id="slider" class="slider-parallax swiper_wrapper clearfix">
-		<div class="slider-parallax-inner">
-			<div class="swiper-container swiper-parent">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide" style="background-image: url('../wp-content/themes/sixgill/images/td/hero/dollarphotoclub_79195916_web.jpg'); background-position: center top;"></div>
-				</div>
-			</div>
-		</div>
+	<section id="slider" class="slider-parallax swiper_wrapper clearfix" style="background-image: url('../wp-content/themes/sixgill/images/td/hero/dollarphotoclub_79195916_web.jpg'); background-position: center center;">
 	</section>
 
 	<section id="content" class="section-margin-fix">
