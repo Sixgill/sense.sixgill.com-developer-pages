@@ -20,7 +20,7 @@
 
 <div id="home-fullpage-wrapper" class="full-width">
 	<div id="home-first-section" class="home-section home-first-section">
-		<video autoplay loop muted id="home-video" class="home-first-section-video">
+		<video autoplay loop muted id="home-video" class="home-first-section-video display-only-desktop">
 			<source src="<?php echo get_field('video_url'); ?>" type="video/mp4">
 			<source src="<?php echo get_field('video_url_ogv'); ?>" type="video/ogv">
 			<source src="<?php echo get_field('video_url_webm'); ?>" type="video/webm">

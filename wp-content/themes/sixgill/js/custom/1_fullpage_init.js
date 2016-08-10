@@ -1,4 +1,5 @@
 jQuery(function($) {
+	if(window.screenType != 'desktop') return;
 	var homeFullpageWrapper = $('#home-fullpage-wrapper');
 	if(!homeFullpageWrapper.length){
 		console.log('Fullpage is not implemented on this page');
