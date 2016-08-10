@@ -11,11 +11,11 @@ jQuery(function($){
 	function updateScreenType() {
 		oldScreenType = window.screenType;
 		window.screenType = 'desktop';
-		if(screen.width >= 500 && screen.width<=1100 && (screen.width / screen.height) <= 4/3) {
+		if((window.innerWidth >= 500 && window.innerWidth <=1100 && (window.innerWidth / window.innerHeight) <= 4/3) || (window.innerWidth >= 1001 && window.innerWidth <= 1100)) {
 			window.screenType = 'tablet';
-		} else if(screen.width<=1000 && (screen.width / screen.height) >= 4/3) {
+		} else if(window.innerWidth<=1000 && (window.innerWidth / window.innerHeight) >= 4/3) {
 			window.screenType = 'mobile-landscape';
-		} else if(screen.width <= 500 && (screen.width / screen.height) <= 4/3) {
+		} else if(window.innerWidth <= 500 && (window.innerWidth / window.innerHeight) <= 4/3) {
 			window.screenType = 'mobile-portrait';
 		}
 

@@ -20,7 +20,7 @@
 
 <div id="home-fullpage-wrapper" class="full-width">
 	<div id="home-first-section" class="home-section home-first-section">
-		<video autoplay loop muted id="home-video" class="home-first-section-video">
+		<video autoplay loop muted id="home-video" class="home-first-section-video display-only-desktop">
 			<source src="<?php echo get_field('video_url'); ?>" type="video/mp4">
 			<source src="<?php echo get_field('video_url_ogv'); ?>" type="video/ogv">
 			<source src="<?php echo get_field('video_url_webm'); ?>" type="video/webm">
@@ -64,7 +64,7 @@
 				<div class="home-second-section-row">
 					<div class="home-second-section-block">
 						<div class="home-second-section-icon-wrapper">
-							<img class="home-second-section-icon" src="">
+							<img class="home-second-section-icon" src="/wp-content/themes/sixgill/images/home/iconCheckmark.svg">
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
@@ -76,7 +76,7 @@
 
 					<div class="home-second-section-block">
 						<div class="home-second-section-icon-wrapper">
-							<img class="home-second-section-icon" src="">
+							<img class="home-second-section-icon" src="/wp-content/themes/sixgill/images/home/iconEngine.svg">
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
@@ -92,7 +92,7 @@
 				<div class="home-second-section-row">
 					<div class="home-second-section-block">
 						<div class="home-second-section-icon-wrapper">
-							<img class="home-second-section-icon" src="">
+							<img class="home-second-section-icon" src="/wp-content/themes/sixgill/images/home/iconTruck.svg">
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
@@ -104,7 +104,7 @@
 
 					<div class="home-second-section-block">
 						<div class="home-second-section-icon-wrapper">
-							<img class="home-second-section-icon" src="">
+							<img class="home-second-section-icon" src="/wp-content/themes/sixgill/images/home/iconTarget.svg">
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
@@ -125,7 +125,11 @@
 					Sixgill SenseTM tracks, determines, and acts on the changing proximity of people, places and things.
 			</h2>
 			<div class="home-third-section-image-wrapper">
-				<img class="home-third-section-image" src="">
+				<img class="home-third-section-image responsive-image"
+          desktop-src="/wp-content/themes/sixgill/images/home/infographic.svg"
+          tablet-src="/wp-content/themes/sixgill/images/home/infographic.svg"
+          mobile-src="/wp-content/themes/sixgill/images/home/mobile_infographic.svg"
+        >
 			</div>
 			<div class="home-third-section-bottom-part-wrapper">
 				<div class="home-third-section-bottom-part-text">
@@ -172,10 +176,10 @@
 								<div class="home-fourth-section-carousel-text-content-wrapper">
 									<hr class="home-fourth-section-carousel-text-content-line">
 									<div class="home-fourth-section-carousel-text-content">
-										<?php echo limit_words(get_field('first_section_text'), '29'); ?>
+										<?php echo limit_words(get_field('first_section_text'), '20'); ?>
 									</div>
 									<a href="<?php the_permalink(); ?>" class="home-fourth-section-carousel-link-more">
-										Learn More
+										> Learn More
 									</a>
 								</div>
 							</div>
@@ -199,48 +203,11 @@
 			</div>
 
 			<div class="home-fifth-section-logos-wrapper">
-				<!-- First row -->
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<!-- Second row -->
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
+        <?php foreach(get_field('logos') as $logo) : ?>
+          <div class="home-fifth-section-logo-wrapper">
+  					<img class="home-fifth-section-logo" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+  				</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>
