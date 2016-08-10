@@ -139,8 +139,12 @@
 							<p class="company-second-section-job">Senior Vice President, Product Management</p>
 						</div>
 						<div class="company-second-section-row-item">
-							<p class="company-second-section-bio">If you use any of the popular cloud-based platform applications available on the web or bought an event ticket online, you’ve probably used something cool that Mike built or influenced.</p>
-							<p class="company-second-section-bio-full"><br></p>
+							<p class="company-second-section-bio">
+								If you use any of the popular cloud-based platform applications available on the web or bought an event ticket online, you’ve probably used something cool that Mike built or influenced.
+							</p>
+							<p class="company-second-section-bio-full">
+								As a product leader building innovative consumer and enterprise applications for mobile and the web, Mike has indirectly reached hundreds of millions of customers through raw startups Applied Semantics, Fetch and RadicalMail to established titans Google (AdSense, Picasa, Google Apps), Microsoft (FrontPage) and Ticketmaster (client and consumer apps). Having worked on everything from enterprise software, machine learning, communications, messaging, email, structured data, consumer ecommerce, and machine vision systems deployed from hugely-scalable platforms, Mike is uniquely qualified to lead the evolution of Sixgill Sense from today’s nascent proximity applications to the coming surge of device populations and streaming instructions in the billions, reliant on real-time proximity comprehension.
+							</p>
 							<p class="company-second-section-more-trigger">
 								<a class="learn-more-link">
 									Learn More
@@ -198,22 +202,22 @@
 				<div class="company-third-section-left company-third-section-row-item">
 					<p class="company-third-section-name">Harry Hopper</p>
 					<p class="company-third-section-job">Executive Chairman</p>
-					<p class="company-third-section-bio"><span class="company-third-section-list-dot">•</span>25+ years investing in 
+					<p class="company-third-section-bio"><span class="company-third-section-list-dot">•</span>25+ years investing in
 					   Telecom/Mobile/IT
 
-					<br><br><span class="company-third-section-list-dot">•</span> Columbia Capital, Senior Advisor 
-					   (formerly Managing Partner and 
+					<br><br><span class="company-third-section-list-dot">•</span> Columbia Capital, Senior Advisor
+					   (formerly Managing Partner and
 					   Partner 20 yrs; $2.5B under
 					   management)
 
-					<br><br><span class="company-third-section-list-dot">•</span> President telecom investment bank, 
-					   Entrepreneur/Founder 2 venture 
-					   backed 
+					<br><br><span class="company-third-section-list-dot">•</span> President telecom investment bank,
+					   Entrepreneur/Founder 2 venture
+					   backed
 
-					<br><br><span class="company-third-section-list-dot">•</span> Boards: Open Mobile, Mobile Posse; 
-					   LendPro. Former: MetroPCS (PCS); 
-					   Equinix (EQIX), Pegasus (PGTV),  
-					   DSL.net (DSLN): Private 5 mobile 
+					<br><br><span class="company-third-section-list-dot">•</span> Boards: Open Mobile, Mobile Posse;
+					   LendPro. Former: MetroPCS (PCS);
+					   Equinix (EQIX), Pegasus (PGTV),
+					   DSL.net (DSLN): Private 5 mobile
 					   operators, 10 Media, IT Service Co.’s
 
 					<br><br><span class="company-third-section-list-dot">•</span> Forbes Midas List
@@ -230,7 +234,7 @@
 					<p class="company-third-section-job">Director</p>
 					<p class="company-third-section-bio"><span class="company-third-section-list-dot">•</span>Co-Founder of Nextel Communications
 
-						<br><br><span class="company-third-section-list-dot">•</span> Director at LightSquared, PlayStar,  
+						<br><br><span class="company-third-section-list-dot">•</span> Director at LightSquared, PlayStar,
 						   and the Wireless Board Registry
 
 						<br><br><span class="company-third-section-list-dot">•</span> Partner at Lumia Capital
@@ -257,7 +261,7 @@
 					<p class="company-second-section-team-bio">Phil has been serially involved in building companies and expanding markets for a wide range of innovators in enterprise data availability, comprehension and collaboration spanning the mobile, web, networking and PC eras.</p>
 					<p class="company-second-section-team-bio-toggle">Learn More</p>
 				</div>
-				
+
 			</div>
 		</div>
 
