@@ -18,7 +18,7 @@ jQuery(function($){
 		// responsiveRefreshRate : 200,
 		//responsiveBaseWidth: "#home-block-solutions-carousel",
 
-		theme : "home-block-solutions-carousel-theme",
+		theme : "home-fourth-section-carousel",
 
 	})
 });
