@@ -81,7 +81,7 @@
 		background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
 
 	  &-wrapper {
-			width: 74.5%;
+			width: 74.5%;;
 	  }
 
 	  &-header-wrapper {
@@ -170,7 +170,7 @@
 		background-image: url('/wp-content/themes/sixgill/images/home/dots_bg_desktop.png');
 
 		&-wrapper {
-			width: 80%;
+			max-width: 80%;
 			text-align: center;
 		}
 
@@ -178,11 +178,11 @@
 			display: inline-block;
 			width: 77%;
 			font-size: 24px;
-			margin-bottom: 5vw;
+			margin-bottom: 4vh;
 		}
 
 		&-image-wrapper {
-			margin-bottom: 3vw;
+			margin-bottom: 3vh;
 		}
 
 		&-image {
@@ -281,29 +281,83 @@
 
 	&-fifth-section {
 
-		&-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
 		}
 
 		&-header-wrapper {
-
+			display: flex;
+			align-items: center;
+			flex-direction: column;
 		}
 
 		&-dash {
-
+			margin-bottom: 4vh;
 		}
 
 		&-title {
-
+			font-size: 24px;
+			margin-bottom: 0px;
 		}
 
 		&-subtitle {
-
+			font-size: 16px;
 		}
 
 		&-logo {
-			&s-wrapper {
+			display: inline-block;
 
+			&-wrapper {
+				display: inline-block;
+				width: 20%;
+				text-align: center;
+			}
+
+			&s-wrapper {
+				font-size: 0px;
+				width: 49	wv;
+			}
+		}
+	}
+}
+
+#fp-nav {
+	& ul {
+
+		& li {
+			width: 16px;
+			height: 16px;
+
+			& a {
+
+				& span {
+					/*background-color: #dfdfdf;*/
+					background-color: rgba(0,0,0,0);
+					width: 16px !important;
+					height: 16px !important;
+					border: 2px solid #dfdfdf;
+					-webkit-border-radius:8px;
+					-moz-border-radius:8px;
+				}
+
+				& span.bullet-color {
+					display: none;
+				}
+
+				&.active,
+				&:hover {
+					& span {
+						/*background-color: #4ddb5a;*/
+						border: 3px solid #4ddb5a;
+						margin: -2px 0 0 -2px !important;
+					}
+				}
 			}
 		}
 	}
