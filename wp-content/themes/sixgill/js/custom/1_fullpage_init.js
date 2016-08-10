@@ -9,6 +9,14 @@ jQuery(function($) {
 		navigation: true,
 		scrollBar: true,
 		sectionSelector: '.home-section',
-		verticalCentered: false
+		verticalCentered: false,
+		onLeave: function(index, nextIndex, direction){
+      var vid = document.getElementById("home-video");
+      if(nextIndex == 1) {
+				vid.play();
+			} else {
+				vid.pause();
+			}
+    }
 	});
 });

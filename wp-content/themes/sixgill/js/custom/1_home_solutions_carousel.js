@@ -1,5 +1,5 @@
 jQuery(function($){
-	$("#home-block-solutions-carousel").owlCarousel({
+	$("#home-fourth-section-carousel").owlCarousel({
 		// Most important owl features
 		items : 3, //3 items above 1200px browser width
 		itemsDesktop : [1200,3], //3 items between 1200px and 300px
@@ -9,16 +9,16 @@ jQuery(function($){
 		// Navigation
 		navigation : true,
 		navigationText : ["",""],
-	 
+
 		//Pagination
 		pagination : false,
-			 
-		// // Responsive 
+
+		// // Responsive
 		responsive: true,
 		// responsiveRefreshRate : 200,
 		//responsiveBaseWidth: "#home-block-solutions-carousel",
 
-		theme : "home-block-solutions-carousel-theme",
-	 
+		theme : "home-fourth-section-carousel",
+
 	})
 });

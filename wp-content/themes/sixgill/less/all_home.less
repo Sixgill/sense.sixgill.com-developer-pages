@@ -145,11 +145,13 @@
 		}
 
 		&-image-wrapper {
-			width: 100%;
+			height: 60vh;
+			width: auto;
 		}
 
 		&-image {
-			width: 100%;
+			height: 100%;
+			width: auto;
 		}
 
 		&-bottom-part {
@@ -247,7 +249,10 @@
 
 	&-fifth-section {
 
+
+
 		&-wrapper {
+
 
 		}
 
@@ -256,15 +261,23 @@
 		}
 
 		&-dash {
-
+			width: 56px;
+		  height: 2px;
+		  background-color: #0c3979;
 		}
 
 		&-title {
-
+			font-family: "Lato";
+			font-weight: 500;
+			text-align: center;
+			color: #0c3979;
 		}
 
 		&-subtitle {
-
+			font-family: "Lato";
+			font-weight: 400;
+			text-align: center;
+			color: #383838;
 		}
 
 		&-logo {
@@ -276,4 +289,124 @@
 		}
 	}
 
+}
+
+.home-fourth-section-carousel {
+	background-color: transparent !important;
+	border: none !important;
+
+}
+
+.home-fourth-section-carousel .owl-buttons{
+	color:white;
+	width: 16px;
+	display: inline-block;
+	font-size: 60px;
+	line-height: 30px;
+}
+
+.home-fourth-section-carousel .owl-buttons .owl-prev{
+	position: absolute;
+	left: -42px;
+	top:50%;
+	background-image: url('/wp-content/themes/sixgill/images/4-Home/carousel_left.svg');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 30.5px;
+}
+
+.home-fourth-section-carousel .owl-buttons .owl-next{
+	position: absolute;
+	right: -42px;
+	top:50%;
+	background-image: url('/wp-content/themes/sixgill/images/4-Home/carousel_right.svg');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 30.5px;
+}
+
+.home-fourth-section-carousel-slide {
+	min-height: 390px;
+}
+
+
+.home-fourth-section-carousel-image-wrapper {
+	height: 288px;
+	width: 240px;
+	overflow: hidden;
+	margin: 0 auto;
+	transition: height .4s ease-in-out;
+}
+
+.home-fourth-section-carousel-text-wrapper {
+    background-color: #f8f8f8;
+    height: 102px;
+    text-align: left;
+    margin: 0 auto;
+    width: 240px;
+}
+
+.home-fourth-section-carousel-text-caption-wrapper{
+	line-height: 102px;
+	display: inline-block;
+}
+
+.home-fourth-section-carousel-text-caption {
+   	color: #0c3979;
+    font-family: "Lato";
+    font-size: 20.3px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: 22px;
+}
+
+.home-fourth-section-carousel-text-content-wrapper {
+	height: 288px;
+	background-color: #f8f8f8;
+	overflow: hidden;
+}
+
+.home-fourth-section-carousel-text-content-line {
+	width: 42.5px;
+	height: 1px;
+	background-color: #0c3979;
+	padding: 0;
+	margin:0 0 20px 23px;
+}
+
+.home-fourth-section-carousel-text-content {
+	display: inline-block;
+	margin-bottom: 10px;
+	max-height: 15.5em;
+	overflow: hidden;
+}
+
+.home-fourth-section-carousel-text-content p {
+	font-family: "Lato";
+	font-size: 16.2px;
+	font-weight: 400;
+	line-height: 1.33 !important;
+	letter-spacing: 1px;
+	color: #2e2e2e;
+	text-align: left;
+	margin: 0px;
+	padding: 0 22px;
+}
+
+.home-fourth-section-carousel-link-more {
+	font-family: Lato;
+	font-size: 16.2px;
+	font-weight: 700;
+	line-height: 1.33;
+	letter-spacing: 1px;
+	color: #0051c6;
+	margin: 0 22px;
+}
+
+.home-fourth-section-carousel-slide:hover .home-fourth-section-carousel-image-wrapper{
+	height: 0;
 }
