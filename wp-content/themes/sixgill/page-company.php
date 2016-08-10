@@ -15,12 +15,14 @@
 			</div>
 		</div>
 	</a>
-	<div id="company-first-section" class="company-section company-first-section">
+	<div class="company-section company-first-section">
 		<div class="company-first-section-block">
 			<div class="company-first-section-image-wrapper">
 				<img
 					class="company-first-section-image responsive-image"
 					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
+					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
+					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
 				>
 			</div>
 			<div class="company-first-section-block-text">
@@ -31,29 +33,161 @@
 					<?php echo get_field('first_section_text'); ?>
 				</div>
 			</div>
-
-			<div class="company-first-section-image-wrapper-mobile">
-				<img
-					class="company-first-section-image responsive-image"
-					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
-					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
-				>
-			</div>
 		</div>
 	</div>
 	<a name="company-second-section"></a>
-	<div id="company-second-section" class="company-section company-second-section">
+	<div class="company-section company-second-section">
 		<div class="inline-block full-width">
-			<div class="company-second-section-text">
-			<p>
-				Sixgill Sense tracks, determines, and acts on the changing proximity of people, places, and things. Your world is complex. Today�s enterprise has an ever-expanding mobile workforce and increasingly sophisticated, connected assets.
-
-Sixgill Sense allows you to understand and harness this mobility and use it to your advantage, gaining awareness and insight, and driving contextual, proximity-based actions to make your organization safer, more productive and profitable.THIS WILL BE THE TEAM CONTAINER, LATER
-</p>
+			<div class="company-second-section-block">
+			<h1 class="company-second-section-block-title">
+				Leadership
+			</h1>
+			<div class="company-second-section-team">
+				<div class="company-second-section-rows">
+					<div class="company-second-section-image-wrapper">
+						<img class="company-second-section-image" src="/wp-content/themes/sixgill/images/company/tbnPhil@1x.png">
+					</div>
+					<div class="company-second-section-team-description">
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-name">Phil Ressler</p>
+						</div>
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-job">Chief Executive Officer</p>
+						</div>
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-bio">Phil has been serially involved in building companies and expanding markets for a wide range of innovators in enterprise data availability, comprehension and collaboration spanning the mobile, web, networking and PC eras.</p>
+							<p class="company-second-section-bio-full"><br></p>
+							<p class="company-second-section-more-trigger">
+								<a class="learn-more-link">
+									Learn More
+									<span class="learn-more-expand-icon">
+										&or;
+									</span>
+									<span class="learn-more-close-icon">
+										&and;
+									</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="company-second-section-rows">
+					<div class="company-second-section-image-wrapper">
+						<img class="company-second-section-image" src="/wp-content/themes/sixgill/images/company/tbnJohn@1x.png">
+					</div>
+					<div class="company-second-section-team-description">
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-name">John Dohm</p>
+						</div>
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-job">Chief Technology Officer</p>
+						</div>
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-bio">John began is career as a software engineer for internal enterprise systems and spiraled away from his keyboard enough to gather up an ever-widening range of technology creation, scaling, architecture, deployment, operations and and general executive experiences. In a succession of companies including Quaker, Deloitte, American Standard, Intellos, Guru Denim and RealD, John worked on networking infrastructure, internal ERP, inventory, CRM and HR systems, vehicle control and telematics systems, and managed global IT operations.</p>
+							<p class="company-second-section-bio-full"><br></p>
+							<p class="company-second-section-more-trigger">
+								<a class="learn-more-link">
+									Learn More
+									<span class="learn-more-expand-icon">
+										&or;
+									</span>
+									<span class="learn-more-close-icon">
+										&and;
+									</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="company-second-section-rows">
+					<div class="company-second-section-image-wrapper">
+						<img class="company-second-section-image" src="/wp-content/themes/sixgill/images/company/tbnJeff@1x.png">
+					</div>
+					<div class="company-second-section-team-description">
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-name">Jeff Ester</p>
+						</div>
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-job">Senior Vice President, Revenue</p>
+						</div>
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-bio">Jeff has built an extended career as the pioneering revenue strategist and instigator in early-stage companies just launching into ungelled markets where innovators find themselves on the cusp of explosive growth.</p>
+							<p class="company-second-section-bio-full">He has proven able to build and lead success-driving revenue teams and lay in selling infrastructure that gives young enterprise companies scale and growth. Jeff began his career learning disciplined enterprise sales at Oracle and took his newly-acquired expertise to then-startup Pure Software. He pioneered enterprise product sales for Netscape, continuing to serve AOL after acquisition. After over a decade incubating and advising a plethora of technology startups, Jeff returned to the operating world to build and lead the sales function at customer intelligence innovator EdgeTheory, prior to joining Zos Communications and its transformation into Sixgill.</p>
+							<p class="company-second-section-more-trigger">
+								<a class="learn-more-link">
+									Learn More
+									<span class="learn-more-expand-icon">
+										&or;
+									</span>
+									<span class="learn-more-close-icon">
+										&and;
+									</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="company-second-section-rows">
+					<div class="company-second-section-image-wrapper">
+						<img class="company-second-section-image" src="/wp-content/themes/sixgill/images/company/tbnMike@1x.png">
+					</div>
+					<div class="company-second-section-team-description">
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-name">Mike Horowitz</p>
+						</div>
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-job">Senior Vice President, Product Management</p>
+						</div>
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-bio">If you use any of the popular cloud-based platform applications available on the web or bought an event ticket online, you’ve probably used something cool that Mike built or influenced.</p>
+							<p class="company-second-section-bio-full"><br></p>
+							<p class="company-second-section-more-trigger">
+								<a class="learn-more-link">
+									Learn More
+									<span class="learn-more-expand-icon">
+										&or;
+									</span>
+									<span class="learn-more-close-icon">
+										&and;
+									</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="company-second-section-rows">
+					<div class="company-second-section-image-wrapper">
+						<img class="company-second-section-image" src="/wp-content/themes/sixgill/images/company/tbnShawn@1x.png">
+					</div>
+					<div class="company-second-section-team-description">
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-name">Shawn Gunn</p>
+						</div>
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-job">Senior Vice President, Business Development</p>
+						</div>
+						<div class="company-second-section-row-item">
+							<p class="company-second-section-bio">Shawn has accumulated nearly unparalleled mobile, location services and movement analytics expertise serving as ecosystem builder at a succession of mobility markets innovators.</p>
+							<p class="company-second-section-bio-full">After beginning his career as a financial trader, Shawn built his mobility career brick-by-brick leading business development and strategic partnership functions at Globalspec, Traffic.com, NAVTEQ and Nokia, with a detour as a consultant at Hearst Digital along the way. Not merely a senior relationship executive, Shawn brings Sixgill a recurring history of connecting the ecosystem building of business development to hard revenue, and monetization of ancillary services.</p>
+							<p class="company-second-section-more-trigger">
+								<a class="learn-more-link">
+									Learn More
+									<span class="learn-more-expand-icon">
+										&or;
+									</span>
+									<span class="learn-more-close-icon">
+										&and;
+									</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 			</div>
 		</div>
 	</div>
-	<div id="company-third-section" class="company-section company-third-section">
+	<div class="company-section company-third-section">
 		<div class="inline-block full-width">
 			<div class="company-third-section-text">
 				<h1 class="company-third-section-title">
