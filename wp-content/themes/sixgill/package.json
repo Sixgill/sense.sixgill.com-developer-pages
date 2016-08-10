@@ -30,6 +30,7 @@
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.9",
     "livereload": "^0.5.0",
+    "map-stream": "0.0.6",
     "pump": "^1.0.1",
     "run-sequence": "^1.2.2",
     "yargs": "^4.8.1"
