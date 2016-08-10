@@ -179,7 +179,7 @@
 										<?php echo limit_words(get_field('first_section_text'), '29'); ?>
 									</div>
 									<a href="<?php the_permalink(); ?>" class="home-fourth-section-carousel-link-more">
-										Learn More
+										> Learn More
 									</a>
 								</div>
 							</div>
