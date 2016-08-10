@@ -1,21 +1,21 @@
 /* Solutions Common styles */
 
 .solution-learn-more-link {
-    display: block;
-    position: absolute;
-    top: calc(100vh - 85px);
-    width: 100%;
+	display: block;
+	position: absolute;
+	top: calc(100vh - 85px);
+	width: 100%;
 }
 
 .solution-first-section-scroll-link-wrapper{
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .solution-first-section-scroll-link-ico-wrapper {
-    height: 18px;
-    text-align: center;
-    width: 37px;
-    display: inline-block;
+	height: 18px;
+	text-align: center;
+	width: 37px;
+	display: inline-block;
 }
 
 /*-----------------------------------------------------*/
@@ -25,8 +25,8 @@
 }
 
 .solution-first-section-block {
- 	z-index: 2;
-    background-color: rgba(77, 219, 90, 0.7);
+	z-index: 2;
+	background-color: rgba(77, 219, 90, 0.7);
 }
 
 .solution-first-section-image-wrapper,
@@ -54,7 +54,11 @@
 .solution-second-section {
 	background-image: url('/wp-content/themes/sixgill/images/solutions/bgPattern@1x.png');
 	background-size: inherit;
-	height: 770px;
+}
+
+.solution-fourth-section {
+	background-image: url('/wp-content/themes/sixgill/images/solutions/bgPattern@1x.png');
+	background-size: inherit;
 }
 
 .solution-second-section-block {
@@ -107,25 +111,22 @@
 
 .solution-second-section-icons-title:before,
 .solution-second-section-icons-title:after {
-	content: "";
-	display: block;
-	height: 2px;
-	opacity: 0.1;
-	background-color: #000;
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    opacity: 0.1;
+    vertical-align: 0.3em;
+    position: relative;
+	width: 20vw;
 }
 
 .solution-second-section-icons-title:after {
-	position: relative;
-	bottom: 1.5em;
-	right: 210%;
-	width:200%;
+	left: 1vw;
 }
 
 .solution-second-section-icons-title:before {
-	position: relative;
-	top:1.5em;
-	left: 110%;
-	width:200%;
+	right: 1vw;
 }
 
 .solution-second-section-icons-block {
@@ -133,6 +134,8 @@
 	width:950px;
 	margin: 52px auto 0;
 	overflow: hidden;
+	width: 100%;
+	padding: 0 8%;
 }
 
 .solution-second-section-icon-list {
@@ -143,7 +146,8 @@
 
 .solution-second-section-icon-item {
 	display: inline-block;
-	padding: 0 60px;
+	padding: 25px 60px 25px 60px;
+	vertical-align: top;
 }
 
 .solution-second-section-icon-image img {

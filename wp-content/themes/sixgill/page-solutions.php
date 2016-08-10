@@ -18,6 +18,7 @@
 		</div>
 	</a>
 
+	<a name="solution-first-section"></a>
 	<div id="solution-first-section" class="solution-section solution-first-section">
 		<div class="solution-first-section-block">
 			<div class="solution-first-section-image-wrapper">
@@ -37,16 +38,17 @@
 				</div>
 			</div>
 
-			<!-- <div class="solution-first-section-image-wrapper-mobile">
+			<div class="solution-first-section-image-wrapper-mobile">
 				<img
-					class="solution-first-section-image responsive-image"
-					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
+					class="solution-first-section-image" 
+					src="<?php echo get_field('first_section_image_mobile'); ?>"
 				>
-			</div> -->
+			</div> 
 		</div>
 	</div>
 
 	<!-- Second section people -->
+	<a name="solution-second-section"></a>
 	<div id="solution-second-section" class="solution-section solution-second-section">
 		<div class="solution-second-section-block">
 			<div class="solution-second-section-image-wrapper">
@@ -94,6 +96,7 @@
 	</div>
 
 	<!-- Third section Assets -->
+	<a name="solution-third-section"></a>
 	<div id="solution-third-section" class="solution-section solution-third-section">
 		<div class="solution-third-section-block">
 			<div class="solution-third-section-image-wrapper">
@@ -115,7 +118,8 @@
 	</div>
 
 	<!-- fourth section Crowds -->
-	<div id="solution-second-section" class="solution-section solution-second-section">
+	<a name="solution-fourth-section"></a>
+	<div id="solution-fourth-section" class="solution-section solution-fourth-section">
 		<div class="solution-second-section-block">
 			<div class="solution-second-section-image-wrapper">
 				<img
