@@ -16,20 +16,26 @@ jQuery(function($) {
   }
 
   function checkElemVisibility(callbackInfo) {
+
+
+
 		if(!callbackInfo.domLink.position()) return;
     if(
-      $(window).scrollTop()>=callbackInfo.domLink.position().top
+      $(window).scrollTop()>=callbackInfo.domLink.position().top-callbackInfo.domLink.height()/2
       &&
-      $(window).scrollTop()<=callbackInfo.domLink.position().top+callbackInfo.domLink.height()+250
+      $(window).scrollTop()<=callbackInfo.domLink.position().top+callbackInfo.domLink.height()
     ){
       if(!callbackInfo.isScrolledTo) {
         callbackInfo.scrollInCallback();
         callbackInfo.isScrolledTo = true;
+        
+
       }
     } else {
       if(callbackInfo.isScrolledTo) {
         callbackInfo.scrollOutCallback();
         callbackInfo.isScrolledTo = false;
+        
       }
     }
   }
