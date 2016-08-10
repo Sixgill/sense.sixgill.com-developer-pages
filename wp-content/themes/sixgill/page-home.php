@@ -203,48 +203,11 @@
 			</div>
 
 			<div class="home-fifth-section-logos-wrapper">
-				<!-- First row -->
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<!-- Second row -->
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
-
-				<div class="home-fifth-section-logo-wrapper">
-					<img class="home-fifth-section-logo" src="">
-				</div>
+        <?php foreach(get_field('logos') as $logo) : ?>
+          <div class="home-fifth-section-logo-wrapper">
+  					<img class="home-fifth-section-logo" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+  				</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>
