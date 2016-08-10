@@ -19,6 +19,6 @@ jQuery(function($) {
 				vid.pause();
 			}
     },
-		anchors:['first-section', 'second-section', 'third-section', 'fourth-section', 'fifth-section']
+		anchors:['video', 'what', 'chart', 'usecases', 'consumers']
 	});
 });
