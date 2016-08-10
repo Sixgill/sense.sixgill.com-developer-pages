@@ -2,6 +2,7 @@ jQuery(function($){
 
 	function initOwlCarousel(carouselName) {
 		var owl = $("#"+carouselName+"-solution-subpage-carousel");
+		if(!owl.length) return;
 		var autoHeightOption = (owl.attr('autoheight') == "on");
 		var rewindEnabled = (owl.attr('rewindenabled') == "on");
 
