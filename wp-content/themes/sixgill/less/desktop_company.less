@@ -39,7 +39,7 @@
 
 .company-first-section-block {
 	width: 88.34%;
-  align-items: center;
+	align-items: center;
 	z-index: 2;
 	margin: 1vw 0px 1vw 0px;
 }
@@ -87,115 +87,88 @@
 .company-section {
 	min-height: 100vh;
 }
-
+.company-second-section,
+.company-third-section > div {
+	align-self: center;
+}
 .company-second-section {
-	min-height: inherit !important;
+	background-image: url('/wp-content/themes/sixgill/images/company/single_dot.png');
+	padding: 2vw 0px 2vw 0px;
 }
-
-.company-second-section-wrapper,
-.company-fourth-section-wrapper {
-	height: auto;
-	max-height: none;
-	width: 100%;
-}
-
-.company-second-section {
-	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
-}
-
-.company-second-section-content-wrapper {
-	width: 34.19vw;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
 .company-third-section {
-	height: 100vh;
-	background-image: url('/wp-content/themes/sixgill/images/company/third_section_bg_desktop.png');
+	background-image: url('/wp-content/themes/sixgill/images/company/boardBg-desktop@1x.png');
+	padding: 2vw 0px 2vw 0px;
 }
 
-.company-third-section-content-wrapper,
-.company-fourth-section-content-wrapper {
-	width: 38.58vw;
-}
-
-.company-third-section-content-wrapper {
-	margin-left: 5.67vw;
-}
-
-.company-second-section-left-col {
-	width: 34%;
-}
-
-.company-second-section-right-col {
-	width: 66%;
-}
-
-.company-second-section-title,
-.company-third-section-title,
-.company-fourth-section-title {
-	font-size: 44px;
-	line-height: 1em;
-	margin-bottom: 1.756vw;
-}
-
-.company-second-section-header-wrapper,
-.company-second-section-title-wrapper,
-.company-fourth-section-header-wrapper,
-.company-fourth-section-title-wrapper {
-	display: inline-block;
-}
-
-.company-second-section-title-wrapper {
-	float: left;
-}
-
-.company-fourth-section {
-	min-height: inherit !important;
-	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
-}
-
-.company-fourth-section-wrapper {
-	background-image: url('/wp-content/themes/sixgill/images/company/fourth_section_bg_at2.png');
-}
-
-.company-fourth-section-right-col {
-	width: 59%;
-	padding-top: 11.46vw;
-}
-
-.company-fourth-section-left-col {
-	width: 41%;
-	text-align:center;
-	padding-top: 5.1vw;
-}
-
-.company-fourth-section-title-wrapper {
-	float: left;
-}
-
-.company-fourth-section-text,
-.company-first-section-block-paragraph {
-  font-weight: 400;
+.company-second-section-image-wrapper {
+	width: 37.5vw;
+	margin-bottom: 2.5vw;
 }
 
 .company-second-section-text,
-.company-second-section-text p,
-.company-second-section-text li {
-	font-size: 16px;
-  font-weight: 500;
+.company-third-section-text,
+.company-fourth-section-text {
+	width: 37.7vw;
 }
 
+.company-second-section-image-wrapper,
+.company-second-section-text,
+.company-third-section-text {
+	margin-left: auto;
+	margin-right: auto;
+}
+.company-last-section-text,
+.company-last-section-text p
+.company-last-section-text li,
 .company-first-section-block-paragraph,
+.company-second-section-text,
 .company-fourth-section-text {
 	font-size: 16px;
 }
-
-.company-fourth-section-image-wrapper {
-	text-align: center;
+.company-third-section-title {
+  font-family: Lato;
+  font-size: 43.9px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 4.8px;
+  text-align: center;
+  color: #4ddb5a;
 }
-
-.company-fourth-section-image {
-	width: 76.2%;
+.company-third-section-name {
+	margin-bottom: 1.21vw;
+	font-family: Lato;
+	font-size: 34.5px;
+	font-weight: 300;
+	line-height: 0.8;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
+.company-third-section-job {
+	margin-bottom: 1.21vw;
+	font-family: Lato;
+	font-size: 18.6px;
+	font-weight: 700;
+	line-height: 1.14;
+	letter-spacing: 0.6px;
+	color: #5cc468;
+}
+.company-third-section-bio {
+	font-family: Lato;
+	font-size: 15.9px;
+	font-weight: 500;
+	line-height: 1.33;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+}
+.company-third-section-rows {
+	display: flex;
+	align-items:flex-start;
+	justify-content: space-around;
+	
+	.company-third-section-row-item {
+		max-width: 30%;
+	}
+}
+.company-third-section-list-dot {
+	color: #5cc468;
 }
