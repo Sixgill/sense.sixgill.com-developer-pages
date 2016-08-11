@@ -49,7 +49,7 @@
 				<div class="home-second-section-header-top">
 					<div class="home-second-section-header-top-line"></div>
 					<div class="home-second-section-header-top-title">
-						We are experts in helping you
+						WE ARE EXPERTS IN HELPING YOU
 					</div>
 					<div class="home-second-section-header-top-line"></div>
 				</div>
@@ -152,7 +152,7 @@
 					Lorem ipsum dolor sit amet consectetur adipisicing elit incidunt ut labore et dolore magna alique minim veniam.
 				</div>
 				<a href="/solutions/" class="home-fourth-section-link">
-					See All Use Cases
+					Explore Example Use Cases
 				</a>
 			</div>
 			<div class="home-fourth-section-carousel-wrapper">

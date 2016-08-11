@@ -78,30 +78,28 @@
 					</div>
 				</div>
 			</div>
-			<div id="solution-second-section-tablet">
-				<div class="solution-second-section-icons-block">
-					<h3 class="solution-second-section-icons-title">
-						<?php echo get_field('people_section_icons_title'); ?>
-					</h3>
-					<div class="solution-second-section-icon-wrapper">
-						<?php if(get_field('people_section_icons')) : ?>
-							<ul class="solution-second-section-icon-list">
-								<?php foreach(get_field('people_section_icons') as $item) : ?>
-									<li class="solution-second-section-icon-item">
-										<div class="solution-second-section-icon-image">
-											<img src="<?php echo $item['people_section_icon_image']; ?>" alt=""> 
-										</div>
-										<div class="solution-second-section-icon-caption">
-											<?php echo $item['people_section_icon_caption']; ?>
-										</div>
-										<div class="solution-second-section-icon-link">
-										<a href="<?php echo $item['people_section_icon_link']; ?>">Learn More</a>	
-										</div>
-									</li>
-								<?php endforeach; ?>
-							</ul>
-						<?php endif; ?>
-					</div>
+			<div class="solution-second-section-icons-block">
+				<h3 class="solution-second-section-icons-title">
+					<?php echo get_field('people_section_icons_title'); ?>
+				</h3>
+				<div class="solution-second-section-icon-wrapper">
+					<?php if(get_field('people_section_icons')) : ?>
+						<ul class="solution-second-section-icon-list">
+							<?php foreach(get_field('people_section_icons') as $item) : ?>
+								<li class="solution-second-section-icon-item">
+									<div class="solution-second-section-icon-image">
+										<img src="<?php echo $item['people_section_icon_image']; ?>" alt=""> 
+									</div>
+									<div class="solution-second-section-icon-caption">
+										<?php echo $item['people_section_icon_caption']; ?>
+									</div>
+									<div class="solution-second-section-icon-link">
+									<a href="<?php echo $item['people_section_icon_link']; ?>">Learn More</a>	
+									</div>
+								</li>
+							<?php endforeach; ?>
+						</ul>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
