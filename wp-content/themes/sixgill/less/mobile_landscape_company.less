@@ -50,25 +50,26 @@
 
 	&-block-text {
 		width: 95%;
-		padding: 0px 2.4vw 0px 2.4vw;
+		padding: 10vw 2.4vw 0 2.4vw;
 	}
 
 	&-block-title {
-		font-size: 61px;
-	  font-weight: 300;
-		line-height: 1em;
-		margin-bottom: 2vw;
-		font-family: "Lato Light";
-	}
-
-	&-block-subtitle {
-		font-size: 16px;
-	  font-weight: 700;
-		margin-bottom: 1.21vw;
+		font-family: Lato;
+		font-size: 29.1px;
+		font-weight: 300;
+		line-height: 1.33;
+		letter-spacing: 1.5px;
+		color: #ffffff;
 	}
 
 	&-block-paragraph p {
-		margin-bottom: 0px;
+		font-family: Lato;
+		font-size: 15.9px;
+		font-weight: 400;
+		line-height: 1.5;
+		letter-spacing: 0.5px;
+		color: #ffffff;
+		margin-bottom: 10vw;
 	}
 	&-scroll-link-text {
 		font-size: 17px;
@@ -79,14 +80,14 @@
 	}
 }
 .company-second-section {
-	background-color: #f8f8f8;
+	background-image: url('/wp-content/themes/sixgill/images/home/bg_dots_mobile.png');
 	padding: 2vw 0px 2vw 0px;
 
 	&-image-wrapper {
 		max-width: 80%;
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 2vw;
+		margin-bottom: 10vw;
 	}
 	&-block-title {
 	  font-family: Lato;
@@ -96,7 +97,7 @@
 	  letter-spacing: 2.9px;
 	  text-align: center;
 	  color: #0051c6;
-  	  margin-bottom: 5vw;
+  	  margin: 5vw 0 5vw 0;
 	}
 	&-block {
 		width: 80%;
@@ -184,34 +185,32 @@
 }
 .company-third-section {
 	display: flex;
+	flex-direction: column;
 	background-image: url('/wp-content/themes/sixgill/images/company/boardBg-mobile@1x.png');
 	padding: 2vw 0px 2vw 0px;
-
-	&-text{
-		width: 37.7vw;
-	}
 
 	&-text {
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 5vw;
 	}
 
 	&-title {
 	  font-family: Lato;
-	  font-size: 43.9px;
+	  font-size: 26.3px;
 	  font-weight: 300;
-	  line-height: 1;
-	  letter-spacing: 4.8px;
+	  line-height: 1.67;
+	  letter-spacing: 2.9px;
 	  text-align: center;
 	  color: #4ddb5a;
 	}
 	&-name {
-		margin-bottom: 1.21vw;
+		margin-bottom: 2vw;
 		font-family: Lato;
-		font-size: 34.5px;
+		font-size: 26.5px;
 		font-weight: 300;
 		line-height: 0.8;
-		letter-spacing: 1px;
+		letter-spacing: 0.8px;
 		color: #ffffff;
 	}
 	&-job {
@@ -231,16 +230,16 @@
 		letter-spacing: 0.5px;
 		color: #ffffff;
 	}
+	&-bio:not(:last-child) {
+		margin-bottom: 4vw;
+	}
 	&-rows {
 		display: flex;
 		flex-direction: column;
 		align-items:flex-start;
 	}
 	&-row-item {
-		margin-left:10vw;
-	}
-	&-list-dot {
-		color: #5cc468;
+		margin-left:5vw;
 	}
 	& > div {
 		align-self: center;
