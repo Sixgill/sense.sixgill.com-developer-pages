@@ -55,19 +55,19 @@
 	$menu[] = array(
 		"elementName" => "Tech",
 		"link" => "/tech/",
-		"sublinksList" => array(/*
+		"sublinksList" => array(
 			array(
 				"name" => "Location",
-				"anchor" => "location"
+				"anchor" => "tech-second-section"
 			),
 			array(
 				"name" => "Proximity",
-				"anchor" => "proximity"
+				"anchor" => "tech-third-section"
 			),
 			array(
 				"name" => "Open Platform",
-				"anchor" => "openplatform"
-			)*/
+				"anchor" => "tech-fourth-section"
+			)
 		),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded
@@ -77,23 +77,15 @@
 	$menu[] = array(
 		"elementName" => "Company",
 		"link" => "/company/",
-		"sublinksList" => array(/*
+		"sublinksList" => array(
 			array(
-				"name" => "The Company",
-				"anchor" => "company"
-			),
-			array(
-				"name" => "The Team",
-				"anchor" => "team"
+				"name" => "Leadership",
+				"anchor" => "company-second-section"
 			),
 			array(
 				"name" => "The Board",
-				"anchor" => "board"
-			),
-			array(
-				"name" => "Press",
-				"anchor" => "press"
-			)*/
+				"anchor" => "company-third-section"
+			)
 		),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded

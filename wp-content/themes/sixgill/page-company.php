@@ -191,6 +191,7 @@
 			</div>
 		</div>
 	</div>
+	<a name="company-third-section"></a>
 	<div class="company-section company-third-section">
 		<div class="inline-block full-width">
 			<div class="company-third-section-text">
