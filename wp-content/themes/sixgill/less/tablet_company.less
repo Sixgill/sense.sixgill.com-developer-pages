@@ -8,7 +8,7 @@
 .company-learn-more-link {
 	display: block;
   position: absolute;
-  top: calc(~"100vh - 40px");
+  top: calc(~"100vh - 20px");
   width: 100%;
 }
 
@@ -40,10 +40,12 @@
 	background-image: url('/wp-content/themes/sixgill/images/company/first_section_bg_tablet.png');
 
 	&-block {
+		background-color: rgba(77, 219, 90, 0.7);
 		width: 95.5%;
 		align-items: stretch;
 		flex-direction: column-reverse;
 		z-index: 2;
+		margin:4vw 1vw 7vw 1vw;
 	}
 
 	&-image-wrapper {
@@ -55,7 +57,7 @@
 
 	&-block-text {
 		width: 95%;
-		padding: 0px 2.4vw 0px 2.4vw;
+		padding: 2.4vw;
 	}
 
 	&-block-title {
@@ -84,7 +86,7 @@
 	}
 }
 .company-second-section {
-	background-color: #f8f8f8;
+	background-image: url('/wp-content/themes/sixgill/images/home/bg_dots_tablet.png');
 	padding: 2vw 0px 2vw 0px;
 
 	&-image-wrapper {
@@ -188,19 +190,17 @@
 
 .company-third-section {
 	display: flex;
+	flex-direction: column;
 	background-image: url('/wp-content/themes/sixgill/images/company/boardBg-tablet@1x.png');
 	padding: 2vw 0px 2vw 0px;
 	& p {
 		margin-bottom: 0;
 	}
 
-	&-text{
-		width: 37.7vw;
-	}
-
 	&-text {
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 5vw;
 	}
 
 	&-title {
@@ -251,9 +251,6 @@
 	}
 	&-row-item:first-of-type {
 		margin-top: 0px;
-	}
-	&-list-dot {
-		color: #5cc468;
 	}
 	& > div {
 		align-self: center;

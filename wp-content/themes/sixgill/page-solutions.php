@@ -6,12 +6,21 @@
 	<!-- first section -->
 
 	<!--link more -->
-	<a href="#solution-second-section"	class="solution-learn-more-link">
+	<a href="#solution-second-section-desktop"	class="solution-learn-more-link no-tablet-display">
 		<div class="solution-first-section-scroll-link-wrapper">
 			<div class="solution-first-section-scroll-link-ico-wrapper">
 				<img
 					class="solution-first-section-scroll-link-ico responsive-image"
 					desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+				/>
+			</div>
+		</div>
+	</a>
+	<a href="#solution-second-section-tablet"	class="solution-learn-more-link display-only-tablet">
+		<div class="solution-first-section-scroll-link-wrapper">
+			<div class="solution-first-section-scroll-link-ico-wrapper">
+				<img
+					class="solution-first-section-scroll-link-ico responsive-image"
 					tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
 				/>
 			</div>
@@ -45,11 +54,12 @@
 				>
 			</div> 
 		</div>
-	</div>
 
+	</div>
+	<div id="solution-second-section-tablet"></div>  <!-- navigation div for tablet version-->
 	<!-- Second section people -->
 	<a name="solution-second-section"></a>
-	<div id="solution-second-section" class="solution-section solution-second-section">
+	<div id="solution-second-section-desktop" class="solution-section solution-second-section">
 		<div class="solution-second-section-block">
 			<div class="solution-second-section-text-block">
 				<div class="solution-second-section-image-wrapper">
@@ -69,6 +79,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="solution-second-section-icons-block">
 				<h3 class="solution-second-section-icons-title">
 					<?php echo get_field('people_section_icons_title'); ?>
@@ -122,23 +133,24 @@
 	<a name="solution-fourth-section"></a>
 	<div id="solution-fourth-section" class="solution-section solution-fourth-section">
 		<div class="solution-second-section-block">
-			<div class="solution-second-section-image-wrapper">
-				<img
-					class="solution-second-section-image responsive-image"
-					desktop-src="<?php echo get_field('crowds_section_image_desktop'); ?>"
-					tablet-src="<?php echo get_field('crowds_section_image_tablet'); ?>"
-				>
-			</div>
-			
-			<div class="solution-second-section-block-text">
-				<h2 class="solution-second-section-block-title">
-					<?php echo get_field('crowds_section_header'); ?>
-				</h2>
-				<div class="solution-second-section-block-paragraph">
-					<?php echo get_field('crowds_section_text'); ?>
+			<div class="solution-second-section-text-block">
+				<div class="solution-second-section-image-wrapper">
+					<img
+						class="solution-second-section-image responsive-image"
+						desktop-src="<?php echo get_field('crowds_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('crowds_section_image_tablet'); ?>"
+					>
+				</div>
+				
+				<div class="solution-second-section-block-text">
+					<h2 class="solution-second-section-block-title">
+						<?php echo get_field('crowds_section_header'); ?>
+					</h2>
+					<div class="solution-second-section-block-paragraph">
+						<?php echo get_field('crowds_section_text'); ?>
+					</div>
 				</div>
 			</div>
-
 			<div class="solution-second-section-icons-block">
 				<h3 class="solution-second-section-icons-title">
 					<?php echo get_field('crowds_section_icons_title'); ?>

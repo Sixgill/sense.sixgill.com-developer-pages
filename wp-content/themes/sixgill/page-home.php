@@ -122,7 +122,7 @@
 	<div id="home-third-section" data-anchor="chart" class="home-section home-third-section">
 		<div class="home-third-section-wrapper">
 			<h2 class="home-third-section-title">
-					Sixgill SenseTM tracks, determines, and acts on the changing proximity of people, places and things.
+					Sixgill Sense<sup class="home-third-section-title-tm">TM</sup> tracks, determines, and acts on the changing proximity of people, places and things.
 			</h2>
 			<div class="home-third-section-image-wrapper">
 				<img class="home-third-section-image responsive-image"
