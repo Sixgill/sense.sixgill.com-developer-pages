@@ -97,6 +97,7 @@ var SEMICOLON = SEMICOLON || {};
 			SEMICOLON.initialize.imagePreload( '.portfolio-item:not(:has(.fslider)) img' );
 			SEMICOLON.initialize.stickyElements();
 			SEMICOLON.initialize.goToTop();
+			SEMICOLON.initialize.smoothScroll();
 			SEMICOLON.initialize.lazyLoad();
 			SEMICOLON.initialize.fullScreen();
 			SEMICOLON.initialize.verticalMiddle();
@@ -228,6 +229,21 @@ var SEMICOLON = SEMICOLON || {};
 				var opmdStickyH = $dotsMenuEl.outerHeight();
 				$dotsMenuEl.css({ marginTop: -(opmdStickyH/2)+'px' });
 			}
+		},
+
+		smoothScroll: function(){
+			  $('a[href*="#"]:not([href="#"])').click(function() {
+			      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html, body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
 		},
 
 		goToTop: function(){
