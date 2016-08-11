@@ -54,8 +54,9 @@
 				>
 			</div> 
 		</div>
-	</div>
 
+	</div>
+	<div id="solution-second-section-tablet"></div>  <!-- navigation div for tablet version-->
 	<!-- Second section people -->
 	<a name="solution-second-section"></a>
 	<div id="solution-second-section-desktop" class="solution-section solution-second-section">
@@ -78,6 +79,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="solution-second-section-icons-block">
 				<h3 class="solution-second-section-icons-title">
 					<?php echo get_field('people_section_icons_title'); ?>
