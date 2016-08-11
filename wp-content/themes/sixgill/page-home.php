@@ -49,7 +49,7 @@
 				<div class="home-second-section-header-top">
 					<div class="home-second-section-header-top-line"></div>
 					<div class="home-second-section-header-top-title">
-						We are experts in helping you
+						WE ARE EXPERTS IN HELPING YOU
 					</div>
 					<div class="home-second-section-header-top-line"></div>
 				</div>
