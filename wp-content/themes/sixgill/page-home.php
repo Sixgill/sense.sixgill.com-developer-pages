@@ -152,7 +152,7 @@
 					Lorem ipsum dolor sit amet consectetur adipisicing elit incidunt ut labore et dolore magna alique minim veniam.
 				</div>
 				<a href="/solutions/" class="home-fourth-section-link">
-					See All Use Cases
+					Explore Example Use Cases
 				</a>
 			</div>
 			<div class="home-fourth-section-carousel-wrapper">
