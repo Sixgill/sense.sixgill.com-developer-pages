@@ -122,23 +122,24 @@
 	<a name="solution-fourth-section"></a>
 	<div id="solution-fourth-section" class="solution-section solution-fourth-section">
 		<div class="solution-second-section-block">
-			<div class="solution-second-section-image-wrapper">
-				<img
-					class="solution-second-section-image responsive-image"
-					desktop-src="<?php echo get_field('crowds_section_image_desktop'); ?>"
-					tablet-src="<?php echo get_field('crowds_section_image_tablet'); ?>"
-				>
-			</div>
-			
-			<div class="solution-second-section-block-text">
-				<h2 class="solution-second-section-block-title">
-					<?php echo get_field('crowds_section_header'); ?>
-				</h2>
-				<div class="solution-second-section-block-paragraph">
-					<?php echo get_field('crowds_section_text'); ?>
+			<div class="solution-second-section-text-block">
+				<div class="solution-second-section-image-wrapper">
+					<img
+						class="solution-second-section-image responsive-image"
+						desktop-src="<?php echo get_field('crowds_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('crowds_section_image_tablet'); ?>"
+					>
+				</div>
+				
+				<div class="solution-second-section-block-text">
+					<h2 class="solution-second-section-block-title">
+						<?php echo get_field('crowds_section_header'); ?>
+					</h2>
+					<div class="solution-second-section-block-paragraph">
+						<?php echo get_field('crowds_section_text'); ?>
+					</div>
 				</div>
 			</div>
-
 			<div class="solution-second-section-icons-block">
 				<h3 class="solution-second-section-icons-title">
 					<?php echo get_field('crowds_section_icons_title'); ?>
