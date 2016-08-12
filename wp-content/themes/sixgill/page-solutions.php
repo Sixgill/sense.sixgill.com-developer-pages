@@ -37,7 +37,7 @@
 					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
 				>
 			</div>
-			
+
 			<div class="solution-first-section-block-text">
 				<h1 class="solution-first-section-block-title">
 					<?php echo get_field('first_section_header'); ?>
@@ -49,10 +49,10 @@
 
 			<div class="solution-first-section-image-wrapper-mobile">
 				<img
-					class="solution-first-section-image" 
+					class="solution-first-section-image"
 					src="<?php echo get_field('first_section_image_mobile'); ?>"
 				>
-			</div> 
+			</div>
 		</div>
 
 	</div>
@@ -60,7 +60,7 @@
 	<!-- Second section people -->
 	<a name="people"></a>
 	<!-- <a name="solution-second-section"></a> -->
-	<div id="solution-second-section-desktop" class="solution-section solution-second-section">
+	<div id="people" class="solution-section solution-second-section">
 		<div class="solution-second-section-block">
 			<div class="solution-second-section-text-block">
 				<div class="solution-second-section-image-wrapper">
@@ -70,7 +70,7 @@
 						tablet-src="<?php echo get_field('people_section_image_tablet'); ?>"
 					>
 				</div>
-				
+
 				<div class="solution-second-section-block-text">
 					<h2 class="solution-second-section-block-title">
 						<?php echo get_field('people_section_header'); ?>
@@ -92,13 +92,13 @@
 							<?php foreach(get_field('people_section_icons') as $item) : ?>
 								<li class="solution-second-section-icon-item">
 									<div class="solution-second-section-icon-image">
-										<img src="<?php echo $item['people_section_icon_image']; ?>" alt=""> 
+										<img src="<?php echo $item['people_section_icon_image']; ?>" alt="">
 									</div>
 									<div class="solution-second-section-icon-caption">
 										<?php echo $item['people_section_icon_caption']; ?>
 									</div>
 									<div class="solution-second-section-icon-link">
-									<a href="<?php echo $item['people_section_icon_link']; ?>">Learn More</a>	
+									<a href="<?php echo $item['people_section_icon_link']; ?>">Learn More</a>
 									</div>
 								</li>
 							<?php endforeach; ?>
@@ -112,7 +112,7 @@
 	<!-- Third section Assets -->
 	<a name="assets"></a>
 	<!-- <a name="solution-third-section"></a> -->
-	<div id="solution-third-section" class="solution-section solution-third-section">
+	<div id="assets" class="solution-section solution-third-section">
 		<div class="solution-third-section-block">
 			<div class="solution-third-section-image-wrapper">
 				<img
@@ -120,7 +120,7 @@
 					desktop-src="<?php echo get_field('assets_section_image_desktop'); ?>"
 					tablet-src="<?php echo get_field('assets_section_image_tablet'); ?>"
 				>
-			</div>			
+			</div>
 			<div class="solution-third-section-block-text">
 				<h1 class="solution-third-section-block-title">
 					<?php echo get_field('assets_section_header'); ?>
@@ -135,7 +135,7 @@
 	<!-- fourth section Crowds -->
 	<a name="crowds"></a>
 	<!-- <a name="solution-fourth-section"></a> -->
-	<div id="solution-fourth-section" class="solution-section solution-fourth-section">
+	<div id="crowds" class="solution-section solution-fourth-section">
 		<div class="solution-second-section-block">
 			<div class="solution-second-section-text-block">
 				<div class="solution-second-section-image-wrapper">
@@ -145,7 +145,7 @@
 						tablet-src="<?php echo get_field('crowds_section_image_tablet'); ?>"
 					>
 				</div>
-				
+
 				<div class="solution-second-section-block-text">
 					<h2 class="solution-second-section-block-title">
 						<?php echo get_field('crowds_section_header'); ?>
@@ -165,13 +165,13 @@
 							<?php foreach(get_field('crowds_section_icons') as $item) : ?>
 								<li class="solution-second-section-icon-item">
 									<div class="solution-second-section-icon-image">
-										<img src="<?php echo $item['crowds_section_icon_image']; ?>" alt=""> 
+										<img src="<?php echo $item['crowds_section_icon_image']; ?>" alt="">
 									</div>
 									<div class="solution-second-section-icon-caption">
 										<?php echo $item['crowds_section_icon_caption']; ?>
 									</div>
 									<div class="solution-second-section-icon-link">
-										<a href="<?php echo $item['crowds_section_icon_link']; ?>">Learn More</a>	
+										<a href="<?php echo $item['crowds_section_icon_link']; ?>">Learn More</a>
 									</div>
 								</li>
 							<?php endforeach; ?>
@@ -186,9 +186,9 @@
 
 
 
-	
-	
-	
+
+
+
 </div>
 
 <?php get_footer(); ?>
