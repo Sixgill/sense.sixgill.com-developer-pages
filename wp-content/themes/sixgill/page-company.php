@@ -35,7 +35,8 @@
 			</div>
 		</div>
 	</div>
-	<a name="company-second-section"></a>
+	<!-- <a name="company-second-section"></a> -->
+	<a name="leadership"></a>
 	<div class="company-section company-second-section">
 		<div class="inline-block full-width">
 			<div class="company-second-section-block">
@@ -191,6 +192,8 @@
 			</div>
 		</div>
 	</div>
+	<!-- <a name="company-third-section"></a> -->
+	<a name="board"></a>
 	<div class="company-section company-third-section">
 		<div class="inline-block full-width">
 			<div class="company-third-section-text">
