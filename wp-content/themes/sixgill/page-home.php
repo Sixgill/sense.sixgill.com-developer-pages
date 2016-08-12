@@ -49,15 +49,15 @@
 				<div class="home-second-section-header-top">
 					<div class="home-second-section-header-top-line"></div>
 					<div class="home-second-section-header-top-title">
-						<?php get_field('second_section_sup_title'); ?>
+						<?php echo get_field('second_section_suptitle'); ?>
 					</div>
 					<div class="home-second-section-header-top-line"></div>
 				</div>
 				<h2 class="home-second-section-title">
-					<?php get_field('second_section_title'); ?>
+					<?php echo get_field('second_section_title'); ?>
 				</h2>
 				<div class="home-second-section-subtitle">
-					<?php get_field('second_section_sub_title'); ?>
+					<?php echo get_field('second_section_subtitle'); ?>
 				</div>
 			</div>
 			<div class="home-second-section-content-wrapper">
@@ -68,9 +68,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								<?php get_field('second_section_first_block_title'); ?>
+								<?php echo get_field('second_section_first_block_title'); ?>
 							</h3>
-							<?php get_field('second_section_first_block_text'); ?>
+							<?php echo get_field('second_section_first_block_text'); ?>
 						</div>
 					</div>
 
@@ -80,9 +80,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								<?php get_field('second_section_second_block_title'); ?>
+								<?php echo get_field('second_section_second_block_title'); ?>
 							</h3>
-							<?php get_field('second_section_second_block_text'); ?>
+							<?php echo get_field('second_section_second_block_text'); ?>
 						</div>
 					</div>
 				</div>
@@ -96,9 +96,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								<?php get_field('second_section_third_block_title'); ?>
+								<?php echo get_field('second_section_third_block_title'); ?>
 							</h3>
-							<?php get_field('second_section_third_block_text'); ?>
+							<?php echo get_field('second_section_third_block_text'); ?>
 						</div>
 					</div>
 
@@ -108,9 +108,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								<?php get_field('second_section_fourth_block_title'); ?>
+								<?php echo get_field('second_section_fourth_block_title'); ?>
 							</h3>
-							<?php get_field('second_section_fourth_block_text'); ?>
+							<?php echo get_field('second_section_fourth_block_text'); ?>
 						</div>
 					</div>
 				</div>
@@ -126,9 +126,9 @@
 			</h2>
 			<div class="home-third-section-image-wrapper">
 				<img class="home-third-section-image responsive-image"
-          desktop-src="/wp-content/themes/sixgill/images/home/infographic.svg"
-          tablet-src="/wp-content/themes/sixgill/images/home/infographic.svg"
-          mobile-src="/wp-content/themes/sixgill/images/home/mobile_infographic.svg"
+          desktop-src="<?php echo get_field('third_section_infographic_desktop'); ?>"
+          tablet-src="<?php echo get_field('third_section_infographic_tablet'); ?>"
+          mobile-src="<?php echo get_field('third_section_infographic_mobile'); ?>"
         >
 			</div>
 			<div class="home-third-section-bottom-part-wrapper">
@@ -146,10 +146,10 @@
 		<div class="home-fourth-section-wrapper">
 			<div class="home-fourth-section-header-wrapper">
 				<h2 class="home-fourth-section-title">
-					<?php get_field('fourth_section_title'); ?>
+					<?php echo get_field('fourth_section_title'); ?>
 				</h2>
 				<div class="home-fourth-section-subtitle">
-					<?php get_field('fourth_section_subtitle'); ?>
+					<?php echo get_field('fourth_section_subtitle'); ?>
 				</div>
 				<a href="/solutions/" class="home-fourth-section-link">
 					Explore Example Use Cases
@@ -195,10 +195,10 @@
 			<div class="home-fifth-section-header-wrapper">
 				<div class="home-fifth-section-dash"></div>
 				<h2 class="home-fifth-section-title">
-					<?php get_field('fifth_section_title'); ?>
+					<?php echo get_field('fifth_section_title'); ?>
 				</h2>
 				<div class="home-fifth-section-subtitle">
-					<?php get_field('fifth_section_subtitle'); ?>
+					<?php echo get_field('fifth_section_subtitle'); ?>
 				</div>
 			</div>
 
