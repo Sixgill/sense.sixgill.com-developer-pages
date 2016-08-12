@@ -2,8 +2,8 @@
 <div> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
 	<a
-		href="#company-second-section"
-		class="company-learn-more-link"
+		href="#leadership"
+		class="scroll-section company-learn-more-link"
 	>
 		<div class="company-first-section-scroll-link-wrapper">
 			<div class="company-first-section-scroll-link-ico-wrapper">
