@@ -15,18 +15,20 @@ jQuery(function($) {
 		if(!selectedSection.length) {
 			return;
 		}
+
 		var currentSublink = new SubsectionLinkInfo(
 			link,
 			selectedSection,
 			selector
 		);
-
+		console.log('sublink');
 		sublinks.push(currentSublink);
-
+		console.log(currentSublink.selectedSection, 'selectedSection');
 		window.onScrolledTo(
 			currentSublink.section,
 			function() {
 				sublinks.forEach(function(sublink) {
+					console.log("isScrolledTo", sublink.selector, selector);
 					if(sublink.selector == selector) {
 						sublink.menuLink.addClass('active');
 					} else {
@@ -35,6 +37,7 @@ jQuery(function($) {
 				});
 			},
 			function() {
+				console.log("isScrolledOut", currentSublink.selector);
 				currentSublink.menuLink.removeClass('active');
 			}
 		);
