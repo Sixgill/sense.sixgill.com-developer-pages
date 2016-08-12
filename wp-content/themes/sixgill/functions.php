@@ -76,8 +76,9 @@
 		$result = new WP_Query($args);
 
 		$lookup = array(
-			'post_parent' => $result->post->ID,
-			'post_status' => 'any'
+			'post_parent'            => $result->post->ID,
+			'post_type'              => array( 'page' ),
+			'post_status'            => array( 'publish' ),
 		);
 
 		$childpages = get_children($lookup);
