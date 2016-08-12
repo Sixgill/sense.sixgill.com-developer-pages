@@ -1,1 +1,334 @@
 /* Home mobile portrait and landscape styles */
+
+.home {
+
+	&-section {
+		height: calc(~"100vh - 74px");
+	}
+
+	&-learn-more-link {
+		display: none;
+	}
+
+	&-first-section {
+		justify-content: center;
+		background-image: url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
+		margin-top: 74px;
+
+		&, &-block {
+			display: flex;
+		}
+
+		&-block {
+			&, &-text {
+				align-self: center;
+				text-align: center;
+				display: inline-block;
+			}
+		}
+
+		&-block {
+			align-items: center;
+			width: 83.12%;
+			z-index: 3;
+
+			&-text {
+				width: 100%;
+			}
+		}
+
+		&-text {
+			margin-bottom: 8vh;
+
+			&, & p {
+				font-size: 6vw;
+				font-weight: 500;
+				line-height: 1;
+				text-shadow: 0 0 11.5px rgba(0,0,0,.7);
+			}
+		}
+
+		&-scroll-link {
+			&-text {
+				font-size: 17px;
+			  font-weight: 600;
+			  text-shadow: -3.1px 3.9px 12px #000000;
+				margin-bottom: 16px;
+				text-align: center;
+			}
+
+			&-ico-wrapper {
+				width: 37px;
+				height: 18px;
+				text-align: center;
+			}
+		}
+	}
+
+
+	&-second-section {
+		background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
+		height: auto;
+
+	  &-wrapper {
+			width: 92.5%;
+			margin: 10vh 0px 0px 0px;
+	  }
+
+	  &-header-wrapper {
+			margin-bottom: 9vw;
+	  }
+
+	  &-header-top {
+			margin-bottom: 2.8vh;
+
+	    &-line {
+				display: none;
+	    }
+
+	    &-title {
+				width: ;
+    		white-space: nowrap;
+				margin: 0px 8px 0px 8px;
+				font-size: 5.3vw;
+	    }
+	  }
+
+	  &-title {
+			font-family: "Lato";
+
+			font-weight: 700;
+			font-size: 6.25vw;
+			text-align: center;
+			color: #4ddb5a;
+			margin-bottom: 12px;
+	  }
+
+	  &-subtitle {
+			font-size: 19px;
+			margin-bottom: 8vw;
+	  }
+
+	  &-content-wrapper {
+
+	  }
+
+		&-row {
+			width: 100%;
+
+			&:first-child {
+				min-height: 190px;
+			}
+		}
+
+		&-block {
+			width: 100%;
+			margin-bottom: 12vw;
+
+			&:first-child {
+				float: left;
+			}
+
+			&:last-child {
+				float: right;
+			}
+
+			&-title {
+				margin-top: -0.3em;
+				margin-bottom: 0px;
+			}
+
+			&-content {
+				width: 100%;
+			}
+		}
+
+		&-icon-wrapper {
+			display: none;
+		}
+
+		&-icon {
+
+		}
+	}
+
+	&-third-section {
+		display: flex;
+    align-items: center;
+    justify-content: center;
+		background-image: url('/wp-content/themes/sixgill/images/home/bg_dots_tablet.png');
+
+		&-wrapper {
+			width: 90.5%;
+			text-align: center;
+		}
+
+		&-title {
+			display: inline-block;
+			width: 77%;
+			font-size: 24px;
+			margin-bottom: 10.4vw;
+			line-height: 1.5em;
+		}
+
+		&-image-wrapper {
+			margin-bottom: 9.8vw;
+		}
+
+		&-image {
+			height: auto;
+			width: 100%;
+
+			&-wrapper {
+				height: auto;
+			}
+		}
+
+		&-bottom-part {
+			&-wrapper {
+				display: inline-block;
+				width: 55%;
+				text-align: center;
+			}
+
+			&-text {
+				font-size: 16px;
+				font-weight: bold;
+				margin-bottom: 3.2vw;
+			}
+		}
+
+		&-button {
+
+		}
+	}
+
+	&-fourth-section {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+
+		background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
+
+		&-wrapper {
+
+			text-align: center;
+
+		}
+
+		&-header-wrapper {
+			display: inline-block;
+			width: 89vw;
+			margin-bottom: 3vh;
+		}
+
+		&-title {
+			font-size: 30px;
+		}
+
+		&-subtitle {
+			font-size: 18px;
+			margin-bottom: 2vw;
+		}
+
+		&-link {
+			font-size: 18px;
+		}
+
+		&-carousel {
+			&-wrapper {
+
+			}
+
+			&-slide {
+
+			}
+
+			&-image-wrapper {
+
+			}
+
+			&-text {
+				&-wrapper {
+
+				}
+
+				&-caption {
+
+					&-wrapper {
+
+					}
+				}
+
+				&-content {
+
+					&-wrapper {
+
+					}
+
+					&-line {
+
+					}
+				}
+			}
+
+			&-link-more {
+
+			}
+		}
+	}
+
+	&-fifth-section {
+
+		height: auto;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin-top: 9.3vw;
+		}
+
+		&-header-wrapper {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin-bottom: 3vw;
+		}
+
+		&-dash {
+			margin-bottom: 4vh;
+		}
+
+		&-title {
+			font-size: 24px;
+			margin-bottom: 0px;
+		}
+
+		&-subtitle {
+			font-size: 16px;
+		}
+
+		&-logo {
+			display: inline-block;
+			width: 80%;
+			margin-bottom: 7vh;
+
+			&-wrapper {
+				display: inline-block;
+				width: 20%;
+				text-align: center;
+			}
+
+			&s-wrapper {
+				font-size: 0px;
+				width: 87.5vw;
+			}
+		}
+	}
+}

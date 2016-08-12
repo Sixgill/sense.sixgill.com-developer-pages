@@ -49,15 +49,15 @@
 				<div class="home-second-section-header-top">
 					<div class="home-second-section-header-top-line"></div>
 					<div class="home-second-section-header-top-title">
-						WE ARE EXPERTS IN HELPING YOU
+						<?php get_field('second_section_sup_title'); ?>
 					</div>
 					<div class="home-second-section-header-top-line"></div>
 				</div>
 				<h2 class="home-second-section-title">
-					TRACK, DETERMINE AND ACT
+					<?php get_field('second_section_title'); ?>
 				</h2>
 				<div class="home-second-section-subtitle">
-					on the ever-changing relationships between people, places and things essential to your success.
+					<?php get_field('second_section_sub_title'); ?>
 				</div>
 			</div>
 			<div class="home-second-section-content-wrapper">
@@ -68,9 +68,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								Drive Business Value
+								<?php get_field('second_third_first_block_title'); ?>
 							</h3>
-							With our market-proven enterprise proximity platform, customers can Track the key people, places, and things that matter to them, Determine proximity and intent, and Act to drive business value.
+							<?php get_field('second_section_first_block_text'); ?>
 						</div>
 					</div>
 
@@ -80,9 +80,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								Enterprise proximity platform
+								<?php get_field('second_third_second_block_title'); ?>
 							</h3>
-							Our proximity engine—at the heart of the platform—has normalized 1.5 billion multidimensional measurements and triggered 25 million context-sensitive actions for our customers. And counting.
+							<?php get_field('second_section_second_block_text'); ?>
 						</div>
 					</div>
 				</div>
@@ -96,9 +96,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								TURN MOBILITY INTO AN ASSET
+								<?php get_field('second_section_third_block_title'); ?>
 							</h3>
-							We turn the increasing mobility of the enterprise workforce and the connected nature of the Internet of Things into a business asset, converting vast amounts of location and sensor data into understandable analytics and targeted action.
+							<?php get_field('second_section_third_block_text'); ?>
 						</div>
 					</div>
 
@@ -108,9 +108,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								ONE FOCUS
+								<?php get_field('second_section_fourth_block_title'); ?>
 							</h3>
-							At Sixgill we have one focus—to enable our customers to embrace mobility as an asset while maintaining the control they need to maximize value.
+							<?php get_field('second_section_fourth_block_text'); ?>
 						</div>
 					</div>
 				</div>
@@ -146,10 +146,10 @@
 		<div class="home-fourth-section-wrapper">
 			<div class="home-fourth-section-header-wrapper">
 				<h2 class="home-fourth-section-title">
-					Proximity for the People, Assets and Crowds
+					<?php get_field('fourth_section_title'); ?>
 				</h2>
 				<div class="home-fourth-section-subtitle">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit incidunt ut labore et dolore magna alique minim veniam.
+					<?php get_field('fourth_section_subtitle'); ?>
 				</div>
 				<a href="/solutions/" class="home-fourth-section-link">
 					Explore Example Use Cases
@@ -195,10 +195,10 @@
 			<div class="home-fifth-section-header-wrapper">
 				<div class="home-fifth-section-dash"></div>
 				<h2 class="home-fifth-section-title">
-					PROVEN AT CONSUMER VOLUMES
+					<?php get_field('fifth_section_title'); ?>
 				</h2>
 				<div class="home-fifth-section-subtitle">
-					Sixgill provides proximity enablement for mobile apps including mobile program customers of Lemon.
+					<?php get_field('fifth_section_subtitle'); ?>
 				</div>
 			</div>
 
