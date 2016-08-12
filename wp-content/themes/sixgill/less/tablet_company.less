@@ -91,7 +91,8 @@
 
 	&-image-wrapper {
 		min-width: 215px;
-		max-height: 215px;
+		max-width: 215px;	
+		min-height: 215px;
 	}
 	&-block-title {
 	  font-family: Lato light;
@@ -101,7 +102,7 @@
 	  letter-spacing: 3.9px;
 	  text-align: center;
 	  color: #0051c6;
-  	  margin-bottom: 5vw;
+  	  margin: 5vw 0 8vw 0;
 	}
 	&-block {
 		width: 92%;
@@ -122,7 +123,7 @@
 	}
 	&-rows {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-start;
 		margin-bottom: 44px;
 	}
 	&-team-description {
@@ -148,13 +149,22 @@
   	  margin-bottom: 10px;
 	  color: #5cc468;
 	}
-	&-bio {
+	&-bio p {
 	  font-family: Lato;
 	  font-size: 15.9px;
 	  font-weight: 500;
 	  line-height: 1.33;
 	  letter-spacing: 0.5px;
-  	  margin-bottom: 10px;
+  	  margin-bottom: 2vw;
+	  color: #2e2e2e;
+	}
+	&-bio-full p {
+	  font-family: Lato;
+	  font-size: 15.9px;
+	  font-weight: 500;
+	  line-height: 1.33;
+	  letter-spacing: 0.5px;
+  	  margin-bottom: 2vw;
 	  color: #2e2e2e;
 	}
 	&-bio-full {
@@ -172,18 +182,11 @@
 		&:hover {
 			color: #0083c6;
 		}
-		text-decoration: underline;
 		font-family: Lato;
 		font-size: 16px;
 		font-weight: 700;
 		line-height: 0.47;
 		letter-spacing: 0.5px;
-		color: #0051c6;
-	}
-	.learn-more-expand-icon {
-		color: #0051c6;
-	}
-	.learn-more-close-icon {
 		color: #0051c6;
 	}
 }
@@ -232,12 +235,22 @@
 		color: #5cc468;
 	}
 	&-bio {
-		font-family: Lato;
-		font-size: 15.9px;
-		font-weight: 500;
-		line-height: 1.33;
-		letter-spacing: 0.5px;
-		color: #a9d8dd;
+		ul li {
+			font-family: Lato;
+			font-size: 15.9px;
+			font-weight: 500;
+			line-height: 1.33;
+			letter-spacing: 0.5px;
+			color: #a9d8dd;
+		}
+		p {
+			font-family: Lato;
+			font-size: 15.9px;
+			font-weight: 500;
+			line-height: 1.33;
+			letter-spacing: 0.5px;
+			color: #a9d8dd;
+		}
 	}
 	&-rows {
 		display: flex;

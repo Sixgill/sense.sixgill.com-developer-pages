@@ -29,6 +29,20 @@
 	display: flex;
 	align-items: center;
 	background-color: #f8f8f8;
+	&-more-trigger {
+		margin-top: 2vw;
+	}
+	.learn-more-title {
+		text-decoration: underline!important;
+	}
+	.learn-more-expand-icon {
+		text-decoration: none!important;
+		color: #0051c6;
+	}
+	.learn-more-close-icon {
+		color: #0051c6;
+		text-decoration: none!important;
+	}
 }
 
 .company-first-section-block-title,
@@ -52,4 +66,19 @@
 	opacity: 0.8;
 	text-align: center;
 	margin-bottom: 8vw;
+}
+.company-third-section-row-item ul {
+	list-style-type: none;
+	& li {
+		display:block;
+		padding-left: 20px;
+	}
+	& li::before {
+        display:inline-block;
+        width: 10px;
+        content: "•";
+        color:#4ddb5a;
+        margin-right: 10px;
+        margin-left: -20px;
+	}
 }
