@@ -88,6 +88,7 @@
 				<div class="solution-second-section-icon-wrapper">
 					<?php if(get_field('people_section_icons')) : ?>
 						<ul class="solution-second-section-icon-list">
+
 							<?php foreach(get_field('people_section_icons') as $item) : ?>
 								<li class="solution-second-section-icon-item">
 									<div class="solution-second-section-icon-image">
@@ -159,8 +160,7 @@
 					<?php echo get_field('crowds_section_icons_title'); ?>
 				</h3>
 				<div class="solution-second-section-icon-wrapper">
-					<!-- <?php echo get_field('crouds_section_icons'); ?> -->
- 					<?php if(get_field('crouds_section_icons')) : ?>
+ 					<?php if(get_field('crouds_section_icons')) : ?> 
 						<ul class="solution-second-section-icon-list">
 							<?php foreach(get_field('crouds_section_icons') as $item) : ?>
 								<li class="solution-second-section-icon-item">
@@ -168,10 +168,10 @@
 										<img src="<?php echo $item['crouds_section_icon_image']; ?>" alt=""> 
 									</div>
 									<div class="solution-second-section-icon-caption">
-										<?php echo $item['crowds_section_icons_title']; ?>
+										<?php echo $item['crouds_section_icon_title']; ?>
 									</div>
 									<div class="solution-second-section-icon-link">
-									<a href="<?php echo $item['crowds_section_icon_link']; ?>">Learn More</a>	
+										<a href="<?php echo $item['crowds_section_icon_link']; ?>">Learn More</a>	
 									</div>
 								</li>
 							<?php endforeach; ?>
