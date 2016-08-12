@@ -68,7 +68,7 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								<?php get_field('second_third_first_block_title'); ?>
+								<?php get_field('second_section_first_block_title'); ?>
 							</h3>
 							<?php get_field('second_section_first_block_text'); ?>
 						</div>
@@ -80,7 +80,7 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								<?php get_field('second_third_second_block_title'); ?>
+								<?php get_field('second_section_second_block_title'); ?>
 							</h3>
 							<?php get_field('second_section_second_block_text'); ?>
 						</div>
