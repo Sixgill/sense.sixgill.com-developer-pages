@@ -1,6 +1,5 @@
 $(function() {
 
-
 	var thirdSectionVisible = false,
 			fourthSectionVisible = false,
 			fifthSectionVisible = false,
@@ -12,6 +11,25 @@ $(function() {
       fixedPanelCols = $('.products-fixed-panel-col'),
       sectionLinkAttrName = 'data-section-link';
 
+	fixedPanelCols.click(function() {
+    var currentSectionLink = $(this).attr(sectionLinkAttrName);
+    if(window.screenType == 'tablet') {
+      $('html, body').animate({
+          scrollTop: $(currentSectionLink).offset().top - 121
+      }, 1000);
+    } else {
+
+      $('html, body').animate({
+          scrollTop: $(currentSectionLink).offset().top
+      }, 1000);
+    }
+  });
+
+	if(screenType != 'desktop') {
+		panelDOMLink.removeClass('hide');
+		panelDOMLink.animate({opacity: 1}, 500);
+		return;
+	}
 
 	function checkPanelHighlighting(currentSectionLink) {
 		if(fifthSectionVisible) {
@@ -29,19 +47,7 @@ $(function() {
 		}
 	}
 
-  fixedPanelCols.click(function() {
-    var currentSectionLink = $(this).attr(sectionLinkAttrName);
-    if(window.screenType == 'tablet') {
-      $('html, body').animate({
-          scrollTop: $(currentSectionLink).offset().top - 121
-      }, 1000);
-    } else {
 
-      $('html, body').animate({
-          scrollTop: $(currentSectionLink).offset().top
-      }, 1000);
-    }
-  });
 
   var isPanelVisible = false;
 
