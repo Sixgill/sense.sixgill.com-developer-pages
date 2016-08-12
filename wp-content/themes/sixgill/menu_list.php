@@ -18,15 +18,18 @@
 		"sublinksList" => array(
 			array(
 				"name" => "People",
-				"anchor" => "solution-second-section"
+				"anchor" => "people"
+				// "anchor" => "solution-second-section"
 			),
 			array(
 				"name" => "Assets",
-				"anchor" => "solution-third-section"
+				"anchor" => "assets"
+				// "anchor" => "solution-third-section"
 			),
 			array(
 				"name" => "Crowds",
-				"anchor" => "solution-fourth-section"
+				"anchor" => "crowds"
+				// "anchor" => "solution-fourth-section"
 			),			
 		),
 		"isSelected" => $isSelected,
@@ -40,11 +43,13 @@
 		"sublinksList" => array(
 			array(
 				"name" => "Sixgill Sence",
-				"anchor" => "products-second-section"
+				"anchor" => "sence"
+				// "anchor" => "products-second-section"
 			),
 			array(
 				"name" => "Ancillary Products",
-				"anchor" => "products-last-section"
+				"anchor" => "ancillary"
+				// "anchor" => "products-last-section"
 			)
 		),
 		"isSelected" => $isSelected,
@@ -58,15 +63,18 @@
 		"sublinksList" => array(
 			array(
 				"name" => "Location",
-				"anchor" => "tech-second-section"
+				"anchor" => "location"
+				// "anchor" => "tech-second-section"
 			),
 			array(
 				"name" => "Proximity",
-				"anchor" => "tech-third-section"
+				"anchor" => "proximity"
+				// "anchor" => "tech-third-section"
 			),
 			array(
 				"name" => "Open Platform",
-				"anchor" => "tech-fourth-section"
+				"anchor" => "platform"
+				// "anchor" => "tech-fourth-section"
 			)
 		),
 		"isSelected" => $isSelected,
@@ -80,11 +88,13 @@
 		"sublinksList" => array(
 			array(
 				"name" => "Leadership",
-				"anchor" => "company-second-section"
+				"anchor" => "leadership"
+				// "anchor" => "company-second-section"
 			),
 			array(
 				"name" => "The Board",
-				"anchor" => "company-third-section"
+				"anchor" => "board"
+				// "anchor" => "company-third-section"
 			)
 		),
 		"isSelected" => $isSelected,

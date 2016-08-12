@@ -58,7 +58,8 @@
 	</div>
 	<div id="solution-second-section-tablet"></div>  <!-- navigation div for tablet version-->
 	<!-- Second section people -->
-	<a name="solution-second-section"></a>
+	<a name="people"></a>
+	<!-- <a name="solution-second-section"></a> -->
 	<div id="solution-second-section-desktop" class="solution-section solution-second-section">
 		<div class="solution-second-section-block">
 			<div class="solution-second-section-text-block">
@@ -108,7 +109,8 @@
 	</div>
 
 	<!-- Third section Assets -->
-	<a name="solution-third-section"></a>
+	<a name="assets"></a>
+	<!-- <a name="solution-third-section"></a> -->
 	<div id="solution-third-section" class="solution-section solution-third-section">
 		<div class="solution-third-section-block">
 			<div class="solution-third-section-image-wrapper">
@@ -130,7 +132,8 @@
 	</div>
 
 	<!-- fourth section Crowds -->
-	<a name="solution-fourth-section"></a>
+	<a name="crowds"></a>
+	<!-- <a name="solution-fourth-section"></a> -->
 	<div id="solution-fourth-section" class="solution-section solution-fourth-section">
 		<div class="solution-second-section-block">
 			<div class="solution-second-section-text-block">
