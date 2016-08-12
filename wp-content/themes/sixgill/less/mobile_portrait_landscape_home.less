@@ -21,7 +21,9 @@
 		}
 
 		&-block {
+			z-index: 3;
 			&, &-text {
+				z-index: 3;
 				align-self: center;
 				text-align: center;
 				display: inline-block;
@@ -34,6 +36,7 @@
 			z-index: 3;
 
 			&-text {
+				z-index: 3;
 				width: 100%;
 			}
 		}
@@ -160,14 +163,15 @@
 		background-image: url('/wp-content/themes/sixgill/images/home/bg_dots_tablet.png');
 
 		&-wrapper {
-			width: 90.5%;
+			width: 93.75%;
 			text-align: center;
+			margin: 14vw 0px 14vw 0px;
 		}
 
 		&-title {
 			display: inline-block;
-			width: 77%;
-			font-size: 24px;
+			width: 100%;
+			font-size: 16px;
 			margin-bottom: 10.4vw;
 			line-height: 1.5em;
 		}
@@ -188,14 +192,14 @@
 		&-bottom-part {
 			&-wrapper {
 				display: inline-block;
-				width: 55%;
+				width: 100%;
 				text-align: center;
 			}
 
 			&-text {
-				font-size: 16px;
+				font-size: 14px;
 				font-weight: bold;
-				margin-bottom: 3.2vw;
+				margin-bottom: 4vh;
 			}
 		}
 
@@ -213,9 +217,8 @@
 		background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
 
 		&-wrapper {
-
+			margin: 10vw 0px 3vw 0px;
 			text-align: center;
-
 		}
 
 		&-header-wrapper {
@@ -304,6 +307,7 @@
 
 		&-dash {
 			margin-bottom: 4vh;
+			width: 10vw;
 		}
 
 		&-title {
@@ -332,4 +336,17 @@
 			}
 		}
 	}
+}
+
+.home-fourth-section-carousel {
+	width: 250px;
+	margin: 51px auto 0;
+}
+
+.home-fourth-section-carousel .owl-buttons .owl-prev{
+	left: -35px;
+}
+
+.home-fourth-section-carousel .owl-buttons .owl-next{
+	right: -35px;
 }
