@@ -160,15 +160,15 @@
 					<?php echo get_field('crowds_section_icons_title'); ?>
 				</h3>
 				<div class="solution-second-section-icon-wrapper">
- 					<?php if(get_field('crouds_section_icons')) : ?> 
+ 					<?php if(get_field('crowds_section_icons')) : ?>
 						<ul class="solution-second-section-icon-list">
-							<?php foreach(get_field('crouds_section_icons') as $item) : ?>
+							<?php foreach(get_field('crowds_section_icons') as $item) : ?>
 								<li class="solution-second-section-icon-item">
 									<div class="solution-second-section-icon-image">
-										<img src="<?php echo $item['crouds_section_icon_image']; ?>" alt=""> 
+										<img src="<?php echo $item['crowds_section_icon_image']; ?>" alt=""> 
 									</div>
 									<div class="solution-second-section-icon-caption">
-										<?php echo $item['crouds_section_icon_title']; ?>
+										<?php echo $item['crowds_section_icon_caption']; ?>
 									</div>
 									<div class="solution-second-section-icon-link">
 										<a href="<?php echo $item['crowds_section_icon_link']; ?>">Learn More</a>	
