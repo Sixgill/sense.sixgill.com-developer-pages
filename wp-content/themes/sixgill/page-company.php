@@ -57,7 +57,7 @@
 						</div>
 						<div class="company-second-section-row-item">
 							<p class="company-second-section-bio">Phil has been serially involved in building companies and expanding markets for a wide range of innovators in enterprise data availability, comprehension and collaboration spanning the mobile, web, networking and PC eras.</p>
-							<p class="company-second-section-bio-full"><br></p>
+							<p class="company-second-section-bio-full">His programs accelerated demand and market comprehension for early pioneers Lotus Development Corp., Nantucket Corp., Gupta Corp. inquiry.com and Callidus Software. He advised dozens of enterprise, communications, mobile and media start-ups during his work in venture capital at Clearstone Venture Partners, and returned to the operating world in 2008 as CEO at photorealistic animation innovator Big Stage Entertainment. He helped companies find focus and exits in collaborative accountability and analytic database markets, and led a product innovation and business revival as CEO at manufacturer Seymour Duncan during the Crash. After launching streaming data innovator Bottlenose into revenue and raising its Series B financing, Phil’s renewed interest in new data types with strategic value led him to reformulate Zos Communications as Sixgill LLC for the enterprise.</p>
 							<p class="company-second-section-more-trigger">
 								<a class="learn-more-link">
 									Learn More
@@ -85,7 +85,7 @@
 						</div>
 						<div class="company-second-section-row-item">
 							<p class="company-second-section-bio">John began is career as a software engineer for internal enterprise systems and spiraled away from his keyboard enough to gather up an ever-widening range of technology creation, scaling, architecture, deployment, operations and and general executive experiences. In a succession of companies including Quaker, Deloitte, American Standard, Intellos, Guru Denim and RealD, John worked on networking infrastructure, internal ERP, inventory, CRM and HR systems, vehicle control and telematics systems, and managed global IT operations.</p>
-							<p class="company-second-section-bio-full"><br></p>
+							<p class="company-second-section-bio-full">An unusual hybrid in technology career terms with experience as both the architect of systems being sold to the enterprise and the consumer of these systems as a CIO, John is steeped in enterprise problem-solving. During the past several years, including his half-decade at RealD, John has been thinking seriously about how to solve tracking and governance of mobile distributed assets and thus became interested in Sixgill. Aside from John’s continuing interest in technology enabling highly scalable systems, his prior experience in the CIO function gives us valuable buyer perspective for meeting customer requirements for proximity services.</p>
 							<p class="company-second-section-more-trigger">
 								<a class="learn-more-link">
 									Learn More
