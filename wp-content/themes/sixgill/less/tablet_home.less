@@ -3,7 +3,7 @@
 .home {
 
 	&-section {
-		height: calc(~"100vh - 121px");
+		min-height: calc(~"100vh - 121px");
 	}
 
 	&-learn-more-link {
@@ -71,6 +71,7 @@
 	&-second-section {
 		background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
 		height: auto;
+		min-height: inherit;
 
 	  &-wrapper {
 			width: 90.5%;
@@ -282,6 +283,7 @@
 	&-fifth-section {
 
 		height: auto;
+		min-height: inherit;
 
 		display: flex;
 		align-items: center;
@@ -331,6 +333,11 @@
 			}
 		}
 	}
+}
+
+#footer {
+	height: 165px !important;
+	min-height: inherit;
 }
 
 .home-fourth-section-carousel {
