@@ -54,22 +54,22 @@
 	}
 
 	&-block-title {
-		font-family: Lato;
-		font-size: 29.1px;
-		font-weight: 300;
-		line-height: 1.33;
-		letter-spacing: 1.5px;
-		color: #ffffff;
+		  font-family: Lato Light;
+		  font-size: 29.1px;
+		  font-weight: 300;
+		  line-height: 1.33;
+		  letter-spacing: 1.5px;
+		  color: #ffffff;
 	}
 
 	&-block-paragraph p {
+		margin-bottom: 5vw;
 		font-family: Lato;
 		font-size: 15.9px;
 		font-weight: 400;
 		line-height: 1.5;
 		letter-spacing: 0.5px;
 		color: #ffffff;
-		margin-bottom: 10vw;
 	}
 	&-scroll-link-text {
 		font-size: 17px;
@@ -97,10 +97,10 @@
 	  letter-spacing: 2.9px;
 	  text-align: center;
 	  color: #0051c6;
-  	  margin: 5vw 0 5vw 0;
+	  margin: 5vw 0 5vw 0;
 	}
 	&-block {
-		width: 80%;
+		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -121,13 +121,10 @@
 		flex-direction: column;
 		justify-content: space-between;
 	}
-	&-team-description {
-		margin-left: 2vw;
-	}
 
 	&-name {
 	  height: 26px;
-	  font-family: Lato;
+	  font-family: Lato Light;
 	  font-size: 34.5px;
 	  font-weight: 300;
 	  line-height: 0.62;
@@ -144,7 +141,16 @@
   	  margin-bottom: 10px;
 	  color: #5cc468;
 	}
-	&-bio {
+	&-bio p {
+	  font-family: Lato;
+	  font-size: 15.9px;
+	  font-weight: 500;
+	  line-height: 1.33;
+	  letter-spacing: 0.5px;
+  	  margin-bottom: 10px;
+	  color: #2e2e2e;
+	}
+	&-bio-full p {
 	  font-family: Lato;
 	  font-size: 15.9px;
 	  font-weight: 500;
@@ -168,18 +174,11 @@
 		&:hover {
 			color: #0083c6;
 		}
-		text-decoration: underline!important;
 		font-family: Lato;
 		font-size: 16px;
 		font-weight: 700;
 		line-height: 0.47;
 		letter-spacing: 0.5px;
-		color: #0051c6;
-	}
-	.learn-more-expand-icon {
-		color: #0051c6;
-	}
-	.learn-more-close-icon {
 		color: #0051c6;
 	}
 }
@@ -206,7 +205,7 @@
 	}
 	&-name {
 		margin-bottom: 2vw;
-		font-family: Lato;
+		font-family: Lato Light;
 		font-size: 26.5px;
 		font-weight: 300;
 		line-height: 0.8;
@@ -223,15 +222,25 @@
 		color: #5cc468;
 	}
 	&-bio {
-		font-family: Lato;
-		font-size: 15.9px;
-		font-weight: 500;
-		line-height: 1.33;
-		letter-spacing: 0.5px;
-		color: #ffffff;
-	}
-	&-bio:not(:last-child) {
-		margin-bottom: 4vw;
+		ul li {
+		  font-family: Lato;
+		  font-size: 15.9px;
+		  font-weight: 500;
+		  line-height: 1.6;
+		  letter-spacing: 0.5px;
+		  color: #a9d8dd;
+		}
+		p {
+		  font-family: Lato;
+		  font-size: 15.9px;
+		  font-weight: 500;
+		  line-height: 1.6;
+		  letter-spacing: 0.5px;
+		  color: #a9d8dd;
+		}
+		ul li:not(:last-child) {
+			margin-bottom: 4vw;
+		}
 	}
 	&-rows {
 		display: flex;
@@ -239,7 +248,7 @@
 		align-items:flex-start;
 	}
 	&-row-item {
-		margin-left:5vw;
+		margin:0 5vw 5vw 5vw;
 	}
 	& > div {
 		align-self: center;
