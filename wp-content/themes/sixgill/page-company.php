@@ -36,7 +36,7 @@
 		</div>
 	</div>
 	<a name="leadership"></a>
-	<div class="company-section company-second-section">
+	<div id="leadership" class="company-section company-second-section">
 		<div class="inline-block full-width">
 			<div class="company-second-section-block">
 			<h1 class="company-second-section-block-title">
@@ -78,7 +78,7 @@
 		</div>
 	</div>
 	<a name="board"></a>
-	<div class="company-section company-third-section">
+	<div id="board" class="company-section company-third-section">
 		<div class="inline-block full-width">
 			<div class="company-third-section-text">
 				<h1 class="company-third-section-title">

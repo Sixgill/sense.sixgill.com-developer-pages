@@ -50,7 +50,7 @@
 
 	<a name="sence"></a>
 	<!-- <a name="products-second-section"></a> -->
-	<div id="products-second-section" class="products-section products-second-section">
+	<div id="sence" class="products-section products-second-section">
 		<div class="inline-block full-width">
 			<div class="products-second-section-image-wrapper">
 				<img
@@ -233,7 +233,7 @@
 
 	<a name="ancillary"></a>
 	<!-- <a name="products-second-section"></a> -->
-	<div id="products-last-section" class="products-section products-last-section no-mobile-portrait-display no-mobile-landscape-display">
+	<div id="ancillary" class="products-section products-last-section no-mobile-portrait-display no-mobile-landscape-display">
 		<h2 class="products-last-section-title">
 			<?php echo get_field('last_section_title'); ?>
 		</h2>
