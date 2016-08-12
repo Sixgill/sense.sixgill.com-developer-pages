@@ -6,7 +6,7 @@
 	<!-- first section -->
 
 	<!--link more -->
-	<a href="#solution-second-section-desktop"	class="solution-learn-more-link no-tablet-display">
+	<a href="#people"	class="scroll-section solution-learn-more-link no-tablet-display">
 		<div class="solution-first-section-scroll-link-wrapper">
 			<div class="solution-first-section-scroll-link-ico-wrapper">
 				<img

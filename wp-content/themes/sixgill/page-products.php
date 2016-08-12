@@ -3,8 +3,8 @@
 <div class="full-width">
 	<a name="top"></a>
 	<a
-		href="#products-second-section"
-		class="products-learn-more-link"
+		href="#sence"
+		class="scroll-section products-learn-more-link"
 	>
 		<div class="products-first-section-scroll-link-wrapper">
 			<div class="products-first-section-scroll-link-text">
