@@ -1770,13 +1770,6 @@ div.alignright {
 	margin: 5px 0 13px 20px;
 }
 
-.wp-caption {
-	text-align: center;
-	margin: 10px 20px 13px 20px;
-	font-family: 'Lato', Georgia, "Times New Roman", Times, serif;
-	font-style: italic;
-}
-
 .wp-caption img,
 .wp-caption img a {
 	display: block;
