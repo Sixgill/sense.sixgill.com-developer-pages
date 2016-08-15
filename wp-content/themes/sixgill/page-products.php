@@ -48,9 +48,9 @@
 
 	</div>
 
-	<a name="sence"></a>
+	<a name="sense"></a>
 	<!-- <a name="products-second-section"></a> -->
-	<div id="sence" class="products-section products-second-section">
+	<div id="sense" class="products-section products-second-section">
 		<div class="inline-block full-width">
 			<div class="products-second-section-image-wrapper">
 				<img
