@@ -94,3 +94,19 @@
 .products-fourth-section-subtitle {
 	color: #0c3979;
 }
+
+.products-section ul {
+	list-style-type: none;
+	& li {
+		display:block;
+		padding-left: 20px;
+	}
+	& li::before {
+        display:inline-block;
+        width: 10px;
+        content: "•";
+        color:#4ddb5a;
+        margin-right: 10px;
+        margin-left: -20px;
+	}
+}
