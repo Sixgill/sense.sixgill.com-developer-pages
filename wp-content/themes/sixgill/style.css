@@ -984,18 +984,6 @@ body:not(.device-touch) #page-menu nav li a {
 
 @media (min-width: 1101px) {
 
-
-	.side-header #header {
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 10;
-		width: 260px;
-		height: 100%;
-		background-color: #FFF;
-		overflow: hidden;
-	}
-
 	.side-header #logo {
 		float: none;
 	}
@@ -1014,10 +1002,6 @@ body:not(.device-touch) #page-menu nav li a {
 
 	.side-header .center #logo:after {
 		margin: 0 auto;
-	}
-
-	.side-header #primary-menu {
-		margin-bottom: 30px;
 	}
 
 	.side-header #primary-menu:not(.nobottomborder):after {
