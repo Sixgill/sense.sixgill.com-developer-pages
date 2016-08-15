@@ -99,12 +99,8 @@
 	  }
 
 	  &-title {
-			font-family: "Lato";
-
-			font-weight: 700;
 			font-size: 6.25vw;
 			text-align: center;
-			color: #4ddb5a;
 			margin-bottom: 12px;
 	  }
 
@@ -241,6 +237,17 @@
 		}
 
 		&-carousel {
+			width: 250px;
+			margin: 51px auto 0;
+
+			& .owl-buttons .owl-prev{
+				left: -35px;
+			}
+
+			& .owl-buttons .owl-next{
+				right: -35px;
+			}
+
 			&-wrapper {
 
 			}
@@ -340,14 +347,5 @@
 }
 
 .home-fourth-section-carousel {
-	width: 250px;
-	margin: 51px auto 0;
-}
 
-.home-fourth-section-carousel .owl-buttons .owl-prev{
-	left: -35px;
-}
-
-.home-fourth-section-carousel .owl-buttons .owl-next{
-	right: -35px;
 }
