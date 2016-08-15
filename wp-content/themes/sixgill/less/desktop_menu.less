@@ -21,8 +21,8 @@
 .nav-divider-line {
 	margin-bottom: 1.34vh;
 	width: 206.5px;
-  	height: 1px;
-  	background-color: #ebebeb;
+	height: 1px;
+	background-color: #ebebeb;
 	display: inline-block;
 }
 
@@ -30,9 +30,8 @@
 	opacity: 1 !important;
 	position: absolute;
 	left: 0px;
-	top: 36.83vh;
-	/*width: 310px;*/
-	margin-left: 47px;
+	margin: 10px 0px 0px 47px;
+	padding-top: calc(~"36.83vh - 145px");
 }
 
 #primary-menu li{
@@ -91,11 +90,33 @@
 	font-weight:bold;
 }
 
+.side-header #header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	height: 100%;
+	background-color: #FFF;
+	width: 225px;
+	background-color: #FFF;
+}
+
 #header {
 	border-width: 0px 5px 0px 0px;
 	border-style: solid;
 	border-color: #5ede6a;
 	border-image: linear-gradient(to bottom, #5ede6a, #5eb26a) 1 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+}
+
+#header::-webkit-scrollbar {
+    width: 0px;
+}
+
+#header-wrap {
+	min-height: 570px;
 }
 
 .desktop-menu-wrapper {
