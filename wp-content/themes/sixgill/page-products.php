@@ -3,7 +3,7 @@
 <div class="full-width">
 	<a name="top"></a>
 	<a
-		href="#sence"
+		href="#sense"
 		class="scroll-section products-learn-more-link"
 	>
 		<div class="products-first-section-scroll-link-wrapper">
