@@ -19,6 +19,7 @@
 			</div>
 		</div>
 	</a>
+
 	<div id="products-first-section" class="products-section products-first-section">
 		<div class="products-first-section-block">
 			<div class="products-first-section-image-wrapper">
@@ -28,11 +29,12 @@
 					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
 				>
 			</div>
-			<div class="products-first-section-block-text">
-				<h1 class="products-first-section-block-title">
+
+			<div class="products-first-section-content">
+				<h1 class="products-first-section-content-title">
 					<?php echo get_field('first_section_title'); ?>
 				</h1>
-				<div class="products-first-section-block-paragraph">
+				<div class="products-first-section-content-text">
 					<?php echo get_field('first_section_text'); ?>
 				</div>
 			</div>
@@ -44,12 +46,9 @@
 				>
 			</div>
 		</div>
-
-
 	</div>
 
 	<a name="sense"></a>
-	<!-- <a name="products-second-section"></a> -->
 	<div id="sense" class="products-section products-second-section">
 		<div class="inline-block full-width">
 			<div class="products-second-section-image-wrapper">
@@ -302,7 +301,7 @@
 		<!-- REACH -->
 		<div class="products-last-section-tab-logo">
 			<img
-				class="products-last-section-tab-image"
+				class="products-last-section-tab-logo-image"
 				src="<?php echo get_template_directory_uri();?>/images/products/products_reach_tab_logo_active.svg"
 			>
 		</div>
@@ -313,7 +312,7 @@
 		<!-- SYNC -->
 		<div class="products-last-section-tab-logo">
 			<img
-				class="products-last-section-tab-image"
+				class="products-last-section-tab-logo-image"
 				src="<?php echo get_template_directory_uri();?>/images/products/products_sync_tab_logo_active.svg"
 			>
 		</div>
@@ -324,7 +323,7 @@
 		<!-- ASSIST -->
 		<div class="products-last-section-tab-logo">
 			<img
-				class="products-last-section-tab-image"
+				class="products-last-section-tab-logo-image"
 				src="<?php echo get_template_directory_uri();?>/images/products/products_assist_tab_logo_active.svg"
 			>
 		</div>
