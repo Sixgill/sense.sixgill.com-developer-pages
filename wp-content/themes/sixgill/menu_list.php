@@ -42,8 +42,8 @@
 		"link" => "/products/",
 		"sublinksList" => array(
 			array(
-				"name" => "Sixgill Sence",
-				"anchor" => "sence"
+				"name" => "Sixgill Sense",
+				"anchor" => "sense"
 				// "anchor" => "products-second-section"
 			),
 			array(
