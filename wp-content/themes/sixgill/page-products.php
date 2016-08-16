@@ -2,23 +2,6 @@
 
 <div class="full-width">
 	<a name="top"></a>
-	<a
-		href="#sense"
-		class="scroll-section products-learn-more-link"
-	>
-		<div class="products-first-section-scroll-link-wrapper">
-			<div class="products-first-section-scroll-link-text">
-				Learn More
-			</div>
-			<div class="products-first-section-scroll-link-ico-wrapper">
-				<img
-					class="products-first-section-scroll-link-ico responsive-image"
-					desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-					tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-				/>
-			</div>
-		</div>
-	</a>
 
 	<div id="products-first-section" class="products-section products-first-section">
 		<div class="products-first-section-block">
@@ -46,6 +29,24 @@
 				>
 			</div>
 		</div>
+
+		<a
+			href="#sense"
+			class="scroll-section products-learn-more-link"
+		>
+			<div class="products-first-section-scroll-link-wrapper">
+				<div class="products-first-section-scroll-link-text">
+					Learn More
+				</div>
+				<div class="products-first-section-scroll-link-ico-wrapper">
+					<img
+						class="products-first-section-scroll-link-ico responsive-image"
+						desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+						tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					/>
+				</div>
+			</div>
+		</a>
 	</div>
 
 	<a name="sense"></a>
@@ -240,31 +241,31 @@
 			<div class="products-last-section-left-col">
 				<div data-tabid="reach" class="products-last-section-tab-logo selected">
 					<img
-						class="products-last-section-tab-image products-last-section-tab-image-active"
+						class="products-last-section-tab-image products-last-section-tab-logo-image-active"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_reach_tab_logo.svg"
 					>
 					<img
-						class="products-last-section-tab-image"
+						class="products-last-section-tab-logo-image"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_reach_tab_logo_active.svg"
 					>
 				</div>
 				<div data-tabid="sync" class="products-last-section-tab-logo">
 					<img
-						class="products-last-section-tab-image products-last-section-tab-image-active"
+						class="products-last-section-tab-image products-last-section-tab-logo-image-active"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_sync_tab_logo.svg"
 					>
 					<img
-						class="products-last-section-tab-image"
+						class="products-last-section-tab-logo-image"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_sync_tab_logo_active.svg"
 					>
 				</div>
 				<div data-tabid="assist" class="products-last-section-tab-logo">
 					<img
-						class="products-last-section-tab-image products-last-section-tab-image-active"
+						class="products-last-section-tab-logo-image products-last-section-tab-logo-image-active"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_assist_tab_logo.svg"
 					>
 					<img
-						class="products-last-section-tab-image"
+						class="products-last-section-tab-logo-image"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_assist_tab_logo_active.svg"
 					>
 				</div>
