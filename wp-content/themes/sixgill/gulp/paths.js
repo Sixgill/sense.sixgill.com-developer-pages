@@ -5,7 +5,7 @@ module.exports = () => {
     base: {
         wrapper: null,
         values: [
-            "./css/google_fonts.css",
+            /*"./css/google_fonts.css",*/
             "./css/bootstrap.min.css",
             "./css/owl.carousel.css",
             "./css/owl.theme.css",

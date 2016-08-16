@@ -29,10 +29,15 @@
 }
 
 .company-first-section {
+
+}
+
+.company-first-section {
 	justify-content: flex-end;
 	background-image: url('/wp-content/themes/sixgill/images/company/first_section_bg_desktop.png');
 
 	&-block {
+		background-color: rgba(77, 219, 90, 0.7);
 		display: flex;
 		width: 88.34%;
 		align-items: center;
@@ -46,7 +51,7 @@
 
 	&-block-text {
 		width: 71%;
-		padding: 0px 2.4vw 0px 2.4vw;
+		padding: 1vw 2.4vw 1vw 2.4vw;
 	}
 
 	&-block-title {
@@ -54,7 +59,7 @@
 	  font-weight: 300;
 		line-height: 1em;
 		margin-bottom: 2vw;
-		font-family: "Lato Light";
+		font-family: "Lato";
 	}
 
 	&-block-subtitle {
@@ -77,35 +82,44 @@
 		margin-bottom: 16px;
 		text-align: center;
 	}
+	&-scroll-link-ico-wrapper {
+		width: 37px;
+		height: 18px;
+		margin: 0 auto;
+	}
+
+
 }
 .company-second-section {
 	background-image: url('/wp-content/themes/sixgill/images/home/dots_bg_desktop.png');
 	padding: 2vw 0px 2vw 0px;
 
 	&-image-wrapper {
-		min-width: 12em;
-		max-height: 12em;
+		min-width: 215px;
+		max-width: 215px;	
+		min-height: 215px;
 	}
 	&-block-title {
-		  font-family: Lato;
-		  font-size: 43.9px;
-		  font-weight: 300;
-		  line-height: 1;
-		  letter-spacing: 4.8px;
-		  text-align: center;
-		  color: #0051c6;
-	  	  margin-bottom: 5vw;
+		font-family: Lato;
+		font-size: 43.9px;
+		font-weight: 300;
+		line-height: 1;
+		letter-spacing: 4.8px;
+		text-align: center;
+		color: #0051c6;
+	  	margin-bottom: 5vw;
 	}
 	&-block {
-		width: 60%;
+		width: 77%;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 2vw;
 	}
 	&-text {
 		font-size: 16px;
 	}
 	&-image {
-		height: 100%;
+		height: auto;
 		width: 100%;
 	}
 	&-team {
@@ -115,33 +129,43 @@
 	}
 	&-rows {
 		display: flex;
-		justify-content: space-between;
-		margin-bottom: 1vw;
+		justify-content: flex-start;
+		margin-bottom: 44px;
 	}
 	&-team-description {
-		margin-left: 2vw;
+		margin-left: 40px;
+		margin-top: 10px;
 	}
 
 	&-name {
-	  height: 26px;
-	  font-family: Lato;
-	  font-size: 34.5px;
-	  font-weight: 300;
-	  line-height: 0.62;
-	  letter-spacing: 1px;
-	  margin-bottom: 10px;
-	  color: #2e2e2e;
+		font-family: Lato;
+		font-size: 34.5px;
+		font-weight: 300;
+		line-height: 0.62;
+		letter-spacing: 1px;
+		color: #2e2e2e;
+		margin-bottom: 0px;
 	}
 	&-job {
-	  font-family: Lato;
-	  font-size: 18.6px;
-	  font-weight: 700;
-	  line-height: 1.14;
-	  letter-spacing: 0.6px;
-  	  margin-bottom: 10px;
-	  color: #5cc468;
+		font-family: Lato;
+		font-size: 18.6px;
+		font-weight: 700;
+		line-height: 1.14;
+		letter-spacing: 0.6px;
+		color: #5cc468;
+		margin-top:11px;
+		margin-bottom: 20px; 
 	}
-	&-bio {
+	&-bio p {
+	  font-family: Lato;
+	  font-size: 15.9px;
+	  font-weight: 500;
+	  line-height: 1.33;
+	  letter-spacing: 0.5px;
+  	  margin-bottom: 10px;
+	  color: #2e2e2e;
+	}
+	&-bio-full p {
 	  font-family: Lato;
 	  font-size: 15.9px;
 	  font-weight: 500;
@@ -165,7 +189,6 @@
 		&:hover {
 			color: #0083c6;
 		}
-		text-decoration: underline !important;
 		font-family: Lato;
 		font-size: 16px;
 		font-weight: 700;
@@ -174,38 +197,35 @@
 		color: #0051c6;
 		cursor: pointer;
 	}
-	.learn-more-expand-icon {
-		color: #0051c6;
-	}
-	.learn-more-close-icon {
-		color: #0051c6;
-	}
 }
 .company-third-section {
 	display: flex;
+	flex-direction: column;
 	background-image: url('/wp-content/themes/sixgill/images/company/boardBg-desktop@1x.png');
 	padding: 2vw 3vw 2vw 3vw;
+	min-height: 768px;
+
+	& p {
+		margin-bottom: 0;
+	}
 
 	&-text {
 		width: 37.7vw;
-	}
-
-	&-text {
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 3.3vw;
 	}
 
 	&-title {
-	  font-family: Lato;
-	  font-size: 43.9px;
-	  font-weight: 300;
-	  line-height: 1;
-	  letter-spacing: 4.8px;
-	  text-align: center;
-	  color: #4ddb5a;
+		font-family: Lato;
+		font-size: 43.9px;
+		font-weight: 300;
+		line-height: 1;
+		letter-spacing: 4.8px;
+		text-align: center;
+		color: #4ddb5a;
 	}
 	&-name {
-		margin-bottom: 1.21vw;
 		font-family: Lato;
 		font-size: 34.5px;
 		font-weight: 300;
@@ -214,21 +234,32 @@
 		color: #ffffff;
 	}
 	&-job {
-		margin-bottom: 1.21vw;
 		font-family: Lato;
 		font-size: 18.6px;
 		font-weight: 700;
 		line-height: 1.14;
 		letter-spacing: 0.6px;
 		color: #5cc468;
+		margin-top: 10px;
+		margin-bottom: 20px !important;
 	}
 	&-bio {
-		font-family: Lato;
-		font-size: 15.9px;
-		font-weight: 500;
-		line-height: 1.33;
-		letter-spacing: 0.5px;
-		color: #ffffff;
+		ul li {
+			font-family: Lato;
+			font-size: 15.9px;
+			font-weight: 500;
+			line-height: 1.33;
+			letter-spacing: 0.5px;
+			color: #a9d8dd;
+		}
+		p {
+			font-family: Lato;
+			font-size: 15.9px;
+			font-weight: 500;
+			line-height: 1.33;
+			letter-spacing: 0.5px;
+			color: #a9d8dd;
+		}
 	}
 	&-rows {
 		display: flex;
@@ -237,9 +268,6 @@
 	}
 	&-row-item {
 		max-width: 30%;
-	}
-	&-list-dot {
-		color: #5cc468;
 	}
 	& > div {
 		align-self: center;

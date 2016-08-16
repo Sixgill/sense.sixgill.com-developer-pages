@@ -1,7 +1,7 @@
 <section class="no-border swiper_wrapper clearfix solution-subpage-header">
 	<div
 		class="swiper-slide slider-subpage"
-		style="background-image: url('<?php echo get_field('header_image'); ?>');"
+		style="background-image: url('<?php echo get_field('header_image'); ?>'); width: 100%;"
 	>
 		<div class="slider-text-subpage">
 			<div class="solution-subpage-suptitle">

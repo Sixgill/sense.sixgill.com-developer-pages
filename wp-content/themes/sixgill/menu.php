@@ -20,7 +20,8 @@
 			if($isExpanded) {
 				$html .= '<div class="display-only-desktop">';
 				foreach($sublinksList as $sublink) {
-					$html .= '<a class="menu-sublink" href="#'.$sublink['anchor'].'">';
+					$html .= '<a class="menu-sublink scroll-section" href="#'.$sublink['anchor'].'">';
+						$html .= '<div class="arrow">&gt;</div>';
 						$html .= $sublink['name'];
 					$html .= '</a>';
 					$html .= '<div class="clear"></div>';

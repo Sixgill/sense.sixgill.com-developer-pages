@@ -5,19 +5,18 @@
 	display: inline-block;
 }
 
-.company-first-section-block {
-	background-color: rgba(77, 219, 90, 0.7);
-}
-
 .company-section {
 	background-size: cover;
+}
+.company-second-section {
+	background-size: contain;
 }
 
 .company-first-section-block-title,
 .company-second-section-title,
 .company-third-section-title,
 .company-fourth-section-title {
-	font-family: "Lato Light";
+	font-family: "Lato";
 	font-weight: 300;
 }
 
@@ -28,7 +27,22 @@
 
 .company-second-section {
 	display: flex;
-  align-items: center;
+	align-items: center;
+	background-color: #f8f8f8;
+	&-more-trigger {
+		margin-top: 2vw;
+	}
+	.learn-more-title {
+		text-decoration: underline!important;
+	}
+	.learn-more-expand-icon {
+		text-decoration: none!important;
+		color: #0051c6;
+	}
+	.learn-more-close-icon {
+		color: #0051c6;
+		text-decoration: none!important;
+	}
 }
 
 .company-first-section-block-title,
@@ -51,8 +65,20 @@
 	color: #4ddb5a;
 	opacity: 0.8;
 	text-align: center;
-	margin-bottom: 5vw;
+	margin-bottom: 8vw;
 }
-.company-third-section-list-dot {
-	color: #5cc468;
+.company-third-section-row-item ul {
+	list-style-type: none;
+	& li {
+		display:block;
+		padding-left: 20px;
+	}
+	& li::before {
+        display:inline-block;
+        width: 10px;
+        content: "•";
+        color:#4ddb5a;
+        margin-right: 10px;
+        margin-left: -20px;
+	}
 }

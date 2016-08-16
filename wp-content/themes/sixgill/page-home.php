@@ -1,7 +1,7 @@
  <?php get_header(); ?>
 
 <a
-	href="#home-second-section"
+	href="#what"
 	class="home-learn-more-link"
 >
 	<div class="home-first-section-scroll-link-wrapper">
@@ -19,7 +19,7 @@
 </a>
 
 <div id="home-fullpage-wrapper" class="full-width">
-	<div id="home-first-section" class="home-section home-first-section">
+	<div id="home-first-section" data-anchor="video" class="home-section home-first-section">
 		<video autoplay loop muted id="home-video" class="home-first-section-video display-only-desktop">
 			<source src="<?php echo get_field('video_url'); ?>" type="video/mp4">
 			<source src="<?php echo get_field('video_url_ogv'); ?>" type="video/ogv">
@@ -43,21 +43,21 @@
 		</div>
 	</div>
 
-	<div id="home-second-section" class="home-section home-second-section">
+	<div id="home-second-section" data-anchor="what" class="home-section home-second-section">
 		<div class="home-second-section-wrapper">
 			<div class="home-second-section-header-wrapper">
 				<div class="home-second-section-header-top">
 					<div class="home-second-section-header-top-line"></div>
 					<div class="home-second-section-header-top-title">
-						We are experts in helping you
+						<?php echo get_field('second_section_suptitle'); ?>
 					</div>
 					<div class="home-second-section-header-top-line"></div>
 				</div>
 				<h2 class="home-second-section-title">
-					TRACK, DETERMINE AND ACT
+					<?php echo get_field('second_section_title'); ?>
 				</h2>
 				<div class="home-second-section-subtitle">
-					on the ever-changing relationships between people, places and things essential to your success.
+					<?php echo get_field('second_section_subtitle'); ?>
 				</div>
 			</div>
 			<div class="home-second-section-content-wrapper">
@@ -68,9 +68,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								Drive Business Value
+								<?php echo get_field('second_section_first_block_title'); ?>
 							</h3>
-							With our market-proven enterprise proximity platform, customers can Track the key people, places, and things that matter to them, Determine proximity and intent, and Act to drive business value.
+							<?php echo get_field('second_section_first_block_text'); ?>
 						</div>
 					</div>
 
@@ -80,9 +80,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								Enterprise proximity platform
+								<?php echo get_field('second_section_second_block_title'); ?>
 							</h3>
-							Our proximity engine—at the heart of the platform—has normalized 1.5 billion multidimensional measurements and triggered 25 million context-sensitive actions for our customers. And counting.
+							<?php echo get_field('second_section_second_block_text'); ?>
 						</div>
 					</div>
 				</div>
@@ -96,9 +96,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								TURN MOBILITY INTO AN ASSET
+								<?php echo get_field('second_section_third_block_title'); ?>
 							</h3>
-							We turn the increasing mobility of the enterprise workforce and the connected nature of the Internet of Things into a business asset, converting vast amounts of location and sensor data into understandable analytics and targeted action.
+							<?php echo get_field('second_section_third_block_text'); ?>
 						</div>
 					</div>
 
@@ -108,9 +108,9 @@
 						</div>
 						<div class="home-second-section-block-content">
 							<h3 class="home-second-section-block-title">
-								ONE FOCUS
+								<?php echo get_field('second_section_fourth_block_title'); ?>
 							</h3>
-							At Sixgill we have one focus—to enable our customers to embrace mobility as an asset while maintaining the control they need to maximize value.
+							<?php echo get_field('second_section_fourth_block_text'); ?>
 						</div>
 					</div>
 				</div>
@@ -119,16 +119,16 @@
 		</div>
 	</div>
 
-	<div id="home-third-section" class="home-section home-third-section">
+	<div id="home-third-section" data-anchor="chart" class="home-section home-third-section">
 		<div class="home-third-section-wrapper">
 			<h2 class="home-third-section-title">
-					Sixgill SenseTM tracks, determines, and acts on the changing proximity of people, places and things.
+					Sixgill Sense<sup class="home-third-section-title-tm">TM</sup> tracks, determines, and acts on the changing proximity of people, places and things.
 			</h2>
 			<div class="home-third-section-image-wrapper">
 				<img class="home-third-section-image responsive-image"
-          desktop-src="/wp-content/themes/sixgill/images/home/infographic.svg"
-          tablet-src="/wp-content/themes/sixgill/images/home/infographic.svg"
-          mobile-src="/wp-content/themes/sixgill/images/home/mobile_infographic.svg"
+          desktop-src="<?php echo get_field('third_section_infographic_desktop'); ?>"
+          tablet-src="<?php echo get_field('third_section_infographic_tablet'); ?>"
+          mobile-src="<?php echo get_field('third_section_infographic_mobile'); ?>"
         >
 			</div>
 			<div class="home-third-section-bottom-part-wrapper">
@@ -142,17 +142,17 @@
 		</div>
 	</div>
 
-	<div id="home-fourth-section" class="home-section home-fourth-section">
+	<div id="home-fourth-section" data-anchor="usecases" class="home-section home-fourth-section">
 		<div class="home-fourth-section-wrapper">
 			<div class="home-fourth-section-header-wrapper">
 				<h2 class="home-fourth-section-title">
-					Proximity for the People, Assets and Crowds
+					<?php echo get_field('fourth_section_title'); ?>
 				</h2>
 				<div class="home-fourth-section-subtitle">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit incidunt ut labore et dolore magna alique minim veniam.
+					<?php echo get_field('fourth_section_subtitle'); ?>
 				</div>
 				<a href="/solutions/" class="home-fourth-section-link">
-					See All Use Cases
+					Explore Example Use Cases
 				</a>
 			</div>
 			<div class="home-fourth-section-carousel-wrapper">
@@ -179,7 +179,7 @@
 										<?php echo limit_words(get_field('first_section_text'), '20'); ?>
 									</div>
 									<a href="<?php the_permalink(); ?>" class="home-fourth-section-carousel-link-more">
-										Learn More
+										> Learn More
 									</a>
 								</div>
 							</div>
@@ -190,15 +190,15 @@
 		</div>
 	</div>
 
-	<div id="home-fifth-section" class="home-section home-fifth-section">
+	<div id="home-fifth-section" data-anchor="consumers" class="home-section home-fifth-section">
 		<div class="home-fifth-section-wrapper">
 			<div class="home-fifth-section-header-wrapper">
 				<div class="home-fifth-section-dash"></div>
 				<h2 class="home-fifth-section-title">
-					PROVEN AT CONSUMER VOLUMES
+					<?php echo get_field('fifth_section_title'); ?>
 				</h2>
 				<div class="home-fifth-section-subtitle">
-					Sixgill provides proximity enablement for mobile apps including mobile program customers of Lemon.
+					<?php echo get_field('fifth_section_subtitle'); ?>
 				</div>
 			</div>
 

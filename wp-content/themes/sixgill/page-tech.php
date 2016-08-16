@@ -46,8 +46,9 @@
 		</div>
 	</div>
 
-	<a name="tech-second-section"></a>
-	<div id="tech-second-section" class="tech-section tech-second-section">
+	<!-- <a name="tech-second-section"></a> -->
+	<a name="location"></a>
+	<div id="location" class="tech-section tech-second-section">
 		<div class="tech-second-section-wrapper">
 			<div class="tech-second-section-left-col">
 				<div class="tech-second-section-image-wrapper">
@@ -78,8 +79,9 @@
 
 	</div>
 
-	<a name="tech-third-section"></a>
-	<div id="tech-third-section" class="tech-section tech-third-section">
+	<a name="proximity"></a>
+	<!-- <a name="tech-third-section"></a> -->
+	<div id="proximity" class="tech-section tech-third-section">
 		<div class="tech-third-section-wrapper">
 
 			<div class="tech-third-section-left-col">
@@ -96,8 +98,9 @@
 		</div>
 	</div>
 
-	<a name="tech-fourth-section"></a>
-	<div id="tech-fourth-section" class="tech-section tech-fourth-section">
+	<a name="platform"></a>
+	<!-- <a name="tech-fourth-section"></a> -->
+	<div id="platform" class="tech-section tech-fourth-section">
 		<div class="tech-fourth-section-wrapper">
 
 			<div class="tech-fourth-section-left-col no-mobile-portrait-display no-mobile-landscape-display">

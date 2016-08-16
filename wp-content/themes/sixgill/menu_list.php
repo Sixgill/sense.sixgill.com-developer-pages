@@ -18,15 +18,18 @@
 		"sublinksList" => array(
 			array(
 				"name" => "People",
-				"anchor" => "solution-second-section"
+				"anchor" => "people"
+				// "anchor" => "solution-second-section"
 			),
 			array(
 				"name" => "Assets",
-				"anchor" => "solution-third-section"
+				"anchor" => "assets"
+				// "anchor" => "solution-third-section"
 			),
 			array(
 				"name" => "Crowds",
-				"anchor" => "solution-fourth-section"
+				"anchor" => "crowds"
+				// "anchor" => "solution-fourth-section"
 			),			
 		),
 		"isSelected" => $isSelected,
@@ -39,12 +42,14 @@
 		"link" => "/products/",
 		"sublinksList" => array(
 			array(
-				"name" => "Sixgill Sence",
-				"anchor" => "products-second-section"
+				"name" => "Sixgill Sense",
+				"anchor" => "sense"
+				// "anchor" => "products-second-section"
 			),
 			array(
 				"name" => "Ancillary Products",
-				"anchor" => "products-last-section"
+				"anchor" => "ancillary"
+				// "anchor" => "products-last-section"
 			)
 		),
 		"isSelected" => $isSelected,
@@ -55,19 +60,22 @@
 	$menu[] = array(
 		"elementName" => "Tech",
 		"link" => "/tech/",
-		"sublinksList" => array(/*
+		"sublinksList" => array(
 			array(
 				"name" => "Location",
 				"anchor" => "location"
+				// "anchor" => "tech-second-section"
 			),
 			array(
 				"name" => "Proximity",
 				"anchor" => "proximity"
+				// "anchor" => "tech-third-section"
 			),
 			array(
 				"name" => "Open Platform",
-				"anchor" => "openplatform"
-			)*/
+				"anchor" => "platform"
+				// "anchor" => "tech-fourth-section"
+			)
 		),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded
@@ -77,23 +85,17 @@
 	$menu[] = array(
 		"elementName" => "Company",
 		"link" => "/company/",
-		"sublinksList" => array(/*
+		"sublinksList" => array(
 			array(
-				"name" => "The Company",
-				"anchor" => "company"
-			),
-			array(
-				"name" => "The Team",
-				"anchor" => "team"
+				"name" => "Leadership",
+				"anchor" => "leadership"
+				// "anchor" => "company-second-section"
 			),
 			array(
 				"name" => "The Board",
 				"anchor" => "board"
-			),
-			array(
-				"name" => "Press",
-				"anchor" => "press"
-			)*/
+				// "anchor" => "company-third-section"
+			)
 		),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded

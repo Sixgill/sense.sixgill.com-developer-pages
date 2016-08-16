@@ -1,5 +1,23 @@
 /* General tablet styles */
 
+.modal-dialog{
+    overflow-y: none !important;
+}
+.modal-body{
+	max-height: calc(~"100vh - 35px");
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+}
+
+.modal-content::-webkit-scrollbar,  .modal-body::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+body.modal-open {
+    overflow: hidden !important;
+}
+
 .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid), .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide {
 	height: 263px !important;
 }
