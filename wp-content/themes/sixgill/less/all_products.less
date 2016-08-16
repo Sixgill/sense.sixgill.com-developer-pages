@@ -1,112 +1,183 @@
 /* Products Common styles */
 
-.products-first-section-image-wrapper,
-.products-first-section-block-text {
-	display: inline-block;
-}
+.products {
+	&-section {
+		background-size: cover;
 
-.products-first-section-image {
-	max-height: inherit;
-}
+		& ul {
+			list-style-type: none;
 
-.products-first-section-block {
-	background-color: rgba(77, 219, 90, 0.7);
-}
-
-.products-first-section-image-wrapper {
-	height: 100%;
-}
-
-.products-section {
-	background-size: cover;
-}
-
-.products-second-section,
-.products-fourth-section {
-	background-size: contain;
-	background-repeat: repeat;
-}
-
-.products-first-section-block-paragraph,
-.products-first-section-block-paragraph p,
-.products-first-section-scroll-link-text,
-.products-third-section-subtitle,
-.products-fifth-section-subtitle,
-.products-first-section-block-title {
-	color: #ffffff !important;
-}
-
-.products-third-section-text p,
-.products-third-section-text ul li,
-.products-fifth-section-text p,
-.products-fifth-section-text ul li {
-	color: #a9d8dd !important;
-}
-
-.products-third-section-text ul {
-	margin-bottom: 0px !important;
-}
-
-.products-third-section-text li:last-child {
-	margin-bottom: 0.5em !important;
-}
-
-.products-last-section-text,
-.products-last-section-text p
-.products-last-section-text li,
-.products-last-section-col-title,
-.products-second-section-text {
-	color: #2e2e2e;
-}
-
-.products-last-section-title {
-  color: #4ddb5a;
-}
-
-.products-third-section-line,
-.products-fourth-section-line,
-.products-fifth-section-line {
-	background-color: #ffffff;
-}
-
-.products-third-section-title,
-.products-fourth-section-title,
-.products-fifth-section-title {
-	font-family: "Lato";
-	font-weight: 300;
-  color: #2adc3a;
-}
-
-.products-first-section-scroll-link-wrapper {
-	cursor: pointer;
-	text-align: center;
-}
-
-.products-last-section-tab-logo {
-	cursor: pointer;
-}
-
-.products-second-section {
-	display: flex;
-  align-items: center;
-}
-
-.products-fourth-section-subtitle {
-	color: #0c3979;
-}
-
-.products-section ul {
-	list-style-type: none;
-	& li {
-		display:block;
-		padding-left: 20px;
+			& li {
+				display:block;
+				padding-left: 20px;
+			}
+			& li::before {
+		        display:inline-block;
+		        width: 10px;
+		        content: "•";
+		        color:#4ddb5a;
+		        margin-right: 10px;
+		        margin-left: -20px;
+			}
+		}
 	}
-	& li::before {
-        display:inline-block;
-        width: 10px;
-        content: "•";
-        color:#4ddb5a;
-        margin-right: 10px;
-        margin-left: -20px;
+
+	&-first-section {
+		&-block {
+			background-color: rgba(77, 219, 90, 0.7);
+		}
+
+		&-image {
+			max-height: inherit;
+
+			&-wrapper {
+				display: inline-block;
+				height: 100%;
+			}
+
+		}
+
+		&-content {
+
+			&-title {
+				color: #ffffff !important;
+			}
+
+			&-text {
+				display: inline-block;
+
+				&, & p {
+					color: #ffffff !important;
+				}
+			}
+		}
+
+		&-scroll-link {
+
+			&-text {
+				color: #ffffff !important;
+			}
+
+			&-wrapper {
+				cursor: pointer;
+				text-align: center;
+			}
+		}
+	}
+
+	&-second-section {
+		background-size: contain;
+		background-repeat: repeat;
+		display: flex;
+	  align-items: center;
+
+		&-title {
+
+		}
+
+		&-text {
+			color: #2e2e2e;
+		}
+
+	}
+
+	&-third-section {
+
+		&-title {
+			color: #ffffff !important;
+			font-family: "Lato";
+			font-weight: 300;
+		}
+
+		&-subtitle {
+
+		}
+
+		&-line {
+			background-color: #ffffff;
+		}
+
+		&-text {
+
+			&, & p, & li {
+				color: #a9d8dd !important;
+			}
+
+			& li:last-child {
+				margin-bottom: 0.5em !important;
+			}
+
+			& ul {
+				margin-bottom: 0px !important;
+			}
+		}
+
+	}
+
+	&-fourth-section {
+		background-size: contain;
+		background-repeat: repeat;
+
+		&-title {
+			font-family: "Lato";
+			font-weight: 300;
+		  color: #2adc3a;
+		}
+
+		&-subtitle {
+
+		}
+
+		&-line {
+			background-color: #ffffff;
+		}
+
+	}
+
+	&-fifth-section {
+
+
+		&-title {
+			font-family: "Lato";
+			font-weight: 300;
+		  color: #2adc3a;
+		}
+
+		&-subtitle {
+			color: #0c3979;
+		}
+
+		&-line {
+			background-color: #ffffff;
+		}
+
+		&-text {
+
+			&, & p, & li {
+				color: #a9d8dd !important;
+			}
+		}
+	}
+
+	&-last-section {
+
+		&-title {
+			color: #4ddb5a;
+		}
+
+		&-tab-logo {
+			cursor: pointer;
+		}
+
+		&-text {
+
+			&, & p, & li {
+				color: #2e2e2e;
+			}
+		}
+
+		&-col-title {
+			color: #2e2e2e;
+		}
 	}
 }
