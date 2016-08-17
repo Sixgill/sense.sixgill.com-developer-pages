@@ -7,7 +7,7 @@
 		<div class="products-first-section-block">
 			<div class="products-first-section-image-wrapper">
 				<img
-					class="products-first-section-image responsive-image"
+					class="products-first-section-image responsive-image aspectwidthfix"
 					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
 					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
 				>
@@ -66,7 +66,7 @@
 
 	<div id="products-fixed-panel" class="products-fixed-panel hide" style="opacity: 0;">
 
-		<div data-section-link="#products-third-section" class="products-fixed-panel-col" id="products-fixed-panel-col-track">
+		<div class="products-fixed-panel-col" id="products-fixed-panel-col-track">
 			<div class="products-fixed-panel-col-content">
 				<div class="products-fixed-panel-icon-wrapper">
 					<img
@@ -116,7 +116,7 @@
 			<div class="products-third-section-left-col">
 				<div class="products-third-section-image-wrapper">
 					<img
-						class="products-third-section-image responsive-image"
+						class="products-third-section-image responsive-image aspectwidthfix"
 						desktop-src="<?php echo get_field('third_section_image_desktop'); ?>"
 						tablet-src="<?php echo get_field('third_section_image_tablet'); ?>"
 					>
@@ -197,7 +197,7 @@
 			<div class="products-fifth-section-left-col">
 				<div class="products-fifth-section-image-wrapper">
 					<img
-						class="products-fifth-section-image responsive-image"
+						class="products-fifth-section-image responsive-image aspectwidthfix"
 						src="<?php echo get_field('fifth_section_image'); ?>"
 						desktop-src="<?php echo get_field('fifth_section_image_desktop'); ?>"
 						tablet-src="<?php echo get_field('fifth_section_image_tablet'); ?>"
@@ -232,7 +232,6 @@
 	</div>
 
 	<a name="ancillary"></a>
-	<!-- <a name="products-second-section"></a> -->
 	<div id="ancillary" class="products-section products-last-section no-mobile-portrait-display no-mobile-landscape-display">
 		<h2 class="products-last-section-title">
 			<?php echo get_field('last_section_title'); ?>
