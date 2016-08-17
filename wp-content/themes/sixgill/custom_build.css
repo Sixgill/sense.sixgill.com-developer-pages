@@ -17157,7 +17157,6 @@ ul:not([class]) li {
       -ms-flex-item-align: center;
           align-self: center;
   width: 66%;
-  overflow: hidden;
 }
 .products-fifth-section-title {
   font-size: 4.57vw;
