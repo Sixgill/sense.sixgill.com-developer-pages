@@ -2,37 +2,25 @@
 
 <div class="full-width">
 	<a name="top"></a>
-	<a
-		href="#sense"
-		class="scroll-section products-learn-more-link"
-	>
-		<div class="products-first-section-scroll-link-wrapper">
-			<div class="products-first-section-scroll-link-text">
-				Learn More
-			</div>
-			<div class="products-first-section-scroll-link-ico-wrapper">
-				<img
-					class="products-first-section-scroll-link-ico responsive-image"
-					desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-					tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-				/>
-			</div>
-		</div>
-	</a>
+
 	<div id="products-first-section" class="products-section products-first-section">
 		<div class="products-first-section-block">
-			<div class="products-first-section-image-wrapper">
+			<div
+				class="products-first-section-image-wrapper responsive-background"
+				tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
+			>
 				<img
-					class="products-first-section-image responsive-image"
+					class="products-first-section-image responsive-image aspectwidthfix"
 					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
-					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
+
 				>
 			</div>
-			<div class="products-first-section-block-text">
-				<h1 class="products-first-section-block-title">
+
+			<div class="products-first-section-content">
+				<h1 class="products-first-section-content-title">
 					<?php echo get_field('first_section_title'); ?>
 				</h1>
-				<div class="products-first-section-block-paragraph">
+				<div class="products-first-section-content-text">
 					<?php echo get_field('first_section_text'); ?>
 				</div>
 			</div>
@@ -45,11 +33,26 @@
 			</div>
 		</div>
 
-
+		<a
+			href="#sense"
+			class="scroll-section products-learn-more-link"
+		>
+			<div class="products-first-section-scroll-link-wrapper">
+				<div class="products-first-section-scroll-link-text">
+					Learn More
+				</div>
+				<div class="products-first-section-scroll-link-ico-wrapper">
+					<img
+						class="products-first-section-scroll-link-ico responsive-image"
+						desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+						tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					/>
+				</div>
+			</div>
+		</a>
 	</div>
 
 	<a name="sense"></a>
-	<!-- <a name="products-second-section"></a> -->
 	<div id="sense" class="products-section products-second-section">
 		<div class="inline-block full-width">
 			<div class="products-second-section-image-wrapper">
@@ -116,7 +119,7 @@
 			<div class="products-third-section-left-col">
 				<div class="products-third-section-image-wrapper">
 					<img
-						class="products-third-section-image responsive-image"
+						class="products-third-section-image responsive-image aspectwidthfix"
 						desktop-src="<?php echo get_field('third_section_image_desktop'); ?>"
 						tablet-src="<?php echo get_field('third_section_image_tablet'); ?>"
 					>
@@ -197,7 +200,7 @@
 			<div class="products-fifth-section-left-col">
 				<div class="products-fifth-section-image-wrapper">
 					<img
-						class="products-fifth-section-image responsive-image"
+						class="products-fifth-section-image responsive-image aspectwidthfix"
 						src="<?php echo get_field('fifth_section_image'); ?>"
 						desktop-src="<?php echo get_field('fifth_section_image_desktop'); ?>"
 						tablet-src="<?php echo get_field('fifth_section_image_tablet'); ?>"
@@ -232,7 +235,6 @@
 	</div>
 
 	<a name="ancillary"></a>
-	<!-- <a name="products-second-section"></a> -->
 	<div id="ancillary" class="products-section products-last-section no-mobile-portrait-display no-mobile-landscape-display">
 		<h2 class="products-last-section-title">
 			<?php echo get_field('last_section_title'); ?>
@@ -241,31 +243,31 @@
 			<div class="products-last-section-left-col">
 				<div data-tabid="reach" class="products-last-section-tab-logo selected">
 					<img
-						class="products-last-section-tab-image products-last-section-tab-image-active"
+						class="products-last-section-tab-image products-last-section-tab-logo-image-active"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_reach_tab_logo.svg"
 					>
 					<img
-						class="products-last-section-tab-image"
+						class="products-last-section-tab-logo-image"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_reach_tab_logo_active.svg"
 					>
 				</div>
 				<div data-tabid="sync" class="products-last-section-tab-logo">
 					<img
-						class="products-last-section-tab-image products-last-section-tab-image-active"
+						class="products-last-section-tab-image products-last-section-tab-logo-image-active"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_sync_tab_logo.svg"
 					>
 					<img
-						class="products-last-section-tab-image"
+						class="products-last-section-tab-logo-image"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_sync_tab_logo_active.svg"
 					>
 				</div>
 				<div data-tabid="assist" class="products-last-section-tab-logo">
 					<img
-						class="products-last-section-tab-image products-last-section-tab-image-active"
+						class="products-last-section-tab-logo-image products-last-section-tab-logo-image-active"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_assist_tab_logo.svg"
 					>
 					<img
-						class="products-last-section-tab-image"
+						class="products-last-section-tab-logo-image"
 						src="<?php echo get_template_directory_uri();?>/images/products/products_assist_tab_logo_active.svg"
 					>
 				</div>
@@ -302,7 +304,7 @@
 		<!-- REACH -->
 		<div class="products-last-section-tab-logo">
 			<img
-				class="products-last-section-tab-image"
+				class="products-last-section-tab-logo-image"
 				src="<?php echo get_template_directory_uri();?>/images/products/products_reach_tab_logo_active.svg"
 			>
 		</div>
@@ -313,7 +315,7 @@
 		<!-- SYNC -->
 		<div class="products-last-section-tab-logo">
 			<img
-				class="products-last-section-tab-image"
+				class="products-last-section-tab-logo-image"
 				src="<?php echo get_template_directory_uri();?>/images/products/products_sync_tab_logo_active.svg"
 			>
 		</div>
@@ -324,7 +326,7 @@
 		<!-- ASSIST -->
 		<div class="products-last-section-tab-logo">
 			<img
-				class="products-last-section-tab-image"
+				class="products-last-section-tab-logo-image"
 				src="<?php echo get_template_directory_uri();?>/images/products/products_assist_tab_logo_active.svg"
 			>
 		</div>
