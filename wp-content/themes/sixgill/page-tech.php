@@ -101,6 +101,9 @@
 	<a name="platform"></a>
 	<!-- <a name="tech-fourth-section"></a> -->
 	<div id="platform" class="tech-section tech-fourth-section">
+		<div class="tech-fourth-section-title tech-section-title-blue display-only-tablet">
+			<?php echo get_field('fourth_section_title'); ?>
+		</div>
 		<div class="tech-fourth-section-wrapper">
 
 			<div class="tech-fourth-section-left-col no-mobile-portrait-display no-mobile-landscape-display">
@@ -115,7 +118,7 @@
 
 			<div class="tech-fourth-section-right-col">
 				<div class="tech-fourth-section-content-wrapper">
-					<div class="tech-fourth-section-title tech-section-title-blue">
+					<div class="tech-fourth-section-title tech-section-title-blue no-tablet-display">
 						<?php echo get_field('fourth_section_title'); ?>
 					</div>
 
