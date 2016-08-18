@@ -6,7 +6,7 @@
 	<meta name="google-site-verification" content="YI36Rs0Zki_Iw6jdf8RNTnIkOZIrqcUoilY5LNDFrBY" />
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<!--[if lt IE 9]>
 	<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
