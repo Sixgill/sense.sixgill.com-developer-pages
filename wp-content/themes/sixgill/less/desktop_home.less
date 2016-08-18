@@ -64,7 +64,7 @@
 				font-weight: 900;
 				line-height: 1;
 				margin-bottom: 42px;
-				text-shadow: 0 0 20px #000000;
+				text-shadow: 0 0 20px #000000, 0 0 20px #000000, 0 0 20px #000000;
 			}
 		}
 
@@ -77,7 +77,7 @@
 			&-text {
 				font-size: 17px;
 	    	margin-bottom: 16px;
-	    	text-shadow: -3.1px 3.9px 12px #000000;
+	    	text-shadow: -3.1px 3.9px 12px #000000, -3.1px 3.9px 12px #000000;
 			}
 
 			&-ico-wrapper {
@@ -305,6 +305,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		padding-bottom: 146px;
 
 		&-wrapper {
 			display: flex;
@@ -382,10 +383,17 @@
 					}
 				}
 			}
-
-			&:last-child {
-				display: none;
-			}
 		}
 	}
+}
+
+#fullpage-wrapper {
+	position: relative;
+}
+
+#home-fullpage-wrapper #footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 }
