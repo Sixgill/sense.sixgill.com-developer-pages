@@ -69,7 +69,7 @@
 
 	<div id="products-fixed-panel" class="products-fixed-panel hide" style="opacity: 0;">
 
-		<div class="products-fixed-panel-col" id="products-fixed-panel-col-track">
+		<div data-section-link="#products-third-section" class="products-fixed-panel-col" id="products-fixed-panel-col-track">
 			<div class="products-fixed-panel-col-content">
 				<div class="products-fixed-panel-icon-wrapper">
 					<img
