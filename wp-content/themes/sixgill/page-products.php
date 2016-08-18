@@ -5,11 +5,14 @@
 
 	<div id="products-first-section" class="products-section products-first-section">
 		<div class="products-first-section-block">
-			<div class="products-first-section-image-wrapper">
+			<div
+				class="products-first-section-image-wrapper responsive-background"
+				tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
+			>
 				<img
 					class="products-first-section-image responsive-image aspectwidthfix"
 					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
-					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
+
 				>
 			</div>
 
