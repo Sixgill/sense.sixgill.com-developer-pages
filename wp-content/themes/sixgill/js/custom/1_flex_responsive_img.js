@@ -26,7 +26,7 @@ jQuery(function($) {
 				fixImageAspectRatio();
 			});
 
-			fixImageAspectRatio();
+			setTimeout(fixImageAspectRatio, 500);
 
 		}
 	});
