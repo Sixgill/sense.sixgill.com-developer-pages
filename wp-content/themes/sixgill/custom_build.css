@@ -14188,7 +14188,7 @@ body.modal-open {
   font-weight: 900;
   line-height: 1;
   margin-bottom: 42px;
-  text-shadow: 0 0 20px #000000;
+  text-shadow: 0 0 20px #000000, 0 0 20px #000000, 0 0 20px #000000;
 }
 .home-first-section-scroll-link-wrapper {
   z-index: 3;
@@ -14196,7 +14196,7 @@ body.modal-open {
 .home-first-section-scroll-link-text {
   font-size: 17px;
   margin-bottom: 16px;
-  text-shadow: -3.1px 3.9px 12px #000000;
+  text-shadow: -3.1px 3.9px 12px #000000, -3.1px 3.9px 12px #000000;
 }
 .home-first-section-scroll-link-ico-wrapper {
   width: 37px;
@@ -14352,6 +14352,7 @@ body.modal-open {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 146px;
 }
 .home-fifth-section-wrapper {
   display: -webkit-flex;
@@ -14421,8 +14422,14 @@ body.modal-open {
   border: 3px solid #4ddb5a;
   margin: -2px 0 0 -2px !important;
 }
-#fp-nav ul li:last-child {
-  display: none;
+#fullpage-wrapper {
+  position: relative;
+}
+#home-fullpage-wrapper #footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 /* Solutions desktop styles */
@@ -16014,12 +16021,12 @@ body.modal-open {
   font-size: 32px;
   font-weight: 900;
   line-height: 1;
-  text-shadow: 0 0 20px #000000;
+  text-shadow: 0 0 20px #000000, 0 0 20px #000000, 0 0 20px #000000;
 }
 .home-first-section-scroll-link-text {
   font-size: 17px;
   font-weight: 600;
-  text-shadow: -3.1px 3.9px 12px #000000;
+  text-shadow: -3.1px 3.9px 12px #000000, -3.1px 3.9px 12px #000000;
   margin-bottom: 16px;
   text-align: center;
 }
