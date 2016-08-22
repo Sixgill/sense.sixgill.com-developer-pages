@@ -1,161 +1,176 @@
 /* Company desktop styles */
-.company-learn-more-link {
-	top: calc(~"100vh - 60px");
-}
-
-.company-section {
-	min-height: 100vh;
-}
-
-.company-first-section {
-	display: flex;
-	justify-content: flex-end;
-	background-image: url('/wp-content/themes/sixgill/images/company/first_section_bg_desktop.png');
-
-	&-block {
-		align-self: center;
-		background-color: rgba(77, 219, 90, 0.7);
-		width: 88.34%;
-		margin: 1vh 0px 1vh 0px;
+.company {
+	&-learn-more-link {
+		top: calc(~"100vh - 60px");
 	}
 
-	&-image-wrapper {
-		width: 28.3%;
+	&-section {
+		min-height: 100vh;
 	}
 
-	&-block-text {
-		align-self: center;
-		width: 71%;
-		padding: 1vh 2.4vw 1vh 2.4vw;
-	}
+	&-first-section {
+		display: flex;
+		justify-content: flex-end;
+		background-image: url('/wp-content/themes/sixgill/images/company/first_section_bg_desktop.png');
 
-	&-block-title {
-		font-size: 61px;
-		line-height: 1em;
-		margin-bottom: 2vw;
-	}
+		&-block {
+			align-self: center;
+			background-color: rgba(77, 219, 90, 0.7);
+			width: 88.34%;
+			margin: 1vh 0px 1vh 0px;
 
-	&-block-subtitle {
-		font-size: 16px;
-		font-weight: 700;
-		margin-bottom: 1.21vh;
-	}
+			&-text {
+				align-self: center;
+				width: 71%;
+				padding: 1vh 2.4vw 1vh 2.4vw;
+			}
 
-	&-image-wrapper,
-	&-image {
-		height: 100%;
-	}
-	&-scroll-link-ico-wrapper {
-		width: 37px;
-		height: 18px;
-		margin: 0 auto;
-	}
+			&-title {
+				font-size: 61px;
+				line-height: 1em;
+				margin-bottom: 2vw;
+			}
 
-
-}
-.company-second-section {
-	background-image: url('/wp-content/themes/sixgill/images/home/dots_bg_desktop.png');
-	padding: 2vh 0px 2vh 0px;
-
-	&-image-wrapper {
-		min-width: 215px;
-		max-width: 215px;
-		min-height: 215px;
-	}
-	&-block-title {
-		font-size: 43.9px;
-		line-height: 1;
-		letter-spacing: 4.8px;
-	  	margin-bottom: 5vh;
-	}
-	&-block {
-		width: 77%;
-		margin-top: 2vh;
-	}
-	&-image {
-		height: auto;
-	}
-	&-rows {
-		justify-content: flex-start;
-		margin-bottom: 44px;
-	}
-	&-team-description {
-		margin-left: 40px;
-		margin-top: 10px;
-	}
-
-	&-name {
-		font-size: 34.5px;
-		line-height: 0.62;
-		margin-bottom: 0px;
-	}
-	&-job {
-		font-size: 18.6px;
-		line-height: 1.14;
-		letter-spacing: 0.6px;
-		margin-top:11px;
-		margin-bottom: 20px;
-	}
-	&-bio p {
-	  font-size: 15.9px;
-	  line-height: 1.33;
-	  letter-spacing: 0.5px;
-  	  margin-bottom: 10px;
-	}
-	&-bio-full p {
-	  font-size: 15.9px;
-	  line-height: 1.33;
-	  letter-spacing: 0.5px;
-  	  margin-bottom: 10px;
-	}
-}
-.company-third-section {
-	background-image: url('/wp-content/themes/sixgill/images/company/boardBg-desktop@1x.png');
-	padding: 2vh 3vw 2vh 3vw;
-	min-height: 768px;
-
-	& p {
-		margin-bottom: 0;
-	}
-
-	&-text {
-		width: 37.7vw;
-		margin-top: 3.3vh;
-	}
-
-	&-title {
-		font-size: 43.9px;
-		line-height: 1;
-		letter-spacing: 4.8px;
-	}
-	&-name {
-		font-size: 34.5px;
-		line-height: 0.8;
-		letter-spacing: 1px;
-	}
-	&-job {
-		font-size: 18.6px;
-		line-height: 1.14;
-		letter-spacing: 0.6px;
-		margin-top: 10px;
-		margin-bottom: 20px !important;
-	}
-	&-bio {
-		ul li {
-			font-size: 15.9px;
-			line-height: 1.33;
-			letter-spacing: 0.5px;
+			&-subtitle {
+				font-size: 16px;
+				font-weight: 700;
+				margin-bottom: 1.21vh;
+			}
 		}
-		p {
-			font-size: 15.9px;
-			line-height: 1.33;
-			letter-spacing: 0.5px;
+
+		&-image {
+			height: 100%;
+
+			&-wrapper {
+				height: 100%;
+				width: 28.3%;
+			}
+		}
+
+		&-scroll-link-ico-wrapper {
+			width: 37px;
+			height: 18px;
+			margin: 0 auto;
+		}
+
+	}
+
+	&-second-section {
+		background-image: url('/wp-content/themes/sixgill/images/home/dots_bg_desktop.png');
+		padding: 2vh 0px 2vh 0px;
+
+		&-block {
+			width: 77%;
+			margin-top: 2vh;
+
+			&-title {
+				font-size: 43.9px;
+				line-height: 1;
+				letter-spacing: 4.8px;
+			  	margin-bottom: 5vh;
+			}
+		}
+
+		&-image {
+			height: auto;
+
+			&-wrapper {
+				min-width: 215px;
+				max-width: 215px;
+				min-height: 215px;
+			}
+		}
+
+		&-rows {
+			justify-content: flex-start;
+			margin-bottom: 44px;
+		}
+
+		&-team-description {
+			margin-left: 40px;
+			margin-top: 10px;
+		}
+
+		&-name {
+			font-size: 34.5px;
+			line-height: 0.62;
+			margin-bottom: 0px;
+		}
+
+		&-job {
+			font-size: 18.6px;
+			line-height: 1.14;
+			letter-spacing: 0.6px;
+			margin-top:11px;
+			margin-bottom: 20px;
+		}
+
+		&-bio {
+			& p {
+				font-size: 15.9px;
+			  line-height: 1.33;
+			  letter-spacing: 0.5px;
+		  	margin-bottom: 10px;
+			}
+
+			&-full p {
+			  font-size: 15.9px;
+			  line-height: 1.33;
+			  letter-spacing: 0.5px;
+		  	margin-bottom: 10px;
+			}
 		}
 	}
-	&-rows {
-		justify-content: space-around;
-	}
-	&-row-item {
-		max-width: 30%;
+
+	&-third-section {
+		background-image: url('/wp-content/themes/sixgill/images/company/boardBg-desktop@1x.png');
+		padding: 2vh 3vw 2vh 3vw;
+		min-height: 768px;
+
+		& p {
+			margin-bottom: 0;
+		}
+
+		&-text {
+			width: 38vw;
+			margin-top: 3.3vh;
+		}
+
+		&-title {
+			font-size: 44px;
+			line-height: 1;
+			letter-spacing: 4.8px;
+		}
+
+		&-name {
+			font-size: 34.5px;
+			line-height: 0.8;
+			letter-spacing: 1px;
+		}
+
+		&-job {
+			font-size: 18.6px;
+			line-height: 1.14;
+			letter-spacing: 0.6px;
+			margin-top: 10px;
+			margin-bottom: 20px !important;
+		}
+
+		&-bio {
+
+			&, & p, & li {
+				font-size: 16px;
+				line-height: 1.33;
+				letter-spacing: 0.5px;
+			}
+		}
+
+		&-rows {
+			justify-content: space-around;
+		}
+
+		&-row-item {
+			max-width: 30%;
+		}
 	}
 }
