@@ -2,20 +2,6 @@
 <div class="full-width"> <!-- fullpage wrapper placeholder -->
 
 	<a name="top"></a>
-	<a
-		href="#tech-second-section"
-		class="tech-learn-more-link"
-	>
-		<div class="tech-first-section-scroll-link-wrapper">
-			<div class="tech-first-section-scroll-link-ico-wrapper">
-				<img
-					class="tech-first-section-scroll-link-ico responsive-image"
-					desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-					tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-				/>
-			</div>
-		</div>
-	</a>
 	<div id="tech-first-section" class="tech-section tech-first-section">
 		<div class="tech-first-section-block">
 			<div
@@ -43,6 +29,21 @@
 				>
 			</div>
 		</div>
+
+		<a
+			href="#location"
+			class="tech-learn-more-link"
+		>
+			<div class="tech-first-section-scroll-link-wrapper">
+				<div class="tech-first-section-scroll-link-ico-wrapper">
+					<img
+						class="tech-first-section-scroll-link-ico responsive-image"
+						desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+						tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					/>
+				</div>
+			</div>
+		</a>
 	</div>
 
 	<a name="location"></a>

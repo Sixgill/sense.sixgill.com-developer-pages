@@ -13233,6 +13233,9 @@ ol {
 .tech-section {
   background-size: cover;
 }
+.tech-first-section {
+  position: relative;
+}
 .tech-first-section-image-wrapper {
   display: inline-block;
   height: 100%;
@@ -14703,8 +14706,9 @@ body.modal-open {
   display: flex;
 }
 .tech-section {
-  height: 100vh;
-  min-height: 40vw;
+  height: 100vh \9;
+  min-height: 100vh;
+  min-height: 40vw \9;
 }
 .tech-first-section {
   display: -webkit-flex;
@@ -14785,17 +14789,21 @@ body.modal-open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   height: auto;
   max-height: none;
   width: 100%;
-  height: 100%;
+  height: 100% \9;
   max-width: 100%;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
 }
 .tech-second-section-content-wrapper {
   margin-left: 5.8vw;
   margin-right: 5.8vw;
+  padding: 10px 0px 10px 0px;
   height: 100%;
-  overflow-y: scroll;
 }
 .tech-second-section-header-wrapper {
   -webkit-align-self: center;
@@ -14822,7 +14830,6 @@ body.modal-open {
       -ms-flex-item-align: center;
           align-self: center;
   width: 56%;
-  height: 100%;
 }
 .tech-second-section-image-wrapper {
   height: 100%;
@@ -14830,9 +14837,6 @@ body.modal-open {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-.tech-second-section-text {
-  overflow-y: auto;
 }
 .tech-second-section-text,
 .tech-second-section-text p,
@@ -14844,9 +14848,7 @@ body.modal-open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
   width: 100%;
-  min-height: 45vw;
   background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_desktop.png');
 }
 .tech-third-section-wrapper {
@@ -14857,10 +14859,12 @@ body.modal-open {
       -ms-flex-item-align: center;
           align-self: center;
   width: 100%;
+  height: 100% \9;
 }
 .tech-third-section-content-wrapper {
   margin-left: 5.67vw;
   width: 38.58vw;
+  padding: 10px 0px 10px 0px;
 }
 .tech-third-section-title {
   font-size: 44px;
@@ -16671,7 +16675,8 @@ ul:not([class]) li {
 .tech-learn-more-link {
   display: block;
   position: absolute;
-  top: calc(100vh - 161px);
+  bottom: 21px;
+  left: 0px;
   width: 100%;
 }
 .tech-fixed-panel {
@@ -16716,6 +16721,9 @@ ul:not([class]) li {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .tech-first-section-block-title {
   font-size: 7vw;
@@ -16731,7 +16739,7 @@ ul:not([class]) li {
 }
 .tech-first-section-block-text {
   width: 52.5%;
-  padding: 0px 4vw 0px 4vw;
+  padding: 38px 4vw 38px 4vw;
 }
 .tech-first-section-block-paragraph {
   font-weight: 400;
@@ -16746,6 +16754,20 @@ ul:not([class]) li {
 }
 .tech-first-section-image-wrapper {
   width: 47.34%;
+  max-width: 350px;
+  height: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.tech-first-section-scroll-link-ico {
+  width: 37px;
 }
 .tech-first-section-scroll-link-text {
   font-size: 17px;
@@ -16757,15 +16779,18 @@ ul:not([class]) li {
 .tech-second-section {
   background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 }
-.tech-second-section-image-wrapper {
-  width: 67%;
+.tech-second-section-wrapper {
+  padding: 60px 0px 60px 0px;
+}
+.tech-second-section-image {
+  width: 100%;
+}
+.tech-second-section-image-wrapper-mobile {
+  width: 93.1%;
+  text-align: center;
   margin-bottom: 2.5vh;
   margin-left: auto;
   margin-right: auto;
-}
-.tech-second-section-image-wrapper-mobile {
-  width: 100%;
-  text-align: center;
 }
 .tech-second-section-title {
   font-size: 4.56vw;
