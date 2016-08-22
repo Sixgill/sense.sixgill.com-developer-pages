@@ -1,27 +1,6 @@
 /* Company desktop styles */
 .company-learn-more-link {
-	display: block;
-  position: absolute;
-  top: calc(~"100vh - 60px");
-  width: 100%;
-}
-
-.company-first-section,
-.company-first-section-block,
-.company-second-section-wrapper,
-.company-fourth-section-wrapper,
-.company-fixed-panel,
-.company-fixed-panel-col,
-.company-third-section,
-.company-third-section-wrapper {
-	display: flex;
-}
-
-.company-first-section-block,
-.company-second-section-right-col,
-.company-first-section-block-text,
-.company-third-section-wrapper {
-	align-self: center;
+	top: calc(~"100vh - 60px");
 }
 
 .company-section {
@@ -29,19 +8,14 @@
 }
 
 .company-first-section {
-
-}
-
-.company-first-section {
+	display: flex;
 	justify-content: flex-end;
 	background-image: url('/wp-content/themes/sixgill/images/company/first_section_bg_desktop.png');
 
 	&-block {
+		align-self: center;
 		background-color: rgba(77, 219, 90, 0.7);
-		display: flex;
 		width: 88.34%;
-		align-items: center;
-		z-index: 2;
 		margin: 1vh 0px 1vh 0px;
 	}
 
@@ -50,16 +24,15 @@
 	}
 
 	&-block-text {
+		align-self: center;
 		width: 71%;
 		padding: 1vh 2.4vw 1vh 2.4vw;
 	}
 
 	&-block-title {
 		font-size: 61px;
-		font-weight: 300;
 		line-height: 1em;
 		margin-bottom: 2vw;
-		font-family: "Lato";
 	}
 
 	&-block-subtitle {
@@ -68,19 +41,9 @@
 		margin-bottom: 1.21vh;
 	}
 
-	&-block-paragraph p {
-		margin-bottom: 0px;
-	}
 	&-image-wrapper,
 	&-image {
 		height: 100%;
-	}
-	&-scroll-link-text {
-		font-size: 17px;
-		font-weight: 600;
-		text-shadow: -3.1px 3.9px 12px #000000;
-		margin-bottom: 16px;
-		text-align: center;
 	}
 	&-scroll-link-ico-wrapper {
 		width: 37px;
@@ -100,35 +63,19 @@
 		min-height: 215px;
 	}
 	&-block-title {
-		font-family: "Lato";
 		font-size: 43.9px;
-		font-weight: 300;
 		line-height: 1;
 		letter-spacing: 4.8px;
-		text-align: center;
-		color: #0051c6;
 	  	margin-bottom: 5vh;
 	}
 	&-block {
 		width: 77%;
-		margin-left: auto;
-		margin-right: auto;
 		margin-top: 2vh;
-	}
-	&-text {
-		font-size: 16px;
 	}
 	&-image {
 		height: auto;
-		width: 100%;
-	}
-	&-team {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
 	}
 	&-rows {
-		display: flex;
 		justify-content: flex-start;
 		margin-bottom: 44px;
 	}
@@ -138,69 +85,31 @@
 	}
 
 	&-name {
-		font-family: "Lato";
 		font-size: 34.5px;
-		font-weight: 300;
 		line-height: 0.62;
-		letter-spacing: 1px;
-		color: #2e2e2e;
 		margin-bottom: 0px;
 	}
 	&-job {
-		font-family: "Lato";
 		font-size: 18.6px;
-		font-weight: 700;
 		line-height: 1.14;
 		letter-spacing: 0.6px;
-		color: #5cc468;
 		margin-top:11px;
 		margin-bottom: 20px;
 	}
 	&-bio p {
-	  font-family: "Lato";
 	  font-size: 15.9px;
-	  font-weight: 500;
 	  line-height: 1.33;
 	  letter-spacing: 0.5px;
   	  margin-bottom: 10px;
-	  color: #2e2e2e;
 	}
 	&-bio-full p {
-	  font-family: "Lato";
 	  font-size: 15.9px;
-	  font-weight: 500;
 	  line-height: 1.33;
 	  letter-spacing: 0.5px;
   	  margin-bottom: 10px;
-	  color: #2e2e2e;
-	}
-	&-bio-full {
-		margin: 0;
-		height: auto;
-		display: none;
-	}
-	.learn-more-link {
-		&:visited {
-			color: #0051c6;
-		}
-		&:active {
-			color: #0051c6;
-		}
-		&:hover {
-			color: #0083c6;
-		}
-		font-family: "Lato";
-		font-size: 16px;
-		font-weight: 700;
-		line-height: 0.47;
-		letter-spacing: 0.5px;
-		color: #0051c6;
-		cursor: pointer;
 	}
 }
 .company-third-section {
-	display: flex;
-	flex-direction: column;
 	background-image: url('/wp-content/themes/sixgill/images/company/boardBg-desktop@1x.png');
 	padding: 2vh 3vw 2vh 3vw;
 	min-height: 768px;
@@ -211,65 +120,42 @@
 
 	&-text {
 		width: 37.7vw;
-		margin-left: auto;
-		margin-right: auto;
 		margin-top: 3.3vh;
 	}
 
 	&-title {
-		font-family: "Lato";
 		font-size: 43.9px;
-		font-weight: 300;
 		line-height: 1;
 		letter-spacing: 4.8px;
-		text-align: center;
-		color: #4ddb5a;
 	}
 	&-name {
-		font-family: "Lato";
 		font-size: 34.5px;
-		font-weight: 300;
 		line-height: 0.8;
 		letter-spacing: 1px;
-		color: #ffffff;
 	}
 	&-job {
-		font-family: "Lato";
 		font-size: 18.6px;
-		font-weight: 700;
 		line-height: 1.14;
 		letter-spacing: 0.6px;
-		color: #5cc468;
 		margin-top: 10px;
 		margin-bottom: 20px !important;
 	}
 	&-bio {
 		ul li {
-			font-family: "Lato";
 			font-size: 15.9px;
-			font-weight: 500;
 			line-height: 1.33;
 			letter-spacing: 0.5px;
-			color: #a9d8dd;
 		}
 		p {
-			font-family: "Lato";
 			font-size: 15.9px;
-			font-weight: 500;
 			line-height: 1.33;
 			letter-spacing: 0.5px;
-			color: #a9d8dd;
 		}
 	}
 	&-rows {
-		display: flex;
-		align-items:flex-start;
 		justify-content: space-around;
 	}
 	&-row-item {
 		max-width: 30%;
-	}
-	& > div {
-		align-self: center;
 	}
 }
