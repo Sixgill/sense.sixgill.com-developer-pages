@@ -46,15 +46,13 @@
 		</div>
 	</div>
 
-	<!-- <a name="tech-second-section"></a> -->
 	<a name="location"></a>
 	<div id="location" class="tech-section tech-second-section">
 		<div class="tech-second-section-wrapper">
 			<div class="tech-second-section-left-col">
-				<div class="tech-second-section-image-wrapper">
-					<img
-						class="tech-second-section-image responsive-image"
-						desktop-src="<?php echo get_field('second_section_image_desktop'); ?>"
+				<div
+					class="tech-second-section-image-wrapper responsive-background"
+					desktop-src="<?php echo get_field('second_section_image_desktop'); ?>"
 					>
 				</div>
 			</div>

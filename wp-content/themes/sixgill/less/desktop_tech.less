@@ -15,12 +15,14 @@
 	}
 
 	&-section {
-		min-height: 100vh;
+		height: 100vh;
+		min-height: 40vw;
 	}
 
 	&-first-section {
 		display: flex;
 		justify-content: flex-end;
+		align-items: center;
 		background-image: url('/wp-content/themes/sixgill/images/tech/first_section_bg_desktop.jpg');
 
 		&-block {
@@ -30,7 +32,6 @@
 		  align-items: center;
 			z-index: 2;
 			margin: 1vw 0px 1vw 0px;
-			align-self: center;
 
 			&-title {
 				font-size: 61px;
@@ -75,10 +76,10 @@
 	}
 
 	&-second-section {
+		width: 100%;
 		background-size: contain;
 		background-repeat: repeat;
 		background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
-		min-height: 33vw;
 
 		&-wrapper {
 			display: flex;
@@ -86,12 +87,14 @@
 			height: auto;
 			max-height: none;
 			width: 100%;
+			height: 100%;
+			max-width: 100%;
 		}
 
 		&-content-wrapper {
-			width: auto;
 			margin-left: 5.8vw;
 			margin-right: 5.8vw;
+			-ms-flex: 0 1 auto;
 		}
 
 		&-header-wrapper {
@@ -111,20 +114,19 @@
 
 		&-left-col {
 			height: 100%;
+			width: 43.7%;
 		}
 
 		&-right-col {
 			align-self: center;
+			width: 56%;
 		}
 
 		&-image {
-			height: 100%;
-			width: auto;
-			max-width: none;
-			max-height: none;
 
 			&-wrapper {
-				height: 100vh;
+				height: 100%;
+				width: 100%;
 			}
 		}
 
@@ -141,12 +143,14 @@
 	&-third-section {
 		display: flex;
 		height: 100vh;
+		width: 100%;
 		min-height: 45vw;
 		background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_desktop.png');
 
 		&-wrapper {
 			display: flex;
 			align-self: center;
+			width: 100%;
 		}
 
 		&-content-wrapper {
@@ -163,6 +167,7 @@
 
 	&-fourth-section {
 		min-height: inherit !important;
+		height: auto;
 		background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 
 		&-wrapper {
