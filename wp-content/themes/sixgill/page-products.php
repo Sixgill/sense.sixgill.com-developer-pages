@@ -12,7 +12,6 @@
 				<img
 					class="products-first-section-image responsive-image aspectwidthfix"
 					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
-
 				>
 			</div>
 
