@@ -18,11 +18,10 @@
 	</a>
 	<div id="tech-first-section" class="tech-section tech-first-section">
 		<div class="tech-first-section-block">
-			<div class="tech-first-section-image-wrapper">
-				<img
-					class="tech-first-section-image responsive-image"
-					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
-					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
+			<div
+				class="tech-first-section-image-wrapper responsive-background"
+				desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
+				tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
 				>
 			</div>
 			<div class="tech-first-section-block-text">

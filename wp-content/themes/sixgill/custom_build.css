@@ -14722,8 +14722,9 @@ body.modal-open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 88.34%;
-  height: 34.7vw;
+  width: 73.54vw;
+  min-height: 34.7vw;
+  height: 38vw \9;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -14744,7 +14745,9 @@ body.modal-open {
 }
 .tech-first-section-block-text {
   width: 71%;
-  padding: 0px 2.4vw 0px 2.4vw;
+  padding: 44px 2.4vw 44px 2.4vw;
+  padding-top: 20px \9;
+  padding-bottom: 0px \9;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
@@ -14756,15 +14759,21 @@ body.modal-open {
 .tech-first-section-block-paragraph p {
   font-size: 16px;
 }
-.tech-first-section-image {
-  height: 100%;
-}
 .tech-first-section-image-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 28.3%;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  height: 100%;
+  height: inherit;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .tech-second-section {
   width: 100%;
@@ -14785,7 +14794,8 @@ body.modal-open {
 .tech-second-section-content-wrapper {
   margin-left: 5.8vw;
   margin-right: 5.8vw;
-  -ms-flex: 0 1 auto;
+  height: 100%;
+  overflow-y: scroll;
 }
 .tech-second-section-header-wrapper {
   -webkit-align-self: center;
@@ -14812,10 +14822,17 @@ body.modal-open {
       -ms-flex-item-align: center;
           align-self: center;
   width: 56%;
+  height: 100%;
 }
 .tech-second-section-image-wrapper {
   height: 100%;
   width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.tech-second-section-text {
+  overflow-y: auto;
 }
 .tech-second-section-text,
 .tech-second-section-text p,
