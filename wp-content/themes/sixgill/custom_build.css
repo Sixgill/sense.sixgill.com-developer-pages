@@ -14268,6 +14268,9 @@ body.modal-open {
 .home-second-section-row:first-child {
   min-height: 190px;
 }
+.home-second-section-row:last-child p {
+  margin-bottom: 0px !important;
+}
 .home-second-section-block {
   width: 45.5%;
   display: -webkit-flex;

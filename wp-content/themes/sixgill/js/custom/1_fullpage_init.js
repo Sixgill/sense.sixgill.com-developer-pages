@@ -11,6 +11,7 @@ jQuery(function($) {
 		scrollBar: true,
 		sectionSelector: '.home-section',
 		verticalCentered: false,
+		/*scrollOverflow: true,*/
 		normalScrollElements: '.modal',
 		onLeave: function(index, nextIndex, direction) {
       var vid = document.getElementById("home-video");
