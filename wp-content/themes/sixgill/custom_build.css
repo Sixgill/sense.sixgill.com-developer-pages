@@ -16648,9 +16648,6 @@ ul:not([class]) li {
 .tech-first-section-block-paragraph {
   font-weight: 400;
 }
-.tech-first-section-block-paragraph p {
-  margin-bottom: 0px;
-}
 .tech-first-section-block-paragraph,
 .tech-first-section-block-paragraph p,
 .tech-first-section-block-paragraph li {
@@ -18807,9 +18804,6 @@ ul:not([class]) li {
 .tech-first-section-block-paragraph {
   font-weight: 400;
   font-size: 4.97vw;
-}
-.tech-first-section-block-paragraph p {
-  margin-bottom: 0px;
 }
 .tech-first-section-image {
   width: 100%;
