@@ -15988,6 +15988,12 @@ body.modal-open {
   line-height: 1.14;
   letter-spacing: 0.6px;
 }
+.company-third-section-bio ul {
+  margin-bottom: 0;
+}
+.company-third-section-bio ul li:last-child {
+  margin-bottom: 0;
+}
 .company-third-section-bio ul li {
   font-size: 15.9px;
   line-height: 1.33;
