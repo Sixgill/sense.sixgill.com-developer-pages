@@ -14025,7 +14025,7 @@ body.modal-open {
       -ms-flex-item-align: center;
           align-self: center;
   background-color: rgba(77, 219, 90, 0.7);
-  width: 88.34%;
+  width: 73.5vw;
   margin: 100px 0px 100px 0px;
 }
 .company-first-section-block-text {
@@ -14045,12 +14045,21 @@ body.modal-open {
   font-weight: 700;
   margin-bottom: 1.21vh;
 }
-.company-first-section-image {
-  height: 100%;
-}
 .company-first-section-image-wrapper {
-  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 28.3%;
+  height: inherit;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 .company-first-section-scroll-link-text {
   font-size: 17px;

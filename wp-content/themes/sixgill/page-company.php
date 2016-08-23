@@ -3,10 +3,12 @@
 	<a name="top"></a>
 	<div class="company-section company-first-section">
 		<div class="company-first-section-block">
-			<div class="company-first-section-image-wrapper">
+			<div
+				class="company-first-section-image-wrapper responsive-background"
+				desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
+			>
 				<img
 					class="company-first-section-image responsive-image"
-					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
 					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
 					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
 				>
