@@ -9,7 +9,7 @@
 		$googleMapEmbedCode = get_field('google_map_embed_code', $footerInfoId);
 	?>
 
-	<footer id="footer" data-anchor="home-footer" class="footer font-size-0 center home-section">
+	<footer id="footer" data-anchor="home-footer" class="footer font-size-0 center">
 		<div class="footer-container ">
 
 			<div class="footer-menu-block">
