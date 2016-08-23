@@ -16038,9 +16038,6 @@ body.modal-open {
   margin-top: -0.3em;
   margin-bottom: 0px;
 }
-.home-second-section-block-content {
-  width: calc(100% - 5.1vw);
-}
 .home-second-section-icon-wrapper {
   width: 6vw;
   height: 6vw;
