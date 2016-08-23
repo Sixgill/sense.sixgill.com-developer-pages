@@ -13672,7 +13672,7 @@ body.modal-open {
   width: 163px;
   height: 129.5px;
   background-image: url("/wp-content/themes/sixgill/images/td/logo/logo_desktop.svg");
-  margin-top: 2.6vh;
+  margin-top: 20px;
   margin-left: 31px;
 }
 .title-left-col {
@@ -13783,10 +13783,11 @@ body.modal-open {
 }
 #primary-menu {
   opacity: 1 !important;
-  position: absolute;
-  left: 0px;
-  margin: 10px 0px 0px 47px;
-  padding-top: calc(36.83vh - 145px);
+  position: relative;
+  margin: 0px 0px 0px 47px;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
 }
 #primary-menu li {
   display: inline-block;
@@ -13873,6 +13874,22 @@ body.modal-open {
 .menu-sublink.active,
 .menu-sublink:hover {
   font-weight: bold !important;
+}
+#logo {
+  position: absolute;
+}
+.menu-container {
+  padding: 150px 0px 150px 0px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 /* Footer desktop styles */
