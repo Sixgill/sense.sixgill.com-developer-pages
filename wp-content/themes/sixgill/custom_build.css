@@ -15946,7 +15946,7 @@ body.modal-open {
 }
 .home-second-section-wrapper {
   width: 90.5%;
-  margin: 6.45vh 0px 6.45vh 0px;
+  margin: 66px 0px 6.45vh 0px;
 }
 .home-second-section-header-top {
   font-size: 22px;
@@ -16009,7 +16009,7 @@ body.modal-open {
 .home-third-section-wrapper {
   width: 90.5%;
   text-align: center;
-  margin: 5vh 0px 5vh 0px;
+  margin: 61px 0px 5vh 0px;
 }
 .home-third-section-title {
   display: inline-block;
@@ -16055,7 +16055,7 @@ body.modal-open {
 }
 .home-fourth-section-wrapper {
   text-align: center;
-  margin: 8.6vh 0px 8.6vh 0px;
+  margin: 95px 0px 8.6vh 0px;
 }
 .home-fourth-section-header-wrapper {
   display: inline-block;
@@ -16099,7 +16099,7 @@ body.modal-open {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 7vh;
+  margin-top: 73px;
   width: 87.5vw;
 }
 .home-fifth-section-header-wrapper {
@@ -17940,7 +17940,7 @@ ul:not([class]) li {
   background-image: url('/wp-content/themes/sixgill/images/home/bg_dots_mobile.png');
 }
 .company-second-section-more-trigger {
-  margin-bottom: 11.5vh;
+  margin-bottom: 41px;
 }
 .company-second-section-block {
   width: 90%;
@@ -18038,7 +18038,10 @@ ul:not([class]) li {
           flex-direction: column;
 }
 .company-third-section-row-item {
-  margin: 0 5vw 11.7vh 5vw;
+  margin: 0 5vw 56px 5vw;
+}
+.company-third-section-row-item:last-of-type {
+  margin-bottom: 42px;
 }
 
 /* Home mobile portrait and landscape styles */
@@ -18190,7 +18193,7 @@ ul:not([class]) li {
   line-height: 1.5em;
 }
 .home-third-section-image-wrapper {
-  margin-bottom: 10vh;
+  margin-bottom: 48px;
 }
 .home-third-section-image {
   height: auto;
