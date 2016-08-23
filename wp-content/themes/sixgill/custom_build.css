@@ -14019,6 +14019,8 @@ body.modal-open {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-image: url('/wp-content/themes/sixgill/images/company/first_section_bg_desktop.png');
+  height: 100vh \9;
+  min-height: 780px \9;
 }
 .company-first-section-block {
   -webkit-align-self: center;
@@ -14033,7 +14035,7 @@ body.modal-open {
       -ms-flex-item-align: center;
           align-self: center;
   width: 71%;
-  padding: 1vh 2.4vw 1vh 2.4vw;
+  padding: 44px 2.4vw 44px 2.4vw;
 }
 .company-first-section-block-title {
   font-size: 61px;
@@ -14101,10 +14103,15 @@ body.modal-open {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-bottom: 44px;
+  width: 100%;
+}
+.company-second-section-team {
+  width: 100%;
 }
 .company-second-section-team-description {
   margin-left: 40px;
   margin-top: 10px;
+  width: calc(100% - 255px);
 }
 .company-second-section-name {
   font-size: 34.5px;
@@ -14119,13 +14126,13 @@ body.modal-open {
   margin-bottom: 20px;
 }
 .company-second-section-bio p {
-  font-size: 15.9px;
+  font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
 }
 .company-second-section-bio-full p {
-  font-size: 15.9px;
+  font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
