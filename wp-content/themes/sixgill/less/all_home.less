@@ -59,32 +59,39 @@
 			display: inline-block;
 	  }
 
-	  &-header-wrapper {
-			border-bottom: 1px solid #738aab;
-			margin-bottom: 4.5vw;
-	  }
-
-	  &-header-top {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-
-	    &-line {
-				display: inline-block;
-				height: 1px;
-				background-color: #91a4c0;
-				transform: translateY(0.5em);
+		&-header {
+			&-wrapper {
+				border-bottom: 1px solid #738aab;
+				margin-bottom: 4.5vw;
+				flex-flow: row wrap;
 				width: 100%;
-	    }
+		  }
 
-	    &-title {
-				font-family: "Lato";
-				font-weight: 700;
-				text-align: center;
-				color: #ffffff;
-				line-height: 1em;
-	    }
-	  }
+		  &-top {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				width: 100%;
+
+		    &-line {
+					display: inline-block;
+					height: 0px;
+					border-top: 1px solid #91a4c0;
+					transform: translateY(0.5em);
+					flex-grow: 1;
+		    }
+
+		    &-title {
+					font-family: "Lato";
+					font-weight: 700;
+					text-align: center;
+					color: #ffffff;
+					line-height: 1em;
+		    }
+		  }
+		}
+
+
 
 	  &-title {
 			font-family: "Lato";
