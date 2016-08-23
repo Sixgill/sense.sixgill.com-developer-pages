@@ -1,214 +1,257 @@
 /* Tech mobile portrait and landscape styles */
 
-.tech-learn-more-link {
-	display: none;
-}
+.tech {
+	.tech-learn-more-link {
+		display: none;
+	}
 
-.tech-first-section {
-	background-image: url('/wp-content/themes/sixgill/images/tech/first_section_bg_mobile.png');
-}
+	&-first-section {
+		background-image: url('/wp-content/themes/sixgill/images/tech/first_section_bg_mobile.png');
 
-.tech-first-section-block {
-	width: 100%;
-	background: none;
-	text-align: center;
-	z-index: 2;
-}
+		&-block {
+			width: 100%;
+			background: none;
+			text-align: center;
+			z-index: 2;
 
-.tech-first-section-image-wrapper {
-	display: none;
-}
+			&-text {
+				width: 88.6%;
+				margin-top: 6vh;
+				margin-bottom: 7vh;
+				text-align: left;
+			}
 
-.tech-first-section-image-wrapper-mobile {
-	width: 100%;
-}
+			&-title {
+				font-size: 9vw;
+				font-weight: 300;
+				font-family: "Lato";
+				letter-spacing: 1.5px;
+				line-height: 1em;
+				margin-bottom: 2vh;
+			}
 
-.tech-first-section-block-text {
-	width: 88.6%;
-	margin-top: 6vh;
-	margin-bottom: 7vh;
-	text-align: left;
-}
+			&-subtitle {
+				display: none;
+			}
 
-.tech-first-section-block-title {
-	font-size: 9vw;
-	font-weight: 300;
-	font-family: "Lato";
-	letter-spacing: 1.5px;
-	line-height: 1em;
-	margin-bottom: 2vh;
-}
+			&-paragraph {
+				font-weight: 400;
+				font-size: 4.97vw;
 
-.tech-first-section-block-subtitle {
-	display: none;
-}
+				& p {
+					margin-bottom: 0px;
+				}
 
-.tech-first-section-block-paragraph p {
-	margin-bottom: 0px;
-}
+			}
+		}
 
-.tech-first-section-image {
-	width: 100%;
-}
+		&-image {
+			width: 100%;
 
-.tech-first-section-scroll-link-text {
-	font-size: 17px;
-  font-weight: 600;
-  text-shadow: -3.1px 3.9px 12px #000000;
-	margin-bottom: 16px;
-	text-align: center;
-}
+			&-wrapper {
+				display: none;
 
-.tech-first-section-scroll-link-ico-wrapper {
-	width: 37px;
-	height: 18px;
-	text-align: center;
-}
+				&-mobile {
+					width: 100%;
+				}
+			}
+		}
 
-.tech-second-section {
-	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
-}
+		&-scoll-link {
+			&-text {
+				font-size: 17px;
+			  font-weight: 600;
+			  text-shadow: -3.1px 3.9px 12px #000000;
+				margin-bottom: 16px;
+				text-align: center;
+			}
 
-.tech-second-section-wrapper {
-	width: 100%;
-	padding: 6.25vh 6.25vw 0px 6.25vw;
-}
+			&-ico-wrapper {
+				width: 37px;
+				height: 18px;
+				text-align: center;
+			}
+		}
 
-.tech-second-section-title {
-	font-family: "Lato";
-  font-size: 8.22vw;
-	line-height: 1em;
-  font-weight: 300;
-	padding-bottom: 5vh;
-	width: 100%;
-	text-align: left;
-	color: #0051c6;
-}
 
-.tech-second-section-image,
-.tech-second-section-image-wrapper {
-	max-width: none;
-	width: 100%;
-}
+	}
 
-.tech-second-section-image-wrapper-mobile {
-	margin: 0px -6.25vw 0px -6.25vw;
-}
+	&-second-section {
+		background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 
-.tech-second-section-text,
-.tech-fourth-section-text {
-	margin-left: auto;
-	margin-right: auto;
-	width: 88.75vw;
-}
+		&-wrapper {
+			width: 100%;
+			padding: 6.25vh 6.25vw 0px 6.25vw;
+		}
 
-.tech-third-section {
-	background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_mobile.png');
-}
 
-.tech-third-section-wrapper {
-	width: 100%;
-	padding: 7vh 5.31vw 7vh 5.31vw;
-}
+		&-title {
+			font-family: "Lato";
+		  font-size: 8.22vw;
+			line-height: 1em;
+		  font-weight: 300;
+			padding-bottom: 5vh;
+			width: 100%;
+			text-align: left;
+			color: #0051c6;
+		}
 
-.tech-third-section-wrapper,
-.tech-fourth-section-wrapper {
-	height: auto;
-	max-height: none;
-	width: 100%;
-}
+		&-image {
+			max-width: none;
+			width: 100%;
 
-.tech-third-section-subtitle,
-.tech-fourth-section-subtitle {
-	font-size: 4.56vw;
-  font-weight: 700;
-	line-height: 2em;
-	margin: auto;
-}
+			&-wrapper {
+				max-width: none;
+				width: 100%;
 
-.tech-third-section-ico-wrapper {
-	width: 9.68vw;
-	height: 12.97vw;
-}
+				&-mobile {
+					margin: 0px -6.25vw 0px -6.25vw;
+				}
+			}
+		}
 
-.tech-third-section-title,
-.tech-fourth-section-title {
-  font-size: 9vw;
-	line-height: 1.25em;
-	width: 100%;
-	text-align: left;
-	margin-bottom: 6vh;
-}
+		&-text {
+			margin-left: auto;
+			margin-right: auto;
+			width: 88.75vw;
+			font-size: 4.97vw;
+			font-weight: 400;
+		}
+	}
 
-.tech-third-section-header-wrapper,
-.tech-fourth-section-header-wrapper {
-	text-align: center;
-	padding-top: 12.34vh;
-}
+	&-third-section {
+		background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_mobile.png');
 
-.tech-third-section-content-wrapper,
-.tech-third-section-header-wrapper,
-.tech-third-section-title-wrapper,
-.tech-fourth-section-header-wrapper,
-.tech-fourth-section-title-wrapper,
-.tech-third-section-ico-wrapper,
-.tech-fourth-section-ico-wrapper {
-	display: inline-block;
-}
+		&-wrapper {
+			height: auto;
+			max-height: none;
+			width: 100%;
+			padding: 7vh 5.31vw 7vh 5.31vw;
+		}
 
-.tech-third-section-title-wrapper,
-.tech-fourth-section-title-wrapper {
-	width: 100%;
-	padding-left: 5.6vw;
-	padding-right: 5.6vw;
-}
+		&-header-wrapper {
+			text-align: center;
+			padding-top: 12.34vh;
+			display: inline-block;
+		}
 
-.tech-fourth-section {
-	min-height: inherit !important;
-	background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
-	margin-bottom: -30px;
-}
+		&-content-wrapper {
+			display: inline-block;
+		}
 
-.tech-fourth-section-right-col {
-	width: 100%;
-	padding: 6vh 4.75vw 0px 7.7vw;
-}
+		&-title {
+			font-size: 9vw;
+			line-height: 1.25em;
+			width: 100%;
+			text-align: left;
+			margin-bottom: 6vh;
 
-.tech-fourth-section-ico-wrapper {
-	width: 12.19vw;
-	height: 12.19vw;
-}
+			&-wrapper {
+				width: 100%;
+				padding-left: 5.6vw;
+				padding-right: 5.6vw;
+				display: inline-block;
+			}
+		}
 
-.tech-fourth-section-text,
-.tech-first-section-block-paragraph,
-.tech-second-section-text {
-  font-weight: 400;
-}
+		&-text {
+			font-size: 4.97vw;
+			font-weight: 400;
 
-.tech-third-section-text li {
-	margin-bottom: 1em !important;
-}
+			& li {
+				margin-bottom: 1em !important;
+			}
+		}
 
-.tech-last-section-text,
-.tech-last-section-text p
-.tech-last-section-text li,
-.tech-first-section-block-paragraph,
-.tech-first-section-block-paragraph p,
-.tech-first-section-block-paragraph li,
-.tech-second-section-text,
-.tech-second-section-text p,
-.tech-second-section-text li,
-.tech-third-section-text,
-.tech-third-section-text p,
-.tech-third-section-text li,
-.tech-fourth-section-text,
-.tech-fourth-section-text li,
-.tech-fourth-section-text p {
-	font-size: 4.97vw;
-	font-weight: 400;
-}
+		&-subtitle {
+			font-size: 4.56vw;
+		  font-weight: 700;
+			line-height: 2em;
+			margin: auto;
+		}
 
-.tech-fourth-section-image-wrapper-mobile {
-	text-align: center;
-	width: 100%;
+		&-ico-wrapper {
+			width: 9.68vw;
+			height: 12.97vw;
+			display: inline-block;
+		}
+	}
+
+	&-fourth-section {
+		min-height: inherit !important;
+		background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
+		margin-bottom: -30px;
+
+		&-wrapper {
+			height: auto;
+			max-height: none;
+			width: 100%;
+		}
+
+		&-header-wrapper {
+			text-align: center;
+			padding-top: 12.34vh;
+			display: inline-block;
+		}
+
+		&-title {
+			font-size: 9vw;
+			line-height: 1.25em;
+			width: 100%;
+			text-align: left;
+			margin-bottom: 6vh;
+
+			&-wrapper {
+				width: 100%;
+				padding-left: 5.6vw;
+				padding-right: 5.6vw;
+				display: inline-block;
+			}
+		}
+
+		&-subtitle {
+			font-size: 4.56vw;
+		  font-weight: 700;
+			line-height: 2em;
+			margin: auto;
+		}
+
+		&-right-col {
+			width: 100%;
+			padding: 6vh 4.75vw 0px 7.7vw;
+		}
+
+		&-ico-wrapper {
+			width: 12.19vw;
+			height: 12.19vw;
+			display: inline-block;
+		}
+
+		&-image-wrapper-mobile {
+			text-align: center;
+			width: 100%;
+		}
+
+		&-text {
+			margin-left: auto;
+			margin-right: auto;
+			width: 88.75vw;
+
+			&, & p, & li {
+				font-size: 4.97vw;
+				font-weight: 400;
+			}
+		}
+	}
+
+	&-last-section {
+
+		&-text {
+
+			&, & p, & li {
+				font-size: 4.97vw;
+				font-weight: 400;
+			}
+		}
+	}
 }
