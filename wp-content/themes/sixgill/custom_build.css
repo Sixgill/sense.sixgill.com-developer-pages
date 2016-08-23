@@ -16707,7 +16707,7 @@ ul:not([class]) li {
   width: 100%;
   text-align: center;
   color: #0051c6;
-  margin-bottom: 4.62vh;
+  margin-bottom: 35.5px;
 }
 .tech-second-section-text {
   width: 92.7%;
@@ -16719,6 +16719,7 @@ ul:not([class]) li {
 .tech-second-section-text p,
 .tech-second-section-text li {
   font-size: 16px;
+  margin-bottom: 20px;
 }
 .tech-third-section {
   background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_tablet.png');
@@ -16781,7 +16782,7 @@ ul:not([class]) li {
 }
 .tech-third-section-content-wrapper {
   width: 100%;
-  padding: 8vh 3.45vw 8vh 3.45vw;
+  padding: 61.5px 3.45vw 8vh 3.45vw;
 }
 .tech-fourth-section {
   min-height: inherit !important;
@@ -17177,7 +17178,7 @@ ul:not([class]) li {
   width: 77%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6vh;
+  margin-top: 61.5px;
   margin-bottom: 1vh;
 }
 .products-fifth-section-ico-wrapper {
@@ -17247,7 +17248,7 @@ ul:not([class]) li {
 }
 .products-last-section-title {
   text-align: center;
-  margin: 50px 0px 6px 0px;
+  margin: 50px 0px 0px 0px;
   font-size: 35px;
 }
 .products-last-section-left-col {
@@ -17258,7 +17259,7 @@ ul:not([class]) li {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 5vh 3.78vw 7vh 3.78vw;
+  padding: 49.5px 3.78vw 7vh 3.78vw;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -18540,7 +18541,7 @@ ul:not([class]) li {
 }
 .solution-second-section-block-text {
   display: inline-block;
-  padding: 16px;
+  padding: 42px 19px 0px 16.5px;
   width: 100%;
 }
 .solution-second-section-icons-block {
@@ -18557,6 +18558,11 @@ ul:not([class]) li {
   letter-spacing: 0.5px;
   text-align: center;
   color: #2e2e2e;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.solution-second-section-icon-item {
+  padding: 50px 60px 0px 60px;
 }
 .solution-third-section-image-wrapper {
   display: none;
