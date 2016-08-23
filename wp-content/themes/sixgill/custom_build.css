@@ -13575,7 +13575,7 @@ ol {
   font-weight: 700;
 }
 .products-third-section-line {
-  background-color: #ffffff;
+  background-color: #526c91;
 }
 .products-third-section-text,
 .products-third-section-text p,
@@ -13597,6 +13597,9 @@ ol {
   font-weight: 300;
   color: #2adc3a;
 }
+.products-fourth-section-subtitle {
+  color: #0c3979;
+}
 .products-fourth-section-line {
   background-color: #ffffff;
 }
@@ -13610,7 +13613,7 @@ ol {
   font-weight: 700;
 }
 .products-fifth-section-line {
-  background-color: #ffffff;
+  background-color: #526c91;
 }
 .products-fifth-section-text,
 .products-fifth-section-text p,
