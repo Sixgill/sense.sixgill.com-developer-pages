@@ -37,9 +37,9 @@
 			class="scroll-section products-learn-more-link"
 		>
 			<div class="products-first-section-scroll-link-wrapper">
-				<div class="products-first-section-scroll-link-text">
+				<!--<div class="products-first-section-scroll-link-text">
 					Learn More
-				</div>
+				</div>-->
 				<div class="products-first-section-scroll-link-ico-wrapper">
 					<img
 						class="products-first-section-scroll-link-ico responsive-image"
@@ -116,11 +116,13 @@
 	<div id="products-third-section" class="products-section products-third-section">
 		<div class="products-third-section-wrapper">
 			<div class="products-third-section-left-col">
-				<div class="products-third-section-image-wrapper">
+				<div
+					class="products-third-section-image-wrapper responsive-background"
+					tablet-src="<?php echo get_field('third_section_image_tablet'); ?>"
+					>
 					<img
 						class="products-third-section-image responsive-image aspectwidthfix"
 						desktop-src="<?php echo get_field('third_section_image_desktop'); ?>"
-						tablet-src="<?php echo get_field('third_section_image_tablet'); ?>"
 					>
 				</div>
 			</div>
@@ -197,12 +199,14 @@
 	<div id="products-fifth-section" class="products-section products-fifth-section">
 		<div class="products-fifth-section-wrapper">
 			<div class="products-fifth-section-left-col">
-				<div class="products-fifth-section-image-wrapper">
+				<div
+					class="products-fifth-section-image-wrapper responsive-background"
+					tablet-src="<?php echo get_field('fifth_section_image_tablet'); ?>"
+				>
 					<img
 						class="products-fifth-section-image responsive-image aspectwidthfix"
 						src="<?php echo get_field('fifth_section_image'); ?>"
 						desktop-src="<?php echo get_field('fifth_section_image_desktop'); ?>"
-						tablet-src="<?php echo get_field('fifth_section_image_tablet'); ?>"
 					>
 				</div>
 			</div>

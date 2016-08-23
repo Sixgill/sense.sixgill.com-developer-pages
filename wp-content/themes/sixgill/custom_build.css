@@ -13612,6 +13612,8 @@ ol {
 }
 .products-last-section-title {
   color: #4ddb5a;
+  font-weight: 300;
+  font-family: "Lato";
 }
 .products-last-section-tab-logo {
   cursor: pointer;
@@ -15355,8 +15357,6 @@ body.modal-open {
 }
 .products-last-section-title {
   font-size: 45px;
-  font-weight: 300;
-  font-family: "Lato";
   text-align: center;
   margin: 4.6vw 0px 5vw 0px;
   line-height: 1em;
@@ -17025,23 +17025,29 @@ ul:not([class]) li {
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
           align-self: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 38.54%;
 }
 .products-third-section-image {
   max-width: none;
   max-height: none;
 }
 .products-third-section-image-wrapper {
+  width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .products-third-section-right-col {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
+  width: 61%;
 }
 .products-third-section-ico-wrapper {
   width: 6.84vw;
@@ -17152,6 +17158,15 @@ ul:not([class]) li {
 .products-fifth-section-header-wrapper {
   display: inline-block;
 }
+.products-fifth-section-image-wrapper {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 .products-fifth-section-content-wrapper {
   width: 77%;
   margin-left: auto;
@@ -17170,9 +17185,9 @@ ul:not([class]) li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -17224,6 +17239,11 @@ ul:not([class]) li {
           flex-direction: column;
   width: 100%;
 }
+.products-last-section-title {
+  text-align: center;
+  margin: 50px 0px 6px 0px;
+  font-size: 35px;
+}
 .products-last-section-left-col {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
@@ -17247,6 +17267,7 @@ ul:not([class]) li {
   float: left;
   z-index: 2;
   padding-left: 38px;
+  margin: 0px 3.9vw 0px 3.9vw;
 }
 .products-last-section-right-col::before {
   background-color: #e9e9e9;
@@ -19049,11 +19070,11 @@ ul:not([class]) li {
 }
 .products-second-section {
   background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
-  padding-top: 8vh;
+  padding-top: 38px;
 }
 .products-second-section-image-wrapper {
   width: 81.1vw;
-  margin-bottom: 8.5vh;
+  margin-bottom: 41px;
   margin-left: auto;
   margin-right: auto;
   width: 88.75vw;
@@ -19066,7 +19087,7 @@ ul:not([class]) li {
 .products-second-section-text,
 .products-second-section-text p,
 .products-second-section-text li {
-  font-size: 4.97vw;
+  font-size: 16px;
   font-weight: 400;
 }
 .products-third-section {
@@ -19116,7 +19137,7 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-third-section-line {
-  margin: 3vh 0px 3vh 0px;
+  margin: 23px 0px 23px 0px;
   height: 2.5px;
   width: 88.75vw;
   display: block;
@@ -19132,7 +19153,7 @@ ul:not([class]) li {
 .products-third-section-text,
 .products-third-section-text p,
 .products-third-section-text li {
-  font-size: 4.97vw;
+  font-size: 16px;
   font-weight: 400;
 }
 .products-third-section-text li {
@@ -19196,7 +19217,7 @@ ul:not([class]) li {
 .products-fourth-section-text,
 .products-fourth-section-text p,
 .products-fourth-section-text li {
-  font-size: 4.97vw;
+  font-size: 16px;
   font-weight: 400;
 }
 .products-fourth-section-right-col {
@@ -19262,7 +19283,7 @@ ul:not([class]) li {
 .products-fifth-section-text,
 .products-fifth-section-text p,
 .products-fifth-section-text li {
-  font-size: 4.97vw;
+  font-size: 16px;
   font-weight: 400;
 }
 .products-fifth-section-left-col {
@@ -19277,7 +19298,7 @@ ul:not([class]) li {
 .products-last-section,
 .products-last-section p,
 .products-last-section li {
-  font-size: 4.97vw;
+  font-size: 16px;
   font-weight: 400;
 }
 .products-last-section-title {
