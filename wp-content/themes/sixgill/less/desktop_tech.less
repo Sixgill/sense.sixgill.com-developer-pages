@@ -3,7 +3,11 @@
 .tech {
 
 	&-learn-more-link {
-		display: none;
+		display: block;
+	  position: absolute;
+	  bottom: 38px;
+		left: 0px;
+	  width: 100%;
 	}
 
 	&-fixed-panel {
@@ -29,11 +33,11 @@
 		&-block {
 			display: flex;
 			width: 73.54vw;
-			min-height: 34.7vw;
+			min-height: 34vw;
 			height: ~"38vw \9";
 		  align-items: center;
 			z-index: 2;
-			margin: 1vw 0px 1vw 0px;
+			margin: 100px 0px 100px 0px;
 
 			&-title {
 				font-size: 61px;
@@ -84,6 +88,27 @@
 			}
 		}
 
+		&-scroll-link {
+
+			&-text {
+				font-size: 17px;
+			  font-weight: 600;
+			  text-shadow: -3.1px 3.9px 12px #000000;
+				margin-bottom: 16px;
+				text-align: center;
+			}
+
+			&-wrapper {
+
+			}
+
+			&-ico-wrapper {
+				width: 37px;
+				height: 18px;
+				text-align: center;
+				display: inline-block;
+			}
+		}
 	}
 
 	&-second-section {

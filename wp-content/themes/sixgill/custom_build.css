@@ -14721,7 +14721,11 @@ body.modal-open {
 
 /* Tech desktop styles */
 .tech-learn-more-link {
-  display: none;
+  display: block;
+  position: absolute;
+  bottom: 38px;
+  left: 0px;
+  width: 100%;
 }
 .tech-fixed-panel {
   display: -webkit-flex;
@@ -14755,13 +14759,13 @@ body.modal-open {
   display: -ms-flexbox;
   display: flex;
   width: 73.54vw;
-  min-height: 34.7vw;
+  min-height: 34vw;
   height: 38vw \9;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
-  margin: 1vw 0px 1vw 0px;
+  margin: 100px 0px 100px 0px;
 }
 .tech-first-section-block-title {
   font-size: 61px;
@@ -14809,6 +14813,19 @@ body.modal-open {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.tech-first-section-scroll-link-text {
+  font-size: 17px;
+  font-weight: 600;
+  text-shadow: -3.1px 3.9px 12px #000000;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.tech-first-section-scroll-link-ico-wrapper {
+  width: 37px;
+  height: 18px;
+  text-align: center;
+  display: inline-block;
 }
 .tech-second-section {
   width: 100%;
@@ -16631,6 +16648,7 @@ ul:not([class]) li {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 65px 0px 65px 0px;
 }
 .tech-first-section-block-title {
   font-size: 7vw;
