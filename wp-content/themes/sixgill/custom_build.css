@@ -14001,7 +14001,11 @@ body.modal-open {
 
 /* Company desktop styles */
 .company-learn-more-link {
-  top: calc(100vh - 60px);
+  display: block;
+  position: absolute;
+  bottom: 38px;
+  left: 0px;
+  width: 100%;
 }
 .company-section {
   min-height: 100vh;
@@ -14010,6 +14014,7 @@ body.modal-open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -14021,7 +14026,7 @@ body.modal-open {
           align-self: center;
   background-color: rgba(77, 219, 90, 0.7);
   width: 88.34%;
-  margin: 1vh 0px 1vh 0px;
+  margin: 100px 0px 100px 0px;
 }
 .company-first-section-block-text {
   -webkit-align-self: center;
@@ -14047,10 +14052,18 @@ body.modal-open {
   height: 100%;
   width: 28.3%;
 }
+.company-first-section-scroll-link-text {
+  font-size: 17px;
+  font-weight: 600;
+  text-shadow: -3.1px 3.9px 12px #000000;
+  margin-bottom: 16px;
+  text-align: center;
+}
 .company-first-section-scroll-link-ico-wrapper {
   width: 37px;
   height: 18px;
-  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
 }
 .company-second-section {
   background-image: url('/wp-content/themes/sixgill/images/home/dots_bg_desktop.png');
@@ -15788,7 +15801,11 @@ body.modal-open {
 
 /* Company tablet styles */
 .company-learn-more-link {
-  top: calc(100vh - 30px);
+  display: block;
+  position: absolute;
+  bottom: 21px;
+  left: 0px;
+  width: 100%;
 }
 .company-section {
   min-height: 100vh;
@@ -15797,6 +15814,7 @@ body.modal-open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -15812,7 +15830,7 @@ body.modal-open {
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  margin: 4.3vh 1vw 7.43vh 1vw;
+  margin: 65px 1vw 65px 1vw;
 }
 .company-first-section-block-text {
   -webkit-align-self: center;
@@ -15837,10 +15855,15 @@ body.modal-open {
 .company-first-section-image-wrapper {
   width: 100%;
 }
-.company-first-section-scroll-link-ico-wrapper {
+.company-first-section-scroll-link-ico {
   width: 37px;
-  height: 18px;
-  margin: 0 auto;
+}
+.company-first-section-scroll-link-text {
+  font-size: 17px;
+  font-weight: 600;
+  text-shadow: -3.1px 3.9px 12px #000000;
+  margin-bottom: 16px;
+  text-align: center;
 }
 .company-second-section {
   background-image: url('/wp-content/themes/sixgill/images/home/bg_dots_tablet.png');

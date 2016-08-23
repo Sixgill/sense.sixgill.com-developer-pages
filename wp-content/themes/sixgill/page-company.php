@@ -1,20 +1,6 @@
 <?php get_header(); ?>
 <div> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
-	<a
-		href="#leadership"
-		class="scroll-section company-learn-more-link"
-	>
-		<div class="company-first-section-scroll-link-wrapper">
-			<div class="company-first-section-scroll-link-ico-wrapper">
-				<img
-					class="company-first-section-scroll-link-ico responsive-image"
-					desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-					tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-				/>
-			</div>
-		</div>
-	</a>
 	<div class="company-section company-first-section">
 		<div class="company-first-section-block">
 			<div class="company-first-section-image-wrapper">
@@ -34,6 +20,21 @@
 				</div>
 			</div>
 		</div>
+
+		<a
+			href="#leadership"
+			class="scroll-section company-learn-more-link"
+		>
+			<div class="company-first-section-scroll-link-wrapper">
+				<div class="company-first-section-scroll-link-ico-wrapper">
+					<img
+						class="company-first-section-scroll-link-ico responsive-image"
+						desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+						tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					/>
+				</div>
+			</div>
+		</a>
 	</div>
 	<a name="leadership"></a>
 	<div id="leadership" class="company-section company-second-section">
