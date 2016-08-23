@@ -1,7 +1,12 @@
 /* Company desktop styles */
 .company {
+
 	&-learn-more-link {
-		top: calc(~"100vh - 60px");
+		display: block;
+	  position: absolute;
+	  bottom: 38px;
+		left: 0px;
+	  width: 100%;
 	}
 
 	&-section {
@@ -10,6 +15,7 @@
 
 	&-first-section {
 		display: flex;
+		position: relative;
 		justify-content: flex-end;
 		background-image: url('/wp-content/themes/sixgill/images/company/first_section_bg_desktop.png');
 
@@ -17,7 +23,7 @@
 			align-self: center;
 			background-color: rgba(77, 219, 90, 0.7);
 			width: 88.34%;
-			margin: 1vh 0px 1vh 0px;
+			margin: 100px 0px 100px 0px;
 
 			&-text {
 				align-self: center;
@@ -47,10 +53,26 @@
 			}
 		}
 
-		&-scroll-link-ico-wrapper {
-			width: 37px;
-			height: 18px;
-			margin: 0 auto;
+		&-scroll-link {
+
+			&-text {
+				font-size: 17px;
+			  font-weight: 600;
+			  text-shadow: -3.1px 3.9px 12px #000000;
+				margin-bottom: 16px;
+				text-align: center;
+			}
+
+			&-wrapper {
+
+			}
+
+			&-ico-wrapper {
+				width: 37px;
+				height: 18px;
+				text-align: center;
+				display: inline-block;
+			}
 		}
 
 	}
