@@ -84,29 +84,28 @@
 			width: 73.5vw;
 			max-width: 100%;
 			min-height: calc(~"(100vw - 225px)*0.23415 - 1px");
+			height: ~"22.5vw \9";
 			z-index: 2;
 		}
 
 		&-image {
-			height: auto;
-			width: auto;
-			max-height: none;
-			max-width: none;
 
 			&-wrapper {
-				background-color: green;
-				width: auto;
+				width: 28%;
 				height: auto;
-				display: flex;
 				align-items: stretch;
 				align-self: stretch;
+				float: left;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
 			}
 
 		}
 
 		&-content {
 			padding: 3vw 2.4vw 1vw 2.4vw;
-			width: 100%;
+			width: 61%;
 
 			&-title {
 				align-items: center;
@@ -117,11 +116,12 @@
 
 			&-text {
 				width: 100%;
-
 				align-self: center;
+				flex: 1 0 auto;
 
 				&, & p, & li {
 					font-weight: 400;
+					flex: 1 0 auto;
 				}
 			}
 		}
@@ -152,6 +152,7 @@
 	&-second-section {
 		background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 		padding: 2vw 0px 2vw 0px;
+		height: ~"100vh \9";
 
 		& > div {
 			align-self: center;
@@ -423,8 +424,6 @@
 
 		&-title {
 			font-size: 45px;
-		  font-weight: 300;
-			font-family: "Lato";
 		  text-align: center;
 			margin: 4.6vw 0px 5vw 0px;
 			line-height: 1em;
