@@ -6,11 +6,13 @@
 		display: block;
 	  position: absolute;
 	  top: calc(~"100vh - 85px");
+		z-index: 10;
 	}
 
 	&-first-section {
 		justify-content: center;
 		height: 100vh;
+		z-index: 2;
 
 		&-video {
 			position: absolute;
@@ -18,24 +20,27 @@
 			bottom: 0;
 			top: 0;
 			right: 0;
-			width: 100%;
-			height: 100%;
-			min-height: 100%;
 			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
 			background-size: 100% 100%;
 			background-image: url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
 			background-position: center center;
 			background-size: cover;
 			object-fit: cover; /*cover video background */
-			z-index: 1;
+			z-index: 0;
 		}
 
 		&, &-block {
+
 			display: flex;
 		}
 
 		&-block {
+			position: relative;
 			&, &-text {
+				z-index: auto;
 				align-self: center;
 				text-align: center;
 				display: inline-block;
@@ -44,29 +49,35 @@
 
 		&-block {
 			align-items: center;
-			width: 50%;
-			z-index: 3;
+			width: 49.16vw;
 
 			&-text {
+				z-index: auto;
 				width: 100%;
 			}
 		}
 
 		&-text {
 			&, & p {
+				z-index: 2;
 				font-size: 32px;
 				font-weight: 900;
 				line-height: 1;
 				margin-bottom: 42px;
-				text-shadow: 0 0 11.5px rgba(0,0,0,.7);
+				text-shadow: 0 0 20px #000000, 0 0 20px #000000, 0 0 20px #000000;
 			}
 		}
 
 		&-scroll-link {
+
+			&-wrapper {
+				z-index: 3;
+			}
+
 			&-text {
 				font-size: 17px;
 	    	margin-bottom: 16px;
-	    	text-shadow: -3.1px 3.9px 12px #000000;
+	    	text-shadow: -3.1px 3.9px 12px #000000, -3.1px 3.9px 12px #000000;
 			}
 
 			&-ico-wrapper {
@@ -85,32 +96,32 @@
 			width: 74.5%;
 	  }
 
-	  &-header-wrapper {
-			height: 164px;
-	  }
+		&-header {
 
-	  &-header-top {
-			font-size: 22px;
-			margin-bottom: 21px;
+			&-wrapper {
+		  }
 
-	    &-line {
-	    }
+		  &-top {
+				font-size: 22px;
+				margin-bottom: 21px;
 
-	    &-title {
-				width: 810px;
-    		white-space: nowrap;
-				margin: 0px 8px 0px 8px;
-	    }
-	  }
+		    &-line {
+		    }
+
+		    &-title {
+	    		white-space: nowrap;
+					margin: 0px 8px 0px 8px;
+		    }
+		  }
+		}
+
+
 
 	  &-title {
-			font-family: Lato;
 			font-size: 47px;
-			font-weight: 700;
 			line-height: 54.6px;
 			letter-spacing: 1.4px;
 			text-align: center;
-			color: #4ddb5a;
 			margin-bottom: 12px;
 	  }
 
@@ -170,6 +181,8 @@
     align-items: center;
     justify-content: center;
 		background-image: url('/wp-content/themes/sixgill/images/home/dots_bg_desktop.png');
+		background-size: contain;
+		background-repeat: repeat;
 
 		&-wrapper {
 			max-width: 80%;
@@ -226,17 +239,17 @@
 
 		&-header-wrapper {
 			display: inline-block;
-			width: 50vw;
-			margin-bottom: 3vh;
+			width: 64vw;
+			margin-bottom: 0px;
 		}
 
 		&-title {
 			font-size: 30px;
-			margin: 90px auto 10px;
+			margin: 0px auto 10px;
 		}
 
 		&-subtitle {
-			font-size: 18px;
+			font-size: 16px;
 			margin-bottom: 2vw;
 		}
 
@@ -245,6 +258,9 @@
 		}
 
 		&-carousel {
+			width: 768px;
+			margin: 61px auto 0;
+
 			&-wrapper {
 
 			}
@@ -292,6 +308,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		padding-bottom: 146px;
 
 		&-wrapper {
 			display: flex;
@@ -304,6 +321,7 @@
 			align-items: center;
 			flex-direction: column;
 			margin-bottom: 3vw;
+			width: 51vw;
 		}
 
 		&-dash {
@@ -363,21 +381,22 @@
 				&.active,
 				&:hover {
 					& span {
-						/*background-color: #4ddb5a;*/
 						border: 3px solid #4ddb5a;
 						margin: -2px 0 0 -2px !important;
 					}
 				}
 			}
-
-			&:last-child {
-				display: none;
-			}
 		}
 	}
 }
 
-.home-fourth-section-carousel {
-	width: 768px;
-	margin: 61px auto 0;
+#fullpage-wrapper {
+	position: relative;
+}
+
+#home-fullpage-wrapper #footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 }

@@ -3,14 +3,14 @@
 .home {
 
 	&-section {
-		height: calc(~"100vh - 121px");
+		min-height: calc(~"100vh - 121px");
 	}
 
 	&-learn-more-link {
 		display: block;
-	  position: absolute;
-	  top: calc(~"100vh - 206px");
-	  width: 100%;
+		position: absolute;
+		top: calc(~"100vh - 206px");
+		width: 100%;
 	}
 
 	&-first-section {
@@ -40,13 +40,13 @@
 		}
 
 		&-text {
-			margin-bottom: 4.3vw;
+			margin-bottom: 3.23vh;
 
 			&, & p {
 				font-size: 32px;
 				font-weight: 900;
 				line-height: 1;
-				text-shadow: 0 0 11.5px rgba(0,0,0,.7);
+				text-shadow: 0 0 20px #000000, 0 0 20px #000000, 0 0 20px #000000;
 			}
 		}
 
@@ -54,7 +54,7 @@
 			&-text {
 				font-size: 17px;
 			  font-weight: 600;
-			  text-shadow: -3.1px 3.9px 12px #000000;
+			  text-shadow: -3.1px 3.9px 12px #000000, -3.1px 3.9px 12px #000000;
 				margin-bottom: 16px;
 				text-align: center;
 			}
@@ -70,9 +70,12 @@
 
 	&-second-section {
 		background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
+		height: auto;
+		min-height: inherit;
 
 	  &-wrapper {
 			width: 90.5%;
+			margin: 66px 0px 6.45vh 0px;
 	  }
 
 	  &-header-wrapper {
@@ -86,20 +89,16 @@
 	    }
 
 	    &-title {
-				width: 810px;
     		white-space: nowrap;
 				margin: 0px 8px 0px 8px;
 	    }
 	  }
 
 	  &-title {
-			font-family: Lato;
 			font-size: 47px;
-			font-weight: 700;
 			line-height: 54.6px;
 			letter-spacing: 1.4px;
 			text-align: center;
-			color: #4ddb5a;
 			margin-bottom: 12px;
 	  }
 
@@ -137,7 +136,6 @@
 			}
 
 			&-content {
-				width: calc(~"100% - 5.1vw");
 			}
 		}
 
@@ -153,25 +151,26 @@
 
 	&-third-section {
 		display: flex;
-    align-items: center;
-    justify-content: center;
+    	align-items: center;
+    	justify-content: center;
 		background-image: url('/wp-content/themes/sixgill/images/home/bg_dots_tablet.png');
 
 		&-wrapper {
 			width: 90.5%;
 			text-align: center;
+			margin: 61px 0px 5vh 0px;
 		}
 
 		&-title {
 			display: inline-block;
 			width: 77%;
 			font-size: 24px;
-			margin-bottom: 10.4vw;
+			margin-bottom: 7.82vh;
 			line-height: 1.5em;
 		}
 
 		&-image-wrapper {
-			margin-bottom: 9.8vw;
+			margin-bottom: 7.33vh;
 		}
 
 		&-image {
@@ -193,7 +192,7 @@
 			&-text {
 				font-size: 16px;
 				font-weight: bold;
-				margin-bottom: 3.2vw;
+				margin-bottom: 2.58vh;
 			}
 		}
 
@@ -211,9 +210,8 @@
 		background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
 
 		&-wrapper {
-
 			text-align: center;
-
+			margin: 95px 0px 8.6vh 0px;
 		}
 
 		&-header-wrapper {
@@ -228,7 +226,7 @@
 
 		&-subtitle {
 			font-size: 18px;
-			margin-bottom: 2vw;
+			margin-bottom: 2.68vh;
 		}
 
 		&-link {
@@ -236,6 +234,9 @@
 		}
 
 		&-carousel {
+			width: 80vw;
+			margin: 61px auto 0;
+
 			&-wrapper {
 
 			}
@@ -281,6 +282,7 @@
 	&-fifth-section {
 
 		height: auto;
+		min-height: inherit;
 
 		display: flex;
 		align-items: center;
@@ -290,14 +292,15 @@
 			display: flex;
 			align-items: center;
 			flex-direction: column;
-			margin-top: 9.3vw;
+			margin-top: 73px;
+    		width: 87.5vw
 		}
 
 		&-header-wrapper {
 			display: flex;
 			align-items: center;
 			flex-direction: column;
-			margin-bottom: 3vw;
+			margin-bottom: 2.35vh;
 		}
 
 		&-dash {
@@ -330,9 +333,4 @@
 			}
 		}
 	}
-}
-
-.home-fourth-section-carousel {
-	width: 768px;
-	margin: 61px auto 0;
 }

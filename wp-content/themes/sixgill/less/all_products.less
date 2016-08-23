@@ -1,86 +1,192 @@
 /* Products Common styles */
 
-.products-first-section-image-wrapper,
-.products-first-section-block-text {
-	display: inline-block;
-}
+.products {
+	&-section {
+		background-size: cover;
 
-.products-first-section-block {
-	background-color: rgba(77, 219, 90, 0.7);
-}
+		& ul {
+			list-style-type: none;
 
-.products-first-section-image-wrapper {
-	height: 100%;
-}
+			& li {
+				display:block;
+				padding-left: 20px;
+			}
+			& li::before {
+		        display:inline-block;
+		        width: 10px;
+		        content: "•";
+		        color:#4ddb5a;
+		        margin-right: 10px;
+		        margin-left: -20px;
+			}
+		}
+	}
 
-.products-section {
-	background-size: cover;
-}
+	&-first-section {
+		&-block {
+			background-color: rgba(77, 219, 90, 0.7);
+		}
 
-.products-first-section-block-paragraph,
-.products-first-section-block-paragraph p,
-.products-first-section-scroll-link-text,
-.products-third-section-subtitle,
-.products-fifth-section-subtitle,
-.products-first-section-block-title {
-	color: #ffffff !important;
-}
+		&-image {
+			max-height: inherit;
 
-.products-third-section-text p,
-.products-third-section-text ul li,
-.products-fifth-section-text p,
-.products-fifth-section-text ul li {
-	color: #a9d8dd !important;
-}
+			&-wrapper {
+				display: inline-block;
+				height: 100%;
+			}
 
-.products-third-section-text ul {
-	margin-bottom: 0px !important;
-}
+		}
 
-.products-third-section-text li:last-child {
-	margin-bottom: 0.5em !important;
-}
+		&-content {
 
-.products-last-section-text,
-.products-last-section-text p
-.products-last-section-text li,
-.products-last-section-col-title,
-.products-second-section-text {
-	color: #2e2e2e;
-}
+			&-title {
+				color: #ffffff !important;
+				font-weight: 300;
+				font-family: "Lato";
+			}
 
-.products-last-section-title {
-  color: #4ddb5a;
-}
+			&-text {
+				display: inline-block;
 
-.products-third-section-line,
-.products-fourth-section-line,
-.products-fifth-section-line {
-	background-color: #ffffff;
-}
+				&, & p {
+					color: #ffffff !important;
+					font-size: 16px;
+					line-height: 1.8em;
+					font-weight: 400;
+				}
+			}
+		}
 
-.products-third-section-title,
-.products-fourth-section-title,
-.products-fifth-section-title {
-	font-family: "Lato Light";
-	font-weight: 300;
-  color: #2adc3a;
-}
+		&-scroll-link {
 
-.products-first-section-scroll-link-wrapper {
-	cursor: pointer;
-	text-align: center;
-}
+			&-text {
+				color: #ffffff !important;
+			}
 
-.products-last-section-tab-logo {
-	cursor: pointer;
-}
+			&-wrapper {
+				cursor: pointer;
+				text-align: center;
+			}
+		}
+	}
 
-.products-second-section {
-	display: flex;
-  align-items: center;
-}
+	&-second-section {
+		background-size: cover;
+		background-repeat: repeat;
+		display: flex;
+	  align-items: center;
 
-.products-fourth-section-subtitle {
-	color: #0c3979;
+		&-title {
+
+		}
+
+		&-text {
+			color: #2e2e2e;
+		}
+
+	}
+
+	&-third-section {
+
+		&-title {
+			font-family: "Lato";
+			font-weight: 300;
+			color: #2adc3a;
+		}
+
+		&-subtitle {
+			color: #ffffff;
+			font-weight: 700;
+		}
+
+		&-line {
+			background-color: #ffffff;
+		}
+
+		&-text {
+
+			&, & p, & li {
+				color: #a9d8dd !important;
+			}
+
+			& li:last-child {
+				margin-bottom: 0.5em !important;
+			}
+
+			& ul {
+				margin-bottom: 0px !important;
+			}
+		}
+
+	}
+
+	&-fourth-section {
+		background-size: contain;
+		background-repeat: repeat;
+
+		&-title {
+			font-family: "Lato";
+			font-weight: 300;
+		  color: #2adc3a;
+		}
+
+		&-subtitle {
+
+		}
+
+		&-line {
+			background-color: #ffffff;
+		}
+
+	}
+
+	&-fifth-section {
+
+
+		&-title {
+			font-family: "Lato";
+			font-weight: 300;
+		  color: #2adc3a;
+		}
+
+		&-subtitle {
+			color: #ffffff;
+			font-weight: 700;
+		}
+
+		&-line {
+			background-color: #ffffff;
+		}
+
+		&-text {
+
+			&, & p, & li {
+				color: #a9d8dd !important;
+			}
+		}
+	}
+
+	&-last-section {
+
+		&-title {
+			color: #4ddb5a;
+			font-weight: 300;
+			font-family: "Lato";
+		}
+
+		&-tab-logo {
+			cursor: pointer;
+		}
+
+		&-text {
+
+			&, & p, & li {
+				color: #2e2e2e;
+			}
+		}
+
+		&-col-title {
+			color: #2e2e2e;
+		}
+	}
 }

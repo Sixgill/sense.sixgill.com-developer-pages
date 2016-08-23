@@ -23,19 +23,19 @@ jQuery(function($) {
     if(
       $(window).scrollTop()>=callbackInfo.domLink.position().top-callbackInfo.domLink.height()/2
       &&
-      $(window).scrollTop()<=callbackInfo.domLink.position().top+callbackInfo.domLink.height()
+      $(window).scrollTop()<=callbackInfo.domLink.position().top+callbackInfo.domLink.height()-$(window).height()*0.1
     ){
       if(!callbackInfo.isScrolledTo) {
         callbackInfo.scrollInCallback();
         callbackInfo.isScrolledTo = true;
-        
+
 
       }
     } else {
       if(callbackInfo.isScrolledTo) {
         callbackInfo.scrollOutCallback();
         callbackInfo.isScrolledTo = false;
-        
+
       }
     }
   }

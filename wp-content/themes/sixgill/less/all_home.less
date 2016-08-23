@@ -59,32 +59,39 @@
 			display: inline-block;
 	  }
 
-	  &-header-wrapper {
-			border-bottom: 1px solid #738aab;
-			margin-bottom: 4.5vw;
-	  }
-
-	  &-header-top {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-
-	    &-line {
-				display: inline-block;
-				height: 1px;
-				background-color: #91a4c0;
-				transform: translateY(0.5em);
+		&-header {
+			&-wrapper {
+				border-bottom: 1px solid #738aab;
+				margin-bottom: 4.5vw;
+				flex-flow: row wrap;
 				width: 100%;
-	    }
+		  }
 
-	    &-title {
-				font-family: "Lato";
-				font-weight: 700;
-				text-align: center;
-				color: #ffffff;
-				line-height: 1em;
-	    }
-	  }
+		  &-top {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				width: 100%;
+
+		    &-line {
+					display: inline-block;
+					height: 0px;
+					border-top: 1px solid #91a4c0;
+					transform: translateY(0.5em);
+					flex-grow: 1;
+		    }
+
+		    &-title {
+					font-family: "Lato";
+					font-weight: 700;
+					text-align: center;
+					color: #ffffff;
+					line-height: 1em;
+		    }
+		  }
+		}
+
+
 
 	  &-title {
 			font-family: "Lato";
@@ -112,10 +119,14 @@
 
 			&-title {
 				color: #ffffff;
+				font-size: 16px;
+				font-weight: 700;
 			}
 
 			&-content {
-				color: #a9d8dd;
+				&, & p, & li {
+					color: #a9d8dd !important;
+				}
 			}
 		}
 
@@ -141,6 +152,13 @@
 			text-align: center;
 			color: #0c3979;
 			line-height: 1em;
+		}
+		&-title-tm {
+			font-family: "Lato";
+			font-weight: 700;
+			font-size: 55%;
+			text-align: center;
+			color: #0c3979;
 		}
 
 		&-image-wrapper {
@@ -204,44 +222,126 @@
 		}
 
 		&-carousel {
+			background-color: transparent !important;
+			border: none !important;
+
 			&-wrapper {
 
 			}
 
 			&-slide {
+				min-height: 390px;
 
+				&:hover .home-fourth-section-carousel-image-wrapper{
+					height: 0;
+				}
 			}
 
 			&-image-wrapper {
-
+				height: 288px;
+				width: 240px;
+				overflow: hidden;
+				margin: 0 auto;
+				transition: height .4s ease-in-out;
 			}
 
 			&-text {
 				&-wrapper {
-
+					background-color: #f8f8f8;
+			    height: 102px;
+			    text-align: left;
+			    margin: 0 auto;
+			    width: 240px;
 				}
 
 				&-caption {
+					color: #0c3979;
+			    font-family: "Lato";
+			    font-size: 20.3px;
+			    font-weight: 400;
+			    letter-spacing: 1.2px;
+			    line-height: 1.2;
+			    text-align: left;
+			    vertical-align: middle;
+			    display: inline-block;
+			    padding: 0 22px;
 
 					&-wrapper {
-
+						line-height: 102px;
+						display: inline-block;
 					}
 				}
 
 				&-content {
+					display: inline-block;
+					margin-bottom: 10px;
+					max-height: 15.5em;
+					overflow: hidden;
+
+					& p {
+						font-family: "Lato";
+						font-size: 16.2px;
+						font-weight: 400;
+						line-height: 1.33 !important;
+						letter-spacing: 1px;
+						color: #2e2e2e;
+						text-align: left;
+						margin: 0px;
+						padding: 0 22px;
+					}
 
 					&-wrapper {
-
+						height: 288px;
+						background-color: #f8f8f8;
+						overflow: hidden;
 					}
 
 					&-line {
-
+						width: 42.5px;
+						height: 1px;
+						background-color: #0c3979;
+						padding: 0;
+						margin:0 0 20px 23px;
 					}
 				}
 			}
 
 			&-link-more {
+				font-family: "Lato";
+				font-size: 16.2px;
+				font-weight: 700;
+				line-height: 1.33;
+				letter-spacing: 1px;
+				color: #0051c6;
+				margin: 0 22px;
+			}
 
+			& .owl-buttons {
+				color:white;
+				width: 16px;
+				display: inline-block;
+				font-size: 60px;
+				line-height: 30px;
+
+				& .owl-prev {
+					position: absolute;
+					left: -42px;
+					top:50%;
+					background-image: url('/wp-content/themes/sixgill/images/4-Home/carousel_left.svg');
+					background-repeat: no-repeat;
+					width: 16px;
+					height: 30.5px;
+				}
+
+				& .owl-next {
+					position: absolute;
+					right: -42px;
+					top:50%;
+					background-image: url('/wp-content/themes/sixgill/images/4-Home/carousel_right.svg');
+					background-repeat: no-repeat;
+					width: 16px;
+					height: 30.5px;
+				}
 			}
 		}
 	}
@@ -288,124 +388,4 @@
 		}
 	}
 
-}
-
-.home-fourth-section-carousel {
-	background-color: transparent !important;
-	border: none !important;
-
-}
-
-.home-fourth-section-carousel .owl-buttons{
-	color:white;
-	width: 16px;
-	display: inline-block;
-	font-size: 60px;
-	line-height: 30px;
-}
-
-.home-fourth-section-carousel .owl-buttons .owl-prev{
-	position: absolute;
-	left: -42px;
-	top:50%;
-	background-image: url('/wp-content/themes/sixgill/images/4-Home/carousel_left.svg');
-	background-repeat: no-repeat;
-	width: 16px;
-	height: 30.5px;
-}
-
-.home-fourth-section-carousel .owl-buttons .owl-next{
-	position: absolute;
-	right: -42px;
-	top:50%;
-	background-image: url('/wp-content/themes/sixgill/images/4-Home/carousel_right.svg');
-	background-repeat: no-repeat;
-	width: 16px;
-	height: 30.5px;
-}
-
-.home-fourth-section-carousel-slide {
-	min-height: 390px;
-}
-
-
-.home-fourth-section-carousel-image-wrapper {
-	height: 288px;
-	width: 240px;
-	overflow: hidden;
-	margin: 0 auto;
-	transition: height .4s ease-in-out;
-}
-
-.home-fourth-section-carousel-text-wrapper {
-    background-color: #f8f8f8;
-    height: 102px;
-    text-align: left;
-    margin: 0 auto;
-    width: 240px;
-}
-
-.home-fourth-section-carousel-text-caption-wrapper{
-	line-height: 102px;
-	display: inline-block;
-}
-
-.home-fourth-section-carousel-text-caption {
-   	color: #0c3979;
-    font-family: "Lato";
-    font-size: 20.3px;
-    font-weight: 400;
-    letter-spacing: 1.2px;
-    line-height: 1.2;
-    text-align: left;
-    vertical-align: middle;
-    display: inline-block;
-    padding: 0 22px;
-}
-
-.home-fourth-section-carousel-text-content-wrapper {
-	height: 288px;
-	background-color: #f8f8f8;
-	overflow: hidden;
-}
-
-.home-fourth-section-carousel-text-content-line {
-	width: 42.5px;
-	height: 1px;
-	background-color: #0c3979;
-	padding: 0;
-	margin:0 0 20px 23px;
-}
-
-.home-fourth-section-carousel-text-content {
-	display: inline-block;
-	margin-bottom: 10px;
-	max-height: 15.5em;
-	overflow: hidden;
-}
-
-.home-fourth-section-carousel-text-content p {
-	font-family: "Lato";
-	font-size: 16.2px;
-	font-weight: 400;
-	line-height: 1.33 !important;
-	letter-spacing: 1px;
-	color: #2e2e2e;
-	text-align: left;
-	margin: 0px;
-	padding: 0 22px;
-}
-
-.home-fourth-section-carousel-link-more {
-	font-family: Lato;
-	font-size: 16.2px;
-	font-weight: 700;
-	line-height: 1.33;
-	letter-spacing: 1px;
-	color: #0051c6;
-	margin: 0 22px;
-}
-
-.home-fourth-section-carousel-slide:hover .home-fourth-section-carousel-image-wrapper{
-	height: 0;
 }

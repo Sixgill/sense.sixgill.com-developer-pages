@@ -69,15 +69,15 @@
 		$args = array(
 			'name'        => $slug,
 			'post_type'   => 'page',
-			'post_status' => 'publish',
-			'numberposts' => 1
+			'post_status' => 'publish'
 		);
 
 		$result = new WP_Query($args);
 
 		$lookup = array(
-			'post_parent' => $result->post->ID,
-			'post_status' => 'any'
+			'post_parent'            => $result->post->ID,
+			'post_type'              => array( 'page' ),
+			'post_status'            => array( 'publish' ),
 		);
 
 		$childpages = get_children($lookup);
@@ -281,9 +281,11 @@
 		$subpages = getChindrenByParentSlug("solutions");
 		$result = array(0, 0, $subpages, $currentSubpageId);
 		$currentSubpageFound = false;
+		$prevPageID = 0;
 		foreach($subpages as $subpage) {
 			if($currentSubpageId != $subpage->ID) {
 				if($result[0]==0 || !$currentSubpageFound) {
+					$prevPageID = $result[0];
 					$result[0] = $subpage->ID;
 				} else {
 					$result[1] = $subpage->ID;
@@ -291,6 +293,9 @@
 				}
 			} else {
 				$currentSubpageFound = true;
+				if($result[1]==0 && count($subpages)>2) {
+					$result[1] = $prevPageID;
+				}
 			}
 		}
 

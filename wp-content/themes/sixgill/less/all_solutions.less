@@ -5,6 +5,7 @@
 	position: absolute;
 	top: calc(100vh - 85px);
 	width: 100%;
+	z-index: 10;
 }
 
 .solution-first-section-scroll-link-wrapper{
@@ -50,6 +51,15 @@
 }
 
 /*--------------------------------------------------*/
+.solution-second-section,
+.solution-third-section,
+.solution-fourth-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+
 
 .solution-second-section {
 	background-image: url('/wp-content/themes/sixgill/images/solutions/bgPattern@1x.png');
@@ -61,19 +71,8 @@
 	background-size: inherit;
 }
 
-.solution-second-section-block {
-	padding-top:70px;
-
-}
-
-.solution-second-section-block-title,
-.solution-second-section-icons-title {
-	margin:0 0 0.35em 0;
-	padding: 0;
-}
-
 .solution-second-section-block-title {
-	font-family: "Lato Light";
+	font-family: "Lato";
 	font-size: 43.9px;
 	font-weight: 300;
 	line-height: 1;
@@ -82,7 +81,7 @@
 }
 
 .solution-second-section-icons-title {
-	font-family: "Lato Light";
+	font-family: "Lato";
 	font-size: 15.9px;
 	font-weight: 700;
 	line-height: 2.83;
@@ -153,7 +152,7 @@
 	margin-top: 16px;
 }
 
-.solution-second-section-icon-link a {	
+.solution-second-section-icon-link a {
 	font-family: 'Lato';
 	font-size: 16px;
 	font-weight: 700;
@@ -168,7 +167,6 @@
 
 .solution-third-section {
 	background-image: url('/wp-content/themes/sixgill/images/solutions/assetsBg-desktop@1x.png');
-	height: 769px;
 }
 
 .solution-third-section-image-wrapper {
@@ -189,7 +187,7 @@
 .solution-third-section-block-title {
 	margin:0;
 	padding: 0;
-	font-family: "Lato Light";
+	font-family: "Lato";
 	font-size: 43.9px;
 	font-weight: 300;
 	line-height: 1;
@@ -240,7 +238,7 @@
 }
 
 .solution-subpage-title {
-	font-family: 'Lato light';
+	font-family: 'Lato';
 	font-size: 59.7px;
 	font-weight: 300;
 	color: #f9f8f8;
@@ -277,7 +275,7 @@
 }
 
 .solution-subpage-bottom-section-column ul li {
-	font-family: Lato;
+	font-family: "Lato";
 	font-weight: normal;
 	line-height: 1.25;
 	letter-spacing: 0.5px;
@@ -326,7 +324,7 @@
 }
 
 .solution-subpage-bottom-section-subtitle {
-	font-family: Lato;
+	font-family: "Lato";
 	font-size: 16.2px;
 	font-weight: lighter;
 	line-height: 1.25;
@@ -342,7 +340,7 @@
 	line-height: 0.45;
 	letter-spacing: 1.3px;
 	color: #4ddb5a;
-	font-family: 'Lato light';
+	font-family: 'Lato';
 }
 
 .solution-subpage-bottom-link-col {
@@ -457,7 +455,7 @@
 .solution-subpage-gallery-button {
 	vertical-align: top;
 	display: inline-block;
-	font-family: Lato;
+	font-family: "Lato";
 	font-weight: bold;
 	color: #ffffff;
 }
@@ -550,7 +548,7 @@
 	font-weight: 300;
 	letter-spacing: 1.3px;
 	color: #0051c6;
-	font-family: 'Lato light';
+	font-family: 'Lato';
 	line-height: 1.2em;
 }
 
