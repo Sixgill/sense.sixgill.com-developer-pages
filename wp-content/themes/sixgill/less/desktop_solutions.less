@@ -4,7 +4,8 @@
 	&-learn-more-link {
 		display: block;
 		position: absolute;
-		top: calc(~"100vh - 85px");
+		bottom: 38px;
+		left: 0px;
 		width: 100%;
 	}
 
@@ -21,6 +22,7 @@
 		display: flex;
 		justify-content: flex-end;
 		min-height: 33.3vw !important;
+		position: relative;
 
 		&-block {
 			display: flex;
@@ -36,7 +38,6 @@
 				font-size: 61px;
 				line-height: 1em;
 				margin-bottom: 2vw;
-				color: #ffffff;
 			}
 
 			&-text {
@@ -63,10 +64,26 @@
 			}
 		}
 
-		&-scroll-link-ico-wrapper {
-			width: 37px;
-			height: 18px;
-			text-align: center;
+		&-scroll-link {
+
+			&-text {
+				font-size: 17px;
+			  font-weight: 600;
+			  text-shadow: -3.1px 3.9px 12px #000000;
+				margin-bottom: 16px;
+				text-align: center;
+			}
+
+			&-wrapper {
+
+			}
+
+			&-ico-wrapper {
+				width: 37px;
+				height: 18px;
+				text-align: center;
+				display: inline-block;
+			}
 		}
 	}
 

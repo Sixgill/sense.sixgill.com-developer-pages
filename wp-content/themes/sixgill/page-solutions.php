@@ -6,12 +6,12 @@
 	<!-- first section -->
 
 	<!--link more -->
-	<a href="#people"	class="scroll-section solutions-learn-more-link no-tablet-display">
+<!-- 	<a href="#people"	class="scroll-section solutions-learn-more-link no-tablet-display">
 		<div class="solutions-first-section-scroll-link-wrapper">
 			<div class="solutions-first-section-scroll-link-ico-wrapper">
 				<img
 					class="solutions-first-section-scroll-link-ico responsive-image"
-					desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					desktop-src="<?php// echo get_template_directory_uri();?>/images/icon_down.png"
 				/>
 			</div>
 		</div>
@@ -21,12 +21,12 @@
 			<div class="solutions-first-section-scroll-link-ico-wrapper">
 				<img
 					class="solutions-first-section-scroll-link-ico responsive-image"
-					tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					tablet-src="<?php// echo get_template_directory_uri();?>/images/icon_down.png"
 				/>
 			</div>
 		</div>
-	</a>
-
+	</a> -->
+	<!--link more end-->
 	<a name="solutions-first-section"></a>
 	<div id="solutions-first-section" class="solutions-section solutions-first-section">
 		<div class="solutions-first-section-block">
@@ -50,13 +50,45 @@
 			<div class="solutions-first-section-image-wrapper-mobile">
 				<img
 					class="solutions-first-section-image"
-					src="<?php echo get_field('first_section_image_mobile'); ?>"
+					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
 				>
 			</div>
 		</div>
-
+		<!--link more link -->
+		<a
+			href="#people"
+			class="scroll-section solutions-learn-more-link display-only-desktop"
+		>
+			<div class="solutions-first-section-scroll-link-wrapper">
+				<div class="solutions-first-section-scroll-link-text">
+					Learn More
+				</div>
+				<div class="solutions-first-section-scroll-link-ico-wrapper">
+					<img
+						class="solutions-first-section-scroll-link-ico responsive-image"
+						desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+						tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					/>
+				</div>
+			</div>
+		</a>
+		<a
+			href="#people-tablet-link"
+			class="scroll-section solutions-learn-more-link display-only-tablet"
+		>
+			<div class="solutions-first-section-scroll-link-wrapper">
+				<div class="solutions-first-section-scroll-link-ico-wrapper">
+					<img
+						class="solutions-first-section-scroll-link-ico responsive-image"
+						desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+						tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					/>
+				</div>
+			</div>
+		</a>
+		<!--link more link end-->
 	</div>
-	<div id="solutions-second-section-tablet"></div>  <!-- navigation div for tablet version-->
+	<div id="people-tablet-link"></div>  <!-- navigation div for tablet version-->
 	<a name="people"></a>
 	<div id="people" class="solutions-section solutions-second-section">
 		<div class="solutions-second-section-block">

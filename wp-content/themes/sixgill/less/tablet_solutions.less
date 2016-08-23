@@ -11,10 +11,19 @@
 	  width: 100%;
 	}
 
+	&-learn-more-link {
+		display: block;
+		position: absolute;
+		bottom: 21px;
+		left: 0px;
+		width: 100%;
+	}
+
 	&-first-section {
 		display: flex;
 		justify-content: center;
 		background-image: url("images/solutions/featBg-tablet@1x.png");
+		position: relative;
 
 		&-block {
 			display: flex;
@@ -52,22 +61,22 @@
 			}
 		}
 
-		.solution-first-section-scroll-link-ico-wrapper{
-			display: inline-block;
-		}
+		&-scroll-link {
 
-		.solution-first-section-scroll-link-text {
-			font-size: 17px;
-			font-weight: 600;
-			text-shadow: -3.1px 3.9px 12px #000000;
-			margin-bottom: 16px;
-			text-align: center;
-		}
+			&-text {
+				font-size: 17px;
+				font-weight: 600;
+				text-shadow: -3.1px 3.9px 12px #000000;
+				margin-bottom: 16px;
+				text-align: center;
+			}
 
-		.solution-first-section-scroll-link-ico-wrapper {
-			width: 37px;
-			height: 18px;
-			text-align: center;
+			&-ico-wrapper {
+				width: 37px;
+				height: 18px;
+				text-align: center;
+				display: inline-block;
+			}
 		}
 
 		.solution-first-section-image-wrapper-mobile {
@@ -103,10 +112,10 @@
 		}
 
 		&-text-block {
-		    margin-top: 8.5em;
-		    padding-top: 1em;
-		    position: relative;
-		    text-align: center;
+			margin-top: 8.5em;
+			padding-top: 1em;
+			position: relative;
+			text-align: center;
 		}
 
 		&-image-wrapper {
@@ -115,10 +124,10 @@
 		}
 
 		&-block-text {
-		    padding-left: 3vw;
-		    text-align: left;
-		    width: 51vw;
-		    display: inline-block;
+			padding-left: 3vw;
+			text-align: left;
+			width: 51vw;
+			display: inline-block;
 		}
 
 		&-block-title {
@@ -155,14 +164,6 @@
 			padding: 5vw;
 		}
 
-		&-icons-title::after, &-icons-title::before {
-			width: 25vw;
-		}
-
-		#solution-second-section-tablet {
-			position: relative;
-			bottom: 100px;
-		}
 	}
 
 	&-third-section {
@@ -174,6 +175,11 @@
 		min-height: 100vh;
 		height: inherit;
 	}
+}
+
+#people-tablet-link {
+	position: relative;
+	bottom: 100px;
 }
 
 .solution {

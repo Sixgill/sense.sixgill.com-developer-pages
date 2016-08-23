@@ -12642,29 +12642,23 @@ input {
 }
 
 /* Solutions Common styles */
-.solutions-learn-more-link {
-  display: block;
-  position: absolute;
-  bottom: 35px;
-  left: 0px;
-  width: 100%;
-}
 .solutions-section {
   background-size: cover;
 }
-.solutions-first-section-scoll-link-wrapper {
+.solutions-first-section-scroll-link-text {
+  color: #ffffff !important;
+}
+.solutions-first-section-scroll-link-wrapper {
   cursor: pointer;
   text-align: center;
-}
-.solutions-first-section-scoll-link-ico-wrapper {
-  height: 18px;
-  text-align: center;
-  width: 37px;
-  display: inline-block;
 }
 .solutions-first-section-block {
   z-index: 2;
   background-color: rgba(77, 219, 90, 0.7);
+}
+.solutions-first-section-block-title {
+  color: #ffffff;
+  font-family: "Lato";
 }
 .solutions-first-section-block-text {
   display: inline-block;
@@ -14432,7 +14426,8 @@ body.modal-open {
 .solutions-learn-more-link {
   display: block;
   position: absolute;
-  top: calc(100vh - 85px);
+  bottom: 38px;
+  left: 0px;
   width: 100%;
 }
 .solutions-section {
@@ -14451,6 +14446,7 @@ body.modal-open {
       -ms-flex-pack: end;
           justify-content: flex-end;
   min-height: 33.3vw !important;
+  position: relative;
 }
 .solutions-first-section-block {
   display: -webkit-flex;
@@ -14475,7 +14471,6 @@ body.modal-open {
   font-size: 61px;
   line-height: 1em;
   margin-bottom: 2vw;
-  color: #ffffff;
 }
 .solutions-first-section-block-text {
   width: 71%;
@@ -14495,10 +14490,18 @@ body.modal-open {
 .solutions-first-section-image-image-wrapper-mobile {
   display: none;
 }
+.solutions-first-section-scroll-link-text {
+  font-size: 17px;
+  font-weight: 600;
+  text-shadow: -3.1px 3.9px 12px #000000;
+  margin-bottom: 16px;
+  text-align: center;
+}
 .solutions-first-section-scroll-link-ico-wrapper {
   width: 37px;
   height: 18px;
   text-align: center;
+  display: inline-block;
 }
 .solutions-second-section-text-block {
   text-align: center;
@@ -16231,6 +16234,13 @@ body.modal-open {
   top: calc(100vh - 175px);
   width: 100%;
 }
+.solutions-learn-more-link {
+  display: block;
+  position: absolute;
+  bottom: 21px;
+  left: 0px;
+  width: 100%;
+}
 .solutions-first-section {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16239,6 +16249,7 @@ body.modal-open {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url("images/solutions/featBg-tablet@1x.png");
+  position: relative;
 }
 .solutions-first-section-block {
   display: -webkit-flex;
@@ -16276,20 +16287,18 @@ body.modal-open {
 .solutions-first-section-block .solution-first-section-block-paragraph {
   font-weight: 400;
 }
-.solutions-first-section .solution-first-section-scroll-link-ico-wrapper {
-  display: inline-block;
-}
-.solutions-first-section .solution-first-section-scroll-link-text {
+.solutions-first-section-scroll-link-text {
   font-size: 17px;
   font-weight: 600;
   text-shadow: -3.1px 3.9px 12px #000000;
   margin-bottom: 16px;
   text-align: center;
 }
-.solutions-first-section .solution-first-section-scroll-link-ico-wrapper {
+.solutions-first-section-scroll-link-ico-wrapper {
   width: 37px;
   height: 18px;
   text-align: center;
+  display: inline-block;
 }
 .solutions-first-section .solution-first-section-image-wrapper-mobile {
   display: none;
@@ -16357,14 +16366,6 @@ body.modal-open {
 .solutions-second-section-icon-item {
   padding: 5vw;
 }
-.solutions-second-section-icons-title::after,
-.solutions-second-section-icons-title::before {
-  width: 25vw;
-}
-.solutions-second-section #solution-second-section-tablet {
-  position: relative;
-  bottom: 100px;
-}
 .solutions-third-section {
   min-height: 100vh;
   height: inherit;
@@ -16372,6 +16373,10 @@ body.modal-open {
 .solutions-fourth-section {
   min-height: 100vh;
   height: inherit;
+}
+#people-tablet-link {
+  position: relative;
+  bottom: 100px;
 }
 .solution-subpage-title {
   font-size: 40px;
@@ -18793,7 +18798,7 @@ ul:not([class]) li {
 }
 
 /* Solutions mobile portrait and landscape styles */
-.solutions .solution-learn-more-link {
+.solutions-learn-more-link {
   display: none;
 }
 .solutions-top-title-spacing {
@@ -18915,6 +18920,7 @@ ul:not([class]) li {
 .solutions-fourth-section {
   display: block;
   height: inherit;
+  margin-bottom: -30px;
 }
 .solution-subgape-carousels-div {
   width: 72.73vw;
