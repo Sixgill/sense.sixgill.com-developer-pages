@@ -1,23 +1,5 @@
  <?php get_header(); ?>
 
-<a
-	href="#what"
-	class="home-learn-more-link"
->
-	<div class="home-first-section-scroll-link-wrapper">
-		<div class="home-first-section-scroll-link-text">
-			What's Sixgill?
-		</div>
-		<div class="home-first-section-scroll-link-ico-wrapper">
-			<img
-				class="home-first-section-scroll-link-ico responsive-image"
-				desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-				tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-			/>
-		</div>
-	</div>
-</a>
-
 <div id="home-fullpage-wrapper" class="full-width">
 	<div id="home-first-section" data-anchor="video" class="home-section home-first-section">
 		<video autoplay loop muted id="home-video" class="home-first-section-video display-only-desktop">
@@ -41,6 +23,24 @@
 				</button>
 			</div>
 		</div>
+
+		<a
+			href="#what"
+			class="home-learn-more-link"
+		>
+			<div class="home-first-section-scroll-link-wrapper">
+				<div class="home-first-section-scroll-link-text">
+					What's Sixgill?
+				</div>
+				<div class="home-first-section-scroll-link-ico-wrapper">
+					<img
+						class="home-first-section-scroll-link-ico responsive-image"
+						desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+						tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					/>
+				</div>
+			</div>
+		</a>
 	</div>
 
 	<div id="home-second-section" data-anchor="what" class="home-section home-second-section">

@@ -14155,15 +14155,20 @@ body.modal-open {
 .home-learn-more-link {
   display: block;
   position: absolute;
-  top: calc(100vh - 85px);
-  z-index: 10;
+  bottom: 38px;
+  left: 0px;
+  width: 100%;
+}
+.home-section {
+  min-height: 100vh !important;
+  height: auto !important;
 }
 .home-first-section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
   z-index: 2;
+  position: relative;
 }
 .home-first-section-video {
   position: absolute;
@@ -14238,6 +14243,7 @@ body.modal-open {
 }
 .home-second-section-wrapper {
   width: 74.5%;
+  margin: 2vw 0px 2vw 0px;
 }
 .home-second-section-header-wrapper {
   height: 164px;
@@ -14317,6 +14323,7 @@ body.modal-open {
 .home-third-section-wrapper {
   max-width: 80%;
   text-align: center;
+  margin: 2vw 0px 2vw 0px;
 }
 .home-third-section-title {
   display: inline-block;
@@ -14354,6 +14361,7 @@ body.modal-open {
 }
 .home-fourth-section-wrapper {
   text-align: center;
+  margin: 2vw 0px 2vw 0px;
 }
 .home-fourth-section-header-wrapper {
   display: inline-block;
@@ -14397,6 +14405,7 @@ body.modal-open {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 2vw 0px 2vw 0px;
 }
 .home-fifth-section-header-wrapper {
   display: -webkit-flex;
@@ -14412,7 +14421,7 @@ body.modal-open {
   width: 51vw;
 }
 .home-fifth-section-dash {
-  margin-bottom: 4vh;
+  margin: 1vh 0px 4vh 0px;
 }
 .home-fifth-section-title {
   font-size: 24px;
@@ -15937,7 +15946,8 @@ body.modal-open {
 .home-learn-more-link {
   display: block;
   position: absolute;
-  top: calc(100vh - 206px);
+  bottom: 38px;
+  left: 0px;
   width: 100%;
 }
 .home-first-section {
@@ -15945,6 +15955,9 @@ body.modal-open {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
+  min-height: 522px !important;
+  height: auto !important;
+  position: relative;
 }
 .home-first-section,
 .home-first-section-block {
@@ -15965,7 +15978,7 @@ body.modal-open {
       -ms-flex-align: center;
               -ms-grid-row-align: center;
           align-items: center;
-  width: 76.3%;
+  width: 100%;
   z-index: 3;
 }
 .home-first-section-block-text {
