@@ -12278,6 +12278,21 @@ input {
 .company-section {
   background-size: cover;
 }
+.company-section ul:not([class]) {
+  list-style-type: none;
+}
+.company-section ul:not([class]) li {
+  display: block;
+  padding-left: 20px;
+}
+.company-section ul:not([class]) li::before {
+  display: inline-block;
+  width: 10px;
+  content: "•";
+  color: #4ddb5a;
+  margin-right: 10px;
+  margin-left: -20px;
+}
 .company-learn-more-link {
   display: block;
   position: absolute;
@@ -12475,21 +12490,6 @@ input {
   font-weight: 700;
   color: #5cc468;
 }
-.company-third-section-row-item ul {
-  list-style-type: none;
-}
-.company-third-section-row-item ul li {
-  display: block;
-  padding-left: 20px;
-}
-.company-third-section-row-item ul li::before {
-  display: inline-block;
-  width: 10px;
-  content: "•";
-  color: #4ddb5a;
-  margin-right: 10px;
-  margin-left: -20px;
-}
 .company-third-section-bio ul li {
   font-family: "Lato";
   font-weight: 500;
@@ -12523,6 +12523,21 @@ input {
   width: 100%;
   overflow: hidden;
   background-size: cover;
+}
+.home-section ul:not([class]) {
+  list-style-type: none;
+}
+.home-section ul:not([class]) li {
+  display: block;
+  padding-left: 20px;
+}
+.home-section ul:not([class]) li::before {
+  display: inline-block;
+  width: 10px;
+  content: "•";
+  color: #4ddb5a;
+  margin-right: 10px;
+  margin-left: -20px;
 }
 .home-first-section-scroll-link-wrapper {
   cursor: pointer;
@@ -12819,6 +12834,38 @@ input {
 /*-----------------------------------------------------*/
 .solution-section {
   background-size: cover;
+}
+.solution-section ul:not([class]) {
+  list-style-type: none;
+  background-color: blue;
+}
+.solution-section ul:not([class]) li {
+  background-color: red;
+  display: block;
+  padding-left: 20px;
+}
+.solution-section ul:not([class]) li::before {
+  display: inline-block;
+  width: 10px;
+  content: "•";
+  color: #4ddb5a;
+  margin-right: 10px;
+  margin-left: -20px;
+}
+section ul:not([class]) {
+  list-style-type: none;
+}
+section ul:not([class]) li {
+  display: block;
+  padding-left: 20px;
+}
+section ul:not([class]) li::before {
+  display: inline-block;
+  width: 10px;
+  content: "•";
+  color: #4ddb5a;
+  margin-right: 10px;
+  margin-left: -20px;
 }
 .solution-first-section-block {
   z-index: 2;
@@ -13396,6 +13443,21 @@ ol {
 /* Tech Common styles */
 .tech-section {
   background-size: cover;
+}
+.tech-section ul:not([class]) {
+  list-style-type: none;
+}
+.tech-section ul:not([class]) li {
+  display: block;
+  padding-left: 20px;
+}
+.tech-section ul:not([class]) li::before {
+  display: inline-block;
+  width: 10px;
+  content: "•";
+  color: #4ddb5a;
+  margin-right: 10px;
+  margin-left: -20px;
 }
 .tech-first-section {
   position: relative;
