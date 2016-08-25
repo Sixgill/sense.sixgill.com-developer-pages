@@ -13846,10 +13846,12 @@ body.modal-open {
 #primary-menu {
   opacity: 1 !important;
   position: relative;
-  margin: 0px 0px 0px 47px;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 46px;
 }
 #primary-menu li {
   display: inline-block;
@@ -13924,7 +13926,7 @@ body.modal-open {
   width: 0px;
 }
 #header-wrap {
-  min-height: 570px;
+  min-height: 600px;
 }
 .desktop-menu-wrapper {
   display: inline-block;
@@ -13941,13 +13943,13 @@ body.modal-open {
   position: absolute;
 }
 .menu-container {
-  padding: 150px 0px 150px 0px;
+  padding: 170px 0px 150px 0px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
