@@ -59,7 +59,7 @@ h6 {
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', 'Raleway', sans-serif;
 }
 
 h5,
@@ -290,11 +290,9 @@ span.middot {
 
 .nolineheight { line-height: 0 !important; }
 
-.font-body { font-family: 'Lato', sans-serif; }
-
-.font-primary { font-family: 'Raleway', sans-serif; }
-
-.font-secondary { font-family: 'Crete Round', serif; }
+.font-body {
+	font-family: 'Lato', sans-serif;
+}
 
 .bgicon {
 	display: block;
@@ -1972,7 +1970,7 @@ ul.tab-nav-lg li {
 ul.tab-nav-lg li a {
 	display: inline-block;
 	color: #444;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', 'Raleway', sans-serif;
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -2489,7 +2487,7 @@ label {
 	display: inline-block;
 	font-size: 13px;
 	font-weight: 700;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', 'Raleway', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #555;
