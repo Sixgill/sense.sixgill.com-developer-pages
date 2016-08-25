@@ -16014,6 +16014,9 @@ body.modal-open {
   margin-right: 5vw;
   margin-top: 46px;
 }
+.company-third-section-row-item:last-of-type {
+  margin-bottom: 6vw;
+}
 .company-third-section-row-item:first-of-type {
   margin-top: 0px;
 }
