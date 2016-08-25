@@ -23,6 +23,45 @@
 
 .solution-section {
 	background-size: cover;
+	& ul:not([class]) {
+		list-style-type: none;
+		background-color: blue;
+		& li {
+			background-color: red;
+			display:block;
+			padding-left: 20px;
+
+			&::before {
+		        display:inline-block;
+		        width: 10px;
+		        content: "•";
+		        color:#4ddb5a;
+		        margin-right: 10px;
+		        margin-left: -20px;
+			}
+		}
+
+	}
+}
+
+section {
+	& ul:not([class]) {
+		list-style-type: none;
+		& li {
+			display:block;
+			padding-left: 20px;
+
+			&::before {
+		        display:inline-block;
+		        width: 10px;
+		        content: "•";
+		        color:#4ddb5a;
+		        margin-right: 10px;
+		        margin-left: -20px;
+			}
+		}
+
+	}
 }
 
 .solution-first-section-block {
