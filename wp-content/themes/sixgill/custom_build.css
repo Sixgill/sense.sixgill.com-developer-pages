@@ -12430,11 +12430,15 @@ input {
 }
 .company-second-section .learn-more-expand-icon {
   text-decoration: none!important;
-  color: #0051c6;
 }
 .company-second-section .learn-more-close-icon {
-  color: #0051c6;
   text-decoration: none!important;
+}
+.company-second-section .learn-more-icon-image {
+  width: 14px;
+  max-width: none;
+  max-height: none;
+  margin-left: 3px;
 }
 .company-second-section-title {
   font-family: "Lato";
@@ -12800,13 +12804,6 @@ input {
 }
 
 /* Solutions Common styles */
-.solution-learn-more-link {
-  display: block;
-  position: absolute;
-  top: calc(15vh);
-  width: 100%;
-  z-index: 10;
-}
 .solution-first-section-scroll-link-wrapper {
   cursor: pointer;
 }
@@ -14520,7 +14517,8 @@ body.modal-open {
 .solution-learn-more-link {
   display: block;
   position: absolute;
-  top: calc(100vh - 85px);
+  bottom: 38px;
+  left: 0px;
   width: 100%;
 }
 .solution-first-section-scroll-link-ico-wrapper {
@@ -14531,6 +14529,7 @@ body.modal-open {
 /*---------First-section--------------------*/
 .solution-first-section {
   height: 100vh;
+  position: relative;
 }
 .solution-first-section {
   background-image: url("images/solutions/featBg-desktop@1x.png");
@@ -14561,6 +14560,7 @@ body.modal-open {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
+  margin: 100px 0px 100px 0px;
 }
 .solution-first-section-block-text {
   width: 71%;
@@ -16285,7 +16285,8 @@ body.modal-open {
 .solution-learn-more-link {
   display: block;
   position: absolute;
-  top: calc(100vh - 175px);
+  bottom: 21px;
+  left: 0px;
   width: 100%;
 }
 .solution-first-section-scroll-link-ico-wrapper {
@@ -16319,13 +16320,14 @@ body.modal-open {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
-  margin: 6vh 0px 6vh 0px;
+  margin: 65px 0px 65px 0px;
 }
 .solution-first-section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url("images/solutions/featBg-tablet@1x.png");
+  position: relative;
 }
 .solution-first-section-block {
   width: 95.5%;
