@@ -14,7 +14,7 @@
 	</div>
 </section>
 
-<section id="content" class="font-size-0">
+<section id="content">
 
 	<div class="solution-subpage-first-block">
 		<div class="first-left-container-subpage fleft full-height-container-subpage">
