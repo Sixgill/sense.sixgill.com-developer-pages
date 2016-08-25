@@ -14263,7 +14263,7 @@ body.modal-open {
       -ms-flex-align: center;
               -ms-grid-row-align: center;
           align-items: center;
-  width: 49.16vw;
+  width: 100%;
 }
 .home-first-section-block-text {
   z-index: auto;
@@ -16056,7 +16056,7 @@ body.modal-open {
       -ms-flex-align: center;
               -ms-grid-row-align: center;
           align-items: center;
-  width: 76.3%;
+  width: 100%;
   z-index: 3;
 }
 .home-first-section-block-text {
@@ -18306,7 +18306,7 @@ ul:not([class]) li {
 }
 .home-first-section-text,
 .home-first-section-text p {
-  font-size: 6vw;
+  font-size: 19px;
   font-weight: 500;
   line-height: 1;
   text-shadow: 0 0 5vw #000000, 0 0 5vw #000000, 0 0 5vw #000000;
