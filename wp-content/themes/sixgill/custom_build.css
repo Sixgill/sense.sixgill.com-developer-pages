@@ -208,7 +208,7 @@ h6 {
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', 'Raleway', sans-serif;
 }
 
 h5,
@@ -439,11 +439,9 @@ span.middot {
 
 .nolineheight { line-height: 0 !important; }
 
-.font-body { font-family: 'Lato', sans-serif; }
-
-.font-primary { font-family: 'Raleway', sans-serif; }
-
-.font-secondary { font-family: 'Crete Round', serif; }
+.font-body {
+	font-family: 'Lato', sans-serif;
+}
 
 .bgicon {
 	display: block;
@@ -2145,7 +2143,7 @@ ul.tab-nav-lg li {
 ul.tab-nav-lg li a {
 	display: inline-block;
 	color: #444;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', 'Raleway', sans-serif;
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -2662,7 +2660,7 @@ label {
 	display: inline-block;
 	font-size: 13px;
 	font-weight: 700;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', 'Raleway', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #555;
@@ -12317,10 +12315,12 @@ input {
   color: #ffffff;
 }
 .company-first-section-block-paragraph p {
-  margin-bottom: 0px;
   font-family: "Lato";
   font-weight: 400;
   color: #ffffff;
+}
+.company-first-section-block-paragraph p:last-child {
+  margin-bottom: 0px;
 }
 .company-first-section-image-wrapper {
   display: inline-block;
@@ -16721,16 +16721,16 @@ ul:not([class]) li {
   margin: 65px 0px 65px 0px;
 }
 .tech-first-section-block-title {
-  font-size: 7vw;
+  font-size: 38px;
   font-weight: 300;
   line-height: 1em;
-  margin-bottom: 2vh;
+  margin-bottom: 26px;
   font-family: "Lato";
 }
 .tech-first-section-block-subtitle {
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 1.21vh;
+  margin-bottom: 19px;
 }
 .tech-first-section-block-text {
   width: 52.5%;
@@ -16785,7 +16785,7 @@ ul:not([class]) li {
   margin-right: auto;
 }
 .tech-second-section-title {
-  font-size: 4.56vw;
+  font-size: 35px;
   line-height: 1em;
   font-weight: 300;
   font-family: "Lato";
@@ -16830,22 +16830,21 @@ ul:not([class]) li {
   font-family: "Lato";
   line-height: 1em;
   color: #2adc3a;
-  margin-bottom: 4.5vh;
+  margin-bottom: 34px;
 }
 .tech-third-section-title-wrapper {
   float: left;
   width: calc(100% - 10vw);
   display: inline-block;
 }
-.tech-third-section-subtitle {
-  font-size: 1.9vw;
-  font-weight: 700;
-}
 .tech-third-section-text,
 .tech-third-section-text p,
 .tech-third-section-text li {
   font-size: 16px;
   font-weight: 500;
+}
+.tech-third-section-text p:last-child {
+  margin-bottom: 0px;
 }
 .tech-third-section-text li {
   margin-bottom: 1em !important;
@@ -16867,7 +16866,7 @@ ul:not([class]) li {
 }
 .tech-third-section-content-wrapper {
   width: 100%;
-  padding: 61.5px 3.45vw 8vh 3.45vw;
+  padding: 61px 3.45vw 63px 3.45vw;
 }
 .tech-fourth-section {
   min-height: inherit !important;
@@ -16877,7 +16876,7 @@ ul:not([class]) li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 3.4vh;
+  padding-top: 34px;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -16913,18 +16912,14 @@ ul:not([class]) li {
   text-align: center;
 }
 .tech-fourth-section-title {
-  font-size: 4.57vw;
-  line-height: 5.7vw;
-  padding-top: 6.1vh;
+  font-size: 35px;
+  line-height: 1em;
+  padding-top: 63px;
   text-align: center;
 }
 .tech-fourth-section-title-wrapper {
   float: left;
   display: inline-block;
-}
-.tech-fourth-section-subtitle {
-  font-size: 1.9vw;
-  font-weight: 700;
 }
 .tech-last-section-wrapper {
   -webkit-flex-direction: column;
