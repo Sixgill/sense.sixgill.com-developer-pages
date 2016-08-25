@@ -12596,7 +12596,7 @@ input {
 }
 .home-second-section-header-top-title {
   font-family: "Lato";
-  font-weight: 700;
+  font-weight: bold;
   text-align: center;
   color: #ffffff;
   line-height: 1em;
@@ -12616,7 +12616,7 @@ input {
 .home-second-section-block-title {
   color: #ffffff;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: bold;
 }
 .home-second-section-block-content,
 .home-second-section-block-content p,
