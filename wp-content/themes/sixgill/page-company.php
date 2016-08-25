@@ -65,10 +65,18 @@
 									<a class="learn-more-link">
 										<span class="learn-more-title">Learn More</span>
 										<span class="learn-more-expand-icon">
-											&or;
+											<img
+												class="learn-more-icon-image"
+												src="<?php echo get_template_directory_uri();?>/images/company/arrow_down.svg"
+												alt=""
+											>
 										</span>
 										<span class="learn-more-close-icon">
-											&and;
+											<img
+												class="learn-more-icon-image"
+												src="<?php echo get_template_directory_uri();?>/images/company/arrow_up.svg" 
+												alt=""
+											>
 										</span>
 									</a>
 								</p>
