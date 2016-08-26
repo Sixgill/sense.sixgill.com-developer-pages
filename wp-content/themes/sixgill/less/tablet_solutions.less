@@ -19,6 +19,26 @@
 		width: 100%;
 	}
 
+	&-icons {
+		&-icons-block {
+			padding: 0;
+		}
+
+		&-title {
+			margin:0.35em 0 0.6em 0;
+			padding: 0;
+		}
+	}
+
+	&-block-title {
+		margin:0.35em 0 0.6em 0;
+		padding: 0;
+	}
+
+	&-icon-item {
+		padding: 1.5vw;
+	}
+
 	&-first-section {
 		display: flex;
 		justify-content: center;
@@ -143,26 +163,7 @@
 			width:100%;
 		}
 
-		&-icons {
-
-			&-icons-block {
-				padding: 0;
-			}
-
-			&-title {
-				margin:0.35em 0 0.6em 0;
-				padding: 0;
-			}
-		}
-
-		&-block-title {
-			margin:0.35em 0 0.6em 0;
-			padding: 0;
-		}
-
-		&-icon-item {
-			padding: 5vw;
-		}
+		
 
 	}
 
@@ -206,7 +207,6 @@
 				}
 			}
 
-
 		}
 
 		&-second-block {
@@ -242,7 +242,6 @@
 				}
 			}
 
-
 		}
 
 		&-last-block {
@@ -273,34 +272,38 @@
 			width: 88.28vw;
 		}
 
-		&-gallery-block-title {
-			font-size: 16.2px;
-			font-weight: bold;
-			line-height: 1.25;
-			letter-spacing: 0.8px;
-			text-align: center;
-			color: #2e2e2e;
-			padding-bottom: 22px;
+		&-gallery {
+			&-block-title {
+				font-size: 16.2px;
+				font-weight: bold;
+				line-height: 1.25;
+				letter-spacing: 0.8px;
+				text-align: center;
+				color: #2e2e2e;
+				padding-bottom: 22px;
+			}
+
+			&-thumbnail-wrapper {
+				width: 92.44vw;
+				margin-bottom: 4vw;
+			}
+
+			&-button {
+				width: 37vw;
+				height: 5.6vw;
+			  font-size: 2.08vw;
+			}
+
+			&-button-link:not(:last-child) &-gallery-button {
+				margin-right: 1.3vw;
+			}
+
+			&-button-icon {
+				margin-right: 1.3vw;
+			}
+
 		}
 
-		&-gallery-thumbnail-wrapper {
-			width: 92.44vw;
-			margin-bottom: 4vw;
-		}
-
-		&-gallery-button {
-			width: 37vw;
-			height: 5.6vw;
-		  font-size: 2.08vw;
-		}
-
-		&-gallery-button-link:not(:last-child) &-gallery-button {
-			margin-right: 1.3vw;
-		}
-
-		&-gallery-button-icon {
-			margin-right: 1.3vw;
-		}
 
 		&-viewprocess-placeholder {
 			height: 6.9vw;
@@ -421,11 +424,6 @@
 }
 
 
-
-
-
-
-
 /*---------subpages--------------------*/
 
 .block-link-subpage {
@@ -460,7 +458,7 @@
 }
 
 
-#content .solution-subpage-first-block > .first-left-container-subpage > .first-text-subpage > .solution-subpage-first-block-text p{
+#content .solution-subpage-first-block-text p{
 	font-size: 16.2px;
 	font-weight: normal;
 	letter-spacing: 0.5px;

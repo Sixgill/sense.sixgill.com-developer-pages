@@ -5,28 +5,6 @@
 
 	<!-- first section -->
 
-	<!--link more -->
-<!-- 	<a href="#people"	class="scroll-section solutions-learn-more-link no-tablet-display">
-		<div class="solutions-first-section-scroll-link-wrapper">
-			<div class="solutions-first-section-scroll-link-ico-wrapper">
-				<img
-					class="solutions-first-section-scroll-link-ico responsive-image"
-					desktop-src="<?php// echo get_template_directory_uri();?>/images/icon_down.png"
-				/>
-			</div>
-		</div>
-	</a>
-	<a href="#solutions-second-section-tablet"	class="solutions-learn-more-link display-only-tablet">
-		<div class="solutions-first-section-scroll-link-wrapper">
-			<div class="solutions-first-section-scroll-link-ico-wrapper">
-				<img
-					class="solutions-first-section-scroll-link-ico responsive-image"
-					tablet-src="<?php// echo get_template_directory_uri();?>/images/icon_down.png"
-				/>
-			</div>
-		</div>
-	</a> -->
-	<!--link more end-->
 	<a name="solutions-first-section"></a>
 	<div id="solutions-first-section" class="solutions-section solutions-first-section">
 		<div class="solutions-first-section-block">
@@ -114,34 +92,19 @@
 			<div class="solutions-second-section-icons-block">
 				<h3 class="solutions-second-section-icons-title">
 					<?php echo get_field('people_section_icons_title'); ?>
-				</h3>
+				</h3>				
 				<div class="solutions-second-section-icon-wrapper">
 					<?php if(get_field('people_section_icons')) : ?>
-						<ul class="solutions-second-section-icon-list">
-
-							<?php foreach(get_field('people_section_icons') as $item) : ?>
-								<li class="solutions-second-section-icon-item">
-									<div class="solutions-second-section-icon-image">
-										<img src="<?php echo $item['people_section_icon_image']; ?>" alt="">
-									</div>
-									<div class="solutions-second-section-icon-caption">
-										<?php echo $item['people_section_icon_caption']; ?>
-									</div>
-									<div class="solutions-second-section-icon-link">
-									<a href="<?php echo $item['people_section_icon_link']; ?>">Learn More</a>
-									</div>
-								</li>
-							<?php endforeach; ?>
-						</ul>
+					<ul class="solutions-second-section-icon-list">
+						<?php
+							global $categoryName, $supTitleCategory;
+							$categoryName = "people";
+							//$supTitleCategory = "learn_more_people";
+							include(locate_template('loop-solutions.php'));
+						?>
+					</ul>
 					<?php endif; ?>
 				</div>
-
-				<?php
-					global $categoryName, $supTitleCategory;
-					$categoryName = "people";
-					$supTitleCategory = "learn_more_people";
-					include(locate_template('loop-solutions.php'));
-				?>
 			</div>
 		</div>
 	</div>
@@ -164,6 +127,23 @@
 				</h1>
 				<div class="solutions-third-section-block-paragraph">
 					<?php echo get_field('assets_section_text'); ?>
+				</div>
+			</div>
+			<div class="solutions-third-section-icons-block">
+				<h3 class="solutions-third-section-icons-title">
+					<?php echo get_field('people_section_icons_title'); ?>
+				</h3>				
+				<div class="solutions-third-section-icon-wrapper">
+					<?php if(get_field('people_section_icons')) : ?>
+					<ul class="solutions-third-section-icon-list">
+						<?php
+							global $categoryName, $supTitleCategory;
+							$categoryName = "people";
+							//$supTitleCategory = "learn_more_people";
+							include(locate_template('loop-solutions.php'));
+						?>
+					</ul>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
@@ -195,24 +175,17 @@
 			<div class="solutions-second-section-icons-block">
 				<h3 class="solutions-second-section-icons-title">
 					<?php echo get_field('crowds_section_icons_title'); ?>
-				</h3>
+				</h3>				
 				<div class="solutions-second-section-icon-wrapper">
- 					<?php if(get_field('crowds_section_icons')) : ?>
-						<ul class="solutions-second-section-icon-list">
-							<?php foreach(get_field('crowds_section_icons') as $item) : ?>
-								<li class="solutions-second-section-icon-item">
-									<div class="solutions-second-section-icon-image">
-										<img src="<?php echo $item['crowds_section_icon_image']; ?>" alt="">
-									</div>
-									<div class="solutions-second-section-icon-caption">
-										<?php echo $item['crowds_section_icon_caption']; ?>
-									</div>
-									<div class="solutions-second-section-icon-link">
-										<a href="<?php echo $item['crowds_section_icon_link']; ?>">Learn More</a>
-									</div>
-								</li>
-							<?php endforeach; ?>
-						</ul>
+					<?php if(get_field('crowds_section_icons')) : ?>
+					<ul class="solutions-second-section-icon-list">
+						<?php
+							global $categoryName, $supTitleCategory;
+							$categoryName = "crowd";
+							//$supTitleCategory = "learn_more_crowds";
+							include(locate_template('loop-solutions.php'));
+						?>
+					</ul>
 					<?php endif; ?>
 				</div>
 			</div>

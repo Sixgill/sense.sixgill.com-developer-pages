@@ -10,6 +10,15 @@
 		margin-bottom: 11px;
 	}
 
+	&-icon-item {
+		padding: 25px 0;
+	}
+
+	&-icon-caption {
+		max-width: inherit;
+		padding: 0 20vw;
+	}
+
 	&-first-section {
 		background-image: url('images/solutions/featBg-mobile@1x.png');
 
@@ -128,6 +137,7 @@
 				line-height: 1.67;
 				letter-spacing: 2.9px;
 				color: #4ddb5a;
+				max-width: 80vw;
 			}
 
 			&-paragraph p {
@@ -144,6 +154,10 @@
 			    width: 100%;
 			}
 		}
+
+		&-icons-title::after, &-icons-title::before {
+			display: none;
+		}
 	}
 
 	&-fourth-section {
@@ -154,7 +168,7 @@
 }
 
 .solution {
-	&-subgape-carousels-div {
+	&-subpage-carousels-div {
 		width: 72.73vw;
 		margin: 10vw 0px 10vw 0px;
 	}
@@ -410,7 +424,7 @@ ul:not([class]) li {
 	padding-right: 3.125vw;
 }
 
-.owl {
+.own {
 	&-carousel {
 		&-outside-wrapper {
 			width: 100%;
@@ -426,3 +440,4 @@ ul:not([class]) li {
 		display: inline-block;
 	}
 }
+

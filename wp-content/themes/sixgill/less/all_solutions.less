@@ -5,6 +5,49 @@
 		background-size: cover;
 	}
 
+	&-icon {
+		&-list {
+			padding: 0;
+			margin:0;
+			list-style: none;
+		}
+
+		&-item {
+			display: inline-block;
+			padding: 25px 2.8vw;
+			vertical-align: top;
+		}
+
+		&-image img {
+			width: 72px;
+			height: 72px;
+		}
+
+		&-caption {
+			font-family: 'Lato';
+			font-size: 18.6px;
+			font-weight: 700;
+			letter-spacing: 0.6px;
+			text-align: center;
+			max-width: 150px;
+		}
+
+		&-link {
+			margin-top: 16px;
+		}
+
+		&-link a {
+			font-family: 'Lato';
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 0.47;
+			letter-spacing: 0.5px;
+			text-align: center;
+			color: #0051c6;
+			text-decoration: underline !important;
+		}
+	}
+
 	&-first-section {
 
 		&-scroll-link {
@@ -102,53 +145,10 @@
 				margin: 52px auto 0;
 				overflow: hidden;
 				width: 100%;
-				padding: 0 8%;
-			}
-		}
-
-		&-icon {
-			&-list {
 				padding: 0;
-				margin:0;
-				list-style: none;
-			}
-
-			&-item {
-				display: inline-block;
-				padding: 25px 60px 25px 60px;
-				vertical-align: top;
-			}
-
-			&-image img {
-				width: 72px;
-				height: 72px;
-			}
-
-			&-caption {
-				font-family: 'Lato';
-				font-size: 18.6px;
-				font-weight: 700;
-				letter-spacing: 0.6px;
-				text-align: center;
-				color: #2e2e2e;
-				max-width: 150px;
-			}
-
-			&-link {
-				margin-top: 16px;
-			}
-
-			&-link a {
-				font-family: 'Lato';
-				font-size: 16px;
-				font-weight: 700;
-				line-height: 0.47;
-				letter-spacing: 0.5px;
-				text-align: center;
-				color: #0051c6;
-				text-decoration: underline !important;
 			}
 		}
+
 	}
 
 	&-third-section {
@@ -160,8 +160,6 @@
 
 		&-image-wrapper {
 			display: inline-block;
-			height: 770px;
-			line-height: 770px;
 			text-align: right;
 			width: 40%;
 		}
@@ -195,6 +193,51 @@
 			}
 		}
 
+		&-icons-title {
+			font-family: "Lato";
+			font-size: 15.9px;
+			font-weight: 700;
+			line-height: 2.83;
+			letter-spacing: 0.5px;
+			text-align: center;
+			color: #fff;
+			display: inline-block;
+			padding: 0 26px;
+
+			&:before,
+			&:after {
+				background-color: #000;
+				content: "";
+				display: inline-block;
+				height: 2px;
+				opacity: 0.1;
+				vertical-align: 0.3em;
+				position: relative;
+				width: 20vw;
+			}
+		}
+
+		&-icons {
+			&-title:after {
+				left: 1vw;
+			}
+
+			&-title:before {
+				right: 1vw;
+			}
+
+			&-block {
+				text-align: center;
+				width:950px;
+				margin: 52px auto 0;
+				overflow: hidden;
+				width: 100%;
+			}
+		}
+
+		&-icon-list .solutions-icon-caption{
+			color:#fff;
+		}
 
 	}
 

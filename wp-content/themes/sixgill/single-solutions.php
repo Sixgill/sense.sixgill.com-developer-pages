@@ -87,7 +87,7 @@
 
 			if($isThereFirstCarousel && $isThereSecondCarousel) {
 				?>
-				<div class="solution-subgape-carousels-div"></div>
+				<div class="solution-subpage-carousels-div"></div>
 				<?php
 			}
 
