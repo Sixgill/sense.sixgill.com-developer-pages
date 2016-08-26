@@ -6,16 +6,6 @@
 	<!-- first section -->
 
 	<!--link more -->
-	<a href="#people"	class="scroll-section solution-learn-more-link no-tablet-display">
-		<div class="solution-first-section-scroll-link-wrapper">
-			<div class="solution-first-section-scroll-link-ico-wrapper">
-				<img
-					class="solution-first-section-scroll-link-ico responsive-image"
-					desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-				/>
-			</div>
-		</div>
-	</a>
 	<a href="#solution-second-section-tablet"	class="solution-learn-more-link display-only-tablet">
 		<div class="solution-first-section-scroll-link-wrapper">
 			<div class="solution-first-section-scroll-link-ico-wrapper">
@@ -54,6 +44,18 @@
 				>
 			</div>
 		</div>
+
+		<a href="#people"	class="scroll-section solution-learn-more-link">
+			<div class="solution-first-section-scroll-link-wrapper">
+				<div class="solution-first-section-scroll-link-ico-wrapper">
+					<img
+						class="solution-first-section-scroll-link-ico responsive-image"
+						desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+						tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					/>
+				</div>
+			</div>
+		</a>
 
 	</div>
 	<div id="solution-second-section-tablet"></div>  <!-- navigation div for tablet version-->
