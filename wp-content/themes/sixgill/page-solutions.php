@@ -135,6 +135,13 @@
 						</ul>
 					<?php endif; ?>
 				</div>
+
+				<?php
+					global $categoryName, $supTitleCategory;
+					$categoryName = "people";
+					$supTitleCategory = "learn_more_people";
+					include(locate_template('loop-solutions.php'));
+				?>
 			</div>
 		</div>
 	</div>
