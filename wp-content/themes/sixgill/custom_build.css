@@ -12849,6 +12849,12 @@ input {
   margin-right: 10px;
   margin-left: -20px;
 }
+section ul,
+section ol,
+section p,
+section span {
+  font-size: 16px;
+}
 section ul:not([class]) {
   list-style-type: none;
 }
