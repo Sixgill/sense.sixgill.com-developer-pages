@@ -14729,9 +14729,6 @@ body.modal-open {
 .solution-subpage-bottom-section-column {
   width: 45%;
 }
-.solution-subpage-second-block {
-  padding-top: 6.4vw;
-}
 .solution-subpage-second-block-wrapper {
   width: 63vw;
 }
@@ -16536,9 +16533,6 @@ body.modal-open {
 }
 .solution-subpage-first-block {
   width: 100%;
-}
-.solution-subpage-second-block {
-  padding-top: 6.9vw;
 }
 .solution-subpage-second-block-wrapper {
   width: 88.2vw;
@@ -18863,9 +18857,6 @@ ul:not([class]) li {
   font-weight: 300;
   font-family: "Lato";
   letter-spacing: 0.9px;
-}
-.solution-subpage-second-block {
-  padding-top: 6.4vw;
 }
 .solution-subpage-second-block-wrapper {
   width: 88.28vw;
