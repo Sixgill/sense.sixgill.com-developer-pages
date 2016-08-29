@@ -10,7 +10,7 @@ $(function() {
   var panelDOMLink = $('#products-fixed-panel'),
       fixedPanelCols = $('.products-fixed-panel-col'),
       sectionLinkAttrName = 'data-section-link';
-
+  var topPosition = panelDOMLink.position().top-20;
 	fixedPanelCols.click(function() {
     var currentSectionLink = $(this).attr(sectionLinkAttrName);
     if(window.screenType == 'tablet') {
@@ -44,7 +44,11 @@ $(function() {
 			$('#products-fixed-panel-col-track').addClass('selected');
 			$('#products-fixed-panel-col-determine').removeClass('selected');
 			$('#products-fixed-panel-col-act').removeClass('selected');
-		}
+		} else {
+      $('#products-fixed-panel-col-track').removeClass('selected');
+      $('#products-fixed-panel-col-determine').removeClass('selected');
+      $('#products-fixed-panel-col-act').removeClass('selected');
+    }
 	}
 
 
@@ -60,18 +64,28 @@ $(function() {
 
 
   //TODO: use factory pattern
+    window.onScrolledTo(
+      $('#ancillary'),
 
+      function() {
+        changePanelVisibility(true);
+      },
+
+      function() {
+        changePanelVisibility(false);
+      }
+  );
   window.onScrolledTo(
     $('#products-third-section'),
 
     function() {
       thirdSectionVisible = true;
-      checkPanelVisibility();
+      checkPanelHighlighting();
     },
 
     function() {
       thirdSectionVisible = false;
-      checkPanelVisibility();
+      checkPanelHighlighting();
     }
   );
 
@@ -80,12 +94,12 @@ $(function() {
 
     function() {
       fourthSectionVisible = true;
-      checkPanelVisibility();
+      checkPanelHighlighting();
     },
 
     function() {
       fourthSectionVisible = false;
-      checkPanelVisibility();
+      checkPanelHighlighting();
     }
   );
 
@@ -94,42 +108,47 @@ $(function() {
 
     function() {
       fifthSectionVisible = true;
-      checkPanelVisibility();
+      checkPanelHighlighting();
     },
 
     function() {
       fifthSectionVisible = false;
-      checkPanelVisibility();
+      checkPanelHighlighting();
     }
   );
 
-  function checkPanelVisibility() {
+  function changePanelPosition(fixed) {
     if(window.screenType != 'desktop') {
       return;
     }
-    if (isPanelVisible) {
-      if(!thirdSectionVisible && !fourthSectionVisible && !fifthSectionVisible) {
-        isPanelVisible = false;
-        panelDOMLink.animate({opacity: 0}, 500, 'swing', function() {
-          panelDOMLink.addClass('hide');
-        });
-
-      }
+    if(fixed){
+      panelDOMLink.addClass('fixed-position');
     } else {
-      if(thirdSectionVisible || fourthSectionVisible || fifthSectionVisible) {
-				isPanelVisible = true;
-        panelDOMLink.removeClass('hide');
-        panelDOMLink.animate({opacity: 1}, 500);
-      }
+      panelDOMLink.removeClass('fixed-position');
     }
   }
 
-	setTimeout(function() {
-		checkPanelVisibility();
-	}, 1000);
+  function changePanelVisibility(hide) {
+    if(window.screenType != 'desktop') {
+      return;
+    }
+    if(hide){
+      panelDOMLink.animate({opacity: 0}, 500, 'swing', function() {
+        panelDOMLink.addClass('hide');
+      });
+    } else {
+        panelDOMLink.removeClass('hide');
+        panelDOMLink.animate({opacity: 1}, 500);
+    }
+  }
+
 
   $(window).on('scroll', function() {
-    checkPanelHighlighting();
+    if($(this).scrollTop() >= topPosition){
+        changePanelPosition(true);
+    } else {
+      changePanelPosition(false);
+    }
   });
 
 
