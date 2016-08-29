@@ -4,20 +4,30 @@ jQuery(function($) {
 	});
 
 	var submittedFlag = false;
-	var successFlag = false;
 
 	function watchSuccess() {
-		if(successFlag) return;
-		if(jQuery('p.yikes-easy-mc-success-message').length) {
-			$('button.close').trigger('click');
+		console.log('watchSuccess()');
+		var successMessageContainer = $('div[aria-labelledby="resourcesModalLabel"] .mc4wp-success');
+		var errorMessageContainer = $('.mc4wp-notice, .mc4wp-error');
+		if(successMessageContainer.length) {
+			console.log('successMessage');
+			$('div[aria-labelledby="resourcesModalLabel"] button.close').trigger('click');
 			window.open(window.currentDownloadLink, "_self");
-			successFlag = true;
+			successMessageContainer.remove();
 		}
-		setTimeout(watchSuccess, 500);
+
+
+
+		if(successMessageContainer.length || errorMessageContainer.length) {
+			submittedFlag = false;
+			return;
+		}
+		setTimeout(watchSuccess, 200);
 	}
 
-	$('.yikes-easy-mc-form').on('submit', function() {
+	$('div[aria-labelledby="resourcesModalLabel"] .mc4wp-form').on('submit', function() {
 		if(submittedFlag) return;
+		$('div[aria-labelledby="resourcesModalLabel"] .mc4wp-notice, div[aria-labelledby="resourcesModalLabel"]  .mc4wp-error').remove();
  		submittedFlag = true;
 		watchSuccess();
 	});

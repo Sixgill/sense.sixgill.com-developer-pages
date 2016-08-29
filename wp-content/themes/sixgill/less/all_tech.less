@@ -2,9 +2,28 @@
 .tech {
 	&-section {
 		background-size: cover;
+		& ul:not([class]) {
+			list-style-type: none;
+			& li {
+				display:block;
+				padding-left: 20px;
+
+				&::before {
+			        display:inline-block;
+			        width: 10px;
+			        content: "•";
+			        color:#4ddb5a;
+			        margin-right: 10px;
+			        margin-left: -20px;
+				}
+			}
+
+		}
 	}
 
 	&-first-section {
+		position: relative;
+		
 		&-image-wrapper {
 			display: inline-block;
 			height: 100%;
@@ -30,6 +49,11 @@
 				& p,
 				& li {
 					color: #ffffff;
+					font-weight: 400;
+				}
+
+				& p {
+					line-height: 1.8em;
 				}
 			}
 		}
@@ -79,6 +103,8 @@
 	}
 
 	&-fourth-section {
+		margin-bottom: -1px;
+
 		&-title {
 			font-family: "Lato";
 			font-weight: 300;

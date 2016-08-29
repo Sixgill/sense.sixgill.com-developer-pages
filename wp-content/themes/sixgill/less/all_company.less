@@ -1,84 +1,270 @@
 /* Company Common styles */
+.company {
+	&-section {
+		background-size: cover;
+		& ul:not([class]) {
+			list-style-type: none;
+			& li {
+				display:block;
+				padding-left: 20px;
 
-.company-first-section-image-wrapper,
-.company-first-section-block-text {
-	display: inline-block;
-}
+				&::before {
+			        display:inline-block;
+			        width: 10px;
+			        content: "•";
+			        color:#4ddb5a;
+			        margin-right: 10px;
+			        margin-left: -20px;
+				}
+			}
 
-.company-section {
-	background-size: cover;
-}
-.company-second-section {
-	background-size: contain;
-}
-
-.company-first-section-block-title,
-.company-second-section-title,
-.company-third-section-title,
-.company-fourth-section-title {
-	font-family: "Lato";
-	font-weight: 300;
-}
-
-.company-first-section-scroll-link-wrapper {
-	cursor: pointer;
-	text-align: center;
-}
-
-.company-second-section {
-	display: flex;
-	align-items: center;
-	background-color: #f8f8f8;
-	&-more-trigger {
-		margin-top: 2vh;
+		}
 	}
-	.learn-more-title {
-		text-decoration: underline!important;
-	}
-	.learn-more-expand-icon {
-		text-decoration: none!important;
-		color: #0051c6;
-	}
-	.learn-more-close-icon {
-		color: #0051c6;
-		text-decoration: none!important;
-	}
-}
 
-.company-first-section-block-title,
-.company-first-section-block-subtitle,
-.company-first-section-block-text,
-.company-first-section-block-text p,
-.company-first-section-block-text li,
-.company-third-section-text,
-.company-third-section-text p,
-.company-third-section-text li {
-	color: #ffffff;
-}
-
-.company-second-section-block-title,
-.company-fourth-section-block-title {
-	color: #0051c6;
-}
-
-.company-third-section-title {
-	color: #4ddb5a;
-	opacity: 0.8;
-	text-align: center;
-	margin-bottom: 5vh;
-}
-.company-third-section-row-item ul {
-	list-style-type: none;
-	& li {
-		display:block;
-		padding-left: 20px;
+	&-learn-more-link {
+		display: block;
+		position: absolute;
+		width: 100%;
 	}
-	& li::before {
-        display:inline-block;
-        width: 10px;
-        content: "•";
-        color:#4ddb5a;
-        margin-right: 10px;
-        margin-left: -20px;
+
+	&-first-section {
+		display: flex;
+
+		&-block {
+			display: flex;
+			z-index: 2;
+
+			&-title {
+				font-family: "Lato";
+				font-weight: 300;
+				color: #ffffff;
+			}
+
+			&-subtitle {
+				color: #ffffff;
+			}
+
+			&-text {
+				align-self: center;
+				color: #ffffff;
+				& p {
+					color: #ffffff;
+				}
+				& li {
+					color: #ffffff;
+				}
+			}
+
+			&-paragraph p {
+				font-family: "Lato";
+				font-weight: 400;
+				color: #ffffff;
+
+				&:last-child {
+					margin-bottom: 0px;
+				}
+			}
+		}
+
+		&-image-wrapper {
+			display: inline-block;
+		}
+
+		&-scroll-link {
+			&-wrapper {
+				cursor: pointer;
+				text-align: center;
+			}
+
+			&-text {
+				font-size: 17px;
+				font-weight: 600;
+				text-shadow: -3.1px 3.9px 12px #000000;
+				margin-bottom: 16px;
+				text-align: center;
+			}
+		}
+	}
+
+	&-second-section {
+		background-size: contain;
+		display: flex;
+		align-items: center;
+		background-color: #f8f8f8;
+
+		&-more-trigger {
+			margin-top: 2vh;
+		}
+
+		&-block {
+			margin-left: auto;
+			margin-right: auto;
+
+			&-title {
+				font-family: "Lato";
+				font-weight: 300;
+				text-align: center;
+				color: #0051c6;
+			}
+		}
+
+		&-text {
+			font-size: 16px;
+		}
+
+		&-image {
+			width: 100%;
+		}
+
+		&-team {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+		}
+
+		&-rows {
+			display: flex;
+		}
+
+		&-name {
+			font-family: "Lato";
+			font-weight: 300;
+			color: #2e2e2e;
+			letter-spacing: 1px;
+		}
+
+		&-job {
+			font-family: "Lato";
+			font-weight: 700;
+			color: #5cc468;
+		}
+
+		&-bio {
+			& p {
+				font-family: "Lato";
+				font-weight: 500;
+				color: #2e2e2e;
+			}
+
+			&-full p {
+				font-family: "Lato";
+				font-weight: 500;
+				color: #2e2e2e;
+			}
+
+			&-full {
+				margin: 0;
+				height: auto;
+				display: none;
+			}
+		}
+
+
+
+		& .learn-more {
+			&-link {
+				&:visited {
+					color: #0051c6;
+				}
+
+				&:active {
+					color: #0051c6;
+				}
+
+				&:hover {
+					color: #0083c6;
+				}
+
+				font-family: "Lato";
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 0.47;
+				letter-spacing: 0.5px;
+				color: #0051c6;
+				cursor: pointer;
+			}
+
+			&-title {
+				text-decoration: underline!important;
+			}
+
+			&-expand-icon {
+				text-decoration: none!important;
+			}
+
+			&-close-icon {
+				text-decoration: none!important;
+			}
+
+			&-icon-image {
+				width: 14px;
+				max-width: none;
+				max-height: none;
+				margin-left: 3px;
+			}
+		}
+
+		&-title {
+			font-family: "Lato";
+			font-weight: 300;
+		}
+	}
+
+	&-third-section {
+		display: flex;
+		flex-direction: column;
+
+		&-title {
+			font-family: "Lato";
+			font-weight: 300;
+			text-align: center;
+			color: #4ddb5a;
+		}
+
+		&-text {
+			margin-left: auto;
+			margin-right: auto;
+			color: #ffffff;
+			& p {
+				color: #ffffff;
+			}
+			& li {
+				color: #ffffff;
+			}
+		}
+
+		&-name {
+			font-family: "Lato";
+			font-weight: 300;
+			color: #ffffff;
+		}
+
+		&-job {
+			font-family: "Lato";
+			font-weight: 700;
+			color: #5cc468;
+		}
+
+		&-bio {
+			& ul li {
+				font-family: "Lato";
+				font-weight: 500;
+				color: #a9d8dd;
+			}
+			& p {
+				font-family: "Lato";
+				font-weight: 500;
+				color: #a9d8dd;
+			}
+		}
+
+		&-rows {
+			display: flex;
+			align-items:flex-start;
+		}
+
+		& > div {
+			align-self: center;
+		}
 	}
 }

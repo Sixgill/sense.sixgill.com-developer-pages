@@ -1,26 +1,14 @@
 <?php get_header(); ?>
 <div> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
-	<a
-		href="#leadership"
-		class="scroll-section company-learn-more-link"
-	>
-		<div class="company-first-section-scroll-link-wrapper">
-			<div class="company-first-section-scroll-link-ico-wrapper">
-				<img
-					class="company-first-section-scroll-link-ico responsive-image"
-					desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-					tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
-				/>
-			</div>
-		</div>
-	</a>
 	<div class="company-section company-first-section">
 		<div class="company-first-section-block">
-			<div class="company-first-section-image-wrapper">
+			<div
+				class="company-first-section-image-wrapper responsive-background"
+				desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
+			>
 				<img
 					class="company-first-section-image responsive-image"
-					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
 					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
 					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
 				>
@@ -34,6 +22,21 @@
 				</div>
 			</div>
 		</div>
+
+		<a
+			href="#leadership"
+			class="scroll-section company-learn-more-link"
+		>
+			<div class="company-first-section-scroll-link-wrapper">
+				<div class="company-first-section-scroll-link-ico-wrapper">
+					<img
+						class="company-first-section-scroll-link-ico responsive-image"
+						desktop-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+						tablet-src="<?php echo get_template_directory_uri();?>/images/icon_down.png"
+					/>
+				</div>
+			</div>
+		</a>
 	</div>
 	<a name="leadership"></a>
 	<div id="leadership" class="company-section company-second-section">
@@ -62,10 +65,18 @@
 									<a class="learn-more-link">
 										<span class="learn-more-title">Learn More</span>
 										<span class="learn-more-expand-icon">
-											&or;
+											<img
+												class="learn-more-icon-image"
+												src="<?php echo get_template_directory_uri();?>/images/company/arrow_down.svg"
+												alt=""
+											>
 										</span>
 										<span class="learn-more-close-icon">
-											&and;
+											<img
+												class="learn-more-icon-image"
+												src="<?php echo get_template_directory_uri();?>/images/company/arrow_up.svg" 
+												alt=""
+											>
 										</span>
 									</a>
 								</p>

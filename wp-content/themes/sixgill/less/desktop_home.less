@@ -5,14 +5,22 @@
 	&-learn-more-link {
 		display: block;
 	  position: absolute;
-	  top: calc(~"100vh - 85px");
-		z-index: 10;
+	  bottom: 38px;
+		left: 0px;
+	  width: 100%;
+	}
+
+	&-section {
+		min-height: 100vh !important;
+		height: auto !important;
 	}
 
 	&-first-section {
 		justify-content: center;
-		height: 100vh;
 		z-index: 2;
+		position: relative;
+		height: 100vh !important;
+		min-height: 500px !important;
 
 		&-video {
 			position: absolute;
@@ -49,7 +57,7 @@
 
 		&-block {
 			align-items: center;
-			width: 49.16vw;
+			width: 100%;
 
 			&-text {
 				z-index: auto;
@@ -94,30 +102,34 @@
 
 	  &-wrapper {
 			width: 74.5%;
+			margin: 2vw 0px 2vw 0px;
 	  }
 
-	  &-header-wrapper {
-			height: 164px;
-	  }
+		&-header {
 
-	  &-header-top {
-			font-size: 22px;
-			margin-bottom: 21px;
+			&-wrapper {
+		  }
 
-	    &-line {
-	    }
+		  &-top {
+				font-size: 22px;
+				margin-bottom: 21px;
 
-	    &-title {
-				width: 810px;
-    		white-space: nowrap;
-				margin: 0px 8px 0px 8px;
-	    }
-	  }
+		    &-line {
+		    }
+
+		    &-title {
+	    		white-space: nowrap;
+					margin: 0px 8px 0px 8px;
+		    }
+		  }
+		}
+
+
 
 	  &-title {
-			font-size: 47px;
-			line-height: 54.6px;
-			letter-spacing: 1.4px;
+			font-size: 4.15vw;
+			line-height: 8.67vh;
+			letter-spacing: 0.102vw;
 			text-align: center;
 			margin-bottom: 12px;
 	  }
@@ -136,6 +148,10 @@
 
 			&:first-child {
 				min-height: 190px;
+			}
+
+			&:last-child p {
+				margin-bottom: 0px !important;
 			}
 		}
 
@@ -184,6 +200,7 @@
 		&-wrapper {
 			max-width: 80%;
 			text-align: center;
+			margin: 2vw 0px 2vw 0px;
 		}
 
 		&-title {
@@ -229,9 +246,8 @@
 		background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
 
 		&-wrapper {
-
 			text-align: center;
-
+			margin: 2vw 0px 2vw 0px;
 		}
 
 		&-header-wrapper {
@@ -311,6 +327,7 @@
 			display: flex;
 			align-items: center;
 			flex-direction: column;
+			margin: 2vw 0px 2vw 0px;
 		}
 
 		&-header-wrapper {
@@ -322,7 +339,7 @@
 		}
 
 		&-dash {
-			margin-bottom: 4vh;
+			margin: 1vh 0px 4vh 0px;
 		}
 
 		&-title {

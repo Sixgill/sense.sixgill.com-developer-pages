@@ -28,10 +28,11 @@
 
 #primary-menu {
 	opacity: 1 !important;
-	position: absolute;
-	left: 0px;
-	margin: 10px 0px 0px 47px;
-	padding-top: calc(~"36.83vh - 145px");
+	position: relative;
+	align-self: flex-start;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 46px;
 }
 
 #primary-menu li{
@@ -116,7 +117,7 @@
 }
 
 #header-wrap {
-	min-height: 570px;
+	min-height: 600px;
 }
 
 .desktop-menu-wrapper {
@@ -130,4 +131,16 @@
 
 .menu-sublink.active, .menu-sublink:hover {
 	font-weight: bold !important;
+}
+
+#logo {
+	position: absolute;
+}
+
+.menu-container {
+	padding: 170px 0px 150px 0px;
+	display: flex;
+	justify-content: flex-start;
+  flex-direction: column;
+	height: 100%;
 }

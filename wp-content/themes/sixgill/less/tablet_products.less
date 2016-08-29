@@ -109,11 +109,9 @@
 		&-wrapper {
 			display: flex;
 			align-items: flex-end;
-
 			height: auto;
 			max-height: none;
 			width: 100%;
-
 		}
 
 		&-header-wrapper {
@@ -156,6 +154,8 @@
 		&-left-col {
 			display: flex;
 			align-self: stretch;
+			align-items: stretch;
+			width: 38.54%;
 		}
 
 		&-image {
@@ -163,13 +163,17 @@
 			max-height: none;
 
 			&-wrapper {
+				width: 100%;
 				display: flex;
-				align-items: stretch;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
 			}
 		}
 
 		&-right-col {
 			align-self: center;
+			width: 61%;
 		}
 
 		&-ico-wrapper {
@@ -285,7 +289,6 @@
 			height: auto;
 			max-height: none;
 			width: 100%;
-
 		}
 
 		&-header-wrapper {
@@ -295,8 +298,11 @@
 		&-image {
 
 			&-wrapper {
-
-
+				width: 100%;
+				display: flex;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
 			}
 		}
 
@@ -304,7 +310,7 @@
 			width: 77%;
 			margin-left: auto;
 			margin-right: auto;
-			margin-top: 6vh;
+			margin-top: 61.5px;
  			margin-bottom: 1vh;
 		}
 
@@ -318,7 +324,7 @@
 
 		&-left-col {
 			display: flex;
-			align-self: center;
+			align-self: stretch;
 			align-items: stretch;
 			width: 33%;
 			overflow: hidden;
@@ -372,11 +378,17 @@
 			width: 100%;
 		}
 
+		&-title {
+			text-align: center;
+			margin: 50px 0px 0px 0px;
+			font-size: 35px;
+		}
+
 		&-left-col {
 			align-self: center;
 			display: flex;
 			width: 100%;
-			padding: 5vh 3.78vw 7vh 3.78vw;
+			padding: 49.5px 3.78vw 7vh 3.78vw;
 			justify-content: space-between;
 		}
 
@@ -390,6 +402,7 @@
 			float: left;
 			z-index: 2;
 			padding-left: 38px;
+			margin: 0px 3.9vw 0px 3.9vw;
 
 			&::before {
 				background-color: #e9e9e9;
@@ -435,6 +448,7 @@
 
 	&-fixed-panel {
 		display: flex;
+		display: none !important;
 
 		position: relative;
 		top: 0px;
