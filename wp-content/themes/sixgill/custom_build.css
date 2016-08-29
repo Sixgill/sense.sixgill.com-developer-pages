@@ -16966,9 +16966,9 @@ ul:not([class]) li {
   display: -ms-flexbox;
   display: flex;
   padding-top: 34px;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: auto;
   max-height: none;
   width: 100%;
