@@ -32,7 +32,7 @@
 
 					</div>
 
-					<div class="blog-page-post-card-dash"></div>
+					<div class="blog-page-post-card-dash no-mobile-portrait-display no-mobile-landscape-display"></div>
 					<div class="blog-page-post-card-text">
 
 					</div>

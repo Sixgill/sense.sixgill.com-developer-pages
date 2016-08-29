@@ -12187,6 +12187,133 @@ input {
   margin-bottom: 0px !important;
 }
 
+.blog-page-header {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog-page-cols-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blog-page-col-left {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.blog-page-post-card {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.blog-page-post-card-image {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.blog-page-post-card-content-wrapper {
+  height: 100%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: left;
+  width: 100%;
+}
+.blog-page-post-card-title {
+  font-family: "Lato";
+  font-weight: 300;
+  line-height: 1em;
+  color: #0051c6;
+}
+.blog-page-post-card-author-date {
+  font-family: "Lato";
+  font-weight: 500;
+  color: #999999;
+}
+.blog-page-post-card-dash {
+  width: 28.5px;
+  height: 0px;
+  border-top: solid 2px #0051c6;
+}
+.blog-page-post-card-text {
+  font-family: "Lato";
+  color: #2e2e2e;
+}
+.blog-page-subscription-block-title {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Lato";
+  font-weight: 600;
+  line-height: 1em;
+  color: #ffffff;
+  width: 100%;
+  background-color: #2e2e2e;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blog-page-popular-block-title {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Lato";
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1em;
+  width: 100%;
+  background-color: #2e2e2e;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blog-page-popular-post-card {
+  width: 100%;
+}
+.blog-page-popular-post-image {
+  width: 100%;
+  height: 100%;
+}
+.blog-page-popular-post-title {
+  font-family: "Lato";
+  line-height: 1em;
+  letter-spacing: 1px;
+  color: #2e2e2e;
+}
+.blog-page-popular-post-author-date {
+  font-family: "Lato";
+  color: #999999;
+  line-height: 1em;
+}
+
 /* Blog Common styles */
 .subscribe-email-focus::-webkit-input-placeholder {
   font-size: 0px;
@@ -14035,6 +14162,72 @@ body.modal-open {
   font-weight: bold;
 }
 
+.blog-page-header {
+  height: 324px;
+}
+.blog-page-cols-wrapper {
+  margin: 51px 51px 34px 51px;
+}
+.blog-page-col-left {
+  margin-right: 21px;
+}
+.blog-page-col-right {
+  width: 290px;
+}
+.blog-page-post-card {
+  height: 256px;
+}
+.blog-page-post-card:not(:last-child) {
+  margin-bottom: 15px;
+}
+.blog-page-post-card-image {
+  width: 35.34%;
+}
+.blog-page-post-card-content-wrapper {
+  padding: 28px 19px 28px 23px;
+}
+.blog-page-post-card-title {
+  margin-bottom: 12px;
+  font-size: 24px;
+  letter-spacing: 0.7px;
+}
+.blog-page-post-card-author-date {
+  margin-bottom: 19px;
+  font-size: 14px;
+}
+.blog-page-post-card-dash {
+  margin-bottom: 21px;
+}
+.blog-page-post-card-text {
+  font-size: 16px;
+}
+.blog-page-subscription-block-title {
+  font-size: 16px;
+}
+.blog-page-popular-block-title {
+  font-size: 16px;
+}
+.blog-page-popular-post-card {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  margin: 0px 10px 0px 10px;
+}
+.blog-page-popular-post-card:not(:last-child) {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.blog-page-popular-post-image-wrapper {
+  width: 65px;
+  height: 65px;
+}
+.blog-page-popular-post-title {
+  font-size: 16px;
+}
+.blog-page-popular-post-author-date {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+}
+
 /* Blog desktop styles */
 .subscribe-block {
   background-color: #fafafa;
@@ -15866,6 +16059,53 @@ body.modal-open {
   min-height: inherit;
 }
 
+.blog-page-header {
+  height: 264px;
+}
+.blog-page-cols-wrapper {
+  margin: 25px 22px 37px 22px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blog-page-col-left {
+  width: 100%;
+}
+.blog-page-post-card {
+  height: 256px;
+}
+.blog-page-post-card:not(:last-child) {
+  margin-bottom: 15px;
+}
+.blog-page-post-card-image {
+  width: 35.3%;
+}
+.blog-page-post-card-content-wrapper {
+  padding: 28px 20px 28px 24px;
+}
+.blog-page-post-card-title {
+  font-size: 24px;
+  letter-spacing: 0.7px;
+  margin-bottom: 12.5px;
+}
+.blog-page-post-card-author-date {
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  margin-bottom: 18.5px;
+}
+.blog-page-post-card-dash {
+  margin-bottom: 21px;
+}
+.blog-page-post-card-text {
+  font-size: 16px;
+}
+
 /* Blog tablet styles */
 .subscribe-input-container {
   overflow: hidden;
@@ -17667,6 +17907,7 @@ ul:not([class]) li {
 
 /* Footer mobile portrait styles */
 
+
 /* Blog mobile portrait styles */
 .subscribe-input-container {
   overflow: hidden;
@@ -17860,6 +18101,7 @@ ul:not([class]) li {
 /* Press Mobile landscape styles */
 
 /* Footer Mobile landscape styles */
+
 
 /* Blog Mobile landscape styles */
 #aside-blog {
@@ -18153,6 +18395,7 @@ ul:not([class]) li {
 .footer-copyright-wrapper {
   font-size: 13px;
 }
+
 
 /* Blog mobile portrait and landscape styles */
 .share-buttons-top {

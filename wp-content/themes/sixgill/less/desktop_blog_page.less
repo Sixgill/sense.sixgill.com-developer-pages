@@ -1,20 +1,16 @@
 .blog-page {
-	&-header {
 
+	&-header {
+		height: 324px;
 	}
 
 	&-col {
 		&s-wrapper {
-			margin: 51px;
-			display: flex;
-			align-items: flex-start;
-			justify-content: center;
+			margin: 51px 51px 34px 51px;
 		}
 
 		&-left {
-			display: flex;
 			margin-right: 21px;
-			flex-grow: 1;
 		}
 
 		&-right {
@@ -23,29 +19,32 @@
 	}
 
 	&-post-card {
-		flex-grow: 1;
+		height: 256px;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
 
 		&-image {
-
+			width: 35.34%;
 		}
 
 		&-content-wrapper {
-
+			padding: 28px 19px 28px 23px;
 		}
 
 		&-title {
 			margin-bottom: 12px;
+			font-size: 24px;
+			letter-spacing: 0.7px;
 		}
 
 		&-author-date {
 			margin-bottom: 19px;
+			font-size: 14px;
 		}
 
 		&-dash {
-			width: 28.5px;
-		  height: 0px;
-		  background-color: #0051c6;
-		  border-top: solid 2px #0051c6;
 			margin-bottom: 21px;
 		}
 
@@ -79,25 +78,31 @@
 			&-card {
 
 				width: 100%;
-				padding-right: 19px;
+				padding: 10px 0px 10px 0px;
+				margin: 0px 10px 0px 10px;
 
 				&:not(:last-child) {
-					margin-bottom: 15px;
+					margin-bottom: 10px;
+					border-bottom: 1px solid #dfdfdf;
 				}
 			}
 
 			&-image {
-				width: 35.34%;
-				margin-right: 23px;
+
+				&-wrapper {
+					width: 65px;
+					height: 65px;
+				}
+
 			}
 
 			&-title {
-				font-size: 24px;
-				letter-spacing: 0.7px;
+				font-size: 16px;
 			}
 
 			&-author-date {
-
+				font-size: 12px;
+			  letter-spacing: 0.7px;
 			}
 		}
 	}
