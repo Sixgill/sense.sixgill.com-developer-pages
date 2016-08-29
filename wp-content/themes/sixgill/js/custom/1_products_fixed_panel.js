@@ -10,7 +10,8 @@ $(function() {
   var panelDOMLink = $('#products-fixed-panel'),
       fixedPanelCols = $('.products-fixed-panel-col'),
       sectionLinkAttrName = 'data-section-link';
-  var topPosition = panelDOMLink.position().top-20;
+  var panelPlaceholder = $('#products-panel-placeholder');
+  var topPosition = panelDOMLink.position().top;
 	fixedPanelCols.click(function() {
     var currentSectionLink = $(this).attr(sectionLinkAttrName);
     if(window.screenType == 'tablet') {
@@ -123,8 +124,10 @@ $(function() {
     }
     if(fixed){
       panelDOMLink.addClass('fixed-position');
+      panelPlaceholder.css('height','6vw');
     } else {
       panelDOMLink.removeClass('fixed-position');
+       panelPlaceholder.css('height','0');
     }
   }
 
