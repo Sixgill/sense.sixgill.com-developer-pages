@@ -6426,11 +6426,11 @@ $(function() {
 			thirdSection = $('#products-third-section'),
 			fourthSection = $('#products-fourth-section'),
 			fifthSection = $('#products-fifth-section');
-
   var panelDOMLink = $('#products-fixed-panel'),
       fixedPanelCols = $('.products-fixed-panel-col'),
       sectionLinkAttrName = 'data-section-link';
-  var topPosition = panelDOMLink.position().top-20;
+  var panelPlaceholder = $('#products-panel-placeholder');
+  var topPosition = panelDOMLink.position().top;
 	fixedPanelCols.click(function() {
     var currentSectionLink = $(this).attr(sectionLinkAttrName);
     if(window.screenType == 'tablet') {
@@ -6444,7 +6444,6 @@ $(function() {
       }, 1000);
     }
   });
-
 	if(screenType != 'desktop') {
 		panelDOMLink.removeClass('hide');
 		panelDOMLink.animate({opacity: 1}, 500);
@@ -6543,8 +6542,10 @@ $(function() {
     }
     if(fixed){
       panelDOMLink.addClass('fixed-position');
+      panelPlaceholder.css('height','6vw');
     } else {
       panelDOMLink.removeClass('fixed-position');
+       panelPlaceholder.css('height','0');
     }
   }
 
@@ -6569,6 +6570,9 @@ $(function() {
     } else {
       changePanelPosition(false);
     }
+  });
+  $(window).on('resize', function() {
+    topPosition = panelDOMLink.position().top;
   });
 
 

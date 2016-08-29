@@ -6,7 +6,6 @@ $(function() {
 			thirdSection = $('#products-third-section'),
 			fourthSection = $('#products-fourth-section'),
 			fifthSection = $('#products-fifth-section');
-
   var panelDOMLink = $('#products-fixed-panel'),
       fixedPanelCols = $('.products-fixed-panel-col'),
       sectionLinkAttrName = 'data-section-link';
@@ -25,7 +24,6 @@ $(function() {
       }, 1000);
     }
   });
-
 	if(screenType != 'desktop') {
 		panelDOMLink.removeClass('hide');
 		panelDOMLink.animate({opacity: 1}, 500);
@@ -152,6 +150,9 @@ $(function() {
     } else {
       changePanelPosition(false);
     }
+  });
+  $(window).on('resize', function() {
+    topPosition = panelDOMLink.position().top;
   });
 
 

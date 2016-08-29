@@ -15144,17 +15144,13 @@ body.modal-open {
   left: 0px;
   width: 100%;
 }
+.products-panel-placeholder {
+  height: 0;
+  background-color: transparent;
+}
 .products-fixed-panel {
-  /*position: fixed;
-		top: 0px;
-		left: 0px;
-		width: 100vw;
-		height: 6vw;
-		z-index: 10;
-		padding-left: 225px;
-		display: flex;
-		*/
   height: 6vw;
+  width: 100%;
   z-index: 10;
   display: -webkit-flex;
   display: -ms-flexbox;
