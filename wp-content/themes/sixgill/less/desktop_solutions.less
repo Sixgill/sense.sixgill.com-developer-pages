@@ -10,6 +10,8 @@
 	}
 
 	&-section {
+		max-height: none;
+		height: auto;
 		min-height: 100vh;
 	}
 
@@ -21,14 +23,14 @@
 		background-size: cover;
 		display: flex;
 		justify-content: flex-end;
-		min-height: 33.3vw !important;
+		min-height: 46vw !important;
 		position: relative;
 
 		&-block {
 			display: flex;
 			align-items: center;
 			width: 88.34%;
-			height: calc(~"(100vw - 225px)*0.35 - 1px");
+			height: calc(~"(100vw - 225px)*0.38 - 1px");
 			z-index: 2;
 			align-self: center;
 
@@ -38,6 +40,7 @@
 				font-size: 61px;
 				line-height: 1em;
 				margin-bottom: 2vw;
+				text-transform: uppercase;
 			}
 
 			&-text {
@@ -90,6 +93,7 @@
 	&-second-section {
 		&-text-block {
 		    text-align: center;
+		    padding-top: 70px;
 		}
 
 		&-image-wrapper {
@@ -118,6 +122,9 @@
 	}
 
 	&-third-section {
+		&-block {
+			padding-top: 70px;
+		}
 
 	}
 

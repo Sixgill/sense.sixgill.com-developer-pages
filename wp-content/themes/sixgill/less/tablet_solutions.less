@@ -48,7 +48,7 @@
 		&-block {
 			display: flex;
 			align-self: center;
-			margin: 6vh 0px 6vh 0px;
+			margin: 6vh 0px 75px 0px;
 			width: 95.5%;
 			align-items: center;
 			z-index: 2;
@@ -60,6 +60,7 @@
 				letter-spacing: 1.9px;
 				color: #ffffff;
 				margin-bottom: 2vw;
+				text-transform: uppercase;
 			}
 
 			&-text {
@@ -170,6 +171,23 @@
 	&-third-section {
 		min-height: 100vh;
 		height: inherit;
+
+		&-block {
+			position: relative;
+			padding-top: 9em;
+
+			&-title {
+				position: absolute;
+				left: 0;
+				top: 1.2em;
+				text-align: center;
+				width: 100%;
+			}
+
+			&-text {
+				vertical-align: top;
+			}
+		}
 	}
 
 	&-fourth-section {
