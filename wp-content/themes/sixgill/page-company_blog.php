@@ -1,30 +1,78 @@
 <?php get_header(); ?>
 <div> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
-	<section id="slider" class="slider-parallax swiper_wrapper clearfix" style="background-image: url('../wp-content/themes/sixgill/images/td/hero/dollarphotoclub_79195916_web.jpg'); background-position: center center;">
-	</section>
 
-	<section id="content" class="section-margin-fix">
-		<div class="content-wrap" style="padding:0px;">
-			<div class="container-fluid center clearfix my_containerSolution blog-container subscribe-block-tablet-mobile no-desktop-display">
-					<?php dynamic_sidebar( 'blog-subscribe-sidebar' ); ?>
+	<div class="blog-page-header">
+		<div class="blog-page-header-wrapper">
+			<div class="blog-page-header-suptitle">
+				SIXGILL BLOG
 			</div>
-			<div class="container-fluid center clearfix my_containerSolution blog-container">
-					<div class="text-left col_half blog-list" align="left">
-						<h1 class="h1-blog">Blog</h1>
-						<?php get_template_part( 'loop-blog'); ?>
+			<div class="blog-page-header-title">
+				MORE MOBILITY. MORE CONTROL.
+			</div>
+		</div>
+	</div>
+
+	<div class="blog-page-cols-wrapper">
+		<div class="blog-page-col-left">
+			<div class="blog-page-post-card">
+				<div
+					class="blog-page-post-card-image responsive-background"
+					desktop-src=""
+					tablet-src=""
+					mobile-src=""
+				>
+				</div>
+
+				<div class="blog-page-post-card-content-wrapper">
+					<div class="blog-page-post-card-title">
+
 					</div>
-				<div class="container-slidebar">
-					<div class="col_last widget subscribe-block display-only-desktop" align="left">
-						<?php dynamic_sidebar( 'blog-subscribe-sidebar' ); ?>
+					<div class="blog-page-post-card-author-date">
+
 					</div>
 
-					<div class="col_two_fifth col_last widget twitter-block display-only-desktop" align="left">
-						<?php dynamic_sidebar( 'twitter-widget-sidebar' ); ?>
+					<div class="blog-page-post-card-dash"></div>
+					<div class="blog-page-post-card-text">
+
 					</div>
 				</div>
 			</div>
 		</div>
-	</section><!-- #content end -->
+
+		<div class="blog-page-col-right display-only-desktop">
+			<div class="blog-page-subscription-block">
+				<div class="blog-page-subscription-block-title">
+					SUBSCRIBE HERE
+				</div>
+				<!-- TODO-->
+			</div>
+
+			<div class="blog-page-popular-block">
+				<div class="blog-page-popular-block-title">
+					POPULAR POSTS
+				</div>
+
+				<div class="blog-page-popular-post-card">
+					<div class="blog-page-popular-post-image-wrapper">
+						<img
+							alt=""
+							class="blog-page-popular-post-image"
+							src=""
+						>
+					</div>
+
+					<div class="blog-page-popular-post-content-wrapper">
+						<div class="blog-page-popular-post-title">
+
+						</div>
+						<div class="blog-page-popular-post-author-date">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<?php get_footer(); ?>
