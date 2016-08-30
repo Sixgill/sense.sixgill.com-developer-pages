@@ -14,20 +14,19 @@
 		left: 0px;
 	  width: 100%;
 	}
-
+	
+	&-panel-placeholder {
+		height: 0;
+		background-color: transparent;
+	}
 	&-fixed-panel {
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		width: 100vw;
 		height: 6vw;
+		width: 100%;
 		z-index: 10;
-		padding-left: 225px;
 		display: flex;
-
 		&-title {
 			font-size: 2vw;
-		  font-weight: 500;
+			font-weight: 500;
 			line-height: 1em;
 			display: inline-block;
 		}
@@ -46,7 +45,7 @@
 			height: 100%;
 			background-color: #f8f8f8;
 			border: solid 1.5px #e0e0e0;
-		  justify-content: center;
+			justify-content: center;
 			cursor: pointer;
 			font-size: 0px;
 			align-self: center;
