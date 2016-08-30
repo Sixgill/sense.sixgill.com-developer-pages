@@ -35,12 +35,12 @@
 		<!--link more link -->
 		<a
 			href="#people"
-			class="scroll-section solutions-learn-more-link display-only-desktop"
+			class="scroll-section solutions-learn-more-link"
 		>
 			<div class="solutions-first-section-scroll-link-wrapper">
-				<div class="solutions-first-section-scroll-link-text">
+				<!--<div class="solutions-first-section-scroll-link-text">
 					Learn More
-				</div>
+				</div>-->
 				<div class="solutions-first-section-scroll-link-ico-wrapper">
 					<img
 						class="solutions-first-section-scroll-link-ico responsive-image"
