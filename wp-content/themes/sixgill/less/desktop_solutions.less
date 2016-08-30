@@ -15,6 +15,31 @@
 		min-height: 100vh;
 	}
 
+	&-icon {
+		&-item {
+			padding: 25px 2.8vw;
+		}
+
+		&-caption {
+			font-size: 18.6px;
+			font-weight: 700;
+			letter-spacing: 0.6px;
+			max-width: 150px;
+			font-weight: bold;
+		}
+
+		&-link {
+			margin-top: 16px;
+
+			& a {
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 0.47;
+				letter-spacing: 0.5px;
+			}
+		}
+	}	
+
 	&-first-section {
 		height: 100vh;
 		background-image: url("images/solutions/featBg-desktop@1x.png");
@@ -30,7 +55,7 @@
 			display: flex;
 			align-items: center;
 			width: 88.34%;
-			height: calc(~"(100vw - 225px)*0.38 - 1px");
+			height: calc(~"(100vw - 225px)*0.35 - 1px");
 			z-index: 2;
 			align-self: center;
 
@@ -54,7 +79,7 @@
 		}
 
 		&-image {
-			height: 100%;
+			height: auto;
 			width: 100%;
 
 			&-wrapper {
@@ -71,8 +96,8 @@
 
 			&-text {
 				font-size: 17px;
-			  font-weight: 600;
-			  text-shadow: -3.1px 3.9px 12px #000000;
+				font-weight: 600;
+				text-shadow: -3.1px 3.9px 12px #000000;
 				margin-bottom: 16px;
 				text-align: center;
 			}
@@ -91,9 +116,16 @@
 	}
 
 	&-second-section {
+		&-block-title {
+			font-size: 44px;
+			font-weight: 300;
+			line-height: 1;
+			letter-spacing: 4.8px;
+		}
+
 		&-text-block {
-		    text-align: center;
-		    padding-top: 70px;
+			text-align: center;
+			padding-top: 70px;
 		}
 
 		&-image-wrapper {
@@ -102,11 +134,11 @@
 		}
 
 		&-block-text {
-		    display: inline-block;
-		    padding-left: 42px;
-		    text-align: left;
-		    vertical-align: top;
-		    width: 40vw;
+			display: inline-block;
+			padding-left: 42px;
+			text-align: left;
+			vertical-align: top;
+			width: 40vw;
 		}
 
 		&-icon-item {
@@ -119,13 +151,61 @@
 			padding: 0;
 		}
 
+		&-icons-title {
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 2.83;
+			letter-spacing: 0.5px;
+			padding: 0 26px;
+
+		&:before,
+		&:after {
+				background-color: #000;
+				content: "";
+				display: inline-block;
+				height: 2px;
+				opacity: 0.1;
+				vertical-align: 0.3em;
+				position: relative;
+				width: 20vw;
+			}
+		}
+
 	}
 
 	&-third-section {
 		&-block {
 			padding-top: 70px;
+
+			&-title {
+				font-size: 44px;
+				font-weight: 300;
+				line-height: 1;
+				letter-spacing: 4.8px;
+			}
+
+			&-paragraph p{
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 1.33;
+				letter-spacing: 0.5px;
+			}
 		}
 
+		&-icons-title {
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 2.83;
+			letter-spacing: 0.5px;
+			padding: 0 26px;
+
+			&:before,
+			&:after {
+				height: 2px;
+				vertical-align: 0.3em;
+				width: 20vw;
+			}
+		}
 	}
 
 	&-fourth-section {
@@ -135,6 +215,18 @@
 
 .solution {
 	&-subpage {
+		&-suptitle {
+			font-size: 25.2px;
+			font-weight: 500;
+			letter-spacing: 0.8px;
+		}
+
+		&-title {
+			font-size: 59.7px;
+			font-weight: 300;
+			margin: 0px 10px 0px 10px;
+		}
+
 		&-second-block {
 			padding-top: 6.4vw;
 		}
@@ -143,11 +235,11 @@
 			width: 63vw;
 		}
 
-		&-last-block-wrapper {
+		&-bottom-block-wrapper {
 			background: url('/wp-content/themes/sixgill/images/solutions/getstarted_bg_desktop.png') no-repeat scroll 0 0 / cover ;
 		}
 
-		&-last-block {
+		&-bottom-block {
 			margin-top: 70px;
 			width: 74%;
 		}
@@ -209,13 +301,13 @@
 			height: 6.4vw;
 		}
 
-		&-last-section-text-wrapper {
+		&-bottom-section-text-wrapper {
 			width: 52vw;
-		}
 
-		&-last-section-text-wrapper p {
-			text-align: center;
-			margin-bottom: 67px;
+			& p {
+				text-align: center;
+				margin-bottom: 67px;
+			}
 		}
 
 		&-slide-title {
@@ -253,8 +345,6 @@
 				margin-top: 1.72vw;
 			}
 		}
-
-
 	}
 
 	&-use-cases {
@@ -294,118 +384,7 @@
 	}
 }
 
-// .solution-learn-more-link {
-// 	display: block;
-// 	position: absolute;
-// 	bottom: 38px;
-// 	left: 0px;
-// 	width: 100%;
-// }
-
-// .solution-first-section-scroll-link-ico-wrapper {
-// 	width: 37px;
-// 	height: 18px;
-// 	text-align: center;
-// }
-
-// /*---------First-section--------------------*/
-
-// .solution-first-section {
-// 	height: 100vh;
-// 	position: relative;
-// }
-
-// .solution-first-section{
-// 	background-image: url("images/solutions/featBg-desktop@1x.png");
-// 	background-attachment: scroll;
-// 	background-repeat: no-repeat;
-// 	background-size: cover;
-// }
-
-// .solution-first-section,
-// .solution-first-section-block {
-// 	display: flex;
-// }
-
-// .solution-first-section {
-// 	justify-content: flex-end;
-// 	min-height: 33.3vw !important;
-// }
-
-// .solution-first-section-block {
-// 	align-items: center;
-// 	width: 88.34%;
-// 	height: calc(~"(100vw - 225px)*0.35 - 1px");
-// 	z-index: 2;
-// 	align-self: center;
-// 	margin: 100px 0px 100px 0px;
-// }
-
-// .solution-first-section-block-text {
-// 	width: 71%;
-// 	padding: 0px 2.4vw 0px 2.4vw;
-// }
-
-// .solution-first-section-block-title {
-// 	align-items: center;
-// 	font-family: "Lato";
-// 	font-weight: 300;
-// 	font-size: 61px;
-// 	line-height: 1em;
-// 	margin-bottom: 2vw;
-// 	color: #fff;
-// }
-
-// .solution-first-section-block-paragraph p {
-// 	margin-bottom: 0px;
-// }
-
-// .solution-first-section-image-wrapper,
-// .solution-first-section-image {
-// 	height: 100%;
-// 	width: 20vw;
-// }
-
-// .solution-first-section-image-wrapper-mobile {
-// 	display: none;
-// }
-
-// .solution-second-section-text-block {
-//     text-align: center;
-// }
-
-// .solution-second-section-image-wrapper {
-// 	display: inline-block;
-// 	vertical-align: top;
-// }
-
-// .solution-second-section-block-text {
-//     display: inline-block;
-//     padding-left: 42px;
-//     text-align: left;
-//     vertical-align: top;
-//     width: 40vw;
-// }
-
-// .solution-second-section-icon-item {
-// 	padding: 1vw 4vw;
-// }
-
-// .solution-second-section-block-title,
-// .solution-second-section-icons-title {
-// 	margin:0 0 0.35em 0;
-// 	padding: 0;
-// }
-
-// .solution-second-section,
-// .solution-third-section,
-// .solution-fourth-section {
-// 	min-height: 769px;
-// }
-
 // /*-----------------------*/
-
-
  /* Solutions subpage desktop styles */
 
 .solution-test {
@@ -421,99 +400,14 @@
 	float: right;
 }
 
-// .solution-subpage-last-block {
-// 	margin-top: 70px;
-// 	width: 74%;
-// }
-
-// .solution-subpage-bottom-line {
-// 	margin-top: 100px;
-// 	margin-bottom: 120px;
-// }
-
-// .solution-subpage-bottom-section-column {
-// 	width: 45%;
-// }
-
-// .solution-subpage-second-block-wrapper {
-// 	width: 63vw;
-// }
-
-// .solution-subpage-gallery-block {
-// 	text-align: center;
-// }
-
-// .solution-subpage-gallery-block-title {
-// 	margin-bottom: 2.19vw;
-// 	font-size: 16.2px;
-// 	font-weight: bold;
-// 	line-height: 1.42;
-// 	letter-spacing: 0.5px;
-// 	color: #2e2e2e;
-// }
-
-// .solution-subpage-gallery-thumbnail-wrapper {
-// 	width: 72.87vw;
-// 	margin-bottom: 1.94vw;
-// }
-
-// .solution-subpage-gallery-button {
-// 	width: 20.79vw;
-// 	height: 3.148vw;
-//   font-size: 1.17vw;
-// }
-
-// .solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
-// 	margin-right: 0.73vw;
-// }
-
-// .solution-subpage-gallery-button-icon {
-// 	margin-right: 1vw;
-// }
-
-// .solution-subpage-viewprocess-placeholder {
-// 	height: 6.4vw;
-// }
-
-// .solution-subpage-last-section-text-wrapper {
-// 	width: 52vw;
-// }
-
-// .solution-subpage-last-section-text-wrapper p {
-// 	text-align: center;
-// 	margin-bottom: 67px;
-// }
-
-// .solution-use-cases-block-content {
-// 	width: 68vw;
-// 	margin: 0 auto 4vw;
-// 	padding-top: 1vw;
-// }
-
-// .solution-subpage-slide-title {
-//   font-size: 1.78vw;
-//   font-weight: 500;
-// 	margin-bottom: 1vw;
-// }
-
-// .solution-subpage-slide-description {
-//   font-size: 1.171vw;
-// 	margin-bottom: 1.8vw;
-// }
-
-// .solution-subpage-slide-description, .solution-subpage-slide-title {
-// 	width: 95.68%;
-// 	display: inline-block;
-// }
-
-.own-carousel-outside-wrapper {
-	width: 87.55%;
-	margin-bottom: 2.232vw;
-}
-
 .owl-carousel {
 	background-color: #ffffff;
 	border: 1px solid rgba(153, 153, 153, 0.32);
+}
+
+.own-carousel-outside-wrapper {
+    margin-bottom: 2.232vw;
+    width: 87.55%;
 }
 
 .swiper_wrapper {

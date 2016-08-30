@@ -10,14 +10,33 @@
 		margin-bottom: 11px;
 	}
 
-	&-icon-item {
-		padding: 25px 0;
-	}
+	&-icon {
+		&-item {
+			padding: 25px 0;
+		}
 
-	&-icon-caption {
-		max-width: inherit;
-		padding: 0 20vw;
-	}
+		&-caption {
+			font-size: 18.6px;
+			font-weight: 700;
+			letter-spacing: 0.6px;
+			max-width: inherit;
+			font-weight: bold;
+			padding: 0 20vw;
+		}
+
+		&-link {
+			margin-top: 16px;
+
+			& a {
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 0.47;
+				letter-spacing: 0.5px;
+			}
+		}
+	}	
+
+
 
 	&-first-section {
 		background-image: url('images/solutions/featBg-mobile@1x.png');
@@ -30,13 +49,14 @@
 			z-index: 2;
 
 			&-title {
-				font-size: 9vw;
+				font-size: 29px;
 				font-weight: 300;
 				font-family: "Lato";
 				letter-spacing: 1.5px;
 				line-height: 1em;
 				margin-bottom: 5.7vh;
 				color:#fff;
+				text-transform: uppercase;
 			}
 
 			&-text {
@@ -243,7 +263,7 @@
 			height: inherit;
 		}
 
-		&-last-block {
+		&-bottom-block {
 			margin-top: 50px;
 
 			&-title {
@@ -287,7 +307,7 @@
 			}
 		}
 
-		&-last-block-title{
+		&-bottom-block-title{
 			font-size: 28.4px;
 			font-weight: 300;
 			font-family: "Lato";
@@ -378,7 +398,7 @@
 			margin-bottom: 6vw;
 		}
 
-		&-last-block-wrapper {
+		&-bottom-block-wrapper {
 			margin-bottom: 32px;
 			background: url('/wp-content/themes/sixgill/images/solutions/getstarted_bg_mobile.png') no-repeat scroll 0 0 / cover ;
 		}
@@ -386,7 +406,6 @@
 		&-first-block-text p {
 			font-size: 16.2px;
 			font-weight: normal;
-			line-height: 1.25;
 			letter-spacing: 0.5px;
 		}
 
@@ -412,75 +431,6 @@
 ul:not([class]) li {
 	margin-bottom: 1em;
 }
-
-// .solution-subpage-bottom-line {
-// 	margin-top: 50px;
-// 	margin-bottom: 50px;
-// }
-
-// .solution-subpage-section-title {
-// 	font-size: 28px;
-// 	font-weight: 300;
-// 	font-family: "Lato";
-// 	letter-spacing: 0.9px;
-// }
-
-// .solution-subpage-second-block-wrapper {
-// 	width: 88.28vw;
-// }
-
-// .solution-subpage-gallery-block {
-// }
-
-// .solution-subpage-gallery-thumbnail-wrapper {
-// 	width: 92.44vw;
-// 	margin-bottom: 4vw;
-// }
-
-// .solution-subpage-gallery-button {
-// 	display: none !important;
-// }
-
-// .solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
-// 	margin-bottom: 2.5vw;
-// }
-
-// .solution-subpage-gallery-button-icon {
-// 	margin-right: 3.13vw;
-// }
-
-// .solution-subpage-second-block-wrapper {
-// 	text-align: left;
-// }
-
-// .solution-subpage-bottom-section-content {
-// 	width: 83.28vw;
-// }
-
-// .solution-subpage-bottom-section-content p {
-// 	text-align: left;
-// }
-
-// .solution-use-cases-block-subtitle {
-// 	padding: 20px;
-// }
-
-// .solution-use-cases-block-subtitle > p {
-// 	width:100%;
-// }
-
-// .solution-use-cases-block-content{
-// 	text-align: center;
-// }
-
-// .solution-carousel-mobile-button {
-// 	width: 50%;
-// 	height: 9.53vw;
-// 	background-color: #2e2e2e;
-// 	cursor: pointer;
-// 	display: inline-block;
-// }
-
 
 [id$="carousel-mobile-button-left"] {
 	border-right: 1px solid rgba(153, 153, 153, 0.32);
@@ -508,5 +458,17 @@ ul:not([class]) li {
 	&-wrapper-outer {
 		display: inline-block;
 	}
+}
+
+#content .solution-subpage-first-block-text p {
+	line-height: 1.25;
+}
+
+#content .solution-subpage-second-block-wrapper p {
+	line-height: 1.42;
+}
+
+#content .solution-subpage-bottom-section-text-wrapper p {
+	line-height: 1.25;
 }
 

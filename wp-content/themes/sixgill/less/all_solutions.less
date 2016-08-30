@@ -14,7 +14,6 @@
 
 		&-item {
 			display: inline-block;
-			padding: 25px 2.8vw;
 			vertical-align: top;
 		}
 
@@ -25,23 +24,11 @@
 
 		&-caption {
 			font-family: 'Lato';
-			font-size: 18.6px;
-			font-weight: 700;
-			letter-spacing: 0.6px;
 			text-align: center;
-			max-width: 150px;
-		}
-
-		&-link {
-			margin-top: 16px;
 		}
 
 		&-link a {
 			font-family: 'Lato';
-			font-size: 16px;
-			font-weight: 700;
-			line-height: 0.47;
-			letter-spacing: 0.5px;
 			text-align: center;
 			color: #0051c6;
 			text-decoration: underline !important;
@@ -99,23 +86,14 @@
 
 		&-block-title {
 			font-family: "Lato";
-			font-size: 43.9px;
-			font-weight: 300;
-			line-height: 1;
-			letter-spacing: 4.8px;
 			color: #0051c6;
 		}
 
 		&-icons-title {
 			font-family: "Lato";
-			font-size: 15.9px;
-			font-weight: 700;
-			line-height: 2.83;
-			letter-spacing: 0.5px;
 			text-align: center;
 			color: #2e2e2e;
 			display: inline-block;
-			padding: 0 26px;
 
 			&:before,
 			&:after {
@@ -176,44 +154,28 @@
 				margin:0;
 				padding: 0;
 				font-family: "Lato";
-				font-size: 43.9px;
-				font-weight: 300;
-				line-height: 1;
-				letter-spacing: 4.8px;
 				color: #4ddb5a;
 			}
 
 			&-paragraph p{
 				font-family: 'Lato';
-				font-size: 16px;
-				font-weight: 500;
-				line-height: 1.33;
-				letter-spacing: 0.5px;
 				color: #a9d8dd;
 			}
 		}
 
 		&-icons-title {
 			font-family: "Lato";
-			font-size: 15.9px;
-			font-weight: 700;
-			line-height: 2.83;
-			letter-spacing: 0.5px;
 			text-align: center;
 			color: #fff;
 			display: inline-block;
-			padding: 0 26px;
 
 			&:before,
 			&:after {
 				background-color: #000;
 				content: "";
 				display: inline-block;
-				height: 2px;
 				opacity: 0.1;
-				vertical-align: 0.3em;
 				position: relative;
-				width: 20vw;
 			}
 		}
 
@@ -249,34 +211,41 @@
 		justify-content: center;
 		height: 100vh;
 
-
 	}
-
 
 }
 
-.solution {
+/*-----------------------------------------------------*/
+/* Solutions subpage Common styles */
 
+.solution {
 	&-subpage {
 		&-suptitle {
 			font-family: 'Lato';
-			font-size: 25.2px;
-			font-weight: 500;
-			letter-spacing: 0.8px;
 			color: #4ddb5a;
 		}
 
 		&-title {
 			font-family: 'Lato';
-			font-size: 59.7px;
-			font-weight: 300;
 			color: #f9f8f8;
-			margin: 0px 10px 0px 10px;
 		}
 
 		&-title , &-suptitle {
 			text-transform: uppercase;
 			text-align: center;
+		}
+
+		&-section-title, &-second-block-title {
+			font-size: 44.6px;
+			font-weight: 300;
+			letter-spacing: 1.3px;
+			color: #0051c6;
+			font-family: 'Lato';
+			line-height: 1.2em;
+		}
+
+		&-section-title {
+			margin-top: 61px;
 		}
 
 		&-text {
@@ -287,69 +256,34 @@
 			display: inline-block;
 		}
 
+		&-first-block-image {
+			height: auto;
+		}
+
 		&-bottom {
-			&-line {
-				width: 0px;
-				height: 0px;
-				border-top: 1px solid #4ddb5a;
-				width: 100px;
-				margin-left: auto;
-				margin-right: auto;
+
+			&-block-wrapper {
+				text-align: center;
+				width: 100%;
+				display: block;
+				color:#121212;
 			}
 
-			&-section-column {
-				display: inline-block;
-
-				&:nth-child(2n+1) {
-						float: left;
-				}
-
-				&:nth-child(2n) {
-						float: right;
-				}
-			}
-
-			&-link {
-				text-decoration: underline !important;
-				font-size: 22px;
-
-				&-description {
-					font-size: 22px;
-					margin-bottom: 10px;
-					line-height: 1.3em !important;
-				}
-
-				&-image-wrapper {
-					width: 42%;
-					display: inline-block;
-				}
-
-				&-text {
-					display: inline-block;
-					width: 56%;
-					float: right;
-
-					&-width {
-						width: 90%;
-						margin-left: auto;
-						margin-right: auto;
-					}
-				}
-
-				&-col {
-					width: 50%;
-					border-top: 1px solid #dfdfdf;
-					display: inline-block;
-
-					&:first-child {
-						border-right: 1px solid #dfdfdf;
-					}
-				}
-
-
+			&-block-title {
+				font-size: 44.6px;
+				font-weight: 300;
+				line-height: 0.45;
+				letter-spacing: 1.3px;
+				color: #4ddb5a;
+				font-family: 'Lato';
 			}
 
 			&-section {
+				&-content {
+					text-align: center;
+					display: inline-block;
+				}
+
 				&-subtitle {
 					font-family: "Lato";
 					font-size: 16px;
@@ -364,18 +298,37 @@
 				&-column {
 					text-align: left;
 					position: relative;
+					display: inline-block;
+
+					&:nth-child(2n+1) {
+						float: left;
+					}
+
+					&:nth-child(2n) {
+						float: right;
+					}
+
+					& ul li {
+						font-family: "Lato";
+						font-weight: normal;
+						line-height: 1.25;
+						letter-spacing: 0.5px;
+						color:#f8f8f8;
+					}
 				}
 
-				&-column ul li {
-					font-family: "Lato";
-					font-weight: normal;
-					line-height: 1.25;
-					letter-spacing: 0.5px;
-					color:#f8f8f8;
+				&-text-wrapper {
+					display: inline-block;
+
+					& p {
+						font-size: 16.2px;
+						font-weight: normal;
+						line-height: 1.25;
+						letter-spacing: 0.5px;
+						color: #f8f8f8;
+					}
 				}
 			}
-
-
 		}
 
 		&-second-block {
@@ -395,45 +348,30 @@
 			background-color: #2e2e2e;
 		}
 
-		&-last-block-title {
-			font-size: 44.6px;
-			font-weight: 300;
-			line-height: 0.45;
-			letter-spacing: 1.3px;
-			color: #4ddb5a;
-			font-family: 'Lato';
-		}
-
-		&-gallery-button-icon, &-gallery-thumbnail {
-			width: 100%;
-			height: auto;
-		}
-
-		&-gallery-button {
-			background-color: #2e2e2e;
-			cursor: pointer;
-		}
-
-		&-gallery-button-icon {
-			width: 11%;
-			height: auto;
-		}
-
-		&-gallery-button-title-wrapper {
-			display: inline-block;
-		}
-
-		&-first-block-image {
-			height: auto;
-		}
-
 		&-gallery {
+			&-button-icon,
+			&-thumbnail {
+				width: 100%;
+				height: auto;
+			}
+
 			&-button {
+				background-color: #2e2e2e;
+				cursor: pointer;
 				vertical-align: top;
 				display: inline-block;
 				font-family: "Lato";
 				font-weight: bold;
 				color: #ffffff;
+
+				&-icon {
+					width: 11%;
+					height: auto;
+				}
+
+				&-title-wrapper {
+					display: inline-block;
+				}
 			}
 
 			&-thumbnail-wrapper {
@@ -453,65 +391,34 @@
 			width: 100%;
 		}
 
-		&-last-block-wrapper {
-			text-align: center;
-			width: 100%;
-			display: block;
+		&-slide {
+			&-title {
+				color: #0051c6;
+				letter-spacing: 0.7px;
+			}
+
+			&-description {
+				color: #000000;
+			}
+
+			&-description, &-slide-title {
+				text-align: left;
+				display: inline-block;
+				font-family: 'Lato';
+			}
+
+			&-image {
+				border-bottom: 1px solid rgba(153, 153, 153, 0.32);
+			}
+
 		}
 
-		&-bottom-section-content {
-			text-align: center;
-			display: inline-block;
-		}
-
-		&-last-section-text-wrapper {
-			display: inline-block;
-		}
-
-		&-last-section-text-wrapper p{
-			font-size: 16.2px;
-			font-weight: normal;
-			line-height: 1.25;
-			letter-spacing: 0.5px;
-			color: #f8f8f8;
-		}
-
-		&-slide-title {
-		  color: #0051c6;
-			letter-spacing: 0.7px;
-		}
-
-		&-slide-description {
-			color: #000000;
-		}
-
-		&-slide-description, &-slide-title {
-			text-align: left;
-			display: inline-block;
-			font-family: 'Lato';
-		}
-
-		&-section-title, &-second-block-title {
-			font-size: 44.6px;
-			font-weight: 300;
-			letter-spacing: 1.3px;
-			color: #0051c6;
-			font-family: 'Lato';
-			line-height: 1.2em;
-		}
+		
 
 		&-carousels-div {
 			display: inline-block;
 			height: 1px;
 			background-color: #dfdfdf;
-		}
-
-		&-section-title {
-			margin-top: 61px;
-		}
-
-		&-slide-image {
-			border-bottom: 1px solid rgba(153, 153, 153, 0.32);
 		}
 
 	}
@@ -526,7 +433,6 @@
 				vertical-align: top;
 				background-color: #f8f8f8;
 			}
-
 
 			&-image {
 				display: block;
@@ -580,235 +486,7 @@
 	margin-left: auto;
 }
 
-/*-----------------------------------------------------*/
 
-// .solution-section {
-// 	background-size: cover;
-// 	& ul:not([class]) {
-// 		list-style-type: none;
-// 		background-color: blue;
-// 		& li {
-// 			background-color: red;
-// 			display:block;
-// 			padding-left: 20px;
-
-// 			&::before {
-// 		        display:inline-block;
-// 		        width: 10px;
-// 		        content: "•";
-// 		        color:#4ddb5a;
-// 		        margin-right: 10px;
-// 		        margin-left: -20px;
-// 			}
-// 		}
-
-// 	}
-// }
-
-// section {
-// 	& ul,ol,p,span {
-// 		font-size: 16px
-// 	}
-// 	& ul:not([class]) {
-// 		list-style-type: none;
-// 		& li {
-// 			display:block;
-// 			padding-left: 20px;
-
-// 			&::before {
-// 		        display:inline-block;
-// 		        width: 10px;
-// 		        content: "•";
-// 		        color:#4ddb5a;
-// 		        margin-right: 10px;
-// 		        margin-left: -20px;
-// 			}
-// 		}
-
-// 	}
-// }
-
-// .solution-first-section-block {
-// 	z-index: 2;
-// 	background-color: rgba(77, 219, 90, 0.7);
-// }
-
-// .solution-first-section-image-wrapper,
-// .solution-first-section-block-text {
-// 	display: inline-block;
-// }
-
-// .solution-first-section-image-wrapper {
-// 	height: 100%;
-// }
-
-// .solution-first-section-block-paragraph,
-// .solution-first-section-block-paragraph p,
-// {
-// 	color: #ffffff !important;
-// }
-
-// .solution-first-section-scroll-link-wrapper {
-// 	cursor: pointer;
-// 	text-align: center;
-// }
-
-// /*--------------------------------------------------*/
-// .solution-second-section,
-// .solution-third-section,
-// .solution-fourth-section {
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: center;
-// 	height: 100vh;
-// }
-
-
-// .solution-second-section {
-// 	background-image: url('/wp-content/themes/sixgill/images/solutions/bgPattern@1x.png');
-// 	background-size: inherit;
-// }
-
-// .solution-fourth-section {
-// 	background-image: url('/wp-content/themes/sixgill/images/solutions/bgPattern@1x.png');
-// 	background-size: inherit;
-// }
-
-// .solution-second-section-block-title {
-// 	font-family: "Lato";
-// 	font-size: 43.9px;
-// 	font-weight: 300;
-// 	line-height: 1;
-// 	letter-spacing: 4.8px;
-// 	color: #0051c6;
-// }
-
-// .solution-second-section-icons-title {
-// 	font-family: "Lato";
-// 	font-size: 15.9px;
-// 	font-weight: 700;
-// 	line-height: 2.83;
-// 	letter-spacing: 0.5px;
-// 	text-align: center;
-// 	color: #2e2e2e;
-// 	display: inline-block;
-// 	padding: 0 26px;
-// }
-
-// .solution-second-section-icons-title:before,
-// .solution-second-section-icons-title:after {
-//     background-color: #000;
-//     content: "";
-//     display: inline-block;
-//     height: 2px;
-//     opacity: 0.1;
-//     vertical-align: 0.3em;
-//     position: relative;
-// 	width: 20vw;
-// }
-
-// .solution-second-section-icons-title:after {
-// 	left: 1vw;
-// }
-
-// .solution-second-section-icons-title:before {
-// 	right: 1vw;
-// }
-
-// .solution-second-section-icons-block {
-// 	text-align: center;
-// 	width:950px;
-// 	margin: 52px auto 0;
-// 	overflow: hidden;
-// 	width: 100%;
-// 	padding: 0 8%;
-// }
-
-// .solution-second-section-icon-list {
-// 	padding: 0;
-// 	margin:0;
-// 	list-style: none;
-// }
-
-// .solution-second-section-icon-item {
-// 	display: inline-block;
-// 	padding: 25px 60px 25px 60px;
-// 	vertical-align: top;
-// }
-
-// .solution-second-section-icon-image img {
-// 	width: 72px;
-// 	height: 72px;
-// }
-
-// .solution-second-section-icon-caption {
-// 	font-family: 'Lato';
-// 	font-size: 18.6px;
-// 	font-weight: 700;
-// 	letter-spacing: 0.6px;
-// 	text-align: center;
-// 	color: #2e2e2e;
-// 	max-width: 150px;
-// }
-
-// .solution-second-section-icon-link {
-// 	margin-top: 16px;
-// }
-
-// .solution-second-section-icon-link a {
-// 	font-family: 'Lato';
-// 	font-size: 16px;
-// 	font-weight: 700;
-// 	line-height: 0.47;
-// 	letter-spacing: 0.5px;
-// 	text-align: center;
-// 	color: #0051c6;
-// 	text-decoration: underline !important;
-// }
-
-// /*-- First section Assets --*/
-
-// .solution-third-section {
-// 	background-image: url('/wp-content/themes/sixgill/images/solutions/assetsBg-desktop@1x.png');
-// }
-
-// .solution-third-section-image-wrapper {
-// 	display: inline-block;
-// 	height: 770px;
-// 	line-height: 770px;
-// 	text-align: right;
-// 	width: 40%;
-// }
-
-// .solution-third-section-block-text {
-// 	width: 51%;
-// 	display: inline-block;
-// 	vertical-align: middle;
-// 	padding-left: 40px;
-// }
-
-// .solution-third-section-block-title {
-// 	margin:0;
-// 	padding: 0;
-// 	font-family: "Lato";
-// 	font-size: 43.9px;
-// 	font-weight: 300;
-// 	line-height: 1;
-// 	letter-spacing: 4.8px;
-// 	color: #4ddb5a;
-// }
-
-// .solution-third-section-block-paragraph p{
-// 	font-family: 'Lato';
-// 	font-size: 15.9px;
-// 	font-weight: 500;
-// 	line-height: 1.33;
-// 	letter-spacing: 0.5px;
-// 	color: #a9d8dd;
-// }
-
-
-/* Solutions subpage Common styles */
 
 #press-text-post {
 	text-align: left;
@@ -822,18 +500,23 @@
 	margin: 0 auto;
 }
 
-.own-carousel-outside-wrapper {
-	display: inline-block;
+.own-carousel {
+	&-outside-wrapper {
+		display: inline-block;
+		
+	}
+
+	& {
+		background-color: #ffffff;
+		border: 1px solid rgba(153, 153, 153, 0.32);
+	}
+
+	&-n-controls-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
-.owl-carousel {
-	background-color: #ffffff;
-	border: 1px solid rgba(153, 153, 153, 0.32);
-}
 
-.own-carousel-n-controls-wrapper {
-	width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
