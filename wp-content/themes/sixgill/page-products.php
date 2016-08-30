@@ -62,8 +62,8 @@
 			</div>
 		</div>
 	</div>
-
-	<div id="products-fixed-panel" class="products-fixed-panel hide" style="opacity: 0;">
+	<div id="products-panel-placeholder" class="products-panel-placeholder"></div>
+	<div id="products-fixed-panel" class="products-fixed-panel">
 
 		<div data-section-link="#products-third-section" class="products-fixed-panel-col" id="products-fixed-panel-col-track">
 			<div class="products-fixed-panel-col-content">
