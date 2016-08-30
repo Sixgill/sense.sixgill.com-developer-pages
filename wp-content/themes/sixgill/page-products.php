@@ -290,11 +290,9 @@
 						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_assist_title'); ?>
 						</h3>
-						<?php echo get_field('last_section_assist_subtitle'); ?>
 						<div class="products-last-section-list">
-							<?php echo get_field('last_section_assist_list'); ?>
+							<?php echo get_field('last_section_assist_text'); ?>
 						</div>
-						<?php echo get_field('last_section_assist_text'); ?>
 					</div>
 				</div>
 			</div>
