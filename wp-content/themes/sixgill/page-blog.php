@@ -2,7 +2,12 @@
 <div> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
 
-	<div class="blog-page-header">
+	<div
+		class="blog-page-header responsive-background"
+		desktop-src="<?php the_post_thumbnail_url(); ?>"
+		tablet-src="<?php the_post_thumbnail_url(array(768, 264)); ?>"
+		mobile-src="<?php the_post_thumbnail_url(array(480, 190)); ?>"
+		>
 		<div class="blog-page-header-wrapper">
 			<div class="blog-page-header-suptitle">
 				SIXGILL BLOG
@@ -23,7 +28,7 @@
 					while ( $query->have_posts() ) {
 						$query->the_post();
 						?>
-						<a href="<?php echo get_permalink(); ?>">
+						<a href="<?php echo get_permalink(); ?>" class="blog-page-post-card-link">
 							<div class="blog-page-post-card">
 								<div
 									class="blog-page-post-card-image responsive-background"
@@ -44,7 +49,7 @@
 									<div class="blog-page-post-card-dash no-mobile-portrait-display no-mobile-landscape-display"></div>
 
 									<div class="blog-page-post-card-text">
-										<?php the_content("read more"); ?>
+										<p><?php echo get_the_content("") ?>..</p>
 									</div>
 								</div>
 							</div>

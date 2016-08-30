@@ -12202,6 +12202,22 @@ input {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: contain;
+}
+.blog-page-header-suptitle {
+  font-family: "Lato";
+  font-weight: 500;
+  text-align: center;
+  color: #4ddb5a;
+}
+.blog-page-header-title {
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: center;
+  color: #f9f8f8;
 }
 .blog-page-cols-wrapper {
   display: -webkit-flex;
@@ -12236,6 +12252,10 @@ input {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+.blog-page-post-card-link {
+  display: inline-block;
 }
 .blog-page-post-card-image {
   height: 100%;
@@ -14175,6 +14195,14 @@ body.modal-open {
 .blog-page-header {
   height: 324px;
 }
+.blog-page-header-title {
+  font-size: 60px;
+  letter-spacing: 1.8px;
+}
+.blog-page-header-suptitle {
+  font-size: 25px;
+  letter-spacing: 0.8px;
+}
 .blog-page-cols-wrapper {
   margin: 51px 51px 34px 51px;
 }
@@ -14183,11 +14211,12 @@ body.modal-open {
 }
 .blog-page-col-right {
   width: 290px;
+  min-width: 290px;
 }
 .blog-page-post-card {
   height: 256px;
 }
-.blog-page-post-card:not(:last-child) {
+.blog-page-post-card-link:not(:last-child) {
   margin-bottom: 15px;
 }
 .blog-page-post-card-image {
@@ -14213,9 +14242,11 @@ body.modal-open {
 }
 .blog-page-subscription-block-title {
   font-size: 16px;
+  height: 35px;
 }
 .blog-page-popular-block-title {
   font-size: 16px;
+  height: 35px;
 }
 .blog-page-popular-post-card {
   width: 100%;
