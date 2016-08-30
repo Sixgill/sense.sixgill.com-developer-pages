@@ -10,6 +10,7 @@ $(function() {
       fixedPanelCols = $('.products-fixed-panel-col'),
       sectionLinkAttrName = 'data-section-link';
   var panelPlaceholder = $('#products-panel-placeholder');
+	if(!panelDOMLink.length) return;
   var topPosition = panelDOMLink.position().top;
 	fixedPanelCols.click(function() {
     var currentSectionLink = $(this).attr(sectionLinkAttrName);

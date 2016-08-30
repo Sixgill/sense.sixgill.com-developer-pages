@@ -1,29 +1,15 @@
 <?php
-	$args = array (
-	'category_name'          => 'Blog',
-	);
 
-	// The Query
-	$query = new WP_Query( $args );
-
-	// The Loop
+	$query = new WP_Query(array ('category_name' => 'Blog'));
 	if ( $query->have_posts() ) {
 		while ( $query->have_posts() ) {
 			$query->the_post();
 			?>
-			<div class="posts-list">
-				<p id="post-subtitle-and-author" class="blog-post-suptitle color-999999">
-					<?php the_time('F j, Y'); ?> | by <?php echo get_field('author'); ?>
-				</p>
-				<a href="<?php echo get_permalink(); ?>" class="blog-post-title" >
-					<?php the_title(); ?>
-				</a>
-
-				<?php
-					the_content("read more");
-				?>
-			</div>
-
+			<?php echo get_permalink(); ?>
+			<?php the_time('F j, Y'); ?> | by <?php echo get_field('author'); ?>
+			<?php the_post_thumbnail_url( array(100, 100) ); ?>
+			<?php the_title(); ?>
+			<?php the_content("read more"); ?>
 			<?php
 		}
 	} else {

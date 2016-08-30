@@ -5,7 +5,6 @@ module.exports = () => {
     base: {
         wrapper: null,
         values: [
-            /*"./css/google_fonts.css",*/
             "./css/bootstrap.min.css",
             "./css/owl.carousel.css",
             "./css/owl.theme.css",
@@ -88,18 +87,19 @@ module.exports = () => {
   }
 
   var pagesList = [
-    'general',
-    'menu',
-    'footer',
-    'blog',
-    'company',
-    'home',
-    'solutions',
-    'resources',
-    'tech',
-    'press',
-    'legal',
-    'products'
+		'general',
+		'menu',
+		'footer',
+		'blog_page',
+		'blog',
+		'company',
+		'home',
+		'solutions',
+		'resources',
+		'tech',
+		'press',
+		'legal',
+		'products'
   ];
 
   pagesList.forEach(function(pageName) {

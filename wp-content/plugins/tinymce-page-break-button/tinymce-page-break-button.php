@@ -3,7 +3,7 @@
 	 * Plugin Name: TinyMCE Page Break Button
 	 * Plugin URI: http://wordpress.org/plugins/tinymce-page-break-button/
 	 * Description: This Plugin adds a Page Break Button to TinyMCE Menu for using the Nextpage-Tag in posts
-	 * Version: 1.0.1
+	 * Version: 1.0.2
 	 * Author: Matthias Siebler
 	 * Author URI: http://www.serdev.net
 	 * License: GPLv2

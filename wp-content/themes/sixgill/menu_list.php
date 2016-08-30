@@ -30,7 +30,7 @@
 				"name" => "Crowds",
 				"anchor" => "crowds"
 				// "anchor" => "solution-fourth-section"
-			),			
+			),
 		),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded
@@ -101,11 +101,11 @@
 		"isExpanded" => $isExpanded
 	);
 
-	$isSelected = (strcasecmp(getCurrentSlug(), "company_blog")==0 || strcasecmp(getCategorySlug(), "blog")==0);
-	$isExpanded = (strcasecmp(getCurrentSlug(), "company_blog")==0);
+	$isSelected = (strcasecmp(getCurrentSlug(), "blog")==0 || strcasecmp(getCategorySlug(), "blog")==0);
+	$isExpanded = (strcasecmp(getCurrentSlug(), "blog")==0);
 	$menu[] = array(
 		"elementName" => "Blog",
-		"link" => "/company_blog/",
+		"link" => "/blog/",
 		"sublinksList" => array(),
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded

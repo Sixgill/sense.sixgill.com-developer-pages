@@ -1,17 +1,17 @@
 === TinyMCE Color Grid ===
 Contributors: kungtiger
 Requires at least: 2.7
-Tested up to: 4.4
-Stable tag: 1.5
-Tags: bigger, chooser, color, colour, custom, editor, expanded, extended, formatting, grid, more, palette, picker, tinymce
+Tested up to: 4.5
+Stable tag: 1.6
+Tags: bigger, chooser, color, custom, editor, expanded, extended, formatting, grid, more, palette, picker, tinymce
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Extends the TinyMCE color picker with custom and more colors.
+Replaces the TinyMCE color picker with a bigger and customizeable color grid
 
 == Description ==
 
-This plugin extends the color picker for choosing a text or background color found inside the TinyMCE toolbar.
+This plugin replaces the color picker for choosing a text or background color found inside the TinyMCE toolbar with a bigger color grid.
 
 You can also define custom colors with a name of your choice. These colors are persistent and available in every picker. You can specify these colors via the settings menu.
 
@@ -23,7 +23,7 @@ This plugin should works out of the box with a standard installation of WordPres
 
 **WordPress' Plugin Search**
 
-1. Goto your WordPress and open *Plugins* > *Install*
+1. Goto your WordPress and open *Plugins* > *Add New*
 2. Search for *TinyMCE Color Grid*
 3. Click install and activate the plugin
 4. Enjoy
@@ -37,9 +37,10 @@ This plugin should works out of the box with a standard installation of WordPres
 
 **Manual installation**
 
-1. Upload the directory found inside the zip archive to your /wp-content/plugins/ directory
-2. Activate the plugin through the *Plugins* menu in WordPress
-3. Enjoy
+1. Goto [wordpress.org/plugins/kt-tinymce-color-grid](http://wordpress.org/plugins/kt-tinymce-color-grid) and download the zip
+2. Upload the directory found inside the zip archive to your /wp-content/plugins/ directory
+3. Activate the plugin through the *Plugins* menu in WordPress
+4. Enjoy
 
 == Frequently Asked Questions ==
 
@@ -54,6 +55,12 @@ If you have a question please contact me and we'll see what we can do
 3. This plugin is mobile ready
 
 == Changelog ==
+
+= 1.6 =
+- Useability improvements
+- Faster grid generation by using pre-calculated colors
+- Namespaced CSS IDs and HTML form variables to avoid name collisions
+- Fixed CSS errors
 
 = 1.5 =
 Added clean uninstall routine
@@ -96,6 +103,9 @@ Fixes an error when using more than one TinyMCE
 Initial release.
 
 == Upgrade Notice ==
+
+= 1.6 =
+Mayor useability improvements
 
 = 1.5 =
 Added clean uninstall routine
