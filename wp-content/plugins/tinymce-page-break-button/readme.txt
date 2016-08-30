@@ -1,10 +1,10 @@
-﻿=== TinyMCE Page Break Button ===
+=== TinyMCE Page Break Button ===
 Contributors: matthias.s
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SNSKHB5DWBNW2
 Tags: page break, page, break, pagebreak, nextpage, TinyMCE, MCE, paged posts, pagination, multipage 
 Requires at least: 3.6
-Tested up to: 4.0
-Stable tag: 1.0.1
+Tested up to: 4.6
+Stable tag: 1.0.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,10 @@ Sorry. Your Theme doesn’t support the page break
 
 == Changelog ==
 
+= 1.0.2 =Update: July 30, 2016 
+
+* Ready for WP 4.6
+
 = 1.0.1 =Update: September 20, 2014 
 
 * Prevent Direct Access of PlugIn-File.
@@ -57,6 +61,9 @@ Release Date: September 19, 2014
 
 == Upgrade Notice ==
 
+= 1.0.2 =Update: July 30, 2016 
+
+* Ready for WP 4.6
 
 = 1.0.1 =Update: September 20, 2014 
 

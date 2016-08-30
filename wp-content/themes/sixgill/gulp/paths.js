@@ -87,19 +87,19 @@ module.exports = () => {
   }
 
   var pagesList = [
-    'general',
-    'menu',
-    'footer',
+		'general',
+		'menu',
+		'footer',
 		'blog_page',
-    'blog',
-    'company',
-    'home',
-    'solutions',
-    'resources',
-    'tech',
-    'press',
-    'legal',
-    'products'
+		'blog',
+		'company',
+		'home',
+		'solutions',
+		'resources',
+		'tech',
+		'press',
+		'legal',
+		'products'
   ];
 
   pagesList.forEach(function(pageName) {
