@@ -94,7 +94,7 @@
 				}
 			}
 		}
-		
+
 		&-scroll-link {
 
 			&-text {
@@ -188,7 +188,6 @@
 			line-height: 1.25;
 			letter-spacing: 3.9px;
 			text-align: center;
-			color: #0051c6;
 			position: absolute;
 			left: 0;
 			top:-2.1em;
@@ -244,7 +243,26 @@
 			}
 		}
 
+	&-use-cases {
 
+		&-block {
+			&-subtitle {
+				min-height: 135px;
+				padding: 25px;
+			}
+
+			&-subtitle > p {
+				font-size: 19px;
+				line-height: 20px !important;
+				width: 56%;
+			}
+
+			&-subtitle > a {
+				font-size: 19px;
+				padding: 15px 0 0;
+			}
+		}
+	}
 
 
 	}
@@ -273,6 +291,13 @@
 			font-weight: 500;
 		}
 
+		&-section-title, &-second-block-title {
+			font-size: 44.6px;
+			font-weight: 300;
+			letter-spacing: 1.3px;
+			line-height: 1.2em;
+		}
+
 		&-first-block {
 			width: 100%;
 
@@ -294,6 +319,13 @@
 		}
 
 		&-bottom {
+			&-block-title {
+				font-size: 44.6px;
+				font-weight: 300;
+				line-height: 0.45;
+				letter-spacing: 1.3px;
+			}
+
 			&-line {
 				margin-top: 80px;
 				margin-bottom: 100px;
@@ -308,14 +340,37 @@
 				margin-bottom: 0px;
 			}
 
-			&-section-column {
-				width: 38.15vw;
-				margin-bottom: 3.5vw;
 
-				&:nth-child(2n+1) {
-						float: left;
-						margin-left: 4vw;
+			&-section {
+				&-column {
+					width: 38.15vw;
+					margin-bottom: 3.5vw;
+
+					&:nth-child(2n+1) {
+							float: left;
+							margin-left: 4vw;
+					}
 				}
+
+				&-subtitle {
+						font-size: 16px;
+						font-weight: lighter;
+						line-height: 1.25;
+						letter-spacing: 0.5px;					
+						width: 40vw;
+						margin: 32px auto;
+				}
+
+				&-text-wrapper {
+					& p {
+						font-size: 16.2px;
+						font-weight: normal;
+						line-height: 1.25;
+						letter-spacing: 0.5px;
+					}
+				}
+
+
 			}
 
 		}
@@ -355,7 +410,6 @@
 				line-height: 1.25;
 				letter-spacing: 0.8px;
 				text-align: center;
-				color: #2e2e2e;
 				padding-bottom: 22px;
 			}
 
@@ -556,7 +610,6 @@
 	}
 
 	& {
-		background-color: #ffffff;
 		border: 1px solid rgba(153, 153, 153, 0.32);
 	}
 

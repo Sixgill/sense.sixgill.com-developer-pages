@@ -13016,12 +13016,8 @@ input {
 }
 .solution-subpage-section-title,
 .solution-subpage-second-block-title {
-  font-size: 44.6px;
-  font-weight: 300;
-  letter-spacing: 1.3px;
   color: #0051c6;
   font-family: 'Lato';
-  line-height: 1.2em;
 }
 .solution-subpage-section-title {
   margin-top: 61px;
@@ -13042,10 +13038,6 @@ input {
   color: #121212;
 }
 .solution-subpage-bottom-block-title {
-  font-size: 44.6px;
-  font-weight: 300;
-  line-height: 0.45;
-  letter-spacing: 1.3px;
   color: #4ddb5a;
   font-family: 'Lato';
 }
@@ -13055,13 +13047,7 @@ input {
 }
 .solution-subpage-bottom-section-subtitle {
   font-family: "Lato";
-  font-size: 16px;
-  font-weight: lighter;
-  line-height: 1.25;
-  letter-spacing: 0.5px;
   color: #f8f8f8;
-  width: 40vw;
-  margin: 32px auto;
 }
 .solution-subpage-bottom-section-column {
   text-align: left;
@@ -13085,10 +13071,6 @@ input {
   display: inline-block;
 }
 .solution-subpage-bottom-section-text-wrapper p {
-  font-size: 16.2px;
-  font-weight: normal;
-  line-height: 1.25;
-  letter-spacing: 0.5px;
   color: #f8f8f8;
 }
 .solution-subpage-second-block {
@@ -13109,6 +13091,9 @@ input {
 .solution-subpage-gallery-thumbnail {
   width: 100%;
   height: auto;
+}
+.solution-subpage-gallery-block-title {
+  color: #2e2e2e;
 }
 .solution-subpage-gallery-button {
   background-color: #2e2e2e;
@@ -13183,19 +13168,12 @@ input {
   display: block;
   text-align: center;
   vertical-align: middle;
-  min-height: 135px;
-  padding: 25px;
 }
 .solution-use-cases-block-subtitle > p {
-  font-size: 19px;
-  line-height: 20px !important;
   margin: 0 auto;
-  width: 56%;
 }
 .solution-use-cases-block-subtitle > a {
   display: inline-block;
-  font-size: 19px;
-  padding: 15px 0 0;
 }
 .solution-carousel-button {
   display: inline-block;
@@ -13217,6 +13195,9 @@ input {
   width: 10vw;
   background-color: green;
   margin: 0 auto;
+}
+.solution-test {
+  color: #2e2e2e;
 }
 .own-carousel {
   background-color: #ffffff;
@@ -14583,7 +14564,7 @@ body.modal-open {
   margin-bottom: 0px;
 }
 .solutions-first-section-image {
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 .solutions-first-section-image-wrapper {
@@ -14644,7 +14625,6 @@ body.modal-open {
 }
 .solutions-second-section-icons-title:before,
 .solutions-second-section-icons-title:after {
-  background-color: #000;
   content: "";
   display: inline-block;
   height: 2px;
@@ -14691,11 +14671,24 @@ body.modal-open {
   font-weight: 300;
   margin: 0px 10px 0px 10px;
 }
+.solution-subpage-section-title,
+.solution-subpage-second-block-title {
+  font-size: 44.6px;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+  line-height: 1.2em;
+}
 .solution-subpage-second-block {
   padding-top: 6.4vw;
 }
 .solution-subpage-second-block-wrapper {
   width: 63vw;
+}
+.solution-subpage-bottom-block-title {
+  font-size: 44.6px;
+  font-weight: 300;
+  line-height: 0.45;
+  letter-spacing: 1.3px;
 }
 .solution-subpage-bottom-block-wrapper {
   background: url('/wp-content/themes/sixgill/images/solutions/getstarted_bg_desktop.png') no-repeat scroll 0 0 / cover;
@@ -14710,6 +14703,20 @@ body.modal-open {
 }
 .solution-subpage-bottom-section-column {
   width: 45%;
+}
+.solution-subpage-bottom-section-subtitle {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  width: 40vw;
+  margin: 32px auto;
+}
+.solution-subpage-bottom-section-text-wrapper p {
+  font-size: 16.2px;
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
 }
 .solution-subpage-carousels-div {
   width: 72.73vw;
@@ -14727,7 +14734,6 @@ body.modal-open {
   font-weight: bold;
   line-height: 1.42;
   letter-spacing: 0.5px;
-  color: #2e2e2e;
 }
 .solution-subpage-gallery-thumbnail-wrapper {
   width: 72.87vw;
@@ -14787,6 +14793,19 @@ body.modal-open {
 .solution-use-cases-block-image {
   height: 13.2vw;
 }
+.solution-use-cases-block-subtitle {
+  min-height: 135px;
+  padding: 25px;
+}
+.solution-use-cases-block-subtitle > p {
+  font-size: 19px;
+  line-height: 20px !important;
+  width: 56%;
+}
+.solution-use-cases-block-subtitle > a {
+  font-size: 19px;
+  padding: 15px 0 0;
+}
 .solution-use-cases-block-content {
   width: 68vw;
   margin: 0 auto 4vw;
@@ -14806,9 +14825,6 @@ body.modal-open {
   width: 5.5%;
 }
 /* Solutions subpage desktop styles */
-.solution-test {
-  color: #2e2e2e;
-}
 .first-left-container-subpage {
   width: 51%;
 }
@@ -14817,7 +14833,6 @@ body.modal-open {
   float: right;
 }
 .owl-carousel {
-  background-color: #ffffff;
   border: 1px solid rgba(153, 153, 153, 0.32);
 }
 .own-carousel-outside-wrapper {
@@ -16360,16 +16375,10 @@ body.modal-open {
 
 /* Solutions tablet styles */
 /*---link more------*/
-.solutions .solution-learn-more-link {
-  display: block;
-  position: absolute;
-  top: calc(100vh - 175px);
-  width: 100%;
-}
 .solutions-learn-more-link {
   display: block;
   position: absolute;
-  bottom: 21px;
+  bottom: 38px;
   left: 0px;
   width: 100%;
 }
@@ -16521,7 +16530,6 @@ body.modal-open {
   line-height: 1.25;
   letter-spacing: 3.9px;
   text-align: center;
-  color: #0051c6;
   position: absolute;
   left: 0;
   top: -2.1em;
@@ -16568,6 +16576,19 @@ body.modal-open {
   vertical-align: 0.3em;
   width: 20vw;
 }
+.solutions-third-section-use-cases-block-subtitle {
+  min-height: 135px;
+  padding: 25px;
+}
+.solutions-third-section-use-cases-block-subtitle > p {
+  font-size: 19px;
+  line-height: 20px !important;
+  width: 56%;
+}
+.solutions-third-section-use-cases-block-subtitle > a {
+  font-size: 19px;
+  padding: 15px 0 0;
+}
 .solutions-fourth-section {
   min-height: 100vh;
   height: inherit;
@@ -16585,6 +16606,13 @@ body.modal-open {
   font-size: 20px;
   font-weight: 500;
 }
+.solution-subpage-section-title,
+.solution-subpage-second-block-title {
+  font-size: 44.6px;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+  line-height: 1.2em;
+}
 .solution-subpage-first-block {
   width: 100%;
 }
@@ -16599,6 +16627,12 @@ body.modal-open {
 }
 .solution-subpage-second-block-wrapper {
   width: 88.2vw;
+}
+.solution-subpage-bottom-block-title {
+  font-size: 44.6px;
+  font-weight: 300;
+  line-height: 0.45;
+  letter-spacing: 1.3px;
 }
 .solution-subpage-bottom-line {
   margin-top: 80px;
@@ -16618,6 +16652,20 @@ body.modal-open {
 .solution-subpage-bottom-section-column:nth-child(2n+1) {
   float: left;
   margin-left: 4vw;
+}
+.solution-subpage-bottom-section-subtitle {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  width: 40vw;
+  margin: 32px auto;
+}
+.solution-subpage-bottom-section-text-wrapper p {
+  font-size: 16.2px;
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
 }
 .solution-subpage-bottom-block {
   margin-top: 70px;
@@ -16644,7 +16692,6 @@ body.modal-open {
   line-height: 1.25;
   letter-spacing: 0.8px;
   text-align: center;
-  color: #2e2e2e;
   padding-bottom: 22px;
 }
 .solution-subpage-gallery-thumbnail-wrapper {
@@ -16782,7 +16829,6 @@ body.modal-open {
   line-height: 1.25;
 }
 .own-carousel {
-  background-color: #ffffff;
   border: 1px solid rgba(153, 153, 153, 0.32);
 }
 .own-carousel-outside-wrapper {
@@ -18823,6 +18869,19 @@ ul:not([class]) li {
 .solutions-third-section-icons-title::before {
   display: none;
 }
+.solutions-use-cases-block-subtitle {
+  min-height: 135px;
+  padding: 25px;
+}
+.solutions-use-cases-block-subtitle > p {
+  font-size: 19px;
+  line-height: 20px !important;
+  width: 56%;
+}
+.solutions-use-cases-block-subtitle > a {
+  font-size: 19px;
+  padding: 15px 0 0;
+}
 .solutions-fourth-section {
   display: block;
   height: inherit;
@@ -18870,6 +18929,13 @@ ul:not([class]) li {
 .solution-subpage-section-title {
   margin-bottom: 23px;
 }
+.solution-subpage-section-title,
+.solution-subpage-second-block-title {
+  font-size: 44.6px;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+  line-height: 1.2em;
+}
 .solution-subpage-second-block-wrapper {
   text-align: left;
 }
@@ -18883,7 +18949,15 @@ ul:not([class]) li {
   margin-top: 50px;
 }
 .solution-subpage-bottom-block-title {
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 1.67;
+  letter-spacing: 2.9px;
   text-align: left;
+}
+.solution-subpage-bottom-block-wrapper {
+  margin-bottom: 32px;
+  background: url('/wp-content/themes/sixgill/images/solutions/getstarted_bg_mobile.png') no-repeat scroll 0 0 / cover;
 }
 .solution-subpage-bottom-section-subtitle {
   text-align: left;
@@ -18906,16 +18980,15 @@ ul:not([class]) li {
   line-height: 1.25;
   letter-spacing: 0.5px;
 }
+.solution-subpage-bottom-section-text-wrapper p {
+  font-size: 16.2px;
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+}
 .solution-subpage-bottom-line {
   margin-top: 50px;
   margin-bottom: 50px;
-}
-.solution-subpage-bottom-block-title {
-  font-size: 28.4px;
-  font-weight: 300;
-  font-family: "Lato";
-  line-height: 0.71;
-  letter-spacing: 0.9px;
 }
 .solution-subpage-suptitle {
   font-size: 13.2px;
@@ -18959,6 +19032,13 @@ ul:not([class]) li {
 .solution-subpage-gallery-button-icon {
   margin-right: 3.13vw;
 }
+.solution-subpage-gallery-block-title {
+  font-size: 13.5px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  margin-bottom: 6vw;
+}
 .solution-subpage-slide-info {
   text-align: left;
   width: 87.5vw;
@@ -18973,17 +19053,6 @@ ul:not([class]) li {
   font-size: 4vw;
   margin-bottom: 7.66vw;
   font-weight: normal;
-}
-.solution-subpage-gallery-block-title {
-  font-size: 13.5px;
-  font-weight: bold;
-  line-height: 1.5;
-  letter-spacing: 0.7px;
-  margin-bottom: 6vw;
-}
-.solution-subpage-bottom-block-wrapper {
-  margin-bottom: 32px;
-  background: url('/wp-content/themes/sixgill/images/solutions/getstarted_bg_mobile.png') no-repeat scroll 0 0 / cover;
 }
 .solution-subpage-first-block-text p {
   font-size: 16.2px;
