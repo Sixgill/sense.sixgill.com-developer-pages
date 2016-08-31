@@ -4,9 +4,9 @@
 
 	<div
 		class="blog-page-header responsive-background"
-		desktop-src="<?php the_post_thumbnail_url(); ?>"
-		tablet-src="<?php the_post_thumbnail_url(array(768, 264)); ?>"
-		mobile-src="<?php the_post_thumbnail_url(array(480, 190)); ?>"
+		desktop-src="<?php echo get_field('header_image_desktop'); ?>"
+		tablet-src="<?php echo get_field('header_image_tablet'); ?>"
+		mobile-src="<?php echo get_field('header_image_mobile'); ?>"
 		>
 		<div class="blog-page-header-wrapper">
 			<div class="blog-page-header-suptitle">

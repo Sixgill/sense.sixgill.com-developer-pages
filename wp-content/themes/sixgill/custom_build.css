@@ -12127,36 +12127,58 @@ input {
   background-color: #2e2e2e;
   position: relative;
 }
-.footer-container,
-.footer-top-block-left,
-.footer-top-block-right,
-.footer-subscription-form-wrapper > form,
-.footer-subscription-form-wrapper > form > .mc4wp-form-fields,
-.footer-subscription-button,
+.footer-top-block-left {
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-top-block-right {
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-top-text {
+  display: inline-block;
+  vertical-align: top;
+  color: #999999;
+}
+.footer-subscription-button {
+  background-color: #4dc85a;
+  cursor: pointer;
+  width: 38%;
+  height: 100%;
+  vertical-align: top;
+  display: inline-block;
+}
 .footer-subscription-email {
+  border: 0px;
+  outline: 0px;
+  width: 62%;
+  height: 100%;
+  vertical-align: top;
+  display: inline-block;
+}
+.footer-subscription-form-wrapper p {
+  margin-bottom: 0px !important;
+}
+.footer-subscription-form-wrapper > form {
+  padding: 0px;
+  margin: 0px;
+}
+.footer-subscription-form-wrapper > form,
+.footer-subscription-form-wrapper > form > .mc4wp-form-fields {
   height: 100%;
 }
-.footer-top-block-left,
-.footer-top-block-right,
-.footer-top-text,
 .footer-subscription-form-wrapper,
 .footer-link-col,
 .footer-social-icon-link,
 .footer-icons-wrapper,
-.footer-copyright-wrapper,
-.footer-subscription-button,
-.footer-subscription-email {
+.footer-copyright-wrapper {
   display: inline-block;
-}
-.footer-subscription-button,
-.footer-subscription-email,
-.footer-top-text,
-.footer-top-block-right,
-.footer-top-block-left {
-  vertical-align: top;
 }
 .footer-container {
   width: 100%;
+  height: 100%;
 }
 .footer-social-icon-img {
   width: 100%;
@@ -12168,30 +12190,8 @@ input {
   color: #ffffff !important;
   text-decoration: none !important;
 }
-.footer-subscription-form-wrapper > form {
-  padding: 0px;
-  margin: 0px;
-}
-.footer-copyright-wrapper,
-.footer-top-text {
+.footer-copyright-wrapper {
   color: #999999;
-}
-.footer-subscription-button {
-  background-color: #4dc85a;
-  cursor: pointer;
-}
-.footer-subscription-email {
-  border: 0px;
-  outline: 0px;
-}
-.footer-subscription-email {
-  width: 62%;
-}
-.footer-subscription-button {
-  width: 38%;
-}
-.footer-subscription-form-wrapper p {
-  margin-bottom: 0px !important;
 }
 
 .blog-page-header {
@@ -18437,6 +18437,13 @@ ul:not([class]) li {
   font-size: 13px;
 }
 
+.blog-page-cols-wrapper {
+  width: 100%;
+  margin: 10px 16px 22px 8px;
+}
+.blog-page-col-left {
+  width: 100%;
+}
 
 /* Blog mobile portrait and landscape styles */
 .share-buttons-top {
