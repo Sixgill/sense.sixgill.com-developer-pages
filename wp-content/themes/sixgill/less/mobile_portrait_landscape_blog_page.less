@@ -1,6 +1,16 @@
 .blog-page {
 	&-header {
 		height: 127px;
+
+		&-suptitle {
+			font-size: 13.2px;
+			letter-spacing: 0.4px;
+		}
+
+		&-title {
+			font-size: 18px;
+			letter-spacing: 0.5px;
+		}
 	}
 
 	&-col {
@@ -15,6 +25,11 @@
 	}
 
 	&-post-card {
+		min-height: 95px;
+
+		&-link:not(:last-child) {
+			margin-bottom: 10px;
+		}
 
 		&-image {
 
@@ -25,19 +40,14 @@
 		}
 
 		&-title {
-
+			font-size: 16.2px;
+  		line-height: 19.5px;
+  		letter-spacing: 0.5px;
 		}
 
 		&-author-date {
-
-		}
-
-		&-dash {
-
-		}
-
-		&-text {
-
+			font-size: 12px;
+  		letter-spacing: 0.4px;
 		}
 	}
 }

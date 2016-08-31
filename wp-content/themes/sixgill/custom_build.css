@@ -17994,6 +17994,9 @@ ul:not([class]) li {
 
 /* Footer mobile portrait styles */
 
+.blog-page-header {
+  margin-top: 74px;
+}
 
 /* Blog mobile portrait styles */
 .subscribe-input-container {
@@ -18486,12 +18489,35 @@ ul:not([class]) li {
 .blog-page-header {
   height: 127px;
 }
+.blog-page-header-suptitle {
+  font-size: 13.2px;
+  letter-spacing: 0.4px;
+}
+.blog-page-header-title {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
 .blog-page-cols-wrapper {
   width: 100%;
   margin: 10px 16px 22px 8px;
 }
 .blog-page-col-left {
   width: 100%;
+}
+.blog-page-post-card {
+  min-height: 95px;
+}
+.blog-page-post-card-link:not(:last-child) {
+  margin-bottom: 10px;
+}
+.blog-page-post-card-title {
+  font-size: 16.2px;
+  line-height: 19.5px;
+  letter-spacing: 0.5px;
+}
+.blog-page-post-card-author-date {
+  font-size: 12px;
+  letter-spacing: 0.4px;
 }
 
 /* Blog mobile portrait and landscape styles */
