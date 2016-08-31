@@ -13002,7 +13002,6 @@ input {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
 }
 /*-----------------------------------------------------*/
 /* Solutions subpage Common styles */
