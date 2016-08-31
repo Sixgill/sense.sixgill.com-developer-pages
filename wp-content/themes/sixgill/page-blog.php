@@ -48,7 +48,7 @@
 
 									<div class="blog-page-post-card-dash no-mobile-portrait-display no-mobile-landscape-display"></div>
 
-									<div class="blog-page-post-card-text">
+									<div class="blog-page-post-card-text no-mobile-portrait-display no-mobile-landscape-display">
 										<?php echo get_the_content("") ?>..
 									</div>
 								</div>
@@ -83,16 +83,26 @@
 				</div>
 
 				<?php
-					query_posts('meta_key=post_views_count&category_name=Blog&posts_per_page=3&orderby=meta_value_num&order=DESC');
+					$args = array(
+						'posts_per_page' => 3,
+						'paged' => $paged,
+						'more' => $more = 0,
+						//'meta_key' => 'views',
+						//'orderby' => 'meta_value_num',
+						'order' => 'DESC',
+						'category_name' => 'Blog',
+					);
+					//'category_name=Blog&posts_per_page=3'
+					//meta_key=post_views_count&orderby=meta_value_num&order=DESC
+					query_posts($args);
 					if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-						<a href="<?php echo get_permalink(); ?>">
+						<a href="<?php echo get_permalink(); ?>" class="blog-page-popular-post-card-link">
 							<div class="blog-page-popular-post-card">
 								<div class="blog-page-popular-post-image-wrapper">
 									<img
 										alt="Post thumbnail"
 										class="blog-page-popular-post-image"
-										src=""
+										src="<?php the_post_thumbnail_url(); ?>"
 									>
 								</div>
 

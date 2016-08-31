@@ -104,15 +104,31 @@
 		&-post {
 
 			&-card {
-
+				display: flex;
 				width: 100%;
-				padding: 10px 0px 10px 0px;
-				margin: 0px 10px 0px 10px;
+				align-items: flex-start;
 
-				&:not(:last-child) {
-					margin-bottom: 10px;
-					border-bottom: 1px solid #dfdfdf;
+				&-link {
+					display: flex;
+					width: 100%;
+					padding: 10px 0px 10px 0px;
+					margin: 0px 10px 0px 0px;
+					align-items: flex-start;
+
+					&:not(:last-child) {
+						margin-bottom: 10px;
+						border-bottom: 1px solid #dfdfdf;
+					}
 				}
+
+
+			}
+
+			&-content-wrapper {
+				display: inline-block;
+				padding: 7px 0px 6px 10px;
+				width: calc(~"100% - 65px");
+				min-height: 65px;
 			}
 
 			&-image {
@@ -120,6 +136,8 @@
 				&-wrapper {
 					width: 65px;
 					height: 65px;
+					display: flex;
+					align-self: center;
 				}
 
 			}
