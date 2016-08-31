@@ -9,11 +9,11 @@
 	<div id="solutions-first-section" class="solutions-section solutions-first-section">
 		<div class="solutions-first-section-block">
 			<div class="solutions-first-section-image-wrapper">
-				<img
-					class="solutions-first-section-image responsive-image"
+				<div
+					class="solutions-first-section-image responsive-background"
 					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
 					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
-				>
+				></div>
 			</div>
 
 			<div class="solutions-first-section-block-text">
@@ -26,10 +26,10 @@
 			</div>
 
 			<div class="solutions-first-section-image-wrapper-mobile">
-				<img
-					class="solutions-first-section-image responsive-image"
+				<div
+					class="solutions-first-section-image responsive-background"
 					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
-				>
+				></div>
 			</div>
 		</div>
 		<!--link more link -->

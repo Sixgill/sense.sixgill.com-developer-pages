@@ -12888,7 +12888,6 @@ input {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
 }
 .solutions-second-section-block-title {
   font-family: "Lato";
@@ -12936,7 +12935,6 @@ input {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
 }
 .solutions-third-section-image-wrapper {
   display: inline-block;
@@ -14578,6 +14576,9 @@ body.modal-open {
 .solutions-first-section-image {
   height: 100%;
   width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .solutions-first-section-image-wrapper {
   -webkit-align-items: stretch;
@@ -14586,9 +14587,6 @@ body.modal-open {
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
           align-self: stretch;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
