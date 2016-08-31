@@ -18208,7 +18208,9 @@ ul:not([class]) li {
 
 /* Footer mobile portrait and landscape styles */
 .footer {
+  display: inline-block;
   overflow: visible;
+  width: 100%;
 }
 .footer-top-text-mobile {
   font-size: 16px;
@@ -18271,6 +18273,9 @@ ul:not([class]) li {
   margin: 29px;
   text-align: center;
   text-transform: uppercase;
+}
+.footer-link-col:first-child a {
+  margin-top: 0px;
 }
 .footer-bottom-block {
   height: 50px;
