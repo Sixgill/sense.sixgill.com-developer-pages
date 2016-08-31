@@ -14301,17 +14301,44 @@ body.modal-open {
   height: 35px;
 }
 .blog-page-popular-post-card {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.blog-page-popular-post-card-link {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   padding: 10px 0px 10px 0px;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px 0px 0px;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.blog-page-popular-post-card:not(:last-child) {
+.blog-page-popular-post-card-link:not(:last-child) {
   margin-bottom: 10px;
   border-bottom: 1px solid #dfdfdf;
+}
+.blog-page-popular-post-content-wrapper {
+  display: inline-block;
+  padding: 7px 0px 6px 10px;
+  width: calc(100% - 65px);
+  min-height: 65px;
 }
 .blog-page-popular-post-image-wrapper {
   width: 65px;
   height: 65px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 .blog-page-popular-post-title {
   font-size: 16px;
