@@ -17884,6 +17884,12 @@ ul:not([class]) li {
   width: 92%;
   margin: 2vw auto;
 }
+.solutions-first-section {
+  margin-top: 74px;
+}
+.solutions-first-section-block-title {
+  padding-top: 40px;
+}
 .slider-title-adjust {
   top: 20px;
 }
@@ -18099,6 +18105,9 @@ ul:not([class]) li {
 }
 .solution-use-cases-block-subtitle > p {
   padding: 2vw;
+}
+.solutions-first-section-block-title {
+  padding-top: 40.123px;
 }
 .title-left-col {
   text-align: center;
@@ -18813,14 +18822,13 @@ ul:not([class]) li {
 }
 .solutions-first-section-block-text {
   width: 88.6%;
-  margin-top: 110px;
   margin-bottom: 42px;
   text-align: left;
 }
 .solutions-first-section-block-paragraph,
 .solutions-first-section-block-paragraph p,
 .solutions-first-section-block-paragraph li {
-  font-size: 4.97vw;
+  font-size: 16px;
   font-weight: 400;
 }
 .solutions-first-section-block-paragraph p {
