@@ -48,7 +48,7 @@
 
 									<div class="blog-page-post-card-dash no-mobile-portrait-display no-mobile-landscape-display"></div>
 
-									<div class="blog-page-post-card-text">
+									<div class="blog-page-post-card-text no-mobile-portrait-display no-mobile-landscape-display">
 										<?php echo get_the_content("") ?>..
 									</div>
 								</div>

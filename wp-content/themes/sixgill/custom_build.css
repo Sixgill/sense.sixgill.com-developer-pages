@@ -18521,7 +18521,7 @@ ul:not([class]) li {
 }
 .blog-page-cols-wrapper {
   width: 100%;
-  margin: 10px 16px 22px 8px;
+  padding: 10px 16px 22px 8px;
 }
 .blog-page-col-left {
   width: 100%;
@@ -18531,6 +18531,18 @@ ul:not([class]) li {
 }
 .blog-page-post-card-link:not(:last-child) {
   margin-bottom: 10px;
+}
+.blog-page-post-card-image {
+  width: 85px;
+  height: 85px;
+  margin-left: 5px;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+.blog-page-post-card-content-wrapper {
+  padding: 13px 19px 10px 13px;
+  width: calc(100% - 90px);
 }
 .blog-page-post-card-title {
   font-size: 16.2px;
