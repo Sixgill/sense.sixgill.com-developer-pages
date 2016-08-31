@@ -27,7 +27,7 @@
 
 			<div class="solutions-first-section-image-wrapper-mobile">
 				<img
-					class="solutions-first-section-image"
+					class="solutions-first-section-image responsive-image"
 					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
 				>
 			</div>

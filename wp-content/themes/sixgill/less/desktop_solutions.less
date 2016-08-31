@@ -9,12 +9,6 @@
 		width: 100%;
 	}
 
-	&-section {
-		max-height: none;
-		height: auto;
-		min-height: 100vh;
-	}
-
 	&-icon {
 		&-item {
 			padding: 25px 2.8vw;
@@ -41,23 +35,20 @@
 	}	
 
 	&-first-section {
-		height: 100vh;
 		background-image: url("images/solutions/featBg-desktop@1x.png");
-		background-attachment: scroll;
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: flex;
 		justify-content: flex-end;
-		min-height: 46vw !important;
-		position: relative;
+		align-items: center;
 
 		&-block {
 			display: flex;
 			align-items: center;
-			width: 88.34%;
-			height: calc(~"(100vw - 225px)*0.35 - 1px");
+			margin:100px 0px;
+			width: 73.49vw;
+			min-height: 30vw;
 			z-index: 2;
-			align-self: center;
 
 			&-title {
 				align-items: center;
@@ -71,10 +62,16 @@
 			&-text {
 				width: 71%;
 				padding: 0px 2.4vw 0px 2.4vw;
+				align-self: center;
+			}
+
+			&-paragraph {
+				width: 100%;
 			}
 
 			&-paragraph p {
 				margin-bottom: 0px;
+				width: 100%;
 			}
 		}
 
@@ -83,8 +80,14 @@
 			width: 100%;
 
 			&-wrapper {
-				height: 100%;
-				width: 20vw;
+				align-items: stretch;
+				align-self: stretch;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: flex;
+				height: inherit;
+				width: 28.3%;
 			}
 
 			&-image-wrapper-mobile {
@@ -93,17 +96,12 @@
 		}
 
 		&-scroll-link {
-
 			&-text {
 				font-size: 17px;
 				font-weight: 600;
 				text-shadow: -3.1px 3.9px 12px #000000;
 				margin-bottom: 16px;
 				text-align: center;
-			}
-
-			&-wrapper {
-
 			}
 
 			&-ico-wrapper {
@@ -147,7 +145,7 @@
 
 		&-block-title,
 		&-icons-title {
-			margin:0 0 0.35em 0;
+			margin:0;
 			padding: 0;
 		}
 
@@ -189,6 +187,10 @@
 				line-height: 1.33;
 				letter-spacing: 0.5px;
 			}
+		}
+
+		&-icons-block {
+			margin: 30px auto 0;
 		}
 
 		&-icons-title {
@@ -285,12 +287,8 @@
 						letter-spacing: 0.5px;
 					}
 				}
-			}
-
-			
+			}			
 		}
-
-
 
 		&-carousels-div {
 			width: 72.73vw;
@@ -302,7 +300,6 @@
 		}
 
 		&-gallery {
-
 			&-block {
 				text-align: center;
 			}
@@ -374,7 +371,6 @@
 		}
 
 		&-slide {
-
 			&-image {
 				border-bottom: 1px solid rgba(153, 153, 153, 0.32);
 			}
@@ -386,7 +382,6 @@
 	}
 
 	&-use-cases {
-
 		&-block {
 			&-half:only-child {
 				margin-left: 25%;
@@ -458,8 +453,6 @@
 	margin-bottom: 2.232vw;
 	width: 87.55%;
 }
-
-
 
 .swiper_wrapper {
 	height: 324px;

@@ -3,6 +3,7 @@
 .solutions {
 	&-section {
 		background-size: cover;
+		min-height: 100vh;
 	}
 
 	&-icon {
@@ -36,6 +37,7 @@
 	}
 
 	&-first-section {
+    	position: relative;
 
 		&-scroll-link {
 
@@ -120,7 +122,7 @@
 			&-block {
 				text-align: center;
 				width:950px;
-				margin: 52px auto 0;
+				margin: 30px auto 0;
 				overflow: hidden;
 				width: 100%;
 				padding: 0;
@@ -168,10 +170,11 @@
 			text-align: center;
 			color: #fff;
 			display: inline-block;
+			margin: 0;
 
 			&:before,
 			&:after {
-				background-color: #000;
+				background-color: #fff;
 				content: "";
 				display: inline-block;
 				opacity: 0.1;
@@ -190,15 +193,18 @@
 
 			&-block {
 				text-align: center;
-				width:950px;
-				margin: 52px auto 0;
 				overflow: hidden;
 				width: 100%;
+				margin: 30px auto 0;
 			}
 		}
 
 		&-icon-list .solutions-icon-caption{
 			color:#fff;
+		}
+
+		&-icon-wrapper .solutions-icon-link a {
+			color: #0b98dd;
 		}
 
 	}
@@ -258,16 +264,18 @@
 
 		&-bottom {
 
-			&-block-wrapper {
-				text-align: center;
-				width: 100%;
-				display: block;
-				color:#121212;
-			}
+			&-block {
+				&-wrapper {
+					text-align: center;
+					width: 100%;
+					display: block;
+					color:#121212;
+				}
 
-			&-block-title {
-				color: #4ddb5a;
-				font-family: 'Lato';
+				&-title {
+					color: #4ddb5a;
+					font-family: 'Lato';
+				}
 			}
 
 			&-section {
@@ -395,10 +403,7 @@
 			&-image {
 				border-bottom: 1px solid rgba(153, 153, 153, 0.32);
 			}
-
-		}
-
-		
+		}		
 
 		&-carousels-div {
 			display: inline-block;
@@ -409,7 +414,6 @@
 	}
 
 	&-use-cases {
-
 		&-block {
 			&-half {
 				width: 48%;
@@ -437,15 +441,19 @@
 				display: block;
 				text-align: center;
 				vertical-align: middle;
-			}
 
-			&-subtitle > p {
-				margin: 0 auto;
-			}
+				& > p {
+					margin: 0 auto;
+				}
 
-			&-subtitle > a {
-				display: inline-block;
-			}
+				& > a {
+					display: inline-block;
+				}
+
+				& > a:hover {
+					color: #0051c6;
+				}
+			}			
 		}
 	}
 
@@ -483,14 +491,11 @@
 }
 
 .own-carousel {
-	&-outside-wrapper {
-		display: inline-block;
-		
-	}
+	background-color: #ffffff;
+	border: 1px solid rgba(153, 153, 153, 0.32);
 
-	& {
-		background-color: #ffffff;
-		border: 1px solid rgba(153, 153, 153, 0.32);
+	&-outside-wrapper {
+		display: inline-block;		
 	}
 
 	&-n-controls-wrapper {
@@ -501,4 +506,9 @@
 	}
 }
 
+#content .solution-subpage{
+	&-first-block-text p{
+		color: #2e2e2e;
+	}
+}
 

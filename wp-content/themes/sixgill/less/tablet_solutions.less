@@ -72,7 +72,6 @@
 				font-weight: 300;
 				line-height: 1;
 				letter-spacing: 1.9px;
-				color: #ffffff;
 				margin-bottom: 2vw;
 				text-transform: uppercase;
 			}
@@ -83,9 +82,7 @@
 				margin: auto;
 			}
 
-
-
-			.solution-first-section-block-paragraph {
+			&-paragraph {
 				font-size: 16px;
 				font-weight: 400;
 
@@ -113,25 +110,22 @@
 			}
 		}
 
-		.solution-first-section {
-			&-image-wrapper-mobile {
-				display: none;
-			}
-
-
-			&-image-wrapper {
-				max-height: auto;
-			}
-
-
-			&-block-paragraph {
-				font-size: 16px;
-				font-weight: 400;
-				line-height: 1.83;
-				letter-spacing: 0.5px;
-				color: #ffffff;
-			}
+		&-image-wrapper-mobile {
+			display: none;
 		}
+
+
+		&-image-wrapper {
+			max-height: auto;
+		}
+
+		&-block-paragraph {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.83;
+			letter-spacing: 0.5px;
+		}
+		
 	}
 
 	&-second-section {
@@ -147,7 +141,6 @@
 
 		&:before,
 		&:after {
-				background-color: #000;
 				content: "";
 				display: inline-block;
 				height: 2px;
@@ -210,7 +203,7 @@
 				top: 1.2em;
 				text-align: center;
 				width: 100%;
-				font-size: 44px;
+				font-size: 35px;
 				font-weight: 300;
 				line-height: 1;
 				letter-spacing: 4.8px;
@@ -313,10 +306,17 @@
 
 		&-second-block {
 			padding-top: 6.9vw;
+
+			&-block-wrapper {
+				width: 88.28vw;
+			}
+			
 			&-wrapper {
 				width: 88.2vw;
 			}
+			
 		}
+
 
 		&-bottom {
 			&-block-title {
@@ -324,6 +324,11 @@
 				font-weight: 300;
 				line-height: 0.45;
 				letter-spacing: 1.3px;
+			}
+
+			&-block {
+				margin-top: 70px;
+				width: 90.02vw;
 			}
 
 			&-line {
@@ -340,16 +345,13 @@
 				margin-bottom: 0px;
 			}
 
-
 			&-section {
-				&-column {
-					width: 38.15vw;
-					margin-bottom: 3.5vw;
 
-					&:nth-child(2n+1) {
-							float: left;
-							margin-left: 4vw;
-					}
+
+				&-title{
+					font-size: 36px;
+					margin-bottom: 26px;
+					line-height: 1;
 				}
 
 				&-subtitle {
@@ -361,6 +363,21 @@
 						margin: 32px auto;
 				}
 
+				&-column {
+					width: 38.15vw;
+					margin-bottom: 3.5vw;
+
+					&:nth-child(2n) {
+						float: right;
+						margin-right: 2vw;
+					}
+
+					&:nth-child(2n+1) {
+						float: left;
+						margin-left: 4vw;
+					}
+				}
+
 				&-text-wrapper {
 					& p {
 						font-size: 16.2px;
@@ -369,38 +386,15 @@
 						letter-spacing: 0.5px;
 					}
 				}
-
-
 			}
-
-		}
-
-		&-bottom-block {
-			margin-top: 70px;
-			width: 90.02vw;
 		}
 
 		&-last-section-text-wrapper {
 			width: 100%;
 		}
 
-
-
-		&-section-title{
-			font-size: 36px;
-			margin-bottom: 26px;
-			line-height: 1;
-		}
-
-
-
-		&-bottom-section-column:nth-child(2n) {
-				float: right;
-				margin-right: 2vw;
-		}
-
-		&-second-block-wrapper {
-			width: 88.28vw;
+		&-galleries-wrapper {
+			padding: calc(~"3vw - 30px") 0px 4.6vw 0px;
 		}
 
 		&-gallery {
@@ -431,9 +425,7 @@
 			&-button-icon {
 				margin-right: 1.3vw;
 			}
-
 		}
-
 
 		&-viewprocess-placeholder {
 			height: 6.9vw;
@@ -444,24 +436,27 @@
 			margin-bottom: 57px;
 		}
 
-		&-bottom-block-title {
-			font-size: 35px;
-			font-weight: 300;
-			line-height: 0.58;
-			letter-spacing: 1.1px;
+		&-bottom-block {
+			&-title {
+				font-size: 35px;
+				font-weight: 300;
+				line-height: 0.58;
+				letter-spacing: 1.1px;
+			}
+
+			&-wrapper {
+				background: url('/wp-content/themes/sixgill/images/solutions/getstarted_bg_tablet.png') no-repeat scroll 0 0 / cover ;
+			}
 		}
 
-		&-bottom-block-wrapper {
-			background: url('/wp-content/themes/sixgill/images/solutions/getstarted_bg_tablet.png') no-repeat scroll 0 0 / cover ;
+		&-bottom-section-subtitle {
+			width: 68vw;
+			margin: 32px auto 63px;
 		}
 
 		&-carousels-div {
 			width: 72.73vw;
 			margin: 6.3vw 0px 6vw 0px;
-		}
-
-		&-galleries-wrapper {
-			padding: calc(~"3vw - 30px") 0px 4.6vw 0px;
 		}
 
 		&-slide {
@@ -489,17 +484,9 @@
 				display: inline-block;
 			}
 		}
-
-		&-bottom-section-subtitle {
-			width: 68vw;
-			margin: 32px auto 63px;
-		}
-
-
 	}
 
 	&-use-cases {
-
 		&-block {
 			&-half {
 				width:47%;
@@ -531,8 +518,6 @@
 				margin-bottom: 6vw;
 			}
 		}
-
-
 	}
 
 	&-carousel-button {
@@ -593,7 +578,6 @@
 		font-size: 16.2px;
 		font-weight: normal;
 		letter-spacing: 0.5px;
-		color: #2e2e2e;
 	}
 
 	&-bottom-section-text-wrapper p {
