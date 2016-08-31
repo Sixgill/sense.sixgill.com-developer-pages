@@ -8,12 +8,11 @@
 	<a name="solutions-first-section"></a>
 	<div id="solutions-first-section" class="solutions-section solutions-first-section">
 		<div class="solutions-first-section-block">
-			<div class="solutions-first-section-image-wrapper">
-				<div
-					class="solutions-first-section-image responsive-background"
-					desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
-					tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
-				></div>
+			<div class="solutions-first-section-image-wrapper responsive-background"				
+				class="solutions-first-section-image responsive-background"
+				desktop-src="<?php echo get_field('first_section_image_desktop'); ?>"
+				tablet-src="<?php echo get_field('first_section_image_tablet'); ?>"
+			>	
 			</div>
 
 			<div class="solutions-first-section-block-text">
@@ -26,10 +25,10 @@
 			</div>
 
 			<div class="solutions-first-section-image-wrapper-mobile">
-				<div
-					class="solutions-first-section-image responsive-background"
+				<img
+					class="solutions-first-section-image responsive-image"
 					mobile-src="<?php echo get_field('first_section_image_mobile'); ?>"
-				></div>
+				>
 			</div>
 		</div>
 		<!--link more link -->

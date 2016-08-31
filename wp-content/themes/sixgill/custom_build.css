@@ -14576,9 +14576,6 @@ body.modal-open {
 .solutions-first-section-image {
   height: 100%;
   width: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .solutions-first-section-image-wrapper {
   -webkit-align-items: stretch;
@@ -14591,6 +14588,9 @@ body.modal-open {
   display: -ms-flexbox;
   display: flex;
   height: inherit;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 28.3%;
 }
 .solutions-first-section-image-image-wrapper-mobile {
@@ -16448,17 +16448,20 @@ body.modal-open {
   position: relative;
 }
 .solutions-first-section-block {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  margin: 6vh 0px 75px 0px;
-  width: 95.5%;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 6vh 0px 75px 0px;
+  width: 95.5%;
   z-index: 2;
 }
 .solutions-first-section-block-title {
@@ -16471,7 +16474,7 @@ body.modal-open {
 }
 .solutions-first-section-block-text {
   width: 52.5%;
-  padding: 0px 4vw 0px 4vw;
+  padding: 3vw 4vw;
   margin: auto;
 }
 .solutions-first-section-block-paragraph {
@@ -16479,7 +16482,7 @@ body.modal-open {
   font-weight: 400;
 }
 .solutions-first-section-block-paragraph p {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 .solutions-first-section-scroll-link-text {
   font-size: 17px;
@@ -16498,7 +16501,18 @@ body.modal-open {
   display: none;
 }
 .solutions-first-section-image-wrapper {
-  max-height: auto;
+  height: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 350px;
+  width: 47.34%;
 }
 .solutions-first-section-block-paragraph {
   font-size: 16px;
