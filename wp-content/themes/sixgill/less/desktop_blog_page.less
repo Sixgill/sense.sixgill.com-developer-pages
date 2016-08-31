@@ -16,32 +16,37 @@
 
 	&-col {
 		&s-wrapper {
-			margin: 51px 51px 34px 51px;
+			padding: 51px 51px 34px 51px;
 		}
 
 		&-left {
-			margin-right: 21px;
+			padding-right: 21px;
+			width: calc(~"100% - 290px");
 		}
 
 		&-right {
+			display: inline-block;
 			width: 290px;
 			min-width: 290px;
 		}
 	}
 
 	&-post-card {
-		height: 256px;
+		min-height: 256px;
 
 		&-link:not(:last-child) {
 			margin-bottom: 15px;
 		}
 
 		&-image {
-			width: 35.34%;
+			width: 256px;
+			min-width: 256px;
+			height: ~"256px \9";
 		}
 
 		&-content-wrapper {
 			padding: 28px 19px 28px 23px;
+			width: calc(~"100% - 256px");
 		}
 
 		&-title {
@@ -60,7 +65,13 @@
 		}
 
 		&-text {
-			font-size: 16px;
+			width: 100%;
+
+			& p, & span {
+				margin-bottom: 0px;
+				font-size: 16px !important;
+				width: 100%;
+			}
 		}
 	}
 

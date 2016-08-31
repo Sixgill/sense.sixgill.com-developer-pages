@@ -4,7 +4,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-size: contain;
+		background-size: cover;
 
 		&-suptitle {
 			font-family: "Lato";
@@ -25,43 +25,48 @@
 
 	&-col {
 		&s-wrapper {
+			width: 100%;
+			max-width: 100%;
 			display: flex;
 			align-items: flex-start;
-			justify-content: center;
 		}
 
 		&-left {
-			display: flex;
-			flex-grow: 1;
-			flex-direction: column;
+			display: inline-block;
 		}
 	}
 
 	&-post-card {
-		display: flex;
-		flex-grow: 1;
+		display: inline-block;
 		user-select: none;
-		box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.08);
+		box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
 
 		&-link {
 			display: inline-block;
-		}
-
-		&-image {
-			height: 100%;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center center;
-		}
-
-		&-content-wrapper {
-			height: 100%;
-			flex-grow: 1;
-			text-align: left;
 			width: 100%;
 		}
 
+		&-image {
+			display: flex;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			align-self: stretch;
+		}
+
+		&-content-wrapper {
+			display: flex;
+			height: 100%;
+			text-align: left;
+			flex-direction: column;
+		}
+
 		&-title {
+			display: flex;
+			flex-grow: 1;
 			font-family: "Lato";
 		  font-weight: 300;
 			line-height: 1em;
@@ -69,6 +74,8 @@
 		}
 
 		&-author-date {
+			display: flex;
+			flex-grow: 1;
 			font-family: "Lato";
 		  font-weight: 500;
 		  color: #999999;
@@ -83,6 +90,12 @@
 		&-text {
 			font-family: "Lato";
 			color: #2e2e2e;
+			box-sizing: border-box;
+			width: 100%;
+
+			& p, & span {
+				width: 100%;
+			}
 		}
 	}
 

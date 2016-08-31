@@ -3,8 +3,8 @@ Contributors: yikesinc, eherman24, liljimmi, hiwhatsup
 Donate link: https://yikesplugins.com/?utm_source=wp_plugin_repo&utm_medium=donate_link&utm_campaign=easy_forms_for_mailchimp
 Tags: MailChimp, MailChimp forms, MailChimp lists, opt-in forms, sign up form, MailChimp, email, forms, mailing lists, marketing, newsletter, sign up
 Requires at least: 4.0
-Tested up to: 4.5
-Stable tag: 6.0.5.5
+Tested up to: 4.6
+Stable tag: 6.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -134,6 +134,12 @@ You'll want to make sure that your database collation is set properly. The best 
 = I'm having trouble upgrading to version 6, what do I do? =
 We want our users to have as smooth a transition as possible so we created [Guides to Updating](https://yikesplugins.com/support/knowledge-base/product/installation-easy-forms-for-mailchimp/?utm_source=wp_plugin_repo&utm_medium=link&utm_campaign=easy_forms_for_mailchimp). Please check them out if you are experiencing problems.
 
+= Can I define my API key using a PHP constant, inside of wp-config.php? =
+Yes! Since version 6.1.2 of Easy Forms for MailChimp we have enabled the ability to define a PHP constant inside of wp-config.php to be used throughout the plugin. The constant name you'll want to use is `YIKES_MC_API_KEY`. Once you've defined your constant, you'll want to head into the options page and save your settings for the changes to take hold.
+
+Example:
+`define( 'YIKES_MC_API_KEY', '12345679-us2' );`
+
 == Screenshots ==
 
 1. General Form Settings - Enter your MailChimp API key to connect your site to your MailChimp account
@@ -206,6 +212,7 @@ Below you'll find a complete list of the hooks and filters available in Easy For
 * yikes-mailchimp-default-country-value - Alter the default country selected in the country dropdown.
 * yikes-mailchimp-recaptcha-required-error - Filter the error displayed back to the user when an error occurs during the reCAPTCHA submission process. (@parameters: $error_text)
 * yikes-mailchimp-sslverify - Toggle sslverify on/off when attempting to validate your API key with the MailChimp API servers.
+* yikes-mailchimp-user-already-subscribed-error - Filter the 'xxx@example.com' is already subscribed to the list. (@parameters - $response, $form_id, $user_email)
 
 **Actions**
 
@@ -228,8 +235,45 @@ Below you'll find a complete list of the hooks and filters available in Easy For
 
 == Changelog ==
 
+= Easy Forms for MailChimp 6.1.4 - August 5th, 2016 =
+* Fixing remote support requests for certain permium add-ons.
+* Bump version.
+
+= Easy Forms for MailChimp 6.1.3 - July 26th, 2016 =
+* Minor security patch - Thanks goes to the Wordfence Research Team for locating and disclosing the issue.
+* Cleared API/Account transient data when API key has changed.
+* Refactored our shortcode function to abort early, when no fields are present (inline or not).
+* Added `labels-hidden` class to the submit button `<span></span>` element so we can better style inline forms when <strong>all</strong> labels are hidden.
+
+= Easy Forms for MailChimp 6.1.2 - July 21st, 2016 =
+* Fixed incorrect date format on date picker for birthday fields (Front end).
+* Ensure that hidden fields don't become visible when forms are submitted (.fadeTo() bug)
+* Built in support for defining a constant for your API keys in wp-config.php (`YIKES_MC_API_KEY` see FAQ)
+
+= Easy Forms for MailChimp 6.1.1 - July 20th, 2016 =
+* Added helper classes to the address fields to allow for easier targeting (Supports zip lookup extension).
+
+= Easy Forms for MailChimp 6.1 - July 11th, 2016 =
+* Sanitized section request on the options page properly.
+* Fixed the apostraphes converted to tildes.
+* Added the missing space in the form field classes when labels were hidden.
+* Added preloaders to the submit button and the form overlay. Lowered opacity during AJAX processing.
+* Fixed the 'Duplicate' form function.
+* Repaired phone number validation on the phone form fields.
+* Properly hide descriptions when they are not set. (Markup should no longer be generated)
+* Added a 'Clear API Cache' link below the associated list dropdown during form creation.
+* Swapped out `get_currentuserinfo()` for the correct, newer, functions.
+* Repaired undefined variable on the 'Birthday/Date' form fields, when no default was set.
+* Users can now bulk add fields to forms, instead of having to do it one at a time.
+* Removed any dependency to the RSS feeds served from https://www.yikesplugins.com, which could potentially cause issues if the servers are ever down.
+* Refactored the database creation function, and swapped out the field types - to support older versions of PHP (<v5.3).
+* Added new filter to allow users to alter who can view/access the admin dashboard widgets - `yikes-mailchimp-admin-widget-capability`
+* Added a new filter (`yikes-mailchimp-user-already-subscribed-error`) allowing the 'already subscribed' error message to be filtered.
+* Added a new template tag (`[email]`) which can be used in the already subscribed response, to display the user entered email back in the response.
+* Added a new template tag (`[link][/link]`) which can be used to wrap text in the 'update profile' link, allowing users to create a custom response & link.
+
 = Easy Forms for MailChimp 6.0.5.5 - April 5th, 2016 =
-* Fixed icompatability with the avada theme options page.
+* Fixed incompatibility with the avada theme options page.
 * Removed the admin dashboard widgets for non-admins. Note: To alter, use the `yikes-mailchimp-user-role-access` filter.
 
 = Easy Forms for MailChimp 6.0.5.4 - March 30th, 2016 =
@@ -617,9 +661,51 @@ We have added brand new functionality, allowing users to easily customize forms 
 
 == Upgrade Notice ==
 
+= Easy Forms for MailChimp 6.1.4 - August 5th, 2016 =
+
+* Fixing remote support requests for certain permium add-ons.
+* Bump version.
+
+= Easy Forms for MailChimp 6.1.3 - July 26th, 2016 =
+
+* Minor security patch - Thanks goes to the Wordfence Research Team for locating and disclosing the issue.
+* Cleared API/Account transient data when API key has changed.
+* Refactored our shortcode function to abort early, when no fields are present (inline or not).
+* Added `labels-hidden` class to the submit button `<span></span>` element so we can better style inline forms when <strong>all</strong> labels are hidden.
+
+= Easy Forms for MailChimp 6.1.2 - July 21st, 2016 =
+
+* Fixed incorrect date format on date picker for birthday fields (Front end).
+* Ensure that hidden fields don't become visible when forms are submitted (.fadeTo() bug)
+* Built in support for defining a constant for your API keys in wp-config.php (`YIKES_MC_API_KEY` see FAQ)
+
+= Easy Forms for MailChimp 6.1.1 - July 20th, 2016 =
+
+* Added helper classes to the address fields to allow for easier targeting (Supports zip lookup extension).
+
+= Easy Forms for MailChimp 6.1 - July 11th, 2016 =
+
+* Sanitized section request on the options page properly.
+* Fixed the apostraphes converted to tildes.
+* Added the missing space in the form field classes when labels were hidden.
+* Added preloaders to the submit button and the form overlay. Lowered opacity during AJAX processing.
+* Fixed the 'Duplicate' form function.
+* Repaired phone number validation on the phone form fields.
+* Properly hide descriptions when they are not set. (Markup should no longer be generated)
+* Added a 'Clear API Cache' link below the associated list dropdown during form creation.
+* Swapped out `get_currentuserinfo()` for the correct, newer, functions.
+* Repaired undefined variable on the 'Birthday/Date' form fields, when no default was set.
+* Users can now bulk add fields to forms, instead of having to do it one at a time.
+* Removed any dependency to the RSS feeds served from https://www.yikesplugins.com, which could potentially cause issues if the servers are ever down.
+* Refactored the database creation function, and swapped out the field types - to support older versions of PHP (<v5.3).
+* Added new filter to allow users to alter who can view/access the admin dashboard widgets - `yikes-mailchimp-admin-widget-capability`
+* Added a new filter (`yikes-mailchimp-user-already-subscribed-error`) allowing the 'already subscribed' error message to be filtered.
+* Added a new template tag (`[email]`) which can be used in the already subscribed response, to display the user entered email back in the response.
+* Added a new template tag (`[link][/link]`) which can be used to wrap text in the 'update profile' link, allowing users to create a custom response & link.
+
 = Easy Forms for MailChimp 6.0.5.5 - April 5th, 2016 =
 
-* Fixed icompatability with the avada theme options page.
+* Fixed incompatibility with the avada theme options page.
 * Removed the admin dashboard widgets for non-admins. Note: To alter, use the `yikes-mailchimp-user-role-access` filter.
 
 = Easy Forms for MailChimp 6.0.5.4 - March 30th, 2016 =

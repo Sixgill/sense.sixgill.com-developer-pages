@@ -107,7 +107,7 @@ foreach ( $data as $merge_tag => $value ) {
 $merge_variables['optin_time'] = current_time( 'Y-m-d H:i:s', 1 );
 
 // Submit our form data
-$api_key = trim( get_option( 'yikes-mc-api-key' , '' ) );
+$api_key = yikes_get_mc_api_key();
 $dash_position = strpos( $api_key, '-' );
 
 // setup the end point
@@ -143,6 +143,21 @@ if( isset( $merge_variables['error'] ) ) {
 	return;
 }
 
+/**
+ * Setup whether or not we should update the user, or display the error with email generation
+ * @since 6.1
+ */
+if ( isset( $optin_settings['update_existing_user'] ) && 1 === absint( $optin_settings['update_existing_user'] ) ) {
+	// Should we send the update email
+	if ( isset( $optin_settings['send_update_email'] ) && 1 === absint( $optin_settings['send_update_email'] ) ) {
+		$update_existing_user = 0;
+	} else {
+		$update_existing_user = 1;
+	}
+} else {
+	$update_existing_user = 0;
+}
+
 // submit the request & data, using the form settings
 	// subscribe the user
 	$subscribe_response = wp_remote_post( $api_endpoint, array(
@@ -152,7 +167,7 @@ if( isset( $merge_variables['error'] ) ) {
 			'email' => array( 'email' => sanitize_email( $data['EMAIL'] ) ),
 			'merge_vars' => $merge_variables,
 			'double_optin' => $optin_settings['optin'],
-			'update_existing' => 0, // always set to 0 (when 0, users cannot update. when 1, users can click a link to send an email where they can then update their details)
+			'update_existing' => $update_existing_user, // Decide if we should update the user or not
 			'send_welcome' => $optin_settings['send_welcome_email'],
 			'replace_interests' => ( isset( $submission_settings['replace_interests'] ) ) ? $submission_settings['replace_interests'] : 1, // defaults to replace
 		), $form, $list_id, $data['EMAIL'] ),
@@ -175,9 +190,10 @@ if( isset( $merge_variables['error'] ) ) {
 		switch( $subscribe_response['code'] ) {
 			// user already subscribed
 			case '214':
-				$update_account_details_link = ( $optin_settings['update_existing_user'] == 1 ) ? apply_filters( 'yikes-easy-mailchimp-update-existing-subscriber-text', sprintf( __( ' To update your MailChimp profile, please %s.', 'yikes-inc-easy-mailchimp-extender' ), '<a class="send-update-email" data-list-id="' . $list_id . '" data-user-email="' . sanitize_email( $data['EMAIL'] ) . '" href="#">' . __( 'click to send yourself an update link', 'yikes-inc-easy-mailchimp-extender' ) . '</a>' ) ) : false;
+				$custom_already_subscribed_text = apply_filters( 'yikes-easy-mailchimp-update-existing-subscriber-text', sprintf( __( ' To update your MailChimp profile, please %s.', 'yikes-inc-easy-mailchimp-extender' ), '<a class="send-update-email" data-list-id="' . $list_id . '" data-user-email="' . sanitize_email( $data['EMAIL'] ) . '" href="#">' . __( 'click to send yourself an update link', 'yikes-inc-easy-mailchimp-extender' ) . '</a>' ), $form, '<a class="send-update-email" data-list-id="' . $_POST['yikes-mailchimp-associated-list-id'] . '" data-user-email="' . sanitize_email( $data['EMAIL'] ) . '" href="#">' . __( 'click to send yourself an update link', 'yikes-inc-easy-mailchimp-extender' ) . '</a>' );
+				$update_account_details_link = ( 1 === absint( $optin_settings['update_existing_user'] ) && 1 === absint( $optin_settings['send_update_email'] ) ) ? $custom_already_subscribed_text : false;
 				if( ! empty( $error_messages['already-subscribed'] ) ) {
-					$error_response = $error_messages['already-subscribed'] . ' ' . $update_account_details_link;
+					$error_response = apply_filters( 'yikes-easy-mailchimp-user-already-subscribed-text', $error_messages['already-subscribed'] , $form, $data['EMAIL'] ) . ' ' . $update_account_details_link;
 				} else {
 					$error_response = $subscribe_response['error'] . ' ' . $update_account_details_link;
 				}
@@ -185,7 +201,7 @@ if( isset( $merge_variables['error'] ) ) {
 			// missing a required field
 			case '250':
 					// get all merge variables in array, loop and str_replace error code with field name
-					$api_key = trim( get_option( 'yikes-mc-api-key' , '' ) );
+					$api_key = yikes_get_mc_api_key();
 					$dash_position = strpos( $api_key, '-' );
 					if( $dash_position !== false ) {
 						$api_endpoint = 'https://' . substr( $api_key, $dash_position + 1 ) . '.api.mailchimp.com/2.0/lists/merge-vars.json';

@@ -1,19 +1,19 @@
 <?php get_header(); ?>
-<div> <!-- fullpage wrapper placeholder -->
+<div class="full-width ohidden"> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
 
 	<div
 		class="blog-page-header responsive-background"
-		desktop-src="<?php the_post_thumbnail_url(); ?>"
-		tablet-src="<?php the_post_thumbnail_url(array(768, 264)); ?>"
-		mobile-src="<?php the_post_thumbnail_url(array(480, 190)); ?>"
+		desktop-src="<?php echo get_field('header_image_desktop'); ?>"
+		tablet-src="<?php echo get_field('header_image_tablet'); ?>"
+		mobile-src="<?php echo get_field('header_image_mobile'); ?>"
 		>
 		<div class="blog-page-header-wrapper">
 			<div class="blog-page-header-suptitle">
-				SIXGILL BLOG
+				<?php echo get_field("suptitle"); ?>
 			</div>
 			<div class="blog-page-header-title">
-				MORE MOBILITY. MORE CONTROL.
+				<?php echo get_field("title"); ?>
 			</div>
 		</div>
 	</div>
@@ -49,7 +49,7 @@
 									<div class="blog-page-post-card-dash no-mobile-portrait-display no-mobile-landscape-display"></div>
 
 									<div class="blog-page-post-card-text">
-										<p><?php echo get_the_content("") ?>..</p>
+										<?php echo get_the_content("") ?>..
 									</div>
 								</div>
 							</div>
