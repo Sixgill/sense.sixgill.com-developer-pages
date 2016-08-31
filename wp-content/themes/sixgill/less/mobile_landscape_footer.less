@@ -1,1 +1,45 @@
 /* Footer Mobile landscape styles */
+.footer-subscribe {
+	&-error {
+		display: none;
+	    z-index: 2;
+	    position: absolute;
+	    bottom: 220px;
+	    left: 18.5vw;
+	    height: 25px;
+	    background-color: #f26d7d;
+
+	    &-close {
+	    	background-color: #d74758;
+	    	font-size: 15px;
+	    	height: 23px;
+	    	width: 20px;
+	    	cursor: pointer;
+	    }
+
+		& p {
+			text-align: center;
+			margin-left: 10px;
+			display: inline-block;
+			z-index: 2;
+			font-family: Lato;
+			font-size: 13px;
+			letter-spacing: 0.5px;
+			color: #ffffff;
+		}
+	}
+	&-arrow {
+		display: none;
+		z-index: 1;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		background-color: #f26d7d;
+		-webkit-transform: rotate(45deg);
+		-moz-transform:    rotate(45deg);
+		-ms-transform:     rotate(45deg);
+		-o-transform:      rotate(45deg);
+		left: 34.5vw;
+		bottom: 213px;
+	}
+}

@@ -56,6 +56,15 @@
 						Stay up to date with Sixgill News and Events
 					</div>
 					<div class="footer-subscription-form-wrapper desktop-vertical-centered">
+						<div class="footer-subscribe-error">
+						  <p class="footer-subscribe-error-text">
+						  </p>
+						  <p class="footer-subscribe-error-close">
+						    X
+						  </p>
+						</div>
+						  <div class="footer-subscribe-arrow">
+						</div>
 						<?php dynamic_sidebar( 'footer-subscribe-sidebar' ); ?>
 					</div>
 				</div>
