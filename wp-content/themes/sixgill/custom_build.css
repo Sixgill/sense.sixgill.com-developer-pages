@@ -12145,10 +12145,11 @@ input {
 .footer-subscription-button {
   background-color: #4dc85a;
   cursor: pointer;
-  width: 38%;
   height: 100%;
   vertical-align: top;
   display: inline-block;
+  border: 0;
+  padding: 0 5px 0 5px;
 }
 .footer-subscription-email {
   border: 0px;
@@ -12192,6 +12193,9 @@ input {
 }
 .footer-copyright-wrapper {
   color: #999999;
+}
+footer div.mc4wp-error p {
+  display: none;
 }
 
 .blog-page-header {
@@ -14087,7 +14091,7 @@ body.modal-open {
 }
 .footer-subscription-form-wrapper {
   height: 65%;
-  width: 38%;
+  /*width: 38%;*/
 }
 .footer-link-col {
   width: 13.5vw;
@@ -14128,6 +14132,46 @@ body.modal-open {
   font-size: 16px;
   letter-spacing: 0.8px;
   font-weight: bold;
+}
+.footer-subscribe-error {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  bottom: 38px;
+  left: 0;
+  height: 20px;
+  background-color: #f26d7d;
+}
+.footer-subscribe-error-close {
+  background-color: #d74758;
+  height: 100%;
+  width: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.footer-subscribe-error p {
+  text-align: center;
+  margin-left: 10px;
+  display: inline-block;
+  z-index: 2;
+  font-family: Lato;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.footer-subscribe-arrow {
+  display: none;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #f26d7d;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  left: 73px;
+  bottom: 31px;
 }
 
 .blog-page-header {
@@ -16210,6 +16254,47 @@ body.modal-open {
   height: 165px !important;
   min-height: inherit;
 }
+.footer-subscribe-error {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  bottom: 89px;
+  left: 14vw;
+  height: 25px;
+  background-color: #f26d7d;
+}
+.footer-subscribe-error-close {
+  background-color: #d74758;
+  font-size: 15px;
+  height: 100%;
+  width: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.footer-subscribe-error p {
+  text-align: center;
+  margin-left: 10px;
+  display: inline-block;
+  z-index: 2;
+  font-family: Lato;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.footer-subscribe-arrow {
+  display: none;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #f26d7d;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  left: 220px;
+  bottom: 81px;
+}
 
 .blog-page-header {
   height: 264px;
@@ -18179,6 +18264,9 @@ ul:not([class]) li {
 /* Menu mobile portrait styles */
 
 /* Footer mobile portrait styles */
+.footer-subscribe-error {
+  left: 7.4vw;
+}
 
 .blog-page-header {
   margin-top: 74px;
@@ -18383,6 +18471,9 @@ ul:not([class]) li {
 /* Press Mobile landscape styles */
 
 /* Footer Mobile landscape styles */
+.footer-subscribe-error {
+  left: 18.5vw;
+}
 
 
 /* Blog Mobile landscape styles */
@@ -18649,6 +18740,47 @@ ul:not([class]) li {
   height: 33px;
   width: 100%;
   font-weight: bold;
+}
+.footer .footer-subscribe-error {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  bottom: 220px;
+  left: 7.4vw;
+  height: 25px;
+  background-color: #f26d7d;
+}
+.footer .footer-subscribe-error-close {
+  background-color: #d74758;
+  font-size: 15px;
+  height: 23px;
+  width: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.footer .footer-subscribe-error p {
+  text-align: center;
+  margin-left: 10px;
+  display: inline-block;
+  z-index: 2;
+  font-family: Lato;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.footer .footer-subscribe-arrow {
+  display: none;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #f26d7d;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  left: 150px;
+  bottom: 213px;
 }
 .footer-icons-wrapper {
   display: block;
