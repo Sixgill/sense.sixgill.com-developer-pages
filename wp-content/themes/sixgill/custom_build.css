@@ -13469,25 +13469,29 @@ footer div.mc4wp-error p {
 .resources-page-background {
   background-color: #004cbf;
 }
+.resourse-download label {
+  cursor: default;
+}
 .resources-download-form-button > input {
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 200px !important;
-  max-height: 46px !important;
-  border-color: transparent;
-  border: 0px;
-  display: inline-block !important;
-  width: 37%;
-  background: #4ddb5a linear-gradient(to bottom, #4ddb5a, #3cad46) repeat scroll 0 0;
-  color: #ffffff;
-  padding: 14px 30px;
-  box-shadow: 0 4px 0 #26722d;
-  font-size: 16px;
+  width: 100%;
+  height: 43px;
   min-height: 46px !important;
-  border-radius: 0;
+  max-height: 46px !important;
+  background-color: #5cc468;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   cursor: pointer;
+  border: none;
+  padding: 0;
+  color: #ffffff;
+}
+.resources-download-form-label-required {
+  color: #4ddb5a;
+}
+.modal-header button.resourse-download-close {
+  color: #999999;
+  font-family: Lato;
+  font-weight: 300;
 }
 .resources-download-form-button > input:hover {
   background: #4ddb5a linear-gradient(to bottom, #4ddb5a, #4ddb5a) repeat scroll 0 0;
@@ -13521,6 +13525,11 @@ footer div.mc4wp-error p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.resourse-download-title {
+  font-family: Lato;
+  font-weight: 300;
+  color: #ffffff;
 }
 
 /* Tech Common styles */
@@ -15239,6 +15248,25 @@ body.modal-open {
 .resource-block:hover {
   -webkit-transform: scale(1.066);
           transform: scale(1.066);
+}
+.resourse-download {
+  width: 452px;
+  height: 507px;
+  margin: 131px auto 0 auto;
+}
+.resourse-download-content-header {
+  width: 100%;
+  height: 68px;
+  background-color: #2e2e2e;
+}
+.modal-header button.resourse-download-close {
+  font-size: 50px;
+  margin-top: -5px;
+}
+.resourse-download-title {
+  font-size: 30.2px;
+  line-height: 1.36;
+  letter-spacing: 0.9px;
 }
 
 /* Tech desktop styles */
@@ -17345,6 +17373,25 @@ ul:not([class]) li {
 }
 .resource-link {
   font-size: 20px;
+}
+.resourse-download {
+  width: 452px;
+  height: 507px;
+  margin: 158px auto 0 auto;
+}
+.resourse-download-content-header {
+  width: 100%;
+  height: 68px;
+  background-color: #2e2e2e;
+}
+.modal-header button.resourse-download-close {
+  font-size: 50px;
+  margin-top: -5px;
+}
+.resourse-download-title {
+  font-size: 30.2px;
+  line-height: 1.36;
+  letter-spacing: 0.9px;
 }
 
 /* Tech tablet styles */
@@ -19708,6 +19755,25 @@ ul:not([class]) li {
 /* Resources mobile portrait and landscape styles */
 .resource-link {
   font-size: 18px;
+}
+.resourse-download {
+  width: 300px;
+  height: 496px;
+  margin: 37px auto 0 auto;
+}
+.resourse-download-content-header {
+  width: 100%;
+  height: 56.5px;
+  background-color: #2e2e2e;
+}
+.modal-header button.resourse-download-close {
+  font-size: 40px;
+  margin-top: -1px;
+}
+.resourse-download-title {
+  font-size: 19.2px;
+  line-height: 2.14;
+  letter-spacing: 0.6px;
 }
 
 /* Tech mobile portrait and landscape styles */
