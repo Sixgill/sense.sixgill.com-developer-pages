@@ -123,10 +123,10 @@ $(function() {
     }
     if(fixed){
       panelDOMLink.addClass('fixed-position');
-      panelPlaceholder.css('height','6vw');
+      panelPlaceholder.removeClass('hide');
     } else {
       panelDOMLink.removeClass('fixed-position');
-       panelPlaceholder.css('height','0');
+      panelPlaceholder.addClass('hide');
     }
   }
 

@@ -15610,11 +15610,11 @@ body.modal-open {
   width: 100%;
 }
 .products-panel-placeholder {
-  height: 0;
+  height: 90px;
   background-color: transparent;
 }
 .products-fixed-panel {
-  height: 6vw;
+  height: 90px;
   width: 100%;
   z-index: 10;
   display: -webkit-flex;
@@ -15622,16 +15622,16 @@ body.modal-open {
   display: flex;
 }
 .products-fixed-panel-title {
-  font-size: 2vw;
+  font-size: 27px;
   font-weight: 500;
   line-height: 1em;
   display: inline-block;
 }
 .products-fixed-panel-icon-wrapper {
-  width: 2vw;
-  height: 2.9vw;
+  width: 30px;
+  height: 40px;
   display: inline-block;
-  margin-right: 0.77vw;
+  margin-right: 11px;
   float: left;
 }
 .products-fixed-panel-col {
@@ -15754,7 +15754,8 @@ body.modal-open {
 .products-second-section {
   background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
   padding: 2vw 0px 2vw 0px;
-  height: 100vh \9;
+  height: calc(100vh - 90px) \9;
+  min-height: calc(100vh - 90px);
 }
 .products-second-section > div {
   -webkit-align-self: center;
