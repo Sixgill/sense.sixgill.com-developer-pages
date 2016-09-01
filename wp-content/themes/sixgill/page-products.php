@@ -62,7 +62,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="products-panel-placeholder" class="products-panel-placeholder"></div>
+	<div id="products-panel-placeholder" class="products-panel-placeholder hide"></div>
 	<div id="products-fixed-panel" class="products-fixed-panel">
 
 		<div data-section-link="#products-third-section" class="products-fixed-panel-col" id="products-fixed-panel-col-track">
