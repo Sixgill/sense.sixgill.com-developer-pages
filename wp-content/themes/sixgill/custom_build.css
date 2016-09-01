@@ -14271,6 +14271,16 @@ body.modal-open {
   font-size: 12px;
   letter-spacing: 0.7px;
 }
+.subscribe-email-focus {
+  padding-left: 10px !important;
+  text-align: left !important;
+}
+.subscribe-email-focus:-ms-input-placeholder,
+.subscribe-email-focus::-moz-placeholder,
+.subscribe-email-focus:-moz-placeholder,
+.subscribe-email-focus::-webkit-input-placeholder {
+  font-size: 0px;
+}
 
 /* Blog desktop styles */
 .subscribe-block {
