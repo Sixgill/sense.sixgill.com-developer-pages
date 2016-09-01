@@ -20050,7 +20050,7 @@ ul:not([class]) li {
   width: 88.6%;
 }
 .products-first-section-content-title {
-  font-size: 9vw;
+  font-size: 30px;
   font-weight: 300;
   font-family: "Lato";
   letter-spacing: 1.5px;
@@ -20064,7 +20064,7 @@ ul:not([class]) li {
 .products-first-section-content-text,
 .products-first-section-content-text p,
 .products-first-section-content-text li {
-  font-size: 4.97vw;
+  font-size: 16px;
   font-weight: 400;
 }
 .products-second-section {
@@ -20110,7 +20110,7 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-third-section-title {
-  font-size: 11vw;
+  font-size: 35px;
   line-height: 1.25em;
   width: 100%;
   text-align: center;
@@ -20122,7 +20122,7 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-third-section-subtitle {
-  font-size: 4.56vw;
+  font-size: 15px;
   font-weight: 700;
   line-height: 2em;
   width: 88.75vw;
@@ -20178,7 +20178,7 @@ ul:not([class]) li {
   text-align: center;
 }
 .products-fourth-section-title {
-  font-size: 11vw;
+  font-size: 35px;
   line-height: 1.25em;
   width: 100%;
   text-align: center;
@@ -20190,7 +20190,7 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-fourth-section-subtitle {
-  font-size: 4.56vw;
+  font-size: 15px;
   font-weight: 700;
   line-height: 2em;
   width: 88.75vw;
@@ -20247,7 +20247,7 @@ ul:not([class]) li {
   text-align: center;
 }
 .products-fifth-section-title {
-  font-size: 11vw;
+  font-size: 35px;
   line-height: 1.25em;
   width: 100%;
   text-align: center;
@@ -20259,7 +20259,7 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-fifth-section-subtitle {
-  font-size: 4.56vw;
+  font-size: 15px;
   font-weight: 700;
   line-height: 2em;
   width: 88.75vw;
