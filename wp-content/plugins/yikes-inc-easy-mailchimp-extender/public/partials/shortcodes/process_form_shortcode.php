@@ -241,6 +241,39 @@ function process_mailchimp_shortcode( $atts ) {
 	if( ! $form_inline ) {
 		$form_inline = ( isset( $additional_form_settings['yikes-easy-mc-inline-form'] ) && $additional_form_settings['yikes-easy-mc-inline-form'] == 1 ) ? true : false;
 	}
+
+	/* If the current user is logged in, and an admin...lets display our 'Edit Form' link */
+	if( is_user_logged_in() ) {
+		if( current_user_can( apply_filters( 'yikes-mailchimp-user-role-access' , 'manage_options' ) ) ) {
+			$edit_form_link = '<span class="edit-link">';
+				$edit_form_link .= '<a class="post-edit-link" href="' . esc_url( admin_url( 'admin.php?page=yikes-mailchimp-edit-form&id=' . $form ) ) . '" title="' . __( 'Edit' , 'yikes-inc-easy-mailchimp-extender' ) . ' ' . ucwords( $form_settings['form_name'] ) . '">' . __( 'Edit Form' , 'yikes-inc-easy-mailchimp-extender' ) . '</a>';
+			$edit_form_link .= '</span>';
+			$edit_form_link = apply_filters( 'yikes-mailchimp-front-end-form-action-links', $edit_form_link, $form, ucwords( $form_settings['form_name'] ) );
+		} else {
+			$edit_form_link = '';
+		}
+	}
+
+	// ensure there is an 'email' field the user can fill out
+	// or else MailChimp throws errors at you
+	// extract our array keys
+	if( isset( $form_settings['fields'] ) && ! empty( $form_settings['fields'] ) ) {
+		$array_keys = array_keys( $form_settings['fields'] );
+		// check for EMAIL in that array
+		if( !in_array( 'EMAIL', $array_keys ) && !in_array( 'email', $array_keys ) ) {
+			return '<p>' . __( "An email field is required for all MailChimp forms. Please add an email field to this form." , 'yikes-inc-easy-mailchimp-extender' ) . '</p><p>' . $edit_form_link . '</p>';
+		}
+	} else {
+		$error = '<p>' . __( "Whoops, it looks like you forgot to assign fields to this form." , 'yikes-inc-easy-mailchimp-extender' ) . '</p>';
+		if( is_user_logged_in() ) {
+			if( current_user_can( apply_filters( 'yikes-mailchimp-user-role-access' , 'manage_options' ) ) ) {
+				return $error . $edit_form_link;
+			}
+		} else {
+			return $error;
+		}
+	}
+
 	if( $form_inline ) {
 		$field_width = (float) ( 100 / $field_count );
 		$submit_button_width = (float) ( 20 / $field_count );
@@ -268,39 +301,6 @@ function process_mailchimp_shortcode( $atts ) {
 
 	<section id="yikes-mailchimp-container-<?php echo $form_id; ?>" class="yikes-mailchimp-container yikes-mailchimp-container-<?php echo $form_id; ?> <?php echo apply_filters( 'yikes-mailchimp-form-container-class', '', $form_id ); ?>">
 	<?php
-
-		/* If the current user is logged in, and an admin...lets display our 'Edit Form' link */
-		if( is_user_logged_in() ) {
-			if( current_user_can( apply_filters( 'yikes-mailchimp-user-role-access' , 'manage_options' ) ) ) {
-				$edit_form_link = '<span class="edit-link">';
-					$edit_form_link .= '<a class="post-edit-link" href="' . esc_url( admin_url( 'admin.php?page=yikes-mailchimp-edit-form&id=' . $form ) ) . '" title="' . __( 'Edit' , 'yikes-inc-easy-mailchimp-extender' ) . ' ' . ucwords( $form_settings['form_name'] ) . '">' . __( 'Edit Form' , 'yikes-inc-easy-mailchimp-extender' ) . '</a>';
-				$edit_form_link .= '</span>';
-				$edit_form_link = apply_filters( 'yikes-mailchimp-front-end-form-action-links', $edit_form_link, $form, ucwords( $form_settings['form_name'] ) );
-			} else {
-				$edit_form_link = '';
-			}
-		}
-
-		// ensure there is an 'email' field the user can fill out
-		// or else MailChimp throws errors at you
-			// extract our array keys
-			if( isset( $form_settings['fields'] ) && ! empty( $form_settings['fields'] ) ) {
-				$array_keys = array_keys( $form_settings['fields'] );
-				// check for EMAIL in that array
-				if( !in_array( 'EMAIL', $array_keys ) && !in_array( 'email', $array_keys ) ) {
-					return '<p>' . __( "An email field is required for all MailChimp forms. Please add an email field to this form." , 'yikes-inc-easy-mailchimp-extender' ) . '</p><p>' . $edit_form_link . '</p>';
-				}
-			} else {
-				$error = '<p>' . __( "Whoops, it looks like you forgot to assign fields to this form." , 'yikes-inc-easy-mailchimp-extender' ) . '</p>';
-				if( is_user_logged_in() ) {
-					if( current_user_can( apply_filters( 'yikes-mailchimp-user-role-access' , 'manage_options' ) ) ) {
-						return $error . $edit_form_link;
-					}
-				} else {
-					return $error;
-				}
-			}
-
 		/*
 		*  pre-form action hooks
 		*  check readme for usage examples
@@ -344,6 +344,7 @@ function process_mailchimp_shortcode( $atts ) {
 				'page_data' => $page_data,
 				'interest_group_checkbox_error' => apply_filters( 'yikes-mailchimp-interest-group-checkbox-error', __( 'This field is required.', 'yikes-inc-easy-mailchimp-extender' ), $form_id ),
 				'preloader_url' => apply_filters( 'yikes-mailchimp-preloader', esc_url_raw( admin_url( 'images/wpspin_light.gif' ) ) ),
+				'loading_dots' => apply_filters( 'yikes-mailchimp-loading-dots', YIKES_MC_URL . 'includes/images/loading-dots.gif' ),
 			) );
 			wp_enqueue_script( 'yikes-easy-mc-ajax' );
 		}
@@ -360,6 +361,10 @@ function process_mailchimp_shortcode( $atts ) {
 			<form id="<?php echo sanitize_title( $form_settings['form_name'] ); ?>-<?php echo $form_id; ?>" class="yikes-easy-mc-form yikes-easy-mc-form-<?php echo $form_id . ' '; if ( $form_inline )  { echo 'yikes-mailchimp-form-inline '; } echo ' ' . apply_filters( 'yikes-mailchimp-form-class', $form_classes, $form_id ); if( !empty( $_POST ) && $form_submitted == 1 && $form_settings['submission_settings']['hide_form_post_signup'] == 1 ) { echo ' yikes-easy-mc-display-none'; } ?>" action="" method="POST" data-attr-form-id="<?php echo $form_id; ?>">
 
 				<?php
+				// Set a default constant for hidden fields
+				$hidden_label_count = 0;
+
+				// Loop over our form fields
 				foreach( $form_settings['fields'] as $field ) {
 						// input array
 						$field_array = array();
@@ -426,7 +431,8 @@ function process_mailchimp_shortcode( $atts ) {
 						}
 
 						if( isset( $field['hide-label'] ) ) {
-							if( $field['hide-label'] == 1 ) {
+							if( absint( $field['hide-label'] ) === 1 ) {
+								$hidden_label_count++;
 								$custom_classes[] = 'field-no-label';
 							}
 						}
@@ -489,8 +495,8 @@ function process_mailchimp_shortcode( $atts ) {
 							case 'number':
 
 								// pass our default value through our filter to parse dynamic data by tag (used solely for 'text' type)
-								$default_value = esc_attr( apply_filters( 'yikes-mailchimp-process-default-tag' , $field['default'] ) );
-
+								$default_value = ( isset( $field['default'] ) ? esc_attr( $field['default'] ) : '' );
+								$default_value = apply_filters( 'yikes-mailchimp-process-default-tag', $default_value );
 									?>
 									<label for="<?php echo $field['merge']; ?>" <?php echo implode( ' ' , $label_array ); ?>>
 
@@ -504,7 +510,13 @@ function process_mailchimp_shortcode( $atts ) {
 										<input <?php echo implode( ' ' , $field_array ); if( $field['type'] != 'email' && $field['type'] != 'number' ) { ?> type="text" <?php } else if( $field['type'] == 'email' ) { ?> type="email" <?php } else { ?> type="number" <?php } ?> value="<?php if( isset( $_POST[$field['merge']] ) && $form_submitted != 1 ) { echo $_POST[$field['merge']]; } else { echo esc_attr( $default_value ); } ?>">
 
 										<!-- description -->
-										<?php if( isset( $field['description'] ) ) { ?><p class="form-field-description"><small><?php echo apply_filters( 'yikes-mailchimp-' . $field['merge'] . '-description', esc_attr( stripslashes( $field['description'] ) ), $form_id ); ?></small></p><?php } ?>
+										<?php if( isset( $field['description'] ) && trim( $field['description'] ) != '' ) { ?>
+											<p class="form-field-description">
+												<small>
+													<?php echo apply_filters( 'yikes-mailchimp-' . $field['merge'] . '-description', esc_attr( stripslashes( $field['description'] ) ), $form_id ); ?>
+												</small>
+											</p>
+										<?php } ?>
 
 									</label>
 									<?php
@@ -513,7 +525,7 @@ function process_mailchimp_shortcode( $atts ) {
 
 							case 'url':
 							case 'imageurl':
-								$default_value = $field['default'];
+								$default_value = ( isset( $field['default'] ) ) ? $field['default'] : '';
 									?>
 
 									<script type="text/javascript">
@@ -537,7 +549,13 @@ function process_mailchimp_shortcode( $atts ) {
 										<input <?php echo implode( ' ' , $field_array ); ?> type="url" <?php if( $field['type'] == 'url' ) { ?> title="<?php _e( 'Please enter a valid URL to the website.' , 'yikes-inc-easy-mailchimp-extender' ); ?>" <?php } else { ?> title="<?php _e( 'Please enter a valid URL to the image.' , 'yikes-inc-easy-mailchimp-extender' ); ?>" <?php } ?> value="<?php if( isset( $_POST[$field['merge']] ) && $form_submitted != 1 ) { echo $_POST[$field['merge']]; } else { echo esc_attr( $default_value ); } ?>" onblur="properlyFormatURLField(this);return false;">
 
 										<!-- description -->
-										<?php if( isset( $field['description'] ) ) { ?><p class="form-field-description"><small><?php echo apply_filters( 'yikes-mailchimp-' . $field['merge'] . '-description', esc_attr( stripslashes( $field['description'] ) ), $form_id ); ?></small></p><?php } ?>
+										<?php if( isset( $field['description'] ) && trim( $field['description'] ) != '' ) { ?>
+											<p class="form-field-description">
+												<small>
+													<?php echo apply_filters( 'yikes-mailchimp-' . $field['merge'] . '-description', esc_attr( stripslashes( $field['description'] ) ), $form_id ); ?>
+												</small>
+											</p>
+										<?php } ?>
 
 									</label>
 									<?php
@@ -545,15 +563,17 @@ function process_mailchimp_shortcode( $atts ) {
 							break;
 
 							case 'phone':
-								$default_value = $field['default'];
+								$default_value = ( isset( $field['default'] ) ? esc_attr( $field['default'] ) : '' );
 								$phone_format = $field['phone_format'];
 								?>
 									<script type="text/javascript">
 										/* Replace incorrect values and format it correctly for MailChimp API */
 										function formatUSPhoneNumber( e ) {
 											var phone_number = e.value;
-											var new_phone_number = phone_number.trim().replace( '(' , '' ).replace( ')', '-' ).replace(/(\d\d\d)(\d\d\d)(\d\d\d\d)/, "$1-$2-$3");
-											jQuery( '.<?php echo "yikes-easy-mc-".$field['type']; ?>' ).val( new_phone_number );
+											var new_phone_number = phone_number.replace(/\(|\)/g, "").replace(/-/g, "").trim(); // replace all '-,' '(' and ')'
+											formatted_us_number = new_phone_number.substring( 0, 10 ); // strip all characters after 10th number (10 = length of US numbers 215-555-5555
+											formatted_us_number = formatted_us_number.replace(/(\d\d\d)(\d\d\d)(\d\d\d\d)/, "$1-$2-$3"); // split the string into the proper format
+											jQuery( e ).val( formatted_us_number );
 										}
 									</script>
 
@@ -566,17 +586,23 @@ function process_mailchimp_shortcode( $atts ) {
 											</span>
 										<?php } ?>
 
-										<input <?php echo implode( ' ' , $field_array ); ?> type="text" <?php if( $phone_format != 'US' ) { ?>  title="<?php _e( 'International Phone number (eg: #-###-###-####)' , 'yikes-inc-easy-mailchimp-extender' ); ?>" pattern="<?php echo apply_filters( 'yikes-mailchimp-international-phone-pattern' , '[0-9]{1,}' ); ?>" <?php } else { ?> title="<?php _e( 'US Phone Number (###) ### - ####' , 'yikes-inc-easy-mailchimp-extender' ); ?>" pattern="<?php echo apply_filters( 'yikes-mailchimp-us-phone-pattern' , '^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$' ); ?>" onblur="formatUSPhoneNumber(this);"<?php } ?> value="<?php if( isset( $_POST[$field['merge']] ) && $form_submitted != 1 ) { echo $_POST[$field['merge']]; } else { echo esc_attr( $default_value ); } ?>">
+										<input <?php echo implode( ' ' , $field_array ); ?> type="text" <?php if( $phone_format != 'US' ) { ?>  title="<?php _e( 'International Phone Number' , 'yikes-inc-easy-mailchimp-extender' ); ?>" pattern="<?php echo apply_filters( 'yikes-mailchimp-international-phone-pattern' , '[0-9,-]{1,}' ); ?>" <?php } else { ?> title="<?php _e( 'US Phone Number (###) ### - ####' , 'yikes-inc-easy-mailchimp-extender' ); ?>" pattern="<?php echo apply_filters( 'yikes-mailchimp-us-phone-pattern' , '^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$' ); ?>" onblur="formatUSPhoneNumber(this);"<?php } ?> value="<?php if( isset( $_POST[$field['merge']] ) && $form_submitted != 1 ) { echo $_POST[$field['merge']]; } else { echo esc_attr( $default_value ); } ?>">
 
 										<!-- description -->
-										<?php if( isset( $field['description'] ) ) { ?><p class="form-field-description"><small><?php echo apply_filters( 'yikes-mailchimp-' . $field['merge'] . '-description', stripslashes( $field['description'] ), $form_id ); ?></small></p><?php } ?>
+										<?php if( isset( $field['description'] ) && trim( $field['description'] ) != '' ) { ?>
+											<p class="form-field-description">
+												<small>
+													<?php echo apply_filters( 'yikes-mailchimp-' . esc_attr( $field['merge'] ) . '-description', stripslashes( $field['description'] ), $form_id ); ?>
+												</small>
+											</p>
+										<?php } ?>
 
 									</label>
 									<?php
 							break;
 
 							case 'zip':
-								$default_value = $field['default'];
+								$default_value = ( isset( $field['default'] ) ? esc_attr( $field['default'] ) : '' );
 
 									?>
 									<label for="<?php echo $field['merge']; ?>" <?php echo implode( ' ' , $label_array ); ?>>
@@ -591,7 +617,13 @@ function process_mailchimp_shortcode( $atts ) {
 									<input <?php echo implode( ' ' , $field_array ); ?> type="text" pattern="\d{5,5}(-\d{4,4})?" title="<?php _e( '5 digit zip code, numbers only' , 'yikes-inc-easy-mailchimp-extender' ); ?>" value="<?php if( isset( $_POST[$field['merge']] ) && $form_submitted != 1 ) { echo $_POST[$field['merge']]; } else { echo esc_attr( $default_value ); } ?>">
 
 									<!-- description -->
-									<?php if( isset( $field['description'] ) ) { ?><p class="form-field-description"><small><?php echo apply_filters( 'yikes-mailchimp-' . $field['merge'] . '-description', esc_attr( stripslashes( $field['description'] ) ), $form_id ); ?></small></p><?php } ?>
+									<?php if( isset( $field['description'] ) ) { ?>
+										<p class="form-field-description">
+											<small>
+												<?php echo apply_filters( 'yikes-mailchimp-' . $field['merge'] . '-description', esc_attr( stripslashes( $field['description'] ) ), $form_id ); ?>
+											</small>
+										</p>
+									<?php } ?>
 
 									</label>
 									<?php
@@ -630,7 +662,7 @@ function process_mailchimp_shortcode( $atts ) {
 
 
 											?>
-											<label for="<?php echo $field['merge']; ?>" <?php echo implode( ' ' , $label_array ); ?>>
+											<label for="<?php echo $field['merge']; ?>" data-attr-name="<?php echo esc_attr( $type ); ?>-field" <?php echo implode( ' ' , $label_array ); ?>>
 
 												<!-- dictate label visibility -->
 												<?php if( ! isset( $field['hide-label'] ) ) { ?>
@@ -718,7 +750,7 @@ function process_mailchimp_shortcode( $atts ) {
 												$default_country = apply_filters( 'yikes-mailchimp-default-country-value', 'US' );
 											?>
 
-											<label for="<?php echo $field['merge']; ?>" <?php echo implode( ' ' , $label_array ); ?>>
+											<label for="<?php echo $field['merge']; ?>" data-attr-name="<?php echo esc_attr( $type ); ?>-field" <?php echo implode( ' ' , $label_array ); ?>>
 
 												<!-- dictate label visibility -->
 												<?php if( !isset( $field['hide-label'] ) ) { ?>
@@ -738,8 +770,13 @@ function process_mailchimp_shortcode( $atts ) {
 								}
 
 								// description
-								if( isset( $field['description'] ) && trim( $field['description'] ) != '' ) { ?><p class="form-field-description"><small><?php echo apply_filters( 'yikes-mailchimp-' . $field['merge'] . '-description', esc_attr( trim( stripslashes( $field['description'] ) ) ), $form_id ); ?></small></p><?php }
-
+								if( isset( $field['description'] ) && trim( $field['description'] ) != '' ) { ?>
+									<p class="form-field-description">
+										<small>
+											<?php echo apply_filters( 'yikes-mailchimp-' . $field['merge'] . '-description', esc_attr( trim( stripslashes( $field['description'] ) ) ), $form_id ); ?>
+										</small>
+									</p>
+									<?php }
 								break;
 
 							case 'date':
@@ -758,7 +795,7 @@ function process_mailchimp_shortcode( $atts ) {
 										break;
 
 									case 'birthday':
-										$date_format = ( isset( $field['date_format'] ) ) ? $field['date_format'] : 'mm/dd';
+										$date_format = ( isset( $field['date_format'] ) ) ? strtolower( $field['date_format'] ) : 'mm/dd';
 										break;
 								}
 								// initialize the datepicker
@@ -784,7 +821,7 @@ function process_mailchimp_shortcode( $atts ) {
 											$day_names = $admin_class->yikes_jQuery_datepicker_strip_array_indices( $wp_locale->weekday );
 											$day_names_short = $admin_class->yikes_jQuery_datepicker_strip_array_indices( $wp_locale->weekday_abbrev );
 											$day_names_min = $admin_class->yikes_jQuery_datepicker_strip_array_indices( $wp_locale->weekday_initial );
-											$date_format = $admin_class->yikes_jQuery_datepicker_date_format_php_to_js( $date_format );
+											$date_format = $admin_class->yikes_jQuery_datepicker_date_format_php_to_js( $date_format, $field['type'] );
 											$first_day = get_option( 'start_of_week' );
 											$isRTL = $wp_locale->is_rtl();
 										?>
@@ -818,7 +855,7 @@ function process_mailchimp_shortcode( $atts ) {
 									</script>
 								<?php
 
-								$default_value = ( isset( $field_default ) ? esc_attr( $field['default'] ) : '' );
+								$default_value = ( isset( $field['default'] ) ? esc_attr( $field['default'] ) : '' );
 								// store empty number for looping
 								$x = 0;
 
@@ -832,7 +869,7 @@ function process_mailchimp_shortcode( $atts ) {
 											</span>
 										<?php } ?>
 
-										<input <?php echo implode( ' ' , $field_array ); ?> type="text" <?php if( $field['type'] == 'date' ) { ?> data-attr-type="date" <?php } else { ?> data-attr-type="birthday" <?php } ?> placeholder="<?php echo esc_attr( $field['placeholder'] ); ?>" value="<?php if( isset( $_POST[$field['merge']] ) && $form_submitted != 1 ) { echo $_POST[$field['merge']]; } else { echo esc_attr( $field['default'] ); } ?>">
+										<input <?php echo implode( ' ' , $field_array ); ?> type="text" <?php if( $field['type'] == 'date' ) { ?> data-attr-type="date" <?php } else { ?> data-attr-type="birthday" <?php } ?> value="<?php if( isset( $_POST[$field['merge']] ) && $form_submitted != 1 ) { echo $_POST[$field['merge']]; } else { echo esc_attr( $default_value ); } ?>">
 
 										<!-- description -->
 										<?php if( isset( $field['description'] ) && trim( $field['description'] ) != '' ) { ?>
@@ -1006,7 +1043,7 @@ function process_mailchimp_shortcode( $atts ) {
 												}
 											}
 											?>
-											<label for="<?php echo $field['group_id'] . '-' . $i; ?>" class="yikes-easy-mc-checkbox-label <?php echo implode( ' ' , $custom_classes ); if( $x === $count ) { ?>last-selection<?php } ?>">
+											<label for="<?php echo $field['group_id'] . '-' . $i; ?>" class="yikes-easy-mc-checkbox-label <?php echo implode( ' ' , $custom_classes ); if( $x === $count ) { ?> last-selection<?php } ?>">
 												<input <?php if( isset( $field['require'] ) && $field['require'] == 1 ) { ?> class="yikes-interest-group-required" <?php } ?> type="<?php echo $type; ?>" name="<?php echo $field['group_id']; ?>[]" id="<?php echo $field['group_id'] . '-' . $i; ?>" <?php if( $field['type'] == 'checkboxes' ) { if( ( ( isset( $_POST['yikes-mailchimp-honeypot' ] ) && $form_submitted == 1 && in_array( $i , $default_choice )) || ! isset( $_POST['yikes-mailchimp-honeypot' ] ) && $form_submitted != 1 && in_array( $i , $default_choice ) ) || ( ( $form_submitted != 1 && isset( $_POST[$field['group_id']] ) ) && in_array( esc_attr( $group['name'] ), $default_choice ) ) ) { echo 'checked="checked"'; } } else { checked( ( isset( $default_choice ) && is_array( $default_choice ) ) ? $default_choice[0] : $default_choice , $i ); } ?> value="<?php echo esc_attr( $group['name'] ); ?>">
 												<?php echo $group['name']; ?>
 											</label>
@@ -1083,9 +1120,9 @@ function process_mailchimp_shortcode( $atts ) {
 
 										foreach( $groups as $group ) {
 											?>
-											<label for="<?php echo $field['group_id'] . '-' . $i; ?>" class="yikes-easy-mc-checkbox-label <?php echo implode( ' ' , $custom_classes ); if( $x === $count ) { ?>last-selection<?php } ?>" style="display:none;">
+											<label for="<?php echo $field['group_id'] . '-' . $i; ?>" class="yikes-easy-mc-checkbox-label <?php echo implode( ' ' , $custom_classes ); if( $x === $count ) { ?> last-selection<?php } ?>" style="display:none;">
 												<input type="radio" name="<?php echo $field['group_id']; ?>[]" id="<?php echo $field['group_id'] . '-' . $i; ?>" <?php if( $field['type'] == 'checkboxes' ) { if( in_array( $i , $default_choice ) ) { echo 'checked="checked"'; } } else { checked( ( isset( $default_choice ) && is_array( $default_choice ) ) ? $default_choice[0] : $default_choice , $i ); } ?> value="<?php echo esc_attr( $group['name'] ); ?>">
-												<?php echo esc_attr( stripslashes( str_replace( '~' , '\'', $group['name'] ) ) ); ?>
+												<?php echo esc_attr( stripslashes( str_replace( '' , '\'', $group['name'] ) ) ); ?>
 											</label>
 											<?php
 											$i++;
@@ -1135,7 +1172,13 @@ function process_mailchimp_shortcode( $atts ) {
 				<!-- Submit Button -->
 				<?php
 					if( $form_inline ) {
-						echo '<label class="empty-form-inline-label submit-button-inline-label"><span class="empty-label">&nbsp;</span>';
+						$submit_button_label_classes = array( 'empty-label' );
+						// If the number of fields, is equal to the hidden label count, add our class
+						// eg: All field labels are set to hidden.
+						if ( absint( $field_count ) === absint( $hidden_label_count ) ) {
+							$submit_button_label_classes[] = 'labels-hidden';
+						}
+						echo '<label class="empty-form-inline-label submit-button-inline-label"><span class="' . implode( ' ', $submit_button_label_classes ) . '">&nbsp;</span>';
 					}
 					// display the image or text based button
 					if( $submit_button_type == 'text' ) {

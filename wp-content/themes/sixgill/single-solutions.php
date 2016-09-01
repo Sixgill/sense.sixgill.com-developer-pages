@@ -87,7 +87,7 @@
 
 			if($isThereFirstCarousel && $isThereSecondCarousel) {
 				?>
-				<div class="solution-subgape-carousels-div"></div>
+				<div class="solution-subpage-carousels-div"></div>
 				<?php
 			}
 
@@ -104,10 +104,10 @@
 		?>
 	</div>
 
-	<div class="solution-subpage-last-block-wrapper">
-		<div class="solution-subpage-last-block no-bottom-padding no-padding-top font-size-16">
+	<div class="solution-subpage-bottom-block-wrapper">
+		<div class="solution-subpage-bottom-block no-bottom-padding no-padding-top font-size-16">
 			<div class="solution-subpage-bottom-section-content">
-				<h2 class="solution-subpage-last-block-title">
+				<h2 class="solution-subpage-bottom-block-title">
 					<?php echo get_field('last_section_title'); ?>
 				</h2>
 
@@ -122,7 +122,7 @@
 					<?php echo get_field('last_section_text_right_column'); ?>
 				</div>
 				<div class="clear"></div>
-				<div class="solution-subpage-last-section-text-wrapper">
+				<div class="solution-subpage-bottom-section-text-wrapper">
 					<?php echo get_field('last_section_text'); ?>
 				</div>
 			</div>
@@ -131,7 +131,6 @@
 
 	<?php
 	$subpagesLinks = getSolutionsSubpagesLinks(get_the_ID());
-
 	$leftPage = get_post($subpagesLinks[0]);
 	$rightPage = get_post($subpagesLinks[1]);
 	$additionalUsecasesExist = ($subpagesLinks[0] !==0 || $subpagesLinks[1] !==0);

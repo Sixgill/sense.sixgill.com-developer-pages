@@ -1,46 +1,57 @@
 .blog-page {
 	&-header {
+		height: 127px;
 
+		&-suptitle {
+			font-size: 13.2px;
+			letter-spacing: 0.4px;
+		}
+
+		&-title {
+			font-size: 18px;
+			letter-spacing: 0.5px;
+		}
 	}
 
 	&-col {
 		&s-wrapper {
-
+			width: 100%;
+			padding: 10px 16px 22px 8px;
 		}
 
 		&-left {
-
-		}
-
-		&-right {
-
+			width: 100%;
 		}
 	}
 
 	&-post-card {
+		min-height: 95px;
+
+		&-link:not(:last-child) {
+			margin-bottom: 10px;
+		}
 
 		&-image {
-
+			width: 85px;
+			height: 85px;
+			margin-left: 5px;
+			align-self: center;
 		}
 
 		&-content-wrapper {
-
+			padding: 13px 19px 10px 13px;
+			width: calc(~"100% - 90px");
 		}
 
 		&-title {
-
+			font-size: 16.2px;
+  		line-height: 19.5px;
+  		letter-spacing: 0.5px;
 		}
 
 		&-author-date {
-
-		}
-
-		&-dash {
-
-		}
-
-		&-text {
-
+			font-size: 12px;
+  		letter-spacing: 0.4px;
 		}
 	}
 }

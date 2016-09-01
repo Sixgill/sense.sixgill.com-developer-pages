@@ -1,484 +1,466 @@
 /* Solutions Common styles */
 
-.solution-first-section-scroll-link-wrapper{
-	cursor: pointer;
-}
+.solutions {
+	&-section {
+		background-size: cover;
+		min-height: 100vh;
+	}
 
-.solution-first-section-scroll-link-ico-wrapper {
-	height: 18px;
-	text-align: center;
-	width: 37px;
-	display: inline-block;
+	&-icon {
+		&-list {
+			padding: 0;
+			margin:0;
+			list-style: none;
+		}
+
+		&-item {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		&-image img {
+			width: 72px;
+			height: 72px;
+		}
+
+		&-caption {
+			font-family: 'Lato';
+			text-align: center;
+		}
+
+		&-link a {
+			font-family: 'Lato';
+			text-align: center;
+			color: #0051c6;
+			text-decoration: underline !important;
+		}
+	}
+
+	&-first-section {
+    	position: relative;
+
+		&-scroll-link {
+
+			&-text {
+				color: #ffffff !important;
+			}
+
+			&-wrapper {
+				cursor: pointer;
+				text-align: center;
+			}
+		}
+
+		&-block {
+			z-index: 2;
+			background-color: rgba(77, 219, 90, 0.7);
+
+			&-title {
+				color: #ffffff;
+				font-family: "Lato";
+			}
+
+			&-text {
+				display: inline-block;
+			}
+
+			&-paragraph {
+				&, & p, & li {
+					color: #ffffff !important;
+				}
+			}
+		}
+
+		&-image-wrapper {
+			height: 100%;
+			display: inline-block;
+		}
+
+	}
+
+	&-second-section {
+		background-image: url('/wp-content/themes/sixgill/images/solutions/bgPattern@1x.png');
+		background-size: inherit;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		&-block-title {
+			font-family: "Lato";
+			color: #0051c6;
+		}
+
+		&-icons-title {
+			font-family: "Lato";
+			text-align: center;
+			color: #2e2e2e;
+			display: inline-block;
+
+			&:before,
+			&:after {
+				background-color: #000;
+				content: "";
+				display: inline-block;
+				height: 2px;
+				opacity: 0.1;
+				vertical-align: 0.3em;
+				position: relative;
+				width: 20vw;
+			}
+		}
+
+		&-icons {
+			&-title:after {
+				left: 1vw;
+			}
+
+			&-title:before {
+				right: 1vw;
+			}
+
+			&-block {
+				text-align: center;
+				width:950px;
+				margin: 30px auto 0;
+				overflow: hidden;
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+	}
+
+	&-third-section {
+		background-image: url('/wp-content/themes/sixgill/images/solutions/assetsBg-desktop@1x.png');
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		&-image-wrapper {
+			display: inline-block;
+			text-align: right;
+			width: 40%;
+		}
+
+		&-block {
+			&-text {
+				width: 51%;
+				display: inline-block;
+				vertical-align: middle;
+				padding-left: 40px;
+			}
+
+			&-title {
+				margin:0;
+				padding: 0;
+				font-family: "Lato";
+				color: #4ddb5a;
+			}
+
+			&-paragraph p{
+				font-family: 'Lato';
+				color: #a9d8dd;
+			}
+		}
+
+		&-icons-title {
+			font-family: "Lato";
+			text-align: center;
+			color: #fff;
+			display: inline-block;
+			margin: 0;
+
+			&:before,
+			&:after {
+				background-color: #fff;
+				content: "";
+				display: inline-block;
+				opacity: 0.1;
+				position: relative;
+			}
+		}
+
+		&-icons {
+			&-title:after {
+				left: 1vw;
+			}
+
+			&-title:before {
+				right: 1vw;
+			}
+
+			&-block {
+				text-align: center;
+				overflow: hidden;
+				width: 100%;
+				margin: 30px auto 0;
+			}
+		}
+
+		&-icon-list .solutions-icon-caption{
+			color:#fff;
+		}
+
+		&-icon-wrapper .solutions-icon-link a {
+			color: #0b98dd;
+		}
+
+	}
+
+	&-fourth-section {
+		background-image: url('/wp-content/themes/sixgill/images/solutions/bgPattern@1x.png');
+		background-size: inherit;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 }
 
 /*-----------------------------------------------------*/
-
-.solution-section {
-	background-size: cover;
-	& ul:not([class]) {
-		list-style-type: none;
-		background-color: blue;
-		& li {
-			background-color: red;
-			display:block;
-			padding-left: 20px;
-
-			&::before {
-		        display:inline-block;
-		        width: 10px;
-		        content: "•";
-		        color:#4ddb5a;
-		        margin-right: 10px;
-		        margin-left: -20px;
-			}
-		}
-
-	}
-}
-
-section {
-	& ul,ol,p,span {
-		font-size: 16px
-	}
-	& ul:not([class]) {
-		list-style-type: none;
-		& li {
-			display:block;
-			padding-left: 20px;
-
-			&::before {
-		        display:inline-block;
-		        width: 10px;
-		        content: "•";
-		        color:#4ddb5a;
-		        margin-right: 10px;
-		        margin-left: -20px;
-			}
-		}
-
-	}
-}
-
-.solution-first-section-block {
-	z-index: 2;
-	background-color: rgba(77, 219, 90, 0.7);
-}
-
-.solution-first-section-image-wrapper,
-.solution-first-section-block-text {
-	display: inline-block;
-}
-
-.solution-first-section-image-wrapper {
-	height: 100%;
-}
-
-.solution-first-section-block-paragraph,
-.solution-first-section-block-paragraph p,
-{
-	color: #ffffff !important;
-}
-
-.solution-first-section-scroll-link-wrapper {
-	cursor: pointer;
-	text-align: center;
-}
-
-/*--------------------------------------------------*/
-.solution-second-section,
-.solution-third-section,
-.solution-fourth-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 100vh;
-}
-
-
-.solution-second-section {
-	background-image: url('/wp-content/themes/sixgill/images/solutions/bgPattern@1x.png');
-	background-size: inherit;
-}
-
-.solution-fourth-section {
-	background-image: url('/wp-content/themes/sixgill/images/solutions/bgPattern@1x.png');
-	background-size: inherit;
-}
-
-.solution-second-section-block-title {
-	font-family: "Lato";
-	font-size: 43.9px;
-	font-weight: 300;
-	line-height: 1;
-	letter-spacing: 4.8px;
-	color: #0051c6;
-}
-
-.solution-second-section-icons-title {
-	font-family: "Lato";
-	font-size: 15.9px;
-	font-weight: 700;
-	line-height: 2.83;
-	letter-spacing: 0.5px;
-	text-align: center;
-	color: #2e2e2e;
-	display: inline-block;
-	padding: 0 26px;
-}
-
-.solution-second-section-icons-title:before,
-.solution-second-section-icons-title:after {
-    background-color: #000;
-    content: "";
-    display: inline-block;
-    height: 2px;
-    opacity: 0.1;
-    vertical-align: 0.3em;
-    position: relative;
-	width: 20vw;
-}
-
-.solution-second-section-icons-title:after {
-	left: 1vw;
-}
-
-.solution-second-section-icons-title:before {
-	right: 1vw;
-}
-
-.solution-second-section-icons-block {
-	text-align: center;
-	width:950px;
-	margin: 52px auto 0;
-	overflow: hidden;
-	width: 100%;
-	padding: 0 8%;
-}
-
-.solution-second-section-icon-list {
-	padding: 0;
-	margin:0;
-	list-style: none;
-}
-
-.solution-second-section-icon-item {
-	display: inline-block;
-	padding: 25px 60px 25px 60px;
-	vertical-align: top;
-}
-
-.solution-second-section-icon-image img {
-	width: 72px;
-	height: 72px;
-}
-
-.solution-second-section-icon-caption {
-	font-family: 'Lato';
-	font-size: 18.6px;
-	font-weight: 700;
-	letter-spacing: 0.6px;
-	text-align: center;
-	color: #2e2e2e;
-	max-width: 150px;
-}
-
-.solution-second-section-icon-link {
-	margin-top: 16px;
-}
-
-.solution-second-section-icon-link a {
-	font-family: 'Lato';
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 0.47;
-	letter-spacing: 0.5px;
-	text-align: center;
-	color: #0051c6;
-	text-decoration: underline !important;
-}
-
-/*-- First section Assets --*/
-
-.solution-third-section {
-	background-image: url('/wp-content/themes/sixgill/images/solutions/assetsBg-desktop@1x.png');
-}
-
-.solution-third-section-image-wrapper {
-	display: inline-block;
-	height: 770px;
-	line-height: 770px;
-	text-align: right;
-	width: 40%;
-}
-
-.solution-third-section-block-text {
-	width: 51%;
-	display: inline-block;
-	vertical-align: middle;
-	padding-left: 40px;
-}
-
-.solution-third-section-block-title {
-	margin:0;
-	padding: 0;
-	font-family: "Lato";
-	font-size: 43.9px;
-	font-weight: 300;
-	line-height: 1;
-	letter-spacing: 4.8px;
-	color: #4ddb5a;
-}
-
-.solution-third-section-block-paragraph p{
-	font-family: 'Lato';
-	font-size: 15.9px;
-	font-weight: 500;
-	line-height: 1.33;
-	letter-spacing: 0.5px;
-	color: #a9d8dd;
-}
-
-
 /* Solutions subpage Common styles */
-.solutions-subpage-text, .solutions-subpage-thumbnail {
-	text-align: left;
-}
 
-.solutions-subpage-text ul, ol {
-	padding: 0;
-	margin: 0;
-	margin-bottom: 0.5em;
-}
+.solution {
+	&-subpage {
+		&-suptitle {
+			font-family: 'Lato';
+			color: #4ddb5a;
+		}
 
-#press-text-post {
-	text-align: left;
-	margin-bottom: 30px;
-}
+		&-title {
+			font-family: 'Lato';
+			color: #f9f8f8;
+		}
 
-.solutions-subpages-list {
-	padding-bottom: 5px;
-}
+		&-title , &-suptitle {
+			text-transform: uppercase;
+			text-align: center;
+		}
 
-.solutions-subpage-text li{
-	font-size: inherit;
-}
+		&-section-title, &-second-block-title {
+			color: #0051c6;
+			font-family: 'Lato';
+		}
 
-.solution-subpage-suptitle {
-	font-family: 'Lato';
-	font-size: 25.2px;
-	font-weight: 500;
-	letter-spacing: 0.8px;
-	color: #4ddb5a;
-}
+		&-section-title {
+			margin-top: 61px;
+		}
 
-.solution-subpage-title {
-	font-family: 'Lato';
-	font-size: 59.7px;
-	font-weight: 300;
-	color: #f9f8f8;
-	margin: 0px 10px 0px 10px;
-}
+		&-text {
+			display: inline-block;
+		}
 
+		&-thumbnail {
+			display: inline-block;
+		}
 
-.solution-subpage-title , .solution-subpage-suptitle {
-	text-transform: uppercase;
-	text-align: center;
-}
+		&-first-block-image {
+			height: auto;
+		}
 
-.solution-subpage-bottom-line {
-	width: 0px;
-	height: 0px;
-	border-top: 1px solid #4ddb5a;
-	width: 100px;
-	margin-left: auto;
-	margin-right: auto;
-}
+		&-bottom {
 
-.solution-subpage-bottom-link-image-wrapper,
-.solution-subpage-bottom-section-column,
-.solutions-subpage-text,
-.solutions-subpage-thumbnail,
-.solution-subpage-bottom-link-text,
-.solution-subpage-bottom-link-col {
-	display: inline-block;
-}
+			&-block {
+				&-wrapper {
+					text-align: center;
+					width: 100%;
+					display: block;
+					color:#121212;
+				}
 
-.solution-subpage-bottom-section-column {
-	text-align: left;
-	position: relative;
-}
+				&-title {
+					color: #4ddb5a;
+					font-family: 'Lato';
+				}
+			}
 
-.solution-subpage-bottom-section-column ul li {
-	font-family: "Lato";
-	font-weight: normal;
-	line-height: 1.25;
-	letter-spacing: 0.5px;
-	color:#f8f8f8;
-}
+			&-section {
+				&-content {
+					text-align: center;
+					display: inline-block;
+				}
 
+				&-subtitle {
+					font-family: "Lato";
+					color: #f8f8f8;
+				}
 
+				&-column {
+					text-align: left;
+					position: relative;
+					display: inline-block;
 
-.solution-subpage-bottom-section-column:nth-child(2n+1) {
-		float: left;
-}
+					&:nth-child(2n+1) {
+						float: left;
+					}
 
-.solution-subpage-bottom-section-column:nth-child(2n) {
-		float: right;
-}
+					&:nth-child(2n) {
+						float: right;
+					}
 
-.solution-subpage-bottom-link-image-wrapper {
-	width: 42%;
-}
+					& ul li {
+						font-family: "Lato";
+						font-weight: normal;
+						line-height: 1.25;
+						letter-spacing: 0.5px;
+						color:#f8f8f8;
+					}
+				}
 
-.solution-subpage-bottom-link-text {
-	width: 56%;
-	float: right;
-}
+				&-text-wrapper {
+					display: inline-block;
+					& p {
+						color: #f8f8f8;
+					}
+				}
+			}
+		}
 
+		&-second-block {
+			position: relative;
+			text-align: center;
+			width: 100%;
+			background-color: #f8f8f8;
 
-.solution-subpage-third-block {
-	width: 100%;
-	height: 170px;
-	background-color: #2e2e2e;
-}
+			&-wrapper {
+				display: inline-block;
+			}
+		}
 
-.solution-subpage-second-block {
-	position: relative;
-	text-align: center;
-	width: 100%;
-	background-color: #f8f8f8;
-}
+		&-third-block {
+			width: 100%;
+			height: 170px;
+			background-color: #2e2e2e;
+		}
 
-.solution-subpage-second-block-wrapper {
-	display: inline-block;
-}
+		&-gallery {
+			&-button-icon,
+			&-thumbnail {
+				width: 100%;
+				height: auto;
+			}
 
-.solution-subpage-bottom-link-col {
-	width: 50%;
-}
+			&-block-title {
+				color: #2e2e2e;
+			}
 
-.solution-subpage-bottom-section-subtitle {
-	font-family: "Lato";
-	font-size: 16.2px;
-	font-weight: lighter;
-	line-height: 1.25;
-	letter-spacing: 0.5px;
-	color: #f8f8f8;
-	width: 40vw;
-	margin: 32px auto;
-}
+			&-button {
+				background-color: #2e2e2e;
+				cursor: pointer;
+				vertical-align: top;
+				display: inline-block;
+				font-family: "Lato";
+				font-weight: bold;
+				color: #ffffff;
 
-.solution-subpage-last-block-title {
-	font-size: 44.6px;
-	font-weight: 300;
-	line-height: 0.45;
-	letter-spacing: 1.3px;
-	color: #4ddb5a;
-	font-family: 'Lato';
-}
+				&-icon {
+					width: 11%;
+					height: auto;
+				}
 
-.solution-subpage-bottom-link-col {
-	border-top: 1px solid #dfdfdf;
-}
+				&-title-wrapper {
+					display: inline-block;
+				}
+			}
 
-.solution-subpage-bottom-link-col:first-child {
-	border-right: 1px solid #dfdfdf;
-}
+			&-thumbnail-wrapper {
+				display: inline-block;
+				border: 1px solid #dfdfdf;
+			}
+		}
 
-.solution-subpage-bottom-link-description, .solution-subpage-bottom-link {
-	font-size: 22px;
-}
+		&-galleries-wrapper {
+			text-align: center;
+			background-color: #f8f8f8;
+		}
 
-.solution-subpage-bottom-link {
-	text-decoration: underline !important;
-}
+		&-viewprocess-placeholder {
+			display: block;
+			background-color: #f8f8f8;
+			width: 100%;
+		}
 
-.solution-subpage-bottom-link-description {
-	margin-bottom: 10px;
-	line-height: 1.3em !important;
-}
+		&-slide {
+			&-title {
+				color: #0051c6;
+				letter-spacing: 0.7px;
+			}
 
-.solution-subpage-bottom-link-text-width {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}
+			&-description {
+				color: #000000;
+			}
 
+			&-description, &-slide-title {
+				text-align: left;
+				display: inline-block;
+				font-family: 'Lato';
+			}
 
+			&-image {
+				border-bottom: 1px solid rgba(153, 153, 153, 0.32);
+			}
+		}		
 
-.green-line {
-	height: 1px;
-	width:10vw;
-	background-color: green;
-	margin:0 auto;
-}
+		&-carousels-div {
+			display: inline-block;
+			height: 1px;
+			background-color: #dfdfdf;
+		}
 
+	}
 
-.solution-use-cases-block-half{
-	width: 48%;
-	margin: 0 1%;
-	display: inline-block;
-	vertical-align: top;
-	background-color: #f8f8f8;
-}
+	&-use-cases {
+		&-block {
+			&-half {
+				width: 48%;
+				margin: 0 1%;
+				display: inline-block;
+				vertical-align: top;
+				background-color: #f8f8f8;
+			}
 
+			&-image {
+				display: block;
+				height: auto;
+				width: 100%;
+				overflow: hidden;
+			}
 
-.solution-use-cases-block-image {
-	display: block;
-	height: auto;
-	width: 100%;
-	overflow: hidden;
-}
+			&-image > img {
+				width:100%;
+				margin:0;
+				padding:0;
+			}
 
-.solution-use-cases-block-image>img {
-	width:100%;
-	margin:0;
-	padding:0;
-}
+			&-subtitle {
+				width: 100%;
+				display: block;
+				text-align: center;
+				vertical-align: middle;
 
-.solution-use-cases-block-subtitle{
-	width: 100%;
-	display: block;
-	text-align: center;
-	vertical-align: middle;
-	min-height: 135px;
-	padding: 25px;
-}
+				& > p {
+					margin: 0 auto;
+				}
 
-.solution-use-cases-block-subtitle > p{
-	font-size: 19px;
-	line-height: 20px !important;
-	margin: 0 auto;
-	width: 56%;
-}
+				& > a {
+					display: inline-block;
+				}
 
-.solution-use-cases-block-subtitle > a{
-	display: inline-block;
-	font-size: 19px;
-	padding: 15px 0 0;
-}
+				& > a:hover {
+					color: #0051c6;
+				}
+			}			
+		}
+	}
 
-.solution-subpage-gallery-button-icon, .solution-subpage-gallery-thumbnail {
-	width: 100%;
-	height: auto;
-}
+	&-carousel-button {
+		display: inline-block;
+		color: #999999;
 
-.solution-subpage-gallery-button {
-	background-color: #2e2e2e;
-	cursor: pointer;
-}
-
-.solution-subpage-gallery-button-icon {
-	width: 11%;
-	height: auto;
-}
-
-.solution-subpage-gallery-button-title-wrapper {
-	display: inline-block;
-}
-
-.solution-subpage-first-block-image {
-	height: auto;
+		&-wrapper {
+			text-align: center;
+		}
+	}
 }
 
 .container-subpage {
@@ -486,112 +468,43 @@ section {
 	margin-left: auto;
 }
 
-.solution-subpage-gallery-button {
-	vertical-align: top;
-	display: inline-block;
-	font-family: "Lato";
-	font-weight: bold;
-	color: #ffffff;
-}
 
-.solution-subpage-gallery-thumbnail-wrapper {
-	display: inline-block;
-	border: 1px solid #dfdfdf;
-}
 
-.solution-subpage-galleries-wrapper {
-	text-align: center;
-	background-color: #f8f8f8;
-}
-
-.solution-subpage-viewprocess-placeholder {
-	display: block;
-	background-color: #f8f8f8;
-	width: 100%;
-}
-
-.solution-subpage-last-block-wrapper {
-	text-align: center;
-	width: 100%;
-	display: block;
-}
-
-.solution-subpage-bottom-section-content {
-	text-align: center;
-	display: inline-block;
-}
-
-.solution-subpage-last-section-text-wrapper {
-	display: inline-block;
-}
-
-.solution-subpage-last-section-text-wrapper p{
-	font-size: 16.2px;
-	font-weight: normal;
-	line-height: 1.25;
-	letter-spacing: 0.5px;
-	color: #f8f8f8;
-}
-
-.solution-subpage-slide-title {
-  color: #0051c6;
-	letter-spacing: 0.7px;
-}
-
-.solution-subpage-slide-description {
-	color: #000000;
-}
-
-.solution-subpage-slide-description, .solution-subpage-slide-title {
+#press-text-post {
 	text-align: left;
-	display: inline-block;
-	font-family: 'Lato';
+	margin-bottom: 30px;
 }
 
-.own-carousel-outside-wrapper {
-	display: inline-block;
+.green-line {
+	height: 1px;
+	width: 10vw;
+	background-color: green;
+	margin: 0 auto;
 }
 
-.owl-carousel {
+.solution-test {
+	color: #2e2e2e;
+}
+
+.own-carousel {
 	background-color: #ffffff;
 	border: 1px solid rgba(153, 153, 153, 0.32);
+
+	&-outside-wrapper {
+		display: inline-block;		
+	}
+
+	&-n-controls-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
-.solution-subpage-slide-image {
-	border-bottom: 1px solid rgba(153, 153, 153, 0.32);
+#content .solution-subpage{
+	&-first-block-text p{
+		color: #2e2e2e;
+	}
 }
 
-.solution-carousel-button {
-	display: inline-block;
-	color: #999999;
-}
-
-.own-carousel-n-controls-wrapper {
-	width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.solution-carousel-button-wrapper {
-	text-align: center;
-}
-
-.solution-subpage-section-title, .solution-subpage-second-block-title {
-	font-size: 44.6px;
-	font-weight: 300;
-	letter-spacing: 1.3px;
-	color: #0051c6;
-	font-family: 'Lato';
-	line-height: 1.2em;
-}
-
-.solution-subgape-carousels-div {
-	display: inline-block;
-	height: 1px;
-	background-color: #dfdfdf;
-}
-
-.solution-subpage-section-title {
-	margin-top: 61px;
-}

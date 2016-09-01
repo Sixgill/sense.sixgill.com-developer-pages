@@ -6,17 +6,23 @@
 		$selected = get_field('page_part', $subpage->ID);
 
 	if (is_array($selected) && in_array( $categoryName, $selected ) ) {
-			if (!$flagPrint) {
-				$flagPrint = true; ?>
-			<b style="padding-bottom: 5px;">
-				<?php echo get_field($supTitleCategory); ?>
-			</b>
-			<?php } ?>
-			<div class="solutions-subpages-list">
-				<a href="<?php echo $subpage->guid; ?>">
+			// if (!$flagPrint) {
+			// 	$flagPrint = true; ?>
+			<!--<b style="padding-bottom: 5px;">-->
+				<?//php echo get_field($supTitleCategory); ?>
+			<!--</b>-->
+			 <?//php } ?>
+			<li class="solutions-icon-item">
+				<div class="solutions-icon-image">
+					<img src="<?php echo get_field('icon_image', $subpage->ID); ?>">
+				</div>
+				<div class="solutions-icon-caption">
 					<?php echo $subpage->post_title; ?>
-				</a>
-			</div>
+				</div>
+				<div class="solutions-icon-link">			
+					<a href="<?php echo $subpage->guid; ?>"> Learn more	</a>
+				</div>
+			</li>
 			<?php
 		}
 	}
