@@ -12314,6 +12314,9 @@ footer div.mc4wp-error p {
 .blog-page-post-card-text span {
   width: 100%;
 }
+.blog-page-subscription-block {
+  width: 100%;
+}
 .blog-page-subscription-block-title {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12330,6 +12333,42 @@ footer div.mc4wp-error p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.blog-page-subscription-form-wrapper {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.blog-page-subscription-form-wrapper form {
+  width: 100%;
+  margin: 0 !important;
+  height: 100%;
+}
+.blog-page-subscription-email {
+  width: 100%;
+  border: solid 1px #dfdfdf !important;
+  outline: 0px !important;
+  border-radius: 0 !important;
+  text-align: center;
+}
+.blog-page-subscription-submit-button {
+  width: 100%;
+  border: 0px !important;
+  outline: 0px !important;
+  border-radius: 0px !important;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0044a5;
+  font-family: "Lato";
+  font-weight: bold;
+  color: #ffffff;
 }
 .blog-page-popular-block-title {
   display: -webkit-flex;
@@ -12401,16 +12440,6 @@ footer div.mc4wp-error p {
 }
 .subscribe-block-tablet-mobile form {
   margin: 0 auto !important;
-}
-.subscribe-success-icon {
-  background-image: url('/wp-content/themes/sixgill/images/td/blog/subscribe_success.svg');
-  width: 100%;
-  height: 64px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  display: block;
-  margin-bottom: 20px;
-  margin-top: 10px;
 }
 .subscribe-row {
   display: table;
@@ -14233,9 +14262,43 @@ body.modal-open {
   font-size: 16px !important;
   width: 100%;
 }
+.blog-page-subscription-block {
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
 .blog-page-subscription-block-title {
   font-size: 16px;
   height: 35px;
+}
+.blog-page-subscription-form-wrapper {
+  padding: 10px;
+}
+.blog-page-subscription-form-wrapper aside {
+  margin: 0px !important;
+}
+.blog-page-subscription-form-wrapper .mc4wp-alert p,
+.blog-page-subscription-form-wrapper .mc4wp-error p {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Lato";
+  margin: 0px !important;
+}
+.blog-page-subscription-form-wrapper .mc4wp-error p {
+  color: red;
+}
+.blog-page-subscription-email {
+  height: 43px;
+  margin: 0px 0px 7px 0px;
+  padding: 16px 16px 16px 16px;
+}
+.blog-page-subscription-submit-button {
+  height: 43px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.blog-page-popular-block {
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 .blog-page-popular-block-title {
   font-size: 16px;
@@ -14254,15 +14317,14 @@ body.modal-open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: calc(100% - 27px);
   padding: 10px 0px 10px 0px;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 17px 0px 10px;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 .blog-page-popular-post-card-link:not(:last-child) {
-  margin-bottom: 10px;
   border-bottom: 1px solid #dfdfdf;
 }
 .blog-page-popular-post-content-wrapper {
@@ -14287,6 +14349,32 @@ body.modal-open {
 .blog-page-popular-post-author-date {
   font-size: 12px;
   letter-spacing: 0.7px;
+}
+.subscribe-email-focus {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  text-align: left !important;
+}
+.subscribe-email-focus:-ms-input-placeholder,
+.subscribe-email-focus::-moz-placeholder,
+.subscribe-email-focus:-moz-placeholder,
+.subscribe-email-focus::-webkit-input-placeholder {
+  font-size: 0px;
+}
+.subscribe-success-icon {
+  background-image: url('/wp-content/themes/sixgill/images/td/blog/subscribe_success.svg');
+  width: 100%;
+  height: 64px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.subscribe-success-title {
+  font-size: 24px;
+  color: #2e2e2e;
+  display: block;
 }
 
 /* Blog desktop styles */
@@ -14322,11 +14410,6 @@ body.modal-open {
   font-size: 20px !important;
   color: #999999;
   line-height: 1.5em !important;
-}
-.subscribe-success-title {
-  font-size: 24px;
-  color: #2e2e2e;
-  display: block;
 }
 .blog-container {
   margin-right: 0px;
