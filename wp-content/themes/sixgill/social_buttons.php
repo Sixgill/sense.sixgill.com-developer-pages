@@ -1,4 +1,4 @@
-<div class="social-buttons <?php echo $socialButtonsClasses; ?>">
+<div id="social-buttons-panel" class="social-buttons <?php echo $socialButtonsClasses; ?>">
 	<?php
 		$socialList = array(
 			array(
