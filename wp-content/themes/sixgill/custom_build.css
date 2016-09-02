@@ -14689,9 +14689,6 @@ body.modal-open {
   z-index: auto;
   width: 100%;
 }
-.home-first-section-text {
-  letter-spacing: 1.6px;
-}
 .home-first-section-text,
 .home-first-section-text p {
   z-index: 2;
@@ -14800,8 +14797,8 @@ body.modal-open {
 .home-third-section-title {
   display: inline-block;
   width: 77%;
-  margin-bottom: 4vh;
   font-size: 24px;
+  margin-bottom: 4vh;
   line-height: 1.25em;
   letter-spacing: 1.2px;
 }
@@ -16758,7 +16755,6 @@ body.modal-open {
 }
 .home-first-section-text {
   margin-bottom: 3.23vh;
-  letter-spacing: 1.4px;
 }
 .home-first-section-text,
 .home-first-section-text p {
@@ -16850,8 +16846,8 @@ body.modal-open {
 .home-third-section-title {
   display: inline-block;
   width: 77%;
-  margin-bottom: 7.82vh;
   font-size: 24px;
+  margin-bottom: 7.82vh;
   line-height: 1.25em;
   letter-spacing: 1.2px;
 }
@@ -19240,7 +19236,6 @@ ul:not([class]) li {
 }
 .home-first-section-text {
   margin-bottom: 8vh;
-  letter-spacing: 0.9px;
 }
 .home-first-section-text,
 .home-first-section-text p {
@@ -19338,8 +19333,8 @@ ul:not([class]) li {
 .home-third-section-title {
   display: inline-block;
   width: 100%;
-  margin-bottom: 6.56vh;
   font-size: 16px;
+  margin-bottom: 6.56vh;
   line-height: 1.25em;
   letter-spacing: 0.8px;
 }
