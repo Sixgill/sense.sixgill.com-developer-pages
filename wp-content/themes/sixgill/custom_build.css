@@ -18443,6 +18443,9 @@ ul:not([class]) li {
 }
 
 /* Home mobile portrait styles */
+.home-first-section {
+  margin-top: 74px;
+}
 .home-second-section-title {
   font-size: 6.25vw;
 }
@@ -19202,7 +19205,6 @@ ul:not([class]) li {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
-  margin-top: 74px;
   height: calc(100vh - 74px);
 }
 .home-first-section,
