@@ -12122,6 +12122,19 @@ input {
 
 /* Menu Common styles */
 
+.social-buttons {
+  display: inline-block;
+  position: relative;
+}
+.social-buttons-link {
+  display: inline-block;
+}
+.social-buttons-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
 /* Footer Common styles */
 .footer {
   background-color: #2e2e2e;
@@ -12482,6 +12495,7 @@ footer div.mc4wp-error p {
 .margin-bottom-title {
   margin-bottom: 25px;
 }
+
 
 /* Company Common styles */
 .company-section {
@@ -14090,6 +14104,21 @@ body.modal-open {
   height: 100%;
 }
 
+.social-buttons {
+  width: 54px;
+}
+.social-buttons-fixed {
+  position: fixed !important;
+}
+.social-buttons-link {
+  width: 100%;
+  height: 36px;
+  margin: 0;
+}
+.social-buttons-link:not(:last-child) {
+  margin-bottom: 7px;
+}
+
 /* Footer desktop styles */
 .footer {
   height: 146px !important;
@@ -14429,6 +14458,7 @@ body.modal-open {
 .blog-post-with-image {
   margin-bottom: 35px;
 }
+
 
 /* Company desktop styles */
 .company-learn-more-link {
@@ -16245,6 +16275,18 @@ body.modal-open {
 
 /* Press tablet styles */
 
+.social-buttons {
+  width: 54px;
+}
+.social-buttons-link {
+  width: 100%;
+  height: 36px;
+  margin: 0;
+}
+.social-buttons-link:not(:last-child) {
+  margin-bottom: 7px;
+}
+
 /* General tablet styles */
 .footer {
   height: 165px !important;
@@ -16495,6 +16537,7 @@ body.modal-open {
   height: 350px;
   margin-bottom: 35px;
 }
+
 
 /* Company tablet styles */
 .company-learn-more-link {
@@ -18347,6 +18390,7 @@ ul:not([class]) li {
 
 /* Menu mobile portrait styles */
 
+
 /* Footer mobile portrait styles */
 .footer-subscribe-error {
   left: 7.4vw;
@@ -18385,6 +18429,7 @@ ul:not([class]) li {
   text-align: center;
   font-size: 18px;
 }
+
 
 /* Company portrait mobile styles */
 .company-first-section {
@@ -18554,6 +18599,7 @@ ul:not([class]) li {
 
 /* Press Mobile landscape styles */
 
+
 /* Footer Mobile landscape styles */
 .footer-subscribe-error {
   left: 18.5vw;
@@ -18603,6 +18649,7 @@ ul:not([class]) li {
 #aside-blog {
   margin-top: 125px;
 }
+
 
 
 /* Home Mobile landscape styles */
@@ -18780,6 +18827,27 @@ ul:not([class]) li {
 /* Legal mobile portrait and landscape styles */
 #logo {
   margin: 10px 40px 10px 15px;
+}
+
+.social-buttons {
+  width: 100%;
+  height: 47px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social-buttons-link {
+  width: 41px;
+  height: 27px;
+}
+.social-buttons-link:not(:last-child) {
+  margin-right: 8vw;
 }
 
 /* Footer mobile portrait and landscape styles */
@@ -18966,6 +19034,7 @@ ul:not([class]) li {
 .margin-top-post {
   margin-top: 10px;
 }
+
 
 /* Company tablet styles */
 .company-learn-more-link {
