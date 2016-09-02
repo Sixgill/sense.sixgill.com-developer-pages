@@ -6199,6 +6199,8 @@ jQuery(function($) {
 			errorArrow.show();
 		}
 		if(successMessageContainer.length){
+			errorElement.hide();
+			errorArrow.hide();
 			clearInterval(timerId);
 			timerId = null;
 		}
