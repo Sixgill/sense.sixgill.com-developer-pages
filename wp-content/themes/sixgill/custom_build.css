@@ -14844,11 +14844,23 @@ body.modal-open {
   margin: 0px auto 10px;
 }
 .home-fourth-section-subtitle {
-  font-size: 16px;
+  font-family: Lato;
+  font-size: 18.2px;
+  font-weight: bold;
+  line-height: 1.42;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #ffffff;
   margin-bottom: 2vw;
 }
 .home-fourth-section-link {
-  font-size: 18px;
+  font-family: Lato;
+  font-size: 18.2px;
+  font-weight: bold;
+  line-height: 1.42;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #ffffff;
 }
 .home-fourth-section-carousel {
   width: 768px;
@@ -16899,11 +16911,23 @@ body.modal-open {
   font-size: 30px;
 }
 .home-fourth-section-subtitle {
-  font-size: 18px;
+  font-family: Lato;
+  font-size: 18.2px;
+  font-weight: bold;
+  line-height: 1.42;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #ffffff;
   margin-bottom: 2.68vh;
 }
 .home-fourth-section-link {
-  font-size: 18px;
+  font-family: Lato;
+  font-size: 18.2px;
+  font-weight: bold;
+  line-height: 1.42;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #ffffff;
 }
 .home-fourth-section-carousel {
   width: 80vw;
@@ -19386,11 +19410,22 @@ ul:not([class]) li {
   font-size: 30px;
 }
 .home-fourth-section-subtitle {
-  font-size: 18px;
+  font-family: Lato;
+  font-size: 16.7px;
+  line-height: 1.55;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ffffff;
   margin-bottom: 4.4vh;
 }
 .home-fourth-section-link {
-  font-size: 18px;
+  font-family: Lato;
+  font-size: 18.2px;
+  font-weight: bold;
+  line-height: 1.42;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #ffffff;
 }
 .home-fourth-section-carousel {
   width: 250px;
