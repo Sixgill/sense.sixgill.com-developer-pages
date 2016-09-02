@@ -3,9 +3,9 @@
 
 	<div
 		class="blog-post-header responsive-background"
-		desktop-src=""
-		tablet-src=""
-		mobile-src=""
+		desktop-src="<?php echo get_field("header_image_desktop"); ?>"
+		tablet-src="<?php echo get_field("header_image_tablet"); ?>"
+		mobile-src="<?php echo get_field("header_image_mobile"); ?>"
 	>
 		<div class="blog-post-header-wrapper">
 			<h1 class="blog-post-header-title">
@@ -23,6 +23,8 @@
 		?>
 
 		
+
+
 
 		<?php endwhile; // end of the loop. ?>
 	</div>
