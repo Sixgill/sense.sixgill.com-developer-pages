@@ -14689,6 +14689,9 @@ body.modal-open {
   z-index: auto;
   width: 100%;
 }
+.home-first-section-text {
+  letter-spacing: 1.6px;
+}
 .home-first-section-text,
 .home-first-section-text p {
   z-index: 2;
@@ -16755,6 +16758,7 @@ body.modal-open {
 }
 .home-first-section-text {
   margin-bottom: 3.23vh;
+  letter-spacing: 1.4px;
 }
 .home-first-section-text,
 .home-first-section-text p {
@@ -19237,6 +19241,7 @@ ul:not([class]) li {
 }
 .home-first-section-text {
   margin-bottom: 8vh;
+  letter-spacing: 0.9px;
 }
 .home-first-section-text,
 .home-first-section-text p {
