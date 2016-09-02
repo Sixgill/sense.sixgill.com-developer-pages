@@ -2,7 +2,7 @@
 
 <!-- Content-->
 <?php
-	if ( have_posts() ) while ( have_posts() ) : the_post();
+	if ( have_posts() ) while ( have_posts() ) : the_post(); wpb_set_post_views(get_the_ID());
 ?>
 <section id="content" class="section-margin-fix">
 	<div id="single-page-content" class="container-fluid background-white clearfix no-margin nopadding">
@@ -120,4 +120,4 @@
 		</div>
 
 	</section><!-- #content end -->
-<?php endwhile; // end of the loop. ?>
+<?php wpb_get_post_views(get_the_ID()); endwhile; wp_reset_query(); // end of the loop. ?>

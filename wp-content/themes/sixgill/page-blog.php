@@ -87,8 +87,8 @@
 						'posts_per_page' => 3,
 						'paged' => $paged,
 						'more' => $more = 0,
-						//'meta_key' => 'views',
-						//'orderby' => 'meta_value_num',
+						'meta_key' => 'wpb_post_views_count',
+						'orderby' => 'meta_value_num',
 						'order' => 'DESC',
 						'category_name' => 'Blog',
 					);
