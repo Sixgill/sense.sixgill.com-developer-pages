@@ -14802,6 +14802,8 @@ body.modal-open {
   width: 77%;
   font-size: 24px;
   margin-bottom: 4vh;
+  line-height: 1.25em;
+  letter-spacing: 1.2px;
 }
 .home-third-section-image-wrapper {
   margin-bottom: 3vh;
@@ -16852,7 +16854,8 @@ body.modal-open {
   width: 77%;
   font-size: 24px;
   margin-bottom: 7.82vh;
-  line-height: 1.5em;
+  line-height: 1.25em;
+  letter-spacing: 1.2px;
 }
 .home-third-section-image-wrapper {
   margin-bottom: 7.33vh;
@@ -19341,7 +19344,8 @@ ul:not([class]) li {
   width: 100%;
   font-size: 16px;
   margin-bottom: 6.56vh;
-  line-height: 1.5em;
+  line-height: 1.25em;
+  letter-spacing: 0.8px;
 }
 .home-third-section-image-wrapper {
   margin-bottom: 48px;
