@@ -116,6 +116,26 @@
 						BACK TO BLOG
 					</a>
 				</div>
+
+				<div>
+					<?php $current =  get_permalink();
+					if (get_previous_post()) { ?>
+					<div>
+						<a href="<?php $prev_post = get_adjacent_post(); echo get_permalink($prev_post->ID);?>">
+						Previous Post			
+						</a>
+					</div>
+					<?php } ?>
+					
+					<?php $current =  get_permalink();
+					if (get_next_post()) { ?>
+					<div>
+						<a href="<?php $next_post = get_adjacent_post(0,'',0); echo get_permalink($next_post->ID);?>">
+						Next Post	
+						</a>
+					</div>
+					<?php } ?>
+				</div>
 			</div>
 		</div>
 
