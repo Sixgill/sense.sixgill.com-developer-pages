@@ -99,6 +99,52 @@
 		}
 	}
 
+	&-pagination {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+
+		h2.screen-reader-text {
+			display: none;
+		}
+
+		.page-numbers {
+			font-size: 16px;
+			line-height: 0.53;
+			color: #2e2e2e;
+			vertical-align: middle;
+			padding: 0 26px;
+			text-decoration: none;
+		}
+
+		a.prev {
+			display: inline-block;
+			background-image: url("images/blog/iconArrowCirclePrevious-Default.svg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 30px;
+  			height: 30px;
+  			vertical-align: middle;
+  			padding: 0;
+		}
+
+		a.next {
+			display: inline-block;
+			background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 30px;
+  			height: 30px;
+  			vertical-align: middle;
+  			padding: 0;
+		}
+
+		.current {
+			color: #0051c6;
+			text-decoration: underline;
+		}
+	}
+
 	&-subscription {
 
 		&-block {

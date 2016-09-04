@@ -58,7 +58,7 @@
 					<?php
 					endwhile;?>
 
-				<div class="blog-page-post-card-pagination">
+				<div class="blog-page-pagination">
 				<?php the_posts_pagination( array(
 													'prev_text'    => __(''),
 													'next_text'    => __(''),
