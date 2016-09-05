@@ -33,9 +33,9 @@
 							<div class="blog-page-post-card">
 								<div
 									class="blog-page-post-card-image responsive-background"
-									desktop-src="<?php the_post_thumbnail_url(); ?>"
-									tablet-src="<?php the_post_thumbnail_url( array() ); ?>"
-									mobile-src="<?php the_post_thumbnail_url(); ?>"
+									desktop-src="<?php echo get_field('thumbnail_desktop'); ?>"
+									tablet-src="<?php echo get_field('thumbnail_tablet'); ?>"
+									mobile-src="<?php echo get_field('thumbnail_mobile'); ?>"
 								>
 								</div>
 
@@ -103,7 +103,7 @@
 									<img
 										alt="Post thumbnail"
 										class="blog-page-popular-post-image"
-										src="<?php the_post_thumbnail_url(); ?>"
+										src="<?php echo get_field('thumbnail_mobile'); ?>"
 									>
 								</div>
 
