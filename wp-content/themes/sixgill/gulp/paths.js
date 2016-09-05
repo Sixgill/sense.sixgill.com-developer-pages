@@ -89,10 +89,12 @@ module.exports = () => {
   var pagesList = [
 		'general',
 		'menu',
+		'social_buttons',
 		'footer',
 		'blog_page',
         'blog_post',
 		'blog',
+		'blog_post',
 		'company',
 		'home',
 		'solutions',
