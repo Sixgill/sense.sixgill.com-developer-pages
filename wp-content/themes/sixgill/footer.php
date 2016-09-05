@@ -134,18 +134,18 @@
 
 <!-- MODAL RESOURCES -->
 <div class="modal fade" style="z-index:9999" id="myResource" tabindex="-1" role="dialog" aria-labelledby="resourcesModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
+	<div class="modal-dialog resourse-download">
 		<div class="modal-body">
-				<div class="modal-content">
-					<div class="modal-header background-2e2e2e">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+				<div class="modal-content resourse-download-content">
+					<div class="modal-header background-2e2e2e resourse-download-content-header">
+						<button type="button" class="close resourse-download-close" data-dismiss="modal" aria-hidden="true">
 							&times;
 						</button>
-						<h4 class="modal-title color-white center" id="resourcesModalLabel">
-							DOWNLOAD CORPORATE PRESENTATION
+						<h4 class="modal-title resourse-download-title color-white center" id="resourcesModalLabel">
+							Download Presentation
 						</h4>
 					</div>
-					<div class="modal-body center">
+					<div class="modal-body center resourse-download-content-body">
 						<?php dynamic_sidebar( 'download-access' ); ?>
 					</div>
 					<div class="modal-footer center"></div>
