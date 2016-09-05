@@ -30,7 +30,7 @@
 		background-size: cover;
 		width: 11.5px;
 		height: 21px;
-		vertical-align: middle;	
+		vertical-align: middle;
 	}
 
 	&-next-arrow {
@@ -41,8 +41,57 @@
 		background-size: cover;
 		width: 11.5px;
 		height: 21px;
-		vertical-align: middle;	
+		vertical-align: middle;
 	}
 
 }
 
+.blog-post {
+	&-header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		&-title {
+			font-family: "Lato";
+			font-weight: 300;
+			font-style: normal;
+			font-stretch: normal;
+			text-align: center;
+			color: #f9f8f8;
+
+		}
+
+		&-subtitle {
+			font-family: "Lato";
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			text-align: center;
+			color: #4ddb5a;
+		}
+	}
+
+	&-content-wrapper {
+		position: relative;
+
+		&, & p, & span {
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			text-align: left;
+			color: #2e2e2e;
+		}
+
+		& h2 {
+			font-weight: 300;
+			font-style: normal;
+			font-stretch: normal;
+			text-align: left;
+			color: #0051c6;
+		}
+	}
+
+
+}
