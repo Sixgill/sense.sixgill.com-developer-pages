@@ -12136,6 +12136,9 @@ input {
   position: relative;
   overflow: hidden;
 }
+div.home-fourth-section-carousel-slide div.empty-card {
+  height: 0;
+}
 
 /* Menu Common styles */
 
@@ -13042,9 +13045,6 @@ footer div.mc4wp-error p {
 }
 .home-fourth-section-carousel-slide {
   min-height: 390px;
-}
-.home-fourth-section-carousel-slide:hover .home-fourth-section-carousel-image-wrapper {
-  height: 0;
 }
 .home-fourth-section-carousel-image-wrapper {
   height: 288px;
@@ -15060,6 +15060,9 @@ body.modal-open {
 .home-fourth-section-carousel {
   width: 768px;
   margin: 61px auto 0;
+}
+.home-fourth-section-carousel-slide:hover .home-fourth-section-carousel-image-wrapper {
+  height: 0;
 }
 .home-fifth-section {
   display: -webkit-flex;
