@@ -6096,6 +6096,7 @@ jQuery(function($) {
 
 jQuery(function(){
 	if(window.screenType != 'desktop') return;
+	if(!$('.blog-post-wrapper').length) return;
 	var panel = $('#social-buttons-panel'),
 			panelHeight = panel.height(),
   		panelParent = panel.parent(),
@@ -6387,6 +6388,7 @@ jQuery(function($) {
 
 	$('#primary-menu-trigger').click(function() {
 		if(flag) {
+			$( '.full-page-wrapper' ).removeClass('hide');
 			$( '#menu-background' ).fadeTo(500, 0, function() {
 				$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			});
@@ -6398,7 +6400,9 @@ jQuery(function($) {
 
 			});
 		} else {
+			
 			savedScroll = $(window).scrollTop();
+			$( '.full-page-wrapper' ).addClass('hide');
 			$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			$( '#primary-menu, #menu-background' ).fadeTo(500, 1);
 		}

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="full-width">
+<div class="full-width full-page-wrapper">
 	<a name="top"></a>
 
 	<div id="products-first-section" class="products-section products-first-section">
