@@ -12119,6 +12119,23 @@ input {
 .fp-slidesNav ul li a span {
   font-size: 0;
 }
+/* Ellipsis plugin styles */
+.ellip {
+  display: block;
+  height: 100%;
+}
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
+}
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+}
 
 /* Menu Common styles */
 
@@ -14225,7 +14242,7 @@ body.modal-open {
   letter-spacing: 0.8px;
 }
 .blog-page-cols-wrapper {
-  padding: 51px 51px 34px 51px;
+  padding: 51px 3vw 34px 3vw;
 }
 .blog-page-col-left {
   padding-right: 21px;

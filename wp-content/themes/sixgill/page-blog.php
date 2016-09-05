@@ -39,7 +39,7 @@
 								</div>
 
 								<div class="blog-page-post-card-content-wrapper">
-									<div class="blog-page-post-card-title">
+									<div class="blog-page-post-card-title ellipsis-2lines">
 										<?php the_title(); ?>
 									</div>
 									<div class="blog-page-post-card-author-date">
@@ -107,7 +107,7 @@
 								</div>
 
 								<div class="blog-page-popular-post-content-wrapper">
-									<div class="blog-page-popular-post-title">
+									<div class="blog-page-popular-post-title ellipsis-2lines-desktop">
 										<?php the_title(); ?>
 									</div>
 									<div class="blog-page-popular-post-author-date">
