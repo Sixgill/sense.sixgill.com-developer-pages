@@ -12139,6 +12139,19 @@ input {
 
 /* Menu Common styles */
 
+.social-buttons {
+  display: inline-block;
+  position: relative;
+}
+.social-buttons-link {
+  display: inline-block;
+}
+.social-buttons-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
 /* Footer Common styles */
 .footer {
   background-color: #2e2e2e;
@@ -12499,6 +12512,7 @@ footer div.mc4wp-error p {
 .margin-bottom-title {
   margin-bottom: 25px;
 }
+
 
 /* Company Common styles */
 .company-section {
@@ -14117,6 +14131,21 @@ body.modal-open {
   height: 100%;
 }
 
+.social-buttons {
+  width: 54px;
+}
+.social-buttons-fixed {
+  position: fixed !important;
+}
+.social-buttons-link {
+  width: 100%;
+  height: 36px;
+  margin: 0;
+}
+.social-buttons-link:not(:last-child) {
+  margin-bottom: 7px;
+}
+
 /* Footer desktop styles */
 .footer {
   height: 146px !important;
@@ -14456,6 +14485,7 @@ body.modal-open {
 .blog-post-with-image {
   margin-bottom: 35px;
 }
+
 
 /* Company desktop styles */
 .company-learn-more-link {
@@ -16297,6 +16327,18 @@ body.modal-open {
 
 /* Press tablet styles */
 
+.social-buttons {
+  width: 54px;
+}
+.social-buttons-link {
+  width: 100%;
+  height: 36px;
+  margin: 0;
+}
+.social-buttons-link:not(:last-child) {
+  margin-bottom: 7px;
+}
+
 /* General tablet styles */
 .footer {
   height: 165px !important;
@@ -16547,6 +16589,7 @@ body.modal-open {
   height: 350px;
   margin-bottom: 35px;
 }
+
 
 /* Company tablet styles */
 .company-learn-more-link {
@@ -18421,6 +18464,7 @@ ul:not([class]) li {
 
 /* Menu mobile portrait styles */
 
+
 /* Footer mobile portrait styles */
 .footer-subscribe-error {
   left: 7.4vw;
@@ -18459,6 +18503,7 @@ ul:not([class]) li {
   text-align: center;
   font-size: 18px;
 }
+
 
 /* Company portrait mobile styles */
 .company-first-section {
@@ -18631,6 +18676,7 @@ ul:not([class]) li {
 
 /* Press Mobile landscape styles */
 
+
 /* Footer Mobile landscape styles */
 .footer-subscribe-error {
   left: 18.5vw;
@@ -18680,6 +18726,7 @@ ul:not([class]) li {
 #aside-blog {
   margin-top: 125px;
 }
+
 
 
 /* Home Mobile landscape styles */
@@ -18857,6 +18904,27 @@ ul:not([class]) li {
 /* Legal mobile portrait and landscape styles */
 #logo {
   margin: 10px 40px 10px 15px;
+}
+
+.social-buttons {
+  width: 100%;
+  height: 47px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social-buttons-link {
+  width: 41px;
+  height: 27px;
+}
+.social-buttons-link:not(:last-child) {
+  margin-right: 8vw;
 }
 
 /* Footer mobile portrait and landscape styles */
@@ -19043,6 +19111,7 @@ ul:not([class]) li {
 .margin-top-post {
   margin-top: 10px;
 }
+
 
 /* Company tablet styles */
 .company-learn-more-link {
@@ -20149,7 +20218,7 @@ ul:not([class]) li {
   width: 88.6%;
 }
 .products-first-section-content-title {
-  font-size: 9vw;
+  font-size: 30px;
   font-weight: 300;
   font-family: "Lato";
   letter-spacing: 1.5px;
@@ -20163,7 +20232,7 @@ ul:not([class]) li {
 .products-first-section-content-text,
 .products-first-section-content-text p,
 .products-first-section-content-text li {
-  font-size: 4.97vw;
+  font-size: 16px;
   font-weight: 400;
 }
 .products-second-section {
@@ -20209,7 +20278,7 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-third-section-title {
-  font-size: 11vw;
+  font-size: 35px;
   line-height: 1.25em;
   width: 100%;
   text-align: center;
@@ -20221,7 +20290,7 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-third-section-subtitle {
-  font-size: 4.56vw;
+  font-size: 15px;
   font-weight: 700;
   line-height: 2em;
   width: 88.75vw;
@@ -20277,7 +20346,7 @@ ul:not([class]) li {
   text-align: center;
 }
 .products-fourth-section-title {
-  font-size: 11vw;
+  font-size: 35px;
   line-height: 1.25em;
   width: 100%;
   text-align: center;
@@ -20289,7 +20358,7 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-fourth-section-subtitle {
-  font-size: 4.56vw;
+  font-size: 15px;
   font-weight: 700;
   line-height: 2em;
   width: 88.75vw;
@@ -20346,7 +20415,7 @@ ul:not([class]) li {
   text-align: center;
 }
 .products-fifth-section-title {
-  font-size: 11vw;
+  font-size: 35px;
   line-height: 1.25em;
   width: 100%;
   text-align: center;
@@ -20358,7 +20427,7 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-fifth-section-subtitle {
-  font-size: 4.56vw;
+  font-size: 15px;
   font-weight: 700;
   line-height: 2em;
   width: 88.75vw;
