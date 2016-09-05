@@ -12172,6 +12172,9 @@ input {
   vertical-align: top;
   color: #999999;
 }
+.footer .mc4wp-success p {
+  color: #999999;
+}
 .footer-subscription-button {
   background-color: #4dc85a;
   cursor: pointer;
@@ -12223,6 +12226,9 @@ input {
 }
 .footer-copyright-wrapper {
   color: #999999;
+}
+footer .footer-subscribe-error {
+  overflow: hidden;
 }
 footer div.mc4wp-error p {
   display: none;
@@ -14323,8 +14329,8 @@ body.modal-open {
   display: none;
   z-index: 2;
   position: absolute;
-  bottom: 38px;
-  left: 0;
+  bottom: 93px;
+  left: 33.75vw;
   height: 20px;
   background-color: #f26d7d;
 }
@@ -14356,8 +14362,8 @@ body.modal-open {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  left: 73px;
-  bottom: 31px;
+  left: 40vw;
+  bottom: 86px;
 }
 
 .blog-page-header {
