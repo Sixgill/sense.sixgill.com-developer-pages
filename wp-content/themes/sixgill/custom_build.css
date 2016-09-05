@@ -19554,7 +19554,7 @@ ul:not([class]) li {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
+  background-image: url("/wp-content/themes/sixgill/images/home/mobile_video_placeholder.png");
   height: calc(100vh - 74px);
 }
 .home-first-section,
