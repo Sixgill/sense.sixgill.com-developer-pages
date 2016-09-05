@@ -15673,7 +15673,6 @@ body.modal-open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   height: auto;
   max-height: none;
   width: 100%;
@@ -15706,8 +15705,13 @@ body.modal-open {
           align-self: center;
 }
 .tech-second-section-left-col {
-  height: 100%;
   width: 43.7%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .tech-second-section-right-col {
   -webkit-align-self: center;
@@ -15716,7 +15720,6 @@ body.modal-open {
   width: 56%;
 }
 .tech-second-section-image-wrapper {
-  height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
