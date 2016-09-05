@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="full-width"> <!-- fullpage wrapper placeholder -->
+<div class="full-width full-page-wrapper"> <!-- fullpage wrapper placeholder -->
 
 	<a name="top"></a>
 	<div id="tech-first-section" class="tech-section tech-first-section">

@@ -1,6 +1,6 @@
  <?php get_header(); ?>
 
-<div id="home-fullpage-wrapper" class="full-width">
+<div id="home-fullpage-wrapper" class="full-width full-page-wrapper">
 	<div id="home-first-section" data-anchor="video" class="home-section home-first-section">
 		<video autoplay loop muted id="home-video" class="home-first-section-video display-only-desktop">
 			<source src="<?php echo get_field('video_url'); ?>" type="video/mp4">
