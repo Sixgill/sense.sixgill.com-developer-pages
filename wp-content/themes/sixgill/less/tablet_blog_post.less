@@ -1,11 +1,38 @@
-.singe-blog-navigation {
-	padding-bottom: 60px;
+.blog-post {
+	&-header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 264px;
 
-	&-previous,
-	&-next {
-		font-size: 20.3px;
-		font-weight: 300;
-		letter-spacing: 0.6px;
+		&-title {
+			font-size: 40px;
+  		letter-spacing: 1.2px;
+			margin-bottom: 17.5px;
+			max-width: 90%;
+		}
+
+		&-subtitle {
+			font-size: 20px;
+			letter-spacing: 0.6px;
+			max-width: 90%;
+		}
+	}
+
+	&-content-wrapper {
+		padding: 0px 5vw 0px 15.23vw;
+		margin: 38.5px 0px 55.5px 0px;
+
+		&, & p, & span {
+			font-size: 16px;
+			line-height: 21.6px;
+			letter-spacing: 0.5px;
+		}
+
+		& h2 {
+			font-size: 35px;
+			letter-spacing: 1.1px;
+		}
 	}
 }
 

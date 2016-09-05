@@ -7,7 +7,7 @@
 		mobile-src="<?php echo get_field("header_image_mobile"); ?>"
 	>
 	<h1 class="blog-post-header-title ellipsis-3lines">
-	How to keep everything under control when you have a successful start-up
+		<?php echo $post->post_title; ?>
 	</h1>
 	<div
 		class="blog-post-header-subtitle
@@ -125,17 +125,4 @@
 							</div>
 							<?php comments_template( '', true ); ?>
 							<div class="col_full center">
-								<a href="/company_blog" id="blog-button-back" class="button button-large no-bottom-margin btnCompany">
-									BACK TO BLOG
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<?php wpb_get_post_views(get_the_ID()); 
-	endwhile; 
-	wp_reset_query();?> 
-</div>
+								<a hre
