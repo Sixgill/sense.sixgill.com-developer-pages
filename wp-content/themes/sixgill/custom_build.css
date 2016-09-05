@@ -12314,6 +12314,9 @@ footer div.mc4wp-error p {
 .blog-page-post-card-text span {
   width: 100%;
 }
+.blog-page-subscription-block {
+  width: 100%;
+}
 .blog-page-subscription-block-title {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12330,6 +12333,42 @@ footer div.mc4wp-error p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.blog-page-subscription-form-wrapper {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.blog-page-subscription-form-wrapper form {
+  width: 100%;
+  margin: 0 !important;
+  height: 100%;
+}
+.blog-page-subscription-email {
+  width: 100%;
+  border: solid 1px #dfdfdf !important;
+  outline: 0px !important;
+  border-radius: 0 !important;
+  text-align: center;
+}
+.blog-page-subscription-submit-button {
+  width: 100%;
+  border: 0px !important;
+  outline: 0px !important;
+  border-radius: 0px !important;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0044a5;
+  font-family: "Lato";
+  font-weight: bold;
+  color: #ffffff;
 }
 .blog-page-popular-block-title {
   display: -webkit-flex;
@@ -12401,16 +12440,6 @@ footer div.mc4wp-error p {
 }
 .subscribe-block-tablet-mobile form {
   margin: 0 auto !important;
-}
-.subscribe-success-icon {
-  background-image: url('/wp-content/themes/sixgill/images/td/blog/subscribe_success.svg');
-  width: 100%;
-  height: 64px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  display: block;
-  margin-bottom: 20px;
-  margin-top: 10px;
 }
 .subscribe-row {
   display: table;
@@ -12945,6 +12974,7 @@ footer div.mc4wp-error p {
   background-color: #0c3979;
   padding: 0;
   margin: 0 0 20px 23px;
+  text-align: left;
 }
 .home-fourth-section-carousel-link-more {
   font-family: "Lato";
@@ -13469,25 +13499,29 @@ footer div.mc4wp-error p {
 .resources-page-background {
   background-color: #004cbf;
 }
+.resourse-download label {
+  cursor: default;
+}
 .resources-download-form-button > input {
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 200px !important;
-  max-height: 46px !important;
-  border-color: transparent;
-  border: 0px;
-  display: inline-block !important;
-  width: 37%;
-  background: #4ddb5a linear-gradient(to bottom, #4ddb5a, #3cad46) repeat scroll 0 0;
-  color: #ffffff;
-  padding: 14px 30px;
-  box-shadow: 0 4px 0 #26722d;
-  font-size: 16px;
+  width: 100%;
+  height: 43px;
   min-height: 46px !important;
-  border-radius: 0;
+  max-height: 46px !important;
+  background-color: #5cc468;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   cursor: pointer;
+  border: none;
+  padding: 0;
+  color: #ffffff;
+}
+.resources-download-form-label-required {
+  color: #4ddb5a;
+}
+.modal-header button.resourse-download-close {
+  color: #999999;
+  font-family: Lato;
+  font-weight: 300;
 }
 .resources-download-form-button > input:hover {
   background: #4ddb5a linear-gradient(to bottom, #4ddb5a, #4ddb5a) repeat scroll 0 0;
@@ -13521,6 +13555,11 @@ footer div.mc4wp-error p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.resourse-download-title {
+  font-family: Lato;
+  font-weight: 300;
+  color: #ffffff;
 }
 
 /* Tech Common styles */
@@ -14233,9 +14272,43 @@ body.modal-open {
   font-size: 16px !important;
   width: 100%;
 }
+.blog-page-subscription-block {
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
 .blog-page-subscription-block-title {
   font-size: 16px;
   height: 35px;
+}
+.blog-page-subscription-form-wrapper {
+  padding: 10px;
+}
+.blog-page-subscription-form-wrapper aside {
+  margin: 0px !important;
+}
+.blog-page-subscription-form-wrapper .mc4wp-alert p,
+.blog-page-subscription-form-wrapper .mc4wp-error p {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Lato";
+  margin: 0px !important;
+}
+.blog-page-subscription-form-wrapper .mc4wp-error p {
+  color: red;
+}
+.blog-page-subscription-email {
+  height: 43px;
+  margin: 0px 0px 7px 0px;
+  padding: 16px 16px 16px 16px;
+}
+.blog-page-subscription-submit-button {
+  height: 43px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.blog-page-popular-block {
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 .blog-page-popular-block-title {
   font-size: 16px;
@@ -14254,15 +14327,14 @@ body.modal-open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: calc(100% - 27px);
   padding: 10px 0px 10px 0px;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 17px 0px 10px;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 .blog-page-popular-post-card-link:not(:last-child) {
-  margin-bottom: 10px;
   border-bottom: 1px solid #dfdfdf;
 }
 .blog-page-popular-post-content-wrapper {
@@ -14287,6 +14359,32 @@ body.modal-open {
 .blog-page-popular-post-author-date {
   font-size: 12px;
   letter-spacing: 0.7px;
+}
+.subscribe-email-focus {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  text-align: left !important;
+}
+.subscribe-email-focus:-ms-input-placeholder,
+.subscribe-email-focus::-moz-placeholder,
+.subscribe-email-focus:-moz-placeholder,
+.subscribe-email-focus::-webkit-input-placeholder {
+  font-size: 0px;
+}
+.subscribe-success-icon {
+  background-image: url('/wp-content/themes/sixgill/images/td/blog/subscribe_success.svg');
+  width: 100%;
+  height: 64px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.subscribe-success-title {
+  font-size: 24px;
+  color: #2e2e2e;
+  display: block;
 }
 
 /* Blog desktop styles */
@@ -14322,11 +14420,6 @@ body.modal-open {
   font-size: 20px !important;
   color: #999999;
   line-height: 1.5em !important;
-}
-.subscribe-success-title {
-  font-size: 24px;
-  color: #2e2e2e;
-  display: block;
 }
 .blog-container {
   margin-right: 0px;
@@ -14597,6 +14690,9 @@ body.modal-open {
   z-index: auto;
   width: 100%;
 }
+.home-first-section-text {
+  letter-spacing: 1.6px;
+}
 .home-first-section-text,
 .home-first-section-text p {
   z-index: 2;
@@ -14707,6 +14803,8 @@ body.modal-open {
   width: 77%;
   font-size: 24px;
   margin-bottom: 4vh;
+  line-height: 1.25em;
+  letter-spacing: 1.2px;
 }
 .home-third-section-image-wrapper {
   margin-bottom: 3vh;
@@ -14718,7 +14816,6 @@ body.modal-open {
 }
 .home-third-section-bottom-part-text {
   font-size: 16px;
-  font-weight: bold;
   margin-bottom: 2vw;
 }
 .home-fourth-section {
@@ -14751,10 +14848,12 @@ body.modal-open {
 }
 .home-fourth-section-subtitle {
   font-size: 16px;
+  letter-spacing: 0.9px;
   margin-bottom: 2vw;
 }
 .home-fourth-section-link {
   font-size: 18px;
+  letter-spacing: 0.9px;
 }
 .home-fourth-section-carousel {
   width: 768px;
@@ -15240,6 +15339,25 @@ body.modal-open {
   -webkit-transform: scale(1.066);
           transform: scale(1.066);
 }
+.resourse-download {
+  width: 452px;
+  height: 507px;
+  margin: 131px auto 0 auto;
+}
+.resourse-download-content-header {
+  width: 100%;
+  height: 68px;
+  background-color: #2e2e2e;
+}
+.modal-header button.resourse-download-close {
+  font-size: 50px;
+  margin-top: -5px;
+}
+.resourse-download-title {
+  font-size: 30.2px;
+  line-height: 1.36;
+  letter-spacing: 0.9px;
+}
 
 /* Tech desktop styles */
 .tech-learn-more-link {
@@ -15527,11 +15645,11 @@ body.modal-open {
   width: 100%;
 }
 .products-panel-placeholder {
-  height: 0;
+  height: 90px;
   background-color: transparent;
 }
 .products-fixed-panel {
-  height: 6vw;
+  height: 90px;
   width: 100%;
   z-index: 10;
   display: -webkit-flex;
@@ -15539,16 +15657,16 @@ body.modal-open {
   display: flex;
 }
 .products-fixed-panel-title {
-  font-size: 2vw;
+  font-size: 27px;
   font-weight: 500;
   line-height: 1em;
   display: inline-block;
 }
 .products-fixed-panel-icon-wrapper {
-  width: 2vw;
-  height: 2.9vw;
+  width: 30px;
+  height: 40px;
   display: inline-block;
-  margin-right: 0.77vw;
+  margin-right: 11px;
   float: left;
 }
 .products-fixed-panel-col {
@@ -15671,7 +15789,8 @@ body.modal-open {
 .products-second-section {
   background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
   padding: 2vw 0px 2vw 0px;
-  height: 100vh \9;
+  height: calc(100vh - 90px) \9;
+  min-height: calc(100vh - 90px);
 }
 .products-second-section > div {
   -webkit-align-self: center;
@@ -16642,6 +16761,7 @@ body.modal-open {
 }
 .home-first-section-text {
   margin-bottom: 3.23vh;
+  letter-spacing: 1.4px;
 }
 .home-first-section-text,
 .home-first-section-text p {
@@ -16735,7 +16855,8 @@ body.modal-open {
   width: 77%;
   font-size: 24px;
   margin-bottom: 7.82vh;
-  line-height: 1.5em;
+  line-height: 1.25em;
+  letter-spacing: 1.2px;
 }
 .home-third-section-image-wrapper {
   margin-bottom: 7.33vh;
@@ -16754,7 +16875,6 @@ body.modal-open {
 }
 .home-third-section-bottom-part-text {
   font-size: 16px;
-  font-weight: bold;
   margin-bottom: 2.58vh;
 }
 .home-fourth-section {
@@ -16787,9 +16907,11 @@ body.modal-open {
 .home-fourth-section-subtitle {
   font-size: 18px;
   margin-bottom: 2.68vh;
+  letter-spacing: 0.9px;
 }
 .home-fourth-section-link {
   font-size: 18px;
+  letter-spacing: 0.9px;
 }
 .home-fourth-section-carousel {
   width: 80vw;
@@ -17345,6 +17467,25 @@ ul:not([class]) li {
 }
 .resource-link {
   font-size: 20px;
+}
+.resourse-download {
+  width: 452px;
+  height: 507px;
+  margin: 158px auto 0 auto;
+}
+.resourse-download-content-header {
+  width: 100%;
+  height: 68px;
+  background-color: #2e2e2e;
+}
+.modal-header button.resourse-download-close {
+  font-size: 50px;
+  margin-top: -5px;
+}
+.resourse-download-title {
+  font-size: 30.2px;
+  line-height: 1.36;
+  letter-spacing: 0.9px;
 }
 
 /* Tech tablet styles */
@@ -18308,6 +18449,9 @@ ul:not([class]) li {
 }
 
 /* Home mobile portrait styles */
+.home-first-section {
+  margin-top: 74px;
+}
 .home-second-section-title {
   font-size: 6.25vw;
 }
@@ -19067,7 +19211,6 @@ ul:not([class]) li {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
-  margin-top: 74px;
   height: calc(100vh - 74px);
 }
 .home-first-section,
@@ -19102,6 +19245,7 @@ ul:not([class]) li {
 }
 .home-first-section-text {
   margin-bottom: 8vh;
+  letter-spacing: 0.9px;
 }
 .home-first-section-text,
 .home-first-section-text p {
@@ -19201,7 +19345,8 @@ ul:not([class]) li {
   width: 100%;
   font-size: 16px;
   margin-bottom: 6.56vh;
-  line-height: 1.5em;
+  line-height: 1.25em;
+  letter-spacing: 0.8px;
 }
 .home-third-section-image-wrapper {
   margin-bottom: 48px;
@@ -19220,7 +19365,6 @@ ul:not([class]) li {
 }
 .home-third-section-bottom-part-text {
   font-size: 14px;
-  font-weight: bold;
   margin-bottom: 4vh;
 }
 .home-fourth-section {
@@ -19252,10 +19396,12 @@ ul:not([class]) li {
 }
 .home-fourth-section-subtitle {
   font-size: 18px;
+  letter-spacing: 0.8px;
   margin-bottom: 4.4vh;
 }
 .home-fourth-section-link {
   font-size: 18px;
+  letter-spacing: 0.8px;
 }
 .home-fourth-section-carousel {
   width: 250px;
@@ -19708,6 +19854,25 @@ ul:not([class]) li {
 /* Resources mobile portrait and landscape styles */
 .resource-link {
   font-size: 18px;
+}
+.resourse-download {
+  width: 300px;
+  height: 496px;
+  margin: 37px auto 0 auto;
+}
+.resourse-download-content-header {
+  width: 100%;
+  height: 56.5px;
+  background-color: #2e2e2e;
+}
+.modal-header button.resourse-download-close {
+  font-size: 40px;
+  margin-top: -1px;
+}
+.resourse-download-title {
+  font-size: 19.2px;
+  line-height: 2.14;
+  letter-spacing: 0.6px;
 }
 
 /* Tech mobile portrait and landscape styles */

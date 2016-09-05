@@ -6081,11 +6081,11 @@ jQuery(function($) {
 });
 
 jQuery(function($){
-	$('input.subscribe-email').focusin(function(){
+	$('input.blog-page-subscription-email').focusin(function(){
 		$(this).addClass('subscribe-email-focus');
 	});
 
-	$('input.subscribe-email').focusout(function(){
+	$('input.blog-page-subscription-email').focusout(function(){
 		if($(this).val()==='') {
 			$(this).removeClass('subscribe-email-focus');
 		}
@@ -6172,26 +6172,37 @@ jQuery(function($) {
 	var submittedFlag = false;
 	var errorElement = $('footer div.footer-subscribe-error');
 	var errorArrow = $('footer div.footer-subscribe-arrow');
-
+	var timerId = null;
 	$('footer input.footer-subscription-email').keypress(function (e) {
-		  if (e.which == 13) {
-		  	setTimeout(watchSubscription, 200);
-		  }
+		if(!timerId){
+			timerId = setInterval(watchSubscription, 400);
+		}
 	});
 	$('footer input.footer-subscription-button').click(function() {
-		setTimeout(watchSubscription, 200);
+		if(!timerId){
+			timerId = setInterval(watchSubscription, 400);
+		}
 	});
 	$('footer p.footer-subscribe-error-close').click(function(argument) {
+		clearInterval(timerId);
+		timerId = null;
 		errorElement.hide();
 		errorArrow.hide();
 	});
 
 	function watchSubscription() {
 		var errorMessageContainer = $('footer div.mc4wp-error p');
+		var successMessageContainer = $('footer div.mc4wp-success');
 		if(errorMessageContainer.length){
 			$("footer p.footer-subscribe-error-text")[0].innerHTML = errorMessageContainer[0].innerHTML;
 			errorElement.show();
 			errorArrow.show();
+		}
+		if(successMessageContainer.length){
+			errorElement.hide();
+			errorArrow.hide();
+			clearInterval(timerId);
+			timerId = null;
 		}
 	}
 
@@ -6563,10 +6574,10 @@ $(function() {
     }
     if(fixed){
       panelDOMLink.addClass('fixed-position');
-      panelPlaceholder.css('height','6vw');
+      panelPlaceholder.removeClass('hide');
     } else {
       panelDOMLink.removeClass('fixed-position');
-       panelPlaceholder.css('height','0');
+      panelPlaceholder.addClass('hide');
     }
   }
 

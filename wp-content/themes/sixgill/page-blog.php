@@ -28,7 +28,7 @@
 					while ( $query->have_posts() ) {
 						$query->the_post();
 						?>
-						<a href="<?php echo get_permalink(); ?>" class="blog-page-post-card-link">
+						<a target="_blank" href="<?php echo get_permalink(); ?>" class="blog-page-post-card-link">
 							<div class="blog-page-post-card">
 								<div
 									class="blog-page-post-card-image responsive-background"
@@ -72,7 +72,7 @@
 				<div class="blog-page-subscription-block-title">
 					SUBSCRIBE HERE
 				</div>
-				<div class="blog-pagee-subscription-form-wrapper">
+				<div class="blog-page-subscription-form-wrapper">
 					<?php dynamic_sidebar( 'blog-subscribe-sidebar' ); ?>
 				</div>
 			</div>
