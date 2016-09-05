@@ -1,5 +1,14 @@
 .social-buttons {
 	width: 54px;
+	top: 0px;
+	left: calc(~"");
+	position: absolute;
+	display: inline-block;
+
+
+	&-fixed {
+		position: fixed !important;
+	}
 
 	&-link {
 		width: 100%;
@@ -9,5 +18,10 @@
 		&:not(:last-child) {
 			margin-bottom: 7px;
 		}
+	}
+
+	&-fixed {
+		position: fixed;
+		margin-left: 225px;
 	}
 }
