@@ -18711,6 +18711,9 @@ ul:not([class]) li {
   font-size: 18px;
 }
 
+.blog-post-header {
+  margin-top: 74px;
+}
 
 /* Company portrait mobile styles */
 .company-first-section {
@@ -19327,6 +19330,45 @@ ul:not([class]) li {
   font-size: 20.3px;
   font-weight: 300;
   letter-spacing: 0.6px;
+}
+.blog-post-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 127px;
+}
+.blog-post-header-title {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-bottom: 7px;
+  max-width: 95%;
+}
+.blog-post-header-subtitle {
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  max-width: 95%;
+}
+.blog-post-content-wrapper {
+  padding: 0px 3.75vw 0px 2.8vw;
+  margin: 0px 0px 39px 0px;
+}
+.blog-post-content-wrapper,
+.blog-post-content-wrapper p,
+.blog-post-content-wrapper span {
+  font-size: 16px;
+  line-height: 21.6px;
+  letter-spacing: 0.5px;
+}
+.blog-post-content-wrapper h2 {
+  font-size: 28.4px;
+  line-height: 20.3px;
+  letter-spacing: 0.9px;
 }
 
 /* Company tablet styles */
