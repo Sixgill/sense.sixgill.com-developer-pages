@@ -114,7 +114,7 @@
 					if (get_previous_post()) { ?>
 					<div class="singe-blog-navigation-previous">
 						<a href="<?php $prev_post = get_adjacent_post(); echo get_permalink($prev_post->ID);?>">
-						Previous Post <span class="singe-blog-navigation-previous-arrow"></span>			
+						<span class="singe-blog-navigation-previous-arrow"></span> Previous Post 			
 						</a>
 					</div>
 					<?php } ?>

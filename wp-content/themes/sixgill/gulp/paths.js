@@ -91,6 +91,7 @@ module.exports = () => {
 		'menu',
 		'footer',
 		'blog_page',
+        'blog_post',
 		'blog',
 		'company',
 		'home',

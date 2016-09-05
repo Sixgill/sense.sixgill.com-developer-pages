@@ -2,38 +2,46 @@
 	display: flex;
 	justify-content:space-between;
 
-	&-previous,
-	&-next {
+	&-previous a,
+	&-next a{
 		font-family: Lato;
 		color: #2e2e2e;
+		white-space: nowrap;
+	}
+
+	&-previous:hover a,
+	&-next:hover a{
+		color: #0051c6;
+	}
+
+	&-previous:hover span{
+		background-image: url("images/blog/iconArrowPrevious-Hover.svg");
+	}
+
+	&-next:hover span{
+		background-image: url("images/blog/iconArrowNext-Hover.svg");
 	}
 
 	&-previous-arrow {
 		display: inline-block;
+		white-space: nowrap;
 		background-image: url("images/blog/iconArrowPrevious-Default.svg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		width: 11.5px;
 		height: 21px;
-		vertical-align: middle;
-
-		&:hover {
-			background-image: url("images/blog/iconArrowPrevious-Hover.svg");
-		}	
+		vertical-align: middle;	
 	}
 
 	&-next-arrow {
 		display: inline-block;
+		white-space: nowrap;
 		background-image: url("images/blog/iconArrowNext-Default.svg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		width: 11.5px;
 		height: 21px;
-		vertical-align: middle;
-
-		&:hover {
-			background-image: url("images/blog/iconArrowNext-Hover.svg");
-		}	
+		vertical-align: middle;	
 	}
 
 }
