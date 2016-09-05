@@ -6346,6 +6346,7 @@ jQuery(function($) {
 
 	$('#primary-menu-trigger').click(function() {
 		if(flag) {
+			$( '.full-page-wrapper' ).removeClass('hide');
 			$( '#menu-background' ).fadeTo(500, 0, function() {
 				$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			});
@@ -6357,7 +6358,9 @@ jQuery(function($) {
 
 			});
 		} else {
+			
 			savedScroll = $(window).scrollTop();
+			$( '.full-page-wrapper' ).addClass('hide');
 			$( '#primary-menu > ul, #menu-background' ).toggleClass("show");
 			$( '#primary-menu, #menu-background' ).fadeTo(500, 1);
 		}

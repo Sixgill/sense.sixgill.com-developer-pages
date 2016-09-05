@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="full-width ohidden"> <!-- fullpage wrapper placeholder -->
+<div class="full-width ohidden full-page-wrapper"> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
 
 	<div
