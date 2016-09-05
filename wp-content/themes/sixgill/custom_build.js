@@ -6094,6 +6094,14 @@ jQuery(function($) {
 
 });
 
+jQuery(function($) {
+	var socialButtonsPanel = $('#social-buttons-panel');
+
+	function checkSocialPanel() {
+
+	}
+});
+
 jQuery(function($){
 	$('input.blog-page-subscription-email').focusin(function(){
 		$(this).addClass('subscribe-email-focus');
