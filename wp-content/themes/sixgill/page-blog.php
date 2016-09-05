@@ -20,14 +20,15 @@
 
 	<div class="blog-page-cols-wrapper">
 		<div class="blog-page-col-left">
-
 			<?php
-
-				$query = new WP_Query(array ('category_name' => 'Blog'));
-				if ( $query->have_posts() ) {
-					while ( $query->have_posts() ) {
-						$query->the_post();
-						?>
+			$args = array(
+				'posts_per_page' => 3,
+				'paged' => $paged,
+				'category_name' => 'blog',
+			);
+			query_posts($args);
+				if (have_posts()) : 
+					while (have_posts()) : the_post(); ?>
 						<a target="_blank" href="<?php echo get_permalink(); ?>" class="blog-page-post-card-link">
 							<div class="blog-page-post-card">
 								<div
@@ -54,17 +55,19 @@
 								</div>
 							</div>
 						</a>
-						<?php
-					}
-				} else {
-					?>
-					Silence is golden
 					<?php
-				}
-				wp_reset_postdata();
+					endwhile;?>
+
+				<div class="blog-page-pagination">
+				<?php the_posts_pagination( array(
+													'prev_text'    => __(''),
+													'next_text'    => __(''),
+												) );  ?>
+				</div>
+
+			<?php endif;
+			wp_reset_query();
 			?>
-
-
 		</div>
 
 		<div class="blog-page-col-right display-only-desktop">
@@ -87,13 +90,11 @@
 						'posts_per_page' => 3,
 						'paged' => $paged,
 						'more' => $more = 0,
-						//'meta_key' => 'views',
-						//'orderby' => 'meta_value_num',
+						'meta_key' => 'wpb_post_views_count',
+						'orderby' => 'meta_value_num',
 						'order' => 'DESC',
 						'category_name' => 'Blog',
 					);
-					//'category_name=Blog&posts_per_page=3'
-					//meta_key=post_views_count&orderby=meta_value_num&order=DESC
 					query_posts($args);
 					if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<a href="<?php echo get_permalink(); ?>" class="blog-page-popular-post-card-link">

@@ -92,6 +92,7 @@ module.exports = () => {
 		'social_buttons',
 		'footer',
 		'blog_page',
+        'blog_post',
 		'blog',
 		'blog_post',
 		'company',
