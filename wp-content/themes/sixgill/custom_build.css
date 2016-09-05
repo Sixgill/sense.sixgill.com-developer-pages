@@ -19565,6 +19565,7 @@ ul:not([class]) li {
   text-align: left;
   padding-top: 30px;
   margin-bottom: 25px;
+  max-width: 50vw;
 }
 .solutions-second-section-block {
   padding-top: 0px;
@@ -19601,7 +19602,7 @@ ul:not([class]) li {
   font-weight: 300;
   line-height: 1.67;
   letter-spacing: 2.9px;
-  max-width: 80vw;
+  max-width: 50vw;
 }
 .solutions-third-section-block-paragraph p {
   font-size: 15.9px;
