@@ -12318,16 +12318,14 @@ footer div.mc4wp-error p {
   display: inline-block;
   width: 100%;
   text-align: center;
+  white-space: nowrap;
 }
 .blog-page-pagination h2.screen-reader-text {
   display: none;
 }
 .blog-page-pagination .page-numbers {
-  font-size: 16px;
-  line-height: 0.53;
   color: #2e2e2e;
   vertical-align: middle;
-  padding: 0 26px;
   text-decoration: none;
 }
 .blog-page-pagination a.prev {
@@ -12339,16 +12337,30 @@ footer div.mc4wp-error p {
   height: 30px;
   vertical-align: middle;
   padding: 0;
+  -webkit-transform: none;
+          transform: none;
+}
+.blog-page-pagination a.prev:hover {
+  background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 .blog-page-pagination a.next {
   display: inline-block;
-  background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
+  background-image: url("images/blog/iconArrowCirclePrevious-Default.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 30px;
   height: 30px;
   vertical-align: middle;
   padding: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.blog-page-pagination a.next:hover {
+  background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
+  -webkit-transform: none;
+          transform: none;
 }
 .blog-page-pagination .current {
   color: #0051c6;
@@ -14311,6 +14323,15 @@ body.modal-open {
   margin-bottom: 0px;
   font-size: 16px !important;
   width: 100%;
+}
+.blog-page-pagination {
+  position: relative;
+  left: 145px;
+}
+.blog-page-pagination .page-numbers {
+  font-size: 16px;
+  line-height: 0.53;
+  padding: 0 26px;
 }
 .blog-page-subscription-block {
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -16516,6 +16537,11 @@ body.modal-open {
 .blog-page-post-card-text span {
   font-size: 16px !important;
   width: 100%;
+}
+.blog-page-pagination .page-numbers {
+  font-size: 16px;
+  line-height: 0.53;
+  padding: 0 26px;
 }
 
 /* Blog tablet styles */
@@ -19046,6 +19072,11 @@ ul:not([class]) li {
 .blog-page-post-card-author-date {
   font-size: 12px;
   letter-spacing: 0.4px;
+}
+.blog-page-pagination .page-numbers {
+  font-size: 13px;
+  line-height: 0.53;
+  padding: 0 20px;
 }
 
 /* Blog mobile portrait and landscape styles */
