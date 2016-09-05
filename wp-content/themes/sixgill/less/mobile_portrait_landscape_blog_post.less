@@ -8,3 +8,43 @@
 		letter-spacing: 0.6px;
 	}
 }
+
+
+.blog-post {
+	&-header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 127px;
+
+		&-title {
+			font-size: 18px;
+			letter-spacing: 0.5px;
+			margin-bottom: 7px;
+			max-width: 95%;
+		}
+
+		&-subtitle {
+			font-size: 14px;
+			letter-spacing: 0.4px;
+			max-width: 95%;
+		}
+	}
+
+	&-content-wrapper {
+		padding: 0px 3.75vw 0px 2.8vw;
+		margin: 0px 0px 39px 0px;
+
+		&, & p, & span {
+			font-size: 16px;
+			line-height: 21.6px;
+			letter-spacing: 0.5px;
+		}
+
+		& h2 {
+			font-size: 28.4px;
+			line-height: 20.3px;
+			letter-spacing: 0.9px;
+		}
+	}
+}
