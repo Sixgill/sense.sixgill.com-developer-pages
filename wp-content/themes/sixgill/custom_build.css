@@ -12271,6 +12271,7 @@ footer div.mc4wp-error p {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  background-color: #f8f8f8;
 }
 .blog-page-col-left {
   display: inline-block;
@@ -12290,6 +12291,7 @@ footer div.mc4wp-error p {
       -ms-flex-align: start;
           align-items: flex-start;
   transition: all 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+  background-color: #fff;
 }
 .blog-page-post-card:hover {
   -webkit-transform: scale(1.0165);
@@ -12500,6 +12502,9 @@ footer div.mc4wp-error p {
   font-family: "Lato";
   color: #999999;
   line-height: 1em;
+}
+#subscribe-blog.btnSchedule:hover {
+  background-color: #0044a5 !important;
 }
 
 .singe-blog-navigation {
@@ -14502,6 +14507,7 @@ body.modal-open {
 .blog-page-subscription-block {
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
+  background-color: #fff;
 }
 .blog-page-subscription-block-title {
   font-size: 16px;
@@ -14536,6 +14542,7 @@ body.modal-open {
 }
 .blog-page-popular-block {
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 .blog-page-popular-block-title {
   font-size: 16px;
