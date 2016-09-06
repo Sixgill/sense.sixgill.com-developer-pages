@@ -14496,6 +14496,7 @@ body.modal-open {
 .blog-page-subscription-block {
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
+  background-color: #fff;
 }
 .blog-page-subscription-block-title {
   font-size: 16px;
@@ -14530,6 +14531,7 @@ body.modal-open {
 }
 .blog-page-popular-block {
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 .blog-page-popular-block-title {
   font-size: 16px;
