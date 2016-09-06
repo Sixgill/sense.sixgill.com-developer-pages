@@ -12500,6 +12500,9 @@ footer div.mc4wp-error p {
   color: #999999;
   line-height: 1em;
 }
+#subscribe-blog.btnSchedule:hover {
+  background-color: #0044a5 !important;
+}
 
 .singe-blog-navigation {
   display: -webkit-flex;
