@@ -12268,6 +12268,7 @@ footer div.mc4wp-error p {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  background-color: #f8f8f8;
 }
 .blog-page-col-left {
   display: inline-block;
@@ -12287,6 +12288,7 @@ footer div.mc4wp-error p {
       -ms-flex-align: start;
           align-items: flex-start;
   transition: all 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+  background-color: #fff;
 }
 .blog-page-post-card:hover {
   -webkit-transform: scale(1.0165);
