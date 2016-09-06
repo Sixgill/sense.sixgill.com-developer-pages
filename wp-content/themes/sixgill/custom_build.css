@@ -14487,6 +14487,7 @@ body.modal-open {
 .blog-page-post-card-author-date {
   margin-bottom: 19px;
   font-size: 14px;
+  letter-spacing: 0.4px;
 }
 .blog-page-post-card-dash {
   margin-bottom: 21px;
@@ -14517,6 +14518,7 @@ body.modal-open {
 .blog-page-subscription-block-title {
   font-size: 16px;
   height: 35px;
+  letter-spacing: 1.1px;
 }
 .blog-page-subscription-form-wrapper {
   padding: 10px;
@@ -14552,6 +14554,7 @@ body.modal-open {
 .blog-page-popular-block-title {
   font-size: 16px;
   height: 35px;
+  letter-spacing: 1.1px;
 }
 .blog-page-popular-post-card {
   display: -webkit-flex;
@@ -16827,6 +16830,12 @@ body.modal-open {
 .blog-page-post-card-text span {
   font-size: 16px !important;
   width: 100%;
+}
+.blog-page-subscription-block-title {
+  letter-spacing: 1.1px;
+}
+.blog-page-popular-block-title {
+  letter-spacing: 1.1px;
 }
 .blog-page-pagination .page-numbers {
   font-size: 16px;
