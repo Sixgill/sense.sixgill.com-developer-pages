@@ -12576,6 +12576,11 @@ footer div.mc4wp-error p {
   text-align: center;
   color: #4ddb5a;
 }
+.blog-post-author-date {
+  color: #999999;
+  font-family: "Lato";
+  font-weight: 500;
+}
 .blog-post-content-wrapper {
   position: relative;
 }
@@ -14638,6 +14643,10 @@ body.modal-open {
   letter-spacing: 0.6px;
   margin: 0px;
   max-width: 90%;
+}
+.blog-post-author-date {
+  font-size: 14px;
+  margin-bottom: 21px;
 }
 .blog-post-content-wrapper {
   padding: 0px 12.5vw 0px 19vw;
@@ -16802,6 +16811,10 @@ body.modal-open {
   font-size: 20px;
   letter-spacing: 0.6px;
   max-width: 90%;
+}
+.blog-post-author-date {
+  font-size: 14px;
+  margin-bottom: 21px;
 }
 .blog-post-content-wrapper {
   padding: 0px 5vw 0px 15.23vw;
@@ -19404,6 +19417,11 @@ ul:not([class]) li {
   font-size: 14px;
   letter-spacing: 0.4px;
   max-width: 95%;
+}
+.blog-post-author-date {
+  font-size: 14px;
+  margin-bottom: 21px;
+  margin-top: 15px;
 }
 .blog-post-content-wrapper {
   padding: 0px 3.75vw 0px 2.8vw;
