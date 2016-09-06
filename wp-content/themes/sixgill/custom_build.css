@@ -12290,8 +12290,10 @@ footer div.mc4wp-error p {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  transition: all 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: all 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
   background-color: #fff;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 .blog-page-post-card:hover {
   -webkit-transform: scale(1.0165);
@@ -14468,7 +14470,10 @@ body.modal-open {
 .blog-page-post-card-image {
   width: 256px;
   min-width: 256px;
-  height: 256px \9;
+}
+.blog-page-post-card-image _:-ms-lang(x),
+.blog-page-post-card-image {
+  height: 256px;
 }
 .blog-page-post-card-content-wrapper {
   padding: 28px 19px 28px 23px;
@@ -14747,8 +14752,11 @@ body.modal-open {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-image: url('/wp-content/themes/sixgill/images/company/first_section_bg_desktop.png');
-  height: 100vh \9;
-  min-height: 780px \9;
+}
+.company-first-section _:-ms-lang(x),
+.company-first-section {
+  height: 100vh;
+  min-height: 780px;
 }
 .company-first-section-block {
   -webkit-align-self: center;
@@ -15293,6 +15301,10 @@ body.modal-open {
   min-height: 30vw;
   z-index: 2;
 }
+.solutions-first-section-block _:-ms-lang(x),
+.solutions-first-section-block {
+  height: 34vw;
+}
 .solutions-first-section-block-title {
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -15668,9 +15680,12 @@ body.modal-open {
   display: flex;
 }
 .tech-section {
-  height: 100vh \9;
   min-height: 100vh;
-  min-height: 40vw \9;
+}
+.tech _:-ms-lang(x),
+.tech-section {
+  height: 100vh !important;
+  min-height: 40vw;
 }
 .tech-first-section {
   display: -webkit-flex;
@@ -15690,12 +15705,15 @@ body.modal-open {
   display: flex;
   width: 73.54vw;
   min-height: 34vw;
-  height: 38vw \9;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
   margin: 100px 0px 100px 0px;
+}
+.tech-first-section-block _:-ms-lang(x),
+.tech-first-section-block {
+  height: 38vw;
 }
 .tech-first-section-block-title {
   font-size: 61px;
@@ -15712,11 +15730,14 @@ body.modal-open {
 .tech-first-section-block-text {
   width: 71%;
   padding: 44px 2.4vw 44px 2.4vw;
-  padding-top: 20px \9;
-  padding-bottom: 0px \9;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
+}
+.tech-first-section-block-text _:-ms-lang(x),
+.tech-first-section-block-text {
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 .tech-first-section-block-paragraph {
   margin-bottom: 0px;
@@ -15770,11 +15791,14 @@ body.modal-open {
   height: auto;
   max-height: none;
   width: 100%;
-  height: 100% \9;
   max-width: 100%;
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
           align-self: stretch;
+}
+.tech-second-section-wrapper _:-ms-lang(x),
+.tech-second-section-wrapper {
+  height: 100%;
 }
 .tech-second-section-content-wrapper {
   margin-left: 5.8vw;
@@ -15831,6 +15855,9 @@ body.modal-open {
   display: flex;
   width: 100%;
   background-image: url('/wp-content/themes/sixgill/images/tech/third_section_bg_desktop.png');
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .tech-third-section-wrapper {
   display: -webkit-flex;
@@ -15840,7 +15867,6 @@ body.modal-open {
       -ms-flex-item-align: center;
           align-self: center;
   width: 100%;
-  height: 100% \9;
 }
 .tech-third-section-content-wrapper {
   margin-left: 5.67vw;
@@ -16018,8 +16044,11 @@ body.modal-open {
   width: 73.5vw;
   max-width: 100%;
   min-height: calc((100vw - 225px)*0.23415 - 1px);
-  height: 22.5vw \9;
   z-index: 2;
+}
+.products-first-section-block _:-ms-lang(x),
+.products-first-section-block {
+  height: 22.5vw;
 }
 .products-first-section-image-wrapper {
   width: 28%;
@@ -16082,8 +16111,11 @@ body.modal-open {
 .products-second-section {
   background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
   padding: 2vw 0px 2vw 0px;
-  height: calc(100vh - 90px) \9;
   min-height: calc(100vh - 90px);
+}
+.products-second-section _:-ms-lang(x),
+.products-second-section {
+  height: calc(10vh);
 }
 .products-second-section > div {
   -webkit-align-self: center;
@@ -16766,7 +16798,6 @@ body.modal-open {
 .blog-page-post-card-image {
   width: 256px;
   min-width: 256px;
-  height: 256px \9;
 }
 .blog-page-post-card-content-wrapper {
   padding: 28px 20px 28px 24px;

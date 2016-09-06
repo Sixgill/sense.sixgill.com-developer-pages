@@ -41,7 +41,10 @@
 		&-image {
 			width: 256px;
 			min-width: 256px;
-			height: ~"256px \9";
+
+			_:-ms-lang(x), & {
+				height: 256px;
+			}
 		}
 
 		&-content-wrapper {

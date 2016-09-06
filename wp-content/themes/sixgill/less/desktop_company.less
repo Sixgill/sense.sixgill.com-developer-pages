@@ -18,8 +18,11 @@
 		position: relative;
 		justify-content: flex-end;
 		background-image: url('/wp-content/themes/sixgill/images/company/first_section_bg_desktop.png');
-		height: ~"100vh \9";
-		min-height: ~"780px \9";
+
+		_:-ms-lang(x), & {
+			height: 100vh;
+			min-height: 780px;
+		}
 
 		&-block {
 			align-self: center;

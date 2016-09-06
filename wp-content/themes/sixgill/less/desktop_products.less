@@ -83,8 +83,11 @@
 			width: 73.5vw;
 			max-width: 100%;
 			min-height: calc(~"(100vw - 225px)*0.23415 - 1px");
-			height: ~"22.5vw \9";
 			z-index: 2;
+
+			_:-ms-lang(x), & {
+				height: 22.5vw;
+			}
 		}
 
 		&-image {
@@ -151,8 +154,11 @@
 	&-second-section {
 		background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
 		padding: 2vw 0px 2vw 0px;
-		height: ~"calc(100vh - 90px) \9";
 		min-height: calc(~"100vh - 90px");
+
+		_:-ms-lang(x), & {
+			height: calc(100vh - 90px);
+		}
 
 		& > div {
 			align-self: center;
