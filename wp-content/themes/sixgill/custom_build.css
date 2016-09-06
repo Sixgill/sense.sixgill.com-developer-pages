@@ -14930,6 +14930,10 @@ body.modal-open {
   min-height: 100vh !important;
   height: auto !important;
 }
+.home _:-ms-lang(x),
+.home-section {
+  height: 100vh !important;
+}
 .home-first-section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
