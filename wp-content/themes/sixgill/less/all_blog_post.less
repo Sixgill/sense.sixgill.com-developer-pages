@@ -79,11 +79,14 @@
 		font-weight: 500;
 	}
 
+	&-content {
+		width: 100%;
+		margin: 0;
+		padding: 0;
 
-	&-content-wrapper {
-		position: relative;
-
-		&, & p, & span {
+		&,
+		& p,
+		& span {
 			font-weight: normal;
 			font-style: normal;
 			font-stretch: normal;
@@ -91,15 +94,29 @@
 			color: #2e2e2e;
 		}
 
-		& h2 {
-			font-weight: 300;
-			font-style: normal;
-			font-stretch: normal;
-			text-align: left;
-			color: #0051c6;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-weight: 300 !important;
+			font-style: normal !important;
+			font-stretch: normal !important;
+			text-align: left !important;
+			color: #0051c6 !important;
 		}
+
+		img {
+			width: 100% !important;
+			height: auto !important;
+			max-width: 100%;
+		}
+
+		&-wrapper {
+			position: relative;
+		}
+
 	}
-
-
 
 }

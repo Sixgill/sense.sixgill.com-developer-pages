@@ -12,10 +12,10 @@
 	}
 
 	&-section {
-		min-height: 100vh !important;
+		min-height: 100vh;
 		height: auto !important;
 	}
-	_:-ms-lang(x), &-section { 
+	_:-ms-lang(x), &-section {
 		height:100vh !important;
 	}
 
@@ -25,6 +25,10 @@
 		position: relative;
 		height: 100vh !important;
 		min-height: 500px !important;
+
+		_:-ms-lang(x), & {
+			min-height: 500px !important;
+		}
 
 		&-video {
 			position: absolute;
@@ -104,6 +108,10 @@
 
 	&-second-section {
 		background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
+
+		_:-ms-lang(x), & {
+			min-height: 600px !important;
+		}
 
 	  &-wrapper {
 			width: 74.5%;
@@ -202,6 +210,10 @@
 		background-size: contain;
 		background-repeat: repeat;
 
+		_:-ms-lang(x), & {
+			min-height: 500px !important;
+		}
+
 		&-wrapper {
 			max-width: 80%;
 			text-align: center;
@@ -248,8 +260,11 @@
 		align-items: center;
 		flex-direction: column;
 		justify-content: center;
-
 		background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
+
+		_:-ms-lang(x), & {
+			min-height: 720px !important;
+		}
 
 		&-wrapper {
 			text-align: center;
@@ -327,11 +342,14 @@
 	}
 
 	&-fifth-section {
-
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		padding-bottom: 146px;
+
+		_:-ms-lang(x), & {
+			min-height: 500px !important;
+		}
 
 		&-wrapper {
 			display: flex;
