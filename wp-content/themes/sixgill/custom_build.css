@@ -12459,15 +12459,7 @@ footer div.mc4wp-error p {
   border: 0px !important;
   outline: 0px !important;
   border-radius: 0px !important;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: inline-block;
   background-color: #0044a5;
   font-family: "Lato";
   font-weight: bold;
@@ -19560,6 +19552,12 @@ ul:not([class]) li {
 .blog-post-content-wrapper {
   padding: 0px 3.75vw 0px 2.8vw;
   margin: 0px 0px 39px 0px;
+}
+.blog-post-content-wrapper-line {
+  background-color: #dfdfdf;
+  width: 100vw;
+  height: 1px;
+  display: block;
 }
 .blog-post-content-wrapper,
 .blog-post-content-wrapper p,

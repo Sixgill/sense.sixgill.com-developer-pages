@@ -20,7 +20,7 @@
 
 	<div class="blog-post-content-wrapper">
 		<?php include(locate_template('social_buttons.php')); ?>
-
+		<div class="blog-post-content-wrapper-line no-tablet-display no-desktop-display"></div>
 		<div class="blog-post-author-date">
 			<?php the_author(); ?> | <?php the_date('m/d/Y'); ?>
 		</div>
