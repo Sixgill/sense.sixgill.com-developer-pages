@@ -12465,11 +12465,14 @@ footer div.mc4wp-error p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #0044a5;
+  background-color: #4ddb5a;
   font-family: "Lato";
   font-weight: bold;
   color: #ffffff;
   text-align: center;
+}
+.blog-page-subscription-submit-button:hover {
+  background-color: #0044a5;
 }
 .blog-page-popular-block-title {
   display: -webkit-flex;
@@ -12505,9 +12508,6 @@ footer div.mc4wp-error p {
   font-family: "Lato";
   color: #999999;
   line-height: 1em;
-}
-#subscribe-blog.btnSchedule:hover {
-  background-color: #0044a5 !important;
 }
 
 .singe-blog-navigation {
