@@ -113,7 +113,7 @@
 										<?php the_title(); ?>
 									</div>
 									<div class="blog-page-popular-post-author-date">
-										Post by <?php echo get_field('author'); ?> | <?php the_time('F j, Y'); ?>
+										Post by <?php echo get_field('author'); ?> | <?php the_date('m/d/Y'); ?>
 									</div>
 								</div>
 							</div>
