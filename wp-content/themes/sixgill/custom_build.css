@@ -12333,7 +12333,7 @@ footer div.mc4wp-error p {
           flex-grow: 1;
   font-family: "Lato";
   font-weight: 300;
-  line-height: 1em;
+  line-height: 1.5em;
   color: #0051c6;
 }
 .blog-page-post-card-author-date {
@@ -12469,6 +12469,7 @@ footer div.mc4wp-error p {
   font-family: "Lato";
   font-weight: bold;
   color: #ffffff;
+  text-align: center;
 }
 .blog-page-popular-block-title {
   display: -webkit-flex;
@@ -14494,6 +14495,7 @@ body.modal-open {
 }
 .blog-page-post-card-text {
   width: 100%;
+  font-size: 16px !important;
 }
 .blog-page-post-card-text p,
 .blog-page-post-card-text span {
@@ -14538,7 +14540,7 @@ body.modal-open {
   color: red;
 }
 .blog-page-subscription-email {
-  height: 43px;
+  height: 46px;
   margin: 0px 0px 7px 0px;
   padding: 16px 16px 16px 16px;
 }
@@ -16846,6 +16848,7 @@ body.modal-open {
 }
 .blog-page-post-card-text {
   width: 100%;
+  font-size: 16px !important;
 }
 .blog-page-post-card-text p,
 .blog-page-post-card-text span {
