@@ -12469,6 +12469,7 @@ footer div.mc4wp-error p {
   font-family: "Lato";
   font-weight: bold;
   color: #ffffff;
+  text-align: center;
 }
 .blog-page-popular-block-title {
   display: -webkit-flex;
@@ -14539,7 +14540,7 @@ body.modal-open {
   color: red;
 }
 .blog-page-subscription-email {
-  height: 43px;
+  height: 46px;
   margin: 0px 0px 7px 0px;
   padding: 16px 16px 16px 16px;
 }
