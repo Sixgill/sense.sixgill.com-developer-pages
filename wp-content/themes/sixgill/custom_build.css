@@ -12333,7 +12333,7 @@ footer div.mc4wp-error p {
           flex-grow: 1;
   font-family: "Lato";
   font-weight: 300;
-  line-height: 1em;
+  line-height: 1.5em;
   color: #0051c6;
 }
 .blog-page-post-card-author-date {
@@ -14494,6 +14494,7 @@ body.modal-open {
 }
 .blog-page-post-card-text {
   width: 100%;
+  font-size: 16px !important;
 }
 .blog-page-post-card-text p,
 .blog-page-post-card-text span {
@@ -16846,6 +16847,7 @@ body.modal-open {
 }
 .blog-page-post-card-text {
   width: 100%;
+  font-size: 16px !important;
 }
 .blog-page-post-card-text p,
 .blog-page-post-card-text span {
