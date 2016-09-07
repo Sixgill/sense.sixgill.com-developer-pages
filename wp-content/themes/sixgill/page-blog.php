@@ -45,7 +45,7 @@
 										<?php the_title(); ?>
 									</div>
 									<div class="blog-page-post-card-author-date">
-										Post by <?php echo get_field('author'); ?> | <?php the_time('F j, Y'); ?>
+										Post by <?php echo get_field('author'); ?> | <?php the_date('m/d/Y'); ?>
 									</div>
 
 									<div class="blog-page-post-card-dash no-mobile-portrait-display no-mobile-landscape-display"></div>
