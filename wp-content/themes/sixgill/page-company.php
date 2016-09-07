@@ -90,7 +90,7 @@
 	</div>
 	<a name="board"></a>
 	<div id="board" class="company-section company-third-section">
-		<div class="inline-block full-width">
+		<div class="inline-block full-width company-third-section-wrapper">
 			<div class="company-third-section-text">
 				<h1 class="company-third-section-title">
 					<?php echo get_field('board_title'); ?>
