@@ -19806,7 +19806,7 @@ ul:not([class]) li {
   width: 100%;
 }
 .home-first-section-text {
-  margin-bottom: 8vh;
+  margin-bottom: 32px;
   letter-spacing: 0.9px;
 }
 .home-first-section-text,
@@ -19834,13 +19834,13 @@ ul:not([class]) li {
 }
 .home-second-section-wrapper {
   width: 92.5%;
-  margin: 10vh 0px 0px 0px;
+  margin: 47px 0px 0px 0px;
 }
 .home-second-section-header-wrapper {
-  margin-bottom: 6.5vh;
+  margin-bottom: 31px;
 }
 .home-second-section-header-top {
-  margin-bottom: 2.8vh;
+  margin-bottom: 11px;
 }
 .home-second-section-header-top-line {
   display: none;
@@ -19854,7 +19854,7 @@ ul:not([class]) li {
   margin-bottom: 12px;
 }
 .home-second-section-subtitle {
-  margin-bottom: 5.7vh;
+  margin-bottom: 27px;
 }
 .home-second-section-row {
   width: 100%;
@@ -19864,7 +19864,7 @@ ul:not([class]) li {
 }
 .home-second-section-block {
   width: 100%;
-  margin-bottom: 8.4vh;
+  margin-bottom: 40px;
 }
 .home-second-section-block:first-child {
   float: left;
@@ -19900,7 +19900,7 @@ ul:not([class]) li {
 .home-third-section-wrapper {
   width: 93.75%;
   text-align: center;
-  margin: 9.47vh 0px 9.47vh 0px;
+  margin: 46px 0px 46px 0px;
 }
 .home-third-section-title {
   display: inline-block;
@@ -19927,7 +19927,7 @@ ul:not([class]) li {
 }
 .home-third-section-bottom-part-text {
   font-size: 14px;
-  margin-bottom: 4vh;
+  margin-bottom: 19px;
 }
 .home-fourth-section {
   display: -webkit-flex;
@@ -19945,13 +19945,12 @@ ul:not([class]) li {
   background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
 }
 .home-fourth-section-wrapper {
-  margin: 9.45vh 0px 3vh 0px;
+  margin: 46px 0px 46px 0px;
   text-align: center;
 }
 .home-fourth-section-header-wrapper {
   display: inline-block;
   width: 89vw;
-  margin-bottom: 3vh;
 }
 .home-fourth-section-title {
   font-size: 30px;
@@ -19959,7 +19958,7 @@ ul:not([class]) li {
 .home-fourth-section-subtitle {
   font-size: 18px;
   letter-spacing: 0.8px;
-  margin-bottom: 4.4vh;
+  margin-bottom: 21px;
 }
 .home-fourth-section-link {
   font-size: 18px;
@@ -19997,7 +19996,7 @@ ul:not([class]) li {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 9.6vh;
+  margin-top: 46px;
   width: 90vw;
 }
 .home-fifth-section-header-wrapper {
@@ -20010,15 +20009,15 @@ ul:not([class]) li {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 11vh;
+  margin-bottom: 53px;
 }
 .home-fifth-section-dash {
-  margin-bottom: 5vh;
+  margin-bottom: 32px;
   width: 55.5px;
 }
 .home-fifth-section-title {
   font-size: 24px;
-  margin-bottom: 3.58vh;
+  margin-bottom: 17px;
 }
 .home-fifth-section-subtitle {
   font-size: 16px;
@@ -20026,7 +20025,7 @@ ul:not([class]) li {
 .home-fifth-section-logo {
   display: inline-block;
   width: 80%;
-  margin-bottom: 7vh;
+  margin-bottom: 19px;
 }
 .home-fifth-section-logo-wrapper {
   display: inline-block;
