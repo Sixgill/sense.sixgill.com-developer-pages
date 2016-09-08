@@ -12622,6 +12622,7 @@ footer div.mc4wp-error p {
   font-stretch: normal;
   text-align: center;
   color: #4ddb5a;
+  display: inline-block;
 }
 .blog-post-author-date {
   color: #999999;
