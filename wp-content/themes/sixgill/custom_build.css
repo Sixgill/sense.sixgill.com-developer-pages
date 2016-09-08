@@ -12650,13 +12650,13 @@ footer div.mc4wp-error p {
   text-align: left !important;
   color: #0051c6 !important;
 }
-.blog-post img {
+.blog-post-content img {
   height: auto !important;
   max-width: 100%;
   display: inline-block;
   clear: both;
 }
-.blog-post-wrapper {
+.blog-post-content-wrapper {
   position: relative;
 }
 
