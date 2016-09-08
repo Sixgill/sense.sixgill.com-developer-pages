@@ -157,12 +157,12 @@
 			</div>
 			<div class="home-fourth-section-carousel-wrapper">
 				<div id="home-fourth-section-carousel" class="home-fourth-section-carousel">
-					<?php query_posts
-					(array(
+					<?php 
+					$posts = get_posts( array(
 						'post_parent' => 36,
 						'post_type' => 'page'
-						));
-					if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					) );
+					foreach($posts as $post){ setup_postdata($post); ?>
 						<div class="home-fourth-section-carousel-slide">
 							<div class="home-fourth-section-carousel-image-wrapper">
 								<?php the_post_thumbnail('home-solutions-slider');?>
@@ -184,7 +184,7 @@
 								</div>
 							</div>
 						</div>
-					<?php endwhile; else: endif;  wp_reset_query(); ?>
+					<?php } wp_reset_postdata(); ?>
 				</div>
 			</div>
 		</div>
