@@ -15,7 +15,7 @@
 
 	>
 		<div class="blog-post-header-filter <?php echo $filterFlag == '1' ? '' : 'hide'?>"></div>
-		<div class="blog-post-header-contaier">
+		<div class="blog-post-header-container">
 			<h1 class="blog-post-header-title ellipsis-3lines">
 				<?php echo $post->post_title; ?>
 			</h1>
