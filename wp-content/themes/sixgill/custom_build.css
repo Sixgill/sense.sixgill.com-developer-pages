@@ -12531,6 +12531,7 @@ footer div.mc4wp-error p {
 }
 .singe-blog-navigation-previous-arrow {
   display: inline-block;
+  margin-right: 13px;
   white-space: nowrap;
   background-image: url("images/blog/iconArrowPrevious-Default.svg");
   background-repeat: no-repeat;
@@ -12541,6 +12542,7 @@ footer div.mc4wp-error p {
 }
 .singe-blog-navigation-next-arrow {
   display: inline-block;
+  margin-left: 13px;
   white-space: nowrap;
   background-image: url("images/blog/iconArrowNext-Default.svg");
   background-repeat: no-repeat;
