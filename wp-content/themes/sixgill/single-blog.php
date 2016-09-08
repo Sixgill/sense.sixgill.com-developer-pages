@@ -20,7 +20,7 @@
 
 	<div class="blog-post-content-wrapper">
 		<?php include(locate_template('social_buttons.php')); ?>
-
+		<div class="blog-post-content-wrapper-line no-tablet-display no-desktop-display"></div>
 		<div class="blog-post-author-date">
 			<?php the_author(); ?> | <?php the_date('m/d/Y'); ?>
 		</div>
@@ -28,8 +28,10 @@
 		<?php
 			if ( have_posts() ) while ( have_posts() ) : the_post(); wpb_set_post_views(get_the_ID());
 		?>
-		<?php the_content(); ?>
-		
+		<div class="blog-post-content">
+			<?php the_content(); ?>
+		</div>
+
 		<div class="singe-blog-navigation">
 			<?php $current =  get_permalink();
 			if (get_previous_post()) { ?>
@@ -39,7 +41,7 @@
 				</a>
 			</div>
 			<?php } ?>
-			
+
 			<?php if (get_next_post()) { ?>
 			<div class="singe-blog-navigation-next">
 				<a href="<?php $next_post = get_adjacent_post(0,'',0); echo get_permalink($next_post->ID);?>">

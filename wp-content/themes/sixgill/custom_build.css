@@ -12124,6 +12124,10 @@ input {
   display: block;
   height: 100%;
 }
+.ellip _:-ms-lang(x),
+.ellip {
+  width: 100%;
+}
 .ellip-line {
   display: inline-block;
   text-overflow: ellipsis;
@@ -12181,7 +12185,7 @@ div.home-fourth-section-carousel-slide div.empty-card {
 .footer-subscription-button {
   background-color: #4dc85a;
   cursor: pointer;
-  height: 100%;
+  height: 33px;
   vertical-align: top;
   display: inline-block;
   border: 0;
@@ -12190,8 +12194,7 @@ div.home-fourth-section-carousel-slide div.empty-card {
 .footer-subscription-email {
   border: 0px;
   outline: 0px;
-  width: 62%;
-  height: 100%;
+  height: 33px;
   vertical-align: top;
   display: inline-block;
 }
@@ -12589,24 +12592,39 @@ footer div.mc4wp-error p {
   font-family: "Lato";
   font-weight: 500;
 }
-.blog-post-content-wrapper {
-  position: relative;
+.blog-post-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-.blog-post-content-wrapper,
-.blog-post-content-wrapper p,
-.blog-post-content-wrapper span {
+.blog-post-content,
+.blog-post-content p,
+.blog-post-content span {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   text-align: left;
   color: #2e2e2e;
 }
-.blog-post-content-wrapper h2 {
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  text-align: left;
-  color: #0051c6;
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4,
+.blog-post-content h5,
+.blog-post-content h6 {
+  font-weight: 300 !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  text-align: left !important;
+  color: #0051c6 !important;
+}
+.blog-post-content img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+}
+.blog-post-content-wrapper {
+  position: relative;
 }
 
 /* Blog Common styles */
@@ -14356,7 +14374,6 @@ body.modal-open {
 }
 .footer-subscription-form-wrapper {
   height: 65%;
-  /*width: 38%;*/
 }
 .footer-link-col {
   width: 13.5vw;
@@ -14392,11 +14409,15 @@ body.modal-open {
   font-size: 14px;
   letter-spacing: 0.7px;
   padding-left: 12px;
+  width: 202px;
+  height: 33px;
 }
 .footer-subscription-button {
   font-size: 16px;
   letter-spacing: 0.8px;
   font-weight: bold;
+  width: 122px;
+  height: 33px;
 }
 .footer-subscribe-error {
   display: none;
@@ -14544,6 +14565,10 @@ body.modal-open {
   margin: 0px 0px 7px 0px;
   padding: 16px 16px 16px 16px;
 }
+.blog-page-subscription _:-ms-lang(x),
+.blog-page-subscription-email {
+  height: 56px;
+}
 .blog-page-subscription-submit-button {
   height: 43px;
   font-size: 16px;
@@ -14655,10 +14680,14 @@ body.modal-open {
   height: 324px;
 }
 .blog-post-header-title {
-  font-size: 60px;
-  letter-spacing: 1.8px;
   margin-bottom: 21px;
   max-width: 90%;
+}
+.blog-post-header-title,
+.blog-post-header-title span {
+  font-size: 60px;
+  letter-spacing: 1.8px;
+  line-height: 1.1em;
 }
 .blog-post-header-subtitle {
   font-size: 20px;
@@ -14670,20 +14699,25 @@ body.modal-open {
   font-size: 14px;
   margin-bottom: 21px;
 }
-.blog-post-content-wrapper {
-  padding: 0px 12.5vw 0px 19vw;
-  margin: 51.5px 0px 80px 0px;
-}
-.blog-post-content-wrapper,
-.blog-post-content-wrapper p,
-.blog-post-content-wrapper span {
+.blog-post-content,
+.blog-post-content p,
+.blog-post-content span {
   font-size: 16px;
   line-height: 21.6px;
   letter-spacing: 0.5px;
 }
-.blog-post-content-wrapper h2 {
-  font-size: 44.6px;
-  letter-spacing: 1.3px;
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4,
+.blog-post-content h5,
+.blog-post-content h6 {
+  font-size: 44.6px !important;
+  letter-spacing: 1.3px !important;
+}
+.blog-post-content-wrapper {
+  padding: 0px 12.5vw 0px 19vw;
+  margin: 51.5px 0px 80px 0px;
 }
 
 /* Blog desktop styles */
@@ -14953,7 +14987,7 @@ body.modal-open {
   width: 100%;
 }
 .home-section {
-  min-height: 100vh !important;
+  min-height: 100vh;
   height: auto !important;
 }
 .home _:-ms-lang(x),
@@ -14967,6 +15001,10 @@ body.modal-open {
   z-index: 2;
   position: relative;
   height: 100vh !important;
+  min-height: 500px !important;
+}
+.home-first-section _:-ms-lang(x),
+.home-first-section {
   min-height: 500px !important;
 }
 .home-first-section-video {
@@ -15043,6 +15081,10 @@ body.modal-open {
 .home-second-section {
   background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
 }
+.home-second-section _:-ms-lang(x),
+.home-second-section {
+  min-height: 600px !important;
+}
 .home-second-section-wrapper {
   width: 74.5%;
   margin: 2vw 0px 2vw 0px;
@@ -15118,6 +15160,10 @@ body.modal-open {
   background-size: contain;
   background-repeat: repeat;
 }
+.home-third-section _:-ms-lang(x),
+.home-third-section {
+  min-height: 500px !important;
+}
 .home-third-section-wrapper {
   max-width: 80%;
   text-align: center;
@@ -15157,6 +15203,10 @@ body.modal-open {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
+}
+.home-fourth-section _:-ms-lang(x),
+.home-fourth-section {
+  min-height: 720px !important;
 }
 .home-fourth-section-wrapper {
   text-align: center;
@@ -15198,6 +15248,10 @@ body.modal-open {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 146px;
+}
+.home-fifth-section _:-ms-lang(x),
+.home-fifth-section {
+  min-height: 500px !important;
 }
 .home-fifth-section-wrapper {
   display: -webkit-flex;
@@ -16732,11 +16786,13 @@ body.modal-open {
 .footer-subscription-button {
   font-size: 18px;
   font-weight: bold;
+  width: 122px;
 }
 .footer-subscription-email {
   font-size: 14px;
   letter-spacing: 0.7px;
   padding-left: 12px;
+  width: 202px;
 }
 .footer-link-col {
   width: 24vw;
@@ -19505,6 +19561,12 @@ ul:not([class]) li {
   padding: 0px 3.75vw 0px 2.8vw;
   margin: 0px 0px 39px 0px;
 }
+.blog-post-content-wrapper-line {
+  background-color: #dfdfdf;
+  width: 100vw;
+  height: 1px;
+  display: block;
+}
 .blog-post-content-wrapper,
 .blog-post-content-wrapper p,
 .blog-post-content-wrapper span {
@@ -19854,7 +19916,7 @@ ul:not([class]) li {
   display: inline-block;
   width: 100%;
   font-size: 16px;
-  margin-bottom: 6.56vh;
+  margin-bottom: 32px;
   line-height: 1.25em;
   letter-spacing: 0.8px;
 }

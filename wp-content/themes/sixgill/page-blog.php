@@ -28,9 +28,9 @@
 				'category_name' => 'blog',
 			);
 			query_posts($args);
-				if (have_posts()) : 
+				if (have_posts()) :
 					while (have_posts()) : the_post(); ?>
-						<a target="_blank" href="<?php echo get_permalink(); ?>" class="blog-page-post-card-link">
+						<a href="<?php echo get_permalink(); ?>" class="blog-page-post-card-link">
 							<div class="blog-page-post-card">
 								<div
 									class="blog-page-post-card-image responsive-background"
@@ -45,7 +45,7 @@
 										<?php the_title(); ?>
 									</div>
 									<div class="blog-page-post-card-author-date">
-										Post by <?php echo get_field('author'); ?> | <?php the_date('m/d/Y'); ?>
+										Post by <?php echo get_field('author'); ?> | <?php the_time('m/d/Y'); ?>
 									</div>
 
 									<div class="blog-page-post-card-dash no-mobile-portrait-display no-mobile-landscape-display"></div>
