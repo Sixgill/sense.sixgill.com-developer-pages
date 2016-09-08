@@ -14801,9 +14801,6 @@ body.modal-open {
   left: 0px;
   width: 100%;
 }
-.company-section {
-  min-height: 100vh;
-}
 .company-first-section {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14813,6 +14810,7 @@ body.modal-open {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-image: url('/wp-content/themes/sixgill/images/company/first_section_bg_desktop.png');
+  min-height: 100vh;
 }
 .company-first-section _:-ms-lang(x),
 .company-first-section {
@@ -14957,6 +14955,7 @@ body.modal-open {
 }
 .company-third-section-wrapper {
   padding-top: 101px;
+  padding-bottom: 101px;
 }
 .company-third-section p {
   margin-bottom: 0;
