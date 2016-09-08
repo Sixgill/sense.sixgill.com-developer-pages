@@ -12396,6 +12396,10 @@ footer div.mc4wp-error p {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
+.blog-page-pagination a.prev:after {
+  content: url("images/blog/iconArrowCircleNext-Hover.svg");
+  display: none;
+}
 .blog-page-pagination a.next {
   display: inline-block;
   background-image: url("images/blog/iconArrowCirclePrevious-Default.svg");
@@ -12412,6 +12416,10 @@ footer div.mc4wp-error p {
   background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
   -webkit-transform: none;
           transform: none;
+}
+.blog-page-pagination a.next:after {
+  content: url("images/blog/iconArrowCircleNext-Hover.svg");
+  display: none;
 }
 .blog-page-pagination .current {
   color: #0051c6;
@@ -12460,11 +12468,15 @@ footer div.mc4wp-error p {
   outline: 0px !important;
   border-radius: 0px !important;
   display: inline-block;
-  background-color: #0044a5;
+  background-color: #4ddb5a;
   font-family: "Lato";
   font-weight: bold;
   color: #ffffff;
   text-align: center;
+  transition: background-color ease 0.3s;
+}
+.blog-page-subscription-submit-button:hover {
+  background-color: #0044a5;
 }
 .blog-page-popular-block-title {
   display: -webkit-flex;
@@ -12500,9 +12512,6 @@ footer div.mc4wp-error p {
   font-family: "Lato";
   color: #999999;
   line-height: 1em;
-}
-#subscribe-blog.btnSchedule:hover {
-  background-color: #0044a5 !important;
 }
 
 .singe-blog-navigation {
