@@ -12264,7 +12264,7 @@ footer div.mc4wp-error p {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 81, 198, 0.9);
+  background: linear-gradient(rgba(12, 57, 121, 0.9), rgba(0, 26, 62, 0.9));
 }
 .blog-page-header-container {
   position: relative;
@@ -12597,11 +12597,13 @@ footer div.mc4wp-error p {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 81, 198, 0.9);
+  background: linear-gradient(rgba(12, 57, 121, 0.9), rgba(0, 26, 62, 0.9));
 }
 .blog-post-header-container {
   position: relative;
   z-index: 5;
+  display: inline-block;
+  text-align: center;
 }
 .blog-post-header-title {
   font-family: "Lato";
@@ -12610,6 +12612,7 @@ footer div.mc4wp-error p {
   font-stretch: normal;
   text-align: center;
   color: #f9f8f8;
+  display: inline-block;
 }
 .blog-post-header-subtitle {
   font-family: "Lato";
