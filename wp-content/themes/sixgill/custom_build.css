@@ -17234,7 +17234,7 @@ body.modal-open {
   width: 100%;
 }
 .home-first-section-text {
-  margin-bottom: 3.23vh;
+  margin-bottom: 33px;
   letter-spacing: 1.4px;
 }
 .home-first-section-text,
@@ -17263,7 +17263,7 @@ body.modal-open {
 }
 .home-second-section-wrapper {
   width: 90.5%;
-  margin: 66px 0px 6.45vh 0px;
+  margin: 66px 0px 68px 0px;
 }
 .home-second-section-header-top {
   font-size: 22px;
@@ -17322,18 +17322,18 @@ body.modal-open {
 .home-third-section-wrapper {
   width: 90.5%;
   text-align: center;
-  margin: 61px 0px 5vh 0px;
+  margin: 61px 0px 61px 0px;
 }
 .home-third-section-title {
   display: inline-block;
   width: 77%;
   font-size: 24px;
-  margin-bottom: 7.82vh;
+  margin-bottom: 80px;
   line-height: 1.25em;
   letter-spacing: 1.2px;
 }
 .home-third-section-image-wrapper {
-  margin-bottom: 7.33vh;
+  margin-bottom: 75px;
 }
 .home-third-section-image {
   height: auto;
@@ -17349,7 +17349,7 @@ body.modal-open {
 }
 .home-third-section-bottom-part-text {
   font-size: 16px;
-  margin-bottom: 2.58vh;
+  margin-bottom: 26px;
 }
 .home-fourth-section {
   display: -webkit-flex;
@@ -17368,19 +17368,19 @@ body.modal-open {
 }
 .home-fourth-section-wrapper {
   text-align: center;
-  margin: 95px 0px 8.6vh 0px;
+  margin: 95px 0px 95px 0px;
 }
 .home-fourth-section-header-wrapper {
   display: inline-block;
   width: 89vw;
-  margin-bottom: 3vh;
+  margin-bottom: 0;
 }
 .home-fourth-section-title {
   font-size: 30px;
 }
 .home-fourth-section-subtitle {
   font-size: 18px;
-  margin-bottom: 2.68vh;
+  margin-bottom: 27px;
   letter-spacing: 0.9px;
 }
 .home-fourth-section-link {
@@ -17427,10 +17427,10 @@ body.modal-open {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 2.35vh;
+  margin-bottom: 24px;
 }
 .home-fifth-section-dash {
-  margin-bottom: 4vh;
+  margin-bottom: 45px;
 }
 .home-fifth-section-title {
   font-size: 24px;
@@ -17442,7 +17442,7 @@ body.modal-open {
 .home-fifth-section-logo {
   display: inline-block;
   width: 80%;
-  margin-bottom: 7vh;
+  margin-bottom: 52px;
 }
 .home-fifth-section-logo-wrapper {
   display: inline-block;
@@ -17516,7 +17516,7 @@ body.modal-open {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 6vh 0px 75px 0px;
+  margin: 45px 0px 75px 0px;
   width: 95.5%;
   z-index: 2;
 }
