@@ -12336,7 +12336,7 @@ footer div.mc4wp-error p {
           flex-grow: 1;
   font-family: "Lato";
   font-weight: 300;
-  line-height: 1.5em;
+  line-height: 1.3em;
   color: #0051c6;
 }
 .blog-page-post-card-author-date {
@@ -12349,6 +12349,7 @@ footer div.mc4wp-error p {
   font-family: "Lato";
   font-weight: 500;
   color: #999999;
+  line-height: 1em;
 }
 .blog-page-post-card-dash {
   width: 28.5px;
@@ -12507,6 +12508,7 @@ footer div.mc4wp-error p {
   line-height: 1em;
   letter-spacing: 1px;
   color: #2e2e2e;
+  margin-bottom: 5px;
 }
 .blog-page-popular-post-author-date {
   font-family: "Lato";
@@ -14644,12 +14646,11 @@ body.modal-open {
 }
 .blog-page-popular-post-title {
   font-size: 16px;
-  line-height: 1.5em;
 }
 .blog-page-popular-post-author-date {
   font-size: 12px;
   letter-spacing: 0.7px;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 .subscribe-email-focus {
   padding-left: 10px !important;
