@@ -18074,13 +18074,6 @@ ul:not([class]) li {
 .tech-second-section-image {
   width: 100%;
 }
-.tech-second-section-image-wrapper-mobile {
-  width: 93.1%;
-  text-align: center;
-  margin-bottom: 2.5vh;
-  margin-left: auto;
-  margin-right: auto;
-}
 .tech-second-section-title {
   font-size: 35px;
   line-height: 1em;
@@ -20442,8 +20435,8 @@ ul:not([class]) li {
 }
 .tech-first-section-block-text {
   width: 88.6%;
-  margin-top: 6vh;
-  margin-bottom: 7vh;
+  margin-top: 40px;
+  margin-bottom: 43px;
   text-align: left;
 }
 .tech-first-section-block-title {
@@ -20452,7 +20445,7 @@ ul:not([class]) li {
   font-family: "Lato";
   letter-spacing: 1.5px;
   line-height: 1em;
-  margin-bottom: 2vh;
+  margin-bottom: 27px;
 }
 .tech-first-section-block-subtitle {
   display: none;
@@ -20487,14 +20480,14 @@ ul:not([class]) li {
 }
 .tech-second-section-wrapper {
   width: 100%;
-  padding: 6.25vh 6.25vw 0px 6.25vw;
+  padding: 39px 6.25vw 0px 6.25vw;
 }
 .tech-second-section-title {
   font-family: "Lato";
   font-size: 8.22vw;
   line-height: 1em;
   font-weight: 300;
-  padding-bottom: 5vh;
+  padding-bottom: 33px;
   width: 100%;
   text-align: left;
   color: #0051c6;
@@ -20524,12 +20517,7 @@ ul:not([class]) li {
   height: auto;
   max-height: none;
   width: 100%;
-  padding: 7vh 5.31vw 7vh 5.31vw;
-}
-.tech-third-section-header-wrapper {
-  text-align: center;
-  padding-top: 12.34vh;
-  display: inline-block;
+  padding: 42px 5.31vw 42px 5.31vw;
 }
 .tech-third-section-content-wrapper {
   display: inline-block;
@@ -20574,11 +20562,6 @@ ul:not([class]) li {
   height: auto;
   max-height: none;
   width: 100%;
-}
-.tech-fourth-section-header-wrapper {
-  text-align: center;
-  padding-top: 12.34vh;
-  display: inline-block;
 }
 .tech-fourth-section-title {
   font-size: 9vw;
