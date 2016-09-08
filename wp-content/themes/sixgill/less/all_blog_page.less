@@ -130,16 +130,23 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			width: 30px;
-  			height: 30px;
-  			vertical-align: middle;
-  			padding: 0;
-  			transform:none;
+			height: 30px;
+			vertical-align: middle;
+			padding: 0;
+			transform:none;
+
+			&:hover {
+				background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
+				transform:scaleX(-1);
+			}
+
+			&:after {
+				content: url("images/blog/iconArrowCircleNext-Hover.svg");
+				display: none;
+			}
 		}
 
-		a.prev:hover {
-			background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
-			transform:scaleX(-1);
-		}
+
 
 		a.next {
 			display: inline-block;
@@ -147,16 +154,23 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			width: 30px;
-  			height: 30px;
-  			vertical-align: middle;
-  			padding: 0;
-  			transform:scaleX(-1);
+			height: 30px;
+			vertical-align: middle;
+			padding: 0;
+			transform:scaleX(-1);
+
+			&:hover {
+				background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
+				transform: none;
+			}
+
+			&:after {
+				content: url("images/blog/iconArrowCircleNext-Hover.svg");
+				display: none;
+			}
 		}
 
-		a.next:hover {
-			background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
-			transform:none;
-		}
+
 
 		.current {
 			color: #0051c6;
@@ -208,17 +222,19 @@
 			outline: 0px !important;
 			border-radius: 0px !important;
 			display: inline-block;
-			background-color:#4ddb5a;
+			background-color: #4ddb5a;
 			font-family: "Lato";
 			font-weight: bold;
 			color: #ffffff;
 			text-align: center;
-			transition: background-color ease 0.3s
+			transition: background-color ease 0.3s;
+
+			&:hover {
+				background-color: #0044a5;
+			}
 		}
 
-		&-submit-button:hover {
-			background-color: #0044a5;
-		}
+
 	}
 
 	&-popular {
@@ -264,4 +280,3 @@
 		}
 	}
 }
-
