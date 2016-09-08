@@ -38,7 +38,7 @@
 		<div class="blog-post-content-wrapper-line no-tablet-display no-desktop-display"></div>
 
 		<div class="blog-post-author-date">
-			<?php the_author(); ?> | <?php the_date('m/d/Y'); ?>
+			<?php echo get_field('author'); ?> | <?php the_date('m/d/Y'); ?>
 		</div>
 
 
