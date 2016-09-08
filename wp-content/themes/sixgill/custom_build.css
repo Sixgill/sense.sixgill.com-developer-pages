@@ -12459,20 +12459,13 @@ footer div.mc4wp-error p {
   border: 0px !important;
   outline: 0px !important;
   border-radius: 0px !important;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: inline-block;
   background-color: #4ddb5a;
   font-family: "Lato";
   font-weight: bold;
   color: #ffffff;
   text-align: center;
+  transition: background-color ease 0.3s;
 }
 .blog-page-subscription-submit-button:hover {
   background-color: #0044a5;
