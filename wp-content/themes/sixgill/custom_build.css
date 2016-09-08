@@ -12613,9 +12613,10 @@ footer div.mc4wp-error p {
   color: #0051c6 !important;
 }
 .blog-post-content img {
-  width: 100% !important;
   height: auto !important;
   max-width: 100%;
+  display: inline-block;
+  clear: both;
 }
 .blog-post-content-wrapper {
   position: relative;
@@ -13430,6 +13431,9 @@ footer div.mc4wp-error p {
 }
 /*-----------------------------------------------------*/
 /* Solutions subpage Common styles */
+.solution-subpage-header {
+  margin-bottom: -1px;
+}
 .solution-subpage-suptitle {
   font-family: 'Lato';
   color: #4ddb5a;
@@ -13456,6 +13460,14 @@ footer div.mc4wp-error p {
 }
 .solution-subpage-thumbnail {
   display: inline-block;
+}
+.solution-subpage-first-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .solution-subpage-first-block-image {
   height: auto;
@@ -13499,7 +13511,9 @@ footer div.mc4wp-error p {
 .solution-subpage-bottom-section-text-wrapper {
   display: inline-block;
 }
-.solution-subpage-bottom-section-text-wrapper p {
+.solution-subpage-bottom-section-text-wrapper p,
+.solution-subpage-bottom-section-text-wrapper li,
+.solution-subpage-bottom-section-text-wrapper span {
   color: #f8f8f8;
 }
 .solution-subpage-second-block {
@@ -13573,6 +13587,14 @@ footer div.mc4wp-error p {
   display: inline-block;
   height: 1px;
   background-color: #dfdfdf;
+}
+.solution-use-cases-block-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .solution-use-cases-block-half {
   width: 48%;

@@ -333,8 +333,5 @@
 	    return $count.' ';
 	}
 
-
-
-
-
+	update_option('image_default_link_type','none');
 ?>
