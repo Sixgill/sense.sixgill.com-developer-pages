@@ -13248,8 +13248,8 @@ footer div.mc4wp-error p {
 }
 .home-fourth-section-carousel .owl-buttons .owl-prev {
   position: absolute;
-  left: -42px;
-  top: 50%;
+  left: -1vw;
+  top: 44%;
   background-image: url('/wp-content/themes/sixgill/images/4-Home/carousel_left.svg');
   background-repeat: no-repeat;
   width: 16px;
@@ -13257,8 +13257,8 @@ footer div.mc4wp-error p {
 }
 .home-fourth-section-carousel .owl-buttons .owl-next {
   position: absolute;
-  right: -42px;
-  top: 50%;
+  right: -1vw;
+  top: 44%;
   background-image: url('/wp-content/themes/sixgill/images/4-Home/carousel_right.svg');
   background-repeat: no-repeat;
   width: 16px;
@@ -15278,11 +15278,17 @@ body.modal-open {
   letter-spacing: 0.9px;
 }
 .home-fourth-section-carousel {
-  width: 768px;
+  width: 58vw;
   margin: 61px auto 0;
 }
 .home-fourth-section-carousel-slide:hover .home-fourth-section-carousel-image-wrapper {
   height: 0;
+}
+.home-fourth-section-carousel .owl-buttons .owl-prev {
+  left: -2vw;
+}
+.home-fourth-section-carousel .owl-buttons .owl-next {
+  right: -2vw;
 }
 .home-fifth-section {
   display: -webkit-flex;
@@ -17449,8 +17455,14 @@ body.modal-open {
   letter-spacing: 0.9px;
 }
 .home-fourth-section-carousel {
-  width: 80vw;
+  width: 70vw;
   margin: 61px auto 0;
+}
+.home-fourth-section-carousel .owl-buttons .owl-prev {
+  left: -4vw;
+}
+.home-fourth-section-carousel .owl-buttons .owl-next {
+  right: -4vw;
 }
 .home-fifth-section {
   height: auto;
@@ -20027,10 +20039,10 @@ ul:not([class]) li {
   margin: 51px auto 0;
 }
 .home-fourth-section-carousel .owl-buttons .owl-prev {
-  left: -35px;
+  left: -6.7vw;
 }
 .home-fourth-section-carousel .owl-buttons .owl-next {
-  right: -35px;
+  right: -6.7vw;
 }
 .home-fifth-section {
   height: auto;
@@ -21185,6 +21197,19 @@ a.search-post-result {
 @media (min-width: 480px) and (max-width: 767px) {
   .company-top-spacing {
     padding-top: 15px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .home-fourth-section-carousel {
+    width: 65vw;
+  }
+}
+@media (min-width: 278px) and (max-width: 310px) {
+  .home-fourth-section-carousel .owl-buttons .owl-prev {
+    left: -5vw;
+  }
+  .home-fourth-section-carousel .owl-buttons .owl-next {
+    right: -5vw;
   }
 }
 
