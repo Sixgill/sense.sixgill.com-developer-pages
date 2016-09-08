@@ -14555,11 +14555,6 @@ body.modal-open {
 .blog-page-subscription-email {
   height: 46px;
   margin: 0px 0px 7px 0px;
-  padding: 16px 16px 16px 16px;
-}
-.blog-page-subscription _:-ms-lang(x),
-.blog-page-subscription-email {
-  height: 56px;
 }
 .blog-page-subscription-submit-button {
   height: 43px;
