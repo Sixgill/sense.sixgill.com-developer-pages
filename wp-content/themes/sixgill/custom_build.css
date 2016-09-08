@@ -12590,6 +12590,7 @@ footer div.mc4wp-error p {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  background-size: cover;
 }
 .blog-post-header-filter {
   position: absolute;
