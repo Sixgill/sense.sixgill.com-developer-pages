@@ -50,10 +50,23 @@
 
 .blog-post {
 	&-header {
-		display: flex;
+		display: inline-block;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
+		position: relative;
+		&-filter {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,81,198,.9);
+		}
+		&-container {
+			position: relative;
+			z-index: 5;
+		}
 
 		&-title {
 			font-family: "Lato";
@@ -73,6 +86,8 @@
 			text-align: center;
 			color: #4ddb5a;
 		}
+
+
 	}
 
 	&-author-date {
@@ -108,18 +123,16 @@
 			text-align: left !important;
 			color: #0051c6 !important;
 		}
-
-		img {
-			height: auto !important;
-			max-width: 100%;
-			display: inline-block;
-			clear: both;
-		}
-
-		&-wrapper {
-			position: relative;
-		}
-
 	}
 
+	img {
+		height: auto !important;
+		max-width: 100%;
+		display: inline-block;
+		clear: both;
+	}
+
+	&-wrapper {
+		position: relative;
+	}
 }
