@@ -36,16 +36,22 @@
 			<?php $current =  get_permalink();
 			if (get_previous_post()) { ?>
 			<div class="singe-blog-navigation-previous">
-				<a href="<?php $prev_post = get_adjacent_post(); echo get_permalink($prev_post->ID);?>">
-					<span class="singe-blog-navigation-previous-arrow"></span> Previous Post
+				<a class="no-mobile-landscape-display no-mobile-portrait-display" href="<?php $prev_post = get_adjacent_post(); echo get_permalink($prev_post->ID);?>">
+					<span class="singe-blog-navigation-previous-arrow"></span>PREVIOUS POST
+				</a>
+				<a class="no-tablet-display no-desktop-display" href="<?php $prev_post = get_adjacent_post(); echo get_permalink($prev_post->ID);?>">
+					<span class="singe-blog-navigation-previous-arrow"></span>PREVIOUS
 				</a>
 			</div>
 			<?php } ?>
 
 			<?php if (get_next_post()) { ?>
 			<div class="singe-blog-navigation-next">
-				<a href="<?php $next_post = get_adjacent_post(0,'',0); echo get_permalink($next_post->ID);?>">
-					Next Post  <span class="singe-blog-navigation-next-arrow"></span>
+				<a class="no-mobile-landscape-display no-mobile-portrait-display" href="<?php $next_post = get_adjacent_post(0,'',0); echo get_permalink($next_post->ID);?>">
+					NEXT POST<span class="singe-blog-navigation-next-arrow"></span>
+				</a>
+				<a class="no-tablet-display no-desktop-display" href="<?php $next_post = get_adjacent_post(0,'',0); echo get_permalink($next_post->ID);?>">
+					NEXT<span class="singe-blog-navigation-next-arrow"></span>
 				</a>
 			</div>
 			<?php } ?>
