@@ -24,7 +24,6 @@
 						$html .= '<div class="arrow">&gt;</div>';
 						$html .= $sublink['name'];
 					$html .= '</a>';
-					$html .= '<div class="clear"></div>';
 				}
 				$html .= '</div>';
 			}
@@ -37,14 +36,12 @@
 				$html .= '</div>';
 			$html .= '</a>';
 		}
-		$html .= '<div class="clear"></div>';
 		return $html;
 	}
 
 	include(locate_template('menu_list.php'));
 
 ?>
-<div class="clear"></div>
 <nav id="primary-menu">
 	<ul class="menu-ul-wrapper">
 		<li class="menu-li-wrapper">
