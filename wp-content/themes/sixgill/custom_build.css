@@ -12555,6 +12555,15 @@ footer div.mc4wp-error p {
 .singe-blog-navigation-next:hover span {
   background-image: url("images/blog/iconArrowNext-Hover.svg");
 }
+.singe-blog-navigation-text {
+  font-family: Lato;
+  font-size: 20.3px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #2e2e2e;
+}
 .singe-blog-navigation-previous-arrow {
   display: inline-block;
   margin-right: 13px;
@@ -12565,6 +12574,7 @@ footer div.mc4wp-error p {
   width: 11.5px;
   height: 21px;
   vertical-align: middle;
+  margin-top: -3px;
 }
 .singe-blog-navigation-next-arrow {
   display: inline-block;
@@ -12576,6 +12586,7 @@ footer div.mc4wp-error p {
   width: 11.5px;
   height: 21px;
   vertical-align: middle;
+  margin-top: -3px;
 }
 .blog-post-header {
   display: inline-block;
