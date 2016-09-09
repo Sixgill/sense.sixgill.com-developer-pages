@@ -9,7 +9,9 @@ module.exports = (gulpComponents) => {
       pump = gulpComponents.pump,
       cache = gulpComponents.cache,
       remember = gulpComponents.remember,
-      notify = gulpComponents.notify;
+      notify = gulpComponents.notify,
+      plumber = gulpComponents.plumber,
+      sourcemaps = gulpComponents.sourcemaps;
 
   gulp.task('wrap_scripts',
     () => gulp
@@ -18,12 +20,15 @@ module.exports = (gulpComponents) => {
   gulp.task('scripts',
     () => gulp.src('./js/**/*.js')
             .pipe(cache('scripts'))
+            .pipe(plumber())
+            .pipe(sourcemaps.init())
             .pipe(uglify())
             .on('error', notify.onError(
               (error) => 'Error uglifying js. ' + error
             ))
             .pipe(remember('scripts'))
             .pipe(concat('custom_build.js'))
+            .pipe(sourcemaps.write('../js'))
             .pipe(gulp.dest('./'))
   );
 
