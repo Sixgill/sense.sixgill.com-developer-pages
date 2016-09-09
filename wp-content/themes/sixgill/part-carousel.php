@@ -25,8 +25,8 @@
 						echo '
 							<div class="item">
 								<img
-									class="solution-subpage-slide-image"
-									src="'.$slide['url'].'"
+									class="solution-subpage-slide-image lazyOwl"
+									data-src="'.$slide['url'].'"
 									alt="'.$slide['alt'].'"
 									>
 								<div class="solution-subpage-slide-info">
