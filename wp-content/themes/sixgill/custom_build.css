@@ -17162,6 +17162,7 @@ body.modal-open {
   min-width: 215px;
   max-width: 215px;
   min-height: 215px;
+  max-height: 240px;
 }
 .company-second-section-rows {
   display: -webkit-flex;
@@ -17202,9 +17203,6 @@ body.modal-open {
 .company-third-section {
   background-image: url('/wp-content/themes/sixgill/images/company/boardBg-tablet@1x.png');
 }
-.company-third-section p {
-  margin-bottom: 0;
-}
 .company-third-section-text {
   margin-top: 59px;
 }
@@ -17242,6 +17240,7 @@ body.modal-open {
   font-size: 15.9px;
   line-height: 1.33;
   letter-spacing: 0.5px;
+  margin-bottom: 0;
 }
 .company-third-section-rows {
   -webkit-flex-direction: column;
