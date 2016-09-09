@@ -209,7 +209,7 @@
 	}
 
 	&-subpage-galleries-wrapper {
-		padding: 10vw 0px 9vw 0px;
+		padding: 0 0px 31px 0px;
 	}
 
 	&-carousel {
@@ -222,6 +222,7 @@
 			height: 9.53vw;
 			background-color: #2e2e2e;
 			cursor: pointer;
+			float:left;
 			display: inline-block;
 
 			&-icon {
@@ -232,7 +233,7 @@
 
 	&-use-cases {
 		&-block-image {
-			height: 53vw;
+			height: auto;
 		}
 
 		&-block-subtitle {
@@ -245,6 +246,8 @@
 
 		&-block-content{
 			text-align: center;
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 
@@ -255,7 +258,8 @@
 		}
 
 		&-section-title {
-			margin-bottom: 23px;
+			margin-top: 27px;
+			margin-bottom: 25px;
 		}
 
 		&-section-title, &-second-block-title {
@@ -266,6 +270,7 @@
 		}
 
 		&-second-block {
+			padding-top: 0;
 			&-wrapper {
 				text-align: left;
 			}
@@ -283,7 +288,7 @@
 
 		&-bottom {
 			&-block {
-				margin-top: 50px;
+				margin-top: 32px;
 
 				&-title{
 					font-size: 27px;
@@ -424,7 +429,15 @@
 				font-weight: normal;
 			}
 		}
-
+		
+		&-first-block {
+			flex-direction: column;
+			&-text p {
+				font-size: 16.2px;
+				font-weight: normal;
+				letter-spacing: 0.5px;
+			}
+		}
 		&-first-block-text p {
 			font-size: 16.2px;
 			font-weight: normal;
@@ -436,6 +449,9 @@
 			font-weight: normal;
 			line-height: 1.42;
 			letter-spacing: 0.5px;
+		}
+		.first-text-subpage {
+			margin-top: 0;
 		}
 	}
 }

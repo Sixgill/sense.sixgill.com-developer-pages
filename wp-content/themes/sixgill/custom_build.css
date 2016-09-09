@@ -20278,7 +20278,7 @@ ul:not([class]) li {
   margin: 10vw 0px 10vw 0px;
 }
 .solution-subpage-galleries-wrapper {
-  padding: 10vw 0px 9vw 0px;
+  padding: 0 0px 31px 0px;
 }
 .solution-carousel-button-image {
   height: 5.625vw;
@@ -20288,13 +20288,14 @@ ul:not([class]) li {
   height: 9.53vw;
   background-color: #2e2e2e;
   cursor: pointer;
+  float: left;
   display: inline-block;
 }
 .solution-carousel-mobile-button-icon {
   display: inline-block;
 }
 .solution-use-cases-block-image {
-  height: 53vw;
+  height: auto;
 }
 .solution-use-cases-block-subtitle {
   padding: 20px;
@@ -20304,13 +20305,21 @@ ul:not([class]) li {
 }
 .solution-use-cases-block-content {
   text-align: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
 }
 .solution-subpage-first-block-image-container {
   width: 100%;
   height: auto;
 }
 .solution-subpage-section-title {
-  margin-bottom: 23px;
+  margin-top: 27px;
+  margin-bottom: 25px;
 }
 .solution-subpage-section-title,
 .solution-subpage-second-block-title {
@@ -20318,6 +20327,9 @@ ul:not([class]) li {
   font-weight: 300;
   letter-spacing: 1.3px;
   line-height: 1.2em;
+}
+.solution-subpage-second-block {
+  padding-top: 0;
 }
 .solution-subpage-second-block-wrapper {
   text-align: left;
@@ -20329,7 +20341,7 @@ ul:not([class]) li {
   height: inherit;
 }
 .solution-subpage-bottom-block {
-  margin-top: 50px;
+  margin-top: 32px;
 }
 .solution-subpage-bottom-block-title {
   font-size: 27px;
@@ -20437,6 +20449,16 @@ ul:not([class]) li {
   margin-bottom: 7.66vw;
   font-weight: normal;
 }
+.solution-subpage-first-block {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.solution-subpage-first-block-text p {
+  font-size: 16.2px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
 .solution-subpage-first-block-text p {
   font-size: 16.2px;
   font-weight: normal;
@@ -20447,6 +20469,9 @@ ul:not([class]) li {
   font-weight: normal;
   line-height: 1.42;
   letter-spacing: 0.5px;
+}
+.solution-subpage .first-text-subpage {
+  margin-top: 0;
 }
 .my_containerSolution {
   padding-top: 19px;
