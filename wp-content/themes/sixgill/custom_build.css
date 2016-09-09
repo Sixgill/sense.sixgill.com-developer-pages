@@ -19613,6 +19613,7 @@ ul:not([class]) li {
   width: 100vw;
   height: 1px;
   display: block;
+  margin-left: -2.8vw;
 }
 .blog-post-content-wrapper,
 .blog-post-content-wrapper p,
