@@ -18,6 +18,7 @@ var gulpComponents = {
   eventStream: require('event-stream'),
   cleanCSS: require('gulp-empty'),
   uglify: require('gulp-empty'),
+  sourcemaps: require('gulp-sourcemaps'),
 }
 
 gulpComponents.cssWrappers = require('./gulp/css_wrappers')(gulpComponents);
