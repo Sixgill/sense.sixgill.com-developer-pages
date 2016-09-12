@@ -12128,20 +12128,17 @@ input {
 .ellip {
   width: 100%;
 }
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+}
 .ellip-line {
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
   max-width: 100%;
-}
-.ellip,
-.ellip-line {
-  position: relative;
-  overflow: hidden;
-}
-div.home-fourth-section-carousel-slide div.empty-card {
-  height: 0;
 }
 
 /* Menu Common styles */
@@ -12576,7 +12573,7 @@ footer div.mc4wp-error p {
 }
 .singe-blog-navigation-previous a,
 .singe-blog-navigation-next a {
-  font-family: Lato;
+  font-family: "Lato";
   color: #2e2e2e;
   white-space: nowrap;
 }
@@ -12584,11 +12581,28 @@ footer div.mc4wp-error p {
 .singe-blog-navigation-next:hover a {
   color: #0051c6;
 }
+.singe-blog-navigation-previous:after {
+  content: url("images/blog/iconArrowPrevious-Hover.svg");
+  display: none;
+}
 .singe-blog-navigation-previous:hover span {
   background-image: url("images/blog/iconArrowPrevious-Hover.svg");
 }
+.singe-blog-navigation-next:after {
+  content: url("images/blog/iconArrowNext-Hover.svg");
+  display: none;
+}
 .singe-blog-navigation-next:hover span {
   background-image: url("images/blog/iconArrowNext-Hover.svg");
+}
+.singe-blog-navigation-text {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #2e2e2e;
 }
 .singe-blog-navigation-previous-arrow {
   display: inline-block;
@@ -12600,6 +12614,7 @@ footer div.mc4wp-error p {
   width: 11.5px;
   height: 21px;
   vertical-align: middle;
+  margin-top: -3px;
 }
 .singe-blog-navigation-next-arrow {
   display: inline-block;
@@ -12611,6 +12626,7 @@ footer div.mc4wp-error p {
   width: 11.5px;
   height: 21px;
   vertical-align: middle;
+  margin-top: -3px;
 }
 .blog-post-header {
   display: inline-block;
@@ -13206,6 +13222,9 @@ footer div.mc4wp-error p {
 }
 .home-fourth-section-carousel-slide {
   min-height: 390px;
+}
+.home-fourth-section-carousel-slide .empty-card {
+  height: 0;
 }
 .home-fourth-section-carousel-image-wrapper {
   height: 288px;
