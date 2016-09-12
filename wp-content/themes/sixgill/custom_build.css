@@ -18452,15 +18452,12 @@ ul:not([class]) li {
 .products-third-section-image {
   max-width: none;
   max-height: none;
+  width: auto;
+  height: auto;
 }
 .products-third-section-image-wrapper {
+  padding: 61px 0 0 15px;
   width: 100%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .products-third-section-right-col {
   -webkit-align-self: center;
@@ -18577,20 +18574,21 @@ ul:not([class]) li {
 .products-fifth-section-header-wrapper {
   display: inline-block;
 }
+.products-fifth-section-image {
+  max-width: none;
+  max-height: none;
+  width: auto;
+  height: auto;
+}
 .products-fifth-section-image-wrapper {
+  padding: 61px 0 0 15px;
   width: 100%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .products-fifth-section-content-wrapper {
   width: 77%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 61.5px;
+  margin-top: 61px;
   margin-bottom: 60px;
 }
 .products-fifth-section-ico-wrapper {
