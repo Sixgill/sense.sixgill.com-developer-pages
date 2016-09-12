@@ -12,7 +12,7 @@
 
 		<div class="content-wrap resources-container resources-background">
 			<div class="resources-blocks-container">
-				<?php echo do_shortcode('[sdm_show_dl_from_category category_slug="resources" fancy="2"]'); ?>
+				<?php echo do_shortcode('[sdm_show_dl_from_category category_slug="resources" fancy="2" pagination="2"]'); ?>
 			</div>
 		</div>
 
