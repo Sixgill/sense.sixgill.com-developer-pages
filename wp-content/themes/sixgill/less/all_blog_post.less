@@ -1,10 +1,10 @@
 .singe-blog-navigation {
 	display: flex;
-	justify-content:space-between;
+	justify-content: space-between;
 
 	&-previous a,
-	&-next a{
-		font-family: Lato;
+	&-next a {
+		font-family: "Lato";
 		color: #2e2e2e;
 		white-space: nowrap;
 	}
@@ -14,16 +14,35 @@
 		color: #0051c6;
 	}
 
-	&-previous:hover span{
-		background-image: url("images/blog/iconArrowPrevious-Hover.svg");
+	&-previous {
+
+		&:after {
+			content: url("images/blog/iconArrowPrevious-Hover.svg");
+			display: none;
+		}
+
+		&:hover span{
+			background-image: url("images/blog/iconArrowPrevious-Hover.svg");
+		}
 	}
 
-	&-next:hover span{
-		background-image: url("images/blog/iconArrowNext-Hover.svg");
+	&-next {
+
+		&:after {
+			content: url("images/blog/iconArrowNext-Hover.svg");
+			display: none;
+		}
+
+		&:hover span{
+			background-image: url("images/blog/iconArrowNext-Hover.svg");
+		}
 	}
+
+
+
 	&-text {
-		font-family: Lato;
-		font-size: 20.3px;
+		font-family: "Lato";
+		font-size: 20px;
 		font-weight: 300;
 		line-height: 1;
 		letter-spacing: 0.6px;
@@ -104,8 +123,6 @@
 			color: #4ddb5a;
 			display: inline-block;
 		}
-
-
 	}
 
 	&-author-date {
@@ -153,6 +170,4 @@
 			position: relative;
 		}
 	}
-
-
 }

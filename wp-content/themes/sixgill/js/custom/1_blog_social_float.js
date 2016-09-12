@@ -21,7 +21,7 @@ jQuery(function(){
 	function checkPanel() {
   	//Check parent's top
   	var isPanelScrolledBy = panelParent.get(0).getBoundingClientRect().top - parentOffset <= 0,
-				isParentScrolledBy = panelParent.get(0).getBoundingClientRect().top - parentOffset + parentHeigh - panelHeight <= 0;
+				isParentScrolledBy = panelParent.get(0).getBoundingClientRect().top - parentOffset + parentHeigh - panelHeight <= 40;
   	if(!fixedFlag && isPanelScrolledBy && !isParentScrolledBy) {
     	fixPanel();
       fixedFlag = true;

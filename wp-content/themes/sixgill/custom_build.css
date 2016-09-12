@@ -12541,7 +12541,7 @@ footer div.mc4wp-error p {
 }
 .singe-blog-navigation-previous a,
 .singe-blog-navigation-next a {
-  font-family: Lato;
+  font-family: "Lato";
   color: #2e2e2e;
   white-space: nowrap;
 }
@@ -12549,15 +12549,23 @@ footer div.mc4wp-error p {
 .singe-blog-navigation-next:hover a {
   color: #0051c6;
 }
+.singe-blog-navigation-previous:after {
+  content: url("images/blog/iconArrowPrevious-Hover.svg");
+  display: none;
+}
 .singe-blog-navigation-previous:hover span {
   background-image: url("images/blog/iconArrowPrevious-Hover.svg");
+}
+.singe-blog-navigation-next:after {
+  content: url("images/blog/iconArrowNext-Hover.svg");
+  display: none;
 }
 .singe-blog-navigation-next:hover span {
   background-image: url("images/blog/iconArrowNext-Hover.svg");
 }
 .singe-blog-navigation-text {
-  font-family: Lato;
-  font-size: 20.3px;
+  font-family: "Lato";
+  font-size: 20px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: 0.6px;
