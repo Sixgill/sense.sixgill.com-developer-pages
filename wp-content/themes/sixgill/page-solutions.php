@@ -130,7 +130,7 @@
 			</div>
 			<div class="solutions-third-section-icons-block">
 				<h3 class="solutions-third-section-icons-title">
-					<?php echo get_field('people_section_icons_title'); ?>
+					<?php echo get_field('assets_section_icons_title'); ?>
 				</h3>				
 				<div class="solutions-third-section-icon-wrapper">
 					<?php if(get_field('people_section_icons')) : ?>
