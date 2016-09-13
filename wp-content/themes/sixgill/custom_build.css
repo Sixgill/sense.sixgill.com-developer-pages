@@ -12094,13 +12094,17 @@ ul:not([class]) li:not(.has-span):before,
   text-decoration: none;
   color: #ffffff;
 }
-.button.button-green,
-.button.button-green:hover {
+.button-green {
   background-color: #4dc85a;
 }
-.button.button-blue,
-.button.button-blue:hover {
+.button-green:hover {
+  background-color: #35b042 !important;
+}
+.button-blue {
   background-color: #0051c6;
+}
+.button-blue:hover {
+  background-color: #0044a5 !important;
 }
 .fixed-position {
   position: fixed;
