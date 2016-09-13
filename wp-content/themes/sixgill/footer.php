@@ -133,6 +133,7 @@
 <!-- END MODAL Request a DEMO -->
 
 <!-- MODAL RESOURCES -->
+<!--
 <div class="modal fade" style="z-index:9999" id="myResource" tabindex="-1" role="dialog" aria-labelledby="resourcesModalLabel" aria-hidden="true">
 	<div class="modal-dialog resourse-download">
 		<div class="modal-body">
@@ -146,13 +147,14 @@
 						</h4>
 					</div>
 					<div class="modal-body center resourse-download-content-body">
-						<?php dynamic_sidebar( 'download-access' ); ?>
+						<?php /*dynamic_sidebar( 'download-access' );*/ ?>
 					</div>
 					<div class="modal-footer center"></div>
 				</div>
 			</div>
 	</div>
 </div>
+-->
 <!-- END MODAL Request a DEMO -->
 
 <!-- MODAL Contact -->

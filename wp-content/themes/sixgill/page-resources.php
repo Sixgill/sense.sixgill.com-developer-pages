@@ -1,20 +1,22 @@
 <?php get_header(); ?>
 <div> <!-- fullpage wrapper placeholder -->
-	<iframe id="frame1" class="hidden"></iframe>
-	<a name="top"></a>
-	<section id="slider" class="slider-parallax swiper_wrapper swiper_wrapper_small clearfix resource-header">
-		<h1 class="single-post-title">
-			RESOURCES
+	<div
+		class="resources-list-header responsive-background"
+		desktop-src=""
+		tablet-src=""
+		mobile-src=""
+		>
+		<h1 class="resources-list-header-title">
+			SIXGILL RESOURCES
 		</h1>
-	</section><!-- Content-->
+		<h2 class="resources-list-header-subtitle">
+			Proximity in a Connected World
+		</h2>
+	</div>
+	<div class="resources-list-content">
+		<?php echo do_shortcode('[sdm_show_dl_from_category fancy="2" pagination="2"]');
+			/* do_shortcode('[sdm_show_dl_from_category category_slug="resources" fancy="2" pagination="2"]'); */
+		 ?>
+	</div>
 
-	<section id="content" class="section-margin-fix">
-
-		<div class="content-wrap resources-container resources-background">
-			<div class="resources-blocks-container">
-				<?php echo do_shortcode('[sdm_show_dl_from_category category_slug="resources" fancy="2" pagination="2"]'); ?>
-			</div>
-		</div>
-
-	</section><!-- #content end -->
 	<?php get_footer(); ?>

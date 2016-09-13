@@ -111,9 +111,8 @@ function sdm_generate_fancy2_display_output($args) {
 
     // Get item thumbnail
     $item_download_thumbnail = get_post_meta($id, 'sdm_upload_thumbnail', true);
-		$item_download_imagemode = get_post_meta($id, 'sdm_upload_imagemode', true);
-		$item_download_imagemode = isset($item_download_imagemode) ? $item_download_imagemode : 'crop';
-    $isset_download_thumbnail = isset($item_download_thumbnail) && !empty($item_download_thumbnail) ? '<img class="sdm_fancy2_thumb_image" src="' . $item_download_thumbnail . '" />' : '';
+		/*$item_download_imagemode = get_post_meta($id, 'sdm_upload_imagemode', true);*/
+		$item_category = get_post_meta($id);
 
     // Get item title
     $item_title = get_the_title($id);
@@ -128,6 +127,7 @@ function sdm_generate_fancy2_display_output($args) {
     $color_opt = $main_opts['download_button_color'];
 
 		$output = '<div class="resource-block">';
+			$output .= 'DEBUG ' . wp_get_post_terms($id, 'sdm_categories')[0]->name;
 			$output .= '<div class="resource-block-part resource-image-container resource-image-container-'.$item_download_imagemode.'"';
 			$output .= 'style="background: url(\''.$item_download_thumbnail.'\');">';
 			$output .= '</div>';

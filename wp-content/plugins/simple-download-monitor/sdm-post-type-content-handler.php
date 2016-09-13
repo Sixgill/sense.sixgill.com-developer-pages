@@ -3,12 +3,12 @@
 add_filter('the_content', 'filter_sdm_post_type_content');
 
 function filter_sdm_post_type_content($content) {
-    global $post;   
+    global $post;
     if ($post->post_type == "sdm_downloads") {//Handle the content for sdm_downloads type post
         //$download_id = $post->ID;
         //$args = array('id' => $download_id, 'fancy' => '1');
         //$content = sdm_create_download_shortcode($args);
-        
+
         $id = $post->ID;
         // Check to see if the download link cpt is password protected
         $get_cpt_object = get_post($id);
@@ -23,7 +23,7 @@ function filter_sdm_post_type_content($content) {
 
         // Get item description
         $isset_item_description = sdm_get_item_description_output($id);
-       
+
         //$isset_item_description = apply_filters('the_content', $isset_item_description);
 
         // See if user color option is selected
@@ -47,31 +47,23 @@ function filter_sdm_post_type_content($content) {
         $db_count = sdm_get_download_count_for_post($id);
         $string = ($db_count == '1') ? __('Download', 'simple-download-monitor') : __('Downloads', 'simple-download-monitor');
         $download_count_string = '<span class="sdm_post_count_number">'.$db_count . '</span><span class="sdm_post_count_string"> ' . $string.'</span>';
-                
+
         //TODO - make this display better with a new design
-        $content = '<div class="sdm_post_item">';
+        $content = 'BEGINNING<div class="sdm_post_item">';
         $content .= '<div class="sdm_post_item_top">';
-        
-        $content .= '<div class="sdm_post_item_top_left">';
-        $content .= '<div class="sdm_post_thumbnail">' . $isset_download_thumbnail . '</div>';
-        $content .= '</div>';//end .sdm_post_item_top_left
-        
+
         $content .= '<div class="sdm_post_item_top_right">';
         $content .= '<div class="sdm_post_title">' . $isset_item_title . '</div>';
-        
-        if(!isset($main_opts['general_hide_donwload_count'])) {//The hide download count is enabled.
-            $content .= '<div class="sdm_post_download_count">' . $download_count_string . '</div>';
-        }
-        
+
         $content .= '<div class="sdm_post_description">' . $isset_item_description . '</div>';
         $content .= '<div class="sdm_post_download_section"><div class="sdm_download_link">' . $download_button_code . '</div></div>';
         //$content .= '<div class="sdm_post_meta_section"></div>';//TODO - Show post meta (category and tags)
         $content .= '</div>';//end .sdm_post_item_top_right
-        
+
         $content .= '</div>'; //end of .sdm_download_item_top
-        
-        $content .= '<div style="clear:both;"></div>';             
-        
+
+        $content .= '<div style="clear:both;"></div>';
+
         $content .= '</div>';//end .sdm_post_item
 
         return $content;

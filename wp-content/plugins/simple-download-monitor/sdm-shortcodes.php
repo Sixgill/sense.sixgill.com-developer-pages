@@ -138,11 +138,11 @@ function sdm_handle_category_shortcode($args) {
     $terms = '';
 
     // If category slug and category id are empty.. return error
-    if (empty($category_slug) && empty($category_id)) {
+    /*if (empty($category_slug) && empty($category_id)) {
         return '<p style="color: red;">' . __('Error! You must enter a category slug OR a category id with this shortcode. Refer to the documentation for usage instructions.', 'simple-download-monitor') . '</p>';
-    }
+    }*/
     // Else if both category slug AND category id are defined... return error
-    else if (!empty($category_slug) && !empty($category_id)) {
+    /*else*/ if (!empty($category_slug) && !empty($category_id)) {
         return '<p style="color: red;">' . __('Error! Please enter a category slug OR id; not both.', 'simple-download-monitor') . '</p>';
     }
     // Else setup query arguments for category_slug
@@ -175,13 +175,13 @@ function sdm_handle_category_shortcode($args) {
         'post_type' => 'sdm_downloads',
         'show_posts' => -1,
         'posts_per_page' => $posts_per_page,
-        'tax_query' => array(
+        /*'tax_query' => array(
             array(
                 'taxonomy' => 'sdm_categories',
                 'field' => $field,
                 'terms' => $terms
             )
-        ),
+        ),*/
         'orderby' => $orderby,
 	'order' => $order,
         'paged' => $paged,
