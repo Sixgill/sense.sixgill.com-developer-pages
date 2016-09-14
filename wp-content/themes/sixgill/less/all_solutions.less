@@ -242,13 +242,11 @@
 			text-align: center;
 		}
 
-		&-section-title, &-second-block-title {
-			color: #0051c6;
-			font-family: 'Lato';
-		}
-
 		&-section-title {
-			margin-top: 61px;
+			font-family: 'Lato';
+			font-weight: 300;
+			text-align: center;
+			color: #0051c6;
 		}
 
 		&-text {
@@ -317,6 +315,23 @@
 						letter-spacing: 0.5px;
 						color:#f8f8f8;
 					}
+					& ul:not([class]) {
+						list-style-type: none;
+						& li {
+							display:block;
+							padding-left: 20px;
+
+							&::before {
+						        display:inline-block;
+						        width: 10px;
+						        content: "•";
+						        color:#4ddb5a;
+						        margin-right: 10px;
+						        margin-left: -20px;
+							}
+						}
+
+					}
 				}
 
 				&-text-wrapper {
@@ -384,6 +399,9 @@
 		&-galleries-wrapper {
 			text-align: center;
 			background-color: #f8f8f8;
+			& .item {
+				background-color: #FFF;
+			}
 		}
 
 		&-viewprocess-placeholder {
@@ -455,13 +473,23 @@
 				display: block;
 				text-align: center;
 				vertical-align: middle;
+				padding: 30px;
 
 				& > p {
 					margin: 0 auto;
+					font-family: 'Lato';
+					text-align: center;
+					color: #2e2e2e;
 				}
 
 				& > a {
 					display: inline-block;
+					font-family: 'Lato';
+					font-weight: bold;
+					text-align: center;
+					color: #0051c6;
+					text-decoration: underline !important;
+					margin-top: 15px;
 				}
 
 				& > a:hover {
