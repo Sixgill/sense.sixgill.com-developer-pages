@@ -64,7 +64,7 @@
 		return $path;
 	}
 
-	function getChindrenByParentSlug($slug){
+	function getChindrenByParentSlug($slug, $queryParams = array()){
 
 		$args = array(
 			'name'        => $slug,
@@ -75,14 +75,15 @@
 		$result = new WP_Query($args);
 
 		$lookup = array(
-			'post_parent'            => $result->post->ID,
-			'post_type'              => array( 'page' ),
-			'post_status'            => array( 'publish' ),
+			'numberposts'						 => 	-1,
+			'post_type'              =>  'page',
+			'post_parent'            =>  $result->post->ID,
+			'post_status'            =>  'publish'
 		);
 
-		$childpages = get_children($lookup);
+		$lookup = array_merge($lookup, $queryParams);
 
-		return $childpages;
+		return new WP_Query($lookup);
 	}
 
 	function getCategorySlug() {
@@ -278,7 +279,7 @@
 
 
 	function getSolutionsSubpagesLinks($currentSubpageId) {
-		$subpages = getChindrenByParentSlug("solutions");
+		$subpages = getChindrenByParentSlug("solutions")->posts;
 		$result = array(0, 0, $subpages, $currentSubpageId);
 		$currentSubpageFound = false;
 		$prevPageID = 0;

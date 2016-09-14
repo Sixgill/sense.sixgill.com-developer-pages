@@ -418,26 +418,26 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	color: #ffffff;
 }
 
-.button.button-green,
-.button.button-green:hover {
+.button-green {
 	background-color: #4dc85a;
+	&:hover {
+		background-color:#35b042 !important;
+	}
 }
 
-.button.button-blue,
-.button.button-blue:hover {
+.button-blue {
 	background-color: #0051c6;
+	&:hover {
+		background-color:#0044a5 !important;
+	}
 }
 .fixed-position {
-	position:fixed;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 	width: 100vw;
 	padding-left: 225px;
 }
-
-
-
-
 
 /* For iOS Safari */
 input {
@@ -460,21 +460,17 @@ input {
 	_:-ms-lang(x), & {
 		width: 100%;
 	}
-}
 
-.ellip-line {
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  max-width: 100%;
-}
+	&, &-line {
+		position: relative;
+	  overflow: hidden;
+	}
 
-.ellip,
-.ellip-line {
-  position: relative;
-  overflow: hidden;
-}
-div.home-fourth-section-carousel-slide div.empty-card {
-	height: 0;
+	&-line {
+	  display: inline-block;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	  word-wrap: normal;
+	  max-width: 100%;
+	}
 }

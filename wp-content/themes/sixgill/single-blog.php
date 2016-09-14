@@ -50,10 +50,10 @@
 			<?php $current =  get_permalink();
 			if (get_previous_post()) { ?>
 			<div class="singe-blog-navigation-previous">
-				<a class="no-mobile-landscape-display no-mobile-portrait-display" href="<?php $prev_post = get_adjacent_post(); echo get_permalink($prev_post->ID);?>">
+				<a class="no-mobile-landscape-display no-mobile-portrait-display singe-blog-navigation-text" href="<?php $prev_post = get_adjacent_post(); echo get_permalink($prev_post->ID);?>">
 					<span class="singe-blog-navigation-previous-arrow"></span>PREVIOUS POST
 				</a>
-				<a class="no-tablet-display no-desktop-display" href="<?php $prev_post = get_adjacent_post(); echo get_permalink($prev_post->ID);?>">
+				<a class="no-tablet-display no-desktop-display singe-blog-navigation-text" href="<?php $prev_post = get_adjacent_post(); echo get_permalink($prev_post->ID);?>">
 					<span class="singe-blog-navigation-previous-arrow"></span>PREVIOUS
 				</a>
 			</div>
@@ -61,10 +61,10 @@
 
 			<?php if (get_next_post()) { ?>
 			<div class="singe-blog-navigation-next">
-				<a class="no-mobile-landscape-display no-mobile-portrait-display" href="<?php $next_post = get_adjacent_post(0,'',0); echo get_permalink($next_post->ID);?>">
+				<a class="no-mobile-landscape-display no-mobile-portrait-display singe-blog-navigation-text" href="<?php $next_post = get_adjacent_post(0,'',0); echo get_permalink($next_post->ID);?>">
 					NEXT POST<span class="singe-blog-navigation-next-arrow"></span>
 				</a>
-				<a class="no-tablet-display no-desktop-display" href="<?php $next_post = get_adjacent_post(0,'',0); echo get_permalink($next_post->ID);?>">
+				<a class="no-tablet-display no-desktop-display singe-blog-navigation-text" href="<?php $next_post = get_adjacent_post(0,'',0); echo get_permalink($next_post->ID);?>">
 					NEXT<span class="singe-blog-navigation-next-arrow"></span>
 				</a>
 			</div>

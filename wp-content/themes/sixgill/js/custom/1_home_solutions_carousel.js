@@ -4,8 +4,8 @@ jQuery(function($){
 		items : 3, //3 items above 1200px browser width
 		itemsDesktop : [921,3], //3 items between 1200px and 300px
 		itemsDesktopSmall : false, // disabled - inherit from itemsDesktop option
-		itemsTablet: [920,2], //2 items between 1200 and 600
-		itemsMobile : [640,1], //1 items between 600 and 0
+		itemsTablet: [1120,2], //2 items between 1200 and 600
+		itemsMobile : [690,1], //1 items between 600 and 0
 		// Navigation
 		navigation : true,
 		navigationText : ["",""],

@@ -1,10 +1,10 @@
 .singe-blog-navigation {
 	display: flex;
-	justify-content:space-between;
+	justify-content: space-between;
 
 	&-previous a,
-	&-next a{
-		font-family: Lato;
+	&-next a {
+		font-family: "Lato";
 		color: #2e2e2e;
 		white-space: nowrap;
 	}
@@ -14,12 +14,40 @@
 		color: #0051c6;
 	}
 
-	&-previous:hover span{
-		background-image: url("images/blog/iconArrowPrevious-Hover.svg");
+	&-previous {
+
+		&:after {
+			content: url("images/blog/iconArrowPrevious-Hover.svg");
+			display: none;
+		}
+
+		&:hover span{
+			background-image: url("images/blog/iconArrowPrevious-Hover.svg");
+		}
 	}
 
-	&-next:hover span{
-		background-image: url("images/blog/iconArrowNext-Hover.svg");
+	&-next {
+
+		&:after {
+			content: url("images/blog/iconArrowNext-Hover.svg");
+			display: none;
+		}
+
+		&:hover span{
+			background-image: url("images/blog/iconArrowNext-Hover.svg");
+		}
+	}
+
+
+
+	&-text {
+		font-family: "Lato";
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 1;
+		letter-spacing: 0.6px;
+		text-align: left;
+		color: #2e2e2e;
 	}
 
 	&-previous-arrow {
@@ -32,6 +60,7 @@
 		width: 11.5px;
 		height: 21px;
 		vertical-align: middle;
+		margin-top:-3px;
 	}
 
 	&-next-arrow {
@@ -44,13 +73,14 @@
 		width: 11.5px;
 		height: 21px;
 		vertical-align: middle;
+		margin-top:-3px;
 	}
 
 }
 
 .blog-post {
 
-	&-header {
+	&-header{
 		display: inline-block;
 		align-items: center;
 		justify-content: center;
@@ -67,6 +97,7 @@
 			background: linear-gradient(rgba(12, 57, 121, .9), rgba(0, 26, 62, .9));
 		}
 		&-container {
+			width: 100%;
 			position: relative;
 			z-index: 5;
 			display: inline-block;
@@ -93,8 +124,6 @@
 			color: #4ddb5a;
 			display: inline-block;
 		}
-
-
 	}
 
 	&-author-date {
@@ -107,6 +136,10 @@
 		width: 100%;
 		margin: 0;
 		padding: 0;
+
+		& a > img, & p > img {
+			display: block;
+		}
 
 		&,
 		& p,
@@ -131,17 +164,8 @@
 			color: #0051c6 !important;
 		}
 
-		img {
-			height: auto !important;
-			max-width: 100%;
-			display: inline-block;
-			clear: both;
-		}
-
 		&-wrapper {
 			position: relative;
 		}
 	}
-
-
 }

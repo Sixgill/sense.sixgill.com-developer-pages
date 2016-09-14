@@ -115,11 +115,11 @@
 			<div class="products-third-section-left-col">
 				<div
 					class="products-third-section-image-wrapper responsive-background"
-					tablet-src="<?php echo get_field('third_section_image_tablet'); ?>"
 					>
 					<img
 						class="products-third-section-image responsive-image aspectwidthfix"
 						desktop-src="<?php echo get_field('third_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('third_section_image_tablet'); ?>"
 					>
 				</div>
 			</div>
@@ -198,12 +198,12 @@
 			<div class="products-fifth-section-left-col">
 				<div
 					class="products-fifth-section-image-wrapper responsive-background"
-					tablet-src="<?php echo get_field('fifth_section_image_tablet'); ?>"
 				>
 					<img
 						class="products-fifth-section-image responsive-image aspectwidthfix"
 						src="<?php echo get_field('fifth_section_image'); ?>"
 						desktop-src="<?php echo get_field('fifth_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('fifth_section_image_tablet'); ?>"
 					>
 				</div>
 			</div>

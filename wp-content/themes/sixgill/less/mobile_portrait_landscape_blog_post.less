@@ -3,19 +3,30 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 127px;
+		min-height: 127px;
+		height: auto;
 
 		&-title {
 			font-size: 18px;
 			letter-spacing: 0.5px;
 			margin-bottom: 7px;
 			max-width: 95%;
+			&, span {
+				font-size: 18px;
+				letter-spacing: 0.5px;
+				line-height: 1.2em;
+			}
 		}
 
 		&-subtitle {
 			font-size: 14px;
 			letter-spacing: 0.4px;
 			max-width: 95%;
+			&, span {
+				font-size: 14px;
+				letter-spacing: 0.4px;
+				line-height: 1em;
+			}
 		}
 	}
 
