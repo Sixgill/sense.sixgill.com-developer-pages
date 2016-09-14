@@ -85,22 +85,34 @@
 				</div>
 			</div>
 
-			<div class="solutions-second-section-icons-block">
-				<h3 class="solutions-second-section-icons-title">
-					<?php echo get_field('people_section_icons_title'); ?>
-				</h3>
-				<div class="solutions-second-section-icon-wrapper">
-					<?php if(get_field('people_section_icons')) : ?>
-					<ul class="solutions-second-section-icon-list">
-						<?php
-							global $categoryName;
-							$categoryName = "people";
-							include(locate_template('loop-solutions.php'));
-						?>
-					</ul>
-					<?php endif; ?>
+			<?php
+			global $subpages;
+
+			$subpages = getChindrenByParentSlug("solutions", array(
+				'meta_query'	=> array(
+					'relation'		=> 'OR',
+					array(
+						'key'	  	=> 'page_part',
+						'value'	  	=> 'people',
+						'compare'	=> 'LIKE',
+					),
+				),
+			));
+			if($subpages->post_count) {
+			?>
+				<div class="solutions-second-section-icons-block">
+					<h3 class="solutions-second-section-icons-title">
+						<?php echo get_field('people_section_icons_title'); ?>
+					</h3>
+					<div class="solutions-second-section-icon-wrapper">
+						<ul class="solutions-second-section-icon-list">
+							<?php include(locate_template('loop-solutions.php')); ?>
+						</ul>
+					</div>
 				</div>
-			</div>
+			<?php
+			}
+			?>
 		</div>
 	</div>
 
@@ -123,20 +135,34 @@
 					<?php echo get_field('assets_section_text'); ?>
 				</div>
 			</div>
-			<div class="solutions-third-section-icons-block">
-				<h3 class="solutions-third-section-icons-title">
-					<?php echo get_field('assets_section_icons_title'); ?>
-				</h3>
-				<div class="solutions-third-section-icon-wrapper">
-					<ul class="solutions-third-section-icon-list">
-						<?php
-							global $categoryName;
-							$categoryName = "assets";
-							include(locate_template('loop-solutions.php'));
-						?>
-					</ul>
+			<?php
+			global $subpages;
+
+			$subpages = getChindrenByParentSlug("solutions", array(
+				'meta_query'	=> array(
+					'relation'		=> 'OR',
+					array(
+						'key'	  	=> 'page_part',
+						'value'	  	=> 'assets',
+						'compare'	=> 'LIKE',
+					),
+				),
+			));
+			if($subpages->post_count) {
+			?>
+				<div class="solutions-third-section-icons-block">
+					<h3 class="solutions-third-section-icons-title">
+						<?php echo get_field('assets_section_icons_title'); ?>
+					</h3>
+					<div class="solutions-third-section-icon-wrapper">
+						<ul class="solutions-third-section-icon-list">
+							<?php include(locate_template('loop-solutions.php')); ?>
+						</ul>
+					</div>
 				</div>
-			</div>
+			<?php
+			}
+			?>
 		</div>
 	</div>
 
@@ -162,20 +188,34 @@
 					</div>
 				</div>
 			</div>
-			<div class="solutions-second-section-icons-block">
-				<h3 class="solutions-second-section-icons-title">
-					<?php echo get_field('crowds_section_icons_title'); ?>
-				</h3>
-				<div class="solutions-second-section-icon-wrapper">
-					<ul class="solutions-second-section-icon-list">
-						<?php
-							global $categoryName;
-							$categoryName = "crowd";
-							include(locate_template('loop-solutions.php'));
-						?>
-					</ul>
+			<?php
+			global $subpages;
+
+			$subpages = getChindrenByParentSlug("solutions", array(
+				'meta_query'	=> array(
+					'relation'		=> 'OR',
+					array(
+						'key'	  	=> 'page_part',
+						'value'	  	=> 'crowd',
+						'compare'	=> 'LIKE',
+					),
+				),
+			));
+			if($subpages->post_count) {
+			?>
+				<div class="solutions-second-section-icons-block">
+					<h3 class="solutions-second-section-icons-title">
+						<?php echo get_field('crowds_section_icons_title'); ?>
+					</h3>
+					<div class="solutions-second-section-icon-wrapper">
+						<ul class="solutions-second-section-icon-list">
+							<?php include(locate_template('loop-solutions.php')); ?>
+						</ul>
+					</div>
 				</div>
-			</div>
+			<?php
+			}
+			?>
 		</div>
 	</div>
 
