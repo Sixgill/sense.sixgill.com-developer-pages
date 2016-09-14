@@ -1,0 +1,78 @@
+.resources-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	&-header {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&-title {
+			font-family: "Lato";
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			letter-spacing: 0.8px;
+			text-align: center;
+			color: #4ddb5a;
+		}
+
+		&-subtitle {
+			font-family: "Lato";
+			font-weight: 300;
+			font-style: normal;
+			font-stretch: normal;
+			letter-spacing: 1.8px;
+			text-align: center;
+			color: #f9f8f8;
+		}
+	}
+
+	&-card {
+		transition: all 0.2s ease;
+
+		&:hover {
+			transform: scale(1.046);
+		}
+
+		&-link {
+			display: inline-block;
+		}
+
+		&-image {
+			background-size: cover;
+			display: inline-block;
+			width: 100%;
+		}
+
+		&-info {
+			display: inline-block;
+			width: 100%;
+		}
+
+		&-category {
+			font-family: "Lato";
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1em;
+			letter-spacing: 0.4px;
+			text-align: left;
+			color: #5cc468;
+		}
+
+		&-title {
+			font-family: "Lato";
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			letter-spacing: 0.5px;
+			text-align: left;
+			color: #2e2e2e;
+		}
+	}
+}

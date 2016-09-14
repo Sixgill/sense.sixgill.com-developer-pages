@@ -3,7 +3,7 @@
 	desktop-src=""
 	tablet-src=""
 	mobile-src=""
->
+></div>
 <?php
 	if ( have_posts() ) while ( have_posts() ) : the_post();
 ?>
