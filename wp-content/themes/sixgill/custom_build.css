@@ -13010,6 +13010,7 @@ footer div.mc4wp-error p {
   font-family: "Lato";
   font-weight: 300;
   color: #ffffff;
+  margin-bottom: 12px;
 }
 .company-third-section-job {
   font-family: "Lato";
@@ -17245,7 +17246,6 @@ body.modal-open {
   font-size: 34.5px;
   line-height: 0.62;
   letter-spacing: 1px;
-  margin-bottom: 5px;
 }
 .company-third-section-job {
   margin-bottom: 23px !important;
@@ -19795,7 +19795,6 @@ ul:not([class]) li {
   margin-bottom: 42px;
 }
 .company-third-section-name {
-  margin-bottom: 8px;
   font-size: 26.5px;
   line-height: 0.8;
   letter-spacing: 0.8px;
