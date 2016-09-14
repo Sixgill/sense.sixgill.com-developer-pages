@@ -12,7 +12,7 @@
 				>
 			</div>
 		</div>
-		<div class="own-carousel-outside-wrapper">
+		<div class="own-carousel-outside-wrapper loading_bg">
 			<div
 				id="<?php echo $carouselName; ?>-solution-subpage-carousel"
 				class="owl-carousel owl-theme"
@@ -21,15 +21,16 @@
 			>
 
 				<?php
+					$slideIndex = 0;
 					foreach($carouselSlides as $slide) {
 						echo '
-							<div class="item">
+							<div id="js_slide_'.$slideIndex.'" class="item">
 								<img
 									class="solution-subpage-slide-image lazyOwl"
 									data-src="'.$slide['url'].'"
 									alt="'.$slide['alt'].'"
 									>
-								<div class="solution-subpage-slide-info">
+								<div class="solution-subpage-slide-info opacity-zero">
 									<div class="solution-subpage-slide-title">
 										'.$slide['title'].'
 									</div>
@@ -39,6 +40,7 @@
 								</div>
 							</div>
 						';
+						$slideIndex++;
 					}
 				?>
 			</div>

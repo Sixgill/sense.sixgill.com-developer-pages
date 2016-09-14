@@ -13772,6 +13772,9 @@ footer div.mc4wp-error p {
       -ms-flex-align: center;
           align-items: center;
 }
+.loading_bg {
+  background: url("images/AjaxLoader.gif") no-repeat center center;
+}
 #content .solution-subpage-first-block-text p {
   color: #2e2e2e;
 }
@@ -21340,4 +21343,7 @@ a.search-post-result {
 }
 .font-size-0 {
   font-size: 0;
+}
+.opacity-zero {
+  opacity: 0 !important;
 }
