@@ -5,7 +5,7 @@
 	foreach($subpages as $subpage) {
 		$selected = get_field('page_part', $subpage->ID);
 
-	if (is_array($selected) && in_array( $categoryName, $selected ) ) {
+	if (is_array($selected) && in_array( $categoryName, $selected ) ) { ?>
 			<li class="solutions-icon-item">
 				<div class="solutions-icon-image">
 					<img src="<?php echo get_field('icon_image', $subpage->ID); ?>">
