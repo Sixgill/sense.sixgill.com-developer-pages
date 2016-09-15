@@ -367,9 +367,22 @@
 				height: auto;
 			}
 
-			&-block-title {
-				color: #2e2e2e;
+			&-block {
+
+				&-block-title {
+					color: #2e2e2e;
+				}
+
+				& .owl-item.loading .solution-subpage-slide-description {
+					display: none;
+				}
+
+				& .owlitem.loading {
+					margin: auto !important;
+				}
 			}
+
+
 
 			&-button {
 				background-color: #2e2e2e;
@@ -399,7 +412,7 @@
 		&-galleries-wrapper {
 			text-align: center;
 			background-color: #f8f8f8;
-			& .item {
+			& .owl-wrapper {
 				background-color: #FFF;
 			}
 		}
@@ -418,6 +431,7 @@
 
 			&-description {
 				color: #000000;
+				transition: all 0.2s ease;
 			}
 
 			&-description, &-slide-title {
@@ -548,9 +562,9 @@
 	}
 }
 
-.loading_bg {
-	background: url("./images/AjaxLoader.gif") no-repeat center center;
-}
+/*.loading_bg {
+	background: url("/wp-content/themes/sixgill/images/ajaxloader.gif") no-repeat center center;
+}*/
 
 
 #content .solution-subpage{

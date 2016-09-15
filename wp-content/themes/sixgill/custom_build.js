@@ -6761,17 +6761,8 @@ jQuery(function($){
 	      pagination: false,
 	      singleItem : true,
 	      lazyLoad : true, // Execute lazy loading
-	      autoHeight : autoHeightOption,
-
-	      afterLazyLoad: function(elem){
-	      	console.log(owlCarousel);
-	      	var instance = owlCarousel.data('owlCarousel');
-	      	elem
-	      	.find('#js_slide_' + instance.currentItem)
-	      	.find('.solution-subpage-slide-info')
-	      	.removeClass("opacity-zero");
-	      }
-	  });	
+	      autoHeight : autoHeightOption
+	  });
 
 		$("#"+carouselName+"-solution-carousel-button-left, #"+carouselName+"-solution-carousel-mobile-button-left").click(function(){
 			owl.trigger('owl.prev');
@@ -6779,7 +6770,7 @@ jQuery(function($){
 		$("#"+carouselName+"-solution-carousel-button-right, #"+carouselName+"-solution-carousel-mobile-button-right").click(function(){
 			owl.trigger('owl.next');
 		});
-		
+
 	}
 
 	initOwlCarousel("first");

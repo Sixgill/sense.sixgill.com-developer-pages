@@ -21,16 +21,15 @@
 			>
 
 				<?php
-					$slideIndex = 0;
 					foreach($carouselSlides as $slide) {
 						echo '
-							<div id="js_slide_'.$slideIndex.'" class="item">
+							<div class="item">
 								<img
 									class="solution-subpage-slide-image lazyOwl"
 									data-src="'.$slide['url'].'"
 									alt="'.$slide['alt'].'"
 									>
-								<div class="solution-subpage-slide-info opacity-zero">
+								<div class="solution-subpage-slide-info">
 									<div class="solution-subpage-slide-title">
 										'.$slide['title'].'
 									</div>
@@ -40,7 +39,6 @@
 								</div>
 							</div>
 						';
-						$slideIndex++;
 					}
 				?>
 			</div>
