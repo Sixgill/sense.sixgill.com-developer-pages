@@ -13267,7 +13267,7 @@ footer div.mc4wp-error p {
 }
 .home-fourth-section-carousel-text-content p {
   font-family: "Lato";
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.33 !important;
   letter-spacing: 1px;
@@ -13294,7 +13294,7 @@ footer div.mc4wp-error p {
   font-family: "Lato";
   width: 100%;
   height: 40px;
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.33;
   letter-spacing: 1px;
@@ -13957,6 +13957,9 @@ footer div.mc4wp-error p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -13965,6 +13968,7 @@ footer div.mc4wp-error p {
           justify-content: center;
 }
 .resources-list-header-title {
+  line-height: 1.1em;
   font-family: "Lato";
   font-weight: 500;
   font-style: normal;
@@ -13974,6 +13978,7 @@ footer div.mc4wp-error p {
   color: #4ddb5a;
 }
 .resources-list-header-subtitle {
+  line-height: 1.1em;
   font-family: "Lato";
   font-weight: 300;
   font-style: normal;
@@ -13983,11 +13988,14 @@ footer div.mc4wp-error p {
   color: #f9f8f8;
 }
 .resources-list-card {
-  transition: all 0.2s ease;
-}
-.resources-list-card:hover {
-  -webkit-transform: scale(1.046);
-          transform: scale(1.046);
+  width: 100%;
+  box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.08);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .resources-list-card-link {
   display: inline-block;
@@ -13998,8 +14006,23 @@ footer div.mc4wp-error p {
   width: 100%;
 }
 .resources-list-card-info {
-  display: inline-block;
   width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 78.5%;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 .resources-list-card-category {
   font-family: "Lato";
@@ -15786,7 +15809,7 @@ body.modal-open {
   margin: 32px auto;
 }
 .solution-subpage-bottom-section-text-wrapper p {
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.25;
   letter-spacing: 0.5px;
@@ -15803,7 +15826,7 @@ body.modal-open {
 }
 .solution-subpage-gallery-block-title {
   margin-bottom: 2.19vw;
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 1.42;
   letter-spacing: 0.5px;
@@ -15956,16 +15979,49 @@ body.modal-open {
   letter-spacing: 0.9px;
 }
 
+.resources-list {
+  margin: 1.9vw 1.9vw 1.9vw 1.9vw;
+  min-height: calc(100vh - 531px);
+}
+.resources-list-header {
+  min-height: 324px;
+}
 .resources-list-header-title {
   font-size: 25px;
   letter-spacing: 0.6px;
+  margin-bottom: 22px;
 }
 .resources-list-header-subtitle {
   font-size: 60px;
   letter-spacing: 1.2px;
 }
 .resources-list-card {
-  width: 32.46%;
+  margin-bottom: 25.5px;
+}
+.resources-list-card-link {
+  width: 32.222%;
+  transition: all 0.2s ease;
+}
+.resources-list-card-link:hover {
+  -webkit-transform: scale(1.046);
+          transform: scale(1.046);
+}
+.resources-list-card-image {
+  height: 12.4vw;
+  min-height: 187px;
+}
+.resources-list-card-info {
+  height: 9.5vw;
+  min-height: 143px;
+}
+.resources-list-card-category {
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  margin-bottom: 13.5px;
+}
+.resources-list-card-title {
+  font-size: 19px;
+  letter-spacing: 0.5px;
 }
 
 
@@ -17348,13 +17404,13 @@ body.modal-open {
   margin-bottom: 20px;
 }
 .company-second-section-bio p {
-  font-size: 15.9px;
+  font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.5px;
   margin-bottom: 0;
 }
 .company-second-section-bio-full p {
-  font-size: 15.9px;
+  font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.5px;
   margin-bottom: 0;
@@ -17390,12 +17446,12 @@ body.modal-open {
   margin-bottom: 0;
 }
 .company-third-section-bio ul li {
-  font-size: 15.9px;
+  font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.5px;
 }
 .company-third-section-bio p {
-  font-size: 15.9px;
+  font-size: 16px;
   line-height: 1.33;
   letter-spacing: 0.5px;
   margin-bottom: 0;
@@ -18011,7 +18067,7 @@ body.modal-open {
   margin-left: 4vw;
 }
 .solution-subpage-bottom-section-text-wrapper p {
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.25;
   letter-spacing: 0.5px;
@@ -18023,7 +18079,7 @@ body.modal-open {
   padding: calc(3vw - 30px) 0px 55px 0px;
 }
 .solution-subpage-gallery-block-title {
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 1.25;
   letter-spacing: 0.8px;
@@ -18150,7 +18206,7 @@ body.modal-open {
   float: right;
 }
 #content .solution-subpage-first-block-text p {
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: normal;
   letter-spacing: 0.5px;
 }
@@ -18200,6 +18256,41 @@ ul:not([class]) li {
   letter-spacing: 0.9px;
 }
 
+.resources-list {
+  margin: 30.5px 3.3vw 30.5px 3.3vw;
+}
+.resources-list-header {
+  min-height: 263.5px;
+}
+.resources-list-header-title {
+  font-size: 20px;
+  letter-spacing: 0.6px;
+}
+.resources-list-header-subtitle {
+  font-size: 40px;
+  letter-spacing: 1.2px;
+}
+.resources-list-card {
+  margin-bottom: 25.5px;
+}
+.resources-list-card-link {
+  width: 48.8%;
+}
+.resources-list-card-image {
+  height: 187px;
+}
+.resources-list-card-info {
+  height: 143px;
+}
+.resources-list-card-category {
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  margin-bottom: 13.5px;
+}
+.resources-list-card-title {
+  font-size: 19px;
+  letter-spacing: 0.5px;
+}
 
 
 /* Tech tablet styles */
@@ -19702,7 +19793,7 @@ ul:not([class]) li {
   width: calc(100% - 90px);
 }
 .blog-page-post-card-title {
-  font-size: 16.2px;
+  font-size: 16px;
   line-height: 19.5px;
   letter-spacing: 0.5px;
 }
@@ -19944,7 +20035,7 @@ ul:not([class]) li {
   margin-bottom: 0;
 }
 .company-third-section-bio ul li {
-  font-size: 15.9px;
+  font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.5px;
 }
@@ -19952,7 +20043,7 @@ ul:not([class]) li {
   margin-bottom: 10px;
 }
 .company-third-section-bio p {
-  font-size: 15.9px;
+  font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.5px;
 }
@@ -20351,7 +20442,7 @@ ul:not([class]) li {
   display: none;
 }
 .solutions-second-section-icons-title {
-  font-size: 15.9px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 2.83;
   letter-spacing: 0.5px;
@@ -20373,7 +20464,7 @@ ul:not([class]) li {
   max-width: 50vw;
 }
 .solutions-third-section-block-paragraph p {
-  font-size: 15.9px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.33;
   letter-spacing: 0.5px;
@@ -20492,7 +20583,7 @@ ul:not([class]) li {
   text-align: left;
   margin-bottom: 30px;
   width: inherit;
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.25;
   letter-spacing: 0.5px;
@@ -20504,13 +20595,13 @@ ul:not([class]) li {
   text-align: left;
 }
 .solution-subpage-bottom-section-column ul li {
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.25;
   letter-spacing: 0.5px;
 }
 .solution-subpage-bottom-section-text-wrapper p {
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.25;
   letter-spacing: 0.5px;
@@ -20583,17 +20674,17 @@ ul:not([class]) li {
           flex-direction: column;
 }
 .solution-subpage-first-block-text p {
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: normal;
   letter-spacing: 0.5px;
 }
 .solution-subpage-first-block-text p {
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: normal;
   letter-spacing: 0.5px;
 }
 .solution-subpage-second-block-wrapper p {
-  font-size: 16.2px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.42;
   letter-spacing: 0.5px;

@@ -97,22 +97,22 @@ function sdm_generate_fancy2_display_output($args) {
     // Get item title
     $item_title = get_the_title($id);
     $isset_item_title = isset($item_title) && !empty($item_title) ? $item_title : '';
-		$item_thumbnail_image_desktop = get_field('thumbnail_image_desktop');
-		$item_thumbnail_image_tablet = get_field('thumbnail_image_tablet');
-		$item_thumbnail_image_mobile = get_field('thumbnail_image_mobile');
+		$item_thumbnail_image_desktop = get_field('thumbnail_image_desktop', $id);
+		$item_thumbnail_image_tablet = get_field('thumbnail_image_tablet', $id);
+		$item_thumbnail_image_mobile = get_field('thumbnail_image_mobile', $id);
 
-		$output  = '<a href="$item_permalink" class="resources-list-card-link">';
+		$output  = '<a href="'.$item_permalink.'" class="resources-list-card-link">';
 			$output .= '<div class="resources-list-card">';
-				$output .= '<div class="resources-list-card-image responsive-image" ';
+				$output .= '<div class="resources-list-card-image responsive-background" ';
 				$output .= 'desktop-src="'.$item_thumbnail_image_desktop.'" ';
-				$output .= 'desktop-src="'.$item_thumbnail_image_tablet.'" ';
-				$output .= 'desktop-src="'.$item_thumbnail_image_mobile.'" ';
+				$output .= 'tablet-src="'.$item_thumbnail_image_tablet.'" ';
+				$output .= 'mobile-src="'.$item_thumbnail_image_mobile.'" >';
 				$output .= '</div>';
-				$output .= '<div class="resources-list-card-info">'
+				$output .= '<div class="resources-list-card-info">';
 					$output .= '<div class="resources-list-card-category">';
 						$output .= $item_category;
 					$output .= '</div>';
-					$output .= '<div class="resources-list-card-title">';
+					$output .= '<div class="resources-list-card-title ellipsis-3lines">';
 						$output .= $isset_item_title;
 					$output .= '</div>';
 				$output .= '</div>';

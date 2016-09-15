@@ -7,15 +7,15 @@
 		mobile-src="<?php the_field("header_image_mobile"); ?>"
 	>
 		<h1 class="resources-list-header-title">
-			SIXGILL RESOURCES
+			<?php the_field("title"); ?>
 		</h1>
 		<h2 class="resources-list-header-subtitle">
-			Proximity in a Connected World
+			<?php the_field("subtitle"); ?>
 		</h2>
 	</div>
-	
+
 	<div class="resources-list">
-		<?php echo do_shortcode('[sdm_show_dl_from_category fancy="2" pagination="2"]'); ?>
+		<?php echo do_shortcode('[sdm_show_dl_from_category fancy="2"]'); /*pagination="3"*/ ?>
 	</div>
 
 	<?php get_footer(); ?>

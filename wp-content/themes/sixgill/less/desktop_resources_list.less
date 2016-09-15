@@ -1,10 +1,14 @@
 .resources-list {
+	margin: 1.9vw 1.9vw 1.9vw 1.9vw;
+	min-height: calc(~"100vh - 531px");
 
 	&-header {
+		min-height: 324px;
 
 		&-title {
 			font-size: 25px;
 			letter-spacing: 0.6px;
+			margin-bottom: 22px;
 		}
 
 		&-subtitle {
@@ -14,22 +18,36 @@
 	}
 
 	&-card {
-		width: 32.46%;
+		margin-bottom: 25.5px;
+
+		&-link {
+			width: 32.222%;
+			transition: all 0.2s ease;
+
+			&:hover {
+				transform: scale(1.046);
+			}
+		}
 
 		&-image {
-
+			height: 12.4vw;
+			min-height: 187px;
 		}
 
 		&-info {
-
+			height: 9.5vw;
+			min-height: 143px;
 		}
 
 		&-category {
-
+			font-size: 16px;
+			letter-spacing: 0.4px;
+			margin-bottom: 13.5px;
 		}
 
 		&-title {
-
+			font-size: 19px;
+			letter-spacing: 0.5px;
 		}
 	}
 }
