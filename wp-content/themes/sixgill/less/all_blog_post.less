@@ -1,6 +1,4 @@
 .singe-blog-navigation {
-	display: flex;
-	justify-content: space-between;
 
 	&-previous a,
 	&-next a {
@@ -15,6 +13,7 @@
 	}
 
 	&-previous {
+		float: left;
 
 		&:after {
 			content: url("images/blog/iconArrowPrevious-Hover.svg");
@@ -27,6 +26,7 @@
 	}
 
 	&-next {
+		float: right;
 
 		&:after {
 			content: url("images/blog/iconArrowNext-Hover.svg");
