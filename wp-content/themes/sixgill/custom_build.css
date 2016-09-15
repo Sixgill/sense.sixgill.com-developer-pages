@@ -12568,14 +12568,6 @@ footer div.mc4wp-error p {
   line-height: 1em;
 }
 
-.singe-blog-navigation {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .singe-blog-navigation-previous a,
 .singe-blog-navigation-next a {
   font-family: "Lato";
@@ -12586,12 +12578,18 @@ footer div.mc4wp-error p {
 .singe-blog-navigation-next:hover a {
   color: #0051c6;
 }
+.singe-blog-navigation-previous {
+  float: left;
+}
 .singe-blog-navigation-previous:after {
   content: url("images/blog/iconArrowPrevious-Hover.svg");
   display: none;
 }
 .singe-blog-navigation-previous:hover span {
   background-image: url("images/blog/iconArrowPrevious-Hover.svg");
+}
+.singe-blog-navigation-next {
+  float: right;
 }
 .singe-blog-navigation-next:after {
   content: url("images/blog/iconArrowNext-Hover.svg");
