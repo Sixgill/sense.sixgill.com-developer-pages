@@ -12,7 +12,7 @@
 				>
 			</div>
 		</div>
-		<div class="own-carousel-outside-wrapper">
+		<div class="own-carousel-outside-wrapper loading_bg">
 			<div
 				id="<?php echo $carouselName; ?>-solution-subpage-carousel"
 				class="owl-carousel owl-theme"
