@@ -12660,6 +12660,10 @@ footer div.mc4wp-error p {
   color: #4ddb5a;
   display: inline-block;
 }
+.blog-post-header-subtitle,
+.blog-post-header-subtitle span {
+  line-height: 1.1em;
+}
 .blog-post-author-date {
   color: #999999;
   font-family: "Lato";
@@ -14757,7 +14761,6 @@ body.modal-open {
 .blog-post-header-subtitle span {
   font-size: 20px;
   letter-spacing: 0.6px;
-  line-height: 1em;
 }
 .blog-post-author-date {
   font-size: 14px;
@@ -16988,7 +16991,6 @@ body.modal-open {
 .blog-post-header-subtitle span {
   font-size: 20px;
   letter-spacing: 0.6px;
-  line-height: 1em;
 }
 .blog-post-author-date {
   font-size: 14px;
@@ -19567,7 +19569,6 @@ ul:not([class]) li {
 .blog-post-header-subtitle span {
   font-size: 14px;
   letter-spacing: 0.4px;
-  line-height: 1em;
 }
 .blog-post-author-date {
   font-size: 14px;
