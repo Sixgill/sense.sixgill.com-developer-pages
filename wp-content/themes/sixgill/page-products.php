@@ -83,7 +83,7 @@
 			</div>
 		</div>
 
-		<div data-section-link="#products-fourth-section" class="products-fixed-panel-col" id="products-fixed-panel-col-determine"
+		<div data-section-link="#products-fourth-section" class="products-fixed-panel-col" id="products-fixed-panel-col-determine">
 			<div class="products-fixed-panel-col-content">
 				<div class="products-fixed-panel-icon-wrapper">
 					<img
