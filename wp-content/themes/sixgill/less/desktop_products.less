@@ -24,6 +24,17 @@
 		width: 100%;
 		z-index: 10;
 		display: flex;
+		&-col:hover {
+			.products-fixed-panel-title {
+				color:#085fbb;
+			}
+			.products-fixed-panel-icon {
+				display: none;
+			}
+			.products-fixed-panel-icon-hover {
+				display: block;
+			}
+		};
 		&-title {
 			font-size: 27px;
 			font-weight: 500;
@@ -57,9 +68,20 @@
 			&:last-child {
 				border-right: none;
 			}
+			.products-fixed-panel-icon-hover {
+				display: none;
+			}
 
 			&.selected {
 				background-color: #4ddb5a;
+			}
+
+			&.selected .products-fixed-panel-icon {
+				display: none;
+			}
+
+			&.selected .products-fixed-panel-icon-hover {
+				display: block;
 			}
 
 			&-content {
