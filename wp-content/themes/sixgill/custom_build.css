@@ -12716,6 +12716,7 @@ footer div.mc4wp-error p {
 }
 .blog-post-content-wrapper {
   position: relative;
+  min-height: calc(100vh - 470px);
 }
 
 /* Blog Common styles */
