@@ -70,7 +70,11 @@
 				<div class="products-fixed-panel-icon-wrapper">
 					<img
 						class="products-fixed-panel-icon"
-						src="<?php echo get_template_directory_uri();?>/images/products/products_panel_track_ico.svg"
+						src="<?php echo get_template_directory_uri();?>/images/products/iconPin-gray.svg"
+					>
+					<img
+						class="products-fixed-panel-icon-hover"
+						src="<?php echo get_template_directory_uri();?>/images/products/iconPin-brightBlue.svg"
 					>
 				</div>
 				<div class="products-fixed-panel-title">
@@ -79,12 +83,16 @@
 			</div>
 		</div>
 
-		<div data-section-link="#products-fourth-section" class="products-fixed-panel-col" id="products-fixed-panel-col-determine">
+		<div data-section-link="#products-fourth-section" class="products-fixed-panel-col" id="products-fixed-panel-col-determine"
 			<div class="products-fixed-panel-col-content">
 				<div class="products-fixed-panel-icon-wrapper">
 					<img
 						class="products-fixed-panel-icon"
-						src="<?php echo get_template_directory_uri();?>/images/products/products_panel_determine_ico.svg"
+						src="<?php echo get_template_directory_uri();?>/images/products/iconDots-gray.svg"
+					>
+					<img
+						class="products-fixed-panel-icon-hover"
+						src="<?php echo get_template_directory_uri();?>/images/products/iconDots-brightBlue.svg"
 					>
 				</div>
 				<div class="products-fixed-panel-title">
@@ -98,7 +106,11 @@
 				<div class="products-fixed-panel-icon-wrapper">
 					<img
 						class="products-fixed-panel-icon"
-						src="<?php echo get_template_directory_uri();?>/images/products/products_panel_track_act.svg"
+						src="<?php echo get_template_directory_uri();?>/images/products/iconAct-gray.svg"
+					>
+					<img
+						class="products-fixed-panel-icon-hover"
+						src="<?php echo get_template_directory_uri();?>/images/products/iconAct-brightBlue.svg"
 					>
 				</div>
 				<div class="products-fixed-panel-title">

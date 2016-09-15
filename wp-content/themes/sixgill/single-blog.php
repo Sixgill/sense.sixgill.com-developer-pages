@@ -70,6 +70,7 @@
 			</div>
 			<?php } ?>
 		</div>
+		<div class="clear"></div>
 
 		<?php wpb_get_post_views(get_the_ID()); endwhile; wp_reset_query(); // end of the loop. ?>
 	</div>

@@ -138,7 +138,7 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 /* preloading images */
 .owl-item.loading{
 	min-height: 150px;
-	background: url(../images/AjaxLoader.gif) no-repeat center center
+	background: url("/wp-content/themes/sixgill/images/ajaxloader.gif") no-repeat center center
 }
 
 
@@ -12568,14 +12568,6 @@ footer div.mc4wp-error p {
   line-height: 1em;
 }
 
-.singe-blog-navigation {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .singe-blog-navigation-previous a,
 .singe-blog-navigation-next a {
   font-family: "Lato";
@@ -12586,12 +12578,18 @@ footer div.mc4wp-error p {
 .singe-blog-navigation-next:hover a {
   color: #0051c6;
 }
+.singe-blog-navigation-previous {
+  float: left;
+}
 .singe-blog-navigation-previous:after {
   content: url("images/blog/iconArrowPrevious-Hover.svg");
   display: none;
 }
 .singe-blog-navigation-previous:hover span {
   background-image: url("images/blog/iconArrowPrevious-Hover.svg");
+}
+.singe-blog-navigation-next {
+  float: right;
 }
 .singe-blog-navigation-next:after {
   content: url("images/blog/iconArrowNext-Hover.svg");
@@ -13650,8 +13648,14 @@ footer div.mc4wp-error p {
   width: 100%;
   height: auto;
 }
-.solution-subpage-gallery-block-title {
+.solution-subpage-gallery-block-block-title {
   color: #2e2e2e;
+}
+.solution-subpage-gallery-block .owl-item.loading .solution-subpage-slide-description {
+  display: none;
+}
+.solution-subpage-gallery-block .owlitem.loading {
+  margin: auto !important;
 }
 .solution-subpage-gallery-button {
   background-color: #2e2e2e;
@@ -13677,7 +13681,7 @@ footer div.mc4wp-error p {
   text-align: center;
   background-color: #f8f8f8;
 }
-.solution-subpage-galleries-wrapper .item {
+.solution-subpage-galleries-wrapper .owl-wrapper {
   background-color: #FFF;
 }
 .solution-subpage-viewprocess-placeholder {
@@ -13693,6 +13697,7 @@ footer div.mc4wp-error p {
   font-family: Lato;
   text-align: left;
   color: #2e2e2e;
+  transition: all 0.2s ease;
 }
 .solution-subpage-slide-description,
 .solution-subpage-slide-slide-title {
@@ -13802,9 +13807,9 @@ footer div.mc4wp-error p {
       -ms-flex-align: center;
           align-items: center;
 }
-.loading_bg {
-  background: url("images/AjaxLoader.gif") no-repeat center center;
-}
+/*.loading_bg {
+	background: url("/wp-content/themes/sixgill/images/ajaxloader.gif") no-repeat center center;
+}*/
 #content .solution-subpage-first-block-text p {
   color: #2e2e2e;
 }
@@ -15771,6 +15776,22 @@ body.modal-open {
 .solution-subpage-slide-info {
   margin-top: 1.72vw;
 }
+.solution-subpage-slide-title {
+  font-size: 24px;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+.solution-subpage-slide-description {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.8vw;
+}
+.solution-subpage-slide-description,
+.solution-subpage-slide-title {
+  width: 95.68%;
+  display: inline-block;
+}
 .solution-use-cases-block-half:only-child {
   margin-left: 25%;
   margin-right: 25%;
@@ -16180,6 +16201,15 @@ body.modal-open {
   display: -ms-flexbox;
   display: flex;
 }
+.products-fixed-panel-col:hover .products-fixed-panel-title {
+  color: #085fbb;
+}
+.products-fixed-panel-col:hover .products-fixed-panel-icon {
+  display: none;
+}
+.products-fixed-panel-col:hover .products-fixed-panel-icon-hover {
+  display: block;
+}
 .products-fixed-panel-title {
   font-size: 27px;
   font-weight: 500;
@@ -16216,8 +16246,17 @@ body.modal-open {
 .products-fixed-panel-col:last-child {
   border-right: none;
 }
+.products-fixed-panel-col .products-fixed-panel-icon-hover {
+  display: none;
+}
 .products-fixed-panel-col.selected {
   background-color: #4ddb5a;
+}
+.products-fixed-panel-col.selected .products-fixed-panel-icon {
+  display: none;
+}
+.products-fixed-panel-col.selected .products-fixed-panel-icon-hover {
+  display: block;
 }
 .products-fixed-panel-col-content {
   -webkit-align-self: center;
