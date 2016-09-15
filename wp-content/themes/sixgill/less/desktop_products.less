@@ -32,7 +32,7 @@
 				display: none;
 			}
 			.products-fixed-panel-icon-hover {
-				display: block!important;
+				display: block;
 			}
 		};
 		&-title {
@@ -68,9 +68,20 @@
 			&:last-child {
 				border-right: none;
 			}
+			.products-fixed-panel-icon-hover {
+				display: none;
+			}
 
 			&.selected {
 				background-color: #4ddb5a;
+			}
+
+			&.selected .products-fixed-panel-icon {
+				display: none;
+			}
+
+			&.selected .products-fixed-panel-icon-hover {
+				display: block;
 			}
 
 			&-content {

@@ -73,7 +73,7 @@
 						src="<?php echo get_template_directory_uri();?>/images/products/iconPin-gray.svg"
 					>
 					<img
-						class="products-fixed-panel-icon-hover hide"
+						class="products-fixed-panel-icon-hover"
 						src="<?php echo get_template_directory_uri();?>/images/products/iconPin-brightBlue.svg"
 					>
 				</div>
@@ -83,8 +83,7 @@
 			</div>
 		</div>
 
-		<div data-section-link="#products-fourth-section" class="products-fixed-panel-col" id="products-fixed-panel-col-determine" 						onmouseover="this.src='<?php echo get_template_directory_uri();?>/images/products/iconDots-brightBlue.svg'"
-				onmouseout="this.src='<?php echo get_template_directory_uri();?>/images/products/iconDots-gray.svg'">
+		<div data-section-link="#products-fourth-section" class="products-fixed-panel-col" id="products-fixed-panel-col-determine"
 			<div class="products-fixed-panel-col-content">
 				<div class="products-fixed-panel-icon-wrapper">
 					<img
@@ -92,7 +91,7 @@
 						src="<?php echo get_template_directory_uri();?>/images/products/iconDots-gray.svg"
 					>
 					<img
-						class="products-fixed-panel-icon-hover hide"
+						class="products-fixed-panel-icon-hover"
 						src="<?php echo get_template_directory_uri();?>/images/products/iconDots-brightBlue.svg"
 					>
 				</div>
@@ -110,7 +109,7 @@
 						src="<?php echo get_template_directory_uri();?>/images/products/iconAct-gray.svg"
 					>
 					<img
-						class="products-fixed-panel-icon-hover hide"
+						class="products-fixed-panel-icon-hover"
 						src="<?php echo get_template_directory_uri();?>/images/products/iconAct-brightBlue.svg"
 					>
 				</div>

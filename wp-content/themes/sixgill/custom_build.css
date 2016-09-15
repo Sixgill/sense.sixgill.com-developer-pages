@@ -16178,7 +16178,7 @@ body.modal-open {
   display: none;
 }
 .products-fixed-panel-col:hover .products-fixed-panel-icon-hover {
-  display: block!important;
+  display: block;
 }
 .products-fixed-panel-title {
   font-size: 27px;
@@ -16216,8 +16216,17 @@ body.modal-open {
 .products-fixed-panel-col:last-child {
   border-right: none;
 }
+.products-fixed-panel-col .products-fixed-panel-icon-hover {
+  display: none;
+}
 .products-fixed-panel-col.selected {
   background-color: #4ddb5a;
+}
+.products-fixed-panel-col.selected .products-fixed-panel-icon {
+  display: none;
+}
+.products-fixed-panel-col.selected .products-fixed-panel-icon-hover {
+  display: block;
 }
 .products-fixed-panel-col-content {
   -webkit-align-self: center;
