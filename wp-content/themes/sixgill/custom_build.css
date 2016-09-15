@@ -13694,7 +13694,9 @@ footer div.mc4wp-error p {
   letter-spacing: 0.7px;
 }
 .solution-subpage-slide-description {
-  color: #000000;
+  font-family: Lato;
+  text-align: left;
+  color: #2e2e2e;
   transition: all 0.2s ease;
 }
 .solution-subpage-slide-description,
@@ -15745,6 +15747,22 @@ body.modal-open {
 .solution-subpage-bottom-section-text-wrapper p {
   text-align: center;
   margin-bottom: 67px;
+}
+.solution-subpage-slide-title {
+  font-size: 1.78vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+.solution-subpage-slide-description {
+  margin-bottom: 1.8vw;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+.solution-subpage-slide-description,
+.solution-subpage-slide-title {
+  width: 95.68%;
+  display: inline-block;
 }
 .solution-subpage-first-block-image {
   max-width: 52.5vw;
@@ -17846,6 +17864,9 @@ body.modal-open {
   margin-top: 55px;
   margin-bottom: 28px;
 }
+.solution-subpage-section-first-title {
+  text-align: left;
+}
 .solution-subpage-first-block {
   width: 100%;
 }
@@ -17981,8 +18002,10 @@ body.modal-open {
   margin-bottom: 1vw;
 }
 .solution-subpage-slide-description {
-  font-size: 2.03vw;
   margin-bottom: 1.8vw;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 .solution-subpage-slide-description,
 .solution-subpage-slide-title {
@@ -20334,6 +20357,14 @@ ul:not([class]) li {
 }
 .solution-use-cases-block-subtitle > p {
   width: 100%;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
+}
+.solution-use-cases-block-subtitle > a {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
 }
 .solution-use-cases-block-content {
   text-align: center;
@@ -20467,9 +20498,11 @@ ul:not([class]) li {
   font-weight: 500;
 }
 .solution-subpage-slide-description {
-  font-size: 4vw;
   margin-bottom: 7.66vw;
   font-weight: normal;
+  font-size: 16px;
+  line-height: 1.29;
+  letter-spacing: 0.6px;
 }
 .solution-subpage-first-block {
   -webkit-flex-direction: column;
