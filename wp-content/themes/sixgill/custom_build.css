@@ -16439,6 +16439,7 @@ body.modal-open {
   margin-right: 1.4vw;
   float: left;
   display: inline-block;
+  line-height: 70px;
 }
 .products-third-section-left-col {
   width: 34%;
@@ -18598,6 +18599,7 @@ ul:not([class]) li {
   margin-right: 2vw;
   float: left;
   display: inline-block;
+  line-height: 11vw;
 }
 .products-third-section-text {
   padding-bottom: 57px;
