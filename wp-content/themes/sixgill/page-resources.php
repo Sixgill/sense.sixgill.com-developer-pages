@@ -15,7 +15,7 @@
 	</div>
 
 	<div class="resources-list">
-		<?php echo do_shortcode('[sdm_show_dl_from_category fancy="2" pagination="3"]');  ?>
+		<?php echo do_shortcode('[sdm_show_dl_from_category fancy="2" pagination="12"]');  ?>
 	</div>
 
 	<?php get_footer(); ?>
