@@ -1,20 +1,21 @@
 <?php get_header(); ?>
-<div> <!-- fullpage wrapper placeholder -->
-	<iframe id="frame1" class="hidden"></iframe>
-	<a name="top"></a>
-	<section id="slider" class="slider-parallax swiper_wrapper swiper_wrapper_small clearfix resource-header">
-		<h1 class="single-post-title">
-			RESOURCES
+<div class="resources-list-page-wrapper"> <!-- fullpage wrapper placeholder -->
+	<div
+		class="resources-list-header responsive-background"
+		desktop-src="<?php the_field("header_image_desktop"); ?>"
+		tablet-src="<?php the_field("header_image_tablet"); ?>"
+		mobile-src="<?php the_field("header_image_mobile"); ?>"
+	>
+		<h1 class="resources-list-header-title">
+			<?php the_field("title"); ?>
 		</h1>
-	</section><!-- Content-->
+		<h2 class="resources-list-header-subtitle">
+			<?php the_field("subtitle"); ?>
+		</h2>
+	</div>
 
-	<section id="content" class="section-margin-fix">
+	<div class="resources-list">
+		<?php echo do_shortcode('[sdm_show_dl_from_category fancy="2" pagination="3"]');  ?>
+	</div>
 
-		<div class="content-wrap resources-container resources-background">
-			<div class="resources-blocks-container">
-				<?php echo do_shortcode('[sdm_show_dl_from_category category_slug="resources" fancy="2"]'); ?>
-			</div>
-		</div>
-
-	</section><!-- #content end -->
 	<?php get_footer(); ?>

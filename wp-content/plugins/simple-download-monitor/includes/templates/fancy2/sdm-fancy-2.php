@@ -82,66 +82,42 @@ function sdm_generate_fancy2_display_output($args) {
 
 		$main_opts = get_option('sdm_downloads_options');
 
-    //See if new window parameter is seet
-    $window_target = '';
-    if (isset($args['new_window']) && $args['new_window'] == '1') {
-        $window_target = 'target="_blank"';
-    }
-
-    //Get the download button text
-    $button_text = isset($args['button_text']) ? $args['button_text'] : '';
-    if (empty($button_text)) {//Use the default text for the button
-        $button_text_string = __('Download Now!', 'simple-download-monitor');
-    } else {//Use the custom text
-        $button_text_string = $button_text;
-    }
     $homepage = get_bloginfo('url');
     $download_url = $homepage . '/?smd_process_download=1&download_id=' . $id;
-    $download_button_code = '<a href="' . $download_url . '" class="sdm_fancy2_download" ' . $window_target . '>' . $button_text_string . '</a>';
-
-    // Check to see if the download link cpt is password protected
-    $get_cpt_object = get_post($id);
-    $cpt_is_password = !empty($get_cpt_object->post_password) ? 'yes' : 'no';  // yes = download is password protected;
-    if ($cpt_is_password !== 'no') {//This is a password protected download so replace the download now button with password requirement
-        $download_button_code = sdm_get_password_entry_form($id);
-    }
 
     // Get item permalink
     $permalink = get_permalink($id);
 
     // Get item thumbnail
     $item_download_thumbnail = get_post_meta($id, 'sdm_upload_thumbnail', true);
-		$item_download_imagemode = get_post_meta($id, 'sdm_upload_imagemode', true);
-		$item_download_imagemode = isset($item_download_imagemode) ? $item_download_imagemode : 'crop';
-    $isset_download_thumbnail = isset($item_download_thumbnail) && !empty($item_download_thumbnail) ? '<img class="sdm_fancy2_thumb_image" src="' . $item_download_thumbnail . '" />' : '';
+		/*$item_download_imagemode = get_post_meta($id, 'sdm_upload_imagemode', true);*/
+		$item_category = wp_get_post_terms($id, 'sdm_categories')[0]->name;
+		$item_permalink = get_permalink($id);
 
     // Get item title
     $item_title = get_the_title($id);
     $isset_item_title = isset($item_title) && !empty($item_title) ? $item_title : '';
+		$item_thumbnail_image_desktop = get_field('thumbnail_image_desktop', $id);
+		$item_thumbnail_image_tablet = get_field('thumbnail_image_tablet', $id);
+		$item_thumbnail_image_mobile = get_field('thumbnail_image_mobile', $id);
 
-    // Get item description
-    $isset_item_description = sdm_get_item_description_output($id);
-
-    $css_class = isset($args['css_class']) ? $args['css_class'] : '';
-
-
-    $color_opt = $main_opts['download_button_color'];
-
-		$output = '<div class="resource-block">';
-			$output .= '<div class="resource-block-part resource-image-container resource-image-container-'.$item_download_imagemode.'"';
-			$output .= 'style="background: url(\''.$item_download_thumbnail.'\');">';
-			$output .= '</div>';
-			$output .= '<div class="resource-block-part resource-title">';
-				$output .= '<div class="vertical-centered">';
-					$output .= $isset_item_title;
+		$output  = '<a href="'.$item_permalink.'" class="resources-list-card-link">';
+			$output .= '<div class="resources-list-card">';
+				$output .= '<div class="resources-list-card-image responsive-background" ';
+				$output .= 'desktop-src="'.$item_thumbnail_image_desktop.'" ';
+				$output .= 'tablet-src="'.$item_thumbnail_image_tablet.'" ';
+				$output .= 'mobile-src="'.$item_thumbnail_image_mobile.'" >';
+				$output .= '</div>';
+				$output .= '<div class="resources-list-card-info">';
+					$output .= '<div class="resources-list-card-category">';
+						$output .= $item_category;
+					$output .= '</div>';
+					$output .= '<div class="resources-list-card-title ellipsis-3lines">';
+						$output .= $isset_item_title;
+					$output .= '</div>';
 				$output .= '</div>';
 			$output .= '</div>';
-			$output .= '<div data-permalink="'.$download_url.'" class="resource-block-part resource-link-container">';
-				$output .= '<div class="vertical-centered">';
-					$output .= '<a class="resource-link" href="#" data-toggle="modal" data-target="#myResource">Click to download</a>';
-				$output .= '</div>';
-			$output .= '</div>';
-		$output .= '</div>';
+		$output .= '</a>';
 
     return $output;
 }

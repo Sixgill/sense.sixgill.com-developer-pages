@@ -138,11 +138,11 @@ function sdm_handle_category_shortcode($args) {
     $terms = '';
 
     // If category slug and category id are empty.. return error
-    if (empty($category_slug) && empty($category_id)) {
+    /*if (empty($category_slug) && empty($category_id)) {
         return '<p style="color: red;">' . __('Error! You must enter a category slug OR a category id with this shortcode. Refer to the documentation for usage instructions.', 'simple-download-monitor') . '</p>';
-    }
+    }*/
     // Else if both category slug AND category id are defined... return error
-    else if (!empty($category_slug) && !empty($category_id)) {
+    /*else*/ if (!empty($category_slug) && !empty($category_id)) {
         return '<p style="color: red;">' . __('Error! Please enter a category slug OR id; not both.', 'simple-download-monitor') . '</p>';
     }
     // Else setup query arguments for category_slug
@@ -175,13 +175,13 @@ function sdm_handle_category_shortcode($args) {
         'post_type' => 'sdm_downloads',
         'show_posts' => -1,
         'posts_per_page' => $posts_per_page,
-        'tax_query' => array(
+        /*'tax_query' => array(
             array(
                 'taxonomy' => 'sdm_categories',
                 'field' => $field,
                 'terms' => $terms
             )
-        ),
+        ),*/
         'orderby' => $orderby,
 	'order' => $order,
         'paged' => $paged,
@@ -258,16 +258,16 @@ function sdm_handle_category_shortcode($args) {
             $total_pages = ceil($published_sdm_posts / $posts_per_page);
 
             $big = 999999999; // Need an unlikely integer
-            $pagination = paginate_links( array(
-			'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-			'format'       => '',
-			'add_args'     => '',
-			'current'      => max( 1, get_query_var( 'paged' ) ),
-			'total'        => $total_pages,
-			'prev_text'    => '&larr;',
-			'next_text'    => '&rarr;',
-		) );
-            $output .= '<div class="sdm_pagination">'.$pagination.'</div>';
+						$pagination = paginate_links( array(
+							'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+							'format'       => '',
+							'add_args'     => '',
+							'current'      => max( 1, get_query_var( 'paged' ) ),
+							'total'        => $total_pages,
+							'prev_text'    => '',
+							'next_text'    => '',
+						) );
+            $output .= '<div class="resources-list-pagination">'.$pagination.'</div>';
         }
 
         // Return results

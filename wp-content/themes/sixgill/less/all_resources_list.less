@@ -1,0 +1,152 @@
+.resources-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	&-header {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		&-title {
+			line-height: 1.1em;
+			font-family: "Lato";
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			letter-spacing: 0.8px;
+			text-align: center;
+			color: #4ddb5a;
+		}
+
+		&-subtitle {
+			line-height: 1.1em;
+			font-family: "Lato";
+			font-weight: 300;
+			font-style: normal;
+			font-stretch: normal;
+			letter-spacing: 1.8px;
+			text-align: center;
+			color: #f9f8f8;
+			margin-bottom: 0px;
+		}
+	}
+
+	&-card {
+		width: 100%;
+		box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.08);
+		display: flex;
+		flex-direction: column;
+
+		&-link {
+			display: inline-block;
+		}
+
+		&-image {
+			background-size: cover;
+			display: inline-block;
+			width: 100%;
+		}
+
+		&-info {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			width: 78.5%;
+			align-self: center;
+		}
+
+		&-category {
+			font-family: "Lato";
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1em;
+			letter-spacing: 0.4px;
+			text-align: left;
+			color: #5cc468;
+		}
+
+		&-title {
+			font-family: "Lato";
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			letter-spacing: 0.5px;
+			text-align: left;
+			color: #2e2e2e;
+		}
+	}
+
+	&-pagination {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		white-space: nowrap;
+
+		.page-numbers {
+			color: #2e2e2e;
+			vertical-align: middle;
+			text-decoration: none;
+		}
+
+		a.prev {
+			display: inline-block;
+			background-image: url("images/blog/iconArrowCirclePrevious-Default.svg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+			padding: 0;
+			transform:none;
+
+			&:hover {
+				background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
+				transform:scaleX(-1);
+			}
+
+			&:after {
+				content: url("images/blog/iconArrowCircleNext-Hover.svg");
+				display: none;
+			}
+		}
+
+
+
+		a.next {
+			display: inline-block;
+			background-image: url("images/blog/iconArrowCirclePrevious-Default.svg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+			padding: 0;
+			transform:scaleX(-1);
+
+			&:hover {
+				background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
+				transform: none;
+			}
+
+			&:after {
+				content: url("images/blog/iconArrowCircleNext-Hover.svg");
+				display: none;
+			}
+		}
+
+
+
+		.current {
+			color: #0051c6;
+			text-decoration: underline;
+		}
+	}
+}
