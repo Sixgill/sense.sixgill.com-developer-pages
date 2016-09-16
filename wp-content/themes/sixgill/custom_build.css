@@ -19377,6 +19377,12 @@ ul:not([class]) li {
 .home-second-section-subtitle {
   font-size: 4vw;
 }
+.home-second-section-block-title {
+  font-size: 5vw;
+}
+.home-second-section-block-content p {
+  font-size: 5vw;
+}
 
 /* Solutions mobile portrait styles */
 .solution-subpage-container {
@@ -19608,6 +19614,12 @@ ul:not([class]) li {
   font-size: 5.3vw;
 }
 .home-second-section-subtitle {
+  font-size: 4vw;
+}
+.home-second-section-block-title {
+  font-size: 4vw;
+}
+.home-second-section-block-content p {
   font-size: 4vw;
 }
 
@@ -20263,6 +20275,7 @@ ul:not([class]) li {
 .home-second-section-header-top-title {
   white-space: nowrap;
   margin: 0px 8px 0px 8px;
+  text-transform: uppercase;
 }
 .home-second-section-title {
   text-align: center;
