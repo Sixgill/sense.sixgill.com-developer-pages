@@ -1,5 +1,10 @@
 .resources-list {
 	margin: 30.5px 3.3vw 30.5px 3.3vw;
+	min-height: calc(~"100vh - 600px");
+
+	&-page-wrapper .footer {
+		margin-top: 0px !important;
+	}
 
 	&-header {
 		min-height: 263.5px;
@@ -19,16 +24,19 @@
 		margin-bottom: 25.5px;
 
 		&-link {
-			width: 48.8%;
+			width: calc(~"50% - 2.27vw");
 
+			&:nth-child(2n) {
+				margin-right: 2.27vw;
+			}
 		}
 
 		&-image {
-			height: 187px;
+			height: 24.35vw;
 		}
 
 		&-info {
-			height: 143px;
+			height: 18.62vw;
 		}
 
 		&-category {
@@ -40,6 +48,17 @@
 		&-title {
 			font-size: 19px;
 			letter-spacing: 0.5px;
+		}
+	}
+
+	&-pagination {
+		margin-top: 2px;
+		align-self: flex-end;
+
+		.page-numbers {
+			font-size: 16px;
+			line-height: 0.53;
+			padding: 0 26px;
 		}
 	}
 }

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div> <!-- fullpage wrapper placeholder -->
+<div class="resources-list-page-wrapper"> <!-- fullpage wrapper placeholder -->
 	<div
 		class="resources-list-header responsive-background"
 		desktop-src="<?php the_field("header_image_desktop"); ?>"
@@ -15,7 +15,7 @@
 	</div>
 
 	<div class="resources-list">
-		<?php echo do_shortcode('[sdm_show_dl_from_category fancy="2"]'); /*pagination="3"*/ ?>
+		<?php echo do_shortcode('[sdm_show_dl_from_category fancy="2" pagination="3"]');  ?>
 	</div>
 
 	<?php get_footer(); ?>

@@ -258,16 +258,16 @@ function sdm_handle_category_shortcode($args) {
             $total_pages = ceil($published_sdm_posts / $posts_per_page);
 
             $big = 999999999; // Need an unlikely integer
-            $pagination = paginate_links( array(
-			'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-			'format'       => '',
-			'add_args'     => '',
-			'current'      => max( 1, get_query_var( 'paged' ) ),
-			'total'        => $total_pages,
-			'prev_text'    => '&larr;',
-			'next_text'    => '&rarr;',
-		) );
-            $output .= '<div class="sdm_pagination">'.$pagination.'</div>';
+						$pagination = paginate_links( array(
+							'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+							'format'       => '',
+							'add_args'     => '',
+							'current'      => max( 1, get_query_var( 'paged' ) ),
+							'total'        => $total_pages,
+							'prev_text'    => '',
+							'next_text'    => '',
+						) );
+            $output .= '<div class="resources-list-pagination">'.$pagination.'</div>';
         }
 
         // Return results
