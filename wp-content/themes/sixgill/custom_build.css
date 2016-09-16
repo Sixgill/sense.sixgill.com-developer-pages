@@ -12250,6 +12250,7 @@ footer .footer-subscribe-error-close {
   font-size: 15px;
 }
 footer .footer-subscribe-error p {
+  line-height: 19px;
   text-align: center;
   margin-left: 10px;
   margin-bottom: 0;

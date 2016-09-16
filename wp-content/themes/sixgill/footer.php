@@ -45,7 +45,7 @@
 				  <p class="footer-subscribe-error-text">
 				  </p>
 				  <p class="footer-subscribe-error-close">
-				    X
+				    &#88;
 				  </p>
 				</div>
 				  <div class="footer-subscribe-arrow">
