@@ -14067,15 +14067,6 @@ footer div.mc4wp-error p {
   -webkit-transform: none;
           transform: none;
 }
-.resources-list-pagination a.prev:hover {
-  background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-.resources-list-pagination a.prev:after {
-  content: url("images/blog/iconArrowCircleNext-Hover.svg");
-  display: none;
-}
 .resources-list-pagination a.next {
   display: inline-block;
   background-image: url("images/blog/iconArrowCirclePrevious-Default.svg");
@@ -14087,15 +14078,6 @@ footer div.mc4wp-error p {
   padding: 0;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
-}
-.resources-list-pagination a.next:hover {
-  background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
-  -webkit-transform: none;
-          transform: none;
-}
-.resources-list-pagination a.next:after {
-  content: url("images/blog/iconArrowCircleNext-Hover.svg");
-  display: none;
 }
 .resources-list-pagination .current {
   color: #0051c6;
@@ -16093,6 +16075,24 @@ body.modal-open {
   font-size: 16px;
   line-height: 0.53;
   padding: 0 26px;
+}
+.resources-list-pagination a.prev:hover {
+  background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.resources-list-pagination a.prev:after {
+  content: url("images/blog/iconArrowCircleNext-Hover.svg");
+  display: none;
+}
+.resources-list-pagination a.next:hover {
+  background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
+  -webkit-transform: none;
+          transform: none;
+}
+.resources-list-pagination a.next:after {
+  content: url("images/blog/iconArrowCircleNext-Hover.svg");
+  display: none;
 }
 
 
