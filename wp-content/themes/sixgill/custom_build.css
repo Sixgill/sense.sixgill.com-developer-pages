@@ -13424,11 +13424,19 @@ footer div.mc4wp-error p {
   font-family: "Lato";
   color: #0051c6;
 }
+.solutions-second-section-icons-block {
+  text-align: center;
+  margin: 30px auto 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
 .solutions-second-section-icons-title {
   font-family: "Lato";
   text-align: center;
   color: #2e2e2e;
   display: inline-block;
+  position: relative;
 }
 .solutions-second-section-icons-title:before,
 .solutions-second-section-icons-title:after {
@@ -13437,23 +13445,17 @@ footer div.mc4wp-error p {
   display: inline-block;
   height: 2px;
   opacity: 0.1;
-  vertical-align: 0.3em;
-  position: relative;
-  width: 20vw;
+  position: absolute;
+  width: 30vw;
+  white-space: nowrap;
 }
 .solutions-second-section-icons-title:after {
-  left: 1vw;
+  left: 14em;
+  top: 1.4em;
 }
 .solutions-second-section-icons-title:before {
-  right: 1vw;
-}
-.solutions-second-section-icons-block {
-  text-align: center;
-  width: 950px;
-  margin: 30px auto 0;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
+  right: 14em;
+  top: 1.4em;
 }
 .solutions-third-section {
   background-image: url('/wp-content/themes/sixgill/images/solutions/assetsBg-desktop@1x.png');
@@ -15769,6 +15771,9 @@ body.modal-open {
 .solutions-second-section-icon-item {
   padding: 1vw 4vw;
 }
+.solutions-second-section-icons-block {
+  width: 67vw;
+}
 .solutions-second-section-block-title,
 .solutions-second-section-icons-title {
   margin: 0;
@@ -15780,16 +15785,6 @@ body.modal-open {
   line-height: 2.83;
   letter-spacing: 0.5px;
   padding: 0 26px;
-}
-.solutions-second-section-icons-title:before,
-.solutions-second-section-icons-title:after {
-  content: "";
-  display: inline-block;
-  height: 2px;
-  opacity: 0.1;
-  vertical-align: 0.3em;
-  position: relative;
-  width: 20vw;
 }
 .solutions-third-section-block {
   padding-top: 70px;
@@ -17963,22 +17958,15 @@ body.modal-open {
   min-height: 100vh;
   height: inherit;
 }
+.solutions-second-section-icons-block {
+  width: 92vw;
+}
 .solutions-second-section-icons-title {
   font-size: 16px;
   font-weight: 700;
   line-height: 2.83;
   letter-spacing: 0.5px;
   padding: 0 26px;
-}
-.solutions-second-section-icons-title:before,
-.solutions-second-section-icons-title:after {
-  content: "";
-  display: inline-block;
-  height: 2px;
-  opacity: 0.1;
-  vertical-align: 0.3em;
-  position: relative;
-  width: 13vw;
 }
 .solutions-second-section-block {
   min-height: inherit;
