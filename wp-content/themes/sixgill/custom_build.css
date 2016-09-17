@@ -15055,12 +15055,25 @@ body.modal-open {
   letter-spacing: 0.5px;
 }
 .blog-post-content h1,
-.blog-post-content h2,
-.blog-post-content h3,
-.blog-post-content h4,
-.blog-post-content h5,
+.blog-post-content h2 {
+  font-size: 60px !important;
+  /*45pt*/
+}
+.blog-post-content h3 {
+  font-size: 47px !important;
+  /*35pt*/
+}
+.blog-post-content h4 {
+  font-size: 40px !important;
+  /*30pt*/
+}
+.blog-post-content h5 {
+  font-size: 33px !important;
+  /*25pt*/
+}
 .blog-post-content h6 {
-  font-size: 44.6px !important;
+  font-size: 33px !important;
+  /*25pt*/
   letter-spacing: 1.3px !important;
 }
 .blog-post-content-wrapper {
@@ -17384,9 +17397,27 @@ body.modal-open {
   line-height: 21.6px;
   letter-spacing: 0.5px;
 }
+.blog-post-content-wrapper h1,
 .blog-post-content-wrapper h2 {
-  font-size: 35px;
-  letter-spacing: 1.1px;
+  font-size: 60px !important;
+  /*45pt*/
+}
+.blog-post-content-wrapper h3 {
+  font-size: 47px !important;
+  /*35pt*/
+}
+.blog-post-content-wrapper h4 {
+  font-size: 40px !important;
+  /*30pt*/
+}
+.blog-post-content-wrapper h5 {
+  font-size: 33px !important;
+  /*25pt*/
+}
+.blog-post-content-wrapper h6 {
+  font-size: 33px !important;
+  /*25pt*/
+  letter-spacing: 1.3px !important;
 }
 
 /* Company tablet styles */
@@ -20002,10 +20033,26 @@ ul:not([class]) li {
   line-height: 21.6px;
   letter-spacing: 0.5px;
 }
+.blog-post-content-wrapper h1,
 .blog-post-content-wrapper h2 {
-  font-size: 28.4px;
-  line-height: 20.3px;
-  letter-spacing: 0.9px;
+  font-size: 37px !important;
+  /*28pt*/
+}
+.blog-post-content-wrapper h3 {
+  font-size: 31px !important;
+  /*23pt*/
+}
+.blog-post-content-wrapper h4 {
+  font-size: 27px !important;
+  /*20pt*/
+}
+.blog-post-content-wrapper h5 {
+  font-size: 24px !important;
+  /*18pt*/
+}
+.blog-post-content-wrapper h6 {
+  font-size: 24px !important;
+  /*18pt*/
 }
 
 /* Company tablet styles */
