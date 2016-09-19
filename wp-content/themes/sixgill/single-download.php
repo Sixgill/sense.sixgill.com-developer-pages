@@ -19,4 +19,35 @@
 	</h2>
 </div>
 
+<div class="resource-details">
+	<div class="resource-details-col-left">
+		<div class="resource-details-preview">
+			<?php the_field("resource_preview"); ?>
+		</div>
+		<div class="resource-details-preview-download-tip">
+			DOWNLOAD THE WEBINAR TO GET FULL ACCESS
+		</div>
+	</div>
+
+	<div class="resource-details-col-right">
+		<div class="resource-details-download-form">
+			<div class="resource-details-download-form-header">
+				DOWNLOAD THE WEBINAR
+			</div>
+			<div class="resource-details-download-form-wrapper">
+				<?php dynamic_sidebar( 'download-access' ); ?>
+			</div>
+		</div>
+
+		<div class="resource-details-share">
+			<div class="resource-details-share-header">
+				SHARE THIS WEBINAR
+			</div>
+			<div class="resource-details-share-wrapper">
+				<!-- TODO: insert share buttons -->
+			</div>
+		</div>
+	</div>
+</div>
+
 <?php endwhile; // end of the loop. ?>
