@@ -38,6 +38,7 @@
 
 	&-first-section {
 		background-image: url('images/solutions/featBg-mobile@1x.png');
+		min-height: inherit;
 
 		&-block {
 			width: 100%;
@@ -52,7 +53,7 @@
 				font-family: "Lato";
 				letter-spacing: 1.5px;
 				line-height: 1em;
-				margin-bottom: 27px;
+				margin-bottom: 14px;
 				text-transform: uppercase;
 			}
 
@@ -65,11 +66,13 @@
 			&-paragraph {
 				&, & p, & li{
 					font-size: 16px;
-					font-weight: 400;
+					font-weight: 10;
 				}
 
 				& p {
-					margin-bottom: 0px;
+					margin-bottom: 30px;
+					line-height: 1.83;
+					letter-spacing: 0.5px;
 				}
 			}
 
@@ -136,6 +139,12 @@
 			text-align: center;
 			margin-bottom: 0px;
 		}
+
+		&-block-paragraph p{
+			font-size: 15.9px;
+			line-height: 1.33;
+			letter-spacing: 0.5px;
+		}
 	}
 
 	&-third-section {
@@ -167,6 +176,16 @@
 			    padding: 16px;
 			    width: 100%;
 			}
+
+			& .solutions-icon-caption {
+				color:#fff;
+			}
+		}
+
+		&-icons-title {
+			font-size: 16px;
+			line-height: 2.83;
+			letter-spacing: 0.5px;
 		}
 
 		&-icons-title::after, &-icons-title::before {

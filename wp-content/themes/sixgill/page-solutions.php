@@ -120,21 +120,24 @@
 	<a name="assets"></a>
 	<div id="assets" class="solutions-section solutions-third-section">
 		<div class="solutions-third-section-block">
-			<div class="solutions-third-section-image-wrapper">
-				<img
-					class="solutions-third-section-image responsive-image"
-					desktop-src="<?php echo get_field('assets_section_image_desktop'); ?>"
-					tablet-src="<?php echo get_field('assets_section_image_tablet'); ?>"
-				>
-			</div>
-			<div class="solutions-third-section-block-text">
-				<h1 class="solutions-third-section-block-title">
-					<?php echo get_field('assets_section_header'); ?>
-				</h1>
-				<div class="solutions-third-section-block-paragraph">
-					<?php echo get_field('assets_section_text'); ?>
+			<div class="solutions-third-section-text-block">
+				<div class="solutions-third-section-image-wrapper">
+					<img
+						class="solutions-third-section-image responsive-image"
+						desktop-src="<?php echo get_field('assets_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('assets_section_image_tablet'); ?>"
+					>
 				</div>
-			</div>
+				<div class="solutions-third-section-block-text">
+					<h1 class="solutions-third-section-block-title">
+						<?php echo get_field('assets_section_header'); ?>
+					</h1>
+					<div class="solutions-third-section-block-paragraph">
+						<?php echo get_field('assets_section_text'); ?>
+					</div>
+				</div>
+			</div>			
+
 			<?php
 			global $subpages;
 
