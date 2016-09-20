@@ -6428,6 +6428,10 @@ jQuery(function($) {
  		submittedFlag = true;
 		watchSuccess();
 	});
+
+	$(".js-share-link-input").on("click", function () {
+		$(this).select();
+	});
 });
 
 jQuery(function($) {
@@ -6951,11 +6955,14 @@ $(function() {
 
 
   $(window).on('scroll', function() {
-    if($(this).scrollTop() >= topPosition){
-        changePanelPosition(true);
+    var startPosition = $('#products-third-section').offset().top - 90;
+    console.log(startPosition);
+    if ($(window).scrollTop() >= startPosition) {
+       changePanelPosition(true);
     } else {
-      changePanelPosition(false);
+       changePanelPosition(false);
     }
+
   });
   $(window).on('resize', function() {
     topPosition = panelDOMLink.position().top;

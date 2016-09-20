@@ -14105,6 +14105,9 @@ footer div.mc4wp-error p {
   display: -ms-flexbox;
   display: flex;
 }
+.resource-details-col-right {
+  width: 290px;
+}
 .resource-details-preview {
   position: relative;
 }
@@ -14113,7 +14116,7 @@ footer div.mc4wp-error p {
   bottom: 0;
   width: 100%;
   content: "";
-  background: linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 30%);
+  background: linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 40%);
   pointer-events: none;
 }
 .resource-details-preview-download-tip {
@@ -14150,9 +14153,67 @@ footer div.mc4wp-error p {
 .resource-details-download-form-wrapper {
   width: 100%;
 }
+.resource-details-download-form-wrapper form {
+  margin-bottom: 0px;
+}
 .resource-details-download-form-input {
   height: 43px;
   margin-bottom: 7.5px;
+  position: relative;
+  width: 270px;
+  background-color: #ffffff;
+  border: solid 1px #dfdfdf;
+  color: #2e2e2e;
+  font-size: 14px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  font-family: 'Lato';
+  padding: 0px 0px 0px 12.5px;
+}
+.resource-details-download-form-input:valid,
+.resource-details-download-form-input:focus {
+  z-index: inherit;
+  padding-top: 21px;
+  padding-bottom: 9px;
+  line-height: 1em;
+  color: #2e2e2e;
+}
+.resource-details-download-form-input-wrapper {
+  position: relative;
+}
+.resource-details-download-form-input-label {
+  position: absolute;
+  left: 12.5px;
+  top: calc(50% - 0.9em);
+  z-index: 2;
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  color: #999999;
+  transition: all 0.15s ease;
+}
+.resource-details-download-form-input:valid + .resource-details-download-form-input-label,
+.resource-details-download-form-input:focus + .resource-details-download-form-input-label {
+  top: 9px;
+  left: 13.5px;
+  font-size: 8px;
+  letter-spacing: 0.6px;
+}
+.resource-details-download-form-submit-button {
+  width: 100%;
+  height: 43px;
+  background-color: #0044a5;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 43px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
 }
 .resource-details-share {
   width: 100%;
@@ -16242,9 +16303,6 @@ body.modal-open {
 .resource-details-col-left {
   width: calc(100% - 332.5px);
 }
-.resource-details-col-right {
-  width: 290px;
-}
 .resource-details-preview {
   font-size: 16px;
   letter-spacing: 0.5px;
@@ -16266,6 +16324,9 @@ body.modal-open {
           justify-content: center;
   height: 74px;
 }
+.resource-details-download-form {
+  margin-bottom: 20.5px;
+}
 .resource-details-download-form-header {
   font-size: 16px;
   letter-spacing: 1.1px;
@@ -16273,6 +16334,9 @@ body.modal-open {
 }
 .resource-details-download-form-wrapper {
   padding: 12.5px 10px 12.5px 10px;
+}
+.resource-details-share {
+  margin-bottom: 20.5px;
 }
 .resource-details-share-header {
   font-size: 16px;
