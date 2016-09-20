@@ -6396,35 +6396,30 @@ jQuery(function() {
 });
 
 jQuery(function($) {
-	$('.resource-link-container').click(function() {
-		window.currentDownloadLink = $(this).attr('data-permalink');
-	});
-
-	var submittedFlag = false;
+	var submittedFlag = false,
+			formContainerClassSelector = '.resource-details-download-form-wrapper',
+			formSelector = formContainerClassSelector + ' .mc4wp-form',
+			successMessageSelector = formContainerClassSelector + ' .mc4wp-success',
+			noticeMessageSelector = formContainerClassSelector + ' .mc4wp-notice',
+			errorMessageSelector = formContainerClassSelector + ' .mc4wp-error',
+			downloadLink = $('resource-details').attr('data-download-link');
 
 	function watchSuccess() {
-		console.log('watchSuccess()');
-		var successMessageContainer = $('div[aria-labelledby="resourcesModalLabel"] .mc4wp-success');
-		var errorMessageContainer = $('.mc4wp-notice, .mc4wp-error');
+		var successMessageContainer = $(successMessageSelector);
+		var errorMessageContainer = $(noticeMessageSelector + ', ' + errorMessageSelector);
 		if(successMessageContainer.length) {
-			console.log('successMessage');
-			$('div[aria-labelledby="resourcesModalLabel"] button.close').trigger('click');
-			window.open(window.currentDownloadLink, "_self");
-			successMessageContainer.remove();
+			window.open(downloadLink, "_self");
 		}
 
-
-
-		if(successMessageContainer.length || errorMessageContainer.length) {
+		if (successMessageContainer.length || errorMessageContainer.length) {
 			submittedFlag = false;
 			return;
 		}
 		setTimeout(watchSuccess, 200);
 	}
 
-	$('div[aria-labelledby="resourcesModalLabel"] .mc4wp-form').on('submit', function() {
+	$(formSelector).on('submit', function() {
 		if(submittedFlag) return;
-		$('div[aria-labelledby="resourcesModalLabel"] .mc4wp-notice, div[aria-labelledby="resourcesModalLabel"]  .mc4wp-error').remove();
  		submittedFlag = true;
 		watchSuccess();
 	});
