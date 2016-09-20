@@ -131,6 +131,8 @@
 			letter-spacing: 1px;
 			text-align: center;
 			color: #ffffff;
+			border: 0px;
+			outline: 0px;
 		}
 	}
 
@@ -144,6 +146,22 @@
 
 		&-wrapper {
 			width: 100%;
+		}
+
+		div&-buttons {
+			position: relative;
+			left: inherit;
+			top: inherit;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			.social-buttons-link {
+				width: 49.4px;
+				height: 33.1px;
+				margin: 0px;
+			}
 		}
 	}
 
