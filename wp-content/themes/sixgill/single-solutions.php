@@ -14,8 +14,8 @@
 			</div>
 		</div>
 	</section>
-
-	<section id="content">
+<!-- 	there was id="content", i removed this because it was adding a styles to a p tag, that we don't need, and this id are not used anywhere -->
+	<section>
 
 		<div class="solution-subpage-first-block">
 			<div class="first-left-container-subpage fleft full-height-container-subpage">
@@ -140,7 +140,7 @@
 		?>
 
 			<div class="full-width center">
-				<div class="solution-subpage-section-title">
+				<div class="solution-subpage-section-title solution-use-cases-title">
 					Additional Use Case<?php
 						if($bothUseCasesFlag) {
 							echo "s";
