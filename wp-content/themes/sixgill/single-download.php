@@ -24,13 +24,12 @@
 	$downloadID = $downloadFileInfo['id'];
 	$downloadKey = md5(md5($downloadFileInfo['name']));
 	$downloadLink = '/download/?id=' . $downloadID . '&key=' . $downloadKey;
-	echo '<iframe id="resource-download-frame" class="hidden" data-src="' . $downloadLink . '"></iframe>';
 ?>
 
 
 
 
-<div class="resource-details">
+<div class="resource-details" data-download-link="<?php echo $downloadLink; ?>">
 	<div class="resource-details-col-left">
 		<div class="resource-details-preview">
 			<?php the_field("resource_preview"); ?>

@@ -14157,10 +14157,10 @@ footer div.mc4wp-error p {
   margin-bottom: 0px;
 }
 .resource-details-download-form-input {
+  width: 100%;
   height: 43px;
   margin-bottom: 7.5px;
   position: relative;
-  width: 270px;
   background-color: #ffffff;
   border: solid 1px #dfdfdf;
   color: #2e2e2e;
@@ -14194,6 +14194,7 @@ footer div.mc4wp-error p {
   letter-spacing: 1px;
   color: #999999;
   transition: all 0.15s ease;
+  pointer-events: none;
 }
 .resource-details-download-form-input:valid + .resource-details-download-form-input-label,
 .resource-details-download-form-input:focus + .resource-details-download-form-input-label {
@@ -14258,8 +14259,8 @@ div.resource-details-share-buttons {
           justify-content: space-between;
 }
 div.resource-details-share-buttons .social-buttons-link {
-  width: 49.4px;
-  height: 33.1px;
+  width: 20.32%;
+  height: auto;
   margin: 0px;
 }
 
@@ -16980,6 +16981,7 @@ body.modal-open {
   margin-right: 1.4vw;
   float: left;
   display: inline-block;
+  line-height: 5vw;
 }
 .products-fourth-section-left-col {
   width: 59%;
@@ -17045,6 +17047,7 @@ body.modal-open {
   margin-right: 1.4vw;
   float: left;
   display: inline-block;
+  line-height: 5.3vw;
 }
 .products-fifth-section-text,
 .products-fifth-section-text p,
@@ -18682,6 +18685,64 @@ ul:not([class]) li {
   padding: 0 26px;
 }
 
+.resource-details {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 51px;
+}
+.resource-details-col-left {
+  width: calc(100% - 319px);
+}
+.resource-details-preview {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.resource-details-preview:after {
+  height: 100%;
+}
+.resource-details-preview-download-tip {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 74px;
+}
+.resource-details-download-form {
+  margin-bottom: 20.5px;
+}
+.resource-details-download-form-header {
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  height: 35px;
+}
+.resource-details-download-form-wrapper {
+  padding: 12.5px 10px 12.5px 10px;
+}
+.resource-details-share {
+  margin-bottom: 20.5px;
+}
+.resource-details-share-header {
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  height: 35px;
+}
+.resource-details-share-wrapper {
+  padding: 16px 22px 16px 22px;
+}
 
 /* Tech tablet styles */
 .tech-learn-more-link {
@@ -19282,6 +19343,7 @@ ul:not([class]) li {
   margin-right: 1.4vw;
   float: left;
   display: inline-block;
+  line-height: 9vw;
 }
 .products-fifth-section-left-col {
   display: -webkit-flex;
@@ -21232,6 +21294,62 @@ ul:not([class]) li {
   padding: 0 20px;
 }
 
+.resource-details {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 31.5px 23px 36.5px 23px;
+}
+.resource-details-col-left,
+.resource-details-col-right {
+  width: 100%;
+}
+.resource-details-preview {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.resource-details-preview:after {
+  height: 100%;
+}
+.resource-details-preview-download-tip {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 74px;
+}
+.resource-details-download-form {
+  margin-bottom: 20.5px;
+}
+.resource-details-download-form-header {
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  height: 35px;
+}
+.resource-details-download-form-wrapper {
+  padding: 12.5px 10px 12.5px 10px;
+}
+.resource-details-share {
+  margin-bottom: 20.5px;
+}
+.resource-details-share-header {
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  height: 35px;
+}
+.resource-details-share-wrapper {
+  padding: 16px 22px 16px 22px;
+}
 
 /* Tech mobile portrait and landscape styles */
 .tech .tech-learn-more-link {
