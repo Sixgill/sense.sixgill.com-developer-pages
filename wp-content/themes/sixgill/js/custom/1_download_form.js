@@ -31,4 +31,8 @@ jQuery(function($) {
  		submittedFlag = true;
 		watchSuccess();
 	});
+
+	$(".js-share-link-input").on("click", function () {
+		$(this).select();
+	});
 });
