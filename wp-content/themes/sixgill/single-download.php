@@ -19,6 +19,17 @@
 	</h2>
 </div>
 
+<?php
+	$downloadFileInfo = get_field('resource_file');
+	$downloadID = $downloadFileInfo['id'];
+	$downloadKey = md5(md5($downloadFileInfo['name']));
+	$downloadLink = '/download/?id=' . $downloadID . '&key=' . $downloadKey;
+	echo '<iframe id="resource-download-frame" class="hidden" data-src="' . $downloadLink . '"></iframe>';
+?>
+
+
+
+
 <div class="resource-details">
 	<div class="resource-details-col-left">
 		<div class="resource-details-preview">
@@ -47,6 +58,21 @@
 				<!-- TODO: insert share buttons -->
 			</div>
 		</div>
+<?php
+if(in_array('administrator',  wp_get_current_user()->roles)) {
+?>
+		<div class="resource-details-share">
+			<div class="resource-details-share-header">
+				Sharing link (Admin panel)
+			</div>
+			<div class="resource-details-share-wrapper">
+				<input class="js-share-link-input full-width" value="<?php echo get_site_url().$downloadLink; ?>">
+				You can test the download link <a href="<?php echo $downloadLink; ?>">here</a>
+			</div>
+		</div>
+<?php
+}
+?>
 	</div>
 </div>
 
