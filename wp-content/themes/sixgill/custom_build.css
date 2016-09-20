@@ -14214,6 +14214,8 @@ footer div.mc4wp-error p {
   letter-spacing: 1px;
   text-align: center;
   color: #ffffff;
+  border: 0px;
+  outline: 0px;
 }
 .resource-details-share {
   width: 100%;
@@ -14239,6 +14241,26 @@ footer div.mc4wp-error p {
 }
 .resource-details-share-wrapper {
   width: 100%;
+}
+div.resource-details-share-buttons {
+  position: relative;
+  left: inherit;
+  top: inherit;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+div.resource-details-share-buttons .social-buttons-link {
+  width: 49.4px;
+  height: 33.1px;
+  margin: 0px;
 }
 
 /* Tech Common styles */

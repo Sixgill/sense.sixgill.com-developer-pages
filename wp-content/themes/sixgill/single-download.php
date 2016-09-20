@@ -55,7 +55,11 @@
 				SHARE THIS WEBINAR
 			</div>
 			<div class="resource-details-share-wrapper">
-				<!-- TODO: insert share buttons -->
+				<?php
+					global $socialButtonsClasses;
+					$socialButtonsClasses = "resource-details-share-buttons";
+					include(locate_template('social_buttons.php'));
+				?>
 			</div>
 		</div>
 <?php
