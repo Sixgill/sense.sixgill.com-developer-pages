@@ -12207,6 +12207,9 @@ input {
   letter-spacing: 0.7px;
   color: #999999;
 }
+.footer-subscription-form-wrapper {
+  position: relative;
+}
 .footer-subscription-form-wrapper p {
   margin-bottom: 0px !important;
 }
@@ -12244,23 +12247,29 @@ input {
 }
 footer .footer-subscribe-error {
   overflow: hidden;
-  height: 20px;
-  background-color: #f26d7d;
+  text-align: center;
+  height: 31px;
   display: none;
   z-index: 2;
   position: absolute;
 }
 footer .footer-subscribe-error-close {
   background-color: #d74758;
-  height: 100%;
+  height: 20px;
   width: 20px;
   cursor: pointer;
   font-size: 15px;
+  margin-left: -1px;
+  vertical-align: top;
 }
 footer .footer-subscribe-error p {
+  position: relative;
+  height: 20px;
+  background-color: #f26d7d;
   line-height: 19px;
   text-align: center;
-  margin-left: 10px;
+  padding-left: 9px;
+  padding-right: 9px;
   margin-bottom: 0;
   display: inline-block;
   z-index: 2;
@@ -12274,8 +12283,10 @@ footer .footer-subscribe-arrow {
   z-index: 1;
   width: 15px;
   height: 15px;
-  position: absolute;
   background-color: #f26d7d;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -8px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -14762,12 +14773,12 @@ body.modal-open {
   height: 33px;
 }
 .footer-subscribe-error {
-  bottom: 93px;
-  left: 33.75vw;
+  bottom: 33px;
+  left: 0;
 }
-.footer-subscribe-arrow {
-  left: 40vw;
-  bottom: 86px;
+.footer-subscribe-error-close {
+  margin-left: -1px;
+  vertical-align: top;
 }
 
 .blog-page-header {
@@ -17215,12 +17226,12 @@ body.modal-open {
   min-height: inherit;
 }
 .footer-subscribe-error {
-  bottom: 89px;
-  left: 14vw;
+  bottom: 35px;
+  left: 24%;
 }
-.footer-subscribe-arrow {
-  left: 220px;
-  bottom: 81px;
+.footer-subscribe-error-close {
+  margin-left: -1px;
+  vertical-align: top;
 }
 
 .blog-page-header {
@@ -19848,12 +19859,12 @@ ul:not([class]) li {
   font-weight: bold;
 }
 .footer .footer-subscribe-error {
-  bottom: 220px;
-  left: 7.4vw;
+  bottom: 73px;
+  left: 10%;
 }
-.footer .footer-subscribe-arrow {
-  left: 150px;
-  bottom: 213px;
+.footer .footer-subscribe-error-close {
+  margin-left: -2px;
+  vertical-align: text-top;
 }
 .footer-icons-wrapper {
   display: block;
