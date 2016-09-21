@@ -6402,16 +6402,20 @@ jQuery(function($) {
 			successMessageSelector = formContainerClassSelector + ' .mc4wp-success',
 			noticeMessageSelector = formContainerClassSelector + ' .mc4wp-notice',
 			errorMessageSelector = formContainerClassSelector + ' .mc4wp-error',
-			downloadLink = $('resource-details').attr('data-download-link');
+			downloadLink = $('.resource-details').attr('data-download-link');
 
 	function watchSuccess() {
+		console.log('watchSuccess');
 		var successMessageContainer = $(successMessageSelector);
 		var errorMessageContainer = $(noticeMessageSelector + ', ' + errorMessageSelector);
 		if(successMessageContainer.length) {
+			console.log('successMessage');
+			console.log('downloadLink '+ downloadLink);
 			window.open(downloadLink, "_self");
 		}
 
 		if (successMessageContainer.length || errorMessageContainer.length) {
+			console.log('success or error message');
 			submittedFlag = false;
 			return;
 		}
@@ -6419,6 +6423,7 @@ jQuery(function($) {
 	}
 
 	$(formSelector).on('submit', function() {
+		console.log('download form submit');
 		if(submittedFlag) return;
  		submittedFlag = true;
 		watchSuccess();
