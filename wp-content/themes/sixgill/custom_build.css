@@ -14297,6 +14297,13 @@ div.resource-details-share-buttons .social-buttons-link {
   margin-right: 10px;
   margin-left: -20px;
 }
+.tech-section-text,
+.tech-section-text > p {
+  font-size: 16px;
+  line-height: 1.33em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
 .tech-first-section {
   position: relative;
 }
@@ -14307,6 +14314,10 @@ div.resource-details-share-buttons .social-buttons-link {
 .tech-first-section-block {
   background-color: rgba(77, 219, 90, 0.7);
 }
+.tech-first-section-block-paragraph,
+.tech-first-section-block-paragraph > p {
+  line-height: 1.8em;
+}
 .tech-first-section-block-title {
   font-family: "Lato";
   font-weight: 300;
@@ -14314,6 +14325,9 @@ div.resource-details-share-buttons .social-buttons-link {
 }
 .tech-first-section-block-subtitle {
   color: #ffffff;
+  line-height: 1.83;
+  letter-spacing: 1.1px;
+  font-size: 16px;
 }
 .tech-first-section-block-text {
   display: inline-block;
@@ -14417,6 +14431,26 @@ div.resource-details-share-buttons .social-buttons-link {
   margin-right: 10px;
   margin-left: -20px;
 }
+.products-section-title {
+  font-family: "Lato";
+  font-weight: 300;
+  color: #2adc3a;
+  text-align: left;
+}
+.products-section-subtitle {
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+.products-section-text,
+.products-section-text > p {
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
 .products-first-section-block {
   background-color: rgba(77, 219, 90, 0.7);
 }
@@ -14441,6 +14475,7 @@ div.resource-details-share-buttons .social-buttons-link {
   font-size: 16px;
   line-height: 1.8em;
   font-weight: 400;
+  letter-spacing: 0.5px;
 }
 .products-first-section-scroll-link-text {
   color: #ffffff !important;
@@ -14462,14 +14497,8 @@ div.resource-details-share-buttons .social-buttons-link {
 .products-second-section-text {
   color: #2e2e2e;
 }
-.products-third-section-title {
-  font-family: "Lato";
-  font-weight: 300;
-  color: #2adc3a;
-}
 .products-third-section-subtitle {
   color: #ffffff;
-  font-weight: 700;
 }
 .products-third-section-line {
   background-color: #526c91;
@@ -14490,8 +14519,6 @@ div.resource-details-share-buttons .social-buttons-link {
   background-repeat: repeat;
 }
 .products-fourth-section-title {
-  font-family: "Lato";
-  font-weight: 300;
   color: #2adc3a;
 }
 .products-fourth-section-subtitle {
@@ -14501,13 +14528,10 @@ div.resource-details-share-buttons .social-buttons-link {
   background-color: #ffffff;
 }
 .products-fifth-section-title {
-  font-family: "Lato";
-  font-weight: 300;
   color: #2adc3a;
 }
 .products-fifth-section-subtitle {
   color: #ffffff;
-  font-weight: 700;
 }
 .products-fifth-section-line {
   background-color: #526c91;
@@ -15572,16 +15596,18 @@ body.modal-open {
 .home-second-section-header-top-title {
   white-space: nowrap;
   margin: 0px 8px 0px 8px;
+  letter-spacing: 1.1px;
 }
 .home-second-section-title {
   font-size: 4.15vw;
   line-height: 8.67vh;
-  letter-spacing: 0.102vw;
+  letter-spacing: 1.7px;
   text-align: center;
   margin-bottom: 12px;
 }
 .home-second-section-subtitle {
   font-size: 19px;
+  letter-spacing: 0.9px;
   margin-bottom: 26px;
 }
 .home-second-section-row {
@@ -15614,6 +15640,7 @@ body.modal-open {
 .home-second-section-block-title {
   margin-top: -0.3em;
   margin-bottom: 0px;
+  letter-spacing: 0.5px;
 }
 .home-second-section-block-content {
   width: calc(100% - 5.1vw);
@@ -15695,6 +15722,7 @@ body.modal-open {
 }
 .home-fourth-section-title {
   font-size: 30px;
+  letter-spacing: 2.4px;
   margin: 0px auto 10px;
 }
 .home-fourth-section-subtitle {
@@ -15765,6 +15793,7 @@ body.modal-open {
 }
 .home-fifth-section-title {
   font-size: 24px;
+  letter-spacing: 2.4px;
   margin-bottom: 0px;
 }
 .home-fifth-section-subtitle {
@@ -16433,14 +16462,12 @@ body.modal-open {
 }
 .tech-first-section-block-title {
   font-size: 61px;
-  font-weight: 300;
   line-height: 1em;
+  letter-spacing: 3.1px;
   margin-bottom: 2vw;
   font-family: "Lato";
 }
 .tech-first-section-block-subtitle {
-  font-size: 16px;
-  font-weight: 700;
   margin-bottom: 1.21vw;
 }
 .tech-first-section-block-text {
@@ -16530,6 +16557,7 @@ body.modal-open {
 .tech-second-section-title {
   font-size: 44px;
   line-height: 1em;
+  letter-spacing: 4.8px;
   margin-bottom: 1.756vw;
 }
 .tech-second-section-title-wrapper {
@@ -16592,6 +16620,7 @@ body.modal-open {
 .tech-third-section-title {
   font-size: 44px;
   line-height: 1em;
+  letter-spacing: 4.8px;
   margin-bottom: 1.756vw;
 }
 .tech-fourth-section {
@@ -16622,6 +16651,7 @@ body.modal-open {
 .tech-fourth-section-title {
   font-size: 44px;
   line-height: 1em;
+  letter-spacing: 4.8px;
   margin-bottom: 1.756vw;
 }
 .tech-fourth-section-title-wrapper {
@@ -16671,6 +16701,11 @@ body.modal-open {
 /* Products desktop styles */
 .products-section {
   min-height: 100vh;
+}
+.products-section-title {
+  font-size: 44px;
+  line-height: 1em;
+  letter-spacing: 4.8px;
 }
 .products-learn-more-link {
   display: block;
@@ -16809,7 +16844,8 @@ body.modal-open {
               -ms-grid-row-align: center;
           align-items: center;
   font-size: 61px;
-  line-height: 1em;
+  line-height: 0.63;
+  letter-spacing: 3.1px;
   margin-bottom: 2vw;
 }
 .products-first-section-content-text {
@@ -16894,18 +16930,10 @@ body.modal-open {
   width: 100%;
   display: inline-block;
 }
-.products-third-section-title {
-  font-size: 44px;
-  line-height: 1em;
-  margin-bottom: 0.2em;
-}
 .products-third-section-title-wrapper {
   float: left;
   width: calc(100% - 5.5vw);
   display: inline-block;
-}
-.products-third-section-subtitle {
-  font-size: 15px;
 }
 .products-third-section-line {
   margin: 3vw 0px 3vw 0px;
@@ -16923,6 +16951,7 @@ body.modal-open {
   width: 3.84vw;
   height: 5.16vw;
   margin-right: 1.4vw;
+  margin-top: 5px;
   float: left;
   display: inline-block;
   line-height: 70px;
@@ -16959,21 +16988,12 @@ body.modal-open {
   margin-right: auto;
   margin-top: 6vw;
 }
-.products-fourth-section-title {
-  font-size: 44px;
-  line-height: 1em;
-  margin-bottom: 0.2em;
-}
 .products-fourth-section-title-wrapper {
   float: left;
   display: inline-block;
 }
 .products-fourth-section-image-wrapper {
   margin-bottom: -1px;
-}
-.products-fourth-section-subtitle {
-  font-size: 15px;
-  font-weight: 700;
 }
 .products-fourth-section-line {
   background-color: #d1d0ce;
@@ -16986,6 +17006,7 @@ body.modal-open {
   width: 3.84vw;
   height: 5.16vw;
   margin-right: 1.4vw;
+  margin-top: 5px;
   float: left;
   display: inline-block;
   line-height: 5vw;
@@ -17030,17 +17051,9 @@ body.modal-open {
 .products-fifth-section-header-wrapper {
   display: inline-block;
 }
-.products-fifth-section-title {
-  font-size: 44px;
-  line-height: 1em;
-  margin-bottom: 0.2em;
-}
 .products-fifth-section-title-wrapper {
   float: left;
   display: inline-block;
-}
-.products-fifth-section-subtitle {
-  font-size: 15px;
 }
 .products-fifth-section-line {
   margin: 3vw 0px 3vw 0px;
@@ -17052,6 +17065,7 @@ body.modal-open {
   width: 3.84vw;
   height: 5.16vw;
   margin-right: 1.4vw;
+  margin-top: 5px;
   float: left;
   display: inline-block;
   line-height: 5.3vw;
@@ -17930,6 +17944,7 @@ body.modal-open {
 .home-second-section-header-top-title {
   white-space: nowrap;
   margin: 0px 8px 0px 8px;
+  letter-spacing: 0.9px;
 }
 .home-second-section-title {
   font-size: 47px;
@@ -17940,6 +17955,7 @@ body.modal-open {
 }
 .home-second-section-subtitle {
   font-size: 19px;
+  letter-spacing: 0.8px;
   margin-bottom: 26px;
 }
 .home-second-section-row {
@@ -17960,6 +17976,8 @@ body.modal-open {
 .home-second-section-block-title {
   margin-top: -0.3em;
   margin-bottom: 0px;
+  letter-spacing: 0.5px;
+  line-height: 2.17;
 }
 .home-second-section-icon-wrapper {
   width: 6vw;
@@ -18035,6 +18053,8 @@ body.modal-open {
 }
 .home-fourth-section-title {
   font-size: 30px;
+  letter-spacing: 2.4px;
+  line-height: 1.08;
 }
 .home-fourth-section-subtitle {
   font-size: 18px;
@@ -18098,6 +18118,7 @@ body.modal-open {
 }
 .home-fifth-section-title {
   font-size: 24px;
+  letter-spacing: 2.4px;
   margin-bottom: 0px;
 }
 .home-fifth-section-subtitle {
@@ -18801,14 +18822,12 @@ ul:not([class]) li {
 }
 .tech-first-section-block-title {
   font-size: 38px;
-  font-weight: 300;
   line-height: 1em;
+  letter-spacing: 1.9px;
   margin-bottom: 26px;
   font-family: "Lato";
 }
 .tech-first-section-block-subtitle {
-  font-size: 16px;
-  font-weight: 700;
   margin-bottom: 19px;
 }
 .tech-first-section-block-text {
@@ -18859,8 +18878,7 @@ ul:not([class]) li {
 .tech-second-section-title {
   font-size: 35px;
   line-height: 1em;
-  font-weight: 300;
-  font-family: "Lato";
+  letter-spacing: 3.9px;
   width: 100%;
   text-align: center;
   color: #0051c6;
@@ -18903,8 +18921,7 @@ ul:not([class]) li {
   display: block;
   text-align: center;
   font-size: 35px;
-  font-weight: 300;
-  font-family: "Lato";
+  letter-spacing: 3.9px;
   line-height: 1em;
   color: #2adc3a;
   margin-bottom: 34px;
@@ -18991,6 +19008,7 @@ ul:not([class]) li {
 .tech-fourth-section-title {
   font-size: 35px;
   line-height: 1em;
+  letter-spacing: 3.9px;
   padding-top: 63px;
   text-align: center;
 }
@@ -19038,6 +19056,11 @@ ul:not([class]) li {
 /* Products tablet styles */
 .products-section {
   min-height: calc(100vh - 121px);
+}
+.products-section-title {
+  font-size: 35px;
+  line-height: 1.25;
+  letter-spacing: 3.9px;
 }
 .products-learn-more-link {
   display: block;
@@ -19097,7 +19120,9 @@ ul:not([class]) li {
   width: 53%;
 }
 .products-first-section-content-title {
-  font-size: 7vw;
+  font-size: 39px;
+  letter-spacing: 1.9px;
+  line-height: 1;
 }
 .products-first-section-scroll-link-text {
   font-size: 17px;
@@ -19113,15 +19138,24 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-second-section {
+  min-height: 0;
+  height: auto;
   background-image: url('/wp-content/themes/sixgill/images/products/single_dot.png');
+  display: block;
+}
+.products-second-section-wrapper {
+  margin-top: 96px;
+  margin-bottom: 96px;
 }
 .products-second-section-image-wrapper {
   width: 67%;
   margin-bottom: 34px;
-  margin-top: 96px;
 }
 .products-second-section-text {
   width: 67%;
+}
+.products-second-section-text > p:last-child {
+  margin-bottom: 0;
 }
 .products-second-section-image-wrapper,
 .products-second-section-text {
@@ -19161,20 +19195,10 @@ ul:not([class]) li {
   margin-top: 61px;
   margin-bottom: 0;
 }
-.products-third-section-title {
-  font-size: 4.57vw;
-  font-family: "Lato";
-  font-weight: 300;
-  line-height: 5.7vw;
-}
 .products-third-section-title-wrapper {
   width: calc(100% - 10vw);
   float: left;
   display: inline-block;
-}
-.products-third-section-subtitle {
-  font-size: 1.9vw;
-  font-weight: 700;
 }
 .products-third-section-line {
   margin: 31px 0px 32px 0px;
@@ -19275,19 +19299,9 @@ ul:not([class]) li {
 .products-fourth-section-right-col {
   padding-left: 7.1vw;
 }
-.products-fourth-section-title {
-  font-size: 4.57vw;
-  font-weight: 300;
-  font-family: "Lato";
-  line-height: 5.7vw;
-}
 .products-fourth-section-title-wrapper {
   float: left;
   display: inline-block;
-}
-.products-fourth-section-subtitle {
-  font-size: 1.9vw;
-  font-weight: 700;
 }
 .products-fourth-section-line {
   margin: 44px 0px 38px 0px;
@@ -19364,19 +19378,9 @@ ul:not([class]) li {
           align-self: center;
   width: 66%;
 }
-.products-fifth-section-title {
-  font-size: 4.57vw;
-  font-weight: 300;
-  font-family: "Lato";
-  line-height: 5.7vw;
-}
 .products-fifth-section-title-wrapper {
   float: left;
   display: inline-block;
-}
-.products-fifth-section-subtitle {
-  font-size: 1.9vw;
-  font-weight: 700;
 }
 .products-fifth-section-line {
   margin: 44px 0px 38px 0px;
@@ -19407,6 +19411,9 @@ ul:not([class]) li {
   text-align: center;
   margin: 50px 0px 0px 0px;
   font-size: 35px;
+}
+.products-last-section-col-title {
+  margin: 30px 0px 30px 0px;
 }
 .products-last-section-left-col {
   -webkit-align-self: center;
@@ -20618,13 +20625,18 @@ ul:not([class]) li {
 .home-second-section-header-top-title {
   white-space: nowrap;
   margin: 0px 8px 0px 8px;
+  letter-spacing: 0.9px;
 }
 .home-second-section-title {
   text-align: center;
+  letter-spacing: 0.6px;
+  font-size: 21px;
   margin-bottom: 12px;
 }
 .home-second-section-subtitle {
   margin-bottom: 27px;
+  letter-spacing: 0.6px;
+  font-size: 12px;
 }
 .home-second-section-row {
   width: 100%;
@@ -20645,6 +20657,8 @@ ul:not([class]) li {
 .home-second-section-block-title {
   margin-top: -0.3em;
   margin-bottom: 0px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
 }
 .home-second-section-block-content {
   width: 100%;
@@ -20723,7 +20737,8 @@ ul:not([class]) li {
   width: 89vw;
 }
 .home-fourth-section-title {
-  font-size: 30px;
+  font-size: 23px;
+  letter-spacing: 1.8px;
 }
 .home-fourth-section-subtitle {
   font-size: 18px;
@@ -20787,6 +20802,7 @@ ul:not([class]) li {
 }
 .home-fifth-section-title {
   font-size: 24px;
+  letter-spacing: 2.4px;
   margin-bottom: 17px;
 }
 .home-fifth-section-subtitle {
@@ -21371,9 +21387,7 @@ ul:not([class]) li {
   text-align: left;
 }
 .tech-first-section-block-title {
-  font-size: 9vw;
-  font-weight: 300;
-  font-family: "Lato";
+  font-size: 29px;
   letter-spacing: 1.5px;
   line-height: 1em;
   margin-bottom: 27px;
@@ -21414,10 +21428,9 @@ ul:not([class]) li {
   padding: 39px 6.25vw 0px 6.25vw;
 }
 .tech-second-section-title {
-  font-family: "Lato";
-  font-size: 8.22vw;
+  font-size: 26px;
+  letter-spacing: 2.9px;
   line-height: 1em;
-  font-weight: 300;
   padding-bottom: 33px;
   width: 100%;
   text-align: left;
@@ -21454,8 +21467,9 @@ ul:not([class]) li {
   display: inline-block;
 }
 .tech-third-section-title {
-  font-size: 16px;
   line-height: 1.25em;
+  font-size: 26px;
+  letter-spacing: 2.9px;
   width: 100%;
   text-align: left;
   margin-bottom: 31.5px;
@@ -21495,11 +21509,12 @@ ul:not([class]) li {
   width: 100%;
 }
 .tech-fourth-section-title {
-  font-size: 9vw;
+  font-size: 26px;
+  letter-spacing: 2.9px;
   line-height: 1.25em;
   width: 100%;
   text-align: left;
-  margin-bottom: 24px;
+  padding: 39px 19px 24px 19px;
 }
 .tech-fourth-section-title-wrapper {
   width: 100%;
@@ -21523,14 +21538,13 @@ ul:not([class]) li {
   width: 100%;
 }
 .tech-fourth-section-text {
-  margin-left: auto;
-  margin-right: auto;
-  width: 88.75vw;
+  margin-left: 19px;
+  margin-right: 19px;
 }
 .tech-fourth-section-text,
 .tech-fourth-section-text p,
 .tech-fourth-section-text li {
-  font-size: 4.97vw;
+  font-size: 16px;
   font-weight: 400;
 }
 .tech-last-section-text,
@@ -21558,6 +21572,13 @@ ul:not([class]) li {
 }
 
 /* Products mobile portrait and landscape styles */
+.products-section-title {
+  font-size: 35px;
+  line-height: 1.25em;
+  letter-spacing: 3.9px;
+  width: 100%;
+  text-align: center;
+}
 .products-fixed-panel {
   display: none;
 }
@@ -21594,10 +21615,8 @@ ul:not([class]) li {
 }
 .products-first-section-content-title {
   font-size: 30px;
-  font-weight: 300;
-  font-family: "Lato";
   letter-spacing: 1.5px;
-  line-height: 1em;
+  line-height: 1.33;
   margin-bottom: 27px;
   text-align: left;
 }
@@ -21652,12 +21671,6 @@ ul:not([class]) li {
   height: 12.97vw;
   display: inline-block;
 }
-.products-third-section-title {
-  font-size: 35px;
-  line-height: 1.25em;
-  width: 100%;
-  text-align: center;
-}
 .products-third-section-title-wrapper {
   width: 100%;
   padding-left: 5.6vw;
@@ -21665,9 +21678,6 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-third-section-subtitle {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 2em;
   width: 88.75vw;
   margin: auto;
 }
@@ -21720,12 +21730,6 @@ ul:not([class]) li {
   display: inline-block;
   text-align: center;
 }
-.products-fourth-section-title {
-  font-size: 35px;
-  line-height: 1.25em;
-  width: 100%;
-  text-align: center;
-}
 .products-fourth-section-title-wrapper {
   width: 100%;
   padding-left: 5.6vw;
@@ -21733,9 +21737,6 @@ ul:not([class]) li {
   display: inline-block;
 }
 .products-fourth-section-subtitle {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 2em;
   width: 88.75vw;
   margin: auto;
 }
@@ -21787,12 +21788,6 @@ ul:not([class]) li {
 }
 .products-fifth-section-header-wrapper {
   display: inline-block;
-  text-align: center;
-}
-.products-fifth-section-title {
-  font-size: 35px;
-  line-height: 1.25em;
-  width: 100%;
   text-align: center;
 }
 .products-fifth-section-title-wrapper {

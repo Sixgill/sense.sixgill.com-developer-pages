@@ -17,7 +17,7 @@
 				<h2 class="tech-first-section-block-subtitle">
 					<?php echo get_field('first_section_subtitle'); ?>
 				</h2>
-				<div class="tech-first-section-block-paragraph">
+				<div class="tech-first-section-block-paragraph tech-section-text">
 					<?php echo get_field('first_section_text'); ?>
 				</div>
 			</div>
@@ -61,7 +61,7 @@
 					<div class="tech-second-section-title tech-section-title-blue">
 						<?php echo get_field('second_section_title'); ?>
 					</div>
-					<div class="tech-second-section-text">
+					<div class="tech-second-section-text tech-section-text">
 						<?php echo get_field('second_section_text'); ?>
 					</div>
 				</div>
@@ -88,7 +88,7 @@
 						<?php echo get_field('third_section_title'); ?>
 					</div>
 
-					<div class="tech-third-section-text">
+					<div class="tech-third-section-text tech-section-text">
 						<?php echo get_field('third_section_text'); ?>
 					</div>
 				</div>
@@ -120,7 +120,7 @@
 						<?php echo get_field('fourth_section_title'); ?>
 					</div>
 
-					<div class="tech-fourth-section-text">
+					<div class="tech-fourth-section-text tech-section-text">
 						<?php echo get_field('fourth_section_text'); ?>
 					</div>
 				</div>
