@@ -12261,6 +12261,11 @@ footer .footer-subscribe-error {
   z-index: 2;
   position: absolute;
 }
+footer .footer-subscribe-error-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 footer .footer-subscribe-error-close {
   background-color: #d74758;
   height: 20px;
@@ -17474,7 +17479,6 @@ body.modal-open {
   left: 24%;
 }
 .footer-subscribe-error-close {
-  margin-left: -1px;
   vertical-align: top;
 }
 
@@ -20171,10 +20175,8 @@ ul:not([class]) li {
 }
 .footer .footer-subscribe-error {
   bottom: 73px;
-  left: 10%;
 }
 .footer .footer-subscribe-error-close {
-  margin-left: -2px;
   vertical-align: text-top;
 }
 .footer-icons-wrapper {
