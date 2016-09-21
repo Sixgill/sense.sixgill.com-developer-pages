@@ -14149,6 +14149,12 @@ footer div.mc4wp-error p {
   text-align: center;
   color: #2e2e2e;
 }
+.resource-details-download-link {
+  text-align: center;
+}
+.resource-details-download-link p {
+  margin: 10px 0px 10px 0px;
+}
 .resource-details-download-form {
   width: 100%;
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.08);
