@@ -6785,8 +6785,24 @@ jQuery(function($){
 	      pagination: false,
 	      singleItem : true,
 	      lazyLoad : true, // Execute lazy loading
-	      autoHeight : autoHeightOption
+	      autoHeight : autoHeightOption,
+	      afterMove: function(elem){
+	      	elem
+	      	.find('.loading')
+	      	.css("min-height", $("#first-solution-subpage-carousel").height());
+	      },
+	      beforeMove: function(elem){
+	      	elem
+	      	.find('.owl-item')
+	      	.css("min-height", "150px");
+	      },
+	      afterLazyLoad: function(elem){
+	      	elem
+	      	.find('.owl-item')
+	      	.css("min-height", "150px");
+	      }
 	  });
+
 
 		$("#"+carouselName+"-solution-carousel-button-left, #"+carouselName+"-solution-carousel-mobile-button-left").click(function(){
 			owl.trigger('owl.prev');
