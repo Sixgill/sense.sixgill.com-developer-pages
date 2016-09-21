@@ -33,7 +33,8 @@
 				'category_name' => 'blog',
 			) );
 			if ( have_posts() ) : while ( have_posts() ) : the_post();?>
-			<a href="<?php echo get_permalink(); ?>" class="blog-page-post-card-link">
+			
+				<a href="<?php echo get_permalink(); ?>" class="blog-page-post-card-link">
 				<div class="blog-page-post-card">
 					<div
 						class="blog-page-post-card-image responsive-background"
@@ -51,11 +52,18 @@
 						</div>
 						<div class="blog-page-post-card-dash no-mobile-portrait-display no-mobile-landscape-display"></div>
 						<div class="blog-page-post-card-text no-mobile-portrait-display no-mobile-landscape-display">
-							<?php echo get_the_content("") ?>..
+							<?php 
+								$content = get_the_content("");
+								$content = preg_replace('/<\/?a[^>]*>/', " ", $content);
+								echo $content;
+								?> ..
 						</div>
 					</div>
 				</div>
 			</a>
+
+
+
 			<?php endwhile; else: endif; ?>
 			<div class="blog-page-pagination">
 				<?php the_posts_pagination( array(

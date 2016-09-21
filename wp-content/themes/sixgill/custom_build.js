@@ -982,27 +982,27 @@ var SEMICOLON = SEMICOLON || {};
 					}
 				});
 			}
-		},
-
-		stickFooterOnSmall: function(){
-			var windowH = $window.height(),
-				wrapperH = $wrapper.height();
-
-			if( !$body.hasClass('sticky-footer') && $footer.length > 0 && $wrapper.has('#footer') ) {
-				if( windowH > wrapperH ) {
-					$footer.css({ 'margin-top': ( windowH - wrapperH ) });
-				}
-			}
-		},
-
-		stickyFooter: function(){
-			if( $body.hasClass('sticky-footer') && $footer.length > 0 && ( $body.hasClass('device-lg') || $body.hasClass('device-md') ) ) {
-				var stickyFooter = $footer.outerHeight();
-				$content.css({ 'margin-bottom': stickyFooter });
-			} else {
-				$content.css({ 'margin-bottom': 0 });
-			}
 		}
+
+		// stickFooterOnSmall: function(){
+		// 	var windowH = $window.height(),
+		// 		wrapperH = $wrapper.height();
+
+		// 	if( !$body.hasClass('sticky-footer') && $footer.length > 0 && $wrapper.has('#footer') ) {
+		// 		if( windowH > wrapperH ) {
+		// 			$footer.css({ 'margin-top': ( windowH - wrapperH ) });
+		// 		}
+		// 	}
+		// },
+
+		// stickyFooter: function(){
+		// 	if( $body.hasClass('sticky-footer') && $footer.length > 0 && ( $body.hasClass('device-lg') || $body.hasClass('device-md') ) ) {
+		// 		var stickyFooter = $footer.outerHeight();
+		// 		$content.css({ 'margin-bottom': stickyFooter });
+		// 	} else {
+		// 		$content.css({ 'margin-bottom': 0 });
+		// 	}
+		// }
 
 	};
 
@@ -2861,7 +2861,7 @@ var SEMICOLON = SEMICOLON || {};
 				SEMICOLON.initialize.verticalMiddle();
 				SEMICOLON.initialize.maxHeight();
 				SEMICOLON.initialize.testimonialsGrid();
-				SEMICOLON.initialize.stickyFooter();
+				//SEMICOLON.initialize.stickyFooter();
 				SEMICOLON.slider.sliderParallaxDimensions();
 				SEMICOLON.slider.captionPosition();
 				SEMICOLON.portfolio.arrange();
@@ -2970,8 +2970,8 @@ var SEMICOLON = SEMICOLON || {};
 			SEMICOLON.initialize.maxHeight();
 			SEMICOLON.initialize.testimonialsGrid();
 			SEMICOLON.initialize.verticalMiddle();
-			SEMICOLON.initialize.stickFooterOnSmall();
-			SEMICOLON.initialize.stickyFooter();
+			//SEMICOLON.initialize.stickFooterOnSmall();
+			//SEMICOLON.initialize.stickyFooter();
 			SEMICOLON.portfolio.gridInit( $gridContainer );
 			SEMICOLON.portfolio.filterInit();
 			SEMICOLON.portfolio.shuffleInit();
@@ -6478,7 +6478,7 @@ jQuery(function($) {
 			timerId = setInterval(watchSubscription, 400);
 		}
 	});
-	$('footer p.footer-subscribe-error-close').click(function(argument) {
+	$('footer img.footer-subscribe-error-close').click(function(argument) {
 		clearInterval(timerId);
 		timerId = null;
 		errorElement.hide();
@@ -6785,8 +6785,24 @@ jQuery(function($){
 	      pagination: false,
 	      singleItem : true,
 	      lazyLoad : true, // Execute lazy loading
-	      autoHeight : autoHeightOption
+	      autoHeight : autoHeightOption,
+	      afterMove: function(elem){
+	      	elem
+	      	.find('.loading')
+	      	.css("min-height", $("#first-solution-subpage-carousel").height());
+	      },
+	      beforeMove: function(elem){
+	      	elem
+	      	.find('.owl-item')
+	      	.css("min-height", "150px");
+	      },
+	      afterLazyLoad: function(elem){
+	      	elem
+	      	.find('.owl-item')
+	      	.css("min-height", "150px");
+	      }
 	  });
+
 
 		$("#"+carouselName+"-solution-carousel-button-left, #"+carouselName+"-solution-carousel-mobile-button-left").click(function(){
 			owl.trigger('owl.prev');
@@ -6950,11 +6966,13 @@ $(function() {
 
 
   $(window).on('scroll', function() {
-    if($(this).scrollTop() >= topPosition){
-        changePanelPosition(true);
+    var startPosition = $('#products-third-section').offset().top - 90;
+    if ($(window).scrollTop() >= startPosition) {
+       changePanelPosition(true);
     } else {
-      changePanelPosition(false);
+       changePanelPosition(false);
     }
+
   });
   $(window).on('resize', function() {
     topPosition = panelDOMLink.position().top;
@@ -7104,14 +7122,11 @@ jQuery(function($) {
 			selectedSection,
 			selector
 		);
-		console.log('sublink');
 		sublinks.push(currentSublink);
-		console.log(currentSublink.selectedSection, 'selectedSection');
 		window.onScrolledTo(
 			currentSublink.section,
 			function() {
 				sublinks.forEach(function(sublink) {
-					console.log("isScrolledTo", sublink.selector, selector);
 					if(sublink.selector == selector) {
 						sublink.menuLink.addClass('active');
 					} else {
@@ -7120,7 +7135,6 @@ jQuery(function($) {
 				});
 			},
 			function() {
-				console.log("isScrolledOut", currentSublink.selector);
 				currentSublink.menuLink.removeClass('active');
 			}
 		);

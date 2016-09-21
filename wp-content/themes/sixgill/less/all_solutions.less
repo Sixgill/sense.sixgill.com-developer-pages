@@ -90,44 +90,45 @@
 			color: #0051c6;
 		}
 
-		&-icons-title {
-			font-family: "Lato";
-			text-align: center;
-			color: #2e2e2e;
-			display: inline-block;
-
-			&:before,
-			&:after {
-				background-color: #000;
-				content: "";
-				display: inline-block;
-				height: 2px;
-				opacity: 0.1;
-				vertical-align: 0.3em;
-				position: relative;
-				width: 20vw;
-			}
-		}
-
 		&-icons {
-			&-title:after {
-				left: 1vw;
-			}
-
-			&-title:before {
-				right: 1vw;
-			}
-
 			&-block {
 				text-align: center;
-				width:950px;
 				margin: 30px auto 0;
 				overflow: hidden;
-				width: 100%;
 				padding: 0;
+				position: relative;
+			}
+
+			&-title {
+				font-family: "Lato";
+				text-align: center;
+				color: #2e2e2e;
+				display: inline-block;
+				position: relative;
+
+				&:before,
+				&:after {
+					background-color: #000;
+					content: "";
+					display: inline-block;
+					height: 2px;
+					opacity: 0.1;
+					position: absolute;
+					width: 30vw;
+					white-space: nowrap;
+				}
+				
+				&:after {
+					left: 14em;
+					top:1.4em;
+				}
+
+				&:before {
+					right: 14em;
+					top:1.4em;
+				}
 			}
 		}
-
 	}
 
 	&-third-section {
@@ -430,7 +431,9 @@
 			}
 
 			&-description {
-				color: #000000;
+				font-family: Lato;
+				text-align: left;
+				color: #2e2e2e;
 				transition: all 0.2s ease;
 			}
 

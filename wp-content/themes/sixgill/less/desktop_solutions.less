@@ -148,6 +148,10 @@
 			padding: 1vw 4vw;
 		}
 
+		&-icons-block {
+			width: 67vw;
+		}
+
 		&-block-title,
 		&-icons-title {
 			margin:0;
@@ -160,17 +164,6 @@
 			line-height: 2.83;
 			letter-spacing: 0.5px;
 			padding: 0 26px;
-
-			&:before,
-			&:after {
-					content: "";
-					display: inline-block;
-					height: 2px;
-					opacity: 0.1;
-					vertical-align: 0.3em;
-					position: relative;
-					width: 20vw;
-			}
 		}
 
 	}
@@ -238,6 +231,9 @@
 			letter-spacing: 1.3px;
 			margin-top: 60px;
 			margin-bottom: 35px;
+		}
+		&-section-first-title {
+			text-align: left;
 		}
 
 		&-second-block {
@@ -350,6 +346,25 @@
 			}
 		}
 
+		&-slide-title {
+			font-size: 1.78vw;
+			font-weight: 500;
+			margin-bottom: 1vw;
+		}
+
+		&-slide-description {
+			margin-bottom: 1.8vw;
+			font-size: 16px;
+			line-height: 1.5;
+			letter-spacing: 0.5px;
+		}
+
+		&-slide-description,
+		&-slide-title {
+			width: 95.68%;
+			display: inline-block;
+		}
+
 		&-first-block-image {
 			max-width: 52.5vw;
 
@@ -405,15 +420,16 @@
 
 			&-subtitle > p {
 				font-size: 19px;
-				line-height: 20px !important;
+				line-height: 1.07;
 				width: 56%;
   				letter-spacing: 0.6px;
+
 			}
 
 			&-subtitle > a {
 				padding: 15px 0 0;
 				font-size: 19px;
-				line-height: 1;
+				line-height: 1.07;
 				letter-spacing: 0.6px;
 			}
 		}
