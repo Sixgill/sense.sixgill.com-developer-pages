@@ -24,7 +24,7 @@
 		</div>
 
 		<a
-			href="#leadership"
+			href="#leadership-a"
 			class="scroll-section company-learn-more-link"
 		>
 			<div class="company-first-section-scroll-link-wrapper">
@@ -38,7 +38,7 @@
 			</div>
 		</a>
 	</div>
-	<a name="leadership"></a>
+	<a class="company-leadership-anchor" name="leadership-a"></a>
 	<div id="leadership" class="company-section company-second-section">
 		<div class="inline-block full-width">
 			<div class="company-second-section-block">

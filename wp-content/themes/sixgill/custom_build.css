@@ -17679,6 +17679,12 @@ body.modal-open {
 }
 
 /* Company tablet styles */
+.company-leadership-anchor {
+  display: block;
+  position: relative;
+  top: -117px;
+  visibility: hidden;
+}
 .company-learn-more-link {
   display: block;
   position: absolute;
