@@ -16672,6 +16672,10 @@ body.modal-open {
   font-size: 16px;
   font-weight: 400;
 }
+.tech _:-ms-lang(x),
+.tech-fourth-section {
+  height: auto!important;
+}
 
 /* Press desktop styles */
 .col_press {
