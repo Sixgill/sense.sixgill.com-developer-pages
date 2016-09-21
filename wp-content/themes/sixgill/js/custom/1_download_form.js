@@ -5,13 +5,15 @@ jQuery(function($) {
 			successMessageSelector = formContainerClassSelector + ' .mc4wp-success',
 			noticeMessageSelector = formContainerClassSelector + ' .mc4wp-notice',
 			errorMessageSelector = formContainerClassSelector + ' .mc4wp-error',
-			downloadLink = $('resource-details').attr('data-download-link');
+			downloadLink = $('.resource-details').attr('data-download-link'),
+			downloadInfo = $('.resource-details-download-link');
 
 	function watchSuccess() {
 		var successMessageContainer = $(successMessageSelector);
 		var errorMessageContainer = $(noticeMessageSelector + ', ' + errorMessageSelector);
 		if(successMessageContainer.length) {
 			window.open(downloadLink, "_self");
+			downloadInfo.removeClass('hide');
 		}
 
 		if (successMessageContainer.length || errorMessageContainer.length) {

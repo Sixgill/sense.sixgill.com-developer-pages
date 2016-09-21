@@ -26,9 +26,6 @@
 	$downloadLink = '/download/?id=' . $downloadID . '&key=' . $downloadKey;
 ?>
 
-
-
-
 <div class="resource-details" data-download-link="<?php echo $downloadLink; ?>">
 	<div class="resource-details-col-left">
 		<div class="resource-details-preview">
@@ -46,6 +43,10 @@
 			</div>
 			<div class="resource-details-download-form-wrapper">
 				<?php dynamic_sidebar( 'download-access' ); ?>
+				<div class="resource-details-download-link hide">
+					<p>Downloading will start soon.</p>
+					<a href="<?php echo get_site_url().$downloadLink; ?>">Download this resource manually</a>
+				</div>
 			</div>
 		</div>
 
