@@ -6951,7 +6951,6 @@ $(function() {
 
   $(window).on('scroll', function() {
     var startPosition = $('#products-third-section').offset().top - 90;
-    console.log(startPosition);
     if ($(window).scrollTop() >= startPosition) {
        changePanelPosition(true);
     } else {
@@ -7107,14 +7106,11 @@ jQuery(function($) {
 			selectedSection,
 			selector
 		);
-		console.log('sublink');
 		sublinks.push(currentSublink);
-		console.log(currentSublink.selectedSection, 'selectedSection');
 		window.onScrolledTo(
 			currentSublink.section,
 			function() {
 				sublinks.forEach(function(sublink) {
-					console.log("isScrolledTo", sublink.selector, selector);
 					if(sublink.selector == selector) {
 						sublink.menuLink.addClass('active');
 					} else {
@@ -7123,7 +7119,6 @@ jQuery(function($) {
 				});
 			},
 			function() {
-				console.log("isScrolledOut", currentSublink.selector);
 				currentSublink.menuLink.removeClass('active');
 			}
 		);
