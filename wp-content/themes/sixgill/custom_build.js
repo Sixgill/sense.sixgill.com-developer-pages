@@ -6478,7 +6478,7 @@ jQuery(function($) {
 			timerId = setInterval(watchSubscription, 400);
 		}
 	});
-	$('footer p.footer-subscribe-error-close').click(function(argument) {
+	$('footer img.footer-subscribe-error-close').click(function(argument) {
 		clearInterval(timerId);
 		timerId = null;
 		errorElement.hide();
