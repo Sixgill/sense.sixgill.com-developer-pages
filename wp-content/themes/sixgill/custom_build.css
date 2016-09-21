@@ -12193,6 +12193,7 @@ input {
   border: 0;
   padding: 0 5px 0 5px;
   font-family: 'Lato';
+  font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.8px;
 }
@@ -12236,6 +12237,12 @@ input {
 .footer-social-icon-img {
   width: 100%;
   height: auto;
+}
+.footer-main-link {
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 0.7px;
 }
 .footer-subscription-button,
 .footer-main-link,
@@ -14904,12 +14911,6 @@ body.modal-open {
 .footer-link-col:first-child {
   margin-left: 22.7%;
 }
-.footer-main-link {
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
 .footer-bottom-block {
   height: 29.5%;
 }
@@ -14938,9 +14939,6 @@ body.modal-open {
   height: 33px;
 }
 .footer-subscription-button {
-  font-size: 16px;
-  letter-spacing: 0.8px;
-  font-weight: bold;
   width: 122px;
   height: 33px;
 }
@@ -17425,15 +17423,9 @@ body.modal-open {
   height: 18%;
   border-top: 1px solid #4a4a4a;
 }
-.footer-main-link {
-  text-transform: uppercase;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0.7px;
-}
 .footer-social-icon-link {
-  height: 75%;
+  height: 35px;
+  width: 35px;
 }
 .footer-social-icon-link:not(:last-child) {
   margin-right: 8%;
@@ -17452,8 +17444,6 @@ body.modal-open {
   width: auto;
 }
 .footer-subscription-button {
-  font-size: 18px;
-  font-weight: bold;
   width: 122px;
 }
 .footer-subscription-email {
@@ -20174,7 +20164,6 @@ ul:not([class]) li {
 .footer-subscription-button {
   height: 33px;
   width: 100%;
-  font-weight: bold;
 }
 .footer .footer-subscribe-error {
   bottom: 73px;
@@ -20203,11 +20192,8 @@ ul:not([class]) li {
 }
 .footer-link-col a {
   display: block;
-  font-size: 14px;
-  letter-spacing: 0.7px;
   margin: 29px;
   text-align: center;
-  text-transform: uppercase;
 }
 .footer-link-col:first-child a {
   margin-top: 0px;
