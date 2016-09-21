@@ -16394,7 +16394,7 @@ body.modal-open {
 .tech _:-ms-lang(x),
 .tech-section {
   height: 100vh !important;
-  min-height: 40vw;
+  min-height: 46vw;
 }
 .tech-first-section {
   display: -webkit-flex;
