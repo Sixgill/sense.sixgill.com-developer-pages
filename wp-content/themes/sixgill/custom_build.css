@@ -13702,10 +13702,13 @@ footer div.mc4wp-error p {
   color: #ffffff;
 }
 .solution-subpage-gallery-button-icon {
-  width: 11%;
-  height: auto;
+  width: 21px;
+  height: 21px;
+  vertical-align: top;
 }
 .solution-subpage-gallery-button-title-wrapper {
+  font-size: 16px;
+  letter-spacing: 1px;
   display: inline-block;
 }
 .solution-subpage-gallery-thumbnail-wrapper {
@@ -13727,6 +13730,7 @@ footer div.mc4wp-error p {
 .solution-subpage-slide-title {
   color: #0051c6;
   letter-spacing: 0.7px;
+  text-align: left;
 }
 .solution-subpage-slide-description {
   font-family: Lato;
@@ -21153,7 +21157,8 @@ p.solution-use-cases-title {
   margin-right: 3.13vw;
 }
 .solution-subpage-gallery-block-title {
-  font-size: 13.5px;
+  font-size: 14px;
+  color: #2e2e2e;
   font-weight: bold;
   line-height: 1.5;
   letter-spacing: 0.7px;
@@ -21167,6 +21172,7 @@ p.solution-use-cases-title {
 .solution-subpage-slide-title {
   font-size: 5.625vw;
   margin-bottom: 1vw;
+  margin-top: 15px;
   font-weight: 500;
 }
 .solution-subpage-slide-description {
