@@ -57,9 +57,11 @@
 					</div>
 					<div class="footer-subscription-form-wrapper desktop-vertical-centered">
 						<div class="footer-subscribe-error">
-						  <p class="footer-subscribe-error-text">
-						  </p>
-						  <img src="/wp-content/themes/sixgill/images/icons/close.png" class="footer-subscribe-error-close"/>
+							<div class="footer-subscribe-error-container">
+							  <p class="footer-subscribe-error-text">
+							  </p>
+							  <img src="/wp-content/themes/sixgill/images/icons/close.png" class="footer-subscribe-error-close"/>
+							</div>
 		  				  <div class="footer-subscribe-arrow">
 							</div>
 						</div>
