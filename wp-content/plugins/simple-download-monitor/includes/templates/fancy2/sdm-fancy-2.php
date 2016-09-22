@@ -103,10 +103,11 @@ function sdm_generate_fancy2_display_output($args) {
 
 		$output  = '<a href="'.$item_permalink.'" class="resources-list-card-link">';
 			$output .= '<div class="resources-list-card">';
-				$output .= '<div class="resources-list-card-image responsive-background" ';
-				$output .= 'desktop-src="'.$item_thumbnail_image_desktop.'" ';
-				$output .= 'tablet-src="'.$item_thumbnail_image_tablet.'" ';
-				$output .= 'mobile-src="'.$item_thumbnail_image_mobile.'" >';
+				$output .= '<div class="resources-list-card-image-wrapper">';
+					$output .= '<img class="resources-list-card-image responsive-image"';
+					$output .= 'desktop-src="'.$item_thumbnail_image_desktop.'" ';
+					$output .= 'tablet-src="'.$item_thumbnail_image_tablet.'" ';
+					$output .= 'mobile-src="'.$item_thumbnail_image_mobile.'" >';
 				$output .= '</div>';
 				$output .= '<div class="resources-list-card-info">';
 					$output .= '<div class="resources-list-card-category">';
