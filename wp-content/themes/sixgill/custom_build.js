@@ -6674,6 +6674,11 @@ jQuery(function($){
 });
 
 jQuery(function($) {
+  $('#wrapper').css('opacity', '1');
+  console.log('hotfix');
+});
+
+jQuery(function($) {
 	window.menuShowFlag = false;
 	var flag = false
 	var savedScroll;
