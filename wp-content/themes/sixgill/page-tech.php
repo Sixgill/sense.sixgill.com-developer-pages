@@ -46,8 +46,8 @@
 		</a>
 	</div>
 
-	<a name="location"></a>
-	<div id="location" class="tech-section tech-second-section">
+	<a class="tech-location-anchor" id="location"></a>
+	<div class="tech-section tech-second-section js-a-location">
 		<div class="tech-second-section-wrapper">
 			<div class="tech-second-section-left-col">
 				<div
@@ -77,9 +77,9 @@
 
 	</div>
 
-	<a name="proximity"></a>
+	<a id="proximity"></a>
 	<!-- <a name="tech-third-section"></a> -->
-	<div id="proximity" class="tech-section tech-third-section">
+	<div class="tech-section tech-third-section js-a-proximity">
 		<div class="tech-third-section-wrapper">
 
 			<div class="tech-third-section-left-col">
@@ -96,9 +96,9 @@
 		</div>
 	</div>
 
-	<a name="platform"></a>
+	<a id="platform"></a>
 	<!-- <a name="tech-fourth-section"></a> -->
-	<div id="platform" class="tech-section tech-fourth-section">
+	<div class="tech-section tech-fourth-section js-a-platform">
 		<div class="tech-fourth-section-title tech-section-title-blue display-only-tablet">
 			<?php echo get_field('fourth_section_title'); ?>
 		</div>

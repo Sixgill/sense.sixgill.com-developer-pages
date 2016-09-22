@@ -48,8 +48,8 @@
 		</a>
 	</div>
 
-	<a name="sense"></a>
-	<div id="sense" class="products-section products-second-section">
+	<a class="products-sence-anchor" id="sense"></a>
+	<div class="products-section products-second-section js-a-sense">
 		<div class="inline-block full-width products-second-section-wrapper">
 			<div class="products-second-section-image-wrapper">
 				<img
@@ -246,8 +246,8 @@
 		</div>
 	</div>
 
-	<a name="ancillary"></a>
-	<div id="ancillary" class="products-section products-last-section no-mobile-portrait-display no-mobile-landscape-display">
+	<a id="ancillary"></a>
+	<div class="products-section products-last-section no-mobile-portrait-display no-mobile-landscape-display js-a-ancillary">
 		<h2 class="products-last-section-title">
 			<?php echo get_field('last_section_title'); ?>
 		</h2>
