@@ -42,7 +42,12 @@
 				DOWNLOAD THE WEBINAR
 			</div>
 			<div class="resource-details-download-form-wrapper">
-				<?php dynamic_sidebar( 'download-access' ); ?>
+				<a href="<?php echo get_site_url().$downloadLink; ?>">
+					<div class="resource-details-download-form-submit-button button-blue resource-details-download-form-submit-button-temp">
+						Download Now
+					</div>
+				</a>
+				<?php /*dynamic_sidebar( 'download-access' );*/ ?>
 				<div class="resource-details-download-link hide">
 					<p>Downloading will start soon.</p>
 					<a href="<?php echo get_site_url().$downloadLink; ?>">Download this resource manually</a>

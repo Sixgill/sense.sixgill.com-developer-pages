@@ -14087,6 +14087,8 @@ footer div.mc4wp-error p {
   letter-spacing: 0.5px;
   text-align: left;
   color: #2e2e2e;
+  width: 100%;
+  text-align: center;
 }
 .resources-list-pagination {
   display: inline-block;
@@ -14248,6 +14250,17 @@ footer div.mc4wp-error p {
   border: 0px;
   outline: 0px;
   padding: 0px 0px 0px 3px;
+}
+.resource-details-download-form-submit-button-temp {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .resource-details-download-form .mc4wp-error p {
   margin: 15px 0px 15px 0px;
@@ -16296,14 +16309,18 @@ body.modal-open {
 .resources-list-header {
   min-height: 324px;
 }
+.resources-list-header _:-ms-lang(x),
+.resources-list-header {
+  height: 324px;
+}
 .resources-list-header-title {
   font-size: 25px;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.8px;
   margin-bottom: 22px;
 }
 .resources-list-header-subtitle {
   font-size: 60px;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.8px;
 }
 .resources-list-card-link {
   width: calc((100% - 2.56vw)/3);
@@ -16325,6 +16342,7 @@ body.modal-open {
   font-size: 16px;
   letter-spacing: 0.4px;
   margin-bottom: 13.5px;
+  text-transform: uppercase;
 }
 .resources-list-card-title {
   font-size: 19px;
