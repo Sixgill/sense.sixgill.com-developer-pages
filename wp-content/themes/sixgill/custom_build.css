@@ -12778,7 +12778,9 @@ footer div.mc4wp-error p {
   font-stretch: normal;
   text-align: center;
   color: #f9f8f8;
-  display: inline-block;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .blog-post-header-subtitle {
   font-family: "Lato";
@@ -12787,7 +12789,9 @@ footer div.mc4wp-error p {
   font-stretch: normal;
   text-align: center;
   color: #4ddb5a;
-  display: inline-block;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .blog-post-header-subtitle,
 .blog-post-header-subtitle span {
@@ -15258,7 +15262,7 @@ body.modal-open {
 .blog-post-header-subtitle {
   font-size: 20px;
   letter-spacing: 0.6px;
-  margin: 0px;
+  margin-bottom: 0px;
   max-width: 90%;
 }
 .blog-post-header-subtitle,
