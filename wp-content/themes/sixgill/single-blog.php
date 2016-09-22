@@ -1,5 +1,10 @@
 <div class="full-width ohidden full-page-wrapper blog-post-wrapper"> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@SixgillTech">
+	<meta name="twitter:title" content="<?php echo $post->post_title; ?>">
+	<meta name="twitter:description" content="<?php echo get_field('subtitle'); ?>">
+	<meta name="twitter:image" content="<?php echo get_field('post_picture_to_share'); ?>">
 
 	<div
 		class="blog-post-header responsive-background"
@@ -47,28 +52,31 @@
 		</div>
 
 		<div class="singe-blog-navigation">
-			<?php $current =  get_permalink();
-			if (get_previous_post()) { ?>
+			<?php
+			$prev_post = get_previous_post(true,'');
+			if (!empty( $prev_post )): ?>
 			<div class="singe-blog-navigation-previous">
-				<a class="no-mobile-landscape-display no-mobile-portrait-display singe-blog-navigation-text" href="<?php $prev_post = get_adjacent_post(); echo get_permalink($prev_post->ID);?>">
+				<a class="no-mobile-landscape-display no-mobile-portrait-display singe-blog-navigation-text" href="<?php echo get_permalink( $prev_post->ID ); ?>">
 					<span class="singe-blog-navigation-previous-arrow"></span>PREVIOUS POST
 				</a>
-				<a class="no-tablet-display no-desktop-display singe-blog-navigation-text" href="<?php $prev_post = get_adjacent_post(); echo get_permalink($prev_post->ID);?>">
+				<a class="no-tablet-display no-desktop-display singe-blog-navigation-text" href="<?php echo get_permalink( $prev_post->ID ); ?>">
 					<span class="singe-blog-navigation-previous-arrow"></span>PREVIOUS
 				</a>
 			</div>
-			<?php } ?>
+			<?php endif ?>
 
-			<?php if (get_next_post()) { ?>
+			<?php
+			$next_post = get_next_post(true,'');
+			if (!empty( $next_post )): ?>
 			<div class="singe-blog-navigation-next">
-				<a class="no-mobile-landscape-display no-mobile-portrait-display singe-blog-navigation-text" href="<?php $next_post = get_adjacent_post(0,'',0); echo get_permalink($next_post->ID);?>">
+				<a class="no-mobile-landscape-display no-mobile-portrait-display singe-blog-navigation-text" href="<?php echo get_permalink( $next_post->ID ); ?>">
 					NEXT POST<span class="singe-blog-navigation-next-arrow"></span>
 				</a>
-				<a class="no-tablet-display no-desktop-display singe-blog-navigation-text" href="<?php $next_post = get_adjacent_post(0,'',0); echo get_permalink($next_post->ID);?>">
+				<a class="no-tablet-display no-desktop-display singe-blog-navigation-text" href="<?php echo get_permalink( $next_post->ID ); ?>">
 					NEXT<span class="singe-blog-navigation-next-arrow"></span>
 				</a>
 			</div>
-			<?php } ?>
+			<?php endif; ?>
 		</div>
 		<div class="clear"></div>
 

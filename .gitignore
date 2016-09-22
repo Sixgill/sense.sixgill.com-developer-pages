@@ -15,6 +15,9 @@ sitemap.xml
 sitemap.xml.gz
 *.log
 
+*.css.map
+*.js.map
+
 wp-content/themes/sixgill/build/
 wp-content/themes/sixgill/css/less_compiled/
 

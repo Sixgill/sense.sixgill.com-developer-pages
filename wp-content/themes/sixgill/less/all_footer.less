@@ -41,6 +41,10 @@
 			display: inline-block;
 			border:0;
 			padding:0 5px 0 5px;
+			font-family: 'Lato';
+			font-weight: bold;
+			font-size: 16px;
+			letter-spacing: 0.8px;
 		}
 
 		&-email {
@@ -49,9 +53,15 @@
 			height: 33px;
 			vertical-align: top;
 			display: inline-block;
+			font-size: 14px;
+			font-family: 'Lato';
+			line-height: 3.2;
+  			letter-spacing: 0.7px;
+  			color: #999999;
 		}
 
 		&-form-wrapper {
+			position: relative;
 			& p {
 				margin-bottom: 0px !important;
 			}
@@ -85,7 +95,12 @@
 		width: 100%;
 		height: auto;
 	}
-
+	&-main-link {
+		font-size: 13px;
+		text-transform: uppercase;
+		cursor: pointer;
+		letter-spacing: 0.7px;
+	}
 	&-subscription-button, &-main-link, &-main-link:hover {
 		color: #ffffff !important;
 		text-decoration: none !important;
@@ -97,23 +112,32 @@
 }
 footer .footer-subscribe-error {
 	overflow: hidden;
-	height: 20px;
-	background-color: #f26d7d;
+	text-align: center;
+	height: 31px;
 	display: none;
-  z-index: 2;
-  position: absolute;
-
-  &-close {
-  	background-color: #d74758;
-  	height: 100%;
-  	width: 20px;
-  	cursor: pointer;
-  	font-size: 15px;
-  }
+	z-index: 2;
+	position: absolute;
+	&-container {
+    	display: flex;
+    }
+	&-close {
+	  	background-color: #d74758;
+	  	height: 20px;
+	  	width: 20px;
+	  	cursor: pointer;
+	  	font-size: 15px;
+	  	margin-left: -1px;
+	  	vertical-align: top;
+	}
 
 	& p {
+		position: relative;
+		height: 20px;
+		background-color:#f26d7d; 
+		line-height: 19px;
 		text-align: center;
-		margin-left: 10px;
+		padding-left: 9px;
+		padding-right: 9px;
 		margin-bottom: 0;
 		display: inline-block;
 		z-index: 2;
@@ -128,8 +152,10 @@ footer .footer-subscribe-arrow {
 	z-index: 1;
 	width: 15px;
 	height: 15px;
-	position: absolute;
 	background-color: #f26d7d;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:-8px;
 	-webkit-transform: rotate(45deg);
 	-moz-transform:    rotate(45deg);
 	-ms-transform:     rotate(45deg);

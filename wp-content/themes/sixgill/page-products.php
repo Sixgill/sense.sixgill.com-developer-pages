@@ -16,7 +16,7 @@
 				<h1 class="products-first-section-content-title">
 					<?php echo get_field('first_section_title'); ?>
 				</h1>
-				<div class="products-first-section-content-text">
+				<div class="products-first-section-content-text products-section-text">
 					<?php echo get_field('first_section_text'); ?>
 				</div>
 			</div>
@@ -50,14 +50,14 @@
 
 	<a name="sense"></a>
 	<div id="sense" class="products-section products-second-section">
-		<div class="inline-block full-width">
+		<div class="inline-block full-width products-second-section-wrapper">
 			<div class="products-second-section-image-wrapper">
 				<img
 					class="products-second-section-image "
 					src="<?php echo get_field('second_section_image'); ?>"
 				>
 			</div>
-			<div class="products-second-section-text">
+			<div class="products-second-section-text products-section-text">
 				<?php echo get_field('second_section_text'); ?>
 			</div>
 		</div>
@@ -145,16 +145,16 @@
 							>
 						</div>
 						<div class="products-third-section-title-wrapper">
-							<div class="products-third-section-title">
+							<div class="products-third-section-title products-section-title">
 								<?php echo get_field('third_section_title'); ?>
 							</div>
-							<div class="products-third-section-subtitle">
+							<div class="products-third-section-subtitle products-section-subtitle">
 								<?php echo get_field('third_section_subtitle'); ?>
 							</div>
 						</div>
 					</div>
 					<div class="products-third-section-line"></div>
-					<div class="products-third-section-text">
+					<div class="products-third-section-text products-section-text">
 						<?php echo get_field('third_section_text'); ?>
 					</div>
 				</div>
@@ -176,16 +176,16 @@
 							>
 						</div>
 						<div class="products-fourth-section-title-wrapper">
-							<div class="products-fourth-section-title">
+							<div class="products-fourth-section-title products-section-title">
 								<?php echo get_field('fourth_section_title'); ?>
 							</div>
-							<div class="products-fourth-section-subtitle">
+							<div class="products-fourth-section-subtitle products-section-subtitle">
 								<?php echo get_field('fourth_section_subtitle'); ?>
 							</div>
 						</div>
 					</div>
 					<div class="products-fourth-section-line"></div>
-					<div class="products-fourth-section-text">
+					<div class="products-fourth-section-text products-section-text">
 						<?php echo get_field('fourth_section_text'); ?>
 					</div>
 				</div>
@@ -229,16 +229,16 @@
 							>
 						</div>
 						<div class="products-fifth-section-title-wrapper">
-							<div class="products-fifth-section-title">
+							<div class="products-fifth-section-title products-section-title">
 								<?php echo get_field('fifth_section_title'); ?>
 							</div>
-							<div class="products-fifth-section-subtitle">
+							<div class="products-fifth-section-subtitle products-section-subtitle">
 								<?php echo get_field('fifth_section_subtitle'); ?>
 							</div>
 						</div>
 					</div>
 					<div class="products-fifth-section-line"></div>
-					<div class="products-fifth-section-text">
+					<div class="products-fifth-section-text products-section-text">
 						<?php echo get_field('fifth_section_text'); ?>
 					</div>
 				</div>
@@ -286,19 +286,19 @@
 			</div>
 			<div class="products-last-section-right-col">
 				<div class="products-last-section-bubble">
-					<div id="products-tab-reach" class="products-last-section-text">
+					<div id="products-tab-reach" class="products-last-section-text products-section-text">
 						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_reach_title'); ?>
 						</h3>
 						<?php echo get_field('last_section_reach_text'); ?>
 					</div>
-					<div id="products-tab-sync" class="products-last-section-text hide">
+					<div id="products-tab-sync" class="products-last-section-text products-section-text hide">
 						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_sync_title'); ?>
 						</h3>
 						<?php echo get_field('last_section_sync_text'); ?>
 					</div>
-					<div id="products-tab-assist" class="products-last-section-text hide">
+					<div id="products-tab-assist" class="products-last-section-text products-section-text hide">
 						<h3 class="products-last-section-col-title">
 							<?php echo get_field('last_section_assist_title'); ?>
 						</h3>
