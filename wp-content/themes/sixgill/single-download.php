@@ -31,8 +31,8 @@
 		<div class="resource-details-preview">
 			<?php the_field("resource_preview"); ?>
 		</div>
-		<div class="resource-details-preview-download-tip">
-			DOWNLOAD THE WEBINAR TO GET FULL ACCESS
+		<div class="resource-details-preview-download-tip no-mobile-landscape-display no-mobile-portrait-display">
+			DOWNLOAD THE <?php echo wp_get_post_terms($id, 'sdm_categories')[0]->name; ?> TO GET FULL ACCESS
 		</div>
 	</div>
 
@@ -55,9 +55,11 @@
 			</div>
 		</div>
 
+		<div class="resource-details-line"></div>
+
 		<div class="resource-details-share">
 			<div class="resource-details-share-header">
-				SHARE THIS WEBINAR
+				SHARE THIS <?php echo wp_get_post_terms($id, 'sdm_categories')[0]->name; ?>
 			</div>
 			<div class="resource-details-share-wrapper">
 				<?php
@@ -67,21 +69,7 @@
 				?>
 			</div>
 		</div>
-<?php
-if(in_array('administrator',  wp_get_current_user()->roles)) {
-?>
-		<div class="resource-details-share">
-			<div class="resource-details-share-header">
-				Sharing link (Admin panel)
-			</div>
-			<div class="resource-details-share-wrapper">
-				<input class="js-share-link-input full-width" value="<?php echo get_site_url().$downloadLink; ?>">
-				You can test the download link <a href="<?php echo $downloadLink; ?>">here</a>
-			</div>
-		</div>
-<?php
-}
-?>
+
 	</div>
 </div>
 
