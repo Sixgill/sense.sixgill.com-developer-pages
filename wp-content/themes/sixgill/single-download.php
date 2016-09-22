@@ -39,7 +39,7 @@
 	<div class="resource-details-col-right">
 		<div class="resource-details-download-form">
 			<div class="resource-details-download-form-header">
-				DOWNLOAD THE WEBINAR
+				DOWNLOAD THE <?php echo wp_get_post_terms($id, 'sdm_categories')[0]->name; ?>
 			</div>
 			<div class="resource-details-download-form-wrapper">
 				<a href="<?php echo get_site_url().$downloadLink; ?>">

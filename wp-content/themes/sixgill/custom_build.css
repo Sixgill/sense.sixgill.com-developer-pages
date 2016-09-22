@@ -14026,6 +14026,7 @@ footer div.mc4wp-error p {
   letter-spacing: 0.8px;
   text-align: center;
   color: #4ddb5a;
+  text-transform: uppercase;
 }
 .resources-list-header-subtitle {
   line-height: 1.1em;
@@ -14184,6 +14185,7 @@ footer div.mc4wp-error p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-transform: uppercase;
 }
 .resource-details-download-form-wrapper {
   width: 100%;
@@ -14297,6 +14299,7 @@ footer div.mc4wp-error p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-transform: uppercase;
 }
 .resource-details-share-wrapper {
   width: 100%;
