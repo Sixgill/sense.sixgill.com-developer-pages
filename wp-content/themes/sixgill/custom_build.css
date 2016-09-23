@@ -14627,6 +14627,7 @@ div.resource-details-share-buttons .social-buttons-link {
 }
 .products-last-section-col-title {
   color: #2e2e2e;
+  letter-spacing: 0.7px;
 }
 .products-last-section-list {
   display: -webkit-flex;
@@ -14955,7 +14956,7 @@ body.modal-open {
 }
 .footer-top-block-right {
   /*width: 25%;*/
-  width: 180px;
+  width: 165px;
   margin-left: 60px;
 }
 .footer-top-text {
@@ -16796,6 +16797,7 @@ body.modal-open {
   font-weight: 500;
   line-height: 1em;
   display: inline-block;
+  letter-spacing: 1.4px;
 }
 .products-fixed-panel-icon-wrapper {
   width: 30px;
@@ -17156,6 +17158,7 @@ body.modal-open {
   text-align: center;
   margin: 4.6vw 0px 5vw 0px;
   line-height: 1em;
+  letter-spacing: 4.9px;
 }
 .products-last-section-tab-logo {
   width: 19.9vw;
@@ -17451,17 +17454,32 @@ body.modal-open {
 }
 .footer-top-block {
   height: 56%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer-top-block-left,
 .footer-top-block-right {
   height: 50%;
 }
 .footer-top-block-left {
-  width: 60%;
-  text-align: right !important;
+  max-width: 70%;
+  width: auto;
+  padding-right: 4%;
+  padding-left: 1%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /*text-align: right !important;*/
 }
 .footer-top-block-right {
-  width: 40%;
+  width: 30%;
   text-align: left !important;
   /*padding-left: 3.6%;*/
 }
@@ -17490,8 +17508,7 @@ body.modal-open {
 }
 .footer-subscription-form-wrapper {
   height: 75%;
-  width: 82%;
-  margin-right: 9%;
+  width: auto;
 }
 .footer-icons-wrapper {
   height: 100%;
@@ -19470,9 +19487,11 @@ ul:not([class]) li {
   text-align: center;
   margin: 50px 0px 0px 0px;
   font-size: 35px;
+  letter-spacing: 3.8px;
 }
 .products-last-section-col-title {
   margin: 30px 0px 30px 0px;
+  letter-spacing: 0.7px;
 }
 .products-last-section-left-col {
   -webkit-align-self: center;
@@ -21893,6 +21912,7 @@ ul:not([class]) li {
   text-align: center;
   margin-bottom: 0px;
   margin-top: 37px;
+  letter-spacing: 2.7px;
 }
 .products-last-section-col-title {
   font-size: 24px;
