@@ -17718,6 +17718,12 @@ body.modal-open {
 }
 
 /* Company tablet styles */
+.company-leadership-anchor {
+  display: block;
+  position: relative;
+  top: -117px;
+  visibility: hidden;
+}
 .company-learn-more-link {
   display: block;
   position: absolute;
@@ -18793,6 +18799,12 @@ ul:not([class]) li {
 }
 
 /* Tech tablet styles */
+.tech-location-anchor {
+  display: block;
+  position: relative;
+  top: -117px;
+  visibility: hidden;
+}
 .tech-learn-more-link {
   display: block;
   position: absolute;
@@ -19081,6 +19093,12 @@ ul:not([class]) li {
 }
 
 /* Products tablet styles */
+.products-sence-anchor {
+  display: block;
+  position: relative;
+  top: -117px;
+  visibility: hidden;
+}
 .products-section {
   min-height: calc(100vh - 121px);
 }
