@@ -14324,6 +14324,10 @@ footer div.mc4wp-error p {
   width: 100%;
   padding: 0px 15px 0px 15px;
 }
+.resource-details-share-wrapper _:-ms-lang(x),
+.resource-details-share-wrapper {
+  margin-top: -53px;
+}
 div.resource-details-share-buttons {
   position: relative;
   left: inherit;
