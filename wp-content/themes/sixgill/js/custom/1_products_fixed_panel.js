@@ -65,7 +65,7 @@ $(function() {
 
   //TODO: use factory pattern
     window.onScrolledTo(
-      $('#ancillary'),
+      $('.js-a-ancillary'),
 
       function() {
         changePanelVisibility(true);

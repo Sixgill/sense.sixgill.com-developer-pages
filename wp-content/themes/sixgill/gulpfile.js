@@ -19,6 +19,8 @@ var gulpComponents = {
   cleanCSS: require('gulp-empty'),
   uglify: require('gulp-empty'),
   sourcemaps: require('gulp-sourcemaps'),
+  imagemin: require('gulp-imagemin'),
+  size: require('gulp-size'),
 }
 
 gulpComponents.cssWrappers = require('./gulp/css_wrappers')(gulpComponents);
@@ -26,6 +28,8 @@ gulpComponents.cssWrappers = require('./gulp/css_wrappers')(gulpComponents);
 var gulp = gulpComponents.gulp,
     gutil = gulpComponents.gutil;
     runSequence = gulpComponents.runSequence,
+    imagemin = gulpComponents.imagemin,
+    size = gulpComponents.size,
     argv = require('yargs').argv;
 
 if(argv.minify) {
@@ -69,3 +73,14 @@ gulp.task('build_css',
       callback
   )
 );
+
+gulp.task('compress', function() {
+  return gulp.src('./img/src/**/*.{jpg,jpeg,png,gif}')
+    .pipe(imagemin({
+      optimizationLevel: 3,
+      progessive: true,
+      interlaced: true
+    }))
+    .pipe(gulp.dest('./img/'))
+    .pipe(size());
+});

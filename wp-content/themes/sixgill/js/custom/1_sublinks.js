@@ -10,7 +10,7 @@ jQuery(function($) {
 
 	$('.menu-sublink').each(function() {
 		var link = $(this);
-		var selector = $(this).attr('href');
+		var selector = $(this).attr('href').replace('#', '.js-a-');
 		var selectedSection = $(selector);
 		if(!selectedSection.length) {
 			return;

@@ -38,8 +38,8 @@
 			</div>
 		</a>
 	</div>
-	<a name="leadership"></a>
-	<div id="leadership" class="company-section company-second-section">
+	<a class="company-leadership-anchor" id="leadership"></a>
+	<div class="company-section company-second-section js-a-leadership">
 		<div class="inline-block full-width">
 			<div class="company-second-section-block">
 			<h1 class="company-second-section-block-title">
@@ -88,8 +88,8 @@
 			</div>
 		</div>
 	</div>
-	<a name="board"></a>
-	<div id="board" class="company-section company-third-section">
+	<a id="board"></a>
+	<div class="company-section company-third-section js-a-board">
 		<div class="inline-block full-width company-third-section-wrapper">
 			<div class="company-third-section-text">
 				<h1 class="company-third-section-title">
