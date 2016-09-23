@@ -13407,6 +13407,7 @@ footer div.mc4wp-error p {
 .solutions-icon-caption {
   font-family: 'Lato';
   text-align: center;
+  color: #2e2e2e;
 }
 .solutions-icon-link a {
   font-family: 'Lato';
@@ -13506,6 +13507,9 @@ footer div.mc4wp-error p {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.solutions-third-section-text-block {
+  text-align: center;
+}
 .solutions-third-section-image-wrapper {
   display: inline-block;
   text-align: right;
@@ -13515,7 +13519,7 @@ footer div.mc4wp-error p {
   width: 51%;
   display: inline-block;
   vertical-align: middle;
-  padding-left: 40px;
+  text-align: left;
 }
 .solutions-third-section-block-title {
   margin: 0;
@@ -13555,7 +13559,7 @@ footer div.mc4wp-error p {
   margin: 30px auto 0;
 }
 .solutions-third-section-icon-list .solutions-icon-caption {
-  color: #fff;
+  color: #dfdfdf;
 }
 .solutions-third-section-icon-wrapper .solutions-icon-link a {
   color: #0b98dd;
@@ -15906,7 +15910,7 @@ body.modal-open {
   padding: 25px 2.8vw;
 }
 .solutions-icon-caption {
-  font-size: 18.6px;
+  font-size: 19px;
   font-weight: 700;
   letter-spacing: 0.6px;
   max-width: 150px;
@@ -15961,6 +15965,7 @@ body.modal-open {
   line-height: 1em;
   margin-bottom: 2vw;
   text-transform: uppercase;
+  letter-spacing: 3.1px;
 }
 .solutions-first-section-block-text {
   width: 71%;
@@ -15975,6 +15980,7 @@ body.modal-open {
 .solutions-first-section-block-paragraph p {
   margin-bottom: 0px;
   width: 100%;
+  letter-spacing: 0.5px;
 }
 .solutions-first-section-image {
   height: 100%;
@@ -16017,6 +16023,8 @@ body.modal-open {
   font-weight: 300;
   line-height: 1;
   letter-spacing: 4.8px;
+  padding: 0px;
+  margin: 0px 0px 28px 0px;
 }
 .solutions-second-section-text-block {
   text-align: center;
@@ -16033,13 +16041,17 @@ body.modal-open {
   vertical-align: top;
   width: 40vw;
 }
+.solutions-second-section-block-paragraph p {
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+}
 .solutions-second-section-icon-item {
   padding: 1vw 4vw;
 }
 .solutions-second-section-icons-block {
   width: 67vw;
 }
-.solutions-second-section-block-title,
 .solutions-second-section-icons-title {
   margin: 0;
   padding: 0;
@@ -16059,6 +16071,10 @@ body.modal-open {
   font-weight: 300;
   line-height: 1;
   letter-spacing: 4.8px;
+  padding: 0px 0px 28px 0px;
+}
+.solutions-third-section-block-text {
+  padding-left: 3vw;
 }
 .solutions-third-section-block-paragraph p {
   font-size: 16px;
@@ -16083,12 +16099,12 @@ body.modal-open {
   width: 20vw;
 }
 .solution-subpage-suptitle {
-  font-size: 25.2px;
+  font-size: 25px;
   font-weight: 500;
   letter-spacing: 0.8px;
 }
 .solution-subpage-title {
-  font-size: 59.7px;
+  font-size: 60px;
   font-weight: 300;
   margin: 0px 10px 0px 10px;
 }
@@ -16108,7 +16124,7 @@ body.modal-open {
   width: 63vw;
 }
 .solution-subpage-bottom-block-title {
-  font-size: 44.6px;
+  font-size: 45px;
   font-weight: 300;
   line-height: 0.45;
   letter-spacing: 1.3px;
@@ -18196,7 +18212,7 @@ body.modal-open {
   padding: 1.5vw;
 }
 .solutions-icon-caption {
-  font-size: 18.6px;
+  font-size: 19px;
   font-weight: 700;
   letter-spacing: 0.6px;
   max-width: 150px;
@@ -18301,6 +18317,9 @@ body.modal-open {
 .solutions-second-section-icons-block {
   width: 92vw;
 }
+.solutions-second-section-image {
+  vertical-align: text-top;
+}
 .solutions-second-section-icons-title {
   font-size: 16px;
   font-weight: 700;
@@ -18328,7 +18347,7 @@ body.modal-open {
   display: inline-block;
 }
 .solutions-second-section-block-title {
-  font-size: 35.1px;
+  font-size: 35px;
   font-weight: 300;
   line-height: 1.25;
   letter-spacing: 3.9px;
@@ -18337,6 +18356,11 @@ body.modal-open {
   left: 0;
   top: -2.1em;
   width: 100%;
+}
+.solutions-second-section-block-paragraph p {
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
 }
 .solutions-third-section {
   min-height: 100vh;
@@ -18365,6 +18389,8 @@ body.modal-open {
 }
 .solutions-third-section-block-text {
   vertical-align: top;
+  padding-right: 28px;
+  width: 57%;
 }
 .solutions-third-section-icons-title {
   font-size: 16px;
@@ -18378,6 +18404,9 @@ body.modal-open {
   height: 2px;
   vertical-align: 0.3em;
   width: 20vw;
+}
+.solutions-third-section-image-wrapper {
+  padding: 0px 28px;
 }
 .solutions-third-section-use-cases-block-subtitle {
   min-height: 135px;
@@ -18417,7 +18446,7 @@ body.modal-open {
   font-weight: 500;
 }
 .solution-subpage-section-title {
-  font-size: 35.2px;
+  font-size: 35px;
   letter-spacing: 1.1px;
   margin-top: 55px;
   margin-bottom: 28px;
@@ -18444,7 +18473,7 @@ body.modal-open {
   width: 88.2vw;
 }
 .solution-subpage-bottom-block-title {
-  font-size: 44.6px;
+  font-size: 45px;
   font-weight: 300;
   line-height: 0.45;
   letter-spacing: 1.3px;
@@ -20855,7 +20884,7 @@ ul:not([class]) li {
   padding: 25px 0;
 }
 .solutions-icon-caption {
-  font-size: 18.6px;
+  font-size: 19px;
   font-weight: 700;
   letter-spacing: 0.6px;
   max-width: inherit;
@@ -20873,6 +20902,7 @@ ul:not([class]) li {
 }
 .solutions-first-section {
   background-image: url('images/solutions/featBg-mobile@1x.png');
+  min-height: inherit;
 }
 .solutions-first-section-block {
   width: 100%;
@@ -20890,7 +20920,7 @@ ul:not([class]) li {
   font-family: "Lato";
   letter-spacing: 1.5px;
   line-height: 1em;
-  margin-bottom: 27px;
+  margin-bottom: 14px;
   text-transform: uppercase;
 }
 .solutions-first-section-block-text {
@@ -20902,10 +20932,12 @@ ul:not([class]) li {
 .solutions-first-section-block-paragraph p,
 .solutions-first-section-block-paragraph li {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 10;
 }
 .solutions-first-section-block-paragraph p {
   margin-bottom: 0px;
+  line-height: 1.83;
+  letter-spacing: 0.5px;
 }
 .solutions-first-section-image-wrapper {
   display: none;
@@ -20926,7 +20958,7 @@ ul:not([class]) li {
   display: none;
 }
 .solutions-second-section-block-title {
-  font-size: 26.3px;
+  font-size: 26px;
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: 2.9px;
@@ -20958,6 +20990,11 @@ ul:not([class]) li {
   text-align: center;
   margin-bottom: 0px;
 }
+.solutions-second-section-block-paragraph p {
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+}
 .solutions-third-section {
   display: block;
   height: auto;
@@ -20966,7 +21003,7 @@ ul:not([class]) li {
   display: none;
 }
 .solutions-third-section-block-title {
-  font-size: 26.3px;
+  font-size: 26px;
   font-weight: 300;
   line-height: 1.67;
   letter-spacing: 2.9px;
@@ -20982,6 +21019,14 @@ ul:not([class]) li {
   display: inline-block;
   padding: 16px;
   width: 100%;
+}
+.solutions-third-section-block .solutions-icon-caption {
+  color: #fff;
+}
+.solutions-third-section-icons-title {
+  font-size: 16px;
+  line-height: 2.83;
+  letter-spacing: 0.5px;
 }
 .solutions-third-section-icons-title::after,
 .solutions-third-section-icons-title::before {
@@ -21133,7 +21178,7 @@ p.solution-use-cases-title {
   margin-bottom: 50px;
 }
 .solution-subpage-suptitle {
-  font-size: 13.2px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.4px;
 }
@@ -22021,7 +22066,6 @@ a.search-post-result {
   }
   .solutions-third-section-block-text {
     width: 100%;
-    padding-right: 40px;
     padding-top: 40px;
   }
   .solutions-third-section-image-wrapper {
@@ -22051,6 +22095,11 @@ a.search-post-result {
   }
   .home-fourth-section-carousel .owl-buttons .owl-next {
     right: -5vw;
+  }
+}
+@media (min-width: 501px) and (max-width: 662px) {
+  .solutions-third-section-block-paragraph {
+    padding: 0 28px;
   }
 }
 
