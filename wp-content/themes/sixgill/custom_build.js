@@ -6543,40 +6543,59 @@ jQuery(function($) {
 	checkViewportHeight();
 
 	$(window).resize(checkViewportHeight);
-});
 
+	// function checkLayoutWidth() {
+	// 	var currentLayoutFlag;
+	// 	var currentLayoutWidth = $(window).width();
+	// 	//if(currentLayoutWidth>1101 ) { currentLayoutFlag = "desktop"; };
+	// 	//if(currentLayoutWidth<1101 &&  $(window).width()>491) { currentLayoutFlag = "tablet"; };
+	// 	//if(currentLayoutWidth<490) { currentLayoutFlag = "mobile"; };
 
-jQuery(function($) {
+	// 	$(window).resize(function() {
+	// 		currentLayoutWidth = $(window).width();
+	// 		if(currentLayoutWidth>1084 ) {
+	// 			if(currentLayoutFlag != "desktop") {
+	// 				currentLayoutFlag = "desktop";
+	// 				window.setTimeout('location.reload()', 500);
+	// 			};	
+	// 		};
+	// 		if(currentLayoutWidth<1084 &&  $(window).width()>491) {
+	// 			if(currentLayoutFlag != "tablet") {
+	// 				currentLayoutFlag = "tablet";
+	// 				window.setTimeout('location.reload()', 500);
+	// 			};
+	// 		};
+	// 		// if(currentLayoutWidth<490) {
+	// 		// 	if(currentLayoutFlag != "mobile") {
+	// 		// 		currentLayoutFlag = "mobile";
+	// 		// 		console.log(currentLayoutFlag);
+	// 		// 	};
+	// 		// };
+	// 	});
+	// };
+
 	function checkLayoutWidth() {
-		var currentLayoutFlag;
-		var currentLayoutWidth = $(window).width();
-		//if(currentLayoutWidth>1101 ) { currentLayoutFlag = "desktop"; };
-		//if(currentLayoutWidth<1101 &&  $(window).width()>491) { currentLayoutFlag = "tablet"; };
-		//if(currentLayoutWidth<490) { currentLayoutFlag = "mobile"; };
+		var myCurrentScreenType = window.screenType;
+		console.log(myCurrentScreenType);
 
 		$(window).resize(function() {
-			currentLayoutWidth = $(window).width();
-			if(currentLayoutWidth>1084 ) {
-				if(currentLayoutFlag != "desktop") {
-					currentLayoutFlag = "desktop";
-					window.setTimeout('location.reload()', 500);
-				};	
+			if (CurrentScreenType == 'desktop' && window.screenType != myCurrentScreenType) {
+				console.log('тип экрана поменялся с десктоп на любой другой');
+			}
+			else if (CurrentScreenType == 'tablet' && window.screenType == 'desktop') {
+				console.log('тип экрана поменялся с tablet на desktop');	
+			}
+			else if (CurrentScreenType == 'mobile-portrait' && window.screenType == 'desktop') {
+				console.log('тип экрана поменялся с mobile-portrait на desktop');
+			}
+			else if (CurrentScreenType == 'mobile-landscape' && window.screenType == 'desktop') {
+				console.log('тип экрана поменялся с mobile-landscape на desktop');
 			};
-			if(currentLayoutWidth<1084 &&  $(window).width()>491) {
-				if(currentLayoutFlag != "tablet") {
-					currentLayoutFlag = "tablet";
-					window.setTimeout('location.reload()', 500);
-				};
-			};
-			// if(currentLayoutWidth<490) {
-			// 	if(currentLayoutFlag != "mobile") {
-			// 		currentLayoutFlag = "mobile";
-			// 		console.log(currentLayoutFlag);
-			// 	};
-			// };
 		});
 	};
+
 	checkLayoutWidth();
+
 });
 
 jQuery(function($){
