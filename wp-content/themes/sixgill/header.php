@@ -68,6 +68,10 @@
 
 				<div id="menu-schedule-button-wrapper" class="menu-schedule-button-wrapper display-only-desktop">
 					<div class="nav-divider-line"></div>
+					<div class="search-box-container">
+						<?php get_search_form() ?>
+					</div>
+					<div class="nav-divider-line"></div>
 					<a href="#" class="menu-schedule-button-link" data-toggle="modal" data-target="#myModal">
 						<div id="menu-schedule-button" class="menu-schedule-button button-blue">
 							<div class="vertical-centered">
