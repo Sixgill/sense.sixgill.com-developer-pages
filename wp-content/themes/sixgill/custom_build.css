@@ -19793,21 +19793,6 @@ ul:not([class]) li {
 .home-first-section {
   margin-top: 74px;
 }
-.home-second-section-title {
-  font-size: 6.25vw;
-}
-.home-second-section-header-top-title {
-  font-size: 5.3vw;
-}
-.home-second-section-subtitle {
-  font-size: 4vw;
-}
-.home-second-section-block-title {
-  font-size: 5vw;
-}
-.home-second-section-block-content p {
-  font-size: 5vw;
-}
 
 /* Solutions mobile portrait styles */
 .solution-subpage-container {
@@ -20031,21 +20016,6 @@ ul:not([class]) li {
 }
 .height-video-container {
   min-height: 246px !important;
-}
-.home-second-section-title {
-  font-size: 6.25vw;
-}
-.home-second-section-header-top-title {
-  font-size: 5.3vw;
-}
-.home-second-section-subtitle {
-  font-size: 4vw;
-}
-.home-second-section-block-title {
-  font-size: 4vw;
-}
-.home-second-section-block-content p {
-  font-size: 4vw;
 }
 
 /* Solutions mobile landscape styles */
@@ -20713,11 +20683,12 @@ ul:not([class]) li {
   margin: 0px 8px 0px 8px;
   text-transform: uppercase;
   letter-spacing: 0.9px;
+  font-size: 17px;
 }
 .home-second-section-title {
   text-align: center;
   letter-spacing: 0.6px;
-  font-size: 21px;
+  font-size: 20px;
   margin-bottom: 12px;
 }
 .home-second-section-subtitle {
@@ -20752,6 +20723,7 @@ ul:not([class]) li {
 }
 .home-second-section-block-content p {
   margin-bottom: 0;
+  font-size: 16px;
 }
 .home-second-section-icon-wrapper {
   display: none;
