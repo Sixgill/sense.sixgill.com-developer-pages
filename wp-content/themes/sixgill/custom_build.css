@@ -12520,7 +12520,7 @@ footer div.mc4wp-error p {
   display: -ms-flexbox;
   display: flex;
   font-family: "Lato";
-  font-weight: 600;
+  font-weight: normal;
   line-height: 1em;
   color: #ffffff;
   width: 100%;
@@ -12570,7 +12570,7 @@ footer div.mc4wp-error p {
   display: -ms-flexbox;
   display: flex;
   font-family: "Lato";
-  font-weight: 600;
+  font-weight: normal;
   color: #ffffff;
   line-height: 1em;
   width: 100%;
@@ -15098,7 +15098,7 @@ body.modal-open {
 .blog-page-subscription-block-title {
   font-size: 16px;
   height: 35px;
-  letter-spacing: 1.1px;
+  letter-spacing: 1.2px;
 }
 .blog-page-subscription-form-wrapper {
   padding: 10px;
@@ -15133,7 +15133,7 @@ body.modal-open {
 .blog-page-popular-block-title {
   font-size: 16px;
   height: 35px;
-  letter-spacing: 1.1px;
+  letter-spacing: 1.2px;
 }
 .blog-page-popular-post-card {
   display: -webkit-flex;
