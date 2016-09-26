@@ -3,7 +3,9 @@
 ?>
 <?php
 	if ( have_posts() ) while ( have_posts() ) : the_post();
+	$resourceType = get_field('resource_type');
 ?>
+
 <div
 	class="resources-list-header responsive-background"
 	desktop-src="<?php the_field("header_image_desktop", $resourcePageID); ?>"
@@ -12,7 +14,7 @@
 >
 	<h1 class="resources-list-header-title">
 		SIXGILL RESOURCES -
-		<?php echo wp_get_post_terms($id, 'sdm_categories')[0]->name; ?>
+		<?php echo $resourceType; ?>
 	</h1>
 	<h2 class="resources-list-header-subtitle">
 		<?php the_title(); ?>
@@ -32,14 +34,14 @@
 			<?php the_field("resource_preview"); ?>
 		</div>
 		<div class="resource-details-preview-download-tip no-mobile-landscape-display no-mobile-portrait-display">
-			DOWNLOAD THE <?php echo wp_get_post_terms($id, 'sdm_categories')[0]->name; ?> TO GET FULL ACCESS
+			DOWNLOAD THE <?php echo $resouceTypee; ?> TO GET FULL ACCESS
 		</div>
 	</div>
 
 	<div class="resource-details-col-right">
 		<div class="resource-details-download-form">
 			<div class="resource-details-download-form-header">
-				DOWNLOAD THE <?php echo wp_get_post_terms($id, 'sdm_categories')[0]->name; ?>
+				DOWNLOAD THE <?php echo $resourceType; ?>
 			</div>
 			<div class="resource-details-download-form-wrapper">
 				<a href="<?php echo get_site_url().$downloadLink; ?>">
@@ -59,7 +61,7 @@
 
 		<div class="resource-details-share">
 			<div class="resource-details-share-header">
-				SHARE THIS <?php echo wp_get_post_terms($id, 'sdm_categories')[0]->name; ?>
+				SHARE THIS <?php echo $resourceType; ?>
 			</div>
 			<div class="resource-details-share-wrapper">
 				<?php
