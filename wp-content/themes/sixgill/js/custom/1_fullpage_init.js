@@ -70,19 +70,19 @@ jQuery(function($) {
 
 	function checkLayoutWidth() {
 		var myCurrentScreenType = window.screenType;
-		console.log(myCurrentScreenType);
+		console.log(currentScreenType);
 
 		$(window).resize(function() {
-			if (CurrentScreenType == 'desktop' && window.screenType != myCurrentScreenType) {
+			if (currentScreenType == 'desktop' && window.screenType != currentScreenType) {
 				console.log('тип экрана поменялся с десктоп на любой другой');
 			}
-			else if (CurrentScreenType == 'tablet' && window.screenType == 'desktop') {
+			else if (currentScreenType == 'tablet' && window.screenType == 'desktop') {
 				console.log('тип экрана поменялся с tablet на desktop');	
 			}
-			else if (CurrentScreenType == 'mobile-portrait' && window.screenType == 'desktop') {
+			else if (currentScreenType == 'mobile-portrait' && window.screenType == 'desktop') {
 				console.log('тип экрана поменялся с mobile-portrait на desktop');
 			}
-			else if (CurrentScreenType == 'mobile-landscape' && window.screenType == 'desktop') {
+			else if (currentScreenType == 'mobile-landscape' && window.screenType == 'desktop') {
 				console.log('тип экрана поменялся с mobile-landscape на desktop');
 			};
 		});
