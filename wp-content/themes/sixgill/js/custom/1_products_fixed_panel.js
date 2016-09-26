@@ -65,7 +65,7 @@ $(function() {
 
   //TODO: use factory pattern
     window.onScrolledTo(
-      $('#ancillary'),
+      $('.js-a-ancillary'),
 
       function() {
         changePanelVisibility(true);
@@ -147,7 +147,6 @@ $(function() {
 
   $(window).on('scroll', function() {
     var startPosition = $('#products-third-section').offset().top - 90;
-    console.log(startPosition);
     if ($(window).scrollTop() >= startPosition) {
        changePanelPosition(true);
     } else {

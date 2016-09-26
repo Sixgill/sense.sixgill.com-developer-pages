@@ -12,7 +12,9 @@ module.exports = (gulpComponents) => {
       map = gulpComponents.map,
       remember = gulpComponents.remember,
       paths = gulpComponents.paths,
-      eventStream = gulpComponents.eventStream;
+      eventStream = gulpComponents.eventStream,
+      plumber = gulpComponents.plumber,
+      sourcemaps = gulpComponents.sourcemaps;
 
 var lessSource = paths.less.source,
     lessDest = paths.less.dest;
@@ -48,10 +50,13 @@ var buildings = paths.builds.values;
   gulp.task('styles',
     () => gulp.src(buildings)
             .pipe(cache('styles'))
+            .pipe(plumber())
+            .pipe(sourcemaps.init())
             .pipe(autoprefixer({ browsers: ['ie >= 10', 'Firefox >= 45', 'ios >= 8']}))
             .pipe(cleanCSS())
             .pipe(remember('styles'))
             .pipe(concat('custom_build.css'))
+            .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest('./'))
   );
 

@@ -3,7 +3,9 @@
 ?>
 <?php
 	if ( have_posts() ) while ( have_posts() ) : the_post();
+	$resourceType = get_field('resource_type');
 ?>
+
 <div
 	class="resources-list-header responsive-background"
 	desktop-src="<?php the_field("header_image_desktop", $resourcePageID); ?>"
@@ -12,7 +14,7 @@
 >
 	<h1 class="resources-list-header-title">
 		SIXGILL RESOURCES -
-		<?php echo wp_get_post_terms($id, 'sdm_categories')[0]->name; ?>
+		<?php echo $resourceType; ?>
 	</h1>
 	<h2 class="resources-list-header-subtitle">
 		<?php the_title(); ?>
@@ -24,35 +26,42 @@
 	$downloadID = $downloadFileInfo['id'];
 	$downloadKey = md5(md5($downloadFileInfo['name']));
 	$downloadLink = '/download/?id=' . $downloadID . '&key=' . $downloadKey;
-	echo '<iframe id="resource-download-frame" class="hidden" data-src="' . $downloadLink . '"></iframe>';
 ?>
 
-
-
-
-<div class="resource-details">
+<div class="resource-details" data-download-link="<?php echo $downloadLink; ?>">
 	<div class="resource-details-col-left">
 		<div class="resource-details-preview">
 			<?php the_field("resource_preview"); ?>
 		</div>
-		<div class="resource-details-preview-download-tip">
-			DOWNLOAD THE WEBINAR TO GET FULL ACCESS
+		<div class="resource-details-preview-download-tip no-mobile-landscape-display no-mobile-portrait-display">
+			DOWNLOAD THE <?php echo $resouceTypee; ?> TO GET FULL ACCESS
 		</div>
 	</div>
 
 	<div class="resource-details-col-right">
 		<div class="resource-details-download-form">
 			<div class="resource-details-download-form-header">
-				DOWNLOAD THE WEBINAR
+				DOWNLOAD THE <?php echo $resourceType; ?>
 			</div>
 			<div class="resource-details-download-form-wrapper">
-				<?php dynamic_sidebar( 'download-access' ); ?>
+				<a href="<?php echo get_site_url().$downloadLink; ?>">
+					<div class="resource-details-download-form-submit-button button-blue resource-details-download-form-submit-button-temp">
+						Download Now
+					</div>
+				</a>
+				<?php /*dynamic_sidebar( 'download-access' );*/ ?>
+				<div class="resource-details-download-link hide">
+					<p>Downloading will start soon.</p>
+					<a href="<?php echo get_site_url().$downloadLink; ?>">Download this resource manually</a>
+				</div>
 			</div>
 		</div>
 
+		<div class="resource-details-line"></div>
+
 		<div class="resource-details-share">
 			<div class="resource-details-share-header">
-				SHARE THIS WEBINAR
+				SHARE THIS <?php echo $resourceType; ?>
 			</div>
 			<div class="resource-details-share-wrapper">
 				<?php
@@ -62,21 +71,7 @@
 				?>
 			</div>
 		</div>
-<?php
-if(in_array('administrator',  wp_get_current_user()->roles)) {
-?>
-		<div class="resource-details-share">
-			<div class="resource-details-share-header">
-				Sharing link (Admin panel)
-			</div>
-			<div class="resource-details-share-wrapper">
-				<input class="js-share-link-input full-width" value="<?php echo get_site_url().$downloadLink; ?>">
-				You can test the download link <a href="<?php echo $downloadLink; ?>">here</a>
-			</div>
-		</div>
-<?php
-}
-?>
+
 	</div>
 </div>
 

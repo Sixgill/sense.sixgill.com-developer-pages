@@ -560,7 +560,6 @@ var SEMICOLON = SEMICOLON || {};
 		resizeVideos: function(){
 
 			if( !$().fitVids ) {
-				console.log('resizeVideos: FitVids not Defined.');
 				return true;
 			}
 
@@ -2007,7 +2006,6 @@ var SEMICOLON = SEMICOLON || {};
 		parallax: function(){
 
 			if( !$.stellar ) {
-				console.log('parallax: Stellar not Defined.');
 				return true;
 			}
 
@@ -2071,7 +2069,6 @@ var SEMICOLON = SEMICOLON || {};
 		loadFlexSlider: function(){
 
 			if( !$().flexslider ) {
-				console.log('loadFlexSlider: FlexSlider not Defined.');
 				return true;
 			}
 
@@ -2667,7 +2664,6 @@ var SEMICOLON = SEMICOLON || {};
 			}
 
 			if( !$().ajaxSubmit ) {
-				console.log('contactForm: jQuery Form not Defined.');
 				return true;
 			}
 
@@ -2733,7 +2729,6 @@ var SEMICOLON = SEMICOLON || {};
 			}
 
 			if( !$().ajaxSubmit ) {
-				console.log('subscription: jQuery Form not Defined.');
 				return true;
 			}
 

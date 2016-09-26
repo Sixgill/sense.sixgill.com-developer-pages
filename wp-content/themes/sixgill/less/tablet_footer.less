@@ -16,6 +16,9 @@
 
 .footer-top-block {
 	height: 56%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .footer-top-block-left, .footer-top-block-right {
@@ -23,12 +26,16 @@
 }
 
 .footer-top-block-left {
-	width: 60%;
-	text-align: right !important;
+	max-width: 70%;
+	width: auto;
+	padding-right: 4%;
+	padding-left: 1%;
+	display: flex;
+	/*text-align: right !important;*/
 }
 
 .footer-top-block-right {
-	width: 40%;
+	width: 30%;
 	text-align: left !important;
 	/*padding-left: 3.6%;*/
 }
@@ -52,17 +59,10 @@
 	border-top: 1px solid #4a4a4a;
 }
 
-.footer-main-link {
-	font-weight: bold;
-	text-transform: uppercase;
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: bold;
-	letter-spacing: 0.7px;
-}
 
 .footer-social-icon-link {
-	height: 75%;
+	height: 35px;
+	width: 35px;
 }
 
 .footer-social-icon-link:not(:last-child) {
@@ -71,8 +71,7 @@
 
 .footer-subscription-form-wrapper {
 	height: 75%;
-	width: 82%;
-	margin-right: 9%;
+	width: auto;
 }
 
 .footer-icons-wrapper {
@@ -86,8 +85,6 @@
 }
 
 .footer-subscription-button {
-	font-size: 18px;
-	font-weight: bold;
 	width: 122px;
 }
 
@@ -114,10 +111,9 @@
 	min-height: inherit;
 }
 .footer-subscribe-error {
-    bottom: 89px;
-    left: 14vw;
-}
-.footer-subscribe-arrow {
-	left: 220px;
-	bottom: 81px;
+    bottom: 35px;
+    left: 24%;
+    &-close {
+  		vertical-align: top;
+    }
 }

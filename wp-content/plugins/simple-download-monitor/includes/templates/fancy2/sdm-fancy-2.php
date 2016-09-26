@@ -91,7 +91,8 @@ function sdm_generate_fancy2_display_output($args) {
     // Get item thumbnail
     $item_download_thumbnail = get_post_meta($id, 'sdm_upload_thumbnail', true);
 		/*$item_download_imagemode = get_post_meta($id, 'sdm_upload_imagemode', true);*/
-		$item_category = wp_get_post_terms($id, 'sdm_categories')[0]->name;
+		/*$item_category = wp_get_post_terms($id, 'sdm_categories')[0]->name;*/
+		$item_category = get_field('resource_type', $id);
 		$item_permalink = get_permalink($id);
 
     // Get item title
@@ -103,10 +104,11 @@ function sdm_generate_fancy2_display_output($args) {
 
 		$output  = '<a href="'.$item_permalink.'" class="resources-list-card-link">';
 			$output .= '<div class="resources-list-card">';
-				$output .= '<div class="resources-list-card-image responsive-background" ';
-				$output .= 'desktop-src="'.$item_thumbnail_image_desktop.'" ';
-				$output .= 'tablet-src="'.$item_thumbnail_image_tablet.'" ';
-				$output .= 'mobile-src="'.$item_thumbnail_image_mobile.'" >';
+				$output .= '<div class="resources-list-card-image-wrapper">';
+					$output .= '<img class="resources-list-card-image responsive-image"';
+					$output .= 'desktop-src="'.$item_thumbnail_image_desktop.'" ';
+					$output .= 'tablet-src="'.$item_thumbnail_image_tablet.'" ';
+					$output .= 'mobile-src="'.$item_thumbnail_image_mobile.'" >';
 				$output .= '</div>';
 				$output .= '<div class="resources-list-card-info">';
 					$output .= '<div class="resources-list-card-category">';

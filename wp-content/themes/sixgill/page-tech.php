@@ -17,7 +17,7 @@
 				<h2 class="tech-first-section-block-subtitle">
 					<?php echo get_field('first_section_subtitle'); ?>
 				</h2>
-				<div class="tech-first-section-block-paragraph">
+				<div class="tech-first-section-block-paragraph tech-section-text">
 					<?php echo get_field('first_section_text'); ?>
 				</div>
 			</div>
@@ -46,8 +46,8 @@
 		</a>
 	</div>
 
-	<a name="location"></a>
-	<div id="location" class="tech-section tech-second-section">
+	<a class="tech-location-anchor" id="location"></a>
+	<div class="tech-section tech-second-section js-a-location">
 		<div class="tech-second-section-wrapper">
 			<div class="tech-second-section-left-col">
 				<div
@@ -61,7 +61,7 @@
 					<div class="tech-second-section-title tech-section-title-blue">
 						<?php echo get_field('second_section_title'); ?>
 					</div>
-					<div class="tech-second-section-text">
+					<div class="tech-second-section-text tech-section-text">
 						<?php echo get_field('second_section_text'); ?>
 					</div>
 				</div>
@@ -77,9 +77,9 @@
 
 	</div>
 
-	<a name="proximity"></a>
+	<a id="proximity"></a>
 	<!-- <a name="tech-third-section"></a> -->
-	<div id="proximity" class="tech-section tech-third-section">
+	<div class="tech-section tech-third-section js-a-proximity">
 		<div class="tech-third-section-wrapper">
 
 			<div class="tech-third-section-left-col">
@@ -88,7 +88,7 @@
 						<?php echo get_field('third_section_title'); ?>
 					</div>
 
-					<div class="tech-third-section-text">
+					<div class="tech-third-section-text tech-section-text">
 						<?php echo get_field('third_section_text'); ?>
 					</div>
 				</div>
@@ -96,9 +96,9 @@
 		</div>
 	</div>
 
-	<a name="platform"></a>
+	<a id="platform"></a>
 	<!-- <a name="tech-fourth-section"></a> -->
-	<div id="platform" class="tech-section tech-fourth-section">
+	<div class="tech-section tech-fourth-section js-a-platform">
 		<div class="tech-fourth-section-title tech-section-title-blue display-only-tablet">
 			<?php echo get_field('fourth_section_title'); ?>
 		</div>
@@ -120,7 +120,7 @@
 						<?php echo get_field('fourth_section_title'); ?>
 					</div>
 
-					<div class="tech-fourth-section-text">
+					<div class="tech-fourth-section-text tech-section-text">
 						<?php echo get_field('fourth_section_text'); ?>
 					</div>
 				</div>
