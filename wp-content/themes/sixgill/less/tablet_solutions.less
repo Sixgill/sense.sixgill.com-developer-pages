@@ -34,7 +34,7 @@
 		}
 
 		&-caption {
-			font-size: 18.6px;
+			font-size: 19px;
 			font-weight: 700;
 			letter-spacing: 0.6px;
 			max-width: 150px;
@@ -139,25 +139,20 @@
 		min-height: 100vh;
 		height: inherit;
 
+		&-icons-block {
+			width: 92vw;
+		}
+		&-image {
+			vertical-align: text-top;
+		}
+
 		&-icons-title {
 			font-size: 16px;
 			font-weight: 700;
 			line-height: 2.83;
 			letter-spacing: 0.5px;
 			padding: 0 26px;
-
-		&:before,
-		&:after {
-				content: "";
-				display: inline-block;
-				height: 2px;
-				opacity: 0.1;
-				vertical-align: 0.3em;
-				position: relative;
-				width: 13vw;
-			}
 		}
-
 
 		&-block {
 			min-height: inherit;
@@ -183,7 +178,7 @@
 		}
 
 		&-block-title {
-			font-size: 35.1px;
+			font-size: 35px;
 			font-weight: 300;
 			line-height: 1.25;
 			letter-spacing: 3.9px;
@@ -192,6 +187,12 @@
 			left: 0;
 			top:-2.1em;
 			width:100%;
+		}
+
+		&-block-paragraph p {
+			font-size: 16px;
+			line-height: 1.33;
+			letter-spacing: 0.5px;
 		}
 
 	}
@@ -225,6 +226,8 @@
 
 			&-text {
 				vertical-align: top;
+				padding-right: 28px;
+				width: 57%;
 			}
 		}
 
@@ -241,6 +244,10 @@
 				vertical-align: 0.3em;
 				width: 20vw;
 			}
+		}
+
+		&-image-wrapper {
+			padding: 0px 28px;
 		}
 
 	&-use-cases {
@@ -299,7 +306,7 @@
 		}
 
 		&-section-title {
-			font-size: 35.2px;
+			font-size: 35px;
 			letter-spacing: 1.1px;
 			margin-top: 55px;
 			margin-bottom: 28px;
@@ -337,7 +344,7 @@
 
 		&-bottom {
 			&-block-title {
-				font-size: 44.6px;
+				font-size: 45px;
 				font-weight: 300;
 				line-height: 0.45;
 				letter-spacing: 1.3px;
@@ -520,9 +527,13 @@
 
 			&-subtitle > p {
 				font-size: 18px;
-				line-height: 20px !important;
-				margin: 0 auto;
-				width: 65%;
+				line-height: 1.15;
+				letter-spacing: 0.5px;
+			}
+			&-subtitle > a {
+				font-size: 16px;
+				line-height: 1.25;
+				letter-spacing: 0.5px;
 			}
 
 			&-image {

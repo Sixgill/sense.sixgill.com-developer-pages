@@ -19,15 +19,19 @@
 
 .footer-top-block-left {
 	width: 75%;
+	max-width: 650px;
 }
 
 .footer-top-block-right {
-	width: 25%;
+	/*width: 25%;*/
+	width: 165px;
+	margin-left: 60px;
 }
 
 .footer-top-text {
 	font-size: 14px;
 	letter-spacing: 0.7px;
+	line-height: 3.2;
 	font-weight: normal;
 	margin-right: 4%;
 	max-width: 50%;
@@ -45,23 +49,19 @@
 	margin-left: 22.7%;
 }
 
-.footer-main-link {
-	font-size: 13px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-}
 
 .footer-bottom-block {
 	height: 29.5%;
 }
 
 .footer-social-icon-link {
-	width: 23%;
+/*	width: 23%;*/
+	width: 35px;
+	height: 35px;
 }
 
 .footer-social-icon-link:not(:last-child) {
-	margin-right: 15%;
+	margin-right: 23px;
 }
 
 .footer-icons-wrapper {
@@ -84,17 +84,14 @@
 }
 
 .footer-subscription-button {
-	font-size: 16px;
-	letter-spacing: 0.8px;
-	font-weight: bold;
 	width: 122px;
 	height: 33px;
 }
 .footer-subscribe-error {
-    bottom: 93px;
-    left: 33.75vw;
-}
-.footer-subscribe-arrow {
-	left: 40vw;
-	bottom: 86px;
+    bottom: 33px;
+    left: 0;
+    &-close {
+	  	margin-left: -1px;
+  		vertical-align: top;
+    }
 }

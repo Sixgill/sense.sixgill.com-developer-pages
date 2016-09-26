@@ -206,18 +206,18 @@ class simpleDownloadManager {
 
         //*****
         //*****  Create metaboxes for the custom post type
-        add_meta_box('sdm_description_meta_box', __('Description', 'simple-download-monitor'), array(&$this, 'display_sdm_description_meta_box'), 'sdm_downloads', 'normal', 'default'
-        );
-        add_meta_box('sdm_upload_meta_box', __('Upload File', 'simple-download-monitor'), array(&$this, 'display_sdm_upload_meta_box'), 'sdm_downloads', 'normal', 'default'
-        );
-        add_meta_box('sdm_thumbnail_meta_box', __('File Thumbnail (Optional)', 'simple-download-monitor'), array(&$this, 'display_sdm_thumbnail_meta_box'), 'sdm_downloads', 'normal', 'default'
-        );
+        /*add_meta_box('sdm_description_meta_box', __('Description', 'simple-download-monitor'), array(&$this, 'display_sdm_description_meta_box'), 'sdm_downloads', 'normal', 'default'
+				);*/
+        /*add_meta_box('sdm_upload_meta_box', __('Upload File', 'simple-download-monitor'), array(&$this, 'display_sdm_upload_meta_box'), 'sdm_downloads', 'normal', 'default'
+				);*/
+        /*add_meta_box('sdm_thumbnail_meta_box', __('File Thumbnail (Optional)', 'simple-download-monitor'), array(&$this, 'display_sdm_thumbnail_meta_box'), 'sdm_downloads', 'normal', 'default'
+				);*/
 
 
-        add_meta_box('sdm_shortcode_meta_box', __('Shortcodes', 'simple-download-monitor'), array(&$this, 'display_sdm_shortcode_meta_box'), 'sdm_downloads', 'normal', 'default'
-        );
-        add_meta_box('sdm_stats_meta_box', __('Statistics', 'simple-download-monitor'), array(&$this, 'display_sdm_stats_meta_box'), 'sdm_downloads', 'normal', 'default'
-        );
+        /*add_meta_box('sdm_shortcode_meta_box', __('Shortcodes', 'simple-download-monitor'), array(&$this, 'display_sdm_shortcode_meta_box'), 'sdm_downloads', 'normal', 'default'
+				);*/
+        /*add_meta_box('sdm_stats_meta_box', __('Statistics', 'simple-download-monitor'), array(&$this, 'display_sdm_stats_meta_box'), 'sdm_downloads', 'normal', 'default'
+			);*/
 
     }
 

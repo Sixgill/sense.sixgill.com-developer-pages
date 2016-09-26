@@ -2828,7 +2828,7 @@ label.checkbox { padding-left: 20px; }
 body:not(.no-transition) #wrapper,
 .animsition-overlay {
 	position: relative;
-	/*opacity: 0;*/
+	opacity: 0;
 	animation-fill-mode: both;
 }
 

@@ -1,5 +1,4 @@
 jQuery(function($) {
-console.log('works!11');
 	if ( !window.requestAnimationFrame ) {
 		window.requestAnimationFrame = ( function() {
 			return

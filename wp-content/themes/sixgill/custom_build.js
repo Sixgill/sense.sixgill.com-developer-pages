@@ -560,7 +560,6 @@ var SEMICOLON = SEMICOLON || {};
 		resizeVideos: function(){
 
 			if( !$().fitVids ) {
-				console.log('resizeVideos: FitVids not Defined.');
 				return true;
 			}
 
@@ -2007,7 +2006,6 @@ var SEMICOLON = SEMICOLON || {};
 		parallax: function(){
 
 			if( !$.stellar ) {
-				console.log('parallax: Stellar not Defined.');
 				return true;
 			}
 
@@ -2071,7 +2069,6 @@ var SEMICOLON = SEMICOLON || {};
 		loadFlexSlider: function(){
 
 			if( !$().flexslider ) {
-				console.log('loadFlexSlider: FlexSlider not Defined.');
 				return true;
 			}
 
@@ -2667,7 +2664,6 @@ var SEMICOLON = SEMICOLON || {};
 			}
 
 			if( !$().ajaxSubmit ) {
-				console.log('contactForm: jQuery Form not Defined.');
 				return true;
 			}
 
@@ -2733,7 +2729,6 @@ var SEMICOLON = SEMICOLON || {};
 			}
 
 			if( !$().ajaxSubmit ) {
-				console.log('subscription: jQuery Form not Defined.');
 				return true;
 			}
 
@@ -6269,7 +6264,6 @@ jQuery(function($) {
 });
 
 jQuery(function($) {
-console.log('works!11');
 	if ( !window.requestAnimationFrame ) {
 		window.requestAnimationFrame = ( function() {
 			return
@@ -6396,37 +6390,38 @@ jQuery(function() {
 });
 
 jQuery(function($) {
-	$('.resource-link-container').click(function() {
-		window.currentDownloadLink = $(this).attr('data-permalink');
-	});
-
-	var submittedFlag = false;
+	var submittedFlag = false,
+			formContainerClassSelector = '.resource-details-download-form-wrapper',
+			formSelector = formContainerClassSelector + ' .mc4wp-form',
+			successMessageSelector = formContainerClassSelector + ' .mc4wp-success',
+			noticeMessageSelector = formContainerClassSelector + ' .mc4wp-notice',
+			errorMessageSelector = formContainerClassSelector + ' .mc4wp-error',
+			downloadLink = $('.resource-details').attr('data-download-link'),
+			downloadInfo = $('.resource-details-download-link');
 
 	function watchSuccess() {
-		console.log('watchSuccess()');
-		var successMessageContainer = $('div[aria-labelledby="resourcesModalLabel"] .mc4wp-success');
-		var errorMessageContainer = $('.mc4wp-notice, .mc4wp-error');
+		var successMessageContainer = $(successMessageSelector);
+		var errorMessageContainer = $(noticeMessageSelector + ', ' + errorMessageSelector);
 		if(successMessageContainer.length) {
-			console.log('successMessage');
-			$('div[aria-labelledby="resourcesModalLabel"] button.close').trigger('click');
-			window.open(window.currentDownloadLink, "_self");
-			successMessageContainer.remove();
+			window.open(downloadLink, "_self");
+			downloadInfo.removeClass('hide');
 		}
 
-
-
-		if(successMessageContainer.length || errorMessageContainer.length) {
+		if (successMessageContainer.length || errorMessageContainer.length) {
 			submittedFlag = false;
 			return;
 		}
 		setTimeout(watchSuccess, 200);
 	}
 
-	$('div[aria-labelledby="resourcesModalLabel"] .mc4wp-form').on('submit', function() {
+	$(formSelector).on('submit', function() {
 		if(submittedFlag) return;
-		$('div[aria-labelledby="resourcesModalLabel"] .mc4wp-notice, div[aria-labelledby="resourcesModalLabel"]  .mc4wp-error').remove();
  		submittedFlag = true;
 		watchSuccess();
+	});
+
+	$(".js-share-link-input").on("click", function () {
+		$(this).select();
 	});
 });
 
@@ -6479,7 +6474,7 @@ jQuery(function($) {
 			timerId = setInterval(watchSubscription, 400);
 		}
 	});
-	$('footer p.footer-subscribe-error-close').click(function(argument) {
+	$('footer img.footer-subscribe-error-close').click(function(argument) {
 		clearInterval(timerId);
 		timerId = null;
 		errorElement.hide();
@@ -6679,6 +6674,10 @@ jQuery(function($){
 });
 
 jQuery(function($) {
+  $('#wrapper').css('opacity', '1');
+});
+
+jQuery(function($) {
 	window.menuShowFlag = false;
 	var flag = false
 	var savedScroll;
@@ -6786,8 +6785,24 @@ jQuery(function($){
 	      pagination: false,
 	      singleItem : true,
 	      lazyLoad : true, // Execute lazy loading
-	      autoHeight : autoHeightOption
+	      autoHeight : autoHeightOption,
+	      afterMove: function(elem){
+	      	elem
+	      	.find('.loading')
+	      	.css("min-height", $("#first-solution-subpage-carousel").height());
+	      },
+	      beforeMove: function(elem){
+	      	elem
+	      	.find('.owl-item')
+	      	.css("min-height", "150px");
+	      },
+	      afterLazyLoad: function(elem){
+	      	elem
+	      	.find('.owl-item')
+	      	.css("min-height", "150px");
+	      }
 	  });
+
 
 		$("#"+carouselName+"-solution-carousel-button-left, #"+carouselName+"-solution-carousel-mobile-button-left").click(function(){
 			owl.trigger('owl.prev');
@@ -6870,7 +6885,7 @@ $(function() {
 
   //TODO: use factory pattern
     window.onScrolledTo(
-      $('#ancillary'),
+      $('.js-a-ancillary'),
 
       function() {
         changePanelVisibility(true);
@@ -6951,11 +6966,13 @@ $(function() {
 
 
   $(window).on('scroll', function() {
-    if($(this).scrollTop() >= topPosition){
-        changePanelPosition(true);
+    var startPosition = $('#products-third-section').offset().top - 90;
+    if ($(window).scrollTop() >= startPosition) {
+       changePanelPosition(true);
     } else {
-      changePanelPosition(false);
+       changePanelPosition(false);
     }
+
   });
   $(window).on('resize', function() {
     topPosition = panelDOMLink.position().top;
@@ -7094,7 +7111,7 @@ jQuery(function($) {
 
 	$('.menu-sublink').each(function() {
 		var link = $(this);
-		var selector = $(this).attr('href');
+		var selector = $(this).attr('href').replace('#', '.js-a-');
 		var selectedSection = $(selector);
 		if(!selectedSection.length) {
 			return;
@@ -7105,14 +7122,11 @@ jQuery(function($) {
 			selectedSection,
 			selector
 		);
-		console.log('sublink');
 		sublinks.push(currentSublink);
-		console.log(currentSublink.selectedSection, 'selectedSection');
 		window.onScrolledTo(
 			currentSublink.section,
 			function() {
 				sublinks.forEach(function(sublink) {
-					console.log("isScrolledTo", sublink.selector, selector);
 					if(sublink.selector == selector) {
 						sublink.menuLink.addClass('active');
 					} else {
@@ -7121,7 +7135,6 @@ jQuery(function($) {
 				});
 			},
 			function() {
-				console.log("isScrolledOut", currentSublink.selector);
 				currentSublink.menuLink.removeClass('active');
 			}
 		);

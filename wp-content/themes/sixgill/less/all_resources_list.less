@@ -21,6 +21,7 @@
 			letter-spacing: 0.8px;
 			text-align: center;
 			color: #4ddb5a;
+			text-transform: uppercase;
 		}
 
 		&-subtitle {
@@ -39,17 +40,20 @@
 	&-card {
 		width: 100%;
 		box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.08);
-		display: flex;
-		flex-direction: column;
 
 		&-link {
 			display: inline-block;
 		}
 
 		&-image {
-			background-size: cover;
-			display: inline-block;
 			width: 100%;
+			height: auto;
+
+			&-wrapper {
+				display: inline-block;
+				width: 100%;
+				height: auto;
+			}
 		}
 
 		&-info {
@@ -58,7 +62,8 @@
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
-			width: 78.5%;
+			width: 100%;
+			padding: 0px 10.75% 0px 10.75%;
 			align-self: center;
 		}
 
@@ -71,6 +76,7 @@
 			letter-spacing: 0.4px;
 			text-align: left;
 			color: #5cc468;
+			text-transform: uppercase;
 		}
 
 		&-title {
@@ -81,6 +87,8 @@
 			letter-spacing: 0.5px;
 			text-align: left;
 			color: #2e2e2e;
+			width: 100%;
+			text-align: center;
 		}
 	}
 
@@ -96,30 +104,7 @@
 			text-decoration: none;
 		}
 
-		a.prev {
-			display: inline-block;
-			background-image: url("images/blog/iconArrowCirclePrevious-Default.svg");
-			background-repeat: no-repeat;
-			background-size: cover;
-			width: 30px;
-			height: 30px;
-			vertical-align: middle;
-			padding: 0;
-			transform:none;
-
-			&:hover {
-				background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
-				transform:scaleX(-1);
-			}
-
-			&:after {
-				content: url("images/blog/iconArrowCircleNext-Hover.svg");
-				display: none;
-			}
-		}
-
-
-
+		a.prev,
 		a.next {
 			display: inline-block;
 			background-image: url("images/blog/iconArrowCirclePrevious-Default.svg");
@@ -129,20 +114,15 @@
 			height: 30px;
 			vertical-align: middle;
 			padding: 0;
-			transform:scaleX(-1);
-
-			&:hover {
-				background-image: url("images/blog/iconArrowCircleNext-Hover.svg");
-				transform: none;
-			}
-
-			&:after {
-				content: url("images/blog/iconArrowCircleNext-Hover.svg");
-				display: none;
-			}
 		}
 
+		a.prev {
+			transform: none;
+		}
 
+		a.next {
+			transform: scaleX(-1);
+		}
 
 		.current {
 			color: #0051c6;
