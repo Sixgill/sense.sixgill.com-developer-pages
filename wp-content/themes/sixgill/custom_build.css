@@ -13697,7 +13697,7 @@ footer div.mc4wp-error p {
   width: 100%;
   height: auto;
 }
-.solution-subpage-gallery-block-block-title {
+.solution-subpage-gallery-block-title {
   color: #2e2e2e;
 }
 .solution-subpage-gallery-block .owl-item.loading .solution-subpage-slide-description {
@@ -16193,6 +16193,9 @@ body.modal-open {
   height: 3.148vw;
   font-size: 1.17vw;
 }
+.solution-subpage-gallery-button-title-wrapper {
+  line-height: 3.148vw;
+}
 .solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-button {
   margin-right: 0.73vw;
 }
@@ -18569,6 +18572,9 @@ body.modal-open {
   width: 37vw;
   height: 5.6vw;
   font-size: 2.08vw;
+}
+.solution-subpage-gallery-button-title-wrapper {
+  line-height: 5.6vw;
 }
 .solution-subpage-gallery-button-link:not(:last-child) .solution-subpage-gallery-gallery-button {
   margin-right: 1.3vw;
@@ -21223,7 +21229,6 @@ p.solution-use-cases-title {
 }
 .solution-subpage-gallery-block-title {
   font-size: 14px;
-  color: #2e2e2e;
   font-weight: bold;
   line-height: 1.5;
   letter-spacing: 0.7px;
