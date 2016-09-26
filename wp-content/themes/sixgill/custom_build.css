@@ -18738,7 +18738,7 @@ ul:not([class]) li {
 }
 
 .resources-list {
-  margin: 30.5px 3.3vw 30.5px 3.3vw;
+  margin: 30.5px 0 30.5px 2.27vw;
   min-height: calc(100vh - 600px);
 }
 .resources-list-page-wrapper .footer {
@@ -18760,8 +18760,6 @@ ul:not([class]) li {
 }
 .resources-list-card-link {
   width: calc(50% - 2.27vw);
-}
-.resources-list-card-link:nth-child(2n) {
   margin-right: 2.27vw;
 }
 .resources-list-card-info {
