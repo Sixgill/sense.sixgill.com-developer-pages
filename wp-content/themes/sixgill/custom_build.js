@@ -6578,20 +6578,25 @@ jQuery(function($) {
 		var currentScreenType = window.screenType;
 		console.log(currentScreenType);
 
-		$(window).resize(function() {
-			if (currentScreenType == 'desktop' && window.screenType != currentScreenType) {
-				console.log('тип экрана поменялся с десктоп на любой другой');
-			}
-			else if (currentScreenType == 'tablet' && window.screenType == 'desktop') {
-				console.log('тип экрана поменялся с tablet на desktop');	
-			}
-			else if (currentScreenType == 'mobile-portrait' && window.screenType == 'desktop') {
-				console.log('тип экрана поменялся с mobile-portrait на desktop');
-			}
-			else if (currentScreenType == 'mobile-landscape' && window.screenType == 'desktop') {
-				console.log('тип экрана поменялся с mobile-landscape на desktop');
+		window.onScreenTypeChanged(function(newScreenTypeName) {
+			if (currentScreenType == 'desktop') {
+				if(newScreenTypeName != 'desktop') {
+					console.log('desktop -> любой другое разрешение');
+					setTimeout(function () {
+						location.reload()
+					}, 100);
+				}
+			} else {
+				if(newScreenTypeName == 'desktop') {
+					console.log('любой другое разрешение -> desktop');
+					setTimeout(function () {
+						location.reload()
+					}, 100);
+				}
 			};
+			currentScreenType = newScreenTypeName;
 		});
+
 	};
 
 	checkLayoutWidth();
