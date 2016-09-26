@@ -38,7 +38,7 @@ jQuery(function($) {
 
 	$(window).resize(checkViewportHeight);
 
-	function checkLayoutWidth() {
+	function checkDecktopLayoutSwitching() {
 		var currentScreenType = window.screenType;
 		//console.log(currentScreenType);
 
@@ -63,6 +63,6 @@ jQuery(function($) {
 
 	};
 
-	checkLayoutWidth();
+	checkDecktopLayoutSwitching();
 
 });
