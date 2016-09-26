@@ -69,7 +69,7 @@ jQuery(function($) {
 	// };
 
 	function checkLayoutWidth() {
-		var myCurrentScreenType = window.screenType;
+		var currentScreenType = window.screenType;
 		console.log(currentScreenType);
 
 		$(window).resize(function() {
