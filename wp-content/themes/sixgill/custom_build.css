@@ -19295,6 +19295,7 @@ ul:not([class]) li {
       -ms-flex-align: stretch;
           align-items: stretch;
   width: 38.54%;
+  overflow: hidden;
 }
 .products-third-section-image {
   max-width: none;

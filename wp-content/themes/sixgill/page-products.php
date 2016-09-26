@@ -129,7 +129,7 @@
 					class="products-third-section-image-wrapper responsive-background"
 					>
 					<img
-						class="products-third-section-image responsive-image aspectwidthfix"
+						class="products-third-section-image responsive-image"
 						desktop-src="<?php echo get_field('third_section_image_desktop'); ?>"
 						tablet-src="<?php echo get_field('third_section_image_tablet'); ?>"
 					>
@@ -212,7 +212,7 @@
 					class="products-fifth-section-image-wrapper responsive-background"
 				>
 					<img
-						class="products-fifth-section-image responsive-image aspectwidthfix"
+						class="products-fifth-section-image responsive-image"
 						src="<?php echo get_field('fifth_section_image'); ?>"
 						desktop-src="<?php echo get_field('fifth_section_image_desktop'); ?>"
 						tablet-src="<?php echo get_field('fifth_section_image_tablet'); ?>"
