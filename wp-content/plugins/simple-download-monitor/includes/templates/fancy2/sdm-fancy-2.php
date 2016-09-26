@@ -91,7 +91,8 @@ function sdm_generate_fancy2_display_output($args) {
     // Get item thumbnail
     $item_download_thumbnail = get_post_meta($id, 'sdm_upload_thumbnail', true);
 		/*$item_download_imagemode = get_post_meta($id, 'sdm_upload_imagemode', true);*/
-		$item_category = wp_get_post_terms($id, 'sdm_categories')[0]->name;
+		/*$item_category = wp_get_post_terms($id, 'sdm_categories')[0]->name;*/
+		$item_category = get_field('resource_type', $id);
 		$item_permalink = get_permalink($id);
 
     // Get item title
