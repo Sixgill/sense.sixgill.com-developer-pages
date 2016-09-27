@@ -1,4 +1,13 @@
 jQuery(function($) {
+	window.onScreenTypeChanged(function(newScreenType, oldScreenType){
+		var desktopToNonDesktop = (oldScreenType == 'desktop') && (newScreenType != 'desktop');
+		var nonDesktopToDesktop = (oldScreenType != 'desktop') && (newScreenType == 'desktop');
+		if (desktopToNonDesktop || nonDesktopToDesktop) {
+			location.reload();
+		}
+
+	}, false);
+
 	if(window.screenType != 'desktop') return;
 
 	var homeFullpageWrapper = $('#home-fullpage-wrapper');

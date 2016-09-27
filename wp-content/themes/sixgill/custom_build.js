@@ -5933,9 +5933,11 @@ jQuery(function($){
 	var oldScreenType = window.screenType;
 	var execOnScreenTypeChanged = [];
 
-	window.onScreenTypeChanged = function(newCallback) {
+	window.onScreenTypeChanged = function(newCallback, callOnLoad=true) {
+		if (callOnLoad) {
+			newCallback(window.screenType, oldScreenType);		
+		}
 		execOnScreenTypeChanged.push(newCallback);
-		newCallback(window.screenType);
 	}
 
 	function updateScreenType() {
@@ -5951,7 +5953,7 @@ jQuery(function($){
 
 		if(oldScreenType!=window.screenType) {
 			execOnScreenTypeChanged.forEach(function(currentCallback) {
-				currentCallback(window.screenType);
+				currentCallback(window.screenType, oldScreenType);
 			});
 		}
 	}
@@ -6505,6 +6507,15 @@ jQuery(function($) {
 });
 
 jQuery(function($) {
+	window.onScreenTypeChanged(function(newScreenType, oldScreenType){
+		var desktopToNonDesktop = (oldScreenType == 'desktop') && (newScreenType != 'desktop');
+		var nonDesktopToDesktop = (oldScreenType != 'desktop') && (newScreenType == 'desktop');
+		if (desktopToNonDesktop || nonDesktopToDesktop) {
+			location.reload();
+		}
+
+	}, false);
+
 	if(window.screenType != 'desktop') return;
 
 	var homeFullpageWrapper = $('#home-fullpage-wrapper');
