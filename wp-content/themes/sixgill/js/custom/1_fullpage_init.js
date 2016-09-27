@@ -46,4 +46,32 @@ jQuery(function($) {
 	checkViewportHeight();
 
 	$(window).resize(checkViewportHeight);
+
+	function checkDecktopLayoutSwitching() {
+		var currentScreenType = window.screenType;
+		//console.log(currentScreenType);
+
+		window.onScreenTypeChanged(function(newScreenTypeName) {
+			if (currentScreenType == 'desktop') {
+				if(newScreenTypeName != 'desktop') {
+					//console.log('desktop -> любой другое разрешение');
+					setTimeout(function () {
+						location.reload()
+					}, 100);
+				};
+			} else {
+				if(newScreenTypeName == 'desktop') {
+					//console.log('любой другое разрешение -> desktop');
+					setTimeout(function () {
+						location.reload()
+					}, 100);
+				};
+			};
+			currentScreenType = newScreenTypeName;
+		});
+
+	};
+
+	checkDecktopLayoutSwitching();
+
 });
