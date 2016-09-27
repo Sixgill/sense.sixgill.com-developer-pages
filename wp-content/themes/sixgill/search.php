@@ -1,61 +1,47 @@
-<?php get_header(); ?>
-<a name="top"></a>
-<!-- Content-->
-<section id="content" class="search-result-section">
-	<div class="content-wrap no-bottom-padding">
+<?php
+	get_header();
 
-		<hr class="title-dotted-border header-search display-only-desktop">
+	$searchSettingsID = getPageBySlug('search_settings')->ID;
 
-		<div class="searchform-result">
-			<?php get_template_part('searchform-static'); ?>
-		</div>
+	$countResults =  $wp_query->found_posts;
+	$pluralEnding = "";
+	if($countResults > 1) {
+		$pluralEnding = "s";
+	}
+	$subtitle =  "RESULT".$pluralEnding." FOUND";
+?>
+<div
+	class="search-results-header responsive-background"
+	desktop-src="<?php the_field("header_image_desktop"); ?>"
+	tablet-src="<?php the_field("header_image_tablet"); ?>"
+	mobile-src="<?php the_field("header_image_mobile"); ?>"
+>
+	<h1 class="search-results-title">
+		<?php the_field("title") ?>
+	</h1>
+	<h2 class="search-results-subtitle">
 
-		<section class="header-stick search-content">
-			<div class="container-fluid clearfix search-container no-padding-left no-padding-right">
-				<p class="no-margin text-search-results line-height-results">
-					<?php
-						$countResults =  $wp_query->found_posts;
-						$pluralEnding = "";
-						if($countResults > 1) {
-							$pluralEnding = "s";
-						}
-						echo "Search Result".$pluralEnding;
-					?>
+	</h2>
+</div>
 
-				</p>
-
-				<p class="color-999999 margin-results-search">
-					<?php
-						echo $countResults." Result".$pluralEnding ;
-					?>
-				</p>
-
-				<?php
-
-					if( have_posts() ):
-						while( have_posts() ): the_post();
-							get_template_part('content', 'search');
-						endwhile;
-					endif;
-				?>
-
-				<div id="pagination" class="pagination-search no-desktop-display no-tablet-display no-mobile-landscape-display">
-					<?php
-						if (function_exists("pagination")) {
-							pagination($wp_query->max_num_pages, 1);
-						}
-					?>
-				</div>
-				<div id="pagination" class="pagination-search no-mobile-portrait-display">
-					<?php
-						if (function_exists("pagination")) {
-							pagination($wp_query->max_num_pages);
-						}
-					?>
-				</div>
-			</div>
-		</section>
+<div class="search-results-content">
+	<div class="search-results-form-wrapper">
+		<form class="search-form" role="search" method="get" action="<?php echo home_url('/'); ?>">
+			<input class="search-form-input">
+			<input class="search-form-submit">
+		</form>
 	</div>
 
-</section><!-- #content end -->
-<?php get_footer();	?>
+	<div class="search-results-list">
+
+	</div>
+
+	<div class="search-results-pagination">
+		<?php the_posts_pagination( array(
+											'prev_text'    => __(''),
+											'next_text'    => __(''),
+		) );  ?>
+	</div>
+</div>
+
+<?php get_footer(); ?>
