@@ -6685,18 +6685,6 @@ jQuery(function($){
 
 });
 
-// jQuery(function($) {
-//   $('#wrapper').hide();
-
-//     $(window).on("load", function() {
-//         $('#wrapper').fadeIn();
-//         // return back right dots for home page
-//         $('#fp-nav').css('display', 'block');
-//         $('#loader-wrapper').hide();
-// 	});
-
-// });
-
 jQuery(function($) {
 	window.menuShowFlag = false;
 	var flag = false

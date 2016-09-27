@@ -4216,27 +4216,6 @@ body:not(.no-transition) #wrapper,
           animation: spin 2s infinite linear;
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
-}
 .icon-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
@@ -12146,19 +12125,11 @@ input {
   max-width: 100%;
 }
 /* CSS preloader spinner */
-#loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
 #loader {
   display: block;
   position: relative;
-  left: 50%;
-  top: 50%;
+  left: 50vw;
+  top: 50vh;
   width: 150px;
   height: 150px;
   margin: -75px 0 0 -75px;
@@ -12170,7 +12141,15 @@ input {
   animation: spin 2s linear infinite;
   /* Chrome, Firefox 16+, IE 10+, Opera */
 }
-#loader:before {
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#loader::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -12185,7 +12164,7 @@ input {
   animation: spin 3s linear infinite;
   /* Chrome, Firefox 16+, IE 10+, Opera */
 }
-#loader:after {
+#loader::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -12203,32 +12182,734 @@ input {
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
-    /* IE 9 */
-    transform: rotate(0deg);
+            transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  5% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  10% {
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  15% {
+    -webkit-transform: rotate(54deg);
+            transform: rotate(54deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  20% {
+    -webkit-transform: rotate(72deg);
+            transform: rotate(72deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  30% {
+    -webkit-transform: rotate(108deg);
+            transform: rotate(108deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  35% {
+    -webkit-transform: rotate(126deg);
+            transform: rotate(126deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  40% {
+    -webkit-transform: rotate(144deg);
+            transform: rotate(144deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  45% {
+    -webkit-transform: rotate(162deg);
+            transform: rotate(162deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  55% {
+    -webkit-transform: rotate(198deg);
+            transform: rotate(198deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  60% {
+    -webkit-transform: rotate(216deg);
+            transform: rotate(216deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  65% {
+    -webkit-transform: rotate(234deg);
+            transform: rotate(234deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  70% {
+    -webkit-transform: rotate(252deg);
+            transform: rotate(252deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  80% {
+    -webkit-transform: rotate(288deg);
+            transform: rotate(288deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  85% {
+    -webkit-transform: rotate(306deg);
+            transform: rotate(306deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  90% {
+    -webkit-transform: rotate(324deg);
+            transform: rotate(324deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  95% {
+    -webkit-transform: rotate(342deg);
+            transform: rotate(342deg);
     /* Firefox 16+, IE 10+, Opera */
   }
   100% {
     -webkit-transform: rotate(360deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
-    /* IE 9 */
-    transform: rotate(360deg);
+            transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  105% {
+    -webkit-transform: rotate(378deg);
+            transform: rotate(378deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  110% {
+    -webkit-transform: rotate(396deg);
+            transform: rotate(396deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  115% {
+    -webkit-transform: rotate(414deg);
+            transform: rotate(414deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  120% {
+    -webkit-transform: rotate(432deg);
+            transform: rotate(432deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  125% {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  130% {
+    -webkit-transform: rotate(468deg);
+            transform: rotate(468deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  135% {
+    -webkit-transform: rotate(486deg);
+            transform: rotate(486deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  140% {
+    -webkit-transform: rotate(504deg);
+            transform: rotate(504deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  145% {
+    -webkit-transform: rotate(522deg);
+            transform: rotate(522deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  150% {
+    -webkit-transform: rotate(540deg);
+            transform: rotate(540deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  155% {
+    -webkit-transform: rotate(558deg);
+            transform: rotate(558deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  160% {
+    -webkit-transform: rotate(576deg);
+            transform: rotate(576deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  165% {
+    -webkit-transform: rotate(594deg);
+            transform: rotate(594deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  170% {
+    -webkit-transform: rotate(612deg);
+            transform: rotate(612deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  175% {
+    -webkit-transform: rotate(630deg);
+            transform: rotate(630deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  180% {
+    -webkit-transform: rotate(648deg);
+            transform: rotate(648deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  185% {
+    -webkit-transform: rotate(666deg);
+            transform: rotate(666deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  190% {
+    -webkit-transform: rotate(684deg);
+            transform: rotate(684deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  195% {
+    -webkit-transform: rotate(702deg);
+            transform: rotate(702deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  200% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  205% {
+    -webkit-transform: rotate(738deg);
+            transform: rotate(738deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  210% {
+    -webkit-transform: rotate(756deg);
+            transform: rotate(756deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  215% {
+    -webkit-transform: rotate(774deg);
+            transform: rotate(774deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  220% {
+    -webkit-transform: rotate(792deg);
+            transform: rotate(792deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  225% {
+    -webkit-transform: rotate(810deg);
+            transform: rotate(810deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  230% {
+    -webkit-transform: rotate(828deg);
+            transform: rotate(828deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  235% {
+    -webkit-transform: rotate(846deg);
+            transform: rotate(846deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  240% {
+    -webkit-transform: rotate(864deg);
+            transform: rotate(864deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  245% {
+    -webkit-transform: rotate(882deg);
+            transform: rotate(882deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  250% {
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  255% {
+    -webkit-transform: rotate(918deg);
+            transform: rotate(918deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  260% {
+    -webkit-transform: rotate(936deg);
+            transform: rotate(936deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  265% {
+    -webkit-transform: rotate(954deg);
+            transform: rotate(954deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  270% {
+    -webkit-transform: rotate(972deg);
+            transform: rotate(972deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  275% {
+    -webkit-transform: rotate(990deg);
+            transform: rotate(990deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  280% {
+    -webkit-transform: rotate(1008deg);
+            transform: rotate(1008deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  285% {
+    -webkit-transform: rotate(1026deg);
+            transform: rotate(1026deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  290% {
+    -webkit-transform: rotate(1044deg);
+            transform: rotate(1044deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  295% {
+    -webkit-transform: rotate(1062deg);
+            transform: rotate(1062deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  300% {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  305% {
+    -webkit-transform: rotate(1098deg);
+            transform: rotate(1098deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  310% {
+    -webkit-transform: rotate(1116deg);
+            transform: rotate(1116deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  315% {
+    -webkit-transform: rotate(1134deg);
+            transform: rotate(1134deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  320% {
+    -webkit-transform: rotate(1152deg);
+            transform: rotate(1152deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  325% {
+    -webkit-transform: rotate(1170deg);
+            transform: rotate(1170deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  330% {
+    -webkit-transform: rotate(1188deg);
+            transform: rotate(1188deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  335% {
+    -webkit-transform: rotate(1206deg);
+            transform: rotate(1206deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  340% {
+    -webkit-transform: rotate(1224deg);
+            transform: rotate(1224deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  345% {
+    -webkit-transform: rotate(1242deg);
+            transform: rotate(1242deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  350% {
+    -webkit-transform: rotate(1260deg);
+            transform: rotate(1260deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  355% {
+    -webkit-transform: rotate(1278deg);
+            transform: rotate(1278deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  360% {
+    -webkit-transform: rotate(1296deg);
+            transform: rotate(1296deg);
     /* Firefox 16+, IE 10+, Opera */
   }
 }
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
-    /* IE 9 */
-    transform: rotate(0deg);
+            transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  5% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  10% {
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  15% {
+    -webkit-transform: rotate(54deg);
+            transform: rotate(54deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  20% {
+    -webkit-transform: rotate(72deg);
+            transform: rotate(72deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  30% {
+    -webkit-transform: rotate(108deg);
+            transform: rotate(108deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  35% {
+    -webkit-transform: rotate(126deg);
+            transform: rotate(126deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  40% {
+    -webkit-transform: rotate(144deg);
+            transform: rotate(144deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  45% {
+    -webkit-transform: rotate(162deg);
+            transform: rotate(162deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  55% {
+    -webkit-transform: rotate(198deg);
+            transform: rotate(198deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  60% {
+    -webkit-transform: rotate(216deg);
+            transform: rotate(216deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  65% {
+    -webkit-transform: rotate(234deg);
+            transform: rotate(234deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  70% {
+    -webkit-transform: rotate(252deg);
+            transform: rotate(252deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  80% {
+    -webkit-transform: rotate(288deg);
+            transform: rotate(288deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  85% {
+    -webkit-transform: rotate(306deg);
+            transform: rotate(306deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  90% {
+    -webkit-transform: rotate(324deg);
+            transform: rotate(324deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  95% {
+    -webkit-transform: rotate(342deg);
+            transform: rotate(342deg);
     /* Firefox 16+, IE 10+, Opera */
   }
   100% {
     -webkit-transform: rotate(360deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
-    /* IE 9 */
-    transform: rotate(360deg);
+            transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  105% {
+    -webkit-transform: rotate(378deg);
+            transform: rotate(378deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  110% {
+    -webkit-transform: rotate(396deg);
+            transform: rotate(396deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  115% {
+    -webkit-transform: rotate(414deg);
+            transform: rotate(414deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  120% {
+    -webkit-transform: rotate(432deg);
+            transform: rotate(432deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  125% {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  130% {
+    -webkit-transform: rotate(468deg);
+            transform: rotate(468deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  135% {
+    -webkit-transform: rotate(486deg);
+            transform: rotate(486deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  140% {
+    -webkit-transform: rotate(504deg);
+            transform: rotate(504deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  145% {
+    -webkit-transform: rotate(522deg);
+            transform: rotate(522deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  150% {
+    -webkit-transform: rotate(540deg);
+            transform: rotate(540deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  155% {
+    -webkit-transform: rotate(558deg);
+            transform: rotate(558deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  160% {
+    -webkit-transform: rotate(576deg);
+            transform: rotate(576deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  165% {
+    -webkit-transform: rotate(594deg);
+            transform: rotate(594deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  170% {
+    -webkit-transform: rotate(612deg);
+            transform: rotate(612deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  175% {
+    -webkit-transform: rotate(630deg);
+            transform: rotate(630deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  180% {
+    -webkit-transform: rotate(648deg);
+            transform: rotate(648deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  185% {
+    -webkit-transform: rotate(666deg);
+            transform: rotate(666deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  190% {
+    -webkit-transform: rotate(684deg);
+            transform: rotate(684deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  195% {
+    -webkit-transform: rotate(702deg);
+            transform: rotate(702deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  200% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  205% {
+    -webkit-transform: rotate(738deg);
+            transform: rotate(738deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  210% {
+    -webkit-transform: rotate(756deg);
+            transform: rotate(756deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  215% {
+    -webkit-transform: rotate(774deg);
+            transform: rotate(774deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  220% {
+    -webkit-transform: rotate(792deg);
+            transform: rotate(792deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  225% {
+    -webkit-transform: rotate(810deg);
+            transform: rotate(810deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  230% {
+    -webkit-transform: rotate(828deg);
+            transform: rotate(828deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  235% {
+    -webkit-transform: rotate(846deg);
+            transform: rotate(846deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  240% {
+    -webkit-transform: rotate(864deg);
+            transform: rotate(864deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  245% {
+    -webkit-transform: rotate(882deg);
+            transform: rotate(882deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  250% {
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  255% {
+    -webkit-transform: rotate(918deg);
+            transform: rotate(918deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  260% {
+    -webkit-transform: rotate(936deg);
+            transform: rotate(936deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  265% {
+    -webkit-transform: rotate(954deg);
+            transform: rotate(954deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  270% {
+    -webkit-transform: rotate(972deg);
+            transform: rotate(972deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  275% {
+    -webkit-transform: rotate(990deg);
+            transform: rotate(990deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  280% {
+    -webkit-transform: rotate(1008deg);
+            transform: rotate(1008deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  285% {
+    -webkit-transform: rotate(1026deg);
+            transform: rotate(1026deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  290% {
+    -webkit-transform: rotate(1044deg);
+            transform: rotate(1044deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  295% {
+    -webkit-transform: rotate(1062deg);
+            transform: rotate(1062deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  300% {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  305% {
+    -webkit-transform: rotate(1098deg);
+            transform: rotate(1098deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  310% {
+    -webkit-transform: rotate(1116deg);
+            transform: rotate(1116deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  315% {
+    -webkit-transform: rotate(1134deg);
+            transform: rotate(1134deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  320% {
+    -webkit-transform: rotate(1152deg);
+            transform: rotate(1152deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  325% {
+    -webkit-transform: rotate(1170deg);
+            transform: rotate(1170deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  330% {
+    -webkit-transform: rotate(1188deg);
+            transform: rotate(1188deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  335% {
+    -webkit-transform: rotate(1206deg);
+            transform: rotate(1206deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  340% {
+    -webkit-transform: rotate(1224deg);
+            transform: rotate(1224deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  345% {
+    -webkit-transform: rotate(1242deg);
+            transform: rotate(1242deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  350% {
+    -webkit-transform: rotate(1260deg);
+            transform: rotate(1260deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  355% {
+    -webkit-transform: rotate(1278deg);
+            transform: rotate(1278deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  360% {
+    -webkit-transform: rotate(1296deg);
+            transform: rotate(1296deg);
     /* Firefox 16+, IE 10+, Opera */
   }
 }
