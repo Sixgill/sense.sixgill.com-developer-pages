@@ -38,7 +38,19 @@
 
 			if( have_posts() ):
 				while( have_posts() ): the_post();
-					the_title();
+					?>
+
+						<div class="search-results-elem">
+							<div class="search-results-elem-title">
+								<?php the_title(); ?>
+							</div>
+
+							<div class="search-results-elem-description">
+							 <?php echo the_content(""); ?>
+							</div>
+						</div>
+
+					<?php
 				endwhile;
 			endif;
 		?>
