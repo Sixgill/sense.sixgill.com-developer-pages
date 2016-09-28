@@ -34,7 +34,7 @@
 
 </head>
 
-<body class="side-header stretched no-touch" data-loader-timeout="9000">
+<body class="side-header stretched no-touch">
 
 	<!--GoogleTagManager-->
 	<noscript>
@@ -46,6 +46,9 @@
 	<!-- End Google Tag Manager -->
 
 	<!-- Document Wrapper -->
+	<div id="loader-wrapper">
+			<div id="loader"></div>
+		</div>
 	<div id="wrapper" class="clearfix">
 		<a name="top"></a>
 		<section id="top"></section>
@@ -79,3 +82,5 @@
 
 			</div>
 		</header>
+		
+
