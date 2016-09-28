@@ -6,9 +6,9 @@
 	$countResults =  $wp_query->found_posts;
 	$pluralEnding = "";
 	if($countResults > 1) {
-		$pluralEnding = "s";
+		$pluralEnding = "S";
 	}
-	$subtitle =  "RESULT".$pluralEnding." FOUND";
+	$subtitle =  $countResults." RESULT".$pluralEnding." FOUND";
 ?>
 <div
 	class="search-results-header responsive-background"
@@ -20,20 +20,28 @@
 		<?php the_field("title") ?>
 	</h1>
 	<h2 class="search-results-subtitle">
-
+		<?php echo $subtitle; ?>
 	</h2>
 </div>
 
 <div class="search-results-content">
 	<div class="search-results-form-wrapper">
-		<form class="search-form" role="search" method="get" action="<?php echo home_url('/'); ?>">
-			<input class="search-form-input">
-			<input class="search-form-submit">
-		</form>
+		<?php
+			global $searchFormClasses;
+			$searchFormClasses = "always-active";
+			include(locate_template('searchform.php'));
+		?>
 	</div>
 
 	<div class="search-results-list">
+		<?php
 
+			if( have_posts() ):
+				while( have_posts() ): the_post();
+					the_title();
+				endwhile;
+			endif;
+		?>
 	</div>
 
 	<div class="search-results-pagination">
