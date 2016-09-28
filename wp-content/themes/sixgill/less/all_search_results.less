@@ -37,7 +37,35 @@
 	}
 
 	&-list {
+		width: 100%;
+	}
 
+	&-elem {
+
+		&-title {
+	    font-weight: 300;
+	    color: #0051c6;
+	  }
+
+	  &-description {
+
+	    &:after {
+	      height: 0px;
+	      width: 100%;
+	      border-top: 1px solid #dfdfdf;
+	      display:  inline-block;
+	      content: "";
+	    }
+	  }
+
+	  &-description,
+	  &-title {
+	    font-weight: normal;
+	    font-style: normal;
+	    font-stretch: normal;
+	    text-align: left;
+	    font-family: "Lato";
+	  }
 	}
 
 	&-pagination {
