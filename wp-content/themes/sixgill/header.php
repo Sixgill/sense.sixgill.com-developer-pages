@@ -34,7 +34,7 @@
 
 </head>
 
-<body class="side-header stretched no-touch">
+<body class="side-header stretched no-touch no-transition">
 
 	<!--GoogleTagManager-->
 	<noscript>
@@ -82,5 +82,3 @@
 
 			</div>
 		</header>
-		
-
