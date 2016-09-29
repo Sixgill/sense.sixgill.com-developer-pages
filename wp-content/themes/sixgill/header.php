@@ -49,7 +49,7 @@
 	<div id="loader-wrapper">
 			<div id="loader"></div>
 		</div>
-	<div id="wrapper" class="clearfix">
+	<div id="wrapper" class="clearfix page-wrapper">
 		<a name="top"></a>
 		<section id="top"></section>
 		<!-- Header -->
