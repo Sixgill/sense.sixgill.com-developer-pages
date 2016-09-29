@@ -12977,7 +12977,7 @@ input {
   display: inline-block;
   font-size: 14px;
   font-family: 'Lato';
-  line-height: 3.2;
+  line-height: 1;
   letter-spacing: 0.7px;
   color: #999999;
 }
@@ -13517,7 +13517,6 @@ footer div.mc4wp-error p {
   display: inline-block;
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -13655,6 +13654,7 @@ footer div.mc4wp-error p {
 .company-first-section-block-text {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   color: #ffffff;
 }
@@ -13851,6 +13851,7 @@ footer div.mc4wp-error p {
 .company-third-section > div {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 
@@ -15737,7 +15738,7 @@ body.modal-open {
   letter-spacing: 0.7px;
   line-height: 3.2;
   font-weight: normal;
-  margin-right: 4%;
+  margin-right: 3%;
   max-width: 50%;
 }
 .footer-subscription-form-wrapper {
@@ -15753,9 +15754,8 @@ body.modal-open {
   height: 29.5%;
 }
 .footer-social-icon-link {
-  /*	width: 23%;*/
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 }
 .footer-social-icon-link:not(:last-child) {
   margin-right: 23px;
@@ -16142,6 +16142,7 @@ body.modal-open {
 .company-first-section-block {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   background-color: rgba(77, 219, 90, 0.7);
   width: 73.5vw;
@@ -16150,6 +16151,7 @@ body.modal-open {
 .company-first-section-block-text {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   width: 71%;
   padding: 44px 2.4vw 44px 2.4vw;
@@ -16374,6 +16376,7 @@ body.modal-open {
   z-index: auto;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   text-align: center;
   display: inline-block;
@@ -16381,7 +16384,6 @@ body.modal-open {
 .home-first-section-block {
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   width: 100%;
 }
@@ -16739,7 +16741,6 @@ body.modal-open {
 .solutions-first-section-block-title {
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   font-weight: 300;
   font-size: 61px;
@@ -16753,6 +16754,7 @@ body.modal-open {
   padding: 0px 2.4vw 0px 2.4vw;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 .solutions-first-section-block-paragraph {
@@ -17305,6 +17307,7 @@ body.modal-open {
   padding: 44px 2.4vw 44px 2.4vw;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 .tech-first-section-block-text _:-ms-lang(x),
@@ -17382,6 +17385,7 @@ body.modal-open {
 .tech-second-section-header-wrapper {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 .tech-second-section-title {
@@ -17394,6 +17398,7 @@ body.modal-open {
   float: left;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 .tech-second-section-left-col {
@@ -17408,6 +17413,7 @@ body.modal-open {
 .tech-second-section-right-col {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   width: 56%;
 }
@@ -17621,6 +17627,7 @@ body.modal-open {
 .products-fixed-panel-col-content {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 .products-first-section {
@@ -17659,10 +17666,10 @@ body.modal-open {
   height: auto;
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
-              -ms-grid-row-align: stretch;
           align-items: stretch;
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
+              -ms-grid-row-align: stretch;
           align-self: stretch;
   float: left;
   background-size: cover;
@@ -17676,7 +17683,6 @@ body.modal-open {
 .products-first-section-content-title {
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   font-size: 61px;
   line-height: 0.63;
@@ -17687,6 +17693,7 @@ body.modal-open {
   width: 100%;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
@@ -17725,6 +17732,7 @@ body.modal-open {
 .products-second-section > div {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 .products-second-section-text {
@@ -17798,6 +17806,7 @@ body.modal-open {
   margin-top: 5vh;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   width: 66%;
 }
@@ -17848,12 +17857,12 @@ body.modal-open {
   width: 59%;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 .products-fourth-section-right-col {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
-              -ms-grid-row-align: flex-end;
           align-items: flex-end;
   width: 41%;
   padding: 8vw 4.75vw 0px 7.7vw;
@@ -17913,6 +17922,7 @@ body.modal-open {
 .products-fifth-section-right-col {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   width: 66%;
 }
@@ -18272,8 +18282,9 @@ body.modal-open {
   border-top: 1px solid #4a4a4a;
 }
 .footer-social-icon-link {
-  height: 35px;
-  width: 35px;
+  width: 40px;
+  height: 40px;
+  margin-top: -3px;
 }
 .footer-social-icon-link:not(:last-child) {
   margin-right: 8%;
@@ -18552,7 +18563,6 @@ body.modal-open {
   width: 95.5%;
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
-              -ms-grid-row-align: stretch;
           align-items: stretch;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
@@ -18562,6 +18572,7 @@ body.modal-open {
 .company-first-section-block-text {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   width: 95%;
   padding: 37px 2.4vw 39px 2.4vw;
@@ -18732,6 +18743,7 @@ body.modal-open {
 .home-first-section-block-text {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   text-align: center;
   display: inline-block;
@@ -18739,7 +18751,6 @@ body.modal-open {
 .home-first-section-block {
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   width: 100%;
   z-index: 3;
@@ -19632,6 +19643,7 @@ ul:not([class]) li {
 .tech-fixed-panel-col-content {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 .tech-section {
@@ -19799,6 +19811,7 @@ ul:not([class]) li {
   width: 66%;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 .tech-third-section-content-wrapper {
@@ -20081,6 +20094,7 @@ ul:not([class]) li {
 .products-third-section-right-col {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   width: 61%;
 }
@@ -20144,6 +20158,7 @@ ul:not([class]) li {
 .products-fourth-section-left-col {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   width: 56.25%;
   margin-left: 3.65vw;
@@ -20225,6 +20240,7 @@ ul:not([class]) li {
 .products-fifth-section-right-col {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   width: 66%;
 }
@@ -20363,6 +20379,7 @@ ul:not([class]) li {
 .products-fixed-panel-col-content {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 .products-fixed-panel-col:first-child {
@@ -21078,6 +21095,7 @@ ul:not([class]) li {
   margin-left: 5px;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 .blog-page-post-card-content-wrapper {
@@ -21218,7 +21236,6 @@ ul:not([class]) li {
   width: 100%;
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
-              -ms-grid-row-align: stretch;
           align-items: stretch;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
@@ -21227,6 +21244,7 @@ ul:not([class]) li {
 .company-first-section-block-text {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   width: 95%;
   padding: 27px 2.4vw 0 2.4vw;
@@ -21248,6 +21266,7 @@ ul:not([class]) li {
 .company-first-section-image-wrapper {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   width: 100%;
 }
@@ -21394,6 +21413,7 @@ ul:not([class]) li {
   z-index: 3;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   text-align: center;
   display: inline-block;
@@ -21401,7 +21421,6 @@ ul:not([class]) li {
 .home-first-section-block {
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   width: 83.12%;
   z-index: 3;
@@ -21689,7 +21708,6 @@ ul:not([class]) li {
   width: 100%;
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   background: none;
   text-align: center;
@@ -21886,7 +21904,6 @@ p.solution-use-cases-title {
           flex-direction: column;
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 .solution-subpage-first-block-image-container {
@@ -22417,7 +22434,6 @@ ul:not([class]) li {
   width: 100%;
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   background: none;
   text-align: center;
@@ -22483,7 +22499,6 @@ ul:not([class]) li {
 .products-third-section-wrapper {
   -webkit-align-items: flex-flex;
       -ms-flex-align: flex-flex;
-              -ms-grid-row-align: flex-flex;
           align-items: flex-flex;
   height: auto;
   max-height: none;
@@ -22598,7 +22613,6 @@ ul:not([class]) li {
 .products-fifth-section-wrapper {
   -webkit-align-items: flex-flex;
       -ms-flex-align: flex-flex;
-              -ms-grid-row-align: flex-flex;
           align-items: flex-flex;
   height: auto;
   max-height: none;
