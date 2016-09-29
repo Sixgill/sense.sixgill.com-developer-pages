@@ -219,11 +219,11 @@
 
 	&-third-section {
 		background-image: url('/wp-content/themes/sixgill/images/products/third_section_bg_at2.png');
-		min-height: 100vh;
+		min-height: inherit !important;
 
 		&-wrapper {
 			display: flex;
-			min-height: 100vh;
+			height: auto;
 			max-height: none;
 			width: 100%;
 		}
@@ -232,17 +232,6 @@
 			width: 77%;
 			margin-left: auto;
 			margin-right: auto;
-		}
-
-		&-image {
-			height: 100vh;
-			width: auto;
-			max-width: none;
-			max-height: none;
-
-			&-wrapper {
-				overflow: hidden;
-			}
 		}
 
 		&-header-wrapper {
@@ -297,6 +286,7 @@
 
 		&-left-col {
 			width: 34%;
+			padding-top: 6.5vw;
 		}
 
 		&-right-col {
