@@ -323,7 +323,7 @@
 	    }
 	}
 
-	function wpb_get_post_views($postID){
+	function wpb_get_post_views($postID) {
 	    $count_key = 'wpb_post_views_count';
 	    $count = get_post_meta($postID, $count_key, true);
 	    if($count==''){
@@ -332,6 +332,20 @@
 	        return "0";
 	    }
 	    return $count.' ';
+	}
+
+	function custom_field_excerpt($fieldName) {
+		global $post;
+		$text = get_field($fieldName); //Replace 'your_field_name'
+		if ( '' != $text ) {
+			$text = strip_shortcodes( $text );
+			$text = apply_filters('the_content', $text);
+			//$text = str_replace(']]&gt;', ']]&gt;', $text);
+			//$excerpt_length = 20; // 20 words
+			//$excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
+			$text = wp_trim_words( $text );
+		}
+		return apply_filters('the_excerpt', $text);
 	}
 
 	update_option('image_default_link_type','none');
