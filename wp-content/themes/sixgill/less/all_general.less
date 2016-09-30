@@ -1,4 +1,6 @@
 /* General Common styles */
+@import "search/all.less";
+
 body, p {
 	font-family: "Lato", serif, sans-serif;
 }
@@ -6,10 +8,6 @@ body, p {
 .page-wrapper {
 	transition: all 5s;
 	opacity: 0;
-}
-
-.unique-testing {
-	display: flex;
 }
 
 p {
@@ -416,26 +414,29 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	letter-spacing: 1px;
 	text-align: center;
 	color: #ffffff;
-}
 
-.button:hover {
-	text-decoration: none;
-	color: #ffffff;
-}
-
-.button-green {
-	background-color: #4dc85a;
 	&:hover {
-		background-color:#35b042 !important;
+		text-decoration: none;
+		color: #ffffff;
 	}
+
+	&-green {
+		background-color: #4dc85a;
+		&:hover {
+			background-color:#35b042 !important;
+		}
+	}
+
+	&-blue {
+		background-color: #0051c6;
+		&:hover {
+			background-color:#0044a5 !important;
+		}
+	}
+
 }
 
-.button-blue {
-	background-color: #0051c6;
-	&:hover {
-		background-color:#0044a5 !important;
-	}
-}
+
 .fixed-position {
 	position: fixed;
 	top: 0px;

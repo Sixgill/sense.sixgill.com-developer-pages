@@ -103,7 +103,8 @@ module.exports = () => {
 		'tech',
 		'press',
 		'legal',
-		'products'
+		'products',
+		'search_results'
   ];
 
   pagesList.forEach(function(pageName) {
