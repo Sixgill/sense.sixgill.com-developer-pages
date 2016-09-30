@@ -16,11 +16,14 @@ jQuery(function($){
 	window.checkHomeButton = function() {
 		if(isMenuScheduleButtonVisible) {
 			if(isScrolledIntoView(homeScheduleButton)) {
-				menuScheduleButton.fadeOut();
+				menuScheduleButton.removeClass("not-visible");
+				menuScheduleButton.fadeTo(500,1);
 				isMenuScheduleButtonVisible = false;
 			}
 		} else if(!isScrolledIntoView(homeScheduleButton)) {
-			menuScheduleButton.fadeIn();
+			menuScheduleButton.fadeTo(500,0,function(){
+				menuScheduleButton.addClass("not-visible");
+			});
 			isMenuScheduleButtonVisible = true;
 		}
 	}
