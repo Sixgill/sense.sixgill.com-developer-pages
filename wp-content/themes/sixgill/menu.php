@@ -38,7 +38,9 @@
 	<img id="close-menu-icon-tablet" class="display-only-tablet primary-menu-close-icon" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" alt=""/>
 	<div class="primary-menu-top-container no-desktop-display">
 		<div class="primary-menu-top-container-divider no-mobile-portrait-display no-mobile-landscape-display"></div>
-		<div class="primary-menu-top-container-field"></div>
+		<div class="primary-menu-top-container-field">
+			<?php get_search_form() ?>
+		</div>
 	</div>
 	<div class="primary-menu-list">
 		<?php

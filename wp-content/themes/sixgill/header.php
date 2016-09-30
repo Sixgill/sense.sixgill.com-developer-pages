@@ -34,7 +34,7 @@
 
 </head>
 
-<body class="side-header stretched no-touch" data-loader-timeout="9000">
+<body class="side-header stretched no-touch no-transition">
 
 	<!--GoogleTagManager-->
 	<noscript>
@@ -46,7 +46,10 @@
 	<!-- End Google Tag Manager -->
 
 	<!-- Document Wrapper -->
-	<div id="wrapper" class="clearfix">
+	<div id="loader-wrapper">
+			<div id="loader"></div>
+		</div>
+	<div id="wrapper" class="clearfix page-wrapper">
 		<a name="top"></a>
 		<section id="top"></section>
 		<!-- Header -->
@@ -73,7 +76,9 @@
 
 				<div id="menu-schedule-button-wrapper" class="menu-schedule-button-wrapper display-only-desktop">
 					<div class="nav-divider-line"></div>
-					<div class="menu-search-field"></div>
+					<div class="menu-search-field">
+						<?php get_search_form() ?>
+					</div>
 					<div class="nav-divider-line"></div>
 					<a href="#" class="menu-schedule-button-link" data-toggle="modal" data-target="#myModal">
 						<div id="menu-schedule-button" class="menu-schedule-button button-blue">
