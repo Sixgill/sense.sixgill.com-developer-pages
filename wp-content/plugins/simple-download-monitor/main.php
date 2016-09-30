@@ -118,7 +118,7 @@ class simpleDownloadManager {
     public function __construct() {
 
         add_action('init', 'sdm_register_post_type');  // Create 'sdm_downloads' custom post type
-        add_action('init', 'sdm_create_taxonomies');  // Register 'tags' and 'categories' taxonomies
+        /*add_action('init', 'sdm_create_taxonomies');  // Register 'tags' and 'categories' taxonomies*/
         add_action('init', 'sdm_register_shortcodes'); //Register the shortcodes
         add_action('wp_enqueue_scripts', array(&$this, 'sdm_frontend_scripts'));  // Register frontend scripts
 
@@ -666,16 +666,16 @@ add_action('manage_sdm_downloads_posts_custom_column', 'sdm_downloads_columns_co
 function sdm_create_columns($cols) {
 
     unset($cols['title']);
-    unset($cols['taxonomy-sdm_tags']);
-    unset($cols['taxonomy-sdm_categories']);
+    /*unset($cols['taxonomy-sdm_tags']);*/
+    /*unset($cols['taxonomy-sdm_categories']);*/
     unset($cols['date']);
 
     $cols['sdm_downloads_thumbnail'] = __('Image', 'simple-download-monitor');
     $cols['title'] = __('Title', 'simple-download-monitor');
     $cols['sdm_downloads_id'] = __('ID', 'simple-download-monitor');
     $cols['sdm_downloads_file'] = __('File', 'simple-download-monitor');
-    $cols['taxonomy-sdm_categories'] = __('Categories', 'simple-download-monitor');
-    $cols['taxonomy-sdm_tags'] = __('Tags', 'simple-download-monitor');
+    /*$cols['taxonomy-sdm_categories'] = __('Categories', 'simple-download-monitor');*/
+    /*$cols['taxonomy-sdm_tags'] = __('Tags', 'simple-download-monitor');*/
     $cols['sdm_downloads_count'] = __('Downloads', 'simple-download-monitor');
     $cols['date'] = __('Date Posted', 'simple-download-monitor');
     return $cols;
@@ -686,8 +686,8 @@ function sdm_downloads_sortable($cols) {
     $cols['sdm_downloads_id'] = 'sdm_downloads_id';
     $cols['sdm_downloads_file'] = 'sdm_downloads_file';
     $cols['sdm_downloads_count'] = 'sdm_downloads_count';
-    $cols['taxonomy-sdm_categories'] = 'taxonomy-sdm_categories';
-    $cols['taxonomy-sdm_tags'] = 'taxonomy-sdm_tags';
+    /*$cols['taxonomy-sdm_categories'] = 'taxonomy-sdm_categories';*/
+    /*$cols['taxonomy-sdm_tags'] = 'taxonomy-sdm_tags';*/
     return $cols;
 }
 
@@ -723,8 +723,8 @@ function sdm_admin_column_width() {
     echo '<style type="text/css">';
     echo '.column-sdm_downloads_thumbnail { width:75px !important; overflow:hidden }';
     echo '.column-sdm_downloads_id { width:100px !important; overflow:hidden }';
-    echo '.column-taxonomy-sdm_categories { width:200px !important; overflow:hidden }';
-    echo '.column-taxonomy-sdm_tags { width:200px !important; overflow:hidden }';
+    /*echo '.column-taxonomy-sdm_categories { width:200px !important; overflow:hidden }';*/
+    /*echo '.column-taxonomy-sdm_tags { width:200px !important; overflow:hidden }';*/
     echo '</style>';
 }
 

@@ -63,8 +63,8 @@
 		<!--link more link end-->
 	</div>
 	<div id="people-tablet-link"></div>  <!-- navigation div for tablet version-->
-	<a name="people"></a>
-	<div id="people" class="solutions-section solutions-second-section">
+	<a id="people"></a>
+	<div class="solutions-section solutions-second-section js-a-people">
 		<div class="solutions-second-section-block">
 			<div class="solutions-second-section-text-block">
 				<div class="solutions-second-section-image-wrapper">
@@ -117,24 +117,27 @@
 	</div>
 
 	<!-- Third section Assets -->
-	<a name="assets"></a>
-	<div id="assets" class="solutions-section solutions-third-section">
+	<a id="assets"></a>
+	<div class="solutions-section solutions-third-section js-a-assets">
 		<div class="solutions-third-section-block">
-			<div class="solutions-third-section-image-wrapper">
-				<img
-					class="solutions-third-section-image responsive-image"
-					desktop-src="<?php echo get_field('assets_section_image_desktop'); ?>"
-					tablet-src="<?php echo get_field('assets_section_image_tablet'); ?>"
-				>
-			</div>
-			<div class="solutions-third-section-block-text">
-				<h1 class="solutions-third-section-block-title">
-					<?php echo get_field('assets_section_header'); ?>
-				</h1>
-				<div class="solutions-third-section-block-paragraph">
-					<?php echo get_field('assets_section_text'); ?>
+			<div class="solutions-third-section-text-block">
+				<div class="solutions-third-section-image-wrapper">
+					<img
+						class="solutions-third-section-image responsive-image"
+						desktop-src="<?php echo get_field('assets_section_image_desktop'); ?>"
+						tablet-src="<?php echo get_field('assets_section_image_tablet'); ?>"
+					>
 				</div>
-			</div>
+				<div class="solutions-third-section-block-text">
+					<h1 class="solutions-third-section-block-title">
+						<?php echo get_field('assets_section_header'); ?>
+					</h1>
+					<div class="solutions-third-section-block-paragraph">
+						<?php echo get_field('assets_section_text'); ?>
+					</div>
+				</div>
+			</div>			
+
 			<?php
 			global $subpages;
 
@@ -167,8 +170,8 @@
 	</div>
 
 	<!-- fourth section Crowds -->
-	<a name="crowds"></a>
-	<div id="crowds" class="solutions-section solutions-fourth-section">
+	<a id="crowds"></a>
+	<div class="solutions-section solutions-fourth-section js-a-crowds">
 		<div class="solutions-second-section-block">
 			<div class="solutions-second-section-text-block">
 				<div class="solutions-second-section-image-wrapper">

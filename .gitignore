@@ -68,4 +68,3 @@ bower_components/
 # idea components #
 .idea/
 .tmp/
-dist/

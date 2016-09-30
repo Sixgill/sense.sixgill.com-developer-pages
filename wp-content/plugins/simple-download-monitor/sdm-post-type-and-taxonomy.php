@@ -63,7 +63,7 @@ function sdm_create_taxonomies() {
         'rewrite' => array('slug' => 'sdm_categories'),
         'show_admin_column' => true
     );
-    register_taxonomy('sdm_categories', array('sdm_downloads'), $args_tags);
+    /*register_taxonomy('sdm_categories', array('sdm_downloads'), $args_tags);*/
 
     //*****  Create TAGS Taxonomy
     $labels_tags = array(
