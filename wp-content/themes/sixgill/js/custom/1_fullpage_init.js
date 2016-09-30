@@ -1,11 +1,21 @@
 jQuery(function($) {
+	var isNarrowEnough = true;
+
 	window.onScreenTypeChanged(function(newScreenType, oldScreenType){
 		var desktopToNonDesktop = (oldScreenType == 'desktop') && (newScreenType != 'desktop');
 		var nonDesktopToDesktop = (oldScreenType != 'desktop') && (newScreenType == 'desktop');
 		if (desktopToNonDesktop || nonDesktopToDesktop) {
-			location.reload();
+			if (isNarrowEnough) {
+				$.fn.fullpage.setAutoScrolling(false);
+				$.fn.fullpage.setResponsive(true);
+				isNarrowEnough = false;
+			}
+			else {
+				$.fn.fullpage.setAutoScrolling(true);
+				$.fn.fullpage.setResponsive(false);
+				isNarrowEnough = true;
+			}
 		}
-
 	}, false);
 
 	if(window.screenType != 'desktop') return;
