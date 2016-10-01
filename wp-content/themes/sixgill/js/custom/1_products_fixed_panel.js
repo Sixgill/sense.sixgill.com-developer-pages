@@ -1,4 +1,4 @@
-$(function() {
+jQuery(function($) {
 
 	var thirdSectionVisible = false,
 			fourthSectionVisible = false,

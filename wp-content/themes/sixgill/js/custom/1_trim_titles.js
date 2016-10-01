@@ -1,4 +1,4 @@
-jQuery(function() {
+jQuery(function($) {
   $('.ellipsis-3lines').ellipsis({
     lines: 3,
     responsive: true
