@@ -11727,7 +11727,7 @@ p {
   border: 0px;
   outline: 0px;
   box-sizing: border-box;
-  padding: 13.5px 0px 13.5px 16.5px;
+  padding: 0px 0px 3px 16.5px;
   min-width: 0px;
   font-family: "Lato";
   font-size: 16px;
@@ -11740,16 +11740,18 @@ p {
   background-color: #ffffff;
 }
 .search-form-submit {
-  width: 42.5px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 52px;
   height: 100%;
   background-color: #ffffff;
   padding: 8px 15px 8px 15px;
   outline: 0px;
   border: 0px;
   box-sizing: border-box;
-  background-image: url('wp-content/themes/sixgill/images/search_icon.svg');
-  background-size: 28px 28px;
-  background-position: center;
+  background-image: url('/wp-content/themes/sixgill/images/search_icon.svg');
+  background-size: 30px 30px;
+  background-position: 14px 4px;
   background-repeat: no-repeat;
 }
 .search-form-placeholder {
@@ -18368,7 +18370,7 @@ body.modal-open {
   letter-spacing: 0.8px;
 }
 .search-results-content {
-  padding: 60px 19.63% 31.5px 19.63%;
+  padding: 60px 19% 31.5px 19.63%;
 }
 .search-results-content .pagination {
   position: relative;
@@ -18382,20 +18384,23 @@ body.modal-open {
   margin-bottom: 53.5px;
 }
 .search-results-elem {
-  margin-bottom: 30px;
+  margin-bottom: 17px;
 }
 .search-results-elem-title {
   font-size: 25px;
-  letter-spacing: 1.3px;
-  margin-bottom: 10px;
+  letter-spacing: 1.2px;
+  margin-bottom: 0px;
 }
 .search-results-elem-description {
   letter-spacing: 0.8px;
   font-size: 16px;
-  line-height: 20.6px;
+  line-height: 21px;
 }
 .search-results-elem-description:after {
-  margin-top: 32px;
+  margin-top: 0px;
+}
+.search-results-elem-description > :last-child {
+  margin-bottom: 13px;
 }
 }
 
@@ -20842,20 +20847,23 @@ ul:not([class]) li {
   margin-bottom: 53.5px;
 }
 .search-results-elem {
-  margin-bottom: 30px;
+  margin-bottom: 17px;
 }
 .search-results-elem-title {
   font-size: 25px;
-  letter-spacing: 1.3px;
-  margin-bottom: 10px;
+  letter-spacing: 1.2px;
+  margin-bottom: 0px;
 }
 .search-results-elem-description {
   letter-spacing: 0.8px;
   font-size: 16px;
-  line-height: 20.6px;
+  line-height: 21px;
 }
 .search-results-elem-description:after {
-  margin-top: 32px;
+  margin-top: 0px;
+}
+.search-results-elem-description > :last-child {
+  margin-bottom: 13px;
 }
 }
 

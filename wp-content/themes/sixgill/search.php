@@ -8,6 +8,7 @@
 	if($countResults > 1) {
 		$pluralEnding = "S";
 	}
+	$title = "SEARCH RESULT"+$pluralEnding;
 	$subtitle =  number_format($countResults)." RESULT".$pluralEnding." FOUND";
 ?>
 <div
@@ -17,7 +18,7 @@
 	mobile-src="<?php the_field("header_image_mobile", $searchSettingsID ); ?>"
 >
 	<h1 class="search-results-header-title">
-		<?php the_field("title", $searchSettingsID ); ?>
+		<?php echo $title; ?>
 	</h1>
 	<h2 class="search-results-header-subtitle">
 		<?php echo $subtitle; ?>
