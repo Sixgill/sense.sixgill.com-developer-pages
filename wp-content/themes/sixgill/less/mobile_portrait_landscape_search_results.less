@@ -1,5 +1,6 @@
 /* Search results mobile styles */
 @import "pagination/mobile.less";
+@import (reference) "desktop_search_results.less";
 
 .search-results {
 
@@ -37,22 +38,11 @@
 	}
 
 	&-elem {
-		margin-bottom: 30px;
+		#search-results-elem;
 
-		&-title {
-	    font-size: 25px;
-	    letter-spacing: 1.3px;
-	    margin-bottom: 10px;
-	  }
-
-	  &-description {
-	    letter-spacing: 0.8px;
-	    font-size: 16px;
-	    line-height: 20.6px;
-
-	    &:after {
-	      margin-top: 32px;
-	    }
-	  }
+		&-link, &-description {
+			font-size: 16px;
+			font-weight: normal;
+		}
 	}
 }
