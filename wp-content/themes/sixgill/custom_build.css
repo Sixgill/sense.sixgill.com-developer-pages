@@ -18139,7 +18139,8 @@ body.modal-open {
 }
 .products-third-section-left-col {
   width: 34%;
-  padding-top: 6.5vw;
+  padding-top: 52px;
+  padding-bottom: 52px;
 }
 .products-third-section-right-col {
   margin-top: 5vh;
@@ -18256,7 +18257,8 @@ body.modal-open {
 }
 .products-fifth-section-left-col {
   width: 34%;
-  padding-top: 6.5vw;
+  padding-top: 52px;
+  padding-bottom: 52px;
 }
 .products-fifth-section-right-col {
   -webkit-align-self: center;
