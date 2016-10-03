@@ -11799,7 +11799,7 @@ p {
   font-family: "Lato", serif, sans-serif;
 }
 .page-wrapper {
-  transition: all 5s;
+  transition: all 1s;
   opacity: 0;
 }
 p {
