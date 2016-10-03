@@ -1,24 +1,21 @@
 jQuery(function($) {
-	var isNarrowEnough = true;
 
-	window.onScreenTypeChanged(function(newScreenType, oldScreenType){
-		var desktopToNonDesktop = (oldScreenType == 'desktop') && (newScreenType != 'desktop');
-		var nonDesktopToDesktop = (oldScreenType != 'desktop') && (newScreenType == 'desktop');
-		if (desktopToNonDesktop || nonDesktopToDesktop) {
-			if (isNarrowEnough) {
+	function afterFullpageLoad () {
+		function changeScreenHandler(newScreenType, oldScreenType){
+			var desktopToNonDesktop = (oldScreenType == 'desktop') && (newScreenType != 'desktop');
+			var nonDesktopToDesktop = (oldScreenType != 'desktop') && (newScreenType == 'desktop');
+			if (desktopToNonDesktop) {
 				$.fn.fullpage.setAutoScrolling(false);
 				$.fn.fullpage.setResponsive(true);
-				isNarrowEnough = false;
 			}
-			else {
+			else if (nonDesktopToDesktop) {
 				$.fn.fullpage.setAutoScrolling(true);
 				$.fn.fullpage.setResponsive(false);
-				isNarrowEnough = true;
 			}
 		}
-	}, false);
-
-	if(window.screenType != 'desktop') return;
+		window.onScreenTypeChanged(changeScreenHandler, false);
+		changeScreenHandler(window.screenType, 'desktop');
+	}
 
 	var homeFullpageWrapper = $('#home-fullpage-wrapper');
 	if(!homeFullpageWrapper.length) return;
@@ -37,7 +34,8 @@ jQuery(function($) {
 				vid.pause();
 			}
     },
-		anchors:['video', 'what', 'chart', 'usecases', 'consumers']
+		anchors:['video', 'what', 'chart', 'usecases', 'consumers'],
+		afterLoad: afterFullpageLoad
 	});
 
 	var isTallEnough = true;
@@ -55,6 +53,8 @@ jQuery(function($) {
 	}
 	checkViewportHeight();
 
+
 	$(window).resize(checkViewportHeight);
+
 
 });
