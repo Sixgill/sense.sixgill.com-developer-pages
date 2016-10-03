@@ -8,7 +8,7 @@
 	if($countResults > 1) {
 		$pluralEnding = "S";
 	}
-	$title = "SEARCH RESULT"+$pluralEnding;
+	$title = "SEARCH RESULT".$pluralEnding;
 	$subtitle =  number_format($countResults)." RESULT".$pluralEnding." FOUND";
 ?>
 <div
