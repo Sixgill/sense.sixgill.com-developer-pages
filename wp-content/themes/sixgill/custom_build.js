@@ -2967,14 +2967,8 @@ jQuery(function($) {
         $('#fp-nav').css('opacity', '1');
     });
 
-<<<<<<< HEAD
 });
-
 jQuery(function($){
-=======
-});
-jQuery(function(){
->>>>>>> SIX-615
 	if(window.screenType != 'desktop') return;
 	if(!$('.blog-post-wrapper').length) return;
 	var panel = $('#social-buttons-panel'),
