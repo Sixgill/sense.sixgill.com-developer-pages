@@ -18575,11 +18575,16 @@ body.modal-open {
   position: absolute;
   right: 14px;
   top: 13px;
+  width: 31px;
+  height: 46px;
+  cursor: pointer;
 }
 .primary-menu-top-container {
   margin-top: 55px;
   padding-left: 14px;
   padding-right: 14px;
+  height: auto;
+  min-height: 71px;
 }
 .primary-menu-top-container-field {
   /*this is a field placeholder for future implementation*/
@@ -21411,6 +21416,9 @@ ul:not([class]) li {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+div#primary-menu-trigger {
+  top: 4px;
+}
 .primary-menu-trigger-mobile {
   width: auto;
   margin: 0 auto;
@@ -21419,21 +21427,42 @@ ul:not([class]) li {
 .primary-menu-trigger-mobile-bar {
   transition: all .7s ease;
   display: block;
-  height: 5px;
+  height: 2px;
   width: 50px;
   background: #2e2e2e;
   margin: 10px auto;
 }
 .primary-menu-trigger-mobile.clicked > .top {
-  -webkit-transform: translateY(15px) rotateZ(45deg);
-  transform: translateY(15px) rotateZ(45deg);
+  -webkit-transform: translateY(12px) rotateZ(45deg);
+  transform: translateY(12px) rotateZ(45deg);
 }
 .primary-menu-trigger-mobile.clicked > .bottom {
-  -webkit-transform: translateY(-15px) rotateZ(-45deg);
-  transform: translateY(-15px) rotateZ(-45deg);
+  -webkit-transform: translateY(-12px) rotateZ(-45deg);
+  transform: translateY(-12px) rotateZ(-45deg);
 }
 .primary-menu-trigger-mobile.clicked > .middle {
   width: 0;
+}
+.primary-menu-trigger-mobile.clicked .primary-menu-trigger-mobile-text-menu {
+  display: none;
+}
+.primary-menu-trigger-mobile.clicked .primary-menu-trigger-mobile-text-close {
+  display: inline-block;
+}
+.primary-menu-trigger-mobile-text {
+  line-height: 1;
+  margin-left: auto;
+  width: auto;
+  margin-right: auto;
+  letter-spacing: 1px;
+  color: #2e2e2e;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+}
+.primary-menu-trigger-mobile-text-close {
+  display: none;
 }
 
 /* Legal mobile portrait and landscape styles */

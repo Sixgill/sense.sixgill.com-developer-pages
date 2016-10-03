@@ -95,6 +95,9 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
+div#primary-menu-trigger {
+	top:4px;
+}
 .primary-menu-trigger-mobile {
    width: auto;
    margin: 0 auto;
@@ -110,28 +113,51 @@
 	   -o-transition: all .7s ease;
 	   transition: all .7s ease;
        display: block;
-	   height: 5px;
+	   height: 2px;
 	   width: 50px;
 	   background: #2e2e2e;
 	   margin: 10px auto;
    }
     &.clicked > .top {
-	   -webkit-transform: translateY(15px) rotateZ(45deg);
-	   -moz-transform: translateY(15px) rotateZ(45deg);
-	   -ms-transform: translateY(15px) rotateZ(45deg);
-	   -o-transform: translateY(15px) rotateZ(45deg);
-	   transform: translateY(15px) rotateZ(45deg);
+	   -webkit-transform: translateY(12px) rotateZ(45deg);
+	   -moz-transform: translateY(12px) rotateZ(45deg);
+	   -ms-transform: translateY(12px) rotateZ(45deg);
+	   -o-transform: translateY(12px) rotateZ(45deg);
+	   transform: translateY(12px) rotateZ(45deg);
 	 }
 	 
 	&.clicked > .bottom {
-	   -webkit-transform: translateY(-15px) rotateZ(-45deg);
-	   -moz-transform: translateY(-15px) rotateZ(-45deg);
-	   -ms-transform: translateY(-15px) rotateZ(-45deg);
-	   -o-transform: translateY(-15px) rotateZ(-45deg);
-	   transform: translateY(-15px) rotateZ(-45deg);
+	   -webkit-transform: translateY(-12px) rotateZ(-45deg);
+	   -moz-transform: translateY(-12px) rotateZ(-45deg);
+	   -ms-transform: translateY(-12px) rotateZ(-45deg);
+	   -o-transform: translateY(-12px) rotateZ(-45deg);
+	   transform: translateY(-12px) rotateZ(-45deg);
 	 }
 	 
 	&.clicked > .middle {
 	   width: 0;
+	 }
+	 &.clicked &-text {
+	 	&-menu {
+			display:none;
+	 	}
+	 	&-close {
+	 		display: inline-block;
+	 	}
+	 }
+	 &-text {
+ 	    line-height: 1;
+	    margin-left: auto;
+	    width: auto;
+	    margin-right: auto;
+	    letter-spacing: 1px;
+	    color: #2e2e2e;
+	    font-family: "Lato";
+	    font-weight: 700;
+	    font-size: 13px;
+	    text-align: center;
+	    &-close {
+	    	display: none;
+	    }
 	 }
 }

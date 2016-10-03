@@ -67,6 +67,10 @@
 				      <div class="primary-menu-trigger-mobile-bar top"></div>
 				      <div class="primary-menu-trigger-mobile-bar middle"></div>
 				      <div class="primary-menu-trigger-mobile-bar bottom"></div>
+				      <div class="primary-menu-trigger-mobile-text">
+					      <span class="primary-menu-trigger-mobile-text-menu">MENU</span>
+					      <span class="primary-menu-trigger-mobile-text-close">EXIT</span>
+				      </div>
 				    </div>
 				</div>
 
