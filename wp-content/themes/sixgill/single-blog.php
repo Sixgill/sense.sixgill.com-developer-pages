@@ -1,10 +1,5 @@
 <div class="full-width ohidden full-page-wrapper blog-post-wrapper"> <!-- fullpage wrapper placeholder -->
 	<a name="top"></a>
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@SixgillTech">
-	<meta name="twitter:title" content="<?php echo $post->post_title; ?>">
-	<meta name="twitter:description" content="<?php echo get_field('subtitle'); ?>">
-	<meta name="twitter:image" content="<?php echo get_field('post_picture_to_share'); ?>">
 
 	<div
 		class="blog-post-header responsive-background"
