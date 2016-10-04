@@ -1,3 +1,5 @@
+@import "pagination/desktop.less";
+
 .blog-page {
 
 	&-header {
@@ -80,15 +82,9 @@
 		}
 	}
 
-	&-pagination {
-		position: relative;
+	#pagination-desktop();
+	.pagination {
 		left: 145px; // correction on half of sidebar width
-
-		.page-numbers {
-			font-size: 16px;
-			line-height: 0.53;
-			padding: 0 26px;
-		}
 	}
 
 	&-subscription {

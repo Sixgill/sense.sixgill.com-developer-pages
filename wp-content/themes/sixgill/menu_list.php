@@ -110,4 +110,14 @@
 		"isSelected" => $isSelected,
 		"isExpanded" => $isExpanded
 	);
+
+	$isSelected = (strcasecmp(getCurrentSlug(), "resources")==0);
+	$isExpanded = (strcasecmp(getCurrentSlug(), "resources")==0);
+	$menu[] = array(
+		"elementName" => "Resources",
+		"link" => "/resources/",
+		"sublinksList" => array(),
+		"isSelected" => $isSelected,
+		"isExpanded" => $isExpanded
+	);
 ?>

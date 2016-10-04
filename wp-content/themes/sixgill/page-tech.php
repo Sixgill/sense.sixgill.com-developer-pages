@@ -32,7 +32,7 @@
 
 		<a
 			href="#location"
-			class="tech-learn-more-link"
+			class="scroll-section tech-learn-more-link"
 		>
 			<div class="tech-first-section-scroll-link-wrapper">
 				<div class="tech-first-section-scroll-link-ico-wrapper">

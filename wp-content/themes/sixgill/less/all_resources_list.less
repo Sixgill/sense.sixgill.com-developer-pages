@@ -1,3 +1,5 @@
+@import "pagination/all.less";
+
 .resources-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -92,41 +94,5 @@
 		}
 	}
 
-	&-pagination {
-		display: inline-block;
-		width: 100%;
-		text-align: center;
-		white-space: nowrap;
-
-		.page-numbers {
-			color: #2e2e2e;
-			vertical-align: middle;
-			text-decoration: none;
-		}
-
-		a.prev,
-		a.next {
-			display: inline-block;
-			background-image: url("images/blog/iconArrowCirclePrevious-Default.svg");
-			background-repeat: no-repeat;
-			background-size: cover;
-			width: 30px;
-			height: 30px;
-			vertical-align: middle;
-			padding: 0;
-		}
-
-		a.prev {
-			transform: none;
-		}
-
-		a.next {
-			transform: scaleX(-1);
-		}
-
-		.current {
-			color: #0051c6;
-			text-decoration: underline;
-		}
-	}
+	#pagination-all;
 }

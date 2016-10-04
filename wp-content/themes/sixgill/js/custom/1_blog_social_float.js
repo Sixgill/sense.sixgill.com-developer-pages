@@ -1,4 +1,4 @@
-jQuery(function(){
+jQuery(function($){
 	if(window.screenType != 'desktop') return;
 	if(!$('.blog-post-wrapper').length) return;
 	var panel = $('#social-buttons-panel'),

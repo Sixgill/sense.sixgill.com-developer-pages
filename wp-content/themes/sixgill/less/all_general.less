@@ -1,15 +1,13 @@
 /* General Common styles */
+@import "search/all.less";
+
 body, p {
 	font-family: "Lato", serif, sans-serif;
 }
 
 .page-wrapper {
-	transition: all 5s;
+	transition: opacity 1s ease;
 	opacity: 0;
-}
-
-.unique-testing {
-	display: flex;
 }
 
 p {
@@ -135,7 +133,7 @@ a:focus {
 	padding-right: 0px !important;
 }
 
-#menu-background {
+/*#menu-background {
 	display: none;
 	z-index: 9997;
 	position: fixed;
@@ -144,7 +142,7 @@ a:focus {
 	background: white;
 	top: 0;
 	left: 0;
-}
+}*/
 
 label {
 	text-align: left;
@@ -168,7 +166,7 @@ label {
 	color: #999999;
 }
 
-.menu-link-selected > div > div {
+.menu-link-selected {
 	color: #0051c6 !important;
 }
 
@@ -364,7 +362,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	font-size: 16px;
 }
 
-#primary-menu > ul > li:first-child {
+/*#primary-menu > ul > li:first-child {
 	margin-left: 0;
 }
 
@@ -388,7 +386,7 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 
 #primary-menu a:not(:first-child) div {
 	padding-top: 15px;
-}
+}*/
 
 .dotted-background {
 	background-image: repeating-radial-gradient(center center, #e5e2e2, #f7f5f5 1px, transparent 1px, transparent 100%);
@@ -416,32 +414,42 @@ ul:not([class]) li:not(.has-span):before, .bullet-color {
 	letter-spacing: 1px;
 	text-align: center;
 	color: #ffffff;
-}
 
-.button:hover {
-	text-decoration: none;
-	color: #ffffff;
-}
-
-.button-green {
-	background-color: #4dc85a;
 	&:hover {
-		background-color:#35b042 !important;
+		text-decoration: none;
+		color: #ffffff;
 	}
+
+	&-green {
+		background-color: #4dc85a;
+		&:hover {
+			background-color:#35b042 !important;
+		}
+	}
+
+	&-blue {
+		background-color: #0051c6;
+		&:hover {
+			background-color:#0044a5 !important;
+		}
+	}
+
 }
 
-.button-blue {
-	background-color: #0051c6;
-	&:hover {
-		background-color:#0044a5 !important;
-	}
-}
+
 .fixed-position {
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	width: 100vw;
 	padding-left: 225px;
+}
+
+.overflow-hide {
+	overflow:hidden!important;
+}
+.not-visible {
+	visibility: hidden!important;
 }
 
 /* For iOS Safari */

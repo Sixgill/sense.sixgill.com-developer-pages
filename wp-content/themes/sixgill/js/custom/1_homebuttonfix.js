@@ -10,17 +10,20 @@ jQuery(function($){
 	}
 
 	var homeScheduleButton = $('#home-button-on-video');
-	var menuScheduleButton = $('#menu-schedule-button-wrapper');
+	var menuScheduleButton = $('.menu-schedule-button-link');
 	var isMenuScheduleButtonVisible = true;
 
 	window.checkHomeButton = function() {
 		if(isMenuScheduleButtonVisible) {
 			if(isScrolledIntoView(homeScheduleButton)) {
-				menuScheduleButton.fadeOut();
+				menuScheduleButton.fadeTo(500,0,function(){
+					menuScheduleButton.addClass("not-visible");
+				});
 				isMenuScheduleButtonVisible = false;
 			}
 		} else if(!isScrolledIntoView(homeScheduleButton)) {
-			menuScheduleButton.fadeIn();
+			menuScheduleButton.removeClass("not-visible");
+			menuScheduleButton.fadeTo(500,1);
 			isMenuScheduleButtonVisible = true;
 		}
 	}

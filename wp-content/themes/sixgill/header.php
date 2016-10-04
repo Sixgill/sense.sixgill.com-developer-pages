@@ -53,7 +53,7 @@
 		<a name="top"></a>
 		<section id="top"></section>
 		<!-- Header -->
-		<div id="menu-background"></div>
+		<div id="menu-background" class="hide"></div>
 		<header id="header" class="no-sticky">
 			<div id="header-wrap">
 				<div id="logo" class="noborder nopadding">
@@ -61,8 +61,17 @@
 				</div>
 
 				<div id="primary-menu-trigger" class="tright">
-					<img id="show-menu-icon" class="" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" style="height: 100%;" alt=""/>
-					<img id="close-menu-icon" class="hide" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" style="height: 100%;" alt=""/>
+					<img id="show-menu-icon" class="no-mobile-portrait-display no-mobile-landscape-display" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIcon.png" style="height: 100%;" alt=""/>
+					<img id="close-menu-icon" class="hide no-mobile-portrait-display no-mobile-landscape-display" src="/wp-content/themes/sixgill/images/td/logo/mobileNavIconClose.png" style="height: 100%;" alt=""/>
+					<div class="primary-menu-trigger-mobile no-tablet-display no-desktop-display">
+				      <div class="primary-menu-trigger-mobile-bar top"></div>
+				      <div class="primary-menu-trigger-mobile-bar middle"></div>
+				      <div class="primary-menu-trigger-mobile-bar bottom"></div>
+				      <div class="primary-menu-trigger-mobile-text">
+					      <span class="primary-menu-trigger-mobile-text-menu">MENU</span>
+					      <span class="primary-menu-trigger-mobile-text-close">EXIT</span>
+				      </div>
+				    </div>
 				</div>
 
 				<div class="menu-container">
@@ -70,6 +79,10 @@
 				</div>
 
 				<div id="menu-schedule-button-wrapper" class="menu-schedule-button-wrapper display-only-desktop">
+					<div class="nav-divider-line"></div>
+					<div class="menu-search-field">
+						<?php get_search_form() ?>
+					</div>
 					<div class="nav-divider-line"></div>
 					<a href="#" class="menu-schedule-button-link" data-toggle="modal" data-target="#myModal">
 						<div id="menu-schedule-button" class="menu-schedule-button button-blue">
