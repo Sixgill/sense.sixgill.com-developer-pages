@@ -16673,7 +16673,8 @@ body.modal-open {
 }
 .home _:-ms-lang(x),
 .home-section {
-  height: 100vh !important;
+  /*that's causing vertical responsivness trouble*/
+  /*height:100vh !important;*/
 }
 .home-first-section {
   -webkit-justify-content: center;
@@ -18068,7 +18069,8 @@ body.modal-open {
 }
 .products-second-section _:-ms-lang(x),
 .products-second-section {
-  height: calc(10vh);
+  /*that's causing vertical responsivness trouble*/
+  /*height: calc(100vh - 90px);*/
 }
 .products-second-section > div {
   -webkit-align-self: center;
