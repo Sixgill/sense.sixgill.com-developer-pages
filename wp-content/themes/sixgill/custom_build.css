@@ -18553,12 +18553,13 @@ body.modal-open {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
-  width: 40%;
+  width: 40vw;
   top: 0;
-  height: 100%;
+  height: 100vh;
   right: -50%;
   border-left: #5ede6a solid 5px;
   overflow: auto;
+  transition: right 0.3s;
 }
 .primary-menu-list {
   -webkit-justify-content: space-between;
@@ -18610,6 +18611,12 @@ body.modal-open {
   top: 0;
   left: 0;
   transition: opacity 0.3s ease-in-out;
+}
+.stick-to-right {
+  right: 0!important;
+}
+.fill-opacity {
+  opacity: 0.8 !important;
 }
 
 .social-buttons {
