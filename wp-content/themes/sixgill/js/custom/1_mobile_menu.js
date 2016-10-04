@@ -5,6 +5,8 @@ jQuery(function($) {
 	window.onScreenTypeChanged(function(newScreenTypeName) {
 		$('.primary-menu' ).removeAttr("style");
 		$('#menu-background' ).removeAttr("style");
+		$('.primary-menu' ).removeClass("stick-to-right");
+		$('#menu-background').removeClass("fill-opacity");
 		isMenuShown = false;
 		if(newScreenTypeName == "tablet"){
 			forTablet();
@@ -22,56 +24,40 @@ jQuery(function($) {
 		forMobile();
 	}
 	function forDesktop(){
+		$('#menu-background').addClass("hide");
 		$('.primary-menu' ).removeClass("hide");
-		$('body').removeClass("overflow-hide");
 	}
 	function forTablet(){
 		$('#primary-menu-trigger').off();
 		$('#close-menu-icon-tablet').off();
-		$('body').removeClass("overflow-hide");
+		$('#menu-background').removeClass("hide");
+		$('.primary-menu').removeClass("hide");
 		$('#primary-menu-trigger').click(function() {
-			$('.primary-menu' ).removeClass("hide");
-			$('.primary-menu').animate({
-				right:0
-			},300,function(){
-				$('#menu-background').removeClass("hide");
-				$('#menu-background').animate({
-					opacity:0.8
-				},100);
-			});
-			$('body').addClass("overflow-hide");
+			$('.primary-menu' ).addClass("stick-to-right");
+				$('#menu-background').addClass("fill-opacity");
 		});
 		$('#close-menu-icon-tablet').click(function() {
-			$('#menu-background').animate({
-				opacity:0
-			},300,function(){
-				$('#menu-background').addClass("hide");
-				$('.primary-menu').animate({
-					right:"-50%"
-				},300,function(){
-					$( '.primary-menu' ).addClass("hide");
-					$('body').removeClass("overflow-hide");
-				});
-			});
+			$('.primary-menu' ).removeClass("stick-to-right");
+				$('#menu-background').removeClass("fill-opacity");
 		});
 	}
 	function forMobile(){
 		$('#primary-menu-trigger').off();
+		$('#menu-background').addClass("hide");
+		$('.primary-menu').addClass("hide");
 		$('.primary-menu-trigger-mobile').removeClass("clicked");
-		$('body').removeClass("overflow-hide");
 		$('#primary-menu-trigger').click(function() {
 			if(isMenuShown) {
 				$( '.primary-menu' ).fadeTo(500, 0,function(){
 					$('.primary-menu' ).addClass("hide");
-					$('body').removeClass("overflow-hide");
+					isMenuShown = false;
 				});
 			} else {
 				$('.primary-menu' ).removeClass("hide");
-				$('body').addClass("overflow-hide");
 				$( '.primary-menu' ).fadeTo(500, 1);
+				isMenuShown = true;
 			}
 			$('.primary-menu-trigger-mobile').toggleClass("clicked");
-			isMenuShown = !isMenuShown;
 			window.menuShowFlag = isMenuShown;
 		});
 	}
