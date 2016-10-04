@@ -37,7 +37,7 @@
 			.products-fixed-panel-icon-hover {
 				display: block;
 			}
-		};
+		}
 		&-title {
 			font-size: 27px;
 			font-weight: 500;
@@ -184,7 +184,8 @@
 		min-height: calc(~"100vh - 90px");
 
 		_:-ms-lang(x), & {
-			height: calc(100vh - 90px);
+			/*that's causing vertical responsivness trouble*/
+			/*height: calc(100vh - 90px);*/
 		}
 
 		& > div {
@@ -286,6 +287,7 @@
 			width: 34%;
 			padding-top: 52px;
 			padding-bottom: 52px;
+			padding-left: 50px;
 		}
 
 		&-right-col {
@@ -431,6 +433,7 @@
 			width: 34%;
 			padding-top: 52px;
 			padding-bottom: 52px;
+			padding-left: 50px;
 		}
 
 		&-right-col {

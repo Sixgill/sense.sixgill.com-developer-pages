@@ -3,9 +3,9 @@ jQuery(function($){
 	var oldScreenType = window.screenType;
 	var execOnScreenTypeChanged = [];
 
-	window.onScreenTypeChanged = function(newCallback, callOnLoad=true) {
-		if (callOnLoad) {
-			newCallback(window.screenType, oldScreenType);		
+	window.onScreenTypeChanged = function(newCallback, callOnLoad) {
+		if (callOnLoad || callOnLoad === undefined) {
+			newCallback(window.screenType, oldScreenType);
 		}
 		execOnScreenTypeChanged.push(newCallback);
 	}
