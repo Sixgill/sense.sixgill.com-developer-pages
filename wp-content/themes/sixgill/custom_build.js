@@ -2562,9 +2562,11 @@ jQuery(function($){
 	var oldScreenType = window.screenType;
 	var execOnScreenTypeChanged = [];
 
-	window.onScreenTypeChanged = function(newCallback) {
+	window.onScreenTypeChanged = function(newCallback, callOnLoad=true) {
+		if (callOnLoad) {
+			newCallback(window.screenType, oldScreenType);		
+		}
 		execOnScreenTypeChanged.push(newCallback);
-		newCallback(window.screenType);
 	}
 
 	function updateScreenType() {
@@ -2580,7 +2582,7 @@ jQuery(function($){
 
 		if(oldScreenType!=window.screenType) {
 			execOnScreenTypeChanged.forEach(function(currentCallback) {
-				currentCallback(window.screenType);
+				currentCallback(window.screenType, oldScreenType);
 			});
 		}
 	}
@@ -3145,7 +3147,23 @@ jQuery(function($) {
 });
 
 jQuery(function($) {
-	if(window.screenType != 'desktop') return;
+
+	function afterFullpageLoad () {
+		function changeScreenHandler(newScreenType, oldScreenType){
+			var desktopToNonDesktop = (oldScreenType == 'desktop') && (newScreenType != 'desktop');
+			var nonDesktopToDesktop = (oldScreenType != 'desktop') && (newScreenType == 'desktop');
+			if (desktopToNonDesktop) {
+				$.fn.fullpage.setAutoScrolling(false);
+				$.fn.fullpage.setResponsive(true);
+			}
+			else if (nonDesktopToDesktop) {
+				$.fn.fullpage.setAutoScrolling(true);
+				$.fn.fullpage.setResponsive(false);
+			}
+		}
+		window.onScreenTypeChanged(changeScreenHandler, false);
+		changeScreenHandler(window.screenType, 'desktop');
+	}
 
 	var homeFullpageWrapper = $('#home-fullpage-wrapper');
 	if(!homeFullpageWrapper.length) return;
@@ -3164,7 +3182,8 @@ jQuery(function($) {
 				vid.pause();
 			}
     },
-		anchors:['video', 'what', 'chart', 'usecases', 'consumers']
+		anchors:['video', 'what', 'chart', 'usecases', 'consumers'],
+		afterLoad: afterFullpageLoad
 	});
 
 	var isTallEnough = true;
@@ -3182,7 +3201,10 @@ jQuery(function($) {
 	}
 	checkViewportHeight();
 
+
 	$(window).resize(checkViewportHeight);
+
+
 });
 
 jQuery(function($){
