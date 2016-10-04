@@ -4,9 +4,8 @@ jQuery(function($){
 	var execOnScreenTypeChanged = [];
 
 	window.onScreenTypeChanged = function(newCallback, callOnLoad) {
-		callOnLoad = typeof callOnLoad == 'undefined' ? callOnLoad : true;
-		if (callOnLoad) {
-			newCallback(window.screenType, oldScreenType);		
+		if (callOnLoad || callOnLoad === undefined) {
+			newCallback(window.screenType, oldScreenType);
 		}
 		execOnScreenTypeChanged.push(newCallback);
 	}

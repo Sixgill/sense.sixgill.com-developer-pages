@@ -2563,9 +2563,8 @@ jQuery(function($){
 	var execOnScreenTypeChanged = [];
 
 	window.onScreenTypeChanged = function(newCallback, callOnLoad) {
-		callOnLoad = typeof callOnLoad == 'undefined' ? callOnLoad : true;
-		if (callOnLoad) {
-			newCallback(window.screenType, oldScreenType);		
+		if (callOnLoad || callOnLoad === undefined) {
+			newCallback(window.screenType, oldScreenType);
 		}
 		execOnScreenTypeChanged.push(newCallback);
 	}
@@ -2591,6 +2590,7 @@ jQuery(function($){
 	$(window).resize(updateScreenType);
 	updateScreenType();
 })
+
 // Device.js
 // (c) 2014 Matthew Hudson
 // Device.js is freely distributable under the MIT license.
