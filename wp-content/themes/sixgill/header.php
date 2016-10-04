@@ -47,8 +47,8 @@
 
 	<!-- Document Wrapper -->
 	<div id="loader-wrapper">
-			<div id="loader"></div>
-		</div>
+		<div id="loader"></div>
+	</div>
 	<div id="wrapper" class="clearfix page-wrapper">
 		<a name="top"></a>
 		<section id="top"></section>
@@ -80,8 +80,12 @@
 
 				<div id="menu-schedule-button-wrapper" class="menu-schedule-button-wrapper display-only-desktop">
 					<div class="nav-divider-line"></div>
-					<div class="menu-search-field">
-						<?php get_search_form() ?>
+					<div class="menu-search-wrapper">
+						<?php
+							global $searchFormClasses;
+							$searchFormClasses = "menu-search-form";
+							include(locate_template('searchform.php'));
+						?>
 					</div>
 					<div class="nav-divider-line"></div>
 					<a href="#" class="menu-schedule-button-link" data-toggle="modal" data-target="#myModal">
