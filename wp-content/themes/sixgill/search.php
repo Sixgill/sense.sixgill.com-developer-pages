@@ -30,6 +30,7 @@
 		<?php
 			global $searchFormClasses;
 			$searchFormClasses = "always-active";
+			$displaySearchQuery = true;
 			include(locate_template('searchform.php'));
 		?>
 	</div>

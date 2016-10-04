@@ -349,4 +349,16 @@
 	}
 
 	update_option('image_default_link_type','none');
+
+	function SearchFilter($query) {
+		if (($query->is_search)&&(!is_admin())) {
+			$query->set('post_type', ['post', 'page']);
+			$query->set( 'meta_key', 'exclude_from_search_results' );
+	    $query->set( 'meta_value', 'no' );
+		}
+
+		return $query;
+	}
+
+	add_filter('pre_get_posts','SearchFilter');
 ?>
