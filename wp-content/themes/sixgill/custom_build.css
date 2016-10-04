@@ -18955,9 +18955,6 @@ body.modal-open {
   left: 0px;
   width: 100%;
 }
-.company-section {
-  min-height: 100vh;
-}
 .company-first-section {
   display: -webkit-flex;
   display: -ms-flexbox;
