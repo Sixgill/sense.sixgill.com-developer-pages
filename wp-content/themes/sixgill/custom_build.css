@@ -18072,8 +18072,7 @@ body.modal-open {
 }
 .products-second-section _:-ms-lang(x),
 .products-second-section {
-  /*that's causing vertical responsivness trouble*/
-  /*height: calc(100vh - 90px);*/
+  height: 600px;
 }
 .products-second-section > div {
   -webkit-align-self: center;
