@@ -35,7 +35,7 @@ jQuery(function($) {
 			}
     },
 		anchors:['video', 'what', 'chart', 'usecases', 'consumers'],
-		afterLoad: afterFullpageLoad
+		afterRender: afterFullpageLoad
 	});
 
 	var isTallEnough = true;
