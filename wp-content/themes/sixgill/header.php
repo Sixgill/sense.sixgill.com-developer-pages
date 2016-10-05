@@ -99,3 +99,4 @@
 
 			</div>
 		</header>
+		<!-- DEBUG <?php var_dump(getCategorySlug()); var_dump(getCurrentSlug()); ?> -->
