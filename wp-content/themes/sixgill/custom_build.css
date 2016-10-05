@@ -13206,7 +13206,6 @@ input {
   font-size: 13px;
   text-transform: uppercase;
   cursor: pointer;
-  letter-spacing: 0.7px;
 }
 .footer-subscription-button,
 .footer-main-link,
@@ -16132,6 +16131,9 @@ body.modal-open {
   margin-left: -1px;
   vertical-align: top;
 }
+.footer-main-link {
+  letter-spacing: 1.3px;
+}
 
 .blog-page-header {
   height: 324px;
@@ -18751,6 +18753,9 @@ body.modal-open {
 }
 .footer-subscribe-error-close {
   vertical-align: top;
+}
+.footer-main-link {
+  letter-spacing: 0.7px;
 }
 
 .blog-page-header {
@@ -21632,6 +21637,9 @@ div#primary-menu-trigger {
 }
 .footer-copyright-wrapper {
   font-size: 13px;
+}
+.footer-main-link {
+  letter-spacing: 0.7px;
 }
 
 .blog-page-header {
