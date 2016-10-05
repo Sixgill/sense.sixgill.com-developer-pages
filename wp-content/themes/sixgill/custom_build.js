@@ -3371,15 +3371,16 @@ jQuery(function($) {
 	function forTablet(){
 		$('#primary-menu-trigger').off();
 		$('#close-menu-icon-tablet').off();
-		$('#menu-background').removeClass("hide");
 		$('.primary-menu').removeClass("hide");
 		$('#primary-menu-trigger').click(function() {
 			$('.primary-menu' ).addClass("stick-to-right");
+			$('#menu-background').removeClass("hide");
 			$('#menu-background').addClass("fill-opacity");
 		});
 		$('#close-menu-icon-tablet').click(function() {
 			$('.primary-menu' ).removeClass("stick-to-right");
 			$('#menu-background').removeClass("fill-opacity");
+			$('#menu-background').addClass("hide");
 		});
 	}
 	function forMobile(){
