@@ -3375,11 +3375,11 @@ jQuery(function($) {
 		$('.primary-menu').removeClass("hide");
 		$('#primary-menu-trigger').click(function() {
 			$('.primary-menu' ).addClass("stick-to-right");
-				$('#menu-background').addClass("fill-opacity");
+			$('#menu-background').addClass("fill-opacity");
 		});
 		$('#close-menu-icon-tablet').click(function() {
 			$('.primary-menu' ).removeClass("stick-to-right");
-				$('#menu-background').removeClass("fill-opacity");
+			$('#menu-background').removeClass("fill-opacity");
 		});
 	}
 	function forMobile(){
