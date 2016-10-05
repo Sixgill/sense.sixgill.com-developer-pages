@@ -18554,7 +18554,7 @@ body.modal-open {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
+  position: absolute;
   width: 40vw;
   top: 0;
   height: 100vh;
