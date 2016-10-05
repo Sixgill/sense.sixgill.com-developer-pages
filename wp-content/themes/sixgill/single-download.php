@@ -1,7 +1,6 @@
 <?php
 	$resourcePageID = getPageBySlug('resources')->ID;
-?>
-<?php
+
 	if ( have_posts() ) while ( have_posts() ) : the_post();
 	$resourceType = get_field('resource_type');
 ?>
@@ -19,6 +18,11 @@
 	<h2 class="resources-list-header-subtitle">
 		<?php the_title(); ?>
 	</h2>
+	<a href="<?php echo get_site_url().$downloadLink; ?>">
+		<div class="resource-details-download-form-submit-button button-blue resource-details-download-form-submit-button-temp">
+			Download for Free
+		</div>
+	</a>
 </div>
 
 <?php
@@ -29,50 +33,55 @@
 ?>
 
 <div class="resource-details" data-download-link="<?php echo $downloadLink; ?>">
-	<div class="resource-details-col-left">
-		<div class="resource-details-preview">
-			<?php the_field("resource_preview"); ?>
+
+	<div class="resource-details-share">
+		<div class="resource-details-share-title">
+			Share this <?php echo $resourceType; ?>
 		</div>
-		<div class="resource-details-preview-download-tip no-mobile-landscape-display no-mobile-portrait-display">
-			DOWNLOAD THE <?php echo $resouceTypee; ?> TO GET FULL ACCESS
+		<div class="resource-details-share-wrapper">
+			<?php
+				global $socialButtonsClasses;
+				$socialButtonsClasses = "resource-details-share-buttons";
+				include(locate_template('social_buttons.php'));
+			?>
 		</div>
 	</div>
 
-	<div class="resource-details-col-right">
-		<div class="resource-details-download-form">
-			<div class="resource-details-download-form-header">
-				DOWNLOAD THE <?php echo $resourceType; ?>
-			</div>
-			<div class="resource-details-download-form-wrapper">
-				<a href="<?php echo get_site_url().$downloadLink; ?>">
-					<div class="resource-details-download-form-submit-button button-blue resource-details-download-form-submit-button-temp">
-						Download Now
-					</div>
-				</a>
-				<?php /*dynamic_sidebar( 'download-access' );*/ ?>
-				<div class="resource-details-download-link hide">
-					<p>Downloading will start soon.</p>
-					<a href="<?php echo get_site_url().$downloadLink; ?>">Download this resource manually</a>
-				</div>
-			</div>
-		</div>
+	<?php
+		if(strcasecmp($resourceType, "ebook")) {
+			?>
 
-		<div class="resource-details-line"></div>
+			<?php
+		} else if(strcasecmp($resourceType, "presentation")) {
+			?>
 
-		<div class="resource-details-share">
-			<div class="resource-details-share-header">
-				SHARE THIS <?php echo $resourceType; ?>
-			</div>
-			<div class="resource-details-share-wrapper">
-				<?php
-					global $socialButtonsClasses;
-					$socialButtonsClasses = "resource-details-share-buttons";
-					include(locate_template('social_buttons.php'));
-				?>
-			</div>
-		</div>
+			<?php
+		} else if(strcasecmp($resourceType, "webinar")) {
+			?>
+			<iframe
+				src="//player.vimeo.com/video/VIDEO_ID?portrait=0&color=333"
+				class="resource-detals-vimeo-video"
+				width="WIDTH"
+				height="HEIGHT"
+				frameborder="0"
+				webkitallowfullscreen
+				mozallowfullscreen
+				allowfullscreen
+			>
+			</iframe>
+			<?php
+		}
+	 ?>
 
+	<div class="resource-details-description">
+		<?php the_field("resource_description"); ?>
 	</div>
+
+	<a href="<?php echo get_site_url().$downloadLink; ?>">
+		<div class="resource-details-download-form-download-button button-blue resource-details-download-form-submit-button-temp">
+			Download for Free
+		</div>
+	</a>
 </div>
 
 <?php endwhile; // end of the loop. ?>
