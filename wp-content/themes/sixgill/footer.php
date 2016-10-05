@@ -205,6 +205,22 @@
  </script>
 <!-- End of Async HubSpot Analytics Code -->
 <?php wp_footer(); ?>
+
+<?php
+if($_SERVER['PANTHEON_ENVIRONMENT'] !== 'live') {
+?>
+<script type="text/javascript">
+	jQuery.ajax({
+	    url: "https://distillery.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-8pz04m/100014/c/1000.0.10/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?locale=en-US&collectorId=d7ecb025",
+	    type: "get",
+	    cache: true,
+	    dataType: "script"
+	});
+</script>
+<?php
+}
+?>
+
 <style type="text/css" media="screen">
 	body,html {
 		margin-top: 0px !important;
