@@ -53,7 +53,6 @@
 		<a name="top"></a>
 		<section id="top"></section>
 		<!-- Header -->
-		<div id="menu-background" class="hide"></div>
 		<header id="header" class="no-sticky">
 			<div id="header-wrap">
 				<div id="logo" class="noborder nopadding">
@@ -75,6 +74,7 @@
 				</div>
 
 				<div class="menu-container">
+					<div id="menu-background" class="hide"></div>
 					<?php get_template_part('menu'); ?>
 				</div>
 
