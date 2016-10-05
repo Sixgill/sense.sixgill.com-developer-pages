@@ -18372,7 +18372,7 @@ body.modal-open {
 .search-results-header-title {
   font-size: 60px;
   letter-spacing: 1.8px;
-  margin-bottom: 20.5px;
+  margin-bottom: 9.5px;
 }
 .search-results-header-subtitle {
   font-size: 25px;
@@ -20850,7 +20850,7 @@ ul:not([class]) li {
 .search-results-header-title {
   font-size: 40px;
   letter-spacing: 1.2px;
-  margin-bottom: 15px;
+  margin-bottom: 4px;
 }
 .search-results-header-subtitle {
   font-size: 20px;
@@ -23315,7 +23315,7 @@ ul:not([class]) li {
 .search-results-header-title {
   font-size: 18px;
   letter-spacing: 0.5px;
-  margin-bottom: 7px;
+  margin-bottom: 4px;
 }
 .search-results-header-subtitle {
   font-size: 13.2px;
