@@ -12192,9 +12192,6 @@ ul:not([class]) li:not(.has-span):before,
   width: 100vw;
   padding-left: 225px;
 }
-.overflow-hide {
-  overflow: hidden!important;
-}
 .not-visible {
   visibility: hidden!important;
 }
@@ -13054,7 +13051,6 @@ input {
   margin-bottom: 13px;
 }
 .primary-menu-top-container-field {
-  /*this is a field placeholder for future implementation*/
   height: 43px;
   background-color: #dfdfdf;
 }
@@ -13063,6 +13059,8 @@ input {
   padding-left: 14px;
   padding-right: 14px;
   width: 100%;
+  min-height: 71px;
+  margin-bottom: 14px;
 }
 .primary-menu-bottom-container-divider {
   width: 100%;
@@ -13072,7 +13070,6 @@ input {
   margin-bottom: 13px;
 }
 .primary-menu-bottom-container-button {
-  margin-bottom: 14px;
   height: 43px;
   background-color: #0051c6;
   font-family: 'Lato';
@@ -18547,6 +18544,9 @@ body.modal-open {
 #wrapper {
   margin-top: 121px !important;
 }
+.overflow-hide {
+  overflow: hidden!important;
+}
 
 /* Press tablet styles */
 .primary-menu {
@@ -18597,9 +18597,6 @@ body.modal-open {
   padding-right: 14px;
   height: auto;
   min-height: 71px;
-}
-.primary-menu-top-container-field {
-  /*this is a field placeholder for future implementation*/
 }
 #menu-background {
   display: block;
@@ -21529,10 +21526,12 @@ div#primary-menu-trigger {
   top: 13px;
 }
 .primary-menu-top-container-field {
-  /*this is a field placeholder for future implementation*/
   margin-top: 11px;
   margin-right: 10px;
   margin-left: 10px;
+}
+.overflow-hide {
+  overflow: hidden!important;
 }
 
 .social-buttons {
