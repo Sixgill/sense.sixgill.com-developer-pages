@@ -9,7 +9,6 @@ jQuery(function($) {
 	var attr = $(primary_menu).attr("style");
 
 	function resetStyles(cb){
-		console.log('RESET');
 		if(attr && attr!==false){
 			primary_menu.removeAttr("style");
 			background.removeAttr("style");
@@ -63,11 +62,9 @@ jQuery(function($) {
 	});
 	handleScreenSize(window.screenType);
 	function forDesktop(){
-		console.log('DESKTOP');
 		hideBackground(true);
 	}
 	function forTablet(){
-		console.log('TABLET');
 		offListeners(true);
 		hideBackground(true);
 		menu_trigger.click(function() {
@@ -77,7 +74,6 @@ jQuery(function($) {
 			body.addClass("overflow-hide");
 		});
 		tablet_close.click(function() {
-			console.log("cannot happen right?!");
 			primary_menu.removeClass("stick-to-right");
 			background.removeClass("fill-opacity");
 			background.addClass("hide");
@@ -85,12 +81,10 @@ jQuery(function($) {
 		});
 	}
 	function forMobile(){
-		console.log('MOBILE');
 		offListeners(false);
 		hideBackground(false);
 		menu_trigger.click(function() {
 			if(isMenuShown) {
-				console.log("cannot happen right?!");
 				primary_menu.fadeTo(500, 0,function(){
 					primary_menu.addClass("hide");
 					body.removeClass("overflow-hide");
