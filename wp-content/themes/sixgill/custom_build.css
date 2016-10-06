@@ -19136,6 +19136,7 @@ body.modal-open {
 /* Home tablet styles */
 .home-section {
   min-height: calc(100vh - 121px);
+  height: auto !important;
 }
 .home-learn-more-link {
   display: block;
@@ -19203,7 +19204,7 @@ body.modal-open {
 }
 .home-second-section {
   background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
-  height: auto;
+  height: auto !important;
   min-height: inherit;
 }
 .home-second-section-wrapper {
