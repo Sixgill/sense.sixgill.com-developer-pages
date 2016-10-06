@@ -16669,7 +16669,6 @@ body.modal-open {
 }
 .home-section {
   min-height: 100vh;
-  height: auto !important;
 }
 .home _:-ms-lang(x),
 .home-section {
@@ -19150,8 +19149,12 @@ body.modal-open {
           justify-content: center;
   background-image: url("/wp-content/themes/sixgill/images/home/desktop_video_placeholder.jpg");
   min-height: 522px !important;
-  height: 522px !important;
+  height: auto !important;
   position: relative;
+}
+.home-first-section _:-ms-lang(x),
+.home-first-section {
+  height: 522px !important;
 }
 .home-first-section,
 .home-first-section-block {
@@ -19203,8 +19206,12 @@ body.modal-open {
 }
 .home-second-section {
   background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
-  height: 786px !important;
+  height: auto !important;
   min-height: inherit;
+}
+.home-second-section _:-ms-lang(x),
+.home-second-section {
+  height: 786px !important;
 }
 .home-second-section-wrapper {
   width: 90.5%;
@@ -19267,6 +19274,10 @@ body.modal-open {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url('/wp-content/themes/sixgill/images/home/bg_dots_tablet.png');
+  height: auto !important;
+}
+.home-third-section _:-ms-lang(x),
+.home-third-section {
   height: 786px !important;
 }
 .home-third-section-wrapper {
@@ -19314,8 +19325,12 @@ body.modal-open {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 786px !important;
+  height: auto !important;
   background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
+}
+.home-fourth-section _:-ms-lang(x),
+.home-fourth-section {
+  height: 786px !important;
 }
 .home-fourth-section-wrapper {
   text-align: center;
@@ -19351,7 +19366,7 @@ body.modal-open {
   right: -4vw;
 }
 .home-fifth-section {
-  height: 532px !important;
+  height: auto !important;
   min-height: inherit;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19362,6 +19377,10 @@ body.modal-open {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.home-fifth-section _:-ms-lang(x),
+.home-fifth-section {
+  height: 532px !important;
 }
 .home-fifth-section-wrapper {
   display: -webkit-flex;
@@ -23360,7 +23379,7 @@ ul:not([class]) li {
 }
 .search-results-elem-title {
   line-height: 0.8;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 }
 
