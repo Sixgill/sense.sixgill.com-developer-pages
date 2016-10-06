@@ -23355,6 +23355,10 @@ ul:not([class]) li {
   font-size: 16px;
   font-weight: normal;
 }
+.search-results-elem-title {
+  line-height: 0.8;
+  margin-bottom: 3px;
+}
 }
 
 @media (max-width: 1100px) {
