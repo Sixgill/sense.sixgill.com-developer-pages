@@ -21492,10 +21492,10 @@ div#primary-menu-trigger {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 70px;
-  bottom: 0;
+  height: calc(100vh - 70px);
   right: 0;
   overflow: auto;
   opacity: 0;

@@ -4,15 +4,13 @@ jQuery(function($) {
 	var primary_menu = $('.primary-menu');
 	var background = $('#menu-background');
 	var menu_trigger = $('#primary-menu-trigger');
+	var mobile_trigger = $('.primary-menu-trigger-mobile');
 	var tablet_close = $('#close-menu-icon-tablet');
 	var body = $('body');
-	var attr = $(primary_menu).attr("style");
 
 	function resetStyles(cb){
-		if(attr && attr!==false){
-			primary_menu.removeAttr("style");
-			background.removeAttr("style");
-		}
+		primary_menu.removeAttr("style");
+		background.removeAttr("style");
 		if(primary_menu.hasClass("stick-to-right")){
 			primary_menu.removeClass("stick-to-right");
 			background.removeClass("fill-opacity");
@@ -52,7 +50,7 @@ jQuery(function($) {
 			if(primary_menu.hasClass("hide")){
 				primary_menu.addClass("hide");
 			}
-			menu_trigger.removeClass("clicked");
+			mobile_trigger.removeClass("clicked");
 		}
 	}
 	window.onScreenTypeChanged(function(newScreenTypeName) {
@@ -96,7 +94,7 @@ jQuery(function($) {
 				body.addClass("overflow-hide");
 				isMenuShown = true;
 			}
-			menu_trigger.toggleClass("clicked");
+			mobile_trigger.toggleClass("clicked");
 			window.menuShowFlag = isMenuShown;
 		});
 	}
