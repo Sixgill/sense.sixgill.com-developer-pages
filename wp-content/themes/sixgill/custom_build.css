@@ -23321,7 +23321,7 @@ ul:not([class]) li {
   letter-spacing: 0.4px;
 }
 .search-results-content {
-  padding: 31.5px 5vw 31.5px 5vw;
+  padding: 11.5px 10px 11.5px 10px;
 }
 .search-results-content .pagination .page-numbers {
   font-size: 13px;
