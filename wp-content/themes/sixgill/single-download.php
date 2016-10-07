@@ -6,20 +6,20 @@
 ?>
 
 <div
-	class="resources-list-header responsive-background"
+	class="resources-details-header responsive-background"
 	desktop-src="<?php the_field("header_image_desktop", $resourcePageID); ?>"
 	tablet-src="<?php the_field("header_image_tablet", $resourcePageID); ?>"
 	mobile-src="<?php the_field("header_image_mobile", $resourcePageID); ?>"
 >
-	<h1 class="resources-list-header-title">
+	<h1 class="resources-details-header-title">
 		SIXGILL RESOURCES -
 		<?php echo $resourceType; ?>
 	</h1>
-	<h2 class="resources-list-header-subtitle">
+	<h2 class="resources-details-header-subtitle">
 		<?php the_title(); ?>
 	</h2>
 	<a href="<?php echo get_site_url().$downloadLink; ?>">
-		<div class="resource-details-download-form-submit-button button-blue resource-details-download-form-submit-button-temp">
+		<div class="resource-details-download-button button-blue">
 			Download for Free
 		</div>
 	</a>
@@ -59,11 +59,8 @@
 		} else if(strcasecmp($resourceType, "webinar")) {
 			?>
 			<iframe
-				src="//player.vimeo.com/video/VIDEO_ID?portrait=0&color=333"
+				src="//player.vimeo.com/video/185081419"
 				class="resource-detals-vimeo-video"
-				width="WIDTH"
-				height="HEIGHT"
-				frameborder="0"
 				webkitallowfullscreen
 				mozallowfullscreen
 				allowfullscreen
@@ -78,7 +75,7 @@
 	</div>
 
 	<a href="<?php echo get_site_url().$downloadLink; ?>">
-		<div class="resource-details-download-form-download-button button-blue resource-details-download-form-submit-button-temp">
+		<div class="resource-details-download-button button-blue">
 			Download for Free
 		</div>
 	</a>
