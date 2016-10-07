@@ -11,7 +11,7 @@
 		<div class="home-first-section-block">
 			<div class="home-first-section-block-text">
 				<div class="home-first-section-text">
-					<?php echo get_field('blue_header_text_below_video'); ?>
+					<?php echo get_field('first_section_text'); ?>
 				</div>
 				<button
 					id="home-button-on-video"
@@ -157,7 +157,7 @@
 			</div>
 			<div class="home-fourth-section-carousel-wrapper">
 				<div id="home-fourth-section-carousel" class="home-fourth-section-carousel">
-					<?php 
+					<?php
 					$posts = get_posts( array(
 						'post_parent' => 36,
 						'post_type' => 'page'

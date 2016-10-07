@@ -101,7 +101,7 @@
 		"isExpanded" => $isExpanded
 	);
 
-	$isSelected = (strcasecmp(getCurrentSlug(), "blog")==0 || strcasecmp(getCategorySlug(), "blog")==0);
+	$isSelected = (strcasecmp(getCurrentSlug(), "blog")==0 || strcasecmp(getCategorySlug(), "blog")==0) && (get_search_query() == "" || !get_search_query());
 	$isExpanded = (strcasecmp(getCurrentSlug(), "blog")==0);
 	$menu[] = array(
 		"elementName" => "Blog",

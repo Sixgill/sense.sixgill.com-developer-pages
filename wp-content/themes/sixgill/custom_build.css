@@ -12192,9 +12192,6 @@ ul:not([class]) li:not(.has-span):before,
   width: 100vw;
   padding-left: 225px;
 }
-.overflow-hide {
-  overflow: hidden!important;
-}
 .not-visible {
   visibility: hidden!important;
 }
@@ -13054,7 +13051,6 @@ input {
   margin-bottom: 13px;
 }
 .primary-menu-top-container-field {
-  /*this is a field placeholder for future implementation*/
   height: 43px;
   background-color: #dfdfdf;
 }
@@ -13063,6 +13059,8 @@ input {
   padding-left: 14px;
   padding-right: 14px;
   width: 100%;
+  min-height: 71px;
+  margin-bottom: 14px;
 }
 .primary-menu-bottom-container-divider {
   width: 100%;
@@ -13072,7 +13070,6 @@ input {
   margin-bottom: 13px;
 }
 .primary-menu-bottom-container-button {
-  margin-bottom: 14px;
   height: 43px;
   background-color: #0051c6;
   font-family: 'Lato';
@@ -16672,7 +16669,6 @@ body.modal-open {
 }
 .home-section {
   min-height: 100vh;
-  height: auto !important;
 }
 .home _:-ms-lang(x),
 .home-section {
@@ -18547,6 +18543,9 @@ body.modal-open {
 #wrapper {
   margin-top: 121px !important;
 }
+.overflow-hide {
+  overflow: hidden!important;
+}
 
 /* Press tablet styles */
 .primary-menu {
@@ -18598,15 +18597,12 @@ body.modal-open {
   height: auto;
   min-height: 71px;
 }
-.primary-menu-top-container-field {
-  /*this is a field placeholder for future implementation*/
-}
 #menu-background {
   display: block;
   z-index: 9998;
   position: fixed;
   height: 100%;
-  width: 60%;
+  width: 100%;
   background: #000000;
   opacity: 0;
   top: 0;
@@ -19156,6 +19152,10 @@ body.modal-open {
   height: auto !important;
   position: relative;
 }
+.home-first-section _:-ms-lang(x),
+.home-first-section {
+  height: 522px !important;
+}
 .home-first-section,
 .home-first-section-block {
   display: -webkit-flex;
@@ -19206,8 +19206,12 @@ body.modal-open {
 }
 .home-second-section {
   background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
-  height: auto;
+  height: auto !important;
   min-height: inherit;
+}
+.home-second-section _:-ms-lang(x),
+.home-second-section {
+  height: 786px !important;
 }
 .home-second-section-wrapper {
   width: 90.5%;
@@ -19270,6 +19274,11 @@ body.modal-open {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url('/wp-content/themes/sixgill/images/home/bg_dots_tablet.png');
+  height: auto !important;
+}
+.home-third-section _:-ms-lang(x),
+.home-third-section {
+  height: 786px !important;
 }
 .home-third-section-wrapper {
   width: 90.5%;
@@ -19316,7 +19325,12 @@ body.modal-open {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: auto !important;
   background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
+}
+.home-fourth-section _:-ms-lang(x),
+.home-fourth-section {
+  height: 786px !important;
 }
 .home-fourth-section-wrapper {
   text-align: center;
@@ -19352,7 +19366,7 @@ body.modal-open {
   right: -4vw;
 }
 .home-fifth-section {
-  height: auto;
+  height: auto !important;
   min-height: inherit;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19363,6 +19377,10 @@ body.modal-open {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.home-fifth-section _:-ms-lang(x),
+.home-fifth-section {
+  height: 532px !important;
 }
 .home-fifth-section-wrapper {
   display: -webkit-flex;
@@ -21494,10 +21512,10 @@ div#primary-menu-trigger {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 70px;
-  bottom: 0;
+  height: calc(100vh - 70px);
   right: 0;
   overflow: auto;
   opacity: 0;
@@ -21529,10 +21547,12 @@ div#primary-menu-trigger {
   top: 13px;
 }
 .primary-menu-top-container-field {
-  /*this is a field placeholder for future implementation*/
   margin-top: 11px;
   margin-right: 10px;
   margin-left: 10px;
+}
+.overflow-hide {
+  overflow: hidden!important;
 }
 
 .social-buttons {
@@ -22028,7 +22048,7 @@ div#primary-menu-trigger {
 }
 .home-second-section {
   background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
-  height: auto;
+  height: auto !important;
 }
 .home-second-section-wrapper {
   width: 92.5%;
@@ -22104,6 +22124,7 @@ div#primary-menu-trigger {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url('/wp-content/themes/sixgill/images/home/bg_dots_tablet.png');
+  height: auto !important;
 }
 .home-third-section-wrapper {
   width: 93.75%;
@@ -22150,6 +22171,7 @@ div#primary-menu-trigger {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: auto !important;
   background-image: url("/wp-content/themes/sixgill/images/home/second_section_bg_desktop.png");
 }
 .home-fourth-section-wrapper {
@@ -22184,7 +22206,7 @@ div#primary-menu-trigger {
   right: -6.7vw;
 }
 .home-fifth-section {
-  height: auto;
+  height: auto !important;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -23321,7 +23343,7 @@ ul:not([class]) li {
   letter-spacing: 0.4px;
 }
 .search-results-content {
-  padding: 31.5px 5vw 31.5px 5vw;
+  padding: 11.5px 10px 11.5px 10px;
 }
 .search-results-content .pagination .page-numbers {
   font-size: 13px;
@@ -23354,6 +23376,10 @@ ul:not([class]) li {
 .search-results-elem-description {
   font-size: 16px;
   font-weight: normal;
+}
+.search-results-elem-title {
+  line-height: 0.8;
+  margin-bottom: 4px;
 }
 }
 
