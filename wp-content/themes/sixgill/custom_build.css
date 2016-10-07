@@ -15126,57 +15126,57 @@ footer div.mc4wp-error p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.resource-details-line {
-  width: 44.5px;
-  height: 0px;
-  background-color: #999999;
-  border: solid 1px #dfdfdf;
-  margin: 16px 0px 11px 0px;
-  display: inline-block;
+.resource-details-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 73.5px 0px 73.5px;
 }
-.resource-details-col-right {
-  width: 282px;
-  text-align: center;
-}
-.resource-details-preview {
-  position: relative;
-}
-.resource-details-preview:after {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  content: "";
-  background: linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 40%);
-  pointer-events: none;
-}
-.resource-details-preview-download-tip {
-  width: 100%;
+.resource-details-header-title {
   font-family: "Lato";
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   text-align: center;
-  color: #2e2e2e;
-  text-transform: uppercase;
+  color: #4ddb5a;
 }
-.resource-details-download-link {
-  text-align: center;
-}
-.resource-details-download-link p {
-  margin: 10px 0px 10px 0px;
-}
-.resource-details-download-form {
-  width: 100%;
-}
-.resource-details-download-form-header {
-  height: 35px;
-  font-family: "Lato";
-  font-weight: 600;
+.resource-details-header-subtitle {
+  font-family: Lato;
+  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
+  text-align: center;
+  color: #f9f8f8;
+}
+.resource-details-header-title,
+.resource-details-header-subtitle {
   width: 100%;
-  color: #2e2e2e;
+  text-align: center;
+  line-height: 1em;
+}
+.resource-details-vimeo-video {
+  border: 0px;
+}
+.resource-details-download-button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -15186,68 +15186,6 @@ footer div.mc4wp-error p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 1.1px;
-  padding: 0px;
-  font-size: 16px;
-}
-.resource-details-download-form-wrapper {
-  width: 100%;
-  padding: 6px 6px 11.5px 6px;
-}
-.resource-details-download-form-wrapper form {
-  margin-bottom: 0px;
-}
-.resource-details-download-form-input {
-  width: 100%;
-  height: 43px;
-  margin-bottom: 7.5px;
-  position: relative;
-  background-color: #ffffff;
-  border: solid 1px #dfdfdf;
-  color: #2e2e2e;
-  font-size: 14px;
-  letter-spacing: 1px;
-  box-sizing: border-box;
-  font-family: 'Lato';
-  padding: 0px 0px 0px 11px;
-}
-.resource-details-download-form-input:valid,
-.resource-details-download-form-input:focus {
-  z-index: inherit;
-  padding-top: 18px;
-  padding-bottom: 9px;
-  line-height: 1em;
-  color: #2e2e2e;
-}
-.resource-details-download-form-input-wrapper {
-  position: relative;
-}
-.resource-details-download-form-input-label {
-  position: absolute;
-  left: 12.5px;
-  top: calc(50% - 0.9em);
-  z-index: 2;
-  font-size: 14px;
-  font-family: "Lato";
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: 1px;
-  color: #999999;
-  transition: all 0.15s ease;
-  pointer-events: none;
-}
-.resource-details-download-form-input:valid + .resource-details-download-form-input-label,
-.resource-details-download-form-input:focus + .resource-details-download-form-input-label {
-  top: 9px;
-  left: 12px;
-  font-size: 8px;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.resource-details-download-form-submit-button {
   width: 100%;
   height: 43px;
   font-size: 15px;
@@ -15261,59 +15199,26 @@ footer div.mc4wp-error p {
   outline: 0px;
   padding: 0px 0px 2px 2px;
 }
-.resource-details-download-form-submit-button-temp {
+.resource-details-download-button-link {
+  display: inline-block;
+  width: 270px;
+}
+.resource-details-share {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-.resource-details-download-form .mc4wp-error p {
-  margin: 15px 0px 15px 0px;
-  font-weight: bold;
-}
-.resource-details-download-form .mc4wp-success p {
-  margin-bottom: 0px;
-}
-.resource-details-download-form .subscribe-success-title {
-  text-align: center;
-}
-.resource-details-share {
-  width: 100%;
-}
-.resource-details-share-header {
-  height: 35px;
+.resource-details-share-title {
   font-family: "Lato";
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
-  width: 100%;
-  color: #2e2e2e;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 1.1px;
-  padding: 0px;
-  font-size: 16px;
-}
-.resource-details-share-wrapper {
-  width: 100%;
-  padding: 0px 15px 0px 15px;
-}
-.resource-details-share-wrapper _:-ms-lang(x),
-.resource-details-share-wrapper {
-  margin-top: -53px;
+  text-align: center;
+  color: #999999;
+  margin-right: 17.4px;
 }
 div.resource-details-share-buttons {
   position: relative;
@@ -17548,40 +17453,47 @@ body.modal-open {
 }
 
 .resource-details {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 51px;
+  padding: 59px 7.65vw 46.5px 7.65vw;
 }
-.resource-details-col-left {
-  width: calc(100% - 332.5px);
+.resource-details-header {
+  height: 324px;
 }
-.resource-details-preview {
-  font-size: 16px;
-  letter-spacing: 0.5px;
+.resource-details-header-title {
+  font-size: 25.2px;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
 }
-.resource-details-preview:after {
-  height: 100%;
+.resource-details-header-subtitle {
+  font-size: 60px;
+  letter-spacing: 1.8px;
+  margin-bottom: 37.5px;
 }
-.resource-details-preview-download-tip {
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 74px;
+.resource-details-share {
+  margin-bottom: 27px;
+}
+.resource-details-share-wrapper {
+  width: 172px;
+}
+.resource-details-vimeo-video {
+  width: 67.86vw;
+  height: 39.68vw;
+  margin-bottom: 54px;
+}
+.resource-details-description {
+  font-family: "Lato";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  color: #2e2e2e;
+  margin-bottom: 50.5px;
+}
+.resource-details-description h1,
+.resource-details-description h2,
+.resource-details-description h3,
+.resource-details-description h4,
+.resource-details-description h5 {
+  font-weight: 300;
 }
 
 /* Tech desktop styles */

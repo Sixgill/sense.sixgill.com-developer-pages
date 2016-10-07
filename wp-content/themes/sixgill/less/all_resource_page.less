@@ -1,11 +1,49 @@
 .resource-details {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	&-header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 0px 73.5px 0px 73.5px;
+
+		&-title {
+			font-family: "Lato";
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			text-align: center;
+			color: #4ddb5a;
+		}
+
+		&-subtitle {
+			font-family: Lato;
+			font-weight: 300;
+			font-style: normal;
+			font-stretch: normal;
+			text-align: center;
+			color: #f9f8f8;
+		}
+
+		&-title, &-subtitle {
+			width: 100%;
+			text-align: center;
+			line-height: 1em;
+		}
+	}
 
 	&-vimeo-video {
 		border: 0px;
 	}
 
 	&-download-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
 		height: 43px;
 		font-size: 15px;
@@ -18,14 +56,25 @@
 		border: 0px;
 		outline: 0px;
 		padding: 0px 0px 2px 2px;
+
+		&-link {
+			display: inline-block;
+			width: 270px;
+		}
 	}
 
 	&-share {
-		width: 100%;
+		display: flex;
+		flex-direction: row;
 
-		&-wrapper {
-			width: 100%;
-	    padding: 0px 15px 0px 15px;
+		&-title {
+			font-family: "Lato";
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			text-align: center;
+			color: #999999;
+			margin-right: 17.4px;
 		}
 
 		div&-buttons {
