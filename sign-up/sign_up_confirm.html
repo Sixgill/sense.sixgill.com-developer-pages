@@ -1,31 +1,136 @@
-<nav class="primary-menu hide">
-	<img id="close-menu-icon-tablet" class="display-only-tablet primary-menu-close-icon" src="/wp-content/themes/sixgill/images/td/logo/iconExit.svg" alt=""/>
-	<div class="primary-menu-top-container no-desktop-display">
-		<div class="primary-menu-top-container-divider no-mobile-portrait-display no-mobile-landscape-display"></div>
-		<div class="primary-menu-top-container-field">
-			<!-- <?php get_search_form() ?> -->
-		</div>
-	</div>
-	<div class="primary-menu-list">
-		<!-- <?php
-			foreach($menu as $menuElement) {
-				echo makeMenuElement(
-					$menuElement['elementName'],
-					$menuElement['link'],
-					$menuElement['sublinksList'],
-					$menuElement['isSelected'],
-					$menuElement['isExpanded'],
-					count($menu)
-				);
-			}
-		?> -->
-	</div>
-	<div class="primary-menu-bottom-container no-desktop-display">
-		<div class="primary-menu-bottom-container-divider no-mobile-portrait-display no-mobile-landscape-display"></div>
-		<div class="primary-menu-bottom-container-button button-blue" data-toggle="modal" data-target="#myModal">
-			<div class="vertical-centered">
-				Schedule a Demo
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body>
+	<!-- Header -->
+	<header id="header" class="no-sticky">
+		<div id="header-wrap">
+			<div id="logo" class="noborder nopadding">
+				<a href="/" class="logo-sixgill"></a>
 			</div>
+
+			<div class="menu-container">
+				<div id="menu-background" class="hide"></div>
+				<nav class="primary-menu hide">
+					<div class="primary-menu-list">
+						<a href="#">Home</a>
+						<a href="#">Solutions</a>
+						<a href="#">Products</a>
+						<a href="#">Tech</a>
+						<a href="#">Company</a>
+						<a href="#">Blog</a>
+						<a href="#">Resources</a>
+						<a href="#">Documentation</a>
+					</div>
+				</nav>
+
+			</div>
+
+			<div id="menu-schedule-button-wrapper" class="menu-schedule-button-wrapper display-only-desktop">
+				<div class="nav-divider-line"></div>
+				<div class="menu-search-wrapper">
+					<!-- <?php
+						global $searchFormClasses;
+						$searchFormClasses = "menu-search-form";
+						include(locate_template('searchform.php'));
+					?> -->
+				</div>
+				<div class="nav-divider-line"></div>
+				<a href="#" class="menu-schedule-button-link" data-toggle="modal" data-target="#myModal">
+					<div id="menu-schedule-button" class="menu-schedule-button button-blue">
+						<div class="vertical-centered">
+							Schedule a Demo
+						</div>
+					</div>
+				</a>
+			</div>
+
 		</div>
+	</header>
+	<!-- CONTENT PAGE -->
+	<div class="sign-up-confirm">
+		
 	</div>
-</nav>
+	<!-- FOOTER -->
+	<footer id="footer" data-anchor="home-footer" class="footer font-size-0 center">
+		<div class="footer-container ">
+
+			<div class="footer-menu-block">
+				<div class="vertical-centered">
+					<div class="footer-link-col">
+						<a href="#" class="footer-main-link">
+							Legal
+						</a>
+					</div>
+
+					<div class="footer-link-col">
+						<a href=#" class="footer-main-link">
+							Press
+						</a>
+					</div>
+
+					<div class="footer-link-col">
+						<a href="#" class="footer-main-link">
+							Resources
+						</a>
+					</div>
+
+					<div class="footer-link-col">
+						<a href="#" data-toggle="modal" data-target="#myModalContact" class="footer-main-link">
+							Contact
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-top-block">
+				<div class="footer-top-block-left">
+					<div class="footer-top-text display-only-desktop desktop-vertical-centered">
+						Stay up to date with Sixgill News and Events
+					</div>
+					<div class="footer-subscription-form-wrapper desktop-vertical-centered">
+						<div class="footer-subscribe-error">
+							<div class="footer-subscribe-error-container">
+							  <p class="footer-subscribe-error-text">
+							  </p>
+							  <img src="images/close.png" class="footer-subscribe-error-close"/>
+							</div>
+		  				  <div class="footer-subscribe-arrow">
+							</div>
+						</div>
+						<!-- <?php dynamic_sidebar( 'footer-subscribe-sidebar' ); ?> -->
+					</div>
+				</div>
+				<!-- <?php
+					$globalSocialButtonsInfoId = getPageBySlug('global-social-buttons')->ID;
+					$facebookLink = get_field('facebook_link', $globalSocialButtonsInfoId);
+					$twitterLink = get_field('twitter_link', $globalSocialButtonsInfoId);
+					$linkedinLink = get_field('linkedin_link', $globalSocialButtonsInfoId);
+				?> -->
+				<div class="footer-top-block-right">
+					<div class="footer-icons-wrapper vertical-centered">
+						<a href="#" class="footer-social-icon-link" target="_blank">
+							<img src="images/facebook_icon.svg" alt="Facebook icon" class="footer-social-icon-img">
+						</a>
+						<a href="#" class="footer-social-icon-link" target="_blank">
+							<img src="images/twitter_icon.svg" alt="Twitter icon" class="footer-social-icon-img">
+						</a>
+						<a href="#" class="footer-social-icon-link" target="_blank">
+							<img src="images/linkedin_icon.svg" alt="Linkedin icon" class="footer-social-icon-img">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom-block">
+				<div class="footer-copyright-wrapper vertical-centered">
+					&copy; Copyright Sixgill, 2016. All Rights Reserved.
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</body>
