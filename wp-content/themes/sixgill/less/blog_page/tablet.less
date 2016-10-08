@@ -1,0 +1,84 @@
+@import "../pagination/tablet.less";
+
+.blog-page {
+	&-header {
+		height: 264px;
+
+		&-title {
+			font-size: 40px;
+			letter-spacing: 1.2px;
+		}
+
+		&-suptitle {
+			font-size: 20px;
+			letter-spacing: 0.6px;
+		}
+	}
+
+	&-col {
+		&s-wrapper {
+			padding: 25px 22px 37px 22px;
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+		}
+
+		&-left {
+			width: 100%;
+		}
+	}
+
+	&-post-card {
+		min-height: 256px;
+
+		&-link:not(:last-child) {
+			margin-bottom: 15px;
+		}
+
+		&-image {
+			width: 256px;
+			min-width: 256px;
+		}
+
+		&-content-wrapper {
+			padding: 28px 20px 28px 24px;
+			width: calc(~"100% - 256px");
+		}
+
+		&-title {
+			font-size: 24px;
+			letter-spacing: 0.7px;
+			margin-bottom: 12.5px;
+		}
+
+		&-author-date {
+			font-size: 14px;
+			letter-spacing: 0.4px;
+			margin-bottom: 18.5px;
+		}
+
+		&-dash {
+			margin-bottom: 21px;
+		}
+
+		&-text {
+			width: 100%;
+			font-size: 16px !important;
+
+			& p, & span {
+				font-size: 16px !important;
+				width: 100%;
+			}
+		}
+	}
+
+	&-subscription-block-title {
+		letter-spacing: 1.1px;
+	}
+
+	&-popular-block-title {
+		letter-spacing: 1.1px;
+	}
+
+	#pagination-tablet;
+}

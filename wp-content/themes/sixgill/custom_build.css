@@ -15173,7 +15173,8 @@ footer div.mc4wp-error p {
   text-align: center;
   line-height: 1em;
 }
-.resource-details-vimeo-video {
+.resource-details-vimeo-video,
+.resource-details-pdfviewer {
   border: 0px;
 }
 .resource-details-download-button {
@@ -17474,7 +17475,8 @@ body.modal-open {
 .resource-details-share-wrapper {
   width: 172px;
 }
-.resource-details-vimeo-video {
+.resource-details-vimeo-video,
+.resource-details-pdfviewer {
   width: 67.86vw;
   height: 39.68vw;
   margin-bottom: 54px;

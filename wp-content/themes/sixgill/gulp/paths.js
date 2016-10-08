@@ -72,7 +72,7 @@ module.exports = () => {
         ]
     },
     less: {
-      source: './less/*.less',
+      source: './less/**/*.less',
       dest: './css/less_compiled/'
     },
     watcher: {
@@ -108,12 +108,12 @@ module.exports = () => {
   ];
 
   pagesList.forEach(function(pageName) {
-    paths.all.values.push('./css/less_compiled/all_' + pageName + '.css');
-    paths.desktop.values.push('./css/less_compiled/desktop_' + pageName + '.css');
-    paths.tablet.values.push('./css/less_compiled/tablet_' + pageName + '.css');
-    paths.mobile_portrait.values.push('./css/less_compiled/mobile_portrait_' + pageName + '.css');
-    paths.mobile_landscape.values.push('./css/less_compiled/mobile_landscape_' + pageName + '.css');
-    paths.mobile_portrait_landscape.values.push('./css/less_compiled/mobile_portrait_landscape_' + pageName + '.css');
+    paths.all.values.push('./css/less_compiled/' + pageName + '/all.css');
+    paths.desktop.values.push('./css/less_compiled/' + pageName + '/desktop.css');
+    paths.tablet.values.push('./css/less_compiled/' + pageName + '/tablet.css');
+    paths.mobile_portrait.values.push('./css/less_compiled/' + pageName + '/mobile_portrait.css');
+    paths.mobile_landscape.values.push('./css/less_compiled/' + pageName + '/mobile_landscape.css');
+    paths.mobile_portrait_landscape.values.push('./css/less_compiled/' + pageName + '/mobile.css');
   });
 
   return paths;

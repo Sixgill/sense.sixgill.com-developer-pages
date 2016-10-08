@@ -53,11 +53,33 @@
 		if(strcasecmp($resourceType, "ebook")==0) {
 			?>
 
-			<?php
-		} else if(strcasecmp($resourceType, "presentation")==0) {
-			?>
+			<iframe
+				src="/pdfjs/web/viewer.html?file=<?php echo $downloadFileInfo['url']; ?>"
+				class="resource-details-pdfviewer"
+				webkitallowfullscreen
+				mozallowfullscreen
+				allowfullscreen
+			>
+			</iframe>
 
 			<?php
+		} else if(strcasecmp($resourceType, "presentation")==0) {
+			$presentationSlides = get_field('presentation_slides');
+			$isThereSlides = is_array($firstSlides) && count($firstSlides);
+
+			if($isThereSlides) {
+				$slidesAutoHeight = get_field('slides_auto_height') ? 'on' : 'off';
+				$slidesRewindEnabled = get_field('slides_rewind_enabled') ? 'on' : 'off';
+				$carouselTitle = $firstSlidesTitle;
+				$carouselSlides = $firstSlides;
+				$carouselFile = $firstFile;
+				$carouselAutoHeight = $firstAutoHeight;
+				$carouselRewindEnabled = $firstRewindEnabled;
+				$carouselName = "";
+				include(locate_template('part-carousel.php'));
+			}
+
+
 		} else if(strcasecmp($resourceType, "webinar")==0) {
 			?>
 			<iframe
