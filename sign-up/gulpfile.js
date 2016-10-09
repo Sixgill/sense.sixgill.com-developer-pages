@@ -7,14 +7,29 @@
 // include gulp
 var gulp = require('gulp'),
 	concat = require('gulp-concat'),
-	less = require('gulp-less');
+	less = require('gulp-less'),
+	runSequence = require('run-sequence');
 
-// create build.css from ./less dir
 // To run gulp type: gulp
+gulp.task('default',
+  (callback) => runSequence(
+      'less',
+      'html',
+      callback
+  )
+);
 
-gulp.task('default', function () {
-	gulp.src('less/*.less')
+// signup_build.css from ./less dir
+gulp.task('less', 
+	() => gulp.src('less/*.less')
 		.pipe(less())
 		.pipe(concat('css/signup_build.css'))
-		.pipe(gulp.dest(''));
-});
+		.pipe(gulp.dest(''))
+);
+
+// put html sources into /html_src dir
+gulp.task('html', 
+	() => gulp.src('*.html')
+		.pipe(gulp.dest('./html_src'))
+);
+
