@@ -1,54 +1,45 @@
 .resource-details {
-	display: flex;
-	flex-direction: column;
-	margin: 31.5px 23px 36.5px 23px;
+	padding: 28px 3.13vw 38px 3.13vw;
 
-	.block-header() {
-		font-size: 16px;
-		letter-spacing: 1.1px;
-		height: 35px;
-	}
+	&-header {
+		height: 127px;
 
-	&-col {
-		&-left, &-right {
-			width: 100%;
-		}
-	}
-
-	&-preview {
-		font-size: 16px;
-		letter-spacing: 0.5px;
-
-		&:after {
-			height: 100%;
+		&-title {
+			font-size: 13.2px;
+			letter-spacing: 0.4px;
+			margin-bottom: 8px;
 		}
 
-		&-download-tip {
-			font-size: 16px;
+		&-subtitle {
+			font-size: 18px;
 			letter-spacing: 0.5px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 74px;
-		}
-	}
-
-	&-download-form {
-
-		&-header {
-		}
-
-		&-wrapper {
+			margin-bottom: 0px;
 		}
 	}
 
 	&-share {
-		margin-bottom: 20.5px;
+		margin-bottom: 22px;
+		flex-direction: column;
 
-		&-header {
+		&-title {
+			margin-right: 0px;
+			font-size: 12px;
+			line-height: 0.71;
+		  letter-spacing: 0.8px;
 		}
 
 		&-wrapper {
+			width: 172px;
 		}
+	}
+
+	&-vimeo-video, &-pdfviewer  {
+		width: 93.75vw;
+		height: 50.94vw;
+		margin-bottom: 54px;
+	}
+
+	&-description {
+		margin-bottom: 0px;
 	}
 }

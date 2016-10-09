@@ -77,8 +77,7 @@ module.exports = () => {
     },
     watcher: {
       styles: [
-        './less/*.less',
-        './less/helpers/*.less',
+        './less/**/*.less', 
         './css/*.css',
         './style.css'
       ],

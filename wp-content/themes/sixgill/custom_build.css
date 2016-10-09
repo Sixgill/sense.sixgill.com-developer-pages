@@ -15189,7 +15189,7 @@ footer div.mc4wp-error p {
           justify-content: center;
   width: 100%;
   height: 43px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -15240,6 +15240,21 @@ div.resource-details-share-buttons .social-buttons-link {
   width: 22.5%;
   height: auto;
   margin: 0px;
+}
+.resource-details-description {
+  font-family: "Lato";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  color: #2e2e2e;
+}
+.resource-details-description h1,
+.resource-details-description h2,
+.resource-details-description h3,
+.resource-details-description h4,
+.resource-details-description h5 {
+  font-weight: 300;
 }
 
 /* Tech Common styles */
@@ -17482,20 +17497,7 @@ body.modal-open {
   margin-bottom: 54px;
 }
 .resource-details-description {
-  font-family: "Lato";
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  text-align: left;
-  color: #2e2e2e;
   margin-bottom: 50.5px;
-}
-.resource-details-description h1,
-.resource-details-description h2,
-.resource-details-description h3,
-.resource-details-description h4,
-.resource-details-description h5 {
-  font-weight: 300;
 }
 
 /* Tech desktop styles */
@@ -19926,46 +19928,35 @@ ul:not([class]) li {
 }
 
 .resource-details {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 51px;
+  padding: 34.5px 4.56vw 56.5px 4.56vw;
 }
-.resource-details-col-left {
-  width: calc(100% - 319px);
+.resource-details-header {
+  height: 263px;
 }
-.resource-details-preview {
-  font-size: 16px;
-  letter-spacing: 0.5px;
+.resource-details-header-title {
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  margin-bottom: 20px;
 }
-.resource-details-preview:after {
-  height: 100%;
+.resource-details-header-subtitle {
+  font-size: 40px;
+  letter-spacing: 1.2px;
+  margin-bottom: 37.5px;
 }
-.resource-details-preview-download-tip {
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 74px;
+.resource-details-share {
+  margin-bottom: 26px;
 }
-.resource-details-download-form-header {
-  padding: 3px 1px 0px 2px;
+.resource-details-share-wrapper {
+  width: 172px;
 }
-.resource-details-download-form-submit-button {
-  padding: 1px 0px 0px 0px;
+.resource-details-vimeo-video,
+.resource-details-pdfviewer {
+  width: 90.63vw;
+  height: 52.73vw;
+  margin-bottom: 54px;
+}
+.resource-details-description {
+  margin-bottom: 47px;
 }
 
 /* Tech tablet styles */
@@ -21052,6 +21043,9 @@ ul:not([class]) li {
   margin-top: 74px;
 }
 
+.resource-details-header {
+  margin-top: 74px;
+}
 
 /* Tech mobile portrait styles */
 .tech-first-section {
@@ -22684,41 +22678,44 @@ ul:not([class]) li {
 }
 
 .resource-details {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 28px 3.13vw 38px 3.13vw;
+}
+.resource-details-header {
+  height: 127px;
+}
+.resource-details-header-title {
+  font-size: 13.2px;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
+.resource-details-header-subtitle {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-bottom: 0px;
+}
+.resource-details-share {
+  margin-bottom: 22px;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 31.5px 23px 36.5px 23px;
 }
-.resource-details-col-left,
-.resource-details-col-right {
-  width: 100%;
+.resource-details-share-title {
+  margin-right: 0px;
+  font-size: 12px;
+  line-height: 0.71;
+  letter-spacing: 0.8px;
 }
-.resource-details-preview {
-  font-size: 16px;
-  letter-spacing: 0.5px;
+.resource-details-share-wrapper {
+  width: 172px;
 }
-.resource-details-preview:after {
-  height: 100%;
+.resource-details-vimeo-video,
+.resource-details-pdfviewer {
+  width: 93.75vw;
+  height: 50.94vw;
+  margin-bottom: 54px;
 }
-.resource-details-preview-download-tip {
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 74px;
-}
-.resource-details-share {
-  margin-bottom: 20.5px;
+.resource-details-description {
+  margin-bottom: 0px;
 }
 
 /* Tech mobile portrait and landscape styles */

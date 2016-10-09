@@ -25,7 +25,7 @@
 	</h2>
 
 	<a
-		class="resource-details-download-button-link"
+		class="resource-details-download-button-link no-mobile-portrait-display no-mobile-landscape-display"
 		href="<?php echo get_site_url().$downloadLink; ?>"
 	>
 		<div class="resource-details-download-button button-blue">
@@ -99,7 +99,7 @@
 	</div>
 
 	<a
-	 	class="resource-details-download-button-link"
+	 	class="resource-details-download-button-link no-mobile-portrait-display no-mobile-landscape-display"
 		href="<?php echo get_site_url().$downloadLink; ?>">
 		<div class="resource-details-download-button button-blue">
 			Download for Free

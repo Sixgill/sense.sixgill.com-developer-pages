@@ -1,55 +1,37 @@
 .resource-details {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: 51px;
+	padding: 34.5px 4.56vw 56.5px 4.56vw;
 
-	&-col-left {
-		width: calc(~"100% - 319px");
-	}
+	&-header {
+		height: 263px;
 
-	&-preview {
-		font-size: 16px;
-		letter-spacing: 0.5px;
-
-		&:after {
-			height: 100%;
+		&-title {
+			font-size: 20px;
+			letter-spacing: 0.6px;
+			margin-bottom: 20px;
 		}
 
-		&-download-tip {
-			font-size: 16px;
-			letter-spacing: 0.5px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 74px;
-		}
-	}
-
-	&-download-form {
-
-		&-header {
-			padding: 3px 1px 0px 2px;
-		}
-
-		&-submit-button {
-    	padding: 1px 0px 0px 0px;
-		}
-
-		&-wrapper {
-
+		&-subtitle {
+			font-size: 40px;
+			letter-spacing: 1.2px;
+			margin-bottom: 37.5px;
 		}
 	}
 
 	&-share {
-
-
-		&-header {
-
-		}
+		margin-bottom: 26px;
 
 		&-wrapper {
-
+			width: 172px;
 		}
+	}
+
+	&-vimeo-video, &-pdfviewer  {
+		width: 90.63vw;
+		height: 52.73vw;
+		margin-bottom: 54px;
+	}
+
+	&-description {
+		margin-bottom: 47px;
 	}
 }
