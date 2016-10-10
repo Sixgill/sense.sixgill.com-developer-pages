@@ -2,6 +2,13 @@
 	<?php
 		$shareImage = get_field('post_picture_to_share');
 	?>
+	<?php
+		if(get_field('subtitle') && get_field('subtitle') != ""){
+			$description = get_field('subtitle');
+		} else {
+			$description = "Description";
+		}
+	?>
 
  	<meta property="og:type" content="website" />
  	<meta property="og:title" content="<?php echo $post->post_title; ?>" />
@@ -15,7 +22,7 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@SixgillTech">
 	<meta name="twitter:title" content="<?php echo $post->post_title; ?>">
-	<meta name="twitter:description" content="<?php echo get_field('subtitle'); ?>">
+	<meta name="twitter:description" content="<?php echo $description; ?>">
 	<?php if ($shareImage) { ?>
  		<meta property="twitter:image" content="<?php echo $shareImage; ?>" />
 	<?php } ?>
