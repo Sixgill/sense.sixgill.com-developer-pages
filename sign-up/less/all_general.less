@@ -7,6 +7,9 @@ body {
 	min-width: 100vw;
 	width: auto;
 }
+* {
+	box-sizing: border-box;
+}
 body, p {
 	font-family: "Lato", serif, sans-serif;
 }
@@ -290,7 +293,7 @@ input {
 
 }
 .wrapper-full {
-	background-image: url("../images/featBg-desktop@1x.png");
+	background-image: url("images/featBg-desktop@1x.png");
 	background-size: cover;
 	height: 100vh;
 	min-height: 600px;
@@ -298,7 +301,7 @@ input {
 	overflow: auto;
 }
 .wrapper {
-	background-image: url("../images/featBg-desktop@1x.png");
+	background-image: url("images/featBg-desktop@1x.png");
 	background-size: cover;
 	margin-left: 225px;
 	min-height: 600px;
@@ -351,9 +354,12 @@ input {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 41px;
+		margin-top:20px;
 	}
 	&-link {
-		margin:0 auto;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
 		text-align: center;
 		display: block;
 		text-decoration: underline;
@@ -367,22 +373,17 @@ input {
 		height: 43px;
 		background-color: #FFFFFF;
 		border: solid 1px #dfdfdf;
-		margin-top:29px;
+		margin-top:9px;
 		margin-left: auto;
 		margin-right: auto;
+		padding-left: 6px;
 		display: block;
 		font-family: 'Lato';
 		font-size: 14px;
 		line-height: 0.61;
 		letter-spacing: 1px;
-		text-align: center;
+		text-align: left;
 		color: #999999;
-		&::-webkit-input-placeholder {
-		
-		}
-		&:-moz-placeholder {
-
-		}
 	}
 	&-button {
 		height: 43px;
