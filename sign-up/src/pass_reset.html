@@ -1,3 +1,66 @@
+<!-- inject:header:html -->
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../css/signup_build.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<!-- Header -->
+	<header id="header" class="no-sticky">
+		<div id="header-wrap">
+			<div id="logo" class="noborder nopadding">
+				<a href="/" class="logo-sixgill"></a>
+			</div>
+
+			<div class="menu-container">
+				<nav class="primary-menu">
+					<div class="primary-menu-list">
+						<a href="https://www.sixgill.com/">Home</a>
+						<a href="https://www.sixgill.com/solutions/">Solutions</a>
+						<a href="https://www.sixgill.com/products/">Products</a>
+						<a href="https://www.sixgill.com/tech/">Tech</a>
+						<a href="https://www.sixgill.com/company/">Company</a>
+						<a href="https://www.sixgill.com/blog/">Blog</a>
+						<a href="https://www.sixgill.com/resources/">Resources</a>
+						<a href="https://www.sixgill.com/documentation/">Documentation</a>
+					</div>
+				</nav>
+
+			</div>
+
+			<div id="menu-schedule-button-wrapper" class="menu-schedule-button-wrapper display-only-desktop">
+				<div class="nav-divider-line"></div>
+				<div class="menu-search-wrapper">
+					<!-- <?php
+						global $searchFormClasses;
+						$searchFormClasses = "menu-search-form";
+						include(locate_template('searchform.php'));
+					?> -->
+				</div>
+				<div class="nav-divider-line"></div>
+				<a href="#" class="menu-schedule-button-link" data-toggle="modal" data-target="#myModal">
+					<div id="menu-schedule-button" class="menu-schedule-button button-blue">
+						<div class="vertical-centered">
+							Schedule a Demo
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</header>
+<!-- endinject -->
+<div class="wrapper">
+	<div class="modal-confirm vertical-centered">
+		<p class="modal-confirm-title">RESET YOUR PASSWORD</p>
+		<div class="modal-confirm-divider"></div>
+		<p class="modal-confirm-text">Please enter your username or e-mail address associated with your account and we will send you a temporary password to access your account.</p>
+		<input type="text" name="email" class="modal-confirm-input" placeholder="Username or Email Address">
+		<input type="submit" name="submit" class="modal-confirm-button button-green" value="Send Temporary Password">
+	</div>
+</div>
+<!-- inject:footer:html -->
 	<!-- FOOTER -->
 	<footer id="footer" data-anchor="home-footer" class="footer font-size-0 center">
 		<div class="footer-container ">
@@ -98,3 +161,4 @@
 	</footer>
 </body>
 </html>
+<!-- endinject -->
