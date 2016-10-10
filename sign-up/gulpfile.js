@@ -8,7 +8,8 @@
 var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	less = require('gulp-less'),
-	runSequence = require('run-sequence');
+	runSequence = require('run-sequence'),
+	inject = require('gulp-inject');
 
 // To run gulp type: gulp
 gulp.task('default',
@@ -33,3 +34,22 @@ gulp.task('html',
 		.pipe(gulp.dest('./html_src'))
 );
 
+
+gulp.task('inject',
+	() => gulp.src(['./*.html', '!./footer.html', '!./header.html', '!./new_pass_confirm.html', '!./pass_change.html'])
+	// Insert HEADER
+	.pipe(inject(gulp.src(['./header.html']), {
+		starttag: '<!-- inject:header:{{ext}} -->',
+		transform: function (filePath, file) {
+      		return file.contents.toString('utf8')
+			}
+	}))
+	// Insert FOOTERS
+	.pipe(inject(gulp.src(['./footer.html']), {
+		starttag: '<!-- inject:footer:{{ext}} -->',
+		transform: function (filePath, file) {
+      		return file.contents.toString('utf8')
+			}
+	}))
+	.pipe(gulp.dest('./src'))
+);
