@@ -1,5 +1,56 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="signup_build.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300,600" rel="stylesheet" type="text/css">
+</head>
+<body>
 <!-- inject:header:html -->
-<!-- contents of html partials will be injected here -->
+	<!-- Header -->
+	<header id="header" class="no-sticky">
+		<div id="header-wrap">
+			<div id="logo" class="noborder nopadding">
+				<a href="/" class="logo-sixgill"></a>
+			</div>
+
+			<div class="menu-container">
+				<nav class="primary-menu">
+					<div class="primary-menu-list">
+						<a href="https://www.sixgill.com/">Home</a>
+						<a href="https://www.sixgill.com/solutions/">Solutions</a>
+						<a href="https://www.sixgill.com/products/">Products</a>
+						<a href="https://www.sixgill.com/tech/">Tech</a>
+						<a href="https://www.sixgill.com/company/">Company</a>
+						<a href="https://www.sixgill.com/blog/">Blog</a>
+						<a href="https://www.sixgill.com/resources/">Resources</a>
+						<a href="https://www.sixgill.com/documentation/">Documentation</a>
+					</div>
+				</nav>
+
+			</div>
+
+			<div id="menu-schedule-button-wrapper" class="menu-schedule-button-wrapper display-only-desktop">
+				<div class="nav-divider-line"></div>
+				<div class="menu-search-wrapper">
+					<!-- <?php
+						global $searchFormClasses;
+						$searchFormClasses = "menu-search-form";
+						include(locate_template('searchform.php'));
+					?> -->
+				</div>
+				<div class="nav-divider-line"></div>
+				<a href="#" class="menu-schedule-button-link" data-toggle="modal" data-target="#myModal">
+					<div id="menu-schedule-button" class="menu-schedule-button button-blue">
+						<div class="vertical-centered">
+							Schedule a Demo
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</header>
+
 <!-- endinject -->
 <div class="wrapper">
 <!-- 	<div class="modal-confirm vertical-centered">
@@ -10,5 +61,105 @@
 	</div> -->
 </div>
 <!-- inject:footer:html -->
-<!-- contents of html partials will be injected here -->
+	<!-- FOOTER -->
+	<footer id="footer" data-anchor="home-footer" class="footer font-size-0 center">
+		<div class="footer-container ">
+
+			<div class="footer-menu-block">
+				<div class="vertical-centered">
+					<div class="footer-link-col">
+						<a href="https://www.sixgill.com/legal/" class="footer-main-link">
+							Legal
+						</a>
+					</div>
+
+					<div class="footer-link-col">
+						<a href="https://www.sixgill.com/press/" class="footer-main-link">
+							Press
+						</a>
+					</div>
+
+					<div class="footer-link-col">
+						<a href="https://www.sixgill.com/resources/" class="footer-main-link">
+							Resources
+						</a>
+					</div>
+
+					<div class="footer-link-col">
+						<a href="#" data-toggle="modal" data-target="#myModalContact" class="footer-main-link">
+							Contact
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-top-block">
+				<div class="footer-top-block-left">
+					<div class="footer-top-block-mobile no-desktop-display no-tablet-display">
+						<div class="footer-top-text-mobile">
+							Stay up to date with Sixgill News and Events
+						</div>
+					</div>
+					<div class="footer-top-text display-only-desktop desktop-vertical-centered">
+						Stay up to date with Sixgill News and Events
+					</div>
+					<div class="footer-subscription-form-wrapper desktop-vertical-centered">
+						<div class="footer-subscribe-error">
+							<div class="footer-subscribe-error-container">
+								<p class="footer-subscribe-error-text">
+								</p>
+								<img src="../images/close.png" class="footer-subscribe-error-close">
+							</div>
+							<div class="footer-subscribe-arrow">
+							</div>
+						</div>
+						<script type="text/javascript">(function() {
+							if (!window.mc4wp) {
+								window.mc4wp = {
+									listeners: [],
+									forms    : {
+										on: function (event, callback) {
+											window.mc4wp.listeners.push({
+												event   : event,
+												callback: callback
+											});
+										}
+									}
+								}
+							}
+						})();
+					</script><!-- MailChimp for WordPress v3.1.10 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-1762 mc4wp-ajax" method="post" data-id="1762" data-name="Footer form"><div class="mc4wp-form-fields"><input type="text" name="EMAIL" placeholder="Email Address..." class="footer-subscription-email">
+					<input type="submit" value="Subscribe" class="footer-subscription-button center button-green"><div style="display: none;"><input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></div><input type="hidden" name="_mc4wp_timestamp" value="1475931701"><input type="hidden" name="_mc4wp_form_id" value="1762"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin -->					</div>
+				</div>
+				<!-- <?php
+					$globalSocialButtonsInfoId = getPageBySlug('global-social-buttons')->ID;
+					$facebookLink = get_field('facebook_link', $globalSocialButtonsInfoId);
+					$twitterLink = get_field('twitter_link', $globalSocialButtonsInfoId);
+					$linkedinLink = get_field('linkedin_link', $globalSocialButtonsInfoId);
+				?> -->
+				<div class="footer-top-block-right">
+					<div class="footer-icons-wrapper vertical-centered">
+						<a href="#" class="footer-social-icon-link" target="_blank">
+							<img src="../images/facebook_icon.svg" alt="Facebook icon" class="footer-social-icon-img">
+						</a>
+						<a href="#" class="footer-social-icon-link" target="_blank">
+							<img src="../images/twitter_icon.svg" alt="Twitter icon" class="footer-social-icon-img">
+						</a>
+						<a href="#" class="footer-social-icon-link" target="_blank">
+							<img src="../images/linkedin_icon.svg" alt="Linkedin icon" class="footer-social-icon-img">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom-block">
+				<div class="footer-copyright-wrapper vertical-centered">
+					&copy; Copyright Sixgill, 2016. All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+
 <!-- endinject -->
+</body>
+</html>
