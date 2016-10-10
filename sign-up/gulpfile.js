@@ -40,7 +40,7 @@ gulp.task('html',
 	() => gulp.src(['./src/new_pass_confirm.html', './src/pass_change.html'])
 		.pipe(insert.prepend(htmlHead))
 		.pipe(insert.append(htmlTail))
-		.pipe(gulp.dest('./src'))
+		.pipe(gulp.dest('.'))
 );
 
 
