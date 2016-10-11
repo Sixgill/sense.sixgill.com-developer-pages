@@ -10,7 +10,8 @@ var gulp = require('gulp'),
 	less = require('gulp-less'),
 	runSequence = require('run-sequence'),
 	inject = require('gulp-inject')
-	insert = require('gulp-insert');
+	insert = require('gulp-insert'),
+	autoprefixer = require('gulp-autoprefixer');
 
 // To run gulp type: gulp
 
@@ -31,6 +32,7 @@ gulp.task('default',
 gulp.task('less',
 	() => gulp.src('less/*.less')
 		.pipe(less())
+		.pipe(autoprefixer({ browsers: ['ie >= 10', 'Firefox >= 45', 'ios >= 8']}))
 		.pipe(concat('./signup_build.css'))
 		.pipe(gulp.dest(''))
 );
