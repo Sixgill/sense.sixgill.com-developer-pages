@@ -154,6 +154,9 @@ body {
   min-width: 100vw;
   width: auto;
 }
+* {
+  box-sizing: border-box;
+}
 body,
 p {
   font-family: "Lato", serif, sans-serif;
@@ -395,7 +398,7 @@ input {
   background-repeat: no-repeat;
 }
 .wrapper-full {
-  background-image: url("../images/featBg-desktop@1x.png");
+  background-image: url("images/featBg-desktop@1x.png");
   background-size: cover;
   height: 100vh;
   min-height: 600px;
@@ -403,7 +406,7 @@ input {
   overflow: auto;
 }
 .wrapper {
-  background-image: url("../images/featBg-desktop@1x.png");
+  background-image: url("images/featBg-desktop@1x.png");
   background-size: cover;
   margin-left: 225px;
   min-height: 600px;
@@ -457,9 +460,12 @@ input {
   margin-left: auto;
   margin-right: auto;
   margin-top: 41px;
+  margin-top: 20px;
 }
 .modal-confirm-link {
-  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   text-decoration: underline;
   font-family: 'Lato';
@@ -472,15 +478,16 @@ input {
   height: 43px;
   background-color: #FFFFFF;
   border: solid 1px #dfdfdf;
-  margin-top: 29px;
+  margin-top: 9px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 6px;
   display: block;
   font-family: 'Lato';
   font-size: 14px;
   line-height: 0.61;
   letter-spacing: 1px;
-  text-align: center;
+  text-align: left;
   color: #999999;
 }
 .modal-confirm-button {
@@ -509,6 +516,12 @@ input {
   overflow: auto;
 }
 
+.pass-change .current-password {
+  margin-bottom: 15px;
+}
+.pass-change .cancel-link {
+  margin-top: 30px;
+}
 
 
 
