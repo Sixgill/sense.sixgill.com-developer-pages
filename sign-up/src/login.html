@@ -11,16 +11,16 @@
 				src="images/logo_desktop.svg"
 			>
 			<div class="login-page-col-left-info">
-				<ul class="">
-					<li>
+				<ul class="login-page-col-left-list">
+					<li class="login-page-col-left-list-item">
 						Create and monitor proximity-triggered events for enterprise applications
 					</li>
 
-					<li>
+					<li class="login-page-col-left-list-item">
 						Manage devices and landmarks
 					</li>
 
-					<li>
+					<li class="login-page-col-left-list-item">
 						Download SDKs to power mobile apps
 					</li>
 				</ul>
@@ -37,6 +37,19 @@
 						LOGIN
 					</h2>
 					<div class="login-page-form-inputs">
+						<div class="login-page-form-input-wrapper">
+							<input required class="login-page-form-input" type="text" name="email">
+							<div class="login-page-form-input-label">
+								Username
+							</div>
+						</div>
+
+						<div class="login-page-form-input-wrapper">
+							<input required class="login-page-form-input" type="password" name="password">
+							<div class="login-page-form-input-label">
+								PASSWORD
+							</div>
+						</div>
 
 					</div>
 					<div class="login-page-form-options">
@@ -50,11 +63,9 @@
 								Stay Signed In
 							</label>
 						</div>
-						<div class="login-page-form-options-forgot">
-							<a href="#" class="login-page-form-options-forgot-link">
-								Forgot Password?
-							</a>
-						</div>
+						<a href="#" class="login-page-form-options-forgot-link">
+							Forgot Password?
+						</a>
 					</div>
 					<input class="login-page-form-submit-button" type="submit">
 				</form>
