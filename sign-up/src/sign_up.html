@@ -1,9 +1,6 @@
 <!-- inject:header:html -->
 <!-- contents of html partials will be injected here -->
 <!-- endinject -->
-<!-- inject:header:html -->
-<!-- contents of html partials will be injected here -->
-<!-- endinject -->
 <div class="wrapper">
 	<div class="modal-signup-page">
 		<div class="modal-signup-page-content-block">
@@ -36,6 +33,19 @@
 						<input type="text" name="firstName" class="modal-signup-page-form-input input-half left" placeholder="First Name">
 						<input type="text" name="lastName" class="modal-signup-page-form-input input-half right" placeholder="Last Name">
 						<input type="text" name="company" class="modal-signup-page-form-input" placeholder="Company">
+						<div class="modal-signup-page-form-popup">
+							<div class="modal-signup-page-form-error">
+								<div class="modal-signup-page-form-error-container">
+									<p class="modal-signup-page-form-error-text">
+									Required valid e-mail
+									</p>
+									<img src="images/close.png" class="modal-signup-page-form-error-close">
+								</div>
+								<div class="modal-signup-page-form-arrow">
+								</div>
+							</div>
+							<input type="text" name="email" class="modal-signup-page-form-input" placeholder="Email Address">
+						</div>
 						<input type="text" name="createUsername" class="modal-signup-page-form-input" placeholder="Create Username">
 						<p class="modal-signup-page-form-text-small">We will send you an e-mail to finalize your account.</p>
 						<input type="submit" name="signup" class="modal-signup-page-form-button button-green" value="Sign Up">
@@ -52,9 +62,6 @@
 		</div>
 	</div>
 </div>
-<!-- inject:footer:html -->
-<!-- contents of html partials will be injected here -->
-<!-- endinject -->
 <!-- inject:footer:html -->
 <!-- contents of html partials will be injected here -->
 <!-- endinject -->

@@ -739,6 +739,9 @@ input {
 .modal-signup-page-form-wrapper {
   width: 370px;
 }
+.modal-signup-page-form-popup {
+  position: relative;
+}
 .modal-signup-page-form-title {
   font-family: "Lato", serif, sans-serif;
   font-size: 30px;
@@ -804,6 +807,63 @@ input {
   text-align: center;
   color: #999999;
   margin: 0px 19.5px 0px 19.5px;
+}
+.modal-signup-page-form-error {
+  overflow: hidden;
+  text-align: center;
+  height: 31px;
+  display: none;
+  z-index: 2;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
+.modal-signup-page-form-error-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.modal-signup-page-form-error-close {
+  background-color: #d74758;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: -1px;
+  vertical-align: top;
+}
+.modal-signup-page-form-error p {
+  position: relative;
+  height: 20px;
+  background-color: #f26d7d;
+  line-height: 19px;
+  text-align: center;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-bottom: 0;
+  display: inline-block;
+  z-index: 2;
+  font-family: Lato;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.modal-signup-page-form-arrow {
+  display: none;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  background-color: #f26d7d;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -8px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
 .modal-signup-page-form-text {
   font-family: Lato;
