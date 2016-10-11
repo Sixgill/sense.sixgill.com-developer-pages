@@ -23,7 +23,7 @@
 
 		&-left {
 			width: 51.96%;
-			height: 100%;
+			height: auto;
 			border-right: 1px solid #e1e1e1;
 
 			&-info {
@@ -63,7 +63,6 @@
 	}
 
 	&-logo {
-		margin-top: 118px;
 		width: 281px;
 		height: 84px;
 	}
@@ -83,7 +82,7 @@
 		margin: 0px;
 
 		&-wrapper {
-
+			width: 370px;
 		}
 
 		&-title {
@@ -128,16 +127,26 @@
 		&-input.right {
 			float: right;
 		}
-		&-switcher {
-			width: 100%;
+		&-or {
+			margin-top: 20px;
 			display: flex;
-			flex:1;
-			justify-content: space-between;
-		}
-		&-divider {
-			width: 50px;
-			height: 1px;
-			background-color: #dfdfdf;
+			flex-direction: row;
+			width: 100%;
+			font-size: 16px;
+
+			&-line {
+				margin-top: 0.6em;
+				flex-grow: 1;
+				border-top: 1px solid #dfdfdf;
+			}
+
+			&-text {
+				white-space: nowrap;
+				letter-spacing: 1px;
+				text-align: center;
+				color: #999999;
+				margin: 0px 19.5px 0px 19.5px;
+			}
 		}
 
 /*		&-inputs {
@@ -208,6 +217,7 @@
 
 			&-link {
 				display: block;
+				width: 100px;
 				margin-right: auto;
 				margin-left: auto;
 				font-size: 16px;
@@ -234,6 +244,7 @@
 			letter-spacing: 1px;
 			text-align: center;
 			color: #ffffff;
+			cursor: pointer;
 		}
 	}
 }
