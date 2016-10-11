@@ -36,6 +36,9 @@
 				text-align: left;
 				color: #2e2e2e;
 				max-width: 360px;
+				& li {
+					margin-bottom: 15px;
+				}
 			}
 
 			&-line {
@@ -97,8 +100,47 @@
 			width: 48.04%;
 			height: 100%;
 		}
+		
+		&-input {
+			width: 100%;
+			height: 43px;
+			background-color: #FFFFFF;
+			border: solid 1px #dfdfdf;
+			margin-bottom: 9px;
+			padding-left: 6px;
+			display: block;
+			font-family: 'Lato';
+			font-size: 14px;
+			line-height: 0.61;
+			letter-spacing: 1px;
+			text-align: left;
+			color: #999999;
+		}
+		&-input.input-half {
+			width: 49%;
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&-input.left {
+			float: left;
+		}
+		&-input.right {
+			float: right;
+		}
+		&-switcher {
+			width: 100%;
+			display: flex;
+			flex:1;
+			justify-content: space-between;
+		}
+		&-divider {
+			width: 50px;
+			height: 1px;
+			background-color: #dfdfdf;
+		}
 
-		&-inputs {
+/*		&-inputs {
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -128,7 +170,7 @@
 				text-align: left;
 				color: #999999;
 			}
-		}
+		}*/
 
 		&-text {
 			font-family: Lato;
@@ -140,7 +182,7 @@
 				font-size: 11px;
 				line-height: 0.77;
 				letter-spacing: 0.8px;
-				text-align: left;
+				text-align: center;
 				color: #999999;
 			}
 
@@ -152,8 +194,12 @@
 			}
 
 			&-or {
-				width: 23px;
-				height: 12.5px;
+				width: 100%;
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+				padding-left:20px;
+				padding-right:20px;
 				font-size: 16px;
 				letter-spacing: 1px;
 				text-align: center;
@@ -161,25 +207,29 @@
 			}
 
 			&-link {
-				width: 96px;
-				height: 15px;
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
 				font-size: 16px;
 				line-height: 2.5;
 				letter-spacing: 1px;
+				text-decoration: underline!important;
 				text-align: center;
 				color: #0051c6;
 			}
 		}
 
 		&-button {
-			width: 259.5px;
+			display: block;
+			border: none;
+			width: 80%;
 			height: 43px;
+			margin-left: auto;
+			margin-right: auto;
 			background-color: #5cc468;
-			font-family: Lato;
+			font-family: 'Lato';
 			font-size: 16px;
 			font-weight: bold;
-			font-style: normal;
-			font-stretch: normal;
 			line-height: 2.5;
 			letter-spacing: 1px;
 			text-align: center;
