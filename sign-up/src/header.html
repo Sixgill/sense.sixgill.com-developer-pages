@@ -24,6 +24,25 @@
 			<div id="menu-schedule-button-wrapper" class="menu-schedule-button-wrapper display-only-desktop">
 				<div class="nav-divider-line"></div>
 				<div class="menu-search-wrapper">
+				<form
+					class="search-form"
+					role="search"
+					method="get"
+				>
+<!-- 					<?php
+						$searchQuery = "";
+						if($displaySearchQuery) {
+							$searchQuery = get_search_query();
+						}
+					 ?> -->
+				  <input name="s" type="text" class="search-form-input" placeholder="Search" required">
+				  <input class="search-form-submit" type="submit" value="">
+				  <div class="search-form-placeholder">
+				    <img class="search-form-placeholder-icon" src="images/search_icon.svg">
+				    Search...
+				  </div>
+				</form>
+
 					<!-- <?php
 						global $searchFormClasses;
 						$searchFormClasses = "menu-search-form";
