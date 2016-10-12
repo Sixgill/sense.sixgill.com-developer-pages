@@ -104,14 +104,32 @@
 					</h2>
 					<div class="login-page-form-inputs">
 						<div class="login-page-form-input-wrapper">
-							<input required class="login-page-form-input" type="text" name="email">
+							<div class="modal-form-error" id="username-error">
+								<div class="modal-form-error-container">
+									<p class="modal-form-error-text">
+									</p>
+									<img src="images/close.png" class="modal-form-error-close">
+								</div>
+								<div class="modal-form-error-arrow">
+								</div>
+							</div>
+							<input class="login-page-form-input login-username-input invalid" type="text" name="username">
 							<div class="login-page-form-input-label">
 								Username
 							</div>
 						</div>
 
 						<div class="login-page-form-input-wrapper">
-							<input required class="login-page-form-input" type="password" name="password" value="123456789">
+							<div class="modal-form-error" id="password-error">
+								<div class="modal-form-error-container">
+									<p class="modal-form-error-text">
+									</p>
+									<img src="images/close.png" class="modal-form-error-close">
+								</div>
+								<div class="modal-form-error-arrow">
+								</div>
+							</div>
+							<input class="login-page-form-input login-password-input" type="password" name="password" value="123456789">
 							<div class="login-page-form-input-label">
 								PASSWORD
 							</div>
@@ -133,7 +151,7 @@
 							Forgot Password?
 						</a>
 					</div>
-					<input class="login-page-form-submit-button" type="submit" value="Log In">
+					<input class="login-page-form-submit-button" type="submit" name="formSubmit" value="Log In">
 				</form>
 			</div>
 			<div class="login-page-or">
@@ -213,11 +231,10 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/validation.js"></script>
 	</footer>
 
 <!-- endinject -->
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
 </body>
 </html>

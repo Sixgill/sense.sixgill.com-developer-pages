@@ -460,6 +460,8 @@ label {
 	display: none;
 	z-index: 2;
 	position: absolute;
+	bottom: 50px;
+	left: 0;
 	&-container {
     	display: flex;
     	align-items: flex-end;
@@ -502,5 +504,14 @@ label {
 		-moz-transform:    rotate(45deg);
 		-ms-transform:     rotate(45deg);
 		-o-transform:      rotate(45deg);
+	}
+}
+.modal-error-popup {
+	position: relative;
+}
+.disabled {
+	background-color:#999!important;
+	&:hover {
+		background-color:#999!important;
 	}
 }

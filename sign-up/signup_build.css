@@ -593,6 +593,8 @@ label {
   display: none;
   z-index: 2;
   position: absolute;
+  bottom: 50px;
+  left: 0;
 }
 .modal-form-error-container {
   display: -webkit-flex;
@@ -640,6 +642,15 @@ label {
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
 }
+.modal-error-popup {
+  position: relative;
+}
+.disabled {
+  background-color: #999!important;
+}
+.disabled:hover {
+  background-color: #999!important;
+}
 
 
 .new-pass-confirm {
@@ -686,9 +697,12 @@ label {
   margin-top: 0;
   margin-bottom: 0;
 }
+.pass-change .modal-form-error {
+  left: 105px;
+}
 
 .modal-confirm.pass-create {
-  height: 360.5px;
+  height: 361px;
   padding-top: 11px;
 }
 .modal-confirm.pass-create .modal-confirm-title {
@@ -707,6 +721,9 @@ label {
   font-weight: 300;
   margin-bottom: 26px;
 }
+.modal-confirm.pass-create .modal-form-error {
+  left: 105px;
+}
 
 .pass-reset {
   height: 349px;
@@ -720,6 +737,9 @@ label {
 .pass-reset > .modal-confirm-link {
   margin-top: 20px;
   margin-bottom: 0;
+}
+.pass-reset .modal-form-error {
+  left: 105px;
 }
 
 .modal-confirm.pass-res-confirm {
@@ -840,9 +860,6 @@ label {
 }
 .modal-signup-page-form-wrapper {
   width: 370px;
-}
-.modal-signup-page-form-popup {
-  position: relative;
 }
 .modal-signup-page-form-title {
   font-size: 30px;
@@ -969,10 +986,6 @@ label {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-}
-.sign-up-error {
-  bottom: 50px;
-  left: 0;
 }
 #lastName {
   right: 0;
@@ -1619,7 +1632,7 @@ label {
   color: #999999;
   pointer-events: none;
 }
-.login-page-form-input:not(:invalid) + .login-page-form-input-label,
+.login-page-form-input:not(.invalid) + .login-page-form-input-label,
 .login-page-form-input:focus + .login-page-form-input-label {
   font-size: 8px;
   font-weight: 600;
