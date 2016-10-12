@@ -4,16 +4,27 @@
 	font-stretch: normal;
 }
 
+#font-600() {
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+}
+
 #flex-center() {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
+#flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
 #page-content-bg() {
 	height: calc(~"100vh - 146px");
 	margin-left: 225px;
-	width: calc("100% - 225px");;
+	width: calc(~"100% - 225px");
 	#flex-center;
 	background-image: url('images/featBg-desktop@1x.png');
 	background-size: cover;
