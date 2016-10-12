@@ -409,7 +409,6 @@ input {
 .modal-confirm {
   background-color: #FFF;
   width: 581px;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 48px;
@@ -424,7 +423,7 @@ input {
 }
 .modal-confirm-title {
   font-family: 'Lato';
-  font-size: 30.2px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 0.52;
   letter-spacing: 2.1px;
@@ -466,14 +465,14 @@ input {
   text-align: center;
 }
 .modal-confirm-input {
-  width: 70%;
+  width: 370px;
   height: 43px;
   background-color: #FFFFFF;
   border: solid 1px #dfdfdf;
   margin-top: 9px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 6px;
+  padding-left: 13px;
   display: block;
   font-family: 'Lato';
   font-size: 14px;
@@ -484,7 +483,7 @@ input {
 }
 .modal-confirm-button {
   height: 43px;
-  width: 70%;
+  width: 370px;
   margin-top: 13px;
   font-family: 'Lato';
   font-size: 16px;
@@ -597,22 +596,68 @@ input {
 
 
 .new-pass-confirm {
-  background-image: url("../images/featBg-desktop@1x.png");
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  overflow: auto;
+  height: 383px;
+}
+.new-pass-confirm > .modal-confirm-divider {
+  margin-top: 39px;
+}
+.new-pass-confirm > .modal-confirm-text {
+  margin: 36px auto 0 auto;
+}
+.new-pass-confirm > .modal-confirm-link {
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
+.pass-change {
+  height: 484px;
+  padding: 45px 0;
+}
+.pass-change > .modal-confirm-title {
+  margin: 0 auto;
+  font-size: 25px;
+  letter-spacing: 1.7px;
+}
+.pass-change > .modal-confirm-text {
+  margin: 23px auto 23px auto;
+}
+.pass-change > .modal-confirm-button {
+  margin-top: 14px;
+}
+.pass-change > .modal-confirm-link {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
 .pass-change .current-password {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
-.pass-change .cancel-link {
-  margin-top: 30px;
+.pass-change .new-password {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+.pass-create {
+  height: 361px;
+}
 
+.pass-reset {
+  height: 349px;
+}
+.pass-reset > .modal-confirm-divider {
+  margin-top: 39px;
+}
+.pass-reset > .modal-confirm-text {
+  margin: 36px auto 0 auto;
+}
+.pass-reset > .modal-confirm-link {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
 
+.pass-res-confirm {
+  height: 383px;
+}
 
 .modal-signup-page {
   height: calc(100vh - 146px);
@@ -632,8 +677,8 @@ input {
   background-size: contain;
 }
 .modal-signup-page-content-block {
-  width: 89.84%;
-  min-height: 463px;
+  width: 1021px;
+  height: 558px;
   background-color: #ffffff;
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.08);
   margin: 28px 0px 28px 0px;
@@ -927,62 +972,7 @@ input {
 }
 
 .sign-up-confirm {
-  background-image: url("../images/featBg-desktop@1x.png");
-  background-size: cover;
-  margin-left: 225px;
-  height: calc(100vh - 146px);
-  width: 100%;
-}
-.sign-up-confirm-modal {
-  background-color: #FFF;
-  width: 581px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 48px;
-  padding-top: 48px;
-}
-.sign-up-confirm-modal-image {
-  display: block;
-  width: 86.5px;
-  height: 86.5px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.sign-up-confirm-modal-title {
-  font-family: Lato;
-  font-size: 30.2px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.52;
-  letter-spacing: 2.1px;
-  text-align: center;
-  color: #2e2e2e;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 33px;
-}
-.sign-up-confirm-modal-divider {
-  width: 54px;
-  height: 1px;
-  background-color: #dfdfdf;
-  margin-top: 35px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.sign-up-confirm-modal-text {
-  font-family: Lato;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: 1px;
-  text-align: center;
-  color: #2e2e2e;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 41px;
+  height: 386px;
 }
 
 .center {
@@ -1458,7 +1448,7 @@ input {
   font-family: "Lato";
 }
 .login-page-content-block {
-  width: 89.84%;
+  width: 1021px;
   height: 463px;
   background-color: #ffffff;
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.08);
