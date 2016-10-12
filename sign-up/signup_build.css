@@ -725,20 +725,24 @@ label {
   left: 105px;
 }
 
-.pass-reset {
+.modal-confirm.pass-reset {
   height: 349px;
+  padding-top: 15px;
 }
-.pass-reset > .modal-confirm-divider {
+.modal-confirm.pass-reset > .modal-confirm-title {
+  font-size: 24px;
+}
+.modal-confirm.pass-reset > .modal-confirm-divider {
   margin-top: 39px;
 }
-.pass-reset > .modal-confirm-text {
-  margin: 36px auto 0 auto;
+.modal-confirm.pass-reset > .modal-confirm-text {
+  margin: 19px auto 29px auto;
 }
-.pass-reset > .modal-confirm-link {
+.modal-confirm.pass-reset > .modal-confirm-link {
   margin-top: 20px;
   margin-bottom: 0;
 }
-.pass-reset .modal-form-error {
+.modal-confirm.pass-reset .modal-form-error {
   left: 105px;
 }
 
@@ -979,7 +983,7 @@ label {
   background-color: #5cc468;
 }
 .modal-signup-page-form-button:hover {
-  background-color: #35b042 !important;
+  background-color: #35b042;
 }
 .input-half {
   width: 49%;
@@ -1706,7 +1710,7 @@ label {
   background-color: #5cc468;
 }
 .login-page-form-submit-button:hover {
-  background-color: #35b042 !important;
+  background-color: #35b042;
 }
 .login-page-or {
   display: -webkit-flex;
@@ -1767,7 +1771,7 @@ a.login-page-sign-up-link:focus {
   background-color: #5cc468;
 }
 #greenButtonBGColors:hover {
-  background-color: #35b042 !important;
+  background-color: #35b042;
 }
 
 .terms {
@@ -1906,7 +1910,7 @@ a.login-page-sign-up-link:focus {
           justify-content: center;
 }
 .terms-bottom-bar-button-agree:hover {
-  background-color: #35b042 !important;
+  background-color: #35b042;
 }
 .terms-bottom-bar-button-agree-link {
   margin: 0;
