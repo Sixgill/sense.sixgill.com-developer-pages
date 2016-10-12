@@ -597,11 +597,14 @@ label {
   margin-top: 39px;
 }
 .new-pass-confirm > .modal-confirm-text {
-  margin: 36px auto 0 auto;
+  margin: 38px auto 0 auto;
 }
 .new-pass-confirm > .modal-confirm-link {
   margin-top: 20px;
   margin-bottom: 0;
+}
+.new-pass-confirm > .modal-confirm-title {
+  margin-top: 31px;
 }
 
 .pass-change {
@@ -652,6 +655,17 @@ label {
 
 .pass-res-confirm {
   height: 383px;
+}
+.pass-res-confirm > .modal-confirm-divider {
+  margin-top: 41px;
+}
+.pass-res-confirm > .modal-confirm-text {
+  padding: 8px;
+  margin: 28px auto 0 auto;
+}
+.pass-res-confirm > .modal-confirm-link {
+  margin-top: 13px;
+  margin-bottom: 0;
 }
 
 .modal-signup-page {
