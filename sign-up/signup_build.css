@@ -983,7 +983,7 @@ label {
   background-color: #5cc468;
 }
 .modal-signup-page-form-button:hover {
-  background-color: #35b042 !important;
+  background-color: #35b042;
 }
 .input-half {
   width: 49%;
@@ -1710,7 +1710,7 @@ label {
   background-color: #5cc468;
 }
 .login-page-form-submit-button:hover {
-  background-color: #35b042 !important;
+  background-color: #35b042;
 }
 .login-page-or {
   display: -webkit-flex;
@@ -1771,7 +1771,7 @@ a.login-page-sign-up-link:focus {
   background-color: #5cc468;
 }
 #greenButtonBGColors:hover {
-  background-color: #35b042 !important;
+  background-color: #35b042;
 }
 
 .terms {
@@ -1910,7 +1910,7 @@ a.login-page-sign-up-link:focus {
           justify-content: center;
 }
 .terms-bottom-bar-button-agree:hover {
-  background-color: #35b042 !important;
+  background-color: #35b042;
 }
 .terms-bottom-bar-button-agree-link {
   margin: 0;
