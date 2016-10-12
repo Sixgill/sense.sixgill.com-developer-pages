@@ -725,20 +725,24 @@ label {
   left: 105px;
 }
 
-.pass-reset {
+.modal-confirm.pass-reset {
   height: 349px;
+  padding-top: 15px;
 }
-.pass-reset > .modal-confirm-divider {
+.modal-confirm.pass-reset > .modal-confirm-title {
+  font-size: 24px;
+}
+.modal-confirm.pass-reset > .modal-confirm-divider {
   margin-top: 39px;
 }
-.pass-reset > .modal-confirm-text {
-  margin: 36px auto 0 auto;
+.modal-confirm.pass-reset > .modal-confirm-text {
+  margin: 19px auto 29px auto;
 }
-.pass-reset > .modal-confirm-link {
+.modal-confirm.pass-reset > .modal-confirm-link {
   margin-top: 20px;
   margin-bottom: 0;
 }
-.pass-reset .modal-form-error {
+.modal-confirm.pass-reset .modal-form-error {
   left: 105px;
 }
 
