@@ -1456,9 +1456,12 @@ input {
   background-image: url('images/featBg-desktop@1x.png');
   background-size: cover;
   font-family: "Lato";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
 }
 .login-page-content-block {
-  width: 89.84%;
+  width: 89.54%;
   height: 463px;
   background-color: #ffffff;
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.08);
@@ -1511,12 +1514,12 @@ input {
 }
 .login-page-col-left,
 .login-page-col-right {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1564,6 +1567,9 @@ input {
   width: 100%;
 }
 .login-page-form-input {
+  font-size: 24px;
+  color: #2e2e2e;
+  letter-spacing: 1px;
   width: 100%;
   height: 43px;
   border: 1px solid #dfdfdf;
@@ -1581,7 +1587,7 @@ input {
 }
 .login-page-form-input-label {
   position: absolute;
-  top: 13px;
+  top: 15px;
   left: 11px;
   font-size: 14px;
   font-weight: normal;
@@ -1698,6 +1704,52 @@ input {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 1px;
+  text-align: center;
+  color: #2e2e2e;
+}
+a.login-page-sign-up-link,
+a.login-page-sign-up-link:hover,
+a.login-page-sign-up-link:active,
+a.login-page-sign-up-link::-moz-selection,
+a.login-page-sign-up-link:focus {
+  text-decoration: underline !important;
+}
+a.login-page-sign-up-link,
+a.login-page-sign-up-link:hover,
+a.login-page-sign-up-link:active,
+a.login-page-sign-up-link::selection,
+a.login-page-sign-up-link:focus {
+  text-decoration: underline !important;
+}
+
+
+.terms {
+  height: calc(100vh - 146px);
+  margin-left: 225px;
+  width: calc("100% - 225px");
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url('images/featBg-desktop@1x.png');
+  background-size: cover;
+  font-family: "Lato";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+.terms-content-header-title {
+  font-size: 30.2px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 15.5px;
+  letter-spacing: 2.1px;
   text-align: center;
   color: #2e2e2e;
 }
