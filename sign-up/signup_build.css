@@ -410,8 +410,8 @@ label {
 }
 .modal-confirm-image {
   display: block;
-  width: 86.5px;
-  height: 86.5px;
+  width: 90.5px;
+  height: 90.5px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -727,9 +727,13 @@ label {
 
 .pass-res-confirm {
   height: 383px;
+  padding-top: 41px !important;
 }
 .pass-res-confirm > .modal-confirm-divider {
   margin-top: 41px;
+}
+.pass-res-confirm > .modal-confirm-title {
+  padding-left: 4px;
 }
 .pass-res-confirm > .modal-confirm-text {
   padding: 8px;
@@ -739,12 +743,15 @@ label {
   margin-top: 13px;
   margin-bottom: 0;
 }
+.pass-res-confirm > .modal-confirm-image {
+  height: 93.5px;
+}
 
 .modal-signup-page {
   height: calc(100vh - 146px);
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 650px;
+  margin-left: 225px;
+  width: calc(100% - 225px);
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -755,7 +762,11 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url('images/featBg-desktop@1x.png');
-  background-size: contain;
+  background-size: cover;
+  font-family: "Lato", serif, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
 }
 .modal-signup-page-content-block {
   width: 89.84%;
@@ -776,7 +787,6 @@ label {
   border-right: 1px solid #e1e1e1;
 }
 .modal-signup-page-col-left-info {
-  font-family: "Lato";
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -830,43 +840,11 @@ label {
   height: 100%;
   width: 100%;
   margin: 0px;
-  /*		&-inputs {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 43px;
-
-			&-left, &-right {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-			}
-
-			&-item {
-				width: 180px;
-    			height: 43px;
-				background-color: #FFFFFF;
-				border: solid 1px #dfdfdf;
-				margin-top:9px;
-				margin-bottom: 9px;
-				margin-right: 9px;
-				padding-left: 6px;
-				display: block;
-				font-family: 'Lato';
-				font-size: 14px;
-				line-height: 0.61;
-				letter-spacing: 1px;
-				text-align: left;
-				color: #999999;
-			}
-		}*/
 }
 .modal-signup-page-form-wrapper {
   width: 370px;
 }
 .modal-signup-page-form-title {
-  font-family: "Lato", serif, sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -926,7 +904,6 @@ label {
   margin: 0px 19.5px 0px 19.5px;
 }
 .modal-signup-page-form-text {
-  font-family: Lato;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -975,8 +952,6 @@ label {
   height: 43px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #5cc468;
-  font-family: 'Lato';
   font-size: 16px;
   font-weight: bold;
   line-height: 2.5;
@@ -984,6 +959,10 @@ label {
   text-align: center;
   color: #ffffff;
   cursor: pointer;
+  background-color: #5cc468;
+}
+.modal-signup-page-form-button:hover {
+  background-color: #35b042 !important;
 }
 .input-half {
   width: 49%;
@@ -997,6 +976,20 @@ label {
 
 .sign-up-confirm {
   height: 386px;
+}
+.sign-up-confirm .modal-confirm {
+  padding-top: 47px;
+}
+.sign-up-confirm .modal-confirm-text {
+  width: 90%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.sign-up-confirm .modal-confirm-text:last-child {
+  margin-top: 0px;
+}
+.sign-up-confirm .modal-confirm-link {
+  display: inline-block;
 }
 
 .center {
@@ -1077,7 +1070,7 @@ label {
 }
 .footer-top-block-right {
   width: 165px;
-  margin-left: 50px;
+  /*margin-left: 50px;*/
 }
 .footer-top-text {
   font-size: 14px;
@@ -1458,6 +1451,7 @@ label {
 
 .login-page {
   height: calc(100vh - 146px);
+  min-height: 650px;
   margin-left: 225px;
   width: calc(100% - 225px);
   display: -webkit-flex;
@@ -1471,7 +1465,7 @@ label {
           justify-content: center;
   background-image: url('images/featBg-desktop@1x.png');
   background-size: cover;
-  font-family: "Lato";
+  font-family: "Lato", serif, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -1680,7 +1674,6 @@ label {
 .login-page-form-submit-button {
   width: 259.5px;
   height: 43px;
-  background-color: #5cc468;
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
@@ -1691,6 +1684,10 @@ label {
   border: 0px;
   outline: 0px;
   cursor: pointer;
+  background-color: #5cc468;
+}
+.login-page-form-submit-button:hover {
+  background-color: #35b042 !important;
 }
 .login-page-or {
   display: -webkit-flex;
@@ -1747,17 +1744,16 @@ a.login-page-sign-up-link:focus {
   text-decoration: underline !important;
 }
 
-#flex-row {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+#greenButtonBGColors {
+  background-color: #5cc468;
+}
+#greenButtonBGColors:hover {
+  background-color: #35b042 !important;
 }
 
 .terms {
   height: calc(100vh - 146px);
+  min-height: 650px;
   margin-left: 225px;
   width: calc(100% - 225px);
   display: -webkit-flex;
@@ -1771,7 +1767,7 @@ a.login-page-sign-up-link:focus {
           justify-content: center;
   background-image: url('images/featBg-desktop@1x.png');
   background-size: cover;
-  font-family: "Lato";
+  font-family: "Lato", serif, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -1872,7 +1868,6 @@ a.login-page-sign-up-link:focus {
 .terms-bottom-bar-button-agree {
   width: 127.5px;
   height: 43px;
-  background-color: #5cc468;
   font-weight: normal;
   font-weight: bold;
   font-style: normal;
@@ -1880,6 +1875,7 @@ a.login-page-sign-up-link:focus {
   letter-spacing: 1px;
   text-align: center;
   color: #ffffff;
+  background-color: #5cc468;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1889,6 +1885,9 @@ a.login-page-sign-up-link:focus {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.terms-bottom-bar-button-agree:hover {
+  background-color: #35b042 !important;
 }
 .terms-bottom-bar-button-agree-link {
   margin: 0;

@@ -1,22 +1,15 @@
+@import (reference) "signup_general.less";
+
 .modal-signup-page {
-	height: calc(~"100vh - 146px");
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-image: url('images/featBg-desktop@1x.png');
-	background-size: contain;
+	#page-content-bg;
 
 	&-content-block{
 		width: 89.84%;
 		min-height: 463px;
 		background-color: #ffffff;
-  		box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.08);
+		box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.08);
 		margin: 28px 0px 28px 0px;
-		display: flex;
-		flex-direction: row;
+		#flex-row;
 	}
 
 	&-col {
@@ -27,15 +20,13 @@
 			border-right: 1px solid #e1e1e1;
 
 			&-info {
-				font-family: "Lato";
-				font-size: 16px;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
+				#defaultFontSize;
+				#normal-font;
 				letter-spacing: 1px;
 				text-align: left;
 				color: #2e2e2e;
 				max-width: 360px;
+
 				& li {
 					margin-bottom: 15px;
 				}
@@ -86,7 +77,6 @@
 		}
 
 		&-title {
-			font-family: "Lato", serif, sans-serif;
 			font-size: 30px;
 			font-weight: bold;
 			text-transform: uppercase;
@@ -99,7 +89,7 @@
 			width: 48.04%;
 			height: 100%;
 		}
-		
+
 		&-input {
 			width: 100%;
 			height: 43px;
@@ -115,18 +105,20 @@
 			text-align: left;
 			color: #999999;
 		}
+
 		&-input.left {
 			float: left;
 		}
+
 		&-input.right {
 			float: right;
 		}
+
 		&-or {
 			margin-top: 20px;
-			display: flex;
-			flex-direction: row;
+			#flex-row;
 			width: 100%;
-			font-size: 16px;
+			#defaultFontSize;
 
 			&-line {
 				margin-top: 0.6em;
@@ -143,44 +135,8 @@
 			}
 		}
 
-
-/*		&-inputs {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 43px;
-
-			&-left, &-right {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-			}
-
-			&-item {
-				width: 180px;
-    			height: 43px;
-				background-color: #FFFFFF;
-				border: solid 1px #dfdfdf;
-				margin-top:9px;
-				margin-bottom: 9px;
-				margin-right: 9px;
-				padding-left: 6px;
-				display: block;
-				font-family: 'Lato';
-				font-size: 14px;
-				line-height: 0.61;
-				letter-spacing: 1px;
-				text-align: left;
-				color: #999999;
-			}
-		}*/
-
 		&-text {
-			font-family: Lato;
-			font-weight: normal;
-			font-style: normal;
-			font-stretch: normal;
+			#normal-font;
 
 			&-small {
 				font-size: 11px;
@@ -191,7 +147,7 @@
 			}
 
 			&-normal {
-				font-size: 16px;
+				#defaultFontSize;
 				letter-spacing: 1px;
 				text-align: center;
 				color: #2e2e2e;
@@ -202,9 +158,9 @@
 				height: auto;
 				margin-left: auto;
 				margin-right: auto;
-				padding-left:20px;
-				padding-right:20px;
-				font-size: 16px;
+				padding-left: 20px;
+				padding-right: 20px;
+				#defaultFontSize;
 				letter-spacing: 1px;
 				text-align: center;
 				color: #999999;
@@ -215,7 +171,7 @@
 				width: 100px;
 				margin-right: auto;
 				margin-left: auto;
-				font-size: 16px;
+				#defaultFontSize;
 				line-height: 2.5;
 				letter-spacing: 1px;
 				text-decoration: underline!important;
@@ -231,24 +187,25 @@
 			height: 43px;
 			margin-left: auto;
 			margin-right: auto;
-			background-color: #5cc468;
-			font-family: 'Lato';
-			font-size: 16px;
+			#defaultFontSize;
 			font-weight: bold;
 			line-height: 2.5;
 			letter-spacing: 1px;
 			text-align: center;
 			color: #ffffff;
 			cursor: pointer;
+			#greenButtonBGColors;
 		}
 	}
 }
+
 .input-half {
 	width: 49%;
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 #lastName {
 	right: 0;
 }
