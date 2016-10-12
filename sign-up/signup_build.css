@@ -701,10 +701,27 @@ label {
   left: 105px;
 }
 
-.pass-create {
+.modal-confirm.pass-create {
   height: 361px;
+  padding-top: 11px;
 }
-.pass-create .modal-form-error {
+.modal-confirm.pass-create .modal-confirm-title {
+  font-size: 25.3px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #2e2e2e;
+  margin-top: 36px;
+}
+.modal-confirm.pass-create .modal-confirm-text {
+  width: 80%;
+  margin-top: 23px;
+  font-weight: 300;
+  margin-bottom: 26px;
+}
+.modal-confirm.pass-create .modal-form-error {
   left: 105px;
 }
 
@@ -725,25 +742,25 @@ label {
   left: 105px;
 }
 
-.pass-res-confirm {
+.modal-confirm.pass-res-confirm {
   height: 383px;
-  padding-top: 41px !important;
+  padding-top: 41px;
 }
-.pass-res-confirm > .modal-confirm-divider {
+.modal-confirm.pass-res-confirm > .modal-confirm-divider {
   margin-top: 41px;
 }
-.pass-res-confirm > .modal-confirm-title {
+.modal-confirm.pass-res-confirm > .modal-confirm-title {
   padding-left: 4px;
 }
-.pass-res-confirm > .modal-confirm-text {
+.modal-confirm.pass-res-confirm > .modal-confirm-text {
   padding: 8px;
   margin: 28px auto 0 auto;
 }
-.pass-res-confirm > .modal-confirm-link {
+.modal-confirm.pass-res-confirm > .modal-confirm-link {
   margin-top: 13px;
   margin-bottom: 0;
 }
-.pass-res-confirm > .modal-confirm-image {
+.modal-confirm.pass-res-confirm > .modal-confirm-image {
   height: 93.5px;
 }
 
@@ -1612,6 +1629,7 @@ label {
   letter-spacing: 1px;
   text-align: center;
   color: #999999;
+  pointer-events: none;
 }
 .login-page-form-input:not(.invalid) + .login-page-form-input-label,
 .login-page-form-input:focus + .login-page-form-input-label {
