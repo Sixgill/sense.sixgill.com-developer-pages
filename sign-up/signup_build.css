@@ -788,10 +788,13 @@ label {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
+  width: 100%;
+  margin-left: 0px;
+  min-height: 600px;
 }
 .modal-signup-page-content-block {
   width: 89.84%;
-  min-height: 463px;
+  height: 557.5px;
   background-color: #ffffff;
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.08);
   margin: 28px 0px 28px 0px;
@@ -815,7 +818,8 @@ label {
   letter-spacing: 1px;
   text-align: left;
   color: #2e2e2e;
-  max-width: 360px;
+  max-width: 406x;
+  margin-top: 9px;
 }
 .modal-signup-page-col-left-info li {
   margin-bottom: 15px;
@@ -846,8 +850,10 @@ label {
           justify-content: center;
 }
 .modal-signup-page-logo {
-  width: 281px;
-  height: 84px;
+  width: 283px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 0px;
 }
 .modal-signup-page-divider {
   width: 54px;
