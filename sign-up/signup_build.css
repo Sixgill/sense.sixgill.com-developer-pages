@@ -134,7 +134,6 @@ footer .footer-subscribe-error p {
   color: #ffffff;
 }
 footer .footer-subscribe-arrow {
-  display: none;
   z-index: 1;
   width: 15px;
   height: 15px;
@@ -411,8 +410,8 @@ label {
 }
 .modal-confirm-image {
   display: block;
-  width: 86.5px;
-  height: 86.5px;
+  width: 90.5px;
+  height: 90.5px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -588,6 +587,59 @@ label {
 .search-form:not(.always-active) .search-form-input:not(:focus):not(:valid) ~ .search-form-placeholder {
   visibility: visible;
 }
+.modal-form-error {
+  text-align: center;
+  height: 31px;
+  display: none;
+  z-index: 2;
+  position: absolute;
+}
+.modal-form-error-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.modal-form-error-close {
+  background-color: #d74758;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: -1px;
+  vertical-align: top;
+}
+.modal-form-error p {
+  position: relative;
+  height: 20px;
+  background-color: #f26d7d;
+  line-height: 19px;
+  text-align: center;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-bottom: 0;
+  display: inline-block;
+  z-index: 2;
+  font-family: Lato;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.modal-form-error-arrow {
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  background-color: #f26d7d;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -11px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
 
 
 .new-pass-confirm {
@@ -655,9 +707,13 @@ label {
 
 .pass-res-confirm {
   height: 383px;
+  padding-top: 41px !important;
 }
 .pass-res-confirm > .modal-confirm-divider {
   margin-top: 41px;
+}
+.pass-res-confirm > .modal-confirm-title {
+  padding-left: 4px;
 }
 .pass-res-confirm > .modal-confirm-text {
   padding: 8px;
@@ -667,12 +723,14 @@ label {
   margin-top: 13px;
   margin-bottom: 0;
 }
+.pass-res-confirm > .modal-confirm-image {
+  height: 93.5px;
+}
 
 .modal-signup-page {
   height: calc(100vh - 146px);
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 225px;
+  width: calc(100% - 225px);
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -683,7 +741,11 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url('images/featBg-desktop@1x.png');
-  background-size: contain;
+  background-size: cover;
+  font-family: "Lato", serif, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
 }
 .modal-signup-page-content-block {
   width: 89.84%;
@@ -704,7 +766,6 @@ label {
   border-right: 1px solid #e1e1e1;
 }
 .modal-signup-page-col-left-info {
-  font-family: "Lato";
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -758,37 +819,6 @@ label {
   height: 100%;
   width: 100%;
   margin: 0px;
-  /*		&-inputs {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 43px;
-
-			&-left, &-right {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-			}
-
-			&-item {
-				width: 180px;
-    			height: 43px;
-				background-color: #FFFFFF;
-				border: solid 1px #dfdfdf;
-				margin-top:9px;
-				margin-bottom: 9px;
-				margin-right: 9px;
-				padding-left: 6px;
-				display: block;
-				font-family: 'Lato';
-				font-size: 14px;
-				line-height: 0.61;
-				letter-spacing: 1px;
-				text-align: left;
-				color: #999999;
-			}
-		}*/
 }
 .modal-signup-page-form-wrapper {
   width: 370px;
@@ -797,7 +827,6 @@ label {
   position: relative;
 }
 .modal-signup-page-form-title {
-  font-family: "Lato", serif, sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -824,12 +853,6 @@ label {
   letter-spacing: 1px;
   text-align: left;
   color: #999999;
-}
-.modal-signup-page-form-input.input-half {
-  width: 49%;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
 }
 .modal-signup-page-form-input.left {
   float: left;
@@ -862,65 +885,7 @@ label {
   color: #999999;
   margin: 0px 19.5px 0px 19.5px;
 }
-.modal-signup-page-form-error {
-  overflow: hidden;
-  text-align: center;
-  height: 31px;
-  display: none;
-  z-index: 2;
-  position: absolute;
-  bottom: 50px;
-  left: 0;
-}
-.modal-signup-page-form-error-container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-.modal-signup-page-form-error-close {
-  background-color: #d74758;
-  height: 20px;
-  width: 20px;
-  cursor: pointer;
-  font-size: 15px;
-  margin-left: -1px;
-  vertical-align: top;
-}
-.modal-signup-page-form-error p {
-  position: relative;
-  height: 20px;
-  background-color: #f26d7d;
-  line-height: 19px;
-  text-align: center;
-  padding-left: 9px;
-  padding-right: 9px;
-  margin-bottom: 0;
-  display: inline-block;
-  z-index: 2;
-  font-family: Lato;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  color: #ffffff;
-}
-.modal-signup-page-form-arrow {
-  display: none;
-  z-index: 1;
-  width: 15px;
-  height: 15px;
-  background-color: #f26d7d;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -8px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-}
 .modal-signup-page-form-text {
-  font-family: Lato;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -970,7 +935,6 @@ label {
   margin-left: auto;
   margin-right: auto;
   background-color: #5cc468;
-  font-family: 'Lato';
   font-size: 16px;
   font-weight: bold;
   line-height: 2.5;
@@ -979,9 +943,36 @@ label {
   color: #ffffff;
   cursor: pointer;
 }
+.input-half {
+  width: 49%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sign-up-error {
+  bottom: 50px;
+  left: 0;
+}
+#lastName {
+  right: 0;
+}
 
 .sign-up-confirm {
   height: 386px;
+}
+.sign-up-confirm .modal-confirm {
+  padding-top: 47px;
+}
+.sign-up-confirm .modal-confirm-text {
+  width: 90%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.sign-up-confirm .modal-confirm-text:last-child {
+  margin-top: 0px;
+}
+.sign-up-confirm .modal-confirm-link {
+  display: inline-block;
 }
 
 .center {
@@ -1062,7 +1053,7 @@ label {
 }
 .footer-top-block-right {
   width: 165px;
-  margin-left: 50px;
+  /*margin-left: 50px;*/
 }
 .footer-top-text {
   font-size: 14px;
@@ -1456,7 +1447,7 @@ label {
           justify-content: center;
   background-image: url('images/featBg-desktop@1x.png');
   background-size: cover;
-  font-family: "Lato";
+  font-family: "Lato", serif, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -1732,14 +1723,6 @@ a.login-page-sign-up-link:focus {
   text-decoration: underline !important;
 }
 
-#flex-row {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
 
 .terms {
   height: calc(100vh - 146px);
@@ -1756,7 +1739,7 @@ a.login-page-sign-up-link:focus {
           justify-content: center;
   background-image: url('images/featBg-desktop@1x.png');
   background-size: cover;
-  font-family: "Lato";
+  font-family: "Lato", serif, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
