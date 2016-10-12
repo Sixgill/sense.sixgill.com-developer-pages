@@ -30,23 +30,71 @@
 						<h2 class="modal-signup-page-form-title">
 							SIGN UP
 						</h2>
-						<input type="text" name="firstName" class="modal-signup-page-form-input input-half left" placeholder="First Name">
-						<input type="text" name="lastName" class="modal-signup-page-form-input input-half right" placeholder="Last Name">
-						<input type="text" name="company" class="modal-signup-page-form-input" placeholder="Company">
-						<div class="modal-signup-page-form-popup">
-							<div class="modal-signup-page-form-error">
-								<div class="modal-signup-page-form-error-container">
-									<p class="modal-signup-page-form-error-text">
+						<div class="modal-signup-page-form-popup input-half">
+							<div class="modal-form-error sign-up-error" id="firstName-error">
+								<div class="modal-form-error-container">
+									<p class="modal-form-error-text">
 									Required valid e-mail
 									</p>
-									<img src="images/close.png" class="modal-signup-page-form-error-close">
+									<img src="images/close.png" class="modal-form-error-close">
 								</div>
-								<div class="modal-signup-page-form-arrow">
+								<div class="modal-form-error-arrow">
+								</div>
+							</div>
+							<input type="text" name="firstName" class="modal-signup-page-form-input left" placeholder="First Name">
+						</div>
+						<div class="modal-signup-page-form-popup input-half">
+							<div class="modal-form-error sign-up-error" id="lastName-error">
+								<div class="modal-form-error-container">
+									<p class="modal-form-error-text">
+									Required valid e-mail
+									</p>
+									<img src="images/close.png" class="modal-form-error-close">
+								</div>
+								<div class="modal-form-error-arrow">
+								</div>
+							</div>
+							<input type="text" name="lastName" class="modal-signup-page-form-input right" placeholder="Last Name">
+						</div>
+						<div class="modal-signup-page-form-popup">
+							<div class="modal-form-error sign-up-error"  id="company-error">
+								<div class="modal-form-error-container">
+									<p class="modal-form-error-text">
+									Required valid e-mail
+									</p>
+									<img src="images/close.png" class="modal-form-error-close">
+								</div>
+								<div class="modal-form-error-arrow">
+								</div>
+							</div>
+							<input type="text" name="company" class="modal-signup-page-form-input" placeholder="Company">
+						</div>
+						<div class="modal-signup-page-form-popup">
+							<div class="modal-form-error sign-up-error" id="email-error">
+								<div class="modal-form-error-container">
+									<p class="modal-form-error-text">
+									Required valid e-mail
+									</p>
+									<img src="images/close.png" class="modal-form-error-close">
+								</div>
+								<div class="modal-form-error-arrow">
 								</div>
 							</div>
 							<input type="text" name="email" class="modal-signup-page-form-input" placeholder="Email Address">
 						</div>
-						<input type="text" name="createUsername" class="modal-signup-page-form-input" placeholder="Create Username">
+						<div class="modal-signup-page-form-popup">
+							<div class="modal-form-error sign-up-error" id="createUsername-error">
+								<div class="modal-form-error-container">
+									<p class="modal-form-error-text">
+									Required valid e-mail
+									</p>
+									<img src="images/close.png" class="modal-form-error-close">
+								</div>
+								<div class="modal-form-error-arrow">
+								</div>
+							</div>
+							<input type="text" name="createUsername" class="modal-signup-page-form-input" placeholder="Create Username">
+						</div>
 						<p class="modal-signup-page-form-text-small">We will send you an e-mail to finalize your account.</p>
 						<input type="submit" name="signup" class="modal-signup-page-form-button button-green" value="Sign Up">
 						<div class="modal-signup-page-form-or">
