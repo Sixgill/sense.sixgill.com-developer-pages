@@ -1,0 +1,52 @@
+/* Search results mobile styles */
+@import "../pagination/mobile.less";
+@import (reference) "./desktop.less";
+
+.search-results {
+
+	&-header {
+		width: 100%;
+		height: 127px;
+
+		&-title {
+			font-size: 18px;
+			letter-spacing: 0.5px;
+			margin-bottom: 4px;
+		}
+
+		&-subtitle {
+			font-size: 13.2px;
+			letter-spacing: 0.4px;
+		}
+	}
+
+	&-content {
+		padding: 11.5px 10px 11.5px 10px;
+
+		#pagination-mobile;
+		&-pagination {
+
+		}
+	}
+
+	&-form-wrapper {
+		margin-bottom: 53.5px;
+	}
+
+	&-list {
+
+	}
+
+	&-elem {
+		#search-results-elem;
+
+		&-link, &-description {
+			font-size: 16px;
+			font-weight: normal;
+		}
+		&-title {
+			line-height: 0.8;
+			margin-bottom: 4px;
+		}
+	}
+}

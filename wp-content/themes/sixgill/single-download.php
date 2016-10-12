@@ -1,78 +1,110 @@
 <?php
 	$resourcePageID = getPageBySlug('resources')->ID;
-?>
-<?php
+
 	if ( have_posts() ) while ( have_posts() ) : the_post();
 	$resourceType = get_field('resource_type');
-?>
 
-<div
-	class="resources-list-header responsive-background"
-	desktop-src="<?php the_field("header_image_desktop", $resourcePageID); ?>"
-	tablet-src="<?php the_field("header_image_tablet", $resourcePageID); ?>"
-	mobile-src="<?php the_field("header_image_mobile", $resourcePageID); ?>"
->
-	<h1 class="resources-list-header-title">
-		SIXGILL RESOURCES -
-		<?php echo $resourceType; ?>
-	</h1>
-	<h2 class="resources-list-header-subtitle">
-		<?php the_title(); ?>
-	</h2>
-</div>
-
-<?php
 	$downloadFileInfo = get_field('resource_file');
 	$downloadID = $downloadFileInfo['id'];
 	$downloadKey = md5(md5($downloadFileInfo['name']));
 	$downloadLink = '/download/?id=' . $downloadID . '&key=' . $downloadKey;
 ?>
 
+<div
+	class="resource-details-header responsive-background"
+	desktop-src="<?php the_field("header_image_desktop", $resourcePageID); ?>"
+	tablet-src="<?php the_field("header_image_tablet", $resourcePageID); ?>"
+	mobile-src="<?php the_field("header_image_mobile", $resourcePageID); ?>"
+>
+	<h1 class="resource-details-header-title ellipsis-2lines">
+		SIXGILL RESOURCES -
+		<?php echo $resourceType; ?>
+	</h1>
+	<h2 class="resource-details-header-subtitle ellipsis-2lines">
+		<?php the_title(); ?>
+	</h2>
+
+	<a
+		class="resource-details-download-button-link no-mobile-portrait-display no-mobile-landscape-display"
+		href="<?php echo get_site_url().$downloadLink; ?>"
+	>
+		<div class="resource-details-download-button button-blue">
+			Download for Free
+		</div>
+	</a>
+</div>
+
 <div class="resource-details" data-download-link="<?php echo $downloadLink; ?>">
-	<div class="resource-details-col-left">
-		<div class="resource-details-preview">
-			<?php the_field("resource_preview"); ?>
+
+	<div class="resource-details-share">
+		<div class="resource-details-share-title">
+			Share this <?php echo $resourceType; ?>
 		</div>
-		<div class="resource-details-preview-download-tip no-mobile-landscape-display no-mobile-portrait-display">
-			DOWNLOAD THE <?php echo $resouceTypee; ?> TO GET FULL ACCESS
+		<div class="resource-details-share-wrapper">
+			<?php
+				global $socialButtonsClasses;
+				$socialButtonsClasses = "resource-details-share-buttons";
+				include(locate_template('social_buttons.php'));
+			?>
 		</div>
 	</div>
 
-	<div class="resource-details-col-right">
-		<div class="resource-details-download-form">
-			<div class="resource-details-download-form-header">
-				DOWNLOAD THE <?php echo $resourceType; ?>
-			</div>
-			<div class="resource-details-download-form-wrapper">
-				<a href="<?php echo get_site_url().$downloadLink; ?>">
-					<div class="resource-details-download-form-submit-button button-blue resource-details-download-form-submit-button-temp">
-						Download Now
-					</div>
-				</a>
-				<?php /*dynamic_sidebar( 'download-access' );*/ ?>
-				<div class="resource-details-download-link hide">
-					<p>Downloading will start soon.</p>
-					<a href="<?php echo get_site_url().$downloadLink; ?>">Download this resource manually</a>
-				</div>
-			</div>
-		</div>
+	<?php
+		if(strcasecmp($resourceType, "ebook")==0) {
+			?>
 
-		<div class="resource-details-line"></div>
+			<iframe
+				src="/pdfjs/web/viewer.html?file=<?php echo $downloadFileInfo['url']; ?>"
+				class="resource-details-pdfviewer"
+				webkitallowfullscreen
+				mozallowfullscreen
+				allowfullscreen
+			>
+			</iframe>
 
-		<div class="resource-details-share">
-			<div class="resource-details-share-header">
-				SHARE THIS <?php echo $resourceType; ?>
-			</div>
-			<div class="resource-details-share-wrapper">
-				<?php
-					global $socialButtonsClasses;
-					$socialButtonsClasses = "resource-details-share-buttons";
-					include(locate_template('social_buttons.php'));
-				?>
-			</div>
-		</div>
+			<?php
+		} else if(strcasecmp($resourceType, "presentation")==0) {
+			$presentationSlides = get_field('presentation_slides');
+			$isThereSlides = is_array($firstSlides) && count($firstSlides);
 
+			if($isThereSlides) {
+				$slidesAutoHeight = get_field('slides_auto_height') ? 'on' : 'off';
+				$slidesRewindEnabled = get_field('slides_rewind_enabled') ? 'on' : 'off';
+				$carouselTitle = $firstSlidesTitle;
+				$carouselSlides = $firstSlides;
+				$carouselFile = $firstFile;
+				$carouselAutoHeight = $firstAutoHeight;
+				$carouselRewindEnabled = $firstRewindEnabled;
+				$carouselName = "";
+				include(locate_template('part-carousel.php'));
+			}
+
+
+		} else if(strcasecmp($resourceType, "webinar")==0) {
+			?>
+			<iframe
+				src="//player.vimeo.com/video/<?php the_field("vimeo_video_id"); ?>"
+				class="resource-details-vimeo-video"
+				webkitallowfullscreen
+				mozallowfullscreen
+				allowfullscreen
+			>
+			</iframe>
+			<?php
+		}
+	 ?>
+
+	<div class="resource-details-description">
+		<?php the_field("resource_description"); ?>
 	</div>
+
+	<a
+	 	class="resource-details-download-button-link no-mobile-portrait-display no-mobile-landscape-display"
+		href="<?php echo get_site_url().$downloadLink; ?>">
+		<div class="resource-details-download-button button-blue">
+			Download for Free
+		</div>
+	</a>
 </div>
 
 <?php endwhile; // end of the loop. ?>
