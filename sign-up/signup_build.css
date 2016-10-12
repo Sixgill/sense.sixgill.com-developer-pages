@@ -294,11 +294,6 @@ label {
 .not-visible {
   visibility: hidden!important;
 }
-/* For iOS Safari */
-input {
-  border-radius: 0 !important;
-  -webkit-appearance: none !important;
-}
 /* Menu Common styles */
 .primary-menu {
   display: -webkit-flex;
@@ -602,11 +597,14 @@ input {
   margin-top: 39px;
 }
 .new-pass-confirm > .modal-confirm-text {
-  margin: 36px auto 0 auto;
+  margin: 38px auto 0 auto;
 }
 .new-pass-confirm > .modal-confirm-link {
   margin-top: 20px;
   margin-bottom: 0;
+}
+.new-pass-confirm > .modal-confirm-title {
+  margin-top: 31px;
 }
 
 .pass-change {
@@ -657,6 +655,17 @@ input {
 
 .pass-res-confirm {
   height: 383px;
+}
+.pass-res-confirm > .modal-confirm-divider {
+  margin-top: 41px;
+}
+.pass-res-confirm > .modal-confirm-text {
+  padding: 8px;
+  margin: 28px auto 0 auto;
+}
+.pass-res-confirm > .modal-confirm-link {
+  margin-top: 13px;
+  margin-bottom: 0;
 }
 
 .modal-signup-page {
@@ -1853,18 +1862,4 @@ a.login-page-sign-up-link:focus {
 }
 .terms-bottom-bar-button-agree-link {
   margin: 0;
-}
-.terms-text {
-  overflow-y: hidden;
-  overflow-x: auto;
-}
-.terms-text p {
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  font-size: 16px;
-  line-height: 32.5px;
-  letter-spacing: 1px;
-  text-align: left;
-  color: #2e2e2e;
 }
