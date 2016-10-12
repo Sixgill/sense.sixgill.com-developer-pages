@@ -1470,6 +1470,18 @@ input {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+.login-page-divider {
+  margin-bottom: 24px;
+  margin-top: -24px;
+  width: 54px;
+  height: 1px;
+  background-color: #dfdfdf;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-page-white-string {
+  height: 20px;
+}
 .login-page-col-left {
   width: 51.96%;
   height: 100%;
@@ -1477,6 +1489,7 @@ input {
   padding: 0px 9.8% 0px 9.8%;
 }
 .login-page-col-left-info {
+  width: 372px;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -1512,6 +1525,8 @@ input {
           justify-content: center;
 }
 .login-page-logo {
+  margin-bottom: 44px;
+  margin-top: 14px;
   width: 281px;
   height: auto;
 }
@@ -1530,7 +1545,9 @@ input {
           align-items: center;
 }
 .login-page-form-wrapper {
-  margin-bottom: 23px;
+  max-width: 370px;
+  margin-top: -25px;
+  margin-bottom: 18px;
   width: 100%;
 }
 .login-page-form-title {

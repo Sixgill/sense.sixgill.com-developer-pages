@@ -68,12 +68,3 @@ bower_components/
 # idea components #
 .idea/
 .tmp/
-
-sign-up/new_pass_confirm.html
-sign-up/pass_change.html
-sign-up/pass_create.html
-sign-up/pass_reset.html
-sign-up/reset_pass_confirm.html
-sign-up/sign_up.html
-sign-up/sign_up_confirm.html
-sign-up/login.html
