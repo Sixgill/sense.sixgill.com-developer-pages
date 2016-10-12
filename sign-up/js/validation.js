@@ -12,49 +12,57 @@ jQuery(function($) {
 			field:$("input[name='firstName']"),
 			error_field:$("#firstName-error"),
 			type:null,
-			validated:true
+			validated:true,
+			clean:true
 		},
 		{
 			field:$("input[name='lastName']"),
 			error_field:$("#lastName-error"),
 			type:null,
-			validated:true
+			validated:true,
+			clean:true
 		},
 		{
 			field:$("input[name='company']"),
 			error_field:$("#company-error"),
 			type:null,
-			validated:true
+			validated:true,
+			clean:true
 		},
 		{
 			field:$("input[name='email']"),
 			error_field:$("#email-error"),
 			type:"email",
-			validated:true
+			validated:true,
+			clean:true
 		},
 		{
 			field:$("input[name='username']"),
 			error_field:$("#username-error"),
 			type:null,
-			validated:true
+			validated:true,
+			clean:true
 		},
 		{
 			field:password,
 			error_field:$("#password-error"),
 			type:"checkPassword",
-			validated:true
+			validated:true,
+			clean:true
 		},
 		{
 			field:newPassword,
 			error_field:$("#newPassword-error"),
 			type:"checkPassword",
-			validated:true
+			validated:true,
+			clean:true
 		},
 		{
 			field:confirmPassword,
 			error_field:$("#confirmPassword-error"),
 			type:"checkPassword",
-			validated:true
+			validated:true,
+			clean:true
 		}
 	];
 
@@ -127,6 +135,11 @@ jQuery(function($) {
 					return;
    				}
 			} else if(additionalCase == "checkPassword"){
+				for (var i = 0; i < passwordsIndex.length;i++) {
+					if(inputs[passwordsIndex[i]].clean){
+						return;
+					}
+				}
 				var validPasswords = isPasswordValid();
 				if(validPasswords.flag) {
 					passwordsIndex.forEach(function(i){
@@ -151,6 +164,11 @@ jQuery(function($) {
 		for(var i=0;i<inputs.length;i++){
 			if(inputs[i].field.length){
 				inputs[i].validated = false;
+				inputs[i].field.on("focus",(function(i){
+					return function(){
+						inputs[i].clean = false;
+					}
+				})(i));
 				inputs[i].field.on("blur",(function(i){
 					return function(){
 						inputs[i].validated = false;
