@@ -410,8 +410,8 @@ label {
 }
 .modal-confirm-image {
   display: block;
-  width: 86.5px;
-  height: 86.5px;
+  width: 90.5px;
+  height: 90.5px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -960,6 +960,20 @@ label {
 .sign-up-confirm {
   height: 386px;
 }
+.sign-up-confirm .modal-confirm {
+  padding-top: 47px;
+}
+.sign-up-confirm .modal-confirm-text {
+  width: 90%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.sign-up-confirm .modal-confirm-text:last-child {
+  margin-top: 0px;
+}
+.sign-up-confirm .modal-confirm-link {
+  display: inline-block;
+}
 
 .center {
   text-align: center !important;
@@ -1039,7 +1053,7 @@ label {
 }
 .footer-top-block-right {
   width: 165px;
-  margin-left: 50px;
+  /*margin-left: 50px;*/
 }
 .footer-top-text {
   font-size: 14px;
