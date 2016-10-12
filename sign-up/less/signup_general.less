@@ -4,15 +4,23 @@
 	font-stretch: normal;
 }
 
-#page-content-bg {
-	height: calc(~"100vh - 146px");
-	margin-left: 225px;
-	width: calc("100% - 225px");;
+#flex-center() {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+#page-content-bg() {
+	height: calc(~"100vh - 146px");
+	margin-left: 225px;
+	width: calc("100% - 225px");;
+	#flex-center;
 	background-image: url('images/featBg-desktop@1x.png');
 	background-size: cover;
 	font-family: "Lato";
 	#normal-font;
+}
+
+#defaultFontSize() {
+	font-size: 16px;
 }
