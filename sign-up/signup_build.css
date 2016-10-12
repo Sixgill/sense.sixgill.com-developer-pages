@@ -473,7 +473,7 @@ label {
   line-height: 0.61;
   letter-spacing: 1px;
   text-align: left;
-  color: #999999;
+  color: #000000;
 }
 .modal-confirm-button {
   height: 43px;
@@ -1581,7 +1581,7 @@ label {
   width: 100%;
 }
 .login-page-form-input {
-  font-size: 24px;
+  font-size: 14px;
   color: #2e2e2e;
   letter-spacing: 1px;
   width: 100%;
@@ -1592,6 +1592,7 @@ label {
   padding-top: 8px;
 }
 .login-page-form-input[type="password"] {
+  font-size: 24px;
   padding-left: 10px;
   padding-top: 17px;
   letter-spacing: 0.7px;
