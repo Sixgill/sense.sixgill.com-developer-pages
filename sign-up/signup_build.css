@@ -1658,9 +1658,10 @@ label {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  /*justify-content: space-between;*/
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;

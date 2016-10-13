@@ -75,23 +75,27 @@
 		<div class="modal-confirm-divider"></div>
 
 		<p class="modal-confirm-text">
-			Please enter your username or e-mail address associated with your account and we will send you a temporary password to access your account.
+			Please enter the username associated with your account and we will send you a temporary password to access your account.
 		</p>
-		
-		<div class="modal-error-popup">
-			<div class="modal-form-error" id="username-error">
-				<div class="modal-form-error-container">
-					<p class="modal-form-error-text">
-					Required valid e-mail
-					</p>
-					<img src="images/close.png" class="modal-form-error-close">
+		<form
+			action="#"
+			class="modal-submit-form"
+		>
+			<div class="modal-error-popup">
+				<div class="modal-form-error" id="username-error">
+					<div class="modal-form-error-container">
+						<p class="modal-form-error-text">
+						Required valid e-mail
+						</p>
+						<img src="images/close.png" class="modal-form-error-close">
+					</div>
+					<div class="modal-form-error-arrow">
+					</div>
 				</div>
-				<div class="modal-form-error-arrow">
-				</div>
+				<input type="text" name="username" class="modal-confirm-input" placeholder="Username or Email Address">
 			</div>
-			<input type="text" name="username" class="modal-confirm-input" placeholder="Username or Email Address">
-		</div>
-		<input type="submit" name="formSubmit" class="modal-confirm-button button-green" value="Send Temporary Password">
+			<input type="submit" name="formSubmit" class="modal-confirm-button button-green" value="Send Temporary Password">
+		</form>
 	</div>
 </div>
 <!-- inject:footer:html -->
