@@ -5,11 +5,11 @@ jQuery(function($) {
 	var passwordsIndex = [];
 	var password = $("input[name='password']");
 	if(password.length){
-		passwordsIndex.push(5);
+		passwordsIndex.push(2);
 	}
 	var newPassword = $("input[name='newPassword']");
 	if(newPassword.length){
-		passwordsIndex.push(6);
+		passwordsIndex.push(3);
 	}
 	var confirmPassword = $("input[name='confirmPassword']");
 	if(confirmPassword.length){
@@ -22,24 +22,6 @@ jQuery(function($) {
 			field:$("input[name='firstName']"),
 			error_field:$("#firstName-error"),
 			type:null,
-			validated:true
-		},
-		{
-			field:$("input[name='lastName']"),
-			error_field:$("#lastName-error"),
-			type:null,
-			validated:true
-		},
-		{
-			field:$("input[name='company']"),
-			error_field:$("#company-error"),
-			type:null,
-			validated:true
-		},
-		{
-			field:$("input[name='email']"),
-			error_field:$("#email-error"),
-			type:"email",
 			validated:true
 		},
 		{
@@ -58,6 +40,24 @@ jQuery(function($) {
 			field:newPassword,
 			error_field:$("#newPassword-error"),
 			type:"checkPassword",
+			validated:true
+		},
+		{
+			field:$("input[name='lastName']"),
+			error_field:$("#lastName-error"),
+			type:null,
+			validated:true
+		},
+		{
+			field:$("input[name='company']"),
+			error_field:$("#company-error"),
+			type:null,
+			validated:true
+		},
+		{
+			field:$("input[name='email']"),
+			error_field:$("#email-error"),
+			type:"email",
 			validated:true
 		},
 		{
@@ -187,6 +187,7 @@ jQuery(function($) {
 		checkEnable();
 	}
 	function init(){
+		var firstValidField = true;
 		for(var i=0;i<inputs.length;i++){
 			if(inputs[i].field.length){
 
@@ -252,6 +253,10 @@ jQuery(function($) {
 				})(i));
 				if(inputs[i].field[0].value){
 					validate(inputs[i].field,inputs[i].error_field,inputs[i].type,i);
+				}
+				if(firstValidField) {
+					firstValidField = false;
+					inputs[i].field.focus();
 				}
 			}
 		}
