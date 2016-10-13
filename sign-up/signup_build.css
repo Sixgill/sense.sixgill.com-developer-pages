@@ -660,6 +660,7 @@ label {
   margin-top: 39px;
 }
 .new-pass-confirm > .modal-confirm-text {
+  letter-spacing: 1.1px;
   margin: 38px auto 0 auto;
 }
 .new-pass-confirm > .modal-confirm-link {
@@ -702,7 +703,8 @@ label {
 }
 
 .modal-confirm.pass-create {
-  height: 361px;
+  height: 360px;
+  width: 580px;
   padding-top: 11px;
 }
 .modal-confirm.pass-create .modal-confirm-title {
@@ -710,19 +712,32 @@ label {
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.65px;
   text-align: center;
   color: #2e2e2e;
-  margin-top: 36px;
+  margin-top: 37px;
+  margin-left: 4px;
 }
 .modal-confirm.pass-create .modal-confirm-text {
+  letter-spacing: 1.15px;
   width: 80%;
   margin-top: 23px;
   font-weight: 300;
   margin-bottom: 26px;
+  margin-left: 60px;
 }
 .modal-confirm.pass-create .modal-form-error {
   left: 105px;
+}
+.modal-confirm.pass-create .modal-confirm-divider {
+  margin-top: 34px;
+}
+.modal-confirm.pass-create .modal-confirm-input {
+  padding-left: 12px;
+  padding-bottom: 4px;
+}
+.modal-confirm.pass-create .modal-confirm-button {
+  padding-bottom: 2px;
 }
 
 .modal-confirm.pass-reset {
@@ -1002,21 +1017,34 @@ label {
 }
 
 .sign-up-confirm {
-  height: 386px;
+  height: 385px;
 }
 .sign-up-confirm .modal-confirm {
   padding-top: 47px;
 }
 .sign-up-confirm .modal-confirm-text {
   width: 90%;
-  margin-top: 40px;
+  margin-top: 37px;
   margin-bottom: 10px;
+  margin-left: 30px;
 }
 .sign-up-confirm .modal-confirm-text:last-child {
   margin-top: 0px;
 }
 .sign-up-confirm .modal-confirm-link {
   display: inline-block;
+}
+.sign-up-confirm .modal-confirm-image {
+  margin-top: -2px;
+  width: 89px;
+  height: 89px;
+}
+.sign-up-confirm .modal-confirm-title {
+  margin-left: 6px;
+  margin-top: 35px;
+}
+.sign-up-confirm .modal-confirm-divider {
+  margin-top: 40px;
 }
 
 .center {
