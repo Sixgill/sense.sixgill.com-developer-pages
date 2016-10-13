@@ -651,6 +651,12 @@ label {
 .disabled:hover {
   background-color: #999!important;
 }
+.error_field {
+  border: solid 1px #ee6f7f !important;
+}
+.error_field:focus {
+  outline-color: #ee6f7f !important;
+}
 
 
 .new-pass-confirm {
@@ -660,6 +666,7 @@ label {
   margin-top: 39px;
 }
 .new-pass-confirm > .modal-confirm-text {
+  letter-spacing: 1.1px;
   margin: 38px auto 0 auto;
 }
 .new-pass-confirm > .modal-confirm-link {

@@ -125,11 +125,13 @@ jQuery(function($) {
 		return reg.test(value);
 	}
 
-	function validate(field,error_field,additionalCase,index){
+	function validate(elem_field,error_field,additionalCase,index){
+		var field = elem_field[0];
 		if(!field || !field.value){
 			error_field.find("p")[0].innerHTML = "Please fill out the field";
 			error_field.show();
 			inputs[index].validated = false;
+			elem_field.addClass("error_field");
 			disableSubmit();
 			return;
 		}
@@ -138,6 +140,7 @@ jQuery(function($) {
 			error_field.show();
 			disableSubmit();
 			inputs[index].validated = false;
+			elem_field.addClass("error_field");
 			return;
 		}
 		if(additionalCase) {
@@ -147,6 +150,7 @@ jQuery(function($) {
 					error_field.show();
 					disableSubmit();
 					inputs[index].validated = false;
+					elem_field.addClass("error_field");
 					return;
    				}
 			} else if(additionalCase == "checkPassword"){
@@ -159,6 +163,7 @@ jQuery(function($) {
 				if(validPasswords.flag) {
 					passwordsIndex.forEach(function(i){
 						inputs[i].validated = true;
+						inputs[i].field.removeClass("error_field");
 						inputs[i].error_field.hide();
 					});
 					checkEnable();
@@ -171,12 +176,14 @@ jQuery(function($) {
 					inputs[validPasswords.index].error_field.show();
 					disableSubmit();
 					inputs[index].validated = false;
+					elem_field.addClass("error_field");
 					return;
 				}
 			} 
 		}
 		error_field.hide();
 		inputs[index].validated = true;
+		elem_field.removeClass("error_field");
 		checkEnable();
 	}
 	function init(){
@@ -193,7 +200,7 @@ jQuery(function($) {
 					inputs[i].field.bind("input",(function(i){
 						return function(){
 							inputs[i].validated = false;
-							validate(inputs[i].field[0],inputs[i].error_field,inputs[i].type,i);
+							validate(inputs[i].field,inputs[i].error_field,inputs[i].type,i);
 						}
 					})(i));
 					inputs[i].error_field.find("img").on("click",(function(i){
@@ -214,7 +221,7 @@ jQuery(function($) {
 					})(i));
 					inputs[i].field.on("blur",(function(i){
 						return function(){
-							validate(inputs[i].field[0],inputs[i].error_field,inputs[i].type,i);
+							validate(inputs[i].field,inputs[i].error_field,inputs[i].type,i);
 						}
 					})(i));
 				} else if(inputs[i].type === "checkPassword") {
@@ -225,6 +232,7 @@ jQuery(function($) {
 							if((0 < inputs[i].field[0].value.length < 100) && validity.flag) {
 								passwordsIndex.forEach(function(i){
 									inputs[i].validated = true;
+									inputs[i].field.removeClass("error_field");
 									inputs[i].error_field.hide();
 								});
 								checkEnable();
@@ -233,7 +241,7 @@ jQuery(function($) {
 					})(i));
 					inputs[i].field.on("blur",(function(i){
 						return function(){
-							validate(inputs[i].field[0],inputs[i].error_field,inputs[i].type,i);
+							validate(inputs[i].field,inputs[i].error_field,inputs[i].type,i);
 						}
 					})(i));
 				}
@@ -243,7 +251,7 @@ jQuery(function($) {
 					}
 				})(i));
 				if(inputs[i].field[0].value){
-					validate(inputs[i].field[0],inputs[i].error_field,inputs[i].type,i);
+					validate(inputs[i].field,inputs[i].error_field,inputs[i].type,i);
 				}
 			}
 		}
