@@ -651,6 +651,12 @@ label {
 .disabled:hover {
   background-color: #999!important;
 }
+.error_field {
+  border: solid 1px #ee6f7f !important;
+}
+.error_field:focus {
+  outline-color: #ee6f7f !important;
+}
 .signup-error-message {
   padding: 15px;
   margin: 0px 0px 10px 0px;
@@ -824,7 +830,7 @@ label {
   height: 557.5px;
   background-color: #ffffff;
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.08);
-  margin: 28px 0px 28px 0px;
+  padding: 28px 0px 28px 0px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1551,7 +1557,7 @@ label {
   height: 463px;
   background-color: #ffffff;
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.08);
-  margin: 28px 0px 28px 0px;
+  padding: 28px 0px 28px 0px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
