@@ -347,7 +347,7 @@ label {
 		text-align: left;
 		color: #000000;
 	}
-	
+
 	&-button {
 		height: 43px;
 		width: 370px;
@@ -454,6 +454,7 @@ label {
 	  visibility: visible;
 	}
 }
+
 .modal-form-error {
 	text-align: center;
 	height: 31px;
@@ -462,10 +463,12 @@ label {
 	position: absolute;
 	bottom: 50px;
 	left: 0;
+
 	&-container {
-    	display: flex;
-    	align-items: flex-end;
-    }
+  	display: flex;
+  	align-items: flex-end;
+  }
+
 	&-close {
 	  	background-color: #d74758;
 	  	height: 20px;
@@ -506,18 +509,34 @@ label {
 		-o-transform:      rotate(45deg);
 	}
 }
+
 .modal-error-popup {
 	position: relative;
 }
+
 .disabled {
 	background-color:#999!important;
 	&:hover {
 		background-color:#999!important;
 	}
 }
+
 .error_field {
 	border: solid 1px #ee6f7f !important;
 	&:focus {
 		outline-color: #ee6f7f !important;
+	}
+}
+
+.signup-error-message {
+	padding: 15px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #ebccd1;
+	border-radius: 4px;
+	color: #a94442;
+	background-color: #f2dede;
+
+	&:empty, &:target {
+		display: none;
 	}
 }

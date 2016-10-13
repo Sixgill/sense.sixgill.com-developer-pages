@@ -28,7 +28,7 @@
 				letter-spacing: 1px;
 				text-align: left;
 				color: #2e2e2e;
-				max-width: 406x;
+				max-width: 406px;
 				margin-top: 9px;
 
 				& li {
@@ -96,13 +96,23 @@
 			height: 100%;
 		}
 
+		.sign-up-form-row {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+				.modal-error-popup {
+						width: 49%;
+				}
+		}
+
 		&-input {
 			width: 100%;
 			height: 43px;
 			background-color: #FFFFFF;
 			border: solid 1px #dfdfdf;
 			margin-bottom: 9px;
-			padding-left: 6px;
+			padding-left: 11px;
 			display: block;
 			font-family: 'Lato';
 			font-size: 14px;
@@ -203,13 +213,6 @@
 			#greenButtonBGColors;
 		}
 	}
-}
-
-.input-half {
-	width: 49%;
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 #lastName {

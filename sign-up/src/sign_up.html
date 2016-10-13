@@ -10,13 +10,24 @@
 					alt="Sign up page Sixgill Sence logo"
 					src="images/logoSense.svg"
 				>
+				
 				<div class="modal-signup-page-divider"></div>
+
 				<div class="modal-signup-page-col-left-info">
 					<ul>
-						<li>Create and monitor proximity-triggered events for enterprise applications</li>
-						<li>Manage devices and landmarks</li>
-						<li>Download SDKs to power mobile apps</li>
-						<li>Free developer account for up to 250 device</li>
+						<li>
+							Create and monitor proximity-triggered events for enterprise applications
+						</li>
+
+						<li>
+							Manage devices and landmarks
+						</li>
+						<li>
+							Download SDKs to power mobile apps
+						</li>
+						<li>
+							Free developer account for up to 250 device
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -30,37 +41,48 @@
 						<h2 class="modal-signup-page-form-title">
 							SIGN UP
 						</h2>
-						<div class="modal-error-popup input-half">
-							<div class="modal-form-error" id="firstName-error">
-								<div class="modal-form-error-container">
-									<p class="modal-form-error-text">
-									Required valid e-mail
-									</p>
-									<img src="images/close.png" class="modal-form-error-close">
+
+						<!-- <div class="signup-error-message"></div>  - you can leave it empty (no text nodes or childs) to hide -->
+						<div id="hide-error-message" class="signup-error-message ">This is an example of backend validation error</div>
+						<!-- Delete the id -->
+
+						<div class="sign-up-form-row">
+
+							<div class="modal-error-popup">
+								<div class="modal-form-error" id="firstName-error">
+									<div class="modal-form-error-container">
+										<p class="modal-form-error-text">
+											Required valid e-mail
+										</p>
+										<img src="images/close.png" class="modal-form-error-close">
+									</div>
+
+									<div class="modal-form-error-arrow"></div>
 								</div>
-								<div class="modal-form-error-arrow">
-								</div>
+								<input type="text" name="firstName" class="modal-signup-page-form-input left" placeholder="First Name">
 							</div>
-							<input type="text" name="firstName" class="modal-signup-page-form-input left" placeholder="First Name">
-						</div>
-						<div class="modal-error-popup input-half">
-							<div class="modal-form-error" id="lastName-error">
-								<div class="modal-form-error-container">
-									<p class="modal-form-error-text">
-									Required valid e-mail
-									</p>
-									<img src="images/close.png" class="modal-form-error-close">
+
+							<div class="modal-error-popup">
+								<div class="modal-form-error" id="lastName-error">
+									<div class="modal-form-error-container">
+										<p class="modal-form-error-text">
+										Required valid e-mail
+										</p>
+										<img src="images/close.png" class="modal-form-error-close">
+									</div>
+
+									<div class="modal-form-error-arrow"></div>
 								</div>
-								<div class="modal-form-error-arrow">
-								</div>
+								<input type="text" name="lastName" class="modal-signup-page-form-input right" placeholder="Last Name">
 							</div>
-							<input type="text" name="lastName" class="modal-signup-page-form-input right" placeholder="Last Name">
+
 						</div>
+
 						<div class="modal-error-popup">
 							<div class="modal-form-error"  id="company-error">
 								<div class="modal-form-error-container">
 									<p class="modal-form-error-text">
-									Required valid e-mail
+										Required valid e-mail
 									</p>
 									<img src="images/close.png" class="modal-form-error-close">
 								</div>
@@ -73,7 +95,7 @@
 							<div class="modal-form-error" id="email-error">
 								<div class="modal-form-error-container">
 									<p class="modal-form-error-text">
-									Required valid e-mail
+										Required valid e-mail
 									</p>
 									<img src="images/close.png" class="modal-form-error-close">
 								</div>
@@ -86,7 +108,7 @@
 							<div class="modal-form-error" id="username-error">
 								<div class="modal-form-error-container">
 									<p class="modal-form-error-text">
-									Required valid e-mail
+										Required valid e-mail
 									</p>
 									<img src="images/close.png" class="modal-form-error-close">
 								</div>
@@ -95,15 +117,24 @@
 							</div>
 							<input type="text" name="username" class="modal-signup-page-form-input" placeholder="Create Username">
 						</div>
-						<p class="modal-signup-page-form-text-small">We will send you an e-mail to finalize your account.</p>
+						<p class="modal-signup-page-form-text-small">
+							We will send you an e-mail to finalize your account.
+						</p>
 						<input type="submit" name="formSubmit" class="modal-signup-page-form-button button-green" value="Sign Up">
+
 						<div class="modal-signup-page-form-or">
 							<div class="modal-signup-page-form-or-line"></div>
 							<div class="modal-signup-page-form-or-text">OR</div>
 							<div class="modal-signup-page-form-or-line"></div>
 						</div>
-						<p class="modal-signup-page-form-text-normal">Already have a Sixgill Account?</p>
-						<a class="modal-signup-page-form-text-link" href="#">Sign in Here</a>
+
+						<p class="modal-signup-page-form-text-normal">
+							Already have a Sixgill Account?
+						</p>
+
+						<a class="modal-signup-page-form-text-link" href="#">
+							Sign in Here
+						</a>
 					</form>
 				</div>
 			</div>

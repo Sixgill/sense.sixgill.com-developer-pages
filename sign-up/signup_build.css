@@ -657,6 +657,18 @@ label {
 .error_field:focus {
   outline-color: #ee6f7f !important;
 }
+.signup-error-message {
+  padding: 15px;
+  margin: 0px 0px 10px 0px;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+  color: #a94442;
+  background-color: #f2dede;
+}
+.signup-error-message:empty,
+.signup-error-message:target {
+  display: none;
+}
 
 
 .new-pass-confirm {
@@ -709,7 +721,8 @@ label {
 }
 
 .modal-confirm.pass-create {
-  height: 361px;
+  height: 360px;
+  width: 580px;
   padding-top: 11px;
 }
 .modal-confirm.pass-create .modal-confirm-title {
@@ -717,19 +730,32 @@ label {
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.65px;
   text-align: center;
   color: #2e2e2e;
-  margin-top: 36px;
+  margin-top: 37px;
+  margin-left: 4px;
 }
 .modal-confirm.pass-create .modal-confirm-text {
+  letter-spacing: 1.15px;
   width: 80%;
   margin-top: 23px;
   font-weight: 300;
   margin-bottom: 26px;
+  margin-left: 60px;
 }
 .modal-confirm.pass-create .modal-form-error {
   left: 105px;
+}
+.modal-confirm.pass-create .modal-confirm-divider {
+  margin-top: 34px;
+}
+.modal-confirm.pass-create .modal-confirm-input {
+  padding-left: 12px;
+  padding-bottom: 4px;
+}
+.modal-confirm.pass-create .modal-confirm-button {
+  padding-bottom: 2px;
 }
 
 .modal-confirm.pass-reset {
@@ -825,7 +851,7 @@ label {
   letter-spacing: 1px;
   text-align: left;
   color: #2e2e2e;
-  max-width: 406x;
+  max-width: 406px;
   margin-top: 9px;
 }
 .modal-signup-page-col-left-info li {
@@ -891,13 +917,27 @@ label {
   width: 48.04%;
   height: 100%;
 }
+.modal-signup-page-form .sign-up-form-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.modal-signup-page-form .sign-up-form-row .modal-error-popup {
+  width: 49%;
+}
 .modal-signup-page-form-input {
   width: 100%;
   height: 43px;
   background-color: #FFFFFF;
   border: solid 1px #dfdfdf;
   margin-bottom: 9px;
-  padding-left: 6px;
+  padding-left: 11px;
   display: block;
   font-family: 'Lato';
   font-size: 14px;
@@ -998,32 +1038,39 @@ label {
 .modal-signup-page-form-button:hover {
   background-color: #35b042;
 }
-.input-half {
-  width: 49%;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
 #lastName {
   right: 0;
 }
 
 .sign-up-confirm {
-  height: 386px;
+  height: 385px;
 }
 .sign-up-confirm .modal-confirm {
   padding-top: 47px;
 }
 .sign-up-confirm .modal-confirm-text {
   width: 90%;
-  margin-top: 40px;
+  margin-top: 37px;
   margin-bottom: 10px;
+  margin-left: 30px;
 }
 .sign-up-confirm .modal-confirm-text:last-child {
   margin-top: 0px;
 }
 .sign-up-confirm .modal-confirm-link {
   display: inline-block;
+}
+.sign-up-confirm .modal-confirm-image {
+  margin-top: -2px;
+  width: 89px;
+  height: 89px;
+}
+.sign-up-confirm .modal-confirm-title {
+  margin-left: 6px;
+  margin-top: 35px;
+}
+.sign-up-confirm .modal-confirm-divider {
+  margin-top: 40px;
 }
 
 .center {
@@ -1503,6 +1550,7 @@ label {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
+  min-height: 510px;
 }
 .login-page-content-block {
   width: 89.54%;
@@ -1529,6 +1577,21 @@ label {
 .login-page-white-string {
   height: 20px;
 }
+.login-page-col-left,
+.login-page-col-right {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .login-page-col-left {
   width: 51.96%;
   height: 100%;
@@ -1551,30 +1614,22 @@ label {
   height: 0px;
   border-top: 1px solid #dfdfdf;
 }
+.login-page-col-left-list {
+  padding-left: 37px;
+}
+.login-page-col-left-list-item {
+  margin-left: 1px;
+}
 .login-page-col-right {
   width: 48.04%;
   height: 100%;
-  padding: 0px 5.78% 0px 5.78%;
-}
-.login-page-col-left,
-.login-page-col-right {
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 0px 5.79% 0px 6%;
 }
 .login-page-logo {
-  margin-bottom: 44px;
+  margin-left: 0.5%;
+  margin-bottom: 43px;
   margin-top: 14px;
-  width: 281px;
+  width: 283px;
   height: auto;
 }
 .login-page-form {
@@ -1606,6 +1661,7 @@ label {
   letter-spacing: 2.1px;
   text-align: center;
   color: #2e2e2e;
+  margin: 22px 0px 26px 0px;
 }
 .login-page-form-inputs {
   width: 100%;
@@ -1624,7 +1680,7 @@ label {
 .login-page-form-input[type="password"] {
   font-size: 24px;
   padding-left: 10px;
-  padding-top: 17px;
+  padding-top: 15px;
   letter-spacing: 0.7px;
 }
 .login-page-form-input-wrapper {
@@ -1754,7 +1810,8 @@ label {
   margin: 0px 19.5px 0px 19.5px;
 }
 .login-page-sign-up-text {
-  margin-bottom: 13.5px;
+  margin-bottom: 10.5px;
+  margin-top: 21px;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
