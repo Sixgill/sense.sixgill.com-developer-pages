@@ -7,47 +7,52 @@
 		<div class="modal-confirm-divider"></div>
 		<p class="modal-confirm-text">To change your password, please enter in your
 current password, then your new password.</p>
-		<div class="modal-error-popup">
-			<div class="modal-form-error sign-up-error" id="password-error">
-				<div class="modal-form-error-container">
-					<p class="modal-form-error-text">
-					Required valid e-mail
-					</p>
-					<img src="images/close.png" class="modal-form-error-close">
+		<form
+			action="#"
+			class="modal-submit-form"
+		>
+			<div class="modal-error-popup">
+				<div class="modal-form-error sign-up-error" id="password-error">
+					<div class="modal-form-error-container">
+						<p class="modal-form-error-text">
+						Required valid e-mail
+						</p>
+						<img src="images/close.png" class="modal-form-error-close">
+					</div>
+					<div class="modal-form-error-arrow">
+					</div>
 				</div>
-				<div class="modal-form-error-arrow">
-				</div>
+				<input type="text" name="password" class="modal-confirm-input current-password" placeholder="Current Password">
 			</div>
-			<input type="text" name="password" class="modal-confirm-input current-password" placeholder="Current Password">
-		</div>
-		<div class="modal-error-popup">
-			<div class="modal-form-error sign-up-error" id="newPassword-error">
-				<div class="modal-form-error-container">
-					<p class="modal-form-error-text">
-					Required valid e-mail
-					</p>
-					<img src="images/close.png" class="modal-form-error-close">
+			<div class="modal-error-popup">
+				<div class="modal-form-error sign-up-error" id="newPassword-error">
+					<div class="modal-form-error-container">
+						<p class="modal-form-error-text">
+						Required valid e-mail
+						</p>
+						<img src="images/close.png" class="modal-form-error-close">
+					</div>
+					<div class="modal-form-error-arrow">
+					</div>
 				</div>
-				<div class="modal-form-error-arrow">
-				</div>
+				<input type="text" name="newPassword" class="modal-confirm-input new-password" placeholder="New Password">
 			</div>
-			<input type="text" name="newPassword" class="modal-confirm-input new-password" placeholder="New Password">
-		</div>
-		<div class="modal-error-popup">
-			<div class="modal-form-error sign-up-error" id="confirmPassword-error">
-				<div class="modal-form-error-container">
-					<p class="modal-form-error-text">
-					Required valid e-mail
-					</p>
-					<img src="images/close.png" class="modal-form-error-close">
+			<div class="modal-error-popup">
+				<div class="modal-form-error sign-up-error" id="confirmPassword-error">
+					<div class="modal-form-error-container">
+						<p class="modal-form-error-text">
+						Required valid e-mail
+						</p>
+						<img src="images/close.png" class="modal-form-error-close">
+					</div>
+					<div class="modal-form-error-arrow">
+					</div>
 				</div>
-				<div class="modal-form-error-arrow">
-				</div>
+				<input type="text" name="confirmPassword" class="modal-confirm-input" placeholder="New Password">
 			</div>
-			<input type="text" name="confirmPassword" class="modal-confirm-input" placeholder="New Password">
-		</div>
-		<input type="submit" name="formSubmit" class="modal-confirm-button button-green" value="Change Password">
-		<p class="modal-confirm-link cancel-link"><a href="#">Cancel</a></p>
+			<input type="submit" name="formSubmit" class="modal-confirm-button button-green" value="Change Password">
+			<p class="modal-confirm-link cancel-link"><a href="#">Cancel</a></p>
+		</form>
 	</div>
 </div>
 <!-- inject:footer:html -->

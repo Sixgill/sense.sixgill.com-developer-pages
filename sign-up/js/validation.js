@@ -1,79 +1,82 @@
 jQuery(function($) {
 	var submit = $("input[name=formSubmit]");
+	var form = $("form.modal-submit-form");
 	submit.prop('disabled',true).addClass('disabled');
+	var passwordsIndex = [];
 	var password = $("input[name='password']");
+	if(password.length){
+		passwordsIndex.push(5);
+	}
 	var newPassword = $("input[name='newPassword']");
+	if(newPassword.length){
+		passwordsIndex.push(6);
+	}
 	var confirmPassword = $("input[name='confirmPassword']");
+	if(confirmPassword.length){
+		passwordsIndex.push(7);
+	}
 	var loginUsernameInput = $(".login-username-input");
 	var loginPasswordInput = $(".login-password-input");
-	var passwordsIndex = [5,6,7];
 	var inputs = [
 		{
 			field:$("input[name='firstName']"),
 			error_field:$("#firstName-error"),
 			type:null,
-			validated:true,
-			clean:true
+			validated:true
 		},
 		{
 			field:$("input[name='lastName']"),
 			error_field:$("#lastName-error"),
 			type:null,
-			validated:true,
-			clean:true
+			validated:true
 		},
 		{
 			field:$("input[name='company']"),
 			error_field:$("#company-error"),
 			type:null,
-			validated:true,
-			clean:true
+			validated:true
 		},
 		{
 			field:$("input[name='email']"),
 			error_field:$("#email-error"),
 			type:"email",
-			validated:true,
-			clean:true
+			validated:true
 		},
 		{
 			field:$("input[name='username']"),
 			error_field:$("#username-error"),
 			type:null,
-			validated:true,
-			clean:true
+			validated:true
 		},
 		{
 			field:password,
 			error_field:$("#password-error"),
 			type:"checkPassword",
-			validated:true,
-			clean:true
+			validated:true
 		},
 		{
 			field:newPassword,
 			error_field:$("#newPassword-error"),
 			type:"checkPassword",
-			validated:true,
-			clean:true
+			validated:true
 		},
 		{
 			field:confirmPassword,
 			error_field:$("#confirmPassword-error"),
 			type:"checkPassword",
-			validated:true,
-			clean:true
+			validated:true
 		}
 	];
 
-	function checkDisabled(){
+	function checkEnable(){
 		for(var i=0;i<inputs.length;i++){
 			if(!inputs[i].validated){
 				submit.prop('disabled',true).addClass('disabled');
-				return;
+				return false;
 			}
 		}
 		submit.prop('disabled',false).removeClass('disabled');
+		return true;
 	}
 	function disableSubmit(){
 		submit.prop('disabled',true).addClass('disabled');
@@ -84,27 +87,24 @@ jQuery(function($) {
 			if(!password[0].value) {
 				return {
 					flag:false,
-					message:"Password can not be empty"
+					message:"Password can not be empty",
+					index:5
 				};
 			}
 			if(newPassword.length && newPassword[0].value == password[0].value) {
 				return {
 					flag:false,
-					message:"Your new password and password can not be the same"
+					message:"Your new password and password can not be the same",
+					index:6
 				};
 			}
 		}
 		if(newPassword.length && confirmPassword.length){
-			if(!newPassword[0].value || !confirmPassword[0].value) {
-				return {
-					flag:false,
-					message:"Password and confirm password can not be empty"
-				};
-			}
 			if(newPassword[0].value != confirmPassword[0].value){
 				return {
 					flag:false,
-					message:"Confirm password and password are not the same"
+					message:"Confirm password and password are not the same",
+					index:7
 				};
 			}
 		}
@@ -136,7 +136,7 @@ jQuery(function($) {
    				}
 			} else if(additionalCase == "checkPassword"){
 				for (var i = 0; i < passwordsIndex.length;i++) {
-					if(inputs[passwordsIndex[i]].clean){
+					if(!inputs[passwordsIndex[i]].field[0].value){
 						return;
 					}
 				}
@@ -146,11 +146,11 @@ jQuery(function($) {
 						inputs[i].validated = true;
 						inputs[i].error_field.hide();
 					});
-					checkDisabled();
+					checkEnable();
 					return;
 				} else {
-					error_field.find("p")[0].innerHTML = validPasswords.message;
-					error_field.show();
+					inputs[validPasswords.index].error_field.find("p")[0].innerHTML = validPasswords.message;
+					inputs[validPasswords.index].error_field.show();
 					disableSubmit();
 					return;
 				}
@@ -158,17 +158,12 @@ jQuery(function($) {
 		}
 		error_field.hide();
 		inputs[index].validated = true;
-		checkDisabled();
+		checkEnable();
 	}
 	function init(){
 		for(var i=0;i<inputs.length;i++){
 			if(inputs[i].field.length){
 				inputs[i].validated = false;
-				inputs[i].field.on("focus",(function(i){
-					return function(){
-						inputs[i].clean = false;
-					}
-				})(i));
 				inputs[i].field.on("blur",(function(i){
 					return function(){
 						inputs[i].validated = false;
@@ -181,6 +176,12 @@ jQuery(function($) {
 					}
 				})(i));
 			}
+		}
+		if(form.length){
+			form.on("submit",function(ev){
+				submit.focus();
+				return checkEnable();
+			});
 		}
 		if(loginUsernameInput.length) {
 			loginUsernameInput.focus(function(){
