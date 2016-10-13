@@ -651,6 +651,12 @@ label {
 .disabled:hover {
   background-color: #999!important;
 }
+.error_field {
+  border: solid 1px #ee6f7f !important;
+}
+.error_field:focus {
+  outline-color: #ee6f7f !important;
+}
 .signup-error-message {
   padding: 15px;
   margin: 0px 0px 10px 0px;
