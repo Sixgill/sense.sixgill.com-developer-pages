@@ -149,6 +149,9 @@ jQuery(function($) {
 					checkEnable();
 					return;
 				} else {
+					for (var i = 0; i < passwordsIndex.length;i++) {
+						inputs[passwordsIndex[i]].error_field.hide();
+					}
 					inputs[validPasswords.index].error_field.find("p")[0].innerHTML = validPasswords.message;
 					inputs[validPasswords.index].error_field.show();
 					disableSubmit();
