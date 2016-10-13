@@ -651,6 +651,18 @@ label {
 .disabled:hover {
   background-color: #999!important;
 }
+.signup-error-message {
+  padding: 15px;
+  margin: 0px 0px 10px 0px;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+  color: #a94442;
+  background-color: #f2dede;
+}
+.signup-error-message:empty,
+.signup-error-message:target {
+  display: none;
+}
 
 
 .new-pass-confirm {
@@ -660,6 +672,7 @@ label {
   margin-top: 39px;
 }
 .new-pass-confirm > .modal-confirm-text {
+  letter-spacing: 1.1px;
   margin: 38px auto 0 auto;
 }
 .new-pass-confirm > .modal-confirm-link {
@@ -1522,6 +1535,21 @@ label {
 .login-page-white-string {
   height: 20px;
 }
+.login-page-col-left,
+.login-page-col-right {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .login-page-col-left {
   width: 51.96%;
   height: 100%;
@@ -1544,30 +1572,22 @@ label {
   height: 0px;
   border-top: 1px solid #dfdfdf;
 }
+.login-page-col-left-list {
+  padding-left: 37px;
+}
+.login-page-col-left-list-item {
+  margin-left: 1px;
+}
 .login-page-col-right {
   width: 48.04%;
   height: 100%;
-  padding: 0px 5.78% 0px 5.78%;
-}
-.login-page-col-left,
-.login-page-col-right {
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 0px 5.79% 0px 6%;
 }
 .login-page-logo {
-  margin-bottom: 44px;
+  margin-left: 0.5%;
+  margin-bottom: 43px;
   margin-top: 14px;
-  width: 281px;
+  width: 283px;
   height: auto;
 }
 .login-page-form {
@@ -1599,6 +1619,7 @@ label {
   letter-spacing: 2.1px;
   text-align: center;
   color: #2e2e2e;
+  margin: 22px 0px 26px 0px;
 }
 .login-page-form-inputs {
   width: 100%;
@@ -1617,7 +1638,7 @@ label {
 .login-page-form-input[type="password"] {
   font-size: 24px;
   padding-left: 10px;
-  padding-top: 17px;
+  padding-top: 15px;
   letter-spacing: 0.7px;
 }
 .login-page-form-input-wrapper {
@@ -1747,7 +1768,8 @@ label {
   margin: 0px 19.5px 0px 19.5px;
 }
 .login-page-sign-up-text {
-  margin-bottom: 13.5px;
+  margin-bottom: 10.5px;
+  margin-top: 21px;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
