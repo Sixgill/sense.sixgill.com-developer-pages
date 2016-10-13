@@ -114,7 +114,7 @@ jQuery(function($) {
 	}
 	function validate(field,error_field,additionalCase,index){
 		if(!field || !field.value){
-			error_field.find("p")[0].innerHTML = "Required field";
+			error_field.find("p")[0].innerHTML = "Please fill out the field";
 			error_field.show();
 			disableSubmit();
 			return;
