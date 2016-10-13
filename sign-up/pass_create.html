@@ -71,6 +71,11 @@
 		<p class="modal-confirm-title">CREATE NEW PASSWORD</p>
 		<div class="modal-confirm-divider"></div>
 		<p class="modal-confirm-text">Please create a new password to login to your account.</p>
+
+		<!-- <div class="signup-error-message"></div>  - you can leave it empty (no text nodes or childs) to hide -->
+		<div id="hide-error-message" class="signup-error-message ">This is an example of backend validation error</div>
+		<!-- Delete the id -->
+		
 		<form
 			action="#"
 			class="modal-submit-form"
@@ -86,7 +91,7 @@
 					<div class="modal-form-error-arrow">
 					</div>
 				</div>
-				<input name="newPassword" type="password" class="modal-confirm-input" placeholder="New Password">
+			<input type="password" name="newPassword" class="modal-confirm-input" placeholder="New Password">
 			</div>
 			<div class="modal-error-popup">
 				<div class="modal-form-error" id="confirmPassword-error">
@@ -99,7 +104,7 @@
 					<div class="modal-form-error-arrow">
 					</div>
 				</div>
-				<input name="confirmPassword" type="password" class="modal-confirm-input" placeholder="Confirm Password">
+			<input type="password" name="confirmPassword" class="modal-confirm-input" placeholder="Confirm Password">
 			</div>
 			<input type="submit" name="formSubmit" class="modal-confirm-button button-green" value="Change Password">
 		</form>

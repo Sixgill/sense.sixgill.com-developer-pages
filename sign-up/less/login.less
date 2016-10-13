@@ -2,6 +2,7 @@
 
 .login-page {
 	#page-content-bg;
+	min-height: 510px;
 
 	&-content-block{
 		width: 89.54%;
@@ -28,6 +29,11 @@
 
 	&-col {
 
+		&-left, &-right {
+			flex-direction: column;
+			#flex-center;
+		}
+
 		&-left {
 			width: 51.96%;
 			height: 100%;
@@ -49,25 +55,29 @@
 				height: 0px;
 				border-top: 1px solid #dfdfdf;
 			}
+
+			&-list {
+		    padding-left: 37px;
+
+				&-item {
+					margin-left: 1px;
+				}
+			}
 		}
 
 		&-right {
 			width: 48.04%;
 			height: 100%;
-			padding: 0px 5.78% 0px 5.78%;
-		}
-
-		&-left, &-right {
-			flex-direction: column;
-			#flex-center;
+			padding: 0px 5.79% 0px 6%;
 		}
 	}
 
 	&-logo {
-		margin-bottom: 44px;
-  	margin-top: 14px;
-		width: 281px;
-		height: auto;
+		margin-left: 0.5%;
+		margin-bottom: 43px;
+    margin-top: 14px;
+    width: 283px;
+    height: auto;
 	}
 
 	&-form {
@@ -93,6 +103,7 @@
 			letter-spacing: 2.1px;
 			text-align: center;
 			color: #2e2e2e;
+			margin: 22px 0px 26px 0px;
 		}
 
 		&-inputs {
@@ -113,7 +124,7 @@
 			&[type="password"] {
 				font-size: 24px;
 				padding-left: 10px;
-				padding-top: 17px;
+				padding-top: 15px;
 				letter-spacing: 0.7px;
 			}
 
@@ -235,7 +246,8 @@
 	&-sign-up {
 
 		&-text {
-			margin-bottom: 13.5px;
+			margin-bottom: 10.5px;
+			margin-top: 21px;
 			#defaultFontSize;
 			#normal-font;
 			letter-spacing: 1px;

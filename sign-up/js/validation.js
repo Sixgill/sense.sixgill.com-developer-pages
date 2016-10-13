@@ -70,7 +70,7 @@ jQuery(function($) {
 
 	function checkEnable(){
 		for(var i=0;i<inputs.length;i++){
-			if(!inputs[i].validated){
+			if(inputs[i].field.length && !inputs[i].validated){
 				submit.prop('disabled',true).addClass('disabled');
 				return false;
 			}
@@ -100,6 +100,13 @@ jQuery(function($) {
 			}
 		}
 		if(newPassword.length && confirmPassword.length){
+			if(!newPassword[0].value || !confirmPassword[0].value){
+				return {
+					flag:false,
+					message:"Confirm password and password can not be empty",
+					index:7
+				};
+			}
 			if(newPassword[0].value != confirmPassword[0].value){
 				return {
 					flag:false,
@@ -112,10 +119,17 @@ jQuery(function($) {
 			flag:true
 		}
 	}
+
+	function testEmail(value){
+		var reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return reg.test(value);
+	}
+
 	function validate(field,error_field,additionalCase,index){
 		if(!field || !field.value){
-			error_field.find("p")[0].innerHTML = "Required field";
+			error_field.find("p")[0].innerHTML = "Please fill out the field";
 			error_field.show();
+			inputs[index].validated = false;
 			disableSubmit();
 			return;
 		}
@@ -123,15 +137,16 @@ jQuery(function($) {
 			error_field.find("p")[0].innerHTML = "100 Symbols max";
 			error_field.show();
 			disableSubmit();
+			inputs[index].validated = false;
 			return;
 		}
 		if(additionalCase) {
 			if(additionalCase == "email"){
-				var reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-   				if(!reg.test(field.value)) {
+				if(!testEmail(field.value)) {
 					error_field.find("p")[0].innerHTML = "Invalid e-mail";
 					error_field.show();
 					disableSubmit();
+					inputs[index].validated = false;
 					return;
    				}
 			} else if(additionalCase == "checkPassword"){
@@ -155,6 +170,7 @@ jQuery(function($) {
 					inputs[validPasswords.index].error_field.find("p")[0].innerHTML = validPasswords.message;
 					inputs[validPasswords.index].error_field.show();
 					disableSubmit();
+					inputs[index].validated = false;
 					return;
 				}
 			} 
@@ -166,18 +182,69 @@ jQuery(function($) {
 	function init(){
 		for(var i=0;i<inputs.length;i++){
 			if(inputs[i].field.length){
-				inputs[i].validated = false;
-				inputs[i].field.on("blur",(function(i){
-					return function(){
-						inputs[i].validated = false;
-						validate(inputs[i].field[0],inputs[i].error_field,inputs[i].type,i);
-					}
-				})(i));
+
 				inputs[i].error_field.find("img").on("click",(function(i){
 					return function(){
 						inputs[i].error_field.hide();
 					}
 				})(i));
+				if(!inputs[i].type){
+					inputs[i].validated = false;
+					inputs[i].field.bind("input",(function(i){
+						return function(){
+							inputs[i].validated = false;
+							validate(inputs[i].field[0],inputs[i].error_field,inputs[i].type,i);
+						}
+					})(i));
+					inputs[i].error_field.find("img").on("click",(function(i){
+						return function(){
+							inputs[i].error_field.hide();
+						}
+					})(i));
+				} else if(inputs[i].type === "email"){
+					inputs[i].validated = false;
+					inputs[i].field.bind("input",(function(i){
+						return function(){
+							if(0 < inputs[i].field[0].value.length < 100 && testEmail(inputs[i].field[0].value)) {
+								inputs[i].validated = true;
+								inputs[i].error_field.hide();
+								checkEnable();
+							}
+						}
+					})(i));
+					inputs[i].field.on("blur",(function(i){
+						return function(){
+							validate(inputs[i].field[0],inputs[i].error_field,inputs[i].type,i);
+						}
+					})(i));
+				} else if(inputs[i].type === "checkPassword") {
+					inputs[i].validated = false;
+					inputs[i].field.bind("input",(function(i){
+						return function(){
+							var validity = isPasswordValid();
+							if((0 < inputs[i].field[0].value.length < 100) && validity.flag) {
+								passwordsIndex.forEach(function(i){
+									inputs[i].validated = true;
+									inputs[i].error_field.hide();
+								});
+								checkEnable();
+							}
+						}
+					})(i));
+					inputs[i].field.on("blur",(function(i){
+						return function(){
+							validate(inputs[i].field[0],inputs[i].error_field,inputs[i].type,i);
+						}
+					})(i));
+				}
+				inputs[i].field.on("focus",(function(i){
+					return function(){
+						inputs[i].error_field.hide();
+					}
+				})(i));
+				if(inputs[i].field[0].value){
+					validate(inputs[i].field[0],inputs[i].error_field,inputs[i].type,i);
+				}
 			}
 		}
 		if(form.length){
@@ -203,6 +270,13 @@ jQuery(function($) {
 					loginPasswordInput.addClass("invalid");
 				}
 			});
+			//initial check for login
+			if(loginUsernameInput[0].value) {
+				loginUsernameInput.removeClass("invalid");
+			}
+			if(loginPasswordInput[0].value) {
+				loginPasswordInput.removeClass("invalid");
+			}
 		}
 	}
 	init();
