@@ -291,12 +291,19 @@ jQuery(function($) {
 				}
 			});
 			//initial check for login
-			if(loginUsernameInput[0].value) {
-				loginUsernameInput.removeClass("invalid");
-			}
-			if(loginPasswordInput[0].value) {
-				loginPasswordInput.removeClass("invalid");
-			}
+			setTimeout(function(){
+				console.log("timeout");
+				if(loginUsernameInput[0].value) {
+					loginUsernameInput.removeClass("invalid");
+				} else {
+					loginUsernameInput.addClass("invalid");
+				}
+				if(loginPasswordInput[0].value) {
+					loginPasswordInput.removeClass("invalid");
+				} else {
+					loginPasswordInput.addClass("invalid");
+				}
+			},300);
 		}
 	}
 	init();
