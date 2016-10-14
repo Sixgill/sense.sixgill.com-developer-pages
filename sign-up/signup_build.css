@@ -1542,6 +1542,7 @@ body.modal-open {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100%;
 }
 .desktop-menu-wrapper {
   display: inline-block;
