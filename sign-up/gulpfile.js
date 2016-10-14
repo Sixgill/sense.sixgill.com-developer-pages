@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 // To run gulp type: gulp
 
 //TODO: redo it
-var htmlHead = '<!DOCTYPE html>\n<html dir="ltr" lang="en-US">\n<head>\n	<meta http-equiv="content-type" content="text/html; charset=utf-8" />\n	<link rel="stylesheet" type="text/css" href="signup_build.css">\n	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300,600" rel="stylesheet" type="text/css">\n</head>\n<body>\n';
+var htmlHead = '<!DOCTYPE html>\n<html dir="ltr" lang="en-US">\n<head>\n	<meta http-equiv="content-type" content="text/html; charset=utf-8" />\n	<link rel="stylesheet" type="text/css" href="signup_build.css">\n	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300,600" rel="stylesheet" type="text/css"><link href="bootstrap.min.css" rel="stylesheet" type="text/css">\n</head>\n<body>\n';
 var htmlTail = "\n</body>\n</html>";
 
 gulp.task('default',

@@ -1391,6 +1391,23 @@ label {
   display: inline-block;
   text-align: left;
 }
+/* Important part */
+.modal-dialog {
+  overflow-y: none !important;
+}
+.modal-body {
+  max-height: calc(100vh - 35px);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+}
+.modal-content::-webkit-scrollbar,
+.modal-body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+body.modal-open {
+  overflow: hidden !important;
+}
 
 /* Menu desktop styles */
 .menu-schedule-button {
