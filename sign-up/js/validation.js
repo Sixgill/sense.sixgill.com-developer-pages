@@ -130,11 +130,11 @@ jQuery(function($) {
 		elem_field.addClass("error_field");
 	}
 
-	function validate(show_error,elem_field,error_field,additionalCase,index){
+	function validate(on_input,show_error,elem_field,error_field,additionalCase,index){
 		var field = elem_field[0];
 		if(!field || !field.value){
 			inputs[index].validated = false;
-			if(show_error){
+			if(on_input){
 				showError(elem_field,error_field,"Please fill out the field");
 			}
 			disableSubmit();
@@ -206,7 +206,7 @@ jQuery(function($) {
 					inputs[i].field.bind("input",(function(i){
 						return function(){
 							inputs[i].validated = false;
-							validate(true,inputs[i].field,inputs[i].error_field,inputs[i].type,i);
+							validate(true,true,inputs[i].field,inputs[i].error_field,inputs[i].type,i);
 						}
 					})(i));
 					inputs[i].error_field.find("img").on("click",(function(i){
@@ -217,39 +217,25 @@ jQuery(function($) {
 				} else if(inputs[i].type === "email"){
 					inputs[i].validated = false;
 					inputs[i].field.bind("input",(function(i){
-						return function(){
-							// if(0 < inputs[i].field[0].value.length < 100 && testEmail(inputs[i].field[0].value)) {
-							// 	inputs[i].validated = true;
-							// 	inputs[i].error_field.hide();
-							// 	checkEnable();
-							// }
-							validate(false,inputs[i].field,inputs[i].error_field,inputs[i].type,i);
+						return function(ev){
+							validate(true,false,inputs[i].field,inputs[i].error_field,inputs[i].type,i);
 						}
 					})(i));
 					inputs[i].field.on("blur",(function(i){
 						return function(){
-							validate(true,inputs[i].field,inputs[i].error_field,inputs[i].type,i);
+							validate(false,true,inputs[i].field,inputs[i].error_field,inputs[i].type,i);
 						}
 					})(i));
 				} else if(inputs[i].type === "checkPassword") {
 					inputs[i].validated = false;
 					inputs[i].field.bind("input",(function(i){
 						return function(){
-							// var validity = isPasswordValid();
-							// if((0 < inputs[i].field[0].value.length < 100) && validity.flag) {
-							// 	passwordsIndex.forEach(function(i){
-							// 		inputs[i].validated = true;
-							// 		inputs[i].field.removeClass("error_field");
-							// 		inputs[i].error_field.hide();
-							// 	});
-							// 	checkEnable();
-							// }
-							validate(false,inputs[i].field,inputs[i].error_field,inputs[i].type,i);
+							validate(true,false,inputs[i].field,inputs[i].error_field,inputs[i].type,i);
 						}
 					})(i));
 					inputs[i].field.on("blur",(function(i){
 						return function(){
-							validate(true,inputs[i].field,inputs[i].error_field,inputs[i].type,i);
+							validate(false,true,inputs[i].field,inputs[i].error_field,inputs[i].type,i);
 						}
 					})(i));
 				}
@@ -292,7 +278,6 @@ jQuery(function($) {
 			});
 			//initial check for login
 			setTimeout(function(){
-				console.log("timeout");
 				if(loginUsernameInput[0].value) {
 					loginUsernameInput.removeClass("invalid");
 				} else {
