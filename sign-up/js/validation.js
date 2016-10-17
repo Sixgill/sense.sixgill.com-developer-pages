@@ -266,6 +266,8 @@ jQuery(function($) {
 			loginUsernameInput.blur(function(){
 				if(!loginUsernameInput[0].value) {
 					loginUsernameInput.addClass("invalid");
+				} else {
+					loginUsernameInput.removeClass("invalid");
 				}
 			});
 			loginPasswordInput.focus(function(){
@@ -274,6 +276,8 @@ jQuery(function($) {
 			loginPasswordInput.blur(function(){
 				if(!loginPasswordInput[0].value) {
 					loginPasswordInput.addClass("invalid");
+				} else {
+					loginPasswordInput.removeClass("invalid");
 				}
 			});
 			//initial check for login
