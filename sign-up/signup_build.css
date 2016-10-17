@@ -1698,10 +1698,10 @@ body.modal-open {
   padding-top: 8px;
 }
 .login-page-form-input[type="password"] {
-  font-size: 24px;
-  padding-left: 10px;
-  padding-top: 15px;
-  letter-spacing: 0.7px;
+  font-size: 15px;
+  padding-left: 11px;
+  padding-top: 12px;
+  letter-spacing: 0.4px;
 }
 .login-page-form-input-wrapper {
   width: 100%;
