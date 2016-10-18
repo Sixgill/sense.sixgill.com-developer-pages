@@ -87,14 +87,14 @@ jQuery(function($) {
 			if(!password[0].value) {
 				return {
 					flag:false,
-					message:"Password can not be empty",
+					message:"Please fill out the field.",
 					index:2
 				};
 			}
 			if(newPassword.length && newPassword[0].value == password[0].value) {
 				return {
 					flag:false,
-					message:"Your new password and password can not be the same",
+					message:"Your old and new Passwords are the same. Please create a new Password.",
 					index:3
 				};
 			}
@@ -103,14 +103,14 @@ jQuery(function($) {
 			if(!newPassword[0].value || !confirmPassword[0].value){
 				return {
 					flag:false,
-					message:"Confirm password and password can not be empty",
+					message:"Please fill out the field.",
 					index:7
 				};
 			}
 			if(newPassword[0].value != confirmPassword[0].value){
 				return {
 					flag:false,
-					message:"Confirm password and password are not the same",
+					message:"Your new passwords do not match. Please try again.",
 					index:7
 				};
 			}
