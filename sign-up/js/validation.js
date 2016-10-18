@@ -87,14 +87,14 @@ jQuery(function($) {
 			if(!password[0].value) {
 				return {
 					flag:false,
-					message:"Please fill out the field",
+					message:"Please fill out the field.",
 					index:2
 				};
 			}
 			if(newPassword.length && newPassword[0].value == password[0].value) {
 				return {
 					flag:false,
-					message:"Your new password and password can not be the same",
+					message:"Your old and new Passwords are the same. Please create a new Password.",
 					index:3
 				};
 			}
@@ -103,7 +103,7 @@ jQuery(function($) {
 			if(!newPassword[0].value || !confirmPassword[0].value){
 				return {
 					flag:false,
-					message:"Please fill out the field",
+					message:"Please fill out the field.",
 					index:7
 				};
 			}
