@@ -242,11 +242,18 @@ jQuery(function($) {
 				inputs[i].field.on("focus",(function(i){
 					return function(){
 						inputs[i].error_field.hide();
+						inputs[i].field.removeClass("invalid");
 					}
 				})(i));
-				if(inputs[i].field[0].value){
-					validate(false,inputs[i].field,inputs[i].error_field,inputs[i].type,i);
-				}
+				inputs[i].field.on("blur",(function(i){
+					return function(){
+						if(!inputs[i].field[0].value) {
+							inputs[i].field.addClass("invalid");
+						} else {
+							inputs[i].field.removeClass("invalid");
+						}
+					}
+				})(i));
 				if(firstValidField) {
 					firstValidField = false;
 					inputs[i].field.focus();
@@ -259,41 +266,16 @@ jQuery(function($) {
 				return checkEnable();
 			});
 		}
-		if(loginUsernameInput.length) {
-			loginUsernameInput.focus(function(){
-				loginUsernameInput.removeClass("invalid");
-			});
-			loginUsernameInput.blur(function(){
-				if(!loginUsernameInput[0].value) {
-					loginUsernameInput.addClass("invalid");
+		// 	//initial check for login
+		setTimeout(function(){
+			inputs.forEach(function(singleInput){
+				if(singleInput.field.length && singleInput.field[0].value) {
+					singleInput.field.removeClass("invalid");
 				} else {
-					loginUsernameInput.removeClass("invalid");
+					singleInput.field.addClass("invalid");
 				}
 			});
-			loginPasswordInput.focus(function(){
-				loginPasswordInput.removeClass("invalid");
-			});
-			loginPasswordInput.blur(function(){
-				if(!loginPasswordInput[0].value) {
-					loginPasswordInput.addClass("invalid");
-				} else {
-					loginPasswordInput.removeClass("invalid");
-				}
-			});
-			//initial check for login
-			setTimeout(function(){
-				if(loginUsernameInput[0].value) {
-					loginUsernameInput.removeClass("invalid");
-				} else {
-					loginUsernameInput.addClass("invalid");
-				}
-				if(loginPasswordInput[0].value) {
-					loginPasswordInput.removeClass("invalid");
-				} else {
-					loginPasswordInput.addClass("invalid");
-				}
-			},300);
-		}
+		},300);
 	}
 	init();
 });

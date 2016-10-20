@@ -669,6 +669,30 @@ label {
 .signup-error-message:target {
   display: none;
 }
+.modal-submit-form {
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input-placeholder-label {
+  position: absolute;
+  top: 15px;
+  left: 11px;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #999999;
+  pointer-events: none;
+}
+.input-placeholder:not(.invalid) + .input-placeholder-label,
+.input-placeholder:focus + .input-placeholder-label {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  top: 9px;
+  left: 13px;
+}
 
 
 .new-pass-confirm {
