@@ -540,3 +540,29 @@ label {
 		display: none;
 	}
 }
+.modal-submit-form {
+	width: 370px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.input-placeholder {
+	&-label {
+		position: absolute;
+    	top: 15px;
+    	left: 11px;
+		font-size: 14px;
+		line-height: 1em;
+		letter-spacing: 1px;
+		text-align: center;
+		color: #999999;
+		pointer-events: none;
+	}
+
+	&:not(.invalid) + &-label, &:focus + &-label {
+		font-size: 8px;
+		font-weight: 600;
+		letter-spacing: 0.6px;
+		top: 9px;
+		left: 13px;
+	}
+}
