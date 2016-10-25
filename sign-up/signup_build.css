@@ -735,10 +735,17 @@ label {
 .pass-change .current-password {
   margin-bottom: 20px;
   margin-top: 0;
+  padding-top: 8px;
 }
 .pass-change .new-password {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 8px;
+}
+.pass-change .confirm-password {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-top: 8px;
 }
 .pass-change .modal-form-error {
   left: 105px;
@@ -777,6 +784,7 @@ label {
 .modal-confirm.pass-create .modal-confirm-input {
   padding-left: 12px;
   padding-bottom: 4px;
+  padding-top: 8px;
 }
 .modal-confirm.pass-create .modal-confirm-button {
   padding-bottom: 2px;
@@ -798,6 +806,9 @@ label {
 .modal-confirm.pass-reset > .modal-confirm-link {
   margin-top: 20px;
   margin-bottom: 0;
+}
+.modal-confirm.pass-reset .username {
+  padding-top: 8px;
 }
 .modal-confirm.pass-reset .modal-form-error {
   left: 105px;
